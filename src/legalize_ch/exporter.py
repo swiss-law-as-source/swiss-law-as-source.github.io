@@ -213,12 +213,12 @@ def export_jsonld(entries: list[dict]) -> dict:
             {
                 "@type": "DataDownload",
                 "encodingFormat": "text/csv",
-                "contentUrl": "data/laws_metadata.csv",
+                "contentUrl": "exports/laws_metadata.csv",
             },
             {
                 "@type": "DataDownload",
                 "encodingFormat": "application/ld+json",
-                "contentUrl": "data/laws_metadata.jsonld",
+                "contentUrl": "exports/laws_metadata.jsonld",
             },
         ],
         "@graph": graph,
@@ -236,7 +236,7 @@ def write_csv(repo_path: str = ".", languages: list[str] | None = None,
     """
     entries = collect_metadata(repo_path, languages, sr_filter)
     content = export_csv(entries)
-    out_path = Path(repo_path) / "data" / "laws_metadata.csv"
+    out_path = Path(repo_path) / "exports" / "laws_metadata.csv"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(content, encoding="utf-8")
     logger.info(f"Written CSV: {out_path} ({len(entries)} entries)")
@@ -252,7 +252,7 @@ def write_jsonld(repo_path: str = ".", languages: list[str] | None = None,
     """
     entries = collect_metadata(repo_path, languages, sr_filter)
     doc = export_jsonld(entries)
-    out_path = Path(repo_path) / "data" / "laws_metadata.jsonld"
+    out_path = Path(repo_path) / "exports" / "laws_metadata.jsonld"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(
         json.dumps(doc, ensure_ascii=False, indent=2) + "\n",
@@ -272,13 +272,13 @@ def write_all(repo_path: str = ".", languages: list[str] | None = None,
     entries = collect_metadata(repo_path, languages, sr_filter)
 
     csv_content = export_csv(entries)
-    csv_path = Path(repo_path) / "data" / "laws_metadata.csv"
+    csv_path = Path(repo_path) / "exports" / "laws_metadata.csv"
     csv_path.parent.mkdir(parents=True, exist_ok=True)
     csv_path.write_text(csv_content, encoding="utf-8")
     logger.info(f"Written CSV: {csv_path} ({len(entries)} entries)")
 
     jsonld_doc = export_jsonld(entries)
-    jsonld_path = Path(repo_path) / "data" / "laws_metadata.jsonld"
+    jsonld_path = Path(repo_path) / "exports" / "laws_metadata.jsonld"
     jsonld_path.write_text(
         json.dumps(jsonld_doc, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",

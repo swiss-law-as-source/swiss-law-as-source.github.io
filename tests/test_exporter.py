@@ -217,8 +217,8 @@ class TestWriteFiles:
         assert csv_path.exists()
         assert jsonld_path.exists()
         # Both should be in data/ directory
-        assert csv_path.parent.name == "data"
-        assert jsonld_path.parent.name == "data"
+        assert csv_path.parent.name == "exports"
+        assert jsonld_path.parent.name == "exports"
 
     def test_write_creates_data_dir(self, tmp_path):
         (tmp_path / "ch").mkdir()
