@@ -38,10 +38,15 @@ LEXWORK_CANTONS: dict[str, str] = {
 }
 
 LEXFIND_ONLY_CANTONS = [
-    "ai", "ge", "ju", "ne", "nw", "ow", "sh", "sz", "ti", "ur", "vd", "zh",
+    "ai", "ge", "ju", "ne", "nw", "ow", "sh", "sz", "ti", "ur", "vd",
 ]
 
-ALL_CANTONS = sorted(list(LEXWORK_CANTONS.keys()) + LEXFIND_ONLY_CANTONS)
+# Cantons with dedicated fetchers (not LexWork, not generic LexFind)
+DEDICATED_FETCHER_CANTONS = ["zh"]
+
+ALL_CANTONS = sorted(
+    list(LEXWORK_CANTONS.keys()) + LEXFIND_ONLY_CANTONS + DEDICATED_FETCHER_CANTONS
+)
 
 
 # ─── Models ────────────────────────────────────────────────────────────────────
@@ -165,7 +170,13 @@ class CantonalFetcher:
         return self._get_json(url)
 
     def fetch_lexwork_catalog(self, canton: str, lang: str = "de") -> list[CantonalLawEntry]:
-        """Fetch full catalog from a LexWork canton via search endpoint."""
+        """Fetch full catalog from a canton via its best available source."""
+        # Zürich: dedicated ZHLex API
+        if canton == "zh":
+            from .zurich_fetcher import ZurichFetcher
+            zh_fetcher = ZurichFetcher(rate_limit=self.rate_limit)
+            return zh_fetcher.fetch_catalog(lang)
+
         # LexWork doesn't have a clean catalog API, but we can paginate through search
         # For now, use LexFind as the catalog source even for LexWork cantons
         return self.fetch_lexfind_catalog(canton, lang)
@@ -219,12 +230,17 @@ class CantonalFetcher:
     def fetch_law_text(self, canton: str, number: str,
                        lang: str = "de",
                        lexfind_id: str = "") -> CantonalLawText | None:
-        """Fetch current law text: LexWork direct, LexFind fallback.
+        """Fetch current law text: dedicated fetcher, LexWork, or LexFind fallback.
 
         Strategy:
-        1. If canton has LexWork portal → fetch from LexWork API
-        2. Otherwise → fetch from LexFind
+        1. If canton has a dedicated fetcher (e.g. ZH) → use it
+        2. If canton has LexWork portal → fetch from LexWork API
+        3. Otherwise → fetch from LexFind
         """
+        # Dedicated fetcher (Zürich)
+        if canton == "zh":
+            return self._fetch_from_zurich(number, lang, erlass_id=lexfind_id)
+
         # Try LexWork first
         if canton in LEXWORK_CANTONS:
             text = self._fetch_from_lexwork(canton, number, lang)
@@ -308,8 +324,21 @@ class CantonalFetcher:
             language=lang,
         )
 
+    def _fetch_from_zurich(self, number: str, lang: str = "de",
+                           erlass_id: str = "") -> CantonalLawText | None:
+        """Fetch law text from the ZHLex API (Zürich dedicated fetcher)."""
+        from .zurich_fetcher import ZurichFetcher
+        zh_fetcher = ZurichFetcher(rate_limit=self.rate_limit)
+        return zh_fetcher.fetch_law_text(number, lang, erlass_id=erlass_id)
+
     def fetch_versions(self, canton: str, number: str) -> list[CantonalLawVersion]:
         """Fetch all available versions of a cantonal law."""
+        # Zürich: dedicated fetcher
+        if canton == "zh":
+            from .zurich_fetcher import ZurichFetcher
+            zh_fetcher = ZurichFetcher(rate_limit=self.rate_limit)
+            return zh_fetcher.fetch_versions(number)
+
         if canton not in LEXWORK_CANTONS:
             return []
 
@@ -418,7 +447,11 @@ def cantonal_law_to_markdown(text: CantonalLawText) -> str:
         "systematic_number": text.systematic_number,
         "title": text.title,
         "language": text.language,
-        "source": "LexWork" if text.canton in LEXWORK_CANTONS else "LexFind",
+        "source": (
+            "ZHLex" if text.canton == "zh"
+            else "LexWork" if text.canton in LEXWORK_CANTONS
+            else "LexFind"
+        ),
     }
     if text.version_date:
         meta["version_date"] = text.version_date.isoformat()

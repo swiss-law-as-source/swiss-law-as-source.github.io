@@ -9,6 +9,7 @@ import pytest
 
 from legalize_ch.cantonal import (
     ALL_CANTONS,
+    DEDICATED_FETCHER_CANTONS,
     LEXFIND_ONLY_CANTONS,
     LEXWORK_CANTONS,
     CantonalFetcher,
@@ -31,13 +32,19 @@ class TestCantonRegistry:
         assert len(ALL_CANTONS) == 26
 
     def test_no_overlap(self):
-        """LexWork and LexFind-only lists must not overlap."""
-        overlap = set(LEXWORK_CANTONS.keys()) & set(LEXFIND_ONLY_CANTONS)
-        assert overlap == set(), f"Cantons in both lists: {overlap}"
+        """LexWork, LexFind-only, and dedicated lists must not overlap."""
+        lw = set(LEXWORK_CANTONS.keys())
+        lf = set(LEXFIND_ONLY_CANTONS)
+        ded = set(DEDICATED_FETCHER_CANTONS)
+        assert lw & lf == set(), f"LexWork ∩ LexFind: {lw & lf}"
+        assert lw & ded == set(), f"LexWork ∩ Dedicated: {lw & ded}"
+        assert lf & ded == set(), f"LexFind ∩ Dedicated: {lf & ded}"
 
     def test_all_cantons_is_union(self):
-        """ALL_CANTONS must be the union of LexWork + LexFind-only."""
-        expected = sorted(list(LEXWORK_CANTONS.keys()) + LEXFIND_ONLY_CANTONS)
+        """ALL_CANTONS must be the union of LexWork + LexFind-only + dedicated."""
+        expected = sorted(
+            list(LEXWORK_CANTONS.keys()) + LEXFIND_ONLY_CANTONS + DEDICATED_FETCHER_CANTONS
+        )
         assert ALL_CANTONS == expected
 
     def test_lexwork_count(self):
@@ -45,8 +52,13 @@ class TestCantonRegistry:
         assert len(LEXWORK_CANTONS) == 14
 
     def test_lexfind_only_count(self):
-        """12 cantons are LexFind-only."""
-        assert len(LEXFIND_ONLY_CANTONS) == 12
+        """11 cantons are LexFind-only (ZH moved to dedicated)."""
+        assert len(LEXFIND_ONLY_CANTONS) == 11
+
+    def test_dedicated_fetcher_count(self):
+        """1 canton has a dedicated fetcher (ZH)."""
+        assert len(DEDICATED_FETCHER_CANTONS) == 1
+        assert "zh" in DEDICATED_FETCHER_CANTONS
 
     def test_canton_codes_are_lowercase(self):
         """All canton abbreviations must be lowercase."""
@@ -106,7 +118,7 @@ class TestCantonalLawToMarkdown:
         assert "abbreviation: GemG" in md
         assert "source: LexWork" in md  # BS is a LexWork canton
 
-    def test_lexfind_source(self):
+    def test_zhlex_source(self):
         text = CantonalLawText(
             canton="zh",
             systematic_number="100.1",
@@ -115,7 +127,7 @@ class TestCantonalLawToMarkdown:
             language="de",
         )
         md = cantonal_law_to_markdown(text)
-        assert "source: LexFind" in md  # ZH is not in LexWork
+        assert "source: ZHLex" in md  # ZH uses dedicated ZHLex fetcher
 
     def test_no_content_placeholder(self):
         text = CantonalLawText(
@@ -204,9 +216,9 @@ class TestCantonalFetcher:
 
     @patch.object(CantonalFetcher, "_get_json")
     def test_fetch_versions_non_lexwork_canton(self, mock_json):
-        """Non-LexWork cantons return empty version list."""
+        """Non-LexWork cantons (excl. dedicated) return empty version list."""
         fetcher = CantonalFetcher(rate_limit=0)
-        versions = fetcher.fetch_versions("zh", "100.1")
+        versions = fetcher.fetch_versions("ti", "100.1")
         assert versions == []
         mock_json.assert_not_called()
 
@@ -218,13 +230,13 @@ class TestCantonalFetcher:
 
     @patch.object(CantonalFetcher, "_get_json")
     def test_lexfind_fallback_for_non_lexwork(self, mock_json):
-        """For non-LexWork cantons, should try LexFind if lexfind_id provided."""
+        """For non-LexWork cantons (excl. dedicated), should try LexFind if lexfind_id provided."""
         mock_json.return_value = None
         fetcher = CantonalFetcher(rate_limit=0)
 
         with patch.object(fetcher, "_fetch_from_lexfind", return_value=None) as mock_lf:
-            result = fetcher.fetch_law_text("zh", "100.1", "de", lexfind_id="12345")
-            mock_lf.assert_called_once_with("zh", "100.1", "12345", "de")
+            result = fetcher.fetch_law_text("ti", "100.1", "de", lexfind_id="12345")
+            mock_lf.assert_called_once_with("ti", "100.1", "12345", "de")
 
 
 # ─── Model tests ─────────────────────────────────────────────────────────────
