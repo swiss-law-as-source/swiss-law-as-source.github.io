@@ -304,6 +304,33 @@ def health_check(repo: str, days: int, always_notify: bool):
         click.echo("No alert needed.")
 
 
+@main.command("export")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--format", "-f", "fmt", type=click.Choice(["all", "csv", "jsonld"]),
+              default="all", help="Export format (default: all)")
+@click.option("--lang", "-l", multiple=True, default=["de", "fr", "it"], help="Languages")
+@click.option("--sr", type=str, default=None, help="SR number prefix filter")
+def export(repo: str, fmt: str, lang: tuple, sr: str | None):
+    """Export structured metadata as JSON-LD and/or CSV.
+
+    Scans all law markdown files, extracts frontmatter metadata,
+    and writes structured exports to data/laws_metadata.{csv,jsonld}.
+    """
+    from .exporter import write_all, write_csv, write_jsonld
+
+    languages = list(lang)
+    if fmt == "csv":
+        path = write_csv(repo, languages, sr)
+        click.echo(f"CSV written: {path}")
+    elif fmt == "jsonld":
+        path = write_jsonld(repo, languages, sr)
+        click.echo(f"JSON-LD written: {path}")
+    else:
+        csv_path, jsonld_path = write_all(repo, languages, sr)
+        click.echo(f"CSV written: {csv_path}")
+        click.echo(f"JSON-LD written: {jsonld_path}")
+
+
 @main.command("notify-test")
 @click.option("--commits", type=int, default=0, help="Simulated commit count")
 @click.option("--errors", type=int, default=0, help="Simulated error count")
