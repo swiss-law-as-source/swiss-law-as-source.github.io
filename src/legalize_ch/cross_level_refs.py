@@ -481,6 +481,149 @@ def analyze_cross_level_refs(repo_path: str = ".") -> CrossLevelResult:
     return CrossLevelResult(cantonal_to_federal=c2f, federal_to_cantonal=f2c)
 
 
+_CROSS_LEVEL_MARKER = "<!-- cross-level-refs -->"
+_CROSS_LEVEL_END_MARKER = "<!-- /cross-level-refs -->"
+
+
+def _sr_to_github_link(sr: str) -> str:
+    """Generate a relative link to a federal law file from its SR number."""
+    prefix = sr.split(".")[0]
+    return f"ch/{prefix}/de/{sr}.md"
+
+
+def _cantonal_to_github_link(canton: str, sys_num: str) -> str:
+    """Generate a relative link to a cantonal law file."""
+    return f"ch/{canton}/de/{sys_num}.md"
+
+
+def _strip_existing_refs_section(text: str) -> str:
+    """Remove any existing cross-level refs section from markdown text."""
+    start = text.find(_CROSS_LEVEL_MARKER)
+    if start == -1:
+        return text
+    end = text.find(_CROSS_LEVEL_END_MARKER)
+    if end == -1:
+        return text[:start].rstrip("\n") + "\n"
+    return (text[:start].rstrip("\n") + "\n" + text[end + len(_CROSS_LEVEL_END_MARKER):].lstrip("\n"))
+
+
+def _build_cantonal_refs_section(federal_srs: list[dict]) -> str:
+    """Build a cross-level references section for a cantonal law file.
+
+    federal_srs: list of {"federal_sr": "935.61", "ref_type": "explicit_sr"}
+    """
+    lines = [
+        "",
+        _CROSS_LEVEL_MARKER,
+        "",
+        "---",
+        "",
+        "## Cross-Level References (Federal Law)",
+        "",
+    ]
+    for ref in sorted(federal_srs, key=lambda r: r["federal_sr"]):
+        sr = ref["federal_sr"]
+        ref_type = ref["ref_type"]
+        label = {
+            "explicit_sr": "SR reference",
+            "abbreviation": "abbreviation",
+            "einfuehrungsgesetz": "implementing law",
+            "url": "URL reference",
+        }.get(ref_type, ref_type)
+        prefix = sr.split(".")[0]
+        lines.append(f"- [SR {sr}](/{_sr_to_github_link(sr)}) ({label})")
+    lines.append("")
+    lines.append(_CROSS_LEVEL_END_MARKER)
+    return "\n".join(lines)
+
+
+def _build_federal_refs_section(cantonal_refs: list[dict]) -> str:
+    """Build a cross-level references section for a federal law file.
+
+    cantonal_refs: list of {"canton": "ag", "cantonal_number": "290.100",
+                            "cantonal_title": "..."}
+    """
+    lines = [
+        "",
+        _CROSS_LEVEL_MARKER,
+        "",
+        "---",
+        "",
+        "## Referenced by Cantonal Laws",
+        "",
+    ]
+    for ref in sorted(cantonal_refs, key=lambda r: (r["canton"], r["cantonal_number"])):
+        canton = ref["canton"]
+        num = ref["cantonal_number"]
+        title = ref.get("cantonal_title", "")
+        link = _cantonal_to_github_link(canton, num)
+        title_part = f" — {title}" if title else ""
+        lines.append(f"- [{canton.upper()} {num}](/{link}){title_part}")
+    lines.append("")
+    lines.append(_CROSS_LEVEL_END_MARKER)
+    return "\n".join(lines)
+
+
+def inject_cross_level_links(repo_path: str = ".") -> dict:
+    """Inject cross-level reference sections into law markdown files.
+
+    Adds a 'Cross-Level References' section to cantonal law files that
+    reference federal laws, and a 'Referenced by Cantonal Laws' section
+    to federal law files cited by cantonal laws.
+
+    Returns:
+        dict with counts: {"cantonal_files_updated": N, "federal_files_updated": N}
+    """
+    result = analyze_cross_level_refs(repo_path)
+    data = result.to_dict()
+    ch_dir = Path(repo_path) / "ch"
+    cantonal_updated = 0
+    federal_updated = 0
+
+    # 1. Inject into cantonal law files
+    c2f = data["cantonal_to_federal"]
+    for canton, laws in c2f.items():
+        for sys_num, refs in laws.items():
+            # Find the cantonal law file
+            for lang in ("de", "fr", "it"):
+                md_path = ch_dir / canton / lang / f"{sys_num}.md"
+                if not md_path.exists():
+                    # Try without language subdirectory
+                    md_path = ch_dir / canton / f"{sys_num}.md"
+                if md_path.exists():
+                    text = md_path.read_text(encoding="utf-8", errors="replace")
+                    text = _strip_existing_refs_section(text)
+                    section = _build_cantonal_refs_section(refs)
+                    text = text.rstrip("\n") + "\n" + section + "\n"
+                    md_path.write_text(text, encoding="utf-8")
+                    cantonal_updated += 1
+                    break
+
+    # 2. Inject into federal law files
+    cited_by = data["federal_cited_by_cantonal"]
+    for sr, entries in cited_by.items():
+        prefix = sr.split(".")[0]
+        for lang in ("de", "fr", "it"):
+            md_path = ch_dir / prefix / lang / f"{sr}.md"
+            if md_path.exists():
+                text = md_path.read_text(encoding="utf-8", errors="replace")
+                text = _strip_existing_refs_section(text)
+                section = _build_federal_refs_section(entries)
+                text = text.rstrip("\n") + "\n" + section + "\n"
+                md_path.write_text(text, encoding="utf-8")
+                federal_updated += 1
+                break
+
+    logger.info(
+        "Injected cross-level links: %d cantonal files, %d federal files",
+        cantonal_updated, federal_updated,
+    )
+    return {
+        "cantonal_files_updated": cantonal_updated,
+        "federal_files_updated": federal_updated,
+    }
+
+
 def write_cross_level_json(repo_path: str = ".") -> Path:
     """Analyze cross-level references and write JSON output.
 

@@ -13,8 +13,14 @@ from legalize_ch.cross_level_refs import (
     _detect_abbreviation_references,
     _detect_einfuehrungsgesetz,
     _detect_sr_references,
+    _strip_existing_refs_section,
+    _build_cantonal_refs_section,
+    _build_federal_refs_section,
+    _CROSS_LEVEL_MARKER,
+    _CROSS_LEVEL_END_MARKER,
     analyze_cross_level_refs,
     build_abbreviation_map,
+    inject_cross_level_links,
     scan_cantonal_to_federal,
     write_cross_level_json,
     write_cross_level_html,
@@ -317,3 +323,109 @@ class TestWriteOutput:
         content = out_path.read_text()
         assert "Cross-Level References" in content
         assert "cross_level_refs.json" in content
+
+
+# ─── Link Section Building ───────────────────────────────────────────────────
+
+class TestBuildRefsSections:
+    def test_build_cantonal_refs_section(self):
+        refs = [
+            {"federal_sr": "935.61", "ref_type": "explicit_sr"},
+            {"federal_sr": "220", "ref_type": "abbreviation"},
+        ]
+        section = _build_cantonal_refs_section(refs)
+        assert _CROSS_LEVEL_MARKER in section
+        assert _CROSS_LEVEL_END_MARKER in section
+        assert "Cross-Level References (Federal Law)" in section
+        assert "SR 220" in section
+        assert "SR 935.61" in section
+        assert "(SR reference)" in section
+        assert "(abbreviation)" in section
+
+    def test_build_federal_refs_section(self):
+        entries = [
+            {"canton": "ag", "cantonal_number": "290.100",
+             "cantonal_title": "EG BGFA"},
+            {"canton": "bs", "cantonal_number": "300.100",
+             "cantonal_title": "GesG"},
+        ]
+        section = _build_federal_refs_section(entries)
+        assert _CROSS_LEVEL_MARKER in section
+        assert _CROSS_LEVEL_END_MARKER in section
+        assert "Referenced by Cantonal Laws" in section
+        assert "AG 290.100" in section
+        assert "BS 300.100" in section
+        assert "EG BGFA" in section
+
+    def test_strip_existing_section(self):
+        text = (
+            "# Some Law\n\nBody text.\n\n"
+            + _CROSS_LEVEL_MARKER + "\n"
+            + "## Old References\n- old link\n"
+            + _CROSS_LEVEL_END_MARKER + "\n"
+        )
+        stripped = _strip_existing_refs_section(text)
+        assert _CROSS_LEVEL_MARKER not in stripped
+        assert _CROSS_LEVEL_END_MARKER not in stripped
+        assert "# Some Law" in stripped
+        assert "Body text." in stripped
+
+    def test_strip_no_existing_section(self):
+        text = "# Some Law\n\nBody text.\n"
+        stripped = _strip_existing_refs_section(text)
+        assert stripped == text
+
+    def test_strip_is_idempotent(self):
+        """Stripping twice should give same result."""
+        text = (
+            "# Law\n\n" + _CROSS_LEVEL_MARKER + "\nold\n"
+            + _CROSS_LEVEL_END_MARKER + "\n"
+        )
+        once = _strip_existing_refs_section(text)
+        twice = _strip_existing_refs_section(once)
+        assert once == twice
+
+
+# ─── Link Injection Integration ──────────────────────────────────────────────
+
+class TestInjectCrossLevelLinks:
+    def test_inject_into_cantonal_files(self, mock_repo):
+        counts = inject_cross_level_links(str(mock_repo))
+        assert counts["cantonal_files_updated"] >= 1
+
+        # AG 290.100 should have a cross-level refs section
+        ag_file = mock_repo / "ch" / "ag" / "de" / "290.100.md"
+        content = ag_file.read_text()
+        assert "Cross-Level References (Federal Law)" in content
+        assert "SR 935.61" in content
+        assert _CROSS_LEVEL_MARKER in content
+
+    def test_inject_into_federal_files(self, mock_repo):
+        counts = inject_cross_level_links(str(mock_repo))
+        assert counts["federal_files_updated"] >= 1
+
+        # SR 935.61 should have a "Referenced by" section
+        fed_file = mock_repo / "ch" / "935" / "de" / "935.61.md"
+        content = fed_file.read_text()
+        assert "Referenced by Cantonal Laws" in content
+        assert "AG 290.100" in content
+
+    def test_inject_is_idempotent(self, mock_repo):
+        """Running inject twice should not duplicate the section."""
+        inject_cross_level_links(str(mock_repo))
+        ag_file = mock_repo / "ch" / "ag" / "de" / "290.100.md"
+        first_content = ag_file.read_text()
+
+        inject_cross_level_links(str(mock_repo))
+        second_content = ag_file.read_text()
+
+        # Count markers — should only appear once
+        assert first_content.count(_CROSS_LEVEL_MARKER) == 1
+        assert second_content.count(_CROSS_LEVEL_MARKER) == 1
+
+    def test_no_injection_for_unreferenced(self, mock_repo):
+        """BS 300.100 has no federal refs, should not get a section."""
+        inject_cross_level_links(str(mock_repo))
+        bs_file = mock_repo / "ch" / "bs" / "de" / "300.100.md"
+        content = bs_file.read_text()
+        assert _CROSS_LEVEL_MARKER not in content

@@ -571,7 +571,9 @@ def serve(repo: str, host: str, port: int, do_reload: bool):
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
 @click.option("--html/--no-html", "write_html", default=True,
               help="Also write HTML viewer page (default: yes)")
-def cross_level_refs(repo: str, write_html: bool):
+@click.option("--inject/--no-inject", "inject_links", default=True,
+              help="Inject cross-level link sections into law markdown files (default: yes)")
+def cross_level_refs(repo: str, write_html: bool, inject_links: bool):
     """Detect and export cross-level references (federal ↔ cantonal).
 
     Scans cantonal law files for references to federal SR numbers and
@@ -580,13 +582,20 @@ def cross_level_refs(repo: str, write_html: bool):
     Writes docs/cross_level_refs.json with the full reference map and
     optionally docs/cross_level_refs.html for visual exploration.
 
+    With --inject (default), also adds cross-level reference link sections
+    directly into the law markdown files:
+      - Cantonal files get a 'Cross-Level References (Federal Law)' section
+      - Federal files get a 'Referenced by Cantonal Laws' section
+
     Detection strategies:
       - Explicit SR references (e.g. "SR 935.61")
       - Federal law abbreviations (e.g. BGFA, KVG, OR)
       - Einführungsgesetz (implementing law) patterns
       - LexWork/clex Bund URLs
     """
-    from .cross_level_refs import write_cross_level_json, write_cross_level_html
+    from .cross_level_refs import (
+        write_cross_level_json, write_cross_level_html, inject_cross_level_links,
+    )
 
     json_path = write_cross_level_json(repo_path=repo)
     click.echo(f"Cross-level refs JSON: {json_path}")
@@ -594,6 +603,13 @@ def cross_level_refs(repo: str, write_html: bool):
     if write_html:
         html_path = write_cross_level_html(repo_path=repo)
         click.echo(f"Cross-level refs HTML: {html_path}")
+
+    if inject_links:
+        counts = inject_cross_level_links(repo_path=repo)
+        click.echo(
+            f"Injected links: {counts['cantonal_files_updated']} cantonal, "
+            f"{counts['federal_files_updated']} federal files updated"
+        )
 
 
 if __name__ == "__main__":
