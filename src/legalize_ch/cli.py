@@ -216,6 +216,49 @@ def codify(repo: str, lang: str, sr: str | None, limit: int | None, dry_run: boo
     click.echo(f"Done. {count} OpenFisca variables generated.")
 
 
+@main.command("translate")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--sr", type=str, default=None, help="Specific SR number to translate")
+@click.option("--source-lang", "-s", default="de", help="Source language (default: de)")
+@click.option("--limit", "-n", type=int, default=None, help="Max files to translate")
+@click.option("--sr-filter", type=str, default=None, help="SR number prefix filter")
+@click.option("--model", default="claude-sonnet-4-20250514", help="Claude model for translation")
+@click.option("--api-key", envvar="ANTHROPIC_API_KEY", default=None,
+              help="Anthropic API key (or set ANTHROPIC_API_KEY)")
+def translate(repo: str, sr: str | None, source_lang: str, limit: int | None,
+              sr_filter: str | None, model: str, api_key: str | None):
+    """Translate law texts to English using the Anthropic API.
+
+    Translates Swiss law texts from the source language (default: German)
+    to English. Translated files are written to ch/{number}/en/{sr}.md.
+
+    Uses Claude for high-quality legal translation that preserves
+    structure and terminology.
+    """
+    from .translator import Translator
+
+    if not api_key:
+        click.echo("Error: ANTHROPIC_API_KEY not set. Provide via --api-key or env var.", err=True)
+        raise SystemExit(1)
+
+    translator = Translator(api_key=api_key, model=model)
+
+    if sr:
+        # Translate a single law
+        ok = translator.translate_sr(repo, sr, source_lang)
+        if ok:
+            click.echo(f"Translated SR {sr} to English.")
+        else:
+            click.echo(f"Failed to translate SR {sr}.", err=True)
+            raise SystemExit(1)
+    else:
+        # Batch translation
+        count = translator.translate_directory(
+            repo, sr_filter=sr_filter, source_lang=source_lang, limit=limit
+        )
+        click.echo(f"Done. {count} files translated to English.")
+
+
 @main.command("index")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
 @click.option("--lang", "-l", default="de", help="Language for titles (default: de)")
