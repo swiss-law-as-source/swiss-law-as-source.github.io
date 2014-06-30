@@ -567,5 +567,34 @@ def serve(repo: str, host: str, port: int, do_reload: bool):
     )
 
 
+@main.command("cross-level-refs")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--html/--no-html", "write_html", default=True,
+              help="Also write HTML viewer page (default: yes)")
+def cross_level_refs(repo: str, write_html: bool):
+    """Detect and export cross-level references (federal ↔ cantonal).
+
+    Scans cantonal law files for references to federal SR numbers and
+    abbreviations, and federal files for references to cantonal laws.
+
+    Writes docs/cross_level_refs.json with the full reference map and
+    optionally docs/cross_level_refs.html for visual exploration.
+
+    Detection strategies:
+      - Explicit SR references (e.g. "SR 935.61")
+      - Federal law abbreviations (e.g. BGFA, KVG, OR)
+      - Einführungsgesetz (implementing law) patterns
+      - LexWork/clex Bund URLs
+    """
+    from .cross_level_refs import write_cross_level_json, write_cross_level_html
+
+    json_path = write_cross_level_json(repo_path=repo)
+    click.echo(f"Cross-level refs JSON: {json_path}")
+
+    if write_html:
+        html_path = write_cross_level_html(repo_path=repo)
+        click.echo(f"Cross-level refs HTML: {html_path}")
+
+
 if __name__ == "__main__":
     main()
