@@ -352,6 +352,40 @@ def notify_test(commits: int, errors: int):
         raise SystemExit(1)
 
 
+@main.command("feed")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--output", "-o", default=None, help="Output directory (default: docs/feeds/)")
+@click.option("--sr", type=str, default=None, help="SR number prefix filter")
+@click.option("--lang", "-l", default=None, help="Language filter (de/fr/it/en)")
+@click.option("--limit", "-n", type=int, default=50, help="Max entries per feed (default: 50)")
+@click.option("--since-days", type=int, default=90,
+              help="Look back this many days (default: 90)")
+def feed(repo: str, output: str | None, sr: str | None, lang: str | None,
+         limit: int, since_days: int):
+    """Generate RSS and Atom feeds of law changes (diffs).
+
+    Creates feeds that allow subscribing to changes in specific laws.
+    Feeds include unified diffs showing what changed in each revision.
+
+    Filter by SR number prefix to track specific areas of law:
+      legalize-ch feed --sr 210    # Track civil code changes
+      legalize-ch feed --sr 311    # Track criminal code changes
+      legalize-ch feed --lang de   # German changes only
+    """
+    from .rss_feed import write_feeds
+
+    rss_path, atom_path = write_feeds(
+        repo_path=repo,
+        output_dir=output,
+        sr_filter=sr,
+        lang=lang,
+        limit=limit,
+        since_days=since_days,
+    )
+    click.echo(f"RSS feed:  {rss_path}")
+    click.echo(f"Atom feed: {atom_path}")
+
+
 @main.command("serve")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
 @click.option("--host", default="0.0.0.0", help="Bind host (default: 0.0.0.0)")

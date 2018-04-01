@@ -326,6 +326,49 @@ def _build_router():
 
         return {"results": results, "total": len(results)}
 
+    @router.get("/feed")
+    async def get_feed(
+        sr: Optional[str] = Query(default=None, description="SR number prefix filter"),
+        lang: Optional[str] = Query(default=None, description="Language filter (de/fr/it/en)"),
+        format: str = Query(default="atom", description="Feed format: atom or rss"),
+        limit: int = Query(default=50, ge=1, le=200, description="Max entries"),
+        since_days: int = Query(default=90, ge=1, le=365, description="Look back N days"),
+    ):
+        """Get an RSS or Atom feed of recent law changes.
+
+        Subscribe to changes in specific laws by SR prefix.
+        Examples:
+          /api/v1/feed?sr=210&format=atom  - Civil code changes
+          /api/v1/feed?sr=311&format=rss   - Criminal code changes
+          /api/v1/feed?lang=fr             - All French changes
+        """
+        from fastapi.responses import Response
+        from .rss_feed import get_recent_changes, generate_atom_feed, generate_rss_feed
+
+        entries = get_recent_changes(
+            repo_path=_REPO_PATH,
+            sr_filter=sr,
+            lang=lang,
+            limit=limit,
+            since_days=since_days,
+        )
+
+        title_parts = ["Swiss Law Changes"]
+        if sr:
+            title_parts.append(f"(SR {sr}*)")
+        if lang:
+            title_parts.append(f"[{lang.upper()}]")
+        title = " ".join(title_parts)
+
+        if format == "rss":
+            xml = generate_rss_feed(entries, title=title)
+            content_type = "application/rss+xml; charset=utf-8"
+        else:
+            xml = generate_atom_feed(entries, title=title)
+            content_type = "application/atom+xml; charset=utf-8"
+
+        return Response(content=xml, media_type=content_type)
+
     @router.get("/health")
     async def health():
         """Health check endpoint."""
