@@ -71,16 +71,16 @@ class TestCantonRegistry:
 
 class TestCantonToPath:
     def test_basic_path(self):
-        assert canton_to_path("bs", "300.100", "de") == "kt/bs/300.100/de/300.100.md"
+        assert canton_to_path("bs", "300.100", "de") == "ch/bs/de/300.100.md"
 
     def test_different_canton(self):
-        assert canton_to_path("ag", "100.200", "de") == "kt/ag/100.200/de/100.200.md"
+        assert canton_to_path("ag", "100.200", "de") == "ch/ag/de/100.200.md"
 
     def test_french_language(self):
-        assert canton_to_path("ge", "A.1.1", "fr") == "kt/ge/A.1.1/fr/A.1.1.md"
+        assert canton_to_path("ge", "A.1.1", "fr") == "ch/ge/fr/A.1.1.md"
 
     def test_italian_language(self):
-        assert canton_to_path("ti", "1.1.1.1", "it") == "kt/ti/1.1.1.1/it/1.1.1.1.md"
+        assert canton_to_path("ti", "1.1.1.1", "it") == "ch/ti/it/1.1.1.1.md"
 
 
 # ─── Markdown conversion tests ───────────────────────────────────────────────
