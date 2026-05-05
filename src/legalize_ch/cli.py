@@ -216,6 +216,17 @@ def codify(repo: str, lang: str, sr: str | None, limit: int | None, dry_run: boo
     click.echo(f"Done. {count} OpenFisca variables generated.")
 
 
+@main.command("index")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--lang", "-l", default="de", help="Language for titles (default: de)")
+def index(repo: str, lang: str):
+    """Generate INDEX.md with all SR numbers, titles, and links."""
+    from .index_generator import write_index
+
+    out = write_index(repo_path=repo, lang=lang)
+    click.echo(f"Generated: {out}")
+
+
 @main.command("health-check")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
 @click.option("--days", "-d", type=int, default=30,
