@@ -330,14 +330,14 @@ class TestLawToMarkdown:
 
 class TestSrToPath:
     def test_simple_sr(self):
-        assert sr_to_path("101", "de") == "ch/de/101.md"
+        assert sr_to_path("101", "de") == "ch/101/de/101.md"
 
     def test_dotted_sr(self):
-        assert sr_to_path("220.1", "de") == "ch/de/220/220.1.md"
+        assert sr_to_path("220.1", "de") == "ch/220/de/220.1.md"
 
     def test_language_variants(self):
-        assert sr_to_path("101", "fr") == "ch/fr/101.md"
-        assert sr_to_path("101", "it") == "ch/it/101.md"
+        assert sr_to_path("101", "fr") == "ch/101/fr/101.md"
+        assert sr_to_path("101", "it") == "ch/101/it/101.md"
 
     def test_deep_sr(self):
-        assert sr_to_path("172.010.1", "de") == "ch/de/172/172.010.1.md"
+        assert sr_to_path("172.010.1", "de") == "ch/172/de/172.010.1.md"
