@@ -192,6 +192,64 @@ def cantonal_list(canton: str | None):
     click.echo(f"\nTotal: {len(LEXWORK_CANTONS)} LexWork + {len(LEXFIND_ONLY_CANTONS)} LexFind = 26 cantons")
 
 
+@main.command("codify")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--lang", "-l", default="de", help="Source language (default: de)")
+@click.option("--sr", type=str, default=None, help="SR number prefix filter")
+@click.option("--limit", "-n", type=int, default=None, help="Max law groups to process")
+@click.option("--dry-run", is_flag=True, help="Only log, don't generate")
+def codify(repo: str, lang: str, sr: str | None, limit: int | None, dry_run: bool):
+    """Convert law texts to executable OpenFisca code using Claude CLI.
+
+    Reads articles from ch/{number}/{lang}/*.md, generates OpenFisca
+    Variable classes, and writes to ch/{number}/executable/*.py.
+    """
+    from .law_to_openfisca import run_pipeline
+
+    count = run_pipeline(
+        repo_path=repo,
+        lang=lang,
+        sr_filter=sr,
+        limit=limit,
+        dry_run=dry_run,
+    )
+    click.echo(f"Done. {count} OpenFisca variables generated.")
+
+
+@main.command("health-check")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--days", "-d", type=int, default=30,
+              help="Alert if no commits for this many days (default: 30)")
+@click.option("--always-notify", is_flag=True,
+              help="Send notification even when healthy")
+def health_check(repo: str, days: int, always_notify: bool):
+    """Check repo health and alert if no new commits for N days.
+
+    Sends a Telegram notification if the most recent commit is older
+    than --days (default 30). Use --always-notify to send a message
+    regardless of health status.
+    """
+    from .health_check import check_health, send_health_alert
+
+    is_healthy, message = check_health(repo, stale_days=days)
+    click.echo(message)
+
+    if not is_healthy or always_notify:
+        ok = send_health_alert(
+            repo_path=repo,
+            stale_days=days,
+            always_notify=always_notify,
+        )
+        if ok:
+            click.echo("Telegram alert sent.")
+        else:
+            click.echo("Failed to send Telegram alert.", err=True)
+            if not is_healthy:
+                raise SystemExit(1)
+    else:
+        click.echo("No alert needed.")
+
+
 @main.command("notify-test")
 @click.option("--commits", type=int, default=0, help="Simulated commit count")
 @click.option("--errors", type=int, default=0, help="Simulated error count")
