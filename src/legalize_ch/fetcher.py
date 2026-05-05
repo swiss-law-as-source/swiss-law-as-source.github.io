@@ -125,6 +125,58 @@ SELECT DISTINCT ?title WHERE {{
 LIMIT 1
 """
 
+# Fetch laws with consolidation versions applicable since a given date
+MODIFIED_SINCE_QUERY = PREFIXES + """
+SELECT DISTINCT ?cc ?srNumber ?titleDe ?titleFr ?titleIt ?dateDoc ?dateForce ?abbrDe ?abbrFr ?abbrIt
+WHERE {{
+  ?cons a jolux:Consolidation ;
+        jolux:isMemberOf ?cc ;
+        jolux:dateApplicability ?dateApp .
+  FILTER(?dateApp >= "{since_date}"^^xsd:date)
+
+  ?cc a jolux:ConsolidationAbstract ;
+      jolux:classifiedByTaxonomyEntry ?tax .
+  ?tax skos:notation ?srNumber .
+
+  OPTIONAL {{
+    ?cc jolux:isRealizedBy ?exprDe .
+    ?exprDe a jolux:Expression ;
+            jolux:language <http://publications.europa.eu/resource/authority/language/DEU> ;
+            jolux:title ?titleDe .
+  }}
+  OPTIONAL {{
+    ?cc jolux:isRealizedBy ?exprFr .
+    ?exprFr a jolux:Expression ;
+            jolux:language <http://publications.europa.eu/resource/authority/language/FRA> ;
+            jolux:title ?titleFr .
+  }}
+  OPTIONAL {{
+    ?cc jolux:isRealizedBy ?exprIt .
+    ?exprIt a jolux:Expression ;
+            jolux:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+            jolux:title ?titleIt .
+  }}
+  OPTIONAL {{ ?cc jolux:dateDocument ?dateDoc . }}
+  OPTIONAL {{ ?cc jolux:dateEntryInForce ?dateForce . }}
+  OPTIONAL {{
+    ?cc jolux:isRealizedBy ?exprAbbrDe .
+    ?exprAbbrDe jolux:language <http://publications.europa.eu/resource/authority/language/DEU> ;
+                jolux:titleShort ?abbrDe .
+  }}
+  OPTIONAL {{
+    ?cc jolux:isRealizedBy ?exprAbbrFr .
+    ?exprAbbrFr jolux:language <http://publications.europa.eu/resource/authority/language/FRA> ;
+                jolux:titleShort ?abbrFr .
+  }}
+  OPTIONAL {{
+    ?cc jolux:isRealizedBy ?exprAbbrIt .
+    ?exprAbbrIt jolux:language <http://publications.europa.eu/resource/authority/language/ITA> ;
+                jolux:titleShort ?abbrIt .
+  }}
+}}
+ORDER BY ?srNumber
+"""
+
 LANG_MAP = {
     "de": ("de", "DEU"),
     "fr": ("fr", "FRA"),
@@ -179,6 +231,36 @@ class FedlexFetcher:
         logger.info("Fetching law catalog from Fedlex...")
         rows = self._query(query)
         logger.info("Found %d raw catalog rows", len(rows))
+
+        entries = []
+        seen = set()
+        for row in rows:
+            sr = self._get_val(row, "srNumber")
+            if sr in seen:
+                continue
+            seen.add(sr)
+            entries.append(LawEntry(
+                sr_number=sr,
+                uri=self._get_val(row, "cc"),
+                title_de=self._get_val(row, "titleDe"),
+                title_fr=self._get_val(row, "titleFr"),
+                title_it=self._get_val(row, "titleIt"),
+                date_document=self._parse_date(self._get_val(row, "dateDoc")),
+                date_in_force=self._parse_date(self._get_val(row, "dateForce")),
+                abbreviation_de=self._get_val(row, "abbrDe"),
+                abbreviation_fr=self._get_val(row, "abbrFr"),
+                abbreviation_it=self._get_val(row, "abbrIt"),
+            ))
+        return entries
+
+    def fetch_modified_since(self, since: date, limit: int | None = None) -> list[LawEntry]:
+        """Fetch laws that have consolidation versions applicable since the given date."""
+        query = MODIFIED_SINCE_QUERY.format(since_date=since.isoformat())
+        if limit:
+            query += f"\nLIMIT {limit}"
+        logger.info("Fetching laws modified since %s...", since.isoformat())
+        rows = self._query(query)
+        logger.info("Found %d raw rows for modified laws", len(rows))
 
         entries = []
         seen = set()

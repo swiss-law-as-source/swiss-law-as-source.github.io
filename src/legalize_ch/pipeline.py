@@ -100,6 +100,52 @@ class Pipeline:
         logger.info("Pipeline complete. Total commits: %d", total_commits)
         return total_commits
 
+    def update(self, limit: int | None = None, languages: list[str] | None = None,
+               sr_filter: str | None = None):
+        """Incremental update: only fetch laws modified since last_run.
+
+        Args:
+            limit: Max number of laws to process (None = all)
+            languages: Languages to fetch (default: all three)
+            sr_filter: Only process laws matching this SR prefix
+        """
+        languages = languages or ["de", "fr", "it"]
+
+        last_run = self.state.get("last_run")
+        if not last_run:
+            logger.error("No last_run date in state. Run 'bootstrap' first.")
+            raise SystemExit(1)
+
+        since = date.fromisoformat(last_run)
+        logger.info("Updating laws modified since %s", since.isoformat())
+
+        # Fetch only laws with versions since last_run
+        catalog = self.fetcher.fetch_modified_since(since, limit=limit)
+        if sr_filter:
+            catalog = [e for e in catalog if e.sr_number.startswith(sr_filter)]
+
+        logger.info("Found %d laws to update", len(catalog))
+        total_commits = 0
+
+        for i, law in enumerate(catalog):
+            logger.info("[%d/%d] SR %s: %s", i + 1, len(catalog), law.sr_number,
+                        law.title_de or law.title_fr or law.sr_number)
+
+            try:
+                commits = self._process_law(law, languages, latest_only=False)
+                total_commits += commits
+            except Exception as e:
+                logger.error("Error processing SR %s: %s", law.sr_number, e)
+
+            if (i + 1) % 10 == 0:
+                self._save_state()
+
+        self.state["last_run"] = date.today().isoformat()
+        self._save_state()
+        logger.info("Update complete. %d laws checked, %d commits created.",
+                    len(catalog), total_commits)
+        return total_commits
+
     def _process_law(self, law: LawEntry, languages: list[str],
                      latest_only: bool) -> int:
         """Process a single law. Returns number of commits."""

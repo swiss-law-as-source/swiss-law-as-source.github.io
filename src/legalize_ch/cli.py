@@ -39,6 +39,19 @@ def bootstrap(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_li
 
 @main.command()
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--limit", "-n", type=int, default=None, help="Max laws to process")
+@click.option("--lang", "-l", multiple=True, default=["de", "fr", "it"], help="Languages")
+@click.option("--sr", type=str, default=None, help="SR number prefix filter")
+@click.option("--rate-limit", type=float, default=1.5, help="Seconds between requests")
+def update(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_limit: float):
+    """Incremental update: only fetch laws modified since last_run."""
+    pipeline = Pipeline(repo_path=repo, rate_limit=rate_limit)
+    total = pipeline.update(limit=limit, languages=list(lang), sr_filter=sr)
+    click.echo(f"Done. {total} commits created.")
+
+
+@main.command()
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
 @click.option("--limit", "-n", type=int, default=None, help="Max laws to fetch")
 def catalog(repo: str, limit: int | None):
     """Fetch and display the law catalog."""
