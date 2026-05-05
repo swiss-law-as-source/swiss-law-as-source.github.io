@@ -43,10 +43,23 @@ def bootstrap(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_li
 @click.option("--lang", "-l", multiple=True, default=["de", "fr", "it"], help="Languages")
 @click.option("--sr", type=str, default=None, help="SR number prefix filter")
 @click.option("--rate-limit", type=float, default=1.5, help="Seconds between requests")
-def update(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_limit: float):
-    """Incremental update: only fetch laws modified since last_run."""
+@click.option("--since", type=click.DateTime(formats=["%Y-%m-%d"]), default=None,
+              help="Override last_run: only fetch versions since this date (YYYY-MM-DD)")
+def update(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_limit: float,
+           since):
+    """Incremental update: only fetch laws with new consolidation versions.
+
+    Detects new versions by comparing Fedlex consolidation dates against
+    the pipeline state. Only versions with dateApplicability >= since are
+    fetched, and already-processed versions are skipped automatically.
+
+    By default uses last_run from pipeline state. Use --since to override.
+    """
+    from datetime import date as date_type
     pipeline = Pipeline(repo_path=repo, rate_limit=rate_limit)
-    total = pipeline.update(limit=limit, languages=list(lang), sr_filter=sr)
+    since_date = since.date() if since else None
+    total = pipeline.update(limit=limit, languages=list(lang), sr_filter=sr,
+                            since_override=since_date)
     click.echo(f"Done. {total} commits created.")
 
 

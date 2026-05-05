@@ -43,6 +43,16 @@ class Pipeline:
         key = f"{sr_number}@{version_date.isoformat()}"
         self.state.setdefault("processed", {})[key] = True
 
+    def _get_known_version_count(self, sr_number: str) -> int:
+        """Return the number of known processed versions for an SR number."""
+        prefix = f"{sr_number}@"
+        return sum(1 for k in self.state.get("processed", {}) if k.startswith(prefix))
+
+    def _get_known_version_dates(self, sr_number: str) -> set[str]:
+        """Return the set of known version date strings for an SR number."""
+        prefix = f"{sr_number}@"
+        return {k.split("@", 1)[1] for k in self.state.get("processed", {}) if k.startswith(prefix)}
+
     def _get_abbreviation(self, law: LawEntry, lang: str) -> str:
         return {
             "de": law.abbreviation_de,
@@ -101,22 +111,31 @@ class Pipeline:
         return total_commits
 
     def update(self, limit: int | None = None, languages: list[str] | None = None,
-               sr_filter: str | None = None):
+               sr_filter: str | None = None, since_override: date | None = None):
         """Incremental update: only fetch laws modified since last_run.
+
+        Uses date comparison to detect new consolidation versions — only
+        versions with dateApplicability >= since are considered, and each
+        is checked against the processed-state so already-known versions
+        are skipped without fetching their text.
 
         Args:
             limit: Max number of laws to process (None = all)
             languages: Languages to fetch (default: all three)
             sr_filter: Only process laws matching this SR prefix
+            since_override: Explicit cutoff date (overrides last_run)
         """
         languages = languages or ["de", "fr", "it"]
 
-        last_run = self.state.get("last_run")
-        if not last_run:
-            logger.error("No last_run date in state. Run 'bootstrap' first.")
-            raise SystemExit(1)
+        if since_override:
+            since = since_override
+        else:
+            last_run = self.state.get("last_run")
+            if not last_run:
+                logger.error("No last_run date in state. Run 'bootstrap' first.")
+                raise SystemExit(1)
+            since = date.fromisoformat(last_run)
 
-        since = date.fromisoformat(last_run)
         logger.info("Updating laws modified since %s", since.isoformat())
 
         # Fetch only laws with versions since last_run
@@ -124,16 +143,20 @@ class Pipeline:
         if sr_filter:
             catalog = [e for e in catalog if e.sr_number.startswith(sr_filter)]
 
-        logger.info("Found %d laws to update", len(catalog))
+        logger.info("Found %d laws with new versions since %s", len(catalog), since.isoformat())
         total_commits = 0
+        skipped_laws = 0
 
         for i, law in enumerate(catalog):
             logger.info("[%d/%d] SR %s: %s", i + 1, len(catalog), law.sr_number,
                         law.title_de or law.title_fr or law.sr_number)
 
             try:
-                commits = self._process_law(law, languages, latest_only=False)
+                commits = self._process_law(law, languages, latest_only=False,
+                                            since_date=since)
                 total_commits += commits
+                if commits == 0:
+                    skipped_laws += 1
             except Exception as e:
                 logger.error("Error processing SR %s: %s", law.sr_number, e)
 
@@ -142,13 +165,21 @@ class Pipeline:
 
         self.state["last_run"] = date.today().isoformat()
         self._save_state()
-        logger.info("Update complete. %d laws checked, %d commits created.",
-                    len(catalog), total_commits)
+        logger.info("Update complete. %d laws checked, %d skipped (already up-to-date), "
+                    "%d commits created.", len(catalog), skipped_laws, total_commits)
         return total_commits
 
     def _process_law(self, law: LawEntry, languages: list[str],
-                     latest_only: bool) -> int:
-        """Process a single law. Returns number of commits."""
+                     latest_only: bool, since_date: date | None = None) -> int:
+        """Process a single law. Returns number of commits.
+
+        Args:
+            law: The law entry to process
+            languages: Languages to fetch
+            latest_only: If True, only process the most recent version
+            since_date: If set, only process versions with dates >= this date
+                        (incremental mode — avoids re-checking old versions)
+        """
         versions = self.fetcher.fetch_versions(law)
 
         if not versions:
@@ -161,6 +192,15 @@ class Pipeline:
 
         if latest_only:
             versions = [versions[-1]]
+
+        # Incremental mode: filter to only versions newer than since_date
+        if since_date is not None:
+            total_before = len(versions)
+            versions = [v for v in versions if v.date_applicable >= since_date]
+            skipped = total_before - len(versions)
+            if skipped:
+                logger.debug("Incremental: skipped %d old versions for SR %s (before %s)",
+                             skipped, law.sr_number, since_date.isoformat())
 
         commits = 0
         for version in versions:
