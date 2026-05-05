@@ -45,7 +45,7 @@ if [ "$NEW_COMMITS" -gt 0 ]; then
     if [ -f "$GITHUB_TOKEN_FILE" ]; then
         export $(grep GITHUB_TOKEN "$GITHUB_TOKEN_FILE" | xargs)
     fi
-    REMOTE_URL="https://${GITHUB_TOKEN}@github.com/benjamin-arfa/swiss-law.git"
+    REMOTE_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/benjamin-arfa/swiss-law.git"
     git push "$REMOTE_URL" HEAD:main 2>&1 | grep -v "$GITHUB_TOKEN" || true
     echo "Push complete."
 else
