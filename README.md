@@ -55,12 +55,33 @@ source_url: https://fedlex.data.admin.ch/eli/cc/1999/404
 ---
 ```
 
+## Commit chronology
+
+Each commit uses `--date` to set the author/committer date to the law's
+consolidation date, so `git log` shows the legislative timeline.
+
+**Note on historical commits (pre-2026-05-05):** The initial bulk import
+processed laws sequentially by SR number. Within each law, versions are in
+strict chronological order, but commits for *different* laws may interleave
+in time. For example, all versions of SR 172.221.104 (1971-1997) appear as a
+block, followed by all versions of the next law.
+
+**Going forward:** The pipeline now sorts all revisions globally by date
+before committing (`--chronological`, enabled by default), ensuring new runs
+produce a strictly chronological git history.
+
+To query the history for a specific law (recommended):
+```bash
+git log --follow ch/de/220.md   # Always chronological per file
+```
+
 ## Running the pipeline
 
 ```bash
 pip install -e .
-legalize-ch run          # Full pipeline (fetches all laws)
-legalize-ch run --sr 101 # Single law
+legalize-ch bootstrap          # Full pipeline (fetches all laws, sorted by date)
+legalize-ch update             # Incremental update (since last run)
+legalize-ch bootstrap --sr 101 # Single law
 ```
 
 ## Data source

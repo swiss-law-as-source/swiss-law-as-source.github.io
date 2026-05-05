@@ -29,11 +29,19 @@ def main(verbose: bool):
 @click.option("--sr", type=str, default=None, help="SR number prefix filter")
 @click.option("--rate-limit", type=float, default=1.5, help="Seconds between requests")
 @click.option("--latest-only", is_flag=True, help="Only fetch the latest version per law")
+@click.option("--no-chronological", is_flag=True,
+              help="Disable chronological sorting (commits grouped by law instead)")
 def bootstrap(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_limit: float,
-              latest_only: bool):
-    """Full pipeline: fetch all laws and commit to git."""
+              latest_only: bool, no_chronological: bool):
+    """Full pipeline: fetch all laws and commit to git.
+
+    By default, all revisions are sorted by date before committing so that
+    the git history reflects the actual legal timeline (chronological order).
+    Use --no-chronological to revert to the old behavior (grouped by law).
+    """
     pipeline = Pipeline(repo_path=repo, rate_limit=rate_limit)
-    total = pipeline.run(limit=limit, languages=list(lang), sr_filter=sr, latest_only=latest_only)
+    total = pipeline.run(limit=limit, languages=list(lang), sr_filter=sr,
+                         latest_only=latest_only, chronological=not no_chronological)
     click.echo(f"Done. {total} commits created.")
 
 
@@ -45,8 +53,10 @@ def bootstrap(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_li
 @click.option("--rate-limit", type=float, default=1.5, help="Seconds between requests")
 @click.option("--since", type=click.DateTime(formats=["%Y-%m-%d"]), default=None,
               help="Override last_run: only fetch versions since this date (YYYY-MM-DD)")
+@click.option("--no-chronological", is_flag=True,
+              help="Disable chronological sorting of commits")
 def update(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_limit: float,
-           since):
+           since, no_chronological: bool):
     """Incremental update: only fetch laws with new consolidation versions.
 
     Detects new versions by comparing Fedlex consolidation dates against
@@ -54,12 +64,14 @@ def update(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_limit
     fetched, and already-processed versions are skipped automatically.
 
     By default uses last_run from pipeline state. Use --since to override.
+    Commits are sorted chronologically by default.
     """
     from datetime import date as date_type
     pipeline = Pipeline(repo_path=repo, rate_limit=rate_limit)
     since_date = since.date() if since else None
     total = pipeline.update(limit=limit, languages=list(lang), sr_filter=sr,
-                            since_override=since_date)
+                            since_override=since_date,
+                            chronological=not no_chronological)
     click.echo(f"Done. {total} commits created.")
 
 

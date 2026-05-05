@@ -5,6 +5,7 @@ import json
 import logging
 from datetime import date
 from pathlib import Path
+from typing import NamedTuple
 
 from .committer import GitCommitter
 from .fetcher import FedlexFetcher
@@ -14,6 +15,12 @@ from .transformer import law_to_markdown
 logger = logging.getLogger(__name__)
 
 STATE_FILE = "data/pipeline_state.json"
+
+
+class _PendingRevision(NamedTuple):
+    """A revision ready to be committed, used for chronological sorting."""
+    revision: LawRevision
+    law: LawEntry
 
 
 class Pipeline:
@@ -68,7 +75,8 @@ class Pipeline:
         }.get(lang, "")
 
     def run(self, limit: int | None = None, languages: list[str] | None = None,
-            sr_filter: str | None = None, latest_only: bool = False):
+            sr_filter: str | None = None, latest_only: bool = False,
+            chronological: bool = True):
         """Run the full pipeline.
 
         Args:
@@ -76,6 +84,8 @@ class Pipeline:
             languages: Languages to fetch (default: all three)
             sr_filter: Only process laws matching this SR prefix
             latest_only: If True, only fetch the most recent version per law
+            chronological: If True (default), sort all revisions by date before
+                          committing so git history is in chronological order
         """
         languages = languages or ["de", "fr", "it"]
 
@@ -88,30 +98,77 @@ class Pipeline:
         if sr_filter:
             catalog = [e for e in catalog if e.sr_number.startswith(sr_filter)]
 
-        logger.info("Processing %d laws in languages %s (latest_only=%s)",
-                     len(catalog), languages, latest_only)
-        total_commits = 0
+        logger.info("Processing %d laws in languages %s (latest_only=%s, chronological=%s)",
+                     len(catalog), languages, latest_only, chronological)
 
-        for i, law in enumerate(catalog):
-            logger.info("[%d/%d] SR %s: %s", i + 1, len(catalog), law.sr_number,
-                        law.title_de or law.title_fr or law.sr_number)
-
-            try:
-                commits = self._process_law(law, languages, latest_only)
-                total_commits += commits
-            except Exception as e:
-                logger.error("Error processing SR %s: %s", law.sr_number, e)
-
-            if (i + 1) % 10 == 0:
-                self._save_state()
+        if chronological:
+            total_commits = self._run_chronological(catalog, languages, latest_only)
+        else:
+            total_commits = self._run_sequential(catalog, languages, latest_only)
 
         self.state["last_run"] = date.today().isoformat()
         self._save_state()
         logger.info("Pipeline complete. Total commits: %d", total_commits)
         return total_commits
 
+    def _run_sequential(self, catalog: list[LawEntry], languages: list[str],
+                        latest_only: bool) -> int:
+        """Process laws sequentially (original behavior, no date sorting)."""
+        total_commits = 0
+        for i, law in enumerate(catalog):
+            logger.info("[%d/%d] SR %s: %s", i + 1, len(catalog), law.sr_number,
+                        law.title_de or law.title_fr or law.sr_number)
+            try:
+                commits = self._process_law(law, languages, latest_only)
+                total_commits += commits
+            except Exception as e:
+                logger.error("Error processing SR %s: %s", law.sr_number, e)
+            if (i + 1) % 10 == 0:
+                self._save_state()
+        return total_commits
+
+    def _run_chronological(self, catalog: list[LawEntry], languages: list[str],
+                           latest_only: bool) -> int:
+        """Collect all revisions, sort by date, then commit in chronological order.
+
+        This ensures git history reflects actual legal timeline rather than
+        processing order.
+        """
+        pending: list[_PendingRevision] = []
+
+        # Phase 1: Fetch and transform all laws (collect revisions)
+        for i, law in enumerate(catalog):
+            logger.info("[%d/%d] Fetching SR %s: %s", i + 1, len(catalog),
+                        law.sr_number, law.title_de or law.title_fr or law.sr_number)
+            try:
+                revisions = self._collect_revisions(law, languages, latest_only)
+                pending.extend(revisions)
+            except Exception as e:
+                logger.error("Error fetching SR %s: %s", law.sr_number, e)
+
+            if (i + 1) % 10 == 0:
+                self._save_state()
+
+        # Phase 2: Sort by date (stable sort preserves SR order for same-date entries)
+        pending.sort(key=lambda p: p.revision.date)
+        logger.info("Collected %d revisions, committing in chronological order...", len(pending))
+
+        # Phase 3: Commit in chronological order
+        total_commits = 0
+        for i, item in enumerate(pending):
+            if self.committer.commit_revision(item.revision, item.law):
+                total_commits += 1
+                self._mark_processed(item.revision.sr_number, item.revision.date)
+
+            if (i + 1) % 100 == 0:
+                logger.info("Committed %d/%d revisions...", total_commits, len(pending))
+                self._save_state()
+
+        return total_commits
+
     def update(self, limit: int | None = None, languages: list[str] | None = None,
-               sr_filter: str | None = None, since_override: date | None = None):
+               sr_filter: str | None = None, since_override: date | None = None,
+               chronological: bool = True):
         """Incremental update: only fetch laws modified since last_run.
 
         Uses date comparison to detect new consolidation versions — only
@@ -124,6 +181,7 @@ class Pipeline:
             languages: Languages to fetch (default: all three)
             sr_filter: Only process laws matching this SR prefix
             since_override: Explicit cutoff date (overrides last_run)
+            chronological: If True (default), sort revisions by date before committing
         """
         languages = languages or ["de", "fr", "it"]
 
@@ -144,30 +202,109 @@ class Pipeline:
             catalog = [e for e in catalog if e.sr_number.startswith(sr_filter)]
 
         logger.info("Found %d laws with new versions since %s", len(catalog), since.isoformat())
-        total_commits = 0
-        skipped_laws = 0
 
-        for i, law in enumerate(catalog):
-            logger.info("[%d/%d] SR %s: %s", i + 1, len(catalog), law.sr_number,
-                        law.title_de or law.title_fr or law.sr_number)
+        if chronological:
+            # Collect all revisions, sort by date, then commit
+            pending: list[_PendingRevision] = []
+            for i, law in enumerate(catalog):
+                logger.info("[%d/%d] Fetching SR %s: %s", i + 1, len(catalog),
+                            law.sr_number, law.title_de or law.title_fr or law.sr_number)
+                try:
+                    revisions = self._collect_revisions(law, languages,
+                                                       latest_only=False,
+                                                       since_date=since)
+                    pending.extend(revisions)
+                except Exception as e:
+                    logger.error("Error fetching SR %s: %s", law.sr_number, e)
 
-            try:
-                commits = self._process_law(law, languages, latest_only=False,
-                                            since_date=since)
-                total_commits += commits
-                if commits == 0:
-                    skipped_laws += 1
-            except Exception as e:
-                logger.error("Error processing SR %s: %s", law.sr_number, e)
+            pending.sort(key=lambda p: p.revision.date)
+            logger.info("Collected %d new revisions, committing chronologically...", len(pending))
 
-            if (i + 1) % 10 == 0:
-                self._save_state()
+            total_commits = 0
+            for item in pending:
+                if self.committer.commit_revision(item.revision, item.law):
+                    total_commits += 1
+                    self._mark_processed(item.revision.sr_number, item.revision.date)
+        else:
+            total_commits = 0
+            skipped_laws = 0
+            for i, law in enumerate(catalog):
+                logger.info("[%d/%d] SR %s: %s", i + 1, len(catalog), law.sr_number,
+                            law.title_de or law.title_fr or law.sr_number)
+                try:
+                    commits = self._process_law(law, languages, latest_only=False,
+                                                since_date=since)
+                    total_commits += commits
+                    if commits == 0:
+                        skipped_laws += 1
+                except Exception as e:
+                    logger.error("Error processing SR %s: %s", law.sr_number, e)
+                if (i + 1) % 10 == 0:
+                    self._save_state()
 
         self.state["last_run"] = date.today().isoformat()
         self._save_state()
-        logger.info("Update complete. %d laws checked, %d skipped (already up-to-date), "
-                    "%d commits created.", len(catalog), skipped_laws, total_commits)
+        logger.info("Update complete. %d laws checked, %d commits created.",
+                    len(catalog), total_commits)
         return total_commits
+
+    def _collect_revisions(self, law: LawEntry, languages: list[str],
+                           latest_only: bool,
+                           since_date: date | None = None) -> list[_PendingRevision]:
+        """Fetch and transform a law's versions without committing.
+
+        Returns a list of _PendingRevision items ready for chronological sorting.
+        """
+        versions = self.fetcher.fetch_versions(law)
+
+        if not versions:
+            revision = self._fetch_current(law, languages)
+            if revision and revision.texts:
+                if not self._is_processed(law.sr_number, revision.date):
+                    return [_PendingRevision(revision=revision, law=law)]
+            return []
+
+        if latest_only:
+            versions = [versions[-1]]
+
+        if since_date is not None:
+            versions = [v for v in versions if v.date_applicable >= since_date]
+
+        pending: list[_PendingRevision] = []
+        for version in versions:
+            if self._is_processed(law.sr_number, version.date_applicable):
+                continue
+
+            texts = {}
+            for lang in languages:
+                text = self.fetcher.fetch_text(version, lang)
+                if text and (text.xml_content or text.html_content or text.title):
+                    abbr = self._get_abbreviation(law, lang)
+                    md = law_to_markdown(
+                        sr_number=law.sr_number,
+                        title=text.title or self._get_title(law, lang),
+                        xml_content=text.xml_content,
+                        html_content=text.html_content,
+                        language=lang,
+                        version_date=version.date_applicable,
+                        abbreviation=abbr,
+                    )
+                    texts[lang] = md
+
+            if not texts:
+                continue
+
+            revision = LawRevision(
+                sr_number=law.sr_number,
+                date=version.date_applicable,
+                title_de=law.title_de,
+                title_fr=law.title_fr,
+                title_it=law.title_it,
+                texts=texts,
+            )
+            pending.append(_PendingRevision(revision=revision, law=law))
+
+        return pending
 
     def _process_law(self, law: LawEntry, languages: list[str],
                      latest_only: bool, since_date: date | None = None) -> int:
