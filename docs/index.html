@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiss Federal Law — Systematische Rechtssammlung</title>
+    <style>
+        :root {
+            --red: #D52B1E;
+            --dark: #1a1a1a;
+            --gray: #f5f5f5;
+            --border: #e0e0e0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background: #fff;
+        }
+        header {
+            background: var(--red);
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
+        header p { opacity: 0.9; font-size: 0.95rem; }
+        .container { max-width: 960px; margin: 0 auto; padding: 1.5rem 1rem; }
+        .search-box {
+            position: sticky;
+            top: 0;
+            background: #fff;
+            padding: 1rem 0;
+            z-index: 10;
+            border-bottom: 1px solid var(--border);
+        }
+        .search-box input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 2px solid var(--border);
+            border-radius: 6px;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .search-box input:focus { border-color: var(--red); }
+        .stats {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        .category-header {
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px solid var(--red);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .law-list { list-style: none; }
+        .law-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            gap: 1rem;
+            align-items: baseline;
+        }
+        .law-item:last-child { border-bottom: none; }
+        .sr-number {
+            font-family: "SF Mono", "Fira Code", monospace;
+            font-size: 0.85rem;
+            color: var(--red);
+            white-space: nowrap;
+            min-width: 7rem;
+            font-weight: 600;
+        }
+        .sr-number a { color: inherit; text-decoration: none; }
+        .sr-number a:hover { text-decoration: underline; }
+        .law-title { font-size: 0.9rem; }
+        .hidden { display: none; }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid var(--border);
+            margin-top: 3rem;
+        }
+        footer a { color: var(--red); }
+        @media (max-width: 600px) {
+            .law-item { flex-direction: column; gap: 0.1rem; }
+            .sr-number { min-width: auto; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Swiss Federal Law</h1>
+        <p>Systematische Rechtssammlung des Bundesrechts — version-controlled on GitHub</p>
+    </header>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search by SR number or title (e.g. &quot;obligationenrecht&quot; or &quot;220&quot;)..." autocomplete="off">
+            <div class="stats" id="stats">Loading index...</div>
+        </div>
+        <div id="results"></div>
+    </div>
+    <footer>
+        Data from <a href="https://www.fedlex.admin.ch" target="_blank">Fedlex</a> |
+        Source on <a href="https://github.com/benjamin-arfa/swiss-law" target="_blank">GitHub</a> |
+        Updated automatically
+    </footer>
+    <script>
+        const REPO_BASE = "https://github.com/benjamin-arfa/swiss-law/blob/main/";
+        let allLaws = [];
+
+        async function init() {
+            const res = await fetch("laws.json");
+            allLaws = await res.json();
+            document.getElementById("stats").textContent = `${allLaws.length.toLocaleString()} laws indexed`;
+            renderResults(allLaws.slice(0, 200), true);
+        }
+
+        function renderResults(laws, isInitial) {
+            const container = document.getElementById("results");
+            if (laws.length === 0) {
+                container.innerHTML = '<p style="margin-top:2rem;color:#666;">No results found.</p>';
+                return;
+            }
+
+            // Group by category
+            const groups = {};
+            for (const law of laws) {
+                if (!groups[law.cat]) groups[law.cat] = [];
+                groups[law.cat].push(law);
+            }
+
+            let html = "";
+            for (const [cat, items] of Object.entries(groups)) {
+                html += `<div class="category-header">${cat}</div><ul class="law-list">`;
+                for (const item of items) {
+                    const url = REPO_BASE + item.path;
+                    html += `<li class="law-item">
+                        <span class="sr-number"><a href="${url}" target="_blank">${item.sr}</a></span>
+                        <span class="law-title">${item.title}</span>
+                    </li>`;
+                }
+                html += "</ul>";
+            }
+
+            if (isInitial && laws.length < allLaws.length) {
+                html += `<p style="margin-top:1rem;color:#666;font-size:0.85rem;">Showing first ${laws.length} of ${allLaws.length.toLocaleString()} laws. Type to search all.</p>`;
+            }
+
+            container.innerHTML = html;
+        }
+
+        function search(query) {
+            if (!query.trim()) {
+                renderResults(allLaws.slice(0, 200), true);
+                document.getElementById("stats").textContent = `${allLaws.length.toLocaleString()} laws indexed`;
+                return;
+            }
+
+            const terms = query.toLowerCase().split(/\s+/);
+            const filtered = allLaws.filter(law => {
+                const text = `${law.sr} ${law.title} ${law.cat}`.toLowerCase();
+                return terms.every(t => text.includes(t));
+            });
+
+            renderResults(filtered, false);
+            document.getElementById("stats").textContent = `${filtered.length.toLocaleString()} result${filtered.length !== 1 ? "s" : ""} found`;
+        }
+
+        let debounceTimer;
+        document.getElementById("search").addEventListener("input", (e) => {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(() => search(e.target.value), 150);
+        });
+
+        init();
+    </script>
+</body>
+</html>
