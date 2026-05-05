@@ -192,5 +192,26 @@ def cantonal_list(canton: str | None):
     click.echo(f"\nTotal: {len(LEXWORK_CANTONS)} LexWork + {len(LEXFIND_ONLY_CANTONS)} LexFind = 26 cantons")
 
 
+@main.command("notify-test")
+@click.option("--commits", type=int, default=0, help="Simulated commit count")
+@click.option("--errors", type=int, default=0, help="Simulated error count")
+def notify_test(commits: int, errors: int):
+    """Send a test Telegram notification."""
+    from .notify import PipelineResult, send_telegram
+
+    result = PipelineResult(
+        new_commits=commits,
+        laws_checked=42,
+        errors=[f"Test error #{i+1}" for i in range(errors)],
+        mode="test",
+    )
+    ok = send_telegram(result)
+    if ok:
+        click.echo("Telegram notification sent.")
+    else:
+        click.echo("Failed to send notification — check logs.", err=True)
+        raise SystemExit(1)
+
+
 if __name__ == "__main__":
     main()

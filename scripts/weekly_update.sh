@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # weekly_update.sh — Run the legalize-ch incremental update pipeline weekly.
 # Intended to be invoked via cron. Logs output and pushes new commits to GitHub.
+# Sends a Telegram notification on completion (commit count, errors).
 #
 # Usage: ./scripts/weekly_update.sh
 # Cron:  43 3 * * 1  /home/ubuntu/swiss-law/scripts/weekly_update.sh
@@ -12,6 +13,9 @@ VENV="${REPO_DIR}/.venv"
 LOG_DIR="${REPO_DIR}/data/logs"
 LOG_FILE="${LOG_DIR}/weekly_update_$(date +%Y%m%d_%H%M%S).log"
 GITHUB_TOKEN_FILE="/home/ubuntu/.env"
+START_TIME=$(date +%s)
+ERRORS=""
+PUSH_OK="true"
 
 mkdir -p "$LOG_DIR"
 
@@ -63,22 +67,60 @@ push_to_github() {
     return 1
 }
 
+# ─── Helper: send Telegram notification ───
+send_notification() {
+    local new_commits="$1"
+    local unpushed="$2"
+    local push_ok="$3"
+    local errors="$4"
+
+    local end_time
+    end_time=$(date +%s)
+    local duration=$((end_time - START_TIME))
+
+    echo ""
+    echo "[5/5] Sending Telegram notification..."
+
+    # Build a Python one-liner that uses the notify module
+    "${VENV}/bin/python" -c "
+import sys
+sys.path.insert(0, '${REPO_DIR}/src')
+from legalize_ch.notify import PipelineResult, send_telegram
+
+errors = [e for e in '''${errors}'''.split('|||') if e.strip()]
+result = PipelineResult(
+    new_commits=${new_commits},
+    laws_checked=0,
+    errors=errors,
+    push_ok=$([[ "$push_ok" == "true" ]] && echo "True" || echo "False"),
+    unpushed=${unpushed},
+    duration_seconds=${duration},
+    mode='update',
+)
+ok = send_telegram(result)
+sys.exit(0 if ok else 1)
+" && echo "  Notification sent." || echo "  WARNING: Notification failed."
+}
+
 # Count commits before
 COMMITS_BEFORE=$(git rev-list --count HEAD)
 
 # Run the incremental update
-echo "[1/4] Running incremental update..."
-"${VENV}/bin/legalize-ch" update --repo "$REPO_DIR" --rate-limit 1.5
+echo "[1/5] Running incremental update..."
+if ! "${VENV}/bin/legalize-ch" update --repo "$REPO_DIR" --rate-limit 1.5 2>&1; then
+    ERRORS="Pipeline update command failed"
+    echo "WARNING: Pipeline update encountered errors."
+fi
 
 # Count commits after
 COMMITS_AFTER=$(git rev-list --count HEAD)
 NEW_COMMITS=$((COMMITS_AFTER - COMMITS_BEFORE))
 
 echo ""
-echo "[2/4] Update complete. New commits: ${NEW_COMMITS}"
+echo "[2/5] Update complete. New commits: ${NEW_COMMITS}"
 
 # Configure remote with latest token
-echo "[3/4] Configuring GitHub remote..."
+echo "[3/5] Configuring GitHub remote..."
 configure_remote
 
 # Push to GitHub — push regardless of new pipeline commits, to catch any
@@ -87,15 +129,23 @@ UNPUSHED=$(git rev-list origin/main..HEAD --count 2>/dev/null || echo "unknown")
 echo "  Unpushed commits: ${UNPUSHED}"
 
 if [ "$UNPUSHED" != "0" ] && [ "$UNPUSHED" != "unknown" ]; then
-    echo "[4/4] Pushing ${UNPUSHED} commits to GitHub..."
-    push_to_github
-    PUSH_EXIT=$?
-    if [ "$PUSH_EXIT" -ne 0 ]; then
+    echo "[4/5] Pushing ${UNPUSHED} commits to GitHub..."
+    if ! push_to_github; then
+        PUSH_OK="false"
+        if [ -n "$ERRORS" ]; then
+            ERRORS="${ERRORS}|||Push failed after retries"
+        else
+            ERRORS="Push failed after retries"
+        fi
         echo "WARNING: Push failed — commits will be pushed on next run."
     fi
 else
-    echo "[4/4] Remote is up to date — skipping push."
+    echo "[4/5] Remote is up to date — skipping push."
 fi
+
+# Send Telegram notification
+FINAL_UNPUSHED=$(git rev-list origin/main..HEAD --count 2>/dev/null || echo "0")
+send_notification "$NEW_COMMITS" "$FINAL_UNPUSHED" "$PUSH_OK" "$ERRORS"
 
 echo ""
 echo "=== Summary ==="
