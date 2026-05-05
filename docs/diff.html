@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Diff Viewer — Swiss Federal Law</title>
+    <style>
+        :root {
+            --red: #D52B1E;
+            --dark: #1a1a1a;
+            --gray: #f5f5f5;
+            --border: #e0e0e0;
+            --green-bg: #e6ffec;
+            --green-border: #a3d9a5;
+            --red-bg: #ffebe9;
+            --red-border: #f5a3a0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background: #fff;
+        }
+        header {
+            background: var(--red);
+            color: #fff;
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+        header h1 { font-size: 1.5rem; margin-bottom: 0.2rem; }
+        header p { opacity: 0.9; font-size: 0.9rem; }
+        header a { color: #fff; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem; }
+        .search-section {
+            display: flex;
+            gap: 0.75rem;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        .search-section input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.6rem 1rem;
+            font-size: 1rem;
+            border: 2px solid var(--border);
+            border-radius: 6px;
+            outline: none;
+        }
+        .search-section input:focus { border-color: var(--red); }
+        .search-section button {
+            padding: 0.6rem 1.5rem;
+            font-size: 1rem;
+            background: var(--red);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .search-section button:hover { background: #b8231a; }
+        .lang-select {
+            padding: 0.6rem;
+            font-size: 0.9rem;
+            border: 2px solid var(--border);
+            border-radius: 6px;
+        }
+        .version-panel {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        @media (max-width: 700px) {
+            .version-panel { grid-template-columns: 1fr; }
+        }
+        .version-box {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem;
+        }
+        .version-box h3 {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+        .version-box select {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 0.9rem;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+        }
+        .compare-btn {
+            display: block;
+            margin: 0 auto 1.5rem;
+            padding: 0.7rem 2rem;
+            font-size: 1rem;
+            font-weight: 600;
+            background: var(--red);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .compare-btn:hover { background: #b8231a; }
+        .compare-btn:disabled { background: #ccc; cursor: not-allowed; }
+        .diff-container {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            overflow: auto;
+            font-family: "SF Mono", "Fira Code", "Consolas", monospace;
+            font-size: 0.82rem;
+            line-height: 1.5;
+        }
+        .diff-header {
+            background: var(--gray);
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid var(--border);
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+        .diff-line {
+            padding: 0 1rem;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+        .diff-line.added {
+            background: var(--green-bg);
+            border-left: 3px solid var(--green-border);
+        }
+        .diff-line.removed {
+            background: var(--red-bg);
+            border-left: 3px solid var(--red-border);
+        }
+        .diff-line.context {
+            color: #555;
+        }
+        .diff-line.hunk {
+            background: #f0f0ff;
+            color: #6060c0;
+            font-weight: 600;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            margin-top: 0.5rem;
+        }
+        .info-box {
+            background: var(--gray);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.5rem;
+            text-align: center;
+            color: #555;
+        }
+        .loading { color: var(--red); font-weight: 600; }
+        .error { color: #c00; background: #fff0f0; border-color: #fcc; }
+        .version-count {
+            font-size: 0.8rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+        .sr-info {
+            background: var(--gray);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            display: none;
+        }
+        .sr-info h2 { font-size: 1.1rem; color: var(--red); }
+        .sr-info p { font-size: 0.85rem; color: #555; margin-top: 0.3rem; }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            font-size: 0.8rem;
+            color: #999;
+            border-top: 1px solid var(--border);
+            margin-top: 3rem;
+        }
+        footer a { color: var(--red); }
+        .stats-summary {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 0.5rem;
+        }
+        .stats-summary span {
+            font-size: 0.8rem;
+            color: #666;
+        }
+        .stats-summary strong { color: var(--red); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Law Diff Viewer</h1>
+        <p>Compare versions of Swiss federal laws — see what changed between consolidation dates</p>
+        <p style="margin-top:0.3rem;font-size:0.8rem;"><a href="index.html">Back to Search</a></p>
+    </header>
+    <div class="container">
+        <div class="search-section">
+            <input type="text" id="sr-input" placeholder="Enter SR number (e.g. 210, 220, 101)..." autocomplete="off">
+            <select class="lang-select" id="lang-select">
+                <option value="de">Deutsch</option>
+                <option value="fr">Francais</option>
+                <option value="it">Italiano</option>
+            </select>
+            <button onclick="loadVersions()">Load Versions</button>
+        </div>
+
+        <div class="sr-info" id="sr-info">
+            <h2 id="sr-title"></h2>
+            <p id="sr-path"></p>
+        </div>
+
+        <div id="version-section" style="display:none;">
+            <div class="version-panel">
+                <div class="version-box">
+                    <h3>Older version (left)</h3>
+                    <select id="version-old"></select>
+                </div>
+                <div class="version-box">
+                    <h3>Newer version (right)</h3>
+                    <select id="version-new"></select>
+                </div>
+            </div>
+            <div class="version-count" id="version-count"></div>
+            <button class="compare-btn" id="compare-btn" onclick="compareDiff()">Show Diff</button>
+        </div>
+
+        <div id="output">
+            <div class="info-box">
+                <p>Enter an SR number above to load all historical versions of a law.</p>
+                <p style="margin-top:0.5rem;font-size:0.85rem;">
+                    The viewer uses the GitHub API to fetch file history and display differences.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Data from <a href="https://www.fedlex.admin.ch" target="_blank">Fedlex</a> |
+        Source on <a href="https://github.com/benjamin-arfa/swiss-law" target="_blank">GitHub</a> |
+        <a href="index.html">Law Index</a>
+    </footer>
+
+    <script>
+    const OWNER = "benjamin-arfa";
+    const REPO = "swiss-law";
+    const API_BASE = `https://api.github.com/repos/${OWNER}/${REPO}`;
+
+    let commits = [];
+    let currentPath = "";
+
+    // Parse SR number to file path
+    function srToPath(sr, lang) {
+        // Normalize: "SR 210" -> "210", "sr210" -> "210"
+        sr = sr.replace(/^sr\s*/i, "").trim();
+        return `ch/${lang}/${sr.replace(/\./g, "/")}.md`;
+    }
+
+    // Extract date from commit message (format: YYYY-MM-DD in parentheses)
+    function extractDate(message) {
+        const match = message.match(/\((\d{4}-\d{2}-\d{2})\)/);
+        return match ? match[1] : null;
+    }
+
+    async function loadVersions() {
+        const sr = document.getElementById("sr-input").value.trim();
+        const lang = document.getElementById("lang-select").value;
+
+        if (!sr) {
+            showError("Please enter an SR number.");
+            return;
+        }
+
+        currentPath = srToPath(sr, lang);
+
+        document.getElementById("output").innerHTML = '<div class="info-box loading">Loading version history...</div>';
+        document.getElementById("version-section").style.display = "none";
+
+        try {
+            // Fetch commits for this file
+            let allCommits = [];
+            let page = 1;
+            let hasMore = true;
+
+            while (hasMore) {
+                const url = `${API_BASE}/commits?path=${encodeURIComponent(currentPath)}&per_page=100&page=${page}`;
+                const res = await fetch(url);
+
+                if (res.status === 404) {
+                    showError(`File not found: ${currentPath}. Check the SR number and language.`);
+                    return;
+                }
+                if (!res.ok) {
+                    const errData = await res.json().catch(() => ({}));
+                    showError(`GitHub API error: ${res.status} — ${errData.message || "Unknown error"}. Note: unauthenticated API is limited to 60 requests/hour.`);
+                    return;
+                }
+
+                const data = await res.json();
+                if (data.length === 0) break;
+                allCommits = allCommits.concat(data);
+                hasMore = data.length === 100;
+                page++;
+            }
+
+            if (allCommits.length === 0) {
+                showError(`No commits found for ${currentPath}. The file may not exist.`);
+                return;
+            }
+
+            commits = allCommits;
+
+            // Show SR info
+            const infoDiv = document.getElementById("sr-info");
+            infoDiv.style.display = "block";
+            document.getElementById("sr-title").textContent = `SR ${sr}`;
+            document.getElementById("sr-path").textContent = `File: ${currentPath} — ${commits.length} version${commits.length > 1 ? "s" : ""} found`;
+
+            // Populate dropdowns
+            const oldSelect = document.getElementById("version-old");
+            const newSelect = document.getElementById("version-new");
+            oldSelect.innerHTML = "";
+            newSelect.innerHTML = "";
+
+            for (let i = 0; i < commits.length; i++) {
+                const c = commits[i];
+                const date = extractDate(c.commit.message) || c.commit.author.date.slice(0, 10);
+                const label = `${date} — ${c.sha.slice(0, 7)}`;
+
+                const optOld = new Option(label, c.sha);
+                const optNew = new Option(label, c.sha);
+                oldSelect.appendChild(optOld);
+                newSelect.appendChild(optNew);
+            }
+
+            // Default: compare most recent two
+            if (commits.length >= 2) {
+                newSelect.selectedIndex = 0;
+                oldSelect.selectedIndex = 1;
+            }
+
+            document.getElementById("version-section").style.display = "block";
+            document.getElementById("version-count").textContent = `${commits.length} versions available (oldest: ${extractDate(commits[commits.length - 1].commit.message) || "unknown"}, newest: ${extractDate(commits[0].commit.message) || "unknown"})`;
+            document.getElementById("output").innerHTML = '<div class="info-box">Select two versions and click "Show Diff" to compare.</div>';
+
+        } catch (err) {
+            showError(`Network error: ${err.message}`);
+        }
+    }
+
+    async function fetchFileAtCommit(sha) {
+        const url = `${API_BASE}/contents/${encodeURIComponent(currentPath)}?ref=${sha}`;
+        const res = await fetch(url);
+        if (!res.ok) {
+            throw new Error(`Failed to fetch file at ${sha.slice(0, 7)}: ${res.status}`);
+        }
+        const data = await res.json();
+        // Content is base64-encoded
+        return decodeURIComponent(escape(atob(data.content.replace(/\n/g, ""))));
+    }
+
+    async function compareDiff() {
+        const oldSha = document.getElementById("version-old").value;
+        const newSha = document.getElementById("version-new").value;
+
+        if (oldSha === newSha) {
+            showError("Please select two different versions to compare.");
+            return;
+        }
+
+        document.getElementById("compare-btn").disabled = true;
+        document.getElementById("compare-btn").textContent = "Loading...";
+        document.getElementById("output").innerHTML = '<div class="info-box loading">Fetching file contents...</div>';
+
+        try {
+            const [oldContent, newContent] = await Promise.all([
+                fetchFileAtCommit(oldSha),
+                fetchFileAtCommit(newSha)
+            ]);
+
+            const oldCommit = commits.find(c => c.sha === oldSha);
+            const newCommit = commits.find(c => c.sha === newSha);
+            const oldDate = extractDate(oldCommit.commit.message) || oldCommit.commit.author.date.slice(0, 10);
+            const newDate = extractDate(newCommit.commit.message) || newCommit.commit.author.date.slice(0, 10);
+
+            const diff = computeDiff(oldContent, newContent);
+            renderDiff(diff, oldDate, newDate);
+
+        } catch (err) {
+            showError(`Error comparing: ${err.message}`);
+        } finally {
+            document.getElementById("compare-btn").disabled = false;
+            document.getElementById("compare-btn").textContent = "Show Diff";
+        }
+    }
+
+    // Simple unified diff implementation (Myers-like LCS)
+    function computeDiff(oldText, newText) {
+        const oldLines = oldText.split("\n");
+        const newLines = newText.split("\n");
+
+        // LCS-based diff
+        const m = oldLines.length;
+        const n = newLines.length;
+
+        // For very large files, use a simplified approach
+        if (m + n > 10000) {
+            return computeSimpleDiff(oldLines, newLines);
+        }
+
+        // Build LCS table
+        const dp = Array(m + 1).fill(null).map(() => Array(n + 1).fill(0));
+        for (let i = 1; i <= m; i++) {
+            for (let j = 1; j <= n; j++) {
+                if (oldLines[i - 1] === newLines[j - 1]) {
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                } else {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                }
+            }
+        }
+
+        // Backtrack to get diff
+        const result = [];
+        let i = m, j = n;
+        while (i > 0 || j > 0) {
+            if (i > 0 && j > 0 && oldLines[i - 1] === newLines[j - 1]) {
+                result.unshift({ type: "context", text: oldLines[i - 1] });
+                i--; j--;
+            } else if (j > 0 && (i === 0 || dp[i][j - 1] >= dp[i - 1][j])) {
+                result.unshift({ type: "added", text: newLines[j - 1] });
+                j--;
+            } else {
+                result.unshift({ type: "removed", text: oldLines[i - 1] });
+                i--;
+            }
+        }
+
+        return result;
+    }
+
+    // Simplified diff for very large files
+    function computeSimpleDiff(oldLines, newLines) {
+        const result = [];
+        const oldSet = new Set(oldLines.map((l, i) => `${i}:${l}`));
+        const newSet = new Set(newLines.map((l, i) => `${i}:${l}`));
+
+        let oi = 0, ni = 0;
+        while (oi < oldLines.length || ni < newLines.length) {
+            if (oi < oldLines.length && ni < newLines.length && oldLines[oi] === newLines[ni]) {
+                result.push({ type: "context", text: oldLines[oi] });
+                oi++; ni++;
+            } else if (oi < oldLines.length && !newLines.includes(oldLines[oi])) {
+                result.push({ type: "removed", text: oldLines[oi] });
+                oi++;
+            } else if (ni < newLines.length && !oldLines.includes(newLines[ni])) {
+                result.push({ type: "added", text: newLines[ni] });
+                ni++;
+            } else if (oi < oldLines.length) {
+                result.push({ type: "removed", text: oldLines[oi] });
+                oi++;
+            } else {
+                result.push({ type: "added", text: newLines[ni] });
+                ni++;
+            }
+        }
+        return result;
+    }
+
+    function renderDiff(diff, oldDate, newDate) {
+        // Collapse context lines (show 3 around changes)
+        const contextSize = 3;
+        const hasChange = diff.map(d => d.type !== "context");
+        const showLine = new Array(diff.length).fill(false);
+
+        for (let i = 0; i < diff.length; i++) {
+            if (hasChange[i]) {
+                for (let j = Math.max(0, i - contextSize); j <= Math.min(diff.length - 1, i + contextSize); j++) {
+                    showLine[j] = true;
+                }
+            }
+        }
+
+        // Count changes
+        const added = diff.filter(d => d.type === "added").length;
+        const removed = diff.filter(d => d.type === "removed").length;
+
+        let html = `<div class="diff-container">`;
+        html += `<div class="diff-header">
+            ${escapeHtml(currentPath)}: ${oldDate} &rarr; ${newDate}
+            <span style="float:right">
+                <span style="color:#1a7f37">+${added}</span> /
+                <span style="color:#cf222e">-${removed}</span> lines
+            </span>
+        </div>`;
+
+        let lastShown = -1;
+        for (let i = 0; i < diff.length; i++) {
+            if (!showLine[i]) continue;
+
+            // Insert hunk separator
+            if (lastShown >= 0 && i - lastShown > 1) {
+                html += `<div class="diff-line hunk">@@ ... @@</div>`;
+            }
+            lastShown = i;
+
+            const d = diff[i];
+            const prefix = d.type === "added" ? "+" : d.type === "removed" ? "-" : " ";
+            html += `<div class="diff-line ${d.type}">${prefix} ${escapeHtml(d.text)}</div>`;
+        }
+
+        if (added === 0 && removed === 0) {
+            html += `<div class="diff-line context" style="padding:2rem;text-align:center;color:#666;">No differences found — files are identical.</div>`;
+        }
+
+        html += `</div>`;
+
+        // Summary
+        html += `<div class="stats-summary">
+            <span><strong>${added}</strong> lines added</span>
+            <span><strong>${removed}</strong> lines removed</span>
+            <span><strong>${diff.filter(d => d.type === "context").length}</strong> lines unchanged</span>
+        </div>`;
+
+        document.getElementById("output").innerHTML = html;
+    }
+
+    function escapeHtml(text) {
+        const div = document.createElement("div");
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    function showError(msg) {
+        document.getElementById("output").innerHTML = `<div class="info-box error">${escapeHtml(msg)}</div>`;
+    }
+
+    // Handle Enter key
+    document.getElementById("sr-input").addEventListener("keydown", (e) => {
+        if (e.key === "Enter") loadVersions();
+    });
+
+    // Check URL params
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("sr")) {
+        document.getElementById("sr-input").value = params.get("sr");
+        if (params.get("lang")) {
+            document.getElementById("lang-select").value = params.get("lang");
+        }
+        loadVersions();
+    }
+    </script>
+</body>
+</html>
