@@ -12,6 +12,12 @@ from .models import LawEntry, LawVersion, LawText
 
 logger = logging.getLogger(__name__)
 
+# Retry configuration
+MAX_RETRIES = 5
+INITIAL_BACKOFF = 2.0  # seconds
+BACKOFF_FACTOR = 2.0
+RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
+
 SPARQL_ENDPOINT = "https://fedlex.data.admin.ch/sparqlendpoint"
 
 PREFIXES = """
@@ -205,12 +211,62 @@ class FedlexFetcher:
     def _query(self, sparql_text: str) -> list[dict]:
         self._throttle()
         self.sparql.setQuery(sparql_text)
-        try:
-            results = self.sparql.query().convert()
-            return results["results"]["bindings"]
-        except Exception as e:
-            logger.error("SPARQL query failed: %s", e)
-            return []
+        backoff = INITIAL_BACKOFF
+        for attempt in range(1, MAX_RETRIES + 1):
+            try:
+                results = self.sparql.query().convert()
+                return results["results"]["bindings"]
+            except Exception as e:
+                status_code = getattr(getattr(e, "response", None), "status_code", None)
+                # Also check urllib error codes embedded in the exception message
+                is_retryable = (
+                    status_code in RETRYABLE_HTTP_CODES
+                    or "429" in str(e)
+                    or "503" in str(e)
+                    or "timeout" in str(e).lower()
+                    or "connection" in str(e).lower()
+                )
+                if is_retryable and attempt < MAX_RETRIES:
+                    logger.warning(
+                        "SPARQL query failed (attempt %d/%d): %s — retrying in %.1fs",
+                        attempt, MAX_RETRIES, e, backoff,
+                    )
+                    time.sleep(backoff)
+                    backoff *= BACKOFF_FACTOR
+                    self._last_request = 0.0  # reset throttle after sleeping
+                else:
+                    logger.error("SPARQL query failed after %d attempts: %s", attempt, e)
+                    return []
+        return []
+
+    def _fetch_url(self, url: str) -> str:
+        """Fetch a URL with exponential backoff retry on transient errors."""
+        backoff = INITIAL_BACKOFF
+        for attempt in range(1, MAX_RETRIES + 1):
+            self._throttle()
+            try:
+                resp = self.session.get(url, timeout=30)
+                if resp.status_code in RETRYABLE_HTTP_CODES and attempt < MAX_RETRIES:
+                    logger.warning(
+                        "HTTP %d fetching %s (attempt %d/%d) — retrying in %.1fs",
+                        resp.status_code, url, attempt, MAX_RETRIES, backoff,
+                    )
+                    time.sleep(backoff)
+                    backoff *= BACKOFF_FACTOR
+                    continue
+                resp.raise_for_status()
+                return resp.text
+            except requests.exceptions.RequestException as e:
+                if attempt < MAX_RETRIES:
+                    logger.warning(
+                        "Failed to fetch %s (attempt %d/%d): %s — retrying in %.1fs",
+                        url, attempt, MAX_RETRIES, e, backoff,
+                    )
+                    time.sleep(backoff)
+                    backoff *= BACKOFF_FACTOR
+                else:
+                    logger.error("Failed to fetch %s after %d attempts: %s", url, MAX_RETRIES, e)
+        return ""
 
     def _parse_date(self, val: str | None) -> date | None:
         if not val:
@@ -323,14 +379,9 @@ class FedlexFetcher:
             title = self._get_val(row, "title")
             content_url = self._get_val(row, "fileUrl")
             if content_url:
-                try:
-                    self._throttle()
-                    resp = self.session.get(content_url, timeout=30)
-                    resp.raise_for_status()
-                    content = resp.text
+                content = self._fetch_url(content_url)
+                if content:
                     is_xml = content.strip().startswith("<?xml") or "<akomaNtoso" in content[:500]
-                except Exception as e:
-                    logger.warning("Failed to fetch %s: %s", content_url, e)
         else:
             # Just get the title
             query = TITLE_QUERY.format(cons_uri=version.version_uri, lang_upper=lang_upper)
