@@ -341,3 +341,65 @@ class TestSrToPath:
 
     def test_deep_sr(self):
         assert sr_to_path("172.010.1", "de") == "ch/172/de/172.010.1.md"
+
+
+# ---------------------------------------------------------------------------
+# sr_to_path edge cases (task 3.5)
+# ---------------------------------------------------------------------------
+
+
+class TestSrToPathEdgeCases:
+    """Edge-case coverage for multi-level and unusual SR numbers."""
+
+    # --- International treaties: SR numbers starting with 0 ---
+
+    def test_sr_starting_with_zero(self):
+        """SR 0.xxx are international treaties, base dir should be '0'."""
+        assert sr_to_path("0.101.02", "de") == "ch/0/de/0.101.02.md"
+
+    def test_sr_zero_all_languages(self):
+        assert sr_to_path("0.101.02", "fr") == "ch/0/fr/0.101.02.md"
+        assert sr_to_path("0.101.02", "it") == "ch/0/it/0.101.02.md"
+
+    # --- Deeply nested SR numbers (4–7 levels) ---
+
+    def test_four_level_sr(self):
+        assert sr_to_path("0.101.02.1", "de") == "ch/0/de/0.101.02.1.md"
+
+    def test_five_level_sr(self):
+        assert sr_to_path("0.631.252.913.1", "de") == "ch/0/de/0.631.252.913.1.md"
+
+    def test_six_level_sr(self):
+        assert sr_to_path("0.631.252.913.611.1", "de") == "ch/0/de/0.631.252.913.611.1.md"
+
+    def test_seven_level_sr(self):
+        """Deepest SR numbers found in the real dataset."""
+        assert sr_to_path("0.631.252.913.693.2", "fr") == "ch/0/fr/0.631.252.913.693.2.md"
+
+    # --- Leading zeros in sub-parts ---
+
+    def test_leading_zeros_in_subparts(self):
+        """Sub-parts like 010 must be preserved, not stripped."""
+        assert sr_to_path("172.010.1", "de") == "ch/172/de/172.010.1.md"
+
+    def test_leading_zeros_in_second_subpart(self):
+        assert sr_to_path("0.101.093", "de") == "ch/0/de/0.101.093.md"
+
+    # --- Numeric-only (no dots) ---
+
+    def test_three_digit_sr(self):
+        assert sr_to_path("101", "de") == "ch/101/de/101.md"
+
+    def test_single_digit_sr(self):
+        """Hypothetical single-digit SR — base directory = the number itself."""
+        assert sr_to_path("1", "de") == "ch/1/de/1.md"
+
+    # --- Base directory is always the first segment before '.' ---
+
+    def test_base_directory_consistency(self):
+        """All sub-numbers of SR 220.x share the ch/220/ base directory."""
+        assert sr_to_path("220.1", "de") == "ch/220/de/220.1.md"
+        assert sr_to_path("220.12", "de") == "ch/220/de/220.12.md"
+
+    def test_high_base_number(self):
+        assert sr_to_path("984.1", "de") == "ch/984/de/984.1.md"

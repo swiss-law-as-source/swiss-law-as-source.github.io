@@ -288,11 +288,9 @@ def law_to_markdown(
 def sr_to_path(sr_number: str, language: str) -> str:
     """Convert SR number to a file path.
 
-    SR 101 -> ch/de/101.md
-    SR 220.1 -> ch/de/220/220.1.md
+    SR 101 -> ch/101/de/101.md
+    SR 220.1 -> ch/220/de/220.1.md
     """
     parts = sr_number.split(".")
-    if len(parts) > 1:
-        base = parts[0]
-        return f"ch/{language}/{base}/{sr_number}.md"
-    return f"ch/{language}/{sr_number}.md"
+    base = parts[0]
+    return f"ch/{base}/{language}/{sr_number}.md"
