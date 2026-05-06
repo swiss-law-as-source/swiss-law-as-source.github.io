@@ -31,18 +31,44 @@ def main(verbose: bool):
 @click.option("--latest-only", is_flag=True, help="Only fetch the latest version per law")
 @click.option("--no-chronological", is_flag=True,
               help="Disable chronological sorting (commits grouped by law instead)")
+@click.option("--scope", type=click.Choice(["federal", "cantonal", "all"]),
+              default="federal", help="Scope: federal, cantonal, or all (default: federal)")
+@click.option("--canton", "-c", multiple=True, default=None,
+              help="Canton(s) to process when scope includes cantonal (default: all 26)")
 def bootstrap(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_limit: float,
-              latest_only: bool, no_chronological: bool):
+              latest_only: bool, no_chronological: bool, scope: str, canton: tuple):
     """Full pipeline: fetch all laws and commit to git.
 
     By default, all revisions are sorted by date before committing so that
     the git history reflects the actual legal timeline (chronological order).
     Use --no-chronological to revert to the old behavior (grouped by law).
+
+    Use --scope to control what is fetched:
+      --scope federal   (default) Only federal laws from Fedlex
+      --scope cantonal  Only cantonal laws from LexWork/LexFind
+      --scope all       Both federal and cantonal laws
     """
-    pipeline = Pipeline(repo_path=repo, rate_limit=rate_limit)
-    total = pipeline.run(limit=limit, languages=list(lang), sr_filter=sr,
-                         latest_only=latest_only, chronological=not no_chronological)
-    click.echo(f"Done. {total} commits created.")
+    total = 0
+
+    if scope in ("federal", "all"):
+        pipeline = Pipeline(repo_path=repo, rate_limit=rate_limit)
+        federal_total = pipeline.run(limit=limit, languages=list(lang), sr_filter=sr,
+                                     latest_only=latest_only,
+                                     chronological=not no_chronological)
+        total += federal_total
+        click.echo(f"Federal: {federal_total} commits created.")
+
+    if scope in ("cantonal", "all"):
+        from .cantonal_pipeline import CantonalPipeline
+        cantons_list = list(canton) if canton else None
+        cantonal_pipe = CantonalPipeline(repo_path=repo, rate_limit=rate_limit)
+        cantonal_total = cantonal_pipe.run(
+            cantons=cantons_list, languages=list(lang), limit=limit,
+        )
+        total += cantonal_total
+        click.echo(f"Cantonal: {cantonal_total} commits created.")
+
+    click.echo(f"Done. {total} total commits created.")
 
 
 @main.command()
@@ -55,8 +81,12 @@ def bootstrap(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_li
               help="Override last_run: only fetch versions since this date (YYYY-MM-DD)")
 @click.option("--no-chronological", is_flag=True,
               help="Disable chronological sorting of commits")
+@click.option("--scope", type=click.Choice(["federal", "cantonal", "all"]),
+              default="federal", help="Scope: federal, cantonal, or all (default: federal)")
+@click.option("--canton", "-c", multiple=True, default=None,
+              help="Canton(s) to update when scope includes cantonal (default: all 26)")
 def update(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_limit: float,
-           since, no_chronological: bool):
+           since, no_chronological: bool, scope: str, canton: tuple):
     """Incremental update: only fetch laws with new consolidation versions.
 
     Detects new versions by comparing Fedlex consolidation dates against
@@ -65,14 +95,35 @@ def update(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_limit
 
     By default uses last_run from pipeline state. Use --since to override.
     Commits are sorted chronologically by default.
+
+    Use --scope to control what is updated:
+      --scope federal   (default) Only federal laws from Fedlex
+      --scope cantonal  Only cantonal laws (re-scans catalogs, skips known)
+      --scope all       Both federal and cantonal laws
     """
-    from datetime import date as date_type
-    pipeline = Pipeline(repo_path=repo, rate_limit=rate_limit)
-    since_date = since.date() if since else None
-    total = pipeline.update(limit=limit, languages=list(lang), sr_filter=sr,
-                            since_override=since_date,
-                            chronological=not no_chronological)
-    click.echo(f"Done. {total} commits created.")
+    total = 0
+
+    if scope in ("federal", "all"):
+        from datetime import date as date_type
+        pipeline = Pipeline(repo_path=repo, rate_limit=rate_limit)
+        since_date = since.date() if since else None
+        federal_total = pipeline.update(limit=limit, languages=list(lang), sr_filter=sr,
+                                        since_override=since_date,
+                                        chronological=not no_chronological)
+        total += federal_total
+        click.echo(f"Federal: {federal_total} commits created.")
+
+    if scope in ("cantonal", "all"):
+        from .cantonal_pipeline import CantonalPipeline
+        cantons_list = list(canton) if canton else None
+        cantonal_pipe = CantonalPipeline(repo_path=repo, rate_limit=rate_limit)
+        cantonal_total = cantonal_pipe.update(
+            cantons=cantons_list, languages=list(lang), limit=limit,
+        )
+        total += cantonal_total
+        click.echo(f"Cantonal: {cantonal_total} commits created.")
+
+    click.echo(f"Done. {total} total commits created.")
 
 
 @main.command()
