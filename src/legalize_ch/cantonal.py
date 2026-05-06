@@ -8,6 +8,7 @@ from datetime import date
 
 import requests
 
+from .cantonal_transformer import transform_cantonal_html
 from .transformer import html_to_markdown, build_frontmatter
 
 logger = logging.getLogger(__name__)
@@ -441,15 +442,26 @@ def canton_to_path(canton: str, systematic_number: str, language: str) -> str:
 
 
 def cantonal_law_to_markdown(text: CantonalLawText) -> str:
-    """Convert cantonal law text to Markdown with frontmatter."""
+    """Convert cantonal law text to Markdown with frontmatter.
+
+    Uses the cantonal transformer which handles source-specific HTML formats:
+    - LexWork XHTML: converts single-row tables to lists, formats § headings
+    - LexFind HTML: extracts body from full-page HTML, strips navigation
+    - ZHLex HTML: handles Zürich's semantic HTML structure
+    """
+    source = (
+        "zhlex" if text.canton == "zh"
+        else "lexwork" if text.canton in LEXWORK_CANTONS
+        else "lexfind"
+    )
     meta = {
         "canton": text.canton.upper(),
         "systematic_number": text.systematic_number,
         "title": text.title,
         "language": text.language,
         "source": (
-            "ZHLex" if text.canton == "zh"
-            else "LexWork" if text.canton in LEXWORK_CANTONS
+            "ZHLex" if source == "zhlex"
+            else "LexWork" if source == "lexwork"
             else "LexFind"
         ),
     }
@@ -461,7 +473,7 @@ def cantonal_law_to_markdown(text: CantonalLawText) -> str:
     import yaml
     frontmatter = "---\n" + yaml.dump(meta, allow_unicode=True, default_flow_style=False).strip() + "\n---"
 
-    body = html_to_markdown(text.html_content) if text.html_content else ""
+    body = transform_cantonal_html(text.html_content, source=source) if text.html_content else ""
     if not body:
         body = f"# {text.title}\n\n*No text content available.*"
 
