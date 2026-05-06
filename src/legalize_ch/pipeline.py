@@ -113,7 +113,10 @@ class Pipeline:
 
     def _run_sequential(self, catalog: list[LawEntry], languages: list[str],
                         latest_only: bool) -> int:
-        """Process laws sequentially (original behavior, no date sorting)."""
+        """Process laws sequentially (original behavior, no date sorting).
+
+        State is saved after every law to allow recovery from mid-run failures.
+        """
         total_commits = 0
         for i, law in enumerate(catalog):
             logger.info("[%d/%d] SR %s: %s", i + 1, len(catalog), law.sr_number,
@@ -123,8 +126,7 @@ class Pipeline:
                 total_commits += commits
             except Exception as e:
                 logger.error("Error processing SR %s: %s", law.sr_number, e)
-            if (i + 1) % 10 == 0:
-                self._save_state()
+            self._save_state()
         return total_commits
 
     def _run_chronological(self, catalog: list[LawEntry], languages: list[str],
@@ -146,23 +148,25 @@ class Pipeline:
             except Exception as e:
                 logger.error("Error fetching SR %s: %s", law.sr_number, e)
 
-            if (i + 1) % 10 == 0:
-                self._save_state()
-
         # Phase 2: Sort by date (stable sort preserves SR order for same-date entries)
         pending.sort(key=lambda p: p.revision.date)
         logger.info("Collected %d revisions, committing in chronological order...", len(pending))
 
-        # Phase 3: Commit in chronological order
+        # Phase 3: Commit in chronological order, saving state after each
+        # successful commit so progress is never lost on failure.
         total_commits = 0
         for i, item in enumerate(pending):
-            if self.committer.commit_revision(item.revision, item.law):
-                total_commits += 1
-                self._mark_processed(item.revision.sr_number, item.revision.date)
+            try:
+                if self.committer.commit_revision(item.revision, item.law):
+                    total_commits += 1
+                    self._mark_processed(item.revision.sr_number, item.revision.date)
+                    self._save_state()
+            except Exception as e:
+                logger.error("Error committing SR %s @ %s: %s",
+                             item.revision.sr_number, item.revision.date, e)
 
             if (i + 1) % 100 == 0:
                 logger.info("Committed %d/%d revisions...", total_commits, len(pending))
-                self._save_state()
 
         return total_commits
 
@@ -221,10 +225,18 @@ class Pipeline:
             logger.info("Collected %d new revisions, committing chronologically...", len(pending))
 
             total_commits = 0
-            for item in pending:
-                if self.committer.commit_revision(item.revision, item.law):
-                    total_commits += 1
-                    self._mark_processed(item.revision.sr_number, item.revision.date)
+            for i, item in enumerate(pending):
+                try:
+                    if self.committer.commit_revision(item.revision, item.law):
+                        total_commits += 1
+                        self._mark_processed(item.revision.sr_number, item.revision.date)
+                        self._save_state()
+                except Exception as e:
+                    logger.error("Error committing SR %s @ %s: %s",
+                                 item.revision.sr_number, item.revision.date, e)
+
+                if (i + 1) % 100 == 0:
+                    logger.info("Committed %d/%d revisions...", total_commits, len(pending))
         else:
             total_commits = 0
             skipped_laws = 0
@@ -239,8 +251,7 @@ class Pipeline:
                         skipped_laws += 1
                 except Exception as e:
                     logger.error("Error processing SR %s: %s", law.sr_number, e)
-                if (i + 1) % 10 == 0:
-                    self._save_state()
+                self._save_state()
 
         self.state["last_run"] = date.today().isoformat()
         self._save_state()
