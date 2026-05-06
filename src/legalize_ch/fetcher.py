@@ -131,6 +131,32 @@ SELECT DISTINCT ?title WHERE {{
 LIMIT 1
 """
 
+# Fetch content directly from the ConsolidationAbstract (no consolidation version needed).
+# Tries XML first, then HTML.
+ABSTRACT_TEXT_XML_QUERY = PREFIXES + """
+SELECT DISTINCT ?title ?fileUrl WHERE {{
+  <{abstract_uri}> jolux:isRealizedBy ?expr .
+  ?expr jolux:language <http://publications.europa.eu/resource/authority/language/{lang_upper}> .
+  OPTIONAL {{ ?expr jolux:title ?title . }}
+  ?expr jolux:isEmbodiedBy ?manifest .
+  ?manifest jolux:format <http://publications.europa.eu/resource/authority/file-type/XML> ;
+            jolux:isExemplifiedBy ?fileUrl .
+}}
+LIMIT 1
+"""
+
+ABSTRACT_TEXT_HTML_QUERY = PREFIXES + """
+SELECT DISTINCT ?title ?fileUrl WHERE {{
+  <{abstract_uri}> jolux:isRealizedBy ?expr .
+  ?expr jolux:language <http://publications.europa.eu/resource/authority/language/{lang_upper}> .
+  OPTIONAL {{ ?expr jolux:title ?title . }}
+  ?expr jolux:isEmbodiedBy ?manifest .
+  ?manifest jolux:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
+            jolux:isExemplifiedBy ?fileUrl .
+}}
+LIMIT 1
+"""
+
 # Fetch laws with consolidation versions applicable since a given date
 MODIFIED_SINCE_QUERY = PREFIXES + """
 SELECT DISTINCT ?cc ?srNumber ?titleDe ?titleFr ?titleIt ?dateDoc ?dateForce ?abbrDe ?abbrFr ?abbrIt
@@ -397,6 +423,55 @@ class FedlexFetcher:
             language=lang,
             version_date=version.date_applicable,
             title=title,
+            html_content="" if is_xml else content,
+            xml_content=content if is_xml else "",
+            content_url=content_url,
+        )
+
+    def fetch_abstract_text(self, law: LawEntry, lang: str) -> LawText | None:
+        """Try to fetch text directly from the ConsolidationAbstract URI.
+
+        This is a fallback for laws that have no consolidation versions but
+        may still have content attached at the abstract level.
+        """
+        lang_code, lang_upper = LANG_MAP.get(lang, ("de", "DEU"))
+
+        # Try XML first
+        query = ABSTRACT_TEXT_XML_QUERY.format(
+            abstract_uri=law.uri, lang_upper=lang_upper,
+        )
+        rows = self._query(query)
+
+        if not rows:
+            # Fallback to HTML
+            query = ABSTRACT_TEXT_HTML_QUERY.format(
+                abstract_uri=law.uri, lang_upper=lang_upper,
+            )
+            rows = self._query(query)
+
+        if not rows:
+            return None
+
+        row = rows[0]
+        title = self._get_val(row, "title")
+        content_url = self._get_val(row, "fileUrl")
+        content = ""
+        is_xml = False
+
+        if content_url:
+            content = self._fetch_url(content_url)
+            if content:
+                is_xml = content.strip().startswith("<?xml") or "<akomaNtoso" in content[:500]
+
+        if not title and not content:
+            return None
+
+        version_date = law.date_in_force or law.date_document or date.today()
+        return LawText(
+            sr_number=law.sr_number,
+            language=lang,
+            version_date=version_date,
+            title=title or "",
             html_content="" if is_xml else content,
             xml_content=content if is_xml else "",
             content_url=content_url,

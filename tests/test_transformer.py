@@ -254,6 +254,14 @@ class TestBuildFrontmatter:
         result = build_frontmatter("101", "Federal Constitution", "de", date(2024, 1, 1))
         assert "abbreviation" not in result
 
+    def test_stub_flag_true(self):
+        result = build_frontmatter("999", "Stub Law", "de", date(2024, 1, 1), is_stub=True)
+        assert "stub: true" in result
+
+    def test_stub_flag_false_by_default(self):
+        result = build_frontmatter("101", "Real Law", "de", date(2024, 1, 1))
+        assert "stub" not in result
+
 
 # ---------------------------------------------------------------------------
 # law_to_markdown tests
@@ -297,7 +305,19 @@ class TestLawToMarkdown:
             version_date=date(2020, 1, 1),
         )
         assert "# Empty Law" in result
-        assert "No text content available" in result
+        assert "No machine-readable text available" in result
+        assert "stub: true" in result
+
+    def test_stub_flag_not_set_when_content_present(self):
+        result = law_to_markdown(
+            sr_number="101",
+            title="Federal Constitution",
+            xml_content=MINIMAL_AKN,
+            html_content="",
+            language="de",
+            version_date=date(2024, 1, 1),
+        )
+        assert "stub" not in result
 
     def test_xml_preferred_over_html(self):
         """When both XML and HTML are provided, XML takes precedence."""

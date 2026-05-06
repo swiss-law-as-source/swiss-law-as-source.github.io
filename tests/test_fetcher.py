@@ -532,3 +532,121 @@ class TestThrottle:
             with patch("legalize_ch.fetcher.time.time", return_value=100.0):
                 f._throttle()
                 mock_sleep.assert_not_called()
+
+
+# ---------------------------------------------------------------------------
+# Tests: fetch_abstract_text
+# ---------------------------------------------------------------------------
+
+ABSTRACT_TEXT_ROW = _binding({
+    "title": "Bundesverfassung der Schweizerischen Eidgenossenschaft",
+    "fileUrl": "https://fedlex.data.admin.ch/filestore/eli/cc/1999/404/de/xml/fedlex-data.xml",
+})
+
+ABSTRACT_HTML_ROW = _binding({
+    "title": "Bundesverfassung der Schweizerischen Eidgenossenschaft",
+    "fileUrl": "https://fedlex.data.admin.ch/filestore/eli/cc/1999/404/de/html/fedlex-data.html",
+})
+
+
+class TestFetchAbstractText:
+    """Tests for fetch_abstract_text — fetching content from the abstract URI."""
+
+    def _make_law(self, **kwargs):
+        defaults = dict(
+            sr_number="101",
+            uri="https://fedlex.data.admin.ch/eli/cc/1999/404",
+            title_de="BV",
+            date_in_force=date(2000, 1, 1),
+        )
+        defaults.update(kwargs)
+        return LawEntry(**defaults)
+
+    def test_returns_xml_content(self, fetcher):
+        """XML content from abstract URI is correctly returned."""
+        law = self._make_law()
+        xml_body = '<?xml version="1.0"?><akomaNtoso><act><body><p>Test</p></body></act></akomaNtoso>'
+
+        with patch.object(fetcher, "_query", return_value=[ABSTRACT_TEXT_ROW]):
+            with patch.object(fetcher, "_fetch_url", return_value=xml_body):
+                result = fetcher.fetch_abstract_text(law, "de")
+
+        assert result is not None
+        assert result.xml_content == xml_body
+        assert result.html_content == ""
+        assert result.sr_number == "101"
+
+    def test_falls_back_to_html(self, fetcher):
+        """If XML query returns nothing, HTML query is tried."""
+        law = self._make_law()
+        html_body = "<html><body><h1>Title</h1></body></html>"
+
+        call_count = [0]
+        def mock_query(query_text):
+            call_count[0] += 1
+            if call_count[0] == 1:
+                return []  # XML query empty
+            return [ABSTRACT_HTML_ROW]
+
+        with patch.object(fetcher, "_query", side_effect=mock_query):
+            with patch.object(fetcher, "_fetch_url", return_value=html_body):
+                result = fetcher.fetch_abstract_text(law, "de")
+
+        assert result is not None
+        assert result.html_content == html_body
+        assert result.xml_content == ""
+        assert call_count[0] == 2
+
+    def test_returns_none_when_no_content(self, fetcher):
+        """Returns None when both XML and HTML queries return nothing."""
+        law = self._make_law()
+
+        with patch.object(fetcher, "_query", return_value=[]):
+            result = fetcher.fetch_abstract_text(law, "de")
+
+        assert result is None
+
+    def test_uses_law_date_in_force(self, fetcher):
+        """version_date on the result uses law.date_in_force."""
+        law = self._make_law(date_in_force=date(2005, 6, 15))
+        xml_body = '<?xml version="1.0"?><akomaNtoso><act><body><p>X</p></body></act></akomaNtoso>'
+
+        with patch.object(fetcher, "_query", return_value=[ABSTRACT_TEXT_ROW]):
+            with patch.object(fetcher, "_fetch_url", return_value=xml_body):
+                result = fetcher.fetch_abstract_text(law, "de")
+
+        assert result.version_date == date(2005, 6, 15)
+
+    def test_uses_date_document_fallback(self, fetcher):
+        """Falls back to date_document when date_in_force is None."""
+        law = self._make_law(date_in_force=None, date_document=date(2010, 3, 1))
+        xml_body = '<?xml version="1.0"?><akomaNtoso><act><body><p>X</p></body></act></akomaNtoso>'
+
+        with patch.object(fetcher, "_query", return_value=[ABSTRACT_TEXT_ROW]):
+            with patch.object(fetcher, "_fetch_url", return_value=xml_body):
+                result = fetcher.fetch_abstract_text(law, "de")
+
+        assert result.version_date == date(2010, 3, 1)
+
+    def test_abstract_uri_in_query(self, fetcher):
+        """The law's abstract URI appears in the SPARQL query."""
+        law = self._make_law(uri="https://fedlex.data.admin.ch/eli/cc/2020/999")
+
+        with patch.object(fetcher, "_query", return_value=[]) as mock_q:
+            fetcher.fetch_abstract_text(law, "de")
+            query_text = mock_q.call_args[0][0]
+            assert "eli/cc/2020/999" in query_text
+
+    def test_returns_none_when_url_fetch_fails(self, fetcher):
+        """Returns None when the file URL exists but content fetch fails."""
+        law = self._make_law()
+
+        with patch.object(fetcher, "_query", return_value=[ABSTRACT_TEXT_ROW]):
+            with patch.object(fetcher, "_fetch_url", return_value=""):
+                result = fetcher.fetch_abstract_text(law, "de")
+
+        # Row had a title, so we still get a result with the title
+        assert result is not None
+        assert result.title == "Bundesverfassung der Schweizerischen Eidgenossenschaft"
+        assert result.xml_content == ""
+        assert result.html_content == ""

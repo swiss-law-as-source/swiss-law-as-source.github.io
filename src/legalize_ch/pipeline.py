@@ -390,24 +390,41 @@ class Pipeline:
         return commits
 
     def _fetch_current(self, law: LawEntry, languages: list[str]) -> LawRevision | None:
-        """Fetch current text when no consolidation versions exist."""
+        """Fetch current text when no consolidation versions exist.
+
+        Attempts to retrieve real content from the abstract URI before
+        falling back to a clearly-marked stub (``stub: true`` in frontmatter).
+        """
         d = law.date_in_force or law.date_document or date.today()
         texts = {}
 
         for lang in languages:
             title = self._get_title(law, lang)
-            if title:
-                abbr = self._get_abbreviation(law, lang)
-                md = law_to_markdown(
-                    sr_number=law.sr_number,
-                    title=title,
-                    xml_content="",
-                    html_content="",
-                    language=lang,
-                    version_date=d,
-                    abbreviation=abbr,
-                )
-                texts[lang] = md
+            abbr = self._get_abbreviation(law, lang)
+
+            # Try to fetch real content from the abstract URI
+            abstract_text = self.fetcher.fetch_abstract_text(law, lang)
+            xml_content = ""
+            html_content = ""
+            if abstract_text:
+                xml_content = abstract_text.xml_content
+                html_content = abstract_text.html_content
+                if abstract_text.title and not title:
+                    title = abstract_text.title
+
+            if not title:
+                continue
+
+            md = law_to_markdown(
+                sr_number=law.sr_number,
+                title=title,
+                xml_content=xml_content,
+                html_content=html_content,
+                language=lang,
+                version_date=d,
+                abbreviation=abbr,
+            )
+            texts[lang] = md
 
         if not texts:
             return None

@@ -246,6 +246,7 @@ def build_frontmatter(
     language: str,
     version_date: date,
     abbreviation: str = "",
+    is_stub: bool = False,
 ) -> str:
     """Build YAML frontmatter for a law file."""
     meta = {
@@ -257,6 +258,8 @@ def build_frontmatter(
     }
     if abbreviation:
         meta["abbreviation"] = abbreviation
+    if is_stub:
+        meta["stub"] = True
     return "---\n" + yaml.dump(meta, allow_unicode=True, default_flow_style=False).strip() + "\n---"
 
 
@@ -268,20 +271,25 @@ def law_to_markdown(
     language: str,
     version_date: date,
     abbreviation: str = "",
+    is_stub: bool = False,
 ) -> str:
-    """Convert a law text to a full Markdown document with frontmatter."""
-    fm = build_frontmatter(sr_number, title, language, version_date, abbreviation)
+    """Convert a law text to a full Markdown document with frontmatter.
 
+    When *is_stub* is True the frontmatter includes ``stub: true`` so that
+    downstream tooling can distinguish placeholder files from real content.
+    """
+    body = ""
     if xml_content:
         body = akn_to_markdown(xml_content)
     elif html_content:
         body = html_to_markdown(html_content)
-    else:
-        body = ""
 
+    # If we still have no body text, mark as stub
     if not body:
-        body = f"# {title}\n\n*No text content available for this version.*"
+        is_stub = True
+        body = f"# {title}\n\n*No machine-readable text available on Fedlex for this law.*"
 
+    fm = build_frontmatter(sr_number, title, language, version_date, abbreviation, is_stub=is_stub)
     return fm + "\n\n" + body + "\n"
 
 
