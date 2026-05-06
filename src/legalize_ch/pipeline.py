@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import json
 import logging
+import os
+import signal
 from datetime import date
 from pathlib import Path
 from typing import NamedTuple
@@ -15,6 +17,23 @@ from .transformer import law_to_markdown
 logger = logging.getLogger(__name__)
 
 STATE_FILE = "data/pipeline_state.json"
+PID_FILE = "pipeline.pid"
+
+
+class PipelineAlreadyRunningError(RuntimeError):
+    """Raised when another pipeline instance is already running."""
+
+
+def _is_pid_alive(pid: int) -> bool:
+    """Check whether a process with the given PID is still running."""
+    try:
+        os.kill(pid, 0)  # signal 0 = existence check, no signal sent
+        return True
+    except ProcessLookupError:
+        return False
+    except PermissionError:
+        # Process exists but we lack permission to signal it
+        return True
 
 
 class _PendingRevision(NamedTuple):
@@ -31,7 +50,9 @@ class Pipeline:
         self.fetcher = FedlexFetcher(rate_limit=rate_limit)
         self.committer = GitCommitter(repo_path)
         self.state_file = self.repo_path / STATE_FILE
+        self.pid_file = self.repo_path / PID_FILE
         self.state: dict = self._load_state()
+        self._owns_pid = False
 
     def _load_state(self) -> dict:
         if self.state_file.exists():
@@ -41,6 +62,51 @@ class Pipeline:
     def _save_state(self):
         self.state_file.parent.mkdir(parents=True, exist_ok=True)
         self.state_file.write_text(json.dumps(self.state, indent=2, default=str))
+
+    # ------------------------------------------------------------------
+    # PID-file locking
+    # ------------------------------------------------------------------
+
+    def _acquire_lock(self) -> None:
+        """Write the current PID to the lock file.
+
+        Raises ``PipelineAlreadyRunningError`` if another live pipeline
+        process already holds the lock.  Stale PID files (where the
+        recorded process is no longer running) are automatically cleaned up.
+        """
+        if self.pid_file.exists():
+            try:
+                existing_pid = int(self.pid_file.read_text().strip())
+            except (ValueError, OSError):
+                existing_pid = None
+
+            if existing_pid is not None and _is_pid_alive(existing_pid):
+                raise PipelineAlreadyRunningError(
+                    f"Another pipeline is already running (PID {existing_pid}). "
+                    f"If this is stale, remove {self.pid_file}"
+                )
+            else:
+                logger.warning(
+                    "Stale PID file found (PID %s is not running) — overwriting.",
+                    existing_pid,
+                )
+
+        self.pid_file.write_text(str(os.getpid()))
+        self._owns_pid = True
+        logger.debug("Acquired pipeline lock (PID %d)", os.getpid())
+
+    def _release_lock(self) -> None:
+        """Remove the PID lock file if we own it."""
+        if self._owns_pid and self.pid_file.exists():
+            try:
+                # Only remove if it's still our PID (guard against races)
+                current = int(self.pid_file.read_text().strip())
+                if current == os.getpid():
+                    self.pid_file.unlink()
+                    logger.debug("Released pipeline lock (PID %d)", os.getpid())
+            except (ValueError, OSError):
+                self.pid_file.unlink(missing_ok=True)
+            self._owns_pid = False
 
     def _is_processed(self, sr_number: str, version_date: date) -> bool:
         key = f"{sr_number}@{version_date.isoformat()}"
@@ -89,27 +155,31 @@ class Pipeline:
         """
         languages = languages or ["de", "fr", "it"]
 
-        # Initialize repo
-        self.committer.init_repo()
-        self.committer.commit_initial()
+        self._acquire_lock()
+        try:
+            # Initialize repo
+            self.committer.init_repo()
+            self.committer.commit_initial()
 
-        # Fetch catalog
-        catalog = self.fetcher.fetch_catalog(limit=limit)
-        if sr_filter:
-            catalog = [e for e in catalog if e.sr_number.startswith(sr_filter)]
+            # Fetch catalog
+            catalog = self.fetcher.fetch_catalog(limit=limit)
+            if sr_filter:
+                catalog = [e for e in catalog if e.sr_number.startswith(sr_filter)]
 
-        logger.info("Processing %d laws in languages %s (latest_only=%s, chronological=%s)",
-                     len(catalog), languages, latest_only, chronological)
+            logger.info("Processing %d laws in languages %s (latest_only=%s, chronological=%s)",
+                         len(catalog), languages, latest_only, chronological)
 
-        if chronological:
-            total_commits = self._run_chronological(catalog, languages, latest_only)
-        else:
-            total_commits = self._run_sequential(catalog, languages, latest_only)
+            if chronological:
+                total_commits = self._run_chronological(catalog, languages, latest_only)
+            else:
+                total_commits = self._run_sequential(catalog, languages, latest_only)
 
-        self.state["last_run"] = date.today().isoformat()
-        self._save_state()
-        logger.info("Pipeline complete. Total commits: %d", total_commits)
-        return total_commits
+            self.state["last_run"] = date.today().isoformat()
+            self._save_state()
+            logger.info("Pipeline complete. Total commits: %d", total_commits)
+            return total_commits
+        finally:
+            self._release_lock()
 
     def _run_sequential(self, catalog: list[LawEntry], languages: list[str],
                         latest_only: bool) -> int:
@@ -198,66 +268,70 @@ class Pipeline:
                 raise SystemExit(1)
             since = date.fromisoformat(last_run)
 
-        logger.info("Updating laws modified since %s", since.isoformat())
+        self._acquire_lock()
+        try:
+            logger.info("Updating laws modified since %s", since.isoformat())
 
-        # Fetch only laws with versions since last_run
-        catalog = self.fetcher.fetch_modified_since(since, limit=limit)
-        if sr_filter:
-            catalog = [e for e in catalog if e.sr_number.startswith(sr_filter)]
+            # Fetch only laws with versions since last_run
+            catalog = self.fetcher.fetch_modified_since(since, limit=limit)
+            if sr_filter:
+                catalog = [e for e in catalog if e.sr_number.startswith(sr_filter)]
 
-        logger.info("Found %d laws with new versions since %s", len(catalog), since.isoformat())
+            logger.info("Found %d laws with new versions since %s", len(catalog), since.isoformat())
 
-        if chronological:
-            # Collect all revisions, sort by date, then commit
-            pending: list[_PendingRevision] = []
-            for i, law in enumerate(catalog):
-                logger.info("[%d/%d] Fetching SR %s: %s", i + 1, len(catalog),
-                            law.sr_number, law.title_de or law.title_fr or law.sr_number)
-                try:
-                    revisions = self._collect_revisions(law, languages,
-                                                       latest_only=False,
-                                                       since_date=since)
-                    pending.extend(revisions)
-                except Exception as e:
-                    logger.error("Error fetching SR %s: %s", law.sr_number, e)
+            if chronological:
+                # Collect all revisions, sort by date, then commit
+                pending: list[_PendingRevision] = []
+                for i, law in enumerate(catalog):
+                    logger.info("[%d/%d] Fetching SR %s: %s", i + 1, len(catalog),
+                                law.sr_number, law.title_de or law.title_fr or law.sr_number)
+                    try:
+                        revisions = self._collect_revisions(law, languages,
+                                                           latest_only=False,
+                                                           since_date=since)
+                        pending.extend(revisions)
+                    except Exception as e:
+                        logger.error("Error fetching SR %s: %s", law.sr_number, e)
 
-            pending.sort(key=lambda p: p.revision.date)
-            logger.info("Collected %d new revisions, committing chronologically...", len(pending))
+                pending.sort(key=lambda p: p.revision.date)
+                logger.info("Collected %d new revisions, committing chronologically...", len(pending))
 
-            total_commits = 0
-            for i, item in enumerate(pending):
-                try:
-                    if self.committer.commit_revision(item.revision, item.law):
-                        total_commits += 1
-                        self._mark_processed(item.revision.sr_number, item.revision.date)
-                        self._save_state()
-                except Exception as e:
-                    logger.error("Error committing SR %s @ %s: %s",
-                                 item.revision.sr_number, item.revision.date, e)
+                total_commits = 0
+                for i, item in enumerate(pending):
+                    try:
+                        if self.committer.commit_revision(item.revision, item.law):
+                            total_commits += 1
+                            self._mark_processed(item.revision.sr_number, item.revision.date)
+                            self._save_state()
+                    except Exception as e:
+                        logger.error("Error committing SR %s @ %s: %s",
+                                     item.revision.sr_number, item.revision.date, e)
 
-                if (i + 1) % 100 == 0:
-                    logger.info("Committed %d/%d revisions...", total_commits, len(pending))
-        else:
-            total_commits = 0
-            skipped_laws = 0
-            for i, law in enumerate(catalog):
-                logger.info("[%d/%d] SR %s: %s", i + 1, len(catalog), law.sr_number,
-                            law.title_de or law.title_fr or law.sr_number)
-                try:
-                    commits = self._process_law(law, languages, latest_only=False,
-                                                since_date=since)
-                    total_commits += commits
-                    if commits == 0:
-                        skipped_laws += 1
-                except Exception as e:
-                    logger.error("Error processing SR %s: %s", law.sr_number, e)
-                self._save_state()
+                    if (i + 1) % 100 == 0:
+                        logger.info("Committed %d/%d revisions...", total_commits, len(pending))
+            else:
+                total_commits = 0
+                skipped_laws = 0
+                for i, law in enumerate(catalog):
+                    logger.info("[%d/%d] SR %s: %s", i + 1, len(catalog), law.sr_number,
+                                law.title_de or law.title_fr or law.sr_number)
+                    try:
+                        commits = self._process_law(law, languages, latest_only=False,
+                                                    since_date=since)
+                        total_commits += commits
+                        if commits == 0:
+                            skipped_laws += 1
+                    except Exception as e:
+                        logger.error("Error processing SR %s: %s", law.sr_number, e)
+                    self._save_state()
 
-        self.state["last_run"] = date.today().isoformat()
-        self._save_state()
-        logger.info("Update complete. %d laws checked, %d commits created.",
-                    len(catalog), total_commits)
-        return total_commits
+            self.state["last_run"] = date.today().isoformat()
+            self._save_state()
+            logger.info("Update complete. %d laws checked, %d commits created.",
+                        len(catalog), total_commits)
+            return total_commits
+        finally:
+            self._release_lock()
 
     def _collect_revisions(self, law: LawEntry, languages: list[str],
                            latest_only: bool,

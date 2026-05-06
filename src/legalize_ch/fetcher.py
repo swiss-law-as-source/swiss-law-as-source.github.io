@@ -18,6 +18,9 @@ INITIAL_BACKOFF = 2.0  # seconds
 BACKOFF_FACTOR = 2.0
 RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
 
+# Pagination configuration for large SPARQL result sets
+PAGE_SIZE = 5000  # results per page
+
 SPARQL_ENDPOINT = "https://fedlex.data.admin.ch/sparqlendpoint"
 
 PREFIXES = """
@@ -265,6 +268,25 @@ class FedlexFetcher:
                     return []
         return []
 
+    def _query_paginated(self, sparql_text: str, page_size: int = PAGE_SIZE) -> list[dict]:
+        """Execute a SPARQL query with LIMIT/OFFSET pagination.
+
+        Fetches results in pages of ``page_size`` rows to avoid timeouts on
+        large result sets.  Pages are fetched until a page returns fewer rows
+        than ``page_size`` (i.e. the last page).
+        """
+        all_rows: list[dict] = []
+        offset = 0
+        while True:
+            paginated = f"{sparql_text}\nLIMIT {page_size}\nOFFSET {offset}"
+            rows = self._query(paginated)
+            all_rows.extend(rows)
+            logger.debug("Paginated query: offset=%d, got %d rows", offset, len(rows))
+            if len(rows) < page_size:
+                break  # last page
+            offset += page_size
+        return all_rows
+
     def _fetch_url(self, url: str) -> str:
         """Fetch a URL with exponential backoff retry on transient errors."""
         backoff = INITIAL_BACKOFF
@@ -306,12 +328,19 @@ class FedlexFetcher:
         return row.get(key, {}).get("value", "")
 
     def fetch_catalog(self, limit: int | None = None) -> list[LawEntry]:
-        """Fetch all laws in the classified compilation."""
+        """Fetch all laws in the classified compilation.
+
+        Uses paginated SPARQL queries to avoid timeouts on large result sets.
+        If *limit* is set, a single non-paginated query with LIMIT is used.
+        """
         query = CATALOG_QUERY
         if limit:
             query += f"\nLIMIT {limit}"
-        logger.info("Fetching law catalog from Fedlex...")
-        rows = self._query(query)
+            logger.info("Fetching law catalog from Fedlex (limit=%d)...", limit)
+            rows = self._query(query)
+        else:
+            logger.info("Fetching law catalog from Fedlex (paginated, page_size=%d)...", PAGE_SIZE)
+            rows = self._query_paginated(query)
         logger.info("Found %d raw catalog rows", len(rows))
 
         entries = []
@@ -336,12 +365,20 @@ class FedlexFetcher:
         return entries
 
     def fetch_modified_since(self, since: date, limit: int | None = None) -> list[LawEntry]:
-        """Fetch laws that have consolidation versions applicable since the given date."""
+        """Fetch laws that have consolidation versions applicable since the given date.
+
+        Uses paginated SPARQL queries to avoid timeouts on large result sets.
+        If *limit* is set, a single non-paginated query with LIMIT is used.
+        """
         query = MODIFIED_SINCE_QUERY.format(since_date=since.isoformat())
         if limit:
             query += f"\nLIMIT {limit}"
-        logger.info("Fetching laws modified since %s...", since.isoformat())
-        rows = self._query(query)
+            logger.info("Fetching laws modified since %s (limit=%d)...", since.isoformat(), limit)
+            rows = self._query(query)
+        else:
+            logger.info("Fetching laws modified since %s (paginated, page_size=%d)...",
+                         since.isoformat(), PAGE_SIZE)
+            rows = self._query_paginated(query)
         logger.info("Found %d raw rows for modified laws", len(rows))
 
         entries = []
