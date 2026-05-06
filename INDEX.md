@@ -1,8 +1,10 @@
-# Index of Swiss Federal Law (Systematische Rechtssammlung)
+# Index of Swiss Law (Systematische Rechtssammlung)
 
-Total: **8963** laws indexed
+Total: **8963** federal laws, **2** cantonal laws indexed
 
 ---
+
+# Federal Laws (Bundesrecht)
 
 ## 0 – Systematische Sammlung des Bundesrechts (Völkerrecht)
 
@@ -9036,6 +9038,28 @@ Total: **8963** laws indexed
 | [983.13](ch/983/de/983.13.md) | Verordnung vom 29. August 1958 betreffend die Rekurskommission für die ausserordentliche |
 | [983.21](ch/983/de/983.21.md) | Verordnung vom 13. Februar 1959 betreffend die Kommission für Vorauszahlungen |
 | [984.1](ch/984/de/984.1.md) | Verordnung vom 25. Juni 1997 über die historische und rechtliche Untersuchung |
+
+---
+
+# Cantonal Laws (Kantonsrecht)
+
+*2 laws across 2 canton(s)*
+
+## AG – Aargau
+
+*1 laws*
+
+| Systematic Number | Title |
+|-------------------|-------|
+| [290.100](ch/ag/de/290.100.md) | Einführungsgesetz zum Bundesgesetz über die Freizügigkeit der Anwältinnen und |
+
+## BS – Basel-Stadt
+
+*1 laws*
+
+| Systematic Number | Title |
+|-------------------|-------|
+| [300.100](ch/bs/de/300.100.md) | Gesundheitsgesetz |
 
 ---
 

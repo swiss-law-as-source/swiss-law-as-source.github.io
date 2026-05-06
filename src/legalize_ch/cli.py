@@ -313,12 +313,17 @@ def translate(repo: str, sr: str | None, source_lang: str, limit: int | None,
 @main.command("index")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
 @click.option("--lang", "-l", default="de", help="Language for titles (default: de)")
-def index(repo: str, lang: str):
-    """Generate INDEX.md with all SR numbers, titles, and links."""
-    from .index_generator import write_index
+@click.option("--json/--no-json", "write_json", default=True,
+              help="Also write docs/laws.json for GitHub Pages (default: yes)")
+def index(repo: str, lang: str, write_json: bool):
+    """Generate INDEX.md and docs/laws.json (federal + cantonal)."""
+    from .index_generator import write_index, write_laws_json
 
     out = write_index(repo_path=repo, lang=lang)
     click.echo(f"Generated: {out}")
+    if write_json:
+        json_out = write_laws_json(repo_path=repo, lang=lang)
+        click.echo(f"Generated: {json_out}")
 
 
 @main.command("health-check")

@@ -8,6 +8,7 @@ from legalize_ch.index_generator import (
     _extract_frontmatter,
     _sr_sort_key,
     generate_index,
+    generate_laws_json,
     write_index,
 )
 
@@ -95,8 +96,8 @@ def test_generate_index(sample_repo):
     """Test full index generation."""
     content = generate_index(repo_path=str(sample_repo), lang="de")
 
-    assert "# Index of Swiss Federal Law" in content
-    assert "**3** laws indexed" in content
+    assert "# Index of Swiss Law" in content
+    assert "**3** federal laws" in content
     assert "[0.101]" in content
     assert "[1.001]" in content
     assert "[1.002]" in content
@@ -120,10 +121,58 @@ def test_write_index(sample_repo):
     assert out.exists()
     assert out.name == "INDEX.md"
     content = out.read_text(encoding="utf-8")
-    assert "# Index of Swiss Federal Law" in content
+    assert "# Index of Swiss Law" in content
 
 
 def test_generate_index_missing_dir(tmp_path):
     """Test error when ch/ directory doesn't exist."""
     with pytest.raises(FileNotFoundError):
         generate_index(repo_path=str(tmp_path))
+
+
+@pytest.fixture
+def sample_repo_with_cantonal(sample_repo):
+    """Extend sample_repo with cantonal law files."""
+    # Create ch/bs/de/ directory
+    bs_dir = sample_repo / "ch" / "bs" / "de"
+    bs_dir.mkdir(parents=True)
+    (bs_dir / "300.100.md").write_text(
+        "---\n"
+        "canton: BS\n"
+        "language: de\n"
+        "source: LexWork\n"
+        "systematic_number: '300.100'\n"
+        "title: Gesundheitsgesetz\n"
+        "version_date: '2025-01-01'\n"
+        "---\n\n# GesG\n",
+        encoding="utf-8",
+    )
+    return sample_repo
+
+
+def test_generate_index_includes_cantonal(sample_repo_with_cantonal):
+    """Test that INDEX.md includes cantonal laws section."""
+    content = generate_index(repo_path=str(sample_repo_with_cantonal), lang="de")
+    assert "# Cantonal Laws (Kantonsrecht)" in content
+    assert "BS – Basel-Stadt" in content
+    assert "[300.100]" in content
+    assert "Gesundheitsgesetz" in content
+
+
+def test_generate_laws_json_includes_cantonal(sample_repo_with_cantonal):
+    """Test that laws.json includes both federal and cantonal entries."""
+    laws = generate_laws_json(repo_path=str(sample_repo_with_cantonal), lang="de")
+    federal = [l for l in laws if l["scope"] == "federal"]
+    cantonal = [l for l in laws if l["scope"] == "cantonal"]
+    assert len(federal) == 3
+    assert len(cantonal) == 1
+    assert cantonal[0]["sr"] == "300.100"
+    assert cantonal[0]["canton"] == "bs"
+    assert cantonal[0]["cat"] == "BS – Basel-Stadt"
+
+
+def test_generate_laws_json_no_cantonal(sample_repo):
+    """Test laws.json with only federal laws."""
+    laws = generate_laws_json(repo_path=str(sample_repo), lang="de")
+    assert all(l["scope"] == "federal" for l in laws)
+    assert len(laws) == 3
