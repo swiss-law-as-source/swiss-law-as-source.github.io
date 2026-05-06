@@ -352,5 +352,31 @@ def notify_test(commits: int, errors: int):
         raise SystemExit(1)
 
 
+@main.command("serve")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--host", default="0.0.0.0", help="Bind host (default: 0.0.0.0)")
+@click.option("--port", "-p", type=int, default=8000, help="Bind port (default: 8000)")
+@click.option("--reload", "do_reload", is_flag=True, help="Enable auto-reload for development")
+def serve(repo: str, host: str, port: int, do_reload: bool):
+    """Start the REST API server for querying law texts.
+
+    Provides endpoints:
+      GET /api/v1/laws/{sr_number}?lang=de&date=YYYY-MM-DD
+      GET /api/v1/laws/{sr_number}/versions?lang=de
+      GET /api/v1/search?q=...&lang=de
+      GET /api/v1/health
+    """
+    import uvicorn
+    from .api import create_app
+
+    create_app(repo_path=repo)
+    uvicorn.run(
+        "legalize_ch.api:app",
+        host=host,
+        port=port,
+        reload=do_reload,
+    )
+
+
 if __name__ == "__main__":
     main()
