@@ -243,6 +243,105 @@ def cantonal_list(canton: str | None):
     click.echo(f"\nTotal: {len(LEXWORK_CANTONS)} LexWork + {len(LEXFIND_ONLY_CANTONS)} LexFind = 26 cantons")
 
 
+@main.command("cantonal-rollout")
+@click.option("--repo", "-r", default=".", help="Path to the git repo")
+@click.option("--batch-size", "-b", type=int, default=3,
+              help="Number of cantons to process per batch (default: 3)")
+@click.option("--limit", "-n", type=int, default=None,
+              help="Max laws per canton (None = all)")
+@click.option("--lang", "-l", multiple=True, default=["de"], help="Languages to fetch")
+@click.option("--rate-limit", type=float, default=1.0, help="Seconds between requests")
+@click.option("--dry-run", is_flag=True, help="Show what would be done without fetching")
+@click.option("--status", "show_status", is_flag=True, help="Show rollout progress and exit")
+@click.option("--reset", type=str, default=None,
+              help="Reset a failed canton to pending (canton abbreviation)")
+def cantonal_rollout(repo: str, batch_size: int, limit: int | None, lang: tuple,
+                     rate_limit: float, dry_run: bool, show_status: bool, reset: str | None):
+    """Incrementally roll out cantonal law fetching, prioritized by data availability.
+
+    Cantons are processed in priority tiers:
+      Tier 1: Dedicated API (ZH) — best data quality
+      Tier 2: LexWork API (14 cantons) — direct JSON access
+      Tier 3: LexFind fallback (11 cantons) — less structured
+
+    Each invocation processes the next --batch-size cantons. State is persisted
+    between runs, so you can call this repeatedly (e.g. via cron) to gradually
+    roll out all cantons.
+
+    Examples:
+      legalize-ch cantonal-rollout --status           # Check progress
+      legalize-ch cantonal-rollout --batch-size 5     # Process next 5
+      legalize-ch cantonal-rollout --dry-run          # Preview next batch
+      legalize-ch cantonal-rollout --reset ge         # Retry failed canton
+    """
+    from .canton_rollout import (
+        load_rollout_state, save_rollout_state, run_rollout,
+        reset_canton, get_tier, tier_label, ROLLOUT_ORDER,
+    )
+
+    if reset:
+        reset_canton(repo, reset.lower())
+        click.echo(f"Reset {reset.upper()} to pending.")
+        return
+
+    if show_status:
+        state = load_rollout_state(repo)
+        summary = state.summary()
+        click.echo(f"Canton Rollout Progress: {summary['completed']}/{summary['total_cantons']} "
+                   f"({summary['progress_pct']}%)")
+        click.echo(f"  Total laws fetched: {summary['total_laws_fetched']}")
+        click.echo(f"\n  Completed ({summary['completed']}): "
+                   f"{', '.join(c.upper() for c in summary['completed_list']) or 'none'}")
+        if summary['in_progress_list']:
+            click.echo(f"  In progress: {', '.join(c.upper() for c in summary['in_progress_list'])}")
+        if summary['failed_list']:
+            click.echo(f"  Failed: {', '.join(c.upper() for c in summary['failed_list'])}")
+        if summary['next_up']:
+            click.echo(f"  Next up: {', '.join(c.upper() for c in summary['next_up'])}")
+
+        click.echo(f"\nPriority order ({len(ROLLOUT_ORDER)} cantons):")
+        for canton in ROLLOUT_ORDER:
+            tier = get_tier(canton)
+            status = state.get_status(canton)
+            marker = {"completed": "[x]", "in_progress": "[~]", "failed": "[!]"}.get(status, "[ ]")
+            click.echo(f"  {marker} {canton.upper():3s}  Tier {tier} ({tier_label(tier)}) — {status}")
+        return
+
+    result = run_rollout(
+        repo_path=repo,
+        batch_size=batch_size,
+        limit_per_canton=limit,
+        languages=list(lang),
+        rate_limit=rate_limit,
+        dry_run=dry_run,
+    )
+
+    if dry_run:
+        click.echo("Dry run — next batch would be:")
+        for canton, info in result.get("results", {}).items():
+            click.echo(f"  {canton.upper():3s}  Tier {info['tier']} ({info['tier_label']}) "
+                       f"[currently: {info['status']}]")
+        return
+
+    if result.get("status") == "all_complete":
+        click.echo("All 26 cantons have been rolled out!")
+        return
+
+    click.echo(f"Batch complete: {', '.join(c.upper() for c in result['batch'])}")
+    click.echo(f"Total commits this batch: {result['total_commits']}")
+    for canton, info in result.get("results", {}).items():
+        status = info["status"]
+        if status == "completed":
+            click.echo(f"  {canton.upper()}: {info['commits']} commits")
+        else:
+            click.echo(f"  {canton.upper()}: FAILED — {info.get('error', 'unknown')}")
+
+    summary = result.get("summary", {})
+    if summary:
+        click.echo(f"\nOverall: {summary['completed']}/{summary['total_cantons']} cantons "
+                   f"({summary['progress_pct']}%)")
+
+
 @main.command("codify")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
 @click.option("--lang", "-l", default="de", help="Source language (default: de)")
