@@ -90,8 +90,15 @@ class GitCommitter:
         return True
 
     def commit_initial(self, message: str = "Initialize Swiss law repository"):
-        """Create initial commit with repo metadata."""
+        """Create initial commit with repo metadata (only if README doesn't exist yet).
+
+        Skips if README.md already exists to avoid overwriting a customized
+        README on subsequent pipeline runs (fixes TD.2).
+        """
         readme = self.repo_path / "README.md"
+        if readme.exists():
+            logger.debug("README.md already exists, skipping initial commit")
+            return
         readme.write_text(
             "# Swiss Federal Law\n\n"
             "Version-controlled Swiss federal legislation in DE, FR, and IT.\n\n"
