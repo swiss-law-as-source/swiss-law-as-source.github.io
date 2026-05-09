@@ -42,8 +42,10 @@ Rules:
 - snake_case variable names
 - Include label and reference
 - Implement formula method capturing the legal logic
-- If purely procedural, output a bool Variable for applicability
-- Output ONLY valid Python code\
+- If the article contains NO computable logic (purely definitional, procedural, \
+organisational, or declarative with no conditions, thresholds, calculations, or \
+eligibility rules), output ONLY the single word: NO_LOGIC
+- Output ONLY valid Python code (or NO_LOGIC if not applicable)\
 """
 
 
@@ -128,6 +130,11 @@ def _call_claude(article: ArticleChunk) -> dict | None:
 
         code = result.stdout.strip()
         if not code:
+            return None
+
+        # Skip articles with no computable logic
+        if code.strip().upper() == "NO_LOGIC":
+            logger.info("No computable logic in article, skipping")
             return None
 
         return {"code": code, "parameters": None}
