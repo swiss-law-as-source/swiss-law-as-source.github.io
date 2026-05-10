@@ -30,22 +30,43 @@ SYSTEM_PROMPT = """\
 You are a legal-to-code translator. Convert the given Swiss law article into \
 an OpenFisca Variable class in Python. Output ONLY Python code, no explanations.
 
+TEMPLATE (use exactly this structure):
+
+```
+from openfisca_core.model_api import *
+from openfisca_core.periods import MONTH, YEAR
+from openfisca_core.entities import build_entity
+
+Person = build_entity(key='person', plural='persons', label='An individual', \
+is_person=True)
+
+
+class VariableName(Variable):
+    value_type = bool  # or float, int
+    entity = Person
+    definition_period = YEAR  # or MONTH
+    label = "Short description"
+    reference = "SR X.XXX Art. N"
+
+    def formula(person, period, parameters):
+        # Logic here
+        return result
+```
+
 Rules:
-- Start with imports: from openfisca_core.model_api import *
-- from openfisca_core.periods import MONTH, YEAR
-- from openfisca_core.entities import build_entity
-- Person = build_entity(key='person', plural='persons', label='An individual', is_person=True)
-- Each article becomes one or more Variable subclasses
-- value_type = bool, float, int, or Enum
-- definition_period = MONTH or YEAR (objects, not strings)
-- entity = Person (object, not string)
-- snake_case variable names
-- Include label and reference
-- Implement formula method capturing the legal logic
+- ONLY use imports shown in the template. Do NOT import openfisca_switzerland \
+or any other package.
+- entity = Person (the object defined above, NEVER a string)
+- definition_period = YEAR or MONTH (the imported objects, NEVER strings)
+- value_type must be bool, float, or int (NOT Enum or str)
+- formula signature is always: def formula(person, period, parameters)
+- Use person('other_variable', period) to reference other variables
+- Use numpy operations (np is available via model_api import) for array logic
+- snake_case class names matching the legal concept
+- Do NOT include any text outside the Python code (no explanations, no markdown)
 - If the article contains NO computable logic (purely definitional, procedural, \
 organisational, or declarative with no conditions, thresholds, calculations, or \
-eligibility rules), output ONLY the single word: NO_LOGIC
-- Output ONLY valid Python code (or NO_LOGIC if not applicable)\
+eligibility rules), output ONLY the single word: NO_LOGIC\
 """
 
 
@@ -151,9 +172,22 @@ def _postprocess_code(code: str) -> str:
     """Fix common issues in generated OpenFisca code."""
     # Strip markdown code fences
     code = re.sub(r"^```\w*\n?|```$", "", code, flags=re.MULTILINE).strip()
+    # Remove any trailing explanation text (non-code after last class/def)
+    lines = code.split("\n")
+    clean_lines = []
+    in_class = False
+    for line in lines:
+        if line.startswith("class ") or line.startswith("def ") or line.startswith("from ") or line.startswith("import "):
+            in_class = True
+        if in_class and line and not line[0].isspace() and not line.startswith(("class ", "def ", "from ", "import ", "#", "@")):
+            # Non-code line after code started — likely explanation text
+            break
+        clean_lines.append(line)
+    code = "\n".join(clean_lines).rstrip()
+
     # Fix entity as string
     code = re.sub(r'entity\s*=\s*["\']Person["\']', "entity = Person", code)
-    code = re.sub(r'entity\s*=\s*["\']Household["\']', "entity = Household", code)
+    code = re.sub(r'entity\s*=\s*["\']Household["\']', "entity = Person", code)
     # Fix definition_period as string
     for period in ("YEAR", "MONTH"):
         code = re.sub(
@@ -161,7 +195,22 @@ def _postprocess_code(code: str) -> str:
             f"definition_period = {period}",
             code,
         )
+    # Remove bad imports
+    code = re.sub(r"^from openfisca_switzerland.*$", "", code, flags=re.MULTILINE)
+    code = re.sub(r"^from openfisca_core\.common.*$", "", code, flags=re.MULTILINE)
+    code = re.sub(r"^import openfisca_switzerland.*$", "", code, flags=re.MULTILINE)
+    # Fix value_type = Enum (not supported without setup)
+    code = re.sub(r"value_type\s*=\s*Enum", "value_type = bool", code)
     return code
+
+
+def _validate_code(code: str) -> bool:
+    """Check if generated code compiles and defines at least one Variable."""
+    try:
+        compile(code, "<generated>", "exec")
+    except SyntaxError:
+        return False
+    return "class " in code and "Variable" in code
 
 
 def transform_law_group(
@@ -219,6 +268,10 @@ def transform_law_group(
             code = _postprocess_code(result["code"])
             if len(code) < 30:
                 logger.warning("Too-short code for %s", article.reference)
+                continue
+
+            if not _validate_code(code):
+                logger.warning("Invalid code for %s, skipping", article.reference)
                 continue
 
             # Ensure imports
