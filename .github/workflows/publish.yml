@@ -52,16 +52,19 @@ jobs:
           git config user.name "Swiss Law Bot"
           git config user.email "bot@swiss-law-as-source.github.io"
 
+      # Federal only for now: the cantonal portal APIs (LexWork, LexFind,
+      # ZHLex) are returning 404/HTML in 2026 — see README "Data sources".
+      # Switch back to --scope all once the fetchers are rewired.
       - name: Incremental Fedlex update
         if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.bootstrap)
         run: |
-          legalize-ch update --scope all --rate-limit 2.0 || \
+          legalize-ch update --scope federal --rate-limit 0.3 || \
             echo "Update finished with non-zero exit; continuing to export step."
 
       - name: Full bootstrap (manual trigger only)
         if: github.event_name == 'workflow_dispatch' && inputs.bootstrap
         run: |
-          legalize-ch bootstrap --scope all --rate-limit 2.0 || \
+          legalize-ch bootstrap --scope federal --rate-limit 0.3 || \
             echo "Bootstrap finished with non-zero exit; continuing to export step."
 
       - name: Regenerate static API exports

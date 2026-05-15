@@ -111,10 +111,16 @@ legalize-ch export                  # Regenerate api/v1/publications/*.json
 ## Data sources
 
 - **Federal** — [Fedlex SPARQL endpoint](https://fedlex.data.admin.ch/sparqlendpoint)
-  (`jolux:` ontology).
-- **Cantonal** — [LexWork JSON API](https://www.lexwork.ch/) for 14 cantons,
-  [LexFind](https://www.lexfind.ch/) fallback for the rest, dedicated
-  ZHLex fetcher for Zürich.
+  (`jolux:` ontology). Fully wired, ~9000 laws, 17k+ revisions.
+- **Cantonal** — currently **not populated**. The legacy fetchers in
+  `cantonal.py` and `zurich_fetcher.py` target API endpoints
+  (`https://www.lexfind.ch/fe/api/search`, the per-canton LexWork
+  `/api/texts_of_law/` paths, `https://www.zhlex.zh.ch/api/zhlex/v1/erlasse`)
+  that have since been removed or redirected — every canton returns 404 or
+  an HTML SPA shell in 2026. The cantonal scope is therefore disabled in
+  the daily CI workflow until the fetchers are rewired against the
+  current portals. Code paths and tests are kept in tree so the rewire
+  is straightforward when the canton sources are remapped.
 
 ## License
 
