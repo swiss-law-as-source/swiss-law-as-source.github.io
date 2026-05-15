@@ -428,17 +428,18 @@ class CantonalFetcher:
 def canton_to_path(canton: str, systematic_number: str, language: str) -> str:
     """Convert cantonal law identifiers to a file path.
 
-    Structure: ch/{canton}/{lang}/{number}.md
+    Structure: kt/{canton}/{lang}/{number}.md
 
     Examples:
-        ch/bs/de/300.100.md
-        ch/zh/de/131.1.md
-        ch/ge/fr/A.2.05.md
+        kt/bs/de/300.100.md
+        kt/zh/de/131.1.md
+        kt/ge/fr/A.2.05.md
 
-    This mirrors the federal structure (ch/de/, ch/fr/, ch/it/) but scoped
-    per canton, keeping language variants of the same law in separate dirs.
+    Cantonal law lives under `kt/` (Kantone) to keep it visually separate
+    from the federal `ch/` (Confoederatio Helvetica) tree, which is keyed
+    by SR number rather than canton code.
     """
-    return f"ch/{canton}/{language}/{systematic_number}.md"
+    return f"kt/{canton}/{language}/{systematic_number}.md"
 
 
 def cantonal_law_to_markdown(text: CantonalLawText) -> str:

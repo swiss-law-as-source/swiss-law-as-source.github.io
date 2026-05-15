@@ -175,9 +175,11 @@ class TestEndToEndPipeline:
              patch.object(pipeline.fetcher, "fetch_text", side_effect=_mock_fetch_text):
             total_commits = pipeline.run(languages=["de", "fr"])
 
-        # We expect 3 versions total: BV@2000 + BV@2014 + OR@1912
-        # Each creates one commit (with de + fr in the same commit)
-        assert total_commits == 3
+        # 4 commits: BV publication@1999-04-18 + BV@2000 + BV@2014 + OR@1971.
+        # OR's publication commit (date_document=1911-03-30) is skipped because
+        # git rejects pre-1970 timestamps; the consolidation at 1971-01-01 is
+        # the earliest representable.
+        assert total_commits == 4
 
         # Verify markdown files exist for both languages
         assert (repo / "ch/101/de/101.md").exists()
@@ -205,9 +207,9 @@ class TestEndToEndPipeline:
             ["git", "log", "--oneline"],
             cwd=repo, capture_output=True, text=True,
         )
-        # 3 version commits + 1 initial commit = 4
+        # 4 version commits + 1 initial commit = 5
         commit_lines = [l for l in log.stdout.strip().split("\n") if l]
-        assert len(commit_lines) == 4
+        assert len(commit_lines) == 5
 
     def test_chronological_commit_order(self, pipeline_repo):
         """Commits should be ordered chronologically by version date."""
@@ -227,9 +229,10 @@ class TestEndToEndPipeline:
 
         # Skip initial commit; remaining should be chronological
         version_dates = dates[1:]
-        assert len(version_dates) == 3
+        # 4: BV pub@1999 + BV@2000 + BV@2014 + OR@1971 (OR pub skipped, pre-1970)
+        assert len(version_dates) == 4
 
-        # OR 1971 should come before BV 2000, and BV 2000 before BV 2014
+        # OR 1971 < BV pub 1999 < BV 2000 < BV 2014
         assert version_dates == sorted(version_dates)
 
     def test_pipeline_state_tracking(self, pipeline_repo):
@@ -268,7 +271,7 @@ class TestEndToEndPipeline:
              patch.object(pipeline2.fetcher, "fetch_text", side_effect=_mock_fetch_text):
             second_run = pipeline2.run(languages=["de"])
 
-        assert first_run == 3
+        assert first_run == 4
         assert second_run == 0  # all already processed
 
     def test_sr_filter(self, pipeline_repo):
@@ -280,8 +283,8 @@ class TestEndToEndPipeline:
              patch.object(pipeline.fetcher, "fetch_text", side_effect=_mock_fetch_text):
             total = pipeline.run(languages=["de"], sr_filter="101")
 
-        # Only BV (SR 101) should be processed — 2 versions
-        assert total == 2
+        # BV (SR 101): 1 publication commit + 2 consolidations = 3
+        assert total == 3
         assert (repo / "ch/101/de/101.md").exists()
         assert not (repo / "ch/220/de/220.md").exists()
 
@@ -314,12 +317,37 @@ class TestEndToEndPipeline:
         # Filter out the initial commit
         law_msgs = [m for m in messages if m.startswith("SR ")]
 
-        assert len(law_msgs) == 3
+        # 4 commits: BV pub@1999 + BV@2000 + BV@2014 + OR@1971
+        assert len(law_msgs) == 4
         assert any("SR 101" in m for m in law_msgs)
         assert any("SR 220" in m for m in law_msgs)
-        # Messages should contain the version date
+        # Messages should contain the version date for each commit
+        assert any("1999-04-18" in m for m in law_msgs)
         assert any("2000-01-01" in m for m in law_msgs)
         assert any("1971-01-01" in m for m in law_msgs)
+
+    def test_pre_1970_publication_date_in_frontmatter(self, pipeline_repo):
+        """Pre-1970 publication dates can't go in git timestamps, so they
+        must live in the markdown frontmatter for API discoverability."""
+        pipeline, repo = pipeline_repo
+
+        with patch.object(pipeline.fetcher, "fetch_catalog", side_effect=_mock_fetch_catalog), \
+             patch.object(pipeline.fetcher, "fetch_versions", side_effect=_mock_fetch_versions), \
+             patch.object(pipeline.fetcher, "fetch_text", side_effect=_mock_fetch_text):
+            pipeline.run(languages=["de", "fr"])
+
+        # OR (220) has date_document=1911-03-30 — pre-1970, so its earliest
+        # commit (1971-01-01) should carry the marker in YAML frontmatter.
+        or_de = (repo / "ch/220/de/220.md").read_text()
+        assert "original_publication_date: '1911-03-30'" in or_de
+        or_fr = (repo / "ch/220/fr/220.md").read_text()
+        assert "original_publication_date: '1911-03-30'" in or_fr
+
+        # BV (101) has date_document=1999-04-18 — post-1970. The prepended
+        # publication commit handles it; consolidation files still get
+        # the marker for consistency / API queryability.
+        bv_de = (repo / "ch/101/de/101.md").read_text()
+        assert "original_publication_date: '1999-04-18'" in bv_de
 
     def test_frontmatter_fields_valid(self, pipeline_repo):
         """All generated markdown files should have valid YAML frontmatter."""

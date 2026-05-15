@@ -31,12 +31,20 @@ PREFIX xsd:   <http://www.w3.org/2001/XMLSchema#>
 PREFIX schema: <http://schema.org/>
 """
 
+# NOTE on the `__SR_FILTER__` marker: Fedlex's Virtuoso endpoint refuses to
+# sort more than 10000 rows in a single query (Error SR353 "Sorted TOP
+# clause specifies more then 15000 rows to sort"), and LIMIT/OFFSET
+# pagination breaks for the same reason — OFFSET still requires sorting
+# the underlying rows. We partition the catalog by the leading digit of
+# the SR number (0..9) instead, which keeps every page comfortably under
+# the limit. The marker is replaced per-partition by `_query_by_sr_prefix`.
 CATALOG_QUERY = PREFIXES + """
 SELECT DISTINCT ?cc ?srNumber ?titleDe ?titleFr ?titleIt ?dateDoc ?dateForce ?abbrDe ?abbrFr ?abbrIt
 WHERE {
   ?cc a jolux:ConsolidationAbstract ;
       jolux:classifiedByTaxonomyEntry ?tax .
   ?tax skos:notation ?srNumber .
+  __SR_FILTER__
 
   OPTIONAL {
     ?cc jolux:isRealizedBy ?exprDe .
@@ -74,15 +82,15 @@ WHERE {
                 jolux:titleShort ?abbrIt .
   }
 }
-ORDER BY ?srNumber
 """
 
 # Consolidation versions via isMemberOf
 VERSIONS_QUERY = PREFIXES + """
-SELECT DISTINCT ?cons ?dateApp WHERE {{
+SELECT DISTINCT ?cons ?dateApp ?dateDoc WHERE {{
   ?cons a jolux:Consolidation ;
         jolux:isMemberOf <{uri}> .
   ?cons jolux:dateApplicability ?dateApp .
+  OPTIONAL {{ ?cons jolux:dateDocument ?dateDoc . }}
 }}
 ORDER BY ?dateApp
 """
@@ -160,7 +168,9 @@ SELECT DISTINCT ?title ?fileUrl WHERE {{
 LIMIT 1
 """
 
-# Fetch laws with consolidation versions applicable since a given date
+# Fetch laws with consolidation versions applicable since a given date.
+# Uses the same `__SR_FILTER__` partitioning as CATALOG_QUERY (see note above)
+# to stay under Virtuoso's 10000-row sort cap.
 MODIFIED_SINCE_QUERY = PREFIXES + """
 SELECT DISTINCT ?cc ?srNumber ?titleDe ?titleFr ?titleIt ?dateDoc ?dateForce ?abbrDe ?abbrFr ?abbrIt
 WHERE {{
@@ -172,6 +182,7 @@ WHERE {{
   ?cc a jolux:ConsolidationAbstract ;
       jolux:classifiedByTaxonomyEntry ?tax .
   ?tax skos:notation ?srNumber .
+  __SR_FILTER__
 
   OPTIONAL {{
     ?cc jolux:isRealizedBy ?exprDe .
@@ -209,7 +220,6 @@ WHERE {{
                 jolux:titleShort ?abbrIt .
   }}
 }}
-ORDER BY ?srNumber
 """
 
 LANG_MAP = {
@@ -271,9 +281,9 @@ class FedlexFetcher:
     def _query_paginated(self, sparql_text: str, page_size: int = PAGE_SIZE) -> list[dict]:
         """Execute a SPARQL query with LIMIT/OFFSET pagination.
 
-        Fetches results in pages of ``page_size`` rows to avoid timeouts on
-        large result sets.  Pages are fetched until a page returns fewer rows
-        than ``page_size`` (i.e. the last page).
+        Kept for queries where partitioning by SR prefix doesn't apply.
+        Fetches results in pages of ``page_size`` rows; stops when a page
+        returns fewer rows than ``page_size``.
         """
         all_rows: list[dict] = []
         offset = 0
@@ -285,6 +295,27 @@ class FedlexFetcher:
             if len(rows) < page_size:
                 break  # last page
             offset += page_size
+        return all_rows
+
+    def _query_by_sr_prefix(self, template: str) -> list[dict]:
+        """Run a catalog-shaped query 10 times, partitioned by SR-number digit.
+
+        The Fedlex Virtuoso endpoint refuses to sort result sets larger
+        than 10000 rows, which breaks LIMIT/OFFSET pagination on the full
+        catalog. Partitioning on the leading digit of the SR number keeps
+        every sub-query well under that ceiling. ``template`` must contain
+        the literal token ``__SR_FILTER__``, which is replaced per partition
+        with a ``FILTER(STRSTARTS(?srNumber, "<digit>"))`` clause.
+        """
+        all_rows: list[dict] = []
+        for digit in "0123456789":
+            filter_clause = f'FILTER(STRSTARTS(STR(?srNumber), "{digit}"))'
+            query = template.replace("__SR_FILTER__", filter_clause)
+            rows = self._query(query)
+            logger.debug(
+                "SR-prefix partition: prefix=%s, got %d rows", digit, len(rows),
+            )
+            all_rows.extend(rows)
         return all_rows
 
     def _fetch_url(self, url: str) -> str:
@@ -330,17 +361,17 @@ class FedlexFetcher:
     def fetch_catalog(self, limit: int | None = None) -> list[LawEntry]:
         """Fetch all laws in the classified compilation.
 
-        Uses paginated SPARQL queries to avoid timeouts on large result sets.
-        If *limit* is set, a single non-paginated query with LIMIT is used.
+        Without ``limit``, partitions by SR-number leading digit (0-9) to
+        stay under Fedlex's 10000-row sort cap. With ``limit``, a single
+        query is run with no SR filter.
         """
-        query = CATALOG_QUERY
         if limit:
-            query += f"\nLIMIT {limit}"
+            query = CATALOG_QUERY.replace("__SR_FILTER__", "") + f"\nLIMIT {limit}"
             logger.info("Fetching law catalog from Fedlex (limit=%d)...", limit)
             rows = self._query(query)
         else:
-            logger.info("Fetching law catalog from Fedlex (paginated, page_size=%d)...", PAGE_SIZE)
-            rows = self._query_paginated(query)
+            logger.info("Fetching law catalog from Fedlex (partitioned by SR prefix)...")
+            rows = self._query_by_sr_prefix(CATALOG_QUERY)
         logger.info("Found %d raw catalog rows", len(rows))
 
         entries = []
@@ -367,18 +398,18 @@ class FedlexFetcher:
     def fetch_modified_since(self, since: date, limit: int | None = None) -> list[LawEntry]:
         """Fetch laws that have consolidation versions applicable since the given date.
 
-        Uses paginated SPARQL queries to avoid timeouts on large result sets.
-        If *limit* is set, a single non-paginated query with LIMIT is used.
+        Partitions by SR-number prefix (0-9) when ``limit`` is unset,
+        same rationale as ``fetch_catalog``.
         """
         query = MODIFIED_SINCE_QUERY.format(since_date=since.isoformat())
         if limit:
-            query += f"\nLIMIT {limit}"
+            query = query.replace("__SR_FILTER__", "") + f"\nLIMIT {limit}"
             logger.info("Fetching laws modified since %s (limit=%d)...", since.isoformat(), limit)
             rows = self._query(query)
         else:
-            logger.info("Fetching laws modified since %s (paginated, page_size=%d)...",
-                         since.isoformat(), PAGE_SIZE)
-            rows = self._query_paginated(query)
+            logger.info("Fetching laws modified since %s (partitioned by SR prefix)...",
+                         since.isoformat())
+            rows = self._query_by_sr_prefix(query)
         logger.info("Found %d raw rows for modified laws", len(rows))
 
         entries = []
@@ -416,6 +447,7 @@ class FedlexFetcher:
                 sr_number=law.sr_number,
                 version_uri=self._get_val(row, "cons"),
                 date_applicable=d,
+                date_document=self._parse_date(self._get_val(row, "dateDoc")),
             ))
         return sorted(versions, key=lambda v: v.date_applicable)
 

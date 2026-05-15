@@ -11,7 +11,7 @@ from typing import NamedTuple
 
 from .committer import GitCommitter
 from .fetcher import FedlexFetcher
-from .models import LawEntry, LawRevision
+from .models import LawEntry, LawRevision, LawVersion
 from .transformer import law_to_markdown
 
 logger = logging.getLogger(__name__)
@@ -333,12 +333,39 @@ class Pipeline:
         finally:
             self._release_lock()
 
+    @staticmethod
+    def _version_date(version: LawVersion) -> date:
+        """Pick the most representative date for a consolidation.
+
+        Prefers `dateDocument` (when the consolidation was published) over
+        `dateApplicability` (when it took legal effect) if the former is
+        earlier — the publication date is closer to "version date" as it
+        appears in the law's own text.
+        """
+        if version.date_document and version.date_document < version.date_applicable:
+            return version.date_document
+        return version.date_applicable
+
     def _collect_revisions(self, law: LawEntry, languages: list[str],
                            latest_only: bool,
                            since_date: date | None = None) -> list[_PendingRevision]:
         """Fetch and transform a law's versions without committing.
 
         Returns a list of _PendingRevision items ready for chronological sorting.
+
+        When the law's original document date predates the earliest Fedlex
+        consolidation, two things happen:
+
+        1. **Every revision's markdown frontmatter** gets an
+           ``original_publication_date: YYYY-MM-DD`` field. This makes the
+           original publication queryable via the REST API even for pre-1970
+           dates that git itself cannot represent as a commit timestamp.
+
+        2. **For post-1970 publication dates**, a synthetic publication
+           revision is *also* prepended so the git log starts at the law's
+           actual beginning. Pre-1970 dates skip this — git's ``time_t``
+           cannot go negative — but the frontmatter marker still surfaces
+           them through the API.
         """
         versions = self.fetcher.fetch_versions(law)
 
@@ -353,11 +380,30 @@ class Pipeline:
             versions = [versions[-1]]
 
         if since_date is not None:
-            versions = [v for v in versions if v.date_applicable >= since_date]
+            versions = [v for v in versions
+                        if self._version_date(v) >= since_date]
+
+        # If the law's abstract dateDocument is earlier than its earliest
+        # consolidation, propagate that date into every revision's
+        # frontmatter as `original_publication_date`. This is the durable
+        # marker the API scans for pre-1970 lookups, and it also documents
+        # post-1970 publications consistently across all revisions.
+        earliest_v_date = self._version_date(versions[0]) if versions else None
+        early_pub_marker: date | None = (
+            law.date_document
+            if (law.date_document
+                and earliest_v_date
+                and law.date_document < earliest_v_date)
+            else None
+        )
 
         pending: list[_PendingRevision] = []
+        first_consolidation_texts: dict[str, str] | None = None
+        first_consolidation_date: date | None = None
+
         for version in versions:
-            if self._is_processed(law.sr_number, version.date_applicable):
+            v_date = self._version_date(version)
+            if self._is_processed(law.sr_number, v_date):
                 continue
 
             texts = {}
@@ -371,17 +417,25 @@ class Pipeline:
                         xml_content=text.xml_content,
                         html_content=text.html_content,
                         language=lang,
-                        version_date=version.date_applicable,
+                        version_date=v_date,
                         abbreviation=abbr,
                     )
+                    if early_pub_marker:
+                        md = self._inject_original_publication_date(
+                            md, early_pub_marker,
+                        )
                     texts[lang] = md
 
             if not texts:
                 continue
 
+            if first_consolidation_texts is None:
+                first_consolidation_texts = texts
+                first_consolidation_date = v_date
+
             revision = LawRevision(
                 sr_number=law.sr_number,
-                date=version.date_applicable,
+                date=v_date,
                 title_de=law.title_de,
                 title_fr=law.title_fr,
                 title_it=law.title_it,
@@ -389,7 +443,87 @@ class Pipeline:
             )
             pending.append(_PendingRevision(revision=revision, law=law))
 
+        # Prepend a synthetic publication commit when the date is post-1970
+        # (git can't store earlier commit timestamps). The frontmatter
+        # marker added above already makes pre-1970 publications queryable
+        # via the API.
+        if (
+            not latest_only
+            and early_pub_marker
+            and first_consolidation_texts
+            and first_consolidation_date
+            and early_pub_marker >= date(1970, 1, 1)
+            and not self._is_processed(law.sr_number, early_pub_marker)
+            and (since_date is None or early_pub_marker >= since_date)
+        ):
+            pub_texts = {
+                lang: self._mark_original_publication(md, early_pub_marker)
+                for lang, md in first_consolidation_texts.items()
+            }
+            pub_revision = LawRevision(
+                sr_number=law.sr_number,
+                date=early_pub_marker,
+                title_de=law.title_de,
+                title_fr=law.title_fr,
+                title_it=law.title_it,
+                texts=pub_texts,
+            )
+            pending.insert(0, _PendingRevision(revision=pub_revision, law=law))
+
         return pending
+
+    @staticmethod
+    def _inject_original_publication_date(markdown: str, pub_date: date) -> str:
+        """Add `original_publication_date: YYYY-MM-DD` to YAML frontmatter.
+
+        Idempotent — does nothing if the field is already present. Preserves
+        all other frontmatter fields, including `version_date` (which still
+        refers to this consolidation's date, not the original publication).
+        Returns the original markdown unchanged if parsing fails — losing
+        the marker is preferable to corrupting the file.
+        """
+        if not markdown.startswith("---\n"):
+            return markdown
+        end = markdown.find("\n---\n", 4)
+        if end == -1:
+            return markdown
+        frontmatter = markdown[4:end]
+        body = markdown[end + 5:]
+        lines = frontmatter.splitlines()
+        if any(line.startswith("original_publication_date:") for line in lines):
+            return markdown
+        lines.append(f"original_publication_date: '{pub_date.isoformat()}'")
+        return "---\n" + "\n".join(lines) + "\n---\n" + body
+
+    @staticmethod
+    def _mark_original_publication(markdown: str, pub_date: date) -> str:
+        """Rewrite a markdown's YAML frontmatter for the publication commit.
+
+        Sets `version_date` to `pub_date` and adds `original_publication: true`
+        so the synthetic commit is auditable. If parsing fails the original
+        text is returned unchanged — losing the marker is preferable to
+        corrupting the file.
+        """
+        if not markdown.startswith("---\n"):
+            return markdown
+        end = markdown.find("\n---\n", 4)
+        if end == -1:
+            return markdown
+        frontmatter = markdown[4:end]
+        body = markdown[end + 5:]
+        iso = pub_date.isoformat()
+        new_lines: list[str] = []
+        saw_version_date = False
+        for line in frontmatter.splitlines():
+            if line.startswith("version_date:"):
+                new_lines.append(f"version_date: '{iso}'")
+                saw_version_date = True
+            else:
+                new_lines.append(line)
+        if not saw_version_date:
+            new_lines.append(f"version_date: '{iso}'")
+        new_lines.append("original_publication: true")
+        return "---\n" + "\n".join(new_lines) + "\n---\n" + body
 
     def _process_law(self, law: LawEntry, languages: list[str],
                      latest_only: bool, since_date: date | None = None) -> int:
@@ -418,15 +552,25 @@ class Pipeline:
         # Incremental mode: filter to only versions newer than since_date
         if since_date is not None:
             total_before = len(versions)
-            versions = [v for v in versions if v.date_applicable >= since_date]
+            versions = [v for v in versions if self._version_date(v) >= since_date]
             skipped = total_before - len(versions)
             if skipped:
                 logger.debug("Incremental: skipped %d old versions for SR %s (before %s)",
                              skipped, law.sr_number, since_date.isoformat())
 
+        earliest_v_date = self._version_date(versions[0]) if versions else None
+        early_pub_marker: date | None = (
+            law.date_document
+            if (law.date_document
+                and earliest_v_date
+                and law.date_document < earliest_v_date)
+            else None
+        )
+
         commits = 0
         for version in versions:
-            if self._is_processed(law.sr_number, version.date_applicable):
+            v_date = self._version_date(version)
+            if self._is_processed(law.sr_number, v_date):
                 continue
 
             texts = {}
@@ -440,9 +584,13 @@ class Pipeline:
                         xml_content=text.xml_content,
                         html_content=text.html_content,
                         language=lang,
-                        version_date=version.date_applicable,
+                        version_date=v_date,
                         abbreviation=abbr,
                     )
+                    if early_pub_marker:
+                        md = self._inject_original_publication_date(
+                            md, early_pub_marker,
+                        )
                     texts[lang] = md
 
             if not texts:
@@ -450,7 +598,7 @@ class Pipeline:
 
             revision = LawRevision(
                 sr_number=law.sr_number,
-                date=version.date_applicable,
+                date=v_date,
                 title_de=law.title_de,
                 title_fr=law.title_fr,
                 title_it=law.title_it,
@@ -459,7 +607,7 @@ class Pipeline:
 
             if self.committer.commit_revision(revision, law):
                 commits += 1
-                self._mark_processed(law.sr_number, version.date_applicable)
+                self._mark_processed(law.sr_number, v_date)
 
         return commits
 

@@ -2,8 +2,6 @@
 from __future__ import annotations
 
 import logging
-import sys
-from pathlib import Path
 
 import click
 
@@ -95,16 +93,10 @@ def update(repo: str, limit: int | None, lang: tuple, sr: str | None, rate_limit
 
     By default uses last_run from pipeline state. Use --since to override.
     Commits are sorted chronologically by default.
-
-    Use --scope to control what is updated:
-      --scope federal   (default) Only federal laws from Fedlex
-      --scope cantonal  Only cantonal laws (re-scans catalogs, skips known)
-      --scope all       Both federal and cantonal laws
     """
     total = 0
 
     if scope in ("federal", "all"):
-        from datetime import date as date_type
         pipeline = Pipeline(repo_path=repo, rate_limit=rate_limit)
         since_date = since.date() if since else None
         federal_total = pipeline.update(limit=limit, languages=list(lang), sr_filter=sr,
@@ -159,7 +151,6 @@ def cantonal(repo: str, canton: str, number: str | None, lang: str, rate_limit: 
         CantonalFetcher, LEXWORK_CANTONS, ALL_CANTONS,
         canton_to_path, cantonal_law_to_markdown,
     )
-    from .committer import GitCommitter
 
     canton = canton.lower()
     if canton not in ALL_CANTONS:
@@ -167,12 +158,10 @@ def cantonal(repo: str, canton: str, number: str | None, lang: str, rate_limit: 
         raise SystemExit(1)
 
     fetcher = CantonalFetcher(rate_limit=rate_limit)
-    committer = GitCommitter(repo)
     repo_path = Path(repo)
     commits = 0
 
     if number:
-        # Fetch a specific law
         text = fetcher.fetch_law_text(canton, number, lang)
         if not text:
             click.echo(f"No text found for {canton.upper()} {number}")
@@ -195,7 +184,6 @@ def cantonal(repo: str, canton: str, number: str | None, lang: str, rate_limit: 
                     click.echo(f"  Version {v.version_id}: {v.date_in_force or '?'}")
                     commits += 1
     else:
-        # Fetch catalog and process all laws
         click.echo(f"Fetching catalog for {canton.upper()}...")
         if canton in LEXWORK_CANTONS:
             click.echo(f"  Source: LexWork ({LEXWORK_CANTONS[canton]})")
@@ -275,7 +263,7 @@ def cantonal_rollout(repo: str, batch_size: int, limit: int | None, lang: tuple,
       legalize-ch cantonal-rollout --reset ge         # Retry failed canton
     """
     from .canton_rollout import (
-        load_rollout_state, save_rollout_state, run_rollout,
+        load_rollout_state, run_rollout,
         reset_canton, get_tier, tier_label, ROLLOUT_ORDER,
     )
 
@@ -342,203 +330,59 @@ def cantonal_rollout(repo: str, batch_size: int, limit: int | None, lang: tuple,
                    f"({summary['progress_pct']}%)")
 
 
-@main.command("codify")
+@main.command("reindex")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
-@click.option("--lang", "-l", default="de", help="Source language (default: de)")
-@click.option("--sr", type=str, default=None, help="SR number prefix filter")
-@click.option("--limit", "-n", type=int, default=None, help="Max law groups to process")
-@click.option("--dry-run", is_flag=True, help="Only log, don't generate")
-def codify(repo: str, lang: str, sr: str | None, limit: int | None, dry_run: bool):
-    """Convert law texts to executable OpenFisca code using Claude CLI.
+@click.option("--buffer-days", type=int, default=30,
+              help="How many days before today to record as `last_run` "
+                   "(buffer lets the first incremental update catch any "
+                   "consolidations Fedlex added since the snapshot)")
+def reindex(repo: str, buffer_days: int):
+    """Seed data/pipeline_state.json from markdown frontmatter.
 
-    Reads articles from ch/{number}/{lang}/*.md, generates OpenFisca
-    Variable classes, and writes to ch/{number}/executable/*.py.
+    Used after bootstrapping from an external data snapshot — the
+    pipeline learns which (sr_number, version_date) pairs already
+    exist on disk so subsequent `legalize-ch update` runs only fetch
+    genuinely new versions.
     """
-    from .law_to_openfisca import run_pipeline
+    from pathlib import Path
+    from .reindex import reindex as do_reindex
 
-    count = run_pipeline(
-        repo_path=repo,
-        lang=lang,
-        sr_filter=sr,
-        limit=limit,
-        dry_run=dry_run,
+    result = do_reindex(Path(repo), buffer_days=buffer_days)
+    click.echo(
+        f"Reindexed {result['processed_count']} (sr, version_date) entries "
+        f"(skipped {result['skipped']})."
     )
-    click.echo(f"Done. {count} OpenFisca variables generated.")
-
-
-@main.command("translate")
-@click.option("--repo", "-r", default=".", help="Path to the git repo")
-@click.option("--sr", type=str, default=None, help="Specific SR number to translate")
-@click.option("--source-lang", "-s", default="de", help="Source language (default: de)")
-@click.option("--limit", "-n", type=int, default=None, help="Max files to translate")
-@click.option("--sr-filter", type=str, default=None, help="SR number prefix filter")
-@click.option("--model", default="claude-sonnet-4-20250514", help="Claude model for translation")
-@click.option("--api-key", envvar="ANTHROPIC_API_KEY", default=None,
-              help="Anthropic API key (or set ANTHROPIC_API_KEY)")
-def translate(repo: str, sr: str | None, source_lang: str, limit: int | None,
-              sr_filter: str | None, model: str, api_key: str | None):
-    """Translate law texts to English using the Anthropic API.
-
-    Translates Swiss law texts from the source language (default: German)
-    to English. Translated files are written to ch/{number}/en/{sr}.md.
-
-    Uses Claude for high-quality legal translation that preserves
-    structure and terminology.
-    """
-    from .translator import Translator
-
-    if not api_key:
-        click.echo("Error: ANTHROPIC_API_KEY not set. Provide via --api-key or env var.", err=True)
-        raise SystemExit(1)
-
-    translator = Translator(api_key=api_key, model=model)
-
-    if sr:
-        # Translate a single law
-        ok = translator.translate_sr(repo, sr, source_lang)
-        if ok:
-            click.echo(f"Translated SR {sr} to English.")
-        else:
-            click.echo(f"Failed to translate SR {sr}.", err=True)
-            raise SystemExit(1)
-    else:
-        # Batch translation
-        count = translator.translate_directory(
-            repo, sr_filter=sr_filter, source_lang=source_lang, limit=limit
-        )
-        click.echo(f"Done. {count} files translated to English.")
-
-
-@main.command("index")
-@click.option("--repo", "-r", default=".", help="Path to the git repo")
-@click.option("--lang", "-l", default="de", help="Language for titles (default: de)")
-@click.option("--json/--no-json", "write_json", default=True,
-              help="Also write docs/laws.json for GitHub Pages (default: yes)")
-def index(repo: str, lang: str, write_json: bool):
-    """Generate INDEX.md and docs/laws.json (federal + cantonal)."""
-    from .index_generator import write_index, write_laws_json
-
-    out = write_index(repo_path=repo, lang=lang)
-    click.echo(f"Generated: {out}")
-    if write_json:
-        json_out = write_laws_json(repo_path=repo, lang=lang)
-        click.echo(f"Generated: {json_out}")
-
-
-@main.command("health-check")
-@click.option("--repo", "-r", default=".", help="Path to the git repo")
-@click.option("--days", "-d", type=int, default=30,
-              help="Alert if no commits for this many days (default: 30)")
-@click.option("--always-notify", is_flag=True,
-              help="Send notification even when healthy")
-def health_check(repo: str, days: int, always_notify: bool):
-    """Check repo health and alert if no new commits for N days.
-
-    Sends a Telegram notification if the most recent commit is older
-    than --days (default 30). Use --always-notify to send a message
-    regardless of health status.
-    """
-    from .health_check import check_health, send_health_alert
-
-    is_healthy, message = check_health(repo, stale_days=days)
-    click.echo(message)
-
-    if not is_healthy or always_notify:
-        ok = send_health_alert(
-            repo_path=repo,
-            stale_days=days,
-            always_notify=always_notify,
-        )
-        if ok:
-            click.echo("Telegram alert sent.")
-        else:
-            click.echo("Failed to send Telegram alert.", err=True)
-            if not is_healthy:
-                raise SystemExit(1)
-    else:
-        click.echo("No alert needed.")
+    click.echo(f"  last_run = {result['last_run']}")
+    click.echo(f"  written to {result['state_file']}")
 
 
 @main.command("export")
 @click.option("--repo", "-r", default=".", help="Path to the git repo")
-@click.option("--format", "-f", "fmt", type=click.Choice(["all", "csv", "jsonld"]),
-              default="all", help="Export format (default: all)")
-@click.option("--lang", "-l", multiple=True, default=["de", "fr", "it"], help="Languages")
-@click.option("--sr", type=str, default=None, help="SR number prefix filter")
-def export(repo: str, fmt: str, lang: tuple, sr: str | None):
-    """Export structured metadata as JSON-LD and/or CSV.
+@click.option("--output", "-o", default="api/v1/publications",
+              help="Output directory (relative to --repo or absolute)")
+def export(repo: str, output: str):
+    """Export publications as static JSON for GitHub Pages.
 
-    Scans all law markdown files, extracts frontmatter metadata,
-    and writes structured exports to data/laws_metadata.{csv,jsonld}.
+    Writes one file per year that has at least one publication
+    (including pre-1970 dates from markdown frontmatter), plus
+    `index.json` and `today.json`.
+
+    Run after every pipeline run; the JSON is committed to the
+    repo so GitHub Pages serves it directly.
     """
-    from .exporter import write_all, write_csv, write_jsonld
+    from pathlib import Path
+    from .static_export import export_publications
 
-    languages = list(lang)
-    if fmt == "csv":
-        path = write_csv(repo, languages, sr)
-        click.echo(f"CSV written: {path}")
-    elif fmt == "jsonld":
-        path = write_jsonld(repo, languages, sr)
-        click.echo(f"JSON-LD written: {path}")
-    else:
-        csv_path, jsonld_path = write_all(repo, languages, sr)
-        click.echo(f"CSV written: {csv_path}")
-        click.echo(f"JSON-LD written: {jsonld_path}")
+    repo_path = Path(repo).resolve()
+    out_path = Path(output)
+    if not out_path.is_absolute():
+        out_path = repo_path / out_path
 
-
-@main.command("notify-test")
-@click.option("--commits", type=int, default=0, help="Simulated commit count")
-@click.option("--errors", type=int, default=0, help="Simulated error count")
-def notify_test(commits: int, errors: int):
-    """Send a test Telegram notification."""
-    from .notify import PipelineResult, send_telegram
-
-    result = PipelineResult(
-        new_commits=commits,
-        laws_checked=42,
-        errors=[f"Test error #{i+1}" for i in range(errors)],
-        mode="test",
+    result = export_publications(repo_path, out_path)
+    click.echo(
+        f"Exported {result['publications']} publications across "
+        f"{result['years']} years to {result['output_dir']}"
     )
-    ok = send_telegram(result)
-    if ok:
-        click.echo("Telegram notification sent.")
-    else:
-        click.echo("Failed to send notification — check logs.", err=True)
-        raise SystemExit(1)
-
-
-@main.command("feed")
-@click.option("--repo", "-r", default=".", help="Path to the git repo")
-@click.option("--output", "-o", default=None, help="Output directory (default: docs/feeds/)")
-@click.option("--sr", type=str, default=None, help="SR number prefix filter")
-@click.option("--lang", "-l", default=None, help="Language filter (de/fr/it/en)")
-@click.option("--limit", "-n", type=int, default=50, help="Max entries per feed (default: 50)")
-@click.option("--since-days", type=int, default=90,
-              help="Look back this many days (default: 90)")
-def feed(repo: str, output: str | None, sr: str | None, lang: str | None,
-         limit: int, since_days: int):
-    """Generate RSS and Atom feeds of law changes (diffs).
-
-    Creates feeds that allow subscribing to changes in specific laws.
-    Feeds include unified diffs showing what changed in each revision.
-
-    Filter by SR number prefix to track specific areas of law:
-      legalize-ch feed --sr 210    # Track civil code changes
-      legalize-ch feed --sr 311    # Track criminal code changes
-      legalize-ch feed --lang de   # German changes only
-    """
-    from .rss_feed import write_feeds
-
-    rss_path, atom_path = write_feeds(
-        repo_path=repo,
-        output_dir=output,
-        sr_filter=sr,
-        lang=lang,
-        limit=limit,
-        since_days=since_days,
-    )
-    click.echo(f"RSS feed:  {rss_path}")
-    click.echo(f"Atom feed: {atom_path}")
 
 
 @main.command("serve")
@@ -552,6 +396,8 @@ def serve(repo: str, host: str, port: int, do_reload: bool):
     Provides endpoints:
       GET /api/v1/laws/{sr_number}?lang=de&date=YYYY-MM-DD
       GET /api/v1/laws/{sr_number}/versions?lang=de
+      GET /api/v1/publications?date=YYYY[-MM[-DD]]
+      GET /api/v1/publications/today
       GET /api/v1/search?q=...&lang=de
       GET /api/v1/health
     """
@@ -565,51 +411,6 @@ def serve(repo: str, host: str, port: int, do_reload: bool):
         port=port,
         reload=do_reload,
     )
-
-
-@main.command("cross-level-refs")
-@click.option("--repo", "-r", default=".", help="Path to the git repo")
-@click.option("--html/--no-html", "write_html", default=True,
-              help="Also write HTML viewer page (default: yes)")
-@click.option("--inject/--no-inject", "inject_links", default=True,
-              help="Inject cross-level link sections into law markdown files (default: yes)")
-def cross_level_refs(repo: str, write_html: bool, inject_links: bool):
-    """Detect and export cross-level references (federal ↔ cantonal).
-
-    Scans cantonal law files for references to federal SR numbers and
-    abbreviations, and federal files for references to cantonal laws.
-
-    Writes docs/cross_level_refs.json with the full reference map and
-    optionally docs/cross_level_refs.html for visual exploration.
-
-    With --inject (default), also adds cross-level reference link sections
-    directly into the law markdown files:
-      - Cantonal files get a 'Cross-Level References (Federal Law)' section
-      - Federal files get a 'Referenced by Cantonal Laws' section
-
-    Detection strategies:
-      - Explicit SR references (e.g. "SR 935.61")
-      - Federal law abbreviations (e.g. BGFA, KVG, OR)
-      - Einführungsgesetz (implementing law) patterns
-      - LexWork/clex Bund URLs
-    """
-    from .cross_level_refs import (
-        write_cross_level_json, write_cross_level_html, inject_cross_level_links,
-    )
-
-    json_path = write_cross_level_json(repo_path=repo)
-    click.echo(f"Cross-level refs JSON: {json_path}")
-
-    if write_html:
-        html_path = write_cross_level_html(repo_path=repo)
-        click.echo(f"Cross-level refs HTML: {html_path}")
-
-    if inject_links:
-        counts = inject_cross_level_links(repo_path=repo)
-        click.echo(
-            f"Injected links: {counts['cantonal_files_updated']} cantonal, "
-            f"{counts['federal_files_updated']} federal files updated"
-        )
 
 
 if __name__ == "__main__":

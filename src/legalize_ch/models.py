@@ -26,6 +26,7 @@ class LawVersion:
     version_uri: str
     date_applicable: date
     date_in_force: date | None = None
+    date_document: date | None = None  # jolux:dateDocument on the consolidation
 
 
 @dataclass

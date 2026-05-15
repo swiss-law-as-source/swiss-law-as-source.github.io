@@ -86,7 +86,7 @@ class TestCantonalPipeline:
         total = pipeline.run(cantons=["bs"], languages=["de"])
 
         # Check file was created
-        law_file = tmp_repo / "ch" / "bs" / "de" / "100.100.md"
+        law_file = tmp_repo / "kt" / "bs" / "de" / "100.100.md"
         assert law_file.exists()
         content = law_file.read_text()
         assert "Kantonsverfassung" in content

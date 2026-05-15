@@ -220,8 +220,8 @@ class TestErrorRecoveryMidRun:
              patch.object(pipeline.committer, "commit_revision", side_effect=fail_on_b_commit):
             total = pipeline.run(languages=["de"], chronological=True)
 
-        # A and C committed, B failed
-        assert total == 2
+        # A and C committed (publication + consolidation each), B's commits failed.
+        assert total == 4
 
         state = json.loads((repo / "data" / "pipeline_state.json").read_text())
         assert "100@2000-06-01" in state["processed"]
@@ -278,7 +278,8 @@ class TestErrorRecoveryMidRun:
              patch.object(pipeline.committer, "commit_revision", side_effect=fail_on_b_commit):
             total = pipeline.update(languages=["de"], chronological=True)
 
-        assert total == 2
+        # A and C committed (publication + consolidation each), B's commits failed.
+        assert total == 4
 
         state = json.loads((repo / "data" / "pipeline_state.json").read_text())
         assert "100@2000-06-01" in state["processed"]
