@@ -49,7 +49,9 @@ class TestRolloutOrder:
 
     def test_get_tier(self):
         """get_tier returns correct tier for each canton."""
-        assert get_tier("zh") == 1
+        # ZH moved from Tier 1 (dedicated ZHLex API) to Tier 3 (LexFind)
+        # in 2026 after the ZHLex JSON API was retired.
+        assert get_tier("zh") == 3
         assert get_tier("be") == 2
         assert get_tier("ag") == 2
         assert get_tier("ge") == 3

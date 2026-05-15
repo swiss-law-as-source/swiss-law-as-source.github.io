@@ -48,17 +48,22 @@ class TestCantonRegistry:
         assert ALL_CANTONS == expected
 
     def test_lexwork_count(self):
-        """14 cantons have LexWork portals."""
-        assert len(LEXWORK_CANTONS) == 14
+        """19 cantons run LexWork portals as of the 2026 rewire.
+
+        Original 14 (ag, ar, be, bl, bs, fr, gl, gr, lu, sg, so, tg, vs, zg)
+        plus five recovered during Phase-1 discovery (ai, nw, ow, sh, ur).
+        """
+        assert len(LEXWORK_CANTONS) == 19
 
     def test_lexfind_only_count(self):
-        """11 cantons are LexFind-only (ZH moved to dedicated)."""
-        assert len(LEXFIND_ONLY_CANTONS) == 11
+        """7 cantons are LexFind-only after the 2026 rewire (ZH joined
+        this tier when the ZHLex API was retired)."""
+        assert len(LEXFIND_ONLY_CANTONS) == 7
 
     def test_dedicated_fetcher_count(self):
-        """1 canton has a dedicated fetcher (ZH)."""
-        assert len(DEDICATED_FETCHER_CANTONS) == 1
-        assert "zh" in DEDICATED_FETCHER_CANTONS
+        """No dedicated fetchers remain — ZHLex was retired and ZH
+        now flows through LexFind like the other portal-less cantons."""
+        assert DEDICATED_FETCHER_CANTONS == []
 
     def test_canton_codes_are_lowercase(self):
         """All canton abbreviations must be lowercase."""
@@ -118,7 +123,8 @@ class TestCantonalLawToMarkdown:
         assert "abbreviation: GemG" in md
         assert "source: LexWork" in md  # BS is a LexWork canton
 
-    def test_zhlex_source(self):
+    def test_zh_uses_lexfind_source(self):
+        """ZH moved from ZHLex (retired) to LexFind in 2026."""
         text = CantonalLawText(
             canton="zh",
             systematic_number="100.1",
@@ -127,7 +133,7 @@ class TestCantonalLawToMarkdown:
             language="de",
         )
         md = cantonal_law_to_markdown(text)
-        assert "source: ZHLex" in md  # ZH uses dedicated ZHLex fetcher
+        assert "source: LexFind" in md
 
     def test_no_content_placeholder(self):
         text = CantonalLawText(
@@ -159,6 +165,13 @@ class TestCantonalFetcher:
     """Test CantonalFetcher with mocked HTTP responses."""
 
     def _make_lexwork_response(self):
+        """Mock the 2026 `show_as_json` response shape.
+
+        The real API returns the HTML body inside a tree under
+        ``selected_version.json_content.document.{header,content,footer}``;
+        each node has ``html_content[lang]``. Tests use a minimal tree
+        that exercises the walk in ``_walk_lexwork_document``.
+        """
         return {
             "text_of_law": {
                 "title": "Gemeindegesetz",
@@ -167,7 +180,22 @@ class TestCantonalFetcher:
                 "enactment": "2005-06-01",
                 "publication_enactment": "2024-01-01",
                 "selected_version": {
-                    "xhtml_tol": "<div><p>Art. 1 Geltungsbereich</p></div>",
+                    "json_content": {
+                        "document": {
+                            "header": {
+                                "html_content": {
+                                    "de": "<h1>Gemeindegesetz</h1>",
+                                },
+                            },
+                            "content": {
+                                "html_content": {
+                                    "de": "<p>Art. 1 Geltungsbereich</p>",
+                                },
+                                "children": [],
+                            },
+                            "footer": {},
+                        },
+                    },
                     "version_dates_str": "In Kraft seit: 01.01.2024",
                 },
                 "current_version": {"id": 42, "title": "Gemeindegesetz"},

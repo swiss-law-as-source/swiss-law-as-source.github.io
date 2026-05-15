@@ -205,6 +205,19 @@ def _list_versions(sr_number: str, lang: str) -> list[LawVersionInfo]:
     return versions
 
 
+# GitHub raw-content base. Update the slug once if the repo moves.
+RAW_BASE = "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io"
+
+
+class PublicationFile(BaseModel):
+    """One language file of a published law, with both a stable raw URL at
+    the commit that produced this revision and a live raw URL on `main`."""
+    language: str
+    path: str
+    url_at_version: str  # raw.githubusercontent…/<commit_hash>/<path> — frozen
+    url_main: str        # raw.githubusercontent…/main/<path>          — latest
+
+
 class PublicationEntry(BaseModel):
     """A single publication/revision committed at some date."""
     commit_hash: str
@@ -213,13 +226,35 @@ class PublicationEntry(BaseModel):
     title: str
     scope: str  # "federal" | "cantonal"
     languages: list[str]
-    paths: list[str]
+    files: list[PublicationFile]
 
 
 class PublicationsResponse(BaseModel):
     date_prefix: str
     count: int
     publications: list[PublicationEntry]
+
+
+def _build_files(paths: list[str], commit_hash: str) -> list[PublicationFile]:
+    """Wrap a list of repo-relative paths with stable + live raw URLs.
+
+    `url_at_version` pins to the commit_hash so the content is byte-for-byte
+    reproducible long after subsequent revisions land on `main`.
+    `url_main` points at the moving `main` branch so clients can always
+    fetch "the current text of this law" with one call.
+    """
+    files: list[PublicationFile] = []
+    for p in sorted(paths):
+        parts = p.split("/", 3)
+        lang = parts[2] if len(parts) >= 3 else ""
+        version_ref = commit_hash or "main"
+        files.append(PublicationFile(
+            language=lang,
+            path=p,
+            url_at_version=f"{RAW_BASE}/{version_ref}/{p}",
+            url_main=f"{RAW_BASE}/main/{p}",
+        ))
+    return files
 
 
 # Commit message format from committer.py: "SR <number>: <title> (<date>)"
@@ -323,7 +358,7 @@ def _list_publications(
             title=title,
             scope=scope,
             languages=sorted(languages),
-            paths=list(current_paths),
+            files=_build_files(list(current_paths), current_hash or ""),
         ))
 
     for line in out.splitlines():
@@ -441,7 +476,7 @@ def _list_early_publications(
             title=entry["title"],
             scope=entry["scope"],
             languages=sorted(entry["languages"]),
-            paths=sorted(entry["paths"]),
+            files=_build_files(sorted(entry["paths"]), commit_hash),
         ))
 
     results.sort(key=lambda p: (p.date, p.sr_number))

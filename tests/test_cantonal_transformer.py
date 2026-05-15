@@ -458,7 +458,9 @@ class TestCantonalLawToMarkdownIntegration:
         # Table lists should be converted (no ---|--- artifacts)
         assert "vollzieht die Aufgaben" in md
 
-    def test_zhlex_canton_uses_zhlex_transformer(self):
+    def test_zh_now_uses_lexfind(self):
+        """ZH lost its dedicated ZHLex API in 2026 and is now routed through
+        LexFind like the other portal-less cantons."""
         text = CantonalLawText(
             canton="zh",
             systematic_number="101",
@@ -468,8 +470,7 @@ class TestCantonalLawToMarkdownIntegration:
             version_date=date(2024, 1, 1),
         )
         md = cantonal_law_to_markdown(text)
-        assert "source: ZHLex" in md
-        assert "Verfassung des Kantons Zürich" in md
+        assert "source: LexFind" in md
 
     def test_lexfind_canton_uses_lexfind_transformer(self):
         text = CantonalLawText(
@@ -496,8 +497,9 @@ class TestCantonalLawToMarkdownIntegration:
         assert "No text content available" in md
 
     def test_source_label_capitalization(self):
-        """LexWork source should be 'LexWork', ZHLex stays 'ZHLex'."""
-        for canton, expected_source in [("bs", "LexWork"), ("zh", "ZHLex"), ("ti", "LexFind")]:
+        """LexWork cantons carry `source: LexWork`; everyone else (including
+        ZH after the 2026 rewire) carries `source: LexFind`."""
+        for canton, expected_source in [("bs", "LexWork"), ("zh", "LexFind"), ("ti", "LexFind")]:
             text = CantonalLawText(
                 canton=canton,
                 systematic_number="100.1",

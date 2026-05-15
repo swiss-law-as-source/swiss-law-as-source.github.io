@@ -49,21 +49,23 @@ TIER_2_LEXWORK = [
     "zg",  # Zug — small but well-structured
     "gl",  # Glarus — small
     "ar",  # Appenzell Ausserrhoden — small
+    # Newly-discovered LexWork portals (Phase 1 of the 2026 rewire):
+    "sh",  # Schaffhausen — rechtsbuch.sh.ch
+    "ur",  # Uri — rechtsbuch.ur.ch
+    "nw",  # Nidwalden — gesetze.nw.ch
+    "ow",  # Obwalden — gdb.ow.ch
+    "ai",  # Appenzell Innerrhoden — ai.clex.ch
 ]
 
-# Tier 3: LexFind-only cantons — fallback source, less structured
+# Tier 3: LexFind-only cantons — fallback source (PDF-only bodies)
 TIER_3_LEXFIND = [
+    "zh",  # Zürich — federated under LexFind (entity 26) since ZHLex retirement
     "ge",  # Genève — large, French-speaking
     "vd",  # Vaud — large, French-speaking
     "ti",  # Ticino — Italian-speaking
     "ne",  # Neuchâtel — French-speaking
     "ju",  # Jura — French-speaking
-    "sh",  # Schaffhausen — small German
     "sz",  # Schwyz — small German
-    "nw",  # Nidwalden — small German
-    "ow",  # Obwalden — small German
-    "ur",  # Uri — small German
-    "ai",  # Appenzell Innerrhoden — smallest canton
 ]
 
 # Full priority order (all 26 cantons)
@@ -279,6 +281,22 @@ def run_rollout(
 
         try:
             commits = pipeline._process_canton(canton, languages, limit_per_canton)
+            if commits == 0:
+                # Mark as failed rather than "completed with 0 laws". Previous
+                # behaviour silently flagged every canton "completed" even when
+                # the fetcher returned nothing, which made it impossible to
+                # distinguish a real empty catalog from a dead endpoint.
+                msg = "Fetcher returned 0 laws — likely a stale endpoint."
+                state.set_status(canton, "failed", error=msg)
+                results[canton] = {
+                    "status": "failed",
+                    "error": msg,
+                    "tier": tier,
+                }
+                logger.warning(
+                    "%s: failed — %s (Tier %d)", canton.upper(), msg, tier,
+                )
+                continue
             state.set_status(
                 canton, "completed",
                 laws_fetched=commits,

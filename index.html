@@ -50,11 +50,21 @@ kt/{canton}/{de|fr|it}/{number}.md         Cantonal laws (zh, bs, ag, …)</pre>
   <span class="endpoint"><span class="verb">GET</span> /api/v1/publications/today.json</span>
   <span class="endpoint"><span class="verb">GET</span> /api/v1/publications/index.json &nbsp;<span class="muted"># list of years</span></span>
 
-  <p><strong>Law text</strong> — served by GitHub's raw endpoint:</p>
-  <span class="endpoint"><span class="verb">GET</span> https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/<em>{path}</em></span>
-
-  <p><strong>Historical text</strong> — any commit hash from the publications index:</p>
-  <span class="endpoint"><span class="verb">GET</span> https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/<em>{commit}</em>/<em>{path}</em></span>
+  <p><strong>Law text</strong> — each publication entry exposes the fetchable URLs directly under <code>files[]</code>:</p>
+<pre>"files": [
+  {
+    "language": "de",
+    "path": "ch/210/de/210.md",
+    "url_main":       ".../main/ch/210/de/210.md",
+    "url_at_version": ".../&lt;commit&gt;/ch/210/de/210.md"
+  },
+  ...
+]</pre>
+  <p>
+    <code>url_main</code> always points at the latest text on <code>main</code>;
+    <code>url_at_version</code> is pinned to the commit that produced this
+    revision, so the content is byte-for-byte reproducible.
+  </p>
 
   <h2>Pre-1970 dates</h2>
   <p>

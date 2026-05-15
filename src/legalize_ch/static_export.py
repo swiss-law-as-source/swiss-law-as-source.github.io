@@ -49,7 +49,15 @@ def _publication_dict(entry: _api.PublicationEntry) -> dict:
         "title": entry.title,
         "scope": entry.scope,
         "languages": list(entry.languages),
-        "paths": list(entry.paths),
+        "files": [
+            {
+                "language": f.language,
+                "path": f.path,
+                "url_at_version": f.url_at_version,
+                "url_main": f.url_main,
+            }
+            for f in entry.files
+        ],
     }
 
 
@@ -120,28 +128,28 @@ def _list_publications_from_frontmatter(
             if title and len(title) > len(entry["title"]):
                 entry["title"] = title
 
+    # Single HEAD lookup as a fallback commit_hash for snapshot-mode entries.
+    # For chronologically-bootstrapped repos the merge step prefers git-log
+    # entries (which carry the *per-revision* commit_hash), so the fallback
+    # here is only ever surfaced for snapshot-only laws.
+    try:
+        head = subprocess.run(
+            ["git", "rev-parse", "HEAD"],
+            cwd=repo_path, capture_output=True, text=True, check=False,
+        ).stdout.strip()
+    except (OSError, subprocess.SubprocessError):
+        head = ""
+
     results: list[_api.PublicationEntry] = []
     for entry in laws.values():
-        # Find the introducing commit for this law (one cheap git call).
-        first_path = sorted(entry["paths"])[0]
-        commit_hash = ""
-        try:
-            out = subprocess.run(
-                ["git", "log", "--diff-filter=A", "--reverse",
-                 "--format=%H", "-1", "--", first_path],
-                cwd=repo_path, capture_output=True, text=True, check=False,
-            ).stdout.strip()
-            commit_hash = out
-        except (OSError, subprocess.SubprocessError):
-            pass
         results.append(_api.PublicationEntry(
-            commit_hash=commit_hash,
+            commit_hash=head,
             date=entry["date"],
             sr_number=entry["sr_number"],
             title=entry["title"],
             scope=entry["scope"],
             languages=sorted(entry["languages"]),
-            paths=sorted(entry["paths"]),
+            files=_api._build_files(sorted(entry["paths"]), head),
         ))
     return results
 
@@ -189,12 +197,12 @@ def export_publications(repo_path: Path, output_dir: Path) -> dict:
             cur_score = (
                 bool(existing.commit_hash),
                 len(existing.languages),
-                len(existing.paths),
+                len(existing.files),
             )
             new_score = (
                 bool(entry.commit_hash),
                 len(entry.languages),
-                len(entry.paths),
+                len(entry.files),
             )
             if new_score > cur_score:
                 merged[key] = entry

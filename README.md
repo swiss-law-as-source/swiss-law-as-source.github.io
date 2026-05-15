@@ -65,20 +65,22 @@ Response shape:
       "title": "Schweizerisches Zivilgesetzbuch …",
       "scope": "federal",
       "languages": ["de", "fr", "it"],
-      "paths": ["ch/210/de/210.md", "ch/210/fr/210.md", "ch/210/it/210.md"]
+      "files": [
+        {
+          "language": "de",
+          "path": "ch/210/de/210.md",
+          "url_main":       "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/210/de/210.md",
+          "url_at_version": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/ada66b…/ch/210/de/210.md"
+        }
+      ]
     }
   ]
 }
 ```
 
-To retrieve the actual text:
-
-```
-https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/<path>
-```
-
-For a historical version, swap `main` for the `commit_hash` from the
-publications JSON.
+`url_main` always points at the latest text on `main`; `url_at_version`
+is pinned to the commit that produced this revision, so the content is
+byte-for-byte reproducible.
 
 ### Live (dynamic) API
 
@@ -111,16 +113,24 @@ legalize-ch export                  # Regenerate api/v1/publications/*.json
 ## Data sources
 
 - **Federal** — [Fedlex SPARQL endpoint](https://fedlex.data.admin.ch/sparqlendpoint)
-  (`jolux:` ontology). Fully wired, ~9000 laws, 17k+ revisions.
-- **Cantonal** — currently **not populated**. The legacy fetchers in
-  `cantonal.py` and `zurich_fetcher.py` target API endpoints
-  (`https://www.lexfind.ch/fe/api/search`, the per-canton LexWork
-  `/api/texts_of_law/` paths, `https://www.zhlex.zh.ch/api/zhlex/v1/erlasse`)
-  that have since been removed or redirected — every canton returns 404 or
-  an HTML SPA shell in 2026. The cantonal scope is therefore disabled in
-  the daily CI workflow until the fetchers are rewired against the
-  current portals. Code paths and tests are kept in tree so the rewire
-  is straightforward when the canton sources are remapped.
+  (`jolux:` ontology). ~9000 laws, 17 k+ revisions.
+- **Cantonal LexWork** (19 cantons: AG, AI, AR, BE, BL, BS, FR, GL, GR,
+  LU, NW, OW, SG, SH, SO, TG, UR, VS, ZG) — each canton's portal serves
+  the JSON catalog at `https://{canton-host}/api/{lang}/texts_of_law/lightweight_index`
+  and per-law HTML body at `…/texts_of_law/{number}/show_as_json`. The
+  HTML body lives inside `selected_version.json_content.document` as a
+  recursive tree of nodes.
+- **Cantonal LexFind** (7 cantons: GE, JU, NE, SZ, TI, VD, ZH) — these
+  cantons don't run their own LexWork portal. LexFind serves their
+  catalog at `/api/fe/{lang}/entities/{entity_id}/recent-changes` and
+  per-law metadata at `…/texts-of-law/{tol_id}/with-version-groups`.
+  The body itself is currently published only as a PDF, so each
+  LexFind-only revision lands as a metadata-rich markdown stub pointing
+  at the upstream PDF + portal page.
+
+The Phase-1 portal discovery script lives at
+`scripts/discover_canton_apis.py` (Playwright-based) and emits its
+findings to `data/discovery/`.
 
 ## License
 

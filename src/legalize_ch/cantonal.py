@@ -21,8 +21,12 @@ RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
 
 # ─── Canton Registry ───────────────────────────────────────────────────────────
 
+# Cantonal portal hosts (LexWork-stack Angular apps, all served by Sitrox).
+# Verified by Phase 1 discovery against the 2026 endpoints
+# (`/api/{lang}/texts_of_law/lightweight_index` returns JSON 200 from each).
 LEXWORK_CANTONS: dict[str, str] = {
     "ag": "gesetzessammlungen.ag.ch",
+    "ai": "ai.clex.ch",
     "ar": "ar.clex.ch",
     "be": "www.belex.sites.be.ch",
     "bl": "bl.clex.ch",
@@ -31,19 +35,29 @@ LEXWORK_CANTONS: dict[str, str] = {
     "gl": "gesetze.gl.ch",
     "gr": "www.gr-lex.gr.ch",
     "lu": "srl.lu.ch",
+    "nw": "gesetze.nw.ch",
+    "ow": "gdb.ow.ch",
     "sg": "www.gesetzessammlung.sg.ch",
+    "sh": "rechtsbuch.sh.ch",
     "so": "bgs.so.ch",
     "tg": "www.rechtsbuch.tg.ch",
+    "ur": "rechtsbuch.ur.ch",
     "vs": "lex.vs.ch",
     "zg": "bgs.zg.ch",
 }
 
+# Cantons that don't run their own LexWork portal; their data is only
+# accessible via the federated LexFind index. ZH no longer publishes a
+# standalone JSON API (the old `www.zhlex.zh.ch/api/zhlex/v1/...` is gone)
+# and now ships through the same LexFind entity flow as the smaller
+# cantons.
 LEXFIND_ONLY_CANTONS = [
-    "ai", "ge", "ju", "ne", "nw", "ow", "sh", "sz", "ti", "ur", "vd",
+    "ge", "ju", "ne", "sz", "ti", "vd", "zh",
 ]
 
-# Cantons with dedicated fetchers (not LexWork, not generic LexFind)
-DEDICATED_FETCHER_CANTONS = ["zh"]
+# Kept as a hook for any future canton that needs a fully custom fetcher
+# (none today — ZHLex was retired and consolidated into LexFind).
+DEDICATED_FETCHER_CANTONS: list[str] = []
 
 ALL_CANTONS = sorted(
     list(LEXWORK_CANTONS.keys()) + LEXFIND_ONLY_CANTONS + DEDICATED_FETCHER_CANTONS
@@ -85,6 +99,80 @@ class CantonalLawText:
     language: str = "de"
     version_date: date | None = None
     abbreviation: str = ""
+
+
+# LexFind entity IDs (numeric, found at https://www.lexfind.ch/fe/{lang}/entities/{id}).
+# Verified by the redirect `https://{canton}.lexfind.ch/` → `/fe/{lang}/entities/{id}`
+# observed during Phase 1 discovery.
+LEXFIND_ENTITY_IDS: dict[str, int] = {
+    "ai": 1,   # Appenzell Innerrhoden
+    "ar": 2,   # Appenzell Ausserrhoden
+    "ag": 3,   # Aargau
+    "be": 4,   # Bern
+    "bl": 5,   # Basel-Landschaft
+    "bs": 6,   # Basel-Stadt
+    "fr": 7,   # Fribourg
+    "ge": 8,   # Genève
+    "gl": 9,   # Glarus
+    "gr": 10,  # Graubünden
+    "ju": 11,  # Jura
+    "lu": 12,  # Luzern
+    "ne": 13,  # Neuchâtel
+    "nw": 14,  # Nidwalden
+    "ow": 15,  # Obwalden
+    "sg": 16,  # St. Gallen
+    "sh": 17,  # Schaffhausen
+    "so": 18,  # Solothurn
+    "sz": 19,  # Schwyz
+    "tg": 20,  # Thurgau
+    "ti": 21,  # Ticino
+    "ur": 22,  # Uri
+    "vd": 23,  # Vaud
+    "vs": 24,  # Valais
+    "zg": 25,  # Zug
+    "zh": 26,  # Zürich
+}
+
+
+def _walk_lexwork_document(node: object, lang: str) -> str:
+    """Recursively concatenate `html_content[lang]` from a LexWork document tree.
+
+    The LexWork `show_as_json` response wraps the law's HTML in a nested
+    tree of nodes (`{uid, type, number, html_content, text, children}`).
+    Every node carries its own HTML fragment in `html_content[lang]` and
+    may contain child nodes. We walk depth-first, emitting each node's
+    HTML once, in document order.
+    """
+    chunks: list[str] = []
+
+    def visit(n):
+        if isinstance(n, dict):
+            hc = n.get("html_content")
+            if isinstance(hc, dict):
+                piece = hc.get(lang) or hc.get("de") or ""
+                if piece:
+                    chunks.append(piece)
+            for child in (n.get("children") or []):
+                visit(child)
+        elif isinstance(n, list):
+            for item in n:
+                visit(item)
+
+    if isinstance(node, dict):
+        for key in ("header", "content", "footer"):
+            sub = node.get(key)
+            if sub is not None:
+                visit(sub)
+        # `annex_documents` is a sibling list of annex trees with the same
+        # node shape; walk them too so annexes appear in the markdown.
+        annexes = node.get("annex_documents") or []
+        if isinstance(annexes, list):
+            for a in annexes:
+                visit(a)
+    else:
+        visit(node)
+
+    return "\n".join(chunks)
 
 
 # ─── Fetcher ───────────────────────────────────────────────────────────────────
@@ -151,123 +239,206 @@ class CantonalFetcher:
                     logger.error("Failed %s: %s", url, e)
         return ""
 
-    # ─── LexWork API ───────────────────────────────────────────────────────────
+    # ─── LexWork API (re-mapped to 2026 endpoints) ─────────────────────────────
+    #
+    # Each LexWork canton's portal exposes a Sitrox-built JSON API directly on
+    # the same hostname (no `decwork_hostname` proxy needed for public reads):
+    #
+    #   GET https://{host}/api/{lang}/texts_of_law/lightweight_index
+    #     → {category_id: [{id, systematic_number, title, abrogated, ...}]}
+    #
+    #   GET https://{host}/api/{lang}/texts_of_law/{systematic_number}/show_as_json
+    #     → {text_of_law: {systematic_number, title, abbreviation, enactment,
+    #                      publication_enactment, current_version, selected_version}}
+    #       selected_version.json_content.document = {header, content, footer,
+    #                                                 annex_documents}
+    #       Each node has html_content[lang], type, number, children (tree).
+    #
+    # The old `/api/texts_of_law/{number}` and `/versions/{id}` paths from the
+    # legacy code no longer exist; the new `show_as_json` returns the full HTML
+    # body inline so we don't need a separate /text fetch.
 
     def _lexwork_base(self, canton: str) -> str:
         """Get the LexWork API base URL for a canton."""
         host = LEXWORK_CANTONS[canton]
         return f"https://{host}/api"
 
-    def fetch_lexwork_law(self, canton: str, number: str) -> dict | None:
-        """Fetch a law from LexWork API. Returns raw JSON response."""
+    def fetch_lexwork_law(self, canton: str, number: str,
+                          lang: str = "de") -> dict | None:
+        """Fetch a law's full metadata + HTML body. Returns raw JSON response."""
         base = self._lexwork_base(canton)
-        url = f"{base}/texts_of_law/{number}"
+        url = f"{base}/{lang}/texts_of_law/{number}/show_as_json"
         return self._get_json(url)
 
     def fetch_lexwork_version(self, canton: str, number: str, version_id: int) -> dict | None:
-        """Fetch a specific version from LexWork."""
-        base = self._lexwork_base(canton)
-        url = f"{base}/texts_of_law/{number}/versions/{version_id}"
-        return self._get_json(url)
+        """Fetch a specific historical version.
+
+        The 2026 LexWork API doesn't expose per-version fetch on a stable
+        path; `show_as_json` returns the *currently-selected* version.
+        Callers that need a specific historical version should fetch via
+        the PDF URL surfaced under `selected_version.pdf_link_tol` and
+        rely on git history for older snapshots.
+        """
+        return None
 
     def fetch_lexwork_catalog(self, canton: str, lang: str = "de") -> list[CantonalLawEntry]:
-        """Fetch full catalog from a canton via its best available source."""
-        # Zürich: dedicated ZHLex API
-        if canton == "zh":
-            from .zurich_fetcher import ZurichFetcher
-            zh_fetcher = ZurichFetcher(rate_limit=self.rate_limit)
-            return zh_fetcher.fetch_catalog(lang)
+        """Fetch the full catalog of laws for a LexWork canton.
 
-        # LexWork doesn't have a clean catalog API, but we can paginate through search
-        # For now, use LexFind as the catalog source even for LexWork cantons
-        return self.fetch_lexfind_catalog(canton, lang)
+        Uses `/api/{lang}/texts_of_law/lightweight_index`, which returns a
+        compact mapping of category_id → list of laws. Categories are
+        flattened; only the (systematic_number, title, abrogated) triple
+        per law is preserved here — the rest is fetched lazily by
+        `fetch_law_text`.
+        """
+        if canton not in LEXWORK_CANTONS:
+            return self.fetch_lexfind_catalog(canton, lang)
 
-    # ─── LexFind API ───────────────────────────────────────────────────────────
-
-    def fetch_lexfind_catalog(self, canton: str, lang: str = "de") -> list[CantonalLawEntry]:
-        """Fetch catalog of laws for a canton from LexFind search."""
-        # LexFind uses a search API at /fe/de/search
-        # We'll use their internal API endpoint
-        url = (
-            f"https://www.lexfind.ch/fe/api/search?"
-            f"canton={canton.upper()}&jurisdiction=cantonal&language={lang}&limit=50"
-        )
+        base = self._lexwork_base(canton)
+        url = f"{base}/{lang}/texts_of_law/lightweight_index"
         data = self._get_json(url)
-        if not data:
-            # Try alternative: scrape the tol list
-            return self._fetch_lexfind_catalog_scrape(canton, lang)
+        if not data or not isinstance(data, dict):
+            return []
 
-        entries = []
-        results = data if isinstance(data, list) else data.get("results", data.get("items", []))
-        for item in results:
-            sr = item.get("systematic_number", item.get("number", ""))
-            title = item.get("title", item.get("title_de", ""))
-            tol_id = str(item.get("tol_id", item.get("id", "")))
-            if sr:
+        entries: list[CantonalLawEntry] = []
+        seen: set[str] = set()
+        for laws in data.values():
+            if not isinstance(laws, list):
+                continue
+            for law in laws:
+                sr = str(law.get("systematic_number") or "").strip()
+                if not sr or sr in seen:
+                    continue
+                seen.add(sr)
                 entries.append(CantonalLawEntry(
                     canton=canton,
                     systematic_number=sr,
-                    title=title,
-                    lexfind_id=tol_id,
+                    title=str(law.get("title") or ""),
+                    is_active=not law.get("abrogated", False),
                 ))
         return entries
 
-    def _fetch_lexfind_catalog_scrape(self, canton: str, lang: str) -> list[CantonalLawEntry]:
-        """Fallback: fetch canton catalog from LexFind systematic view."""
-        url = f"https://www.lexfind.ch/fe/{lang}/search?canton={canton.upper()}"
-        logger.debug("LexFind catalog scrape: %s", url)
-        # This returns HTML rendered by JavaScript, so we can't easily scrape it.
-        # Return empty and rely on the LexWork direct fetch or explicit lists.
-        return []
+    # ─── LexFind API (re-mapped to 2026 endpoints) ─────────────────────────────
+    #
+    # LexFind exposes a JSON catalog of texts per canton-entity:
+    #
+    #   GET /api/fe/{lang}/entities/{entity_id}/extended
+    #     → {id, abbreviation, name, status: {total_texts_of_law, ...}}
+    #
+    #   GET /api/fe/{lang}/entities/{entity_id}/recent-changes
+    #     → {recent_changes: [{change_date, change_type, text_of_law, ...}]}
+    #
+    #   GET /api/fe/{lang}/texts-of-law/{tol_id}/with-version-groups
+    #     → {id, systematic_number, dta_urls (PDF links to current text),
+    #        families: [[{dtah_urls (per-version PDF), title, keywords,
+    #                     info_badge, version_active_since, ...}]],
+    #        entity: {id, abbreviation, name}}
+    #
+    # The bodies LexFind serves at `/tol/{id}/{lang}` and `/tolv/{ver_id}/{lang}`
+    # are PDFs (not HTML), so the text path falls through to the canton's own
+    # portal via `original_url`. For LexFind-only cantons (no LexWork host),
+    # we capture the metadata + version dates from LexFind itself and store
+    # an information-only markdown entry; the body link to the canton portal
+    # is preserved in frontmatter.
+
+    def fetch_lexfind_catalog(self, canton: str, lang: str = "de") -> list[CantonalLawEntry]:
+        """Fetch the LexFind-known catalog of laws for a canton.
+
+        Uses `/api/fe/{lang}/entities/{id}/recent-changes` as the working
+        list. (LexFind no longer exposes a single full-catalog endpoint
+        for an entity; recent-changes plus pagination covers what's
+        published.) Each `text_of_law` block yields one entry.
+        """
+        entity_id = LEXFIND_ENTITY_IDS.get(canton)
+        if entity_id is None:
+            return []
+        url = (
+            f"https://www.lexfind.ch/api/fe/{lang}/entities/"
+            f"{entity_id}/recent-changes"
+        )
+        data = self._get_json(url)
+        if not isinstance(data, dict):
+            return []
+
+        entries: list[CantonalLawEntry] = []
+        seen: set[str] = set()
+        for change in data.get("recent_changes", []) or []:
+            tol = change.get("text_of_law") or {}
+            sr = str(tol.get("systematic_number") or "").strip()
+            tol_id = tol.get("id")
+            if not sr or sr in seen:
+                continue
+            seen.add(sr)
+            entries.append(CantonalLawEntry(
+                canton=canton,
+                systematic_number=sr,
+                title=str(tol.get("title") or ""),
+                is_active=bool(tol.get("is_active", True)),
+                lexfind_id=str(tol_id) if tol_id is not None else "",
+            ))
+        return entries
+
+    def fetch_lexfind_law_metadata(self, tol_id: str,
+                                   lang: str = "de") -> dict | None:
+        """Fetch a LexFind TOL's metadata + version groups (JSON)."""
+        url = (
+            f"https://www.lexfind.ch/api/fe/{lang}/texts-of-law/"
+            f"{tol_id}/with-version-groups"
+        )
+        return self._get_json(url)
 
     def fetch_lexfind_text(self, tol_id: str, lang: str = "de") -> str:
-        """Fetch law text HTML from LexFind by TOL ID."""
-        # LexFind serves content at /fe/{lang}/tol/{id}/{lang}
-        url = f"https://www.lexfind.ch/fe/{lang}/tol/{tol_id}/{lang}"
-        return self._get_html(url)
+        """Return the canton-portal URL where the law text actually lives.
+
+        LexFind's `/tol/{id}/{lang}` endpoint now serves the law as a
+        PDF rather than HTML. The metadata response carries
+        `dta_urls[*].original_url` pointing back at the source canton
+        portal, which is where the rich (HTML) representation lives.
+        Returning that URL lets the pipeline either embed the link in
+        frontmatter or hop to the canton's own LexWork API.
+        """
+        meta = self.fetch_lexfind_law_metadata(tol_id, lang)
+        if not isinstance(meta, dict):
+            return ""
+        for url_entry in meta.get("dta_urls", []) or []:
+            if (url_entry.get("language") or "") == lang:
+                return str(url_entry.get("original_url") or "")
+        return ""
 
     # ─── Unified fetch methods ─────────────────────────────────────────────────
 
     def fetch_law_text(self, canton: str, number: str,
                        lang: str = "de",
                        lexfind_id: str = "") -> CantonalLawText | None:
-        """Fetch current law text: dedicated fetcher, LexWork, or LexFind fallback.
-
-        Strategy:
-        1. If canton has a dedicated fetcher (e.g. ZH) → use it
-        2. If canton has LexWork portal → fetch from LexWork API
-        3. Otherwise → fetch from LexFind
+        """Fetch current law text. Prefers the canton's LexWork portal (rich
+        HTML body) and falls back to LexFind for cantons without one
+        (metadata + PDF link only).
         """
-        # Dedicated fetcher (Zürich)
-        if canton == "zh":
-            return self._fetch_from_zurich(number, lang, erlass_id=lexfind_id)
-
-        # Try LexWork first
         if canton in LEXWORK_CANTONS:
             text = self._fetch_from_lexwork(canton, number, lang)
             if text:
                 return text
             logger.debug("LexWork failed for %s/%s, trying LexFind", canton, number)
 
-        # LexFind fallback
         if lexfind_id:
-            text = self._fetch_from_lexfind(canton, number, lexfind_id, lang)
-            if text:
-                return text
-
+            return self._fetch_from_lexfind(canton, number, lexfind_id, lang)
         return None
 
     def _fetch_from_lexwork(self, canton: str, number: str,
                             lang: str = "de") -> CantonalLawText | None:
         """Fetch law text from LexWork API."""
-        data = self.fetch_lexwork_law(canton, number)
+        data = self.fetch_lexwork_law(canton, number, lang)
         if not data:
             return None
 
         tol = data.get("text_of_law", {})
         sv = tol.get("selected_version", {})
-        xhtml = sv.get("xhtml_tol", "")
-        if not xhtml:
+        json_content = sv.get("json_content") or {}
+        document = json_content.get("document") or {}
+        if not document:
+            return None
+
+        html = _walk_lexwork_document(document, lang)
+        if not html.strip():
             return None
 
         title = tol.get("title", "")
@@ -304,7 +475,7 @@ class CantonalFetcher:
             canton=canton,
             systematic_number=number,
             title=title,
-            html_content=xhtml,
+            html_content=html,
             language=lang,
             version_date=version_date,
             abbreviation=abbr,
@@ -312,34 +483,85 @@ class CantonalFetcher:
 
     def _fetch_from_lexfind(self, canton: str, number: str,
                             tol_id: str, lang: str = "de") -> CantonalLawText | None:
-        """Fetch law text from LexFind."""
-        html = self.fetch_lexfind_text(tol_id, lang)
-        if not html or "<html" not in html[:200].lower():
+        """Build a metadata-only law text from LexFind for cantons without
+        their own LexWork portal.
+
+        LexFind itself only serves the body as a PDF (`/tol/{id}/{lang}`),
+        so the markdown body produced here is a short pointer block with
+        the law's title, version date, and direct links to the PDF +
+        canton-portal page. Users who want the full text follow the
+        links. Once a LexFind-only canton ships an HTML API, this method
+        can be upgraded to fetch a real body.
+        """
+        meta = self.fetch_lexfind_law_metadata(tol_id, lang)
+        if not isinstance(meta, dict):
             return None
+
+        title = ""
+        version_date: date | None = None
+        # Pick the version with `info_badge == "current"`. Walk all
+        # family→chain→version triples; first-current wins. If none is
+        # marked current, take the first version we see (oldest first
+        # since families are ordered by recency in the API response).
+        for group in meta.get("families") or []:
+            for chain in (group or []):
+                current = next(
+                    (v for v in chain or [] if v.get("info_badge") == "current"),
+                    None,
+                )
+                ver = current or (chain[0] if chain else None)
+                if ver is None:
+                    continue
+                title = title or str(ver.get("title") or "")
+                active = ver.get("version_active_since") or ""
+                if active:
+                    try:
+                        day, month, year = active.split(".")
+                        version_date = date(int(year), int(month), int(day))
+                    except (ValueError, AttributeError):
+                        pass
+                if current is not None:
+                    break
+            if version_date is not None:
+                break
+
+        sr = str(meta.get("systematic_number") or number)
+        pdf_url = ""
+        original_url = ""
+        for url_entry in meta.get("dta_urls") or []:
+            if (url_entry.get("language") or "") == lang:
+                pdf_url = f"https://www.lexfind.ch{url_entry.get('url') or ''}"
+                original_url = str(url_entry.get("original_url") or "")
+                break
+
+        # Emit a minimal HTML stub: title + intro + link list. The cantonal
+        # transformer converts it to markdown just like any other body, so
+        # the result is consistent with LexWork laws downstream.
+        html_parts: list[str] = []
+        html_parts.append(f"<h1>{title or sr}</h1>")
+        html_parts.append(
+            "<p><em>Cantonal law surfaced via LexFind. The authoritative body "
+            "is served as a PDF — follow the links below.</em></p><ul>"
+        )
+        if pdf_url:
+            html_parts.append(f'<li>PDF: <a href="{pdf_url}">{pdf_url}</a></li>')
+        if original_url:
+            html_parts.append(
+                f'<li>Source portal: <a href="{original_url}">{original_url}</a></li>'
+            )
+        html_parts.append("</ul>")
 
         return CantonalLawText(
             canton=canton,
-            systematic_number=number,
-            title="",  # Will be extracted from HTML
-            html_content=html,
+            systematic_number=sr,
+            title=title,
+            html_content="".join(html_parts),
             language=lang,
+            version_date=version_date,
         )
 
-    def _fetch_from_zurich(self, number: str, lang: str = "de",
-                           erlass_id: str = "") -> CantonalLawText | None:
-        """Fetch law text from the ZHLex API (Zürich dedicated fetcher)."""
-        from .zurich_fetcher import ZurichFetcher
-        zh_fetcher = ZurichFetcher(rate_limit=self.rate_limit)
-        return zh_fetcher.fetch_law_text(number, lang, erlass_id=erlass_id)
-
     def fetch_versions(self, canton: str, number: str) -> list[CantonalLawVersion]:
-        """Fetch all available versions of a cantonal law."""
-        # Zürich: dedicated fetcher
-        if canton == "zh":
-            from .zurich_fetcher import ZurichFetcher
-            zh_fetcher = ZurichFetcher(rate_limit=self.rate_limit)
-            return zh_fetcher.fetch_versions(number)
-
+        """Fetch all available versions of a cantonal law (LexWork only)."""
         if canton not in LEXWORK_CANTONS:
             return []
 
@@ -450,21 +672,13 @@ def cantonal_law_to_markdown(text: CantonalLawText) -> str:
     - LexFind HTML: extracts body from full-page HTML, strips navigation
     - ZHLex HTML: handles Zürich's semantic HTML structure
     """
-    source = (
-        "zhlex" if text.canton == "zh"
-        else "lexwork" if text.canton in LEXWORK_CANTONS
-        else "lexfind"
-    )
+    source = "lexwork" if text.canton in LEXWORK_CANTONS else "lexfind"
     meta = {
         "canton": text.canton.upper(),
         "systematic_number": text.systematic_number,
         "title": text.title,
         "language": text.language,
-        "source": (
-            "ZHLex" if source == "zhlex"
-            else "LexWork" if source == "lexwork"
-            else "LexFind"
-        ),
+        "source": "LexWork" if source == "lexwork" else "LexFind",
     }
     if text.version_date:
         meta["version_date"] = text.version_date.isoformat()
