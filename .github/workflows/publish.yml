@@ -1,0 +1,80 @@
+name: Update + Publish
+
+on:
+  # Daily incremental update from Fedlex.
+  schedule:
+    - cron: '17 4 * * *'
+  # Manual rebuild button in the Actions tab.
+  workflow_dispatch:
+    inputs:
+      bootstrap:
+        description: "Run full bootstrap instead of incremental update (slow!)"
+        type: boolean
+        default: false
+  # Rerun the export on direct pushes to source code.
+  push:
+    branches: [main]
+    paths:
+      - 'src/**'
+      - 'tests/**'
+      - '.github/workflows/publish.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install package
+        run: pip install -e .
+
+      - name: Configure git identity
+        run: |
+          git config user.name "Swiss Law Bot"
+          git config user.email "bot@swiss-law-as-source.github.io"
+
+      - name: Incremental Fedlex update
+        if: github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && !inputs.bootstrap)
+        run: |
+          legalize-ch update --scope all --rate-limit 2.0 || \
+            echo "Update finished with non-zero exit; continuing to export step."
+
+      - name: Full bootstrap (manual trigger only)
+        if: github.event_name == 'workflow_dispatch' && inputs.bootstrap
+        run: |
+          legalize-ch bootstrap --scope all --rate-limit 2.0 || \
+            echo "Bootstrap finished with non-zero exit; continuing to export step."
+
+      - name: Regenerate static API exports
+        run: legalize-ch export
+
+      - name: Commit + push if anything changed
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Auto-update: pipeline + static export
+
+          Triggered by: ${{ github.event_name }}"
+          git push
