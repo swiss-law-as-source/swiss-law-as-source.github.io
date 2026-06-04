@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statistics — Swiss Law Collection</title>
+    <style>
+        :root {
+            --red: #D52B1E;
+            --dark: #1a1a1a;
+            --gray: #f5f5f5;
+            --border: #e0e0e0;
+            --blue: #2563eb;
+            --green: #16a34a;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background: #fff;
+        }
+        header { background: var(--red); color: white; padding: 2rem; text-align: center; }
+        header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
+        header p { opacity: 0.9; font-size: 1rem; }
+        nav { background: var(--dark); padding: 0.5rem 2rem; text-align: center; }
+        nav a { color: #ccc; text-decoration: none; margin: 0 1rem; font-size: 0.9rem; }
+        nav a:hover { color: white; }
+        main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem; margin-bottom: 2.5rem;
+        }
+        .kpi-card {
+            background: var(--gray); border-radius: 8px; padding: 1.2rem;
+            text-align: center; border: 1px solid var(--border);
+        }
+        .kpi-card .value { font-size: 2rem; font-weight: 700; color: var(--red); }
+        .kpi-card .label { font-size: 0.8rem; color: #666; margin-top: 0.2rem; }
+        .chart-section { margin-bottom: 3rem; }
+        .chart-section h2 {
+            font-size: 1.3rem; margin-bottom: 1rem;
+            border-bottom: 2px solid var(--red); padding-bottom: 0.5rem;
+        }
+        .bar-chart { display: flex; flex-direction: column; gap: 0.4rem; }
+        .bar-row { display: flex; align-items: center; gap: 0.75rem; }
+        .bar-label { min-width: 240px; font-size: 0.82rem; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .bar-container { flex: 1; background: var(--gray); border-radius: 4px; height: 24px; overflow: hidden; }
+        .bar-fill { height: 100%; border-radius: 4px; min-width: 2px; }
+        .bar-value { min-width: 50px; font-size: 0.82rem; font-weight: 600; color: #444; }
+        .timeline-chart svg { width: 100%; height: 250px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } .bar-label { min-width: 120px; } }
+        .tab-bar { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
+        .tab-bar button {
+            background: var(--gray); border: 1px solid var(--border); border-radius: 4px;
+            padding: 0.3rem 0.8rem; cursor: pointer; font-size: 0.82rem;
+        }
+        .tab-bar button.active { background: var(--red); color: white; border-color: var(--red); }
+        footer { text-align: center; padding: 2rem; color: #666; font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+        footer a { color: var(--red); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Statistiken</h1>
+        <p>Swiss Law Collection &mdash; Federal + Cantonal Coverage &amp; Analytics</p>
+    </header>
+    <nav>
+        <a href="index.html">Search</a>
+        <a href="diff.html">Diff Viewer</a>
+        <a href="stats.html"><strong>Statistics</strong></a>
+        <a href="cross_level_refs.html">Cross-Refs</a>
+    </nav>
+    <main>
+        <div class="kpi-grid" id="kpis"></div>
+
+        <div class="grid-2">
+            <div class="chart-section">
+                <h2>Federal: SR Categories</h2>
+                <div class="bar-chart" id="sr-cat-chart"></div>
+            </div>
+            <div class="chart-section">
+                <h2>Cantonal: Instrument Types</h2>
+                <div class="bar-chart" id="cat-type-chart"></div>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="chart-section">
+                <h2>By Language</h2>
+                <div class="bar-chart" id="lang-chart"></div>
+            </div>
+            <div class="chart-section">
+                <h2>By Canton</h2>
+                <div class="bar-chart" id="canton-chart"></div>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h2>By Source</h2>
+            <div class="bar-chart" id="source-chart"></div>
+        </div>
+
+        <div class="chart-section">
+            <h2>Laws by Version Date (Year)</h2>
+            <div class="tab-bar" id="year-tabs"></div>
+            <div class="timeline-chart" id="timeline-chart"></div>
+        </div>
+
+        <div class="chart-section">
+            <h2>Top 20 Cantonal Systematic Categories</h2>
+            <div class="bar-chart" id="sys-cat-chart"></div>
+        </div>
+
+        <div class="chart-section">
+            <h2>Top 20 Global Categories (Domaine Juridique)</h2>
+            <div class="bar-chart" id="global-cat-chart"></div>
+        </div>
+    </main>
+    <footer>
+        <a href="https://github.com/benjamin-arfa/swiss-law">GitHub Repository</a> &middot;
+        Data: <a href="https://www.fedlex.admin.ch">Fedlex</a> + <a href="https://www.lexfind.ch">LexFind</a>
+    </footer>
+
+    <script>
+    (async function() {
+        const stats = await (await fetch('stats.json')).json();
+
+        // KPIs
+        const kpis = [
+            { value: stats.total_laws.toLocaleString(), label: 'Total Laws' },
+            { value: stats.federal_laws.toLocaleString(), label: 'Federal' },
+            { value: stats.cantonal_laws.toLocaleString(), label: 'Cantonal' },
+            { value: Object.keys(stats.by_canton || {}).length, label: 'Cantons' },
+            { value: Object.keys(stats.by_language || {}).length, label: 'Languages' },
+        ];
+        document.getElementById('kpis').innerHTML = kpis.map(k =>
+            `<div class="kpi-card"><div class="value">${k.value}</div><div class="label">${k.label}</div></div>`
+        ).join('');
+
+        function renderBarChart(id, data, color = '#D52B1E') {
+            const entries = Object.entries(data).sort((a, b) => b[1] - a[1]);
+            const max = entries[0]?.[1] || 1;
+            document.getElementById(id).innerHTML = entries.map(([label, count]) => {
+                const pct = (count / max * 100).toFixed(1);
+                return `<div class="bar-row">
+                    <div class="bar-label" title="${label}">${label}</div>
+                    <div class="bar-container"><div class="bar-fill" style="width:${pct}%;background:${color}"></div></div>
+                    <div class="bar-value">${count.toLocaleString()}</div>
+                </div>`;
+            }).join('');
+        }
+
+        renderBarChart('sr-cat-chart', stats.by_sr_category || {});
+        renderBarChart('cat-type-chart', stats.by_category_type || {}, '#2563eb');
+        renderBarChart('lang-chart', stats.by_language || {}, '#16a34a');
+        renderBarChart('canton-chart', stats.by_canton || {}, '#ea580c');
+        renderBarChart('source-chart', stats.by_source || {});
+        renderBarChart('sys-cat-chart', stats.by_systematic_category || {}, '#7c3aed');
+        renderBarChart('global-cat-chart', stats.by_global_category || {}, '#0891b2');
+
+        // Timeline
+        let timelineMode = 'all';
+        const yearScope = stats.by_year_scope || {};
+
+        function renderTimeline(mode) {
+            const byYear = stats.by_year || {};
+            let years;
+            if (mode === 'all') {
+                years = Object.entries(byYear).map(([y, c]) => [parseInt(y), c]);
+            } else {
+                years = Object.entries(yearScope).map(([y, scopes]) => [parseInt(y), scopes[mode] || 0]);
+            }
+            years = years.filter(([y]) => y >= 1970 && y <= 2027).sort((a, b) => a[0] - b[0]);
+            const max = Math.max(...years.map(y => y[1]), 1);
+            const svgW = 1000, svgH = 250;
+            const m = { top: 20, right: 10, bottom: 40, left: 50 };
+            const pW = svgW - m.left - m.right, pH = svgH - m.top - m.bottom;
+            const bW = Math.max(2, pW / years.length - 1);
+            let svg = `<svg viewBox="0 0 ${svgW} ${svgH}">`;
+            for (let i = 0; i <= 4; i++) {
+                const y = m.top + pH - (pH * i / 4), val = Math.round(max * i / 4);
+                svg += `<line x1="${m.left}" y1="${y}" x2="${svgW-m.right}" y2="${y}" stroke="#eee"/>`;
+                svg += `<text x="${m.left-5}" y="${y+4}" text-anchor="end" font-size="10" fill="#666">${val}</text>`;
+            }
+            const color = mode === 'federal' ? '#D52B1E' : mode === 'cantonal' ? '#2563eb' : '#D52B1E';
+            years.forEach(([year, count], i) => {
+                const x = m.left + (i * (pW / years.length));
+                const h = (count / max) * pH, y = m.top + pH - h;
+                svg += `<rect x="${x}" y="${y}" width="${bW}" height="${h}" fill="${color}" opacity="0.85"><title>${year}: ${count}</title></rect>`;
+                if (year % 5 === 0) svg += `<text x="${x+bW/2}" y="${svgH-10}" text-anchor="middle" font-size="10" fill="#666">${year}</text>`;
+            });
+            svg += '</svg>';
+            document.getElementById('timeline-chart').innerHTML = svg;
+        }
+
+        const tabs = ['all', 'federal', 'cantonal'];
+        document.getElementById('year-tabs').innerHTML = tabs.map(t =>
+            `<button class="${t === 'all' ? 'active' : ''}" data-mode="${t}">${t.charAt(0).toUpperCase() + t.slice(1)}</button>`
+        ).join('');
+        document.getElementById('year-tabs').addEventListener('click', e => {
+            if (e.target.tagName !== 'BUTTON') return;
+            document.querySelectorAll('#year-tabs button').forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            renderTimeline(e.target.dataset.mode);
+        });
+        renderTimeline('all');
+    })();
+    </script>
+</body>
+</html>
