@@ -2,17 +2,123 @@
   "year": "1997",
   "entity": "GR",
   "total": 4,
+  "categorized": 2,
+  "uncategorized": 2,
   "by_type": {
-    "Anderes": 1,
-    "Reglement": 1
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "425 Mittelschule": 1
+      },
+      "by_global_category": {
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "544 Alters- und Hinterlassenenversicherung, Invalidenversicherung": 1
+      },
+      "by_global_category": {}
+    }
   },
-  "by_topic": {
-    "425 Mittelschule": 1,
-    "544 Alters- und Hinterlassenenversicherung, Invalidenversicherung": 1
-  },
-  "by_global_category": {
-    "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "4",
+      "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "42",
+          "title": "Erziehung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "425",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "54",
+          "title": "Sozialversicherung, Arbeitsvermittlung, Öffentliche Sozialhilfe, Familienschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "544",
+              "title": "Alters- und Hinterlassenenversicherung, Invalidenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.20",
+              "title": "Fachmittelschulen, Diplommittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 2,
     "it": 2

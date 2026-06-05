@@ -2,20 +2,220 @@
   "year": "2005",
   "entity": "FR",
   "total": 6,
+  "categorized": 3,
+  "uncategorized": 3,
   "by_type": {
-    "Verordnung": 2,
-    "Anderes": 1
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "433 Pädagogische Hochschule": 1,
+        "87 WOHNVERHÄLTNISSE": 1
+      },
+      "by_global_category": {
+        "4.50.10 Pädagogik": 1,
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "261 Notariat": 1
+      },
+      "by_global_category": {
+        "1.50.20.20 Gebühren, Tarife": 1
+      }
+    }
   },
-  "by_topic": {
-    "261 Notariat": 1,
-    "433 Pädagogische Hochschule": 1,
-    "87 WOHNVERHÄLTNISSE": 1
-  },
-  "by_global_category": {
-    "1.50.20.20 Gebühren, Tarife": 1,
-    "4.50.10 Pädagogik": 1,
-    "8.40.10 Eigentums- und Wohnungsbauförderung": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "2",
+      "title": "PRIVATRECHT - ZIVILPROZESS - ZWANGSVOLLSTRECKUNG",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "26",
+          "title": "NOTARIAT - BEGLAUBIGUNGEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "261",
+              "title": "Notariat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "BILDUNG - KULTUR - SPORT",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "43",
+          "title": "HOCHSCHULEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "433",
+              "title": "Pädagogische Hochschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "87",
+          "title": "WOHNVERHÄLTNISSE",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.50.20",
+              "title": "Notare",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.20.20",
+                  "title": "Gebühren, Tarife",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.50.10",
+              "title": "Pädagogik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.40",
+          "title": "Wohnverhältnisse",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.40.10",
+              "title": "Eigentums- und Wohnungsbauförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 3,
     "fr": 3

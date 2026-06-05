@@ -2,17 +2,112 @@
   "year": "1966",
   "entity": "VS",
   "total": 4,
+  "categorized": 2,
+  "uncategorized": 2,
   "by_type": {
-    "Anderes": 1,
-    "Reglement": 1
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "21 Vollstreckung des Zivilrechts": 1
+      },
+      "by_global_category": {}
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "82 Arbeit": 1
+      },
+      "by_global_category": {
+        "8.20.10.30 Sonn- und Feiertage": 1
+      }
+    }
   },
-  "by_topic": {
-    "21 Vollstreckung des Zivilrechts": 1,
-    "82 Arbeit": 1
-  },
-  "by_global_category": {
-    "8.20.10.30 Sonn- und Feiertage": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "2",
+      "title": "Privatrecht, Zivilrechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Vollstreckung des Zivilrechts",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.10",
+              "title": "Arbeitnehmer",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.10.30",
+                  "title": "Sonn- und Feiertage",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 2,
     "fr": 2

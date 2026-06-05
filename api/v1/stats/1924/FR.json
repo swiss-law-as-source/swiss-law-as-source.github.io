@@ -2,18 +2,178 @@
   "year": "1924",
   "entity": "FR",
   "total": 4,
+  "categorized": 2,
+  "uncategorized": 2,
   "by_type": {
-    "Gesetz": 1,
-    "Anderes": 1
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "126 Gebühren": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.30 Staatskanzlei": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "612 Staatsrechnung": 1
+      },
+      "by_global_category": {
+        "6.10.10 Budget und Rechnung": 1
+      }
+    }
   },
-  "by_topic": {
-    "126 Gebühren": 1,
-    "612 Staatsrechnung": 1
-  },
-  "by_global_category": {
-    "1.20.20.20.30 Staatskanzlei": 1,
-    "6.10.10 Budget und Rechnung": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "STAAT - VOLK - BEHÖRDEN",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "126",
+              "title": "Gebühren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "FINANZEN",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "FINANZHAUSHALT DES STAATES",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "612",
+              "title": "Staatsrechnung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.30",
+                      "title": "Staatskanzlei",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.10",
+              "title": "Budget und Rechnung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 2,
     "fr": 2

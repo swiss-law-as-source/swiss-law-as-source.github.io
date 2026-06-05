@@ -2,34 +2,480 @@
   "year": "2021",
   "entity": "GR",
   "total": 38,
+  "categorized": 19,
+  "uncategorized": 19,
   "by_type": {
-    "Verordnung": 10,
-    "Gesetz": 6,
-    "Anderes": 3
+    "Verordnung": {
+      "total": 10,
+      "by_topic": {
+        "92 Forstwirtschaft": 2,
+        "15 Politische Rechte": 1,
+        "425 Mittelschule": 1,
+        "44 Förderung Behinderter": 1,
+        "545 Arbeitslosenversicherung, Arbeitsvermittlung": 1,
+        "73 Finanzausgleich": 1,
+        "932 Wirtschaftsförderung": 1,
+        "935 Gewerbepolizei": 1,
+        "96 Förderung digitale Transformation": 1
+      },
+      "by_global_category": {
+        "9.10 Wirtschaftsförderung": 2,
+        "1.20.10.10 Wahl des Parlaments": 1,
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
+        "8.30.110 Arbeitslosenversicherung": 1,
+        "1.30.10 Gemeindefinanzen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 6,
+      "by_topic": {
+        "173 Gerichtsbehörden": 1,
+        "545 Arbeitslosenversicherung, Arbeitsvermittlung": 1,
+        "92 Forstwirtschaft": 1,
+        "932 Wirtschaftsförderung": 1,
+        "935 Gewerbepolizei": 1,
+        "96 Förderung digitale Transformation": 1
+      },
+      "by_global_category": {
+        "9.10 Wirtschaftsförderung": 2,
+        "1.20.70.30 Besoldung und Entschädigung der Richter": 1,
+        "8.30.110 Arbeitslosenversicherung": 1
+      }
+    },
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "173 Gerichtsbehörden": 2,
+        "544 Alters- und Hinterlassenenversicherung, Invalidenversicherung": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
+        "8.30.40 Ergänzungsleistungen": 1
+      }
+    }
   },
-  "by_topic": {
-    "173 Gerichtsbehörden": 3,
-    "92 Forstwirtschaft": 3,
-    "545 Arbeitslosenversicherung, Arbeitsvermittlung": 2,
-    "932 Wirtschaftsförderung": 2,
-    "935 Gewerbepolizei": 2,
-    "96 Förderung digitale Transformation": 2,
-    "15 Politische Rechte": 1,
-    "425 Mittelschule": 1,
-    "44 Förderung Behinderter": 1,
-    "544 Alters- und Hinterlassenenversicherung, Invalidenversicherung": 1,
-    "73 Finanzausgleich": 1
-  },
-  "by_global_category": {
-    "9.10 Wirtschaftsförderung": 4,
-    "8.30.110 Arbeitslosenversicherung": 2,
-    "1.20.10.10 Wahl des Parlaments": 1,
-    "1.20.70.30 Besoldung und Entschädigung der Richter": 1,
-    "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
-    "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
-    "8.30.40 Ergänzungsleistungen": 1,
-    "1.30.10 Gemeindefinanzen": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Grundlagen, Bürgerrecht, Organisation",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "15",
+          "title": "Politische Rechte",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "17",
+          "title": "Organisation des Kantons",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "173",
+              "title": "Gerichtsbehörden",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Anderes": 2,
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "42",
+          "title": "Erziehung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "425",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "44",
+          "title": "Förderung Behinderter",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "54",
+          "title": "Sozialversicherung, Arbeitsvermittlung, Öffentliche Sozialhilfe, Familienschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "544",
+              "title": "Alters- und Hinterlassenenversicherung, Invalidenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "545",
+              "title": "Arbeitslosenversicherung, Arbeitsvermittlung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Finanzwesen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "73",
+          "title": "Finanzausgleich",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 9,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 5,
+        "Gesetz": 4
+      },
+      "children": [
+        {
+          "identifier": "92",
+          "title": "Forstwirtschaft",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Verordnung": 2,
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "93",
+          "title": "Wirtschaftsförderung, Handel, Industrie, Gewerbe",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 2,
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "932",
+              "title": "Wirtschaftsförderung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "935",
+              "title": "Gewerbepolizei",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "96",
+          "title": "Förderung digitale Transformation",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.10",
+              "title": "Parlament",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.10.10",
+                  "title": "Wahl des Parlaments",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.30",
+                      "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.70.30",
+                  "title": "Besoldung und Entschädigung der Richter",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.20",
+              "title": "Fachmittelschulen, Diplommittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.40",
+              "title": "Ergänzungsleistungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2,
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "9.10",
+          "title": "Wirtschaftsförderung",
+          "total": 4,
+          "own": 4,
+          "by_type": {
+            "Gesetz": 2,
+            "Verordnung": 2
+          }
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 19,
     "it": 19

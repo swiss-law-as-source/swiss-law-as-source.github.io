@@ -2,15 +2,74 @@
   "year": "1988",
   "entity": "GL",
   "total": 6,
+  "categorized": 1,
+  "uncategorized": 5,
   "by_type": {
-    "Verordnung": 1
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "VIII A/61 Epidemien": 1
+      },
+      "by_global_category": {
+        "8.10.100.10 Epidemien, Pandemien": 1
+      }
+    }
   },
-  "by_topic": {
-    "VIII A/61 Epidemien": 1
-  },
-  "by_global_category": {
-    "8.10.100.10 Epidemien, Pandemien": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "VIII",
+      "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Verordnung": 1
+      }
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.100",
+              "title": "Krankheitsbekämpfung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.100.10",
+                  "title": "Epidemien, Pandemien",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 6
   }

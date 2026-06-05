@@ -2,17 +2,124 @@
   "year": "1924",
   "entity": "VS",
   "total": 4,
+  "categorized": 2,
+  "uncategorized": 2,
   "by_type": {
-    "Anderes": 1,
-    "Gesetz": 1
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "721 Wasserbau": 1
+      },
+      "by_global_category": {
+        "7.30.20.20 Gewässernutzung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "747 Schifffahrt": 1
+      },
+      "by_global_category": {}
+    }
   },
-  "by_topic": {
-    "721 Wasserbau": 1,
-    "747 Schifffahrt": 1
-  },
-  "by_global_category": {
-    "7.30.20.20 Gewässernutzung": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "7",
+      "title": "Öffentliche Werke, Energie, Verkehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "72",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "721",
+              "title": "Wasserbau",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "74",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "747",
+              "title": "Schifffahrt",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.20.20",
+                  "title": "Gewässernutzung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 2,
     "fr": 2

@@ -2,26 +2,309 @@
   "year": "2001",
   "entity": "VS",
   "total": 16,
+  "categorized": 7,
+  "uncategorized": 9,
   "by_type": {
-    "Verordnung": 2,
-    "Reglement": 2,
-    "Gesetz": 2,
-    "Interkantonale Vereinbarung": 1
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "64 Steuern": 1,
+        "90 Wirtschaftspolitik": 1
+      },
+      "by_global_category": {
+        "6.20.30 Liegenschaftssteuern": 1,
+        "9.10 Wirtschaftsförderung": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "85 Unterstützung": 1,
+        "923 Fischerei": 1
+      },
+      "by_global_category": {
+        "8.70.80 Schwangerschaftsberatung": 1,
+        "6.30.60.20 Reviere": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "93 Gewerbe": 2
+      },
+      "by_global_category": {
+        "9.50.10.60.30 Spielbanken": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "923 Fischerei": 1
+      },
+      "by_global_category": {
+        "6.30.60.20 Reviere": 1
+      }
+    }
   },
-  "by_topic": {
-    "923 Fischerei": 2,
-    "93 Gewerbe": 2,
-    "64 Steuern": 1,
-    "85 Unterstützung": 1,
-    "90 Wirtschaftspolitik": 1
-  },
-  "by_global_category": {
-    "6.30.60.20 Reviere": 2,
-    "6.20.30 Liegenschaftssteuern": 1,
-    "8.70.80 Schwangerschaftsberatung": 1,
-    "9.10 Wirtschaftsförderung": 1,
-    "9.50.10.60.30 Spielbanken": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "6",
+      "title": "Finanzen und Steuern",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "64",
+          "title": "Steuern",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "85",
+          "title": "Unterstützung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2,
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "90",
+          "title": "Wirtschaftspolitik",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "92",
+          "title": "Forstwesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "923",
+              "title": "Fischerei",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "93",
+          "title": "Gewerbe",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Gesetz": 2
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.30",
+              "title": "Liegenschaftssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.60",
+              "title": "Fischerei",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.30.60.20",
+                  "title": "Reviere",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1,
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.80",
+              "title": "Schwangerschaftsberatung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "9.10",
+          "title": "Wirtschaftsförderung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.60",
+                  "title": "Glücksspiel und Lotterien",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "9.50.10.60.30",
+                      "title": "Spielbanken",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 9,
     "fr": 7

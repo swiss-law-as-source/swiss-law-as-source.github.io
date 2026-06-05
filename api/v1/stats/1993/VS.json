@@ -2,18 +2,159 @@
   "year": "1993",
   "entity": "VS",
   "total": 6,
+  "categorized": 3,
+  "uncategorized": 3,
   "by_type": {
-    "Anderes": 3
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "64 Steuern": 1,
+        "70 Raumplanung, Bauwesen": 1,
+        "84 Wohnungswesen": 1
+      },
+      "by_global_category": {
+        "6.20.10.40 Pauschale Steueranrechnung": 1,
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
+      }
+    }
   },
-  "by_topic": {
-    "64 Steuern": 1,
-    "70 Raumplanung, Bauwesen": 1,
-    "84 Wohnungswesen": 1
-  },
-  "by_global_category": {
-    "6.20.10.40 Pauschale Steueranrechnung": 1,
-    "8.40.10 Eigentums- und Wohnungsbauförderung": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "6",
+      "title": "Finanzen und Steuern",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "64",
+          "title": "Steuern",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Öffentliche Werke, Energie, Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "70",
+          "title": "Raumplanung, Bauwesen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "84",
+          "title": "Wohnungswesen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.40",
+                  "title": "Pauschale Steueranrechnung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "8.40",
+          "title": "Wohnverhältnisse",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.40.10",
+              "title": "Eigentums- und Wohnungsbauförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 3,
     "fr": 3

@@ -2,31 +2,396 @@
   "year": "2010",
   "entity": "VS",
   "total": 18,
+  "categorized": 9,
+  "uncategorized": 9,
   "by_type": {
-    "Verordnung": 3,
-    "Reglement": 3,
-    "Gesetz": 2,
-    "Staatsvertrag": 1
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "14 Bürgerrecht. Niederlassung. Aufenthalt": 1,
+        "61 Finanzhaushalt": 1,
+        "73 Energie": 1
+      },
+      "by_global_category": {
+        "1.10.80 Ausweise": 1,
+        "6.10.40 Finanzkontrolle": 1
+      }
+    },
+    "Reglement": {
+      "total": 3,
+      "by_topic": {
+        "172 Staatsrat und Verwaltung": 1,
+        "412 Berufsbildung": 1,
+        "725 Strassen": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "71 Enteignung": 1,
+        "90 Wirtschaftspolitik": 1
+      },
+      "by_global_category": {
+        "7.20 Enteignung": 1,
+        "9.10 Wirtschaftsförderung": 1
+      }
+    },
+    "Staatsvertrag": {
+      "total": 1,
+      "by_topic": {
+        "67 Steuerabkommen": 1
+      },
+      "by_global_category": {
+        "6.20.100 Steuerbefreiung und -erleichterungen": 1
+      }
+    }
   },
-  "by_topic": {
-    "14 Bürgerrecht. Niederlassung. Aufenthalt": 1,
-    "172 Staatsrat und Verwaltung": 1,
-    "412 Berufsbildung": 1,
-    "61 Finanzhaushalt": 1,
-    "67 Steuerabkommen": 1,
-    "71 Enteignung": 1,
-    "725 Strassen": 1,
-    "73 Energie": 1,
-    "90 Wirtschaftspolitik": 1
-  },
-  "by_global_category": {
-    "1.10.80 Ausweise": 1,
-    "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
-    "6.10.40 Finanzkontrolle": 1,
-    "6.20.100 Steuerbefreiung und -erleichterungen": 1,
-    "7.20 Enteignung": 1,
-    "9.10 Wirtschaftsförderung": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Bürgerrecht. Niederlassung. Aufenthalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "17",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "172",
+              "title": "Staatsrat und Verwaltung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "412",
+              "title": "Berufsbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen und Steuern",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Staatsvertrag": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "Finanzhaushalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "67",
+          "title": "Steuerabkommen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Staatsvertrag": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Öffentliche Werke, Energie, Verkehr",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Reglement": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "71",
+          "title": "Enteignung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "72",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "725",
+              "title": "Strassen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "73",
+          "title": "Energie",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "90",
+          "title": "Wirtschaftspolitik",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.80",
+              "title": "Ausweise",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Staatsvertrag": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.40",
+              "title": "Finanzkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Staatsvertrag": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.100",
+              "title": "Steuerbefreiung und -erleichterungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Staatsvertrag": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "7.20",
+          "title": "Enteignung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "9.10",
+          "title": "Wirtschaftsförderung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 9,
     "fr": 9

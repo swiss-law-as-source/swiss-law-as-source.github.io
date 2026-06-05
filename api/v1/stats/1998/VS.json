@@ -2,17 +2,101 @@
   "year": "1998",
   "entity": "VS",
   "total": 10,
+  "categorized": 5,
+  "uncategorized": 5,
   "by_type": {
-    "Anderes": 4,
-    "Reglement": 1
+    "Anderes": {
+      "total": 4,
+      "by_topic": {
+        "45 Natur- und Heimatschutz": 4
+      },
+      "by_global_category": {
+        "7.70.10 Landschaftsschutz": 4
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "55 Kantonspolizei": 1
+      },
+      "by_global_category": {}
+    }
   },
-  "by_topic": {
-    "45 Natur- und Heimatschutz": 4,
-    "55 Kantonspolizei": 1
-  },
-  "by_global_category": {
-    "7.70.10 Landschaftsschutz": 4
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Anderes": 4
+      },
+      "children": [
+        {
+          "identifier": "45",
+          "title": "Natur- und Heimatschutz",
+          "total": 4,
+          "own": 4,
+          "by_type": {
+            "Anderes": 4
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "55",
+          "title": "Kantonspolizei",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Anderes": 4
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Anderes": 4
+          },
+          "children": [
+            {
+              "identifier": "7.70.10",
+              "title": "Landschaftsschutz",
+              "total": 4,
+              "own": 4,
+              "by_type": {
+                "Anderes": 4
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 5,
     "fr": 5

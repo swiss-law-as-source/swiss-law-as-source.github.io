@@ -2,15 +2,85 @@
   "year": "1914",
   "entity": "FR",
   "total": 2,
+  "categorized": 1,
+  "uncategorized": 1,
   "by_type": {
-    "Gesetz": 1
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "514 Schiessübungen": 1
+      },
+      "by_global_category": {
+        "5.30.30 Waffen und Munition": 1
+      }
+    }
   },
-  "by_topic": {
-    "514 Schiessübungen": 1
-  },
-  "by_global_category": {
-    "5.30.30 Waffen und Munition": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "5",
+      "title": "LANDESVERTEIDIGUNG - POLIZEI",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "51",
+          "title": "MILITÄRISCHE VERTEIDIGUNG",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "514",
+              "title": "Schiessübungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.30",
+              "title": "Waffen und Munition",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 1,
     "fr": 1

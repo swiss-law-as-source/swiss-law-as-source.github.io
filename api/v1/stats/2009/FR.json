@@ -2,29 +2,450 @@
   "year": "2009",
   "entity": "FR",
   "total": 16,
+  "categorized": 8,
+  "uncategorized": 8,
   "by_type": {
-    "Anderes": 3,
-    "Verordnung": 2,
-    "Reglement": 2,
-    "Gesetz": 1
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "193 Israelitische Kultusgemeinde": 1,
+        "551 Kantonspolizei": 1,
+        "614 Finanzkontrolle": 1
+      },
+      "by_global_category": {
+        "1.40.40 Andere Religionen": 1,
+        "1.20.50 Datenschutz": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "122.70 Allgemeine Bestimmungen": 1,
+        "831.0 Allgemeine Bestimmungen": 1
+      },
+      "by_global_category": {
+        "8.70.20 Jugendschutz, Jugendhilfe": 2
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "432.12 Fachhochschule Westschweiz//Freiburg (HES-SO//FRG)": 2
+      },
+      "by_global_category": {
+        "4.50.30 Wirtschaft": 1,
+        "4.50.20 Soziales": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "480 Allgemeine Bestimmungen - Kulturförderung": 1
+      },
+      "by_global_category": {
+        "4.180.20 Kulturförderung": 1
+      }
+    }
   },
-  "by_topic": {
-    "432.12 Fachhochschule Westschweiz//Freiburg (HES-SO//FRG)": 2,
-    "122.70 Allgemeine Bestimmungen": 1,
-    "193 Israelitische Kultusgemeinde": 1,
-    "480 Allgemeine Bestimmungen - Kulturförderung": 1,
-    "551 Kantonspolizei": 1,
-    "614 Finanzkontrolle": 1,
-    "831.0 Allgemeine Bestimmungen": 1
-  },
-  "by_global_category": {
-    "8.70.20 Jugendschutz, Jugendhilfe": 2,
-    "1.40.40 Andere Religionen": 1,
-    "4.50.30 Wirtschaft": 1,
-    "4.50.20 Soziales": 1,
-    "4.180.20 Kulturförderung": 1,
-    "1.20.50 Datenschutz": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "STAAT - VOLK - BEHÖRDEN",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Staatsrat und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.7",
+                  "title": "Staatspersonal",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "122.70",
+                      "title": "Allgemeine Bestimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "19",
+          "title": "BEZIEHUNGEN KIRCHEN - STAAT",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "193",
+              "title": "Israelitische Kultusgemeinde",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "BILDUNG - KULTUR - SPORT",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Reglement": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "43",
+          "title": "HOCHSCHULEN",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 2
+          },
+          "children": [
+            {
+              "identifier": "432",
+              "title": "Fachhochschulen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Reglement": 2
+              },
+              "children": [
+                {
+                  "identifier": "432.1",
+                  "title": "Fachhochschule Westschweiz (HES-SO)",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 2
+                  },
+                  "children": [
+                    {
+                      "identifier": "432.12",
+                      "title": "Fachhochschule Westschweiz//Freiburg (HES-SO//FRG)",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Reglement": 2
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "48",
+          "title": "KULTURELLE ANGELEGENHEITEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "480",
+              "title": "Allgemeine Bestimmungen - Kulturförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "LANDESVERTEIDIGUNG - POLIZEI",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "55",
+          "title": "POLIZEI",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "551",
+              "title": "Kantonspolizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "FINANZEN",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "FINANZHAUSHALT DES STAATES",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "614",
+              "title": "Finanzkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "SOZIALHILFE UND SOZIALVORSORGE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "831",
+              "title": "Sozialhilfe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "831.0",
+                  "title": "Allgemeine Bestimmungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.40",
+              "title": "Andere Religionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Reglement": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 2
+          },
+          "children": [
+            {
+              "identifier": "4.50.20",
+              "title": "Soziales",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
+            {
+              "identifier": "4.50.30",
+              "title": "Wirtschaft",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.20",
+              "title": "Kulturförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "8.70.20",
+              "title": "Jugendschutz, Jugendhilfe",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 8,
     "fr": 8

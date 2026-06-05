@@ -2,25 +2,297 @@
   "year": "1997",
   "entity": "VS",
   "total": 20,
+  "categorized": 10,
+  "uncategorized": 10,
   "by_type": {
-    "Anderes": 7,
-    "Verordnung": 1,
-    "Reglement": 1,
-    "Gesetz": 1
+    "Anderes": {
+      "total": 7,
+      "by_topic": {
+        "45 Natur- und Heimatschutz": 5,
+        "64 Steuern": 1,
+        "741 Strassenverkehr": 1
+      },
+      "by_global_category": {
+        "7.70.10 Landschaftsschutz": 5
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "14 Bürgerrecht. Niederlassung. Aufenthalt": 1
+      },
+      "by_global_category": {
+        "1.10.70.20.20 Zwangsmassnahmen": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "412 Berufsbildung": 1
+      },
+      "by_global_category": {}
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "93 Gewerbe": 1
+      },
+      "by_global_category": {
+        "6.30.20 Bergwerk": 1
+      }
+    }
   },
-  "by_topic": {
-    "45 Natur- und Heimatschutz": 5,
-    "14 Bürgerrecht. Niederlassung. Aufenthalt": 1,
-    "412 Berufsbildung": 1,
-    "64 Steuern": 1,
-    "741 Strassenverkehr": 1,
-    "93 Gewerbe": 1
-  },
-  "by_global_category": {
-    "7.70.10 Landschaftsschutz": 5,
-    "1.10.70.20.20 Zwangsmassnahmen": 1,
-    "6.30.20 Bergwerk": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Bürgerrecht. Niederlassung. Aufenthalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 6,
+      "own": 0,
+      "by_type": {
+        "Anderes": 5,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "412",
+              "title": "Berufsbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "45",
+          "title": "Natur- und Heimatschutz",
+          "total": 5,
+          "own": 5,
+          "by_type": {
+            "Anderes": 5
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen und Steuern",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "64",
+          "title": "Steuern",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Öffentliche Werke, Energie, Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "74",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "741",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "93",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.20",
+                      "title": "Zwangsmassnahmen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.20",
+              "title": "Bergwerk",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Anderes": 5
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Anderes": 5
+          },
+          "children": [
+            {
+              "identifier": "7.70.10",
+              "title": "Landschaftsschutz",
+              "total": 5,
+              "own": 5,
+              "by_type": {
+                "Anderes": 5
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 10,
     "fr": 10

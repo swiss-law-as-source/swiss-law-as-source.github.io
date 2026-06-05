@@ -2,35 +2,508 @@
   "year": "2008",
   "entity": "VS",
   "total": 20,
+  "categorized": 10,
+  "uncategorized": 10,
   "by_type": {
-    "Anderes": 3,
-    "Reglement": 2,
-    "Verordnung": 2,
-    "Interkantonale Vereinbarung": 2,
-    "Gesetz": 1
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "172 Staatsrat und Verwaltung": 1,
+        "45 Natur- und Heimatschutz": 1,
+        "85 Unterstützung": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.10 Entschädigungen": 1,
+        "7.70.50 Naturschutz": 1,
+        "1.10.70.20.10 Asylwesen": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "14 Bürgerrecht. Niederlassung. Aufenthalt": 1,
+        "40 Allgemeine Bestimmungen": 1
+      },
+      "by_global_category": {
+        "1.10.60 Bürgerrecht": 1,
+        "4.120.100 Schulbehörden": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "21 Vollstreckung des Zivilrechts": 1,
+        "54 Feuerwehr": 1
+      },
+      "by_global_category": {
+        "5.20.30.20 Brandschutz": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "36 Polizeikoordination": 1,
+        "411 Obligatorische Schule": 1
+      },
+      "by_global_category": {
+        "1.10.70.20.10 Asylwesen": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "175 Gemeinden und Burgerschaften": 1
+      },
+      "by_global_category": {
+        "1.30.60 Bürgergemeinden, Allmend": 1
+      }
+    }
   },
-  "by_topic": {
-    "14 Bürgerrecht. Niederlassung. Aufenthalt": 1,
-    "172 Staatsrat und Verwaltung": 1,
-    "175 Gemeinden und Burgerschaften": 1,
-    "21 Vollstreckung des Zivilrechts": 1,
-    "36 Polizeikoordination": 1,
-    "40 Allgemeine Bestimmungen": 1,
-    "411 Obligatorische Schule": 1,
-    "45 Natur- und Heimatschutz": 1,
-    "54 Feuerwehr": 1,
-    "85 Unterstützung": 1
-  },
-  "by_global_category": {
-    "1.10.70.20.10 Asylwesen": 2,
-    "1.10.60 Bürgerrecht": 1,
-    "1.20.20.20.10 Entschädigungen": 1,
-    "1.30.60 Bürgergemeinden, Allmend": 1,
-    "4.120.100 Schulbehörden": 1,
-    "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
-    "7.70.50 Naturschutz": 1,
-    "5.20.30.20 Brandschutz": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Anderes": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Bürgerrecht. Niederlassung. Aufenthalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        },
+        {
+          "identifier": "17",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "172",
+              "title": "Staatsrat und Verwaltung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "175",
+              "title": "Gemeinden und Burgerschaften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Privatrecht, Zivilrechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Vollstreckung des Zivilrechts",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrechtspflege - Strafvollzug",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "36",
+          "title": "Polizeikoordination",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "40",
+          "title": "Allgemeine Bestimmungen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        },
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Obligatorische Schule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "45",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "54",
+          "title": "Feuerwehr",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "85",
+          "title": "Unterstützung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Reglement": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1,
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Interkantonale Vereinbarung": 1,
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.10",
+                      "title": "Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.60",
+              "title": "Bürgergemeinden, Allmend",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.100",
+              "title": "Schulbehörden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.20",
+                  "title": "Brandschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 10,
     "fr": 10

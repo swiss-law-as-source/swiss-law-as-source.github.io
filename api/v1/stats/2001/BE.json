@@ -2,22 +2,234 @@
   "year": "2001",
   "entity": "BE",
   "total": 18,
+  "categorized": 6,
+  "uncategorized": 12,
   "by_type": {
-    "Verordnung": 4,
-    "Interkantonale Vereinbarung": 1,
-    "Anderes": 1
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "661.3 Einzelne Steuern": 2,
+        "668.2 Verrechnungssteuer": 1,
+        "669.7 Doppelbesteuerung": 1
+      },
+      "by_global_category": {
+        "6.20.30 Liegenschaftssteuern": 1,
+        "6.20.60 Verrechnungssteuer": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "945 Interkantonale Vereinbarungen": 1
+      },
+      "by_global_category": {
+        "9.60.50 Binnenmarkt, Handelshemmnisse": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "945 Interkantonale Vereinbarungen": 1
+      },
+      "by_global_category": {
+        "9.60.50 Binnenmarkt, Handelshemmnisse": 1
+      }
+    }
   },
-  "by_topic": {
-    "661.3 Einzelne Steuern": 2,
-    "945 Interkantonale Vereinbarungen": 2,
-    "668.2 Verrechnungssteuer": 1,
-    "669.7 Doppelbesteuerung": 1
-  },
-  "by_global_category": {
-    "9.60.50 Binnenmarkt, Handelshemmnisse": 2,
-    "6.20.30 Liegenschaftssteuern": 1,
-    "6.20.60 Verrechnungssteuer": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 4
+      },
+      "children": [
+        {
+          "identifier": "66",
+          "title": "Steuern und Abgaben",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 4
+          },
+          "children": [
+            {
+              "identifier": "661",
+              "title": "Direkte Kantons- und Gemeindesteuern",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "661.3",
+                  "title": "Einzelne Steuern",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "668",
+              "title": "Vollzug von Bundessteuern und -abgaben",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "668.2",
+                  "title": "Verrechnungssteuer",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "669",
+              "title": "Steuerabkommen, Doppelbesteuerung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "669.7",
+                  "title": "Doppelbesteuerung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "94",
+          "title": "Handel",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "945",
+              "title": "Interkantonale Vereinbarungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "6.20.30",
+              "title": "Liegenschaftssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "6.20.60",
+              "title": "Verrechnungssteuer",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.50",
+              "title": "Binnenmarkt, Handelshemmnisse",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 12,
     "fr": 6

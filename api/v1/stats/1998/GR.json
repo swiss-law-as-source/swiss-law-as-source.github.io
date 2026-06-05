@@ -2,27 +2,359 @@
   "year": "1998",
   "entity": "GR",
   "total": 12,
+  "categorized": 6,
+  "uncategorized": 6,
   "by_type": {
-    "Verordnung": 3,
-    "Anderes": 2,
-    "Reglement": 1
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "170 Politische Behörden und Mitarbeitende": 1,
+        "433 Fortbildung Jugendlicher und Erwachsener": 1,
+        "507 Lebensmittel, Chemikalien, Tabak, ökologisches Gleichgewicht": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.30 Staatskanzlei": 1,
+        "4.70.10 Erwachsenenbildung": 1,
+        "8.10.130.30 Badeanstalten": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "546 Öffentliche Sozialhilfe": 1,
+        "548 Familienschutz": 1
+      },
+      "by_global_category": {
+        "8.70.10 Sozialhilfe": 1,
+        "8.30.120 Mutterschaftsversicherung, Mutterschaftsbeiträge": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "545 Arbeitslosenversicherung, Arbeitsvermittlung": 1
+      },
+      "by_global_category": {
+        "8.30.110 Arbeitslosenversicherung": 1
+      }
+    }
   },
-  "by_topic": {
-    "170 Politische Behörden und Mitarbeitende": 1,
-    "433 Fortbildung Jugendlicher und Erwachsener": 1,
-    "507 Lebensmittel, Chemikalien, Tabak, ökologisches Gleichgewicht": 1,
-    "545 Arbeitslosenversicherung, Arbeitsvermittlung": 1,
-    "546 Öffentliche Sozialhilfe": 1,
-    "548 Familienschutz": 1
-  },
-  "by_global_category": {
-    "1.20.20.20.30 Staatskanzlei": 1,
-    "4.70.10 Erwachsenenbildung": 1,
-    "8.10.130.30 Badeanstalten": 1,
-    "8.30.110 Arbeitslosenversicherung": 1,
-    "8.70.10 Sozialhilfe": 1,
-    "8.30.120 Mutterschaftsversicherung, Mutterschaftsbeiträge": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Grundlagen, Bürgerrecht, Organisation",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "17",
+          "title": "Organisation des Kantons",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "170",
+              "title": "Politische Behörden und Mitarbeitende",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "43",
+          "title": "Berufsbildung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "433",
+              "title": "Fortbildung Jugendlicher und Erwachsener",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "50",
+          "title": "Sanitätswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "507",
+              "title": "Lebensmittel, Chemikalien, Tabak, ökologisches Gleichgewicht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "54",
+          "title": "Sozialversicherung, Arbeitsvermittlung, Öffentliche Sozialhilfe, Familienschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "545",
+              "title": "Arbeitslosenversicherung, Arbeitsvermittlung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
+            {
+              "identifier": "546",
+              "title": "Öffentliche Sozialhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "548",
+              "title": "Familienschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.30",
+                      "title": "Staatskanzlei",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.70",
+          "title": "Weiterbildung (Quartärstufe)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.70.10",
+              "title": "Erwachsenenbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.30",
+                  "title": "Badeanstalten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
+            {
+              "identifier": "8.30.120",
+              "title": "Mutterschaftsversicherung, Mutterschaftsbeiträge",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 6,
     "it": 6

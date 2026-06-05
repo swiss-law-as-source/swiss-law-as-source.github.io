@@ -2,18 +2,156 @@
   "year": "2006",
   "entity": "GR",
   "total": 4,
+  "categorized": 2,
+  "uncategorized": 2,
   "by_type": {
-    "Gesetz": 1,
-    "Verordnung": 1
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "63 Bevölkerungsschutz": 1
+      },
+      "by_global_category": {
+        "5.20.20 Landesversorgung": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "933 Kreditwesen": 1
+      },
+      "by_global_category": {
+        "9.50.10.90 Konsumkredit": 1
+      }
+    }
   },
-  "by_topic": {
-    "63 Bevölkerungsschutz": 1,
-    "933 Kreditwesen": 1
-  },
-  "by_global_category": {
-    "5.20.20 Landesversorgung": 1,
-    "9.50.10.90 Konsumkredit": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "6",
+      "title": "Polizei, Militär, Bevölkerungsschutz, Zivilschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "63",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "93",
+          "title": "Wirtschaftsförderung, Handel, Industrie, Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "933",
+              "title": "Kreditwesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.20",
+              "title": "Landesversorgung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.90",
+                  "title": "Konsumkredit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 2,
     "it": 2

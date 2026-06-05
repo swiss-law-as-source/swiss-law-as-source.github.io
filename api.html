@@ -358,14 +358,19 @@
                 <tr><td><code>year</code></td><td>string</td><td>The year</td></tr>
                 <tr><td><code>entity</code></td><td>string</td><td>Entity code</td></tr>
                 <tr><td><code>total</code></td><td>int</td><td>Total laws for this year/entity</td></tr>
-                <tr><td><code>by_type</code></td><td>object</td><td>Counts by law type (Gesetz, Verordnung, etc.) &mdash; cantonal only</td></tr>
-                <tr><td><code>by_topic</code></td><td>object</td><td>Counts by systematic category &mdash; cantonal only</td></tr>
-                <tr><td><code>by_global_category</code></td><td>object</td><td>Counts by global classification code &mdash; cantonal only</td></tr>
+                <tr><td><code>categorized</code></td><td>int</td><td>Laws with category metadata (from LexFind)</td></tr>
+                <tr><td><code>uncategorized</code></td><td>int</td><td>Laws without category metadata (LexWork-only)</td></tr>
+                <tr><td><code>by_type</code></td><td>object</td><td>Per law type: <code>total</code>, <code>by_topic</code>, <code>by_global_category</code> &mdash; cantonal only</td></tr>
+                <tr><td><code>by_topic_tree</code></td><td>array</td><td>Hierarchical canton-specific topic tree with counts rolled up &mdash; cantonal only</td></tr>
+                <tr><td><code>by_global_category_tree</code></td><td>array</td><td>Hierarchical global category tree with counts rolled up &mdash; cantonal only</td></tr>
                 <tr><td><code>by_language</code></td><td>object</td><td>Counts by language (<code>de</code>, <code>fr</code>, <code>it</code>)</td></tr>
             </table>
+            <p>Each <strong>tree node</strong> has: <code>identifier</code>, <code>title</code>, <code>total</code> (this node + descendants),
+               <code>own</code> (directly at this node), <code>by_type</code> (rolled-up type counts), and optional <code>children</code>.
+               Empty subtrees are pruned.</p>
             <div class="note">
-                For <code>CH</code> (federal), the fields <code>by_type</code>, <code>by_topic</code>, and <code>by_global_category</code>
-                are empty objects. These breakdowns are only available for cantonal entities.
+                For <code>CH</code> (federal), <code>by_type</code> is empty and both trees are <code>[]</code>.
+                These breakdowns are only available for cantonal entities.
             </div>
             <h3>Example: Federal (CH)</h3>
             <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>// GET /api/v1/stats/2024/CH.json
@@ -373,9 +378,11 @@
   "year": "2024",
   "entity": "CH",
   "total": 1329,
+  "categorized": 0,
+  "uncategorized": 1329,
   "by_type": {},
-  "by_topic": {},
-  "by_global_category": {},
+  "by_topic_tree": [],
+  "by_global_category_tree": [],
   "by_language": { "de": 443, "fr": 443, "it": 443 }
 }</pre>
             <h3>Example: Canton (Bern)</h3>
@@ -384,20 +391,45 @@
   "year": "2024",
   "entity": "BE",
   "total": 159,
+  "categorized": 79,
+  "uncategorized": 80,
   "by_type": {
-    "Verordnung": 36,
-    "Reglement": 22,
-    "Gesetz": 15,
-    "Interkantonale Vereinbarung": 2,
-    "Verordnung des Parlaments (Dekret)": 2,
-    "Anderes": 2
+    "Verordnung": {
+      "total": 36,
+      "by_topic": {
+        "433.1 Mittelschulen": 4,
+        "152.0 Allgemeine Organisation, Zuständigkeit, Information": 3
+      },
+      "by_global_category": {
+        "1.20.50 Datenschutz": 2,
+        "4.20.10 Mittelschule": 2
+      }
+    },
+    "Gesetz": { "total": 15, "by_topic": {"...": "..."}, "by_global_category": {"...": "..."} }
   },
-  "by_topic": {
-    "152.0 Allgemeine Organisation, Zuständigkeit, Information": 6,
-    "161 Allgemeine Gerichtsorganisation": 4,
-    "433.1 Mittelschulen": 4
-  },
-  "by_global_category": { "...": "..." },
+  "by_topic_tree": [
+    {
+      "identifier": "1", "title": "Staat, Volk, Behörden",
+      "total": 46, "own": 0,
+      "by_type": { "Verordnung": 18, "Reglement": 22, "Gesetz": 4, "Anderes": 2 },
+      "children": [
+        {
+          "identifier": "15", "title": "Behörden",
+          "total": 37, "own": 0,
+          "by_type": { "Verordnung": 12, "Reglement": 22, "Gesetz": 1, "Anderes": 2 },
+          "children": ["..."]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1", "title": "Staat",
+      "total": 31, "own": 0,
+      "by_type": { "Reglement": 15, "Verordnung": 10, "Gesetz": 4, "Anderes": 2 },
+      "children": ["..."]
+    }
+  ],
   "by_language": { "de": 80, "fr": 79 }
 }</pre>
         </div>

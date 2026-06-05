@@ -2,23 +2,224 @@
   "year": "2003",
   "entity": "VS",
   "total": 10,
+  "categorized": 5,
+  "uncategorized": 5,
   "by_type": {
-    "Interkantonale Vereinbarung": 2,
-    "Reglement": 1,
-    "Verordnung": 1,
-    "Gesetz": 1
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "414 Höhere Ausbildung": 1,
+        "94 Dienstleistungen": 1
+      },
+      "by_global_category": {
+        "4.120.30 Schulaufsicht": 1,
+        "9.60.50 Binnenmarkt, Handelshemmnisse": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "741 Strassenverkehr": 1
+      },
+      "by_global_category": {}
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "80 Gesundheitswesen": 1
+      },
+      "by_global_category": {}
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "94 Dienstleistungen": 1
+      },
+      "by_global_category": {
+        "4.140 Anerkennung von Diplomen": 1
+      }
+    }
   },
-  "by_topic": {
-    "94 Dienstleistungen": 2,
-    "414 Höhere Ausbildung": 1,
-    "741 Strassenverkehr": 1,
-    "80 Gesundheitswesen": 1
-  },
-  "by_global_category": {
-    "4.120.30 Schulaufsicht": 1,
-    "9.60.50 Binnenmarkt, Handelshemmnisse": 1,
-    "4.140 Anerkennung von Diplomen": 1
-  },
+  "by_topic_tree": [
+    {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "414",
+              "title": "Höhere Ausbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Öffentliche Werke, Energie, Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "74",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "741",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "80",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "94",
+          "title": "Dienstleistungen",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.30",
+              "title": "Schulaufsicht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.140",
+          "title": "Anerkennung von Diplomen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.50",
+              "title": "Binnenmarkt, Handelshemmnisse",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 5,
     "fr": 5
