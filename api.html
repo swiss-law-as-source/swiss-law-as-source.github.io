@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation — Swiss Law Collection</title>
+    <style>
+        :root {
+            --red: #D52B1E;
+            --dark: #1a1a1a;
+            --gray: #f5f5f5;
+            --border: #e0e0e0;
+            --blue: #2563eb;
+            --green: #16a34a;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background: #fff;
+        }
+        header { background: var(--red); color: white; padding: 2rem; text-align: center; }
+        header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
+        header p { opacity: 0.9; font-size: 1rem; }
+        nav { background: var(--dark); padding: 0.5rem 2rem; text-align: center; }
+        nav a { color: #ccc; text-decoration: none; margin: 0 1rem; font-size: 0.9rem; }
+        nav a:hover { color: white; }
+        main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+        h2 {
+            font-size: 1.4rem; margin: 2.5rem 0 1rem;
+            border-bottom: 2px solid var(--red); padding-bottom: 0.5rem;
+        }
+        h3 { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+        p { margin-bottom: 0.8rem; }
+        a { color: var(--red); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem; margin-bottom: 2rem;
+        }
+        .kpi-card {
+            background: var(--gray); border-radius: 8px; padding: 1.2rem;
+            text-align: center; border: 1px solid var(--border);
+        }
+        .kpi-card .value { font-size: 2rem; font-weight: 700; color: var(--red); }
+        .kpi-card .label { font-size: 0.8rem; color: #666; margin-top: 0.2rem; }
+
+        .base-url {
+            background: var(--gray); border: 1px solid var(--border); border-radius: 6px;
+            padding: 0.8rem 1.2rem; font-family: "SF Mono", "Fira Code", Consolas, monospace;
+            font-size: 0.95rem; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;
+        }
+        .base-url .label { font-weight: 600; color: #666; font-family: inherit; }
+
+        .toc {
+            background: var(--gray); border: 1px solid var(--border); border-radius: 8px;
+            padding: 1.2rem 1.5rem; margin-bottom: 2rem;
+        }
+        .toc h3 { margin: 0 0 0.5rem; font-size: 1rem; }
+        .toc ol { margin: 0; padding-left: 1.5rem; }
+        .toc li { margin-bottom: 0.3rem; font-size: 0.9rem; }
+
+        .endpoint {
+            background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--red);
+            border-radius: 6px; padding: 1.2rem 1.5rem; margin-bottom: 1.5rem;
+        }
+        .endpoint-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.8rem; flex-wrap: wrap; }
+        .method {
+            background: var(--green); color: white; font-weight: 700; font-size: 0.75rem;
+            padding: 0.2rem 0.6rem; border-radius: 4px; letter-spacing: 0.5px;
+        }
+        .endpoint-url {
+            font-family: "SF Mono", "Fira Code", Consolas, monospace;
+            font-size: 0.95rem; font-weight: 600;
+        }
+        .endpoint-desc { color: #555; margin-bottom: 0.8rem; font-size: 0.9rem; }
+
+        .param-table { width: 100%; border-collapse: collapse; margin: 0.8rem 0; font-size: 0.88rem; }
+        .param-table th {
+            text-align: left; background: var(--gray); padding: 0.5rem 0.8rem;
+            border: 1px solid var(--border); font-weight: 600;
+        }
+        .param-table td { padding: 0.5rem 0.8rem; border: 1px solid var(--border); vertical-align: top; }
+        .param-table tr:nth-child(even) td { background: #fafafa; }
+        .param-table code {
+            background: var(--gray); padding: 0.1rem 0.4rem; border-radius: 3px;
+            font-size: 0.85rem;
+        }
+
+        pre {
+            background: var(--dark); color: #e0e0e0; border-radius: 6px;
+            padding: 1rem 1.2rem; overflow-x: auto; font-size: 0.82rem;
+            line-height: 1.5; margin: 0.8rem 0; position: relative;
+        }
+        pre .copy-btn {
+            position: absolute; top: 0.5rem; right: 0.5rem;
+            background: rgba(255,255,255,0.15); border: none; color: #ccc;
+            padding: 0.3rem 0.6rem; border-radius: 4px; cursor: pointer; font-size: 0.75rem;
+        }
+        pre .copy-btn:hover { background: rgba(255,255,255,0.25); }
+        code {
+            font-family: "SF Mono", "Fira Code", Consolas, monospace;
+        }
+        p code, li code {
+            background: var(--gray); padding: 0.15rem 0.4rem; border-radius: 3px;
+            font-size: 0.88rem;
+        }
+
+        .tab-bar { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
+        .tab-bar button {
+            background: var(--gray); border: 1px solid var(--border); border-radius: 4px;
+            padding: 0.3rem 0.8rem; cursor: pointer; font-size: 0.82rem;
+        }
+        .tab-bar button.active { background: var(--red); color: white; border-color: var(--red); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .try-it {
+            background: var(--gray); border: 1px solid var(--border); border-radius: 8px;
+            padding: 1.5rem; margin: 1.5rem 0;
+        }
+        .try-it h3 { margin-top: 0; }
+        .try-it-controls { display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; margin: 0.8rem 0; }
+        .try-it select, .try-it button {
+            padding: 0.4rem 0.8rem; font-size: 0.9rem; border-radius: 4px; border: 1px solid var(--border);
+        }
+        .try-it button {
+            background: var(--red); color: white; border-color: var(--red); cursor: pointer; font-weight: 600;
+        }
+        .try-it button:hover { opacity: 0.9; }
+        .try-it pre { max-height: 400px; overflow-y: auto; }
+        .try-it .url-preview {
+            font-family: "SF Mono", "Fira Code", Consolas, monospace;
+            font-size: 0.82rem; color: #666; margin-top: 0.3rem;
+        }
+
+        .note {
+            background: #fff7ed; border: 1px solid #fed7aa; border-radius: 6px;
+            padding: 0.8rem 1rem; font-size: 0.88rem; margin: 0.8rem 0;
+        }
+
+        .entity-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 0.4rem; margin: 0.8rem 0;
+        }
+        .entity-grid span {
+            background: var(--gray); padding: 0.3rem 0.6rem; border-radius: 4px;
+            font-size: 0.82rem; text-align: center; border: 1px solid var(--border);
+        }
+
+        footer { text-align: center; padding: 2rem; color: #666; font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+        footer a { color: var(--red); text-decoration: none; }
+
+        @media (max-width: 600px) {
+            nav a { margin: 0 0.4rem; font-size: 0.8rem; }
+            .endpoint-header { flex-direction: column; align-items: flex-start; }
+            .try-it-controls { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>API Documentation</h1>
+        <p>Swiss Law Collection &mdash; Programmatic Access to Federal &amp; Cantonal Law Data</p>
+    </header>
+    <nav>
+        <a href="index.html">Search</a>
+        <a href="diff.html">Diff Viewer</a>
+        <a href="stats.html">Statistics</a>
+        <a href="crossrefs.html">Cross-Refs</a>
+        <a href="cross_level_refs.html">Federal &harr; Cantonal</a>
+        <a href="api.html"><strong>API Docs</strong></a>
+    </nav>
+    <main>
+
+        <!-- Overview -->
+        <div class="kpi-grid" id="kpis">
+            <div class="kpi-card"><div class="value" id="kpi-total">53,692</div><div class="label">Total Laws</div></div>
+            <div class="kpi-card"><div class="value">14</div><div class="label">Cantons</div></div>
+            <div class="kpi-card"><div class="value">1802&ndash;now</div><div class="label">Years Covered</div></div>
+            <div class="kpi-card"><div class="value">de / fr / it</div><div class="label">Languages</div></div>
+        </div>
+
+        <p>
+            The Swiss Law Collection serves <strong>53,000+ federal and cantonal laws</strong> as static JSON files
+            via GitHub Pages. No authentication, no API key, no rate limits. All endpoints return JSON and are
+            accessible from any HTTP client or browser.
+        </p>
+
+        <div class="base-url">
+            <span class="label">Base URL:</span>
+            <span>https://swiss-law-as-source.github.io</span>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3>Contents</h3>
+            <ol>
+                <li><a href="#publications">Publications API</a> &mdash; laws by year</li>
+                <li><a href="#stats">Statistics API</a> &mdash; per-year per-canton breakdowns</li>
+                <li><a href="#global">Global Data Files</a> &mdash; aggregate stats, tags, law index</li>
+                <li><a href="#raw">Raw Law Files</a> &mdash; Markdown with YAML frontmatter</li>
+                <li><a href="#examples">Code Examples</a> &mdash; curl, Python, JavaScript</li>
+                <li><a href="#try-it">Try It</a> &mdash; interactive API explorer</li>
+            </ol>
+        </div>
+
+        <!-- ────────────────────────────────────────── -->
+        <h2 id="publications">1. Publications API</h2>
+        <p>Lists all laws grouped by the year they entered into force. Use the index to discover available years, then fetch individual year files.</p>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method">GET</span>
+                <span class="endpoint-url">/api/v1/publications/index.json</span>
+            </div>
+            <div class="endpoint-desc">Index of all publication years with total counts.</div>
+            <h3>Response</h3>
+            <table class="param-table">
+                <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+                <tr><td><code>years</code></td><td>int[]</td><td>Array of years with publications (1802&ndash;2066)</td></tr>
+                <tr><td><code>total_publications</code></td><td>int</td><td>Total number of law entries across all years</td></tr>
+                <tr><td><code>earliest_year</code></td><td>int</td><td>First year in the dataset</td></tr>
+                <tr><td><code>latest_year</code></td><td>int</td><td>Last year in the dataset</td></tr>
+            </table>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>{
+  "years": [1802, 1803, 1807, "...", 2024, 2025, 2066],
+  "total_publications": 53692,
+  "earliest_year": 1802,
+  "latest_year": 2066
+}</pre>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>curl -s https://swiss-law-as-source.github.io/api/v1/publications/index.json | jq '.total_publications'</pre>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method">GET</span>
+                <span class="endpoint-url">/api/v1/publications/{year}.json</span>
+            </div>
+            <div class="endpoint-desc">All laws that entered into force in a given year.</div>
+            <h3>Path Parameters</h3>
+            <table class="param-table">
+                <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+                <tr><td><code>year</code></td><td>int</td><td>Year (e.g. <code>2024</code>). See the index for available years.</td></tr>
+            </table>
+            <h3>Response Fields</h3>
+            <table class="param-table">
+                <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+                <tr><td><code>date_prefix</code></td><td>string</td><td>The year as a string (<code>"2024"</code>)</td></tr>
+                <tr><td><code>count</code></td><td>int</td><td>Number of publications in this year</td></tr>
+                <tr><td><code>publications</code></td><td>object[]</td><td>Array of law entries (see below)</td></tr>
+            </table>
+            <h3>Publication Object</h3>
+            <table class="param-table">
+                <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+                <tr><td><code>date</code></td><td>string</td><td>Entry-into-force date (<code>YYYY-MM-DD</code>)</td></tr>
+                <tr><td><code>sr_number</code></td><td>string</td><td>SR number (federal) or systematic number (cantonal)</td></tr>
+                <tr><td><code>title</code></td><td>string</td><td>Full legal title</td></tr>
+                <tr><td><code>scope</code></td><td>string</td><td><code>"federal"</code> or <code>"cantonal"</code></td></tr>
+                <tr><td><code>language</code></td><td>string</td><td>Language code: <code>de</code>, <code>fr</code>, or <code>it</code></td></tr>
+                <tr><td><code>canton</code></td><td>string</td><td>Canton code (e.g. <code>"BE"</code>) for cantonal laws, empty for federal</td></tr>
+                <tr><td><code>path</code></td><td>string</td><td>Relative path to the Markdown file</td></tr>
+                <tr><td><code>url_main</code></td><td>string</td><td>Direct URL to the raw Markdown file on GitHub</td></tr>
+                <tr><td><code>systematic_category</code></td><td>string?</td><td>Topic hierarchy (cantonal only)</td></tr>
+                <tr><td><code>global_category</code></td><td>string?</td><td>Global classification code (cantonal only)</td></tr>
+                <tr><td><code>category_type</code></td><td>string?</td><td>Law type: Gesetz, Verordnung, etc. (cantonal only)</td></tr>
+            </table>
+            <h3>Example</h3>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>{
+  "date_prefix": "2024",
+  "count": 2383,
+  "publications": [
+    {
+      "date": "2024-01-01",
+      "sr_number": "0.360.136.11",
+      "title": "Befristete Durchführungsvereinbarung...",
+      "scope": "federal",
+      "language": "de",
+      "canton": "",
+      "path": "ch/0/de/0.360.136.11.md",
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/0/de/0.360.136.11.md"
+    },
+    {
+      "date": "2024-01-01",
+      "sr_number": "107.1",
+      "title": "Gesetz über die Information und die Medienförderung",
+      "scope": "cantonal",
+      "language": "de",
+      "canton": "BE",
+      "path": "ch/be/de/107.1.md",
+      "url_main": "https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/ch/be/de/107.1.md",
+      "systematic_category": "...",
+      "global_category": "...",
+      "category_type": "Gesetz"
+    }
+  ]
+}</pre>
+        </div>
+
+        <!-- ────────────────────────────────────────── -->
+        <h2 id="stats">2. Statistics API</h2>
+        <p>
+            Per-year, per-canton (or federal) breakdowns. Use this to answer questions like
+            "How many laws does Bern have in 2024?" or "What types of law did Fribourg enact in 2023?"
+        </p>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method">GET</span>
+                <span class="endpoint-url">/api/v1/stats/index.json</span>
+            </div>
+            <div class="endpoint-desc">Index of available years and entities (cantons + CH).</div>
+            <h3>Response</h3>
+            <table class="param-table">
+                <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+                <tr><td><code>years</code></td><td>string[]</td><td>Available years (<code>"1802"</code> through <code>"2066"</code>)</td></tr>
+                <tr><td><code>entities</code></td><td>string[]</td><td>Entity codes (see below)</td></tr>
+                <tr><td><code>total_files</code></td><td>int</td><td>Total number of year&times;entity JSON files</td></tr>
+            </table>
+            <h3>Available Entities</h3>
+            <div class="entity-grid">
+                <span><strong>CH</strong> (Federal)</span>
+                <span>AG (Aargau)</span>
+                <span>AR (Appenzell AR)</span>
+                <span>BE (Bern)</span>
+                <span>BL (Basel-Land)</span>
+                <span>BS (Basel-Stadt)</span>
+                <span>FR (Fribourg)</span>
+                <span>GL (Glarus)</span>
+                <span>GR (Graubünden)</span>
+                <span>LU (Luzern)</span>
+                <span>SG (St. Gallen)</span>
+                <span>SO (Solothurn)</span>
+                <span>TG (Thurgau)</span>
+                <span>VS (Valais)</span>
+                <span>ZG (Zug)</span>
+            </div>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method">GET</span>
+                <span class="endpoint-url">/api/v1/stats/{year}/{entity}.json</span>
+            </div>
+            <div class="endpoint-desc">Statistics for a specific year and entity (canton or federal).</div>
+            <h3>Path Parameters</h3>
+            <table class="param-table">
+                <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
+                <tr><td><code>year</code></td><td>string</td><td>Year (e.g. <code>"2024"</code>)</td></tr>
+                <tr><td><code>entity</code></td><td>string</td><td><code>"CH"</code> for federal, or a canton code (e.g. <code>"BE"</code>)</td></tr>
+            </table>
+            <h3>Response Fields</h3>
+            <table class="param-table">
+                <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+                <tr><td><code>year</code></td><td>string</td><td>The year</td></tr>
+                <tr><td><code>entity</code></td><td>string</td><td>Entity code</td></tr>
+                <tr><td><code>total</code></td><td>int</td><td>Total laws for this year/entity</td></tr>
+                <tr><td><code>by_type</code></td><td>object</td><td>Counts by law type (Gesetz, Verordnung, etc.) &mdash; cantonal only</td></tr>
+                <tr><td><code>by_topic</code></td><td>object</td><td>Counts by systematic category &mdash; cantonal only</td></tr>
+                <tr><td><code>by_global_category</code></td><td>object</td><td>Counts by global classification code &mdash; cantonal only</td></tr>
+                <tr><td><code>by_language</code></td><td>object</td><td>Counts by language (<code>de</code>, <code>fr</code>, <code>it</code>)</td></tr>
+            </table>
+            <div class="note">
+                For <code>CH</code> (federal), the fields <code>by_type</code>, <code>by_topic</code>, and <code>by_global_category</code>
+                are empty objects. These breakdowns are only available for cantonal entities.
+            </div>
+            <h3>Example: Federal (CH)</h3>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>// GET /api/v1/stats/2024/CH.json
+{
+  "year": "2024",
+  "entity": "CH",
+  "total": 1329,
+  "by_type": {},
+  "by_topic": {},
+  "by_global_category": {},
+  "by_language": { "de": 443, "fr": 443, "it": 443 }
+}</pre>
+            <h3>Example: Canton (Bern)</h3>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>// GET /api/v1/stats/2024/BE.json
+{
+  "year": "2024",
+  "entity": "BE",
+  "total": 159,
+  "by_type": {
+    "Verordnung": 36,
+    "Reglement": 22,
+    "Gesetz": 15,
+    "Interkantonale Vereinbarung": 2,
+    "Verordnung des Parlaments (Dekret)": 2,
+    "Anderes": 2
+  },
+  "by_topic": {
+    "152.0 Allgemeine Organisation, Zuständigkeit, Information": 6,
+    "161 Allgemeine Gerichtsorganisation": 4,
+    "433.1 Mittelschulen": 4
+  },
+  "by_global_category": { "...": "..." },
+  "by_language": { "de": 80, "fr": 79 }
+}</pre>
+        </div>
+
+        <!-- ────────────────────────────────────────── -->
+        <h2 id="global">3. Global Data Files</h2>
+        <p>Large aggregate files covering the entire dataset. Useful for dashboards or full exports, but consider the per-year endpoints for targeted queries.</p>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method">GET</span>
+                <span class="endpoint-url">/stats.json</span>
+            </div>
+            <div class="endpoint-desc">
+                Aggregate statistics across all 53,000+ laws: totals, breakdowns by language, canton,
+                SR category, law type, year, and cross-tabulations (canton&times;year, type&times;canton, etc.).
+            </div>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>curl -s https://swiss-law-as-source.github.io/stats.json | jq 'keys'
+# ["by_canton", "by_category_type", "by_global_category", "by_language",
+#  "by_month", "by_sr_category", "by_systematic_category", "by_year",
+#  "by_year_scope", "canton_by_year", "cantonal_laws", "category_type_by_canton",
+#  "category_type_by_canton_by_year", "category_type_by_year",
+#  "federal_laws", "language_by_year", "total_laws"]</pre>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method">GET</span>
+                <span class="endpoint-url">/tags.json</span>
+            </div>
+            <div class="endpoint-desc">
+                Per-law metadata index grouped by scope. Contains every law's ID, title, language, version date, and category fields.
+            </div>
+            <div class="note">This file is approximately <strong>19 MB</strong>. For targeted queries, prefer the per-year publications endpoint.</div>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>{
+  "federal": [
+    { "id": "0.101", "title": "...", "language": "de", "version_date": "...", "sr_category": "...", "source": "..." }
+  ],
+  "cantonal": {
+    "AG": [ { "id": "110.000", "title": "...", "language": "de", "version_date": "...", ... } ],
+    "BE": [ ... ],
+    ...
+  },
+  "total": 53692
+}</pre>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method">GET</span>
+                <span class="endpoint-url">/laws.json</span>
+            </div>
+            <div class="endpoint-desc">
+                Flat list of all laws with SR/systematic number, title, file path, category, and scope. Powers the <a href="index.html">search page</a>.
+            </div>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>[
+  { "sr": "0.101", "title": "Konvention zum Schutze der Menschenrechte...", "path": "ch/0/de/0.101.md", "cat": "0 – Völkerrecht", "scope": "federal" },
+  { "sr": "110.000", "title": "Verfassung des Kantons Aargau", "path": "ch/ag/de/110.000.md", "cat": "AG", "scope": "cantonal" }
+]</pre>
+        </div>
+
+        <!-- ────────────────────────────────────────── -->
+        <h2 id="raw">4. Raw Law Files (Markdown)</h2>
+        <p>
+            Every law is stored as a Markdown file with YAML frontmatter. You can fetch any law directly via its raw GitHub URL.
+        </p>
+
+        <div class="base-url">
+            <span class="label">Raw Base URL:</span>
+            <span style="font-size:0.85rem">https://raw.githubusercontent.com/swiss-law-as-source/swiss-law-as-source.github.io/main/</span>
+        </div>
+
+        <h3>File Path Patterns</h3>
+        <table class="param-table">
+            <tr><th>Scope</th><th>Pattern</th><th>Example</th></tr>
+            <tr>
+                <td>Federal</td>
+                <td><code>ch/{prefix}/{lang}/{sr_number}.md</code></td>
+                <td><code>ch/0/de/0.101.md</code> &mdash; SR 0.101 in German<br>
+                    <code>ch/220/de/220.md</code> &mdash; SR 220 (Code of Obligations)</td>
+            </tr>
+            <tr>
+                <td>Cantonal</td>
+                <td><code>ch/{canton}/{lang}/{number}.md</code></td>
+                <td><code>ch/be/de/107.1.md</code> &mdash; Bern law 107.1 in German<br>
+                    <code>ch/fr/fr/110.1.md</code> &mdash; Fribourg law 110.1 in French</td>
+            </tr>
+        </table>
+
+        <div class="note">
+            For federal laws, <code>{prefix}</code> is the integer part before the first dot in the SR number.
+            Examples: SR <code>0.101</code> &rarr; prefix <code>0</code>,
+            SR <code>220</code> &rarr; prefix <code>220</code>,
+            SR <code>741.01</code> &rarr; prefix <code>741</code>.
+            Canton codes are lowercase: <code>be</code>, <code>fr</code>, <code>ag</code>, etc.
+        </div>
+
+        <h3>Frontmatter Fields</h3>
+        <table class="param-table">
+            <tr><th>Field</th><th>Scope</th><th>Description</th></tr>
+            <tr><td><code>sr_number</code></td><td>Federal</td><td>SR classification number (e.g. <code>"101"</code>)</td></tr>
+            <tr><td><code>systematic_number</code></td><td>Cantonal</td><td>Canton-specific number (e.g. <code>"107.1"</code>)</td></tr>
+            <tr><td><code>title</code></td><td>Both</td><td>Full legal title</td></tr>
+            <tr><td><code>language</code></td><td>Both</td><td><code>de</code>, <code>fr</code>, <code>it</code>, or <code>rm</code></td></tr>
+            <tr><td><code>version_date</code></td><td>Both</td><td>ISO date when this version entered into force</td></tr>
+            <tr><td><code>source</code></td><td>Both</td><td><code>"https://fedlex.data.admin.ch"</code> (federal) or <code>"LexWork"</code> (cantonal)</td></tr>
+            <tr><td><code>canton</code></td><td>Cantonal</td><td>Two-letter code, uppercase (e.g. <code>"BE"</code>)</td></tr>
+            <tr><td><code>category_type</code></td><td>Cantonal</td><td>Law type: Gesetz, Verordnung, Reglement, etc.</td></tr>
+            <tr><td><code>systematic_category</code></td><td>Cantonal</td><td>Topic hierarchy</td></tr>
+            <tr><td><code>abbreviation</code></td><td>Federal</td><td>Short form (e.g. <code>"BV"</code>, <code>"OR"</code>)</td></tr>
+        </table>
+
+        <h3>Example: Federal Law</h3>
+        <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>---
+sr_number: '101'
+title: Bundesverfassung der Schweizerischen Eidgenossenschaft
+language: de
+version_date: '1999-06-18'
+source: https://fedlex.data.admin.ch
+abbreviation: BV
+---
+
+# Bundesverfassung der Schweizerischen Eidgenossenschaft
+
+## 1. Titel: Allgemeine Bestimmungen
+Art. 1 Schweizerische Eidgenossenschaft
+...</pre>
+
+        <h3>Example: Cantonal Law</h3>
+        <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>---
+canton: BE
+systematic_number: '107.1'
+title: Gesetz über die Information und die Medienförderung
+language: de
+version_date: '2024-01-01'
+source: LexWork
+category_type: Gesetz
+systematic_category: '107 Medien'
+---
+
+# Gesetz über die Information und die Medienförderung
+...</pre>
+
+        <!-- ────────────────────────────────────────── -->
+        <h2 id="examples">5. Code Examples</h2>
+
+        <h3>Fetch all laws for a canton in a given year</h3>
+        <div class="tab-bar" data-group="canton-year">
+            <button class="active" onclick="switchTab(this, 'canton-year', 'curl')">curl</button>
+            <button onclick="switchTab(this, 'canton-year', 'python')">Python</button>
+            <button onclick="switchTab(this, 'canton-year', 'js')">JavaScript</button>
+        </div>
+        <div class="tab-content active" data-group="canton-year" data-tab="curl">
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button># Get all Bern (BE) laws that entered into force in 2024
+curl -s https://swiss-law-as-source.github.io/api/v1/publications/2024.json \
+  | jq '[.publications[] | select(.canton == "BE")]'</pre>
+        </div>
+        <div class="tab-content" data-group="canton-year" data-tab="python">
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>import requests
+
+BASE = "https://swiss-law-as-source.github.io"
+year = 2024
+canton = "BE"
+
+data = requests.get(f"{BASE}/api/v1/publications/{year}.json").json()
+laws = [p for p in data["publications"] if p["canton"] == canton]
+print(f"{len(laws)} laws for {canton} in {year}")
+
+for law in laws[:5]:
+    print(f"  {law['sr_number']} — {law['title'][:60]}")</pre>
+        </div>
+        <div class="tab-content" data-group="canton-year" data-tab="js">
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>const BASE = "https://swiss-law-as-source.github.io";
+const year = 2024, canton = "BE";
+
+const res = await fetch(`${BASE}/api/v1/publications/${year}.json`);
+const data = await res.json();
+const laws = data.publications.filter(p => p.canton === canton);
+console.log(`${laws.length} laws for ${canton} in ${year}`);</pre>
+        </div>
+
+        <h3>Get statistics for all cantons in a year</h3>
+        <div class="tab-bar" data-group="all-cantons">
+            <button class="active" onclick="switchTab(this, 'all-cantons', 'curl')">curl</button>
+            <button onclick="switchTab(this, 'all-cantons', 'python')">Python</button>
+        </div>
+        <div class="tab-content active" data-group="all-cantons" data-tab="curl">
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button># Get total laws per canton for 2024
+for entity in CH AG AR BE BL BS FR GL GR LU SG SO TG VS ZG; do
+  total=$(curl -s "https://swiss-law-as-source.github.io/api/v1/stats/2024/${entity}.json" | jq '.total')
+  echo "$entity: $total"
+done</pre>
+        </div>
+        <div class="tab-content" data-group="all-cantons" data-tab="python">
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>import requests
+
+BASE = "https://swiss-law-as-source.github.io"
+year = "2024"
+
+index = requests.get(f"{BASE}/api/v1/stats/index.json").json()
+for entity in index["entities"]:
+    stats = requests.get(f"{BASE}/api/v1/stats/{year}/{entity}.json").json()
+    print(f"{entity}: {stats['total']} laws ({stats.get('by_language', {})})")</pre>
+        </div>
+
+        <h3>Download all law texts for a canton</h3>
+        <div class="tab-bar" data-group="download">
+            <button class="active" onclick="switchTab(this, 'download', 'python')">Python</button>
+        </div>
+        <div class="tab-content active" data-group="download" data-tab="python">
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>import requests, time, os
+
+BASE = "https://swiss-law-as-source.github.io"
+canton = "BE"
+out_dir = f"laws_{canton}"
+os.makedirs(out_dir, exist_ok=True)
+
+# Get all years
+index = requests.get(f"{BASE}/api/v1/publications/index.json").json()
+
+for year in index["years"]:
+    data = requests.get(f"{BASE}/api/v1/publications/{year}.json").json()
+    laws = [p for p in data["publications"] if p["canton"] == canton]
+
+    for law in laws:
+        # Download the raw Markdown
+        resp = requests.get(law["url_main"])
+        if resp.ok:
+            filename = law["sr_number"].replace("/", "_") + ".md"
+            with open(f"{out_dir}/{filename}", "w") as f:
+                f.write(resp.text)
+
+    if laws:
+        print(f"{year}: downloaded {len(laws)} laws")
+        time.sleep(0.5)  # be polite to GitHub</pre>
+        </div>
+
+        <!-- ────────────────────────────────────────── -->
+        <h2 id="try-it">6. Try It</h2>
+        <p>Select a year and entity to fetch live data from the API.</p>
+
+        <div class="try-it">
+            <h3>Statistics API Explorer</h3>
+            <div class="try-it-controls">
+                <label>Year: <select id="try-year"></select></label>
+                <label>Entity: <select id="try-entity">
+                    <option value="CH">CH (Federal)</option>
+                    <option value="AG">AG (Aargau)</option>
+                    <option value="AR">AR (Appenzell AR)</option>
+                    <option value="BE" selected>BE (Bern)</option>
+                    <option value="BL">BL (Basel-Land)</option>
+                    <option value="BS">BS (Basel-Stadt)</option>
+                    <option value="FR">FR (Fribourg)</option>
+                    <option value="GL">GL (Glarus)</option>
+                    <option value="GR">GR (Graubünden)</option>
+                    <option value="LU">LU (Luzern)</option>
+                    <option value="SG">SG (St. Gallen)</option>
+                    <option value="SO">SO (Solothurn)</option>
+                    <option value="TG">TG (Thurgau)</option>
+                    <option value="VS">VS (Valais)</option>
+                    <option value="ZG">ZG (Zug)</option>
+                </select></label>
+                <button onclick="tryFetch()">Fetch</button>
+            </div>
+            <div class="url-preview" id="try-url"></div>
+            <pre id="try-result" style="min-height:80px;"><span style="color:#888;">Click "Fetch" to load data...</span></pre>
+        </div>
+
+        <div class="try-it">
+            <h3>Publications API Explorer</h3>
+            <div class="try-it-controls">
+                <label>Year: <select id="try-pub-year"></select></label>
+                <label>Canton filter (optional): <select id="try-pub-canton">
+                    <option value="">All</option>
+                    <option value="AG">AG</option>
+                    <option value="AR">AR</option>
+                    <option value="BE">BE</option>
+                    <option value="BL">BL</option>
+                    <option value="BS">BS</option>
+                    <option value="FR">FR</option>
+                    <option value="GL">GL</option>
+                    <option value="GR">GR</option>
+                    <option value="LU">LU</option>
+                    <option value="SG">SG</option>
+                    <option value="SO">SO</option>
+                    <option value="TG">TG</option>
+                    <option value="VS">VS</option>
+                    <option value="ZG">ZG</option>
+                </select></label>
+                <button onclick="tryPubFetch()">Fetch</button>
+            </div>
+            <div class="url-preview" id="try-pub-url"></div>
+            <pre id="try-pub-result" style="min-height:80px;"><span style="color:#888;">Click "Fetch" to load data...</span></pre>
+        </div>
+    </main>
+
+    <footer>
+        Data from <a href="https://www.fedlex.admin.ch" target="_blank">Fedlex</a> &amp;
+        <a href="https://www.lexwork.ch" target="_blank">LexWork</a> |
+        Source on <a href="https://github.com/benjamin-arfa/swiss-law" target="_blank">GitHub</a> |
+        <a href="index.html">Search</a> |
+        <a href="stats.html">Statistics</a> |
+        <a href="cross_level_refs.html">Federal &harr; Cantonal</a>
+    </footer>
+
+    <script>
+    const BASE = "https://swiss-law-as-source.github.io";
+
+    // Populate year dropdowns
+    async function initYears() {
+        try {
+            const res = await fetch(BASE + "/api/v1/stats/index.json");
+            const idx = await res.json();
+            const recentYears = idx.years.slice().reverse();
+
+            const selStats = document.getElementById("try-year");
+            const selPub = document.getElementById("try-pub-year");
+            for (const y of recentYears) {
+                selStats.add(new Option(y, y));
+                selPub.add(new Option(y, y));
+            }
+            selStats.value = "2024";
+            selPub.value = "2024";
+        } catch (e) {
+            console.error("Failed to load index:", e);
+            for (let y = 2025; y >= 2000; y--) {
+                document.getElementById("try-year").add(new Option(y, y));
+                document.getElementById("try-pub-year").add(new Option(y, y));
+            }
+        }
+        updateStatsUrl();
+        updatePubUrl();
+    }
+
+    function updateStatsUrl() {
+        const year = document.getElementById("try-year").value;
+        const entity = document.getElementById("try-entity").value;
+        document.getElementById("try-url").textContent =
+            `${BASE}/api/v1/stats/${year}/${entity}.json`;
+    }
+
+    function updatePubUrl() {
+        const year = document.getElementById("try-pub-year").value;
+        document.getElementById("try-pub-url").textContent =
+            `${BASE}/api/v1/publications/${year}.json`;
+    }
+
+    document.getElementById("try-year").addEventListener("change", updateStatsUrl);
+    document.getElementById("try-entity").addEventListener("change", updateStatsUrl);
+    document.getElementById("try-pub-year").addEventListener("change", updatePubUrl);
+
+    async function tryFetch() {
+        const year = document.getElementById("try-year").value;
+        const entity = document.getElementById("try-entity").value;
+        const url = `${BASE}/api/v1/stats/${year}/${entity}.json`;
+        const out = document.getElementById("try-result");
+        updateStatsUrl();
+        out.textContent = "Loading...";
+        try {
+            const res = await fetch(url);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            out.textContent = JSON.stringify(data, null, 2);
+        } catch (e) {
+            out.textContent = `Error: ${e.message}\n\nThis may happen if the year/entity combination doesn't exist.\nCheck the stats index for available combinations.`;
+        }
+    }
+
+    async function tryPubFetch() {
+        const year = document.getElementById("try-pub-year").value;
+        const canton = document.getElementById("try-pub-canton").value;
+        const url = `${BASE}/api/v1/publications/${year}.json`;
+        const out = document.getElementById("try-pub-result");
+        updatePubUrl();
+        out.textContent = "Loading...";
+        try {
+            const res = await fetch(url);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const data = await res.json();
+            let pubs = data.publications;
+            if (canton) pubs = pubs.filter(p => p.canton === canton);
+            const preview = {
+                date_prefix: data.date_prefix,
+                count: pubs.length,
+                publications: pubs.slice(0, 5)
+            };
+            if (pubs.length > 5) preview["..."] = `${pubs.length - 5} more entries`;
+            out.textContent = JSON.stringify(preview, null, 2);
+        } catch (e) {
+            out.textContent = `Error: ${e.message}`;
+        }
+    }
+
+    // Tab switching
+    function switchTab(btn, group, tab) {
+        document.querySelectorAll(`.tab-bar[data-group="${group}"] button`).forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        document.querySelectorAll(`.tab-content[data-group="${group}"]`).forEach(el => {
+            el.classList.toggle("active", el.dataset.tab === tab);
+        });
+    }
+
+    // Copy to clipboard
+    function copyCode(btn) {
+        const pre = btn.parentElement;
+        const text = pre.textContent.replace(/^Copy/, "").trim();
+        navigator.clipboard.writeText(text).then(() => {
+            btn.textContent = "Copied!";
+            setTimeout(() => btn.textContent = "Copy", 1500);
+        });
+    }
+
+    // Update total from live data
+    async function updateKpis() {
+        try {
+            const res = await fetch(BASE + "/api/v1/publications/index.json");
+            const idx = await res.json();
+            document.getElementById("kpi-total").textContent = idx.total_publications.toLocaleString();
+        } catch (e) {}
+    }
+
+    initYears();
+    updateKpis();
+    </script>
+</body>
+</html>
