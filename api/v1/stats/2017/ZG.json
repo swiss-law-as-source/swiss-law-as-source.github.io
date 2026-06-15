@@ -2,11 +2,510 @@
   "year": "2017",
   "entity": "ZG",
   "total": 12,
-  "categorized": 0,
-  "uncategorized": 12,
-  "by_type": {},
-  "by_topic_tree": [],
-  "by_global_category_tree": [],
+  "categorized": 12,
+  "uncategorized": 0,
+  "by_type": {
+    "Anderes": {
+      "total": 5,
+      "by_topic": {
+        "153 Verwaltungsorganisation": 1,
+        "411 Schulkoordination": 1,
+        "721 Baurecht": 1,
+        "826 Spitalwesen": 1,
+        "861 Sozialhilfe": 1
+      },
+      "by_global_category": {
+        "1.20.20.10.10 Delegation": 1,
+        "4.140 Anerkennung von Diplomen": 1,
+        "7.10.50 Verfahren": 1,
+        "8.10.20.20 Psychiatrische Kliniken": 1,
+        "1.10.70.20.10 Asylwesen": 1
+      }
+    },
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "13 Politische Rechte, Gleichstellung": 1,
+        "212 Personenrecht": 1,
+        "215 Sachenrecht": 1
+      },
+      "by_global_category": {
+        "1.10.90.10 Gleichstellung von Mann und Frau": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "151 Regierungsrat": 1,
+        "826 Spitalwesen": 1
+      },
+      "by_global_category": {}
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "411 Schulkoordination": 1,
+        "826 Spitalwesen": 1
+      },
+      "by_global_category": {
+        "4.70.10 Erwachsenenbildung": 1,
+        "8.10.20.20 Psychiatrische Kliniken": 1
+      }
+    }
+  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Grundlagen, Organisation, Gemeinden",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "13",
+          "title": "Politische Rechte, Gleichstellung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "15",
+          "title": "Regierungsrat, Staatskanzlei, Verwaltung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "151",
+              "title": "Regierungsrat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "153",
+              "title": "Verwaltungsorganisation",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilprozess, Vollstreckung",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "212",
+              "title": "Personenrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "215",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule, Kultur, Natur- und Heimatschutz, Kirche",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Schulkoordination",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 1,
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanung, Bauwesen, Gewässer, Energie, Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "72",
+          "title": "Bauwesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "721",
+              "title": "Baurecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Gesetz": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "Gesundheit",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Anderes": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "826",
+              "title": "Spitalwesen",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Gesetz": 1,
+                "Anderes": 1,
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "86",
+          "title": "Sozialwesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "861",
+              "title": "Sozialhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.10",
+                  "title": "Gleichstellung von Mann und Frau",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.10",
+                  "title": "Organisation",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.10.10",
+                      "title": "Delegation",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.70",
+          "title": "Weiterbildung (Quartärstufe)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.70.10",
+              "title": "Erwachsenenbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.140",
+          "title": "Anerkennung von Diplomen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.50",
+              "title": "Verfahren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1,
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.20",
+                  "title": "Psychiatrische Kliniken",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 1,
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 12
   }

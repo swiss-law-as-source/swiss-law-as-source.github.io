@@ -2,31 +2,192 @@
   "year": "1988",
   "entity": "GL",
   "total": 6,
-  "categorized": 1,
-  "uncategorized": 5,
+  "categorized": 6,
+  "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 1,
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
       "by_topic": {
-        "VIII A/61 Epidemien": 1
+        "IX B/23 Kinogewerbe": 1,
+        "VII C/12 Nationalstrassen": 1
+      },
+      "by_global_category": {
+        "4.180.10.10 Film, Theater, Unterhaltung": 1,
+        "7.30.30.10 Nationalstrassen": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "VIII A/61 Epidemien": 1,
+        "VIII A/63 Seuchenpolizei": 1
       },
       "by_global_category": {
         "8.10.100.10 Epidemien, Pandemien": 1
       }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "IV B/1 Allgemeines": 1
+      },
+      "by_global_category": {
+        "4.170.30 Bibliotheken": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "IV B/51 Berufsbildung": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "VIII",
-      "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
+      "identifier": "IV",
+      "title": "Kirche – Schule – Kultur",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Anderes": 1,
+        "Reglement": 1
+      }
+    },
+    {
+      "identifier": "VII",
+      "title": "Raumplanung – Bauwesen – Öffentliche Werke – Verkehr – Energie",
       "total": 1,
       "own": 1,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung des Parlaments (Dekret)": 1
+      }
+    },
+    {
+      "identifier": "VIII",
+      "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Verordnung": 2
+      }
+    },
+    {
+      "identifier": "IX",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
       }
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.30",
+              "title": "Bibliotheken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.10",
+              "title": "Kunst",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "4.180.10.10",
+                  "title": "Film, Theater, Unterhaltung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.30",
+              "title": "Strassen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.30.10",
+                  "title": "Nationalstrassen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",

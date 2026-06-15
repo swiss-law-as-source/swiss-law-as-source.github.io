@@ -2,11 +2,324 @@
   "year": "1980",
   "entity": "BL",
   "total": 7,
-  "categorized": 0,
-  "uncategorized": 7,
-  "by_type": {},
-  "by_topic_tree": [],
-  "by_global_category_tree": [],
+  "categorized": 7,
+  "uncategorized": 0,
+  "by_type": {
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "26 Vollzug, Rechtshilfe": 1,
+        "78 Umweltschutz": 1
+      },
+      "by_global_category": {
+        "5.30.10.60 Polizeitransporte": 1,
+        "7.60.20 Gewässerschutz": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "36 Staatsbeiträge": 1,
+        "38 Regalien, Konzessionen": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.60 Ausbildung, Weiterbildung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "36 Staatsbeiträge": 1,
+        "78 Umweltschutz": 1
+      },
+      "by_global_category": {
+        "4.180.20 Kulturförderung": 1,
+        "7.40.30 Kernenergie": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "41 Enteignung": 1
+      },
+      "by_global_category": {}
+    }
+  },
+  "by_topic_tree": [
+    {
+      "identifier": "2",
+      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "26",
+          "title": "Vollzug, Rechtshilfe",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Finanzen",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "36",
+          "title": "Staatsbeiträge",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Anderes": 1,
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "38",
+          "title": "Regalien, Konzessionen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Enteignung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Öffentliche Sicherheit, Umweltschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "78",
+          "title": "Umweltschutz",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.60",
+                      "title": "Ausbildung, Weiterbildung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.20",
+              "title": "Kulturförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.60",
+                  "title": "Polizeitransporte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.40",
+          "title": "Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.40.30",
+              "title": "Kernenergie",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 7
   }

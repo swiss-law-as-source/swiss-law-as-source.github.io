@@ -2,54 +2,333 @@
   "year": "2026",
   "entity": "AR",
   "total": 14,
-  "categorized": 1,
-  "uncategorized": 13,
+  "categorized": 14,
+  "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 1,
+    "Verordnung": {
+      "total": 8,
       "by_topic": {
-        "142.1 Regierungsrat": 1
+        "142.1 Regierungsrat": 1,
+        "142.2 Angestellte": 1,
+        "222.2 Arbeitsvertrag": 1,
+        "625.2 Verrechnungssteuer": 1,
+        "721 Grundlagen": 1,
+        "723 Geoinformation": 1,
+        "766 Schifffahrt": 1,
+        "833.1 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
-        "1.20.20.20.10 Entschädigungen": 1
+        "6.20.60 Verrechnungssteuer": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "8.70.30.10 Alters- und Pflegeheime": 1
       }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "142.1 Regierungsrat": 1,
+        "142.2 Angestellte": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.10 Entschädigungen": 1,
+        "4.90.20 Löhne, Entschädigungen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "142.2 Angestellte": 1,
+        "211 Grundsätzliche Bestimmungen": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "142.2 Angestellte": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.40 Löhne, Entschädigungen": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "142.2 Angestellte": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden und Gemeinden",
-      "total": 1,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 2,
+        "Anderes": 2,
+        "Reglement": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "14",
           "title": "Behörden",
-          "total": 1,
+          "total": 7,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 2,
+            "Anderes": 2,
+            "Reglement": 1,
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "142",
               "title": "Regierungsrat und Verwaltung",
-              "total": 1,
+              "total": 7,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 2,
+                "Anderes": 2,
+                "Reglement": 1,
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Gesetz": 1
               },
               "children": [
                 {
                   "identifier": "142.1",
                   "title": "Regierungsrat",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 1,
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "142.2",
+                  "title": "Angestellte",
+                  "total": 5,
+                  "own": 5,
+                  "by_type": {
+                    "Reglement": 1,
+                    "Anderes": 1,
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Verordnung": 1,
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "211",
+              "title": "Grundsätzliche Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "22",
+          "title": "Ergänzungs- und Ausführungserlasse zum OR",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "222",
+              "title": "Einzelne Vertragsverhältnisse",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "222.2",
+                  "title": "Arbeitsvertrag",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Anderes": 1
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "62",
+          "title": "Steuern und Abgaben",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "625",
+              "title": "Vollzug von Bundessteuern und -abgaben",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "625.2",
+                  "title": "Verrechnungssteuer",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3
+      },
+      "children": [
+        {
+          "identifier": "72",
+          "title": "Raumplanung und Baupolizei",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "721",
+              "title": "Grundlagen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "723",
+              "title": "Geoinformation",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "76",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "766",
+              "title": "Schifffahrt",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "833",
+              "title": "Kranken- und Unfallversicherung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "833.1",
+                  "title": "Allgemeine Bestimmungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -63,28 +342,34 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Reglement": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Reglement": 1,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 1,
+                "Reglement": 1,
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -106,6 +391,182 @@
                       }
                     }
                   ]
+                },
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1,
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    },
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.20",
+              "title": "Löhne, Entschädigungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.60",
+              "title": "Verrechnungssteuer",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.10",
+                  "title": "Alters- und Pflegeheime",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
                 }
               ]
             }

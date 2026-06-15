@@ -2,11 +2,862 @@
   "year": "2018",
   "entity": "BL",
   "total": 25,
-  "categorized": 0,
-  "uncategorized": 25,
-  "by_type": {},
-  "by_topic_tree": [],
-  "by_global_category_tree": [],
+  "categorized": 25,
+  "uncategorized": 0,
+  "by_type": {
+    "Verordnung": {
+      "total": 10,
+      "by_topic": {
+        "140 Verwaltungsorganisation": 6,
+        "57 Forstwirtschaft": 1,
+        "76 Schutz vor Feuer und weiteren Naturgefahren": 1,
+        "90 Gesundheitspflege": 1,
+        "93 Spitäler": 1
+      },
+      "by_global_category": {
+        "1.20.20.30.20 Direktionen und Ämter": 2,
+        "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
+        "5.20.30.10 Feuerwehr": 1,
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
+        "8.10.90 Rettungsdienst": 1
+      }
+    },
+    "Gesetz": {
+      "total": 6,
+      "by_topic": {
+        "11 Bürgerrechte": 1,
+        "31 Finanzhaushalt": 1,
+        "37 Banken": 1,
+        "48 Verkehr": 1,
+        "791 Denkmal- und Heimatschutz": 1,
+        "831 Alters- und Hinterlassenenversicherung": 1
+      },
+      "by_global_category": {
+        "1.10.60 Bürgerrecht": 1,
+        "1.20.20.70 New Public Management": 1,
+        "6.40.10 Kantonalbanken": 1,
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
+        "8.30.30 AHV / IV": 1
+      }
+    },
+    "Reglement": {
+      "total": 3,
+      "by_topic": {
+        "13 Landrat": 1,
+        "36 Staatsbeiträge": 1,
+        "643 Weiterführende Schulen": 1
+      },
+      "by_global_category": {
+        "4.100.10 Stipendien": 1,
+        "4.20.10 Mittelschule": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 3,
+      "by_topic": {
+        "211 Vollzugserlasse zum ZGB": 1,
+        "33 Steuern": 1,
+        "76 Schutz vor Feuer und weiteren Naturgefahren": 1
+      },
+      "by_global_category": {
+        "6.20.10.70 Steuerfüsse": 1,
+        "5.20.30.20 Brandschutz": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "146 Bildungs-, Kultur- und Sportdirektion": 1,
+        "93 Spitäler": 1
+      },
+      "by_global_category": {
+        "4.80.10 Sonderschulen": 1,
+        "8.30.60.30 Spitallisten": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "71 Polizeitätigkeiten": 1
+      },
+      "by_global_category": {
+        "5.30.10.50 Polizeiliche Zusammenarbeit": 1
+      }
+    }
+  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 9,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 6,
+        "Gesetz": 1,
+        "Reglement": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "11",
+          "title": "Bürgerrechte",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "13",
+          "title": "Landrat",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        },
+        {
+          "identifier": "14",
+          "title": "Regierungsrat und Verwaltung",
+          "total": 7,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 6,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "140",
+              "title": "Verwaltungsorganisation",
+              "total": 6,
+              "own": 6,
+              "by_type": {
+                "Verordnung": 6
+              }
+            },
+            {
+              "identifier": "146",
+              "title": "Bildungs-, Kultur- und Sportdirektion",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "211",
+              "title": "Vollzugserlasse zum ZGB",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Finanzen",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "Finanzhaushalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "33",
+          "title": "Steuern",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        },
+        {
+          "identifier": "36",
+          "title": "Staatsbeiträge",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        },
+        {
+          "identifier": "37",
+          "title": "Banken",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "48",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "57",
+          "title": "Forstwirtschaft",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Kultur, Bildung, Ausbildung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "64",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "643",
+              "title": "Weiterführende Schulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Öffentliche Sicherheit, Umweltschutz",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "71",
+          "title": "Polizeitätigkeiten",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        },
+        {
+          "identifier": "76",
+          "title": "Schutz vor Feuer und weiteren Naturgefahren",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "79",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "791",
+              "title": "Denkmal- und Heimatschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherungen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "831",
+              "title": "Alters- und Hinterlassenenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Gesundheit",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "90",
+          "title": "Gesundheitspflege",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "93",
+          "title": "Spitäler",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Anderes": 1,
+            "Verordnung": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3,
+        "Gesetz": 2
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 4,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 3,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 2
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.20",
+                      "title": "Direktionen und Ämter",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Verordnung": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.50",
+                  "title": "Verwaltungsverfahren, Verwaltungsrechtspflege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "1.20.20.70",
+                  "title": "New Public Management",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Reglement": 2,
+        "Anderes": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.80.10",
+              "title": "Sonderschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.10",
+              "title": "Stipendien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.90",
+              "title": "Gesundheitspflege, schulpsychologische Dienste",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.10",
+                  "title": "Feuerwehr",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "5.20.30.20",
+                  "title": "Brandschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.50",
+                  "title": "Polizeiliche Zusammenarbeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.70",
+                  "title": "Steuerfüsse",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "6.40",
+          "title": "Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.40.10",
+              "title": "Kantonalbanken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.70",
+              "title": "Denkmalschutz, Kulturgüterschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.90",
+              "title": "Rettungsdienst",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.30",
+                  "title": "Spitallisten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 25
   }

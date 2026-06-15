@@ -2,23 +2,129 @@
   "year": "1977",
   "entity": "SG",
   "total": 12,
-  "categorized": 1,
-  "uncategorized": 11,
+  "categorized": 12,
+  "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
-      "total": 1,
+      "total": 7,
       "by_topic": {
-        "752 Gewässerschutz": 1
+        "752 Gewässerschutz": 3,
+        "234 Fachhochschulen": 1,
+        "451 Polizei": 1,
+        "553 Gastwirtschaft": 1,
+        "711 Strassenverkehr": 1
       },
       "by_global_category": {
-        "7.60.20 Gewässerschutz": 1
+        "7.60.20 Gewässerschutz": 3,
+        "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
+        "9.50.10.10 Berufsausübungsbewilligungen": 1,
+        "7.50.20.20 Strassenverkehrspolizei": 1
       }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "231 Allgemein": 1,
+        "853 Jagd": 1
+      },
+      "by_global_category": {
+        "4.120.120 Schulversicherung": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "217 Universität": 1
+      },
+      "by_global_category": {
+        "4.160 Wissenschaft, Forschung": 1
+      }
+    },
+    "Staatsvertrag": {
+      "total": 1,
+      "by_topic": {
+        "234 Fachhochschulen": 1
+      },
+      "by_global_category": {}
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "711 Strassenverkehr": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "7",
-      "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
+      "identifier": "2",
+      "title": "Erziehung, Bildung, Kultur",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Anderes": 1,
+        "Staatsvertrag": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "217",
+              "title": "Universität",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "23",
+          "title": "Berufliche Ausbildung und Berufsberatung",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Staatsvertrag": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "231",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "234",
+              "title": "Fachhochschulen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Staatsvertrag": 1,
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Landesverteidigung, öffentliche Sicherheit und Ordnung",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -26,8 +132,8 @@
       },
       "children": [
         {
-          "identifier": "75",
-          "title": "Gewässernutzung und -schutz",
+          "identifier": "45",
+          "title": "Öffentliche Sicherheit und Ordnung",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -35,8 +141,8 @@
           },
           "children": [
             {
-              "identifier": "752",
-              "title": "Gewässerschutz",
+              "identifier": "451",
+              "title": "Polizei",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -46,12 +152,10 @@
           ]
         }
       ]
-    }
-  ],
-  "by_global_category_tree": [
+    },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "5",
+      "title": "Arbeit und Gewerbe",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -59,8 +163,8 @@
       },
       "children": [
         {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
+          "identifier": "55",
+          "title": "Gewerbepolizei",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -68,13 +172,287 @@
           },
           "children": [
             {
-              "identifier": "7.60.20",
-              "title": "Gewässerschutz",
+              "identifier": "553",
+              "title": "Gastwirtschaft",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 4,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "71",
+          "title": "Verkehr",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "711",
+              "title": "Strassenverkehr",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "75",
+          "title": "Gewässernutzung und -schutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 3
+          },
+          "children": [
+            {
+              "identifier": "752",
+              "title": "Gewässerschutz",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Interkantonale Vereinbarung": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "85",
+          "title": "Regalien",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "853",
+              "title": "Jagd",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.120",
+              "title": "Schulversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.160",
+          "title": "Wissenschaft, Forschung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.50",
+                  "title": "Polizeiliche Zusammenarbeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 4
+      },
+      "children": [
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.20",
+                  "title": "Strassenverkehrspolizei",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 3
+          },
+          "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Interkantonale Vereinbarung": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.10",
+                  "title": "Berufsausübungsbewilligungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
             }
           ]
         }

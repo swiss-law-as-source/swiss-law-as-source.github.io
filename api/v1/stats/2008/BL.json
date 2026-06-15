@@ -2,11 +2,758 @@
   "year": "2008",
   "entity": "BL",
   "total": 19,
-  "categorized": 0,
-  "uncategorized": 19,
-  "by_type": {},
-  "by_topic_tree": [],
-  "by_global_category_tree": [],
+  "categorized": 19,
+  "uncategorized": 0,
+  "by_type": {
+    "Verordnung": {
+      "total": 6,
+      "by_topic": {
+        "93 Spitäler": 2,
+        "17 Gerichte, Verwaltungsverfahren und Anwaltsrecht": 1,
+        "43 Verkehrswege": 1,
+        "643 Weiterführende Schulen": 1,
+        "834 Berufliche Vorsorge": 1
+      },
+      "by_global_category": {
+        "8.10.30.10 Ärzte": 2,
+        "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "11 Bürgerrechte": 1,
+        "18 Gemeinden": 1,
+        "34 Abgaben": 1,
+        "837 Arbeitslosenversicherung": 1
+      },
+      "by_global_category": {
+        "1.10.70.20.30 Integration": 1,
+        "6.10.20.10 Interkantonale Zusammenarbeit mit Lastenausgleich": 1,
+        "5.30.20.10 Hunde, gefährliche Tiere": 1,
+        "8.30.110 Arbeitslosenversicherung": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 4,
+      "by_topic": {
+        "26 Vollzug, Rechtshilfe": 1,
+        "33 Steuern": 1,
+        "42 Öffentliche Werke": 1,
+        "516 Produktion, Absatz": 1
+      },
+      "by_global_category": {
+        "6.20.100 Steuerbefreiung und -erleichterungen": 1,
+        "9.20.80.10 Rebbau": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 3,
+      "by_topic": {
+        "18 Gemeinden": 1,
+        "37 Banken": 1,
+        "834 Berufliche Vorsorge": 1
+      },
+      "by_global_category": {
+        "6.10.20.10 Interkantonale Zusammenarbeit mit Lastenausgleich": 1,
+        "6.40.10 Kantonalbanken": 1,
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "93 Spitäler": 1,
+        "94 Alter und Pflege": 1
+      },
+      "by_global_category": {
+        "8.30.60.10.20 Vereinbarungen": 1,
+        "8.70.30.10 Alters- und Pflegeheime": 1
+      }
+    }
+  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2,
+        "Verordnung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "11",
+          "title": "Bürgerrechte",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "17",
+          "title": "Gerichte, Verwaltungsverfahren und Anwaltsrecht",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "18",
+          "title": "Gemeinden",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "26",
+          "title": "Vollzug, Rechtshilfe",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Finanzen",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "33",
+          "title": "Steuern",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        },
+        {
+          "identifier": "34",
+          "title": "Abgaben",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "37",
+          "title": "Banken",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "42",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        },
+        {
+          "identifier": "43",
+          "title": "Verkehrswege",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "51",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "516",
+              "title": "Produktion, Absatz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Kultur, Bildung, Ausbildung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "64",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "643",
+              "title": "Weiterführende Schulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Soziale Sicherheit",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherungen",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "834",
+              "title": "Berufliche Vorsorge",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "837",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Gesundheit",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "93",
+          "title": "Spitäler",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Verordnung": 2,
+            "Anderes": 1
+          }
+        },
+        {
+          "identifier": "94",
+          "title": "Alter und Pflege",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.30",
+                      "title": "Integration",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2,
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Verordnung des Parlaments (Dekret)": 1,
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.50",
+                  "title": "Verwaltungsverfahren, Verwaltungsrechtspflege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.20",
+              "title": "Öffentliche Ruhe und Ordnung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.20.10",
+                  "title": "Hunde, gefährliche Tiere",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Gesetz": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.20",
+              "title": "Finanzausgleich",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.10.20.10",
+                  "title": "Interkantonale Zusammenarbeit mit Lastenausgleich",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.100",
+              "title": "Steuerbefreiung und -erleichterungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "6.40",
+          "title": "Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "6.40.10",
+              "title": "Kantonalbanken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.10",
+                  "title": "Tarife",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "8.30.60.10.20",
+                      "title": "Vereinbarungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.10",
+                  "title": "Alters- und Pflegeheime",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.80",
+              "title": "Pflanzenbau",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.20.80.10",
+                  "title": "Rebbau",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "by_language": {
     "de": 19
   }
