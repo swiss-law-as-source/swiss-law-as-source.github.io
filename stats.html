@@ -90,7 +90,7 @@
 
         <div class="grid-2">
             <div class="chart-section">
-                <h2>By Language</h2>
+                <h2>Files by Language</h2>
                 <div class="bar-chart" id="lang-chart"></div>
             </div>
             <div class="chart-section">
@@ -131,11 +131,11 @@
 
         // KPIs
         const kpis = [
-            { value: stats.total_laws.toLocaleString(), label: 'Total Laws' },
+            { value: stats.total_laws.toLocaleString(), label: 'Unique Laws' },
             { value: stats.federal_laws.toLocaleString(), label: 'Federal' },
             { value: stats.cantonal_laws.toLocaleString(), label: 'Cantonal' },
             { value: Object.keys(stats.by_canton || {}).length, label: 'Cantons' },
-            { value: Object.keys(stats.by_language || {}).length, label: 'Languages' },
+            { value: (stats.total_files || 0).toLocaleString(), label: 'Total Files (all languages)' },
         ];
         document.getElementById('kpis').innerHTML = kpis.map(k =>
             `<div class="kpi-card"><div class="value">${k.value}</div><div class="label">${k.label}</div></div>`
@@ -156,7 +156,7 @@
 
         renderBarChart('sr-cat-chart', stats.by_sr_category || {});
         renderBarChart('cat-type-chart', stats.by_category_type || {}, '#2563eb');
-        renderBarChart('lang-chart', stats.by_language || {}, '#16a34a');
+        renderBarChart('lang-chart', stats.by_languages || stats.by_language || {}, '#16a34a');
         renderBarChart('canton-chart', stats.by_canton || {}, '#ea580c');
         renderBarChart('source-chart', stats.by_source || {});
         renderBarChart('sys-cat-chart', stats.by_systematic_category || {}, '#7c3aed');
