@@ -2,8 +2,8 @@
   "year": "2010",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 36,
-  "categorized": 36,
+  "total": 40,
+  "categorized": 40,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -66,6 +66,18 @@
         "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
         "7.50.10.10 Regionalverkehr": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 4,
+      "by_topic": {
+        "854 Fischerei": 2,
+        "215 Mittelschulen": 1,
+        "232 Berufliche Grundausbildung": 1
+      },
+      "by_global_category": {
+        "6.30.60.20 Reviere": 2,
+        "4.20.10 Mittelschule": 1
       }
     },
     "Anderes": {
@@ -205,21 +217,32 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 2,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Schulen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 1,
             "Reglement": 1
           },
           "children": [
+            {
+              "identifier": "215",
+              "title": "Mittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
             {
               "identifier": "216",
               "title": "Pädagogische Hochschule",
@@ -227,6 +250,26 @@
               "own": 1,
               "by_type": {
                 "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "23",
+          "title": "Berufliche Ausbildung und Berufsberatung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "232",
+              "title": "Berufliche Grundausbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -522,6 +565,37 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2
+      },
+      "children": [
+        {
+          "identifier": "85",
+          "title": "Regalien",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          },
+          "children": [
+            {
+              "identifier": "854",
+              "title": "Fischerei",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Zivilrecht, Strafrecht, Rechtspflege",
       "total": 4,
@@ -713,14 +787,35 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Reglement": 1,
         "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.50",
           "title": "Tertiärstufe: Fachhochschulen",
@@ -842,9 +937,10 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 2,
         "Anderes": 1
       },
       "children": [
@@ -865,6 +961,37 @@
               "by_type": {
                 "Anderes": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          },
+          "children": [
+            {
+              "identifier": "6.30.60",
+              "title": "Fischerei",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
+              },
+              "children": [
+                {
+                  "identifier": "6.30.60.20",
+                  "title": "Reviere",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 2
+                  }
+                }
+              ]
             }
           ]
         }
@@ -1142,36 +1269,27 @@
     }
   ],
   "languages_available": {
-    "de": 36
+    "de": 40
   },
   "available_years_for_entity": [
     "1845",
-    "1862",
     "1870",
-    "1874",
     "1883",
     "1884",
     "1885",
-    "1888",
     "1890",
-    "1897",
     "1899",
     "1901",
     "1902",
     "1903",
     "1906",
     "1907",
-    "1908",
     "1910",
     "1911",
     "1914",
     "1918",
     "1919",
-    "1920",
-    "1921",
-    "1924",
     "1926",
-    "1929",
     "1930",
     "1931",
     "1937",
@@ -1180,7 +1298,6 @@
     "1940",
     "1941",
     "1943",
-    "1944",
     "1945",
     "1946",
     "1947",
@@ -1267,6 +1384,7 @@
     "AI",
     "AR",
     "BE",
+    "BL",
     "BS",
     "CH",
     "FR",

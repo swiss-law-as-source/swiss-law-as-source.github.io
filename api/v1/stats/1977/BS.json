@@ -2,8 +2,8 @@
   "year": "1977",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 9,
-  "categorized": 9,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -31,6 +31,16 @@
         "8.10.30.60 Psychotherapeuten": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "221 Zivilprozess": 1,
+        "955 Schifffahrt · Rheinhäfen": 1
+      },
+      "by_global_category": {
+        "2.50.30 Vollstreckung": 1
+      }
+    },
     "Staatsvertrag": {
       "total": 1,
       "by_topic": {
@@ -39,13 +49,6 @@
       "by_global_category": {
         "7.30.30.10 Nationalstrassen": 1
       }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "955 Schifffahrt · Rheinhäfen": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
@@ -86,12 +89,33 @@
     {
       "identifier": "2",
       "title": "Zivilrecht · Strafrecht · Rechtspflege",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "22",
+          "title": "Zivilprozess und verwandte Gebiete",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "221",
+              "title": "Zivilprozess",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "25",
           "title": "Strafrecht und Strafrechtspflege",
@@ -329,6 +353,37 @@
       ]
     },
     {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.50",
+          "title": "Zivilrechtspflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.50.30",
+              "title": "Vollstreckung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 1,
@@ -445,7 +500,7 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 10
   },
   "available_years_for_entity": [
     "1756",

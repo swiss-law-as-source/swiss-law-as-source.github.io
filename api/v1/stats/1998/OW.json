@@ -2,8 +2,8 @@
   "year": "1998",
   "year_semantics": "enactment",
   "entity": "OW",
-  "total": 12,
-  "categorized": 12,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
@@ -20,6 +20,21 @@
         "8.30.40 Ergänzungsleistungen": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 5,
+      "by_topic": {
+        "414 Mittelschulen": 1,
+        "415 Hochschulen, Fachhochschulen, Fachschulen": 1,
+        "416 Berufsbildung, Berufsberatung, Erwachsenenbildung": 1,
+        "830 Spitäler, Kranken- und Betagtenpflege, Sanitätsdienst": 1,
+        "832 Vereinbarungen mit Spitälern": 1
+      },
+      "by_global_category": {
+        "4.90.30 Ausbildung": 1,
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "8.10.20.10 Kantonsspitäler": 1
+      }
+    },
     "Verordnung": {
       "total": 4,
       "by_topic": {
@@ -33,18 +48,6 @@
         "7.60.10 Abfälle": 1,
         "7.10.20 Zonen": 1,
         "8.10.60 Spitalexterne Krankenpflege": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 3,
-      "by_topic": {
-        "415 Hochschulen, Fachhochschulen, Fachschulen": 1,
-        "416 Berufsbildung, Berufsberatung, Erwachsenenbildung": 1,
-        "830 Spitäler, Kranken- und Betagtenpflege, Sanitätsdienst": 1
-      },
-      "by_global_category": {
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
-        "8.10.20.10 Kantonsspitäler": 1
       }
     }
   },
@@ -83,13 +86,22 @@
     {
       "identifier": "4",
       "title": "ERZIEHUNG, BILDUNG, KULTUR",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
+        "Interkantonale Vereinbarung": 3,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "414",
+          "title": "Mittelschulen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        },
         {
           "identifier": "415",
           "title": "Hochschulen, Fachhochschulen, Fachschulen",
@@ -152,10 +164,10 @@
     {
       "identifier": "8",
       "title": "GESUNDHEIT, ARBEIT, SOZIALE SICHERHEIT",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
+        "Interkantonale Vereinbarung": 2,
         "Anderes": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
@@ -163,6 +175,15 @@
         {
           "identifier": "830",
           "title": "Spitäler, Kranken- und Betagtenpflege, Sanitätsdienst",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        },
+        {
+          "identifier": "832",
+          "title": "Vereinbarungen mit Spitälern",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -259,10 +280,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
@@ -273,6 +294,26 @@
           "by_type": {
             "Interkantonale Vereinbarung": 1
           }
+        },
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.30",
+              "title": "Ausbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -403,7 +444,7 @@
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 14
   },
   "available_years_for_entity": [
     "1825",

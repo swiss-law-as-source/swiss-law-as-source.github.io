@@ -2,8 +2,8 @@
   "year": "2021",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 11,
-  "categorized": 11,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -46,19 +46,49 @@
         "5.20.30.10 Feuerwehr": 1,
         "7.60.20 Gewässerschutz": 1
       }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "112 Gebiet": 1
+      },
+      "by_global_category": {
+        "1.10.50.20 Grenzen": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "STAAT - VOLK - BEHÖRDEN",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "11",
+          "title": "VOLK UND GEBIET",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "112",
+              "title": "Gebiet",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "12",
           "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
@@ -372,12 +402,44 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.50",
+              "title": "Gebiet",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.50.20",
+                  "title": "Grenzen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -688,8 +750,8 @@
     }
   ],
   "languages_available": {
-    "de": 11,
-    "fr": 11
+    "de": 12,
+    "fr": 12
   },
   "available_years_for_entity": [
     "1804",

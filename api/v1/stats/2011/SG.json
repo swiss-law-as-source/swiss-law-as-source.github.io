@@ -2,8 +2,8 @@
   "year": "2011",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 43,
-  "categorized": 43,
+  "total": 45,
+  "categorized": 45,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -59,6 +59,18 @@
         "4.50.50 Andere Studiengänge": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 3,
+      "by_topic": {
+        "230 Allgemein": 1,
+        "234 Fachhochschulen": 1,
+        "633 Bodenverbesserung": 1
+      },
+      "by_global_category": {
+        "4.30.40 Passerelle": 1,
+        "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1
+      }
+    },
     "Gesetz": {
       "total": 3,
       "by_topic": {
@@ -78,15 +90,6 @@
       },
       "by_global_category": {
         "4.50.10 Pädagogik": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "311 Allgemein": 1
-      },
-      "by_global_category": {
-        "8.10.10 Ethik": 1
       }
     }
   },
@@ -175,9 +178,10 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 2,
         "Anderes": 2,
         "Reglement": 1,
         "Verordnung": 1
@@ -206,13 +210,23 @@
         {
           "identifier": "23",
           "title": "Berufliche Ausbildung und Berufsberatung",
-          "total": 3,
+          "total": 5,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 2,
             "Anderes": 2,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "230",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
             {
               "identifier": "231",
               "title": "Allgemein",
@@ -225,10 +239,11 @@
             {
               "identifier": "234",
               "title": "Fachhochschulen",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 2,
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -238,35 +253,14 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 19,
+      "total": 18,
       "own": 0,
       "by_type": {
         "Anderes": 13,
         "Verordnung": 3,
-        "Gesetz": 2,
-        "Interkantonale Vereinbarung": 1
+        "Gesetz": 2
       },
       "children": [
-        {
-          "identifier": "31",
-          "title": "Gesundheitspflege",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "311",
-              "title": "Allgemein",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "32",
           "title": "Einrichtungen der Gesundheitspflege",
@@ -356,9 +350,10 @@
     {
       "identifier": "6",
       "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Anderes": 1,
         "Verordnung": 1
       },
@@ -366,18 +361,20 @@
         {
           "identifier": "63",
           "title": "Bodenverbesserung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "633",
               "title": "Bodenverbesserung",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Interkantonale Vereinbarung": 1,
                 "Anderes": 1
               }
             }
@@ -680,14 +677,35 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Anderes": 2,
+        "Interkantonale Vereinbarung": 1,
         "Reglement": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.40",
+              "title": "Passerelle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.50",
           "title": "Tertiärstufe: Fachhochschulen",
@@ -779,20 +797,22 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Verordnung": 1,
+            "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           },
           "children": [
@@ -808,18 +828,20 @@
             {
               "identifier": "7.30.20",
               "title": "Wasserbau",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Interkantonale Vereinbarung": 1,
                 "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "7.30.20.10",
                   "title": "Gewässerkorrekturen / Hochwasserschutz",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Interkantonale Vereinbarung": 1,
                     "Anderes": 1
                   }
                 }
@@ -852,33 +874,22 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 13,
+      "total": 12,
       "own": 0,
       "by_type": {
         "Anderes": 11,
-        "Interkantonale Vereinbarung": 1,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 7,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Anderes": 6,
-            "Interkantonale Vereinbarung": 1
+            "Anderes": 6
           },
           "children": [
-            {
-              "identifier": "8.10.10",
-              "title": "Ethik",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            },
             {
               "identifier": "8.10.20",
               "title": "Kranken- und Pflegeanstalten",
@@ -967,36 +978,27 @@
     }
   ],
   "languages_available": {
-    "de": 43
+    "de": 45
   },
   "available_years_for_entity": [
     "1845",
-    "1862",
     "1870",
-    "1874",
     "1883",
     "1884",
     "1885",
-    "1888",
     "1890",
-    "1897",
     "1899",
     "1901",
     "1902",
     "1903",
     "1906",
     "1907",
-    "1908",
     "1910",
     "1911",
     "1914",
     "1918",
     "1919",
-    "1920",
-    "1921",
-    "1924",
     "1926",
-    "1929",
     "1930",
     "1931",
     "1937",
@@ -1005,7 +1007,6 @@
     "1940",
     "1941",
     "1943",
-    "1944",
     "1945",
     "1946",
     "1947",

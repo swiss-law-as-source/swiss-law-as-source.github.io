@@ -2,8 +2,8 @@
   "year": "2023",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 41,
-  "categorized": 41,
+  "total": 43,
+  "categorized": 43,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
@@ -88,6 +88,19 @@
         "7.70.20 Tierschutz": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 3,
+      "by_topic": {
+        "II G/1 Vereinbarungen": 1,
+        "IV B/4 Kantonsschule": 1,
+        "VIII B/3 Abfallbeseitigung": 1
+      },
+      "by_global_category": {
+        "7.30.40 Submission": 1,
+        "4.140 Anerkennung von Diplomen": 1,
+        "7.60.10 Abfälle": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 2,
       "by_topic": {
@@ -107,15 +120,6 @@
       "by_global_category": {
         "5.20.30.30 Kaminfeger": 1
       }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "VIII B/3 Abfallbeseitigung": 1
-      },
-      "by_global_category": {
-        "7.60.10 Abfälle": 1
-      }
     }
   },
   "by_topic_tree": [
@@ -132,11 +136,12 @@
     {
       "identifier": "II",
       "title": "Organisation des Kantons und der Gemeinden",
-      "total": 4,
-      "own": 4,
+      "total": 5,
+      "own": 5,
       "by_type": {
         "Gesetz": 2,
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       }
     },
     {
@@ -152,12 +157,13 @@
     {
       "identifier": "IV",
       "title": "Kirche – Schule – Kultur",
-      "total": 7,
-      "own": 7,
+      "total": 8,
+      "own": 8,
       "by_type": {
         "Verordnung": 3,
         "Gesetz": 2,
         "Verordnung des Parlaments (Dekret)": 1,
+        "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       }
     },
@@ -344,12 +350,13 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Verordnung": 3,
         "Gesetz": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -392,6 +399,15 @@
           "own": 1,
           "by_type": {
             "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "4.140",
+          "title": "Anerkennung von Diplomen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
           }
         }
       ]
@@ -503,13 +519,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 2
       },
       "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
@@ -738,13 +774,12 @@
     }
   ],
   "languages_available": {
-    "de": 41
+    "de": 43
   },
   "available_years_for_entity": [
     "1807",
     "1835",
     "1859",
-    "1862",
     "1878",
     "1889",
     "1892",
@@ -767,7 +802,6 @@
     "1943",
     "1944",
     "1945",
-    "1947",
     "1948",
     "1949",
     "1950",
@@ -842,6 +876,7 @@
     "2026"
   ],
   "available_entities_for_year": [
+    "AG",
     "AI",
     "AR",
     "BE",

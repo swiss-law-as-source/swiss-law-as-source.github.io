@@ -45,14 +45,14 @@
     "Interkantonale Vereinbarung": {
       "total": 3,
       "by_topic": {
+        "213 Volksschulen": 1,
         "651 Waldwirtschaft": 1,
-        "751 Gewässernutzung": 1,
-        "853 Jagd": 1
+        "751 Gewässernutzung": 1
       },
       "by_global_category": {
+        "4.10.20 Kindergarten": 1,
         "9.30.30 Bildungswesen": 1,
-        "8.10.130.20 Wasserversorgung": 1,
-        "6.30.50.10 Jäger": 1
+        "8.10.130.20 Wasserversorgung": 1
       }
     },
     "Gesetz": {
@@ -130,20 +130,22 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Reglement": 1,
+        "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Schulen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 1,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -153,6 +155,15 @@
               "own": 1,
               "by_type": {
                 "Reglement": 1
+              }
+            },
+            {
+              "identifier": "213",
+              "title": "Volksschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -389,12 +400,11 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 5,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 2
       },
       "children": [
         {
@@ -435,26 +445,6 @@
               "by_type": {
                 "Anderes": 2,
                 "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "85",
-          "title": "Regalien",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "853",
-              "title": "Jagd",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -539,13 +529,34 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Reglement": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.20",
+              "title": "Kindergarten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.90",
           "title": "Lehrkörper",
@@ -591,12 +602,11 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 6,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Anderes": 3,
-        "Verordnung": 2,
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 2
       },
       "children": [
         {
@@ -646,37 +656,6 @@
                   "own": 1,
                   "by_type": {
                     "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "6.30.50",
-              "title": "Jagd",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.30.50.10",
-                  "title": "Jäger",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
@@ -858,32 +837,23 @@
   },
   "available_years_for_entity": [
     "1845",
-    "1862",
     "1870",
-    "1874",
     "1883",
     "1884",
     "1885",
-    "1888",
     "1890",
-    "1897",
     "1899",
     "1901",
     "1902",
     "1903",
     "1906",
     "1907",
-    "1908",
     "1910",
     "1911",
     "1914",
     "1918",
     "1919",
-    "1920",
-    "1921",
-    "1924",
     "1926",
-    "1929",
     "1930",
     "1931",
     "1937",
@@ -892,7 +862,6 @@
     "1940",
     "1941",
     "1943",
-    "1944",
     "1945",
     "1946",
     "1947",

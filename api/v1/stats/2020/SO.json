@@ -2,8 +2,8 @@
   "year": "2020",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 9,
-  "categorized": 9,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -28,6 +28,15 @@
       },
       "by_global_category": {
         "8.10.100.10 Epidemien, Pandemien": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "411.27 Lehrmittelkoordination": 1
+      },
+      "by_global_category": {
+        "4.120.40 Lehrmittel": 1
       }
     },
     "Gesetz": {
@@ -102,12 +111,55 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Schule",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "411.2",
+                  "title": "Koordination, Interkantonale Vereinbarungen",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "411.27",
+                      "title": "Lehrmittelkoordination",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Interkantonale Vereinbarung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "43",
           "title": "Kultur",
@@ -208,12 +260,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.40",
+              "title": "Lehrmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.180",
           "title": "Kunst, Kultur, Sport",
@@ -337,7 +410,7 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 10
   },
   "available_years_for_entity": [
     "1780",

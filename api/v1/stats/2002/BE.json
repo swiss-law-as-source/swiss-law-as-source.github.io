@@ -2,8 +2,8 @@
   "year": "2002",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 18,
-  "categorized": 18,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -37,11 +37,14 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 3,
+      "total": 2,
       "by_topic": {
+        "813.1 Allgemeines": 1,
         "862 Heime und andere Fürsorgeeinrichtungen": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "8.10.70 Heil- und Betäubungsmittel": 1
+      }
     },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
@@ -278,12 +281,43 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "813",
+              "title": "Heilmittel, Betäubungsmittel, Chemikalien",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "813.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "86",
           "title": "Sozialhilfe",
@@ -582,16 +616,46 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.70",
+              "title": "Heil- und Betäubungsmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 18,
-    "fr": 14
+    "de": 17,
+    "fr": 15
   },
   "available_years_for_entity": [
     "1562",
     "1809",
-    "1815",
     "1828",
     "1837",
     "1851",
@@ -702,8 +766,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

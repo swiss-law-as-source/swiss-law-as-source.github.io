@@ -2,8 +2,8 @@
   "year": "2011",
   "year_semantics": "enactment",
   "entity": "ZG",
-  "total": 32,
-  "categorized": 32,
+  "total": 33,
+  "categorized": 33,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -68,13 +68,15 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "412 Volksschule": 1,
-        "414 Mittelschulen, Fachhochschulen und Technische Fachschulen": 1
+        "414 Mittelschulen, Fachhochschulen und Technische Fachschulen": 1,
+        "511 Polizeiliche Zusammenarbeit": 1
       },
       "by_global_category": {
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "5.30.10.50 Polizeiliche Zusammenarbeit": 1
       }
     }
   },
@@ -223,12 +225,33 @@
     {
       "identifier": "5",
       "title": "Polizei, Militär, Zivilschutz, Notorganisation",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "51",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "511",
+              "title": "Polizeiliche Zusammenarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "53",
           "title": "Zivilschutz",
@@ -666,21 +689,43 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "5.30",
           "title": "Innere Sicherheit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.50",
+                  "title": "Polizeiliche Zusammenarbeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "5.30.40",
               "title": "Sprengstoffe",
@@ -779,7 +824,7 @@
     }
   ],
   "languages_available": {
-    "de": 32
+    "de": 33
   },
   "available_years_for_entity": [
     "1825",

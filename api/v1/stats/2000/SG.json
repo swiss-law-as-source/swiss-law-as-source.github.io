@@ -2,8 +2,8 @@
   "year": "2000",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 19,
-  "categorized": 19,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
@@ -44,6 +44,18 @@
         "2.10.40.10 Schätzung von Grundstücken": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 3,
+      "by_topic": {
+        "230 Allgemein": 1,
+        "734 Wasserbau": 1,
+        "741 Energie": 1
+      },
+      "by_global_category": {
+        "4.90.30 Ausbildung": 1,
+        "7.40.40 Elektrizität": 1
+      }
+    },
     "Gesetz": {
       "total": 2,
       "by_topic": {
@@ -71,10 +83,11 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 5
+        "Anderes": 5,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -109,12 +122,22 @@
         {
           "identifier": "23",
           "title": "Berufliche Ausbildung und Berufsberatung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "230",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
             {
               "identifier": "234",
               "title": "Fachhochschulen",
@@ -328,28 +351,51 @@
     {
       "identifier": "7",
       "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 2,
         "Verordnung": 2
       },
       "children": [
         {
-          "identifier": "74",
-          "title": "Energie",
-          "total": 2,
+          "identifier": "73",
+          "title": "Öffentliches Baurecht",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "734",
+              "title": "Wasserbau",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "74",
+          "title": "Energie",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "741",
               "title": "Energie",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 2,
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -591,10 +637,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 3
+        "Anderes": 3,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -613,6 +660,26 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.30",
+              "title": "Ausbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -684,6 +751,37 @@
               "own": 1,
               "by_type": {
                 "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.40",
+          "title": "Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.40.40",
+              "title": "Elektrizität",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -799,36 +897,27 @@
     }
   ],
   "languages_available": {
-    "de": 19
+    "de": 22
   },
   "available_years_for_entity": [
     "1845",
-    "1862",
     "1870",
-    "1874",
     "1883",
     "1884",
     "1885",
-    "1888",
     "1890",
-    "1897",
     "1899",
     "1901",
     "1902",
     "1903",
     "1906",
     "1907",
-    "1908",
     "1910",
     "1911",
     "1914",
     "1918",
     "1919",
-    "1920",
-    "1921",
-    "1924",
     "1926",
-    "1929",
     "1930",
     "1931",
     "1937",
@@ -837,7 +926,6 @@
     "1940",
     "1941",
     "1943",
-    "1944",
     "1945",
     "1946",
     "1947",

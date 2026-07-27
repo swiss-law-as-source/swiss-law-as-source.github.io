@@ -2,8 +2,8 @@
   "year": "2019",
   "year_semantics": "enactment",
   "entity": "ZG",
-  "total": 15,
-  "categorized": 15,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
@@ -21,12 +21,16 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
         "411 Schulkoordination": 2,
-        "933 Fischerei": 1
+        "721 Baurecht": 1,
+        "933 Fischerei": 1,
+        "942 Gewerbe- und Handelspolizei": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "7.30.40 Submission": 1
+      }
     },
     "Verordnung": {
       "total": 2,
@@ -163,14 +167,45 @@
       ]
     },
     {
-      "identifier": "9",
-      "title": "Volkswirtschaft, Landwirtschaft, Forst, Gewerbe, Handel, Industrie",
-      "total": 4,
+      "identifier": "7",
+      "title": "Raumplanung, Bauwesen, Gewässer, Energie, Verkehr",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "72",
+          "title": "Bauwesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "721",
+              "title": "Baurecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft, Landwirtschaft, Forst, Gewerbe, Handel, Industrie",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -206,19 +241,21 @@
         {
           "identifier": "94",
           "title": "Gewerbe, Handel, Industrie",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 2,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "942",
               "title": "Gewerbe- und Handelspolizei",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 2,
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -373,12 +410,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -403,7 +461,7 @@
     }
   ],
   "languages_available": {
-    "de": 15
+    "de": 17
   },
   "available_years_for_entity": [
     "1825",

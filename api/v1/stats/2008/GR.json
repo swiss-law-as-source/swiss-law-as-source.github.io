@@ -2,8 +2,8 @@
   "year": "2008",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 9,
-  "categorized": 9,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -28,6 +28,16 @@
         "4.180.30 Sport": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "506 Krankenpflege": 1,
+        "546 Öffentliche Sozialhilfe": 1
+      },
+      "by_global_category": {
+        "8.70.30.10 Alters- und Pflegeheime": 1
+      }
+    },
     "Gesetz": {
       "total": 2,
       "by_topic": {
@@ -38,13 +48,6 @@
         "1.10.70.20.10 Asylwesen": 1,
         "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1
       }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "506 Krankenpflege": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
@@ -102,11 +105,11 @@
     {
       "identifier": "5",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 2,
         "Anderes": 1,
-        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
@@ -135,10 +138,11 @@
         {
           "identifier": "54",
           "title": "Sozialversicherung, Arbeitsvermittlung, Öffentliche Sozialhilfe, Familienschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -148,6 +152,15 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "546",
+              "title": "Öffentliche Sozialhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -379,10 +392,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -415,13 +429,44 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.10",
+                  "title": "Alters- und Pflegeheime",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 9,
-    "it": 9
+    "de": 10,
+    "it": 10
   },
   "available_years_for_entity": [
     "1846",

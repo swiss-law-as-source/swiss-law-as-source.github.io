@@ -2,8 +2,8 @@
   "year": "1992",
   "year_semantics": "enactment",
   "entity": "AI",
-  "total": 3,
-  "categorized": 3,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
@@ -16,6 +16,15 @@
         "8.40.10 Eigentums- und Wohnungsbauförderung": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "351 Rechtshilfe": 1
+      },
+      "by_global_category": {
+        "3.20.50 Rechtshilfe": 1
+      }
+    },
     "Gesetz": {
       "total": 1,
       "by_topic": {
@@ -25,6 +34,26 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "300",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "351",
+          "title": "Rechtshilfe",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "700",
       "title": "Raumplanungs- und Baurecht",
@@ -70,6 +99,37 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.50",
+              "title": "Rechtshilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
@@ -102,7 +162,7 @@
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 4
   },
   "available_years_for_entity": [
     "1848",

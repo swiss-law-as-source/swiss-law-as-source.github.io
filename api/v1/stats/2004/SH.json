@@ -2,8 +2,8 @@
   "year": "2004",
   "year_semantics": "enactment",
   "entity": "SH",
-  "total": 25,
-  "categorized": 25,
+  "total": 26,
+  "categorized": 26,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -56,11 +56,14 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "34 Strafvollzug": 1
+        "34 Strafvollzug": 1,
+        "73 Energie": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "7.40.40 Elektrizität": 1
+      }
     },
     "Anderes": {
       "total": 1,
@@ -276,12 +279,22 @@
     {
       "identifier": "7",
       "title": "Raumplanung und Bauwesen - Öffentliche Werke - Energie - Verkehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "73",
+          "title": "Energie",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        },
         {
           "identifier": "74",
           "title": "Verkehr",
@@ -672,6 +685,37 @@
       ]
     },
     {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.40",
+          "title": "Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.40.40",
+              "title": "Elektrizität",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
@@ -756,7 +800,7 @@
     }
   ],
   "languages_available": {
-    "de": 25
+    "de": 26
   },
   "available_years_for_entity": [
     "1828",
