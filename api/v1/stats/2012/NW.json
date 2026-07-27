@@ -1,46 +1,76 @@
 {
   "year": "2012",
+  "year_semantics": "enactment",
   "entity": "NW",
-  "total": 9,
-  "categorized": 9,
+  "total": 20,
+  "categorized": 20,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 8,
+      "by_topic": {
+        "211 Allgemeines": 2,
+        "214 Grundbuch und Hypothekarwesen": 1,
+        "23 Datenschutz und Registerharmonisierung": 1,
+        "715 Krankheitsbekämpfung": 1,
+        "742 Krankenversicherung und Unfallversicherung": 1,
+        "764 Kinder": 1,
+        "862 Mass und Gewicht": 1
+      },
+      "by_global_category": {
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "2.10.20.10 Vormundschaft": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "1.10.70.10.10 Einwohnerkontrolle": 1,
+        "8.10.130.40 Bestattungswesen, Friedhöfe": 1,
+        "4.110 Familienergänzende Tagesstrukturen": 1,
+        "9.60.20 Messwesen, Zahlungsverkehr": 1
+      }
+    },
     "Anderes": {
       "total": 5,
       "by_topic": {
         "161 Allgemeine Bestimmungen": 1,
+        "165 Personal": 1,
         "214 Grundbuch und Hypothekarwesen": 1,
-        "742 Krankenversicherung und Unfallversicherung": 1,
-        "821 Allgemeine Bestimmungen": 1,
-        "866 Bankwesen": 1
+        "521 Kantons- und Gemeindesteuern": 1,
+        "821 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
         "1.20.20.40.20 Eid": 1,
+        "1.20.20.40.10 Anstellung": 1,
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
-        "9.20.80.20 Schädlingsbekämpfung": 1,
-        "6.40.10 Kantonalbanken": 1
-      }
-    },
-    "Verordnung": {
-      "total": 3,
-      "by_topic": {
-        "211 Allgemeines": 1,
-        "717 Lebensmittel und Gebrauchsgegenstände": 1,
-        "826 Tierseuchen und Viehversicherung": 1
-      },
-      "by_global_category": {
-        "1.20.20.60 Verwaltungsgebühren": 1,
-        "9.20.120 Tierseuchen": 1,
-        "5.30.20.10 Hunde, gefährliche Tiere": 1
+        "6.20.10.20 Staatssteuern": 1,
+        "9.20.80.20 Schädlingsbekämpfung": 1
       }
     },
     "Gesetz": {
-      "total": 1,
+      "total": 4,
       "by_topic": {
-        "826 Tierseuchen und Viehversicherung": 1
+        "271 Schuldbetreibungs- und Konkursrecht": 2,
+        "211 Allgemeines": 1,
+        "764 Kinder": 1
       },
       "by_global_category": {
-        "9.20.140 Viehversicherungen": 1
+        "7.10.40 Landumlegung": 1,
+        "2.50.30 Vollstreckung": 1,
+        "4.110 Familienergänzende Tagesstrukturen": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "317 Fachhochschule": 2
+      },
+      "by_global_category": {}
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "866 Bankwesen": 1
+      },
+      "by_global_category": {
+        "6.40.10 Kantonalbanken": 1
       }
     }
   },
@@ -48,24 +78,33 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "16",
           "title": "Behörden und Personal",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "161",
               "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "165",
+              "title": "Personal",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -79,35 +118,130 @@
     {
       "identifier": "2",
       "title": "Zivilrecht - Strafrecht - Rechtspflege - Vollzug",
-      "total": 2,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 4,
+        "Gesetz": 3,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Zivilgesetzbuch",
-          "total": 2,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
+            "Verordnung": 3,
+            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "211",
               "title": "Allgemeines",
-              "total": 1,
-              "own": 1,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2,
+                "Gesetz": 1
               }
             },
             {
               "identifier": "214",
               "title": "Grundbuch und Hypothekarwesen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "23",
+          "title": "Datenschutz und Registerharmonisierung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "27",
+          "title": "Vollstreckung und Vollzug",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 2
+          },
+          "children": [
+            {
+              "identifier": "271",
+              "title": "Schuldbetreibungs- und Konkursrecht",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Bildung - Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "Bildung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          },
+          "children": [
+            {
+              "identifier": "317",
+              "title": "Fachhochschule",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Finanzen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "52",
+          "title": "Kantonale und kommunale Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "521",
+              "title": "Kantons- und Gemeindesteuern",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -121,11 +255,11 @@
     {
       "identifier": "7",
       "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Verordnung": 3,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -138,8 +272,8 @@
           },
           "children": [
             {
-              "identifier": "717",
-              "title": "Lebensmittel und Gebrauchsgegenstände",
+              "identifier": "715",
+              "title": "Krankheitsbekämpfung",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -154,7 +288,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
@@ -163,7 +297,29 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "76",
+          "title": "Fürsorge",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "764",
+              "title": "Kinder",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
               }
             }
           ]
@@ -173,23 +329,21 @@
     {
       "identifier": "8",
       "title": "Wirtschaft",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Gesetz": 1,
-        "Verordnung": 1
+        "Anderes": 1,
+        "Verordnung": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "82",
           "title": "Landwirtschaft",
-          "total": 3,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -200,35 +354,35 @@
               "by_type": {
                 "Anderes": 1
               }
-            },
-            {
-              "identifier": "826",
-              "title": "Tierseuchen und Viehversicherung",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
-              }
             }
           ]
         },
         {
           "identifier": "86",
           "title": "Handel",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1,
+            "Reglement": 1
           },
           "children": [
+            {
+              "identifier": "862",
+              "title": "Mass und Gewicht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "866",
               "title": "Bankwesen",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Reglement": 1
               }
             }
           ]
@@ -240,42 +394,93 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Anderes": 2
       },
       "children": [
         {
-          "identifier": "1.20",
-          "title": "Behörden",
-          "total": 2,
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.10",
+                  "title": "Niederlassung und Aufenthalt Schweizer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.10.10",
+                      "title": "Einwohnerkontrolle",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 1,
+                "Anderes": 2,
                 "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 2
                   },
                   "children": [
+                    {
+                      "identifier": "1.20.20.40.10",
+                      "title": "Anstellung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    },
                     {
                       "identifier": "1.20.20.40.20",
                       "title": "Eid",
@@ -305,15 +510,125 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 2,
+        "Anderes": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.20",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.20.10",
+                  "title": "Vormundschaft",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 1,
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "2.50",
+          "title": "Zivilrechtspflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "2.50.30",
+              "title": "Vollstreckung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.110",
+          "title": "Familienergänzende Tagesstrukturen",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -321,8 +636,8 @@
           },
           "children": [
             {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -330,8 +645,8 @@
               },
               "children": [
                 {
-                  "identifier": "2.10.40.30",
-                  "title": "Grundbuch und Grundbuchvermessung",
+                  "identifier": "6.20.10.20",
+                  "title": "Staatssteuern",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -341,12 +656,63 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "6.40",
+          "title": "Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "6.40.10",
+              "title": "Kantonalbanken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.40",
+              "title": "Landumlegung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -354,8 +720,8 @@
       },
       "children": [
         {
-          "identifier": "5.30",
-          "title": "Innere Sicherheit",
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -363,8 +729,8 @@
           },
           "children": [
             {
-              "identifier": "5.30.20",
-              "title": "Öffentliche Ruhe und Ordnung",
+              "identifier": "8.10.130",
+              "title": "Hygiene",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -372,8 +738,8 @@
               },
               "children": [
                 {
-                  "identifier": "5.30.20.10",
-                  "title": "Hunde, gefährliche Tiere",
+                  "identifier": "8.10.130.40",
+                  "title": "Bestattungswesen, Friedhöfe",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -387,56 +753,22 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "6.40",
-          "title": "Staatliche Unternehmen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "6.40.10",
-              "title": "Kantonalbanken",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
         "Anderes": 1,
-        "Verordnung": 1,
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "9.20",
           "title": "Landwirtschaft",
-          "total": 3,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Verordnung": 1,
-            "Gesetz": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -458,23 +790,25 @@
                   }
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
             {
-              "identifier": "9.20.120",
-              "title": "Tierseuchen",
+              "identifier": "9.60.20",
+              "title": "Messwesen, Zahlungsverkehr",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "9.20.140",
-              "title": "Viehversicherungen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
               }
             }
           ]
@@ -483,7 +817,7 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 20
   },
   "available_years_for_entity": [
     "1632",
@@ -491,6 +825,7 @@
     "1842",
     "1850",
     "1900",
+    "1909",
     "1911",
     "1926",
     "1932",
@@ -500,6 +835,7 @@
     "1945",
     "1948",
     "1949",
+    "1951",
     "1959",
     "1960",
     "1961",
@@ -517,6 +853,7 @@
     "1975",
     "1976",
     "1977",
+    "1978",
     "1979",
     "1980",
     "1981",

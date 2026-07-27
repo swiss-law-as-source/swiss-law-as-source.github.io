@@ -1,5 +1,6 @@
 {
   "year": "1995",
+  "year_semantics": "enactment",
   "entity": "SH",
   "total": 11,
   "categorized": 11,
@@ -32,26 +33,33 @@
         "9.60.20 Messwesen, Zahlungsverkehr": 1
       }
     },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "142 Niederlassung und Aufenthalt": 1,
-        "410.5 Schulbauten": 1
-      },
-      "by_global_category": {
-        "1.10.70.20.10 Asylwesen": 1,
-        "4.120.60 Schulbauten": 1
-      }
-    },
     "Interkantonale Vereinbarung": {
       "total": 2,
       "by_topic": {
         "412.1 Berufsbildung": 1,
-        "64 Steuern": 1
+        "74 Verkehr": 1
       },
       "by_global_category": {
         "4.50.40 Landwirtschaft": 1,
-        "6.20.40 Erbschafts- und Schenkungssteuern": 1
+        "7.50.20.20 Strassenverkehrspolizei": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "142 Niederlassung und Aufenthalt": 1
+      },
+      "by_global_category": {
+        "1.10.70.20.10 Asylwesen": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "413.0 Allgemeines": 1
+      },
+      "by_global_category": {
+        "4.140 Anerkennung von Diplomen": 1
       }
     }
   },
@@ -135,9 +143,9 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
         "Verordnung": 1,
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -146,30 +154,20 @@
           "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
             "Verordnung": 1,
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Reglement": 1
           },
           "children": [
             {
               "identifier": "410",
               "title": "Allgemeines",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1,
                 "Verordnung": 1
               },
               "children": [
-                {
-                  "identifier": "410.5",
-                  "title": "Schulbauten",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                },
                 {
                   "identifier": "410.6",
                   "title": "Schulärztlicher Dienst",
@@ -200,6 +198,26 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "413",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.0",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -226,8 +244,8 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen",
+      "identifier": "7",
+      "title": "Raumplanung und Bauwesen - Öffentliche Werke - Energie - Verkehr",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -235,8 +253,8 @@
       },
       "children": [
         {
-          "identifier": "64",
-          "title": "Steuern",
+          "identifier": "74",
+          "title": "Verkehr",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -474,8 +492,8 @@
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 1,
-        "Anderes": 1,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -501,22 +519,12 @@
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
-            {
-              "identifier": "4.120.60",
-              "title": "Schulbauten",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            },
             {
               "identifier": "4.120.90",
               "title": "Gesundheitspflege, schulpsychologische Dienste",
@@ -527,17 +535,25 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.140",
+          "title": "Anerkennung von Diplomen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
         }
       ]
     },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1,
-        "Interkantonale Vereinbarung": 1
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -559,10 +575,21 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
         {
-          "identifier": "6.20",
-          "title": "Steuern",
+          "identifier": "7.50",
+          "title": "Verkehr",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -570,13 +597,24 @@
           },
           "children": [
             {
-              "identifier": "6.20.40",
-              "title": "Erbschafts- und Schenkungssteuern",
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
-              }
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.20",
+                  "title": "Strassenverkehrspolizei",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -623,18 +661,24 @@
     "1878",
     "1889",
     "1901",
+    "1902",
+    "1904",
     "1909",
+    "1911",
     "1914",
     "1915",
     "1916",
-    "1919",
+    "1918",
     "1922",
+    "1926",
     "1927",
+    "1928",
     "1929",
     "1930",
     "1936",
     "1937",
     "1939",
+    "1941",
     "1943",
     "1945",
     "1947",
@@ -642,23 +686,30 @@
     "1949",
     "1950",
     "1951",
+    "1953",
+    "1954",
     "1955",
+    "1956",
     "1957",
+    "1961",
     "1962",
+    "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
     "1972",
+    "1973",
     "1974",
-    "1975",
     "1976",
     "1977",
     "1978",
     "1979",
+    "1980",
     "1981",
     "1982",
     "1983",

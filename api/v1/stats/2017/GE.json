@@ -1,25 +1,28 @@
 {
   "year": "2017",
+  "year_semantics": "enactment",
   "entity": "GE",
-  "total": 22,
-  "categorized": 22,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 12,
+      "total": 14,
       "by_topic": {
+        "C 1 Instruction publique": 2,
         "E 4 Droit pénal et procédure pénale": 2,
         "F 1 Organisation de la police": 2,
         "B 6 Organisation des communes": 1,
-        "C 1 Instruction publique": 1,
         "D 1 Organisation": 1,
         "D 3 Impôts et taxes": 1,
         "E 2 Organisation judiciaire et pouvoir judiciaire": 1,
         "F 2 Séjour et établissements, police des étrangers, recensement": 1,
+        "F 3 Police de la rue et autres lieux publics": 1,
         "G 3 Défense générale": 1,
         "L 5 Police des constructions, sécurité publique": 1
       },
       "by_global_category": {
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
         "6.10.40 Finanzkontrolle": 1,
         "1.10.120 Information der Öffentlichkeit": 1,
         "5.30.10.30 Personal": 1,
@@ -31,15 +34,13 @@
     "Gesetz": {
       "total": 6,
       "by_topic": {
+        "A 2 Constitution et principes généraux": 2,
         "M 2 Agriculture et viticulture": 2,
-        "E 1 Droit civil et droit des obligations": 1,
-        "J 4 Assistance": 1,
         "L 3 Sous-sol": 1,
         "M 5 Protection de la nature": 1
       },
       "by_global_category": {
-        "2.10.10.20.10 BVG-Stiftungen": 1,
-        "3.20.70 Opferhilfe": 1,
+        "1.30.40 Aufgabenteilung Kanton-Gemeinden": 1,
         "6.30.20 Bergwerk": 1
       }
     },
@@ -49,16 +50,18 @@
         "E 4 Droit pénal et procédure pénale": 3
       },
       "by_global_category": {}
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "J 1 Relations du travail": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "A",
+      "title": "Structure cantonale et principes fondamentaux",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Loi": 2
+      }
+    },
     {
       "identifier": "B",
       "title": "Organisation du canton",
@@ -71,10 +74,10 @@
     {
       "identifier": "C",
       "title": "Instruction publique, culture",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 2
       }
     },
     {
@@ -89,21 +92,20 @@
     {
       "identifier": "E",
       "title": "Droit civil et droit pénal, organisation judiciaire et procédure",
-      "total": 7,
-      "own": 7,
+      "total": 6,
+      "own": 6,
       "by_type": {
         "Règlement": 3,
-        "Accord intercantonal": 3,
-        "Loi": 1
+        "Accord intercantonal": 3
       }
     },
     {
       "identifier": "F",
       "title": "Police",
-      "total": 3,
-      "own": 3,
+      "total": 4,
+      "own": 4,
       "by_type": {
-        "Règlement": 3
+        "Règlement": 4
       }
     },
     {
@@ -113,16 +115,6 @@
       "own": 1,
       "by_type": {
         "Règlement": 1
-      }
-    },
-    {
-      "identifier": "J",
-      "title": "Législation sociale",
-      "total": 2,
-      "own": 2,
-      "by_type": {
-        "Autre": 1,
-        "Loi": 1
       }
     },
     {
@@ -149,10 +141,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Règlement": 2
+        "Règlement": 2,
+        "Loi": 1
       },
       "children": [
         {
@@ -205,21 +198,10 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Loi": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
+          "identifier": "1.30",
+          "title": "Gemeinden",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -227,35 +209,13 @@
           },
           "children": [
             {
-              "identifier": "2.10.10",
-              "title": "Personenrecht, Zivilstand",
+              "identifier": "1.30.40",
+              "title": "Aufgabenteilung Kanton-Gemeinden",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Loi": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.10.20",
-                  "title": "Stiftungen, Stiftungsaufsicht",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Loi": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "2.10.10.20.10",
-                      "title": "BVG-Stiftungen",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Loi": 1
-                      }
-                    }
-                  ]
-                }
-              ]
+              }
             }
           ]
         }
@@ -264,33 +224,12 @@
     {
       "identifier": "3",
       "title": "Strafrecht",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Loi": 1,
         "Règlement": 1
       },
       "children": [
-        {
-          "identifier": "3.20",
-          "title": "Strafprozess",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Loi": 1
-          },
-          "children": [
-            {
-              "identifier": "3.20.70",
-              "title": "Opferhilfe",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Loi": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "3.70",
           "title": "Straf- und Massnahmenvollzug",
@@ -321,6 +260,26 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.60",
+          "title": "Tertiärstufe: Höhere Fachschulen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Règlement": 1
+          }
         }
       ]
     },
@@ -473,7 +432,7 @@
     }
   ],
   "languages_available": {
-    "fr": 22
+    "fr": 23
   },
   "available_years_for_entity": [
     "1564",
@@ -482,24 +441,28 @@
     "1815",
     "1816",
     "1817",
-    "1834",
+    "1841",
     "1847",
     "1849",
     "1856",
+    "1858",
     "1861",
     "1872",
     "1875",
+    "1876",
     "1878",
     "1881",
     "1887",
     "1889",
     "1892",
+    "1893",
     "1895",
     "1899",
     "1901",
     "1902",
     "1903",
     "1907",
+    "1908",
     "1909",
     "1918",
     "1923",
@@ -509,8 +472,11 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1935",
     "1937",
+    "1938",
     "1940",
     "1941",
     "1942",

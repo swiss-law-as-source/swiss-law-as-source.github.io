@@ -1,23 +1,36 @@
 {
   "year": "1996",
+  "year_semantics": "enactment",
   "entity": "BL",
-  "total": 10,
-  "categorized": 10,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 6,
+      "by_topic": {
+        "90 Gesundheitspflege": 3,
+        "36 Staatsbeiträge": 2,
+        "211 Vollzugserlasse zum ZGB": 1
+      },
+      "by_global_category": {
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 3,
+        "8.30.60.20 Prämienverbilligungen": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 5,
       "by_topic": {
+        "643 Weiterführende Schulen": 1,
         "649 Interkantonale Vereinbarungen": 1,
         "70 Polizei und Öffentliche Sicherheit": 1,
-        "71 Polizeitätigkeiten": 1,
         "76 Schutz vor Feuer und weiteren Naturgefahren": 1,
         "93 Spitäler": 1
       },
       "by_global_category": {
+        "4.20.10 Mittelschule": 1,
         "4.140 Anerkennung von Diplomen": 1,
         "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
-        "7.50.20.20 Strassenverkehrspolizei": 1,
         "5.20.30.10 Feuerwehr": 1
       }
     },
@@ -32,15 +45,15 @@
         "8.30.60.10.20 Vereinbarungen": 1
       }
     },
-    "Verordnung": {
+    "Verordnung des Parlaments (Dekret)": {
       "total": 2,
       "by_topic": {
-        "82 Arbeitnehmerschutz": 1,
-        "90 Gesundheitspflege": 1
+        "31 Finanzhaushalt": 1,
+        "36 Staatsbeiträge": 1
       },
       "by_global_category": {
-        "8.20.10.20 Arbeitszeit": 1,
-        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1
+        "6.10.10 Budget und Rechnung": 1,
+        "8.30.60.20 Prämienverbilligungen": 1
       }
     },
     "Gesetz": {
@@ -86,23 +99,94 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Kultur, Bildung, Ausbildung",
+      "identifier": "2",
+      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "211",
+              "title": "Vollzugserlasse zum ZGB",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Finanzen",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "Finanzhaushalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        },
+        {
+          "identifier": "36",
+          "title": "Staatsbeiträge",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Verordnung": 2,
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Kultur, Bildung, Ausbildung",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
           "identifier": "64",
           "title": "Schulen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 2
           },
           "children": [
+            {
+              "identifier": "643",
+              "title": "Weiterführende Schulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
             {
               "identifier": "649",
               "title": "Interkantonale Vereinbarungen",
@@ -119,24 +203,15 @@
     {
       "identifier": "7",
       "title": "Öffentliche Sicherheit, Umweltschutz",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 3
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
           "identifier": "70",
           "title": "Polizei und Öffentliche Sicherheit",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          }
-        },
-        {
-          "identifier": "71",
-          "title": "Polizeitätigkeiten",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -155,32 +230,12 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Soziale Sicherheit",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "82",
-          "title": "Arbeitnehmerschutz",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        }
-      ]
-    },
-    {
       "identifier": "9",
       "title": "Gesundheit",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 3,
         "Gesetz": 1,
         "Anderes": 1,
         "Interkantonale Vereinbarung": 1
@@ -189,10 +244,10 @@
         {
           "identifier": "90",
           "title": "Gesundheitspflege",
-          "total": 2,
-          "own": 2,
+          "total": 4,
+          "own": 4,
           "by_type": {
-            "Verordnung": 1,
+            "Verordnung": 3,
             "Gesetz": 1
           }
         },
@@ -221,29 +276,49 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 3,
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3
           },
           "children": [
             {
               "identifier": "4.120.90",
               "title": "Gesundheitspflege, schulpsychologische Dienste",
-              "total": 1,
-              "own": 1,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 3
               }
             }
           ]
@@ -333,42 +408,31 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
-          "identifier": "7.50",
-          "title": "Verkehr",
+          "identifier": "6.10",
+          "title": "Finanzen",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
-              "identifier": "7.50.20",
-              "title": "Strassenverkehr",
+              "identifier": "6.10.10",
+              "title": "Budget und Rechnung",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "7.50.20.20",
-                  "title": "Strassenverkehrspolizei",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
+                "Verordnung des Parlaments (Dekret)": 1
+              }
             }
           ]
         }
@@ -377,11 +441,12 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Anderes": 2,
         "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Verordnung": 1
       },
       "children": [
@@ -427,52 +492,25 @@
           ]
         },
         {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "8.20.10",
-              "title": "Arbeitnehmer",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.20.10.20",
-                  "title": "Arbeitszeit",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "8.30.60",
               "title": "KVG",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 1,
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Verordnung": 1
               },
               "children": [
                 {
@@ -494,6 +532,16 @@
                       }
                     }
                   ]
+                },
+                {
+                  "identifier": "8.30.60.20",
+                  "title": "Prämienverbilligungen",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Verordnung": 1
+                  }
                 }
               ]
             }
@@ -503,27 +551,41 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 16
   },
   "available_years_for_entity": [
     "1815",
     "1828",
-    "1829",
     "1834",
     "1836",
+    "1865",
     "1870",
     "1876",
     "1881",
-    "1903",
+    "1888",
+    "1889",
+    "1892",
+    "1896",
+    "1902",
+    "1907",
+    "1908",
     "1909",
+    "1911",
+    "1914",
     "1916",
     "1919",
     "1920",
+    "1921",
+    "1922",
+    "1923",
     "1925",
+    "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1944",
+    "1946",
     "1947",
     "1948",
     "1949",
@@ -531,8 +593,10 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -540,6 +604,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",

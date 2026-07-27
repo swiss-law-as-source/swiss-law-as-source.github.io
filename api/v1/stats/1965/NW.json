@@ -1,10 +1,31 @@
 {
   "year": "1965",
+  "year_semantics": "enactment",
   "entity": "NW",
-  "total": 3,
-  "categorized": 3,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "19 Staat und Kirche": 1,
+        "751 Förderung des Wohnungsbaues": 1
+      },
+      "by_global_category": {
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
+      }
+    },
+    "Verfassung": {
+      "total": 1,
+      "by_topic": {
+        "111 Kantonsverfassung": 1
+      },
+      "by_global_category": {
+        "1.10.10 Verfassung": 1
+      }
+    },
     "Anderes": {
       "total": 1,
       "by_topic": {
@@ -13,42 +34,47 @@
       "by_global_category": {
         "1.40.10 Römisch-Katholische Kirche": 1
       }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "751 Förderung des Wohnungsbaues": 1
-      },
-      "by_global_category": {
-        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "912 Polizeiliche Zusammenarbeit": 1
-      },
-      "by_global_category": {
-        "5.30.10.60 Polizeitransporte": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verfassung": 1,
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
         {
+          "identifier": "11",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verfassung": 1
+          },
+          "children": [
+            {
+              "identifier": "111",
+              "title": "Kantonsverfassung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verfassung": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "19",
           "title": "Staat und Kirche",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Gesetz": 1,
             "Anderes": 1
           }
         }
@@ -84,108 +110,59 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "9",
-      "title": "Polizei",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "91",
-          "title": "Organisation",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "912",
-              "title": "Polizeiliche Zusammenarbeit",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        }
-      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verfassung": 1,
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "1.40",
-          "title": "Kirche und Staat",
+          "identifier": "1.10",
+          "title": "Grundlagen",
           "total": 1,
           "own": 0,
           "by_type": {
+            "Verfassung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.10",
+              "title": "Verfassung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verfassung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.40.10",
               "title": "Römisch-Katholische Kirche",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Anderes": 1
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "5.30",
-          "title": "Innere Sicherheit",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "5.30.10",
-              "title": "Polizei",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "5.30.10.60",
-                  "title": "Polizeitransporte",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
             }
           ]
         }
@@ -224,7 +201,7 @@
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 4
   },
   "available_years_for_entity": [
     "1632",
@@ -232,6 +209,7 @@
     "1842",
     "1850",
     "1900",
+    "1909",
     "1911",
     "1926",
     "1932",
@@ -241,6 +219,7 @@
     "1945",
     "1948",
     "1949",
+    "1951",
     "1959",
     "1960",
     "1961",
@@ -258,6 +237,7 @@
     "1975",
     "1976",
     "1977",
+    "1978",
     "1979",
     "1980",
     "1981",
@@ -310,6 +290,7 @@
   "available_entities_for_year": [
     "AG",
     "AR",
+    "BE",
     "BL",
     "BS",
     "CH",
@@ -317,6 +298,7 @@
     "GE",
     "GL",
     "GR",
+    "LU",
     "NE",
     "NW",
     "OW",
@@ -326,8 +308,10 @@
     "SZ",
     "TG",
     "TI",
+    "UR",
     "VD",
     "VS",
+    "ZG",
     "ZH"
   ]
 }

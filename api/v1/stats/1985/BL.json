@@ -1,65 +1,60 @@
 {
   "year": "1985",
+  "year_semantics": "enactment",
   "entity": "BL",
-  "total": 6,
-  "categorized": 6,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
-        "78 Umweltschutz": 1,
-        "851 Allgemeine Fürsorge": 1,
-        "92 Sozialmedizin": 1
+        "146 Bildungs-, Kultur- und Sportdirektion": 1,
+        "36 Staatsbeiträge": 1,
+        "681 Berufsbildung, berufliche Grundbildung": 1,
+        "78 Umweltschutz": 1
       },
       "by_global_category": {
-        "8.70.80 Schwangerschaftsberatung": 1,
-        "8.10.30.10 Ärzte": 1
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1
       }
     },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
+    "Anderes": {
+      "total": 2,
       "by_topic": {
-        "144 Bau- und Umweltschutzdirektion": 1
+        "144 Bau- und Umweltschutzdirektion": 1,
+        "681 Berufsbildung, berufliche Grundbildung": 1
       },
       "by_global_category": {
         "1.20.20.30.20 Direktionen und Ämter": 1
       }
     },
-    "Anderes": {
+    "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
-        "54 Gewerbe und Industrie": 1
+        "48 Verkehr": 1
       },
       "by_global_category": {}
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "96 Krankheitsbekämpfung": 1
-      },
-      "by_global_category": {
-        "8.10.100.10 Epidemien, Pandemien": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -68,7 +63,16 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "146",
+              "title": "Bildungs-, Kultur- und Sportdirektion",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -76,22 +80,76 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Volkswirtschaft",
+      "identifier": "3",
+      "title": "Finanzen",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "36",
+          "title": "Staatsbeiträge",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "48",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Kultur, Bildung, Ausbildung",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "54",
-          "title": "Gewerbe und Industrie",
-          "total": 1,
-          "own": 1,
+          "identifier": "68",
+          "title": "Berufliche Ausbildung",
+          "total": 2,
+          "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
-          }
+          },
+          "children": [
+            {
+              "identifier": "681",
+              "title": "Berufsbildung, berufliche Grundbildung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -114,67 +172,6 @@
           }
         }
       ]
-    },
-    {
-      "identifier": "8",
-      "title": "Soziale Sicherheit",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "85",
-          "title": "Sozialhilfe",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "851",
-              "title": "Allgemeine Fürsorge",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Gesundheit",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1,
-        "Reglement": 1
-      },
-      "children": [
-        {
-          "identifier": "92",
-          "title": "Sozialmedizin",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        },
-        {
-          "identifier": "96",
-          "title": "Krankheitsbekämpfung",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Reglement": 1
-          }
-        }
-      ]
     }
   ],
   "by_global_category_tree": [
@@ -184,7 +181,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -193,7 +190,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -202,7 +199,7 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Anderes": 1
               },
               "children": [
                 {
@@ -211,7 +208,7 @@
                   "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
+                    "Anderes": 1
                   },
                   "children": [
                     {
@@ -220,7 +217,7 @@
                       "total": 1,
                       "own": 1,
                       "by_type": {
-                        "Interkantonale Vereinbarung": 1
+                        "Anderes": 1
                       }
                     }
                   ]
@@ -232,70 +229,17 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Reglement": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "8.10",
-          "title": "Gesundheitswesen",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1,
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "8.10.30",
-              "title": "Medizinische Berufe",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.10.30.10",
-                  "title": "Ärzte",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            },
-            {
-              "identifier": "8.10.100",
-              "title": "Krankheitsbekämpfung",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.10.100.10",
-                  "title": "Epidemien, Pandemien",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "8.70",
-          "title": "Fürsorge",
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -303,8 +247,8 @@
           },
           "children": [
             {
-              "identifier": "8.70.80",
-              "title": "Schwangerschaftsberatung",
+              "identifier": "4.120.90",
+              "title": "Gesundheitspflege, schulpsychologische Dienste",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -317,27 +261,41 @@
     }
   ],
   "languages_available": {
-    "de": 6
+    "de": 7
   },
   "available_years_for_entity": [
     "1815",
     "1828",
-    "1829",
     "1834",
     "1836",
+    "1865",
     "1870",
     "1876",
     "1881",
-    "1903",
+    "1888",
+    "1889",
+    "1892",
+    "1896",
+    "1902",
+    "1907",
+    "1908",
     "1909",
+    "1911",
+    "1914",
     "1916",
     "1919",
     "1920",
+    "1921",
+    "1922",
+    "1923",
     "1925",
+    "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1944",
+    "1946",
     "1947",
     "1948",
     "1949",
@@ -345,8 +303,10 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -354,6 +314,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -416,6 +377,8 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
+    "AR",
     "BE",
     "BL",
     "BS",

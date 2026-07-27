@@ -1,22 +1,35 @@
 {
   "year": "1973",
+  "year_semantics": "enactment",
   "entity": "NE",
-  "total": 11,
-  "categorized": 11,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 6,
+      "total": 5,
       "by_topic": {
         "417 Éducation physique et sports": 2,
         "34 Casier judiciaire": 1,
         "416.6 Conventions intercantonales": 1,
-        "761.1 Dispositions générales": 1,
         "941.1 Poids et mesures": 1
       },
       "by_global_category": {
         "4.150 Schulsport": 2,
         "9.60.20 Messwesen, Zahlungsverkehr": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 4,
+      "by_topic": {
+        "416.6 Conventions intercantonales": 1,
+        "633 Droit sur les successions et les donations": 1,
+        "681 Régale des sels": 1,
+        "701 Dispositions générales": 1
+      },
+      "by_global_category": {
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1,
+        "6.30.30 Salzregal": 1
       }
     },
     "Reglement": {
@@ -31,6 +44,15 @@
         "8.70.30.10 Alters- und Pflegeheime": 1
       }
     },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "162.22 Tribunal des prud'hommes": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.50 Arbeits- und Mietgericht": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
@@ -42,6 +64,48 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "État – Peuple – Autorités",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "16",
+          "title": "Organisation judiciaire – Avocats et notaires",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "162",
+              "title": "Autorités judiciaires",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "162.22",
+                  "title": "Tribunal des prud'hommes",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "Droit pénal – Procédure pénale – Exécution",
@@ -65,39 +129,43 @@
     {
       "identifier": "4",
       "title": "Enseignement – Science – Culture – Environnement",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Autre": 3,
-        "Règlement": 3
+        "Règlement": 3,
+        "Accord intercantonal": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Enseignement",
-          "total": 6,
+          "total": 7,
           "own": 0,
           "by_type": {
             "Autre": 3,
-            "Règlement": 3
+            "Règlement": 3,
+            "Accord intercantonal": 1
           },
           "children": [
             {
               "identifier": "416",
               "title": "Université",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Autre": 1
+                "Autre": 1,
+                "Accord intercantonal": 1
               },
               "children": [
                 {
                   "identifier": "416.6",
                   "title": "Conventions intercantonales",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Autre": 1
+                    "Autre": 1,
+                    "Accord intercantonal": 1
                   }
                 }
               ]
@@ -119,28 +187,51 @@
     {
       "identifier": "6",
       "title": "Finances",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Accord intercantonal": 2,
         "Ordonnance parlementaire (décret)": 1
       },
       "children": [
         {
-          "identifier": "68",
-          "title": "Régales",
+          "identifier": "63",
+          "title": "Contributions publiques",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Ordonnance parlementaire (décret)": 1
+            "Accord intercantonal": 1
+          },
+          "children": [
+            {
+              "identifier": "633",
+              "title": "Droit sur les successions et les donations",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Accord intercantonal": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "68",
+          "title": "Régales",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1,
+            "Accord intercantonal": 1
           },
           "children": [
             {
               "identifier": "681",
               "title": "Régale des sels",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Ordonnance parlementaire (décret)": 1
+                "Ordonnance parlementaire (décret)": 1,
+                "Accord intercantonal": 1
               }
             }
           ]
@@ -153,37 +244,26 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Accord intercantonal": 1
       },
       "children": [
         {
-          "identifier": "76",
-          "title": "Transports et communications",
+          "identifier": "70",
+          "title": "Aménagement du territoire",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Accord intercantonal": 1
           },
           "children": [
             {
-              "identifier": "761",
-              "title": "Circulation routière",
+              "identifier": "701",
+              "title": "Dispositions générales",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Autre": 1
-              },
-              "children": [
-                {
-                  "identifier": "761.1",
-                  "title": "Dispositions générales",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Autre": 1
-                  }
-                }
-              ]
+                "Accord intercantonal": 1
+              }
             }
           ]
         }
@@ -276,6 +356,59 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Loi": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.50",
+                      "title": "Arbeits- und Mietgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Loi": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 5,
@@ -320,28 +453,51 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Accord intercantonal": 2,
         "Ordonnance parlementaire (décret)": 1
       },
       "children": [
         {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
+          "identifier": "6.20",
+          "title": "Steuern",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Ordonnance parlementaire (décret)": 1
+            "Accord intercantonal": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.40",
+              "title": "Erbschafts- und Schenkungssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Accord intercantonal": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1,
+            "Accord intercantonal": 1
           },
           "children": [
             {
               "identifier": "6.30.30",
               "title": "Salzregal",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Ordonnance parlementaire (décret)": 1
+                "Ordonnance parlementaire (décret)": 1,
+                "Accord intercantonal": 1
               }
             }
           ]
@@ -423,10 +579,11 @@
     }
   ],
   "languages_available": {
-    "fr": 11
+    "fr": 15
   },
   "available_years_for_entity": [
     "1832",
+    "1857",
     "1858",
     "1864",
     "1866",
@@ -565,6 +722,7 @@
     "NW",
     "OW",
     "SG",
+    "SH",
     "SO",
     "SZ",
     "TG",

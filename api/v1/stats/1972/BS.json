@@ -1,46 +1,67 @@
 {
   "year": "1972",
+  "year_semantics": "enactment",
   "entity": "BS",
   "total": 4,
   "categorized": 4,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "153 Regierung und Verwaltung · Verwaltungsgebühren": 1,
         "164 Lohn und Entschädigungen": 1,
         "789 Natur- und Landschaftsschutz": 1
       },
       "by_global_category": {
+        "1.20.20.60 Verwaltungsgebühren": 1,
         "4.90.20 Löhne, Entschädigungen": 1,
         "7.70.10 Landschaftsschutz": 1
       }
     },
-    "Anderes": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "331 Öffentliche Spitäler": 1
+        "153 Regierung und Verwaltung · Verwaltungsgebühren": 1
       },
-      "by_global_category": {}
-    },
-    "Gemeindeerlass": {
-      "total": 1,
-      "by_topic": {
-        "BaB 3 Gesundheit": 1
-      },
-      "by_global_category": {}
+      "by_global_category": {
+        "1.20.20.60 Verwaltungsgebühren": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen · Organisation",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "15",
+          "title": "Organisation des Kantons",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "153",
+              "title": "Regierung und Verwaltung · Verwaltungsgebühren",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "16",
           "title": "Staatspersonal",
@@ -57,37 +78,6 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "3",
-      "title": "Gesundheit",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "33",
-          "title": "Spitäler · Sanitätsdienst",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "331",
-              "title": "Öffentliche Spitäler",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
               }
             }
           ]
@@ -124,18 +114,55 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "BaB",
-      "title": "Bürgergemeinde Basel",
-      "total": 1,
-      "own": 1,
-      "by_type": {
-        "Gemeindeerlass": 1
-      }
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -203,40 +230,50 @@
     "de": 4
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -262,7 +299,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",
@@ -334,6 +370,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BS",
     "CH",
@@ -348,7 +385,6 @@
     "SH",
     "SO",
     "SZ",
-    "TG",
     "TI",
     "UR",
     "VD",

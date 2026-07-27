@@ -1,10 +1,34 @@
 {
   "year": "1982",
+  "year_semantics": "enactment",
   "entity": "UR",
-  "total": 4,
-  "categorized": 4,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 3,
+      "by_topic": {
+        "10.24 Kantonale Mittelschule": 1,
+        "2.33 Regierungsrat, Verwaltung": 1,
+        "3.25 Gebühren": 1
+      },
+      "by_global_category": {
+        "4.90.10 Anstellung": 1,
+        "1.20.20.60 Verwaltungsgebühren": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "3.25 Gebühren": 1,
+        "50.3 Bahnen, Skilifte": 1
+      },
+      "by_global_category": {
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "7.50.30 Seilbahnen, Skilifte": 1
+      }
+    },
     "Anderes": {
       "total": 2,
       "by_topic": {
@@ -24,17 +48,82 @@
         "4.90.30 Ausbildung": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
+    "Verordnung": {
       "total": 1,
       "by_topic": {
-        "10.24 Kantonale Mittelschule": 1
+        "30.43 Technische Anlagen": 1
       },
       "by_global_category": {
-        "4.90.10 Anstellung": 1
+        "8.10.110 Unfallbekämpfung": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "2",
+      "title": "Politische Rechte - Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "2.3",
+          "title": "Behörden: im Einzelnen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "2.33",
+              "title": "Regierungsrat, Verwaltung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Allgemeine Funktionen im Gemeinwesen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "3.2",
+          "title": "Finanzen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "3.25",
+              "title": "Gebühren",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "10",
       "title": "Schule - Wissenschaft - Kultur",
@@ -88,6 +177,37 @@
       ]
     },
     {
+      "identifier": "30",
+      "title": "Polizeiliche Aufgaben",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "30.4",
+          "title": "Sicherheitspolizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "30.43",
+              "title": "Technische Anlagen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "40",
       "title": "Pflege der Umwelt - Nutzung der Natur",
       "total": 1,
@@ -121,10 +241,11 @@
     {
       "identifier": "50",
       "title": "Verkehr - Transport",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -146,11 +267,66 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "50.3",
+          "title": "Bahnen, Skilifte",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
         }
       ]
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -196,10 +372,11 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -232,20 +409,74 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.30",
+              "title": "Seilbahnen, Skilifte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.110",
+              "title": "Unfallbekämpfung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 9
   },
   "available_years_for_entity": [
     "1859",
     "1869",
     "1888",
     "1889",
+    "1891",
     "1902",
-    "1910",
+    "1909",
+    "1911",
+    "1918",
     "1925",
     "1927",
     "1931",
@@ -253,24 +484,30 @@
     "1933",
     "1935",
     "1939",
+    "1940",
     "1942",
     "1943",
     "1944",
     "1948",
-    "1950",
-    "1958",
+    "1951",
+    "1952",
+    "1954",
     "1959",
     "1961",
     "1962",
+    "1964",
+    "1965",
     "1966",
+    "1967",
     "1968",
-    "1969",
+    "1970",
     "1971",
     "1972",
     "1973",
     "1974",
-    "1975",
+    "1976",
     "1977",
+    "1978",
     "1979",
     "1980",
     "1981",
@@ -317,11 +554,12 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
+    "AR",
     "BE",
     "BL",
     "BS",

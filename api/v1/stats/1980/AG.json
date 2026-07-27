@@ -1,46 +1,82 @@
 {
   "year": "1980",
+  "year_semantics": "enactment",
   "entity": "AG",
-  "total": 2,
-  "categorized": 2,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "427 Hochschulen": 1
-      },
-      "by_global_category": {}
-    },
     "Verordnung": {
-      "total": 1,
+      "total": 6,
       "by_topic": {
-        "511 Organisation – Wehrpflichtersatz": 1
+        "422 Berufsbildung – Berufsschulen": 1,
+        "725 Abgaben und Gebühren": 1,
+        "910 Allgemeines": 1,
+        "911 Finanzielles": 1,
+        "913 Produktionsgrundlage – Grund und Boden": 1,
+        "997 Schifffahrt": 1
       },
       "by_global_category": {
-        "3.40 Militärstrafrecht": 1
+        "4.30.10.10 Hauswirtschaftliche Ausbildung": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "9.20.10 Förderungsmassnahmen": 1,
+        "1.30.20 Gemeindebeiträge": 1
       }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
+        "422 Berufsbildung – Berufsschulen": 1,
+        "473 Ausserkantonale Ausbildungen": 1
+      },
+      "by_global_category": {
+        "4.30.10.10 Hauswirtschaftliche Ausbildung": 1,
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "427 Hochschulen": 1,
+        "531 Polizei": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "4",
       "title": "Erziehung – Wissenschaft – Kultur",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "42",
           "title": "Schulen",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1,
             "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "422",
+              "title": "Berufsbildung – Berufsschulen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "427",
               "title": "Hochschulen",
@@ -48,6 +84,26 @@
               "own": 1,
               "by_type": {
                 "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "47",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "473",
+              "title": "Ausserkantonale Ausbildungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -60,12 +116,43 @@
       "total": 1,
       "own": 0,
       "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "53",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "531",
+              "title": "Polizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanung und Bauwesen – Enteignung – Strassen – Energie – Umweltschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "51",
-          "title": "Gesamtverteidigung – Katastrophenhilfe und Bevölkerungsschutz",
+          "identifier": "72",
+          "title": "Grundbuch",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -73,8 +160,77 @@
           },
           "children": [
             {
-              "identifier": "511",
-              "title": "Organisation – Wehrpflichtersatz",
+              "identifier": "725",
+              "title": "Abgaben und Gebühren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft – Verkehr",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 4
+      },
+      "children": [
+        {
+          "identifier": "91",
+          "title": "Landwirtschaft",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3
+          },
+          "children": [
+            {
+              "identifier": "910",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "911",
+              "title": "Finanzielles",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "913",
+              "title": "Produktionsgrundlage – Grund und Boden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "99",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "997",
+              "title": "Schifffahrt",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -88,8 +244,70 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "3",
-      "title": "Strafrecht",
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.20",
+              "title": "Gemeindebeiträge",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -97,47 +315,181 @@
       },
       "children": [
         {
-          "identifier": "3.40",
-          "title": "Militärstrafrecht",
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
           "total": 1,
-          "own": 1,
+          "own": 0,
           "by_type": {
             "Verordnung": 1
-          }
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.20",
+              "title": "Fachmittelschulen, Diplommittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.10",
+              "title": "Berufsfachschulen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "4.30.10.10",
+                  "title": "Hauswirtschaftliche Ausbildung",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.10",
+              "title": "Förderungsmassnahmen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 10
   },
   "available_years_for_entity": [
     "1803",
+    "1819",
     "1828",
     "1832",
+    "1845",
+    "1853",
     "1856",
-    "1885",
+    "1862",
+    "1871",
     "1888",
     "1889",
     "1901",
+    "1905",
+    "1906",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
+    "1915",
+    "1916",
     "1917",
     "1918",
     "1919",
     "1922",
+    "1923",
     "1924",
     "1925",
     "1928",
     "1930",
     "1932",
+    "1934",
     "1937",
     "1938",
     "1939",
+    "1940",
+    "1941",
     "1942",
     "1943",
     "1944",
-    "1945",
     "1946",
     "1948",
     "1950",
@@ -146,21 +498,23 @@
     "1953",
     "1954",
     "1955",
+    "1957",
     "1958",
     "1959",
     "1960",
     "1961",
+    "1962",
     "1963",
     "1964",
     "1965",
     "1966",
+    "1967",
     "1968",
     "1969",
     "1970",
     "1971",
     "1972",
     "1973",
-    "1974",
     "1975",
     "1976",
     "1977",
@@ -217,6 +571,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",
@@ -231,6 +586,7 @@
     "NW",
     "OW",
     "SG",
+    "SH",
     "SO",
     "SZ",
     "TG",

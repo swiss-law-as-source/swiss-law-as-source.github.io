@@ -1,17 +1,18 @@
 {
   "year": "2010",
+  "year_semantics": "enactment",
   "entity": "GE",
-  "total": 26,
-  "categorized": 26,
+  "total": 32,
+  "categorized": 32,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 20,
+      "total": 21,
       "by_topic": {
+        "C 1 Instruction publique": 2,
         "D 1 Organisation": 2,
         "J 7 Protection de la vieillesse": 2,
         "B 5 Statuts, traitements et retraite": 1,
-        "C 1 Instruction publique": 1,
         "C 2 Formation professionnelle": 1,
         "D 3 Impôts et taxes": 1,
         "E 2 Organisation judiciaire et pouvoir judiciaire": 1,
@@ -30,6 +31,7 @@
       "by_global_category": {
         "4.90.20 Löhne, Entschädigungen": 1,
         "4.80.30 Kunst- und Sportschulen": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
         "6.10.40 Finanzkontrolle": 1,
         "6.20.30 Liegenschaftssteuern": 1,
         "1.50.10.30 Unentgeltliche Rechtspflege": 1,
@@ -48,13 +50,19 @@
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 8,
       "by_topic": {
-        "E 3 Procédure civile": 2,
-        "E 2 Organisation judiciaire et pouvoir judiciaire": 1
+        "E 3 Procédure civile": 3,
+        "B 1 Pouvoirs législatif et exécutif": 1,
+        "C 3 Culture": 1,
+        "E 2 Organisation judiciaire et pouvoir judiciaire": 1,
+        "E 6 Professions juridiques": 1,
+        "I 1 Commerce, industrie et tourisme": 1
       },
       "by_global_category": {
-        "1.20.70.10.50 Arbeits- und Mietgericht": 1
+        "1.20.70.10.50 Arbeits- und Mietgericht": 2,
+        "1.10.40 Interkantonale Zusammenarbeit": 1,
+        "9.10 Wirtschaftsförderung": 1
       }
     },
     "Anderes": {
@@ -79,19 +87,21 @@
     {
       "identifier": "B",
       "title": "Organisation du canton",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
+        "Loi": 1,
         "Règlement": 1
       }
     },
     {
       "identifier": "C",
       "title": "Instruction publique, culture",
-      "total": 2,
-      "own": 2,
+      "total": 4,
+      "own": 4,
       "by_type": {
-        "Règlement": 2
+        "Règlement": 3,
+        "Loi": 1
       }
     },
     {
@@ -107,11 +117,11 @@
     {
       "identifier": "E",
       "title": "Droit civil et droit pénal, organisation judiciaire et procédure",
-      "total": 8,
-      "own": 8,
+      "total": 10,
+      "own": 10,
       "by_type": {
+        "Loi": 5,
         "Règlement": 4,
-        "Loi": 3,
         "Accord intercantonal": 1
       }
     },
@@ -127,9 +137,10 @@
     {
       "identifier": "I",
       "title": "Commerce, industrie, arts et métiers, logement",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
+        "Loi": 1,
         "Règlement": 1
       }
     },
@@ -166,23 +177,33 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 8,
+      "total": 10,
       "own": 0,
       "by_type": {
         "Règlement": 6,
-        "Loi": 1,
+        "Loi": 3,
         "Autre": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Loi": 1,
             "Règlement": 1
           },
           "children": [
+            {
+              "identifier": "1.10.40",
+              "title": "Interkantonale Zusammenarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            },
             {
               "identifier": "1.10.70",
               "title": "Niederlassung und Aufenthalt",
@@ -219,11 +240,11 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
             "Règlement": 4,
-            "Loi": 1
+            "Loi": 2
           },
           "children": [
             {
@@ -300,31 +321,31 @@
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Règlement": 1,
-                "Loi": 1
+                "Loi": 2,
+                "Règlement": 1
               },
               "children": [
                 {
                   "identifier": "1.20.70.10",
                   "title": "Gerichtsbehörden",
-                  "total": 2,
+                  "total": 3,
                   "own": 0,
                   "by_type": {
-                    "Règlement": 1,
-                    "Loi": 1
+                    "Loi": 2,
+                    "Règlement": 1
                   },
                   "children": [
                     {
                       "identifier": "1.20.70.10.50",
                       "title": "Arbeits- und Mietgericht",
-                      "total": 2,
-                      "own": 2,
+                      "total": 3,
+                      "own": 3,
                       "by_type": {
-                        "Règlement": 1,
-                        "Loi": 1
+                        "Loi": 2,
+                        "Règlement": 1
                       }
                     }
                   ]
@@ -389,12 +410,32 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Règlement": 3
+        "Règlement": 4
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.80",
           "title": "Sonderpädagogik",
@@ -644,12 +685,22 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Loi": 1,
         "Règlement": 1
       },
       "children": [
+        {
+          "identifier": "9.10",
+          "title": "Wirtschaftsförderung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Loi": 1
+          }
+        },
         {
           "identifier": "9.50",
           "title": "Gewerbe",
@@ -696,7 +747,7 @@
     }
   ],
   "languages_available": {
-    "fr": 26
+    "fr": 32
   },
   "available_years_for_entity": [
     "1564",
@@ -705,24 +756,28 @@
     "1815",
     "1816",
     "1817",
-    "1834",
+    "1841",
     "1847",
     "1849",
     "1856",
+    "1858",
     "1861",
     "1872",
     "1875",
+    "1876",
     "1878",
     "1881",
     "1887",
     "1889",
     "1892",
+    "1893",
     "1895",
     "1899",
     "1901",
     "1902",
     "1903",
     "1907",
+    "1908",
     "1909",
     "1918",
     "1923",
@@ -732,8 +787,11 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1935",
     "1937",
+    "1938",
     "1940",
     "1941",
     "1942",

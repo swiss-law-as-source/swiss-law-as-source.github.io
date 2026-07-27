@@ -1,17 +1,22 @@
 {
   "year": "2001",
+  "year_semantics": "enactment",
   "entity": "OW",
-  "total": 17,
-  "categorized": 17,
+  "total": 31,
+  "categorized": 31,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 9,
+      "total": 17,
       "by_topic": {
+        "641 Steuern": 5,
         "415 Hochschulen, Fachhochschulen, Fachschulen": 2,
         "451 Kulturpflege und Kulturförderung": 2,
         "138 Informatik": 1,
+        "410 Schulen": 1,
         "661 Kantonalbank und Bürgschaftsfonds": 1,
+        "783 Gewässerschutz": 1,
+        "786 Natur- und Landschaftsschutz": 1,
         "810 Gesundheit": 1,
         "851 Kranken- und Unfallversicherung": 1,
         "975 Markt und Gewerbe": 1
@@ -19,32 +24,54 @@
       "by_global_category": {
         "4.50.10 Pädagogik": 2,
         "7.70.70 Denkmalschutz, Kulturgüterschutz": 2,
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
+        "6.20.10.10 Bundessteuern": 1,
+        "6.20.60 Verrechnungssteuer": 1,
+        "6.20.10.40 Pauschale Steueranrechnung": 1,
         "6.40.10 Kantonalbanken": 1,
+        "7.60.20 Gewässerschutz": 1,
+        "7.70.10 Landschaftsschutz": 1,
         "9.50.10.60.30 Spielbanken": 1
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 7,
+      "total": 9,
       "by_topic": {
         "510 Polizei": 3,
+        "975 Markt und Gewerbe": 2,
+        "138 Informatik": 1,
         "415 Hochschulen, Fachhochschulen, Fachschulen": 1,
         "720 Strassen und Wege": 1,
-        "832 Vereinbarungen mit Spitälern": 1,
-        "975 Markt und Gewerbe": 1
+        "832 Vereinbarungen mit Spitälern": 1
       },
       "by_global_category": {
         "7.50.60.20 Schifffahrtspolizei": 3,
         "4.50.10 Pädagogik": 1,
-        "9.50.10.60.30 Spielbanken": 1
+        "9.50.10.60.30 Spielbanken": 1,
+        "7.30.40 Submission": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
-        "418 Turnen und Sport": 1
+        "410 Schulen": 1,
+        "418 Turnen und Sport": 1,
+        "740 Wasserbau": 1
       },
       "by_global_category": {
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
         "4.180.30 Sport": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "740 Wasserbau": 1,
+        "774 Schifffahrt": 1
+      },
+      "by_global_category": {
+        "7.30.20.20 Gewässernutzung": 1,
+        "7.50.60.10 Schiffssteuern": 1
       }
     }
   },
@@ -52,18 +79,20 @@
     {
       "identifier": "1",
       "title": "GRUNDLAGEN UND ORGANISATION",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "138",
           "title": "Informatik",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           }
         }
@@ -72,14 +101,24 @@
     {
       "identifier": "4",
       "title": "ERZIEHUNG, BILDUNG, KULTUR",
-      "total": 6,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Anderes": 4,
-        "Interkantonale Vereinbarung": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Anderes": 5,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "410",
+          "title": "Schulen",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Anderes": 1
+          }
+        },
         {
           "identifier": "415",
           "title": "Hochschulen, Fachhochschulen, Fachschulen",
@@ -133,12 +172,21 @@
     {
       "identifier": "6",
       "title": "FINANZEN, REGALIEN, STAATLICHE UNTERNEHMUNGEN",
-      "total": 1,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 6
       },
       "children": [
+        {
+          "identifier": "641",
+          "title": "Steuern",
+          "total": 5,
+          "own": 5,
+          "by_type": {
+            "Anderes": 5
+          }
+        },
         {
           "identifier": "661",
           "title": "Kantonalbank und Bürgschaftsfonds",
@@ -153,10 +201,13 @@
     {
       "identifier": "7",
       "title": "RAUM- UND BAUORDNUNG, ÖFFENTLICHE WERKE, ENERGIE, VERKEHR, UMWELTSCHUTZ",
-      "total": 1,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Gesetz": 2,
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -166,6 +217,43 @@
           "own": 1,
           "by_type": {
             "Interkantonale Vereinbarung": 1
+          }
+        },
+        {
+          "identifier": "740",
+          "title": "Wasserbau",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        },
+        {
+          "identifier": "774",
+          "title": "Schifffahrt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "783",
+          "title": "Gewässerschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
+        {
+          "identifier": "786",
+          "title": "Natur- und Landschaftsschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
           }
         }
       ]
@@ -212,20 +300,20 @@
     {
       "identifier": "9",
       "title": "VOLKSWIRTSCHAFT",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
+        "Interkantonale Vereinbarung": 2,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "975",
           "title": "Markt und Gewerbe",
-          "total": 2,
-          "own": 2,
+          "total": 3,
+          "own": 3,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
+            "Interkantonale Vereinbarung": 2,
             "Anderes": 1
           }
         }
@@ -236,12 +324,12 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Anderes": 3,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -262,6 +350,28 @@
               "by_type": {
                 "Anderes": 2,
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.90",
+              "title": "Gesundheitspflege, schulpsychologische Dienste",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Anderes": 1
               }
             }
           ]
@@ -291,12 +401,61 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 4
       },
       "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 3
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.10",
+                  "title": "Bundessteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "6.20.10.40",
+                  "title": "Pauschale Steueranrechnung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "6.20.60",
+              "title": "Verrechnungssteuer",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "6.40",
           "title": "Staatliche Unternehmen",
@@ -322,31 +481,84 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 5,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 3,
-        "Anderes": 2
+        "Interkantonale Vereinbarung": 4,
+        "Anderes": 4,
+        "Gesetz": 2
       },
       "children": [
         {
-          "identifier": "7.50",
-          "title": "Verkehr",
-          "total": 3,
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 3
+            "Gesetz": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.20.20",
+                  "title": "Gewässernutzung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 3,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "7.50.60",
               "title": "Schifffahrt",
-              "total": 3,
+              "total": 4,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 3
+                "Interkantonale Vereinbarung": 3,
+                "Gesetz": 1
               },
               "children": [
+                {
+                  "identifier": "7.50.60.10",
+                  "title": "Schiffssteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                },
                 {
                   "identifier": "7.50.60.20",
                   "title": "Schifffahrtspolizei",
@@ -361,14 +573,43 @@
           ]
         },
         {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
-          "total": 2,
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 3
+          },
+          "children": [
+            {
+              "identifier": "7.70.10",
+              "title": "Landschaftsschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "7.70.70",
               "title": "Denkmalschutz, Kulturgüterschutz",
@@ -442,24 +683,29 @@
     }
   ],
   "languages_available": {
-    "de": 17
+    "de": 31
   },
   "available_years_for_entity": [
     "1825",
     "1850",
     "1874",
+    "1877",
     "1878",
     "1880",
     "1892",
     "1895",
     "1911",
     "1913",
+    "1914",
     "1915",
     "1916",
+    "1918",
     "1927",
     "1928",
+    "1931",
     "1935",
     "1937",
+    "1938",
     "1939",
     "1942",
     "1943",
@@ -469,13 +715,19 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
+    "1960",
     "1961",
+    "1963",
     "1964",
     "1965",
+    "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

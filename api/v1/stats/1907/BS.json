@@ -1,14 +1,16 @@
 {
   "year": "1907",
+  "year_semantics": "enactment",
   "entity": "BS",
   "total": 3,
   "categorized": 3,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "171 Einwohnergemeinde Basel": 1
+        "171 Einwohnergemeinde Basel": 1,
+        "370 Wohnhygiene · Baden · Kunsteisbahnen": 1
       },
       "by_global_category": {
         "1.30.50 Gemeindefusionen": 1
@@ -21,15 +23,6 @@
       },
       "by_global_category": {
         "1.30.50 Gemeindefusionen": 1
-      }
-    },
-    "Gemeindeerlass": {
-      "total": 1,
-      "by_topic": {
-        "BaB 171 Bürgergemeinde Kleinhüningen": 1
-      },
-      "by_global_category": {
-        "1.30.60 Bürgergemeinden, Allmend": 1
       }
     }
   },
@@ -69,36 +62,56 @@
       ]
     },
     {
-      "identifier": "BaB",
-      "title": "Bürgergemeinde Basel",
+      "identifier": "3",
+      "title": "Gesundheit",
       "total": 1,
-      "own": 1,
+      "own": 0,
       "by_type": {
-        "Gemeindeerlass": 1
-      }
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "37",
+          "title": "Wohnhygiene · Baden · Kunsteisbahnen · Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "370",
+              "title": "Wohnhygiene · Baden · Kunsteisbahnen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
         "Gesetz": 1,
-        "Anderes": 1,
-        "Gemeindeerlass": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.30",
           "title": "Gemeinden",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
             "Gesetz": 1,
-            "Anderes": 1,
-            "Gemeindeerlass": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -110,15 +123,6 @@
                 "Gesetz": 1,
                 "Anderes": 1
               }
-            },
-            {
-              "identifier": "1.30.60",
-              "title": "Bürgergemeinden, Allmend",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gemeindeerlass": 1
-              }
             }
           ]
         }
@@ -129,40 +133,50 @@
     "de": 3
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -188,7 +202,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",
@@ -258,14 +271,21 @@
     "2026"
   ],
   "available_entities_for_year": [
+    "AG",
+    "AR",
     "BE",
+    "BL",
     "BS",
     "CH",
+    "FR",
     "GE",
+    "LU",
     "NE",
+    "SG",
     "SO",
     "TG",
     "TI",
-    "VD"
+    "VD",
+    "VS"
   ]
 }

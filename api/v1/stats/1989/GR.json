@@ -1,10 +1,29 @@
 {
   "year": "1989",
+  "year_semantics": "enactment",
   "entity": "GR",
-  "total": 3,
-  "categorized": 3,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "74 Jagdregal": 5
+      },
+      "by_global_category": {
+        "6.30.50.10 Jäger": 2,
+        "3.50 Ordnungsbussen": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "430 Allgemeine Berufsbildung": 1,
+        "74 Jagdregal": 1
+      },
+      "by_global_category": {}
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
@@ -12,12 +31,14 @@
       },
       "by_global_category": {}
     },
-    "Reglement": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "430 Allgemeine Berufsbildung": 1
+        "545 Arbeitslosenversicherung, Arbeitsvermittlung": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "8.30.110 Arbeitslosenversicherung": 1
+      }
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -25,6 +46,15 @@
         "548 Familienschutz": 1
       },
       "by_global_category": {}
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "74 Jagdregal": 1
+      },
+      "by_global_category": {
+        "7.70.20 Tierschutz": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -93,21 +123,32 @@
     {
       "identifier": "5",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "54",
           "title": "Sozialversicherung, Arbeitsvermittlung, Öffentliche Sozialhilfe, Familienschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "545",
+              "title": "Arbeitslosenversicherung, Arbeitsvermittlung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "548",
               "title": "Familienschutz",
@@ -120,22 +161,177 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Finanzwesen, Regalien",
+      "total": 7,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 5,
+        "Anderes": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "74",
+          "title": "Jagdregal",
+          "total": 7,
+          "own": 7,
+          "by_type": {
+            "Verordnung": 5,
+            "Anderes": 1,
+            "Reglement": 1
+          }
+        }
+      ]
     }
   ],
-  "by_global_category_tree": [],
+  "by_global_category_tree": [
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "3.50",
+          "title": "Ordnungsbussen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "6.30.50",
+              "title": "Jagd",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "6.30.50.10",
+                  "title": "Jäger",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.20",
+              "title": "Tierschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "languages_available": {
-    "de": 3,
-    "it": 3
+    "de": 11,
+    "it": 11
   },
   "available_years_for_entity": [
+    "1846",
     "1877",
     "1889",
     "1901",
     "1908",
     "1913",
+    "1916",
+    "1917",
+    "1922",
     "1923",
     "1925",
     "1927",
+    "1929",
+    "1932",
     "1937",
     "1943",
     "1946",
@@ -144,9 +340,12 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1956",
+    "1957",
     "1958",
     "1959",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -167,6 +366,7 @@
     "1978",
     "1979",
     "1980",
+    "1981",
     "1982",
     "1983",
     "1984",
@@ -184,6 +384,7 @@
     "1996",
     "1997",
     "1998",
+    "1999",
     "2000",
     "2001",
     "2002",
@@ -215,6 +416,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",

@@ -1,36 +1,15 @@
 {
   "year": "2008",
+  "year_semantics": "enactment",
   "entity": "SO",
-  "total": 9,
-  "categorized": 9,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
-    "Interkantonale Vereinbarung": {
-      "total": 3,
-      "by_topic": {
-        "436.93 Denkmäler": 1,
-        "625.7 Interkantonale Vereinbarungen": 1,
-        "926.2 Rebbau": 1
-      },
-      "by_global_category": {
-        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
-        "6.30.60.20 Reviere": 1,
-        "9.20.80.10 Rebbau": 1
-      }
-    },
-    "Verordnung": {
-      "total": 3,
-      "by_topic": {
-        "512.2 Waffen, Munition, Sprengstoffe": 1,
-        "812.4 Schutz vor Luftverunreinigung": 1
-      },
-      "by_global_category": {
-        "5.30.30 Waffen und Munition": 1
-      }
-    },
     "Anderes": {
-      "total": 2,
+      "total": 5,
       "by_topic": {
+        "416.3 Berufslehre": 1,
         "511.5 Interkantonale Zusammenarbeit": 1,
         "711.6 Öffentliche Bauvorschriften": 1
       },
@@ -39,63 +18,115 @@
         "7.10.70 Parkplätze": 1
       }
     },
+    "Reglement": {
+      "total": 4,
+      "by_topic": {},
+      "by_global_category": {}
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "415 Hochschulen": 1
+      },
+      "by_global_category": {
+        "4.100.20 Schulgelder": 1
+      }
+    },
     "Gesetz": {
       "total": 1,
       "by_topic": {
-        "822.4 Bekämpfung der Schwarzarbeit": 1
+        "221 Zivilprozessordnung": 1
+      },
+      "by_global_category": {}
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "625.7 Interkantonale Vereinbarungen": 1
       },
       "by_global_category": {
-        "8.20.20.50 Schwarzarbeit": 1
+        "6.30.60.20 Reviere": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "Schule, Kirche, Kultur",
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilprozessrecht, Vollstreckung",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "43",
-          "title": "Kultur",
+          "identifier": "22",
+          "title": "Zivilprozessrecht",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "436",
-              "title": "Altertümerschutz",
+              "identifier": "221",
+              "title": "Zivilprozessordnung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule, Kirche, Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schule",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "415",
+              "title": "Hochschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "416",
+              "title": "Berufsbildung",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Anderes": 1
               },
               "children": [
                 {
-                  "identifier": "436.9",
-                  "title": "Stiftungen zur Erhaltung von Kulturdenkmälern",
+                  "identifier": "416.3",
+                  "title": "Berufslehre",
                   "total": 1,
-                  "own": 0,
+                  "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "436.93",
-                      "title": "Denkmäler",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Interkantonale Vereinbarung": 1
-                      }
-                    }
-                  ]
+                    "Anderes": 1
+                  }
                 }
               ]
             }
@@ -106,21 +137,19 @@
     {
       "identifier": "5",
       "title": "Polizei, Militär, Zivilschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "51",
           "title": "Polizei",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -139,26 +168,6 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
-                  }
-                }
-              ]
-            },
-            {
-              "identifier": "512",
-              "title": "Andere polizeiliche Aufgaben",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "512.2",
-                  "title": "Waffen, Munition, Sprengstoffe",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
                   }
                 }
               ]
@@ -250,20 +259,22 @@
           ]
         }
       ]
-    },
+    }
+  ],
+  "by_global_category_tree": [
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 2,
       "own": 0,
       "by_type": {
         "Verordnung": 1,
-        "Gesetz": 1
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "81",
-          "title": "Gesundheit",
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -271,113 +282,16 @@
           },
           "children": [
             {
-              "identifier": "812",
-              "title": "Umweltschutz",
+              "identifier": "4.100.20",
+              "title": "Schulgelder",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "812.4",
-                  "title": "Schutz vor Luftverunreinigung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         },
-        {
-          "identifier": "82",
-          "title": "Arbeit",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "822",
-              "title": "Arbeitnehmerschutz",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "822.4",
-                  "title": "Bekämpfung der Schwarzarbeit",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Volkswirtschaft",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "92",
-          "title": "Landwirtschaft",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "926",
-              "title": "Produktion und Absatz. Verwertungsmassnahmen",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "926.2",
-                  "title": "Rebbau",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "by_global_category_tree": [
-    {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
         {
           "identifier": "4.180",
           "title": "Kunst, Kultur, Sport",
@@ -394,37 +308,6 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "5.30",
-          "title": "Innere Sicherheit",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "5.30.30",
-              "title": "Waffen und Munition",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
               }
             }
           ]
@@ -476,11 +359,10 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -502,118 +384,15 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "7.70.70",
-              "title": "Denkmalschutz, Kulturgüterschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "8.20.20",
-              "title": "Arbeitsmarkt",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.20.20.50",
-                  "title": "Schwarzarbeit",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "9.20",
-          "title": "Landwirtschaft",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "9.20.80",
-              "title": "Pflanzenbau",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "9.20.80.10",
-                  "title": "Rebbau",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 13
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -622,6 +401,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -629,23 +411,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -658,9 +444,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",

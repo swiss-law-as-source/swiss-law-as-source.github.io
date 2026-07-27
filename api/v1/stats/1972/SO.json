@@ -1,80 +1,106 @@
 {
   "year": "1972",
+  "year_semantics": "enactment",
   "entity": "SO",
-  "total": 9,
-  "categorized": 9,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 6,
+      "total": 10,
       "by_topic": {
-        "212.2 Familienrecht": 1,
+        "618.1 Grundlagen": 5,
         "232.5 Interkantonal": 1,
-        "413.2 Behörde": 1,
         "416.9 Höhere berufliche Lehranstalten": 1,
+        "618.2 Feuerwehr-Dienst": 1,
         "811.4 Andere Berufe der Gesundheitspflege": 1
       },
       "by_global_category": {
-        "4.120.30 Schulaufsicht": 1,
         "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "5.20.30.40.10 Elementarschadenversicherung": 1,
+        "5.20.30.30 Kaminfeger": 1,
+        "5.20.30.10 Feuerwehr": 1,
         "8.10.30.30 Krankenpflegepersonal": 1
       }
     },
     "Verordnung": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
-        "435.1 Allgemeines": 1,
-        "813.1 Heilmittel": 1,
+        "122.1 Geschäftsführung": 1,
+        "411.4 Unterricht": 1,
+        "413.3 Lehrer": 1,
+        "523.1 Jugend+Sport": 1,
         "813.3 Gifte": 1
       },
       "by_global_category": {
-        "7.70.30 Pflanzenschutz": 1,
-        "8.10.70 Heil- und Betäubungsmittel": 1,
+        "4.150 Schulsport": 1,
+        "4.80.10 Sonderschulen": 1,
+        "4.180.30 Sport": 1,
         "7.60.70 Gifte, Chemikalien": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "618.5 Prävention und Intervention": 1
+      },
+      "by_global_category": {
+        "5.20.30.10 Feuerwehr": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht, Zivilprozessrecht, Vollstreckung",
-      "total": 2,
+      "identifier": "1",
+      "title": "Grundlagen, Organisation, Gemeinden",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "21",
-          "title": "Zivilrecht",
+          "identifier": "12",
+          "title": "Organisation",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "212",
-              "title": "Einzelne Rechtsgebiete",
+              "identifier": "122",
+              "title": "Regierungsrat",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "212.2",
-                  "title": "Familienrecht",
+                  "identifier": "122.1",
+                  "title": "Geschäftsführung",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Anderes": 1
+                    "Verordnung": 1
                   }
                 }
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilprozessrecht, Vollstreckung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
         {
           "identifier": "23",
           "title": "Vollstreckung",
@@ -114,35 +140,56 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Verordnung": 2,
+            "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "411",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "411.4",
+                  "title": "Unterricht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "413",
               "title": "Volksschule",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "413.2",
-                  "title": "Behörde",
+                  "identifier": "413.3",
+                  "title": "Lehrer",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Anderes": 1
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -168,10 +215,21 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Polizei, Militär, Zivilschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
         {
-          "identifier": "43",
-          "title": "Kultur",
+          "identifier": "52",
+          "title": "Militär",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -179,8 +237,8 @@
           },
           "children": [
             {
-              "identifier": "435",
-              "title": "Natur- und Heimatschutz",
+              "identifier": "523",
+              "title": "Vor- und ausserdienstliche Tätigkeit",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -188,8 +246,8 @@
               },
               "children": [
                 {
-                  "identifier": "435.1",
-                  "title": "Allgemeines",
+                  "identifier": "523.1",
+                  "title": "Jugend+Sport",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -203,23 +261,86 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 3,
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Anderes": 1
+        "Anderes": 6,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "Finanzen",
+          "total": 7,
+          "own": 0,
+          "by_type": {
+            "Anderes": 6,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "618",
+              "title": "Gebäudeversicherung und Feuerpolizei",
+              "total": 7,
+              "own": 0,
+              "by_type": {
+                "Anderes": 6,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "618.1",
+                  "title": "Grundlagen",
+                  "total": 5,
+                  "own": 5,
+                  "by_type": {
+                    "Anderes": 5
+                  }
+                },
+                {
+                  "identifier": "618.2",
+                  "title": "Feuerwehr-Dienst",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "618.5",
+                  "title": "Prävention und Intervention",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 2,
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -245,21 +366,12 @@
             {
               "identifier": "813",
               "title": "Heilmittel, Betäubungsmittel, Gifte",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 1
               },
               "children": [
-                {
-                  "identifier": "813.1",
-                  "title": "Heilmittel",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                },
                 {
                   "identifier": "813.3",
                   "title": "Gifte",
@@ -280,10 +392,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Verordnung": 3,
+        "Anderes": 1
       },
       "children": [
         {
@@ -296,22 +409,126 @@
           }
         },
         {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "4.120.30",
-              "title": "Schulaufsicht",
+              "identifier": "4.80.10",
+              "title": "Sonderschulen",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "4.150",
+          "title": "Schulsport",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.30",
+              "title": "Sport",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Anderes": 3,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Anderes": 3,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 4,
+              "own": 0,
+              "by_type": {
+                "Anderes": 3,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.10",
+                  "title": "Feuerwehr",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 1,
+                    "Reglement": 1
+                  }
+                },
+                {
+                  "identifier": "5.20.30.30",
+                  "title": "Kaminfeger",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "5.20.30.40",
+                  "title": "Gebäudeversicherung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "5.20.30.40.10",
+                      "title": "Elementarschadenversicherung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -320,10 +537,10 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 1
       },
       "children": [
         {
@@ -345,47 +562,25 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "7.70.30",
-              "title": "Pflanzenschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -407,15 +602,6 @@
                   }
                 }
               ]
-            },
-            {
-              "identifier": "8.10.70",
-              "title": "Heil- und Betäubungsmittel",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
             }
           ]
         }
@@ -423,9 +609,10 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 16
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -434,6 +621,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -441,23 +631,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -470,9 +664,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",
@@ -550,6 +744,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BS",
     "CH",
@@ -564,7 +759,6 @@
     "SH",
     "SO",
     "SZ",
-    "TG",
     "TI",
     "UR",
     "VD",

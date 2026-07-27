@@ -1,20 +1,35 @@
 {
   "year": "1963",
+  "year_semantics": "enactment",
   "entity": "SO",
-  "total": 7,
-  "categorized": 7,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 5,
+      "total": 6,
       "by_topic": {
         "436.91 Schlösser": 2,
+        "126.515.85 Volksschule": 1,
         "817.1 Kantonales Spital": 1,
         "925.1 Berufsschulen": 1
       },
       "by_global_category": {
         "7.70.70 Denkmalschutz, Kulturgüterschutz": 2,
+        "4.90.20 Löhne, Entschädigungen": 1,
         "9.20.70.10 Landwirtschaftliche Schule": 1
+      }
+    },
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "126.515.85 Volksschule": 3,
+        "413.2 Behörde": 1
+      },
+      "by_global_category": {
+        "4.90.20 Löhne, Entschädigungen": 2,
+        "4.10.20 Kindergarten": 1,
+        "4.120.80 Schulleitung": 1
       }
     },
     "Gesetz": {
@@ -25,34 +40,29 @@
       "by_global_category": {
         "1.20.80 Verfahrensfristen": 1
       }
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "212.2 Familienrecht": 1
-      },
-      "by_global_category": {
-        "3.70.10.10 Personal": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 3,
+        "Gesetz": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 1,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 3,
+            "Gesetz": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -74,46 +84,62 @@
                   }
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Zivilrecht, Zivilprozessrecht, Vollstreckung",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Reglement": 1
-      },
-      "children": [
-        {
-          "identifier": "21",
-          "title": "Zivilrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Reglement": 1
-          },
-          "children": [
+            },
             {
-              "identifier": "212",
-              "title": "Einzelne Rechtsgebiete",
-              "total": 1,
+              "identifier": "126",
+              "title": "Staatspersonal",
+              "total": 4,
               "own": 0,
               "by_type": {
-                "Reglement": 1
+                "Verordnung": 3,
+                "Anderes": 1
               },
               "children": [
                 {
-                  "identifier": "212.2",
-                  "title": "Familienrecht",
-                  "total": 1,
-                  "own": 1,
+                  "identifier": "126.5",
+                  "title": "Staatliche Leistungen aus dem Anstellungsverhältnis",
+                  "total": 4,
+                  "own": 0,
                   "by_type": {
-                    "Reglement": 1
-                  }
+                    "Verordnung": 3,
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "126.51",
+                      "title": "Besoldungen",
+                      "total": 4,
+                      "own": 0,
+                      "by_type": {
+                        "Verordnung": 3,
+                        "Anderes": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "126.515",
+                          "title": "Besoldungen, Einzelregelungen",
+                          "total": 4,
+                          "own": 0,
+                          "by_type": {
+                            "Verordnung": 3,
+                            "Anderes": 1
+                          },
+                          "children": [
+                            {
+                              "identifier": "126.515.85",
+                              "title": "Volksschule",
+                              "total": 4,
+                              "own": 4,
+                              "by_type": {
+                                "Verordnung": 3,
+                                "Anderes": 1
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -124,12 +150,44 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Schule",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "413",
+              "title": "Volksschule",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.2",
+                  "title": "Behörde",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "43",
           "title": "Kultur",
@@ -292,42 +350,74 @@
       ]
     },
     {
-      "identifier": "3",
-      "title": "Strafrecht",
-      "total": 1,
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Verordnung": 4,
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "3.70",
-          "title": "Straf- und Massnahmenvollzug",
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "3.70.10",
-              "title": "Anstalten",
+              "identifier": "4.10.20",
+              "title": "Kindergarten",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "3.70.10.10",
-                  "title": "Personal",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                }
-              ]
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.20",
+              "title": "Löhne, Entschädigungen",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 2,
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.80",
+              "title": "Schulleitung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -408,9 +498,10 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 12
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -419,6 +510,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -426,23 +520,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -455,9 +553,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",
@@ -535,13 +633,19 @@
   "available_entities_for_year": [
     "AG",
     "AR",
+    "BE",
     "BL",
     "BS",
     "CH",
     "FR",
     "GE",
+    "GL",
     "GR",
+    "LU",
     "NE",
+    "OW",
+    "SG",
+    "SH",
     "SO",
     "SZ",
     "TI",

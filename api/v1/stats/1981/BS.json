@@ -1,36 +1,49 @@
 {
   "year": "1981",
+  "year_semantics": "enactment",
   "entity": "BS",
-  "total": 9,
-  "categorized": 9,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Gemeindeerlass": {
-      "total": 6,
+      "total": 5,
       "by_topic": {
         "BeE 117 Gemeindegebiet": 1,
         "RiE 117 Gemeindegebiet": 1,
         "RiE 71 Planungskommission": 1,
         "RiE 72 Allmend": 1,
-        "RiE 77 Wasser · Energie": 1,
         "RiE 9 Wirtschaft · Freizeitgärten": 1
       },
       "by_global_category": {
         "1.10.50.20 Grenzen": 2,
         "9.60.70 Messen, Märkte": 1,
-        "7.30.20.20 Gewässernutzung": 1,
         "9.30.20 Forstpersonal": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "411 Behörden · Personal": 1,
-        "446 Fakultäten": 1
+        "446 Fakultäten": 1,
+        "497 Denkmalschutz · Archäologie": 1
       },
       "by_global_category": {
         "4.120.80 Schulleitung": 1,
-        "4.40.60 Human- und Veterianärmedizinische Fakultät": 1
+        "4.40.60 Human- und Veterianärmedizinische Fakultät": 1,
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
+      }
+    },
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "568 Waffen und Munition · Sprengstoffe": 1,
+        "739 Bauinspektorat": 1,
+        "812 Arbeitnehmerschutz": 1
+      },
+      "by_global_category": {
+        "5.30.40 Sprengstoffe": 1,
+        "8.20.40 Heimarbeit": 1
       }
     },
     "Gesetz": {
@@ -76,10 +89,10 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 3
       },
       "children": [
         {
@@ -121,6 +134,119 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "49",
+          "title": "Ausbildungsbeiträge · Wissenschafts- und Kulturpflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "497",
+              "title": "Denkmalschutz · Archäologie",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Polizei · Militär · Feuerwehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "56",
+          "title": "Gewerbepolizei · Waffen und Munition",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "568",
+              "title": "Waffen und Munition · Sprengstoffe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "73",
+          "title": "Hochbauten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "739",
+              "title": "Bauinspektorat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Arbeit · Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "812",
+              "title": "Arbeitnehmerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -136,10 +262,10 @@
     {
       "identifier": "RiE",
       "title": "Einwohnergemeinde Riehen",
-      "total": 5,
-      "own": 5,
+      "total": 4,
+      "own": 4,
       "by_type": {
-        "Gemeindeerlass": 5
+        "Gemeindeerlass": 4
       }
     }
   ],
@@ -238,42 +364,93 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.40",
+              "title": "Sprengstoffe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gemeindeerlass": 1
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "7.30",
-          "title": "Öffentliche Werke",
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gemeindeerlass": 1
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "7.30.20",
-              "title": "Wasserbau",
+              "identifier": "7.70.70",
+              "title": "Denkmalschutz, Kulturgüterschutz",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Gemeindeerlass": 1
-              },
-              "children": [
-                {
-                  "identifier": "7.30.20.20",
-                  "title": "Gewässernutzung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gemeindeerlass": 1
-                  }
-                }
-              ]
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.40",
+              "title": "Heimarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -332,43 +509,53 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 12
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -394,7 +581,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",
@@ -474,6 +660,7 @@
     "FR",
     "GE",
     "GL",
+    "GR",
     "JU",
     "LU",
     "NE",

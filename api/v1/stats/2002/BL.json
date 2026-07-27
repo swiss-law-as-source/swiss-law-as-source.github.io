@@ -1,40 +1,59 @@
 {
   "year": "2002",
+  "year_semantics": "enactment",
   "entity": "BL",
-  "total": 8,
-  "categorized": 8,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 10,
       "by_topic": {
+        "640 Allgemeines": 6,
         "52 Jagd": 1,
+        "648 Schullasten": 1,
+        "683 Kaufmännische Berufe": 1,
         "853 Behindertenangebote": 1
       },
       "by_global_category": {
+        "4.120.60 Schulbauten": 3,
+        "4.120.110 Qualitätssicherung": 1,
+        "4.130 Privatschulen": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
         "2.10.20.20 Pflegekinder, Adoption": 1
       }
     },
-    "Anderes": {
-      "total": 2,
+    "Interkantonale Vereinbarung": {
+      "total": 6,
       "by_topic": {
+        "687 Berufe im Gesundheitswesen": 2,
+        "643 Weiterführende Schulen": 1,
+        "649 Interkantonale Vereinbarungen": 1,
+        "664 Universität Basel": 1,
+        "681 Berufsbildung, berufliche Grundbildung": 1
+      },
+      "by_global_category": {
+        "4.20.10 Mittelschule": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "4.70.10 Erwachsenenbildung": 1
+      }
+    },
+    "Anderes": {
+      "total": 5,
+      "by_topic": {
+        "146 Bildungs-, Kultur- und Sportdirektion": 1,
         "640 Allgemeines": 1,
+        "683 Kaufmännische Berufe": 1,
+        "684 Berufe in der chemischen Industrie": 1,
         "93 Spitäler": 1
       },
       "by_global_category": {
+        "4.80.10 Sonderschulen": 1,
         "4.10.20 Kindergarten": 1,
-        "8.30.60.10.20 Vereinbarungen": 1
-      }
-    },
-    "Reglement": {
-      "total": 2,
-      "by_topic": {
-        "643 Weiterführende Schulen": 1,
-        "683 Kaufmännische Berufe": 1
-      },
-      "by_global_category": {
         "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1
+        "8.30.60.10.20 Vereinbarungen": 1
       }
     },
     "Gesetz": {
@@ -46,17 +65,48 @@
         "2.10.20.10 Vormundschaft": 1
       }
     },
-    "Interkantonale Vereinbarung": {
+    "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
-        "664 Universität Basel": 1
+        "642 Sekundarschulen": 1
       },
       "by_global_category": {
-        "4.70.10 Erwachsenenbildung": 1
+        "4.120.20 Schulgemeinden": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Regierungsrat und Verwaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "146",
+              "title": "Bildungs-, Kultur- und Sportdirektion",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
@@ -111,31 +161,44 @@
     {
       "identifier": "6",
       "title": "Kultur, Bildung, Ausbildung",
-      "total": 4,
+      "total": 18,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
-        "Anderes": 1,
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 8,
+        "Interkantonale Vereinbarung": 6,
+        "Anderes": 3,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "64",
           "title": "Schulen",
-          "total": 2,
+          "total": 11,
           "own": 0,
           "by_type": {
+            "Verordnung": 7,
+            "Interkantonale Vereinbarung": 2,
             "Anderes": 1,
-            "Reglement": 1
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
               "identifier": "640",
               "title": "Allgemeines",
+              "total": 7,
+              "own": 7,
+              "by_type": {
+                "Verordnung": 6,
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "642",
+              "title": "Sekundarschulen",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Verordnung des Parlaments (Dekret)": 1
               }
             },
             {
@@ -144,7 +207,25 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "648",
+              "title": "Schullasten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "649",
+              "title": "Interkantonale Vereinbarungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -172,19 +253,49 @@
         {
           "identifier": "68",
           "title": "Berufliche Ausbildung",
-          "total": 1,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Interkantonale Vereinbarung": 3,
+            "Anderes": 2,
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "683",
-              "title": "Kaufmännische Berufe",
+              "identifier": "681",
+              "title": "Berufsbildung, berufliche Grundbildung",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "683",
+              "title": "Kaufmännische Berufe",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 1,
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "684",
+              "title": "Berufe in der chemischen Industrie",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "687",
+              "title": "Berufe im Gesundheitswesen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
               }
             }
           ]
@@ -301,21 +412,23 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "total": 13,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
-        "Anderes": 1,
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 7,
+        "Anderes": 3,
+        "Interkantonale Vereinbarung": 2,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "4.10",
           "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -326,37 +439,49 @@
               "by_type": {
                 "Anderes": 1
               }
+            },
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         },
         {
           "identifier": "4.20",
           "title": "Sekundarstufe II",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "4.20.20",
-              "title": "Fachmittelschulen, Diplommittelschulen",
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "4.20.20",
+              "title": "Fachmittelschulen, Diplommittelschulen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 1,
+                "Verordnung": 1
               }
             }
           ]
-        },
-        {
-          "identifier": "4.60",
-          "title": "Tertiärstufe: Höhere Fachschulen",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Reglement": 1
-          }
         },
         {
           "identifier": "4.70",
@@ -373,6 +498,108 @@
               "total": 1,
               "own": 1,
               "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.80.10",
+              "title": "Sonderschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 4,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.20",
+              "title": "Schulgemeinden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            },
+            {
+              "identifier": "4.120.60",
+              "title": "Schulbauten",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 3
+              }
+            },
+            {
+              "identifier": "4.120.110",
+              "title": "Qualitätssicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.130",
+          "title": "Privatschulen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
                 "Interkantonale Vereinbarung": 1
               }
             }
@@ -435,27 +662,41 @@
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 23
   },
   "available_years_for_entity": [
     "1815",
     "1828",
-    "1829",
     "1834",
     "1836",
+    "1865",
     "1870",
     "1876",
     "1881",
-    "1903",
+    "1888",
+    "1889",
+    "1892",
+    "1896",
+    "1902",
+    "1907",
+    "1908",
     "1909",
+    "1911",
+    "1914",
     "1916",
     "1919",
     "1920",
+    "1921",
+    "1922",
+    "1923",
     "1925",
+    "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1944",
+    "1946",
     "1947",
     "1948",
     "1949",
@@ -463,8 +704,10 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -472,6 +715,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",

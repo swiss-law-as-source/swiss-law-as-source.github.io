@@ -1,32 +1,43 @@
 {
   "year": "1988",
+  "year_semantics": "enactment",
   "entity": "OW",
-  "total": 5,
-  "categorized": 5,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
         "113 Niederlassung, Aufenthalt, Ausländerrecht": 1,
+        "419 Ausbildungsbeiträge": 1,
         "610 Finanzhaushalt": 1,
+        "780 Umweltschutz": 1,
         "874 Jugendhilfe und Elternberatung": 1
       },
       "by_global_category": {
         "1.10.70.20.10 Asylwesen": 1,
+        "4.100.20 Schulgelder": 1,
         "6.10.10 Budget und Rechnung": 1,
+        "7.60.60 Strahlenschutz": 1,
         "8.70.30.20 Kinder- und Jugendheime": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 5,
       "by_topic": {
+        "213 Sachenrecht, Grundbuch, Grundstückschätzungen": 1,
         "416 Berufsbildung, Berufsberatung, Erwachsenenbildung": 1,
-        "772 Öffentlicher Verkehr": 1
+        "772 Öffentlicher Verkehr": 1,
+        "870 Sozialhilfe, Entwicklungshilfe": 1,
+        "952 Mass und Gewicht": 1
       },
       "by_global_category": {
+        "2.10.40.10 Schätzung von Grundstücken": 1,
         "8.10.30.30 Krankenpflegepersonal": 1,
-        "7.50.10.20 Eisenbahn": 1
+        "7.50.10.20 Eisenbahn": 1,
+        "8.70.90 Familien- und Eheberatung": 1,
+        "9.60.20 Messwesen, Zahlungsverkehr": 1
       }
     }
   },
@@ -52,12 +63,33 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "ERZIEHUNG, BILDUNG, KULTUR",
+      "identifier": "2",
+      "title": "ZIVILRECHT, VOLLSTRECKUNG",
       "total": 1,
       "own": 0,
       "by_type": {
         "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "213",
+          "title": "Sachenrecht, Grundbuch, Grundstückschätzungen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "ERZIEHUNG, BILDUNG, KULTUR",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -67,6 +99,15 @@
           "own": 1,
           "by_type": {
             "Anderes": 1
+          }
+        },
+        {
+          "identifier": "419",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
           }
         }
       ]
@@ -94,10 +135,11 @@
     {
       "identifier": "7",
       "title": "RAUM- UND BAUORDNUNG, ÖFFENTLICHE WERKE, ENERGIE, VERKEHR, UMWELTSCHUTZ",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -108,18 +150,37 @@
           "by_type": {
             "Anderes": 1
           }
+        },
+        {
+          "identifier": "780",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
         }
       ]
     },
     {
       "identifier": "8",
       "title": "GESUNDHEIT, ARBEIT, SOZIALE SICHERHEIT",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "870",
+          "title": "Sozialhilfe, Entwicklungshilfe",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
         {
           "identifier": "874",
           "title": "Jugendhilfe und Elternberatung",
@@ -127,6 +188,26 @@
           "own": 1,
           "by_type": {
             "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "VOLKSWIRTSCHAFT",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "952",
+          "title": "Mass und Gewicht",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
           }
         }
       ]
@@ -187,6 +268,79 @@
       ]
     },
     {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.10",
+                  "title": "Schätzung von Grundstücken",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.20",
+              "title": "Schulgelder",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
@@ -220,10 +374,11 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -256,16 +411,36 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.60",
+              "title": "Strahlenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Anderes": 2,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
@@ -303,10 +478,11 @@
         {
           "identifier": "8.70",
           "title": "Fürsorge",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -328,6 +504,46 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.70.90",
+              "title": "Familien- und Eheberatung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.20",
+              "title": "Messwesen, Zahlungsverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -335,24 +551,29 @@
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 10
   },
   "available_years_for_entity": [
     "1825",
     "1850",
     "1874",
+    "1877",
     "1878",
     "1880",
     "1892",
     "1895",
     "1911",
     "1913",
+    "1914",
     "1915",
     "1916",
+    "1918",
     "1927",
     "1928",
+    "1931",
     "1935",
     "1937",
+    "1938",
     "1939",
     "1942",
     "1943",
@@ -362,13 +583,19 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
+    "1960",
     "1961",
+    "1963",
     "1964",
     "1965",
+    "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -430,6 +657,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

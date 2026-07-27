@@ -1,37 +1,222 @@
 {
   "year": "1983",
+  "year_semantics": "enactment",
   "entity": "BL",
-  "total": 3,
-  "categorized": 3,
+  "total": 25,
+  "categorized": 25,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 1,
+    "Anderes": {
+      "total": 11,
       "by_topic": {
+        "146 Bildungs-, Kultur- und Sportdirektion": 9,
+        "145 Sicherheitsdirektion": 1,
+        "82 Arbeitnehmerschutz": 1
+      },
+      "by_global_category": {
+        "1.20.20.30.20 Direktionen und Ämter": 6,
+        "4.30.30 Berufsorientierung": 1,
+        "4.120.40 Lehrmittel": 1,
+        "4.70.10 Erwachsenenbildung": 1,
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1
+      }
+    },
+    "Verordnung": {
+      "total": 8,
+      "by_topic": {
+        "140 Verwaltungsorganisation": 2,
+        "143 Volkswirtschafts- und Gesundheitsdirektion": 2,
+        "145 Sicherheitsdirektion": 1,
+        "146 Bildungs-, Kultur- und Sportdirektion": 1,
+        "36 Staatsbeiträge": 1,
         "61 Tierschutz": 1
       },
       "by_global_category": {
+        "1.20.20.40.80 Personalausschüsse, paritätische Kommissionen": 1,
+        "8.10.130.10.10 Lebensmittelaufsicht": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "1.20.20.30.20 Direktionen und Ämter": 1,
+        "4.170.30 Bibliotheken": 1,
+        "4.180.20 Kulturförderung": 1,
         "7.70.20 Tierschutz": 1
       }
     },
-    "Anderes": {
-      "total": 1,
+    "Gesetz": {
+      "total": 2,
       "by_topic": {
-        "82 Arbeitnehmerschutz": 1
+        "10 Grundlagen": 1,
+        "213 Grundstückserwerb": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1
+      }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "140 Verwaltungsorganisation": 1,
         "96 Krankheitsbekämpfung": 1
       },
       "by_global_category": {
         "8.10.100.10 Epidemien, Pandemien": 1
       }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "10 Grundlagen": 1
+      },
+      "by_global_category": {}
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "26 Vollzug, Rechtshilfe": 1
+      },
+      "by_global_category": {
+        "3.20.60 Kosten": 1
+      }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 19,
+      "own": 0,
+      "by_type": {
+        "Anderes": 10,
+        "Verordnung": 6,
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "14",
+          "title": "Regierungsrat und Verwaltung",
+          "total": 17,
+          "own": 0,
+          "by_type": {
+            "Anderes": 10,
+            "Verordnung": 6,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "140",
+              "title": "Verwaltungsorganisation",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 2,
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            },
+            {
+              "identifier": "143",
+              "title": "Volkswirtschafts- und Gesundheitsdirektion",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            },
+            {
+              "identifier": "145",
+              "title": "Sicherheitsdirektion",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 1,
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "146",
+              "title": "Bildungs-, Kultur- und Sportdirektion",
+              "total": 10,
+              "own": 10,
+              "by_type": {
+                "Anderes": 9,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "213",
+              "title": "Grundstückserwerb",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "26",
+          "title": "Vollzug, Rechtshilfe",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Finanzen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "36",
+          "title": "Staatsbeiträge",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Kultur, Bildung, Ausbildung",
@@ -95,6 +280,290 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 8,
+      "own": 0,
+      "by_type": {
+        "Anderes": 6,
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 8,
+          "own": 0,
+          "by_type": {
+            "Anderes": 6,
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 8,
+              "own": 0,
+              "by_type": {
+                "Anderes": 6,
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
+                  "total": 7,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 6,
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.20",
+                      "title": "Direktionen und Ämter",
+                      "total": 7,
+                      "own": 7,
+                      "by_type": {
+                        "Anderes": 6,
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.80",
+                      "title": "Personalausschüsse, paritätische Kommissionen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.20",
+                  "title": "Erwerb von Grundstücke durch Personen im Ausland",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                },
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.60",
+              "title": "Kosten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 6,
+      "own": 0,
+      "by_type": {
+        "Anderes": 4,
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.30",
+              "title": "Berufsorientierung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.70",
+          "title": "Weiterbildung (Quartärstufe)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.70.10",
+              "title": "Erwachsenenbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "4.120.40",
+              "title": "Lehrmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "4.120.90",
+              "title": "Gesundheitspflege, schulpsychologische Dienste",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.30",
+              "title": "Bibliotheken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.20",
+              "title": "Kulturförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
@@ -128,19 +597,21 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -162,6 +633,37 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.10",
+                  "title": "Lebensmittel und Gebrauchsgegenstände",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "8.10.130.10.10",
+                      "title": "Lebensmittelaufsicht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -169,27 +671,41 @@
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 25
   },
   "available_years_for_entity": [
     "1815",
     "1828",
-    "1829",
     "1834",
     "1836",
+    "1865",
     "1870",
     "1876",
     "1881",
-    "1903",
+    "1888",
+    "1889",
+    "1892",
+    "1896",
+    "1902",
+    "1907",
+    "1908",
     "1909",
+    "1911",
+    "1914",
     "1916",
     "1919",
     "1920",
+    "1921",
+    "1922",
+    "1923",
     "1925",
+    "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1944",
+    "1946",
     "1947",
     "1948",
     "1949",
@@ -197,8 +713,10 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -206,6 +724,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -268,6 +787,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",
@@ -287,6 +807,7 @@
     "SO",
     "SZ",
     "TG",
+    "TI",
     "UR",
     "VD",
     "VS",

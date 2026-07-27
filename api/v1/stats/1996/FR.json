@@ -1,45 +1,80 @@
 {
   "year": "1996",
+  "year_semantics": "enactment",
   "entity": "FR",
-  "total": 11,
-  "categorized": 11,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 6,
+      "by_topic": {
+        "122.23 Sicherheits- und Justizdirektion": 1,
+        "32 STRAFPROZESS": 1,
+        "341.1 Freiburger Strafanstalt": 1,
+        "431.0 Allgemeine Bestimmungen": 1,
+        "900 Allgemeine Bestimmungen": 1,
+        "910 Allgemeine Bestimmungen": 1
+      },
+      "by_global_category": {
+        "1.20.20.30.20 Direktionen und Ämter": 1,
+        "3.20.10 Strafprozessordnungen": 1,
+        "9.10 Wirtschaftsförderung": 1
+      }
+    },
     "Anderes": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "222.5 Arbeitsvertrag": 1,
-        "481.1 Staatsarchiv": 1,
+        "559 Interkantonale Zusammenarbeit": 1,
         "631 Kantonssteuern": 1,
+        "635.1 Handänderungs- und Grundpfandrechtssteuern": 1,
         "731.1 Vorbeugende Massnahmen": 1
       },
       "by_global_category": {
         "1.10.90.10 Gleichstellung von Mann und Frau": 1,
-        "4.170.20 Archive": 1,
+        "5.30.60 Sicherheitsunternehmen": 1,
         "2.10.30 Erbrecht": 1,
+        "6.20.20 Handänderungssteuern": 1,
         "5.20.30.30 Kaminfeger": 1
       }
     },
-    "Gesetz": {
-      "total": 3,
-      "by_topic": {
-        "32 STRAFPROZESS": 1,
-        "341.1 Freiburger Strafanstalt": 1,
-        "910 Allgemeine Bestimmungen": 1
-      },
-      "by_global_category": {
-        "3.20.10 Strafprozessordnungen": 1
-      }
-    },
     "Reglement": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
+        "114.22 Ausländer": 1,
         "420 Allgemeine Bestimmungen": 1,
+        "810 Allgemeine Bestimmungen": 1,
         "911.10 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
+        "1.10.70.20.20 Zwangsmassnahmen": 1,
         "4.30.20 Berufsmaturitätsschulen": 1,
+        "7.60.10 Abfälle": 1,
         "9.20.70.10 Landwirtschaftliche Schule": 1
+      }
+    },
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "222.3 Miete": 1,
+        "635.1 Handänderungs- und Grundpfandrechtssteuern": 1,
+        "821.44 Alkoholismus und andere Suchtmittelabhängigkeiten": 1,
+        "922 Jagd": 1
+      },
+      "by_global_category": {
+        "6.20.20 Handänderungssteuern": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "559 Interkantonale Zusammenarbeit": 1,
+        "821.10 Allgemeine Bestimmungen": 1
+      },
+      "by_global_category": {
+        "5.30.60 Sicherheitsunternehmen": 1,
+        "4.100.20 Schulgelder": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -50,27 +85,104 @@
       "by_global_category": {
         "1.30.50 Gemeindefusionen": 1
       }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "635.1 Handänderungs- und Grundpfandrechtssteuern": 1
-      },
-      "by_global_category": {
-        "6.20.20 Handänderungssteuern": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "STAAT - VOLK - BEHÖRDEN",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "11",
+          "title": "VOLK UND GEBIET",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "114",
+              "title": "Bürgerrecht - Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "114.2",
+                  "title": "Niederlassung und Aufenthalt",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "114.22",
+                      "title": "Ausländer",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Staatsrat und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.2",
+                  "title": "Kanzlei und Direktionen",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "122.23",
+                      "title": "Sicherheits- und Justizdirektion",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "14",
           "title": "GEMEINDEN",
@@ -107,30 +219,42 @@
     {
       "identifier": "2",
       "title": "PRIVATRECHT - ZIVILPROZESS - ZWANGSVOLLSTRECKUNG",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "22",
           "title": "OBLIGATIONENRECHT",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "222",
               "title": "Die einzelnen Vertragsverhältnisse",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Verordnung": 1,
                 "Anderes": 1
               },
               "children": [
+                {
+                  "identifier": "222.3",
+                  "title": "Miete",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
                 {
                   "identifier": "222.5",
                   "title": "Arbeitsvertrag",
@@ -204,7 +328,7 @@
       "own": 0,
       "by_type": {
         "Reglement": 1,
-        "Anderes": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -228,30 +352,30 @@
           ]
         },
         {
-          "identifier": "48",
-          "title": "KULTURELLE ANGELEGENHEITEN",
+          "identifier": "43",
+          "title": "HOCHSCHULEN",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "481",
-              "title": "Kulturelle Institutionen des Staates",
+              "identifier": "431",
+              "title": "Universität",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 1
               },
               "children": [
                 {
-                  "identifier": "481.1",
-                  "title": "Staatsarchiv",
+                  "identifier": "431.0",
+                  "title": "Allgemeine Bestimmungen",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Anderes": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -261,22 +385,56 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "FINANZEN",
+      "identifier": "5",
+      "title": "LANDESVERTEIDIGUNG - POLIZEI",
       "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "55",
+          "title": "POLIZEI",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "559",
+              "title": "Interkantonale Zusammenarbeit",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "FINANZEN",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "63",
           "title": "STEUERN",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
+            "Anderes": 2,
             "Verordnung": 1
           },
           "children": [
@@ -292,18 +450,20 @@
             {
               "identifier": "635",
               "title": "Besondere Steuern",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Anderes": 1,
                 "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "635.1",
                   "title": "Handänderungs- und Grundpfandrechtssteuern",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Anderes": 1,
                     "Verordnung": 1
                   }
                 }
@@ -356,15 +516,133 @@
       ]
     },
     {
-      "identifier": "9",
-      "title": "WIRTSCHAFT",
-      "total": 2,
+      "identifier": "8",
+      "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Reglement": 1
+        "Reglement": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "UMWELTSCHUTZ",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "810",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "82",
+          "title": "GESUNDHEIT",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "821",
+              "title": "Gesundheitspolizeiliche Massnahmen und Gesundheitsförderung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "821.1",
+                  "title": "Medizinalberufe",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "821.10",
+                      "title": "Allgemeine Bestimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Interkantonale Vereinbarung": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "821.4",
+                  "title": "Krankheitsbekämpfung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "821.44",
+                      "title": "Alkoholismus und andere Suchtmittelabhängigkeiten",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "WIRTSCHAFT",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2,
+        "Reglement": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "90",
+          "title": "WIRTSCHAFTLICHE ENTWICKLUNG",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "900",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "91",
           "title": "LANDWIRTSCHAFT",
@@ -416,6 +694,26 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "92",
+          "title": "FORSTWESEN - JAGD - FISCHEREI",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "922",
+              "title": "Jagd",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
@@ -424,22 +722,56 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
         "Anderes": 1,
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Reglement": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.20",
+                      "title": "Zwangsmassnahmen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "1.10.90",
               "title": "Grundrechte, Politische Rechte",
@@ -457,6 +789,48 @@
                   "by_type": {
                     "Anderes": 1
                   }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.20",
+                      "title": "Direktionen und Ämter",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -553,7 +927,7 @@
       "own": 0,
       "by_type": {
         "Reglement": 1,
-        "Anderes": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -577,21 +951,21 @@
           ]
         },
         {
-          "identifier": "4.170",
-          "title": "Dokumentation",
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
-              "identifier": "4.170.20",
-              "title": "Archive",
+              "identifier": "4.100.20",
+              "title": "Schulgelder",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -601,10 +975,11 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -637,34 +1012,90 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.60",
+              "title": "Sicherheitsunternehmen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "6.20",
           "title": "Steuern",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "6.20.20",
               "title": "Handänderungssteuern",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Reglement": 1
               }
             }
           ]
@@ -674,12 +1105,22 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "9.10",
+          "title": "Wirtschaftsförderung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
         {
           "identifier": "9.20",
           "title": "Landwirtschaft",
@@ -715,12 +1156,22 @@
     }
   ],
   "languages_available": {
-    "de": 11,
-    "fr": 11
+    "de": 22,
+    "fr": 22
   },
   "available_years_for_entity": [
+    "1804",
+    "1808",
+    "1825",
+    "1831",
+    "1832",
+    "1834",
+    "1836",
+    "1837",
     "1848",
+    "1850",
     "1852",
+    "1857",
     "1859",
     "1866",
     "1867",
@@ -729,23 +1180,39 @@
     "1874",
     "1875",
     "1879",
+    "1884",
+    "1889",
     "1893",
     "1899",
+    "1907",
+    "1909",
+    "1910",
+    "1911",
+    "1913",
     "1914",
+    "1916",
     "1917",
     "1918",
     "1920",
     "1921",
     "1922",
+    "1923",
     "1924",
+    "1925",
     "1926",
+    "1927",
     "1929",
     "1930",
+    "1931",
     "1934",
     "1935",
+    "1937",
     "1938",
+    "1939",
     "1942",
     "1943",
+    "1946",
+    "1948",
     "1949",
     "1950",
     "1951",
@@ -753,6 +1220,8 @@
     "1954",
     "1955",
     "1957",
+    "1958",
+    "1959",
     "1960",
     "1961",
     "1962",
@@ -818,8 +1287,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

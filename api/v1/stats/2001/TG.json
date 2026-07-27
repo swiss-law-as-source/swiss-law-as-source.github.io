@@ -1,109 +1,154 @@
 {
   "year": "2001",
+  "year_semantics": "enactment",
   "entity": "TG",
-  "total": 10,
-  "categorized": 10,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
       "total": 4,
       "by_topic": {
         "413.2 Kantonsschulen. Maturitätsschule für Erwachsene": 1,
-        "554.1 Gewerbe. Marktwesen. Öffentliche Veranstaltungen": 1,
-        "642 Eidgenössische Abgaben": 1,
-        "922 Jagd und Vogelschutz": 1
+        "416 Förderung der Ausbildung. Stipendien": 1,
+        "812 Heilmittel. Betäubungsmittel. Tabak": 1,
+        "910 Allgemein": 1
       },
       "by_global_category": {
         "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
-        "9.50.10.60.30 Spielbanken": 1,
-        "6.20.60 Verrechnungssteuer": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 3,
-      "by_topic": {
-        "412.6 Interkantonale Vereinbarungen": 3
-      },
-      "by_global_category": {
-        "4.50.10 Pädagogik": 1
+        "4.100.20 Schulgelder": 1,
+        "8.10.70 Heil- und Betäubungsmittel": 1
       }
     },
     "Gesetz": {
       "total": 2,
       "by_topic": {
-        "554.1 Gewerbe. Marktwesen. Öffentliche Veranstaltungen": 1,
-        "954 Elektrizitätsversorgung": 1
+        "176 Anwaltswesen": 1,
+        "414 Hochschulen": 1
       },
       "by_global_category": {
-        "9.50.10.60.30 Spielbanken": 1,
-        "7.40.40 Elektrizität": 1
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1
       }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "412.6 Interkantonale Vereinbarungen": 2
+      },
+      "by_global_category": {}
     },
     "Anderes": {
       "total": 1,
       "by_topic": {
-        "34 Strafvollzug": 1
+        "188.2 Erlasse der Katholischen Landeskirche": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "1.40.10 Römisch-Katholische Kirche": 1
+      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "3",
-      "title": "Strafrecht - Strafrechtspflege - Strafvollzug",
-      "total": 1,
+      "identifier": "1",
+      "title": "Staat - Volk - Behörden",
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "34",
-          "title": "Strafvollzug",
+          "identifier": "17",
+          "title": "Staatliche Gewalten. Behörden",
           "total": 1,
-          "own": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "176",
+              "title": "Anwaltswesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "18",
+          "title": "Staat und Kirche",
+          "total": 1,
+          "own": 0,
           "by_type": {
             "Anderes": 1
-          }
+          },
+          "children": [
+            {
+              "identifier": "188",
+              "title": "Katholische Landeskirche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "188.2",
+                  "title": "Erlasse der Katholischen Landeskirche",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 3,
-        "Verordnung": 1
+        "Interkantonale Vereinbarung": 2,
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 4,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 3,
-            "Verordnung": 1
+            "Interkantonale Vereinbarung": 2,
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "412",
               "title": "Berufliches Bildungswesen",
-              "total": 3,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 3
+                "Interkantonale Vereinbarung": 2
               },
               "children": [
                 {
                   "identifier": "412.6",
                   "title": "Interkantonale Vereinbarungen",
-                  "total": 3,
-                  "own": 3,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 3
+                    "Interkantonale Vereinbarung": 2
                   }
                 }
               ]
@@ -127,60 +172,32 @@
                   }
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "Militärwesen - Zivilschutz - Polizeiwesen",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1,
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "55",
-          "title": "Polizeiwesen",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1
-          },
-          "children": [
+            },
             {
-              "identifier": "554",
-              "title": "Gewerbepolizei. Marktwesen. Gastgewerbe",
-              "total": 2,
-              "own": 0,
+              "identifier": "414",
+              "title": "Hochschulen",
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1,
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "416",
+              "title": "Förderung der Ausbildung. Stipendien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "554.1",
-                  "title": "Gewerbe. Marktwesen. Öffentliche Veranstaltungen",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Gesetz": 1,
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen",
+      "identifier": "8",
+      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -188,8 +205,8 @@
       },
       "children": [
         {
-          "identifier": "64",
-          "title": "Steuern",
+          "identifier": "81",
+          "title": "Gesundheit",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -197,8 +214,8 @@
           },
           "children": [
             {
-              "identifier": "642",
-              "title": "Eidgenössische Abgaben",
+              "identifier": "812",
+              "title": "Heilmittel. Betäubungsmittel. Tabak",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -212,16 +229,15 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "92",
-          "title": "Forstwesen. Jagd. Fischerei",
+          "identifier": "91",
+          "title": "Landwirtschaft",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -229,32 +245,12 @@
           },
           "children": [
             {
-              "identifier": "922",
-              "title": "Jagd und Vogelschutz",
+              "identifier": "910",
+              "title": "Allgemein",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "95",
-          "title": "Staatliche Unternehmungen. Bankwesen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "954",
-              "title": "Elektrizitätsversorgung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
               }
             }
           ]
@@ -264,13 +260,44 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -294,83 +321,30 @@
           ]
         },
         {
-          "identifier": "4.50",
-          "title": "Tertiärstufe: Fachhochschulen",
+          "identifier": "4.60",
+          "title": "Tertiärstufe: Höhere Fachschulen",
           "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.50.10",
-              "title": "Pädagogik",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "6.20",
-          "title": "Steuern",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "6.20.60",
-              "title": "Verrechnungssteuer",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "7.40",
-          "title": "Energie",
-          "total": 1,
-          "own": 0,
+          "own": 1,
           "by_type": {
             "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "7.40.40",
-              "title": "Elektrizität",
+              "identifier": "4.100.20",
+              "title": "Schulgelder",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -378,58 +352,31 @@
       ]
     },
     {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 2,
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "9.50",
-          "title": "Gewerbe",
-          "total": 2,
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "9.50.10",
-              "title": "Dienstleistungen",
-              "total": 2,
-              "own": 0,
+              "identifier": "8.10.70",
+              "title": "Heil- und Betäubungsmittel",
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1,
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "9.50.10.60",
-                  "title": "Glücksspiel und Lotterien",
-                  "total": 2,
-                  "own": 0,
-                  "by_type": {
-                    "Gesetz": 1,
-                    "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "9.50.10.60.30",
-                      "title": "Spielbanken",
-                      "total": 2,
-                      "own": 2,
-                      "by_type": {
-                        "Gesetz": 1,
-                        "Verordnung": 1
-                      }
-                    }
-                  ]
-                }
-              ]
+              }
             }
           ]
         }
@@ -437,37 +384,54 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 9
   },
   "available_years_for_entity": [
-    "1826",
+    "1669",
+    "1803",
+    "1815",
+    "1825",
     "1828",
-    "1829",
     "1831",
     "1834",
     "1846",
+    "1861",
     "1869",
+    "1870",
     "1886",
+    "1887",
     "1889",
     "1890",
-    "1891",
-    "1892",
     "1896",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1911",
     "1914",
+    "1917",
     "1918",
+    "1923",
+    "1925",
     "1926",
     "1927",
+    "1930",
     "1931",
     "1933",
     "1934",
     "1937",
     "1938",
-    "1949",
+    "1941",
+    "1943",
+    "1947",
+    "1948",
+    "1951",
     "1955",
+    "1956",
     "1958",
+    "1959",
+    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
@@ -476,7 +440,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",

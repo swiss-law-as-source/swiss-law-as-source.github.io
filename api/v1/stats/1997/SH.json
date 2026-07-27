@@ -1,46 +1,87 @@
 {
   "year": "1997",
+  "year_semantics": "enactment",
   "entity": "SH",
-  "total": 2,
-  "categorized": 2,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 7,
+      "by_topic": {
+        "410.4 Lehrkräfte": 2,
+        "64 Steuern": 1,
+        "74 Verkehr": 1,
+        "832.1 Krankenversicherung": 1,
+        "837 Arbeitslosenversicherung": 1,
+        "921 Forstwesen": 1
+      },
+      "by_global_category": {
+        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 2,
+        "8.30.60.30 Spitallisten": 1,
+        "8.30.110 Arbeitslosenversicherung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "700 Allgemeines": 1,
+        "837 Arbeitslosenversicherung": 1,
+        "921 Forstwesen": 1
+      },
+      "by_global_category": {
+        "8.30.110 Arbeitslosenversicherung": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
         "412.1 Berufsbildung": 1
       },
       "by_global_category": {}
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "832.1 Krankenversicherung": 1
-      },
-      "by_global_category": {
-        "8.30.60.30 Spitallisten": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "4",
       "title": "Erziehung - Kultur - Natur- und Heimatschutz",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule und Ausbildung",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "410",
+              "title": "Allgemeines",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "410.4",
+                  "title": "Lehrkräfte",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            },
             {
               "identifier": "412",
               "title": "Berufsbildung",
@@ -66,8 +107,8 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
+      "identifier": "6",
+      "title": "Finanzen",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -75,12 +116,75 @@
       },
       "children": [
         {
-          "identifier": "83",
-          "title": "Sozialversicherung",
+          "identifier": "64",
+          "title": "Steuern",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanung und Bauwesen - Öffentliche Werke - Energie - Verkehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "70",
+          "title": "Raumplanung und Bauwesen",
           "total": 1,
           "own": 0,
           "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "700",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "74",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 1,
+          "by_type": {
             "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -102,6 +206,50 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "837",
+              "title": "Arbeitslosenversicherung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "92",
+          "title": "Forstwesen - Jagd - Fischerei",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "921",
+              "title": "Forstwesen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -110,21 +258,65 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.10",
+                  "title": "Strassenverkehrssteuern und -abgaben",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -146,6 +338,16 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -153,7 +355,7 @@
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 11
   },
   "available_years_for_entity": [
     "1828",
@@ -161,18 +363,24 @@
     "1878",
     "1889",
     "1901",
+    "1902",
+    "1904",
     "1909",
+    "1911",
     "1914",
     "1915",
     "1916",
-    "1919",
+    "1918",
     "1922",
+    "1926",
     "1927",
+    "1928",
     "1929",
     "1930",
     "1936",
     "1937",
     "1939",
+    "1941",
     "1943",
     "1945",
     "1947",
@@ -180,23 +388,30 @@
     "1949",
     "1950",
     "1951",
+    "1953",
+    "1954",
     "1955",
+    "1956",
     "1957",
+    "1961",
     "1962",
+    "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
     "1972",
+    "1973",
     "1974",
-    "1975",
     "1976",
     "1977",
     "1978",
     "1979",
+    "1980",
     "1981",
     "1982",
     "1983",

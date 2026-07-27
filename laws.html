@@ -83,6 +83,7 @@
                     <tr>
                         <th data-key="id">Number <span class="arrow"></span></th>
                         <th data-key="title">Title <span class="arrow"></span></th>
+                        <th data-key="enacted">Enacted <span class="arrow"></span></th>
                         <th data-key="langs">Languages <span class="arrow"></span></th>
                         <th data-key="chars">Characters <span class="arrow"></span></th>
                         <th data-key="articles">Articles <span class="arrow"></span></th>
@@ -141,6 +142,7 @@
             if (key === 'chars') return langs.reduce((s, l) => s + l.chars, 0);
             if (key === 'articles') return langs.reduce((s, l) => s + l.articles, 0);
             if (key === 'langs') return Object.keys(item.languages).length;
+            if (key === 'enacted') return item.enactment_date || '';
             return item[key] || '';
         }
 
@@ -167,16 +169,18 @@
                     `<span class="lang-badge" title="${d.chars.toLocaleString()} chars, ${d.articles} art.">${l}</span>`).join('');
                 const chars = Object.values(i.languages).reduce((s, l) => s + l.chars, 0);
                 const arts = Object.values(i.languages).reduce((s, l) => s + l.articles, 0);
+                const versions = i.version_dates ? ` title="versions: ${i.version_dates.join(', ')} (${i.enactment_date_source || ''})"` : (i.enactment_date_source ? ` title="source: ${i.enactment_date_source}"` : '');
                 return `<tr>
                     <td><a href="${i.link}" target="_blank" rel="noopener">${i.id}</a></td>
                     <td>${(i.title || '').replace(/</g, '&lt;')}</td>
+                    <td class="num"${versions}>${i.enactment_date || '—'}</td>
                     <td>${langCells}</td>
                     <td class="num">${chars.toLocaleString()}</td>
                     <td class="num">${arts.toLocaleString()}</td>
                 </tr>`;
             }).join('');
             document.getElementById('laws-body').innerHTML = rows ||
-                '<tr><td colspan="5">No laws match.</td></tr>';
+                '<tr><td colspan="6">No laws match.</td></tr>';
             document.getElementById('load-more').hidden = items.length <= shown;
 
             document.querySelectorAll('.data-table th').forEach(th => {
@@ -187,7 +191,7 @@
 
         async function load(code) {
             if (!cache[code]) {
-                document.getElementById('laws-body').innerHTML = '<tr><td colspan="5">Loading…</td></tr>';
+                document.getElementById('laws-body').innerHTML = '<tr><td colspan="6">Loading…</td></tr>';
                 cache[code] = await (await fetch(idx.entities[code].file)).json();
             }
             current = cache[code];

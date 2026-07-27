@@ -1,84 +1,181 @@
 {
   "year": "2006",
+  "year_semantics": "enactment",
   "entity": "VS",
-  "total": 14,
-  "categorized": 14,
+  "total": 30,
+  "categorized": 30,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 13,
+      "by_topic": {
+        "80 Gesundheitswesen": 4,
+        "172 Staatsrat und Verwaltung": 2,
+        "811 Gesundheitsberufe": 2,
+        "836 Familienzulagen": 2,
+        "21 Vollstreckung des Zivilrechts": 1,
+        "34 Strafvollzug": 1,
+        "90 Wirtschaftspolitik": 1
+      },
+      "by_global_category": {
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 2,
+        "6.10.30 Staatsbeiträge, Subventionen": 2,
+        "4.170.10 Statistik": 1,
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1,
+        "9.10 Wirtschaftsförderung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 6,
+      "by_topic": {
+        "172 Staatsrat und Verwaltung": 1,
+        "176 Einwohnerkontrolle": 1,
+        "836 Familienzulagen": 1,
+        "85 Unterstützung": 1,
+        "90 Wirtschaftspolitik": 1
+      },
+      "by_global_category": {
+        "4.170.10 Statistik": 1,
+        "1.10.70.10.10 Einwohnerkontrolle": 1,
+        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1,
+        "9.10 Wirtschaftsförderung": 1
+      }
+    },
     "Reglement": {
-      "total": 4,
+      "total": 6,
       "by_topic": {
         "21 Vollstreckung des Zivilrechts": 1,
+        "31 Strafrechtspflege - Strafvollzug": 1,
         "417 Tertiärstufe und Weiterbildung": 1,
         "70 Raumplanung, Bauwesen": 1,
-        "84 Wohnungswesen": 1
+        "811 Gesundheitsberufe": 1
       },
       "by_global_category": {
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
         "7.10.20 Zonen": 1
       }
     },
-    "Verordnung": {
-      "total": 4,
+    "Interkantonale Vereinbarung": {
+      "total": 3,
       "by_topic": {
-        "80 Gesundheitswesen": 2,
-        "61 Finanzhaushalt": 1,
-        "94 Dienstleistungen": 1
+        "34 Strafvollzug": 1,
+        "412 Berufsbildung": 1,
+        "55 Kantonspolizei": 1
       },
       "by_global_category": {
-        "6.10.30 Staatsbeiträge, Subventionen": 2,
-        "6.10.10 Budget und Rechnung": 1,
-        "9.60.20 Messwesen, Zahlungsverkehr": 1
+        "5.30.10.50 Polizeiliche Zusammenarbeit": 1
       }
     },
     "Anderes": {
-      "total": 3,
-      "by_topic": {
-        "45 Natur- und Heimatschutz": 1,
-        "814 Umweltschutz": 1,
-        "84 Wohnungswesen": 1
-      },
-      "by_global_category": {
-        "7.70.10 Landschaftsschutz": 1,
-        "7.60.30.10 Feinstaub/Smog": 1
-      }
-    },
-    "Gesetz": {
       "total": 2,
       "by_topic": {
-        "52 Zivilschutz": 1,
-        "94 Dienstleistungen": 1
+        "172 Staatsrat und Verwaltung": 1,
+        "80 Gesundheitswesen": 1
       },
       "by_global_category": {
-        "5.20.10.30 Kulturgüterschutz im Kriegsfall": 1,
-        "9.60.20 Messwesen, Zahlungsverkehr": 1
+        "8.30.50 BVG": 1,
+        "1.20.20.60 Verwaltungsgebühren": 1
       }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "93 Gewerbe": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "Privatrecht, Zivilrechtspflege",
-      "total": 1,
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 2,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "17",
+          "title": "Behörden",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Gesetz": 2,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "172",
+              "title": "Staatsrat und Verwaltung",
+              "total": 4,
+              "own": 4,
+              "by_type": {
+                "Verordnung": 2,
+                "Anderes": 1,
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "176",
+              "title": "Einwohnerkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Privatrecht, Zivilrechtspflege",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Vollstreckung des Zivilrechts",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Verordnung": 1,
+            "Reglement": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrechtspflege - Strafvollzug",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "Strafrechtspflege - Strafvollzug",
           "total": 1,
           "own": 1,
           "by_type": {
             "Reglement": 1
+          }
+        },
+        {
+          "identifier": "34",
+          "title": "Strafvollzug",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Verordnung": 1,
+            "Interkantonale Vereinbarung": 1
           }
         }
       ]
@@ -89,19 +186,29 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
-        "Anderes": 1
+        "Interkantonale Vereinbarung": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 1,
             "Reglement": 1
           },
           "children": [
+            {
+              "identifier": "412",
+              "title": "Berufsbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
             {
               "identifier": "417",
               "title": "Tertiärstufe und Weiterbildung",
@@ -112,15 +219,6 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "45",
-          "title": "Natur- und Heimatschutz",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Anderes": 1
-          }
         }
       ]
     },
@@ -130,36 +228,16 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
-          "identifier": "52",
-          "title": "Zivilschutz",
+          "identifier": "55",
+          "title": "Kantonspolizei",
           "total": 1,
           "own": 1,
           "by_type": {
-            "Gesetz": 1
-          }
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen und Steuern",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "61",
-          "title": "Finanzhaushalt",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
+            "Interkantonale Vereinbarung": 1
           }
         }
       ]
@@ -187,51 +265,76 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Soziale Sicherheit",
-      "total": 5,
+      "total": 12,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Anderes": 2,
+        "Verordnung": 8,
+        "Gesetz": 2,
+        "Anderes": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "80",
           "title": "Gesundheitswesen",
-          "total": 2,
-          "own": 2,
+          "total": 5,
+          "own": 5,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 4,
+            "Anderes": 1
           }
         },
         {
           "identifier": "81",
           "title": "Krankenanstalten, Rettungswesen, Umweltschutz",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 2,
+            "Reglement": 1
           },
           "children": [
             {
-              "identifier": "814",
-              "title": "Umweltschutz",
-              "total": 1,
-              "own": 1,
+              "identifier": "811",
+              "title": "Gesundheitsberufe",
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 2,
+                "Reglement": 1
               }
             }
           ]
         },
         {
-          "identifier": "84",
-          "title": "Wohnungswesen",
-          "total": 2,
-          "own": 2,
+          "identifier": "83",
+          "title": "Sozialversicherungen",
+          "total": 3,
+          "own": 0,
           "by_type": {
-            "Reglement": 1,
-            "Anderes": 1
+            "Verordnung": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "836",
+              "title": "Familienzulagen",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 2,
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "85",
+          "title": "Unterstützung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
           }
         }
       ]
@@ -239,26 +342,16 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
         "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "93",
-          "title": "Gewerbe",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          }
-        },
-        {
-          "identifier": "94",
-          "title": "Dienstleistungen",
+          "identifier": "90",
+          "title": "Wirtschaftspolitik",
           "total": 2,
           "own": 2,
           "by_type": {
@@ -271,42 +364,188 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 1,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.10",
+                  "title": "Niederlassung und Aufenthalt Schweizer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.10.10",
+                      "title": "Einwohnerkontrolle",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Reglement": 1
           },
           "children": [
             {
               "identifier": "2.10.40",
               "title": "Sachenrecht",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
+                "Verordnung": 2,
                 "Reglement": 1
               },
               "children": [
                 {
                   "identifier": "2.10.40.30",
                   "title": "Grundbuch und Grundbuchvermessung",
-                  "total": 1,
-                  "own": 1,
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
+                    "Verordnung": 2,
                     "Reglement": 1
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.10",
+              "title": "Statistik",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -318,34 +557,34 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
-          "identifier": "5.20",
-          "title": "Bevölkerungsschutz",
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
-              "identifier": "5.20.10",
-              "title": "Zivilschutz",
+              "identifier": "5.30.10",
+              "title": "Polizei",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Gesetz": 1
+                "Interkantonale Vereinbarung": 1
               },
               "children": [
                 {
-                  "identifier": "5.20.10.30",
-                  "title": "Kulturgüterschutz im Kriegsfall",
+                  "identifier": "5.30.10.50",
+                  "title": "Polizeiliche Zusammenarbeit",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Gesetz": 1
+                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
@@ -357,30 +596,21 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 3
+            "Verordnung": 2
           },
           "children": [
-            {
-              "identifier": "6.10.10",
-              "title": "Budget und Rechnung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
@@ -397,10 +627,9 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
         "Reglement": 1
       },
       "children": [
@@ -423,55 +652,61 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
         {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
-          "total": 1,
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "7.60.30",
-              "title": "Lufthygiene",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "7.60.30.10",
-                  "title": "Feinstaub/Smog",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "7.70.10",
-              "title": "Landschaftsschutz",
+              "identifier": "8.30.50",
+              "title": "BVG",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Anderes": 1
               }
+            },
+            {
+              "identifier": "8.30.100",
+              "title": "Familienzulagen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.100.10",
+                  "title": "Landwirtschaftliche Arbeitnehmer",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -488,61 +723,65 @@
       },
       "children": [
         {
-          "identifier": "9.60",
-          "title": "Handel",
+          "identifier": "9.10",
+          "title": "Wirtschaftsförderung",
           "total": 2,
-          "own": 0,
+          "own": 2,
           "by_type": {
             "Gesetz": 1,
             "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "9.60.20",
-              "title": "Messwesen, Zahlungsverkehr",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
-              }
-            }
-          ]
+          }
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 14,
-    "fr": 14
+    "de": 30,
+    "fr": 28
   },
   "available_years_for_entity": [
     "1802",
+    "1828",
     "1850",
     "1855",
     "1864",
+    "1877",
     "1882",
+    "1889",
     "1891",
+    "1898",
     "1900",
+    "1905",
+    "1907",
+    "1911",
     "1912",
+    "1916",
+    "1922",
     "1923",
-    "1924",
-    "1933",
+    "1931",
+    "1932",
+    "1934",
+    "1935",
     "1936",
     "1937",
     "1938",
     "1939",
     "1943",
     "1944",
+    "1946",
+    "1948",
     "1949",
     "1950",
     "1951",
     "1952",
     "1954",
     "1955",
+    "1957",
     "1958",
     "1959",
+    "1960",
     "1961",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -558,6 +797,7 @@
     "1976",
     "1977",
     "1978",
+    "1979",
     "1980",
     "1981",
     "1982",

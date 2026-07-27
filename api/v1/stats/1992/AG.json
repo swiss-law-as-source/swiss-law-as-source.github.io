@@ -1,10 +1,35 @@
 {
   "year": "1992",
+  "year_semantics": "enactment",
   "entity": "AG",
-  "total": 2,
-  "categorized": 2,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 7,
+      "by_topic": {
+        "121 Bürgerrecht": 2,
+        "131 Allgemeines – Wahlen und Abstimmungen": 2,
+        "361 Allgemeines": 1,
+        "363 Tiere": 1,
+        "781 Umweltschutz – Gewässerschutz": 1
+      },
+      "by_global_category": {
+        "1.10.60 Bürgerrecht": 2,
+        "8.10.100.10 Epidemien, Pandemien": 1,
+        "8.10.130.10.20.10 Schlachthöfe": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "150 Allgemeines – Publikationen – Archivierung – Öffentliches Beschaffungswesen": 1
+      },
+      "by_global_category": {
+        "1.10.120 Information der Öffentlichkeit": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -13,16 +38,81 @@
       "by_global_category": {
         "3.20.50 Rechtshilfe": 1
       }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "781 Umweltschutz – Gewässerschutz": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staatsrechtliche Grundlagen – Organisation",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 4,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht – Aufenthalt – Niederlassung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "121",
+              "title": "Bürgerrecht",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "13",
+          "title": "Politische Rechte",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "131",
+              "title": "Allgemeines – Wahlen und Abstimmungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "15",
+          "title": "Organisation des Kantons",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "150",
+              "title": "Allgemeines – Publikationen – Archivierung – Öffentliches Beschaffungswesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht – Strafrecht – Rechtspflege",
@@ -48,6 +138,46 @@
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Gesundheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "36",
+          "title": "Lebensmittelpolizei",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "361",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "363",
+              "title": "Tiere",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -88,6 +218,48 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            },
+            {
+              "identifier": "1.10.120",
+              "title": "Information der Öffentlichkeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "3",
       "title": "Strafrecht",
       "total": 1,
@@ -117,38 +289,137 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "8.10.100",
+              "title": "Krankheitsbekämpfung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.100.10",
+                  "title": "Epidemien, Pandemien",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.10",
+                  "title": "Lebensmittel und Gebrauchsgegenstände",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "8.10.130.10.20",
+                      "title": "Fleischhygiene",
+                      "total": 1,
+                      "own": 0,
+                      "by_type": {
+                        "Verordnung": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "8.10.130.10.20.10",
+                          "title": "Schlachthöfe",
+                          "total": 1,
+                          "own": 1,
+                          "by_type": {
+                            "Verordnung": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 9
   },
   "available_years_for_entity": [
     "1803",
+    "1819",
     "1828",
     "1832",
+    "1845",
+    "1853",
     "1856",
-    "1885",
+    "1862",
+    "1871",
     "1888",
     "1889",
     "1901",
+    "1905",
+    "1906",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
+    "1915",
+    "1916",
     "1917",
     "1918",
     "1919",
     "1922",
+    "1923",
     "1924",
     "1925",
     "1928",
     "1930",
     "1932",
+    "1934",
     "1937",
     "1938",
     "1939",
+    "1940",
+    "1941",
     "1942",
     "1943",
     "1944",
-    "1945",
     "1946",
     "1948",
     "1950",
@@ -157,21 +428,23 @@
     "1953",
     "1954",
     "1955",
+    "1957",
     "1958",
     "1959",
     "1960",
     "1961",
+    "1962",
     "1963",
     "1964",
     "1965",
     "1966",
+    "1967",
     "1968",
     "1969",
     "1970",
     "1971",
     "1972",
     "1973",
-    "1974",
     "1975",
     "1976",
     "1977",
@@ -227,6 +500,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

@@ -1,12 +1,13 @@
 {
   "year": "2004",
+  "year_semantics": "enactment",
   "entity": "VD",
-  "total": 31,
-  "categorized": 31,
+  "total": 32,
+  "categorized": 32,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 17,
+      "total": 18,
       "by_topic": {
         "412 Enseignement secondaire supérieur": 2,
         "414.100 Université en général": 2,
@@ -16,6 +17,7 @@
         "312.100 Contraventions": 1,
         "417.500 Formation des handicapés": 1,
         "831.000 AVS/AI en général": 1,
+        "850.050 Aide sociale": 1,
         "850.350 Pensions alimentaires": 1,
         "850.400 Protection et aide à la jeunesse / Foyers pour enfants et adolescents": 1,
         "850.600 Intégration des handicapés": 1,
@@ -29,6 +31,7 @@
         "4.30.30 Berufsorientierung": 1,
         "8.10.130.10.10 Lebensmittelaufsicht": 1,
         "8.10.130.10.30 Pilze": 1,
+        "1.10.70.20.10 Asylwesen": 1,
         "8.70.70 Alimentenbevorschussung": 1,
         "8.70.20 Jugendschutz, Jugendhilfe": 1,
         "8.70.30.10 Alters- und Pflegeheime": 1,
@@ -367,10 +370,10 @@
     {
       "identifier": "8",
       "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
-      "total": 9,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Règlement": 6,
+        "Règlement": 7,
         "Loi": 3
       },
       "children": [
@@ -428,23 +431,32 @@
         {
           "identifier": "85",
           "title": "ACTION SOCIALE",
-          "total": 6,
+          "total": 7,
           "own": 0,
           "by_type": {
-            "Règlement": 3,
+            "Règlement": 4,
             "Loi": 3
           },
           "children": [
             {
               "identifier": "850",
               "title": "Action sociale en général",
-              "total": 6,
+              "total": 7,
               "own": 0,
               "by_type": {
-                "Règlement": 3,
+                "Règlement": 4,
                 "Loi": 3
               },
               "children": [
+                {
+                  "identifier": "850.050",
+                  "title": "Aide sociale",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                },
                 {
                   "identifier": "850.350",
                   "title": "Pensions alimentaires",
@@ -594,14 +606,57 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Ordonnance parlementaire (décret)": 2,
         "Loi": 2,
+        "Règlement": 1,
         "Autre": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Règlement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Règlement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -998,7 +1053,7 @@
     }
   ],
   "languages_available": {
-    "fr": 31
+    "fr": 32
   },
   "available_years_for_entity": [
     "1803",

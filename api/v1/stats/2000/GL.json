@@ -1,32 +1,311 @@
 {
   "year": "2000",
+  "year_semantics": "enactment",
   "entity": "GL",
-  "total": 1,
-  "categorized": 1,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 6,
+      "by_topic": {
+        "VI C/1 Allgemeines, Kantons- und Gemeindesteuern": 4,
+        "IX D/1 Förderung im Allgemeinen": 1,
+        "VII E Energie": 1
+      },
+      "by_global_category": {
+        "7.70.10 Landschaftsschutz": 1,
+        "6.20.10.20 Staatssteuern": 1,
+        "6.20.10.60 Quellensteuern": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 5,
+      "by_topic": {
+        "VII B/55 Linthwerk": 3,
+        "IV B/711 Hochschule Rapperswil": 1,
+        "VII D/41 Binnenschifffahrt": 1
+      },
+      "by_global_category": {
+        "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 5,
+      "by_topic": {
+        "VI C/1 Allgemeines, Kantons- und Gemeindesteuern": 3,
+        "VII E Energie": 2
+      },
+      "by_global_category": {
+        "2.10.40.10 Schätzung von Grundstücken": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "III I Rechtsanwälte": 1
+      },
+      "by_global_category": {}
+    },
     "Anderes": {
       "total": 1,
       "by_topic": {
-        "II G/1 Vereinbarungen": 1
+        "IX D/632 Milchwirtschaft": 1
       },
       "by_global_category": {
-        "9.60.50 Binnenmarkt, Handelshemmnisse": 1
+        "9.20.100 Milch": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "VI C/1 Allgemeines, Kantons- und Gemeindesteuern": 1
+      },
+      "by_global_category": {
+        "4.120.20 Schulgemeinden": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "II",
-      "title": "Organisation des Kantons und der Gemeinden",
+      "identifier": "III",
+      "title": "Gerichtswesen – Zivilrecht – Strafrecht",
       "total": 1,
       "own": 1,
       "by_type": {
+        "Gesetz": 1
+      }
+    },
+    {
+      "identifier": "IV",
+      "title": "Kirche – Schule – Kultur",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      }
+    },
+    {
+      "identifier": "VI",
+      "title": "Finanzen – Regalien",
+      "total": 8,
+      "own": 8,
+      "by_type": {
+        "Verordnung": 4,
+        "Verordnung des Parlaments (Dekret)": 3,
+        "Reglement": 1
+      }
+    },
+    {
+      "identifier": "VII",
+      "title": "Raumplanung – Bauwesen – Öffentliche Werke – Verkehr – Energie",
+      "total": 7,
+      "own": 7,
+      "by_type": {
+        "Interkantonale Vereinbarung": 4,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Verordnung": 1
+      }
+    },
+    {
+      "identifier": "IX",
+      "title": "Volkswirtschaft",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       }
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.10",
+                  "title": "Schätzung von Grundstücken",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.20",
+              "title": "Schulgemeinden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.20",
+                  "title": "Staatssteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "6.20.10.60",
+                  "title": "Quellensteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.20.10",
+                  "title": "Gewässerkorrekturen / Hochwasserschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.10",
+              "title": "Landschaftsschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "9",
       "title": "Wirtschaft",
@@ -37,8 +316,8 @@
       },
       "children": [
         {
-          "identifier": "9.60",
-          "title": "Handel",
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -46,8 +325,8 @@
           },
           "children": [
             {
-              "identifier": "9.60.50",
-              "title": "Binnenmarkt, Handelshemmnisse",
+              "identifier": "9.20.100",
+              "title": "Milch",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -60,33 +339,46 @@
     }
   ],
   "languages_available": {
-    "de": 1
+    "de": 19
   },
   "available_years_for_entity": [
     "1807",
     "1835",
     "1859",
+    "1862",
     "1878",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
     "1905",
-    "1906",
     "1909",
     "1910",
+    "1911",
     "1915",
+    "1918",
+    "1922",
+    "1923",
     "1927",
     "1928",
     "1929",
     "1934",
+    "1941",
+    "1943",
     "1944",
-    "1946",
+    "1945",
+    "1947",
+    "1948",
     "1949",
+    "1950",
     "1951",
     "1957",
+    "1958",
+    "1959",
     "1960",
     "1962",
+    "1963",
     "1964",
     "1965",
     "1966",
@@ -108,6 +400,7 @@
     "1983",
     "1984",
     "1985",
+    "1986",
     "1987",
     "1988",
     "1989",
@@ -152,6 +445,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",

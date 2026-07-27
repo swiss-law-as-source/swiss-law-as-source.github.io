@@ -1,10 +1,38 @@
 {
   "year": "1987",
+  "year_semantics": "enactment",
   "entity": "TG",
-  "total": 1,
-  "categorized": 1,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
+    "Verfassung": {
+      "total": 1,
+      "by_topic": {
+        "10 Kantonsverfassung": 1
+      },
+      "by_global_category": {
+        "1.10.10 Verfassung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "170 Allgemein": 1
+      },
+      "by_global_category": {
+        "1.20.50 Datenschutz": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "411.7 Interkantonale Vereinbarungen": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+      }
+    },
     "Anderes": {
       "total": 1,
       "by_topic": {
@@ -15,23 +43,86 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "Schule - Wissenschaft - Kultur",
-      "total": 1,
+      "identifier": "1",
+      "title": "Staat - Volk - Behörden",
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verfassung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "10",
+          "title": "Kantonsverfassung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verfassung": 1
+          }
+        },
+        {
+          "identifier": "17",
+          "title": "Staatliche Gewalten. Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "170",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "411",
+              "title": "Volksschule. Kindergarten",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "411.7",
+                  "title": "Interkantonale Vereinbarungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "412",
               "title": "Berufliches Bildungswesen",
@@ -57,39 +148,140 @@
       ]
     }
   ],
-  "by_global_category_tree": [],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verfassung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verfassung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.10",
+              "title": "Verfassung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verfassung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "languages_available": {
-    "de": 1
+    "de": 4
   },
   "available_years_for_entity": [
-    "1826",
+    "1669",
+    "1803",
+    "1815",
+    "1825",
     "1828",
-    "1829",
     "1831",
     "1834",
     "1846",
+    "1861",
     "1869",
+    "1870",
     "1886",
+    "1887",
     "1889",
     "1890",
-    "1891",
-    "1892",
     "1896",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1911",
     "1914",
+    "1917",
     "1918",
+    "1923",
+    "1925",
     "1926",
     "1927",
+    "1930",
     "1931",
     "1933",
     "1934",
     "1937",
     "1938",
-    "1949",
+    "1941",
+    "1943",
+    "1947",
+    "1948",
+    "1951",
     "1955",
+    "1956",
     "1958",
+    "1959",
+    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
@@ -98,7 +290,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",

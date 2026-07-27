@@ -1,8 +1,9 @@
 {
   "year": "1997",
+  "year_semantics": "enactment",
   "entity": "GE",
-  "total": 18,
-  "categorized": 18,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
@@ -31,6 +32,21 @@
         "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1
       }
     },
+    "Gesetz": {
+      "total": 7,
+      "by_topic": {
+        "I 4 Logement": 2,
+        "B 5 Statuts, traitements et retraite": 1,
+        "E 2 Organisation judiciaire et pouvoir judiciaire": 1,
+        "J 3 Assurances contre la maladie et les accidents": 1,
+        "K 1 Police sanitaire, lutte contre les maladies": 1,
+        "L 6 Adjudications et redevances": 1
+      },
+      "by_global_category": {
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1,
+        "7.30.40 Submission": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 2,
       "by_topic": {
@@ -39,24 +55,17 @@
       "by_global_category": {
         "4.140 Anerkennung von Diplomen": 2
       }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "E 2 Organisation judiciaire et pouvoir judiciaire": 1,
-        "I 4 Logement": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "B",
       "title": "Organisation du canton",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       }
     },
     {
@@ -100,29 +109,40 @@
     {
       "identifier": "I",
       "title": "Commerce, industrie, arts et métiers, logement",
-      "total": 3,
-      "own": 3,
+      "total": 4,
+      "own": 4,
       "by_type": {
         "Règlement": 2,
-        "Loi": 1
+        "Loi": 2
       }
     },
     {
       "identifier": "J",
       "title": "Législation sociale",
-      "total": 3,
-      "own": 3,
+      "total": 4,
+      "own": 4,
       "by_type": {
-        "Règlement": 3
+        "Règlement": 3,
+        "Loi": 1
+      }
+    },
+    {
+      "identifier": "K",
+      "title": "Santé",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Loi": 1
       }
     },
     {
       "identifier": "L",
       "title": "Domaine public et travaux",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       }
     }
   ],
@@ -317,19 +337,21 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 1,
+            "Loi": 1
           },
           "children": [
             {
@@ -351,6 +373,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
             }
           ]
         }
@@ -359,10 +390,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Règlement": 3
+        "Règlement": 3,
+        "Loi": 1
       },
       "children": [
         {
@@ -408,19 +440,21 @@
         {
           "identifier": "8.40",
           "title": "Wohnverhältnisse",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 1,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "8.40.10",
               "title": "Eigentums- und Wohnungsbauförderung",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Règlement": 1
+                "Règlement": 1,
+                "Loi": 1
               }
             }
           ]
@@ -429,7 +463,7 @@
     }
   ],
   "languages_available": {
-    "fr": 18
+    "fr": 23
   },
   "available_years_for_entity": [
     "1564",
@@ -438,24 +472,28 @@
     "1815",
     "1816",
     "1817",
-    "1834",
+    "1841",
     "1847",
     "1849",
     "1856",
+    "1858",
     "1861",
     "1872",
     "1875",
+    "1876",
     "1878",
     "1881",
     "1887",
     "1889",
     "1892",
+    "1893",
     "1895",
     "1899",
     "1901",
     "1902",
     "1903",
     "1907",
+    "1908",
     "1909",
     "1918",
     "1923",
@@ -465,8 +503,11 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1935",
     "1937",
+    "1938",
     "1940",
     "1941",
     "1942",

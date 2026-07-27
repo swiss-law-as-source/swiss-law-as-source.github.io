@@ -1,10 +1,28 @@
 {
   "year": "1995",
+  "year_semantics": "enactment",
   "entity": "GE",
-  "total": 7,
-  "categorized": 7,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 6,
+      "by_topic": {
+        "A 2 Constitution et principes généraux": 1,
+        "B 5 Statuts, traitements et retraite": 1,
+        "D 1 Organisation": 1,
+        "D 3 Impôts et taxes": 1,
+        "L 1 Voies de communication et urbanisme": 1,
+        "L 4 Monuments et sites, décoration": 1
+      },
+      "by_global_category": {
+        "1.10.110 Gesetzgebungsverfahren": 1,
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1,
+        "7.70.60 Uferschutz": 1
+      }
+    },
     "Reglement": {
       "total": 4,
       "by_topic": {
@@ -17,18 +35,6 @@
         "4.80.30 Kunst- und Sportschulen": 1,
         "7.30.30.20 Fuss- und Wanderwege": 1,
         "7.60.20 Gewässerschutz": 1
-      }
-    },
-    "Gesetz": {
-      "total": 3,
-      "by_topic": {
-        "A 2 Constitution et principes généraux": 1,
-        "B 5 Statuts, traitements et retraite": 1,
-        "D 1 Organisation": 1
-      },
-      "by_global_category": {
-        "1.10.110 Gesetzgebungsverfahren": 1,
-        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
       }
     }
   },
@@ -55,10 +61,10 @@
     {
       "identifier": "D",
       "title": "Finances et contributions",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Loi": 1
+        "Loi": 2
       }
     },
     {
@@ -73,9 +79,10 @@
     {
       "identifier": "L",
       "title": "Domaine public et travaux",
-      "total": 2,
-      "own": 2,
+      "total": 4,
+      "own": 4,
       "by_type": {
+        "Loi": 2,
         "Règlement": 2
       }
     }
@@ -186,12 +193,44 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 2
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.40",
+              "title": "Erbschafts- und Schenkungssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Règlement": 2,
+        "Loi": 1
       },
       "children": [
         {
@@ -244,12 +283,32 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.60",
+              "title": "Uferschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "fr": 7
+    "fr": 10
   },
   "available_years_for_entity": [
     "1564",
@@ -258,24 +317,28 @@
     "1815",
     "1816",
     "1817",
-    "1834",
+    "1841",
     "1847",
     "1849",
     "1856",
+    "1858",
     "1861",
     "1872",
     "1875",
+    "1876",
     "1878",
     "1881",
     "1887",
     "1889",
     "1892",
+    "1893",
     "1895",
     "1899",
     "1901",
     "1902",
     "1903",
     "1907",
+    "1908",
     "1909",
     "1918",
     "1923",
@@ -285,8 +348,11 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1935",
     "1937",
+    "1938",
     "1940",
     "1941",
     "1942",

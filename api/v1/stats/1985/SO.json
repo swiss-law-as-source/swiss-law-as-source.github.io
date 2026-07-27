@@ -1,50 +1,127 @@
 {
   "year": "1985",
+  "year_semantics": "enactment",
   "entity": "SO",
-  "total": 6,
-  "categorized": 6,
+  "total": 39,
+  "categorized": 39,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 29,
+      "by_topic": {
+        "614.15 Steuerverordnungen und -weisungen": 21,
+        "811.4 Andere Berufe der Gesundheitspflege": 2,
+        "105 Finanzen": 1,
+        "112.2 Jung- und Neubürgerwesen": 1,
+        "212.2 Familienrecht": 1,
+        "911 Wirtschaftsförderung": 1
+      },
+      "by_global_category": {
+        "6.20.100 Steuerbefreiung und -erleichterungen": 2,
+        "8.10.100.10 Epidemien, Pandemien": 1,
+        "1.10.90.20.10 Wahlen und Abstimmungen": 1,
+        "2.10.20.30 Fürsorgerischer Freiheitsentzug": 1,
+        "6.20.10.10 Bundessteuern": 1,
+        "6.20.30 Liegenschaftssteuern": 1,
+        "6.20.10.60 Quellensteuern": 1,
+        "6.20.20 Handänderungssteuern": 1,
+        "8.30.50 BVG": 1,
+        "9.10 Wirtschaftsförderung": 1
+      }
+    },
     "Anderes": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
         "416.3 Berufslehre": 2,
+        "416.9 Höhere berufliche Lehranstalten": 2,
         "126.58 Alters-, Hinterlassenen- und Invalidenvorsorge": 1
       },
       "by_global_category": {
         "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
-        "4.120.50 Förderung von Informationstechnologien": 1
-      }
-    },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "212.2 Familienrecht": 1,
-        "711.2 Raumplanung": 1
-      },
-      "by_global_category": {
-        "2.10.20.30 Fürsorgerischer Freiheitsentzug": 1,
-        "7.10.10 Pläne": 1
+        "4.120.50 Förderung von Informationstechnologien": 1,
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "4.50.10 Pädagogik": 1
       }
     },
     "Gesetz": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
         "416.9 Höhere berufliche Lehranstalten": 1
       },
       "by_global_category": {}
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "614.3 Erbschafts- und Schenkungssteuer": 1
+      },
+      "by_global_category": {
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "10",
+          "title": "Notrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "105",
+              "title": "Finanzen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "11",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "112",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "112.2",
+                  "title": "Jung- und Neubürgerwesen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "12",
           "title": "Organisation",
@@ -134,30 +211,30 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 4,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 3,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
+            "Anderes": 4,
             "Gesetz": 1
           },
           "children": [
             {
               "identifier": "416",
               "title": "Berufsbildung",
-              "total": 3,
+              "total": 5,
               "own": 0,
               "by_type": {
-                "Anderes": 2,
+                "Anderes": 4,
                 "Gesetz": 1
               },
               "children": [
@@ -173,9 +250,10 @@
                 {
                   "identifier": "416.9",
                   "title": "Höhere berufliche Lehranstalten",
-                  "total": 1,
-                  "own": 1,
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
+                    "Anderes": 2,
                     "Gesetz": 1
                   }
                 }
@@ -186,8 +264,115 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Bauwesen, öffentliche Werke, Verkehr",
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 22,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 21,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "Finanzen",
+          "total": 22,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 21,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "614",
+              "title": "Kantonale Steuern",
+              "total": 22,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 21,
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "614.1",
+                  "title": "Staats- und Gemeindesteuer",
+                  "total": 21,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 21
+                  },
+                  "children": [
+                    {
+                      "identifier": "614.15",
+                      "title": "Steuerverordnungen und -weisungen",
+                      "total": 21,
+                      "own": 21,
+                      "by_type": {
+                        "Verordnung": 21
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "614.3",
+                  "title": "Erbschafts- und Schenkungssteuer",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Sanitätswesen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "811.4",
+                  "title": "Andere Berufe der Gesundheitspflege",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -195,8 +380,8 @@
       },
       "children": [
         {
-          "identifier": "71",
-          "title": "Bauwesen",
+          "identifier": "91",
+          "title": "Wirtschaftliche Entwicklung",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -204,24 +389,13 @@
           },
           "children": [
             {
-              "identifier": "711",
-              "title": "Bau- und Raumplanungsrecht",
+              "identifier": "911",
+              "title": "Wirtschaftsförderung",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "711.2",
-                  "title": "Raumplanung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
@@ -232,12 +406,55 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.20",
+                  "title": "Politische Rechte",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.90.20.10",
+                      "title": "Wahlen und Abstimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -327,12 +544,41 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 3
       },
       "children": [
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.50.10",
+              "title": "Pädagogik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.60",
+          "title": "Tertiärstufe: Höhere Fachschulen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
@@ -356,17 +602,106 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 6,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
-          "identifier": "7.10",
-          "title": "Raumplanungs- und Baurecht",
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 7,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 6,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.10",
+                  "title": "Bundessteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "6.20.10.60",
+                  "title": "Quellensteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "6.20.20",
+              "title": "Handänderungssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "6.20.30",
+              "title": "Liegenschaftssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "6.20.40",
+              "title": "Erbschafts- und Schenkungssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "6.20.100",
+              "title": "Steuerbefreiung und -erleichterungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -374,8 +709,39 @@
           },
           "children": [
             {
-              "identifier": "7.10.10",
-              "title": "Pläne",
+              "identifier": "8.10.100",
+              "title": "Krankheitsbekämpfung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.100.10",
+                  "title": "Epidemien, Pandemien",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.50",
+              "title": "BVG",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -385,12 +751,33 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.10",
+          "title": "Wirtschaftsförderung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 6
+    "de": 39
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -399,6 +786,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -406,23 +796,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -435,9 +829,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",
@@ -514,6 +908,8 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
+    "AR",
     "BE",
     "BL",
     "BS",

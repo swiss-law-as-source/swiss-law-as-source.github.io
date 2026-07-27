@@ -1,18 +1,23 @@
 {
   "year": "1981",
+  "year_semantics": "enactment",
   "entity": "SO",
   "total": 6,
   "categorized": 6,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
         "126.512 Bei Unterbrechungen der Dienstzeit": 1,
-        "321 Strafprozessordnung": 1
+        "321 Strafprozessordnung": 1,
+        "513.3 Handelsreisende, Märkte und Wandergewerbe, öffentliche Sammlung": 1,
+        "822.3 Heimarbeit": 1
       },
       "by_global_category": {
-        "1.20.20.40.40 Löhne, Entschädigungen": 1
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "8.70.60 Spenden und gemeinnützige Sammlungen": 1,
+        "8.20.40 Heimarbeit": 1
       }
     },
     "Anderes": {
@@ -25,67 +30,27 @@
         "7.50.20.30 Motorfahrzeugkontrolle": 1,
         "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1
       }
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "121.5 Kantonsratssaal": 1
-      },
-      "by_global_category": {
-        "7.30.10 Staatliche Gebäude und Liegenschaften": 1
-      }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "614.8 Schiffssteuer": 1
-      },
-      "by_global_category": {
-        "7.50.60.10 Schiffssteuern": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1,
             "Verordnung": 1
           },
           "children": [
-            {
-              "identifier": "121",
-              "title": "Kantonsrat",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "121.5",
-                  "title": "Kantonsratssaal",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                }
-              ]
-            },
             {
               "identifier": "126",
               "title": "Staatspersonal",
@@ -166,19 +131,21 @@
     {
       "identifier": "5",
       "title": "Polizei, Militär, Zivilschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "51",
           "title": "Polizei",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -200,45 +167,23 @@
                   }
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen, Regalien",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "61",
-          "title": "Finanzen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
+            },
             {
-              "identifier": "614",
-              "title": "Kantonale Steuern",
+              "identifier": "513",
+              "title": "Gewerbe- und Handelspolizei",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "614.8",
-                  "title": "Schiffssteuer",
+                  "identifier": "513.3",
+                  "title": "Handelsreisende, Märkte und Wandergewerbe, öffentliche Sammlung",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Gesetz": 1
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -281,6 +226,48 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "822",
+              "title": "Arbeitnehmerschutz",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "822.3",
+                  "title": "Heimarbeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -347,33 +334,21 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 4,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Reglement": 1,
-        "Gesetz": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1,
             "Anderes": 1
           },
           "children": [
-            {
-              "identifier": "7.30.10",
-              "title": "Staatliche Gebäude und Liegenschaften",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Reglement": 1
-              }
-            },
             {
               "identifier": "7.30.20",
               "title": "Wasserbau",
@@ -399,11 +374,10 @@
         {
           "identifier": "7.50",
           "title": "Verkehr",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Gesetz": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -425,26 +399,57 @@
                   }
                 }
               ]
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
             {
-              "identifier": "7.50.60",
-              "title": "Schifffahrt",
+              "identifier": "8.20.40",
+              "title": "Heimarbeit",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "7.50.60.10",
-                  "title": "Schiffssteuern",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.60",
+              "title": "Spenden und gemeinnützige Sammlungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -455,6 +460,7 @@
     "de": 6
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -463,6 +469,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -470,23 +479,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -499,9 +512,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",
@@ -587,6 +600,7 @@
     "FR",
     "GE",
     "GL",
+    "GR",
     "JU",
     "LU",
     "NE",

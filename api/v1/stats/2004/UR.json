@@ -1,76 +1,64 @@
 {
   "year": "2004",
+  "year_semantics": "enactment",
   "entity": "UR",
   "total": 5,
   "categorized": 5,
   "uncategorized": 0,
   "by_type": {
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "10.24 Kantonale Mittelschule": 1,
+        "9.34 Sachenrecht": 1
+      },
+      "by_global_category": {
+        "4.20.10 Mittelschule": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
-      "total": 3,
+      "total": 2,
       "by_topic": {
         "10.29 Fachhochschule, Hochschule": 1,
-        "3.8 Polizei, polizeiliche Zusammenarbeit": 1,
-        "40.7 Umweltschutz, Energie": 1
+        "9.31 Personenrecht": 1
       },
       "by_global_category": {
         "4.50.10 Pädagogik": 1,
-        "5.30.10.30 Personal": 1
+        "2.10.10.20.10 BVG-Stiftungen": 1
       }
     },
-    "Anderes": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "10.14 Schulbetrieb": 1
+        "9.34 Sachenrecht": 1
       },
       "by_global_category": {
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
       }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "9.31 Personenrecht": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "3",
-      "title": "Allgemeine Funktionen im Gemeinwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "3.8",
-          "title": "Polizei, polizeiliche Zusammenarbeit",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          }
-        }
-      ]
-    },
-    {
       "identifier": "9",
       "title": "Privatrecht - Zivilprozess - Vollstreckung",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "9.3",
           "title": "Zivilrecht",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1,
+            "Reglement": 1
           },
           "children": [
             {
@@ -79,7 +67,17 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "9.34",
+              "title": "Sachenrecht",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Reglement": 1
               }
             }
           ]
@@ -92,39 +90,29 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Reglement": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
-          "identifier": "10.1",
-          "title": "Volksschule",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "10.14",
-              "title": "Schulbetrieb",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        },
-        {
           "identifier": "10.2",
           "title": "Mittelschule, Fachhochschule, Hochschule, Stipendien",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Reglement": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "10.24",
+              "title": "Kantonale Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
             {
               "identifier": "10.29",
               "title": "Fachhochschule, Hochschule",
@@ -137,55 +125,114 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "40",
-      "title": "Pflege der Umwelt - Nutzung der Natur",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "40.7",
-          "title": "Umweltschutz, Energie",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          }
-        }
-      ]
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.10",
+              "title": "Personenrecht, Zivilstand",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.10.20",
+                  "title": "Stiftungen, Stiftungsaufsicht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.10.10.20.10",
+                      "title": "BVG-Stiftungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Interkantonale Vereinbarung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Reglement": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
-          "identifier": "4.10",
-          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Reglement": 1
           },
           "children": [
             {
-              "identifier": "4.10.30",
-              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Reglement": 1
               }
             }
           ]
@@ -211,48 +258,6 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "5.30",
-          "title": "Innere Sicherheit",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "5.30.10",
-              "title": "Polizei",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "5.30.10.30",
-                  "title": "Personal",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "languages_available": {
@@ -263,8 +268,11 @@
     "1869",
     "1888",
     "1889",
+    "1891",
     "1902",
-    "1910",
+    "1909",
+    "1911",
+    "1918",
     "1925",
     "1927",
     "1931",
@@ -272,24 +280,30 @@
     "1933",
     "1935",
     "1939",
+    "1940",
     "1942",
     "1943",
     "1944",
     "1948",
-    "1950",
-    "1958",
+    "1951",
+    "1952",
+    "1954",
     "1959",
     "1961",
     "1962",
+    "1964",
+    "1965",
     "1966",
+    "1967",
     "1968",
-    "1969",
+    "1970",
     "1971",
     "1972",
     "1973",
     "1974",
-    "1975",
+    "1976",
     "1977",
+    "1978",
     "1979",
     "1980",
     "1981",
@@ -336,8 +350,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

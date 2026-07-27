@@ -1,8 +1,9 @@
 {
   "year": "1999",
+  "year_semantics": "enactment",
   "entity": "GE",
-  "total": 36,
-  "categorized": 36,
+  "total": 40,
+  "categorized": 40,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
@@ -41,26 +42,30 @@
       }
     },
     "Gesetz": {
-      "total": 10,
+      "total": 14,
       "by_topic": {
+        "M 5 Protection de la nature": 3,
+        "I 2 Professions et métiers divers": 2,
         "A 1 Territoire, lien à la Confédération": 1,
         "C 1 Instruction publique": 1,
         "D 3 Impôts et taxes": 1,
-        "I 2 Professions et métiers divers": 1,
         "J 1 Relations du travail": 1,
         "J 4 Assistance": 1,
         "K 1 Police sanitaire, lutte contre les maladies": 1,
         "K 2 Etablissements hospitaliers": 1,
-        "L 3 Sous-sol": 1,
-        "M 5 Protection de la nature": 1
+        "L 1 Voies de communication et urbanisme": 1,
+        "L 3 Sous-sol": 1
       },
       "by_global_category": {
         "4.120.10 Schulkoordination": 1,
+        "5.30.60 Sicherheitsunternehmen": 1,
         "8.20.30 Einigungsämter": 1,
         "8.70.10 Sozialhilfe": 1,
         "8.10.90 Rettungsdienst": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1,
-        "6.30.20 Bergwerk": 1
+        "7.60.10 Abfälle": 1,
+        "6.30.20 Bergwerk": 1,
+        "7.70.50 Naturschutz": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -145,10 +150,10 @@
     {
       "identifier": "I",
       "title": "Commerce, industrie, arts et métiers, logement",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Loi": 1
+        "Loi": 2
       }
     },
     {
@@ -176,22 +181,22 @@
     {
       "identifier": "L",
       "title": "Domaine public et travaux",
-      "total": 7,
-      "own": 7,
+      "total": 8,
+      "own": 8,
       "by_type": {
         "Règlement": 6,
-        "Loi": 1
+        "Loi": 2
       }
     },
     {
       "identifier": "M",
       "title": "Agriculture, forêts, chasse et pêche",
-      "total": 4,
-      "own": 4,
+      "total": 6,
+      "own": 6,
       "by_type": {
+        "Loi": 3,
         "Règlement": 2,
-        "Accord intercantonal": 1,
-        "Loi": 1
+        "Accord intercantonal": 1
       }
     }
   ],
@@ -359,19 +364,21 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "5.30",
           "title": "Innere Sicherheit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 1,
+            "Loi": 1
           },
           "children": [
             {
@@ -393,6 +400,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "5.30.60",
+              "title": "Sicherheitsunternehmen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
             }
           ]
         }
@@ -474,10 +490,11 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Règlement": 4
+        "Règlement": 4,
+        "Loi": 2
       },
       "children": [
         {
@@ -503,19 +520,21 @@
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 1,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "7.60.10",
               "title": "Abfälle",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Règlement": 1
+                "Règlement": 1,
+                "Loi": 1
               }
             }
           ]
@@ -523,10 +542,11 @@
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Règlement": 2
+            "Règlement": 2,
+            "Loi": 1
           },
           "children": [
             {
@@ -545,6 +565,15 @@
               "own": 1,
               "by_type": {
                 "Règlement": 1
+              }
+            },
+            {
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
               }
             }
           ]
@@ -692,7 +721,7 @@
     }
   ],
   "languages_available": {
-    "fr": 36
+    "fr": 40
   },
   "available_years_for_entity": [
     "1564",
@@ -701,24 +730,28 @@
     "1815",
     "1816",
     "1817",
-    "1834",
+    "1841",
     "1847",
     "1849",
     "1856",
+    "1858",
     "1861",
     "1872",
     "1875",
+    "1876",
     "1878",
     "1881",
     "1887",
     "1889",
     "1892",
+    "1893",
     "1895",
     "1899",
     "1901",
     "1902",
     "1903",
     "1907",
+    "1908",
     "1909",
     "1918",
     "1923",
@@ -728,8 +761,11 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1935",
     "1937",
+    "1938",
     "1940",
     "1941",
     "1942",
@@ -827,6 +863,7 @@
     "FR",
     "GE",
     "GL",
+    "GR",
     "JU",
     "LU",
     "NE",

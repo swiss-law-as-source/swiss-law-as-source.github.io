@@ -1,61 +1,68 @@
 {
   "year": "2001",
+  "year_semantics": "enactment",
   "entity": "BS",
-  "total": 10,
-  "categorized": 10,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
         "154 Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden": 1,
-        "66 Bundessteuern": 1,
-        "780 Umweltschutz": 1
+        "212 Personen- und Familienrecht: Spezielle Erlasse": 1,
+        "292 Notariat": 1,
+        "410 Schulen": 1,
+        "911 Landwirtschaft · Forstwesen · Freizeitgärten": 1
       },
       "by_global_category": {
         "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
-        "6.20.60 Verrechnungssteuer": 1,
-        "7.60.50 Umweltverträglichkeitsprüfung": 1
+        "1.50.20.20 Gebühren, Tarife": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
         "111 Kantonsverfassung": 1,
-        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1
+        "171 Einwohnergemeinde Basel": 1,
+        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1,
+        "442 Hochschulförderung · Finanzmittel · Gebühren": 1
       },
       "by_global_category": {
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1
+        "1.10.50.20 Grenzen": 1,
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "4.120.30 Schulaufsicht": 1
       }
     },
-    "Staatsvertrag": {
+    "Interkantonale Vereinbarung": {
       "total": 2,
       "by_topic": {
-        "119 Grenzüberschreitende Zusammenarbeit": 1,
-        "784 Kanalisation": 1
+        "914 Submission": 1,
+        "956 Luftverkehr": 1
       },
       "by_global_category": {
-        "7.60.20 Gewässerschutz": 1
+        "7.30.40 Submission": 1,
+        "7.60.40 Lärmschutz": 1
       }
     },
     "Gemeindeerlass": {
       "total": 2,
       "by_topic": {
         "BaB 16 Gemeindepersonal": 1,
-        "RiE 3 Gesundheit · Bestattungswesen": 1
+        "RiE 117 Gemeindegebiet": 1
       },
       "by_global_category": {
         "8.70.10 Sozialhilfe": 1,
-        "8.10.60 Spitalexterne Krankenpflege": 1
+        "1.10.50.20 Grenzen": 1
       }
     },
     "Gesetz": {
       "total": 1,
       "by_topic": {
-        "783 Gewässerschutz": 1
+        "154 Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden": 1
       },
       "by_global_category": {
-        "7.60.20 Gewässerschutz": 1
+        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1
       }
     }
   },
@@ -63,22 +70,21 @@
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen · Organisation",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Staatsvertrag": 1,
+        "Anderes": 2,
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "11",
           "title": "Kantonsverfassung · Staatsgebiet · Regionale und grenzüberschreitende Zusammenarbeit",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Staatsvertrag": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -89,21 +95,65 @@
               "by_type": {
                 "Anderes": 1
               }
-            },
-            {
-              "identifier": "119",
-              "title": "Grenzüberschreitende Zusammenarbeit",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Staatsvertrag": 1
-              }
             }
           ]
         },
         {
           "identifier": "15",
           "title": "Organisation des Kantons",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "154",
+              "title": "Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "17",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "171",
+              "title": "Einwohnergemeinde Basel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht · Strafrecht · Rechtspflege",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Bundeszivilrecht: Ergänzende kantonale Erlasse",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -111,8 +161,28 @@
           },
           "children": [
             {
-              "identifier": "154",
-              "title": "Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden",
+              "identifier": "212",
+              "title": "Personen- und Familienrecht: Spezielle Erlasse",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "29",
+          "title": "Advokatur und Notariat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "292",
+              "title": "Notariat",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -126,12 +196,33 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "410",
+              "title": "Schulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "42",
           "title": "Berufsbildung · Berufsschulen · Fachhochschule",
@@ -151,54 +242,52 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "44",
+          "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "442",
+              "title": "Hochschulförderung · Finanzmittel · Gebühren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen · Staatliche Liegenschaften und Materiallagerplätze · Monopole",
-      "total": 1,
+      "identifier": "9",
+      "title": "Wirtschaft und Verkehr",
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 2,
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "66",
-          "title": "Bundessteuern",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 3,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1,
-        "Gesetz": 1,
-        "Staatsvertrag": 1
-      },
-      "children": [
-        {
-          "identifier": "78",
-          "title": "Umweltschutz",
-          "total": 3,
+          "identifier": "91",
+          "title": "Wirtschaft",
+          "total": 2,
           "own": 0,
           "by_type": {
             "Verordnung": 1,
-            "Gesetz": 1,
-            "Staatsvertrag": 1
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
-              "identifier": "780",
-              "title": "Umweltschutz",
+              "identifier": "911",
+              "title": "Landwirtschaft · Forstwesen · Freizeitgärten",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -206,21 +295,32 @@
               }
             },
             {
-              "identifier": "783",
-              "title": "Gewässerschutz",
+              "identifier": "914",
+              "title": "Submission",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Interkantonale Vereinbarung": 1
               }
-            },
+            }
+          ]
+        },
+        {
+          "identifier": "95",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
             {
-              "identifier": "784",
-              "title": "Kanalisation",
+              "identifier": "956",
+              "title": "Luftverkehr",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Staatsvertrag": 1
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -250,15 +350,98 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Anderes": 1,
+        "Gemeindeerlass": 1,
+        "Gesetz": 1
       },
       "children": [
         {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Gemeindeerlass": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.50",
+              "title": "Gebiet",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1,
+                "Gemeindeerlass": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.50.20",
+                  "title": "Grenzen",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 1,
+                    "Gemeindeerlass": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
           "identifier": "1.20",
           "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.30",
+                      "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Gesetz": 1,
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -266,8 +449,8 @@
           },
           "children": [
             {
-              "identifier": "1.20.70",
-              "title": "Gerichtsorganisation",
+              "identifier": "1.50.20",
+              "title": "Notare",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -275,24 +458,13 @@
               },
               "children": [
                 {
-                  "identifier": "1.20.70.10",
-                  "title": "Gerichtsbehörden",
+                  "identifier": "1.50.20.20",
+                  "title": "Gebühren, Tarife",
                   "total": 1,
-                  "own": 0,
+                  "own": 1,
                   "by_type": {
                     "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.20.70.10.30",
-                      "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung": 1
-                      }
-                    }
-                  ]
+                  }
                 }
               ]
             }
@@ -303,10 +475,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
@@ -317,34 +489,23 @@
           "by_type": {
             "Anderes": 1
           }
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "6.20",
-          "title": "Steuern",
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "6.20.60",
-              "title": "Verrechnungssteuer",
+              "identifier": "4.120.30",
+              "title": "Schulaufsicht",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Anderes": 1
               }
             }
           ]
@@ -354,42 +515,48 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Staatsvertrag": 1,
-        "Verordnung": 1
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
-          "total": 3,
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Staatsvertrag": 1,
-            "Verordnung": 1
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
-              "identifier": "7.60.20",
-              "title": "Gewässerschutz",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Gesetz": 1,
-                "Staatsvertrag": 1
-              }
-            },
-            {
-              "identifier": "7.60.50",
-              "title": "Umweltverträglichkeitsprüfung",
+              "identifier": "7.30.40",
+              "title": "Submission",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.40",
+              "title": "Lärmschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -399,32 +566,12 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gemeindeerlass": 2
+        "Gemeindeerlass": 1
       },
       "children": [
-        {
-          "identifier": "8.10",
-          "title": "Gesundheitswesen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gemeindeerlass": 1
-          },
-          "children": [
-            {
-              "identifier": "8.10.60",
-              "title": "Spitalexterne Krankenpflege",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gemeindeerlass": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "8.70",
           "title": "Fürsorge",
@@ -449,43 +596,53 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 14
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -511,7 +668,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",

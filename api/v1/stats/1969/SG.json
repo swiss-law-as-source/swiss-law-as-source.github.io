@@ -1,19 +1,22 @@
 {
   "year": "1969",
+  "year_semantics": "enactment",
   "entity": "SG",
-  "total": 11,
-  "categorized": 11,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
       "total": 7,
       "by_topic": {
-        "371 Kinderzulagen": 4,
+        "371 Kinderzulagen": 3,
+        "213 Volksschulen": 1,
         "732 Tiefbauten des Staates": 1,
         "811 Staatssteuern": 1,
         "961 Zivilrechtspflege": 1
       },
       "by_global_category": {
+        "4.80.30 Kunst- und Sportschulen": 1,
         "7.30.30.10 Nationalstrassen": 1,
         "6.20.40 Erbschafts- und Schenkungssteuern": 1,
         "2.80 Schiedsgerichtsbarkeit": 1
@@ -25,12 +28,23 @@
         "173 Katholische Konfession": 1,
         "232 Berufliche Grundausbildung": 1,
         "331 Krankenversicherung": 1,
-        "633 Bodenverbesserung": 1
+        "711 Strassenverkehr": 1
       },
       "by_global_category": {
         "1.40.10 Römisch-Katholische Kirche": 1,
         "4.120.60 Schulbauten": 1,
-        "6.10.30 Staatsbeiträge, Subventionen": 1
+        "7.50.20.30 Motorfahrzeugkontrolle": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "213 Volksschulen": 1,
+        "713 Eisenbahnen": 1
+      },
+      "by_global_category": {
+        "4.120.20 Schulgemeinden": 1,
+        "7.50.10.20 Eisenbahn": 1
       }
     }
   },
@@ -69,12 +83,36 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
+        "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "21",
+          "title": "Schulen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "213",
+              "title": "Volksschulen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "23",
           "title": "Berufliche Ausbildung und Berufsberatung",
@@ -100,10 +138,10 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 5,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 4,
+        "Interkantonale Vereinbarung": 3,
         "Anderes": 1
       },
       "children": [
@@ -130,50 +168,19 @@
         {
           "identifier": "37",
           "title": "Familienschutz",
-          "total": 4,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 4
+            "Interkantonale Vereinbarung": 3
           },
           "children": [
             {
               "identifier": "371",
               "title": "Kinderzulagen",
-              "total": 4,
-              "own": 4,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Interkantonale Vereinbarung": 4
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "63",
-          "title": "Bodenverbesserung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "633",
-              "title": "Bodenverbesserung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
+                "Interkantonale Vereinbarung": 3
               }
             }
           ]
@@ -183,12 +190,44 @@
     {
       "identifier": "7",
       "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
+        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "71",
+          "title": "Verkehr",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "711",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "713",
+              "title": "Eisenbahnen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "73",
           "title": "Öffentliches Baurecht",
@@ -329,21 +368,53 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
           "total": 1,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.80.30",
+              "title": "Kunst- und Sportschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "4.120.20",
+              "title": "Schulgemeinden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "4.120.60",
               "title": "Schulbauten",
@@ -360,33 +431,12 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
-        {
-          "identifier": "6.10",
-          "title": "Finanzen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "6.10.30",
-              "title": "Staatsbeiträge, Subventionen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "6.20",
           "title": "Steuern",
@@ -412,10 +462,12 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -448,41 +500,120 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.10",
+              "title": "Öffentlicher Verkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.10.20",
+                  "title": "Eisenbahn",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.30",
+                  "title": "Motorfahrzeugkontrolle",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 13
   },
   "available_years_for_entity": [
-    "1847",
-    "1871",
+    "1845",
+    "1862",
+    "1870",
+    "1874",
+    "1883",
+    "1884",
+    "1885",
+    "1888",
+    "1890",
+    "1897",
+    "1899",
     "1901",
+    "1902",
     "1903",
+    "1906",
+    "1907",
+    "1908",
+    "1910",
     "1911",
     "1914",
+    "1918",
+    "1919",
+    "1920",
+    "1921",
+    "1924",
+    "1926",
     "1929",
+    "1930",
+    "1931",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
+    "1945",
+    "1946",
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
     "1953",
-    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",
     "1960",
     "1961",
     "1962",
+    "1963",
     "1964",
     "1965",
     "1966",
@@ -544,8 +675,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",
@@ -570,7 +700,6 @@
     "SZ",
     "TG",
     "TI",
-    "UR",
     "VD",
     "VS",
     "ZG",

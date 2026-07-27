@@ -1,35 +1,40 @@
 {
   "year": "2004",
+  "year_semantics": "enactment",
   "entity": "GR",
-  "total": 15,
-  "categorized": 15,
+  "total": 20,
+  "categorized": 20,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
       "total": 10,
       "by_topic": {
         "427 Hochschulen": 4,
-        "490 Staatsarchiv, Kantonsbibliothek": 2,
         "420 Allgemeine Bestimmungen": 1,
         "421 Volksschule": 1,
-        "425 Mittelschule": 1,
+        "430 Allgemeine Berufsbildung": 1,
+        "490 Staatsarchiv, Kantonsbibliothek": 1,
+        "613 Polizeikorps": 1,
         "803 Enteignungen, Perimeter, Beschaffungen": 1
       },
       "by_global_category": {
         "4.50.10 Pädagogik": 2,
         "4.50.30 Wirtschaft": 2,
-        "4.170.20 Archive": 2,
         "4.10.20 Kindergarten": 1,
         "4.80.60 Sonderklassen": 1,
-        "4.100.20 Schulgelder": 1,
+        "4.120.100 Schulbehörden": 1,
+        "4.170.20 Archive": 1,
         "7.30.40 Submission": 1
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 6,
       "by_topic": {
+        "210 Allgemeine Bestimmungen": 2,
         "427 Hochschulen": 1,
-        "543 Berufliche Vorsorge": 1
+        "543 Berufliche Vorsorge": 1,
+        "613 Polizeikorps": 1,
+        "801 Planung": 1
       },
       "by_global_category": {
         "4.50.30 Wirtschaft": 1,
@@ -37,11 +42,14 @@
       }
     },
     "Anderes": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "35 Strafrechtspflege": 1
+        "35 Strafrechtspflege": 1,
+        "938 Banken, Sparkassen": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "6.40.10 Kantonalbanken": 1
+      }
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -61,6 +69,37 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Vollstreckung",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 2
+          },
+          "children": [
+            {
+              "identifier": "210",
+              "title": "Allgemeine Bestimmungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "Rechtspflege",
@@ -86,10 +125,10 @@
     {
       "identifier": "4",
       "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
-      "total": 11,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Verordnung": 9,
+        "Verordnung": 8,
         "Verordnung des Parlaments (Dekret)": 1,
         "Gesetz": 1
       },
@@ -97,10 +136,10 @@
         {
           "identifier": "42",
           "title": "Erziehung",
-          "total": 9,
+          "total": 8,
           "own": 0,
           "by_type": {
-            "Verordnung": 7,
+            "Verordnung": 6,
             "Verordnung des Parlaments (Dekret)": 1,
             "Gesetz": 1
           },
@@ -125,15 +164,6 @@
               }
             },
             {
-              "identifier": "425",
-              "title": "Mittelschule",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
               "identifier": "427",
               "title": "Hochschulen",
               "total": 5,
@@ -146,21 +176,41 @@
           ]
         },
         {
-          "identifier": "49",
-          "title": "Kultur, Naturschutz",
-          "total": 2,
+          "identifier": "43",
+          "title": "Berufsbildung",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "430",
+              "title": "Allgemeine Berufsbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "49",
+          "title": "Kultur, Naturschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "490",
               "title": "Staatsarchiv, Kantonsbibliothek",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 1
               }
             }
           ]
@@ -199,23 +249,68 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Planung, Bau, Wasserwirtschaft, Gewässerschutz, Umweltschutz, Gebäude- und Elementarschadenversicherung, Schätzungen, Verkehr",
-      "total": 1,
+      "identifier": "6",
+      "title": "Polizei, Militär, Bevölkerungsschutz, Zivilschutz",
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "Polizei",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "613",
+              "title": "Polizeikorps",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Planung, Bau, Wasserwirtschaft, Gewässerschutz, Umweltschutz, Gebäude- und Elementarschadenversicherung, Schätzungen, Verkehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "80",
           "title": "Planung, Bau",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "801",
+              "title": "Planung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "803",
               "title": "Enteignungen, Perimeter, Beschaffungen",
@@ -228,16 +323,47 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "93",
+          "title": "Wirtschaftsförderung, Handel, Industrie, Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "938",
+              "title": "Banken, Sparkassen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 11,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Verordnung": 9,
+        "Verordnung": 8,
         "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
@@ -334,8 +460,8 @@
           ]
         },
         {
-          "identifier": "4.100",
-          "title": "Ausbildungsbeiträge",
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -343,8 +469,8 @@
           },
           "children": [
             {
-              "identifier": "4.100.20",
-              "title": "Schulgelder",
+              "identifier": "4.120.100",
+              "title": "Schulbehörden",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -356,19 +482,50 @@
         {
           "identifier": "4.170",
           "title": "Dokumentation",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "4.170.20",
               "title": "Archive",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "6.40",
+          "title": "Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "6.40.10",
+              "title": "Kantonalbanken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -439,18 +596,24 @@
     }
   ],
   "languages_available": {
-    "de": 15,
-    "it": 15
+    "de": 20,
+    "it": 20
   },
   "available_years_for_entity": [
+    "1846",
     "1877",
     "1889",
     "1901",
     "1908",
     "1913",
+    "1916",
+    "1917",
+    "1922",
     "1923",
     "1925",
     "1927",
+    "1929",
+    "1932",
     "1937",
     "1943",
     "1946",
@@ -459,9 +622,12 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1956",
+    "1957",
     "1958",
     "1959",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -482,6 +648,7 @@
     "1978",
     "1979",
     "1980",
+    "1981",
     "1982",
     "1983",
     "1984",
@@ -499,6 +666,7 @@
     "1996",
     "1997",
     "1998",
+    "1999",
     "2000",
     "2001",
     "2002",

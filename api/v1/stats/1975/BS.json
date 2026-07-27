@@ -1,25 +1,11 @@
 {
   "year": "1975",
+  "year_semantics": "enactment",
   "entity": "BS",
-  "total": 12,
-  "categorized": 12,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
-    "Interkantonale Vereinbarung": {
-      "total": 5,
-      "by_topic": {
-        "39 Bestattungen": 2,
-        "117 Kantonsgebiet · Grenzbereinigungen": 1,
-        "691 Salzregal": 1,
-        "785 Abwasserreinigung": 1
-      },
-      "by_global_category": {
-        "8.10.130.40 Bestattungswesen, Friedhöfe": 2,
-        "1.10.50.20 Grenzen": 1,
-        "6.30.30 Salzregal": 1,
-        "7.60.20 Gewässerschutz": 1
-      }
-    },
     "Anderes": {
       "total": 4,
       "by_topic": {
@@ -39,13 +25,45 @@
       "total": 3,
       "by_topic": {
         "31 Medizinalpersonen · Komplementärmedizin": 1,
-        "441 Organisation · Behörden · Personal": 1,
-        "74 Enteignung": 1
+        "414 Lehrmittel · Schulmaterial · Schulbibliotheken": 1,
+        "441 Organisation · Behörden · Personal": 1
       },
       "by_global_category": {
         "8.10.30.50 Chiropraktiker, Physiotherapeuten": 1,
-        "4.120.30 Schulaufsicht": 1,
-        "7.20 Enteignung": 1
+        "4.120.40 Lehrmittel": 1,
+        "4.120.30 Schulaufsicht": 1
+      }
+    },
+    "Gemeindeerlass": {
+      "total": 3,
+      "by_topic": {
+        "BeE 117 Gemeindegebiet": 1,
+        "RiE 117 Gemeindegebiet": 1,
+        "RiE 9 Wirtschaft · Freizeitgärten": 1
+      },
+      "by_global_category": {
+        "1.10.50.20 Grenzen": 2,
+        "7.50.80 Post- und Fernmeldeverkehr": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "154 Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden": 1,
+        "322 Alkohol- und Drogenmissbrauch": 1
+      },
+      "by_global_category": {
+        "1.20.70.50 Gerichtskosten, Gerichtsgebühren": 1,
+        "8.10.120.10 Alkoholismus": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "39 Bestattungen": 1
+      },
+      "by_global_category": {
+        "8.10.130.40 Bestattungswesen, Friedhöfe": 1
       }
     }
   },
@@ -56,25 +74,25 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "11",
-          "title": "Kantonsverfassung · Staatsgebiet · Regionale und grenzüberschreitende Zusammenarbeit",
+          "identifier": "15",
+          "title": "Organisation des Kantons",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "117",
-              "title": "Kantonsgebiet · Grenzbereinigungen",
+              "identifier": "154",
+              "title": "Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -87,8 +105,9 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -101,12 +120,32 @@
           }
         },
         {
+          "identifier": "32",
+          "title": "Krankheiten · Kranken- und Betagtenpflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "322",
+              "title": "Alkohol- und Drogenmissbrauch",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "39",
           "title": "Bestattungen",
-          "total": 2,
-          "own": 2,
+          "total": 1,
+          "own": 1,
           "by_type": {
-            "Interkantonale Vereinbarung": 2
+            "Interkantonale Vereinbarung": 1
           }
         }
       ]
@@ -114,20 +153,21 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -137,6 +177,15 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            },
+            {
+              "identifier": "414",
+              "title": "Lehrmittel · Schulmaterial · Schulbibliotheken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -164,74 +213,30 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen · Staatliche Liegenschaften und Materiallagerplätze · Monopole",
+      "identifier": "7",
+      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
       },
       "children": [
-        {
-          "identifier": "69",
-          "title": "Monopole",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "691",
-              "title": "Salzregal",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 3,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1,
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "74",
-          "title": "Enteignung",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        },
         {
           "identifier": "78",
           "title": "Umweltschutz",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Interkantonale Vereinbarung": 1
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "785",
               "title": "Abwasserreinigung",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 1,
-                "Interkantonale Vereinbarung": 1
+                "Anderes": 1
               }
             }
           ]
@@ -299,43 +304,93 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "BeE",
+      "title": "Einwohnergemeinde Bettingen",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Gemeindeerlass": 1
+      }
+    },
+    {
+      "identifier": "RiE",
+      "title": "Einwohnergemeinde Riehen",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Gemeindeerlass": 2
+      }
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Gemeindeerlass": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Gemeindeerlass": 2
           },
           "children": [
             {
               "identifier": "1.10.50",
               "title": "Gebiet",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Gemeindeerlass": 2
               },
               "children": [
                 {
                   "identifier": "1.10.50.20",
                   "title": "Grenzen",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gemeindeerlass": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.50",
+                  "title": "Gerichtskosten, Gerichtsgebühren",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -347,21 +402,21 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Anderes": 1
           },
           "children": [
             {
@@ -373,6 +428,15 @@
                 "Anderes": 1,
                 "Verordnung": 1
               }
+            },
+            {
+              "identifier": "4.120.40",
+              "title": "Lehrmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -381,11 +445,10 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -407,56 +470,27 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "6.30.30",
-              "title": "Salzregal",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
         }
       ]
     },
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Verordnung": 1,
-        "Interkantonale Vereinbarung": 1
+        "Gemeindeerlass": 1
       },
       "children": [
         {
-          "identifier": "7.20",
-          "title": "Enteignung",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        },
-        {
           "identifier": "7.50",
           "title": "Verkehr",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Gemeindeerlass": 1
           },
           "children": [
             {
@@ -478,27 +512,34 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "7.50.80",
+              "title": "Post- und Fernmeldeverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gemeindeerlass": 1
+              }
             }
           ]
         },
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Interkantonale Vereinbarung": 1
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "7.60.20",
               "title": "Gewässerschutz",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 1,
-                "Interkantonale Vereinbarung": 1
+                "Anderes": 1
               }
             }
           ]
@@ -511,8 +552,9 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -521,8 +563,9 @@
           "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2,
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Gesetz": 1,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -546,21 +589,41 @@
               ]
             },
             {
-              "identifier": "8.10.130",
-              "title": "Hygiene",
-              "total": 2,
+              "identifier": "8.10.120",
+              "title": "Suchtprävention",
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 2
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.120.10",
+                  "title": "Alkoholismus",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               },
               "children": [
                 {
                   "identifier": "8.10.130.40",
                   "title": "Bestattungswesen, Friedhöfe",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 2
+                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
@@ -571,43 +634,53 @@
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 13
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -633,7 +706,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",
@@ -704,7 +776,7 @@
   ],
   "available_entities_for_year": [
     "AG",
-    "AI",
+    "AR",
     "BE",
     "BL",
     "BS",
@@ -718,12 +790,10 @@
     "NW",
     "OW",
     "SG",
-    "SH",
     "SO",
     "SZ",
     "TG",
     "TI",
-    "UR",
     "VD",
     "VS",
     "ZG",

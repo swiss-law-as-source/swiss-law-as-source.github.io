@@ -1,45 +1,49 @@
 {
   "year": "2000",
+  "year_semantics": "enactment",
   "entity": "GR",
-  "total": 7,
-  "categorized": 7,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung des Parlaments (Dekret)": {
+    "Verordnung": {
       "total": 3,
       "by_topic": {
-        "421 Volksschule": 1,
-        "838 Feuerpolizei": 1,
-        "935 Gewerbepolizei": 1
+        "76 Fischereiregal": 2,
+        "420 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
-        "5.20.30.10 Feuerwehr": 1,
-        "4.180.10.10 Film, Theater, Unterhaltung": 1
+        "4.10.20 Kindergarten": 1,
+        "6.30.60.10 Patente": 1
       }
     },
-    "Verordnung": {
+    "Verordnung des Parlaments (Dekret)": {
       "total": 2,
       "by_topic": {
-        "420 Allgemeine Bestimmungen": 1,
-        "801 Planung": 1
+        "421 Volksschule": 1,
+        "838 Feuerpolizei": 1
       },
       "by_global_category": {
-        "4.10.20 Kindergarten": 1
+        "5.20.30.10 Feuerwehr": 1
       }
     },
     "Reglement": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "76 Fischereiregal": 1,
         "830 Gebäudeversicherung": 1
       },
       "by_global_category": {}
     },
     "Anderes": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "910 Förderung der Landwirtschaft": 1,
         "92 Forstwirtschaft": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "9.20.60 Landwirtschaftlicher Kredit": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -86,36 +90,37 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Planung, Bau, Wasserwirtschaft, Gewässerschutz, Umweltschutz, Gebäude- und Elementarschadenversicherung, Schätzungen, Verkehr",
+      "identifier": "7",
+      "title": "Finanzwesen, Regalien",
       "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 2,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "76",
+          "title": "Fischereiregal",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Verordnung": 2,
+            "Reglement": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Planung, Bau, Wasserwirtschaft, Gewässerschutz, Umweltschutz, Gebäude- und Elementarschadenversicherung, Schätzungen, Verkehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
         "Reglement": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
-        {
-          "identifier": "80",
-          "title": "Planung, Bau",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "801",
-              "title": "Planung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "83",
           "title": "Gebäude- und Elementarschadenversicherung",
@@ -154,10 +159,29 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Anderes": 2
       },
       "children": [
+        {
+          "identifier": "91",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "910",
+              "title": "Förderung der Landwirtschaft",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "92",
           "title": "Forstwirtschaft",
@@ -166,26 +190,6 @@
           "by_type": {
             "Anderes": 1
           }
-        },
-        {
-          "identifier": "93",
-          "title": "Wirtschaftsförderung, Handel, Industrie, Gewerbe",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          },
-          "children": [
-            {
-              "identifier": "935",
-              "title": "Gewerbepolizei",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              }
-            }
-          ]
         }
       ]
     }
@@ -194,11 +198,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -218,37 +221,6 @@
               "by_type": {
                 "Verordnung": 1
               }
-            }
-          ]
-        },
-        {
-          "identifier": "4.180",
-          "title": "Kunst, Kultur, Sport",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          },
-          "children": [
-            {
-              "identifier": "4.180.10",
-              "title": "Kunst",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              },
-              "children": [
-                {
-                  "identifier": "4.180.10.10",
-                  "title": "Film, Theater, Unterhaltung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
-                  }
-                }
-              ]
             }
           ]
         }
@@ -295,21 +267,100 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.60",
+              "title": "Fischerei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.30.60.10",
+                  "title": "Patente",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.60",
+              "title": "Landwirtschaftlicher Kredit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 7,
-    "it": 7
+    "de": 9,
+    "it": 9
   },
   "available_years_for_entity": [
+    "1846",
     "1877",
     "1889",
     "1901",
     "1908",
     "1913",
+    "1916",
+    "1917",
+    "1922",
     "1923",
     "1925",
     "1927",
+    "1929",
+    "1932",
     "1937",
     "1943",
     "1946",
@@ -318,9 +369,12 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1956",
+    "1957",
     "1958",
     "1959",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -341,6 +395,7 @@
     "1978",
     "1979",
     "1980",
+    "1981",
     "1982",
     "1983",
     "1984",
@@ -358,6 +413,7 @@
     "1996",
     "1997",
     "1998",
+    "1999",
     "2000",
     "2001",
     "2002",
@@ -389,6 +445,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",

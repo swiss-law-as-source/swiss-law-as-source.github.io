@@ -1,69 +1,61 @@
 {
   "year": "1988",
+  "year_semantics": "enactment",
   "entity": "BL",
   "total": 7,
   "categorized": 7,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 6,
       "by_topic": {
-        "145 Sicherheitsdirektion": 1,
+        "145 Sicherheitsdirektion": 2,
+        "61 Tierschutz": 1,
         "78 Umweltschutz": 1,
         "856 Frauenhäuser": 1,
         "93 Spitäler": 1
       },
       "by_global_category": {
         "3.70.20 Schutzaufsicht": 1,
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "8.10.30.100 Tierärzte": 1,
         "8.10.20.30 Patientenrechte": 1
       }
     },
     "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "76 Schutz vor Feuer und weiteren Naturgefahren": 1,
-        "78 Umweltschutz": 1
-      },
-      "by_global_category": {
-        "5.20.30.20 Brandschutz": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
         "78 Umweltschutz": 1
       },
-      "by_global_category": {
-        "7.60.20 Gewässerschutz": 1
-      }
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "145",
               "title": "Sicherheitsdirektion",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               }
             }
           ]
@@ -71,32 +63,41 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Öffentliche Sicherheit, Umweltschutz",
-      "total": 4,
+      "identifier": "6",
+      "title": "Kultur, Bildung, Ausbildung",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "76",
-          "title": "Schutz vor Feuer und weiteren Naturgefahren",
+          "identifier": "61",
+          "title": "Tierschutz",
           "total": 1,
           "own": 1,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1
           }
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Öffentliche Sicherheit, Umweltschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Anderes": 1
+      },
+      "children": [
         {
           "identifier": "78",
           "title": "Umweltschutz",
-          "total": 3,
-          "own": 3,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
             "Verordnung": 1,
             "Anderes": 1
           }
@@ -157,6 +158,48 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "3",
       "title": "Strafrecht",
       "total": 1,
@@ -188,94 +231,21 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "5.20",
-          "title": "Bevölkerungsschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "5.20.30",
-              "title": "Feuerwehr / Elementarschäden",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "5.20.30.20",
-                  "title": "Brandschutz",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "7.60.20",
-              "title": "Gewässerschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
@@ -297,6 +267,26 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.100",
+                  "title": "Tierärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -309,22 +299,36 @@
   "available_years_for_entity": [
     "1815",
     "1828",
-    "1829",
     "1834",
     "1836",
+    "1865",
     "1870",
     "1876",
     "1881",
-    "1903",
+    "1888",
+    "1889",
+    "1892",
+    "1896",
+    "1902",
+    "1907",
+    "1908",
     "1909",
+    "1911",
+    "1914",
     "1916",
     "1919",
     "1920",
+    "1921",
+    "1922",
+    "1923",
     "1925",
+    "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1944",
+    "1946",
     "1947",
     "1948",
     "1949",
@@ -332,8 +336,10 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -341,6 +347,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -403,6 +410,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

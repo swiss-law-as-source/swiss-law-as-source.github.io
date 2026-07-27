@@ -1,8 +1,9 @@
 {
   "year": "1979",
+  "year_semantics": "enactment",
   "entity": "NE",
-  "total": 21,
-  "categorized": 21,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -34,6 +35,16 @@
         "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1
       }
     },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "701 Dispositions générales": 1,
+        "761.6 Elimination des véhicules automobiles": 1
+      },
+      "by_global_category": {
+        "7.60.10 Abfälle": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
@@ -42,13 +53,6 @@
       "by_global_category": {
         "7.10.20 Zonen": 1
       }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "701 Dispositions générales": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
@@ -244,12 +248,12 @@
     {
       "identifier": "7",
       "title": "Travaux publics – Énergie – Transports et communications",
-      "total": 13,
+      "total": 14,
       "own": 0,
       "by_type": {
         "Autre": 11,
-        "Ordonnance parlementaire (décret)": 1,
-        "Loi": 1
+        "Loi": 2,
+        "Ordonnance parlementaire (décret)": 1
       },
       "children": [
         {
@@ -273,6 +277,37 @@
                 "Ordonnance parlementaire (décret)": 1,
                 "Loi": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "76",
+          "title": "Transports et communications",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "761",
+              "title": "Circulation routière",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "761.6",
+                  "title": "Elimination des véhicules automobiles",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -419,11 +454,12 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 13,
+      "total": 14,
       "own": 0,
       "by_type": {
         "Autre": 12,
-        "Ordonnance parlementaire (décret)": 1
+        "Ordonnance parlementaire (décret)": 1,
+        "Loi": 1
       },
       "children": [
         {
@@ -453,6 +489,26 @@
               "by_type": {
                 "Autre": 1,
                 "Ordonnance parlementaire (décret)": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
               }
             }
           ]
@@ -492,10 +548,11 @@
     }
   ],
   "languages_available": {
-    "fr": 21
+    "fr": 22
   },
   "available_years_for_entity": [
     "1832",
+    "1857",
     "1858",
     "1864",
     "1866",
@@ -642,6 +699,8 @@
     "TI",
     "UR",
     "VD",
+    "VS",
+    "ZG",
     "ZH"
   ]
 }

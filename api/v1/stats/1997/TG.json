@@ -1,58 +1,60 @@
 {
   "year": "1997",
+  "year_semantics": "enactment",
   "entity": "TG",
   "total": 12,
   "categorized": 12,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 6,
-      "by_topic": {
-        "554.5 Gastgewerbe": 1,
-        "611 Finanzhaushalt. Finanzverwaltung. Finanzkontrolle": 1,
-        "63 Gebühren. Abgaben": 1,
-        "821.4 Kollektive Arbeitsstreitigkeiten": 1,
-        "832 Kranken- und Unfallversicherung": 1,
-        "916 Bekämpfung von Tierseuchen. Tierkrankheiten. Viehhandel": 1
-      },
-      "by_global_category": {
-        "9.50.10.10 Berufsausübungsbewilligungen": 1,
-        "1.20.20.60 Verwaltungsgebühren": 1,
-        "8.20.30 Einigungsämter": 1,
-        "8.30.70 UVG": 1,
-        "8.10.30.100 Tierärzte": 1
-      }
-    },
     "Anderes": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "173.1 Gerichtsorganisation": 1,
         "221.22 Miete und Pacht": 1,
         "410 Allgemein": 1,
-        "923 Fischerei": 1
+        "720 Allgemein. Submission": 1,
+        "741 Strassenverkehr": 1
       },
       "by_global_category": {
         "1.10.90.10 Gleichstellung von Mann und Frau": 1,
         "1.20.70.10.50 Arbeits- und Mietgericht": 1,
-        "4.10.20 Kindergarten": 1
+        "4.10.20 Kindergarten": 1,
+        "7.30.40 Submission": 1
+      }
+    },
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "410 Allgemein": 1,
+        "63 Gebühren. Abgaben": 1,
+        "747 Schiffahrt": 1,
+        "814.2 Gewässerschutz": 1
+      },
+      "by_global_category": {
+        "4.120.20 Schulgemeinden": 1,
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "7.50.60.10 Schiffssteuern": 1,
+        "7.60.20 Gewässerschutz": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "187.5 Übereinkünfte mit Nachbarkantonen": 1,
+        "411.7 Interkantonale Vereinbarungen": 1
+      },
+      "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
       }
     },
     "Gesetz": {
       "total": 1,
       "by_topic": {
-        "211.41 Grundbesitz": 1
+        "814.2 Gewässerschutz": 1
       },
       "by_global_category": {
-        "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1
-      }
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "837 Arbeitslosenversicherung": 1
-      },
-      "by_global_category": {
-        "8.30.110 Arbeitslosenversicherung": 1
+        "7.60.20 Gewässerschutz": 1
       }
     }
   },
@@ -60,10 +62,11 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -96,50 +99,49 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "18",
+          "title": "Staat und Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "187",
+              "title": "Evangelische Landeskirche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "187.5",
+                  "title": "Übereinkünfte mit Nachbarkantonen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "2",
       "title": "Privatrecht - Zivilrechtspflege - Vollstreckung",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
-        {
-          "identifier": "21",
-          "title": "Zivilgesetzbuch",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "211.4",
-              "title": "Sachenrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "211.41",
-                  "title": "Grundbesitz",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
         {
           "identifier": "22",
           "title": "Obligationenrecht",
@@ -165,68 +167,51 @@
     {
       "identifier": "4",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 1,
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1,
+            "Anderes": 1,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "410",
               "title": "Allgemein",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Verordnung": 1,
                 "Anderes": 1
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "Militärwesen - Zivilschutz - Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "55",
-          "title": "Polizeiwesen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
+            },
             {
-              "identifier": "554",
-              "title": "Gewerbepolizei. Marktwesen. Gastgewerbe",
+              "identifier": "411",
+              "title": "Volksschule. Kindergarten",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Interkantonale Vereinbarung": 1
               },
               "children": [
                 {
-                  "identifier": "554.5",
-                  "title": "Gastgewerbe",
+                  "identifier": "411.7",
+                  "title": "Interkantonale Vereinbarungen",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung": 1
+                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
@@ -238,32 +223,12 @@
     {
       "identifier": "6",
       "title": "Finanzen",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 1
       },
       "children": [
-        {
-          "identifier": "61",
-          "title": "Organisation allgemein",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "611",
-              "title": "Finanzhaushalt. Finanzverwaltung. Finanzkontrolle",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "63",
           "title": "Gebühren. Abgaben",
@@ -276,111 +241,18 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
+      "identifier": "7",
+      "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
       "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Reglement": 1
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "82",
-          "title": "Arbeit",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "821",
-              "title": "Arbeitsvertrag",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "821.4",
-                  "title": "Kollektive Arbeitsstreitigkeiten",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "83",
-          "title": "Sozialversicherung",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1,
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "832",
-              "title": "Kranken- und Unfallversicherung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "837",
-              "title": "Arbeitslosenversicherung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Reglement": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Volkswirtschaft",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "91",
-          "title": "Landwirtschaft",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "916",
-              "title": "Bekämpfung von Tierseuchen. Tierkrankheiten. Viehhandel",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "92",
-          "title": "Forstwesen. Jagd. Fischerei",
+          "identifier": "72",
+          "title": "Werke",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -388,13 +260,89 @@
           },
           "children": [
             {
-              "identifier": "923",
-              "title": "Fischerei",
+              "identifier": "720",
+              "title": "Allgemein. Submission",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Anderes": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "74",
+          "title": "Verkehr",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "741",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "747",
+              "title": "Schiffahrt",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "814",
+              "title": "Schutz des ökologischen Gleichgewichts",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "814.2",
+                  "title": "Gewässerschutz",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -405,11 +353,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -505,46 +454,24 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.40.20",
-                  "title": "Erwerb von Grundstücke durch Personen im Ausland",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
+                "Interkantonale Vereinbarung": 1
+              }
             }
           ]
         }
@@ -553,19 +480,22 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "4.10",
           "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -576,24 +506,74 @@
               "by_type": {
                 "Anderes": 1
               }
+            },
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.20",
+              "title": "Schulgemeinden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
-        "Reglement": 1
+        "Verordnung": 2,
+        "Anderes": 1,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "8.10",
-          "title": "Gesundheitswesen",
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -601,8 +581,8 @@
           },
           "children": [
             {
-              "identifier": "8.10.30",
-              "title": "Medizinische Berufe",
+              "identifier": "7.50.60",
+              "title": "Schifffahrt",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -610,8 +590,8 @@
               },
               "children": [
                 {
-                  "identifier": "8.10.30.100",
-                  "title": "Tierärzte",
+                  "identifier": "7.50.60.10",
+                  "title": "Schiffssteuern",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -623,94 +603,24 @@
           ]
         },
         {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "8.20.30",
-              "title": "Einigungsämter",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
+          "identifier": "7.60",
+          "title": "Umweltschutz",
           "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "8.30.70",
-              "title": "UVG",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "8.30.110",
-              "title": "Arbeitslosenversicherung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Reglement": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "9.50",
-          "title": "Gewerbe",
-          "total": 1,
-          "own": 0,
-          "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "9.50.10",
-              "title": "Dienstleistungen",
-              "total": 1,
-              "own": 0,
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "9.50.10.10",
-                  "title": "Berufsausübungsbewilligungen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
@@ -721,34 +631,51 @@
     "de": 12
   },
   "available_years_for_entity": [
-    "1826",
+    "1669",
+    "1803",
+    "1815",
+    "1825",
     "1828",
-    "1829",
     "1831",
     "1834",
     "1846",
+    "1861",
     "1869",
+    "1870",
     "1886",
+    "1887",
     "1889",
     "1890",
-    "1891",
-    "1892",
     "1896",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1911",
     "1914",
+    "1917",
     "1918",
+    "1923",
+    "1925",
     "1926",
     "1927",
+    "1930",
     "1931",
     "1933",
     "1934",
     "1937",
     "1938",
-    "1949",
+    "1941",
+    "1943",
+    "1947",
+    "1948",
+    "1951",
     "1955",
+    "1956",
     "1958",
+    "1959",
+    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
@@ -757,7 +684,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",

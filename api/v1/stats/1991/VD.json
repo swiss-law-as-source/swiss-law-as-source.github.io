@@ -1,20 +1,23 @@
 {
   "year": "1991",
+  "year_semantics": "enactment",
   "entity": "VD",
-  "total": 9,
-  "categorized": 9,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "685 Mines, prospection, production de pétrole": 1,
+        "705.400 Professions de la construction": 1,
         "725.000 Routes et voies de communications en général": 1,
         "810.400 Autres établissements": 1,
         "840 Logement en général": 1
       },
       "by_global_category": {
         "6.30.40 Erdöl": 1,
+        "9.50.10.10 Berufsausübungsbewilligungen": 1,
         "8.70.80 Schwangerschaftsberatung": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1
       }
@@ -182,13 +185,44 @@
     {
       "identifier": "7",
       "title": "TRAVAUX PUBLICS - ÉNERGIE - TRANSPORTS - COMMUNICATIONS",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Règlement": 1,
+        "Règlement": 2,
         "Loi": 1
       },
       "children": [
+        {
+          "identifier": "70",
+          "title": "AMÉNAGEMENT DU TERRITOIRE ET DROIT DE LA CONSTRUCTION",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "705",
+              "title": "Droit de la construction",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "705.400",
+                  "title": "Professions de la construction",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "72",
           "title": "DOMAINE PUBLIC",
@@ -479,10 +513,11 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Loi": 2
+        "Loi": 2,
+        "Règlement": 1
       },
       "children": [
         {
@@ -504,12 +539,43 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.10",
+                  "title": "Berufsausübungsbewilligungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "fr": 9
+    "fr": 10
   },
   "available_years_for_entity": [
     "1803",
@@ -639,6 +705,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

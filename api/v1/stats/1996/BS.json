@@ -1,10 +1,66 @@
 {
   "year": "1996",
+  "year_semantics": "enactment",
   "entity": "BS",
-  "total": 6,
-  "categorized": 6,
+  "total": 20,
+  "categorized": 20,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 6,
+      "by_topic": {
+        "164 Lohn und Entschädigungen": 1,
+        "258 Strafvollzug · Gefängniswesen": 1,
+        "413 Mittelschulen": 1,
+        "781 Lufthygiene": 1,
+        "79 Baurekurskommission": 1,
+        "835 Arbeitslosenversicherung und ergänzende kantonale Massnahmen": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.80 Personalausschüsse, paritätische Kommissionen": 1,
+        "4.20.10 Mittelschule": 1,
+        "7.10.50 Verfahren": 1,
+        "8.30.110 Arbeitslosenversicherung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "153 Regierung und Verwaltung · Verwaltungsgebühren": 1,
+        "323 Psychisch kranke Personen": 1,
+        "510 Polizei": 1,
+        "65 Spezielle Steuern und Abgaben": 1
+      },
+      "by_global_category": {
+        "4.170.20 Archive": 1,
+        "8.10.50 Psychiatrische Dienste": 1,
+        "5.30.10.10 Kantonspolizei": 1,
+        "6.20.20 Handänderungssteuern": 1
+      }
+    },
+    "Gemeindeerlass": {
+      "total": 3,
+      "by_topic": {
+        "BaB 16 Gemeindepersonal": 1,
+        "BeE 132 Wahlen und Abstimmungen": 1,
+        "RiE 49 Bildende Kunst und Denkmalschutz": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "1.10.90.20.10 Wahlen und Abstimmungen": 1,
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
+      }
+    },
+    "Staatsvertrag": {
+      "total": 2,
+      "by_topic": {
+        "119 Grenzüberschreitende Zusammenarbeit": 1,
+        "784 Kanalisation": 1
+      },
+      "by_global_category": {
+        "7.60.20 Gewässerschutz": 1
+      }
+    },
     "Reglement": {
       "total": 2,
       "by_topic": {
@@ -14,42 +70,101 @@
         "4.90.30 Ausbildung": 2
       }
     },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "258 Strafvollzug · Gefängniswesen": 1
-      },
-      "by_global_category": {}
-    },
     "Anderes": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "446 Fakultäten": 1
+        "446 Fakultäten": 1,
+        "786 Abfallbeseitigung": 1
       },
       "by_global_category": {
-        "4.40.10 Rechtswissenschaftliche Fakultät": 1
+        "4.40.10 Rechtswissenschaftliche Fakultät": 1,
+        "7.60.10 Abfälle": 1
       }
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
-        "510 Polizei": 1
+        "419 Schulgeld · Schulabkommen · Anerkennungsabkommen": 1
       },
       "by_global_category": {
-        "5.30.10.50 Polizeiliche Zusammenarbeit": 1
-      }
-    },
-    "Gemeindeerlass": {
-      "total": 1,
-      "by_topic": {
-        "RiE 49 Bildende Kunst und Denkmalschutz": 1
-      },
-      "by_global_category": {
-        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
+        "4.140 Anerkennung von Diplomen": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staatsrechtliche Grundlagen · Organisation",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Staatsvertrag": 1,
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "11",
+          "title": "Kantonsverfassung · Staatsgebiet · Regionale und grenzüberschreitende Zusammenarbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Staatsvertrag": 1
+          },
+          "children": [
+            {
+              "identifier": "119",
+              "title": "Grenzüberschreitende Zusammenarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Staatsvertrag": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "15",
+          "title": "Organisation des Kantons",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "153",
+              "title": "Regierung und Verwaltung · Verwaltungsgebühren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "16",
+          "title": "Staatspersonal",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "164",
+              "title": "Lohn und Entschädigungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht · Strafrecht · Rechtspflege",
@@ -82,15 +197,78 @@
       ]
     },
     {
+      "identifier": "3",
+      "title": "Gesundheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "32",
+          "title": "Krankheiten · Kranken- und Betagtenpflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "323",
+              "title": "Psychisch kranke Personen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Reglement": 2,
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "413",
+              "title": "Mittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "419",
+              "title": "Schulgeld · Schulabkommen · Anerkennungsabkommen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "43",
           "title": "Lehrerbildung",
@@ -139,7 +317,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -148,7 +326,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -157,12 +335,143 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Gesetz": 1
               }
             }
           ]
         }
       ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen · Staatliche Liegenschaften und Materiallagerplätze · Monopole",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "65",
+          "title": "Spezielle Steuern und Abgaben",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Staatsvertrag": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "78",
+          "title": "Umweltschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Staatsvertrag": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "781",
+              "title": "Lufthygiene",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "784",
+              "title": "Kanalisation",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Staatsvertrag": 1
+              }
+            },
+            {
+              "identifier": "786",
+              "title": "Abfallbeseitigung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "79",
+          "title": "Baurekurskommission",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Arbeit · Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "835",
+              "title": "Arbeitslosenversicherung und ergänzende kantonale Massnahmen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "BaB",
+      "title": "Bürgergemeinde Basel",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Gemeindeerlass": 1
+      }
+    },
+    {
+      "identifier": "BeE",
+      "title": "Einwohnergemeinde Bettingen",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Gemeindeerlass": 1
+      }
     },
     {
       "identifier": "RiE",
@@ -176,15 +485,146 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "identifier": "1",
+      "title": "Staat",
       "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
-        "Anderes": 1
+        "Gemeindeerlass": 2,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gemeindeerlass": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.20",
+                  "title": "Politische Rechte",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gemeindeerlass": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.90.20.10",
+                      "title": "Wahlen und Abstimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gemeindeerlass": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gemeindeerlass": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Gemeindeerlass": 1,
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gemeindeerlass": 1
+                      }
+                    },
+                    {
+                      "identifier": "1.20.20.40.80",
+                      "title": "Personalausschüsse, paritätische Kommissionen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 6,
+      "own": 0,
+      "by_type": {
+        "Reglement": 2,
+        "Verordnung": 1,
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.40",
           "title": "Tertiärstufe: Universitäten",
@@ -224,6 +664,35 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.140",
+          "title": "Anerkennung von Diplomen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.20",
+              "title": "Archive",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -233,7 +702,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -242,7 +711,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -251,16 +720,16 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
-                  "identifier": "5.30.10.50",
-                  "title": "Polizeiliche Zusammenarbeit",
+                  "identifier": "5.30.10.10",
+                  "title": "Kantonspolizei",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -270,14 +739,98 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.20",
+              "title": "Handänderungssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Anderes": 1,
+        "Staatsvertrag": 1,
         "Gemeindeerlass": 1
       },
       "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.50",
+              "title": "Verfahren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Staatsvertrag": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Staatsvertrag": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -299,46 +852,108 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.50",
+              "title": "Psychiatrische Dienste",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 6
+    "de": 20
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -364,7 +979,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",

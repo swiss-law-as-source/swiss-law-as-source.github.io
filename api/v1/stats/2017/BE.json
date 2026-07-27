@@ -1,44 +1,95 @@
 {
   "year": "2017",
+  "year_semantics": "enactment",
   "entity": "BE",
-  "total": 3,
-  "categorized": 3,
+  "total": 5,
+  "categorized": 5,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
+    "Interkantonale Vereinbarung": {
       "total": 2,
       "by_topic": {
-        "102 Französischsprachige Minderheiten": 1,
-        "213.2 Verwandtschaft": 1
+        "105.4 Gemeinden": 2
       },
       "by_global_category": {
-        "1.10.50.10 Gebietseinteilung, Bezirke": 1,
-        "2.10.20.20 Pflegekinder, Adoption": 1
+        "1.10.50.20 Grenzen": 2
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
+    "Anderes": {
       "total": 1,
       "by_topic": {
-        "732.1 Strassenbau und -unterhalt": 1
+        "105.4 Gemeinden": 1
       },
       "by_global_category": {
-        "7.10.30 Erschliessung": 1
+        "1.10.50.20 Grenzen": 1
       }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "121 Bürgerrecht": 1
+      },
+      "by_global_category": {
+        "1.10.60 Bürgerrecht": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "935.5 Geldspiele": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "10",
           "title": "Grundlagen",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "105",
+              "title": "Kantonsgebiet",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "105.4",
+                  "title": "Gemeinden",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 2,
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung, Aufenthalt",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -46,8 +97,8 @@
           },
           "children": [
             {
-              "identifier": "102",
-              "title": "Französischsprachige Minderheiten",
+              "identifier": "121",
+              "title": "Bürgerrecht",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -59,81 +110,39 @@
       ]
     },
     {
-      "identifier": "2",
-      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
+      "identifier": "9",
+      "title": "Volkswirtschaft",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "21",
-          "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
+          "identifier": "93",
+          "title": "Industrie und Gewerbe",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "213",
-              "title": "Familienrecht",
+              "identifier": "935",
+              "title": "Dienstleistungsgewerbe",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
-                  "identifier": "213.2",
-                  "title": "Verwandtschaft",
+                  "identifier": "935.5",
+                  "title": "Geldspiele",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
-      },
-      "children": [
-        {
-          "identifier": "73",
-          "title": "Öffentliche Werke",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          },
-          "children": [
-            {
-              "identifier": "732",
-              "title": "Verkehrswege",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              },
-              "children": [
-                {
-                  "identifier": "732.1",
-                  "title": "Strassenbau und -unterhalt",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -147,112 +156,54 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 4,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 2,
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "1.10.50",
               "title": "Gebiet",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Interkantonale Vereinbarung": 2,
+                "Anderes": 1
               },
               "children": [
                 {
-                  "identifier": "1.10.50.10",
-                  "title": "Gebietseinteilung, Bezirke",
-                  "total": 1,
-                  "own": 1,
+                  "identifier": "1.10.50.20",
+                  "title": "Grenzen",
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
-                    "Verordnung": 1
+                    "Interkantonale Vereinbarung": 2,
+                    "Anderes": 1
                   }
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
+            },
             {
-              "identifier": "2.10.20",
-              "title": "Familienrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.20.20",
-                  "title": "Pflegekinder, Adoption",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
-      },
-      "children": [
-        {
-          "identifier": "7.10",
-          "title": "Raumplanungs- und Baurecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          },
-          "children": [
-            {
-              "identifier": "7.10.30",
-              "title": "Erschliessung",
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -261,22 +212,23 @@
     }
   ],
   "languages_available": {
-    "de": 3,
-    "fr": 3
+    "de": 5,
+    "fr": 5
   },
   "available_years_for_entity": [
     "1562",
+    "1809",
+    "1815",
     "1828",
     "1837",
     "1851",
     "1852",
     "1859",
     "1862",
-    "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
-    "1877",
     "1889",
     "1893",
     "1899",
@@ -284,27 +236,43 @@
     "1903",
     "1907",
     "1909",
+    "1910",
     "1911",
+    "1914",
+    "1916",
+    "1922",
     "1923",
     "1924",
+    "1930",
     "1931",
     "1934",
     "1936",
+    "1937",
+    "1938",
     "1939",
     "1940",
-    "1942",
+    "1943",
+    "1944",
     "1945",
-    "1949",
+    "1946",
+    "1947",
+    "1948",
     "1950",
     "1951",
     "1954",
+    "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
+    "1962",
+    "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -313,6 +281,7 @@
     "1974",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1979",
     "1980",

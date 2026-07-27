@@ -1,81 +1,83 @@
 {
   "year": "1990",
+  "year_semantics": "enactment",
   "entity": "BL",
-  "total": 10,
-  "categorized": 10,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 5,
-      "by_topic": {
-        "834 Berufliche Vorsorge": 3,
-        "143 Volkswirtschafts- und Gesundheitsdirektion": 1,
-        "78 Umweltschutz": 1
-      },
-      "by_global_category": {
-        "1.20.20.40.50 Renten, Versicherungsansprüche": 3,
-        "7.60.10 Abfälle": 1
-      }
-    },
     "Anderes": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
-        "92 Sozialmedizin": 2,
+        "92 Sozialmedizin": 3,
         "143 Volkswirtschafts- und Gesundheitsdirektion": 1
       },
       "by_global_category": {
-        "8.30.60.10.20 Vereinbarungen": 2,
+        "8.30.60.10.20 Vereinbarungen": 3,
         "1.20.20.30.20 Direktionen und Ämter": 1
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "664 Universität Basel": 1
+        "664 Universität Basel": 1,
+        "78 Umweltschutz": 1
       },
       "by_global_category": {
-        "4.30.30 Berufsorientierung": 1
+        "4.30.30 Berufsorientierung": 1,
+        "7.60.20 Gewässerschutz": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "33 Steuern": 1
+      },
+      "by_global_category": {
+        "6.20.10.10 Bundessteuern": 1
       }
     },
     "Reglement": {
       "total": 1,
       "by_topic": {
-        "90 Gesundheitspflege": 1
+        "683 Kaufmännische Berufe": 1
       },
       "by_global_category": {
-        "8.10.130.30 Badeanstalten": 1
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1
       }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {},
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "143",
               "title": "Volkswirtschafts- und Gesundheitsdirektion",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 1,
-                "Verordnung": 1
+                "Anderes": 1
               }
             }
           ]
@@ -83,12 +85,33 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Kultur, Bildung, Ausbildung",
+      "identifier": "3",
+      "title": "Finanzen",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "33",
+          "title": "Steuern",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Kultur, Bildung, Ausbildung",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -110,6 +133,26 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "68",
+          "title": "Berufliche Ausbildung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "683",
+              "title": "Kaufmännische Berufe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -119,7 +162,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -128,39 +171,8 @@
           "total": 1,
           "own": 1,
           "by_type": {
-            "Verordnung": 1
+            "Interkantonale Vereinbarung": 1
           }
-        }
-      ]
-    },
-    {
-      "identifier": "8",
-      "title": "Soziale Sicherheit",
-      "total": 3,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 3
-      },
-      "children": [
-        {
-          "identifier": "83",
-          "title": "Sozialversicherungen",
-          "total": 3,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 3
-          },
-          "children": [
-            {
-              "identifier": "834",
-              "title": "Berufliche Vorsorge",
-              "total": 3,
-              "own": 3,
-              "by_type": {
-                "Verordnung": 3
-              }
-            }
-          ]
         }
       ]
     },
@@ -170,26 +182,16 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Reglement": 1
+        "Anderes": 3
       },
       "children": [
         {
-          "identifier": "90",
-          "title": "Gesundheitspflege",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Reglement": 1
-          }
-        },
-        {
           "identifier": "92",
           "title": "Sozialmedizin",
-          "total": 2,
-          "own": 2,
+          "total": 3,
+          "own": 3,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 3
           }
         }
       ]
@@ -199,30 +201,27 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 4,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 3,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 4,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 3,
                 "Anderes": 1
               },
               "children": [
@@ -245,26 +244,6 @@
                       }
                     }
                   ]
-                },
-                {
-                  "identifier": "1.20.20.40",
-                  "title": "Personalrecht",
-                  "total": 3,
-                  "own": 0,
-                  "by_type": {
-                    "Verordnung": 3
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.20.20.40.50",
-                      "title": "Renten, Versicherungsansprüche",
-                      "total": 3,
-                      "own": 3,
-                      "by_type": {
-                        "Verordnung": 3
-                      }
-                    }
-                  ]
                 }
               ]
             }
@@ -275,10 +254,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -300,6 +280,57 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.60",
+          "title": "Tertiärstufe: Höhere Fachschulen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.10",
+                  "title": "Bundessteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -309,7 +340,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -318,16 +349,16 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
-              "identifier": "7.60.10",
-              "title": "Abfälle",
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -340,75 +371,43 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Reglement": 1
+        "Anderes": 3
       },
       "children": [
         {
-          "identifier": "8.10",
-          "title": "Gesundheitswesen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "8.10.130",
-              "title": "Hygiene",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.10.130.30",
-                  "title": "Badeanstalten",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 3
           },
           "children": [
             {
               "identifier": "8.30.60",
               "title": "KVG",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 3
               },
               "children": [
                 {
                   "identifier": "8.30.60.10",
                   "title": "Tarife",
-                  "total": 2,
+                  "total": 3,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 2
+                    "Anderes": 3
                   },
                   "children": [
                     {
                       "identifier": "8.30.60.10.20",
                       "title": "Vereinbarungen",
-                      "total": 2,
-                      "own": 2,
+                      "total": 3,
+                      "own": 3,
                       "by_type": {
-                        "Anderes": 2
+                        "Anderes": 3
                       }
                     }
                   ]
@@ -421,27 +420,41 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 9
   },
   "available_years_for_entity": [
     "1815",
     "1828",
-    "1829",
     "1834",
     "1836",
+    "1865",
     "1870",
     "1876",
     "1881",
-    "1903",
+    "1888",
+    "1889",
+    "1892",
+    "1896",
+    "1902",
+    "1907",
+    "1908",
     "1909",
+    "1911",
+    "1914",
     "1916",
     "1919",
     "1920",
+    "1921",
+    "1922",
+    "1923",
     "1925",
+    "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1944",
+    "1946",
     "1947",
     "1948",
     "1949",
@@ -449,8 +462,10 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -458,6 +473,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -520,6 +536,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

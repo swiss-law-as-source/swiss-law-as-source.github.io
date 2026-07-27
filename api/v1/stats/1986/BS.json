@@ -1,28 +1,39 @@
 {
   "year": "1986",
+  "year_semantics": "enactment",
   "entity": "BS",
-  "total": 7,
-  "categorized": 7,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Gemeindeerlass": {
-      "total": 4,
+      "total": 6,
       "by_topic": {
-        "BeE 7 Raum- und Bauordnung · Energie · Umweltschutz": 2,
+        "BaB 152 Bürgergemeinderat": 2,
+        "BaB 153 Bürgerrat · Verwaltung": 2,
         "BaB 3 Gesundheit": 1,
-        "BeB 152 Bürgerrat": 1
+        "BeE 7 Raum- und Bauordnung · Energie · Umweltschutz": 1
       },
       "by_global_category": {
-        "7.60.20 Gewässerschutz": 1
+        "1.30.60 Bürgergemeinden, Allmend": 2
       }
     },
-    "Staatsvertrag": {
-      "total": 2,
+    "Gesetz": {
+      "total": 1,
       "by_topic": {
-        "784 Kanalisation": 2
+        "152 Grosser Rat · Ombudsfrau · Ombudsmann": 1
       },
       "by_global_category": {
-        "7.60.20 Gewässerschutz": 2
+        "1.20.30 Ombudsperson": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "215 Obligationenrecht: Spezielle Erlasse": 1
+      },
+      "by_global_category": {
+        "2.20.10.20.10 Landwirtschaftliche Pacht": 1
       }
     },
     "Anderes": {
@@ -34,6 +45,68 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staatsrechtliche Grundlagen · Organisation",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "15",
+          "title": "Organisation des Kantons",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "152",
+              "title": "Grosser Rat · Ombudsfrau · Ombudsmann",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht · Strafrecht · Rechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Bundeszivilrecht: Ergänzende kantonale Erlasse",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "215",
+              "title": "Obligationenrecht: Spezielle Erlasse",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "Gesundheit",
@@ -66,30 +139,71 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 2,
+      "identifier": "BaB",
+      "title": "Bürgergemeinde Basel",
+      "total": 5,
+      "own": 5,
+      "by_type": {
+        "Gemeindeerlass": 5
+      }
+    },
+    {
+      "identifier": "BeE",
+      "title": "Einwohnergemeinde Bettingen",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Gemeindeerlass": 1
+      }
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Staatsvertrag": 2
+        "Gemeindeerlass": 2,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "78",
-          "title": "Umweltschutz",
-          "total": 2,
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Staatsvertrag": 2
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "784",
-              "title": "Kanalisation",
+              "identifier": "1.20.30",
+              "title": "Ombudsperson",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 2
+          },
+          "children": [
+            {
+              "identifier": "1.30.60",
+              "title": "Bürgergemeinden, Allmend",
               "total": 2,
               "own": 2,
               "by_type": {
-                "Staatsvertrag": 2
+                "Gemeindeerlass": 2
               }
             }
           ]
@@ -97,63 +211,53 @@
       ]
     },
     {
-      "identifier": "BaB",
-      "title": "Bürgergemeinde Basel",
+      "identifier": "2",
+      "title": "Zivilrecht",
       "total": 1,
-      "own": 1,
-      "by_type": {
-        "Gemeindeerlass": 1
-      }
-    },
-    {
-      "identifier": "BeB",
-      "title": "Bürgergemeinde Bettingen",
-      "total": 1,
-      "own": 1,
-      "by_type": {
-        "Gemeindeerlass": 1
-      }
-    },
-    {
-      "identifier": "BeE",
-      "title": "Einwohnergemeinde Bettingen",
-      "total": 2,
-      "own": 2,
-      "by_type": {
-        "Gemeindeerlass": 2
-      }
-    }
-  ],
-  "by_global_category_tree": [
-    {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
       "own": 0,
       "by_type": {
-        "Staatsvertrag": 2,
-        "Gemeindeerlass": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
-          "total": 3,
+          "identifier": "2.20",
+          "title": "Einführungsgesetzgebung OR",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Staatsvertrag": 2,
-            "Gemeindeerlass": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "7.60.20",
-              "title": "Gewässerschutz",
-              "total": 3,
-              "own": 3,
+              "identifier": "2.20.10",
+              "title": "Vertragsverhältnisse",
+              "total": 1,
+              "own": 0,
               "by_type": {
-                "Staatsvertrag": 2,
-                "Gemeindeerlass": 1
-              }
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.20.10.20",
+                  "title": "Miete und Pacht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.20.10.20.10",
+                      "title": "Landwirtschaftliche Pacht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -161,43 +265,53 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 9
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -223,7 +337,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",
@@ -295,12 +408,14 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",
     "CH",
     "FR",
     "GE",
+    "GL",
     "GR",
     "JU",
     "LU",
@@ -316,6 +431,7 @@
     "UR",
     "VD",
     "VS",
+    "ZG",
     "ZH"
   ]
 }

@@ -1,53 +1,94 @@
 {
   "year": "2014",
+  "year_semantics": "enactment",
   "entity": "OW",
-  "total": 15,
-  "categorized": 15,
+  "total": 20,
+  "categorized": 20,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 12,
+      "total": 15,
       "by_topic": {
-        "851 Kranken- und Unfallversicherung": 8,
-        "641 Steuern": 1,
+        "851 Kranken- und Unfallversicherung": 7,
+        "213 Sachenrecht, Grundbuch, Grundstückschätzungen": 1,
+        "415 Hochschulen, Fachhochschulen, Fachschulen": 1,
+        "419 Ausbildungsbeiträge": 1,
+        "651 Jagd, Fischerei": 1,
         "816 Lebensmittel und Gebrauchsgegenstände": 1,
-        "971 Gastgewerbe und Tourismus": 1,
-        "975 Markt und Gewerbe": 1
+        "830 Spitäler, Kranken- und Betagtenpflege, Sanitätsdienst": 1,
+        "921 Förderung der Landwirtschaft": 1,
+        "971 Gastgewerbe und Tourismus": 1
       },
       "by_global_category": {
         "8.30.60.10.20 Vereinbarungen": 3,
+        "8.10.20.10 Kantonsspitäler": 2,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
         "9.20.120 Tierseuchen": 1,
-        "8.10.30.50 Chiropraktiker, Physiotherapeuten": 1,
         "4.80.50 Logopädie": 1,
         "8.10.30.40 Hebammen": 1,
-        "8.70.30.10 Alters- und Pflegeheime": 1,
         "8.30.60.10.10 TARMED": 1,
-        "9.50.10.20 Tourismus": 1,
-        "9.50.10.10 Berufsausübungsbewilligungen": 1
+        "9.20.10 Förderungsmassnahmen": 1,
+        "9.50.10.20 Tourismus": 1
       }
     },
-    "Interkantonale Vereinbarung": {
+    "Gesetz": {
       "total": 3,
       "by_topic": {
-        "415 Hochschulen, Fachhochschulen, Fachschulen": 1,
-        "510 Polizei": 1,
-        "810 Gesundheit": 1
+        "740 Wasserbau": 1,
+        "772 Öffentlicher Verkehr": 1,
+        "971 Gastgewerbe und Tourismus": 1
       },
       "by_global_category": {
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
-        "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
-        "8.10.10 Ethik": 1
+        "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1,
+        "9.50.10.30.10 Camping": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "419 Ausbildungsbeiträge": 1
+      },
+      "by_global_category": {}
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "811 Medizinalpersonen": 1
+      },
+      "by_global_category": {
+        "8.10.30.10 Ärzte": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "ERZIEHUNG, BILDUNG, KULTUR",
+      "identifier": "2",
+      "title": "ZIVILRECHT, VOLLSTRECKUNG",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "213",
+          "title": "Sachenrecht, Grundbuch, Grundstückschätzungen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "ERZIEHUNG, BILDUNG, KULTUR",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -56,27 +97,17 @@
           "total": 1,
           "own": 1,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Anderes": 1
           }
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "SICHERHEIT, BEVÖLKERUNGSSCHUTZ",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "510",
-          "title": "Polizei",
-          "total": 1,
-          "own": 1,
+          "identifier": "419",
+          "title": "Ausbildungsbeiträge",
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Anderes": 1
           }
         }
       ]
@@ -91,12 +122,41 @@
       },
       "children": [
         {
-          "identifier": "641",
-          "title": "Steuern",
+          "identifier": "651",
+          "title": "Jagd, Fischerei",
           "total": 1,
           "own": 1,
           "by_type": {
             "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "RAUM- UND BAUORDNUNG, ÖFFENTLICHE WERKE, ENERGIE, VERKEHR, UMWELTSCHUTZ",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2
+      },
+      "children": [
+        {
+          "identifier": "740",
+          "title": "Wasserbau",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "772",
+          "title": "Öffentlicher Verkehr",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
           }
         }
       ]
@@ -112,8 +172,8 @@
       },
       "children": [
         {
-          "identifier": "810",
-          "title": "Gesundheit",
+          "identifier": "811",
+          "title": "Medizinalpersonen",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -130,12 +190,21 @@
           }
         },
         {
+          "identifier": "830",
+          "title": "Spitäler, Kranken- und Betagtenpflege, Sanitätsdienst",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
+        {
           "identifier": "851",
           "title": "Kranken- und Unfallversicherung",
-          "total": 8,
-          "own": 8,
+          "total": 7,
+          "own": 7,
           "by_type": {
-            "Anderes": 8
+            "Anderes": 7
           }
         }
       ]
@@ -143,15 +212,16 @@
     {
       "identifier": "9",
       "title": "VOLKSWIRTSCHAFT",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "971",
-          "title": "Gastgewerbe und Tourismus",
+          "identifier": "921",
+          "title": "Förderung der Landwirtschaft",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -159,12 +229,13 @@
           }
         },
         {
-          "identifier": "975",
-          "title": "Markt und Gewerbe",
-          "total": 1,
-          "own": 1,
+          "identifier": "971",
+          "title": "Gastgewerbe und Tourismus",
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Gesetz": 1
           }
         }
       ]
@@ -172,24 +243,56 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "4.60",
-          "title": "Tertiärstufe: Höhere Fachschulen",
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
           "total": 1,
-          "own": 1,
+          "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
-          }
-        },
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
         {
           "identifier": "4.80",
           "title": "Sonderpädagogik",
@@ -213,39 +316,39 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "5.30",
-          "title": "Innere Sicherheit",
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "5.30.10",
-              "title": "Polizei",
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
-                  "identifier": "5.30.10.50",
-                  "title": "Polizeiliche Zusammenarbeit",
+                  "identifier": "7.30.20.10",
+                  "title": "Gewässerkorrekturen / Hochwasserschutz",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -267,25 +370,16 @@
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
+            "Anderes": 3,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
-              "identifier": "8.10.10",
-              "title": "Ethik",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            },
-            {
-              "identifier": "8.10.30",
-              "title": "Medizinische Berufe",
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
               "total": 2,
               "own": 0,
               "by_type": {
@@ -293,17 +387,38 @@
               },
               "children": [
                 {
-                  "identifier": "8.10.30.40",
-                  "title": "Hebammen",
+                  "identifier": "8.10.20.10",
+                  "title": "Kantonsspitäler",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 2
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Anderes": 1
+                    "Interkantonale Vereinbarung": 1
                   }
                 },
                 {
-                  "identifier": "8.10.30.50",
-                  "title": "Chiropraktiker, Physiotherapeuten",
+                  "identifier": "8.10.30.40",
+                  "title": "Hebammen",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -364,58 +479,37 @@
               ]
             }
           ]
-        },
-        {
-          "identifier": "8.70",
-          "title": "Fürsorge",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "8.70.30",
-              "title": "Heime",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.70.30.10",
-                  "title": "Alters- und Pflegeheime",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     },
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 3
+        "Anderes": 3,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "9.20",
           "title": "Landwirtschaft",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
+            {
+              "identifier": "9.20.10",
+              "title": "Förderungsmassnahmen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "9.20.120",
               "title": "Tierseuchen",
@@ -433,7 +527,8 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -442,18 +537,10 @@
               "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 1,
+                "Gesetz": 1
               },
               "children": [
-                {
-                  "identifier": "9.50.10.10",
-                  "title": "Berufsausübungsbewilligungen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                },
                 {
                   "identifier": "9.50.10.20",
                   "title": "Tourismus",
@@ -462,6 +549,26 @@
                   "by_type": {
                     "Anderes": 1
                   }
+                },
+                {
+                  "identifier": "9.50.10.30",
+                  "title": "Gastwirtschaft",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "9.50.10.30.10",
+                      "title": "Camping",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -471,24 +578,29 @@
     }
   ],
   "languages_available": {
-    "de": 15
+    "de": 20
   },
   "available_years_for_entity": [
     "1825",
     "1850",
     "1874",
+    "1877",
     "1878",
     "1880",
     "1892",
     "1895",
     "1911",
     "1913",
+    "1914",
     "1915",
     "1916",
+    "1918",
     "1927",
     "1928",
+    "1931",
     "1935",
     "1937",
+    "1938",
     "1939",
     "1942",
     "1943",
@@ -498,13 +610,19 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
+    "1960",
     "1961",
+    "1963",
     "1964",
     "1965",
+    "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

@@ -1,8 +1,9 @@
 {
   "year": "1982",
+  "year_semantics": "enactment",
   "entity": "FR",
-  "total": 8,
-  "categorized": 8,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -22,6 +23,21 @@
         "8.30.30 AHV / IV": 1
       }
     },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "122.73 Sozialvorsorge": 1,
+        "635.5 Hundesteuer": 1,
+        "76 ENTEIGNUNG": 1,
+        "903 Wirtschaftliche Landesversorgung": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
+        "6.20.70 Hundesteuern": 1,
+        "7.20 Enteignung": 1,
+        "5.20.20 Landesversorgung": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
@@ -31,13 +47,13 @@
         "1.30.50 Gemeindefusionen": 1
       }
     },
-    "Gesetz": {
+    "Reglement": {
       "total": 1,
       "by_topic": {
-        "635.5 Hundesteuer": 1
+        "866.1 Stellenvermittlung": 1
       },
       "by_global_category": {
-        "6.20.70 Hundesteuern": 1
+        "8.70.20 Jugendschutz, Jugendhilfe": 1
       }
     }
   },
@@ -45,12 +61,55 @@
     {
       "identifier": "1",
       "title": "STAAT - VOLK - BEHÖRDEN",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "12",
+          "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Staatsrat und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.7",
+                  "title": "Staatspersonal",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "122.73",
+                      "title": "Sozialvorsorge",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "14",
           "title": "GEMEINDEN",
@@ -164,10 +223,11 @@
     {
       "identifier": "7",
       "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -200,16 +260,26 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "76",
+          "title": "ENTEIGNUNG",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
         }
       ]
     },
     {
       "identifier": "8",
       "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Reglement": 1
       },
       "children": [
         {
@@ -262,6 +332,68 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "86",
+          "title": "ARBEIT",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "866",
+              "title": "Arbeitsmarkt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "866.1",
+                  "title": "Stellenvermittlung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "WIRTSCHAFT",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "90",
+          "title": "WIRTSCHAFTLICHE ENTWICKLUNG",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "903",
+              "title": "Wirtschaftliche Landesversorgung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     }
@@ -270,12 +402,55 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.30",
           "title": "Gemeinden",
@@ -330,6 +505,37 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.20",
+              "title": "Landesversorgung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 2,
@@ -366,12 +572,22 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 3
+        "Anderes": 3,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "7.20",
+          "title": "Enteignung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
@@ -417,10 +633,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -442,17 +659,47 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.20",
+              "title": "Jugendschutz, Jugendhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 8,
-    "fr": 8
+    "de": 12,
+    "fr": 12
   },
   "available_years_for_entity": [
+    "1804",
+    "1808",
+    "1825",
+    "1831",
+    "1832",
+    "1834",
+    "1836",
+    "1837",
     "1848",
+    "1850",
     "1852",
+    "1857",
     "1859",
     "1866",
     "1867",
@@ -461,23 +708,39 @@
     "1874",
     "1875",
     "1879",
+    "1884",
+    "1889",
     "1893",
     "1899",
+    "1907",
+    "1909",
+    "1910",
+    "1911",
+    "1913",
     "1914",
+    "1916",
     "1917",
     "1918",
     "1920",
     "1921",
     "1922",
+    "1923",
     "1924",
+    "1925",
     "1926",
+    "1927",
     "1929",
     "1930",
+    "1931",
     "1934",
     "1935",
+    "1937",
     "1938",
+    "1939",
     "1942",
     "1943",
+    "1946",
+    "1948",
     "1949",
     "1950",
     "1951",
@@ -485,6 +748,8 @@
     "1954",
     "1955",
     "1957",
+    "1958",
+    "1959",
     "1960",
     "1961",
     "1962",
@@ -550,11 +815,12 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
+    "AR",
     "BE",
     "BL",
     "BS",

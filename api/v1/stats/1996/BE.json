@@ -1,29 +1,55 @@
 {
   "year": "1996",
+  "year_semantics": "enactment",
   "entity": "BE",
-  "total": 13,
-  "categorized": 13,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 8,
+      "total": 13,
       "by_topic": {
         "436.4 Kollegiengelder und Gebühren": 5,
-        "436.5 Keine Bezeichnung": 3
+        "436.1 Allgemeines": 3,
+        "436.5 Keine Bezeichnung": 3,
+        "552 Kantonspolizei": 1,
+        "752.3 Wasserversorgung": 1
       },
       "by_global_category": {
         "4.40.60 Human- und Veterianärmedizinische Fakultät": 6,
-        "3.20.20 Gerichtsmedizin": 2
+        "3.20.20 Gerichtsmedizin": 2,
+        "4.120.80 Schulleitung": 1,
+        "5.30.10.30 Personal": 1,
+        "8.10.130.20 Wasserversorgung": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "421.2 Bibliotheken": 1
       },
       "by_global_category": {
         "4.170.20 Archive": 1
       }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "436.1 Allgemeines": 1,
+        "552 Kantonspolizei": 1,
+        "555 Ruhetagspolizei": 1
+      },
+      "by_global_category": {
+        "5.30.10.10 Kantonspolizei": 1,
+        "8.20.10.30 Sonn- und Feiertage": 1
+      }
+    },
+    "Staatsvertrag": {
+      "total": 1,
+      "by_topic": {
+        "173 Internationale Zusammenarbeit": 1
+      },
+      "by_global_category": {}
     },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
@@ -42,26 +68,49 @@
       "by_global_category": {
         "4.40.40 Naturwissenschaftliche Fakultäten": 1
       }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "923.9 Interkantonale und internationale Vereinbarungen": 1
-      },
-      "by_global_category": {
-        "6.30.60.20 Reviere": 1
-      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 11,
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 8,
+        "Staatsvertrag": 1
+      },
+      "children": [
+        {
+          "identifier": "17",
+          "title": "Gemeindewesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Staatsvertrag": 1
+          },
+          "children": [
+            {
+              "identifier": "173",
+              "title": "Internationale Zusammenarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Staatsvertrag": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
+      "total": 15,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 11,
         "Anderes": 1,
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1,
         "Reglement": 1
       },
@@ -100,10 +149,11 @@
         {
           "identifier": "43",
           "title": "Ausbildung und Wissenschaft",
-          "total": 10,
+          "total": 14,
           "own": 0,
           "by_type": {
-            "Verordnung": 8,
+            "Verordnung": 11,
+            "Gesetz": 1,
             "Verordnung des Parlaments (Dekret)": 1,
             "Reglement": 1
           },
@@ -111,10 +161,11 @@
             {
               "identifier": "436",
               "title": "Universität",
-              "total": 10,
+              "total": 14,
               "own": 0,
               "by_type": {
-                "Verordnung": 8,
+                "Verordnung": 11,
+                "Gesetz": 1,
                 "Verordnung des Parlaments (Dekret)": 1,
                 "Reglement": 1
               },
@@ -122,9 +173,11 @@
                 {
                   "identifier": "436.1",
                   "title": "Allgemeines",
-                  "total": 1,
-                  "own": 1,
+                  "total": 5,
+                  "own": 5,
                   "by_type": {
+                    "Verordnung": 3,
+                    "Gesetz": 1,
                     "Verordnung des Parlaments (Dekret)": 1
                   }
                 },
@@ -173,39 +226,82 @@
       ]
     },
     {
-      "identifier": "9",
-      "title": "Volkswirtschaft",
-      "total": 1,
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Gesetz": 2,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "92",
-          "title": "Forstwesen, Jagd, Fischerei",
-          "total": 1,
+          "identifier": "55",
+          "title": "Polizei",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Gesetz": 2,
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "923",
-              "title": "Fischerei",
+              "identifier": "552",
+              "title": "Kantonspolizei",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "555",
+              "title": "Ruhetagspolizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "75",
+          "title": "Wasser",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "752",
+              "title": "Wasserwirtschaft",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "923.9",
-                  "title": "Interkantonale und internationale Vereinbarungen",
+                  "identifier": "752.3",
+                  "title": "Wasserversorgung",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -250,10 +346,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 9,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Verordnung": 6,
+        "Verordnung": 7,
         "Reglement": 1,
         "Verordnung des Parlaments (Dekret)": 1,
         "Anderes": 1
@@ -310,6 +406,26 @@
           ]
         },
         {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.80",
+              "title": "Schulleitung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "4.170",
           "title": "Dokumentation",
           "total": 1,
@@ -332,39 +448,125 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "6.30.60",
-              "title": "Fischerei",
-              "total": 1,
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Gesetz": 1,
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "6.30.60.20",
-                  "title": "Reviere",
+                  "identifier": "5.30.10.10",
+                  "title": "Kantonspolizei",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
+                    "Gesetz": 1
+                  }
+                },
+                {
+                  "identifier": "5.30.10.30",
+                  "title": "Personal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.20",
+                  "title": "Wasserversorgung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.10",
+              "title": "Arbeitnehmer",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.10.30",
+                  "title": "Sonn- und Feiertage",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -375,22 +577,23 @@
     }
   ],
   "languages_available": {
-    "de": 13,
-    "fr": 12
+    "de": 22,
+    "fr": 20
   },
   "available_years_for_entity": [
     "1562",
+    "1809",
+    "1815",
     "1828",
     "1837",
     "1851",
     "1852",
     "1859",
     "1862",
-    "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
-    "1877",
     "1889",
     "1893",
     "1899",
@@ -398,27 +601,43 @@
     "1903",
     "1907",
     "1909",
+    "1910",
     "1911",
+    "1914",
+    "1916",
+    "1922",
     "1923",
     "1924",
+    "1930",
     "1931",
     "1934",
     "1936",
+    "1937",
+    "1938",
     "1939",
     "1940",
-    "1942",
+    "1943",
+    "1944",
     "1945",
-    "1949",
+    "1946",
+    "1947",
+    "1948",
     "1950",
     "1951",
     "1954",
+    "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
+    "1962",
+    "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -427,6 +646,7 @@
     "1974",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1979",
     "1980",

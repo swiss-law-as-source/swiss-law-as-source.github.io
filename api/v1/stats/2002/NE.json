@@ -1,5 +1,6 @@
 {
   "year": "2002",
+  "year_semantics": "enactment",
   "entity": "NE",
   "total": 85,
   "categorized": 85,
@@ -37,7 +38,7 @@
       }
     },
     "Anderes": {
-      "total": 28,
+      "total": 26,
       "by_topic": {
         "416.31 Faculté des lettres et sciences humaines": 7,
         "414.1 Dispositions générales": 4,
@@ -46,18 +47,15 @@
         "165.1 Dispositions générales": 2,
         "416.32 Faculté des sciences": 2,
         "416.33 Faculté de droit et des sciences économiques": 2,
-        "152.7 Commissions administratives": 1,
         "410.0 Structures d'accueil parascolaire": 1,
         "410.1 Dispositions générales": 1,
         "414.24 École technique du soir": 1,
-        "416.4 Statut du corps enseignant et du personnel administratif": 1,
-        "761.3 Transports": 1
+        "416.4 Statut du corps enseignant et du personnel administratif": 1
       },
       "by_global_category": {
         "4.40.50 Philosophische Fakultäten": 5,
         "4.40.30 Wirtschaftsfakultät": 3,
         "4.40.70 Andere Studiengänge": 2,
-        "1.20.20.30.30 Kommissionen": 1,
         "1.50.10.20 Honorare": 1,
         "1.50.10.10 Ausbildung": 1,
         "4.10.10 Krippen, Kinderhorte": 1,
@@ -94,12 +92,14 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
-        "414.21 Écoles supérieures": 1
+        "414.21 Écoles supérieures": 1,
+        "633 Droit sur les successions et les donations": 1
       },
       "by_global_category": {
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1
       }
     }
   },
@@ -107,10 +107,10 @@
     {
       "identifier": "1",
       "title": "État – Peuple – Autorités",
-      "total": 6,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Autre": 5,
+        "Autre": 4,
         "Ordonnance parlementaire (décret)": 1
       },
       "children": [
@@ -123,37 +123,6 @@
             "Autre": 2,
             "Ordonnance parlementaire (décret)": 1
           }
-        },
-        {
-          "identifier": "15",
-          "title": "Autorités",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Autre": 1
-          },
-          "children": [
-            {
-              "identifier": "152",
-              "title": "Conseil d'État et administration cantonale",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Autre": 1
-              },
-              "children": [
-                {
-                  "identifier": "152.7",
-                  "title": "Commissions administratives",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Autre": 1
-                  }
-                }
-              ]
-            }
-          ]
         },
         {
           "identifier": "16",
@@ -495,11 +464,12 @@
     {
       "identifier": "6",
       "title": "Finances",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Loi": 2,
-        "Ordonnance parlementaire (décret)": 1
+        "Ordonnance parlementaire (décret)": 1,
+        "Accord intercantonal": 1
       },
       "children": [
         {
@@ -514,19 +484,21 @@
         {
           "identifier": "63",
           "title": "Contributions publiques",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Loi": 2
+            "Loi": 2,
+            "Accord intercantonal": 1
           },
           "children": [
             {
               "identifier": "633",
               "title": "Droit sur les successions et les donations",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Loi": 1
+                "Loi": 1,
+                "Accord intercantonal": 1
               }
             },
             {
@@ -552,102 +524,18 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "7",
-      "title": "Travaux publics – Énergie – Transports et communications",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Autre": 1
-      },
-      "children": [
-        {
-          "identifier": "76",
-          "title": "Transports et communications",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Autre": 1
-          },
-          "children": [
-            {
-              "identifier": "761",
-              "title": "Circulation routière",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Autre": 1
-              },
-              "children": [
-                {
-                  "identifier": "761.3",
-                  "title": "Transports",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Autre": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 3
+        "Autre": 2
       },
       "children": [
-        {
-          "identifier": "1.20",
-          "title": "Behörden",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Autre": 1
-          },
-          "children": [
-            {
-              "identifier": "1.20.20",
-              "title": "Regierung und Verwaltung",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Autre": 1
-              },
-              "children": [
-                {
-                  "identifier": "1.20.20.30",
-                  "title": "Verwaltung",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Autre": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.20.20.30.30",
-                      "title": "Kommissionen",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Autre": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "identifier": "1.50",
           "title": "Juristische Berufe",
@@ -925,11 +813,12 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Loi": 2,
-        "Ordonnance parlementaire (décret)": 1
+        "Ordonnance parlementaire (décret)": 1,
+        "Accord intercantonal": 1
       },
       "children": [
         {
@@ -955,10 +844,11 @@
         {
           "identifier": "6.20",
           "title": "Steuern",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Loi": 2
+            "Loi": 2,
+            "Accord intercantonal": 1
           },
           "children": [
             {
@@ -984,10 +874,11 @@
             {
               "identifier": "6.20.40",
               "title": "Erbschafts- und Schenkungssteuern",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Loi": 1
+                "Loi": 1,
+                "Accord intercantonal": 1
               }
             }
           ]
@@ -1053,6 +944,7 @@
   },
   "available_years_for_entity": [
     "1832",
+    "1857",
     "1858",
     "1864",
     "1866",

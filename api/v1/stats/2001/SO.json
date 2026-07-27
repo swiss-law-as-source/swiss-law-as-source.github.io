@@ -1,50 +1,49 @@
 {
   "year": "2001",
+  "year_semantics": "enactment",
   "entity": "SO",
-  "total": 22,
-  "categorized": 22,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 6,
+      "by_topic": {
+        "114 Informations- und Datenschutz": 1,
+        "126.515.82 Mittelschule": 1,
+        "512.1 Fremdenpolizei": 1,
+        "513.3 Handelsreisende, Märkte und Wandergewerbe, öffentliche Sammlung": 1,
+        "811.4 Andere Berufe der Gesundheitspflege": 1,
+        "944 Konsumkredite": 1
+      },
+      "by_global_category": {
+        "1.10.120 Information der Öffentlichkeit": 1,
+        "4.90.20 Löhne, Entschädigungen": 1,
+        "1.10.80 Ausweise": 1,
+        "9.60.60 Reisendengewerbe": 1,
+        "9.50.10.90 Konsumkredit": 1
+      }
+    },
     "Anderes": {
-      "total": 11,
+      "total": 6,
       "by_topic": {
         "416.3 Berufslehre": 3,
-        "416.9 Höhere berufliche Lehranstalten": 1,
         "424.5 Geistliche": 1,
         "721.5 Submission": 1,
         "838 Alters- und Pflegeheime": 1
       },
       "by_global_category": {
-        "4.50.10 Pädagogik": 1,
         "1.40.20 Christkatholische Kirche": 1,
         "7.30.40 Submission": 1
       }
     },
-    "Verordnung": {
-      "total": 7,
-      "by_topic": {
-        "614.15 Steuerverordnungen und -weisungen": 2,
-        "126.515.82 Mittelschule": 1,
-        "413.3 Lehrer": 1,
-        "811.4 Andere Berufe der Gesundheitspflege": 1,
-        "817.1 Kantonales Spital": 1
-      },
-      "by_global_category": {
-        "4.90.20 Löhne, Entschädigungen": 1,
-        "4.80.10 Sonderschulen": 1,
-        "8.30.50 BVG": 1,
-        "6.20.100 Steuerbefreiung und -erleichterungen": 1
-      }
-    },
     "Reglement": {
-      "total": 2,
+      "total": 1,
       "by_topic": {
-        "126.58 Alters-, Hinterlassenen- und Invalidenvorsorge": 1,
-        "832.2 Prämienverbilligung": 1
+        "126.58 Alters-, Hinterlassenen- und Invalidenvorsorge": 1
       },
       "by_global_category": {
-        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
-        "8.30.60.20 Prämienverbilligungen": 1
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
       }
     },
     "Gesetz": {
@@ -70,13 +69,33 @@
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 2,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "11",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "114",
+              "title": "Informations- und Datenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "12",
           "title": "Organisation",
@@ -158,45 +177,23 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 7,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 5,
-        "Verordnung": 1,
+        "Anderes": 4,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 6,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 4,
-            "Verordnung": 1,
+            "Anderes": 3,
             "Gesetz": 1
           },
           "children": [
-            {
-              "identifier": "413",
-              "title": "Volksschule",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "413.3",
-                  "title": "Lehrer",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            },
             {
               "identifier": "415",
               "title": "Hochschulen",
@@ -209,10 +206,10 @@
             {
               "identifier": "416",
               "title": "Berufsbildung",
-              "total": 4,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 4
+                "Anderes": 3
               },
               "children": [
                 {
@@ -222,15 +219,6 @@
                   "own": 3,
                   "by_type": {
                     "Anderes": 3
-                  }
-                },
-                {
-                  "identifier": "416.9",
-                  "title": "Höhere berufliche Lehranstalten",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
                   }
                 }
               ]
@@ -271,8 +259,8 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Regalien",
+      "identifier": "5",
+      "title": "Polizei, Militär, Zivilschutz",
       "total": 2,
       "own": 0,
       "by_type": {
@@ -280,8 +268,8 @@
       },
       "children": [
         {
-          "identifier": "61",
-          "title": "Finanzen",
+          "identifier": "51",
+          "title": "Polizei",
           "total": 2,
           "own": 0,
           "by_type": {
@@ -289,33 +277,42 @@
           },
           "children": [
             {
-              "identifier": "614",
-              "title": "Kantonale Steuern",
-              "total": 2,
+              "identifier": "512",
+              "title": "Andere polizeiliche Aufgaben",
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "614.1",
-                  "title": "Staats- und Gemeindesteuer",
-                  "total": 2,
-                  "own": 0,
+                  "identifier": "512.1",
+                  "title": "Fremdenpolizei",
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Verordnung": 2
-                  },
-                  "children": [
-                    {
-                      "identifier": "614.15",
-                      "title": "Steuerverordnungen und -weisungen",
-                      "total": 2,
-                      "own": 2,
-                      "by_type": {
-                        "Verordnung": 2
-                      }
-                    }
-                  ]
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "513",
+              "title": "Gewerbe- und Handelspolizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "513.3",
+                  "title": "Handelsreisende, Märkte und Wandergewerbe, öffentliche Sammlung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
                 }
               ]
             }
@@ -368,23 +365,22 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 5,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1,
-        "Reglement": 1,
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 2,
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -416,59 +412,18 @@
                   }
                 }
               ]
-            },
-            {
-              "identifier": "817",
-              "title": "Spitalwesen",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "817.1",
-                  "title": "Kantonales Spital",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
             }
           ]
         },
         {
           "identifier": "83",
           "title": "Sozialrecht",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1,
             "Anderes": 1
           },
           "children": [
-            {
-              "identifier": "832",
-              "title": "Kranken- und Unfallversicherung",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "832.2",
-                  "title": "Prämienverbilligung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                }
-              ]
-            },
             {
               "identifier": "838",
               "title": "Alters- und Pflegeheime",
@@ -481,19 +436,80 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "94",
+          "title": "Industrie, Gewerbe, Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "944",
+              "title": "Konsumkredite",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Reglement": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "1.10.80",
+              "title": "Ausweise",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "1.10.120",
+              "title": "Information der Öffentlichkeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -561,53 +577,30 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
         "Gesetz": 1,
-        "Anderes": 1,
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "4.50",
           "title": "Tertiärstufe: Fachhochschulen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "4.50.10",
               "title": "Pädagogik",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Gesetz": 1,
-                "Anderes": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "4.80",
-          "title": "Sonderpädagogik",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.80.10",
-              "title": "Sonderschulen",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -644,37 +637,6 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "6.20",
-          "title": "Steuern",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "6.20.100",
-              "title": "Steuerbefreiung und -erleichterungen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
@@ -706,53 +668,62 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "9",
+      "title": "Wirtschaft",
       "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Reglement": 1
+        "Verordnung": 2
       },
       "children": [
         {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
-          "total": 2,
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Reglement": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "8.30.50",
-              "title": "BVG",
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.90",
+                  "title": "Konsumkredit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.60",
+              "title": "Reisendengewerbe",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Verordnung": 1
               }
-            },
-            {
-              "identifier": "8.30.60",
-              "title": "KVG",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.30.60.20",
-                  "title": "Prämienverbilligungen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                }
-              ]
             }
           ]
         }
@@ -760,9 +731,10 @@
     }
   ],
   "languages_available": {
-    "de": 22
+    "de": 15
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -771,6 +743,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -778,23 +753,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -807,9 +786,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",

@@ -1,72 +1,75 @@
 {
   "year": "2021",
+  "year_semantics": "enactment",
   "entity": "TG",
-  "total": 15,
-  "categorized": 15,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 5,
+      "total": 3,
       "by_topic": {
-        "708 Feuerschutz. Feuerpolizei": 1,
-        "723 Öffentlicher Boden, Untergrund": 1,
-        "836 Familienzulagen, familienrechtliche Unterhaltsbeiträge und Kinderalimente": 1,
-        "956 Gebäudeversicherung": 1
+        "170 Allgemein": 1,
+        "720 Allgemein. Submission": 1,
+        "819 Veterinärwesen": 1
       },
       "by_global_category": {
-        "5.20.30.10 Feuerwehr": 1,
-        "6.30.20 Bergwerk": 1,
-        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1
+        "4.170.10 Statistik": 1,
+        "7.30.40 Submission": 1,
+        "7.70.20 Tierschutz": 1
       }
     },
     "Anderes": {
-      "total": 4,
+      "total": 2,
       "by_topic": {
-        "187.1 Organisation der Evangelischen Landeskirche": 1
+        "187.2 Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung": 1
       },
       "by_global_category": {
-        "1.40.10 Römisch-Katholische Kirche": 1
+        "1.40.30 Evangelisch-Reformierte Kirche": 1
       }
     },
     "Verordnung": {
-      "total": 4,
+      "total": 2,
       "by_topic": {
-        "34 Strafvollzug": 1,
-        "411.4 Sonderschule": 1,
-        "708 Feuerschutz. Feuerpolizei": 1
+        "611 Finanzhaushalt. Finanzverwaltung. Finanzkontrolle": 1,
+        "85 Sozialhilfe und soziale Einrichtungen": 1
       },
       "by_global_category": {
-        "4.80.10 Sonderschulen": 1,
-        "5.20.30.10 Feuerwehr": 1
+        "1.10.90.10 Gleichstellung von Mann und Frau": 1
       }
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "411.1 Allgemein": 1
-      },
-      "by_global_category": {
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "935.5 Lotterien. Wetten": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "17",
+          "title": "Staatliche Gewalten. Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "170",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "18",
           "title": "Staat und Kirche",
@@ -86,8 +89,8 @@
               },
               "children": [
                 {
-                  "identifier": "187.1",
-                  "title": "Organisation der Evangelischen Landeskirche",
+                  "identifier": "187.2",
+                  "title": "Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -101,8 +104,8 @@
       ]
     },
     {
-      "identifier": "3",
-      "title": "Strafrecht - Strafrechtspflege - Strafvollzug",
+      "identifier": "6",
+      "title": "Finanzen",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -110,65 +113,22 @@
       },
       "children": [
         {
-          "identifier": "34",
-          "title": "Strafvollzug",
+          "identifier": "61",
+          "title": "Organisation allgemein",
           "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        }
-      ]
-    },
-    {
-      "identifier": "4",
-      "title": "Schule - Wissenschaft - Kultur",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Reglement": 1,
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "41",
-          "title": "Schule",
-          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1,
             "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "411",
-              "title": "Volksschule. Kindergarten",
-              "total": 2,
-              "own": 0,
+              "identifier": "611",
+              "title": "Finanzhaushalt. Finanzverwaltung. Finanzkontrolle",
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Reglement": 1,
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "411.1",
-                  "title": "Allgemein",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                },
-                {
-                  "identifier": "411.4",
-                  "title": "Sonderschule",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
@@ -177,35 +137,12 @@
     {
       "identifier": "7",
       "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
-      "total": 3,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
-        {
-          "identifier": "70",
-          "title": "Raumplanung. Bauwesen. Feuerschutz",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "708",
-              "title": "Feuerschutz. Feuerpolizei",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "72",
           "title": "Werke",
@@ -216,8 +153,8 @@
           },
           "children": [
             {
-              "identifier": "723",
-              "title": "Öffentlicher Boden, Untergrund",
+              "identifier": "720",
+              "title": "Allgemein. Submission",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -231,15 +168,16 @@
     {
       "identifier": "8",
       "title": "Gesundheit - Arbeit - Soziale Sicherheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "83",
-          "title": "Sozialversicherung",
+          "identifier": "81",
+          "title": "Gesundheit",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -247,78 +185,24 @@
           },
           "children": [
             {
-              "identifier": "836",
-              "title": "Familienzulagen, familienrechtliche Unterhaltsbeiträge und Kinderalimente",
+              "identifier": "819",
+              "title": "Veterinärwesen",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Gesetz": 1
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Volkswirtschaft",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "93",
-          "title": "Industrie und Gewerbe",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "935",
-              "title": "Geldspiele. Lotterie- und Sportfonds",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "935.5",
-                  "title": "Lotterien. Wetten",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
             }
           ]
         },
         {
-          "identifier": "95",
-          "title": "Staatliche Unternehmungen. Bankwesen",
+          "identifier": "85",
+          "title": "Sozialhilfe und soziale Einrichtungen",
           "total": 1,
-          "own": 0,
+          "own": 1,
           "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "956",
-              "title": "Gebäudeversicherung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
+            "Verordnung": 1
+          }
         }
       ]
     }
@@ -327,12 +211,44 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.10",
+                  "title": "Gleichstellung von Mann und Frau",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
@@ -343,8 +259,8 @@
           },
           "children": [
             {
-              "identifier": "1.40.10",
-              "title": "Römisch-Katholische Kirche",
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -358,113 +274,66 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "4.10",
-          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "identifier": "4.170",
+          "title": "Dokumentation",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "4.10.30",
-              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "identifier": "4.170.10",
+              "title": "Statistik",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
         },
         {
-          "identifier": "4.80",
-          "title": "Sonderpädagogik",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.80.10",
-              "title": "Sonderschulen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1,
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "5.20",
-          "title": "Bevölkerungsschutz",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "5.20.30",
-              "title": "Feuerwehr / Elementarschäden",
-              "total": 2,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "5.20.30.10",
-                  "title": "Feuerwehr",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Gesetz": 1,
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -472,55 +341,13 @@
           },
           "children": [
             {
-              "identifier": "6.30.20",
-              "title": "Bergwerk",
+              "identifier": "7.70.20",
+              "title": "Tierschutz",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Gesetz": 1
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "8.30.100",
-              "title": "Familienzulagen",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.30.100.10",
-                  "title": "Landwirtschaftliche Arbeitnehmer",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
             }
           ]
         }
@@ -528,37 +355,54 @@
     }
   ],
   "languages_available": {
-    "de": 15
+    "de": 7
   },
   "available_years_for_entity": [
-    "1826",
+    "1669",
+    "1803",
+    "1815",
+    "1825",
     "1828",
-    "1829",
     "1831",
     "1834",
     "1846",
+    "1861",
     "1869",
+    "1870",
     "1886",
+    "1887",
     "1889",
     "1890",
-    "1891",
-    "1892",
     "1896",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1911",
     "1914",
+    "1917",
     "1918",
+    "1923",
+    "1925",
     "1926",
     "1927",
+    "1930",
     "1931",
     "1933",
     "1934",
     "1937",
     "1938",
-    "1949",
+    "1941",
+    "1943",
+    "1947",
+    "1948",
+    "1951",
     "1955",
+    "1956",
     "1958",
+    "1959",
+    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
@@ -567,7 +411,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",

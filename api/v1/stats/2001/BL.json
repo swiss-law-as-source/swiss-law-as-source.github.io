@@ -1,40 +1,67 @@
 {
   "year": "2001",
+  "year_semantics": "enactment",
   "entity": "BL",
-  "total": 7,
-  "categorized": 7,
+  "total": 18,
+  "categorized": 18,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 8,
       "by_topic": {
-        "142 Finanz- und Kirchendirektion": 1,
+        "17 Gerichte, Verwaltungsverfahren und Anwaltsrecht": 2,
+        "11 Bürgerrechte": 1,
+        "54 Gewerbe und Industrie": 1,
         "790 Landschaftsschutz": 1,
         "91 Medizinalpersonen": 1
       },
       "by_global_category": {
-        "1.10.90.10 Gleichstellung von Mann und Frau": 1,
+        "1.10.80 Ausweise": 1,
+        "1.20.70.50 Gerichtskosten, Gerichtsgebühren": 1,
+        "9.60.60 Reisendengewerbe": 1,
         "7.70.50 Naturschutz": 1
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
         "687 Berufe im Gesundheitswesen": 2,
-        "649 Interkantonale Vereinbarungen": 1
+        "149 Interkantonale Vereinbarungen": 1,
+        "42 Öffentliche Werke": 1,
+        "649 Interkantonale Vereinbarungen": 1,
+        "93 Spitäler": 1
       },
       "by_global_category": {
+        "1.10.40 Interkantonale Zusammenarbeit": 1,
+        "7.30.40 Submission": 1,
         "4.30.50 Brückenangebote": 1,
-        "4.140 Anerkennung von Diplomen": 1
+        "4.140 Anerkennung von Diplomen": 1,
+        "8.10.90 Rettungsdienst": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "17 Gerichte, Verwaltungsverfahren und Anwaltsrecht": 2
+      },
+      "by_global_category": {
+        "1.50.10.10 Ausbildung": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
-        "833 Ergänzungsleistungen": 1
+        "17 Gerichte, Verwaltungsverfahren und Anwaltsrecht": 1
+      },
+      "by_global_category": {}
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "17 Gerichte, Verwaltungsverfahren und Anwaltsrecht": 1
       },
       "by_global_category": {
-        "1.30.40 Aufgabenteilung Kanton-Gemeinden": 1
+        "1.50.10.20 Honorare": 1
       }
     }
   },
@@ -42,6 +69,82 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
+      "total": 8,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3,
+        "Reglement": 2,
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "11",
+          "title": "Bürgerrechte",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "14",
+          "title": "Regierungsrat und Verwaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "149",
+              "title": "Interkantonale Vereinbarungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "17",
+          "title": "Gerichte, Verwaltungsverfahren und Anwaltsrecht",
+          "total": 6,
+          "own": 6,
+          "by_type": {
+            "Reglement": 2,
+            "Verordnung": 2,
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "42",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Volkswirtschaft",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -49,24 +152,13 @@
       },
       "children": [
         {
-          "identifier": "14",
-          "title": "Regierungsrat und Verwaltung",
+          "identifier": "54",
+          "title": "Gewerbe und Industrie",
           "total": 1,
-          "own": 0,
+          "own": 1,
           "by_type": {
             "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "142",
-              "title": "Finanz- und Kirchendirektion",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
+          }
         }
       ]
     },
@@ -153,43 +245,13 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Soziale Sicherheit",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
-      },
-      "children": [
-        {
-          "identifier": "83",
-          "title": "Sozialversicherungen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          },
-          "children": [
-            {
-              "identifier": "833",
-              "title": "Ergänzungsleistungen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "9",
       "title": "Gesundheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -200,6 +262,15 @@
           "by_type": {
             "Verordnung": 1
           }
+        },
+        {
+          "identifier": "93",
+          "title": "Spitäler",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
         }
       ]
     }
@@ -208,16 +279,48 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1,
+        "Reglement": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.40",
+              "title": "Interkantonale Zusammenarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "1.10.80",
+              "title": "Ausweise",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -225,8 +328,8 @@
           },
           "children": [
             {
-              "identifier": "1.10.90",
-              "title": "Grundrechte, Politische Rechte",
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -234,8 +337,8 @@
               },
               "children": [
                 {
-                  "identifier": "1.10.90.10",
-                  "title": "Gleichstellung von Mann und Frau",
+                  "identifier": "1.20.70.50",
+                  "title": "Gerichtskosten, Gerichtsgebühren",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -247,22 +350,44 @@
           ]
         },
         {
-          "identifier": "1.30",
-          "title": "Gemeinden",
-          "total": 1,
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Reglement": 1,
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "1.30.40",
-              "title": "Aufgabenteilung Kanton-Gemeinden",
-              "total": 1,
-              "own": 1,
+              "identifier": "1.50.10",
+              "title": "Anwälte",
+              "total": 2,
+              "own": 0,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              }
+                "Reglement": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.10.10",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                },
+                {
+                  "identifier": "1.50.10.20",
+                  "title": "Honorare",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -311,12 +436,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -338,30 +484,106 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.90",
+              "title": "Rettungsdienst",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.60",
+              "title": "Reisendengewerbe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 18
   },
   "available_years_for_entity": [
     "1815",
     "1828",
-    "1829",
     "1834",
     "1836",
+    "1865",
     "1870",
     "1876",
     "1881",
-    "1903",
+    "1888",
+    "1889",
+    "1892",
+    "1896",
+    "1902",
+    "1907",
+    "1908",
     "1909",
+    "1911",
+    "1914",
     "1916",
     "1919",
     "1920",
+    "1921",
+    "1922",
+    "1923",
     "1925",
+    "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1944",
+    "1946",
     "1947",
     "1948",
     "1949",
@@ -369,8 +591,10 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -378,6 +602,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",

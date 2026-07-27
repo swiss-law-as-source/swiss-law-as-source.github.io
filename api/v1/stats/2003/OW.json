@@ -1,16 +1,18 @@
 {
   "year": "2003",
+  "year_semantics": "enactment",
   "entity": "OW",
-  "total": 14,
-  "categorized": 14,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 9,
+      "total": 10,
       "by_topic": {
         "816 Lebensmittel und Gebrauchsgegenstände": 3,
         "410 Schulen": 1,
         "610 Finanzhaushalt": 1,
+        "772 Öffentlicher Verkehr": 1,
         "780 Umweltschutz": 1,
         "832 Vereinbarungen mit Spitälern": 1,
         "843 Arbeitsmarkt": 1,
@@ -20,6 +22,7 @@
         "7.50.10.20 Eisenbahn": 2,
         "4.80.20 Hochbegabtenförderung": 1,
         "9.50.10.60.10 Lotteriefonds": 1,
+        "7.50.20.40 Personenbeförderung": 1,
         "8.10.130.10.10 Lebensmittelaufsicht": 1,
         "8.20.20.20 Entsendung von Arbeitnehmern": 1,
         "8.30.60.10.20 Vereinbarungen": 1
@@ -38,6 +41,15 @@
         "4.170.20 Archive": 1,
         "4.80.20 Hochbegabtenförderung": 1,
         "8.20.20.20 Entsendung von Arbeitnehmern": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "975 Markt und Gewerbe": 1
+      },
+      "by_global_category": {
+        "7.30.40 Submission": 1
       }
     }
   },
@@ -116,13 +128,22 @@
     {
       "identifier": "7",
       "title": "RAUM- UND BAUORDNUNG, ÖFFENTLICHE WERKE, ENERGIE, VERKEHR, UMWELTSCHUTZ",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Anderes": 1
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "772",
+          "title": "Öffentlicher Verkehr",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
         {
           "identifier": "780",
           "title": "Umweltschutz",
@@ -180,6 +201,26 @@
           "own": 1,
           "by_type": {
             "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "VOLKSWIRTSCHAFT",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "975",
+          "title": "Markt und Gewerbe",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
           }
         }
       ]
@@ -243,19 +284,40 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 3,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "7.50",
-          "title": "Verkehr",
-          "total": 2,
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 3
           },
           "children": [
             {
@@ -274,6 +336,26 @@
                   "own": 2,
                   "by_type": {
                     "Anderes": 2
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.40",
+                  "title": "Personenbeförderung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
                   }
                 }
               ]
@@ -467,24 +549,29 @@
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 16
   },
   "available_years_for_entity": [
     "1825",
     "1850",
     "1874",
+    "1877",
     "1878",
     "1880",
     "1892",
     "1895",
     "1911",
     "1913",
+    "1914",
     "1915",
     "1916",
+    "1918",
     "1927",
     "1928",
+    "1931",
     "1935",
     "1937",
+    "1938",
     "1939",
     "1942",
     "1943",
@@ -494,13 +581,19 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
+    "1960",
     "1961",
+    "1963",
     "1964",
     "1965",
+    "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

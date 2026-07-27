@@ -1,55 +1,159 @@
 {
   "year": "1999",
+  "year_semantics": "enactment",
   "entity": "BS",
-  "total": 12,
-  "categorized": 12,
+  "total": 27,
+  "categorized": 27,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 4,
-      "by_topic": {
-        "31 Medizinalpersonen · Komplementärmedizin": 3,
-        "568 Waffen und Munition · Sprengstoffe": 1
-      },
-      "by_global_category": {
-        "8.10.30.10 Ärzte": 1,
-        "5.30.30 Waffen und Munition": 1
-      }
-    },
     "Gemeindeerlass": {
-      "total": 4,
+      "total": 8,
       "by_topic": {
+        "BaB 16 Gemeindepersonal": 2,
         "BeE 3 Gesundheit": 1,
+        "BeE 6 Finanzen · Gemeindegrundstücke": 1,
         "BeE 7 Raum- und Bauordnung · Energie · Umweltschutz": 1,
         "RiE 3 Gesundheit · Bestattungswesen": 1,
+        "RiE 44 Bibliothek": 1,
         "RiE 73 Hochbauten": 1
       },
       "by_global_category": {
-        "7.10.10 Pläne": 2
+        "7.10.10 Pläne": 2,
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "4.170.30 Bibliotheken": 1
+      }
+    },
+    "Verordnung": {
+      "total": 7,
+      "by_topic": {
+        "31 Medizinalpersonen · Komplementärmedizin": 3,
+        "413 Mittelschulen": 2,
+        "563 Dienstleistungsgewerbe": 1,
+        "772 Energie- und Wasserversorgung": 1
+      },
+      "by_global_category": {
+        "8.10.30.10 Ärzte": 1,
+        "4.20.30 Handelsmittelschulen, Informatikmittelschulen": 1,
+        "4.30.50 Brückenangebote": 1,
+        "7.50.20.40 Personenbeförderung": 1,
+        "7.40.40 Elektrizität": 1
+      }
+    },
+    "Gesetz": {
+      "total": 6,
+      "by_topic": {
+        "161 Haftung des Staates": 1,
+        "162 Dienstverhältnis": 1,
+        "440 Universität und Universitätsgut": 1,
+        "451 Museen und Sammlungen": 1,
+        "730 Hochbauten": 1,
+        "914 Submission": 1
+      },
+      "by_global_category": {
+        "1.20.40 Staatshaftung": 1,
+        "4.170.40 Museen": 1,
+        "7.30.40 Submission": 1
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "419 Schulgeld · Schulabkommen · Anerkennungsabkommen": 2
+        "257 Strafprozess · Rechtshilfe · Opferhilfe": 1,
+        "419 Schulgeld · Schulabkommen · Anerkennungsabkommen": 1,
+        "442 Hochschulförderung · Finanzmittel · Gebühren": 1
       },
       "by_global_category": {
-        "4.140 Anerkennung von Diplomen": 2
+        "3.20.70 Opferhilfe": 1,
+        "4.140 Anerkennung von Diplomen": 1,
+        "4.120.10 Schulkoordination": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "446 Fakultäten": 1,
-        "786 Abfallbeseitigung": 1
+        "786 Abfallbeseitigung": 1,
+        "919 Schweizer Mustermesse": 1
       },
       "by_global_category": {
         "4.40.40 Naturwissenschaftliche Fakultäten": 1,
-        "7.60.10 Abfälle": 1
+        "7.60.10 Abfälle": 1,
+        "9.60.70 Messen, Märkte": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staatsrechtliche Grundlagen · Organisation",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2
+      },
+      "children": [
+        {
+          "identifier": "16",
+          "title": "Staatspersonal",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 2
+          },
+          "children": [
+            {
+              "identifier": "161",
+              "title": "Haftung des Staates",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "162",
+              "title": "Dienstverhältnis",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht · Strafrecht · Rechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "25",
+          "title": "Strafrecht und Strafrechtspflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "257",
+              "title": "Strafprozess · Rechtshilfe · Opferhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "Gesundheit",
@@ -73,29 +177,41 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 3,
+      "total": 7,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 2,
+        "Gesetz": 2,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2
+            "Verordnung": 2,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
-              "identifier": "419",
-              "title": "Schulgeld · Schulabkommen · Anerkennungsabkommen",
+              "identifier": "413",
+              "title": "Mittelschulen",
               "total": 2,
               "own": 2,
               "by_type": {
-                "Interkantonale Vereinbarung": 2
+                "Verordnung": 2
+              }
+            },
+            {
+              "identifier": "419",
+              "title": "Schulgeld · Schulabkommen · Anerkennungsabkommen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -103,12 +219,32 @@
         {
           "identifier": "44",
           "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
+            "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "440",
+              "title": "Universität und Universitätsgut",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "442",
+              "title": "Hochschulförderung · Finanzmittel · Gebühren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
             {
               "identifier": "446",
               "title": "Fakultäten",
@@ -116,6 +252,26 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "45",
+          "title": "Museen · Archive · Bibliotheken · Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "451",
+              "title": "Museen und Sammlungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -141,8 +297,8 @@
           },
           "children": [
             {
-              "identifier": "568",
-              "title": "Waffen und Munition · Sprengstoffe",
+              "identifier": "563",
+              "title": "Dienstleistungsgewerbe",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -156,12 +312,54 @@
     {
       "identifier": "7",
       "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "73",
+          "title": "Hochbauten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "730",
+              "title": "Hochbauten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "77",
+          "title": "Wasser · Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "772",
+              "title": "Energie- und Wasserversorgung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "78",
           "title": "Umweltschutz",
@@ -185,8 +383,50 @@
       ]
     },
     {
-      "identifier": "BeE",
-      "title": "Einwohnergemeinde Bettingen",
+      "identifier": "9",
+      "title": "Wirtschaft und Verkehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "91",
+          "title": "Wirtschaft",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "914",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "919",
+              "title": "Schweizer Mustermesse",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "BaB",
+      "title": "Bürgergemeinde Basel",
       "total": 2,
       "own": 2,
       "by_type": {
@@ -194,26 +434,173 @@
       }
     },
     {
+      "identifier": "BeE",
+      "title": "Einwohnergemeinde Bettingen",
+      "total": 3,
+      "own": 3,
+      "by_type": {
+        "Gemeindeerlass": 3
+      }
+    },
+    {
       "identifier": "RiE",
       "title": "Einwohnergemeinde Riehen",
-      "total": 2,
-      "own": 2,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Gemeindeerlass": 2
+        "Gemeindeerlass": 3
       }
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
-        "Anderes": 1
+        "Gemeindeerlass": 1,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gemeindeerlass": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gemeindeerlass": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gemeindeerlass": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.40",
+              "title": "Staatshaftung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.70",
+              "title": "Opferhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 7,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 1,
+        "Gemeindeerlass": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.30",
+              "title": "Handelsmittelschulen, Informatikmittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.50",
+              "title": "Brückenangebote",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.40",
           "title": "Tertiärstufe: Universitäten",
@@ -235,41 +622,60 @@
           ]
         },
         {
-          "identifier": "4.140",
-          "title": "Anerkennung von Diplomen",
-          "total": 2,
-          "own": 2,
-          "by_type": {
-            "Interkantonale Vereinbarung": 2
-          }
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "5.30",
-          "title": "Innere Sicherheit",
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
-              "identifier": "5.30.30",
-              "title": "Waffen und Munition",
+              "identifier": "4.120.10",
+              "title": "Schulkoordination",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.140",
+          "title": "Anerkennung von Diplomen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.30",
+              "title": "Bibliotheken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gemeindeerlass": 1
+              }
+            },
+            {
+              "identifier": "4.170.40",
+              "title": "Museen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -279,10 +685,12 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Gemeindeerlass": 2,
+        "Verordnung": 2,
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
@@ -303,6 +711,77 @@
               "by_type": {
                 "Gemeindeerlass": 2
               }
+            }
+          ]
+        },
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.40",
+          "title": "Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.40.40",
+              "title": "Elektrizität",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.40",
+                  "title": "Personenbeförderung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         },
@@ -369,46 +848,87 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.70",
+              "title": "Messen, Märkte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 27
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -434,7 +954,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",
@@ -514,6 +1033,7 @@
     "FR",
     "GE",
     "GL",
+    "GR",
     "JU",
     "LU",
     "NE",

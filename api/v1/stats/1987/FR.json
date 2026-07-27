@@ -1,28 +1,46 @@
 {
   "year": "1987",
+  "year_semantics": "enactment",
   "entity": "FR",
-  "total": 4,
-  "categorized": 4,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
-    "Reglement": {
-      "total": 2,
+    "Anderes": {
+      "total": 7,
       "by_topic": {
+        "122.72 Besoldungen": 4,
+        "214.12 Erwerb von Grundstücken durch Personen im Ausland": 1,
+        "482 Kulturgüterschutz": 1,
+        "810 Allgemeine Bestimmungen": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.40 Löhne, Entschädigungen": 4,
+        "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1,
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
+        "7.60.90 Schadenbekämpfung": 1
+      }
+    },
+    "Reglement": {
+      "total": 3,
+      "by_topic": {
+        "122.72 Besoldungen": 1,
         "412.1 Gymnasien - Gymnasialstudien": 1,
         "721.2 Landschaftsschutz und Naturschutzgebiete": 1
       },
       "by_global_category": {
+        "1.20.20.40.10 Anstellung": 1,
         "4.20.10 Mittelschule": 1,
         "7.70.50 Naturschutz": 1
       }
     },
-    "Anderes": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "810 Allgemeine Bestimmungen": 1
+        "112 Gebiet": 1
       },
       "by_global_category": {
-        "7.60.90 Schadenbekämpfung": 1
+        "1.10.50.10 Gebietseinteilung, Bezirke": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -37,12 +55,145 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "BILDUNG - KULTUR - SPORT",
+      "identifier": "1",
+      "title": "STAAT - VOLK - BEHÖRDEN",
+      "total": 6,
+      "own": 0,
+      "by_type": {
+        "Anderes": 4,
+        "Gesetz": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "11",
+          "title": "VOLK UND GEBIET",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "112",
+              "title": "Gebiet",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Anderes": 4,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Staatsrat und Verwaltung",
+              "total": 5,
+              "own": 0,
+              "by_type": {
+                "Anderes": 4,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.7",
+                  "title": "Staatspersonal",
+                  "total": 5,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 4,
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "122.72",
+                      "title": "Besoldungen",
+                      "total": 5,
+                      "own": 5,
+                      "by_type": {
+                        "Anderes": 4,
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "PRIVATRECHT - ZIVILPROZESS - ZWANGSVOLLSTRECKUNG",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "ZIVILRECHT",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "214",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "214.1",
+                  "title": "Eigentum",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "214.12",
+                      "title": "Erwerb von Grundstücken durch Personen im Ausland",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "BILDUNG - KULTUR - SPORT",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -73,6 +224,26 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "48",
+          "title": "KULTURELLE ANGELEGENHEITEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "482",
+              "title": "Kulturgüterschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -196,6 +367,146 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 6,
+      "own": 0,
+      "by_type": {
+        "Anderes": 4,
+        "Gesetz": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.50",
+              "title": "Gebiet",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.50.10",
+                  "title": "Gebietseinteilung, Bezirke",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Anderes": 4,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 5,
+              "own": 0,
+              "by_type": {
+                "Anderes": 4,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 5,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 4,
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.10",
+                      "title": "Anstellung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    },
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 4,
+                      "own": 4,
+                      "by_type": {
+                        "Anderes": 4
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.20",
+                  "title": "Erwerb von Grundstücke durch Personen im Ausland",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 1,
@@ -229,10 +540,10 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Anderes": 2,
         "Reglement": 1
       },
       "children": [
@@ -259,10 +570,11 @@
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -272,6 +584,15 @@
               "own": 1,
               "by_type": {
                 "Reglement": 1
+              }
+            },
+            {
+              "identifier": "7.70.70",
+              "title": "Denkmalschutz, Kulturgüterschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -322,12 +643,22 @@
     }
   ],
   "languages_available": {
-    "de": 4,
-    "fr": 4
+    "de": 12,
+    "fr": 12
   },
   "available_years_for_entity": [
+    "1804",
+    "1808",
+    "1825",
+    "1831",
+    "1832",
+    "1834",
+    "1836",
+    "1837",
     "1848",
+    "1850",
     "1852",
+    "1857",
     "1859",
     "1866",
     "1867",
@@ -336,23 +667,39 @@
     "1874",
     "1875",
     "1879",
+    "1884",
+    "1889",
     "1893",
     "1899",
+    "1907",
+    "1909",
+    "1910",
+    "1911",
+    "1913",
     "1914",
+    "1916",
     "1917",
     "1918",
     "1920",
     "1921",
     "1922",
+    "1923",
     "1924",
+    "1925",
     "1926",
+    "1927",
     "1929",
     "1930",
+    "1931",
     "1934",
     "1935",
+    "1937",
     "1938",
+    "1939",
     "1942",
     "1943",
+    "1946",
+    "1948",
     "1949",
     "1950",
     "1951",
@@ -360,6 +707,8 @@
     "1954",
     "1955",
     "1957",
+    "1958",
+    "1959",
     "1960",
     "1961",
     "1962",
@@ -425,8 +774,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

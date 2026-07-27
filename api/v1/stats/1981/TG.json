@@ -1,58 +1,79 @@
 {
   "year": "1981",
+  "year_semantics": "enactment",
   "entity": "TG",
-  "total": 2,
-  "categorized": 2,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 1,
+    "Verordnung": {
+      "total": 2,
       "by_topic": {
-        "708 Feuerschutz. Feuerpolizei": 1
+        "748 Luftfahrt": 1,
+        "832 Kranken- und Unfallversicherung": 1
       },
       "by_global_category": {
-        "5.20.30.10 Feuerwehr": 1
+        "8.30.70 UVG": 1
       }
     },
-    "Verordnung": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "748 Luftfahrt": 1
+        "170 Allgemein": 1
+      },
+      "by_global_category": {
+        "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "85 Sozialhilfe und soziale Einrichtungen": 1
       },
       "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "7",
-      "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
-      "total": 2,
+      "identifier": "1",
+      "title": "Staat - Volk - Behörden",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "70",
-          "title": "Raumplanung. Bauwesen. Feuerschutz",
+          "identifier": "17",
+          "title": "Staatliche Gewalten. Behörden",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "708",
-              "title": "Feuerschutz. Feuerpolizei",
+              "identifier": "170",
+              "title": "Allgemein",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 1
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
         {
           "identifier": "74",
           "title": "Verkehr",
@@ -74,43 +95,84 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Kranken- und Unfallversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "85",
+          "title": "Sozialhilfe und soziale Einrichtungen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "identifier": "1",
+      "title": "Staat",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "5.20",
-          "title": "Bevölkerungsschutz",
+          "identifier": "1.20",
+          "title": "Behörden",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "5.20.30",
-              "title": "Feuerwehr / Elementarschäden",
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 1
               },
               "children": [
                 {
-                  "identifier": "5.20.30.10",
-                  "title": "Feuerwehr",
+                  "identifier": "1.20.20.50",
+                  "title": "Verwaltungsverfahren, Verwaltungsrechtspflege",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Anderes": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -118,40 +180,88 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.70",
+              "title": "UVG",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 4
   },
   "available_years_for_entity": [
-    "1826",
+    "1669",
+    "1803",
+    "1815",
+    "1825",
     "1828",
-    "1829",
     "1831",
     "1834",
     "1846",
+    "1861",
     "1869",
+    "1870",
     "1886",
+    "1887",
     "1889",
     "1890",
-    "1891",
-    "1892",
     "1896",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1911",
     "1914",
+    "1917",
     "1918",
+    "1923",
+    "1925",
     "1926",
     "1927",
+    "1930",
     "1931",
     "1933",
     "1934",
     "1937",
     "1938",
-    "1949",
+    "1941",
+    "1943",
+    "1947",
+    "1948",
+    "1951",
     "1955",
+    "1956",
     "1958",
+    "1959",
+    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
@@ -160,7 +270,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -227,6 +336,7 @@
     "FR",
     "GE",
     "GL",
+    "GR",
     "JU",
     "LU",
     "NE",

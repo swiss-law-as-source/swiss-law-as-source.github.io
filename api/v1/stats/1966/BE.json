@@ -1,10 +1,31 @@
 {
   "year": "1966",
+  "year_semantics": "enactment",
   "entity": "BE",
-  "total": 1,
-  "categorized": 1,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "811.9 Gebührentarife": 1,
+        "916.5 Bekämpfung von Tierseuchen": 1
+      },
+      "by_global_category": {
+        "8.10.30.100 Tierärzte": 1,
+        "9.20.120 Tierseuchen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "426.5 Pärke von nationaler Bedeutung": 1
+      },
+      "by_global_category": {
+        "7.70.10 Landschaftsschutz": 1
+      }
+    },
     "Reglement": {
       "total": 1,
       "by_topic": {
@@ -17,38 +38,126 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "9",
-      "title": "Volkswirtschaft",
+      "identifier": "4",
+      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "42",
+          "title": "Kultur",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "426",
+              "title": "Natur- und Heimatschutz",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "426.5",
+                  "title": "Pärke von nationaler Bedeutung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.9",
+                  "title": "Gebührentarife",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "91",
           "title": "Landwirtschaft",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Reglement": 1
           },
           "children": [
             {
               "identifier": "916",
               "title": "Produktion und Absatz",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Verordnung": 1,
                 "Reglement": 1
               },
               "children": [
                 {
                   "identifier": "916.5",
                   "title": "Bekämpfung von Tierseuchen",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Verordnung": 1,
                     "Reglement": 1
                   }
                 }
@@ -61,29 +170,105 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "9",
-      "title": "Wirtschaft",
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.10",
+              "title": "Landschaftsschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.100",
+                  "title": "Tierärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "9.20",
           "title": "Landwirtschaft",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Reglement": 1
           },
           "children": [
             {
               "identifier": "9.20.120",
               "title": "Tierseuchen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Verordnung": 1,
                 "Reglement": 1
               }
             }
@@ -93,22 +278,23 @@
     }
   ],
   "languages_available": {
-    "de": 1,
-    "fr": 1
+    "de": 4,
+    "fr": 4
   },
   "available_years_for_entity": [
     "1562",
+    "1809",
+    "1815",
     "1828",
     "1837",
     "1851",
     "1852",
     "1859",
     "1862",
-    "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
-    "1877",
     "1889",
     "1893",
     "1899",
@@ -116,27 +302,43 @@
     "1903",
     "1907",
     "1909",
+    "1910",
     "1911",
+    "1914",
+    "1916",
+    "1922",
     "1923",
     "1924",
+    "1930",
     "1931",
     "1934",
     "1936",
+    "1937",
+    "1938",
     "1939",
     "1940",
-    "1942",
+    "1943",
+    "1944",
     "1945",
-    "1949",
+    "1946",
+    "1947",
+    "1948",
     "1950",
     "1951",
     "1954",
+    "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
+    "1962",
+    "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -145,6 +347,7 @@
     "1974",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1979",
     "1980",
@@ -200,6 +403,7 @@
     "AI",
     "AR",
     "BE",
+    "BL",
     "BS",
     "CH",
     "FR",
@@ -210,6 +414,7 @@
     "NE",
     "NW",
     "SG",
+    "SH",
     "SO",
     "TG",
     "TI",

@@ -1,18 +1,19 @@
 {
   "year": "1992",
+  "year_semantics": "enactment",
   "entity": "BL",
-  "total": 6,
-  "categorized": 6,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "143 Volkswirtschafts- und Gesundheitsdirektion": 1,
+        "42 Öffentliche Werke": 2,
         "91 Medizinalpersonen": 1
       },
       "by_global_category": {
-        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
+        "3.50 Ordnungsbussen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -26,6 +27,16 @@
         "8.30.60.10.20 Vereinbarungen": 1
       }
     },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "93 Spitäler": 1,
+        "94 Alter und Pflege": 1
+      },
+      "by_global_category": {
+        "8.30.60.10.20 Vereinbarungen": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
@@ -34,49 +45,9 @@
       "by_global_category": {
         "7.70.20 Tierschutz": 1
       }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "93 Spitäler": 1
-      },
-      "by_global_category": {
-        "8.30.60.10.20 Vereinbarungen": 1
-      }
     }
   },
   "by_topic_tree": [
-    {
-      "identifier": "1",
-      "title": "Staat, Volk, Behörden",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "14",
-          "title": "Regierungsrat und Verwaltung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "143",
-              "title": "Volkswirtschafts- und Gesundheitsdirektion",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
     {
       "identifier": "2",
       "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
@@ -93,6 +64,26 @@
           "own": 1,
           "by_type": {
             "Interkantonale Vereinbarung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "42",
+          "title": "Öffentliche Werke",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Verordnung": 2
           }
         }
       ]
@@ -120,11 +111,11 @@
     {
       "identifier": "9",
       "title": "Gesundheit",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Verordnung": 1,
-        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -149,9 +140,10 @@
         {
           "identifier": "94",
           "title": "Alter und Pflege",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Anderes": 1,
             "Interkantonale Vereinbarung": 1
           }
         }
@@ -160,54 +152,13 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.40.30",
-                  "title": "Grundbuch und Grundbuchvermessung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "3",
       "title": "Strafrecht",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -229,6 +180,15 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "3.50",
+          "title": "Ordnungsbussen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
         }
       ]
     },
@@ -323,27 +283,41 @@
     }
   ],
   "languages_available": {
-    "de": 6
+    "de": 8
   },
   "available_years_for_entity": [
     "1815",
     "1828",
-    "1829",
     "1834",
     "1836",
+    "1865",
     "1870",
     "1876",
     "1881",
-    "1903",
+    "1888",
+    "1889",
+    "1892",
+    "1896",
+    "1902",
+    "1907",
+    "1908",
     "1909",
+    "1911",
+    "1914",
     "1916",
     "1919",
     "1920",
+    "1921",
+    "1922",
+    "1923",
     "1925",
+    "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1944",
+    "1946",
     "1947",
     "1948",
     "1949",
@@ -351,8 +325,10 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -360,6 +336,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -422,6 +399,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

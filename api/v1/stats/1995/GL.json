@@ -1,16 +1,49 @@
 {
   "year": "1995",
+  "year_semantics": "enactment",
   "entity": "GL",
-  "total": 3,
-  "categorized": 3,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
-    "Reglement": {
-      "total": 1,
+    "Anderes": {
+      "total": 7,
       "by_topic": {
+        "V C/4 Kaminfeger": 2,
+        "IX E/2 Förster": 1,
+        "V C/1 Allgemeines": 1,
+        "VII B/2 Öffentliche Bauten": 1,
+        "VIII A/52 Fleisch": 1,
+        "VIII B/21 Allgemeines": 1
+      },
+      "by_global_category": {
+        "5.20.30.30 Kaminfeger": 2,
+        "5.20.30.20 Brandschutz": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "7.60.20 Gewässerschutz": 1
+      }
+    },
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "VIII B/21 Allgemeines": 2,
+        "IX E/1 Forstwirtschaft": 1,
+        "IX E/2 Förster": 1
+      },
+      "by_global_category": {
+        "7.60.20 Gewässerschutz": 2
+      }
+    },
+    "Reglement": {
+      "total": 3,
+      "by_topic": {
+        "IV A/21 Evangelische Kirche": 1,
+        "V C/1 Allgemeines": 1,
         "V D/1 Versicherung im Monopol und Wettbewerb": 1
       },
       "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "5.20.30.10 Feuerwehr": 1,
         "5.20.30.40.10 Elementarschadenversicherung": 1
       }
     },
@@ -22,25 +55,26 @@
       "by_global_category": {
         "1.30.10 Gemeindefinanzen": 1
       }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "VII B/2 Öffentliche Bauten": 1
-      },
-      "by_global_category": {
-        "6.10.30 Staatsbeiträge, Subventionen": 1
-      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "V",
-      "title": "Schutz und Abwehr",
+      "identifier": "IV",
+      "title": "Kirche – Schule – Kultur",
       "total": 1,
       "own": 1,
       "by_type": {
         "Reglement": 1
+      }
+    },
+    {
+      "identifier": "V",
+      "title": "Schutz und Abwehr",
+      "total": 5,
+      "own": 5,
+      "by_type": {
+        "Anderes": 3,
+        "Reglement": 2
       }
     },
     {
@@ -60,16 +94,37 @@
       "by_type": {
         "Anderes": 1
       }
+    },
+    {
+      "identifier": "VIII",
+      "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
+      "total": 4,
+      "own": 4,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung": 2
+      }
+    },
+    {
+      "identifier": "IX",
+      "title": "Volkswirtschaft",
+      "total": 3,
+      "own": 3,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 1
+      }
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -91,21 +146,10 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Reglement": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "5.20",
-          "title": "Bevölkerungsschutz",
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -113,14 +157,75 @@
           },
           "children": [
             {
-              "identifier": "5.20.30",
-              "title": "Feuerwehr / Elementarschäden",
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Anderes": 3,
+        "Reglement": 2
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Anderes": 3,
+            "Reglement": 2
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 5,
+              "own": 0,
+              "by_type": {
+                "Anderes": 3,
+                "Reglement": 2
               },
               "children": [
+                {
+                  "identifier": "5.20.30.10",
+                  "title": "Feuerwehr",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                },
+                {
+                  "identifier": "5.20.30.20",
+                  "title": "Brandschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "5.20.30.30",
+                  "title": "Kaminfeger",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 2
+                  }
+                },
                 {
                   "identifier": "5.20.30.40",
                   "title": "Gebäudeversicherung",
@@ -177,36 +282,83 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 2,
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 15
   },
   "available_years_for_entity": [
     "1807",
     "1835",
     "1859",
+    "1862",
     "1878",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
     "1905",
-    "1906",
     "1909",
     "1910",
+    "1911",
     "1915",
+    "1918",
+    "1922",
+    "1923",
     "1927",
     "1928",
     "1929",
     "1934",
+    "1941",
+    "1943",
     "1944",
-    "1946",
+    "1945",
+    "1947",
+    "1948",
     "1949",
+    "1950",
     "1951",
     "1957",
+    "1958",
+    "1959",
     "1960",
     "1962",
+    "1963",
     "1964",
     "1965",
     "1966",
@@ -228,6 +380,7 @@
     "1983",
     "1984",
     "1985",
+    "1986",
     "1987",
     "1988",
     "1989",

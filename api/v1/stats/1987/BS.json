@@ -1,8 +1,9 @@
 {
   "year": "1987",
+  "year_semantics": "enactment",
   "entity": "BS",
-  "total": 5,
-  "categorized": 5,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -18,14 +19,21 @@
         "4.40.40 Naturwissenschaftliche Fakultäten": 1
       }
     },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "162 Dienstverhältnis": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.30 Arbeitszeit, Ferien, Urlaub": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
-        "410 Schulen": 1
+        "332 Nichtstaatliche Spitäler": 1
       },
-      "by_global_category": {
-        "4.120.10 Schulkoordination": 1
-      }
+      "by_global_category": {}
     },
     "Staatsvertrag": {
       "total": 1,
@@ -33,25 +41,67 @@
         "576 Zivilschutz · Katastrophenhilfe": 1
       },
       "by_global_category": {}
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "832 Alters- und Hinterlassenenversicherung · Invalidenversicherung · Ergänzende kantonale Alters- und Invalidenhilfe": 1
+      },
+      "by_global_category": {
+        "8.30.40 Ergänzungsleistungen": 1
+      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "3",
-      "title": "Gesundheit",
+      "identifier": "1",
+      "title": "Staatsrechtliche Grundlagen · Organisation",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "16",
+          "title": "Staatspersonal",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "162",
+              "title": "Dienstverhältnis",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Gesundheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "33",
           "title": "Spitäler · Sanitätsdienst",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -62,6 +112,15 @@
               "by_type": {
                 "Anderes": 1
               }
+            },
+            {
+              "identifier": "332",
+              "title": "Nichtstaatliche Spitäler",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
             }
           ]
         }
@@ -70,32 +129,21 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           },
           "children": [
-            {
-              "identifier": "410",
-              "title": "Schulen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            },
             {
               "identifier": "416",
               "title": "Turnen und Sport",
@@ -159,17 +207,100 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Arbeit · Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Alters- und Hinterlassenenversicherung · Invalidenversicherung · Ergänzende kantonale Alters- und Invalidenhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.30",
+                      "title": "Arbeitszeit, Ferien, Urlaub",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
       },
       "children": [
         {
@@ -211,47 +342,38 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.120.10",
-              "title": "Schulkoordination",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "8.30.40",
+              "title": "Ergänzungsleistungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "8.30.60",
               "title": "KVG",
@@ -289,43 +411,53 @@
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 7
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -351,7 +483,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",

@@ -1,14 +1,16 @@
 {
   "year": "1986",
+  "year_semantics": "enactment",
   "entity": "NE",
-  "total": 9,
-  "categorized": 9,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 6,
+      "total": 7,
       "by_topic": {
         "224 Bail": 1,
+        "761.3 Transports": 1,
         "766.1 Dispositions générales": 1,
         "813.3 Travailleurs étrangers": 1,
         "821.12 Application de la LAMA": 1,
@@ -23,12 +25,14 @@
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "766.1 Dispositions générales": 1,
+        "805.3 Traitement des déchets": 1,
         "922.1 Dispositions générales": 1
       },
       "by_global_category": {
+        "7.60.10 Abfälle": 1,
         "7.70.20 Tierschutz": 1
       }
     },
@@ -106,23 +110,43 @@
     {
       "identifier": "7",
       "title": "Travaux publics – Énergie – Transports et communications",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Loi": 1,
-        "Autre": 1
+        "Autre": 2,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "76",
           "title": "Transports et communications",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Loi": 1,
-            "Autre": 1
+            "Autre": 2,
+            "Loi": 1
           },
           "children": [
+            {
+              "identifier": "761",
+              "title": "Circulation routière",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "761.3",
+                  "title": "Transports",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "766",
               "title": "Navigation",
@@ -152,12 +176,44 @@
     {
       "identifier": "8",
       "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Autre": 2
+        "Autre": 2,
+        "Loi": 1
       },
       "children": [
+        {
+          "identifier": "80",
+          "title": "Santé",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "805",
+              "title": "Protection de l'équilibre écologique",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "805.3",
+                  "title": "Traitement des déchets",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "81",
           "title": "Travail",
@@ -410,12 +466,32 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Loi": 2
       },
       "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -513,10 +589,11 @@
     }
   ],
   "languages_available": {
-    "fr": 9
+    "fr": 11
   },
   "available_years_for_entity": [
     "1832",
+    "1857",
     "1858",
     "1864",
     "1866",
@@ -641,12 +718,14 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",
     "CH",
     "FR",
     "GE",
+    "GL",
     "GR",
     "JU",
     "LU",
@@ -662,6 +741,7 @@
     "UR",
     "VD",
     "VS",
+    "ZG",
     "ZH"
   ]
 }

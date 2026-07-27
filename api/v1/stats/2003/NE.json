@@ -1,15 +1,18 @@
 {
   "year": "2003",
+  "year_semantics": "enactment",
   "entity": "NE",
-  "total": 16,
-  "categorized": 16,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 6,
+      "total": 8,
       "by_topic": {
         "411.1 Lycées": 3,
+        "151 Grand Conseil": 1,
         "410.1 Dispositions générales": 1,
+        "60 Gestion financière": 1,
         "820.2 Assurance-invalidité": 1,
         "933.4 Cinéma": 1
       },
@@ -17,16 +20,16 @@
         "4.30.20 Berufsmaturitätsschulen": 2,
         "4.80.10 Sonderschulen": 1,
         "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
         "9.50.10.50 Kino-, Theater- und Unterhaltungsgewerbe": 1
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 4,
+      "total": 3,
       "by_topic": {
         "323 Régime applicable aux enfants et adolescents": 1,
         "411.0 Dispositions générales": 1,
-        "414.1 Dispositions générales": 1,
-        "922.5 Conventions intercantonales": 1
+        "414.1 Dispositions générales": 1
       },
       "by_global_category": {
         "4.30.40 Passerelle": 2,
@@ -67,6 +70,37 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "État – Peuple – Autorités",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "15",
+          "title": "Autorités",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "151",
+              "title": "Grand Conseil",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Droit privé – Procédure civile – Exécution",
@@ -282,6 +316,26 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finances",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "60",
+          "title": "Gestion financière",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Règlement": 1
+          }
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
       "total": 1,
@@ -326,45 +380,13 @@
     {
       "identifier": "9",
       "title": "Économie",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Accord intercantonal": 1,
         "Règlement": 1,
         "Autre": 1
       },
       "children": [
-        {
-          "identifier": "92",
-          "title": "Forêts – Chasse – Pêche",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Accord intercantonal": 1
-          },
-          "children": [
-            {
-              "identifier": "922",
-              "title": "Chasse",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Accord intercantonal": 1
-              },
-              "children": [
-                {
-                  "identifier": "922.5",
-                  "title": "Conventions intercantonales",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Accord intercantonal": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
         {
           "identifier": "93",
           "title": "Industrie et artisanat",
@@ -562,27 +584,30 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Règlement": 1,
         "Autre": 1
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Règlement": 1,
             "Autre": 1
           },
           "children": [
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Règlement": 1,
                 "Autre": 1
               }
             }
@@ -687,10 +712,11 @@
     }
   ],
   "languages_available": {
-    "fr": 16
+    "fr": 17
   },
   "available_years_for_entity": [
     "1832",
+    "1857",
     "1858",
     "1864",
     "1866",

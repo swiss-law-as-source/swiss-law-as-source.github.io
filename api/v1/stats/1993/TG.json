@@ -1,10 +1,26 @@
 {
   "year": "1993",
+  "year_semantics": "enactment",
   "entity": "TG",
-  "total": 8,
-  "categorized": 8,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "211.41 Grundbesitz": 1,
+        "747 Schiffahrt": 1,
+        "811.1 Berufe des Gesundheitswesens": 1,
+        "922 Jagd und Vogelschutz": 1
+      },
+      "by_global_category": {
+        "9.20.30 Bäuerliches Bodenrecht": 1,
+        "7.50.60.10 Schiffssteuern": 1,
+        "8.10.30.70 Naturheilpraktiker": 1,
+        "6.30.50.10 Jäger": 1
+      }
+    },
     "Anderes": {
       "total": 3,
       "by_topic": {
@@ -17,58 +33,112 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "412.6 Interkantonale Vereinbarungen": 1,
-        "814.3 Gewässerschutz- und Abfallbeseitigungsanlagen": 1
+        "412.6 Interkantonale Vereinbarungen": 2,
+        "413.2 Kantonsschulen. Maturitätsschule für Erwachsene": 1
       },
       "by_global_category": {
-        "7.60.20 Gewässerschutz": 1
+        "4.70.10 Erwachsenenbildung": 2
       }
     },
     "Gesetz": {
       "total": 2,
       "by_topic": {
-        "721 Wasserwirtschaft. Wasserbau. Gewässer": 1,
+        "442 Kultur": 1,
         "810 Allgemein": 1
       },
       "by_global_category": {
-        "7.30.20.20 Gewässernutzung": 1,
+        "4.180.20 Kulturförderung": 1,
         "8.10.10 Ethik": 1
-      }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "811.1 Berufe des Gesundheitswesens": 1
-      },
-      "by_global_category": {
-        "8.10.30.70 Naturheilpraktiker": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "Schule - Wissenschaft - Kultur",
+      "identifier": "2",
+      "title": "Privatrecht - Zivilrechtspflege - Vollstreckung",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilgesetzbuch",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "211.4",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "211.41",
+                  "title": "Grundbesitz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 3,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 3
           },
           "children": [
             {
               "identifier": "412",
               "title": "Berufliches Bildungswesen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
+              },
+              "children": [
+                {
+                  "identifier": "412.6",
+                  "title": "Interkantonale Vereinbarungen",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 2
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "413",
+              "title": "Mittelschulen",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -76,8 +146,8 @@
               },
               "children": [
                 {
-                  "identifier": "412.6",
-                  "title": "Interkantonale Vereinbarungen",
+                  "identifier": "413.2",
+                  "title": "Kantonsschulen. Maturitätsschule für Erwachsene",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -85,6 +155,26 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "44",
+          "title": "Kultur. Kunst",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "442",
+              "title": "Kultur",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -116,25 +206,25 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "72",
-          "title": "Werke",
+          "identifier": "74",
+          "title": "Verkehr",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "721",
-              "title": "Wasserwirtschaft. Wasserbau. Gewässer",
+              "identifier": "747",
+              "title": "Schiffahrt",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -144,24 +234,22 @@
     {
       "identifier": "8",
       "title": "Gesundheit - Arbeit - Soziale Sicherheit",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Gesetz": 1,
         "Verordnung": 1,
-        "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
             "Gesetz": 1,
-            "Verordnung": 1,
-            "Interkantonale Vereinbarung": 1
+            "Verordnung": 1
           },
           "children": [
             {
@@ -192,26 +280,6 @@
                   }
                 }
               ]
-            },
-            {
-              "identifier": "814",
-              "title": "Schutz des ökologischen Gleichgewichts",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "814.3",
-                  "title": "Gewässerschutz- und Abfallbeseitigungsanlagen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
             }
           ]
         },
@@ -231,6 +299,37 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "92",
+          "title": "Forstwesen. Jagd. Fischerei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "922",
+              "title": "Jagd und Vogelschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -260,18 +359,38 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "7.30",
-          "title": "Öffentliche Werke",
+          "identifier": "4.70",
+          "title": "Weiterbildung (Quartärstufe)",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          },
+          "children": [
+            {
+              "identifier": "4.70.10",
+              "title": "Erwachsenenbildung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -279,44 +398,97 @@
           },
           "children": [
             {
-              "identifier": "7.30.20",
-              "title": "Wasserbau",
+              "identifier": "4.180.20",
+              "title": "Kulturförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.50",
+              "title": "Jagd",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "7.30.20.20",
-                  "title": "Gewässernutzung",
+                  "identifier": "6.30.50.10",
+                  "title": "Jäger",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Gesetz": 1
+                    "Verordnung": 1
                   }
                 }
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
         {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
+          "identifier": "7.50",
+          "title": "Verkehr",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "7.60.20",
-              "title": "Gewässerschutz",
+              "identifier": "7.50.60",
+              "title": "Schifffahrt",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.60.10",
+                  "title": "Schiffssteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -395,40 +567,88 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.30",
+              "title": "Bäuerliches Bodenrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 12
   },
   "available_years_for_entity": [
-    "1826",
+    "1669",
+    "1803",
+    "1815",
+    "1825",
     "1828",
-    "1829",
     "1831",
     "1834",
     "1846",
+    "1861",
     "1869",
+    "1870",
     "1886",
+    "1887",
     "1889",
     "1890",
-    "1891",
-    "1892",
     "1896",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1911",
     "1914",
+    "1917",
     "1918",
+    "1923",
+    "1925",
     "1926",
     "1927",
+    "1930",
     "1931",
     "1933",
     "1934",
     "1937",
     "1938",
-    "1949",
+    "1941",
+    "1943",
+    "1947",
+    "1948",
+    "1951",
     "1955",
+    "1956",
     "1958",
+    "1959",
+    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
@@ -437,7 +657,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",

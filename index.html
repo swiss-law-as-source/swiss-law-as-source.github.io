@@ -125,7 +125,9 @@
                 <label>to</label><select id="year-to"></select>
                 <span id="filter-chips"></span>
                 <button id="clear-filters">Clear filters</button>
-                <span class="hint">Click a canton or a type to cross-filter — all three charts stay in sync.
+                <span class="hint">Click a canton or a type to cross-filter — all charts and the concordat
+                    table stay in sync. Years are <b>enactment years</b>: every law counts under the year of its
+                    original act, not its latest amendment (a 1970 concordat amended in 2015 counts as 1970).
                     Federal law is in the domains chart above.</span>
             </div>
             <div class="grid-2">
@@ -138,7 +140,7 @@
                     <div class="echart" id="types-chart" style="height:440px"></div>
                 </div>
             </div>
-            <h3 style="font-size:1.05rem;margin:1.5rem 0 0.5rem">Laws by version year (stacked by type)</h3>
+            <h3 style="font-size:1.05rem;margin:1.5rem 0 0.5rem">Laws by enactment year (stacked by type)</h3>
             <div class="echart" id="years-chart" style="height:340px"></div>
         </div>
 
@@ -593,17 +595,17 @@
                 msg = 'Date filtering needs the latest data — please hard-reload the page (Ctrl/Cmd+Shift+R).';
             } else if (filtered) {
                 const later = conc.totals.total - totals.total - undated;
-                msg = `Filtered: current version in force ${state.y1 || 'beginning'} – ${state.y2 || 'now'}: `
-                    + `${totals.total.toLocaleString()} concordats. Note: the year is the entry-into-force date `
-                    + `of the CURRENT consolidated version — ${later.toLocaleString()} concordats whose current `
-                    + `version is dated outside this range (mostly older laws amended later) and ${undated} undated `
-                    + `ones are not shown. For historic comparisons (e.g. chstat 2003) use the unfiltered table.`;
+                msg = `Filtered: enacted ${state.y1 || 'beginning'} – ${state.y2 || 'now'}: `
+                    + `${totals.total.toLocaleString()} concordats (year = original enactment date; a 1970 `
+                    + `concordat amended in 2015 counts as 1970). ${later.toLocaleString()} enacted outside `
+                    + `the range and ${undated} undated are not shown. Verification vs chstat 2003: `
+                    + `<a href="api/v1/stats/concordats_chstat_comparison.json">comparison JSON</a>.`;
             } else {
-                msg = 'Showing all concordats. The From/To year filter above also applies here '
-                    + '(years = entry into force of the current consolidated version)'
+                msg = 'Showing all concordats (currently in force). The From/To year filter above also applies '
+                    + 'here (years = original enactment date)'
                     + (state.canton ? ` — ${state.canton} highlighted.` : '.');
             }
-            document.getElementById('concordats-filter-state').textContent = msg;
+            document.getElementById('concordats-filter-state').innerHTML = msg;
         }
 
         document.getElementById('concordats-csv').addEventListener('click', () => {
@@ -612,7 +614,7 @@
             const labels = conc.domains.map(d => d.label_en || d.label_fr);
             const lines = [
                 `# Swiss Law Collection — intercantonal agreements (concordats) by domain`,
-                `# Filter: ${filtered ? `current version in force ${state.y1 || 'beginning'} - ${state.y2 || 'now'}` : 'none (all concordats)'}`,
+                `# Filter: ${filtered ? `enacted ${state.y1 || 'beginning'} - ${state.y2 || 'now'} (year = original enactment date)` : 'none (all concordats in force)'}`,
                 `# Source: ${conc.source}`,
                 ['Canton', ...labels, 'Total'].join(','),
                 ...Object.entries(cantons).map(([c, row]) =>

@@ -1,58 +1,130 @@
 {
   "year": "1960",
+  "year_semantics": "enactment",
   "entity": "BE",
-  "total": 1,
-  "categorized": 1,
+  "total": 3,
+  "categorized": 3,
   "uncategorized": 0,
   "by_type": {
-    "Reglement": {
+    "Verordnung": {
       "total": 1,
       "by_topic": {
-        "438.5 Stiftungen": 1
+        "732.1 Strassenbau und -unterhalt": 1
       },
       "by_global_category": {
-        "4.100.10 Stipendien": 1
+        "7.30.30.10 Nationalstrassen": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "751.1 Unterhalt und Korrektion der Gewässer": 1
+      },
+      "by_global_category": {
+        "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "763 Seilbahnen und Skilifte": 1
+      },
+      "by_global_category": {
+        "7.50.30 Seilbahnen, Skilifte": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 1,
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "43",
-          "title": "Ausbildung und Wissenschaft",
+          "identifier": "73",
+          "title": "Öffentliche Werke",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "438",
-              "title": "Staatsbeiträge, Ausbildungsbeiträge, Stiftungen",
+              "identifier": "732",
+              "title": "Verkehrswege",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Reglement": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "438.5",
-                  "title": "Stiftungen",
+                  "identifier": "732.1",
+                  "title": "Strassenbau und -unterhalt",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Reglement": 1
+                    "Verordnung": 1
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "75",
+          "title": "Wasser",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "751",
+              "title": "Wasserbau",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "751.1",
+                  "title": "Unterhalt und Korrektion der Gewässer",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "76",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "763",
+              "title": "Seilbahnen und Skilifte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -61,30 +133,84 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "4.100",
-          "title": "Ausbildungsbeiträge",
-          "total": 1,
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "4.100.10",
-              "title": "Stipendien",
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.20.10",
+                  "title": "Gewässerkorrekturen / Hochwasserschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "7.30.30",
+              "title": "Strassen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.30.10",
+                  "title": "Nationalstrassen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.30",
+              "title": "Seilbahnen, Skilifte",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Anderes": 1
               }
             }
           ]
@@ -93,22 +219,23 @@
     }
   ],
   "languages_available": {
-    "de": 1,
-    "fr": 1
+    "de": 3,
+    "fr": 3
   },
   "available_years_for_entity": [
     "1562",
+    "1809",
+    "1815",
     "1828",
     "1837",
     "1851",
     "1852",
     "1859",
     "1862",
-    "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
-    "1877",
     "1889",
     "1893",
     "1899",
@@ -116,27 +243,43 @@
     "1903",
     "1907",
     "1909",
+    "1910",
     "1911",
+    "1914",
+    "1916",
+    "1922",
     "1923",
     "1924",
+    "1930",
     "1931",
     "1934",
     "1936",
+    "1937",
+    "1938",
     "1939",
     "1940",
-    "1942",
+    "1943",
+    "1944",
     "1945",
-    "1949",
+    "1946",
+    "1947",
+    "1948",
     "1950",
     "1951",
     "1954",
+    "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
+    "1962",
+    "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -145,6 +288,7 @@
     "1974",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1979",
     "1980",
@@ -205,13 +349,17 @@
     "FR",
     "GE",
     "GL",
+    "GR",
     "JU",
     "LU",
     "NE",
     "NW",
+    "OW",
     "SG",
     "SO",
+    "TG",
     "VD",
+    "VS",
     "ZH"
   ]
 }

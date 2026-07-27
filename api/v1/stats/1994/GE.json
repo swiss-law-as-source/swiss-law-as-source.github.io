@@ -1,14 +1,16 @@
 {
   "year": "1994",
+  "year_semantics": "enactment",
   "entity": "GE",
-  "total": 16,
-  "categorized": 16,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 11,
+      "total": 12,
       "by_topic": {
         "J 3 Assurances contre la maladie et les accidents": 4,
+        "A 5 Droits politiques": 1,
         "H 3 Navigation aérienne": 1,
         "I 2 Professions et métiers divers": 1,
         "J 4 Assistance": 1,
@@ -29,14 +31,17 @@
       }
     },
     "Gesetz": {
-      "total": 4,
+      "total": 6,
       "by_topic": {
+        "C 1 Instruction publique": 1,
         "D 3 Impôts et taxes": 1,
         "E 4 Droit pénal et procédure pénale": 1,
         "J 2 Placement et chômage": 1,
-        "J 6 Protection de la jeunesse": 1
+        "J 6 Protection de la jeunesse": 1,
+        "M 4 Chasse et pêche": 1
       },
       "by_global_category": {
+        "4.70.10 Erwachsenenbildung": 1,
         "8.30.110 Arbeitslosenversicherung": 1,
         "4.80.10 Sonderschulen": 1
       }
@@ -52,6 +57,24 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "A",
+      "title": "Structure cantonale et principes fondamentaux",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Règlement": 1
+      }
+    },
+    {
+      "identifier": "C",
+      "title": "Instruction publique, culture",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Loi": 1
+      }
+    },
     {
       "identifier": "D",
       "title": "Finances et contributions",
@@ -119,10 +142,11 @@
     {
       "identifier": "M",
       "title": "Agriculture, forêts, chasse et pêche",
-      "total": 2,
-      "own": 2,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Règlement": 2
+        "Règlement": 2,
+        "Loi": 1
       }
     }
   ],
@@ -130,13 +154,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Règlement": 1,
-        "Loi": 1
+        "Loi": 2,
+        "Règlement": 1
       },
       "children": [
+        {
+          "identifier": "4.70",
+          "title": "Weiterbildung (Quartärstufe)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "4.70.10",
+              "title": "Erwachsenenbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.80",
           "title": "Sonderpädagogik",
@@ -390,7 +434,7 @@
     }
   ],
   "languages_available": {
-    "fr": 16
+    "fr": 19
   },
   "available_years_for_entity": [
     "1564",
@@ -399,24 +443,28 @@
     "1815",
     "1816",
     "1817",
-    "1834",
+    "1841",
     "1847",
     "1849",
     "1856",
+    "1858",
     "1861",
     "1872",
     "1875",
+    "1876",
     "1878",
     "1881",
     "1887",
     "1889",
     "1892",
+    "1893",
     "1895",
     "1899",
     "1901",
     "1902",
     "1903",
     "1907",
+    "1908",
     "1909",
     "1918",
     "1923",
@@ -426,8 +474,11 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1935",
     "1937",
+    "1938",
     "1940",
     "1941",
     "1942",
@@ -516,6 +567,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

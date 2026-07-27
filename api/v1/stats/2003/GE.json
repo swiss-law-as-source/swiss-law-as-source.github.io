@@ -1,8 +1,9 @@
 {
   "year": "2003",
+  "year_semantics": "enactment",
   "entity": "GE",
-  "total": 18,
-  "categorized": 18,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
@@ -24,6 +25,23 @@
         "7.60.40 Lärmschutz": 1
       }
     },
+    "Gesetz": {
+      "total": 7,
+      "by_topic": {
+        "C 1 Instruction publique": 2,
+        "K 1 Police sanitaire, lutte contre les maladies": 2,
+        "I 2 Professions et métiers divers": 1,
+        "J 6 Protection de la jeunesse": 1,
+        "L 4 Monuments et sites, décoration": 1
+      },
+      "by_global_category": {
+        "4.180.10.10 Film, Theater, Unterhaltung": 1,
+        "4.120.30 Schulaufsicht": 1,
+        "2.20.10.30 Leihe / Darlehen": 1,
+        "4.10.10 Krippen, Kinderhorte": 1,
+        "7.70.60 Uferschutz": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 6,
       "by_topic": {
@@ -40,16 +58,6 @@
         "J 1 Relations du travail": 2
       },
       "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "J 6 Protection de la jeunesse": 1,
-        "K 1 Police sanitaire, lutte contre les maladies": 1
-      },
-      "by_global_category": {
-        "4.10.10 Krippen, Kinderhorte": 1
-      }
     }
   },
   "by_topic_tree": [
@@ -65,9 +73,10 @@
     {
       "identifier": "C",
       "title": "Instruction publique, culture",
-      "total": 2,
-      "own": 2,
+      "total": 4,
+      "own": 4,
       "by_type": {
+        "Loi": 2,
         "Accord intercantonal": 1,
         "Règlement": 1
       }
@@ -85,10 +94,11 @@
     {
       "identifier": "I",
       "title": "Commerce, industrie, arts et métiers, logement",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       }
     },
     {
@@ -104,19 +114,20 @@
     {
       "identifier": "K",
       "title": "Santé",
-      "total": 3,
-      "own": 3,
+      "total": 4,
+      "own": 4,
       "by_type": {
         "Règlement": 2,
-        "Loi": 1
+        "Loi": 2
       }
     },
     {
       "identifier": "L",
       "title": "Domaine public et travaux",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
+        "Loi": 1,
         "Règlement": 1
       }
     }
@@ -156,37 +167,41 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "2.20",
           "title": "Einführungsgesetzgebung OR",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 1,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "2.20.10",
               "title": "Vertragsverhältnisse",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Règlement": 1
+                "Règlement": 1,
+                "Loi": 1
               },
               "children": [
                 {
                   "identifier": "2.20.10.30",
                   "title": "Leihe / Darlehen",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Règlement": 1
+                    "Règlement": 1,
+                    "Loi": 1
                   }
                 }
               ]
@@ -239,10 +254,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Loi": 1,
+        "Loi": 3,
         "Règlement": 1
       },
       "children": [
@@ -285,16 +300,68 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.30",
+              "title": "Schulaufsicht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.10",
+              "title": "Kunst",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "4.180.10.10",
+                  "title": "Film, Theater, Unterhaltung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       },
       "children": [
         {
@@ -316,12 +383,32 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.60",
+              "title": "Uferschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "fr": 18
+    "fr": 23
   },
   "available_years_for_entity": [
     "1564",
@@ -330,24 +417,28 @@
     "1815",
     "1816",
     "1817",
-    "1834",
+    "1841",
     "1847",
     "1849",
     "1856",
+    "1858",
     "1861",
     "1872",
     "1875",
+    "1876",
     "1878",
     "1881",
     "1887",
     "1889",
     "1892",
+    "1893",
     "1895",
     "1899",
     "1901",
     "1902",
     "1903",
     "1907",
+    "1908",
     "1909",
     "1918",
     "1923",
@@ -357,8 +448,11 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1935",
     "1937",
+    "1938",
     "1940",
     "1941",
     "1942",

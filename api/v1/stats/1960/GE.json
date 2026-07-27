@@ -1,10 +1,21 @@
 {
   "year": "1960",
+  "year_semantics": "enactment",
   "entity": "GE",
-  "total": 3,
-  "categorized": 3,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "D 3 Impôts et taxes": 1,
+        "M 2 Agriculture et viticulture": 1
+      },
+      "by_global_category": {
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1
+      }
+    },
     "Reglement": {
       "total": 1,
       "by_topic": {
@@ -22,23 +33,17 @@
       "by_global_category": {
         "7.50.60.20 Schifffahrtspolizei": 1
       }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "M 2 Agriculture et viticulture": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "D",
       "title": "Finances et contributions",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       }
     },
     {
@@ -93,6 +98,37 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.40",
+              "title": "Erbschafts- und Schenkungssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
@@ -136,7 +172,7 @@
     }
   ],
   "languages_available": {
-    "fr": 3
+    "fr": 4
   },
   "available_years_for_entity": [
     "1564",
@@ -145,24 +181,28 @@
     "1815",
     "1816",
     "1817",
-    "1834",
+    "1841",
     "1847",
     "1849",
     "1856",
+    "1858",
     "1861",
     "1872",
     "1875",
+    "1876",
     "1878",
     "1881",
     "1887",
     "1889",
     "1892",
+    "1893",
     "1895",
     "1899",
     "1901",
     "1902",
     "1903",
     "1907",
+    "1908",
     "1909",
     "1918",
     "1923",
@@ -172,8 +212,11 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1935",
     "1937",
+    "1938",
     "1940",
     "1941",
     "1942",
@@ -270,13 +313,17 @@
     "FR",
     "GE",
     "GL",
+    "GR",
     "JU",
     "LU",
     "NE",
     "NW",
+    "OW",
     "SG",
     "SO",
+    "TG",
     "VD",
+    "VS",
     "ZH"
   ]
 }

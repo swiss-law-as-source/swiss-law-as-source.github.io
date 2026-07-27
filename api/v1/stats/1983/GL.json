@@ -1,17 +1,23 @@
 {
   "year": "1983",
+  "year_semantics": "enactment",
   "entity": "GL",
-  "total": 2,
-  "categorized": 2,
+  "total": 5,
+  "categorized": 5,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 1,
+      "total": 4,
       "by_topic": {
-        "II C/6 Verschiedene Berechtigte": 1
+        "II C/6 Verschiedene Berechtigte": 1,
+        "IV B/1 Allgemeines": 1,
+        "IX B/32 Banken und Sparkassen": 1,
+        "VI C/4 Gebühren – Taxen – Abgaben": 1
       },
       "by_global_category": {
-        "1.20.20.40.40 Löhne, Entschädigungen": 1
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "4.170.30 Bibliotheken": 1,
+        "1.10.70.10.10 Einwohnerkontrolle": 1
       }
     },
     "Reglement": {
@@ -37,10 +43,29 @@
     {
       "identifier": "IV",
       "title": "Kirche – Schule – Kultur",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Anderes": 1,
+        "Reglement": 1
+      }
+    },
+    {
+      "identifier": "VI",
+      "title": "Finanzen – Regalien",
       "total": 1,
       "own": 1,
       "by_type": {
-        "Reglement": 1
+        "Anderes": 1
+      }
+    },
+    {
+      "identifier": "IX",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Anderes": 1
       }
     }
   ],
@@ -48,12 +73,54 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.10",
+                  "title": "Niederlassung und Aufenthalt Schweizer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.10.10",
+                      "title": "Einwohnerkontrolle",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -101,10 +168,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Reglement": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -126,38 +194,71 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.30",
+              "title": "Bibliotheken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 5
   },
   "available_years_for_entity": [
     "1807",
     "1835",
     "1859",
+    "1862",
     "1878",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
     "1905",
-    "1906",
     "1909",
     "1910",
+    "1911",
     "1915",
+    "1918",
+    "1922",
+    "1923",
     "1927",
     "1928",
     "1929",
     "1934",
+    "1941",
+    "1943",
     "1944",
-    "1946",
+    "1945",
+    "1947",
+    "1948",
     "1949",
+    "1950",
     "1951",
     "1957",
+    "1958",
+    "1959",
     "1960",
     "1962",
+    "1963",
     "1964",
     "1965",
     "1966",
@@ -179,6 +280,7 @@
     "1983",
     "1984",
     "1985",
+    "1986",
     "1987",
     "1988",
     "1989",
@@ -222,6 +324,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",
@@ -241,6 +344,7 @@
     "SO",
     "SZ",
     "TG",
+    "TI",
     "UR",
     "VD",
     "VS",

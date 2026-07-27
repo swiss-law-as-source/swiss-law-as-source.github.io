@@ -1,31 +1,59 @@
 {
   "year": "1992",
+  "year_semantics": "enactment",
   "entity": "TG",
-  "total": 7,
-  "categorized": 7,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
-        "13 Gemeinden": 1,
-        "170 Allgemein": 1,
-        "221.4 Handelsregister": 1
+        "640 Staats- und Gemeindesteuern": 3,
+        "63 Gebühren. Abgaben": 1,
+        "725 Strassenwesen": 1,
+        "814.0 Allgemein": 1
       },
       "by_global_category": {
-        "4.170.20 Archive": 1,
-        "1.10.100.10 Gesetzessammlungen": 1,
-        "2.20.20.10 Handelsregister": 1
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "6.20.10.20 Staatssteuern": 1,
+        "2.10.40.10 Schätzung von Grundstücken": 1,
+        "7.60.50 Umweltverträglichkeitsprüfung": 1
       }
     },
     "Anderes": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "51 Militärwesen. Waffen": 2,
-        "173.1 Gerichtsorganisation": 1
+        "173.1 Gerichtsorganisation": 1,
+        "413.1 Allgemein": 1
       },
       "by_global_category": {
-        "3.40 Militärstrafrecht": 2
+        "3.40 Militärstrafrecht": 2,
+        "4.20.10 Mittelschule": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "45 Natur- und Heimatschutz": 1,
+        "640 Staats- und Gemeindesteuern": 1,
+        "725 Strassenwesen": 1,
+        "922 Jagd und Vogelschutz": 1
+      },
+      "by_global_category": {
+        "6.20.10.20 Staatssteuern": 1,
+        "7.70.20 Tierschutz": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
+        "63 Gebühren. Abgaben": 2
+      },
+      "by_global_category": {
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "1.20.70.50 Gerichtskosten, Gerichtsgebühren": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -42,41 +70,21 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 3,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "13",
-          "title": "Gemeinden",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        },
-        {
           "identifier": "17",
           "title": "Staatliche Gewalten. Behörden",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
-            {
-              "identifier": "170",
-              "title": "Allgemein",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
             {
               "identifier": "173",
               "title": "Richterliche Behörden",
@@ -96,37 +104,6 @@
                   }
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Privatrecht - Zivilrechtspflege - Vollstreckung",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "22",
-          "title": "Obligationenrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "221.4",
-              "title": "Handelsregister",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
             }
           ]
         }
@@ -153,6 +130,58 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schule",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "413",
+              "title": "Mittelschulen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.1",
+                  "title": "Allgemein",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "45",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
       "identifier": "5",
       "title": "Militärwesen - Zivilschutz - Polizeiwesen",
       "total": 2,
@@ -171,12 +200,89 @@
           }
         }
       ]
-    }
-  ],
-  "by_global_category_tree": [
+    },
     {
-      "identifier": "1",
-      "title": "Staat",
+      "identifier": "6",
+      "title": "Finanzen",
+      "total": 7,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 4,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "63",
+          "title": "Gebühren. Abgaben",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 2,
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "64",
+          "title": "Steuern",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "640",
+              "title": "Staats- und Gemeindesteuern",
+              "total": 4,
+              "own": 4,
+              "by_type": {
+                "Verordnung": 3,
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "72",
+          "title": "Werke",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "725",
+              "title": "Strassenwesen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -184,8 +290,8 @@
       },
       "children": [
         {
-          "identifier": "1.10",
-          "title": "Grundlagen",
+          "identifier": "81",
+          "title": "Gesundheit",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -193,8 +299,8 @@
           },
           "children": [
             {
-              "identifier": "1.10.100",
-              "title": "Amtliche Veröffentlichungen",
+              "identifier": "814",
+              "title": "Schutz des ökologischen Gleichgewichts",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -202,12 +308,111 @@
               },
               "children": [
                 {
-                  "identifier": "1.10.100.10",
-                  "title": "Gesetzessammlungen",
+                  "identifier": "814.0",
+                  "title": "Allgemein",
                   "total": 1,
                   "own": 1,
                   "by_type": {
                     "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "92",
+          "title": "Forstwesen. Jagd. Fischerei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "922",
+              "title": "Jagd und Vogelschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 2,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.50",
+                  "title": "Gerichtskosten, Gerichtsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
                   }
                 }
               ]
@@ -226,8 +431,8 @@
       },
       "children": [
         {
-          "identifier": "2.20",
-          "title": "Einführungsgesetzgebung OR",
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -235,8 +440,8 @@
           },
           "children": [
             {
-              "identifier": "2.20.20",
-              "title": "Handelsrecht",
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -244,8 +449,8 @@
               },
               "children": [
                 {
-                  "identifier": "2.20.20.10",
-                  "title": "Handelsregister",
+                  "identifier": "2.10.40.10",
+                  "title": "Schätzung von Grundstücken",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -305,12 +510,90 @@
       "total": 1,
       "own": 0,
       "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "4.170",
-          "title": "Dokumentation",
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.20",
+                  "title": "Staatssteuern",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -318,12 +601,32 @@
           },
           "children": [
             {
-              "identifier": "4.170.20",
-              "title": "Archive",
+              "identifier": "7.60.50",
+              "title": "Umweltverträglichkeitsprüfung",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.20",
+              "title": "Tierschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -332,37 +635,54 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 17
   },
   "available_years_for_entity": [
-    "1826",
+    "1669",
+    "1803",
+    "1815",
+    "1825",
     "1828",
-    "1829",
     "1831",
     "1834",
     "1846",
+    "1861",
     "1869",
+    "1870",
     "1886",
+    "1887",
     "1889",
     "1890",
-    "1891",
-    "1892",
     "1896",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1911",
     "1914",
+    "1917",
     "1918",
+    "1923",
+    "1925",
     "1926",
     "1927",
+    "1930",
     "1931",
     "1933",
     "1934",
     "1937",
     "1938",
-    "1949",
+    "1941",
+    "1943",
+    "1947",
+    "1948",
+    "1951",
     "1955",
+    "1956",
     "1958",
+    "1959",
+    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
@@ -371,7 +691,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -429,6 +748,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

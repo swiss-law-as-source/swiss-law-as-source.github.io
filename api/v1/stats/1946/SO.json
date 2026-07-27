@@ -1,14 +1,23 @@
 {
   "year": "1946",
+  "year_semantics": "enactment",
   "entity": "SO",
-  "total": 2,
-  "categorized": 2,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 1,
-      "by_topic": {},
-      "by_global_category": {}
+      "total": 3,
+      "by_topic": {
+        "423.5 Geistliche": 1,
+        "737 Luftfahrt": 1,
+        "835 Ausgleichskasse": 1
+      },
+      "by_global_category": {
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "7.50.70.20 Flughäfen, Flugplätze": 1,
+        "8.30.10 Ausgleichskassen": 1
+      }
     },
     "Gesetz": {
       "total": 1,
@@ -22,12 +31,86 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "identifier": "4",
+      "title": "Schule, Kirche, Kultur",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "42",
+          "title": "Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "423",
+              "title": "Römisch-katholische Kirche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "423.5",
+                  "title": "Geistliche",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "73",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "737",
+              "title": "Luftfahrt",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -60,18 +143,112 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "83",
+          "title": "Sozialrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "835",
+              "title": "Ausgleichskasse",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "1",
+      "title": "Staat",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.70",
+              "title": "Luftfahrt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.70.20",
+                  "title": "Flughäfen, Flugplätze",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -104,14 +281,35 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.10",
+              "title": "Ausgleichskassen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 4
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -120,6 +318,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -127,23 +328,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -156,9 +361,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",
@@ -235,17 +440,24 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
+    "AR",
+    "BE",
+    "BL",
     "BS",
     "CH",
+    "FR",
     "GE",
-    "GL",
     "GR",
     "JU",
     "LU",
     "NE",
+    "SG",
     "SO",
     "SZ",
     "VD",
+    "VS",
+    "ZG",
     "ZH"
   ]
 }

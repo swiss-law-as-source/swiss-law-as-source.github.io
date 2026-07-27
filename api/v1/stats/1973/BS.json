@@ -1,23 +1,29 @@
 {
   "year": "1973",
+  "year_semantics": "enactment",
   "entity": "BS",
-  "total": 7,
-  "categorized": 7,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
         "164 Lohn und Entschädigungen": 2,
-        "321 Übertragbare Krankheiten": 1
+        "321 Übertragbare Krankheiten": 1,
+        "695 Gebäudeversicherung": 1,
+        "727 Strassenreinigung und Kehrichtabfuhr": 1,
+        "831 Ausgleichskassen": 1
       },
       "by_global_category": {
-        "4.90.20 Löhne, Entschädigungen": 2
+        "4.90.20 Löhne, Entschädigungen": 2,
+        "8.30.10 Ausgleichskassen": 1
       }
     },
     "Anderes": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
+        "695 Gebäudeversicherung": 2,
         "172 Einwohnergemeinde Basel: Verhältnis zur Bürgergemeinde": 1,
         "329 Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege": 1,
         "447 Wissenschaftliche Institute und spezielle Forschungsbereiche": 1
@@ -25,6 +31,25 @@
       "by_global_category": {
         "8.70.60 Spenden und gemeinnützige Sammlungen": 1,
         "4.40.40 Naturwissenschaftliche Fakultäten": 1
+      }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "19 Staat und Kirche": 1,
+        "695 Gebäudeversicherung": 1,
+        "727 Strassenreinigung und Kehrichtabfuhr": 1
+      },
+      "by_global_category": {}
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "258 Strafvollzug · Gefängniswesen": 1,
+        "691 Salzregal": 1
+      },
+      "by_global_category": {
+        "6.30.30 Salzregal": 1
       }
     },
     "Gemeindeerlass": {
@@ -39,11 +64,12 @@
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen · Organisation",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Anderes": 1
+        "Anderes": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -82,6 +108,46 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "19",
+          "title": "Staat und Kirche",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht · Strafrecht · Rechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "25",
+          "title": "Strafrecht und Strafrechtspflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "258",
+              "title": "Strafvollzug · Gefängniswesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -162,6 +228,119 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen · Staatliche Liegenschaften und Materiallagerplätze · Monopole",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "69",
+          "title": "Monopole",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2,
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "691",
+              "title": "Salzregal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "695",
+              "title": "Gebäudeversicherung",
+              "total": 4,
+              "own": 4,
+              "by_type": {
+                "Anderes": 2,
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "72",
+          "title": "Strassen: Bau, Benützung, Unterhalt",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "727",
+              "title": "Strassenreinigung und Kehrichtabfuhr",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Arbeit · Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "831",
+              "title": "Ausgleichskassen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "BaB",
       "title": "Bürgergemeinde Basel",
       "total": 1,
@@ -225,14 +404,66 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.30",
+              "title": "Salzregal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.10",
+              "title": "Ausgleichskassen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "8.70",
           "title": "Fürsorge",
@@ -257,43 +488,53 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 17
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -319,7 +560,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",
@@ -405,6 +645,7 @@
     "NW",
     "OW",
     "SG",
+    "SH",
     "SO",
     "SZ",
     "TG",

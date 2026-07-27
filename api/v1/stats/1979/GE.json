@@ -1,29 +1,35 @@
 {
   "year": "1979",
+  "year_semantics": "enactment",
   "entity": "GE",
-  "total": 10,
-  "categorized": 10,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "K 1 Police sanitaire, lutte contre les maladies": 5,
         "B 5 Statuts, traitements et retraite": 1,
-        "F 1 Organisation de la police": 1
+        "F 1 Organisation de la police": 1,
+        "J 3 Assurances contre la maladie et les accidents": 1
       },
       "by_global_category": {
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "8.30.70 UVG": 1,
         "8.10.100.10 Epidemien, Pandemien": 1
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
+        "A 5 Droits politiques": 1,
+        "B 5 Statuts, traitements et retraite": 1,
         "E 1 Droit civil et droit des obligations": 1,
         "K 1 Police sanitaire, lutte contre les maladies": 1
       },
       "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
         "8.10.20.20 Psychiatrische Kliniken": 1
       }
@@ -38,12 +44,22 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "B",
-      "title": "Organisation du canton",
+      "identifier": "A",
+      "title": "Structure cantonale et principes fondamentaux",
       "total": 1,
       "own": 1,
       "by_type": {
-        "Règlement": 1
+        "Loi": 1
+      }
+    },
+    {
+      "identifier": "B",
+      "title": "Organisation du canton",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Règlement": 1,
+        "Loi": 1
       }
     },
     {
@@ -66,6 +82,15 @@
       }
     },
     {
+      "identifier": "J",
+      "title": "Législation sociale",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Règlement": 1
+      }
+    },
+    {
       "identifier": "K",
       "title": "Santé",
       "total": 6,
@@ -80,37 +105,41 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 1,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Règlement": 1
+                "Règlement": 1,
+                "Loi": 1
               },
               "children": [
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Règlement": 1
+                    "Règlement": 1,
+                    "Loi": 1
                   },
                   "children": [
                     {
@@ -120,6 +149,15 @@
                       "own": 1,
                       "by_type": {
                         "Règlement": 1
+                      }
+                    },
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Loi": 1
                       }
                     }
                   ]
@@ -175,11 +213,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Loi": 1,
-        "Règlement": 1
+        "Règlement": 2,
+        "Loi": 1
       },
       "children": [
         {
@@ -233,12 +271,32 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.70",
+              "title": "UVG",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "fr": 10
+    "fr": 13
   },
   "available_years_for_entity": [
     "1564",
@@ -247,24 +305,28 @@
     "1815",
     "1816",
     "1817",
-    "1834",
+    "1841",
     "1847",
     "1849",
     "1856",
+    "1858",
     "1861",
     "1872",
     "1875",
+    "1876",
     "1878",
     "1881",
     "1887",
     "1889",
     "1892",
+    "1893",
     "1895",
     "1899",
     "1901",
     "1902",
     "1903",
     "1907",
+    "1908",
     "1909",
     "1918",
     "1923",
@@ -274,8 +336,11 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1935",
     "1937",
+    "1938",
     "1940",
     "1941",
     "1942",
@@ -387,6 +452,8 @@
     "TI",
     "UR",
     "VD",
+    "VS",
+    "ZG",
     "ZH"
   ]
 }

@@ -1,34 +1,42 @@
 {
   "year": "2003",
+  "year_semantics": "enactment",
   "entity": "AG",
-  "total": 14,
-  "categorized": 14,
+  "total": 20,
+  "categorized": 20,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 5,
+      "total": 13,
       "by_topic": {
+        "331 Allgemeines": 6,
         "426 Fachhochschulen": 3,
+        "122 Aufenthalt – Niederlassung – Ausländerrecht": 1,
+        "251 Strafprozess": 1,
         "411 Dienstverhältnis – Besoldung": 1,
         "773 Allgemeines": 1
       },
       "by_global_category": {
+        "8.10.20.10 Kantonsspitäler": 2,
         "4.90.30 Ausbildung": 2,
+        "1.10.70.20.20 Zwangsmassnahmen": 1,
+        "3.20.40 Verdeckte Ermittlung": 1,
+        "8.30.60.30 Spitallisten": 1,
+        "8.10.100.10 Epidemien, Pandemien": 1,
         "4.10.20 Kindergarten": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 4,
+      "total": 3,
       "by_topic": {
-        "160 Allgemeines": 1,
-        "413 Pensionen – Zulagen": 1,
-        "69 Aufgabenteilung": 1,
-        "713 Raumentwicklung – Bauwesen": 1
+        "251 Strafprozess": 1,
+        "331 Allgemeines": 1,
+        "69 Aufgabenteilung": 1
       },
       "by_global_category": {
-        "4.90.40 Personalvorsorge, Pensionskassen": 1,
-        "1.30.40 Aufgabenteilung Kanton-Gemeinden": 1,
-        "7.10.10 Pläne": 1
+        "3.30 Jugendstrafrecht und Jugendstrafprozessrecht": 1,
+        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
+        "1.30.40 Aufgabenteilung Kanton-Gemeinden": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -44,12 +52,12 @@
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 1,
       "by_topic": {
-        "69 Aufgabenteilung": 2
+        "69 Aufgabenteilung": 1
       },
       "by_global_category": {
-        "1.30.40 Aufgabenteilung Kanton-Gemeinden": 2
+        "1.30.40 Aufgabenteilung Kanton-Gemeinden": 1
       }
     }
   },
@@ -60,24 +68,58 @@
       "total": 1,
       "own": 0,
       "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht – Aufenthalt – Niederlassung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Aufenthalt – Niederlassung – Ausländerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht – Strafrecht – Rechtspflege",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
-          "identifier": "16",
-          "title": "Staatspersonal",
-          "total": 1,
+          "identifier": "25",
+          "title": "Strafrecht – Strafrechtspflege – Opferhilfe",
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
-              "identifier": "160",
-              "title": "Allgemeines",
-              "total": 1,
-              "own": 1,
+              "identifier": "251",
+              "title": "Strafprozess",
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Verordnung": 1,
                 "Verordnung des Parlaments (Dekret)": 1
               }
             }
@@ -88,12 +130,36 @@
     {
       "identifier": "3",
       "title": "Gesundheit",
-      "total": 1,
+      "total": 8,
       "own": 0,
       "by_type": {
+        "Verordnung": 6,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "33",
+          "title": "Spitalwesen",
+          "total": 7,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 6,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "331",
+              "title": "Allgemeines",
+              "total": 7,
+              "own": 7,
+              "by_type": {
+                "Verordnung": 6,
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "35",
           "title": "Heilmittel – Betäubungsmittel – Gifte",
@@ -119,22 +185,20 @@
     {
       "identifier": "4",
       "title": "Erziehung – Wissenschaft – Kultur",
-      "total": 6,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Verordnung": 4,
-        "Verordnung des Parlaments (Dekret)": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Lehrkräfte",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung": 1
           },
           "children": [
             {
@@ -144,15 +208,6 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "413",
-              "title": "Pensionen – Zulagen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -215,20 +270,20 @@
     {
       "identifier": "6",
       "title": "Finanzen – Steuern – Staatliche Monopole",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "69",
           "title": "Aufgabenteilung",
-          "total": 3,
-          "own": 3,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Gesetz": 2,
+            "Gesetz": 1,
             "Verordnung des Parlaments (Dekret)": 1
           }
         }
@@ -237,33 +292,12 @@
     {
       "identifier": "7",
       "title": "Raumplanung und Bauwesen – Enteignung – Strassen – Energie – Umweltschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1,
         "Verordnung": 1
       },
       "children": [
-        {
-          "identifier": "71",
-          "title": "Raumplanung – Bauwesen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          },
-          "children": [
-            {
-              "identifier": "713",
-              "title": "Raumentwicklung – Bauwesen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "77",
           "title": "Energie",
@@ -291,30 +325,115 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "1.30",
-          "title": "Gemeinden",
-          "total": 3,
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 2,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.20",
+                      "title": "Zwangsmassnahmen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.30",
+                      "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung des Parlaments (Dekret)": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
               "identifier": "1.30.40",
               "title": "Aufgabenteilung Kanton-Gemeinden",
-              "total": 3,
-              "own": 3,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Gesetz": 2,
+                "Gesetz": 1,
                 "Verordnung des Parlaments (Dekret)": 1
               }
             }
@@ -323,13 +442,53 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
+        "Verordnung": 1,
         "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.40",
+              "title": "Verdeckte Ermittlung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "3.30",
+          "title": "Jugendstrafrecht und Jugendstrafprozessrecht",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3
       },
       "children": [
         {
@@ -355,11 +514,10 @@
         {
           "identifier": "4.90",
           "title": "Lehrkörper",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 2,
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung": 2
           },
           "children": [
             {
@@ -369,15 +527,6 @@
               "own": 2,
               "by_type": {
                 "Verordnung": 2
-              }
-            },
-            {
-              "identifier": "4.90.40",
-              "title": "Personalvorsorge, Pensionskassen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -427,54 +576,45 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
-      },
-      "children": [
-        {
-          "identifier": "7.10",
-          "title": "Raumplanungs- und Baurecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          },
-          "children": [
-            {
-              "identifier": "7.10.10",
-              "title": "Pläne",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Verordnung": 4,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 4,
           "own": 0,
           "by_type": {
+            "Verordnung": 3,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.10",
+                  "title": "Kantonsspitäler",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            },
             {
               "identifier": "8.10.70",
               "title": "Heil- und Betäubungsmittel",
@@ -483,6 +623,57 @@
               "by_type": {
                 "Interkantonale Vereinbarung": 1
               }
+            },
+            {
+              "identifier": "8.10.100",
+              "title": "Krankheitsbekämpfung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.100.10",
+                  "title": "Epidemien, Pandemien",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.30",
+                  "title": "Spitallisten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -490,35 +681,50 @@
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 20
   },
   "available_years_for_entity": [
     "1803",
+    "1819",
     "1828",
     "1832",
+    "1845",
+    "1853",
     "1856",
-    "1885",
+    "1862",
+    "1871",
     "1888",
     "1889",
     "1901",
+    "1905",
+    "1906",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
+    "1915",
+    "1916",
     "1917",
     "1918",
     "1919",
     "1922",
+    "1923",
     "1924",
     "1925",
     "1928",
     "1930",
     "1932",
+    "1934",
     "1937",
     "1938",
     "1939",
+    "1940",
+    "1941",
     "1942",
     "1943",
     "1944",
-    "1945",
     "1946",
     "1948",
     "1950",
@@ -527,21 +733,23 @@
     "1953",
     "1954",
     "1955",
+    "1957",
     "1958",
     "1959",
     "1960",
     "1961",
+    "1962",
     "1963",
     "1964",
     "1965",
     "1966",
+    "1967",
     "1968",
     "1969",
     "1970",
     "1971",
     "1972",
     "1973",
-    "1974",
     "1975",
     "1976",
     "1977",

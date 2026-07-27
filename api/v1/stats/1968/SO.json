@@ -1,31 +1,44 @@
 {
   "year": "1968",
+  "year_semantics": "enactment",
   "entity": "SO",
-  "total": 6,
-  "categorized": 6,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
-        "126.58 Alters-, Hinterlassenen- und Invalidenvorsorge": 1,
-        "416.2 Berufsberatung": 1,
+        "126.58 Alters-, Hinterlassenen- und Invalidenvorsorge": 2,
+        "414.6 Unterricht": 1,
         "817.4 Vereinbarungen mit Stiftungen": 1,
         "931.3 Forstpersonal": 1
       },
       "by_global_category": {
-        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
-        "4.30.30 Berufsorientierung": 1,
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 2,
+        "4.20.10 Mittelschule": 1,
         "9.30.30 Bildungswesen": 1
       }
     },
-    "Verordnung": {
-      "total": 1,
+    "Gesetz": {
+      "total": 2,
       "by_topic": {
-        "435.1 Allgemeines": 1
+        "111.3 Solothurnische Gesetzessammlung": 1,
+        "712.9 Gewässerschutz": 1
       },
       "by_global_category": {
-        "7.70.20 Tierschutz": 1
+        "1.10.100.10 Gesetzessammlungen": 1,
+        "7.60.20 Gewässerschutz": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "111.3 Solothurnische Gesetzessammlung": 2
+      },
+      "by_global_category": {
+        "1.10.100.10 Gesetzessammlungen": 1,
+        "1.10.100.20 Amtsblätter": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -42,46 +55,82 @@
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 2,
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "12",
-          "title": "Organisation",
-          "total": 1,
+          "identifier": "11",
+          "title": "Grundlagen",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "111",
+              "title": "Staatsrechtliche Erlasse",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "111.3",
+                  "title": "Solothurnische Gesetzessammlung",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Verordnung": 2,
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "Organisation",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "126",
               "title": "Staatspersonal",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 2
               },
               "children": [
                 {
                   "identifier": "126.5",
                   "title": "Staatliche Leistungen aus dem Anstellungsverhältnis",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 2
                   },
                   "children": [
                     {
                       "identifier": "126.58",
                       "title": "Alters-, Hinterlassenen- und Invalidenvorsorge",
-                      "total": 1,
-                      "own": 1,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
-                        "Anderes": 1
+                        "Anderes": 2
                       }
                     }
                   ]
@@ -95,11 +144,10 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -112,8 +160,8 @@
           },
           "children": [
             {
-              "identifier": "416",
-              "title": "Berufsbildung",
+              "identifier": "414",
+              "title": "Mittelschulen",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -121,43 +169,12 @@
               },
               "children": [
                 {
-                  "identifier": "416.2",
-                  "title": "Berufsberatung",
+                  "identifier": "414.6",
+                  "title": "Unterricht",
                   "total": 1,
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "43",
-          "title": "Kultur",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "435",
-              "title": "Natur- und Heimatschutz",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "435.1",
-                  "title": "Allgemeines",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
                   }
                 }
               ]
@@ -200,6 +217,48 @@
                   "own": 1,
                   "by_type": {
                     "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "71",
+          "title": "Bauwesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "712",
+              "title": "Wasserrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "712.9",
+                  "title": "Gewässerschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -297,46 +356,91 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 2,
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "1.20",
-          "title": "Behörden",
-          "total": 1,
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.100",
+              "title": "Amtliche Veröffentlichungen",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.100.10",
+                  "title": "Gesetzessammlungen",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "1.10.100.20",
+                  "title": "Amtsblätter",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 2
               },
               "children": [
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 2
                   },
                   "children": [
                     {
                       "identifier": "1.20.20.40.50",
                       "title": "Renten, Versicherungsansprüche",
-                      "total": 1,
-                      "own": 1,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
-                        "Anderes": 1
+                        "Anderes": 2
                       }
                     }
                   ]
@@ -357,8 +461,8 @@
       },
       "children": [
         {
-          "identifier": "4.30",
-          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -366,8 +470,8 @@
           },
           "children": [
             {
-              "identifier": "4.30.30",
-              "title": "Berufsorientierung",
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -426,25 +530,25 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
+          "identifier": "7.60",
+          "title": "Umweltschutz",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "7.70.20",
-              "title": "Tierschutz",
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -484,9 +588,10 @@
     }
   ],
   "languages_available": {
-    "de": 6
+    "de": 10
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -495,6 +600,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -502,23 +610,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -531,9 +643,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",
@@ -611,6 +723,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "BE",
     "BL",
     "BS",
     "CH",
@@ -621,6 +734,7 @@
     "LU",
     "NE",
     "NW",
+    "OW",
     "SG",
     "SH",
     "SO",
@@ -629,6 +743,7 @@
     "UR",
     "VD",
     "VS",
+    "ZG",
     "ZH"
   ]
 }

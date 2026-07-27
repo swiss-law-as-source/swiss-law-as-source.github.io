@@ -1,39 +1,303 @@
 {
   "year": "2004",
+  "year_semantics": "enactment",
   "entity": "BE",
-  "total": 2,
-  "categorized": 2,
+  "total": 32,
+  "categorized": 32,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 19,
       "by_topic": {
+        "153.0 Dienstverhältnis, Gehalt": 5,
+        "152.22 Direktionen": 4,
+        "414.3 Dienstverhältnis": 2,
+        "102 Französischsprachige Minderheiten": 1,
+        "152.21 Staatskanzlei": 1,
         "212.1 Natürliche Personen": 1,
-        "430.26 Versicherung": 1
+        "430.26 Versicherung": 1,
+        "436.9 Pädagogische Hochschulen": 1,
+        "438.3 Ausbildungsbeiträge": 1,
+        "525 Finanzierung": 1,
+        "811.1 Gesundheitsfachpersonen": 1
+      },
+      "by_global_category": {
+        "1.20.20.10.10 Delegation": 2,
+        "1.20.20.30.20 Direktionen und Ämter": 2,
+        "1.20.20.20.30 Staatskanzlei": 1,
+        "1.20.20.40.10 Anstellung": 1,
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "1.50.10.10 Ausbildung": 1,
+        "2.10.20.10 Vormundschaft": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "4.90.40 Personalvorsorge, Pensionskassen": 1,
+        "4.50.10 Pädagogik": 1,
+        "4.100.10 Stipendien": 1,
+        "4.180.30 Sport": 1,
+        "8.10.30.10 Ärzte": 1
+      }
+    },
+    "Reglement": {
+      "total": 4,
+      "by_topic": {
+        "102 Französischsprachige Minderheiten": 3,
+        "162.1 Obergericht": 1
+      },
+      "by_global_category": {
+        "1.10.50.10 Gebietseinteilung, Bezirke": 3,
+        "1.20.70.20 Gerichtspersonal": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 4,
+      "by_topic": {
+        "122.3 Schengen / Dublin": 1,
+        "151.4 Zusammenarbeit mit anderen Kantonen": 1,
+        "945 Interkantonale Vereinbarungen": 1
+      },
+      "by_global_category": {
+        "1.20.50 Datenschutz": 1,
+        "1.10.40 Interkantonale Zusammenarbeit": 1,
+        "9.20.80.10 Rebbau": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "153.0 Dienstverhältnis, Gehalt": 1,
+        "213.3 Kindes- und Erwachsenenschutz": 1,
+        "438.3 Ausbildungsbeiträge": 1,
+        "622 Finanzkontrolle": 1
       },
       "by_global_category": {
         "2.10.20.10 Vormundschaft": 1,
-        "4.90.40 Personalvorsorge, Pensionskassen": 1
+        "4.100.10 Stipendien": 1,
+        "6.10.40 Finanzkontrolle": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "945 Interkantonale Vereinbarungen": 1
+      },
+      "by_global_category": {
+        "9.20.80.10 Rebbau": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
-      "total": 1,
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 18,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 11,
+        "Reglement": 4,
+        "Interkantonale Vereinbarung": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "10",
+          "title": "Grundlagen",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Reglement": 3,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "102",
+              "title": "Französischsprachige Minderheiten",
+              "total": 4,
+              "own": 4,
+              "by_type": {
+                "Reglement": 3,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung, Aufenthalt",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.3",
+                  "title": "Schengen / Dublin",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "15",
+          "title": "Behörden",
+          "total": 12,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 10,
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "151",
+              "title": "Grosser Rat",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "151.4",
+                  "title": "Zusammenarbeit mit anderen Kantonen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "152",
+              "title": "Regierungsrat und Verwaltung",
+              "total": 5,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 5
+              },
+              "children": [
+                {
+                  "identifier": "152.2",
+                  "title": "Zentralverwaltung",
+                  "total": 5,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 5
+                  },
+                  "children": [
+                    {
+                      "identifier": "152.21",
+                      "title": "Staatskanzlei",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    },
+                    {
+                      "identifier": "152.22",
+                      "title": "Direktionen",
+                      "total": 4,
+                      "own": 4,
+                      "by_type": {
+                        "Verordnung": 4
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "153",
+              "title": "Dienstrecht",
+              "total": 6,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 5,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "153.0",
+                  "title": "Dienstverhältnis, Gehalt",
+                  "total": 6,
+                  "own": 6,
+                  "by_type": {
+                    "Verordnung": 5,
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "16",
+          "title": "Gerichtsorganisation, Anwälte und Notare",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "162",
+              "title": "Gerichtsbehörden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "162.1",
+                  "title": "Obergericht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -55,6 +319,26 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "213",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "213.3",
+                  "title": "Kindes- und Erwachsenenschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -63,19 +347,52 @@
     {
       "identifier": "4",
       "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 1,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 5,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "43",
-          "title": "Ausbildung und Wissenschaft",
-          "total": 1,
+          "identifier": "41",
+          "title": "Kirche",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "414",
+              "title": "Geistliche",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "414.3",
+                  "title": "Dienstverhältnis",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "43",
+          "title": "Ausbildung und Wissenschaft",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -108,34 +425,10 @@
                   ]
                 }
               ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "by_global_category_tree": [
-    {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
+            },
             {
-              "identifier": "2.10.20",
-              "title": "Familienrecht",
+              "identifier": "436",
+              "title": "Universität",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -143,8 +436,134 @@
               },
               "children": [
                 {
-                  "identifier": "2.10.20.10",
-                  "title": "Vormundschaft",
+                  "identifier": "436.9",
+                  "title": "Pädagogische Hochschulen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "438",
+              "title": "Staatsbeiträge, Ausbildungsbeiträge, Stiftungen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "438.3",
+                  "title": "Ausbildungsbeiträge",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "52",
+          "title": "Gesamtverteidigung und Katastrophenhilfe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "525",
+              "title": "Finanzierung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "62",
+          "title": "Finanzhaushalt",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "622",
+              "title": "Finanzkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.1",
+                  "title": "Gesundheitsfachpersonen",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -158,14 +577,373 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "94",
+          "title": "Handel",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "945",
+              "title": "Interkantonale Vereinbarungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 1,
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 16,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 10,
+        "Reglement": 4,
+        "Interkantonale Vereinbarung": 2
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Reglement": 3,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.40",
+              "title": "Interkantonale Zusammenarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "1.10.50",
+              "title": "Gebiet",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Reglement": 3
+              },
+              "children": [
+                {
+                  "identifier": "1.10.50.10",
+                  "title": "Gebietseinteilung, Bezirke",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Reglement": 3
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 9,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 7,
+            "Interkantonale Vereinbarung": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 7,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 7
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.10",
+                  "title": "Organisation",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 2
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.10.10",
+                      "title": "Delegation",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Verordnung": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.30",
+                      "title": "Staatskanzlei",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 2
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.20",
+                      "title": "Direktionen und Ämter",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Verordnung": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 2
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.10",
+                      "title": "Anstellung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    },
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.20",
+                  "title": "Gerichtspersonal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.50.10",
+              "title": "Anwälte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.10.10",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.20",
+              "title": "Familienrecht",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.20.10",
+                  "title": "Vormundschaft",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 1,
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 4,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.50.10",
+              "title": "Pädagogik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.90",
           "title": "Lehrkörper",
@@ -185,27 +963,189 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.10",
+              "title": "Stipendien",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.30",
+              "title": "Sport",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.40",
+              "title": "Finanzkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.80",
+              "title": "Pflanzenbau",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1,
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.20.80.10",
+                  "title": "Rebbau",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 1,
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 2,
-    "fr": 2
+    "de": 32,
+    "fr": 31
   },
   "available_years_for_entity": [
     "1562",
+    "1809",
+    "1815",
     "1828",
     "1837",
     "1851",
     "1852",
     "1859",
     "1862",
-    "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
-    "1877",
     "1889",
     "1893",
     "1899",
@@ -213,27 +1153,43 @@
     "1903",
     "1907",
     "1909",
+    "1910",
     "1911",
+    "1914",
+    "1916",
+    "1922",
     "1923",
     "1924",
+    "1930",
     "1931",
     "1934",
     "1936",
+    "1937",
+    "1938",
     "1939",
     "1940",
-    "1942",
+    "1943",
+    "1944",
     "1945",
-    "1949",
+    "1946",
+    "1947",
+    "1948",
     "1950",
     "1951",
     "1954",
+    "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
+    "1962",
+    "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -242,6 +1198,7 @@
     "1974",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1979",
     "1980",

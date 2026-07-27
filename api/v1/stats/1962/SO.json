@@ -1,8 +1,9 @@
 {
   "year": "1962",
+  "year_semantics": "enactment",
   "entity": "SO",
-  "total": 4,
-  "categorized": 4,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -16,6 +17,26 @@
         "8.70.20 Jugendschutz, Jugendhilfe": 1
       }
     },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "614.6 Motorfahrzeuge und Fahrräder": 1,
+        "712.6 Wasserversorgung": 1
+      },
+      "by_global_category": {
+        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1,
+        "8.10.130.20 Wasserversorgung": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "121.5 Kantonsratssaal": 1
+      },
+      "by_global_category": {
+        "7.30.10 Staatliche Gebäude und Liegenschaften": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -24,36 +45,49 @@
       "by_global_category": {
         "8.70.20 Jugendschutz, Jugendhilfe": 1
       }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "712.6 Wasserversorgung": 1
-      },
-      "by_global_category": {
-        "8.10.130.20 Wasserversorgung": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Reglement": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "121",
+              "title": "Kantonsrat",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "121.5",
+                  "title": "Kantonsratssaal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "125",
               "title": "Gerichte",
@@ -107,6 +141,48 @@
                 "Interkantonale Vereinbarung": 1,
                 "Anderes": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "614",
+              "title": "Kantonale Steuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "614.6",
+                  "title": "Motorfahrzeuge und Fahrräder",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -210,6 +286,69 @@
       ]
     },
     {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.10",
+              "title": "Staatliche Gebäude und Liegenschaften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.10",
+                  "title": "Strassenverkehrssteuern und -abgaben",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 3,
@@ -277,9 +416,10 @@
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 6
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -288,6 +428,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -295,23 +438,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -324,9 +471,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",
@@ -402,7 +549,9 @@
     "2026"
   ],
   "available_entities_for_year": [
-    "AR",
+    "AG",
+    "AI",
+    "BE",
     "BL",
     "BS",
     "CH",
@@ -410,6 +559,7 @@
     "GE",
     "GL",
     "GR",
+    "LU",
     "NE",
     "SG",
     "SH",
@@ -417,6 +567,8 @@
     "SZ",
     "TI",
     "UR",
-    "VD"
+    "VD",
+    "VS",
+    "ZG"
   ]
 }

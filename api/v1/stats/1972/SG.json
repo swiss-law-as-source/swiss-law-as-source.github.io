@@ -1,8 +1,9 @@
 {
   "year": "1972",
+  "year_semantics": "enactment",
   "entity": "SG",
-  "total": 7,
-  "categorized": 7,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -10,25 +11,35 @@
       "by_topic": {
         "173 Katholische Konfession": 1,
         "314 Heilmittel und Betäubungsmittel": 1,
-        "633 Bodenverbesserung": 1,
+        "731 Raumplanung und Baupolizei": 1,
         "961 Zivilrechtspflege": 1
       },
       "by_global_category": {
         "1.40.10 Römisch-Katholische Kirche": 1,
         "8.10.70 Heil- und Betäubungsmittel": 1,
-        "6.10.30 Staatsbeiträge, Subventionen": 1,
         "2.80 Schiedsgerichtsbarkeit": 1
       }
     },
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "314 Heilmittel und Betäubungsmittel": 1,
-        "353 Invalidenhilfe": 1
+        "353 Invalidenhilfe": 1,
+        "731 Raumplanung und Baupolizei": 1
       },
       "by_global_category": {
         "7.60.70 Gifte, Chemikalien": 1,
-        "6.10.30 Staatsbeiträge, Subventionen": 1
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "7.60.10 Abfälle": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "161 Verantwortlichkeit": 1
+      },
+      "by_global_category": {
+        "1.20.40 Staatshaftung": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -45,12 +56,33 @@
     {
       "identifier": "1",
       "title": "Grundlagen und Organisation von Kanton und Gemeinden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "16",
+          "title": "Verantwortlichkeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "161",
+              "title": "Verantwortlichkeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "17",
           "title": "Staat und Kirche",
@@ -131,30 +163,33 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
-      "total": 1,
+      "identifier": "7",
+      "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "63",
-          "title": "Bodenverbesserung",
-          "total": 1,
+          "identifier": "73",
+          "title": "Öffentliches Baurecht",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "633",
-              "title": "Bodenverbesserung",
-              "total": 1,
-              "own": 1,
+              "identifier": "731",
+              "title": "Raumplanung und Baupolizei",
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 1,
+                "Verordnung": 1
               }
             }
           ]
@@ -197,12 +232,33 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.40",
+              "title": "Staatshaftung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
@@ -248,31 +304,28 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1,
-                "Anderes": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -282,21 +335,30 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "7.60.70",
               "title": "Gifte, Chemikalien",
@@ -346,36 +408,63 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 9
   },
   "available_years_for_entity": [
-    "1847",
-    "1871",
+    "1845",
+    "1862",
+    "1870",
+    "1874",
+    "1883",
+    "1884",
+    "1885",
+    "1888",
+    "1890",
+    "1897",
+    "1899",
     "1901",
+    "1902",
     "1903",
+    "1906",
+    "1907",
+    "1908",
+    "1910",
     "1911",
     "1914",
+    "1918",
+    "1919",
+    "1920",
+    "1921",
+    "1924",
+    "1926",
     "1929",
+    "1930",
+    "1931",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
+    "1945",
+    "1946",
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
     "1953",
-    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",
     "1960",
     "1961",
     "1962",
+    "1963",
     "1964",
     "1965",
     "1966",
@@ -437,12 +526,12 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BS",
     "CH",
@@ -457,7 +546,6 @@
     "SH",
     "SO",
     "SZ",
-    "TG",
     "TI",
     "UR",
     "VD",

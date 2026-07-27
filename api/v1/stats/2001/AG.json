@@ -1,23 +1,39 @@
 {
   "year": "2001",
+  "year_semantics": "enactment",
   "entity": "AG",
-  "total": 10,
-  "categorized": 10,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 7,
       "by_topic": {
+        "851 Sozialhilfe – Soziale Prävention": 2,
+        "123 Ausweisschriften": 1,
         "422 Berufsbildung – Berufsschulen": 1,
         "423 Mittelschulen": 1,
-        "621 Direkte Bundessteuer": 1,
-        "661 Kantonale und kommunale Abgaben und Gebühren": 1
+        "951 Gewerbe- und Handelspolizei – Preiskontrolle": 1,
+        "953 Kreditwesen": 1
       },
       "by_global_category": {
+        "1.10.80 Ausweise": 1,
         "4.30.20 Berufsmaturitätsschulen": 1,
         "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
-        "6.20.10.40 Pauschale Steueranrechnung": 1,
-        "8.10.20.10 Kantonsspitäler": 1
+        "8.70.10 Sozialhilfe": 1,
+        "1.20.50 Datenschutz": 1,
+        "9.60.60 Reisendengewerbe": 1,
+        "9.50.10.90 Konsumkredit": 1
+      }
+    },
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "851 Sozialhilfe – Soziale Prävention": 2,
+        "231 Verfahren": 1
+      },
+      "by_global_category": {
+        "8.70.10 Sozialhilfe": 2
       }
     },
     "Interkantonale Vereinbarung": {
@@ -32,29 +48,19 @@
       }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 2,
-      "by_topic": {
-        "251 Strafprozess": 1,
-        "426 Fachhochschulen": 1
-      },
-      "by_global_category": {
-        "1.20.70.10.10.20 Staatsanwaltschaft": 1
-      }
-    },
-    "Anderes": {
       "total": 1,
       "by_topic": {
-        "231 Verfahren": 1
+        "426 Fachhochschulen": 1
       },
       "by_global_category": {}
     },
     "Gesetz": {
       "total": 1,
       "by_topic": {
-        "958 Spiel": 1
+        "815 Ausgleichskasse – Familienschutz": 1
       },
       "by_global_category": {
-        "9.50.10.60.30 Spielbanken": 1
+        "4.10.10 Krippen, Kinderhorte": 1
       }
     }
   },
@@ -62,12 +68,33 @@
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen – Organisation",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht – Aufenthalt – Niederlassung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "123",
+              "title": "Ausweisschriften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "15",
           "title": "Organisation des Kantons",
@@ -93,11 +120,10 @@
     {
       "identifier": "2",
       "title": "Zivilrecht – Strafrecht – Rechtspflege",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -116,26 +142,6 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "25",
-          "title": "Strafrecht – Strafrechtspflege – Opferhilfe",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          },
-          "children": [
-            {
-              "identifier": "251",
-              "title": "Strafprozess",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -215,50 +221,54 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen – Steuern – Staatliche Monopole",
-      "total": 2,
+      "identifier": "8",
+      "title": "Soziale Sicherheit",
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "62",
-          "title": "Bundessteuern und -abgaben",
+          "identifier": "81",
+          "title": "Soziale Absicherung der Arbeitnehmenden",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "621",
-              "title": "Direkte Bundessteuer",
+              "identifier": "815",
+              "title": "Ausgleichskasse – Familienschutz",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
         },
         {
-          "identifier": "66",
-          "title": "Abgaben und Gebühren",
-          "total": 1,
+          "identifier": "85",
+          "title": "Sozialhilfe",
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Anderes": 2
           },
           "children": [
             {
-              "identifier": "661",
-              "title": "Kantonale und kommunale Abgaben und Gebühren",
-              "total": 1,
-              "own": 1,
+              "identifier": "851",
+              "title": "Sozialhilfe – Soziale Prävention",
+              "total": 4,
+              "own": 4,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2,
+                "Anderes": 2
               }
             }
           ]
@@ -268,28 +278,37 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft – Verkehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "95",
           "title": "Wirtschaftsaufsicht",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 2
           },
           "children": [
             {
-              "identifier": "958",
-              "title": "Spiel",
+              "identifier": "951",
+              "title": "Gewerbe- und Handelspolizei – Preiskontrolle",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "953",
+              "title": "Kreditwesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -301,62 +320,49 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.80",
+              "title": "Ausweise",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "1.20.70",
-              "title": "Gerichtsorganisation",
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              },
-              "children": [
-                {
-                  "identifier": "1.20.70.10",
-                  "title": "Gerichtsbehörden",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.20.70.10.10",
-                      "title": "Untersuchungs- und Anklagebehörden",
-                      "total": 1,
-                      "own": 0,
-                      "by_type": {
-                        "Verordnung des Parlaments (Dekret)": 1
-                      },
-                      "children": [
-                        {
-                          "identifier": "1.20.70.10.10.20",
-                          "title": "Staatsanwaltschaft",
-                          "total": 1,
-                          "own": 1,
-                          "by_type": {
-                            "Verordnung des Parlaments (Dekret)": 1
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -365,13 +371,34 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
+        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.10",
+              "title": "Krippen, Kinderhorte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.20",
           "title": "Sekundarstufe II",
@@ -435,48 +462,6 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "6.20",
-          "title": "Steuern",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "6.20.10",
-              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.20.10.40",
-                  "title": "Pauschale Steueranrechnung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
@@ -510,15 +495,49 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "8.10",
-          "title": "Gesundheitswesen",
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Anderes": 2,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -526,8 +545,8 @@
           },
           "children": [
             {
-              "identifier": "8.10.20",
-              "title": "Kranken- und Pflegeanstalten",
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -535,8 +554,8 @@
               },
               "children": [
                 {
-                  "identifier": "8.10.20.10",
-                  "title": "Kantonsspitäler",
+                  "identifier": "9.50.10.90",
+                  "title": "Konsumkredit",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -546,57 +565,24 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "9.50",
-          "title": "Gewerbe",
+          "identifier": "9.60",
+          "title": "Handel",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "9.50.10",
-              "title": "Dienstleistungen",
+              "identifier": "9.60.60",
+              "title": "Reisendengewerbe",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "9.50.10.60",
-                  "title": "Glücksspiel und Lotterien",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Gesetz": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "9.50.10.60.30",
-                      "title": "Spielbanken",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Gesetz": 1
-                      }
-                    }
-                  ]
-                }
-              ]
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -604,35 +590,50 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 14
   },
   "available_years_for_entity": [
     "1803",
+    "1819",
     "1828",
     "1832",
+    "1845",
+    "1853",
     "1856",
-    "1885",
+    "1862",
+    "1871",
     "1888",
     "1889",
     "1901",
+    "1905",
+    "1906",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
+    "1915",
+    "1916",
     "1917",
     "1918",
     "1919",
     "1922",
+    "1923",
     "1924",
     "1925",
     "1928",
     "1930",
     "1932",
+    "1934",
     "1937",
     "1938",
     "1939",
+    "1940",
+    "1941",
     "1942",
     "1943",
     "1944",
-    "1945",
     "1946",
     "1948",
     "1950",
@@ -641,21 +642,23 @@
     "1953",
     "1954",
     "1955",
+    "1957",
     "1958",
     "1959",
     "1960",
     "1961",
+    "1962",
     "1963",
     "1964",
     "1965",
     "1966",
+    "1967",
     "1968",
     "1969",
     "1970",
     "1971",
     "1972",
     "1973",
-    "1974",
     "1975",
     "1976",
     "1977",

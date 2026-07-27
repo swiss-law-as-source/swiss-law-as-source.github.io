@@ -1,48 +1,38 @@
 {
   "year": "2000",
+  "year_semantics": "enactment",
   "entity": "SO",
   "total": 12,
   "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 7,
+      "total": 6,
       "by_topic": {
-        "111.3 Solothurnische Gesetzessammlung": 1,
-        "122.1 Geschäftsführung": 1,
+        "127 Rechtsanwälte und Rechtsanwältinnen": 1,
+        "128.2 Prüfungen, Ausbildung": 1,
         "425.1 Verband der Evangelisch-Reformierten Kirchgemeinden des Kantons Solothurn": 1,
-        "513.6 Glücks- und Geschicklichkeitsspiele": 1,
-        "513.7 Vermittlung zu Ehe oder fester Partnerschaft": 1,
         "712.9 Gewässerschutz": 1,
+        "725.1 Kantonsstrassen": 1,
         "812.5 Umweltgefährdende Stoffe": 1
       },
       "by_global_category": {
-        "1.10.100.10 Gesetzessammlungen": 1,
-        "1.20.20.10.10 Delegation": 1,
+        "1.50.10.10 Ausbildung": 1,
         "1.40.30 Evangelisch-Reformierte Kirche": 1,
-        "9.50.10.60.30 Spielbanken": 1,
-        "2.20.10.50 Ehe- und Partnerschaftsvermittlungen": 1,
         "7.60.20 Gewässerschutz": 1,
-        "7.60.10 Abfälle": 1
-      }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "212.43 Grundeigentum": 1,
-        "725.2 Nationalstrassen": 1
-      },
-      "by_global_category": {
-        "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1,
-        "7.30.30.10 Nationalstrassen": 1
+        "7.10.30 Erschliessung": 1,
+        "7.60.70 Gifte, Chemikalien": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "416.3 Berufslehre": 2
+        "416.3 Berufslehre": 2,
+        "411.27 Lehrmittelkoordination": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "4.120.40 Lehrmittel": 1
+      }
     },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
@@ -52,48 +42,52 @@
       "by_global_category": {
         "4.170.10 Statistik": 1
       }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "127 Rechtsanwälte und Rechtsanwältinnen": 1
+      },
+      "by_global_category": {}
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "521.9 Fürsorge": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "11",
           "title": "Grundlagen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
               "identifier": "111",
               "title": "Staatsrechtliche Erlasse",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1,
                 "Verordnung des Parlaments (Dekret)": 1
               },
               "children": [
-                {
-                  "identifier": "111.3",
-                  "title": "Solothurnische Gesetzessammlung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                },
                 {
                   "identifier": "111.6",
                   "title": "Volkszählung",
@@ -110,15 +104,26 @@
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "122",
-              "title": "Regierungsrat",
+              "identifier": "127",
+              "title": "Rechtsanwälte und Rechtsanwältinnen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "128",
+              "title": "Staatliche Kurse und Prüfungen",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -126,8 +131,8 @@
               },
               "children": [
                 {
-                  "identifier": "122.1",
-                  "title": "Geschäftsführung",
+                  "identifier": "128.2",
+                  "title": "Prüfungen, Ausbildung",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -141,77 +146,55 @@
       ]
     },
     {
-      "identifier": "2",
-      "title": "Zivilrecht, Zivilprozessrecht, Vollstreckung",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "21",
-          "title": "Zivilrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "212",
-              "title": "Einzelne Rechtsgebiete",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "212.4",
-                  "title": "Sachenrecht",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Gesetz": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "212.43",
-                      "title": "Grundeigentum",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Gesetz": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 3,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 3
           },
           "children": [
+            {
+              "identifier": "411",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "411.2",
+                  "title": "Koordination, Interkantonale Vereinbarungen",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "411.27",
+                      "title": "Lehrmittelkoordination",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "416",
               "title": "Berufsbildung",
@@ -270,46 +253,37 @@
     {
       "identifier": "5",
       "title": "Polizei, Militär, Zivilschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Reglement": 1
       },
       "children": [
         {
-          "identifier": "51",
-          "title": "Polizei",
-          "total": 2,
+          "identifier": "52",
+          "title": "Militär",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Reglement": 1
           },
           "children": [
             {
-              "identifier": "513",
-              "title": "Gewerbe- und Handelspolizei",
-              "total": 2,
+              "identifier": "521",
+              "title": "Militärverwaltung",
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 2
+                "Reglement": 1
               },
               "children": [
                 {
-                  "identifier": "513.6",
-                  "title": "Glücks- und Geschicklichkeitsspiele",
+                  "identifier": "521.9",
+                  "title": "Fürsorge",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung": 1
-                  }
-                },
-                {
-                  "identifier": "513.7",
-                  "title": "Vermittlung zu Ehe oder fester Partnerschaft",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
+                    "Reglement": 1
                   }
                 }
               ]
@@ -324,8 +298,7 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Gesetz": 1
+        "Verordnung": 2
       },
       "children": [
         {
@@ -365,7 +338,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
@@ -374,16 +347,16 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "725.2",
-                  "title": "Nationalstrassen",
+                  "identifier": "725.1",
+                  "title": "Kantonsstrassen",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Gesetz": 1
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -439,85 +412,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung": 2
       },
       "children": [
-        {
-          "identifier": "1.10",
-          "title": "Grundlagen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "1.10.100",
-              "title": "Amtliche Veröffentlichungen",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "1.10.100.10",
-                  "title": "Gesetzessammlungen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "1.20",
-          "title": "Behörden",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "1.20.20",
-              "title": "Regierung und Verwaltung",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "1.20.20.10",
-                  "title": "Organisation",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.20.20.10.10",
-                      "title": "Delegation",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
@@ -537,53 +437,10 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1,
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.40.20",
-                  "title": "Erwerb von Grundstücke durch Personen im Ausland",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
         },
         {
-          "identifier": "2.20",
-          "title": "Einführungsgesetzgebung OR",
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -591,8 +448,8 @@
           },
           "children": [
             {
-              "identifier": "2.20.10",
-              "title": "Vertragsverhältnisse",
+              "identifier": "1.50.10",
+              "title": "Anwälte",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -600,8 +457,8 @@
               },
               "children": [
                 {
-                  "identifier": "2.20.10.50",
-                  "title": "Ehe- und Partnerschaftsvermittlungen",
+                  "identifier": "1.50.10.10",
+                  "title": "Ausbildung",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -617,12 +474,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.40",
+              "title": "Lehrmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.170",
           "title": "Dokumentation",
@@ -651,38 +529,26 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Gesetz": 1
+        "Verordnung": 3
       },
       "children": [
         {
-          "identifier": "7.30",
-          "title": "Öffentliche Werke",
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "7.30.30",
-              "title": "Strassen",
+              "identifier": "7.10.30",
+              "title": "Erschliessung",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "7.30.30.10",
-                  "title": "Nationalstrassen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
+                "Verordnung": 1
+              }
             }
           ]
         },
@@ -696,15 +562,6 @@
           },
           "children": [
             {
-              "identifier": "7.60.10",
-              "title": "Abfälle",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
               "identifier": "7.60.20",
               "title": "Gewässerschutz",
               "total": 1,
@@ -712,59 +569,15 @@
               "by_type": {
                 "Verordnung": 1
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "9.50",
-          "title": "Gewerbe",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
+            },
             {
-              "identifier": "9.50.10",
-              "title": "Dienstleistungen",
+              "identifier": "7.60.70",
+              "title": "Gifte, Chemikalien",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "9.50.10.60",
-                  "title": "Glücksspiel und Lotterien",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "9.50.10.60.30",
-                      "title": "Spielbanken",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung": 1
-                      }
-                    }
-                  ]
-                }
-              ]
+              }
             }
           ]
         }
@@ -775,6 +588,7 @@
     "de": 12
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -783,6 +597,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -790,23 +607,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -819,9 +640,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",
@@ -899,6 +720,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",

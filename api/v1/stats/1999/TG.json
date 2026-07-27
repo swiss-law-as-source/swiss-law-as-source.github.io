@@ -1,22 +1,51 @@
 {
   "year": "1999",
+  "year_semantics": "enactment",
   "entity": "TG",
-  "total": 4,
-  "categorized": 4,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
-    "Interkantonale Vereinbarung": {
-      "total": 2,
+    "Verordnung": {
+      "total": 5,
       "by_topic": {
-        "412.6 Interkantonale Vereinbarungen": 1,
-        "814.3 Gewässerschutz- und Abfallbeseitigungsanlagen": 1
+        "177.2 Besoldungen.Entschädigungen": 1,
+        "221.25 Arbeitsvertrag": 1,
+        "28 Schuldbetreibung und Konkurs": 1,
+        "413.2 Kantonsschulen. Maturitätsschule für Erwachsene": 1,
+        "721 Wasserwirtschaft. Wasserbau. Gewässer": 1
       },
       "by_global_category": {
-        "7.60.20 Gewässerschutz": 1
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "2.20.10.40.20.10 Hausangestellte": 1,
+        "4.20.10 Mittelschule": 1,
+        "7.30.20.20 Gewässernutzung": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 5,
+      "by_topic": {
+        "412.6 Interkantonale Vereinbarungen": 3,
+        "413.1 Allgemein": 1,
+        "935.5 Lotterien. Wetten": 1
+      },
+      "by_global_category": {
+        "4.50.10 Pädagogik": 1
+      }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "13 Gemeinden": 1,
+        "721 Wasserwirtschaft. Wasserbau. Gewässer": 1,
+        "811.3 Einrichtungen für Kranke, Verunfallte und andere Pflegebedürftige": 1
+      },
+      "by_global_category": {
+        "7.30.20.20 Gewässernutzung": 1
       }
     },
     "Anderes": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
         "173.1 Gerichtsorganisation": 1
       },
@@ -24,31 +53,45 @@
         "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1
       }
     },
-    "Gesetz": {
+    "Reglement": {
       "total": 1,
       "by_topic": {
-        "811.3 Einrichtungen für Kranke, Verunfallte und andere Pflegebedürftige": 1
+        "921 Forstwesen": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "9.30.20 Forstpersonal": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Gesetz": 1,
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
+          "identifier": "13",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
           "identifier": "17",
           "title": "Staatliche Gewalten. Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -70,45 +113,23 @@
                   }
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "4",
-      "title": "Schule - Wissenschaft - Kultur",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "41",
-          "title": "Schule",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
+            },
             {
-              "identifier": "412",
-              "title": "Berufliches Bildungswesen",
+              "identifier": "177",
+              "title": "Staatspersonal",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "412.6",
-                  "title": "Interkantonale Vereinbarungen",
+                  "identifier": "177.2",
+                  "title": "Besoldungen.Entschädigungen",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -118,23 +139,169 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
+      "identifier": "2",
+      "title": "Privatrecht - Zivilrechtspflege - Vollstreckung",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "22",
+          "title": "Obligationenrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "221.25",
+              "title": "Arbeitsvertrag",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "28",
+          "title": "Schuldbetreibung und Konkurs",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 4,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schule",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 4,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "412",
+              "title": "Berufliches Bildungswesen",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 3
+              },
+              "children": [
+                {
+                  "identifier": "412.6",
+                  "title": "Interkantonale Vereinbarungen",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 3
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "413",
+              "title": "Mittelschulen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.1",
+                  "title": "Allgemein",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                },
+                {
+                  "identifier": "413.2",
+                  "title": "Kantonsschulen. Maturitätsschule für Erwachsene",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
       "total": 2,
       "own": 0,
       "by_type": {
         "Gesetz": 1,
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "72",
+          "title": "Werke",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "721",
+              "title": "Wasserwirtschaft. Wasserbau. Gewässer",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Interkantonale Vereinbarung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -156,10 +323,53 @@
                   }
                 }
               ]
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "92",
+          "title": "Forstwesen. Jagd. Fischerei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
             {
-              "identifier": "814",
-              "title": "Schutz des ökologischen Gleichgewichts",
+              "identifier": "921",
+              "title": "Forstwesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "93",
+          "title": "Industrie und Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "935",
+              "title": "Geldspiele. Lotterie- und Sportfonds",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -167,8 +377,8 @@
               },
               "children": [
                 {
-                  "identifier": "814.3",
-                  "title": "Gewässerschutz- und Abfallbeseitigungsanlagen",
+                  "identifier": "935.5",
+                  "title": "Lotterien. Wetten",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -186,21 +396,54 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
@@ -237,17 +480,102 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "2",
+      "title": "Zivilrecht",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.20",
+          "title": "Einführungsgesetzgebung OR",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.20.10",
+              "title": "Vertragsverhältnisse",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.20.10.40",
+                  "title": "Arbeitsvertragsrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.20.10.40.20",
+                      "title": "Normalarbeitsverträge",
+                      "total": 1,
+                      "own": 0,
+                      "by_type": {
+                        "Verordnung": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "2.20.10.40.20.10",
+                          "title": "Hausangestellte",
+                          "total": 1,
+                          "own": 1,
+                          "by_type": {
+                            "Verordnung": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -255,8 +583,8 @@
           },
           "children": [
             {
-              "identifier": "7.60.20",
-              "title": "Gewässerschutz",
+              "identifier": "4.50.10",
+              "title": "Pädagogik",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -266,40 +594,134 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.20.20",
+                  "title": "Gewässernutzung",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "9.30",
+          "title": "Forstwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "9.30.20",
+              "title": "Forstpersonal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 16
   },
   "available_years_for_entity": [
-    "1826",
+    "1669",
+    "1803",
+    "1815",
+    "1825",
     "1828",
-    "1829",
     "1831",
     "1834",
     "1846",
+    "1861",
     "1869",
+    "1870",
     "1886",
+    "1887",
     "1889",
     "1890",
-    "1891",
-    "1892",
     "1896",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1911",
     "1914",
+    "1917",
     "1918",
+    "1923",
+    "1925",
     "1926",
     "1927",
+    "1930",
     "1931",
     "1933",
     "1934",
     "1937",
     "1938",
-    "1949",
+    "1941",
+    "1943",
+    "1947",
+    "1948",
+    "1951",
     "1955",
+    "1956",
     "1958",
+    "1959",
+    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
@@ -308,7 +730,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -375,6 +796,7 @@
     "FR",
     "GE",
     "GL",
+    "GR",
     "JU",
     "LU",
     "NE",

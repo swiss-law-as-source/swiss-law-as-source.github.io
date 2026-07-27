@@ -1,55 +1,53 @@
 {
   "year": "2003",
+  "year_semantics": "enactment",
   "entity": "BE",
-  "total": 13,
-  "categorized": 13,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 7,
+      "total": 6,
       "by_topic": {
         "321 Im Allgemeinen": 2,
         "31 Strafrecht": 1,
-        "414.5 Besoldung und Pensionierung": 1,
-        "811.9 Gebührentarife": 1,
-        "836.1 Krisenbekämpfung und Arbeitsbeschaffung": 1
+        "436.8 Fachhochschulen": 1,
+        "822 Abfallbeseitigung": 1,
+        "922.1 Allgemeines": 1
       },
       "by_global_category": {
         "3.10.10 Wirtschaftskriminalität, Geldwäscherei": 1,
         "3.20.40 Verdeckte Ermittlung": 1,
         "3.20.30 DNA-Profile": 1,
-        "1.40.10 Römisch-Katholische Kirche": 1,
-        "8.10.30.10 Ärzte": 1,
-        "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven": 1
+        "7.60.10 Abfälle": 1
+      }
+    },
+    "Anderes": {
+      "total": 5,
+      "by_topic": {
+        "559 Interkantonale Vereinbarungen": 1
+      },
+      "by_global_category": {
+        "5.30.10.30 Personal": 1
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "324 Ordnungsbussen": 1,
-        "430.12 Lehrmittel": 1
+        "435.3 Berufliche Fortbildung": 1,
+        "435.4 Fachhochschulen": 1
       },
       "by_global_category": {
-        "3.50 Ordnungsbussen": 1,
-        "4.120.40 Lehrmittel": 1
+        "4.70.10 Erwachsenenbildung": 1
       }
     },
     "Interkantonale Vereinbarung": {
       "total": 2,
       "by_topic": {
-        "813.1 Allgemeines": 1
+        "559 Interkantonale Vereinbarungen": 1
       },
       "by_global_category": {
-        "8.10.70 Heil- und Betäubungsmittel": 1
-      }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "813.1 Allgemeines": 1
-      },
-      "by_global_category": {
-        "8.10.70 Heil- und Betäubungsmittel": 1
+        "5.30.10.30 Personal": 1
       }
     }
   },
@@ -57,11 +55,10 @@
     {
       "identifier": "3",
       "title": "Strafrecht, Strafrechtspflege, Strafvollzug",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
-        "Gesetz": 1
+        "Verordnung": 3
       },
       "children": [
         {
@@ -76,11 +73,10 @@
         {
           "identifier": "32",
           "title": "Strafverfahren",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 2,
-            "Gesetz": 1
+            "Verordnung": 2
           },
           "children": [
             {
@@ -91,15 +87,6 @@
               "by_type": {
                 "Verordnung": 2
               }
-            },
-            {
-              "identifier": "324",
-              "title": "Ordnungsbussen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
             }
           ]
         }
@@ -108,25 +95,55 @@
     {
       "identifier": "4",
       "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "41",
-          "title": "Kirche",
-          "total": 1,
+          "identifier": "43",
+          "title": "Ausbildung und Wissenschaft",
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Gesetz": 2,
             "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "414",
-              "title": "Geistliche",
+              "identifier": "435",
+              "title": "Berufsbildung, Weiterbildung, Berufsberatung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 2
+              },
+              "children": [
+                {
+                  "identifier": "435.3",
+                  "title": "Berufliche Fortbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                },
+                {
+                  "identifier": "435.4",
+                  "title": "Fachhochschulen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "436",
+              "title": "Universität",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -134,55 +151,13 @@
               },
               "children": [
                 {
-                  "identifier": "414.5",
-                  "title": "Besoldung und Pensionierung",
+                  "identifier": "436.8",
+                  "title": "Fachhochschulen",
                   "total": 1,
                   "own": 1,
                   "by_type": {
                     "Verordnung": 1
                   }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "43",
-          "title": "Ausbildung und Wissenschaft",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "430",
-              "title": "Allgemeines",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "430.1",
-                  "title": "Organisation des Schulwesens",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Gesetz": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "430.12",
-                      "title": "Lehrmittel",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Gesetz": 1
-                      }
-                    }
-                  ]
                 }
               ]
             }
@@ -191,74 +166,51 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 4,
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "81",
-          "title": "Gesundheit",
-          "total": 3,
+          "identifier": "55",
+          "title": "Polizei",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           },
           "children": [
             {
-              "identifier": "811",
-              "title": "Allgemeines",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "811.9",
-                  "title": "Gebührentarife",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            },
-            {
-              "identifier": "813",
-              "title": "Heilmittel, Betäubungsmittel, Chemikalien",
+              "identifier": "559",
+              "title": "Interkantonale Vereinbarungen",
               "total": 2,
-              "own": 0,
+              "own": 2,
               "by_type": {
                 "Interkantonale Vereinbarung": 1,
                 "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "813.1",
-                  "title": "Allgemeines",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1,
-                    "Anderes": 1
-                  }
-                }
-              ]
+              }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
         {
-          "identifier": "83",
-          "title": "Arbeit",
+          "identifier": "82",
+          "title": "Umweltschutz",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -266,8 +218,39 @@
           },
           "children": [
             {
-              "identifier": "836",
-              "title": "Arbeitsmarkt",
+              "identifier": "822",
+              "title": "Abfallbeseitigung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "92",
+          "title": "Forstwesen, Jagd, Fischerei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "922",
+              "title": "Jagd- und Wildtierschutz",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -275,8 +258,8 @@
               },
               "children": [
                 {
-                  "identifier": "836.1",
-                  "title": "Krisenbekämpfung und Arbeitsbeschaffung",
+                  "identifier": "922.1",
+                  "title": "Allgemeines",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -292,44 +275,12 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "1",
-      "title": "Staat",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "1.40",
-          "title": "Kirche und Staat",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "1.40.10",
-              "title": "Römisch-Katholische Kirche",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "3",
       "title": "Strafrecht",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
-        "Gesetz": 1
+        "Verordnung": 3
       },
       "children": [
         {
@@ -380,15 +331,6 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "3.50",
-          "title": "Ordnungsbussen",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Gesetz": 1
-          }
         }
       ]
     },
@@ -402,8 +344,8 @@
       },
       "children": [
         {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "identifier": "4.70",
+          "title": "Weiterbildung (Quartärstufe)",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -411,8 +353,8 @@
           },
           "children": [
             {
-              "identifier": "4.120.40",
-              "title": "Lehrmittel",
+              "identifier": "4.70.10",
+              "title": "Erwachsenenbildung",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -424,84 +366,43 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 4,
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "8.10",
-          "title": "Gesundheitswesen",
-          "total": 3,
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           },
           "children": [
             {
-              "identifier": "8.10.30",
-              "title": "Medizinische Berufe",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.10.30.10",
-                  "title": "Ärzte",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            },
-            {
-              "identifier": "8.10.70",
-              "title": "Heil- und Betäubungsmittel",
+              "identifier": "5.30.10",
+              "title": "Polizei",
               "total": 2,
-              "own": 2,
+              "own": 0,
               "by_type": {
                 "Interkantonale Vereinbarung": 1,
                 "Anderes": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "8.20.20",
-              "title": "Arbeitsmarkt",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "8.20.20.10",
-                  "title": "Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven",
-                  "total": 1,
-                  "own": 1,
+                  "identifier": "5.30.10.30",
+                  "title": "Personal",
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Verordnung": 1
+                    "Interkantonale Vereinbarung": 1,
+                    "Anderes": 1
                   }
                 }
               ]
@@ -509,25 +410,57 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 13,
+    "de": 16,
     "fr": 10
   },
   "available_years_for_entity": [
     "1562",
+    "1809",
+    "1815",
     "1828",
     "1837",
     "1851",
     "1852",
     "1859",
     "1862",
-    "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
-    "1877",
     "1889",
     "1893",
     "1899",
@@ -535,27 +468,43 @@
     "1903",
     "1907",
     "1909",
+    "1910",
     "1911",
+    "1914",
+    "1916",
+    "1922",
     "1923",
     "1924",
+    "1930",
     "1931",
     "1934",
     "1936",
+    "1937",
+    "1938",
     "1939",
     "1940",
-    "1942",
+    "1943",
+    "1944",
     "1945",
-    "1949",
+    "1946",
+    "1947",
+    "1948",
     "1950",
     "1951",
     "1954",
+    "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
+    "1962",
+    "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -564,6 +513,7 @@
     "1974",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1979",
     "1980",

@@ -1,17 +1,29 @@
 {
   "year": "1981",
+  "year_semantics": "enactment",
   "entity": "ZG",
-  "total": 4,
-  "categorized": 4,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
+    "Gesetz": {
       "total": 2,
       "by_topic": {
-        "826 Spitalwesen": 2
+        "152 Staatskanzlei": 1,
+        "31 Strafrecht": 1
       },
       "by_global_category": {
-        "8.10.30.30 Krankenpflegepersonal": 2
+        "1.10.100.10 Gesetzessammlungen": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "212 Personenrecht": 1,
+        "821 Allgemeines": 1
+      },
+      "by_global_category": {
+        "8.10.130.30 Badeanstalten": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -23,26 +35,78 @@
         "2.80 Schiedsgerichtsbarkeit": 1
       }
     },
-    "Verordnung": {
+    "Anderes": {
       "total": 1,
       "by_topic": {
-        "821 Allgemeines": 1
+        "826 Spitalwesen": 1
       },
       "by_global_category": {
-        "8.10.130.30 Badeanstalten": 1
+        "8.10.30.30 Krankenpflegepersonal": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht, Zivilprozess, Vollstreckung",
+      "identifier": "1",
+      "title": "Grundlagen, Organisation, Gemeinden",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "15",
+          "title": "Regierungsrat, Staatskanzlei, Verwaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "152",
+              "title": "Staatskanzlei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilprozess, Vollstreckung",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "212",
+              "title": "Personenrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "22",
           "title": "Zivilprozess, Beurkundung, Beglaubigung",
@@ -66,23 +130,43 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 3,
+      "identifier": "3",
+      "title": "Strafrecht, Strafprozess, Strafvollzug",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Verordnung": 1
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "Strafrecht",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "82",
           "title": "Gesundheit",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -97,10 +181,10 @@
             {
               "identifier": "826",
               "title": "Spitalwesen",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 1
               }
             }
           ]
@@ -109,6 +193,48 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.100",
+              "title": "Amtliche Veröffentlichungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.100.10",
+                  "title": "Gesetzessammlungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht",
@@ -132,39 +258,39 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "8.10.30",
               "title": "Medizinische Berufe",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "8.10.30.30",
                   "title": "Krankenpflegepersonal",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Anderes": 2
+                    "Anderes": 1
                   }
                 }
               ]
@@ -195,39 +321,48 @@
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 6
   },
   "available_years_for_entity": [
-    "1826",
+    "1825",
     "1828",
     "1834",
+    "1894",
     "1896",
     "1900",
     "1904",
-    "1910",
+    "1909",
+    "1911",
     "1912",
+    "1919",
     "1921",
     "1925",
     "1928",
     "1929",
+    "1937",
     "1938",
     "1940",
     "1941",
-    "1944",
+    "1943",
+    "1946",
     "1947",
+    "1948",
     "1949",
     "1950",
     "1951",
     "1953",
     "1954",
-    "1956",
+    "1955",
     "1957",
     "1958",
     "1959",
+    "1962",
     "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -238,12 +373,14 @@
     "1976",
     "1977",
     "1978",
+    "1979",
     "1980",
     "1981",
     "1982",
     "1983",
     "1984",
     "1985",
+    "1986",
     "1987",
     "1988",
     "1989",
@@ -296,6 +433,7 @@
     "FR",
     "GE",
     "GL",
+    "GR",
     "JU",
     "LU",
     "NE",

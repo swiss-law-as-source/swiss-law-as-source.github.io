@@ -71,6 +71,14 @@
         "responses": { "200": { "description": "domains, cantons{...}, totals, notes", "content": { "application/json": { "schema": { "type": "object" } } } } }
       }
     },
+    "/api/v1/stats/concordats_chstat_comparison.json": {
+      "get": {
+        "tags": ["quality"],
+        "summary": "Verification: concordats enacted <= 2003 vs chstat.ch's 2003 table",
+        "description": "Per canton: chstat 2003 domain counts (frozen reference, Institute of Federalism) vs our concordats ENACTED on or before 2003 and still in force. Year = original enactment date (laws are law+version pairs).",
+        "responses": { "200": { "description": "chstat_total, ours totals, per-canton rows with deltas", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
     "/api/v1/stats/harmonized_categories.json": {
       "get": {
         "tags": ["statistics"],

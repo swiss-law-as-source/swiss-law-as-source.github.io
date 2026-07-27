@@ -1,8 +1,9 @@
 {
   "year": "1980",
+  "year_semantics": "enactment",
   "entity": "BL",
-  "total": 11,
-  "categorized": 11,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
@@ -18,36 +19,38 @@
         "7.60.20 Gewässerschutz": 1
       }
     },
-    "Anderes": {
-      "total": 3,
-      "by_topic": {
-        "31 Finanzhaushalt": 1,
-        "36 Staatsbeiträge": 1,
-        "38 Regalien, Konzessionen": 1
-      },
-      "by_global_category": {
-        "1.20.20.40.60 Ausbildung, Weiterbildung": 1
-      }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "36 Staatsbeiträge": 1,
-        "78 Umweltschutz": 1
-      },
-      "by_global_category": {
-        "4.180.20 Kulturförderung": 1,
-        "7.40.30 Kernenergie": 1
-      }
-    },
     "Verordnung": {
       "total": 2,
       "by_topic": {
-        "40 Raum- und Bauordnung": 1,
-        "41 Enteignung": 1
+        "33 Steuern": 1,
+        "40 Raum- und Bauordnung": 1
       },
       "by_global_category": {
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1,
         "7.10.10 Pläne": 1
+      }
+    },
+    "Staatsvertrag": {
+      "total": 1,
+      "by_topic": {
+        "148 Internationale Vereinbarungen": 1
+      },
+      "by_global_category": {}
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "31 Finanzhaushalt": 1
+      },
+      "by_global_category": {}
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "36 Staatsbeiträge": 1
+      },
+      "by_global_category": {
+        "4.180.20 Kulturförderung": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -61,6 +64,37 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Staatsvertrag": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Regierungsrat und Verwaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Staatsvertrag": 1
+          },
+          "children": [
+            {
+              "identifier": "148",
+              "title": "Internationale Vereinbarungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Staatsvertrag": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
@@ -84,10 +118,11 @@
     {
       "identifier": "3",
       "title": "Finanzen",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
+        "Anderes": 1,
+        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
@@ -101,38 +136,8 @@
           }
         },
         {
-          "identifier": "36",
-          "title": "Staatsbeiträge",
-          "total": 2,
-          "own": 2,
-          "by_type": {
-            "Anderes": 1,
-            "Gesetz": 1
-          }
-        },
-        {
-          "identifier": "38",
-          "title": "Regalien, Konzessionen",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Anderes": 1
-          }
-        }
-      ]
-    },
-    {
-      "identifier": "4",
-      "title": "Bau, Werke, Verkehr, Energie",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 2
-      },
-      "children": [
-        {
-          "identifier": "40",
-          "title": "Raum- und Bauordnung",
+          "identifier": "33",
+          "title": "Steuern",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -140,8 +145,28 @@
           }
         },
         {
-          "identifier": "41",
-          "title": "Enteignung",
+          "identifier": "36",
+          "title": "Staatsbeiträge",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "40",
+          "title": "Raum- und Bauordnung",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -183,80 +208,25 @@
     {
       "identifier": "7",
       "title": "Öffentliche Sicherheit, Umweltschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "78",
           "title": "Umweltschutz",
-          "total": 2,
-          "own": 2,
+          "total": 1,
+          "own": 1,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
-            "Gesetz": 1
+            "Interkantonale Vereinbarung": 1
           }
         }
       ]
     }
   ],
   "by_global_category_tree": [
-    {
-      "identifier": "1",
-      "title": "Staat",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "1.20",
-          "title": "Behörden",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "1.20.20",
-              "title": "Regierung und Verwaltung",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "1.20.20.40",
-                  "title": "Personalrecht",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Anderes": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.20.20.40.60",
-                      "title": "Ausbildung, Weiterbildung",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Anderes": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -331,13 +301,43 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.40",
+              "title": "Erbschafts- und Schenkungssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
         "Verordnung": 1,
-        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -357,26 +357,6 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "7.40",
-          "title": "Energie",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "7.40.30",
-              "title": "Kernenergie",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
               }
             }
           ]
@@ -457,27 +437,41 @@
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 9
   },
   "available_years_for_entity": [
     "1815",
     "1828",
-    "1829",
     "1834",
     "1836",
+    "1865",
     "1870",
     "1876",
     "1881",
-    "1903",
+    "1888",
+    "1889",
+    "1892",
+    "1896",
+    "1902",
+    "1907",
+    "1908",
     "1909",
+    "1911",
+    "1914",
     "1916",
     "1919",
     "1920",
+    "1921",
+    "1922",
+    "1923",
     "1925",
+    "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1944",
+    "1946",
     "1947",
     "1948",
     "1949",
@@ -485,8 +479,10 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -494,6 +490,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -557,6 +554,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",
@@ -571,6 +569,7 @@
     "NW",
     "OW",
     "SG",
+    "SH",
     "SO",
     "SZ",
     "TG",

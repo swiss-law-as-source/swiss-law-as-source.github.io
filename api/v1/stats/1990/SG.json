@@ -1,40 +1,66 @@
 {
   "year": "1990",
+  "year_semantics": "enactment",
   "entity": "SG",
-  "total": 17,
-  "categorized": 17,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 14,
+      "total": 15,
       "by_topic": {
-        "321 Kantonale Spitäler": 4,
+        "321 Kantonale Spitäler": 3,
         "331 Krankenversicherung": 2,
         "672 Übriger Umweltschutz": 2,
         "831 Finanzhaushalt des Staates": 2,
-        "215 Mittelschulen": 1,
-        "273 Staatsbeiträge": 1,
+        "131 Kantonsrat": 1,
+        "141 Allgemein": 1,
+        "251 Turnen und Sport": 1,
         "381 Öffentliche Fürsorge": 1,
-        "711 Strassenverkehr": 1
+        "732 Tiefbauten des Staates": 1,
+        "941 Gerichtsorganisation und -verfahren": 1
       },
       "by_global_category": {
-        "8.10.20.10 Kantonsspitäler": 4,
+        "8.10.20.10 Kantonsspitäler": 3,
         "6.10.30 Staatsbeiträge, Subventionen": 3,
         "7.60.40 Lärmschutz": 2,
-        "4.120.60 Schulbauten": 1,
-        "9.50.10.60.10 Lotteriefonds": 1,
-        "7.50.20.30 Motorfahrzeugkontrolle": 1
+        "1.20.10.20 Entschädigung der Parlamentarier": 1,
+        "7.30.10 Staatliche Gebäude und Liegenschaften": 1,
+        "4.180.30 Sport": 1
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "213 Volksschulen": 1,
-        "234 Fachhochschulen": 1
+        "651 Waldwirtschaft": 1,
+        "751 Gewässernutzung": 1,
+        "853 Jagd": 1
       },
       "by_global_category": {
-        "4.10.20 Kindergarten": 1,
-        "1.20.20.40.10 Anstellung": 1
+        "9.30.30 Bildungswesen": 1,
+        "8.10.130.20 Wasserversorgung": 1,
+        "6.30.50.10 Jäger": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "351 Allgemein": 1,
+        "671 Naturschutz": 1
+      },
+      "by_global_category": {
+        "8.30.40 Ergänzungsleistungen": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "815 Bundessteuern": 1,
+        "831 Finanzhaushalt des Staates": 1
+      },
+      "by_global_category": {
+        "6.20.10.10 Bundessteuern": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
     "Reglement": {
@@ -49,25 +75,73 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "Erziehung, Bildung, Kultur",
-      "total": 5,
+      "identifier": "1",
+      "title": "Grundlagen und Organisation von Kanton und Gemeinden",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
-        "Anderes": 2,
-        "Reglement": 1
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "13",
+          "title": "Kantonsrat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "131",
+              "title": "Kantonsrat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "14",
+          "title": "Staatsverwaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "141",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Erziehung, Bildung, Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Schulen",
-          "total": 3,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1,
-            "Interkantonale Vereinbarung": 1,
-            "Anderes": 1
+            "Reglement": 1
           },
           "children": [
             {
@@ -78,50 +152,12 @@
               "by_type": {
                 "Reglement": 1
               }
-            },
-            {
-              "identifier": "213",
-              "title": "Volksschulen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            },
-            {
-              "identifier": "215",
-              "title": "Mittelschulen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
             }
           ]
         },
         {
-          "identifier": "23",
-          "title": "Berufliche Ausbildung und Berufsberatung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "234",
-              "title": "Fachhochschulen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "27",
-          "title": "Kultur",
+          "identifier": "25",
+          "title": "Turnen und Sport",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -129,8 +165,8 @@
           },
           "children": [
             {
-              "identifier": "273",
-              "title": "Staatsbeiträge",
+              "identifier": "251",
+              "title": "Turnen und Sport",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -147,25 +183,26 @@
       "total": 7,
       "own": 0,
       "by_type": {
-        "Anderes": 7
+        "Anderes": 6,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "32",
           "title": "Einrichtungen der Gesundheitspflege",
-          "total": 4,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 4
+            "Anderes": 3
           },
           "children": [
             {
               "identifier": "321",
               "title": "Kantonale Spitäler",
-              "total": 4,
-              "own": 4,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Anderes": 4
+                "Anderes": 3
               }
             }
           ]
@@ -186,6 +223,26 @@
               "own": 2,
               "by_type": {
                 "Anderes": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "35",
+          "title": "Alters-, Hinterlassenen- und Invalidenversicherung sowie -hilfe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "351",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -215,21 +272,53 @@
     {
       "identifier": "6",
       "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "67",
-          "title": "Umweltschutz",
-          "total": 2,
+          "identifier": "65",
+          "title": "Waldwirtschaft",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "651",
+              "title": "Waldwirtschaft",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "67",
+          "title": "Umweltschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "671",
+              "title": "Naturschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "672",
               "title": "Übriger Umweltschutz",
@@ -246,15 +335,16 @@
     {
       "identifier": "7",
       "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
-          "identifier": "71",
-          "title": "Verkehr",
+          "identifier": "73",
+          "title": "Öffentliches Baurecht",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -262,12 +352,32 @@
           },
           "children": [
             {
-              "identifier": "711",
-              "title": "Strassenverkehr",
+              "identifier": "732",
+              "title": "Tiefbauten des Staates",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "75",
+          "title": "Gewässernutzung und -schutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "751",
+              "title": "Gewässernutzung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -277,28 +387,103 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Verordnung": 2,
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
-          "identifier": "83",
-          "title": "Finanzhaushalt des Staates",
-          "total": 2,
+          "identifier": "81",
+          "title": "Steuern und Finanzausgleich",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "815",
+              "title": "Bundessteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Finanzhaushalt des Staates",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "831",
               "title": "Finanzhaushalt des Staates",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 2,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "85",
+          "title": "Regalien",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "853",
+              "title": "Jagd",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Zivilrecht, Strafrecht, Rechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "94",
+          "title": "Gerichtsorganisation und -verfahren",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "941",
+              "title": "Gerichtsorganisation und -verfahren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -313,7 +498,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -322,37 +507,26 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "1.20.20",
-              "title": "Regierung und Verwaltung",
+              "identifier": "1.20.10",
+              "title": "Parlament",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Anderes": 1
               },
               "children": [
                 {
-                  "identifier": "1.20.20.40",
-                  "title": "Personalrecht",
+                  "identifier": "1.20.10.20",
+                  "title": "Entschädigung der Parlamentarier",
                   "total": 1,
-                  "own": 0,
+                  "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.20.20.40.10",
-                      "title": "Anstellung",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Interkantonale Vereinbarung": 1
-                      }
-                    }
-                  ]
+                    "Anderes": 1
+                  }
                 }
               ]
             }
@@ -363,34 +537,13 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
         "Reglement": 1,
         "Anderes": 1
       },
       "children": [
-        {
-          "identifier": "4.10",
-          "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.10.20",
-              "title": "Kindergarten",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "4.90",
           "title": "Lehrkörper",
@@ -412,8 +565,8 @@
           ]
         },
         {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -421,8 +574,8 @@
           },
           "children": [
             {
-              "identifier": "4.120.60",
-              "title": "Schulbauten",
+              "identifier": "4.180.30",
+              "title": "Sport",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -436,29 +589,95 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 3
+        "Anderes": 3,
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 3
+            "Anderes": 3,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
-              "total": 3,
-              "own": 3,
+              "total": 4,
+              "own": 4,
               "by_type": {
-                "Anderes": 3
+                "Anderes": 3,
+                "Verordnung": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.10",
+                  "title": "Bundessteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.50",
+              "title": "Jagd",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.30.50.10",
+                  "title": "Jäger",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -474,8 +693,8 @@
       },
       "children": [
         {
-          "identifier": "7.50",
-          "title": "Verkehr",
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -483,24 +702,13 @@
           },
           "children": [
             {
-              "identifier": "7.50.20",
-              "title": "Strassenverkehr",
+              "identifier": "7.30.10",
+              "title": "Staatliche Gebäude und Liegenschaften",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "7.50.20.30",
-                  "title": "Motorfahrzeugkontrolle",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         },
@@ -529,10 +737,12 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 4
+        "Anderes": 3,
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -541,28 +751,69 @@
           "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 4
+            "Anderes": 3,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "8.10.20",
               "title": "Kranken- und Pflegeanstalten",
-              "total": 4,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 4
+                "Anderes": 3
               },
               "children": [
                 {
                   "identifier": "8.10.20.10",
                   "title": "Kantonsspitäler",
-                  "total": 4,
-                  "own": 4,
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
-                    "Anderes": 4
+                    "Anderes": 3
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.20",
+                  "title": "Wasserversorgung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.40",
+              "title": "Ergänzungsleistungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -574,48 +825,26 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
-          "identifier": "9.50",
-          "title": "Gewerbe",
+          "identifier": "9.30",
+          "title": "Forstwirtschaft",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
-              "identifier": "9.50.10",
-              "title": "Dienstleistungen",
+              "identifier": "9.30.30",
+              "title": "Bildungswesen",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "9.50.10.60",
-                  "title": "Glücksspiel und Lotterien",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Anderes": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "9.50.10.60.10",
-                      "title": "Lotteriefonds",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Anderes": 1
-                      }
-                    }
-                  ]
-                }
-              ]
+                "Interkantonale Vereinbarung": 1
+              }
             }
           ]
         }
@@ -623,36 +852,63 @@
     }
   ],
   "languages_available": {
-    "de": 17
+    "de": 23
   },
   "available_years_for_entity": [
-    "1847",
-    "1871",
+    "1845",
+    "1862",
+    "1870",
+    "1874",
+    "1883",
+    "1884",
+    "1885",
+    "1888",
+    "1890",
+    "1897",
+    "1899",
     "1901",
+    "1902",
     "1903",
+    "1906",
+    "1907",
+    "1908",
+    "1910",
     "1911",
     "1914",
+    "1918",
+    "1919",
+    "1920",
+    "1921",
+    "1924",
+    "1926",
     "1929",
+    "1930",
+    "1931",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
+    "1945",
+    "1946",
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
     "1953",
-    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",
     "1960",
     "1961",
     "1962",
+    "1963",
     "1964",
     "1965",
     "1966",
@@ -714,11 +970,11 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

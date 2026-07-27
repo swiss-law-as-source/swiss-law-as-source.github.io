@@ -1,14 +1,16 @@
 {
   "year": "1972",
+  "year_semantics": "enactment",
   "entity": "NE",
-  "total": 10,
-  "categorized": 10,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "832.3 Établissements spécialisés pour personnes âgées": 3,
+        "152.7 Commissions administratives": 1,
         "417 Éducation physique et sports": 1,
         "820.2 Assurance-invalidité": 1,
         "821.12 Application de la LAMA": 1,
@@ -16,9 +18,19 @@
       },
       "by_global_category": {
         "8.70.30.10 Alters- und Pflegeheime": 4,
+        "1.20.20.30.30 Kommissionen": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1,
         "8.10.40 Medizinische Labors": 1,
         "9.60.20 Messwesen, Zahlungsverkehr": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 3,
+      "by_topic": {
+        "633 Droit sur les successions et les donations": 3
+      },
+      "by_global_category": {
+        "6.20.40 Erbschafts- und Schenkungssteuern": 3
       }
     },
     "Gesetz": {
@@ -32,16 +44,60 @@
       }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "832.3 Établissements spécialisés pour personnes âgées": 1
+        "832.3 Établissements spécialisés pour personnes âgées": 1,
+        "841 Encouragement à la construction de logements": 1
       },
       "by_global_category": {
-        "8.70.30.10 Alters- und Pflegeheime": 1
+        "8.70.30.10 Alters- und Pflegeheime": 1,
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "État – Peuple – Autorités",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "15",
+          "title": "Autorités",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "152",
+              "title": "Conseil d'État et administration cantonale",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "152.7",
+                  "title": "Commissions administratives",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Enseignement – Science – Culture – Environnement",
@@ -106,13 +162,44 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finances",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Accord intercantonal": 3
+      },
+      "children": [
+        {
+          "identifier": "63",
+          "title": "Contributions publiques",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Accord intercantonal": 3
+          },
+          "children": [
+            {
+              "identifier": "633",
+              "title": "Droit sur les successions et les donations",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Accord intercantonal": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Autre": 5,
-        "Ordonnance parlementaire (décret)": 1
+        "Ordonnance parlementaire (décret)": 2
       },
       "children": [
         {
@@ -210,6 +297,26 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "84",
+          "title": "Habitat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1
+          },
+          "children": [
+            {
+              "identifier": "841",
+              "title": "Encouragement à la construction de logements",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -270,6 +377,59 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.30",
+                      "title": "Kommissionen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Autre": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 1,
@@ -303,9 +463,10 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Accord intercantonal": 3,
         "Autre": 1
       },
       "children": [
@@ -328,17 +489,37 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Accord intercantonal": 3
+          },
+          "children": [
+            {
+              "identifier": "6.20.40",
+              "title": "Erbschafts- und Schenkungssteuern",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Accord intercantonal": 3
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Autre": 5,
-        "Ordonnance parlementaire (décret)": 1
+        "Ordonnance parlementaire (décret)": 2
       },
       "children": [
         {
@@ -357,6 +538,26 @@
               "own": 1,
               "by_type": {
                 "Autre": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.40",
+          "title": "Wohnverhältnisse",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1
+          },
+          "children": [
+            {
+              "identifier": "8.40.10",
+              "title": "Eigentums- und Wohnungsbauförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
               }
             }
           ]
@@ -430,10 +631,11 @@
     }
   ],
   "languages_available": {
-    "fr": 10
+    "fr": 15
   },
   "available_years_for_entity": [
     "1832",
+    "1857",
     "1858",
     "1864",
     "1866",
@@ -558,6 +760,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BS",
     "CH",
@@ -572,7 +775,6 @@
     "SH",
     "SO",
     "SZ",
-    "TG",
     "TI",
     "UR",
     "VD",

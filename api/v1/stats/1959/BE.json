@@ -1,8 +1,9 @@
 {
   "year": "1959",
+  "year_semantics": "enactment",
   "entity": "BE",
-  "total": 3,
-  "categorized": 3,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
@@ -16,13 +17,22 @@
         "8.30.30 AHV / IV": 1
       }
     },
-    "Interkantonale Vereinbarung": {
+    "Verordnung": {
       "total": 1,
       "by_topic": {
-        "411.2 Evangelisch-reformierte": 1
+        "668.6 Wehrpflichtersatz": 1
       },
       "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 1
+        "5.10.20 Wehrpflichtersatz": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "841.2 Invalidenversicherung": 1
+      },
+      "by_global_category": {
+        "8.30.30 AHV / IV": 1
       }
     }
   },
@@ -30,43 +40,21 @@
     {
       "identifier": "4",
       "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Kirche",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
             "Reglement": 1
           },
           "children": [
-            {
-              "identifier": "411",
-              "title": "Kirchgemeinden",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "411.2",
-                  "title": "Evangelisch-reformierte",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
-            },
             {
               "identifier": "412",
               "title": "Pfarrstellen",
@@ -81,38 +69,84 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "66",
+          "title": "Steuern und Abgaben",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "668",
+              "title": "Vollzug von Bundessteuern und -abgaben",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "668.6",
+                  "title": "Wehrpflichtersatz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "84",
           "title": "Sozialversicherung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Reglement": 1
           },
           "children": [
             {
               "identifier": "841",
               "title": "Alters-, Hinterlassenen- und Invalidenversicherung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Gesetz": 1,
                 "Reglement": 1
               },
               "children": [
                 {
                   "identifier": "841.2",
                   "title": "Invalidenversicherung",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Gesetz": 1,
                     "Reglement": 1
                   }
                 }
@@ -127,40 +161,6 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Reglement": 1
-      },
-      "children": [
-        {
-          "identifier": "1.40",
-          "title": "Kirche und Staat",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1,
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "1.40.30",
-              "title": "Evangelisch-Reformierte Kirche",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1,
-                "Reglement": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -168,8 +168,8 @@
       },
       "children": [
         {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -177,8 +177,8 @@
           },
           "children": [
             {
-              "identifier": "8.30.30",
-              "title": "AHV / IV",
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -188,25 +188,91 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.10",
+          "title": "Verteidigung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.10.20",
+              "title": "Wehrpflichtersatz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 3,
-    "fr": 3
+    "de": 4,
+    "fr": 4
   },
   "available_years_for_entity": [
     "1562",
+    "1809",
+    "1815",
     "1828",
     "1837",
     "1851",
     "1852",
     "1859",
     "1862",
-    "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
-    "1877",
     "1889",
     "1893",
     "1899",
@@ -214,27 +280,43 @@
     "1903",
     "1907",
     "1909",
+    "1910",
     "1911",
+    "1914",
+    "1916",
+    "1922",
     "1923",
     "1924",
+    "1930",
     "1931",
     "1934",
     "1936",
+    "1937",
+    "1938",
     "1939",
     "1940",
-    "1942",
+    "1943",
+    "1944",
     "1945",
-    "1949",
+    "1946",
+    "1947",
+    "1948",
     "1950",
     "1951",
     "1954",
+    "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
+    "1962",
+    "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -243,6 +325,7 @@
     "1974",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1979",
     "1980",
@@ -295,19 +378,24 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
+    "AR",
     "BE",
     "BL",
-    "BS",
     "CH",
+    "FR",
     "GE",
+    "GL",
     "GR",
     "JU",
+    "LU",
     "NE",
     "NW",
     "OW",
     "SG",
     "SO",
     "SZ",
+    "TG",
     "UR",
     "VD",
     "VS",

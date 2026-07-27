@@ -1,10 +1,27 @@
 {
   "year": "1996",
+  "year_semantics": "enactment",
   "entity": "OW",
-  "total": 4,
-  "categorized": 4,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 5,
+      "by_topic": {
+        "134 Gerichtsbehörden, Anwaltsrecht": 2,
+        "131 Amtliche Veröffentlichungen, Information, Dokumentation": 1,
+        "530 Militär": 1,
+        "855 Arbeitslosenversicherung": 1
+      },
+      "by_global_category": {
+        "4.170.20 Archive": 1,
+        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1,
+        "1.20.70.10.10.20 Staatsanwaltschaft": 1,
+        "5.10.20 Wehrpflichtersatz": 1,
+        "8.30.110 Arbeitslosenversicherung": 1
+      }
+    },
     "Anderes": {
       "total": 3,
       "by_topic": {
@@ -17,13 +34,20 @@
         "8.20.20.40 Arbeitsvermittlung und Personalverleih": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
         "134 Gerichtsbehörden, Anwaltsrecht": 1
       },
+      "by_global_category": {}
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "843 Arbeitsmarkt": 1
+      },
       "by_global_category": {
-        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1
+        "8.20.20.40 Arbeitsvermittlung und Personalverleih": 1
       }
     }
   },
@@ -31,6 +55,37 @@
     {
       "identifier": "1",
       "title": "GRUNDLAGEN UND ORGANISATION",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 3,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "131",
+          "title": "Amtliche Veröffentlichungen, Information, Dokumentation",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        },
+        {
+          "identifier": "134",
+          "title": "Gerichtsbehörden, Anwaltsrecht",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 2,
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "SICHERHEIT, BEVÖLKERUNGSSCHUTZ",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -38,8 +93,8 @@
       },
       "children": [
         {
-          "identifier": "134",
-          "title": "Gerichtsbehörden, Anwaltsrecht",
+          "identifier": "530",
+          "title": "Militär",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -71,19 +126,31 @@
     {
       "identifier": "8",
       "title": "GESUNDHEIT, ARBEIT, SOZIALE SICHERHEIT",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "843",
           "title": "Arbeitsmarkt",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1
+          }
+        },
+        {
+          "identifier": "855",
+          "title": "Arbeitslosenversicherung",
           "total": 1,
           "own": 1,
           "by_type": {
-            "Anderes": 1
+            "Verordnung des Parlaments (Dekret)": 1
           }
         }
       ]
@@ -113,39 +180,59 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung des Parlaments (Dekret)": 2
           },
           "children": [
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Verordnung des Parlaments (Dekret)": 2
               },
               "children": [
                 {
                   "identifier": "1.20.70.10",
                   "title": "Gerichtsbehörden",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
+                    "Verordnung des Parlaments (Dekret)": 2
                   },
                   "children": [
+                    {
+                      "identifier": "1.20.70.10.10",
+                      "title": "Untersuchungs- und Anklagebehörden",
+                      "total": 1,
+                      "own": 0,
+                      "by_type": {
+                        "Verordnung des Parlaments (Dekret)": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "1.20.70.10.10.20",
+                          "title": "Staatsanwaltschaft",
+                          "total": 1,
+                          "own": 1,
+                          "by_type": {
+                            "Verordnung des Parlaments (Dekret)": 1
+                          }
+                        }
+                      ]
+                    },
                     {
                       "identifier": "1.20.70.10.20",
                       "title": "Obere Gerichte, Bundesgerichte",
@@ -158,6 +245,68 @@
                   ]
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.20",
+              "title": "Archive",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "5.10",
+          "title": "Verteidigung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "5.10.20",
+              "title": "Wehrpflichtersatz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
             }
           ]
         }
@@ -208,40 +357,65 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "8.20",
           "title": "Arbeitsrecht",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "8.20.20",
               "title": "Arbeitsmarkt",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Interkantonale Vereinbarung": 1,
                 "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "8.20.20.40",
                   "title": "Arbeitsvermittlung und Personalverleih",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Interkantonale Vereinbarung": 1,
                     "Anderes": 1
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
             }
           ]
         }
@@ -249,24 +423,29 @@
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 10
   },
   "available_years_for_entity": [
     "1825",
     "1850",
     "1874",
+    "1877",
     "1878",
     "1880",
     "1892",
     "1895",
     "1911",
     "1913",
+    "1914",
     "1915",
     "1916",
+    "1918",
     "1927",
     "1928",
+    "1931",
     "1935",
     "1937",
+    "1938",
     "1939",
     "1942",
     "1943",
@@ -276,13 +455,19 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
+    "1960",
     "1961",
+    "1963",
     "1964",
     "1965",
+    "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

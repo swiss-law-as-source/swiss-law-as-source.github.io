@@ -1,8 +1,9 @@
 {
   "year": "1979",
+  "year_semantics": "enactment",
   "entity": "OW",
-  "total": 5,
-  "categorized": 5,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -34,6 +35,15 @@
       },
       "by_global_category": {
         "6.30.60.20 Reviere": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "818 Tierseuchen, Tierhaltung, Tierhandel": 1
+      },
+      "by_global_category": {
+        "6.20.70 Hundesteuern": 1
       }
     }
   },
@@ -106,6 +116,26 @@
           "by_type": {
             "Interkantonale Vereinbarung": 1,
             "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "GESUNDHEIT, ARBEIT, SOZIALE SICHERHEIT",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "818",
+          "title": "Tierseuchen, Tierhaltung, Tierhandel",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
           }
         }
       ]
@@ -230,13 +260,34 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.70",
+              "title": "Hundesteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "6.30",
           "title": "Monopole, Staatliche Unternehmen",
@@ -275,24 +326,29 @@
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 6
   },
   "available_years_for_entity": [
     "1825",
     "1850",
     "1874",
+    "1877",
     "1878",
     "1880",
     "1892",
     "1895",
     "1911",
     "1913",
+    "1914",
     "1915",
     "1916",
+    "1918",
     "1927",
     "1928",
+    "1931",
     "1935",
     "1937",
+    "1938",
     "1939",
     "1942",
     "1943",
@@ -302,13 +358,19 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
+    "1960",
     "1961",
+    "1963",
     "1964",
     "1965",
+    "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -393,6 +455,8 @@
     "TI",
     "UR",
     "VD",
+    "VS",
+    "ZG",
     "ZH"
   ]
 }

@@ -1,47 +1,61 @@
 {
   "year": "2008",
+  "year_semantics": "enactment",
   "entity": "GE",
-  "total": 20,
-  "categorized": 20,
+  "total": 33,
+  "categorized": 33,
   "uncategorized": 0,
   "by_type": {
-    "Reglement": {
-      "total": 12,
+    "Gesetz": {
+      "total": 16,
       "by_topic": {
-        "D 3 Impôts et taxes": 2,
+        "C 1 Instruction publique": 5,
+        "F 3 Police de la rue et autres lieux publics": 3,
+        "D 3 Impôts et taxes": 1,
+        "E 1 Droit civil et droit des obligations": 1,
+        "F 2 Séjour et établissements, police des étrangers, recensement": 1,
+        "G 2 Protection civile": 1,
+        "K 1 Police sanitaire, lutte contre les maladies": 1,
+        "K 2 Etablissements hospitaliers": 1,
+        "K 3 Professions médicales et auxiliaires": 1,
+        "L 1 Voies de communication et urbanisme": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 2,
+        "2.10.10.10 Eingetragene Partnerschaft": 1,
+        "5.30.20.20 Gemeingebrauch": 1,
+        "4.180.30 Sport": 1,
+        "8.10.60 Spitalexterne Krankenpflege": 1,
+        "7.30.30.10 Nationalstrassen": 1
+      }
+    },
+    "Reglement": {
+      "total": 15,
+      "by_topic": {
+        "D 3 Impôts et taxes": 3,
         "F 2 Séjour et établissements, police des étrangers, recensement": 2,
         "M 3 Animaux": 2,
         "B 4 Organisation de l’administration": 1,
         "C 1 Instruction publique": 1,
+        "C 2 Formation professionnelle": 1,
         "E 1 Droit civil et droit des obligations": 1,
         "E 2 Organisation judiciaire et pouvoir judiciaire": 1,
+        "F 3 Police de la rue et autres lieux publics": 1,
         "J 2 Placement et chômage": 1,
         "J 5 Protection de la famille": 1
       },
       "by_global_category": {
         "4.170.10 Statistik": 1,
         "4.120.80 Schulleitung": 1,
+        "4.30.30 Berufsorientierung": 1,
+        "6.20.10.60 Quellensteuern": 1,
         "2.50.10 Kosten": 1,
         "1.10.120 Information der Öffentlichkeit": 1,
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "5.30.20.20 Gemeingebrauch": 1,
         "8.30.110 Arbeitslosenversicherung": 1,
         "9.20.130 Alpfahrt": 1,
         "5.30.20.10 Hunde, gefährliche Tiere": 1
-      }
-    },
-    "Gesetz": {
-      "total": 6,
-      "by_topic": {
-        "C 1 Instruction publique": 1,
-        "D 3 Impôts et taxes": 1,
-        "E 1 Droit civil et droit des obligations": 1,
-        "F 3 Police de la rue et autres lieux publics": 1,
-        "G 2 Protection civile": 1,
-        "K 1 Police sanitaire, lutte contre les maladies": 1
-      },
-      "by_global_category": {
-        "2.10.10.10 Eingetragene Partnerschaft": 1,
-        "8.10.60 Spitalexterne Krankenpflege": 1
       }
     },
     "Verfassung": {
@@ -83,20 +97,20 @@
     {
       "identifier": "C",
       "title": "Instruction publique, culture",
-      "total": 2,
-      "own": 2,
+      "total": 7,
+      "own": 7,
       "by_type": {
-        "Loi": 1,
-        "Règlement": 1
+        "Loi": 5,
+        "Règlement": 2
       }
     },
     {
       "identifier": "D",
       "title": "Finances et contributions",
-      "total": 3,
-      "own": 3,
+      "total": 4,
+      "own": 4,
       "by_type": {
-        "Règlement": 2,
+        "Règlement": 3,
         "Loi": 1
       }
     },
@@ -113,11 +127,11 @@
     {
       "identifier": "F",
       "title": "Police",
-      "total": 3,
-      "own": 3,
+      "total": 7,
+      "own": 7,
       "by_type": {
-        "Règlement": 2,
-        "Loi": 1
+        "Loi": 4,
+        "Règlement": 3
       }
     },
     {
@@ -142,6 +156,15 @@
     {
       "identifier": "K",
       "title": "Santé",
+      "total": 3,
+      "own": 3,
+      "by_type": {
+        "Loi": 3
+      }
+    },
+    {
+      "identifier": "L",
+      "title": "Domaine public et travaux",
       "total": 1,
       "own": 1,
       "by_type": {
@@ -288,12 +311,53 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Règlement": 2
+        "Loi": 3,
+        "Règlement": 3
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Loi": 2
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Loi": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.30",
+              "title": "Berufsorientierung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
@@ -333,34 +397,57 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.30",
+              "title": "Sport",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 2,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "5.30",
           "title": "Innere Sicherheit",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 2,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "5.30.20",
               "title": "Öffentliche Ruhe und Ordnung",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Règlement": 1
+                "Règlement": 2,
+                "Loi": 1
               },
               "children": [
                 {
@@ -370,6 +457,100 @@
                   "own": 1,
                   "by_type": {
                     "Règlement": 1
+                  }
+                },
+                {
+                  "identifier": "5.30.20.20",
+                  "title": "Gemeingebrauch",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Règlement": 1,
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.60",
+                  "title": "Quellensteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.30",
+              "title": "Strassen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.30.10",
+                  "title": "Nationalstrassen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
                   }
                 }
               ]
@@ -463,7 +644,7 @@
     }
   ],
   "languages_available": {
-    "fr": 20
+    "fr": 33
   },
   "available_years_for_entity": [
     "1564",
@@ -472,24 +653,28 @@
     "1815",
     "1816",
     "1817",
-    "1834",
+    "1841",
     "1847",
     "1849",
     "1856",
+    "1858",
     "1861",
     "1872",
     "1875",
+    "1876",
     "1878",
     "1881",
     "1887",
     "1889",
     "1892",
+    "1893",
     "1895",
     "1899",
     "1901",
     "1902",
     "1903",
     "1907",
+    "1908",
     "1909",
     "1918",
     "1923",
@@ -499,8 +684,11 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1935",
     "1937",
+    "1938",
     "1940",
     "1941",
     "1942",

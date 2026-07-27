@@ -1,8 +1,9 @@
 {
   "year": "1910",
+  "year_semantics": "enactment",
   "entity": "NE",
-  "total": 14,
-  "categorized": 14,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -32,6 +33,13 @@
         "2.10.20.10 Vormundschaft": 1
       }
     },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "211 Loi introductive": 1
+      },
+      "by_global_category": {}
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
@@ -55,23 +63,34 @@
     {
       "identifier": "2",
       "title": "Droit privé – Procédure civile – Exécution",
-      "total": 10,
+      "total": 11,
       "own": 0,
       "by_type": {
         "Règlement": 5,
-        "Autre": 5
+        "Autre": 5,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Dispositions complémentaires et d'exécution du code civil",
-          "total": 10,
+          "total": 11,
           "own": 0,
           "by_type": {
             "Règlement": 5,
-            "Autre": 5
+            "Autre": 5,
+            "Loi": 1
           },
           "children": [
+            {
+              "identifier": "211",
+              "title": "Loi introductive",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            },
             {
               "identifier": "213",
               "title": "Droit de la famille",
@@ -392,10 +411,11 @@
     }
   ],
   "languages_available": {
-    "fr": 14
+    "fr": 15
   },
   "available_years_for_entity": [
     "1832",
+    "1857",
     "1858",
     "1864",
     "1866",
@@ -518,11 +538,14 @@
     "2025"
   ],
   "available_entities_for_year": [
+    "BE",
+    "BS",
     "CH",
+    "FR",
     "GL",
+    "LU",
     "NE",
-    "UR",
-    "VD",
-    "ZG"
+    "SG",
+    "VD"
   ]
 }

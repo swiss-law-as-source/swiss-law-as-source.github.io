@@ -1,30 +1,54 @@
 {
   "year": "1996",
+  "year_semantics": "enactment",
   "entity": "GL",
-  "total": 4,
-  "categorized": 4,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "I D/24 Gesetzessammlung und Veröffentlichung der Erlasse": 1,
+        "I E Gleichstellung von Frau und Mann": 1,
         "II C/2 Angestellte des Kantons": 1
       },
       "by_global_category": {
         "1.10.100.10 Gesetzessammlungen": 1,
+        "1.10.90.10 Gleichstellung von Mann und Frau": 1,
         "1.20.20.40.40 Löhne, Entschädigungen": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "VI C/4 Gebühren – Taxen – Abgaben": 1,
         "VIII A/211 Allgemeines": 1,
         "VIII B/22 Abwasserreinigung": 1
       },
       "by_global_category": {
+        "6.20.70 Hundesteuern": 1,
         "8.10.20.10 Kantonsspitäler": 1,
         "7.60.20 Gewässerschutz": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "III F Strafprozessrecht und Strafvollzug": 1,
+        "IX D/633 Bekämpfung von Tierseuchen": 1
+      },
+      "by_global_category": {
+        "5.30.20.10 Hunde, gefährliche Tiere": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "VIII D/22 Unfallversicherung": 1
+      },
+      "by_global_category": {
+        "8.30.70 UVG": 1
       }
     }
   },
@@ -32,10 +56,10 @@
     {
       "identifier": "I",
       "title": "Verfassung und Rechte des Volkes",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 2
       }
     },
     {
@@ -48,12 +72,40 @@
       }
     },
     {
+      "identifier": "III",
+      "title": "Gerichtswesen – Zivilrecht – Strafrecht",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Verordnung": 1
+      }
+    },
+    {
+      "identifier": "VI",
+      "title": "Finanzen – Regalien",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Anderes": 1
+      }
+    },
+    {
       "identifier": "VIII",
       "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
-      "total": 2,
-      "own": 2,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Gesetz": 1
+      }
+    },
+    {
+      "identifier": "IX",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Verordnung": 1
       }
     }
   ],
@@ -61,21 +113,41 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 2
+        "Verordnung des Parlaments (Dekret)": 3
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung des Parlaments (Dekret)": 2
           },
           "children": [
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.10",
+                  "title": "Gleichstellung von Mann und Frau",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "1.10.100",
               "title": "Amtliche Veröffentlichungen",
@@ -143,6 +215,79 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.20",
+              "title": "Öffentliche Ruhe und Ordnung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.20.10",
+                  "title": "Hunde, gefährliche Tiere",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.70",
+              "title": "Hundesteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
@@ -176,10 +321,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -212,38 +358,71 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.70",
+              "title": "UVG",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 9
   },
   "available_years_for_entity": [
     "1807",
     "1835",
     "1859",
+    "1862",
     "1878",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
     "1905",
-    "1906",
     "1909",
     "1910",
+    "1911",
     "1915",
+    "1918",
+    "1922",
+    "1923",
     "1927",
     "1928",
     "1929",
     "1934",
+    "1941",
+    "1943",
     "1944",
-    "1946",
+    "1945",
+    "1947",
+    "1948",
     "1949",
+    "1950",
     "1951",
     "1957",
+    "1958",
+    "1959",
     "1960",
     "1962",
+    "1963",
     "1964",
     "1965",
     "1966",
@@ -265,6 +444,7 @@
     "1983",
     "1984",
     "1985",
+    "1986",
     "1987",
     "1988",
     "1989",

@@ -1,46 +1,136 @@
 {
   "year": "1987",
+  "year_semantics": "enactment",
   "entity": "BL",
-  "total": 2,
-  "categorized": 2,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "36 Staatsbeiträge": 1
+        "18 Gemeinden": 1
       },
       "by_global_category": {
-        "4.70.20 Weiterbildung Lehrpersonen": 1
+        "6.10.20.10 Interkantonale Zusammenarbeit mit Lastenausgleich": 1
       }
     },
     "Verordnung": {
       "total": 1,
       "by_topic": {
-        "36 Staatsbeiträge": 1
+        "31 Finanzhaushalt": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "6.10.10 Budget und Rechnung": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "643 Weiterführende Schulen": 1
+      },
+      "by_global_category": {
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "78 Umweltschutz": 1
+      },
+      "by_global_category": {
+        "7.60.20 Gewässerschutz": 1
+      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "3",
-      "title": "Finanzen",
-      "total": 2,
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "18",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Finanzen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "36",
-          "title": "Staatsbeiträge",
-          "total": 2,
-          "own": 2,
+          "identifier": "31",
+          "title": "Finanzhaushalt",
+          "total": 1,
+          "own": 1,
           "by_type": {
-            "Anderes": 1,
             "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Kultur, Bildung, Ausbildung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "64",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "643",
+              "title": "Weiterführende Schulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Öffentliche Sicherheit, Umweltschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "78",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
           }
         }
       ]
@@ -53,25 +143,109 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Reglement": 1
       },
       "children": [
         {
-          "identifier": "4.70",
-          "title": "Weiterbildung (Quartärstufe)",
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Reglement": 1
           },
           "children": [
             {
-              "identifier": "4.70.20",
-              "title": "Weiterbildung Lehrpersonen",
+              "identifier": "4.20.20",
+              "title": "Fachmittelschulen, Diplommittelschulen",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.10",
+              "title": "Budget und Rechnung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "6.10.20",
+              "title": "Finanzausgleich",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.10.20.10",
+                  "title": "Interkantonale Zusammenarbeit mit Lastenausgleich",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -80,27 +254,41 @@
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 4
   },
   "available_years_for_entity": [
     "1815",
     "1828",
-    "1829",
     "1834",
     "1836",
+    "1865",
     "1870",
     "1876",
     "1881",
-    "1903",
+    "1888",
+    "1889",
+    "1892",
+    "1896",
+    "1902",
+    "1907",
+    "1908",
     "1909",
+    "1911",
+    "1914",
     "1916",
     "1919",
     "1920",
+    "1921",
+    "1922",
+    "1923",
     "1925",
+    "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1944",
+    "1946",
     "1947",
     "1948",
     "1949",
@@ -108,8 +296,10 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -117,6 +307,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",

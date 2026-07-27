@@ -1,79 +1,126 @@
 {
   "year": "2005",
+  "year_semantics": "enactment",
   "entity": "SO",
-  "total": 18,
-  "categorized": 18,
+  "total": 24,
+  "categorized": 24,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 8,
+      "total": 9,
       "by_topic": {
         "817.1 Kantonales Spital": 2,
-        "415 Hochschulen": 1,
+        "124.2 Haftung des Gemeinwesens": 1,
+        "413.6 Unterricht": 1,
         "512.1 Fremdenpolizei": 1,
-        "812.5 Umweltgefährdende Stoffe": 1,
-        "823.2 Ausländische Arbeitnehmer": 1,
-        "926.71 Tierseuchenbekämpfung": 1
+        "513.6 Glücks- und Geschicklichkeitsspiele": 1,
+        "812.5 Umweltgefährdende Stoffe": 1
       },
       "by_global_category": {
-        "4.100.20 Schulgelder": 1,
-        "1.10.70.20.20 Zwangsmassnahmen": 1,
-        "8.20.20.20 Entsendung von Arbeitnehmern": 1,
-        "7.70.20 Tierschutz": 1
+        "1.20.40 Staatshaftung": 1,
+        "1.30.20 Gemeindebeiträge": 1,
+        "1.10.70.20.10 Asylwesen": 1
       }
     },
     "Anderes": {
-      "total": 5,
+      "total": 8,
       "by_topic": {
         "416.3 Berufslehre": 3,
         "411.26 Hochschulen, Fachschulen (Interkantonale Vereinbarungen)": 1,
+        "414.48 Absenzen- und Disziplinarwesen": 1,
         "425.1 Verband der Evangelisch-Reformierten Kirchgemeinden des Kantons Solothurn": 1
       },
       "by_global_category": {
+        "4.20.10 Mittelschule": 1,
         "8.10.30.80 Fusspfleger": 1,
         "1.40.30 Evangelisch-Reformierte Kirche": 1
       }
     },
+    "Reglement": {
+      "total": 5,
+      "by_topic": {
+        "414.47 Schlussprüfungen": 2,
+        "414.48 Absenzen- und Disziplinarwesen": 2,
+        "837.5 Stiftungen unter staatlicher Verwaltung": 1
+      },
+      "by_global_category": {
+        "4.20.10 Mittelschule": 3,
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
-      "total": 3,
+      "total": 2,
       "by_topic": {
         "511.5 Interkantonale Zusammenarbeit": 1,
-        "513.6 Glücks- und Geschicklichkeitsspiele": 1,
-        "817.2 Interkantonale Verträge über Spitalleistungen": 1
+        "513.6 Glücks- und Geschicklichkeitsspiele": 1
       },
       "by_global_category": {
         "7.50.20.20 Strassenverkehrspolizei": 1
-      }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "833 Familienversicherung": 1,
-        "835 Ausgleichskasse": 1
-      },
-      "by_global_category": {
-        "8.70.10 Sozialhilfe": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "Schule, Kirche, Kultur",
-      "total": 6,
+      "identifier": "1",
+      "title": "Grundlagen, Organisation, Gemeinden",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 5,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "Organisation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "124",
+              "title": "Verwaltungsrechtspflege und Haftung des Gemeinwesens",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "124.2",
+                  "title": "Haftung des Gemeinwesens",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule, Kirche, Kultur",
+      "total": 11,
+      "own": 0,
+      "by_type": {
+        "Anderes": 6,
+        "Reglement": 4,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 5,
+          "total": 10,
           "own": 0,
           "by_type": {
-            "Anderes": 4,
+            "Anderes": 5,
+            "Reglement": 4,
             "Verordnung": 1
           },
           "children": [
@@ -109,13 +156,67 @@
               ]
             },
             {
-              "identifier": "415",
-              "title": "Hochschulen",
+              "identifier": "413",
+              "title": "Volksschule",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
                 "Verordnung": 1
-              }
+              },
+              "children": [
+                {
+                  "identifier": "413.6",
+                  "title": "Unterricht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "414",
+              "title": "Mittelschulen",
+              "total": 5,
+              "own": 0,
+              "by_type": {
+                "Reglement": 4,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.4",
+                  "title": "Schüler",
+                  "total": 5,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 4,
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "414.47",
+                      "title": "Schlussprüfungen",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Reglement": 2
+                      }
+                    },
+                    {
+                      "identifier": "414.48",
+                      "title": "Absenzen- und Disziplinarwesen",
+                      "total": 3,
+                      "own": 3,
+                      "by_type": {
+                        "Reglement": 2,
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             },
             {
               "identifier": "416",
@@ -175,21 +276,21 @@
     {
       "identifier": "5",
       "title": "Polizei, Militär, Zivilschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 2,
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "51",
           "title": "Polizei",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Interkantonale Vereinbarung": 2,
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
@@ -235,19 +336,21 @@
             {
               "identifier": "513",
               "title": "Gewerbe- und Handelspolizei",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Interkantonale Vereinbarung": 1,
+                "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "513.6",
                   "title": "Glücks- und Geschicklichkeitsspiele",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
+                    "Interkantonale Vereinbarung": 1,
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -259,22 +362,20 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 7,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 4,
-        "Gesetz": 2,
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 3,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 4,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 3,
-            "Interkantonale Vereinbarung": 1
+            "Verordnung": 3
           },
           "children": [
             {
@@ -300,11 +401,10 @@
             {
               "identifier": "817",
               "title": "Spitalwesen",
-              "total": 3,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 2,
-                "Interkantonale Vereinbarung": 1
+                "Verordnung": 2
               },
               "children": [
                 {
@@ -315,46 +415,6 @@
                   "by_type": {
                     "Verordnung": 2
                   }
-                },
-                {
-                  "identifier": "817.2",
-                  "title": "Interkantonale Verträge über Spitalleistungen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "82",
-          "title": "Arbeit",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "823",
-              "title": "Arbeitsmarkt und Arbeitsbeschaffung",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "823.2",
-                  "title": "Ausländische Arbeitnehmer",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
                 }
               ]
             }
@@ -363,82 +423,20 @@
         {
           "identifier": "83",
           "title": "Sozialrecht",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 2
-          },
-          "children": [
-            {
-              "identifier": "833",
-              "title": "Familienversicherung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            },
-            {
-              "identifier": "835",
-              "title": "Ausgleichskasse",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Volkswirtschaft",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "92",
-          "title": "Landwirtschaft",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Reglement": 1
           },
           "children": [
             {
-              "identifier": "926",
-              "title": "Produktion und Absatz. Verwertungsmassnahmen",
+              "identifier": "837.5",
+              "title": "Stiftungen unter staatlicher Verwaltung",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "926.7",
-                  "title": "Tierseuchenbekämpfung, Viehversicherung, Viehhandel",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "926.71",
-                      "title": "Tierseuchenbekämpfung",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung": 1
-                      }
-                    }
-                  ]
-                }
-              ]
+                "Reglement": 1
+              }
             }
           ]
         }
@@ -449,10 +447,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 3,
         "Anderes": 1
       },
       "children": [
@@ -484,8 +482,8 @@
                   },
                   "children": [
                     {
-                      "identifier": "1.10.70.20.20",
-                      "title": "Zwangsmassnahmen",
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
                       "total": 1,
                       "own": 1,
                       "by_type": {
@@ -495,6 +493,46 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.40",
+              "title": "Staatshaftung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.20",
+              "title": "Gemeindebeiträge",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         },
@@ -523,28 +561,40 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Reglement": 4,
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "4.100",
-          "title": "Ausbildungsbeiträge",
-          "total": 1,
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Reglement": 4,
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "4.100.20",
-              "title": "Schulgelder",
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 4,
+              "own": 4,
+              "by_type": {
+                "Reglement": 3,
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "4.20.20",
+              "title": "Fachmittelschulen, Diplommittelschulen",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Reglement": 1
               }
             }
           ]
@@ -554,11 +604,10 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Verordnung": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -591,38 +640,16 @@
               ]
             }
           ]
-        },
-        {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "7.70.20",
-              "title": "Tierschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1,
-        "Gesetz": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -655,65 +682,15 @@
               ]
             }
           ]
-        },
-        {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "8.20.20",
-              "title": "Arbeitsmarkt",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.20.20.20",
-                  "title": "Entsendung von Arbeitnehmern",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "8.70",
-          "title": "Fürsorge",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "8.70.10",
-              "title": "Sozialhilfe",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 18
+    "de": 24
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -722,6 +699,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -729,23 +709,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -758,9 +742,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",

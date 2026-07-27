@@ -1,8 +1,9 @@
 {
   "year": "2001",
+  "year_semantics": "enactment",
   "entity": "NE",
-  "total": 18,
-  "categorized": 18,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -38,6 +39,17 @@
         "4.120.30 Schulaufsicht": 1
       }
     },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "172.4 Fonds de compensation": 1,
+        "401 École enfantine": 1
+      },
+      "by_global_category": {
+        "1.30.30 Gemeindesubventionen": 1,
+        "4.10.20 Kindergarten": 1
+      }
+    },
     "Reglement": {
       "total": 2,
       "by_topic": {
@@ -56,15 +68,6 @@
       },
       "by_global_category": {
         "6.20.80 Vergnügungssteuern": 1
-      }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "172.4 Fonds de compensation": 1
-      },
-      "by_global_category": {
-        "1.30.30 Gemeindesubventionen": 1
       }
     }
   },
@@ -160,20 +163,22 @@
     {
       "identifier": "4",
       "title": "Enseignement – Science – Culture – Environnement",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Autre": 5,
+        "Loi": 1,
         "Accord intercantonal": 1
       },
       "children": [
         {
           "identifier": "40",
           "title": "Enseignement préscolaire",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Autre": 2
+            "Autre": 2,
+            "Loi": 1
           },
           "children": [
             {
@@ -183,6 +188,15 @@
               "own": 2,
               "by_type": {
                 "Autre": 2
+              }
+            },
+            {
+              "identifier": "401",
+              "title": "École enfantine",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
               }
             }
           ]
@@ -455,20 +469,22 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Autre": 4,
+        "Loi": 1,
         "Accord intercantonal": 1
       },
       "children": [
         {
           "identifier": "4.10",
           "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Autre": 1,
+            "Loi": 1
           },
           "children": [
             {
@@ -478,6 +494,15 @@
               "own": 1,
               "by_type": {
                 "Autre": 1
+              }
+            },
+            {
+              "identifier": "4.10.20",
+              "title": "Kindergarten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
               }
             }
           ]
@@ -681,10 +706,11 @@
     }
   ],
   "languages_available": {
-    "fr": 18
+    "fr": 19
   },
   "available_years_for_entity": [
     "1832",
+    "1857",
     "1858",
     "1864",
     "1866",

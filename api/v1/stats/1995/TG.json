@@ -1,29 +1,49 @@
 {
   "year": "1995",
+  "year_semantics": "enactment",
   "entity": "TG",
-  "total": 4,
-  "categorized": 4,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "187.2 Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung": 1,
-        "188.2 Erlasse der Katholischen Landeskirche": 1
+        "188.2 Erlasse der Katholischen Landeskirche": 1,
+        "923 Fischerei": 1
       },
       "by_global_category": {
         "1.40.30 Evangelisch-Reformierte Kirche": 1,
         "1.40.10 Römisch-Katholische Kirche": 1
       }
     },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "708 Feuerschutz. Feuerpolizei": 1,
+        "812 Heilmittel. Betäubungsmittel. Tabak": 1
+      },
+      "by_global_category": {
+        "5.20.30.30 Kaminfeger": 1,
+        "8.10.120.20 Rauchverbote": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
-        "720 Allgemein. Submission": 1
+        "413.2 Kantonsschulen. Maturitätsschule für Erwachsene": 1
       },
       "by_global_category": {
-        "7.30.40 Submission": 1
+        "4.70.10 Erwachsenenbildung": 1
       }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "832 Kranken- und Unfallversicherung": 1
+      },
+      "by_global_category": {}
     },
     "Reglement": {
       "total": 1,
@@ -99,8 +119,8 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -108,8 +128,8 @@
       },
       "children": [
         {
-          "identifier": "72",
-          "title": "Werke",
+          "identifier": "41",
+          "title": "Schule",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -117,12 +137,106 @@
           },
           "children": [
             {
-              "identifier": "720",
-              "title": "Allgemein. Submission",
+              "identifier": "413",
+              "title": "Mittelschulen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.2",
+                  "title": "Kantonsschulen. Maturitätsschule für Erwachsene",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "70",
+          "title": "Raumplanung. Bauwesen. Feuerschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "708",
+              "title": "Feuerschutz. Feuerpolizei",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "812",
+              "title": "Heilmittel. Betäubungsmittel. Tabak",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Kranken- und Unfallversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -132,12 +246,33 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "92",
+          "title": "Forstwesen. Jagd. Fischerei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "923",
+              "title": "Fischerei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "95",
           "title": "Staatliche Unternehmungen. Bankwesen",
@@ -203,6 +338,79 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.70",
+          "title": "Weiterbildung (Quartärstufe)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.70.10",
+              "title": "Erwachsenenbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.30",
+                  "title": "Kaminfeger",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
@@ -234,31 +442,42 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "7.30",
-          "title": "Öffentliche Werke",
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "7.30.40",
-              "title": "Submission",
+              "identifier": "8.10.120",
+              "title": "Suchtprävention",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.120.20",
+                  "title": "Rauchverbote",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -266,37 +485,54 @@
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 8
   },
   "available_years_for_entity": [
-    "1826",
+    "1669",
+    "1803",
+    "1815",
+    "1825",
     "1828",
-    "1829",
     "1831",
     "1834",
     "1846",
+    "1861",
     "1869",
+    "1870",
     "1886",
+    "1887",
     "1889",
     "1890",
-    "1891",
-    "1892",
     "1896",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1911",
     "1914",
+    "1917",
     "1918",
+    "1923",
+    "1925",
     "1926",
     "1927",
+    "1930",
     "1931",
     "1933",
     "1934",
     "1937",
     "1938",
-    "1949",
+    "1941",
+    "1943",
+    "1947",
+    "1948",
+    "1951",
     "1955",
+    "1956",
     "1958",
+    "1959",
+    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
@@ -305,7 +541,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",

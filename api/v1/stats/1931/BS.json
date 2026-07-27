@@ -1,10 +1,22 @@
 {
   "year": "1931",
+  "year_semantics": "enactment",
   "entity": "BS",
-  "total": 2,
-  "categorized": 2,
+  "total": 3,
+  "categorized": 3,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "321 Übertragbare Krankheiten": 1,
+        "562 Handel · Märkte · Schaustellungen": 1
+      },
+      "by_global_category": {
+        "8.10.100.20 Tuberkulose": 1,
+        "9.60.60 Reisendengewerbe": 1
+      }
+    },
     "Anderes": {
       "total": 1,
       "by_topic": {
@@ -13,18 +25,40 @@
       "by_global_category": {
         "4.120.80 Schulleitung": 1
       }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "562 Handel · Märkte · Schaustellungen": 1
-      },
-      "by_global_category": {
-        "9.60.60 Reisendengewerbe": 1
-      }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "3",
+      "title": "Gesundheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "32",
+          "title": "Krankheiten · Kranken- und Betagtenpflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "321",
+              "title": "Übertragbare Krankheiten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
@@ -121,6 +155,48 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.100",
+              "title": "Krankheitsbekämpfung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.100.20",
+                  "title": "Tuberkulose",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 1,
@@ -153,43 +229,53 @@
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 3
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -215,7 +301,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",
@@ -289,11 +374,15 @@
     "BE",
     "BS",
     "CH",
+    "FR",
     "GE",
     "NE",
+    "OW",
+    "SG",
     "SO",
     "TG",
     "UR",
+    "VS",
     "ZH"
   ]
 }

@@ -1,28 +1,58 @@
 {
   "year": "1979",
+  "year_semantics": "enactment",
   "entity": "TG",
-  "total": 3,
-  "categorized": 3,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
+        "188.3 Übereinkünfte mit Nachbarkantonen": 2,
         "725 Strassenwesen": 1,
         "814.3 Gewässerschutz- und Abfallbeseitigungsanlagen": 1
       },
       "by_global_category": {
+        "1.40.10 Römisch-Katholische Kirche": 2,
         "7.30.30.10 Nationalstrassen": 1,
         "7.60.20 Gewässerschutz": 1
       }
     },
-    "Anderes": {
-      "total": 1,
+    "Verordnung": {
+      "total": 3,
       "by_topic": {
-        "11 Kantonsgebiet. Wappen": 1
+        "170 Allgemein": 1,
+        "84 Wohnverhältnisse": 1,
+        "916 Bekämpfung von Tierseuchen. Tierkrankheiten. Viehhandel": 1
       },
       "by_global_category": {
-        "1.10.20 Wappen": 1
+        "1.10.100.10 Gesetzessammlungen": 1,
+        "8.40.20 Wohnverhältnisse in Berggebieten": 1,
+        "8.10.30.100 Tierärzte": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "170 Allgemein": 1
+      },
+      "by_global_category": {
+        "1.20.40 Staatshaftung": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {},
+      "by_global_category": {}
+    },
+    "Staatsvertrag": {
+      "total": 1,
+      "by_topic": {
+        "672 Gegenrechtserklärungen": 1
+      },
+      "by_global_category": {
+        "6.20.100 Steuerbefreiung und -erleichterungen": 1
       }
     }
   },
@@ -30,20 +60,97 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Interkantonale Vereinbarung": 2,
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "11",
-          "title": "Kantonsgebiet. Wappen",
-          "total": 1,
-          "own": 1,
+          "identifier": "17",
+          "title": "Staatliche Gewalten. Behörden",
+          "total": 2,
+          "own": 0,
           "by_type": {
-            "Anderes": 1
-          }
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "170",
+              "title": "Allgemein",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "18",
+          "title": "Staat und Kirche",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          },
+          "children": [
+            {
+              "identifier": "188",
+              "title": "Katholische Landeskirche",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
+              },
+              "children": [
+                {
+                  "identifier": "188.3",
+                  "title": "Übereinkünfte mit Nachbarkantonen",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Staatsvertrag": 1
+      },
+      "children": [
+        {
+          "identifier": "67",
+          "title": "Ausschluss von Steuerabkommen. Gegenrechtserklärungen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Staatsvertrag": 1
+          },
+          "children": [
+            {
+              "identifier": "672",
+              "title": "Gegenrechtserklärungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Staatsvertrag": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -81,10 +188,11 @@
     {
       "identifier": "8",
       "title": "Gesundheit - Arbeit - Soziale Sicherheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -117,6 +225,46 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "84",
+          "title": "Wohnverhältnisse",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "91",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "916",
+              "title": "Bekämpfung von Tierseuchen. Tierkrankheiten. Viehhandel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
@@ -125,10 +273,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Interkantonale Vereinbarung": 2,
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -137,16 +287,98 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "1.10.20",
-              "title": "Wappen",
+              "identifier": "1.10.100",
+              "title": "Amtliche Veröffentlichungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.100.10",
+                  "title": "Gesetzessammlungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.40",
+              "title": "Staatshaftung",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Staatsvertrag": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Staatsvertrag": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.100",
+              "title": "Steuerbefreiung und -erleichterungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Staatsvertrag": 1
               }
             }
           ]
@@ -214,40 +446,119 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.100",
+                  "title": "Tierärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.40",
+          "title": "Wohnverhältnisse",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.40.20",
+              "title": "Wohnverhältnisse in Berggebieten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 10
   },
   "available_years_for_entity": [
-    "1826",
+    "1669",
+    "1803",
+    "1815",
+    "1825",
     "1828",
-    "1829",
     "1831",
     "1834",
     "1846",
+    "1861",
     "1869",
+    "1870",
     "1886",
+    "1887",
     "1889",
     "1890",
-    "1891",
-    "1892",
     "1896",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1911",
     "1914",
+    "1917",
     "1918",
+    "1923",
+    "1925",
     "1926",
     "1927",
+    "1930",
     "1931",
     "1933",
     "1934",
     "1937",
     "1938",
-    "1949",
+    "1941",
+    "1943",
+    "1947",
+    "1948",
+    "1951",
     "1955",
+    "1956",
     "1958",
+    "1959",
+    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
@@ -256,7 +567,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -337,6 +647,8 @@
     "TI",
     "UR",
     "VD",
+    "VS",
+    "ZG",
     "ZH"
   ]
 }

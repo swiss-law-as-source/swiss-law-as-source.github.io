@@ -1,8 +1,9 @@
 {
   "year": "1965",
+  "year_semantics": "enactment",
   "entity": "SO",
-  "total": 3,
-  "categorized": 3,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -14,6 +15,15 @@
         "4.90.30 Ausbildung": 1
       }
     },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "613.4 Verrechnungssteuer": 1
+      },
+      "by_global_category": {
+        "6.20.60 Verrechnungssteuer": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -23,13 +33,13 @@
         "6.20.40 Erbschafts- und Schenkungssteuern": 1
       }
     },
-    "Verordnung": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "725.2 Nationalstrassen": 1
+        "836.1 Wohnungsbau": 1
       },
       "by_global_category": {
-        "7.30.30.10 Nationalstrassen": 1
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
       }
     }
   },
@@ -79,21 +89,43 @@
     {
       "identifier": "6",
       "title": "Finanzen, Regalien",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "61",
           "title": "Finanzen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "613",
+              "title": "Bezug der Bundessteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "613.4",
+                  "title": "Verrechnungssteuer",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "614",
               "title": "Kantonale Steuern",
@@ -119,39 +151,39 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Bauwesen, öffentliche Werke, Verkehr",
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "72",
-          "title": "Öffentliche Werke",
+          "identifier": "83",
+          "title": "Sozialrecht",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "725",
-              "title": "Tiefbau",
+              "identifier": "836",
+              "title": "Wohnungsbau, Hypothekar-Hilfe",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
-                  "identifier": "725.2",
-                  "title": "Nationalstrassen",
+                  "identifier": "836.1",
+                  "title": "Wohnungsbau",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -196,19 +228,21 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "6.20",
           "title": "Steuern",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -219,48 +253,46 @@
               "by_type": {
                 "Interkantonale Vereinbarung": 1
               }
+            },
+            {
+              "identifier": "6.20.60",
+              "title": "Verrechnungssteuer",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "7.30",
-          "title": "Öffentliche Werke",
+          "identifier": "8.40",
+          "title": "Wohnverhältnisse",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "7.30.30",
-              "title": "Strassen",
+              "identifier": "8.40.10",
+              "title": "Eigentums- und Wohnungsbauförderung",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "7.30.30.10",
-                  "title": "Nationalstrassen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -268,9 +300,10 @@
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 4
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -279,6 +312,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -286,23 +322,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -315,9 +355,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",
@@ -395,6 +435,7 @@
   "available_entities_for_year": [
     "AG",
     "AR",
+    "BE",
     "BL",
     "BS",
     "CH",
@@ -402,6 +443,7 @@
     "GE",
     "GL",
     "GR",
+    "LU",
     "NE",
     "NW",
     "OW",
@@ -411,8 +453,10 @@
     "SZ",
     "TG",
     "TI",
+    "UR",
     "VD",
     "VS",
+    "ZG",
     "ZH"
   ]
 }

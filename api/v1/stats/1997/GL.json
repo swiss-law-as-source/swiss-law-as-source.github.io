@@ -1,46 +1,67 @@
 {
   "year": "1997",
+  "year_semantics": "enactment",
   "entity": "GL",
-  "total": 4,
-  "categorized": 4,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "III D Schuldbetreibung und Konkurs": 1,
+        "IX B/25 Handelspolizei": 1,
+        "VI E/31 Allgemeines": 1
+      },
+      "by_global_category": {
+        "5.30.30 Waffen und Munition": 1,
+        "6.30.60.10 Patente": 1
+      }
+    },
     "Anderes": {
       "total": 2,
       "by_topic": {
-        "VI C/4 Gebühren – Taxen – Abgaben": 1,
         "VII D/6 Öffentlicher Verkehr": 1
       },
       "by_global_category": {
-        "6.20.70 Hundesteuern": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "IX A Allgemeines": 1
+      },
+      "by_global_category": {
+        "9.40 Wirtschaftliche Entwicklung in Berggebieten": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
-        "IX D/5 Bildungs- und Forschungswesen": 1
+        "VI E/31 Allgemeines": 1
       },
       "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "VIII D/111 Kantonale Versicherung": 1
-      },
-      "by_global_category": {
-        "8.30.30 AHV / IV": 1
-      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "VI",
-      "title": "Finanzen – Regalien",
+      "identifier": "III",
+      "title": "Gerichtswesen – Zivilrecht – Strafrecht",
       "total": 1,
       "own": 1,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 1
+      }
+    },
+    {
+      "identifier": "VI",
+      "title": "Finanzen – Regalien",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1
       }
     },
     {
@@ -53,32 +74,56 @@
       }
     },
     {
-      "identifier": "VIII",
-      "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
-      "total": 1,
-      "own": 1,
-      "by_type": {
-        "Gesetz": 1
-      }
-    },
-    {
       "identifier": "IX",
       "title": "Volkswirtschaft",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Gesetz": 1,
+        "Verordnung": 1
       }
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.30",
+              "title": "Waffen und Munition",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -102,30 +147,41 @@
           ]
         },
         {
-          "identifier": "6.20",
-          "title": "Steuern",
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "6.20.70",
-              "title": "Hundesteuern",
+              "identifier": "6.30.60",
+              "title": "Fischerei",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Anderes": 1
-              }
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.30.60.10",
+                  "title": "Patente",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "9",
+      "title": "Wirtschaft",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -133,56 +189,58 @@
       },
       "children": [
         {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
+          "identifier": "9.40",
+          "title": "Wirtschaftliche Entwicklung in Berggebieten",
           "total": 1,
-          "own": 0,
+          "own": 1,
           "by_type": {
             "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "8.30.30",
-              "title": "AHV / IV",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
+          }
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 7
   },
   "available_years_for_entity": [
     "1807",
     "1835",
     "1859",
+    "1862",
     "1878",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
     "1905",
-    "1906",
     "1909",
     "1910",
+    "1911",
     "1915",
+    "1918",
+    "1922",
+    "1923",
     "1927",
     "1928",
     "1929",
     "1934",
+    "1941",
+    "1943",
     "1944",
-    "1946",
+    "1945",
+    "1947",
+    "1948",
     "1949",
+    "1950",
     "1951",
     "1957",
+    "1958",
+    "1959",
     "1960",
     "1962",
+    "1963",
     "1964",
     "1965",
     "1966",
@@ -204,6 +262,7 @@
     "1983",
     "1984",
     "1985",
+    "1986",
     "1987",
     "1988",
     "1989",

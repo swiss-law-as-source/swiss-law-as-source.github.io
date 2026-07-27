@@ -1,55 +1,89 @@
 {
   "year": "2002",
+  "year_semantics": "enactment",
   "entity": "AR",
-  "total": 2,
-  "categorized": 2,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "422 Natur- und Heimatschutz, Denkmalpflege": 1
-      },
-      "by_global_category": {
-        "7.70.40 Pilze": 1
-      }
-    },
     "Verordnung": {
-      "total": 1,
+      "total": 5,
       "by_topic": {
+        "521 Allgemeine Bestimmungen": 3,
+        "811 Allgemeine Bestimmungen, medizinische und andere Berufe im Gesundheitswesen": 1,
         "831 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
+        "1.20.50 Datenschutz": 1,
+        "5.30.10.40 Gebühren": 1,
+        "8.30.60.40 Einschränkung der Zulassung von Leistungserbringern": 1,
         "8.30.20 ATSG": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "511 Allgemeine Bestimmungen": 2
+      },
+      "by_global_category": {}
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "852 Heime und andere Fürsorgeeinrichtungen": 1
+      },
+      "by_global_category": {
+        "8.70.30.10 Alters- und Pflegeheime": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "Erziehung, Kultur",
-      "total": 1,
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 3,
+        "Gesetz": 2
       },
       "children": [
         {
-          "identifier": "42",
-          "title": "Kultur",
-          "total": 1,
+          "identifier": "51",
+          "title": "Landesverteidigung",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 2
           },
           "children": [
             {
-              "identifier": "422",
-              "title": "Natur- und Heimatschutz, Denkmalpflege",
-              "total": 1,
-              "own": 1,
+              "identifier": "511",
+              "title": "Allgemeine Bestimmungen",
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "52",
+          "title": "Polizei",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3
+          },
+          "children": [
+            {
+              "identifier": "521",
+              "title": "Allgemeine Bestimmungen",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 3
               }
             }
           ]
@@ -59,12 +93,33 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Allgemeine Bestimmungen, medizinische und andere Berufe im Gesundheitswesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "83",
           "title": "Sozialversicherung",
@@ -84,37 +139,99 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "85",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "852",
+              "title": "Heime und andere Fürsorgeeinrichtungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "1",
+      "title": "Staat",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
+          "identifier": "1.20",
+          "title": "Behörden",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "7.70.40",
-              "title": "Pilze",
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.40",
+                  "title": "Gebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -123,19 +240,20 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
@@ -146,6 +264,57 @@
               "by_type": {
                 "Verordnung": 1
               }
+            },
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.40",
+                  "title": "Einschränkung der Zulassung von Leistungserbringern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.10",
+                  "title": "Alters- und Pflegeheime",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -153,27 +322,45 @@
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 8
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
+    "1889",
     "1896",
+    "1900",
+    "1902",
+    "1907",
+    "1908",
+    "1911",
     "1912",
     "1913",
     "1914",
+    "1916",
     "1917",
+    "1923",
     "1924",
     "1925",
+    "1928",
+    "1929",
+    "1930",
     "1931",
+    "1932",
+    "1937",
+    "1941",
+    "1943",
+    "1946",
     "1948",
     "1949",
     "1951",
     "1952",
     "1955",
+    "1956",
     "1957",
-    "1962",
+    "1958",
+    "1959",
     "1963",
     "1964",
     "1965",
@@ -182,16 +369,24 @@
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
+    "1975",
     "1976",
     "1977",
+    "1978",
     "1979",
+    "1980",
     "1981",
+    "1982",
     "1983",
     "1984",
+    "1985",
+    "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
     "1991",
     "1992",
@@ -202,6 +397,7 @@
     "1997",
     "1998",
     "1999",
+    "2000",
     "2001",
     "2002",
     "2003",
@@ -226,8 +422,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

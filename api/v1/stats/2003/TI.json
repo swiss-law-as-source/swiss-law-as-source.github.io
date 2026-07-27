@@ -1,31 +1,38 @@
 {
   "year": "2003",
+  "year_semantics": "enactment",
   "entity": "TI",
-  "total": 21,
-  "categorized": 21,
+  "total": 29,
+  "categorized": 29,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 6,
+      "total": 9,
       "by_topic": {
         "173 Rapporti di impiego": 2,
         "181 Organizzazione del Comune": 1,
         "821 Lotta contro le malattie": 1,
+        "826 Rifiuti di origine animale": 1,
+        "871 Assistenza sociale": 1,
         "A9.3 PROTEZIONE DELLA NATURA, DELLE BELLEZZE NATURALI E DEI BENI CULTURALI": 1,
+        "910 Disposizioni generali": 1,
         "945 Commercio": 1
       },
       "by_global_category": {
         "1.20.20.40.60 Ausbildung, Weiterbildung": 1,
         "7.40.40 Elektrizität": 1,
         "8.10.100.10 Epidemien, Pandemien": 1,
+        "8.10.130.50 Tierkörperentsorgung": 1,
+        "8.70.10 Sozialhilfe": 1,
         "7.70.50 Naturschutz": 1,
         "9.60.60 Reisendengewerbe": 1
       }
     },
     "Anderes": {
-      "total": 6,
+      "total": 7,
       "by_topic": {
         "A6.4 INTERVENTO SOCIALE": 3,
+        "A10.2 FINANZE: PUBBLICI TRIBUTI, PLUS VALORE, SUCCESSIONI, DONAZIONI, SUSSIDI": 1,
         "A6.1 SANITÀ": 1,
         "813 Professioni sanitarie": 1,
         "873 Case per anziani": 1
@@ -35,6 +42,22 @@
         "8.70.30.10 Alters- und Pflegeheime": 2,
         "4.120.80 Schulleitung": 1,
         "8.30.30 AHV / IV": 1
+      }
+    },
+    "Gesetz": {
+      "total": 5,
+      "by_topic": {
+        "182 Fusione e separazione dei Comuni": 1,
+        "226 Credito al consumo": 1,
+        "874 Sostegno alle famiglie e ai giovani": 1,
+        "945 Commercio": 1,
+        "947 Prezzi": 1
+      },
+      "by_global_category": {
+        "9.50.10.90 Konsumkredit": 1,
+        "8.70.70 Alimentenbevorschussung": 1,
+        "9.60.60 Reisendengewerbe": 1,
+        "9.60.30 Preisüberwachung": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -48,34 +71,25 @@
         "4.80.20 Hochbegabtenförderung": 1
       }
     },
-    "Gesetz": {
-      "total": 3,
-      "by_topic": {
-        "226 Credito al consumo": 1,
-        "945 Commercio": 1,
-        "947 Prezzi": 1
-      },
-      "by_global_category": {
-        "9.50.10.90 Konsumkredit": 1,
-        "9.60.60 Reisendengewerbe": 1,
-        "9.60.30 Preisüberwachung": 1
-      }
-    },
     "Interkantonale Vereinbarung": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "405 Convenzioni intercantonali in materia scolastica": 1
+        "405 Convenzioni intercantonali in materia scolastica": 1,
+        "A5.1 SCUOLA": 1
       },
       "by_global_category": {
-        "4.80.20 Hochbegabtenförderung": 1
+        "4.80.20 Hochbegabtenförderung": 1,
+        "4.140 Anerkennung von Diplomen": 1
       }
     },
     "Verordnung": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "A5.5 ARTE E CULTURA": 1,
         "914 Credito agricolo": 1
       },
       "by_global_category": {
+        "4.170.20 Archive": 1,
         "9.20.120 Tierseuchen": 1
       }
     }
@@ -84,10 +98,11 @@
     {
       "identifier": "1",
       "title": "STATO - POPOLO - AUTORITÀ",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Regolamento": 3
+        "Regolamento": 3,
+        "Legge": 1
       },
       "children": [
         {
@@ -113,10 +128,11 @@
         {
           "identifier": "18",
           "title": "Comuni, patriziati",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Regolamento": 1
+            "Regolamento": 1,
+            "Legge": 1
           },
           "children": [
             {
@@ -126,6 +142,15 @@
               "own": 1,
               "by_type": {
                 "Regolamento": 1
+              }
+            },
+            {
+              "identifier": "182",
+              "title": "Fusione e separazione dei Comuni",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Legge": 1
               }
             }
           ]
@@ -197,11 +222,12 @@
     {
       "identifier": "8",
       "title": "SANITÀ - AMBIENTE - LAVORO - SICUREZZA SOCIALE",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
+        "Regolamento": 3,
         "Altro": 2,
-        "Regolamento": 1
+        "Legge": 1
       },
       "children": [
         {
@@ -227,15 +253,24 @@
         {
           "identifier": "82",
           "title": "Misure sanitarie",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Regolamento": 1
+            "Regolamento": 2
           },
           "children": [
             {
               "identifier": "821",
               "title": "Lotta contro le malattie",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
+              }
+            },
+            {
+              "identifier": "826",
+              "title": "Rifiuti di origine animale",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -247,12 +282,23 @@
         {
           "identifier": "87",
           "title": "Azione sociale",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Altro": 1
+            "Regolamento": 1,
+            "Altro": 1,
+            "Legge": 1
           },
           "children": [
+            {
+              "identifier": "871",
+              "title": "Assistenza sociale",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
+              }
+            },
             {
               "identifier": "873",
               "title": "Case per anziani",
@@ -260,6 +306,15 @@
               "own": 1,
               "by_type": {
                 "Altro": 1
+              }
+            },
+            {
+              "identifier": "874",
+              "title": "Sostegno alle famiglie e ai giovani",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Legge": 1
               }
             }
           ]
@@ -269,23 +324,33 @@
     {
       "identifier": "9",
       "title": "ECONOMIA",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Regolamento": 2,
         "Legge": 2,
-        "Ordinanza": 1,
-        "Regolamento": 1
+        "Ordinanza": 1
       },
       "children": [
         {
           "identifier": "91",
           "title": "Agricoltura",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Regolamento": 1,
             "Ordinanza": 1
           },
           "children": [
+            {
+              "identifier": "910",
+              "title": "Disposizioni generali",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
+              }
+            },
             {
               "identifier": "914",
               "title": "Credito agricolo",
@@ -333,23 +398,36 @@
     {
       "identifier": "A",
       "title": "Atti abrogati della numerazione prima del luglio 2018",
-      "total": 9,
+      "total": 12,
       "own": 0,
       "by_type": {
+        "Altro": 5,
         "Ordinanza parlamentaria (decreto legislativo)": 4,
-        "Altro": 4,
+        "Accordo intercantonale": 1,
+        "Ordinanza": 1,
         "Regolamento": 1
       },
       "children": [
         {
           "identifier": "A5",
           "title": "ISTRUZIONE, CULTURA E TEMPO LIBERO",
-          "total": 3,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Ordinanza parlamentaria (decreto legislativo)": 3
+            "Ordinanza parlamentaria (decreto legislativo)": 3,
+            "Accordo intercantonale": 1,
+            "Ordinanza": 1
           },
           "children": [
+            {
+              "identifier": "A5.1",
+              "title": "SCUOLA",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Accordo intercantonale": 1
+              }
+            },
             {
               "identifier": "A5.3",
               "title": "UNIVERSITÀ, RICERCA E SCUOLE SUPERIORI",
@@ -357,6 +435,15 @@
               "own": 2,
               "by_type": {
                 "Ordinanza parlamentaria (decreto legislativo)": 2
+              }
+            },
+            {
+              "identifier": "A5.5",
+              "title": "ARTE E CULTURA",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordinanza": 1
               }
             },
             {
@@ -417,6 +504,26 @@
               "own": 1,
               "by_type": {
                 "Regolamento": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "A10",
+          "title": "LAVORO E FINANZE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Altro": 1
+          },
+          "children": [
+            {
+              "identifier": "A10.2",
+              "title": "FINANZE: PUBBLICI TRIBUTI, PLUS VALORE, SUCCESSIONI, DONAZIONI, SUSSIDI",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Altro": 1
               }
             }
           ]
@@ -481,12 +588,13 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Accordo intercantonale": 1,
+        "Accordo intercantonale": 2,
         "Ordinanza parlamentaria (decreto legislativo)": 1,
-        "Altro": 1
+        "Altro": 1,
+        "Ordinanza": 1
       },
       "children": [
         {
@@ -527,6 +635,35 @@
               "own": 1,
               "by_type": {
                 "Altro": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.140",
+          "title": "Anerkennung von Diplomen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Accordo intercantonale": 1
+          }
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordinanza": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.20",
+              "title": "Archive",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordinanza": 1
               }
             }
           ]
@@ -587,21 +724,22 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 6,
+      "total": 9,
       "own": 0,
       "by_type": {
         "Altro": 5,
-        "Regolamento": 1
+        "Regolamento": 3,
+        "Legge": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Altro": 2,
-            "Regolamento": 1
+            "Regolamento": 2
           },
           "children": [
             {
@@ -643,6 +781,26 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Regolamento": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.50",
+                  "title": "Tierkörperentsorgung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Regolamento": 1
+                  }
+                }
+              ]
             }
           ]
         },
@@ -669,12 +827,23 @@
         {
           "identifier": "8.70",
           "title": "Fürsorge",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Altro": 2
+            "Altro": 2,
+            "Regolamento": 1,
+            "Legge": 1
           },
           "children": [
+            {
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
+              }
+            },
             {
               "identifier": "8.70.30",
               "title": "Heime",
@@ -694,6 +863,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.70.70",
+              "title": "Alimentenbevorschussung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Legge": 1
+              }
             }
           ]
         }
@@ -796,7 +974,7 @@
     }
   ],
   "languages_available": {
-    "it": 21
+    "it": 29
   },
   "available_years_for_entity": [
     "1803",
@@ -804,6 +982,8 @@
     "1896",
     "1907",
     "1909",
+    "1911",
+    "1913",
     "1915",
     "1918",
     "1921",
@@ -846,6 +1026,7 @@
     "1980",
     "1981",
     "1982",
+    "1983",
     "1984",
     "1985",
     "1986",

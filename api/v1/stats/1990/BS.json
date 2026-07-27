@@ -1,46 +1,43 @@
 {
   "year": "1990",
+  "year_semantics": "enactment",
   "entity": "BS",
-  "total": 8,
-  "categorized": 8,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
+    "Gemeindeerlass": {
+      "total": 5,
+      "by_topic": {
+        "BaB 155 Zünfte und Gesellschaften": 5
+      },
+      "by_global_category": {
+        "1.30.60 Bürgergemeinden, Allmend": 5
+      }
+    },
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "30 Gesundheit": 1,
+        "812 Arbeitnehmerschutz": 1,
         "952 Strassenverkehr": 1
       },
       "by_global_category": {
         "8.10.10 Ethik": 1,
+        "8.10.110 Unfallbekämpfung": 1,
         "7.10.70 Parkplätze": 1
       }
     },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "340 Heilmittelkontrolle · Gifte": 1,
-        "730 Hochbauten": 1
-      },
-      "by_global_category": {
-        "8.10.70 Heil- und Betäubungsmittel": 1,
-        "7.10.10 Pläne": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "258 Strafvollzug · Gefängniswesen": 1
-      },
-      "by_global_category": {}
-    },
     "Verordnung": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
-        "329 Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege": 1
+        "329 Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege": 1,
+        "781 Lufthygiene": 1,
+        "834 Kranken- und Unfallversicherung · Kantonale Beiträge im Gesundheitswesen": 1
       },
       "by_global_category": {
-        "8.70.30.10 Alters- und Pflegeheime": 1
+        "8.70.30.10 Alters- und Pflegeheime": 1,
+        "8.30.70 UVG": 1
       }
     },
     "Reglement": {
@@ -62,45 +59,13 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht · Strafrecht · Rechtspflege",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "25",
-          "title": "Strafrecht und Strafrechtspflege",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "258",
-              "title": "Strafvollzug · Gefängniswesen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "3",
       "title": "Gesundheit",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
         "Gesetz": 1,
-        "Verordnung": 1,
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -128,26 +93,6 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "34",
-          "title": "Heilmittelkontrolle · Gifte",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "340",
-              "title": "Heilmittelkontrolle · Gifte",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
               }
             }
           ]
@@ -222,25 +167,77 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "73",
-          "title": "Hochbauten",
+          "identifier": "78",
+          "title": "Umweltschutz",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "730",
-              "title": "Hochbauten",
+              "identifier": "781",
+              "title": "Lufthygiene",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Arbeit · Soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "812",
+              "title": "Arbeitnehmerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "834",
+              "title": "Kranken- und Unfallversicherung · Kantonale Beiträge im Gesundheitswesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -277,9 +274,49 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "BaB",
+      "title": "Bürgergemeinde Basel",
+      "total": 5,
+      "own": 5,
+      "by_type": {
+        "Gemeindeerlass": 5
+      }
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Gemeindeerlass": 5
+      },
+      "children": [
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 5
+          },
+          "children": [
+            {
+              "identifier": "1.30.60",
+              "title": "Bürgergemeinden, Allmend",
+              "total": 5,
+              "own": 5,
+              "by_type": {
+                "Gemeindeerlass": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -314,32 +351,21 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "7.10",
           "title": "Raumplanungs- und Baurecht",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
             "Gesetz": 1
           },
           "children": [
-            {
-              "identifier": "7.10.10",
-              "title": "Pläne",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            },
             {
               "identifier": "7.10.70",
               "title": "Parkplätze",
@@ -356,12 +382,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Anderes": 1,
-        "Verordnung": 1
+        "Gesetz": 2,
+        "Verordnung": 2
       },
       "children": [
         {
@@ -370,8 +395,7 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Anderes": 1
+            "Gesetz": 2
           },
           "children": [
             {
@@ -384,12 +408,32 @@
               }
             },
             {
-              "identifier": "8.10.70",
-              "title": "Heil- und Betäubungsmittel",
+              "identifier": "8.10.110",
+              "title": "Unfallbekämpfung",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.70",
+              "title": "UVG",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -429,43 +473,53 @@
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 13
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -491,7 +545,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",
@@ -562,6 +615,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

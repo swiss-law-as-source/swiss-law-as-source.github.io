@@ -1,12 +1,13 @@
 {
   "year": "1984",
+  "year_semantics": "enactment",
   "entity": "NE",
-  "total": 43,
-  "categorized": 43,
+  "total": 44,
+  "categorized": 44,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 34,
+      "total": 36,
       "by_topic": {
         "410.6 Contributions - Ecolages": 6,
         "410.1 Dispositions générales": 4,
@@ -15,6 +16,7 @@
         "415.1 Maîtresses et maîtres de l'école enfantine - Institutrices et instituteurs": 3,
         "410.86 Médecine scolaire": 2,
         "415.3 Maîtresses et maîtres de l'enseignement secondaire inférieur et supérieur": 2,
+        "761.1 Dispositions générales": 2,
         "151 Grand Conseil": 1,
         "410.31 Plan d'études": 1,
         "410.52 Appréciation du travail scolaire": 1,
@@ -41,6 +43,8 @@
         "4.140 Anerkennung von Diplomen": 1,
         "4.50.10 Pädagogik": 1,
         "4.150 Schulsport": 1,
+        "7.30.30.10 Nationalstrassen": 1,
+        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1,
         "8.10.70 Heil- und Betäubungsmittel": 1
       }
     },
@@ -67,15 +71,6 @@
         "354 Conventions intercantonales": 2
       },
       "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "832.1 Établissements spécialisés pour enfants et adolescents": 1
-      },
-      "by_global_category": {
-        "8.70.30.20 Kinder- und Jugendheime": 1
-      }
     }
   },
   "by_topic_tree": [
@@ -425,13 +420,54 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
+      "identifier": "7",
+      "title": "Travaux publics – Énergie – Transports et communications",
       "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1,
-        "Loi": 1
+        "Autre": 2
+      },
+      "children": [
+        {
+          "identifier": "76",
+          "title": "Transports et communications",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Autre": 2
+          },
+          "children": [
+            {
+              "identifier": "761",
+              "title": "Circulation routière",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Autre": 2
+              },
+              "children": [
+                {
+                  "identifier": "761.1",
+                  "title": "Dispositions générales",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Autre": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
       },
       "children": [
         {
@@ -459,37 +495,6 @@
                   "own": 1,
                   "by_type": {
                     "Autre": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "83",
-          "title": "Assistance sociale",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Loi": 1
-          },
-          "children": [
-            {
-              "identifier": "832",
-              "title": "Établissements spécialisés",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Loi": 1
-              },
-              "children": [
-                {
-                  "identifier": "832.1",
-                  "title": "Établissements spécialisés pour enfants et adolescents",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Loi": 1
                   }
                 }
               ]
@@ -826,13 +831,85 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1,
-        "Loi": 1
+        "Autre": 2
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.30",
+              "title": "Strassen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.30.10",
+                  "title": "Nationalstrassen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.10",
+                  "title": "Strassenverkehrssteuern und -abgaben",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
       },
       "children": [
         {
@@ -854,46 +931,16 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "8.70",
-          "title": "Fürsorge",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Loi": 1
-          },
-          "children": [
-            {
-              "identifier": "8.70.30",
-              "title": "Heime",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Loi": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.70.30.20",
-                  "title": "Kinder- und Jugendheime",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Loi": 1
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "fr": 43
+    "fr": 44
   },
   "available_years_for_entity": [
     "1832",
+    "1857",
     "1858",
     "1864",
     "1866",
@@ -1017,6 +1064,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

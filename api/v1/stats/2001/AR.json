@@ -1,18 +1,43 @@
 {
   "year": "2001",
+  "year_semantics": "enactment",
   "entity": "AR",
-  "total": 4,
-  "categorized": 4,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
-        "131.7 Wahl der Angestellten": 1,
-        "816.1 Übertragbare Krankheiten": 1
+        "123 Ausweisschriften": 1,
+        "411 Allgemeine Bestimmungen": 1,
+        "750 Allgemeines": 1,
+        "955.5 Konsumkredit": 1
       },
       "by_global_category": {
-        "8.10.100.20 Tuberkulose": 1
+        "1.10.80 Ausweise": 1,
+        "4.80.10 Sonderschulen": 1,
+        "9.50.10.90 Konsumkredit": 1
+      }
+    },
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "411 Allgemeine Bestimmungen": 2,
+        "712 Beschaffungswesen": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 2,
+        "7.30.40 Submission": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "153 Gemeindeverwaltung": 1
+      },
+      "by_global_category": {
+        "1.20.20.60 Verwaltungsgebühren": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -21,30 +46,22 @@
         "411 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {}
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "712 Beschaffungswesen": 1
-      },
-      "by_global_category": {
-        "7.30.40 Submission": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden und Gemeinden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "13",
-          "title": "Politische Rechte",
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung und Aufenthalt",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -52,24 +69,33 @@
           },
           "children": [
             {
-              "identifier": "131",
-              "title": "Wahlen und Abstimmungen",
+              "identifier": "123",
+              "title": "Ausweisschriften",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "131.7",
-                  "title": "Wahl der Angestellten",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "15",
+          "title": "Gemeindewesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "153",
+              "title": "Gemeindeverwaltung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -78,27 +104,33 @@
     {
       "identifier": "4",
       "title": "Erziehung, Kultur",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Erziehung",
-          "total": 1,
+          "total": 4,
           "own": 0,
           "by_type": {
+            "Anderes": 2,
+            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "411",
               "title": "Allgemeine Bestimmungen",
-              "total": 1,
-              "own": 1,
+              "total": 4,
+              "own": 4,
               "by_type": {
+                "Anderes": 2,
+                "Verordnung": 1,
                 "Interkantonale Vereinbarung": 1
               }
             }
@@ -109,10 +141,11 @@
     {
       "identifier": "7",
       "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -134,21 +167,10 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "81",
-          "title": "Gesundheit",
+          "identifier": "75",
+          "title": "Energie",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -156,8 +178,39 @@
           },
           "children": [
             {
-              "identifier": "816",
-              "title": "Krankheitsbekämpfung",
+              "identifier": "750",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "95",
+          "title": "Industrie, Gewerbe und Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "955",
+              "title": "Dienstleistungsgewerbe",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -165,8 +218,8 @@
               },
               "children": [
                 {
-                  "identifier": "816.1",
-                  "title": "Übertragbare Krankheiten",
+                  "identifier": "955.5",
+                  "title": "Konsumkredit",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -181,6 +234,121 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.80",
+              "title": "Ausweise",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.80.10",
+              "title": "Sonderschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
@@ -213,8 +381,8 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "9",
+      "title": "Wirtschaft",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -222,8 +390,8 @@
       },
       "children": [
         {
-          "identifier": "8.10",
-          "title": "Gesundheitswesen",
+          "identifier": "9.50",
+          "title": "Gewerbe",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -231,8 +399,8 @@
           },
           "children": [
             {
-              "identifier": "8.10.100",
-              "title": "Krankheitsbekämpfung",
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -240,8 +408,8 @@
               },
               "children": [
                 {
-                  "identifier": "8.10.100.20",
-                  "title": "Tuberkulose",
+                  "identifier": "9.50.10.90",
+                  "title": "Konsumkredit",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -256,27 +424,45 @@
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 9
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
+    "1889",
     "1896",
+    "1900",
+    "1902",
+    "1907",
+    "1908",
+    "1911",
     "1912",
     "1913",
     "1914",
+    "1916",
     "1917",
+    "1923",
     "1924",
     "1925",
+    "1928",
+    "1929",
+    "1930",
     "1931",
+    "1932",
+    "1937",
+    "1941",
+    "1943",
+    "1946",
     "1948",
     "1949",
     "1951",
     "1952",
     "1955",
+    "1956",
     "1957",
-    "1962",
+    "1958",
+    "1959",
     "1963",
     "1964",
     "1965",
@@ -285,16 +471,24 @@
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
+    "1975",
     "1976",
     "1977",
+    "1978",
     "1979",
+    "1980",
     "1981",
+    "1982",
     "1983",
     "1984",
+    "1985",
+    "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
     "1991",
     "1992",
@@ -305,6 +499,7 @@
     "1997",
     "1998",
     "1999",
+    "2000",
     "2001",
     "2002",
     "2003",
@@ -329,8 +524,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

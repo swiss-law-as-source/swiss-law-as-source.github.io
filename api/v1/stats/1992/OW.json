@@ -1,31 +1,37 @@
 {
   "year": "1992",
+  "year_semantics": "enactment",
   "entity": "OW",
-  "total": 9,
-  "categorized": 9,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 7,
+      "total": 9,
       "by_topic": {
         "833 Vereinbarungen mit psychiatrischen Kliniken": 3,
         "131 Amtliche Veröffentlichungen, Information, Dokumentation": 2,
         "416 Berufsbildung, Berufsberatung, Erwachsenenbildung": 1,
-        "451 Kulturpflege und Kulturförderung": 1
+        "451 Kulturpflege und Kulturförderung": 1,
+        "651 Jagd, Fischerei": 1,
+        "811 Medizinalpersonen": 1
       },
       "by_global_category": {
         "8.10.20.20 Psychiatrische Kliniken": 3,
         "1.10.120 Information der Öffentlichkeit": 2,
-        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
+        "8.10.30.40 Hebammen": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
+    "Gesetz": {
+      "total": 2,
       "by_topic": {
-        "810 Gesundheit": 1
+        "111 Bürgerrecht": 1,
+        "880 Wohnungsbau": 1
       },
       "by_global_category": {
-        "8.10.130.30 Badeanstalten": 1
+        "1.10.60 Bürgerrecht": 1,
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -36,18 +42,37 @@
       "by_global_category": {
         "8.10.20.20 Psychiatrische Kliniken": 1
       }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "880 Wohnungsbau": 1
+      },
+      "by_global_category": {
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "GRUNDLAGEN UND ORGANISATION",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "111",
+          "title": "Bürgerrecht",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
         {
           "identifier": "131",
           "title": "Amtliche Veröffentlichungen, Information, Dokumentation",
@@ -89,23 +114,44 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "GESUNDHEIT, ARBEIT, SOZIALE SICHERHEIT",
-      "total": 5,
+      "identifier": "6",
+      "title": "FINANZEN, REGALIEN, STAATLICHE UNTERNEHMUNGEN",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
-        "Verordnung des Parlaments (Dekret)": 1,
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "810",
-          "title": "Gesundheit",
+          "identifier": "651",
+          "title": "Jagd, Fischerei",
           "total": 1,
           "own": 1,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "GESUNDHEIT, ARBEIT, SOZIALE SICHERHEIT",
+      "total": 7,
+      "own": 0,
+      "by_type": {
+        "Anderes": 4,
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "811",
+          "title": "Medizinalpersonen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
           }
         },
         {
@@ -117,6 +163,16 @@
             "Anderes": 3,
             "Interkantonale Vereinbarung": 1
           }
+        },
+        {
+          "identifier": "880",
+          "title": "Wohnungsbau",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1
+          }
         }
       ]
     }
@@ -125,21 +181,32 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 2,
+            "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "1.10.120",
               "title": "Information der Öffentlichkeit",
@@ -187,11 +254,12 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
+        "Anderes": 4,
         "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
@@ -201,9 +269,8 @@
           "total": 5,
           "own": 0,
           "by_type": {
-            "Anderes": 3,
-            "Interkantonale Vereinbarung": 1,
-            "Verordnung des Parlaments (Dekret)": 1
+            "Anderes": 4,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -229,24 +296,46 @@
               ]
             },
             {
-              "identifier": "8.10.130",
-              "title": "Hygiene",
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Anderes": 1
               },
               "children": [
                 {
-                  "identifier": "8.10.130.30",
-                  "title": "Badeanstalten",
+                  "identifier": "8.10.30.40",
+                  "title": "Hebammen",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
+                    "Anderes": 1
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.40",
+          "title": "Wohnverhältnisse",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "8.40.10",
+              "title": "Eigentums- und Wohnungsbauförderung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung des Parlaments (Dekret)": 1
+              }
             }
           ]
         }
@@ -254,24 +343,29 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 13
   },
   "available_years_for_entity": [
     "1825",
     "1850",
     "1874",
+    "1877",
     "1878",
     "1880",
     "1892",
     "1895",
     "1911",
     "1913",
+    "1914",
     "1915",
     "1916",
+    "1918",
     "1927",
     "1928",
+    "1931",
     "1935",
     "1937",
+    "1938",
     "1939",
     "1942",
     "1943",
@@ -281,13 +375,19 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
+    "1960",
     "1961",
+    "1963",
     "1964",
     "1965",
+    "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -349,6 +449,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

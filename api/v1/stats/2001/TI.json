@@ -1,44 +1,53 @@
 {
   "year": "2001",
+  "year_semantics": "enactment",
   "entity": "TI",
-  "total": 14,
-  "categorized": 14,
+  "total": 18,
+  "categorized": 18,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 7,
+      "total": 9,
       "by_topic": {
         "A5.2 ORIENTAMENTO SCOLASTICO E FORMAZIONE PROFESSIONALE": 2,
         "172 Consiglio di Stato": 1,
+        "181 Organizzazione del Comune": 1,
+        "185 Controllo comunale delle attività economiche": 1,
         "A2.4 POTERE LEGISLATIVO E ESECUTIVO": 1,
         "A7.1 EDILIZIA, PIANIFICAZIONE DEL TERRITORIO E COMMESSE PUBBLICHE": 1,
         "751 Organizzazione dei trasporti": 1,
         "837 Protezione dalle radiazioni": 1
       },
       "by_global_category": {
+        "1.20.20.40.60 Ausbildung, Weiterbildung": 1,
+        "4.170.10 Statistik": 1,
         "7.30.40 Submission": 1,
         "7.50.10.10 Regionalverkehr": 1,
         "7.60.60 Strahlenschutz": 1
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "480 Protezione della natura": 1,
+        "73 Commesse e appalti pubblici": 1,
         "812 Pronto soccorso": 1,
         "A9.3 PROTEZIONE DELLA NATURA, DELLE BELLEZZE NATURALI E DEI BENI CULTURALI": 1
       },
       "by_global_category": {
         "7.70.50 Naturschutz": 2,
+        "7.30.40 Submission": 1,
         "8.10.90 Rettungsdienst": 1
       }
     },
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "A8.3 PRODUZIONE ANIMALE": 2
+        "A8.3 PRODUZIONE ANIMALE": 2,
+        "726 Strade pedonali e sentieri": 1
       },
       "by_global_category": {
+        "7.30.30.20 Fuss- und Wanderwege": 1,
         "9.20.120 Tierseuchen": 1,
         "9.20.110 Imkerei": 1
       }
@@ -66,10 +75,10 @@
     {
       "identifier": "1",
       "title": "STATO - POPOLO - AUTORITÀ",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Regolamento": 1
+        "Regolamento": 3
       },
       "children": [
         {
@@ -84,6 +93,35 @@
             {
               "identifier": "172",
               "title": "Consiglio di Stato",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "18",
+          "title": "Comuni, patriziati",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Regolamento": 2
+          },
+          "children": [
+            {
+              "identifier": "181",
+              "title": "Organizzazione del Comune",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
+              }
+            },
+            {
+              "identifier": "185",
+              "title": "Controllo comunale delle attività economiche",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -128,19 +166,42 @@
     {
       "identifier": "7",
       "title": "EDILIZIA - BENI PUBBLICI - ENERGIA - TRASPORTI",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Ordinanza": 1,
+        "Legge": 1,
         "Accordo intercantonale": 1,
         "Regolamento": 1
       },
       "children": [
         {
+          "identifier": "72",
+          "title": "Beni pubblici",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordinanza": 1
+          },
+          "children": [
+            {
+              "identifier": "726",
+              "title": "Strade pedonali e sentieri",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordinanza": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "73",
           "title": "Commesse e appalti pubblici",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Legge": 1,
             "Accordo intercantonale": 1
           }
         },
@@ -355,33 +416,141 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Regolamento": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Regolamento": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Regolamento": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Regolamento": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.60",
+                      "title": "Ausbildung, Weiterbildung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Regolamento": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Regolamento": 1
+      },
+      "children": [
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Regolamento": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.10",
+              "title": "Statistik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 6,
+      "total": 8,
       "own": 0,
       "by_type": {
         "Regolamento": 3,
-        "Legge": 2,
+        "Legge": 3,
+        "Ordinanza": 1,
         "Accordo intercantonale": 1
       },
       "children": [
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
+            "Ordinanza": 1,
             "Regolamento": 1,
+            "Legge": 1,
             "Accordo intercantonale": 1
           },
           "children": [
             {
+              "identifier": "7.30.30",
+              "title": "Strassen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Ordinanza": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.30.20",
+                  "title": "Fuss- und Wanderwege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Ordinanza": 1
+                  }
+                }
+              ]
+            },
+            {
               "identifier": "7.30.40",
               "title": "Submission",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
                 "Regolamento": 1,
+                "Legge": 1,
                 "Accordo intercantonale": 1
               }
             }
@@ -554,7 +723,7 @@
     }
   ],
   "languages_available": {
-    "it": 14
+    "it": 18
   },
   "available_years_for_entity": [
     "1803",
@@ -562,6 +731,8 @@
     "1896",
     "1907",
     "1909",
+    "1911",
+    "1913",
     "1915",
     "1918",
     "1921",
@@ -604,6 +775,7 @@
     "1980",
     "1981",
     "1982",
+    "1983",
     "1984",
     "1985",
     "1986",

@@ -1,58 +1,64 @@
 {
   "year": "2003",
+  "year_semantics": "enactment",
   "entity": "TG",
-  "total": 19,
-  "categorized": 19,
+  "total": 26,
+  "categorized": 26,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 8,
+      "total": 9,
       "by_topic": {
         "811.2 Ausbildung. Schulen": 6,
-        "412.2 Berufsbildung": 1,
-        "414 Hochschulen": 1
+        "414 Hochschulen": 2,
+        "412.2 Berufsbildung": 1
       },
       "by_global_category": {
         "8.10.30.30 Krankenpflegepersonal": 5,
-        "4.50.10 Pädagogik": 1
+        "4.50.10 Pädagogik": 1,
+        "4.100.30 Schulgebühren": 1
       }
     },
     "Anderes": {
-      "total": 4,
+      "total": 7,
       "by_topic": {
-        "187.1 Organisation der Evangelischen Landeskirche": 2,
-        "187.2 Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung": 1,
-        "922 Jagd und Vogelschutz": 1
+        "187.1 Organisation der Evangelischen Landeskirche": 4,
+        "187.2 Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung": 2,
+        "171 Grosser Rat": 1
       },
       "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 3,
-        "6.30.50.10 Jäger": 1
+        "1.40.30 Evangelisch-Reformierte Kirche": 6,
+        "1.10.90.20.30 Ausstand, Unvereinbarkeit": 1
+      }
+    },
+    "Verordnung": {
+      "total": 6,
+      "by_topic": {
+        "177.1 Arbeitsverhältnis": 1,
+        "221.21 Konsumkredit": 1,
+        "613 Finanzausgleich": 1,
+        "66 Wehrpflichtersatz": 1,
+        "73 Energie": 1,
+        "823 Arbeitsmarkt und Arbeitsbeschaffung": 1
+      },
+      "by_global_category": {
+        "9.50.10.90 Konsumkredit": 1,
+        "1.30.10 Gemeindefinanzen": 1,
+        "5.10.20 Wehrpflichtersatz": 1,
+        "7.40.10 Energieversorgung": 1,
+        "8.20.20.20 Entsendung von Arbeitnehmern": 1
       }
     },
     "Interkantonale Vereinbarung": {
       "total": 4,
       "by_topic": {
         "811.1 Berufe des Gesundheitswesens": 2,
-        "554.1 Gewerbe. Marktwesen. Öffentliche Veranstaltungen": 1,
-        "946 Handelshemmnisse": 1
+        "412.6 Interkantonale Vereinbarungen": 1,
+        "416 Förderung der Ausbildung. Stipendien": 1
       },
       "by_global_category": {
         "4.140 Anerkennung von Diplomen": 2,
-        "9.50.10.60.30 Spielbanken": 1,
-        "9.60.50 Binnenmarkt, Handelshemmnisse": 1
-      }
-    },
-    "Verordnung": {
-      "total": 3,
-      "by_topic": {
-        "554.1 Gewerbe. Marktwesen. Öffentliche Veranstaltungen": 1,
-        "66 Wehrpflichtersatz": 1,
-        "73 Energie": 1
-      },
-      "by_global_category": {
-        "9.60.60 Reisendengewerbe": 1,
-        "5.10.20 Wehrpflichtersatz": 1,
-        "7.40.10 Energieversorgung": 1
+        "4.80.20 Hochbegabtenförderung": 1
       }
     }
   },
@@ -60,46 +66,88 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 3,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Anderes": 3
+        "Anderes": 7,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "18",
-          "title": "Staat und Kirche",
-          "total": 3,
+          "identifier": "17",
+          "title": "Staatliche Gewalten. Behörden",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 3
+            "Anderes": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "171",
+              "title": "Grosser Rat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "177",
+              "title": "Staatspersonal",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "177.1",
+                  "title": "Arbeitsverhältnis",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "18",
+          "title": "Staat und Kirche",
+          "total": 6,
+          "own": 0,
+          "by_type": {
+            "Anderes": 6
           },
           "children": [
             {
               "identifier": "187",
               "title": "Evangelische Landeskirche",
-              "total": 3,
+              "total": 6,
               "own": 0,
               "by_type": {
-                "Anderes": 3
+                "Anderes": 6
               },
               "children": [
                 {
                   "identifier": "187.1",
                   "title": "Organisation der Evangelischen Landeskirche",
-                  "total": 2,
-                  "own": 2,
+                  "total": 4,
+                  "own": 4,
                   "by_type": {
-                    "Anderes": 2
+                    "Anderes": 4
                   }
                 },
                 {
                   "identifier": "187.2",
                   "title": "Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 2
                   }
                 }
               ]
@@ -109,30 +157,64 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schule - Wissenschaft - Kultur",
-      "total": 2,
+      "identifier": "2",
+      "title": "Privatrecht - Zivilrechtspflege - Vollstreckung",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 2
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "22",
+          "title": "Obligationenrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "221.21",
+              "title": "Konsumkredit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Reglement": 3,
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 2,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Reglement": 2
+            "Reglement": 3,
+            "Interkantonale Vereinbarung": 2
           },
           "children": [
             {
               "identifier": "412",
               "title": "Berufliches Bildungswesen",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Reglement": 1
+                "Reglement": 1,
+                "Interkantonale Vereinbarung": 1
               },
               "children": [
                 {
@@ -143,63 +225,35 @@
                   "by_type": {
                     "Reglement": 1
                   }
+                },
+                {
+                  "identifier": "412.6",
+                  "title": "Interkantonale Vereinbarungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
                 }
               ]
             },
             {
               "identifier": "414",
               "title": "Hochschulen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 2
+              }
+            },
+            {
+              "identifier": "416",
+              "title": "Förderung der Ausbildung. Stipendien",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "Militärwesen - Zivilschutz - Polizeiwesen",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1,
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "55",
-          "title": "Polizeiwesen",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1,
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "554",
-              "title": "Gewerbepolizei. Marktwesen. Gastgewerbe",
-              "total": 2,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1,
                 "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "554.1",
-                  "title": "Gewerbe. Marktwesen. Öffentliche Veranstaltungen",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Verordnung": 1,
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
@@ -208,12 +262,32 @@
     {
       "identifier": "6",
       "title": "Finanzen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "61",
+          "title": "Organisation allgemein",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "613",
+              "title": "Finanzausgleich",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "66",
           "title": "Wehrpflichtersatz",
@@ -248,11 +322,12 @@
     {
       "identifier": "8",
       "title": "Gesundheit - Arbeit - Soziale Sicherheit",
-      "total": 8,
+      "total": 9,
       "own": 0,
       "by_type": {
         "Reglement": 6,
-        "Interkantonale Vereinbarung": 2
+        "Interkantonale Vereinbarung": 2,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -296,55 +371,23 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Volkswirtschaft",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1,
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "92",
-          "title": "Forstwesen. Jagd. Fischerei",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "922",
-              "title": "Jagd und Vogelschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
         },
         {
-          "identifier": "94",
-          "title": "Handel",
+          "identifier": "82",
+          "title": "Arbeit",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "946",
-              "title": "Handelshemmnisse",
+              "identifier": "823",
+              "title": "Arbeitsmarkt und Arbeitsbeschaffung",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -356,28 +399,91 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Anderes": 3
+        "Anderes": 7,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "1.40",
-          "title": "Kirche und Staat",
-          "total": 3,
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 3
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.20",
+                  "title": "Politische Rechte",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.90.20.30",
+                      "title": "Ausstand, Unvereinbarkeit",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 6,
+          "own": 0,
+          "by_type": {
+            "Anderes": 6
           },
           "children": [
             {
               "identifier": "1.40.30",
               "title": "Evangelisch-Reformierte Kirche",
-              "total": 3,
-              "own": 3,
+              "total": 6,
+              "own": 6,
               "by_type": {
-                "Anderes": 3
+                "Anderes": 6
               }
             }
           ]
@@ -387,11 +493,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
-        "Reglement": 1
+        "Interkantonale Vereinbarung": 3,
+        "Reglement": 2
       },
       "children": [
         {
@@ -406,6 +512,46 @@
             {
               "identifier": "4.50.10",
               "title": "Pädagogik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.80.20",
+              "title": "Hochbegabtenförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.30",
+              "title": "Schulgebühren",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -457,48 +603,6 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "6.30.50",
-              "title": "Jagd",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.30.50.10",
-                  "title": "Jäger",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
@@ -532,10 +636,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Reglement": 5
+        "Reglement": 5,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -568,16 +673,46 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.20",
+              "title": "Arbeitsmarkt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.20.20",
+                  "title": "Entsendung von Arbeitnehmern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 3,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
         "Verordnung": 1
       },
       "children": [
@@ -587,7 +722,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Verordnung": 1
           },
           "children": [
             {
@@ -596,60 +731,19 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "9.50.10.60",
-                  "title": "Glücksspiel und Lotterien",
+                  "identifier": "9.50.10.90",
+                  "title": "Konsumkredit",
                   "total": 1,
-                  "own": 0,
+                  "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "9.50.10.60.30",
-                      "title": "Spielbanken",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Interkantonale Vereinbarung": 1
-                      }
-                    }
-                  ]
+                    "Verordnung": 1
+                  }
                 }
               ]
-            }
-          ]
-        },
-        {
-          "identifier": "9.60",
-          "title": "Handel",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1,
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "9.60.50",
-              "title": "Binnenmarkt, Handelshemmnisse",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            },
-            {
-              "identifier": "9.60.60",
-              "title": "Reisendengewerbe",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
             }
           ]
         }
@@ -657,37 +751,54 @@
     }
   ],
   "languages_available": {
-    "de": 19
+    "de": 26
   },
   "available_years_for_entity": [
-    "1826",
+    "1669",
+    "1803",
+    "1815",
+    "1825",
     "1828",
-    "1829",
     "1831",
     "1834",
     "1846",
+    "1861",
     "1869",
+    "1870",
     "1886",
+    "1887",
     "1889",
     "1890",
-    "1891",
-    "1892",
     "1896",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1911",
     "1914",
+    "1917",
     "1918",
+    "1923",
+    "1925",
     "1926",
     "1927",
+    "1930",
     "1931",
     "1933",
     "1934",
     "1937",
     "1938",
-    "1949",
+    "1941",
+    "1943",
+    "1947",
+    "1948",
+    "1951",
     "1955",
+    "1956",
     "1958",
+    "1959",
+    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
@@ -696,7 +807,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",

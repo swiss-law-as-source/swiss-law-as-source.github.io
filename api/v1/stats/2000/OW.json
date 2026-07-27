@@ -1,21 +1,26 @@
 {
   "year": "2000",
+  "year_semantics": "enactment",
   "entity": "OW",
   "total": 9,
   "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 5,
+      "total": 7,
       "by_topic": {
-        "220 Obligationenrecht": 1,
+        "134 Gerichtsbehörden, Anwaltsrecht": 1,
+        "141 Personalrecht": 1,
+        "415 Hochschulen, Fachhochschulen, Fachschulen": 1,
         "776 Seilbahnen, Skilifte": 1,
         "780 Umweltschutz": 1,
         "786 Natur- und Landschaftsschutz": 1,
         "975 Markt und Gewerbe": 1
       },
       "by_global_category": {
-        "2.20.10.50 Ehe- und Partnerschaftsvermittlungen": 1,
+        "9.50.10.80.10 Banken, Börsen": 1,
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
         "7.50.30 Seilbahnen, Skilifte": 1,
         "7.60.10 Abfälle": 1,
         "7.10.10 Pläne": 1,
@@ -23,40 +28,39 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 3,
+      "total": 2,
       "by_topic": {
-        "415 Hochschulen, Fachhochschulen, Fachschulen": 2,
+        "415 Hochschulen, Fachhochschulen, Fachschulen": 1,
         "975 Markt und Gewerbe": 1
       },
       "by_global_category": {
         "4.50.10 Pädagogik": 1,
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
         "9.60.50 Binnenmarkt, Handelshemmnisse": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "855 Arbeitslosenversicherung": 1
-      },
-      "by_global_category": {
-        "8.30.110 Arbeitslosenversicherung": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "ZIVILRECHT, VOLLSTRECKUNG",
-      "total": 1,
+      "identifier": "1",
+      "title": "GRUNDLAGEN UND ORGANISATION",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
-          "identifier": "220",
-          "title": "Obligationenrecht",
+          "identifier": "134",
+          "title": "Gerichtsbehörden, Anwaltsrecht",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
+        {
+          "identifier": "141",
+          "title": "Personalrecht",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -71,7 +75,8 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -80,7 +85,8 @@
           "total": 2,
           "own": 2,
           "by_type": {
-            "Interkantonale Vereinbarung": 2
+            "Anderes": 1,
+            "Interkantonale Vereinbarung": 1
           }
         }
       ]
@@ -124,26 +130,6 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "GESUNDHEIT, ARBEIT, SOZIALE SICHERHEIT",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
-      },
-      "children": [
-        {
-          "identifier": "855",
-          "title": "Arbeitslosenversicherung",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          }
-        }
-      ]
-    },
-    {
       "identifier": "9",
       "title": "VOLKSWIRTSCHAFT",
       "total": 2,
@@ -168,8 +154,8 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht",
+      "identifier": "1",
+      "title": "Staat",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -177,8 +163,8 @@
       },
       "children": [
         {
-          "identifier": "2.20",
-          "title": "Einführungsgesetzgebung OR",
+          "identifier": "1.20",
+          "title": "Behörden",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -186,8 +172,8 @@
           },
           "children": [
             {
-              "identifier": "2.20.10",
-              "title": "Vertragsverhältnisse",
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -195,13 +181,24 @@
               },
               "children": [
                 {
-                  "identifier": "2.20.10.50",
-                  "title": "Ehe- und Partnerschaftsvermittlungen",
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
                   "total": 1,
-                  "own": 1,
+                  "own": 0,
                   "by_type": {
                     "Anderes": 1
-                  }
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -215,7 +212,8 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -244,7 +242,7 @@
           "total": 1,
           "own": 1,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Anderes": 1
           }
         }
       ]
@@ -321,46 +319,57 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
+          "identifier": "9.50",
+          "title": "Gewerbe",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "8.30.110",
-              "title": "Arbeitslosenversicherung",
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              }
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.80",
+                  "title": "Kreditinstitutionen / Versicherungen",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "9.50.10.80.10",
+                      "title": "Banken, Börsen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Anderes": 1
-      },
-      "children": [
+        },
         {
           "identifier": "9.60",
           "title": "Handel",
@@ -393,18 +402,23 @@
     "1825",
     "1850",
     "1874",
+    "1877",
     "1878",
     "1880",
     "1892",
     "1895",
     "1911",
     "1913",
+    "1914",
     "1915",
     "1916",
+    "1918",
     "1927",
     "1928",
+    "1931",
     "1935",
     "1937",
+    "1938",
     "1939",
     "1942",
     "1943",
@@ -414,13 +428,19 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
+    "1960",
     "1961",
+    "1963",
     "1964",
     "1965",
+    "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -483,6 +503,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",

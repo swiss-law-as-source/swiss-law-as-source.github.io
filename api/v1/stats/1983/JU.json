@@ -1,8 +1,9 @@
 {
   "year": "1983",
+  "year_semantics": "enactment",
   "entity": "JU",
-  "total": 16,
-  "categorized": 16,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -53,19 +54,38 @@
         "4.30.30 Berufsorientierung": 1,
         "7.70.50 Naturschutz": 1
       }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "10 Constitution et autres actes fondamentaux": 1
+      },
+      "by_global_category": {
+        "1.10.50.10 Gebietseinteilung, Bezirke": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "État, peuple, autorités",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Loi": 2,
+        "Accord intercantonal": 1,
         "Ordonnance": 1
       },
       "children": [
+        {
+          "identifier": "10",
+          "title": "Constitution et autres actes fondamentaux",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Accord intercantonal": 1
+          }
+        },
         {
           "identifier": "17",
           "title": "Autorités",
@@ -360,13 +380,45 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Loi": 2,
+        "Accord intercantonal": 1,
         "Ordonnance": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Accord intercantonal": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.50",
+              "title": "Gebiet",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Accord intercantonal": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.50.10",
+                  "title": "Gebietseinteilung, Bezirke",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Accord intercantonal": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -651,7 +703,7 @@
     }
   ],
   "languages_available": {
-    "fr": 16
+    "fr": 17
   },
   "available_years_for_entity": [
     "1828",
@@ -731,6 +783,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",
@@ -750,6 +803,7 @@
     "SO",
     "SZ",
     "TG",
+    "TI",
     "UR",
     "VD",
     "VS",

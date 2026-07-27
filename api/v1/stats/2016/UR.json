@@ -1,45 +1,43 @@
 {
   "year": "2016",
+  "year_semantics": "enactment",
   "entity": "UR",
-  "total": 11,
-  "categorized": 11,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 7,
-      "by_topic": {
-        "10.5 Natur-, Landschafts- und Heimatschutz, Denkmalpflege": 2,
-        "10.11 Grundlagen": 1,
-        "10.12 Lehrpersonen": 1,
-        "2.4 Angestellte": 1,
-        "3.22 Kantons- und Gemeindesteuern": 1,
-        "50.2 Schifffahrt": 1
-      },
-      "by_global_category": {
-        "4.10.20 Kindergarten": 1,
-        "6.10.30 Staatsbeiträge, Subventionen": 1,
-        "7.70.50 Naturschutz": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
       "total": 3,
       "by_topic": {
         "10.11 Grundlagen": 1,
-        "10.22 Stipendien": 1,
-        "2.2 Behörden: allgemeine Bestimmungen": 1
+        "3.22 Kantons- und Gemeindesteuern": 1,
+        "60.21 Tierzucht, Tierseuchen": 1
       },
       "by_global_category": {
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
-        "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1
+        "4.10.20 Kindergarten": 1,
+        "9.20.120 Tierseuchen": 1
       }
     },
     "Gesetz": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
-        "10.4 Sport": 1
+        "10.4 Sport": 1,
+        "10.7 Ausserschule Jugendarbeit": 1,
+        "2.2 Behörden: allgemeine Bestimmungen": 1
       },
       "by_global_category": {
-        "6.10.30 Staatsbeiträge, Subventionen": 1
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "8.70.20 Jugendschutz, Jugendhilfe": 1,
+        "1.10.90.20.10 Wahlen und Abstimmungen": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "20.32 Spitalwesen": 1
+      },
+      "by_global_category": {
+        "8.10.20.20 Psychiatrische Kliniken": 1
       }
     }
   },
@@ -47,11 +45,10 @@
     {
       "identifier": "2",
       "title": "Politische Rechte - Behörden",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1,
-        "Reglement": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -60,16 +57,7 @@
           "total": 1,
           "own": 1,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          }
-        },
-        {
-          "identifier": "2.4",
-          "title": "Angestellte",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Reglement": 1
+            "Gesetz": 1
           }
         }
       ]
@@ -108,61 +96,29 @@
     {
       "identifier": "10",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 7,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 4,
-        "Verordnung des Parlaments (Dekret)": 2,
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "10.1",
           "title": "Volksschule",
-          "total": 3,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 2,
-            "Verordnung des Parlaments (Dekret)": 1
+            "Reglement": 1
           },
           "children": [
             {
               "identifier": "10.11",
               "title": "Grundlagen",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1,
-                "Reglement": 1
-              }
-            },
-            {
-              "identifier": "10.12",
-              "title": "Lehrpersonen",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Reglement": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "10.2",
-          "title": "Mittelschule, Fachhochschule, Hochschule, Stipendien",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          },
-          "children": [
-            {
-              "identifier": "10.22",
-              "title": "Stipendien",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -177,19 +133,50 @@
           }
         },
         {
-          "identifier": "10.5",
-          "title": "Natur-, Landschafts- und Heimatschutz, Denkmalpflege",
-          "total": 2,
-          "own": 2,
+          "identifier": "10.7",
+          "title": "Ausserschule Jugendarbeit",
+          "total": 1,
+          "own": 1,
           "by_type": {
-            "Reglement": 2
+            "Gesetz": 1
           }
         }
       ]
     },
     {
-      "identifier": "50",
-      "title": "Verkehr - Transport",
+      "identifier": "20",
+      "title": "Arbeit - Soziale Sicherheit - Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "20.3",
+          "title": "Spitalwesen, Wohnverhältnisse, Sozialhilfe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "20.32",
+              "title": "Spitalwesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "60",
+      "title": "Landwirtschaft",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -197,13 +184,24 @@
       },
       "children": [
         {
-          "identifier": "50.2",
-          "title": "Schifffahrt",
+          "identifier": "60.2",
+          "title": "Tierzucht, Tierseuchen, Viehhandel",
           "total": 1,
-          "own": 1,
+          "own": 0,
           "by_type": {
             "Reglement": 1
-          }
+          },
+          "children": [
+            {
+              "identifier": "60.21",
+              "title": "Tierzucht, Tierseuchen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
         }
       ]
     }
@@ -215,35 +213,46 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "1.20",
-          "title": "Behörden",
+          "identifier": "1.10",
+          "title": "Grundlagen",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "1.20.20",
-              "title": "Regierung und Verwaltung",
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Gesetz": 1
               },
               "children": [
                 {
-                  "identifier": "1.20.20.50",
-                  "title": "Verwaltungsverfahren, Verwaltungsrechtspflege",
+                  "identifier": "1.10.90.20",
+                  "title": "Politische Rechte",
                   "total": 1,
-                  "own": 1,
+                  "own": 0,
                   "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
-                  }
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.90.20.10",
+                      "title": "Wahlen und Abstimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -254,21 +263,19 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "4.10",
           "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1,
-            "Verordnung des Parlaments (Dekret)": 1
+            "Reglement": 1
           },
           "children": [
             {
@@ -279,15 +286,6 @@
               "by_type": {
                 "Reglement": 1
               }
-            },
-            {
-              "identifier": "4.10.30",
-              "title": "Volksschule, Primarschule, Sekundarschule I",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              }
             }
           ]
         }
@@ -296,31 +294,28 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Reglement": 1
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Reglement": 1
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1,
-                "Reglement": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -328,8 +323,71 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.20",
+                  "title": "Psychiatrische Kliniken",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.20",
+              "title": "Jugendschutz, Jugendhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -337,8 +395,8 @@
       },
       "children": [
         {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -346,8 +404,8 @@
           },
           "children": [
             {
-              "identifier": "7.70.50",
-              "title": "Naturschutz",
+              "identifier": "9.20.120",
+              "title": "Tierseuchen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -360,15 +418,18 @@
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 7
   },
   "available_years_for_entity": [
     "1859",
     "1869",
     "1888",
     "1889",
+    "1891",
     "1902",
-    "1910",
+    "1909",
+    "1911",
+    "1918",
     "1925",
     "1927",
     "1931",
@@ -376,24 +437,30 @@
     "1933",
     "1935",
     "1939",
+    "1940",
     "1942",
     "1943",
     "1944",
     "1948",
-    "1950",
-    "1958",
+    "1951",
+    "1952",
+    "1954",
     "1959",
     "1961",
     "1962",
+    "1964",
+    "1965",
     "1966",
+    "1967",
     "1968",
-    "1969",
+    "1970",
     "1971",
     "1972",
     "1973",
     "1974",
-    "1975",
+    "1976",
     "1977",
+    "1978",
     "1979",
     "1980",
     "1981",
@@ -440,8 +507,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

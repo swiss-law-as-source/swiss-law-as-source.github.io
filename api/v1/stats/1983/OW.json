@@ -1,19 +1,44 @@
 {
   "year": "1983",
+  "year_semantics": "enactment",
   "entity": "OW",
-  "total": 3,
-  "categorized": 3,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
         "752 Gewässernutzung": 2,
-        "101 Verfassung, Kantonsgebiet": 1
+        "101 Verfassung, Kantonsgebiet": 1,
+        "774 Schifffahrt": 1,
+        "841 Arbeitnehmerschutz": 1,
+        "851 Kranken- und Unfallversicherung": 1
       },
       "by_global_category": {
         "7.30.20.20 Gewässernutzung": 1,
-        "7.40.20 Wasserkraft": 1
+        "7.40.20 Wasserkraft": 1,
+        "8.20.40 Heimarbeit": 1,
+        "8.30.70 UVG": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
+        "870 Sozialhilfe, Entwicklungshilfe": 2
+      },
+      "by_global_category": {
+        "8.70.10 Sozialhilfe": 1,
+        "8.70.70 Alimentenbevorschussung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "870 Sozialhilfe, Entwicklungshilfe": 1
+      },
+      "by_global_category": {
+        "8.70.10 Sozialhilfe": 1
       }
     }
   },
@@ -41,10 +66,10 @@
     {
       "identifier": "7",
       "title": "RAUM- UND BAUORDNUNG, ÖFFENTLICHE WERKE, ENERGIE, VERKEHR, UMWELTSCHUTZ",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 3
       },
       "children": [
         {
@@ -54,6 +79,56 @@
           "own": 2,
           "by_type": {
             "Anderes": 2
+          }
+        },
+        {
+          "identifier": "774",
+          "title": "Schifffahrt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "GESUNDHEIT, ARBEIT, SOZIALE SICHERHEIT",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "841",
+          "title": "Arbeitnehmerschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
+        {
+          "identifier": "851",
+          "title": "Kranken- und Unfallversicherung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
+        {
+          "identifier": "870",
+          "title": "Sozialhilfe, Entwicklungshilfe",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 2,
+            "Gesetz": 1
           }
         }
       ]
@@ -121,27 +196,116 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.40",
+              "title": "Heimarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.70",
+              "title": "UVG",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            },
+            {
+              "identifier": "8.70.70",
+              "title": "Alimentenbevorschussung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 9
   },
   "available_years_for_entity": [
     "1825",
     "1850",
     "1874",
+    "1877",
     "1878",
     "1880",
     "1892",
     "1895",
     "1911",
     "1913",
+    "1914",
     "1915",
     "1916",
+    "1918",
     "1927",
     "1928",
+    "1931",
     "1935",
     "1937",
+    "1938",
     "1939",
     "1942",
     "1943",
@@ -151,13 +315,19 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
+    "1960",
     "1961",
+    "1963",
     "1964",
     "1965",
+    "1967",
+    "1968",
     "1969",
     "1970",
     "1971",
@@ -219,6 +389,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",
@@ -238,6 +409,7 @@
     "SO",
     "SZ",
     "TG",
+    "TI",
     "UR",
     "VD",
     "VS",

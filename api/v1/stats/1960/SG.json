@@ -1,55 +1,57 @@
 {
   "year": "1960",
+  "year_semantics": "enactment",
   "entity": "SG",
-  "total": 2,
-  "categorized": 2,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 1,
+    "Verordnung": {
+      "total": 6,
       "by_topic": {
-        "553 Gastwirtschaft": 1
+        "751 Gewässernutzung": 3,
+        "873 Gebäudeversicherung": 2,
+        "872 Feuerwehr": 1
       },
       "by_global_category": {
-        "9.50.10.10 Berufsausübungsbewilligungen": 1
+        "7.30.20.20 Gewässernutzung": 3,
+        "5.20.30.20 Brandschutz": 1
       }
     },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
+    "Anderes": {
+      "total": 2,
       "by_topic": {
-        "811 Staatssteuern": 1
+        "873 Gebäudeversicherung": 2
       },
-      "by_global_category": {
-        "6.20.40 Erbschafts- und Schenkungssteuern": 1
-      }
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "5",
-      "title": "Arbeit und Gewerbe",
-      "total": 1,
+      "identifier": "7",
+      "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 3
       },
       "children": [
         {
-          "identifier": "55",
-          "title": "Gewerbepolizei",
-          "total": 1,
+          "identifier": "75",
+          "title": "Gewässernutzung und -schutz",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 3
           },
           "children": [
             {
-              "identifier": "553",
-              "title": "Gastwirtschaft",
-              "total": 1,
-              "own": 1,
+              "identifier": "751",
+              "title": "Gewässernutzung",
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 3
               }
             }
           ]
@@ -59,28 +61,40 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 3,
+        "Anderes": 2
       },
       "children": [
         {
-          "identifier": "81",
-          "title": "Steuern und Finanzausgleich",
-          "total": 1,
+          "identifier": "87",
+          "title": "Feuerschutz",
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Verordnung": 3,
+            "Anderes": 2
           },
           "children": [
             {
-              "identifier": "811",
-              "title": "Staatssteuern",
+              "identifier": "872",
+              "title": "Feuerwehr",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "873",
+              "title": "Gebäudeversicherung",
+              "total": 4,
+              "own": 4,
+              "by_type": {
+                "Verordnung": 2,
+                "Anderes": 2
               }
             }
           ]
@@ -90,70 +104,81 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "6.20",
-          "title": "Steuern",
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "6.20.40",
-              "title": "Erbschafts- und Schenkungssteuern",
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.20",
+                  "title": "Brandschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 1,
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 3
       },
       "children": [
         {
-          "identifier": "9.50",
-          "title": "Gewerbe",
-          "total": 1,
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 3
           },
           "children": [
             {
-              "identifier": "9.50.10",
-              "title": "Dienstleistungen",
-              "total": 1,
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 3
               },
               "children": [
                 {
-                  "identifier": "9.50.10.10",
-                  "title": "Berufsausübungsbewilligungen",
-                  "total": 1,
-                  "own": 1,
+                  "identifier": "7.30.20.20",
+                  "title": "Gewässernutzung",
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
-                    "Anderes": 1
+                    "Verordnung": 3
                   }
                 }
               ]
@@ -164,36 +189,63 @@
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 8
   },
   "available_years_for_entity": [
-    "1847",
-    "1871",
+    "1845",
+    "1862",
+    "1870",
+    "1874",
+    "1883",
+    "1884",
+    "1885",
+    "1888",
+    "1890",
+    "1897",
+    "1899",
     "1901",
+    "1902",
     "1903",
+    "1906",
+    "1907",
+    "1908",
+    "1910",
     "1911",
     "1914",
+    "1918",
+    "1919",
+    "1920",
+    "1921",
+    "1924",
+    "1926",
     "1929",
+    "1930",
+    "1931",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
+    "1945",
+    "1946",
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
     "1953",
-    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",
     "1960",
     "1961",
     "1962",
+    "1963",
     "1964",
     "1965",
     "1966",
@@ -255,8 +307,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",
@@ -268,13 +319,17 @@
     "FR",
     "GE",
     "GL",
+    "GR",
     "JU",
     "LU",
     "NE",
     "NW",
+    "OW",
     "SG",
     "SO",
+    "TG",
     "VD",
+    "VS",
     "ZH"
   ]
 }

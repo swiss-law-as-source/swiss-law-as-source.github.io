@@ -1,71 +1,118 @@
 {
   "year": "1984",
+  "year_semantics": "enactment",
   "entity": "UR",
   "total": 4,
   "categorized": 4,
   "uncategorized": 0,
   "by_type": {
-    "Reglement": {
-      "total": 3,
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
       "by_topic": {
-        "20.22 Kranken- und Unfallversicherung": 1,
-        "20.23 Arbeitslosenversicherung": 1,
+        "30.41 Sprengstoffe": 1,
+        "9.5 Spezialprivatrecht": 1
+      },
+      "by_global_category": {
+        "5.30.40 Sprengstoffe": 1,
+        "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1
+      }
+    },
+    "Verfassung": {
+      "total": 1,
+      "by_topic": {
+        "1.11 Kantonsverfassung": 1
+      },
+      "by_global_category": {
+        "1.10.10 Verfassung": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
         "60.21 Tierzucht, Tierseuchen": 1
       },
       "by_global_category": {
-        "8.30.70 UVG": 1,
-        "8.30.110 Arbeitslosenversicherung": 1,
         "9.20.120 Tierseuchen": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "20.22 Kranken- und Unfallversicherung": 1
-      },
-      "by_global_category": {
-        "8.30.70 UVG": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "20",
-      "title": "Arbeit - Soziale Sicherheit - Sozialhilfe",
-      "total": 3,
+      "identifier": "1",
+      "title": "Staat - Volk",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
+        "Verfassung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.1",
+          "title": "Verfassung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verfassung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.11",
+              "title": "Kantonsverfassung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verfassung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Privatrecht - Zivilprozess - Vollstreckung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
-          "identifier": "20.2",
-          "title": "Sozialversicherung",
-          "total": 3,
+          "identifier": "9.5",
+          "title": "Spezialprivatrecht",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "30",
+      "title": "Polizeiliche Aufgaben",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "30.4",
+          "title": "Sicherheitspolizei",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 2,
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
-              "identifier": "20.22",
-              "title": "Kranken- und Unfallversicherung",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1,
-                "Reglement": 1
-              }
-            },
-            {
-              "identifier": "20.23",
-              "title": "Arbeitslosenversicherung",
+              "identifier": "30.41",
+              "title": "Sprengstoffe",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -106,42 +153,103 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
+        "Verfassung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verfassung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.10",
+              "title": "Verfassung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verfassung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
-          "total": 3,
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 2,
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
-              "identifier": "8.30.70",
-              "title": "UVG",
-              "total": 2,
-              "own": 2,
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1,
-                "Reglement": 1
-              }
-            },
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.20",
+                  "title": "Erwerb von Grundstücke durch Personen im Ausland",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
             {
-              "identifier": "8.30.110",
-              "title": "Arbeitslosenversicherung",
+              "identifier": "5.30.40",
+              "title": "Sprengstoffe",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -188,8 +296,11 @@
     "1869",
     "1888",
     "1889",
+    "1891",
     "1902",
-    "1910",
+    "1909",
+    "1911",
+    "1918",
     "1925",
     "1927",
     "1931",
@@ -197,24 +308,30 @@
     "1933",
     "1935",
     "1939",
+    "1940",
     "1942",
     "1943",
     "1944",
     "1948",
-    "1950",
-    "1958",
+    "1951",
+    "1952",
+    "1954",
     "1959",
     "1961",
     "1962",
+    "1964",
+    "1965",
     "1966",
+    "1967",
     "1968",
-    "1969",
+    "1970",
     "1971",
     "1972",
     "1973",
     "1974",
-    "1975",
+    "1976",
     "1977",
+    "1978",
     "1979",
     "1980",
     "1981",
@@ -261,11 +378,11 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

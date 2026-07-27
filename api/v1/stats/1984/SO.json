@@ -1,14 +1,16 @@
 {
   "year": "1984",
+  "year_semantics": "enactment",
   "entity": "SO",
-  "total": 13,
-  "categorized": 13,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 8,
+      "total": 9,
       "by_topic": {
         "126.515.85 Volksschule": 3,
+        "131.7 Finanzausgleich": 1,
         "414.47 Schlussprüfungen": 1,
         "416.3 Berufslehre": 1,
         "416.9 Höhere berufliche Lehranstalten": 1,
@@ -17,6 +19,7 @@
       },
       "by_global_category": {
         "4.90.20 Löhne, Entschädigungen": 3,
+        "1.30.10 Gemeindefinanzen": 1,
         "4.20.10 Mittelschule": 1,
         "4.60 Tertiärstufe: Höhere Fachschulen": 1,
         "7.50.10.10 Regionalverkehr": 1,
@@ -24,20 +27,17 @@
       }
     },
     "Verordnung": {
-      "total": 3,
+      "total": 2,
       "by_topic": {
-        "411.3 Staatsbeiträge": 1,
-        "513.6 Glücks- und Geschicklichkeitsspiele": 1,
-        "725.1 Kantonsstrassen": 1
+        "131.7 Finanzausgleich": 2
       },
       "by_global_category": {
-        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1
+        "1.30.10 Gemeindefinanzen": 2
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 1,
       "by_topic": {
-        "122.1 Geschäftsführung": 1,
         "835 Ausgleichskasse": 1
       },
       "by_global_category": {
@@ -49,43 +49,22 @@
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
-        "Gesetz": 1
+        "Anderes": 4,
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 4,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 3,
-            "Gesetz": 1
+            "Anderes": 3
           },
           "children": [
-            {
-              "identifier": "122",
-              "title": "Regierungsrat",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "122.1",
-                  "title": "Geschäftsführung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            },
             {
               "identifier": "126",
               "title": "Staatspersonal",
@@ -140,49 +119,61 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "13",
+          "title": "Gemeinden",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "131",
+              "title": "Grundlagen",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "131.7",
+                  "title": "Finanzausgleich",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Verordnung": 2,
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
-        "Verordnung": 1
+        "Anderes": 3
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 4,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 3,
-            "Verordnung": 1
+            "Anderes": 3
           },
           "children": [
-            {
-              "identifier": "411",
-              "title": "Allgemeines",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "411.3",
-                  "title": "Staatsbeiträge",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            },
             {
               "identifier": "414",
               "title": "Mittelschulen",
@@ -248,88 +239,14 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Polizei, Militär, Zivilschutz",
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Verkehr",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "51",
-          "title": "Polizei",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "513",
-              "title": "Gewerbe- und Handelspolizei",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "513.6",
-                  "title": "Glücks- und Geschicklichkeitsspiele",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Bauwesen, öffentliche Werke, Verkehr",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
-        {
-          "identifier": "72",
-          "title": "Öffentliche Werke",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "725",
-              "title": "Tiefbau",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "725.1",
-                  "title": "Kantonsstrassen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
         {
           "identifier": "73",
           "title": "Verkehr",
@@ -439,6 +356,40 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 2,
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 5,
@@ -501,21 +452,19 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "7.50",
           "title": "Verkehr",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -534,26 +483,6 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
-                  }
-                }
-              ]
-            },
-            {
-              "identifier": "7.50.20",
-              "title": "Strassenverkehr",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "7.50.20.10",
-                  "title": "Strassenverkehrssteuern und -abgaben",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
                   }
                 }
               ]
@@ -637,9 +566,10 @@
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 12
   },
   "available_years_for_entity": [
+    "1780",
     "1803",
     "1825",
     "1828",
@@ -648,6 +578,9 @@
     "1873",
     "1874",
     "1875",
+    "1882",
+    "1883",
+    "1887",
     "1888",
     "1889",
     "1893",
@@ -655,23 +588,27 @@
     "1899",
     "1901",
     "1903",
+    "1905",
     "1907",
-    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
+    "1917",
+    "1918",
+    "1919",
     "1921",
     "1923",
-    "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1932",
+    "1933",
+    "1934",
     "1935",
     "1937",
     "1938",
@@ -684,9 +621,9 @@
     "1947",
     "1948",
     "1949",
+    "1950",
     "1951",
     "1952",
-    "1953",
     "1954",
     "1955",
     "1956",
@@ -763,6 +700,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

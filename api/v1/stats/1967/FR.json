@@ -1,24 +1,47 @@
 {
   "year": "1967",
+  "year_semantics": "enactment",
   "entity": "FR",
-  "total": 5,
-  "categorized": 5,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 2,
+      "total": 5,
       "by_topic": {
         "131 Kantonsgericht": 1,
-        "731.0 Allgemeine Bestimmungen": 1
+        "137 Anwälte": 1,
+        "261 Notariat": 1,
+        "731.0 Allgemeine Bestimmungen": 1,
+        "741 Strassen": 1
       },
       "by_global_category": {
+        "1.50.10.10 Ausbildung": 1,
         "5.20.30.10 Feuerwehr": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
+    "Anderes": {
+      "total": 5,
       "by_topic": {
-        "141.1 Zusammenschlüsse": 1
+        "261 Notariat": 1,
+        "635.4 Besteuerung der Motorfahrzeuge und Schiffe": 1,
+        "637 Doppelbesteuerung": 1,
+        "731.0 Allgemeine Bestimmungen": 1,
+        "784 Seilbahnen": 1
+      },
+      "by_global_category": {
+        "1.50.20.20 Gebühren, Tarife": 1,
+        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1,
+        "6.20.10.40 Pauschale Steueranrechnung": 1,
+        "5.20.30.10 Feuerwehr": 1,
+        "7.50.30 Seilbahnen, Skilifte": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
+        "141.1 Zusammenschlüsse": 1,
+        "741 Strassen": 1
       },
       "by_global_category": {
         "1.30.50 Gemeindefusionen": 1
@@ -32,40 +55,40 @@
       "by_global_category": {
         "3.50 Ordnungsbussen": 1
       }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "731.0 Allgemeine Bestimmungen": 1
-      },
-      "by_global_category": {
-        "5.20.30.10 Feuerwehr": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "STAAT - VOLK - BEHÖRDEN",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
+        "Reglement": 2,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "13",
           "title": "RECHTSPFLEGE",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 2
           },
           "children": [
             {
               "identifier": "131",
               "title": "Kantonsgericht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
+            {
+              "identifier": "137",
+              "title": "Anwälte",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -108,6 +131,40 @@
       ]
     },
     {
+      "identifier": "2",
+      "title": "PRIVATRECHT - ZIVILPROZESS - ZWANGSVOLLSTRECKUNG",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "26",
+          "title": "NOTARIAT - BEGLAUBIGUNGEN",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "261",
+              "title": "Notariat",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "3",
       "title": "STRAFRECHT - STRAFPROZESS - STRAFVOLLZUG",
       "total": 1,
@@ -128,13 +185,65 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
+      "identifier": "6",
+      "title": "FINANZEN",
       "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
-        "Anderes": 1
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "63",
+          "title": "STEUERN",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "635",
+              "title": "Besondere Steuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "635.4",
+                  "title": "Besteuerung der Motorfahrzeuge und Schiffe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "637",
+              "title": "Doppelbesteuerung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Reglement": 2,
+        "Anderes": 2,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -170,6 +279,48 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "74",
+          "title": "ÖFFENTLICHE WERKE",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "741",
+              "title": "Strassen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 1,
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "78",
+          "title": "VERKEHR",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "784",
+              "title": "Seilbahnen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     }
@@ -178,10 +329,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Reglement": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -201,6 +354,58 @@
               "by_type": {
                 "Verordnung des Parlaments (Dekret)": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.50.10",
+              "title": "Anwälte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.10.10",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "1.50.20",
+              "title": "Notare",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.20.20",
+                  "title": "Gebühren, Tarife",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -271,15 +476,118 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.40",
+                  "title": "Pauschale Steueranrechnung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.10",
+                  "title": "Strassenverkehrssteuern und -abgaben",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "7.50.30",
+              "title": "Seilbahnen, Skilifte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 5,
-    "fr": 5
+    "de": 13,
+    "fr": 13
   },
   "available_years_for_entity": [
+    "1804",
+    "1808",
+    "1825",
+    "1831",
+    "1832",
+    "1834",
+    "1836",
+    "1837",
     "1848",
+    "1850",
     "1852",
+    "1857",
     "1859",
     "1866",
     "1867",
@@ -288,23 +596,39 @@
     "1874",
     "1875",
     "1879",
+    "1884",
+    "1889",
     "1893",
     "1899",
+    "1907",
+    "1909",
+    "1910",
+    "1911",
+    "1913",
     "1914",
+    "1916",
     "1917",
     "1918",
     "1920",
     "1921",
     "1922",
+    "1923",
     "1924",
+    "1925",
     "1926",
+    "1927",
     "1929",
     "1930",
+    "1931",
     "1934",
     "1935",
+    "1937",
     "1938",
+    "1939",
     "1942",
     "1943",
+    "1946",
+    "1948",
     "1949",
     "1950",
     "1951",
@@ -312,6 +636,8 @@
     "1954",
     "1955",
     "1957",
+    "1958",
+    "1959",
     "1960",
     "1961",
     "1962",
@@ -377,10 +703,11 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
+    "AG",
+    "AI",
     "AR",
     "BE",
     "BL",
@@ -393,12 +720,14 @@
     "LU",
     "NE",
     "NW",
+    "OW",
     "SG",
     "SH",
     "SO",
     "SZ",
     "TG",
     "TI",
+    "UR",
     "VD",
     "VS",
     "ZG",

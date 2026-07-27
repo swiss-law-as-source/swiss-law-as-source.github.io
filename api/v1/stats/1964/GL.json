@@ -1,10 +1,30 @@
 {
   "year": "1964",
+  "year_semantics": "enactment",
   "entity": "GL",
-  "total": 2,
-  "categorized": 2,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "IX B/21 Ruhetage": 1,
+        "VIII C/21 Allgemeines": 1
+      },
+      "by_global_category": {
+        "8.20.10.30 Sonn- und Feiertage": 1,
+        "8.10.110 Unfallbekämpfung": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "IX B/22 Gastgewerbe": 1,
+        "VIII C/21 Allgemeines": 1
+      },
+      "by_global_category": {}
+    },
     "Anderes": {
       "total": 1,
       "by_topic": {
@@ -28,18 +48,22 @@
     {
       "identifier": "VIII",
       "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
-      "total": 1,
-      "own": 1,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Reglement": 1
+        "Reglement": 1,
+        "Gesetz": 1,
+        "Verordnung": 1
       }
     },
     {
       "identifier": "IX",
       "title": "Volkswirtschaft",
-      "total": 1,
-      "own": 1,
+      "total": 3,
+      "own": 3,
       "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1,
         "Anderes": 1
       }
     }
@@ -48,19 +72,21 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -79,6 +105,46 @@
                   "own": 1,
                   "by_type": {
                     "Reglement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.110",
+              "title": "Unfallbekämpfung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.10",
+              "title": "Arbeitnehmer",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.10.30",
+                  "title": "Sonn- und Feiertage",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -131,33 +197,46 @@
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 6
   },
   "available_years_for_entity": [
     "1807",
     "1835",
     "1859",
+    "1862",
     "1878",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
     "1905",
-    "1906",
     "1909",
     "1910",
+    "1911",
     "1915",
+    "1918",
+    "1922",
+    "1923",
     "1927",
     "1928",
     "1929",
     "1934",
+    "1941",
+    "1943",
     "1944",
-    "1946",
+    "1945",
+    "1947",
+    "1948",
     "1949",
+    "1950",
     "1951",
     "1957",
+    "1958",
+    "1959",
     "1960",
     "1962",
+    "1963",
     "1964",
     "1965",
     "1966",
@@ -179,6 +258,7 @@
     "1983",
     "1984",
     "1985",
+    "1986",
     "1987",
     "1988",
     "1989",
@@ -232,6 +312,7 @@
     "GL",
     "GR",
     "JU",
+    "LU",
     "NE",
     "NW",
     "OW",
@@ -241,6 +322,7 @@
     "SZ",
     "TG",
     "TI",
+    "UR",
     "VD",
     "VS",
     "ZG",

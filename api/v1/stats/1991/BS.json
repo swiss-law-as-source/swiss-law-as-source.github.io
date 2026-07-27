@@ -1,8 +1,9 @@
 {
   "year": "1991",
+  "year_semantics": "enactment",
   "entity": "BS",
-  "total": 13,
-  "categorized": 13,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -20,44 +21,43 @@
         "8.70.30.10 Alters- und Pflegeheime": 1
       }
     },
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "328 Zahnhygiene": 1,
+        "411 Behörden · Personal": 1,
+        "494 Förderung von Wissenschaft, Kunst und Kultur": 1,
+        "780 Umweltschutz": 1,
+        "861 Sozialer Wohnungsbau · Erhaltung von Wohnraum": 1
+      },
+      "by_global_category": {
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
+        "7.60.50 Umweltverträglichkeitsprüfung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "131 Initiative und Referendum": 1,
+        "329 Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege": 1,
+        "780 Umweltschutz": 1,
+        "832 Alters- und Hinterlassenenversicherung · Invalidenversicherung · Ergänzende kantonale Alters- und Invalidenhilfe": 1
+      },
+      "by_global_category": {
+        "8.10.60 Spitalexterne Krankenpflege": 1,
+        "8.30.30 AHV / IV": 1
+      }
+    },
     "Reglement": {
-      "total": 3,
+      "total": 2,
       "by_topic": {
         "439 Lehrerprüfungen": 1,
-        "446 Fakultäten": 1,
-        "695 Gebäudeversicherung": 1
+        "446 Fakultäten": 1
       },
       "by_global_category": {
         "4.90.30 Ausbildung": 1,
         "4.40.40 Naturwissenschaftliche Fakultäten": 1
       }
-    },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "328 Zahnhygiene": 1,
-        "74 Enteignung": 1
-      },
-      "by_global_category": {
-        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
-        "7.20 Enteignung": 1
-      }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "329 Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege": 1
-      },
-      "by_global_category": {
-        "8.10.60 Spitalexterne Krankenpflege": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "332 Nichtstaatliche Spitäler": 1
-      },
-      "by_global_category": {}
     },
     "Gemeindeerlass": {
       "total": 1,
@@ -73,10 +73,11 @@
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen · Organisation",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -95,6 +96,26 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "13",
+          "title": "Politische Rechte und Pflichten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "131",
+              "title": "Initiative und Referendum",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -155,13 +176,12 @@
     {
       "identifier": "3",
       "title": "Gesundheit",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Verordnung": 1,
         "Gesetz": 1,
-        "Anderes": 1,
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -195,39 +215,40 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "33",
-          "title": "Spitäler · Sanitätsdienst",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "332",
-              "title": "Nichtstaatliche Spitäler",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Reglement": 2,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Behörden · Personal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "42",
           "title": "Berufsbildung · Berufsschulen · Fachhochschule",
@@ -287,34 +308,23 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen · Staatliche Liegenschaften und Materiallagerplätze · Monopole",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Reglement": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "69",
-          "title": "Monopole",
+          "identifier": "49",
+          "title": "Ausbildungsbeiträge · Wissenschafts- und Kulturpflege",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "695",
-              "title": "Gebäudeversicherung",
+              "identifier": "494",
+              "title": "Förderung von Wissenschaft, Kunst und Kultur",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -324,20 +334,86 @@
     {
       "identifier": "7",
       "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "74",
-          "title": "Enteignung",
+          "identifier": "78",
+          "title": "Umweltschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "780",
+              "title": "Umweltschutz",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Arbeit · Soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
           "total": 1,
-          "own": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Alters- und Hinterlassenenversicherung · Invalidenversicherung · Ergänzende kantonale Alters- und Invalidenhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "86",
+          "title": "Soziale Wohnungsvorsorge · Heime · Behindertenhilfe",
+          "total": 1,
+          "own": 0,
           "by_type": {
             "Verordnung": 1
-          }
+          },
+          "children": [
+            {
+              "identifier": "861",
+              "title": "Sozialer Wohnungsbau · Erhaltung von Wohnraum",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -466,13 +542,24 @@
       },
       "children": [
         {
-          "identifier": "7.20",
-          "title": "Enteignung",
+          "identifier": "7.60",
+          "title": "Umweltschutz",
           "total": 1,
-          "own": 1,
+          "own": 0,
           "by_type": {
             "Verordnung": 1
-          }
+          },
+          "children": [
+            {
+              "identifier": "7.60.50",
+              "title": "Umweltverträglichkeitsprüfung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         },
         {
           "identifier": "7.70",
@@ -499,11 +586,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Anderes": 2
       },
       "children": [
         {
@@ -558,6 +645,26 @@
           ]
         },
         {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "8.70",
           "title": "Fürsorge",
           "total": 1,
@@ -592,43 +699,53 @@
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 17
   },
   "available_years_for_entity": [
-    "1826",
+    "1756",
+    "1825",
     "1828",
     "1834",
     "1846",
     "1852",
     "1853",
-    "1858",
+    "1857",
     "1860",
     "1863",
+    "1870",
+    "1872",
     "1876",
     "1879",
+    "1882",
     "1883",
     "1886",
     "1891",
+    "1892",
+    "1894",
     "1895",
+    "1896",
     "1900",
     "1901",
     "1902",
     "1906",
     "1907",
+    "1909",
+    "1910",
     "1911",
     "1912",
     "1913",
-    "1914",
     "1915",
     "1918",
     "1919",
     "1921",
     "1922",
     "1923",
+    "1924",
     "1925",
-    "1927",
+    "1926",
     "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1933",
@@ -654,7 +771,6 @@
     "1956",
     "1957",
     "1958",
-    "1959",
     "1960",
     "1961",
     "1962",
@@ -725,6 +841,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",
