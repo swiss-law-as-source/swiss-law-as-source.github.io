@@ -1,0 +1,55 @@
+{
+ "canonical_date_policy": {
+  "frozen_since": "2026-07-27",
+  "canonical_source": "lexfind_family",
+  "definition": "The canonical date of a law is LexFind's family_active_since (frontend API, texts-of-law/{id}/with-version-groups): the original date of the act's family, available for all 26 cantons. Laws without family data fall back, in fixed order, to: lexwork_api date_of_decision, sibling-group evidence, text-parsed date, current version date — this fallback order is part of the frozen definition.",
+  "policy": "The date methodology is FROZEN. Headline numbers may only change when the underlying data changes (new laws imported, source corrections upstream), and every such change must be recorded in the changelog below."
+ },
+ "changelog": [
+  {
+   "version": 1,
+   "date": "2026-07-27",
+   "date_basis": "version_date (current consolidated version only)",
+   "existed_by_2003": 1299,
+   "unexplained": null,
+   "undated": 231,
+   "change_reason": "Initial implementation. Flawed: a 1970 concordat amended in 2015 was dated 2015, so older-but-amended laws were excluded from historical filters."
+  },
+  {
+   "version": 2,
+   "date": "2026-07-27",
+   "date_basis": "enactment_date from text parsing (93% hit rate) + federal git history",
+   "existed_by_2003": 1707,
+   "unexplained": 815,
+   "undated": 167,
+   "change_reason": "Laws became (law, version) pairs; enactment dates parsed from the stored texts. Weak provenance: text parses sometimes captured amendment or quoted dates."
+  },
+  {
+   "version": 3,
+   "date": "2026-07-27",
+   "date_basis": "LexWork date_of_decision (authoritative, 14 portal cantons) upgrading text parses",
+   "existed_by_2003": 1624,
+   "unexplained": 898,
+   "undated": 111,
+   "change_reason": "Authoritative portal dates corrected optimistic text parses (the count DROPPED because wrong early dates were fixed). Revealed a defect of this basis: date_of_decision is often the canton's ACCESSION decision, not the act's original date — proven by 72 sibling groups with conflicting authoritative dates."
+  },
+  {
+   "version": 4,
+   "date": "2026-07-27",
+   "date_basis": "LexFind family_active_since MIXED with version/sibling evidence (transitional)",
+   "existed_by_2003": 2035,
+   "unexplained": 487,
+   "undated": 0,
+   "change_reason": "family_active_since is the act's original date. Validation: sibling-group date conflicts collapsed from 72 to 4. Transitional: family dates were still MIXED with own-version minima and sibling evidence (min of all), inflating the count."
+  },
+  {
+   "version": 5,
+   "date": "2026-07-27",
+   "date_basis": "FROZEN: family_active_since alone when present; fixed fallback chain otherwise",
+   "existed_by_2003": 1952,
+   "unexplained": 570,
+   "undated": 0,
+   "change_reason": "Methodology freeze (user directive): a lexfind_family date is used AS-IS, never mixed with version minima or sibling evidence — deterministic and auditable. The count moved 2,035 -> 1,952 because 83 laws had version-history dates earlier than their family date; under the frozen definition the family date governs. CANONICAL from here on: numbers change only when underlying data changes, recorded here."
+  }
+ ]
+}

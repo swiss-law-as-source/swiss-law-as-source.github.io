@@ -117,7 +117,14 @@
         <h3>Legal domains (harmonized taxonomy)</h3>
         <p id="domain-summary"></p>
 
-        <h2>7. Source data</h2>
+        <h2>7. Date methodology &amp; changelog</h2>
+        <p id="policy-statement"></p>
+        <div class="table-wrap" id="changelog-table"></div>
+        <p class="note">The date basis is <b>frozen</b>: headline numbers change only when the underlying
+           data changes, and every change is recorded here
+           (<a href="api/v1/quality/methodology_changelog.json">changelog JSON</a>).</p>
+
+        <h2>8. Source data</h2>
         <ul>
             <li><a href="api/v1/stats/concordats_chstat_comparison.json">Reconciliation JSON</a> (this page's data)</li>
             <li><a href="api/v1/stats/concordats_by_domain.json">Concordats by domain</a> (with per-year breakdowns; CSV export on the <a href="index.html">dashboard</a>)</li>
@@ -142,6 +149,8 @@
         try { harm = await (await fetch('api/v1/stats/harmonized_categories.json', opt)).json(); } catch (e) {}
         try { unc = await (await fetch('api/v1/quality/unclassified_types.json', opt)).json(); } catch (e) {}
         try { conc = await (await fetch('api/v1/stats/concordats_by_domain.json', opt)).json(); } catch (e) {}
+        let clog = null;
+        try { clog = await (await fetch('api/v1/quality/methodology_changelog.json', opt)).json(); } catch (e) {}
 
         const n = x => (x || 0).toLocaleString();
         const active = Object.values(cmp.cantons).reduce((s, v) => s + v.ours_enacted_until_2003.active, 0);
@@ -220,6 +229,23 @@ ours, all concordats (any date):       ${n(Object.values(cmp.cantons).reduce((s,
                 `<td>${n(Object.values(oursAll).reduce((a, b) => a + b, 0))}</td><td></td></tr>`;
             document.getElementById('domain-table').innerHTML =
                 `<table class="data-table"><thead>${dhead}</thead><tbody>${dbody}</tbody><tfoot>${dfoot}</tfoot></table>`;
+        }
+
+        // methodology changelog
+        if (clog) {
+            document.getElementById('policy-statement').innerHTML =
+                `<b>Canonical date source (frozen ${clog.canonical_date_policy.frozen_since}):</b> ` +
+                clog.canonical_date_policy.definition;
+            const chead = '<tr><th>v</th><th>Date basis</th><th>existed ≤2003</th>' +
+                '<th>unexplained</th><th>undated</th><th style="text-align:left">Why it changed</th></tr>';
+            const cbody = clog.changelog.map(v =>
+                `<tr><td>${v.version}</td><td style="text-align:left">${v.date_basis}</td>` +
+                `<td>${v.existed_by_2003 == null ? '—' : n(v.existed_by_2003)}</td>` +
+                `<td>${v.unexplained == null ? '—' : n(v.unexplained)}</td>` +
+                `<td>${v.undated == null ? '—' : n(v.undated)}</td>` +
+                `<td style="text-align:left;font-size:0.78rem">${v.change_reason}</td></tr>`).join('');
+            document.getElementById('changelog-table').innerHTML =
+                `<table class="data-table"><thead>${chead}</thead><tbody>${cbody}</tbody></table>`;
         }
 
         // provenance
