@@ -2,47 +2,59 @@
   "year": "1995",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 15,
-  "categorized": 15,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 6,
+    "Gesetz": {
+      "total": 5,
       "by_topic": {
-        "V C/4 Kaminfeger": 2,
-        "IX E/2 Förster": 1,
+        "IX E/1 Forstwirtschaft": 1,
         "V C/1 Allgemeines": 1,
-        "VII B/2 Öffentliche Bauten": 1,
-        "VIII A/52 Fleisch": 1
+        "VIII B/21 Allgemeines": 1,
+        "VIII D/6 Arbeitsvermittlung und Personalverleih, Arbeitslosenversicherung und Ausgesteuertenhilfe": 1,
+        "VIII E/21 Allgemeines und Organisatorisches": 1
       },
       "by_global_category": {
-        "5.20.30.30 Kaminfeger": 2,
-        "5.20.30.20 Brandschutz": 1,
-        "6.10.30 Staatsbeiträge, Subventionen": 1
+        "5.20.30.10 Feuerwehr": 1,
+        "7.60.20 Gewässerschutz": 1,
+        "8.20.20.40 Arbeitsvermittlung und Personalverleih": 1,
+        "8.70.10 Sozialhilfe": 1
       }
     },
     "Verordnung": {
-      "total": 5,
+      "total": 3,
       "by_topic": {
-        "VIII B/21 Allgemeines": 3,
-        "IX E/1 Forstwirtschaft": 1,
-        "IX E/2 Förster": 1
+        "IV B/4 Kantonsschule": 1,
+        "VIII A/51 Allgemeines": 1,
+        "VIII B/21 Allgemeines": 1
       },
       "by_global_category": {
-        "7.60.20 Gewässerschutz": 3
+        "4.20.10 Mittelschule": 1,
+        "7.60.70 Gifte, Chemikalien": 1,
+        "7.60.20 Gewässerschutz": 1
       }
     },
     "Reglement": {
-      "total": 3,
+      "total": 2,
       "by_topic": {
         "IV A/21 Evangelische Kirche": 1,
-        "V C/1 Allgemeines": 1,
         "V D/1 Versicherung im Monopol und Wettbewerb": 1
       },
       "by_global_category": {
         "1.40.30 Evangelisch-Reformierte Kirche": 1,
-        "5.20.30.10 Feuerwehr": 1,
         "5.20.30.40.10 Elementarschadenversicherung": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "V C/4 Kaminfeger": 1,
+        "VII B/2 Öffentliche Bauten": 1
+      },
+      "by_global_category": {
+        "5.20.30.30 Kaminfeger": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -59,20 +71,22 @@
     {
       "identifier": "IV",
       "title": "Kirche – Schule – Kultur",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Reglement": 1
+        "Reglement": 1,
+        "Verordnung": 1
       }
     },
     {
       "identifier": "V",
       "title": "Schutz und Abwehr",
-      "total": 5,
-      "own": 5,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Anderes": 3,
-        "Reglement": 2
+        "Gesetz": 1,
+        "Anderes": 1,
+        "Reglement": 1
       }
     },
     {
@@ -96,21 +110,20 @@
     {
       "identifier": "VIII",
       "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
-      "total": 4,
-      "own": 4,
+      "total": 5,
+      "own": 5,
       "by_type": {
-        "Anderes": 2,
+        "Gesetz": 3,
         "Verordnung": 2
       }
     },
     {
       "identifier": "IX",
       "title": "Volkswirtschaft",
-      "total": 3,
-      "own": 3,
+      "total": 1,
+      "own": 1,
       "by_type": {
-        "Verordnung": 2,
-        "Anderes": 1
+        "Gesetz": 1
       }
     }
   ],
@@ -168,33 +181,67 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 5,
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
-        "Reglement": 2
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Anderes": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "5.20",
           "title": "Bevölkerungsschutz",
-          "total": 5,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 3,
-            "Reglement": 2
+            "Gesetz": 1,
+            "Anderes": 1,
+            "Reglement": 1
           },
           "children": [
             {
               "identifier": "5.20.30",
               "title": "Feuerwehr / Elementarschäden",
-              "total": 5,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 3,
-                "Reglement": 2
+                "Gesetz": 1,
+                "Anderes": 1,
+                "Reglement": 1
               },
               "children": [
                 {
@@ -203,25 +250,16 @@
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Reglement": 1
-                  }
-                },
-                {
-                  "identifier": "5.20.30.20",
-                  "title": "Brandschutz",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
+                    "Gesetz": 1
                   }
                 },
                 {
                   "identifier": "5.20.30.30",
                   "title": "Kaminfeger",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Anderes": 2
+                    "Anderes": 1
                   }
                 },
                 {
@@ -288,7 +326,7 @@
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Anderes": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -298,17 +336,88 @@
           "own": 0,
           "by_type": {
             "Verordnung": 2,
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "7.60.20",
               "title": "Gewässerschutz",
-              "total": 3,
-              "own": 3,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 2,
-                "Anderes": 1
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "7.60.70",
+              "title": "Gifte, Chemikalien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2
+      },
+      "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.20",
+              "title": "Arbeitsmarkt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.20.40",
+                  "title": "Arbeitsvermittlung und Personalverleih",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -317,40 +426,43 @@
     }
   ],
   "languages_available": {
-    "de": 15
+    "de": 13
   },
   "available_years_for_entity": [
     "1807",
     "1835",
     "1859",
+    "1877",
     "1878",
+    "1879",
+    "1888",
     "1889",
-    "1892",
     "1893",
     "1900",
     "1901",
     "1905",
+    "1906",
     "1909",
     "1910",
     "1911",
     "1915",
     "1918",
-    "1922",
     "1923",
+    "1926",
     "1927",
     "1928",
     "1931",
     "1934",
     "1941",
     "1943",
-    "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
     "1950",
     "1951",
     "1957",
-    "1958",
     "1959",
     "1960",
     "1962",
@@ -415,8 +527,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

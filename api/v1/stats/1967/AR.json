@@ -2,8 +2,8 @@
   "year": "1967",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 4,
-  "categorized": 4,
+  "total": 5,
+  "categorized": 5,
   "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
@@ -26,6 +26,15 @@
       },
       "by_global_category": {
         "6.20.10.40 Pauschale Steueranrechnung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "833.1 Allgemeine Bestimmungen": 1
+      },
+      "by_global_category": {
+        "8.30.70 UVG": 1
       }
     }
   },
@@ -137,10 +146,11 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -160,6 +170,37 @@
               "by_type": {
                 "Interkantonale Vereinbarung": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "833",
+              "title": "Kranken- und Unfallversicherung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "833.1",
+                  "title": "Allgemeine Bestimmungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -302,48 +343,72 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.70",
+              "title": "UVG",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 5
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -352,7 +417,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -405,13 +469,13 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",
     "AI",
     "AR",
-    "BE",
     "BL",
     "BS",
     "CH",

@@ -6,6 +6,21 @@
   "categorized": 11,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "141 Allgemein": 1,
+        "173 Katholische Konfession": 1,
+        "651 Waldwirtschaft": 1,
+        "671 Naturschutz": 1
+      },
+      "by_global_category": {
+        "1.20.20.30.10 Departemente": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "9.30.20 Forstpersonal": 1,
+        "7.70.50 Naturschutz": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 4,
       "by_topic": {
@@ -20,29 +35,6 @@
         "6.30.50.10 Jäger": 1
       }
     },
-    "Verordnung": {
-      "total": 3,
-      "by_topic": {
-        "141 Allgemein": 1,
-        "173 Katholische Konfession": 1,
-        "313 Krankheitsbekämpfung": 1
-      },
-      "by_global_category": {
-        "1.20.20.30.10 Departemente": 1,
-        "1.40.10 Römisch-Katholische Kirche": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 2,
-      "by_topic": {
-        "211 Allgemein": 1,
-        "232 Berufliche Grundausbildung": 1
-      },
-      "by_global_category": {
-        "4.120.10 Schulkoordination": 1,
-        "4.120.60 Schulbauten": 1
-      }
-    },
     "Reglement": {
       "total": 1,
       "by_topic": {
@@ -55,10 +47,19 @@
     "Gesetz": {
       "total": 1,
       "by_topic": {
-        "643 Veterinärwesen": 1
+        "213 Volksschulen": 1
       },
       "by_global_category": {
-        "8.10.30.100 Tierärzte": 1
+        "4.120.20 Schulgemeinden": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "711 Strassenverkehr": 1
+      },
+      "by_global_category": {
+        "7.50.20.30 Motorfahrzeugkontrolle": 1
       }
     }
   },
@@ -128,11 +129,11 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 2
+        "Interkantonale Vereinbarung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -141,18 +142,26 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "211",
               "title": "Allgemein",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 1,
                 "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "213",
+              "title": "Volksschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -160,22 +169,12 @@
         {
           "identifier": "23",
           "title": "Berufliche Ausbildung und Berufsberatung",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
-            {
-              "identifier": "232",
-              "title": "Berufliche Grundausbildung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            },
             {
               "identifier": "234",
               "title": "Fachhochschulen",
@@ -190,17 +189,18 @@
       ]
     },
     {
-      "identifier": "3",
-      "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 1,
+      "identifier": "6",
+      "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "31",
-          "title": "Gesundheitspflege",
+          "identifier": "65",
+          "title": "Waldwirtschaft",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -208,8 +208,8 @@
           },
           "children": [
             {
-              "identifier": "313",
-              "title": "Krankheitsbekämpfung",
+              "identifier": "651",
+              "title": "Waldwirtschaft",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -217,34 +217,23 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "64",
-          "title": "Tierhaltung",
+          "identifier": "67",
+          "title": "Umweltschutz",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "643",
-              "title": "Veterinärwesen",
+              "identifier": "671",
+              "title": "Naturschutz",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Anderes": 1
               }
             }
           ]
@@ -254,12 +243,33 @@
     {
       "identifier": "7",
       "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "71",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "711",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "75",
           "title": "Gewässernutzung und -schutz",
@@ -402,40 +412,39 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "4.120.10",
               "title": "Schulkoordination",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 1,
                 "Interkantonale Vereinbarung": 1
               }
             },
             {
-              "identifier": "4.120.60",
-              "title": "Schulbauten",
+              "identifier": "4.120.20",
+              "title": "Schulgemeinden",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -487,12 +496,44 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.30",
+                  "title": "Motorfahrzeugkontrolle",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
@@ -512,46 +553,55 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "9",
+      "title": "Wirtschaft",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "8.10",
-          "title": "Gesundheitswesen",
+          "identifier": "9.30",
+          "title": "Forstwirtschaft",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "8.10.30",
-              "title": "Medizinische Berufe",
+              "identifier": "9.30.20",
+              "title": "Forstpersonal",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.10.30.100",
-                  "title": "Tierärzte",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -564,41 +614,33 @@
   "available_years_for_entity": [
     "1845",
     "1870",
-    "1883",
-    "1884",
-    "1885",
     "1890",
     "1899",
     "1901",
-    "1902",
     "1903",
-    "1906",
-    "1907",
-    "1910",
     "1911",
+    "1912",
     "1914",
-    "1918",
     "1919",
-    "1926",
-    "1930",
-    "1931",
+    "1923",
+    "1929",
+    "1933",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1946",
     "1947",
     "1948",
     "1949",
-    "1950",
     "1951",
     "1952",
     "1953",
     "1955",
-    "1956",
     "1957",
     "1958",
     "1959",
@@ -667,7 +709,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

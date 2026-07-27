@@ -2,50 +2,41 @@
   "year": "2005",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 25,
-  "categorized": 25,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 9,
+      "total": 11,
       "by_topic": {
+        "128.1 Kurse": 2,
         "817.1 Kantonales Spital": 2,
         "124.2 Haftung des Gemeinwesens": 1,
-        "413.6 Unterricht": 1,
-        "512.1 Fremdenpolizei": 1,
-        "513.6 Glücks- und Geschicklichkeitsspiele": 1,
-        "812.5 Umweltgefährdende Stoffe": 1
+        "125.8 Haftrichter": 1,
+        "128.2 Prüfungen, Ausbildung": 1,
+        "413.2 Behörde": 1,
+        "531 Kantonale Organisation": 1,
+        "812.5 Umweltgefährdende Stoffe": 1,
+        "832.1 Krankenversicherung": 1
       },
       "by_global_category": {
         "1.20.40 Staatshaftung": 1,
-        "1.30.20 Gemeindebeiträge": 1,
-        "1.10.70.20.10 Asylwesen": 1
+        "1.50.10.10 Ausbildung": 1,
+        "1.50.20.10 Ausbildung": 1,
+        "4.120.80 Schulleitung": 1,
+        "8.30.60.40 Einschränkung der Zulassung von Leistungserbringern": 1
       }
     },
     "Anderes": {
-      "total": 8,
+      "total": 7,
       "by_topic": {
         "416.3 Berufslehre": 3,
         "411.26 Hochschulen, Fachschulen (Interkantonale Vereinbarungen)": 1,
-        "414.48 Absenzen- und Disziplinarwesen": 1,
         "425.1 Verband der Evangelisch-Reformierten Kirchgemeinden des Kantons Solothurn": 1
       },
       "by_global_category": {
-        "4.20.10 Mittelschule": 1,
         "8.10.30.80 Fusspfleger": 1,
         "1.40.30 Evangelisch-Reformierte Kirche": 1
-      }
-    },
-    "Reglement": {
-      "total": 5,
-      "by_topic": {
-        "414.47 Schlussprüfungen": 2,
-        "414.48 Absenzen- und Disziplinarwesen": 2,
-        "837.5 Stiftungen unter staatlicher Verwaltung": 1
-      },
-      "by_global_category": {
-        "4.20.10 Mittelschule": 3,
-        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -58,25 +49,43 @@
       "by_global_category": {
         "7.50.20.20 Strassenverkehrspolizei": 1
       }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "125.9 Verwaltungsgerichtsbarkeit": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "531 Kantonale Organisation": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 1,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 5,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 1,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 5,
+            "Reglement": 1
           },
           "children": [
             {
@@ -98,6 +107,65 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "125",
+              "title": "Gerichte",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "125.8",
+                  "title": "Haftrichter",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "125.9",
+                  "title": "Verwaltungsgerichtsbarkeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "128",
+              "title": "Staatliche Kurse und Prüfungen",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 3
+              },
+              "children": [
+                {
+                  "identifier": "128.1",
+                  "title": "Kurse",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                },
+                {
+                  "identifier": "128.2",
+                  "title": "Prüfungen, Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -106,22 +174,20 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 11,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 6,
-        "Reglement": 4,
+        "Anderes": 5,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 10,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Anderes": 5,
-            "Reglement": 4,
+            "Anderes": 4,
             "Verordnung": 1
           },
           "children": [
@@ -166,56 +232,13 @@
               },
               "children": [
                 {
-                  "identifier": "413.6",
-                  "title": "Unterricht",
+                  "identifier": "413.2",
+                  "title": "Behörde",
                   "total": 1,
                   "own": 1,
                   "by_type": {
                     "Verordnung": 1
                   }
-                }
-              ]
-            },
-            {
-              "identifier": "414",
-              "title": "Mittelschulen",
-              "total": 5,
-              "own": 0,
-              "by_type": {
-                "Reglement": 4,
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "414.4",
-                  "title": "Schüler",
-                  "total": 5,
-                  "own": 0,
-                  "by_type": {
-                    "Reglement": 4,
-                    "Anderes": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "414.47",
-                      "title": "Schlussprüfungen",
-                      "total": 2,
-                      "own": 2,
-                      "by_type": {
-                        "Reglement": 2
-                      }
-                    },
-                    {
-                      "identifier": "414.48",
-                      "title": "Absenzen- und Disziplinarwesen",
-                      "total": 3,
-                      "own": 3,
-                      "by_type": {
-                        "Reglement": 2,
-                        "Anderes": 1
-                      }
-                    }
-                  ]
                 }
               ]
             },
@@ -281,17 +304,17 @@
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 2,
-        "Verordnung": 2
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "51",
           "title": "Polizei",
-          "total": 4,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2,
-            "Verordnung": 2
+            "Interkantonale Vereinbarung": 2
           },
           "children": [
             {
@@ -315,46 +338,46 @@
               ]
             },
             {
-              "identifier": "512",
-              "title": "Andere polizeiliche Aufgaben",
+              "identifier": "513",
+              "title": "Gewerbe- und Handelspolizei",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "512.1",
-                  "title": "Fremdenpolizei",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            },
-            {
-              "identifier": "513",
-              "title": "Gewerbe- und Handelspolizei",
-              "total": 2,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1,
-                "Verordnung": 1
+                "Interkantonale Vereinbarung": 1
               },
               "children": [
                 {
                   "identifier": "513.6",
                   "title": "Glücks- und Geschicklichkeitsspiele",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1,
-                    "Verordnung": 1
+                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "53",
+          "title": "Bevölkerungsschutz / Zivilschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "531",
+              "title": "Kantonale Organisation",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -408,8 +431,7 @@
       "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
-        "Reglement": 1
+        "Verordnung": 4
       },
       "children": [
         {
@@ -469,17 +491,28 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "837.5",
-              "title": "Stiftungen unter staatlicher Verwaltung",
+              "identifier": "832",
+              "title": "Kranken- und Unfallversicherung",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Reglement": 1
-              }
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "832.1",
+                  "title": "Krankenversicherung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -490,62 +523,22 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Verordnung": 3,
+        "Reglement": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "1.10",
-          "title": "Grundlagen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "1.10.70",
-              "title": "Niederlassung und Aufenthalt",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "1.10.70.20",
-                  "title": "Niederlassung und Aufenthalt Ausländer",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.10.70.20.10",
-                      "title": "Asylwesen",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Reglement": 1
           },
           "children": [
             {
@@ -556,26 +549,37 @@
               "by_type": {
                 "Verordnung": 1
               }
-            }
-          ]
-        },
-        {
-          "identifier": "1.30",
-          "title": "Gemeinden",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
+            },
             {
-              "identifier": "1.30.20",
-              "title": "Gemeindebeiträge",
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Verordnung": 1
-              }
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.20",
+                      "title": "Obere Gerichte, Bundesgerichte",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -598,46 +602,85 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "1.50.10",
+              "title": "Anwälte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.10.10",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "1.50.20",
+              "title": "Notare",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.20.10",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 4,
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "4.20",
-          "title": "Sekundarstufe II",
-          "total": 5,
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 4,
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "4.20.10",
-              "title": "Mittelschule",
-              "total": 4,
-              "own": 4,
-              "by_type": {
-                "Reglement": 3,
-                "Anderes": 1
-              }
-            },
-            {
-              "identifier": "4.20.20",
-              "title": "Fachmittelschulen, Diplommittelschulen",
+              "identifier": "4.120.80",
+              "title": "Schulleitung",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -689,10 +732,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -725,26 +769,57 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.40",
+                  "title": "Einschränkung der Zulassung von Leistungserbringern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 25
+    "de": 23
   },
   "available_years_for_entity": [
     "1780",
+    "1802",
     "1803",
     "1825",
     "1828",
     "1830",
+    "1834",
+    "1837",
     "1851",
     "1873",
     "1874",
     "1875",
-    "1882",
-    "1883",
-    "1887",
     "1888",
     "1889",
     "1893",
@@ -754,30 +829,31 @@
     "1903",
     "1905",
     "1907",
+    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
-    "1917",
     "1918",
-    "1919",
+    "1920",
     "1921",
     "1923",
+    "1924",
     "1925",
     "1926",
-    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1933",
-    "1934",
+    "1932",
     "1935",
     "1937",
     "1938",
     "1939",
+    "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",
@@ -860,7 +936,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

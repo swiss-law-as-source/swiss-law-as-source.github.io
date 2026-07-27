@@ -2,19 +2,28 @@
   "year": "1919",
   "year_semantics": "enactment",
   "entity": "AG",
-  "total": 2,
-  "categorized": 2,
+  "total": 3,
+  "categorized": 3,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
+    "Verordnung": {
       "total": 2,
       "by_topic": {
-        "175 Volksschulwesen der Gemeinden": 1,
-        "69 Aufgabenteilung": 1
+        "295 Notariat": 1,
+        "671 Bodenschätze": 1
       },
       "by_global_category": {
-        "4.100.20 Schulgelder": 1,
-        "1.30.40 Aufgabenteilung Kanton-Gemeinden": 1
+        "1.50.20.10 Ausbildung": 1,
+        "6.30.30 Salzregal": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "175 Volksschulwesen der Gemeinden": 1
+      },
+      "by_global_category": {
+        "4.100.20 Schulgelder": 1
       }
     }
   },
@@ -51,22 +60,64 @@
       ]
     },
     {
+      "identifier": "2",
+      "title": "Zivilrecht – Strafrecht – Rechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "29",
+          "title": "Advokatur – Notariat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "295",
+              "title": "Notariat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "Finanzen – Steuern – Staatliche Monopole",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "69",
-          "title": "Aufgabenteilung",
+          "identifier": "67",
+          "title": "Staatliche Monopole",
           "total": 1,
-          "own": 1,
+          "own": 0,
           "by_type": {
-            "Gesetz": 1
-          }
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "671",
+              "title": "Bodenschätze",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
@@ -78,26 +129,37 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "1.30",
-          "title": "Gemeinden",
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "1.30.40",
-              "title": "Aufgabenteilung Kanton-Gemeinden",
+              "identifier": "1.50.20",
+              "title": "Notare",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Gesetz": 1
-              }
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.20.10",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -133,49 +195,78 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.30",
+              "title": "Salzregal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 3
   },
   "available_years_for_entity": [
     "1803",
-    "1819",
     "1828",
     "1832",
-    "1845",
-    "1853",
+    "1838",
+    "1840",
     "1856",
+    "1861",
     "1862",
+    "1869",
     "1871",
+    "1873",
+    "1885",
     "1889",
     "1901",
-    "1905",
-    "1906",
-    "1907",
     "1908",
     "1909",
+    "1910",
     "1911",
-    "1912",
-    "1914",
+    "1913",
     "1915",
-    "1916",
     "1917",
     "1918",
     "1919",
+    "1921",
     "1922",
-    "1923",
     "1924",
     "1925",
     "1928",
     "1930",
+    "1931",
     "1932",
     "1934",
     "1937",
     "1938",
     "1939",
-    "1940",
-    "1941",
     "1942",
     "1943",
     "1944",
@@ -194,7 +285,6 @@
     "1959",
     "1960",
     "1961",
-    "1962",
     "1963",
     "1964",
     "1965",
@@ -206,6 +296,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",
@@ -264,9 +355,9 @@
     "BL",
     "BS",
     "CH",
+    "LU",
     "NE",
     "SG",
-    "SO",
     "ZG",
     "ZH"
   ]

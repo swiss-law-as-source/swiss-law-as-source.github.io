@@ -2,39 +2,43 @@
   "year": "1976",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 15,
-  "categorized": 15,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 9,
-      "by_topic": {
-        "93 Spitäler": 3,
-        "142 Finanz- und Kirchendirektion": 1,
-        "48 Verkehr": 1,
-        "687 Berufe im Gesundheitswesen": 1,
-        "78 Umweltschutz": 1,
-        "791 Denkmal- und Heimatschutz": 1,
-        "91 Medizinalpersonen": 1
-      },
-      "by_global_category": {
-        "8.10.30.10 Ärzte": 2,
-        "8.10.30.30 Krankenpflegepersonal": 1,
-        "7.60.60 Strahlenschutz": 1,
-        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
-      }
-    },
     "Anderes": {
       "total": 5,
       "by_topic": {
         "92 Sozialmedizin": 2,
-        "93 Spitäler": 2,
-        "157 Personalrecht II": 1
+        "157 Personalrecht II": 1,
+        "19 Kirchen": 1,
+        "93 Spitäler": 1
       },
       "by_global_category": {
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1,
         "8.10.120.10 Alkoholismus": 1,
         "8.10.20.20 Psychiatrische Kliniken": 1
+      }
+    },
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "54 Gewerbe und Industrie": 1,
+        "791 Denkmal- und Heimatschutz": 1,
+        "91 Medizinalpersonen": 1
+      },
+      "by_global_category": {
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "54 Gewerbe und Industrie": 1
+      },
+      "by_global_category": {
+        "9.50.10.40 Taxigewerbe": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -52,30 +56,9 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
-        {
-          "identifier": "14",
-          "title": "Regierungsrat und Verwaltung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "142",
-              "title": "Finanz- und Kirchendirektion",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "15",
           "title": "Personalrecht I",
@@ -95,25 +78,36 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "19",
+          "title": "Kirchen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
         }
       ]
     },
     {
-      "identifier": "4",
-      "title": "Bau, Werke, Verkehr, Energie",
-      "total": 1,
+      "identifier": "5",
+      "title": "Volkswirtschaft",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Reglement": 1
       },
       "children": [
         {
-          "identifier": "48",
-          "title": "Verkehr",
-          "total": 1,
-          "own": 1,
+          "identifier": "54",
+          "title": "Gewerbe und Industrie",
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Reglement": 1
           }
         }
       ]
@@ -121,32 +115,21 @@
     {
       "identifier": "6",
       "title": "Kultur, Bildung, Ausbildung",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "68",
           "title": "Berufliche Ausbildung",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
-            {
-              "identifier": "687",
-              "title": "Berufe im Gesundheitswesen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
             {
               "identifier": "689",
               "title": "Berufe im Bereich Informations- und Kommunikationstechnik (IKT)",
@@ -163,21 +146,12 @@
     {
       "identifier": "7",
       "title": "Öffentliche Sicherheit, Umweltschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 1
       },
       "children": [
-        {
-          "identifier": "78",
-          "title": "Umweltschutz",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        },
         {
           "identifier": "79",
           "title": "Natur- und Heimatschutz",
@@ -203,11 +177,11 @@
     {
       "identifier": "9",
       "title": "Gesundheit",
-      "total": 8,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 4,
-        "Anderes": 4
+        "Anderes": 3,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -231,11 +205,10 @@
         {
           "identifier": "93",
           "title": "Spitäler",
-          "total": 5,
-          "own": 5,
+          "total": 1,
+          "own": 1,
           "by_type": {
-            "Verordnung": 3,
-            "Anderes": 2
+            "Anderes": 1
           }
         }
       ]
@@ -245,10 +218,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
@@ -292,38 +265,38 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 1
       },
       "children": [
-        {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "7.60.60",
-              "title": "Strahlenschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -349,20 +322,18 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 5,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
         "Anderes": 2
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 5,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 3,
             "Anderes": 2
           },
           "children": [
@@ -382,35 +353,6 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
-                  }
-                }
-              ]
-            },
-            {
-              "identifier": "8.10.30",
-              "title": "Medizinische Berufe",
-              "total": 3,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 3
-              },
-              "children": [
-                {
-                  "identifier": "8.10.30.10",
-                  "title": "Ärzte",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Verordnung": 2
-                  }
-                },
-                {
-                  "identifier": "8.10.30.30",
-                  "title": "Krankenpflegepersonal",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
                   }
                 }
               ]
@@ -438,51 +380,84 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.40",
+                  "title": "Taxigewerbe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 15
+    "de": 10
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -493,12 +468,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

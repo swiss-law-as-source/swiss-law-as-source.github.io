@@ -2,21 +2,33 @@
   "year": "2007",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 11,
-  "categorized": 11,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
-      "total": 3,
+    "Reglement": {
+      "total": 6,
       "by_topic": {
-        "321 Strafprozessordnung": 1,
-        "323 Zeugenschutz": 1,
-        "711.2 Raumplanung": 1
+        "414.48 Absenzen- und Disziplinarwesen": 2,
+        "126.58 Alters-, Hinterlassenen- und Invalidenvorsorge": 1,
+        "413.6 Unterricht": 1,
+        "414.47 Schlussprüfungen": 1
       },
       "by_global_category": {
-        "3.30 Jugendstrafrecht und Jugendstrafprozessrecht": 1,
-        "3.20.70 Opferhilfe": 1,
-        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
+        "4.20.10 Mittelschule": 2,
+        "8.30.50 BVG": 1,
+        "4.10.20 Kindergarten": 1,
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
+      }
+    },
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "413.6 Unterricht": 1,
+        "614.7 Hundesteuer, Hundehaltung": 1
+      },
+      "by_global_category": {
+        "5.30.20.10 Hunde, gefährliche Tiere": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -32,63 +44,71 @@
         "4.180.30 Sport": 1
       }
     },
-    "Reglement": {
-      "total": 2,
-      "by_topic": {},
-      "by_global_category": {}
-    },
-    "Verordnung": {
+    "Gesetz": {
       "total": 2,
       "by_topic": {
-        "832.1 Krankenversicherung": 1,
-        "832.2 Prämienverbilligung": 1
+        "415 Hochschulen": 1,
+        "822.4 Bekämpfung der Schwarzarbeit": 1
       },
       "by_global_category": {
-        "8.30.60.20 Prämienverbilligungen": 1
+        "8.20.20.50 Schwarzarbeit": 1
       }
     },
     "Anderes": {
-      "total": 1,
+      "total": 2,
       "by_topic": {},
       "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "3",
-      "title": "Strafrecht, Strafprozessordnung, Strafvollzug",
-      "total": 2,
+      "identifier": "1",
+      "title": "Grundlagen, Organisation, Gemeinden",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Reglement": 1
       },
       "children": [
         {
-          "identifier": "32",
-          "title": "Strafprozessrecht",
-          "total": 2,
+          "identifier": "12",
+          "title": "Organisation",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 2
+            "Reglement": 1
           },
           "children": [
             {
-              "identifier": "321",
-              "title": "Strafprozessordnung",
+              "identifier": "126",
+              "title": "Staatspersonal",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Gesetz": 1
-              }
-            },
-            {
-              "identifier": "323",
-              "title": "Zeugenschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "126.5",
+                  "title": "Staatliche Leistungen aus dem Anstellungsverhältnis",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "126.58",
+                      "title": "Alters-, Hinterlassenen- und Invalidenvorsorge",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -97,19 +117,25 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 2,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Reglement": 4,
+        "Interkantonale Vereinbarung": 2,
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 2,
+          "total": 8,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2
+            "Reglement": 4,
+            "Interkantonale Vereinbarung": 2,
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -151,6 +177,77 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "413",
+              "title": "Volksschule",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.6",
+                  "title": "Unterricht",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 1,
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "414",
+              "title": "Mittelschulen",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Reglement": 3
+              },
+              "children": [
+                {
+                  "identifier": "414.4",
+                  "title": "Schüler",
+                  "total": 3,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 3
+                  },
+                  "children": [
+                    {
+                      "identifier": "414.47",
+                      "title": "Schlussprüfungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    },
+                    {
+                      "identifier": "414.48",
+                      "title": "Absenzen- und Disziplinarwesen",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Reglement": 2
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "415",
+              "title": "Hochschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -199,39 +296,39 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Bauwesen, öffentliche Werke, Verkehr",
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "71",
-          "title": "Bauwesen",
+          "identifier": "61",
+          "title": "Finanzen",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "711",
-              "title": "Bau- und Raumplanungsrecht",
+              "identifier": "614",
+              "title": "Kantonale Steuern",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "711.2",
-                  "title": "Raumplanung",
+                  "identifier": "614.7",
+                  "title": "Hundesteuer, Hundehaltung",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Gesetz": 1
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -243,59 +340,6 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 2
-      },
-      "children": [
-        {
-          "identifier": "83",
-          "title": "Sozialrecht",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 2
-          },
-          "children": [
-            {
-              "identifier": "832",
-              "title": "Kranken- und Unfallversicherung",
-              "total": 2,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 2
-              },
-              "children": [
-                {
-                  "identifier": "832.1",
-                  "title": "Krankenversicherung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                },
-                {
-                  "identifier": "832.2",
-                  "title": "Prämienverbilligung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "by_global_category_tree": [
-    {
-      "identifier": "2",
-      "title": "Zivilrecht",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -303,8 +347,8 @@
       },
       "children": [
         {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
+          "identifier": "82",
+          "title": "Arbeit",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -312,8 +356,8 @@
           },
           "children": [
             {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
+              "identifier": "822",
+              "title": "Arbeitnehmerschutz",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -321,8 +365,8 @@
               },
               "children": [
                 {
-                  "identifier": "2.10.40.30",
-                  "title": "Grundbuch und Grundbuchvermessung",
+                  "identifier": "822.4",
+                  "title": "Bekämpfung der Schwarzarbeit",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -334,72 +378,37 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "3",
-      "title": "Strafrecht",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 2
-      },
-      "children": [
-        {
-          "identifier": "3.20",
-          "title": "Strafprozess",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "3.20.70",
-              "title": "Opferhilfe",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "3.30",
-          "title": "Jugendstrafrecht und Jugendstrafprozessrecht",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Gesetz": 1
-          }
-        }
-      ]
-    },
+    }
+  ],
+  "by_global_category_tree": [
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 7,
       "own": 0,
       "by_type": {
+        "Reglement": 4,
         "Interkantonale Vereinbarung": 3
       },
       "children": [
         {
           "identifier": "4.10",
           "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2
+            "Interkantonale Vereinbarung": 2,
+            "Reglement": 1
           },
           "children": [
             {
               "identifier": "4.10.20",
               "title": "Kindergarten",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Interkantonale Vereinbarung": 1,
+                "Reglement": 1
               }
             },
             {
@@ -409,6 +418,35 @@
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Reglement": 3
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 2
+              }
+            },
+            {
+              "identifier": "4.20.20",
+              "title": "Fachmittelschulen, Diplommittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
               }
             }
           ]
@@ -436,8 +474,8 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -445,8 +483,8 @@
       },
       "children": [
         {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -454,8 +492,8 @@
           },
           "children": [
             {
-              "identifier": "8.30.60",
-              "title": "KVG",
+              "identifier": "5.30.20",
+              "title": "Öffentliche Ruhe und Ordnung",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -463,8 +501,8 @@
               },
               "children": [
                 {
-                  "identifier": "8.30.60.20",
-                  "title": "Prämienverbilligungen",
+                  "identifier": "5.30.20.10",
+                  "title": "Hunde, gefährliche Tiere",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -476,24 +514,87 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.20",
+              "title": "Arbeitsmarkt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.20.50",
+                  "title": "Schwarzarbeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.50",
+              "title": "BVG",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 16
   },
   "available_years_for_entity": [
     "1780",
+    "1802",
     "1803",
     "1825",
     "1828",
     "1830",
+    "1834",
+    "1837",
     "1851",
     "1873",
     "1874",
     "1875",
-    "1882",
-    "1883",
-    "1887",
     "1888",
     "1889",
     "1893",
@@ -503,30 +604,31 @@
     "1903",
     "1905",
     "1907",
+    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
-    "1917",
     "1918",
-    "1919",
+    "1920",
     "1921",
     "1923",
+    "1924",
     "1925",
     "1926",
-    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1933",
-    "1934",
+    "1932",
     "1935",
     "1937",
     "1938",
     "1939",
+    "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",
@@ -609,7 +711,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

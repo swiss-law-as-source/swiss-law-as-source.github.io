@@ -2,10 +2,31 @@
   "year": "1993",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 4,
-  "categorized": 4,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "145.5 Rechtsanwälte": 1,
+        "414.2 Berufslehre, Berufsschule": 1
+      },
+      "by_global_category": {
+        "1.50.10.10 Ausbildung": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
+        "213.1 Eigentum": 1,
+        "525 Hundepolizei": 1
+      },
+      "by_global_category": {
+        "9.20.30 Bäuerliches Bodenrecht": 1,
+        "6.20.70 Hundesteuern": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 2,
       "by_topic": {
@@ -21,16 +42,93 @@
       "total": 1,
       "by_topic": {},
       "by_global_category": {}
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "414.2 Berufslehre, Berufsschule": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden und Gemeinden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "145",
+              "title": "Behörden der Rechtspflege, Rechtsanwälte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "145.5",
+                  "title": "Rechtsanwälte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "213",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "213.1",
+                  "title": "Eigentum",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Erziehung, Kultur",
@@ -103,9 +201,82 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "52",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "525",
+              "title": "Hundepolizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.50.10",
+              "title": "Anwälte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.10.10",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -156,48 +327,103 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.70",
+              "title": "Hundesteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.30",
+              "title": "Bäuerliches Bodenrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 7
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -206,7 +432,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -259,7 +484,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

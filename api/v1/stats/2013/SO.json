@@ -2,10 +2,36 @@
   "year": "2013",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 7,
-  "categorized": 7,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
+    "Reglement": {
+      "total": 5,
+      "by_topic": {
+        "413.4 Schüler": 1,
+        "414.47 Schlussprüfungen": 1,
+        "618.5 Prävention und Intervention": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "4.20.10 Mittelschule": 1,
+        "5.20.30.10 Feuerwehr": 1
+      }
+    },
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "123.2 Amtschreibereien": 1,
+        "811.1 Organisation des Sanitätswesens": 1,
+        "925.1 Berufsschulen": 1
+      },
+      "by_global_category": {
+        "1.10.50.10 Gebietseinteilung, Bezirke": 1,
+        "8.10.30.10 Ärzte": 1,
+        "4.30.10.10 Hauswirtschaftliche Ausbildung": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 3,
       "by_topic": {
@@ -18,7 +44,7 @@
         "8.10.10 Ethik": 1
       }
     },
-    "Verordnung": {
+    "Gesetz": {
       "total": 2,
       "by_topic": {
         "331 Zuständigkeiten, Verfahren, Kosten": 1,
@@ -27,44 +53,76 @@
       "by_global_category": {
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
       }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "331 Zuständigkeiten, Verfahren, Kosten": 2
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "3",
-      "title": "Strafrecht, Strafprozessordnung, Strafvollzug",
-      "total": 3,
+      "identifier": "1",
+      "title": "Grundlagen, Organisation, Gemeinden",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
         "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "Organisation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "123",
+              "title": "Amtei- und Bezirksbehörden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "123.2",
+                  "title": "Amtschreibereien",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht, Strafprozessordnung, Strafvollzug",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "33",
           "title": "Strafvollzug",
-          "total": 3,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "331",
               "title": "Zuständigkeiten, Verfahren, Kosten",
-              "total": 3,
-              "own": 3,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 2,
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -74,18 +132,20 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Reglement": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Reglement": 2,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
@@ -114,6 +174,57 @@
                       "own": 1,
                       "by_type": {
                         "Interkantonale Vereinbarung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "413",
+              "title": "Volksschule",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.4",
+                  "title": "Schüler",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "414",
+              "title": "Mittelschulen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.4",
+                  "title": "Schüler",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "414.47",
+                      "title": "Schlussprüfungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
                       }
                     }
                   ]
@@ -167,12 +278,54 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "618",
+              "title": "Gebäudeversicherung und Feuerpolizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "618.5",
+                  "title": "Prävention und Intervention",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Bauwesen, öffentliche Werke, Verkehr",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -181,7 +334,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -190,7 +343,7 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -199,7 +352,7 @@
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -211,21 +364,43 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "811",
+              "title": "Sanitätswesen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.1",
+                  "title": "Organisation des Sanitätswesens",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "813",
               "title": "Heilmittel, Betäubungsmittel, Gifte",
@@ -249,16 +424,100 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "92",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "925",
+              "title": "Landwirtschaftliche Ausbildung und Beratung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "925.1",
+                  "title": "Berufsschulen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.50",
+              "title": "Gebiet",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.50.10",
+                  "title": "Gebietseinteilung, Bezirke",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -267,7 +526,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -276,12 +535,95 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
                   "identifier": "2.10.40.30",
                   "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Reglement": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.10",
+              "title": "Berufsfachschulen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "4.30.10.10",
+                  "title": "Hauswirtschaftliche Ausbildung",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -297,12 +639,44 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.10",
+                  "title": "Feuerwehr",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "5.30",
           "title": "Innere Sicherheit",
@@ -339,19 +713,21 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -362,6 +738,26 @@
               "by_type": {
                 "Interkantonale Vereinbarung": 1
               }
+            },
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -369,21 +765,21 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 13
   },
   "available_years_for_entity": [
     "1780",
+    "1802",
     "1803",
     "1825",
     "1828",
     "1830",
+    "1834",
+    "1837",
     "1851",
     "1873",
     "1874",
     "1875",
-    "1882",
-    "1883",
-    "1887",
     "1888",
     "1889",
     "1893",
@@ -393,30 +789,31 @@
     "1903",
     "1905",
     "1907",
+    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
-    "1917",
     "1918",
-    "1919",
+    "1920",
     "1921",
     "1923",
+    "1924",
     "1925",
     "1926",
-    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1933",
-    "1934",
+    "1932",
     "1935",
     "1937",
     "1938",
     "1939",
+    "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",
@@ -499,7 +896,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

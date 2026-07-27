@@ -2,41 +2,55 @@
   "year": "1997",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 14,
-  "categorized": 14,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 6,
+      "total": 10,
       "by_topic": {
+        "45 Natur- und Heimatschutz": 5,
         "172 Staatsrat und Verwaltung": 1,
         "412 Berufsbildung": 1,
         "55 Kantonspolizei": 1,
-        "64 Steuern": 1,
         "837 Arbeitslosenversicherung": 1,
         "93 Gewerbe": 1
       },
       "by_global_category": {
+        "7.70.10 Landschaftsschutz": 5,
         "1.20.20.20.10 Entschädigungen": 1,
         "4.90.20 Löhne, Entschädigungen": 1,
         "5.30.10.40 Gebühren": 1,
-        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1,
         "1.20.70.10.60 Kantonale Rekurskommissionen": 1,
         "9.50.10.20 Tourismus": 1
       }
     },
     "Reglement": {
-      "total": 5,
+      "total": 8,
       "by_topic": {
+        "172 Staatsrat und Verwaltung": 4,
         "34 Strafvollzug": 2,
-        "172 Staatsrat und Verwaltung": 1,
         "837 Arbeitslosenversicherung": 1,
         "91 Landwirtschaft": 1
       },
       "by_global_category": {
         "1.20.20.40.10 Anstellung": 1,
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
         "8.30.110 Arbeitslosenversicherung": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1
+      }
+    },
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "14 Bürgerrecht. Niederlassung. Aufenthalt": 1,
+        "172 Staatsrat und Verwaltung": 1,
+        "80 Gesundheitswesen": 1
+      },
+      "by_global_category": {
+        "1.10.70.20.20 Zwangsmassnahmen": 1,
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "8.10.110 Unfallbekämpfung": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -49,19 +63,10 @@
     "Gesetz": {
       "total": 1,
       "by_topic": {
-        "50 Katastrophenschutz, Militärwesen": 1
+        "65 Hundesteuer, direkte Bundessteuer": 1
       },
       "by_global_category": {
-        "5.30.30 Waffen und Munition": 1
-      }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "80 Gesundheitswesen": 1
-      },
-      "by_global_category": {
-        "8.10.110 Unfallbekämpfung": 1
+        "6.20.10.10 Bundessteuern": 1
       }
     }
   },
@@ -69,30 +74,42 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 2,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
+        "Reglement": 4,
+        "Verordnung": 2,
         "Anderes": 1
       },
       "children": [
         {
+          "identifier": "14",
+          "title": "Bürgerrecht. Niederlassung. Aufenthalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
           "identifier": "17",
           "title": "Behörden",
-          "total": 2,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Reglement": 1,
+            "Reglement": 4,
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "172",
               "title": "Staatsrat und Verwaltung",
-              "total": 2,
-              "own": 2,
+              "total": 6,
+              "own": 6,
               "by_type": {
-                "Reglement": 1,
+                "Reglement": 4,
+                "Verordnung": 1,
                 "Anderes": 1
               }
             }
@@ -123,10 +140,10 @@
     {
       "identifier": "4",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 2,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Anderes": 6,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -159,28 +176,27 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "45",
+          "title": "Natur- und Heimatschutz",
+          "total": 5,
+          "own": 5,
+          "by_type": {
+            "Anderes": 5
+          }
         }
       ]
     },
     {
       "identifier": "5",
       "title": "Sicherheit",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
-        {
-          "identifier": "50",
-          "title": "Katastrophenschutz, Militärwesen",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Gesetz": 1
-          }
-        },
         {
           "identifier": "55",
           "title": "Kantonspolizei",
@@ -198,16 +214,16 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "64",
-          "title": "Steuern",
+          "identifier": "65",
+          "title": "Hundesteuer, direkte Bundessteuer",
           "total": 1,
           "own": 1,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1
           }
         }
       ]
@@ -291,31 +307,76 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Reglement": 1
+        "Verordnung": 2,
+        "Reglement": 2,
+        "Anderes": 2
       },
       "children": [
         {
-          "identifier": "1.20",
-          "title": "Behörden",
-          "total": 3,
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
           "own": 0,
           "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.20",
+                      "title": "Zwangsmassnahmen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Reglement": 2,
             "Anderes": 2,
-            "Reglement": 1
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 2,
+              "total": 4,
               "own": 0,
               "by_type": {
+                "Reglement": 2,
                 "Anderes": 1,
-                "Reglement": 1
+                "Verordnung": 1
               },
               "children": [
                 {
@@ -341,10 +402,11 @@
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
-                  "total": 1,
+                  "total": 3,
                   "own": 0,
                   "by_type": {
-                    "Reglement": 1
+                    "Reglement": 2,
+                    "Verordnung": 1
                   },
                   "children": [
                     {
@@ -353,6 +415,16 @@
                       "total": 1,
                       "own": 1,
                       "by_type": {
+                        "Reglement": 1
+                      }
+                    },
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Verordnung": 1,
                         "Reglement": 1
                       }
                     }
@@ -429,21 +501,19 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Gesetz": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "5.30",
           "title": "Innere Sicherheit",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Gesetz": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -465,15 +535,6 @@
                   }
                 }
               ]
-            },
-            {
-              "identifier": "5.30.30",
-              "title": "Waffen und Munition",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
             }
           ]
         }
@@ -482,10 +543,11 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Reglement": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -507,46 +569,66 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.10",
+                  "title": "Bundessteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 5
       },
       "children": [
         {
-          "identifier": "7.50",
-          "title": "Verkehr",
-          "total": 1,
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 5
           },
           "children": [
             {
-              "identifier": "7.50.20",
-              "title": "Strassenverkehr",
-              "total": 1,
-              "own": 0,
+              "identifier": "7.70.10",
+              "title": "Landschaftsschutz",
+              "total": 5,
+              "own": 5,
               "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "7.50.20.10",
-                  "title": "Strassenverkehrssteuern und -abgaben",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
+                "Anderes": 5
+              }
             }
           ]
         }
@@ -648,30 +730,26 @@
     }
   ],
   "languages_available": {
-    "de": 14,
-    "fr": 14
+    "de": 23,
+    "fr": 23
   },
   "available_years_for_entity": [
     "1802",
-    "1828",
     "1850",
     "1855",
+    "1856",
     "1864",
     "1877",
     "1882",
     "1891",
-    "1898",
     "1900",
-    "1905",
     "1907",
-    "1911",
     "1912",
-    "1916",
     "1922",
     "1923",
-    "1931",
-    "1932",
-    "1934",
+    "1924",
+    "1926",
+    "1933",
     "1935",
     "1936",
     "1937",
@@ -679,18 +757,15 @@
     "1939",
     "1943",
     "1944",
-    "1946",
     "1948",
     "1949",
     "1950",
     "1951",
-    "1952",
     "1954",
     "1955",
     "1957",
     "1958",
     "1959",
-    "1960",
     "1961",
     "1962",
     "1963",
@@ -704,6 +779,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",

@@ -2,10 +2,24 @@
   "year": "2019",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 8,
-  "categorized": 8,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "811.1 Organisation des Sanitätswesens": 2,
+        "131.7 Finanzausgleich": 1,
+        "614.15 Steuerverordnungen und -weisungen": 1,
+        "813.1 Heilmittel": 1
+      },
+      "by_global_category": {
+        "1.30.10 Gemeindefinanzen": 1,
+        "8.10.100.10 Epidemien, Pandemien": 1,
+        "8.10.70 Heil- und Betäubungsmittel": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 5,
       "by_topic": {
@@ -19,24 +33,25 @@
         "7.30.40 Submission": 1
       }
     },
-    "Verordnung": {
-      "total": 2,
+    "Anderes": {
+      "total": 4,
       "by_topic": {
-        "131.7 Finanzausgleich": 1,
-        "721.5 Submission": 1
+        "511.1 Organisation": 1,
+        "618.1 Grundlagen": 1,
+        "821.3 Gesamt- und Normalarbeitsverträge": 1
       },
       "by_global_category": {
-        "1.30.10 Gemeindefinanzen": 1,
-        "7.30.40 Submission": 1
+        "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
+        "2.20.10.40.20.10 Hausangestellte": 1
       }
     },
     "Gesetz": {
       "total": 1,
       "by_topic": {
-        "721.5 Submission": 1
+        "131.7 Finanzausgleich": 1
       },
       "by_global_category": {
-        "7.30.40 Submission": 1
+        "1.30.10 Gemeindefinanzen": 1
       }
     }
   },
@@ -44,36 +59,40 @@
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "13",
           "title": "Gemeinden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "131",
               "title": "Grundlagen",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "131.7",
                   "title": "Finanzausgleich",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Gesetz": 1,
                     "Verordnung": 1
                   }
                 }
@@ -139,30 +158,42 @@
     {
       "identifier": "5",
       "title": "Polizei, Militär, Zivilschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 3
+        "Interkantonale Vereinbarung": 3,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "51",
           "title": "Polizei",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 3
+            "Interkantonale Vereinbarung": 3,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "511",
               "title": "Kantonspolizei",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Anderes": 1,
                 "Interkantonale Vereinbarung": 1
               },
               "children": [
+                {
+                  "identifier": "511.1",
+                  "title": "Organisation",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
                 {
                   "identifier": "511.5",
                   "title": "Interkantonale Zusammenarbeit",
@@ -199,47 +230,72 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Bauwesen, öffentliche Werke, Verkehr",
-      "total": 3,
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "72",
-          "title": "Öffentliche Werke",
-          "total": 3,
+          "identifier": "61",
+          "title": "Finanzen",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "721",
-              "title": "Allgemeines",
-              "total": 3,
+              "identifier": "614",
+              "title": "Kantonale Steuern",
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1,
-                "Gesetz": 1,
                 "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "721.5",
-                  "title": "Submission",
-                  "total": 3,
-                  "own": 3,
+                  "identifier": "614.1",
+                  "title": "Staats- und Gemeindesteuer",
+                  "total": 1,
+                  "own": 0,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1,
-                    "Gesetz": 1,
                     "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "614.15",
+                      "title": "Steuerverordnungen und -weisungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "618",
+              "title": "Gebäudeversicherung und Feuerpolizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "618.1",
+                  "title": "Grundlagen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
                   }
                 }
               ]
@@ -247,43 +303,10 @@
           ]
         }
       ]
-    }
-  ],
-  "by_global_category_tree": [
-    {
-      "identifier": "1",
-      "title": "Staat",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "1.30",
-          "title": "Gemeinden",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "1.30.10",
-              "title": "Gemeindefinanzen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        }
-      ]
     },
     {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Verkehr",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -291,8 +314,8 @@
       },
       "children": [
         {
-          "identifier": "5.30",
-          "title": "Innere Sicherheit",
+          "identifier": "72",
+          "title": "Öffentliche Werke",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -300,8 +323,8 @@
           },
           "children": [
             {
-              "identifier": "5.30.10",
-              "title": "Polizei",
+              "identifier": "721",
+              "title": "Allgemeines",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -309,8 +332,8 @@
               },
               "children": [
                 {
-                  "identifier": "5.30.10.50",
-                  "title": "Polizeiliche Zusammenarbeit",
+                  "identifier": "721.5",
+                  "title": "Submission",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -324,34 +347,127 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 3,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Sanitätswesen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "811.1",
+                  "title": "Organisation des Sanitätswesens",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "813",
+              "title": "Heilmittel, Betäubungsmittel, Gifte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "813.1",
+                  "title": "Heilmittel",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "82",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "821",
+              "title": "Ämter, Gesamt- und Normalarbeitsverträge, Arbeitsstreitigkeiten",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "821.3",
+                  "title": "Gesamt- und Normalarbeitsverträge",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
         "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "7.30",
-          "title": "Öffentliche Werke",
-          "total": 3,
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
             "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "7.30.40",
-              "title": "Submission",
-              "total": 3,
-              "own": 3,
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Interkantonale Vereinbarung": 1,
                 "Gesetz": 1,
                 "Verordnung": 1
               }
@@ -359,24 +475,216 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "2.20",
+          "title": "Einführungsgesetzgebung OR",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "2.20.10",
+              "title": "Vertragsverhältnisse",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.20.10.40",
+                  "title": "Arbeitsvertragsrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.20.10.40.20",
+                      "title": "Normalarbeitsverträge",
+                      "total": 1,
+                      "own": 0,
+                      "by_type": {
+                        "Anderes": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "2.20.10.40.20.10",
+                          "title": "Hausangestellte",
+                          "total": 1,
+                          "own": 1,
+                          "by_type": {
+                            "Anderes": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1,
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.50",
+                  "title": "Polizeiliche Zusammenarbeit",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 1,
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "8.10.70",
+              "title": "Heil- und Betäubungsmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "8.10.100",
+              "title": "Krankheitsbekämpfung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.100.10",
+                  "title": "Epidemien, Pandemien",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 15
   },
   "available_years_for_entity": [
     "1780",
+    "1802",
     "1803",
     "1825",
     "1828",
     "1830",
+    "1834",
+    "1837",
     "1851",
     "1873",
     "1874",
     "1875",
-    "1882",
-    "1883",
-    "1887",
     "1888",
     "1889",
     "1893",
@@ -386,30 +694,31 @@
     "1903",
     "1905",
     "1907",
+    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
-    "1917",
     "1918",
-    "1919",
+    "1920",
     "1921",
     "1923",
+    "1924",
     "1925",
     "1926",
-    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1933",
-    "1934",
+    "1932",
     "1935",
     "1937",
     "1938",
     "1939",
+    "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",
@@ -492,7 +801,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

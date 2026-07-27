@@ -2,12 +2,12 @@
   "year": "1993",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 16,
-  "categorized": 16,
+  "total": 21,
+  "categorized": 21,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 7,
+      "total": 11,
       "by_topic": {
         "122.2 Departemente": 1,
         "321 Strafprozessordnung": 1,
@@ -15,31 +15,45 @@
         "331 Zuständigkeiten, Verfahren, Kosten": 1,
         "416.3 Berufslehre": 1,
         "416.9 Höhere berufliche Lehranstalten": 1,
-        "817.1 Kantonales Spital": 1
+        "711.2 Raumplanung": 1,
+        "812.5 Umweltgefährdende Stoffe": 1,
+        "817.1 Kantonales Spital": 1,
+        "931.7 Forstliches Bauwesen": 1
       },
       "by_global_category": {
         "1.20.20.10.10 Delegation": 1,
         "3.20.70 Opferhilfe": 1,
         "3.70.20 Schutzaufsicht": 1,
         "3.50 Ordnungsbussen": 1,
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "7.60.10 Abfälle": 1
       }
     },
     "Anderes": {
-      "total": 7,
+      "total": 6,
       "by_topic": {
-        "416.3 Berufslehre": 2,
-        "123.4 Bezirksweibel": 1,
+        "326 Schutzaufsicht": 1,
         "411.25 Ausbildungsabschlüsse": 1,
-        "411.28 Schweizerische Konferenz der kantonalen Erziehungsdirektoren (EDK)": 1,
-        "618.1 Grundlagen": 1,
-        "832.2 Prämienverbilligung": 1
+        "416.3 Berufslehre": 1,
+        "416.9 Höhere berufliche Lehranstalten": 1,
+        "618.1 Grundlagen": 1
       },
       "by_global_category": {
+        "3.70.20 Schutzaufsicht": 1,
         "4.70.10 Erwachsenenbildung": 1,
-        "4.140 Anerkennung von Diplomen": 1,
-        "5.20.30.40.10 Elementarschadenversicherung": 1,
-        "8.30.60.20 Prämienverbilligungen": 1
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "5.20.30.40.10 Elementarschadenversicherung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "112.1 Erwerb, Beibehaltung, Verlust": 1,
+        "835 Ausgleichskasse": 1
+      },
+      "by_global_category": {
+        "1.10.60 Bürgerrecht": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -51,12 +65,14 @@
         "4.70.10 Erwachsenenbildung": 1
       }
     },
-    "Gesetz": {
+    "Reglement": {
       "total": 1,
       "by_topic": {
-        "835 Ausgleichskasse": 1
+        "837.5 Stiftungen unter staatlicher Verwaltung": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "8.70.60 Spenden und gemeinnützige Sammlungen": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -66,18 +82,48 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "12",
-          "title": "Organisation",
-          "total": 2,
+          "identifier": "11",
+          "title": "Grundlagen",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Anderes": 1
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "112",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "112.1",
+                  "title": "Erwerb, Beibehaltung, Verlust",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "Organisation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
           },
           "children": [
             {
@@ -99,26 +145,6 @@
                   }
                 }
               ]
-            },
-            {
-              "identifier": "123",
-              "title": "Amtei- und Bezirksbehörden",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "123.4",
-                  "title": "Bezirksweibel",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
             }
           ]
         }
@@ -127,19 +153,21 @@
     {
       "identifier": "3",
       "title": "Strafrecht, Strafprozessordnung, Strafvollzug",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung": 3,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "32",
           "title": "Strafprozessrecht",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 2,
+            "Anderes": 1
           },
           "children": [
             {
@@ -154,9 +182,10 @@
             {
               "identifier": "326",
               "title": "Schutzaufsicht",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Anderes": 1,
                 "Verordnung": 1
               }
             }
@@ -187,10 +216,10 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 7,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 4,
+        "Anderes": 3,
         "Verordnung": 2,
         "Interkantonale Vereinbarung": 1
       },
@@ -198,10 +227,10 @@
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 7,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Anderes": 4,
+            "Anderes": 3,
             "Verordnung": 2,
             "Interkantonale Vereinbarung": 1
           },
@@ -209,21 +238,21 @@
             {
               "identifier": "411",
               "title": "Allgemeines",
-              "total": 3,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 2,
-                "Interkantonale Vereinbarung": 1
+                "Interkantonale Vereinbarung": 1,
+                "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "411.2",
                   "title": "Koordination, Interkantonale Vereinbarungen",
-                  "total": 3,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 2,
-                    "Interkantonale Vereinbarung": 1
+                    "Interkantonale Vereinbarung": 1,
+                    "Anderes": 1
                   },
                   "children": [
                     {
@@ -233,15 +262,6 @@
                       "own": 2,
                       "by_type": {
                         "Interkantonale Vereinbarung": 1,
-                        "Anderes": 1
-                      }
-                    },
-                    {
-                      "identifier": "411.28",
-                      "title": "Schweizerische Konferenz der kantonalen Erziehungsdirektoren (EDK)",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
                         "Anderes": 1
                       }
                     }
@@ -255,26 +275,27 @@
               "total": 4,
               "own": 0,
               "by_type": {
-                "Anderes": 2,
-                "Verordnung": 2
+                "Verordnung": 2,
+                "Anderes": 2
               },
               "children": [
                 {
                   "identifier": "416.3",
                   "title": "Berufslehre",
-                  "total": 3,
-                  "own": 3,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Anderes": 2,
-                    "Verordnung": 1
+                    "Verordnung": 1,
+                    "Anderes": 1
                   }
                 },
                 {
                   "identifier": "416.9",
                   "title": "Höhere berufliche Lehranstalten",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Anderes": 1,
                     "Verordnung": 1
                   }
                 }
@@ -327,25 +348,87 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 3,
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Verkehr",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1,
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "81",
-          "title": "Gesundheit",
+          "identifier": "71",
+          "title": "Bauwesen",
           "total": 1,
           "own": 0,
           "by_type": {
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "711",
+              "title": "Bau- und Raumplanungsrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "711.2",
+                  "title": "Raumplanung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "812",
+              "title": "Umweltschutz",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "812.5",
+                  "title": "Umweltgefährdende Stoffe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "817",
               "title": "Spitalwesen",
@@ -374,30 +457,10 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Reglement": 1
           },
           "children": [
-            {
-              "identifier": "832",
-              "title": "Kranken- und Unfallversicherung",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "832.2",
-                  "title": "Prämienverbilligung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
-            },
             {
               "identifier": "835",
               "title": "Ausgleichskasse",
@@ -406,6 +469,57 @@
               "by_type": {
                 "Gesetz": 1
               }
+            },
+            {
+              "identifier": "837.5",
+              "title": "Stiftungen unter staatlicher Verwaltung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "93",
+          "title": "Forstwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "931",
+              "title": "Forstwesen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "931.7",
+                  "title": "Forstliches Bauwesen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -416,12 +530,33 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -469,10 +604,11 @@
     {
       "identifier": "3",
       "title": "Strafrecht",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung": 3,
+        "Anderes": 1
       },
       "children": [
         {
@@ -507,18 +643,20 @@
         {
           "identifier": "3.70",
           "title": "Straf- und Massnahmenvollzug",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "3.70.20",
               "title": "Schutzaufsicht",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Anderes": 1,
                 "Verordnung": 1
               }
             }
@@ -540,9 +678,10 @@
         {
           "identifier": "4.60",
           "title": "Tertiärstufe: Höhere Fachschulen",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           }
         },
@@ -567,15 +706,6 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "4.140",
-          "title": "Anerkennung von Diplomen",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Anderes": 1
-          }
         }
       ]
     },
@@ -633,42 +763,93 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Reglement": 1
       },
       "children": [
         {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
+          "identifier": "8.70",
+          "title": "Fürsorge",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Reglement": 1
           },
           "children": [
             {
-              "identifier": "8.30.60",
-              "title": "KVG",
+              "identifier": "8.70.60",
+              "title": "Spenden und gemeinnützige Sammlungen",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.30.60.20",
-                  "title": "Prämienverbilligungen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
+                "Reglement": 1
+              }
             }
           ]
         }
@@ -676,21 +857,21 @@
     }
   ],
   "languages_available": {
-    "de": 16
+    "de": 21
   },
   "available_years_for_entity": [
     "1780",
+    "1802",
     "1803",
     "1825",
     "1828",
     "1830",
+    "1834",
+    "1837",
     "1851",
     "1873",
     "1874",
     "1875",
-    "1882",
-    "1883",
-    "1887",
     "1888",
     "1889",
     "1893",
@@ -700,30 +881,31 @@
     "1903",
     "1905",
     "1907",
+    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
-    "1917",
     "1918",
-    "1919",
+    "1920",
     "1921",
     "1923",
+    "1924",
     "1925",
     "1926",
-    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1933",
-    "1934",
+    "1932",
     "1935",
     "1937",
     "1938",
     "1939",
+    "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",
@@ -806,7 +988,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

@@ -2,23 +2,27 @@
   "year": "1991",
   "year_semantics": "enactment",
   "entity": "TG",
-  "total": 7,
-  "categorized": 7,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 5,
+      "total": 7,
       "by_topic": {
+        "170 Allgemein": 1,
         "176 Anwaltswesen": 1,
         "211.1 Personenrecht": 1,
         "211.2 Familienrecht": 1,
         "211.43 Grundbuch": 1,
+        "221.4 Handelsregister": 1,
         "913 Flurwesen. Bodenverbesserung. Landwirtschaftliche Betriebsbauten": 1
       },
       "by_global_category": {
+        "1.10.100.10 Gesetzessammlungen": 1,
         "1.50.10.20 Honorare": 1,
         "2.10.20.10 Vormundschaft": 1,
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "2.20.20.10 Handelsregister": 1,
         "9.20.50 Meliorationen": 1
       }
     },
@@ -28,27 +32,47 @@
         "34 Strafvollzug": 1
       },
       "by_global_category": {}
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "188.2 Erlasse der Katholischen Landeskirche": 1
+      },
+      "by_global_category": {
+        "1.40.10 Römisch-Katholische Kirche": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "17",
           "title": "Staatliche Gewalten. Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "170",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "176",
               "title": "Anwaltswesen",
@@ -59,16 +83,47 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "18",
+          "title": "Staat und Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "188",
+              "title": "Katholische Landeskirche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "188.2",
+                  "title": "Erlasse der Katholischen Landeskirche",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "2",
       "title": "Privatrecht - Zivilrechtspflege - Vollstreckung",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung": 4
       },
       "children": [
         {
@@ -117,6 +172,26 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "22",
+          "title": "Obligationenrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "221.4",
+              "title": "Handelsregister",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -178,12 +253,64 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.100",
+              "title": "Amtliche Veröffentlichungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.100.10",
+                  "title": "Gesetzessammlungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.50",
           "title": "Juristische Berufe",
@@ -220,10 +347,10 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 3
       },
       "children": [
         {
@@ -276,6 +403,37 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "2.20",
+          "title": "Einführungsgesetzgebung OR",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.20.20",
+              "title": "Handelsrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.20.20.10",
+                  "title": "Handelsregister",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -312,16 +470,16 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 10
   },
   "available_years_for_entity": [
     "1803",
     "1825",
     "1828",
+    "1829",
     "1831",
     "1834",
     "1846",
-    "1861",
     "1869",
     "1870",
     "1886",
@@ -333,30 +491,21 @@
     "1906",
     "1907",
     "1909",
-    "1911",
     "1914",
-    "1917",
     "1918",
-    "1923",
-    "1925",
     "1926",
-    "1927",
-    "1930",
     "1931",
     "1933",
     "1934",
+    "1935",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1947",
+    "1946",
     "1948",
-    "1951",
     "1955",
-    "1956",
     "1958",
-    "1959",
-    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",

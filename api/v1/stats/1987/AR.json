@@ -2,16 +2,18 @@
   "year": "1987",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 2,
-  "categorized": 2,
+  "total": 3,
+  "categorized": 3,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "122 Niederlassung und Aufenthalt": 1
+        "213.1 Eigentum": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1
+      }
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -21,35 +23,55 @@
       "by_global_category": {
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
       }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "422 Natur- und Heimatschutz, Denkmalpflege": 1
+      },
+      "by_global_category": {
+        "7.70.40 Pilze": 1
+      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "1",
-      "title": "Staat, Volk, Behörden und Gemeinden",
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "12",
-          "title": "Bürgerrecht, Niederlassung und Aufenthalt",
+          "identifier": "21",
+          "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "122",
-              "title": "Niederlassung und Aufenthalt",
+              "identifier": "213",
+              "title": "Sachenrecht",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Verordnung": 1
-              }
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "213.1",
+                  "title": "Eigentum",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -58,10 +80,11 @@
     {
       "identifier": "4",
       "title": "Erziehung, Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -94,11 +117,73 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "42",
+          "title": "Kultur",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "422",
+              "title": "Natur- und Heimatschutz, Denkmalpflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.20",
+                  "title": "Erwerb von Grundstücke durch Personen im Ausland",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -129,48 +214,72 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.40",
+              "title": "Pilze",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 3
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -179,7 +288,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -232,7 +340,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

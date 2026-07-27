@@ -2,8 +2,8 @@
   "year": "1993",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 15,
-  "categorized": 15,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -11,31 +11,27 @@
       "by_topic": {
         "I C/12 Kantons- und Gemeindebürgerrecht": 1,
         "IV B/1 Allgemeines": 1,
-        "IX E/2 Förster": 1
+        "IV G/3 Pflanzen- und Tierschutz": 1,
+        "VII B/2 Öffentliche Bauten": 1
       },
       "by_global_category": {
         "1.10.60 Bürgerrecht": 1,
         "4.70.10 Erwachsenenbildung": 1,
-        "9.30.30 Bildungswesen": 1
+        "7.70.50 Naturschutz": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
     "Verordnung": {
-      "total": 4,
-      "by_topic": {
-        "V A/11 Allgemeines": 1,
-        "VI E/31 Allgemeines": 1
-      },
-      "by_global_category": {
-        "5.30.10.30 Personal": 1
-      }
-    },
-    "Reglement": {
       "total": 3,
       "by_topic": {
-        "V D/1 Versicherung im Monopol und Wettbewerb": 1
+        "IX D/633 Bekämpfung von Tierseuchen": 1,
+        "V A/11 Allgemeines": 1,
+        "VII D/12 Steuern und Gebühren": 1
       },
       "by_global_category": {
-        "5.20.30.40.10 Elementarschadenversicherung": 1
+        "8.10.130.50 Tierkörperentsorgung": 1,
+        "5.30.10.30 Personal": 1,
+        "5.30.20.20 Gemeingebrauch": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -89,32 +85,40 @@
     {
       "identifier": "IV",
       "title": "Kirche – Schule – Kultur",
-      "total": 2,
-      "own": 2,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Anderes": 1,
+        "Anderes": 2,
         "Interkantonale Vereinbarung": 1
       }
     },
     {
       "identifier": "V",
       "title": "Schutz und Abwehr",
-      "total": 2,
-      "own": 2,
+      "total": 1,
+      "own": 1,
       "by_type": {
-        "Verordnung": 1,
-        "Reglement": 1
+        "Verordnung": 1
       }
     },
     {
       "identifier": "VI",
       "title": "Finanzen – Regalien",
-      "total": 3,
-      "own": 3,
+      "total": 2,
+      "own": 2,
       "by_type": {
         "Gesetz": 1,
-        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
+      }
+    },
+    {
+      "identifier": "VII",
+      "title": "Raumplanung – Bauwesen – Öffentliche Werke – Verkehr – Energie",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Anderes": 1,
+        "Verordnung": 1
       }
     },
     {
@@ -123,7 +127,7 @@
       "total": 1,
       "own": 1,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 1
       }
     }
   ],
@@ -262,59 +266,16 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
-          "identifier": "5.20",
-          "title": "Bevölkerungsschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "5.20.30",
-              "title": "Feuerwehr / Elementarschäden",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "5.20.30.40",
-                  "title": "Gebäudeversicherung",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Reglement": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "5.20.30.40.10",
-                      "title": "Elementarschadenversicherung",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Reglement": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "identifier": "5.30",
           "title": "Innere Sicherheit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
@@ -336,14 +297,34 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "5.30.20",
+              "title": "Öffentliche Ruhe und Ordnung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.20.20",
+                  "title": "Gemeingebrauch",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      "identifier": "9",
-      "title": "Wirtschaft",
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -351,8 +332,8 @@
       },
       "children": [
         {
-          "identifier": "9.30",
-          "title": "Forstwirtschaft",
+          "identifier": "6.10",
+          "title": "Finanzen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -360,8 +341,8 @@
           },
           "children": [
             {
-              "identifier": "9.30.30",
-              "title": "Bildungswesen",
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -371,43 +352,119 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.50",
+                  "title": "Tierkörperentsorgung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 15
+    "de": 11
   },
   "available_years_for_entity": [
     "1807",
     "1835",
     "1859",
+    "1877",
     "1878",
+    "1879",
+    "1888",
     "1889",
-    "1892",
     "1893",
     "1900",
     "1901",
     "1905",
+    "1906",
     "1909",
     "1910",
     "1911",
     "1915",
     "1918",
-    "1922",
     "1923",
+    "1926",
     "1927",
     "1928",
     "1931",
     "1934",
     "1941",
     "1943",
-    "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
     "1950",
     "1951",
     "1957",
-    "1958",
     "1959",
     "1960",
     "1962",
@@ -472,8 +529,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

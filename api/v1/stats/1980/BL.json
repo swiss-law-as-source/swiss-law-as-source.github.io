@@ -2,51 +2,50 @@
   "year": "1980",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 7,
-  "categorized": 7,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
-        "33 Steuern": 1,
-        "40 Raum- und Bauordnung": 1
+        "40 Raum- und Bauordnung": 1,
+        "48 Verkehr": 1,
+        "72 Militär": 1,
+        "790 Landschaftsschutz": 1
       },
       "by_global_category": {
-        "6.20.40 Erbschafts- und Schenkungssteuern": 1,
-        "7.10.10 Pläne": 1
+        "7.10.10 Pläne": 1,
+        "7.70.50 Naturschutz": 1
       }
     },
-    "Staatsvertrag": {
-      "total": 1,
-      "by_topic": {
-        "148 Internationale Vereinbarungen": 1
-      },
-      "by_global_category": {}
-    },
     "Anderes": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "31 Finanzhaushalt": 1
-      },
-      "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
+        "31 Finanzhaushalt": 1,
         "36 Staatsbeiträge": 1
       },
       "by_global_category": {
-        "4.180.20 Kulturförderung": 1
+        "1.20.20.40.60 Ausbildung, Weiterbildung": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "38 Regalien, Konzessionen": 1,
         "50 Wirtschaftliche Entwicklung": 1
       },
       "by_global_category": {
         "9.10 Wirtschaftsförderung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "33 Steuern": 1
+      },
+      "by_global_category": {
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -61,44 +60,12 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "1",
-      "title": "Staat, Volk, Behörden",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Staatsvertrag": 1
-      },
-      "children": [
-        {
-          "identifier": "14",
-          "title": "Regierungsrat und Verwaltung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Staatsvertrag": 1
-          },
-          "children": [
-            {
-              "identifier": "148",
-              "title": "Internationale Vereinbarungen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Staatsvertrag": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "3",
       "title": "Finanzen",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1,
+        "Anderes": 3,
         "Gesetz": 1
       },
       "children": [
@@ -117,7 +84,7 @@
           "total": 1,
           "own": 1,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           }
         },
         {
@@ -126,7 +93,16 @@
           "total": 1,
           "own": 1,
           "by_type": {
-            "Gesetz": 1
+            "Anderes": 1
+          }
+        },
+        {
+          "identifier": "38",
+          "title": "Regalien, Konzessionen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
           }
         }
       ]
@@ -134,15 +110,24 @@
     {
       "identifier": "4",
       "title": "Bau, Werke, Verkehr, Energie",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "40",
           "title": "Raum- und Bauordnung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "48",
+          "title": "Verkehr",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -180,35 +165,97 @@
           }
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Öffentliche Sicherheit, Umweltschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "72",
+          "title": "Militär",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "79",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "790",
+              "title": "Landschaftsschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "identifier": "1",
+      "title": "Staat",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "4.180",
-          "title": "Kunst, Kultur, Sport",
+          "identifier": "1.20",
+          "title": "Behörden",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "4.180.20",
-              "title": "Kulturförderung",
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Gesetz": 1
-              }
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.60",
+                      "title": "Ausbildung, Weiterbildung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -220,7 +267,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -229,7 +276,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -238,7 +285,7 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -248,10 +295,10 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
@@ -266,6 +313,26 @@
             {
               "identifier": "7.10.10",
               "title": "Pläne",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -330,48 +397,39 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 10
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -382,12 +440,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

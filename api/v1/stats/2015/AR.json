@@ -2,32 +2,101 @@
   "year": "2015",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 3,
-  "categorized": 3,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 3,
+    "Gesetz": {
+      "total": 2,
       "by_topic": {
         "525 Hundepolizei": 1,
-        "621.1 Allgemeine Bestimmungen": 1,
         "831 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
         "5.30.20.10 Hunde, gefährliche Tiere": 1,
-        "6.20.10.10 Bundessteuern": 1,
-        "1.20.20.40.40 Löhne, Entschädigungen": 1
+        "8.30.30 AHV / IV": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "621.1 Allgemeine Bestimmungen": 2
+      },
+      "by_global_category": {}
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "142.1 Regierungsrat": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.10 Entschädigungen": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "142.1 Regierungsrat": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.10 Entschädigungen": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden und Gemeinden",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "142",
+              "title": "Regierungsrat und Verwaltung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "142.1",
+                  "title": "Regierungsrat",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "5",
       "title": "Landesverteidigung, Polizei",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -36,7 +105,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -45,7 +114,7 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -55,37 +124,37 @@
     {
       "identifier": "6",
       "title": "Finanzen, Regalien",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "62",
           "title": "Steuern und Abgaben",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "621",
               "title": "Direkte Staats- und Gemeindesteuern",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               },
               "children": [
                 {
                   "identifier": "621.1",
                   "title": "Allgemeine Bestimmungen",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Verordnung": 1
+                    "Verordnung": 2
                   }
                 }
               ]
@@ -100,7 +169,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -109,7 +178,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -118,7 +187,7 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -130,46 +199,51 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Anderes": 1
               },
               "children": [
                 {
-                  "identifier": "1.20.20.40",
-                  "title": "Personalrecht",
-                  "total": 1,
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Verordnung": 1
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Anderes": 1
                   },
                   "children": [
                     {
-                      "identifier": "1.20.20.40.40",
-                      "title": "Löhne, Entschädigungen",
-                      "total": 1,
-                      "own": 1,
+                      "identifier": "1.20.20.20.10",
+                      "title": "Entschädigungen",
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
-                        "Verordnung": 1
+                        "Verordnung des Parlaments (Dekret)": 1,
+                        "Anderes": 1
                       }
                     }
                   ]
@@ -186,7 +260,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -195,7 +269,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -204,7 +278,7 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -213,7 +287,7 @@
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -223,42 +297,31 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "6.20",
-          "title": "Steuern",
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "6.20.10",
-              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.20.10.10",
-                  "title": "Bundessteuern",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -266,45 +329,38 @@
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 6
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -313,7 +369,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -366,7 +421,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

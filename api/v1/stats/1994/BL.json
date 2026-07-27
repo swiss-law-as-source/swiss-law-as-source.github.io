@@ -2,24 +2,41 @@
   "year": "1994",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 20,
-  "categorized": 20,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 9,
+    "Verordnung": {
+      "total": 8,
       "by_topic": {
-        "93 Spitäler": 4,
+        "144 Bau- und Umweltschutzdirektion": 2,
+        "33 Steuern": 2,
+        "790 Landschaftsschutz": 2,
+        "40 Raum- und Bauordnung": 1,
+        "831 Alters- und Hinterlassenenversicherung": 1
+      },
+      "by_global_category": {
+        "7.70.50 Naturschutz": 2,
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "1.20.20.30.20 Direktionen und Ämter": 1,
+        "6.20.10.60 Quellensteuern": 1,
+        "6.20.10.10 Bundessteuern": 1,
+        "7.10.10 Pläne": 1,
+        "8.30.30 AHV / IV": 1
+      }
+    },
+    "Anderes": {
+      "total": 5,
+      "by_topic": {
         "143 Volkswirtschafts- und Gesundheitsdirektion": 2,
         "36 Staatsbeiträge": 2,
         "92 Sozialmedizin": 1
       },
       "by_global_category": {
-        "8.30.60.10.20 Vereinbarungen": 3,
         "1.20.20.30.20 Direktionen und Ämter": 1,
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
         "4.160 Wissenschaft, Forschung": 1,
-        "8.30.60.30 Spitallisten": 1
+        "8.30.60.10.20 Vereinbarungen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -36,70 +53,56 @@
         "4.20.10 Mittelschule": 1
       }
     },
-    "Verordnung": {
+    "Gesetz": {
       "total": 3,
       "by_topic": {
-        "40 Raum- und Bauordnung": 1,
-        "831 Alters- und Hinterlassenenversicherung": 1,
-        "834 Berufliche Vorsorge": 1
+        "13 Landrat": 1,
+        "36 Staatsbeiträge": 1,
+        "831 Alters- und Hinterlassenenversicherung": 1
       },
       "by_global_category": {
-        "7.10.10 Pläne": 1,
-        "8.30.30 AHV / IV": 1,
-        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
+        "8.30.30 AHV / IV": 1
       }
     },
-    "Reglement": {
+    "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
         "13 Landrat": 1
       },
       "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "36 Staatsbeiträge": 1
-      },
-      "by_global_category": {}
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "78 Umweltschutz": 1
-      },
-      "by_global_category": {
-        "7.60.20 Gewässerschutz": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Reglement": 1
+        "Verordnung": 2,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "13",
           "title": "Landrat",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Reglement": 1
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Gesetz": 1
           }
         },
         {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 2,
+            "Verordnung": 2
           },
           "children": [
             {
@@ -110,6 +113,15 @@
               "by_type": {
                 "Anderes": 2
               }
+            },
+            {
+              "identifier": "144",
+              "title": "Bau- und Umweltschutzdirektion",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
             }
           ]
         }
@@ -118,14 +130,24 @@
     {
       "identifier": "3",
       "title": "Finanzen",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 2,
         "Anderes": 2,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "33",
+          "title": "Steuern",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Verordnung": 2
+          }
+        },
         {
           "identifier": "36",
           "title": "Staatsbeiträge",
@@ -213,20 +235,31 @@
     {
       "identifier": "7",
       "title": "Öffentliche Sicherheit, Umweltschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung": 2
       },
       "children": [
         {
-          "identifier": "78",
-          "title": "Umweltschutz",
-          "total": 1,
-          "own": 1,
+          "identifier": "79",
+          "title": "Natur- und Heimatschutz",
+          "total": 2,
+          "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          }
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "790",
+              "title": "Landschaftsschutz",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
         }
       ]
     },
@@ -236,7 +269,8 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -245,25 +279,18 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "831",
               "title": "Alters- und Hinterlassenenversicherung",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "834",
-              "title": "Berufliche Vorsorge",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Gesetz": 1
               }
             }
           ]
@@ -273,10 +300,10 @@
     {
       "identifier": "9",
       "title": "Gesundheit",
-      "total": 6,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 5,
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -292,10 +319,9 @@
         {
           "identifier": "93",
           "title": "Spitäler",
-          "total": 5,
-          "own": 5,
+          "total": 1,
+          "own": 1,
           "by_type": {
-            "Anderes": 4,
             "Interkantonale Vereinbarung": 1
           }
         }
@@ -306,72 +332,63 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 1,
-                "Verordnung": 1
+                "Verordnung": 2,
+                "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "1.20.20.30",
                   "title": "Verwaltung",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 1,
+                    "Verordnung": 1
                   },
                   "children": [
                     {
                       "identifier": "1.20.20.30.20",
                       "title": "Direktionen und Ämter",
-                      "total": 1,
-                      "own": 1,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
-                        "Anderes": 1
+                        "Anderes": 1,
+                        "Verordnung": 1
                       }
                     }
                   ]
                 },
                 {
-                  "identifier": "1.20.20.40",
-                  "title": "Personalrecht",
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
                   "total": 1,
-                  "own": 0,
+                  "own": 1,
                   "by_type": {
                     "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.20.20.40.50",
-                      "title": "Renten, Versicherungsansprüche",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung": 1
-                      }
-                    }
-                  ]
+                  }
                 }
               ]
             }
@@ -503,13 +520,63 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.10",
+                  "title": "Bundessteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "6.20.10.60",
+                  "title": "Quellensteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3
       },
       "children": [
         {
@@ -533,21 +600,21 @@
           ]
         },
         {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
-          "total": 1,
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung": 2
           },
           "children": [
             {
-              "identifier": "7.60.20",
-              "title": "Gewässerschutz",
-              "total": 1,
-              "own": 1,
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Verordnung": 2
               }
             }
           ]
@@ -557,69 +624,63 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 5,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 4,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 5,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 4,
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Gesetz": 1,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "8.30.30",
               "title": "AHV / IV",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Gesetz": 1
               }
             },
             {
               "identifier": "8.30.60",
               "title": "KVG",
-              "total": 4,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 4
+                "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "8.30.60.10",
                   "title": "Tarife",
-                  "total": 3,
+                  "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 3
+                    "Anderes": 1
                   },
                   "children": [
                     {
                       "identifier": "8.30.60.10.20",
                       "title": "Vereinbarungen",
-                      "total": 3,
-                      "own": 3,
+                      "total": 1,
+                      "own": 1,
                       "by_type": {
-                        "Anderes": 3
+                        "Anderes": 1
                       }
                     }
                   ]
-                },
-                {
-                  "identifier": "8.30.60.30",
-                  "title": "Spitallisten",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
                 }
               ]
             }
@@ -629,48 +690,39 @@
     }
   ],
   "languages_available": {
-    "de": 20
+    "de": 22
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -681,12 +733,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

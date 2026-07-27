@@ -2,40 +2,58 @@
   "year": "2014",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 4,
-  "categorized": 4,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 2,
+    "Gesetz": {
+      "total": 4,
       "by_topic": {
         "114 Informations- und Datenschutz": 1,
+        "126.58 Alters-, Hinterlassenen- und Invalidenvorsorge": 1,
+        "131.7 Finanzausgleich": 1,
         "512.4 Ruhetagspolizei": 1
       },
       "by_global_category": {
         "1.10.90.20.10 Wahlen und Abstimmungen": 1,
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
+        "1.30.10 Gemeindefinanzen": 1,
+        "8.20.10.30 Sonn- und Feiertage": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "131.7 Finanzausgleich": 1,
+        "512.4 Ruhetagspolizei": 1
+      },
+      "by_global_category": {
+        "1.30.10 Gemeindefinanzen": 1,
         "8.20.10.30 Sonn- und Feiertage": 1
       }
     },
     "Anderes": {
       "total": 2,
       "by_topic": {
-        "131.7 Finanzausgleich": 1
+        "331 Zuständigkeiten, Verfahren, Kosten": 2
       },
-      "by_global_category": {
-        "1.30.10 Gemeindefinanzen": 1
-      }
+      "by_global_category": {}
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {},
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Gesetz": 3,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -44,7 +62,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -53,36 +71,81 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "Organisation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "126",
+              "title": "Staatspersonal",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "126.5",
+                  "title": "Staatliche Leistungen aus dem Anstellungsverhältnis",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "126.58",
+                      "title": "Alters-, Hinterlassenen- und Invalidenvorsorge",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
         {
           "identifier": "13",
           "title": "Gemeinden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "131",
               "title": "Grundlagen",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 1,
+                "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "131.7",
                   "title": "Finanzausgleich",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Anderes": 1
+                    "Gesetz": 1,
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -92,38 +155,73 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Polizei, Militär, Zivilschutz",
-      "total": 1,
+      "identifier": "3",
+      "title": "Strafrecht, Strafprozessordnung, Strafvollzug",
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "33",
+          "title": "Strafvollzug",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "331",
+              "title": "Zuständigkeiten, Verfahren, Kosten",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Polizei, Militär, Zivilschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "51",
           "title": "Polizei",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "512",
               "title": "Andere polizeiliche Aufgaben",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "512.4",
                   "title": "Ruhetagspolizei",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Gesetz": 1,
                     "Verordnung": 1
                   }
                 }
@@ -138,11 +236,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Gesetz": 3,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -151,7 +249,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -160,7 +258,7 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -169,7 +267,7 @@
                   "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Verordnung": 1
+                    "Gesetz": 1
                   },
                   "children": [
                     {
@@ -178,7 +276,49 @@
                       "total": 1,
                       "own": 1,
                       "by_type": {
-                        "Verordnung": 1
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
                       }
                     }
                   ]
@@ -190,19 +330,21 @@
         {
           "identifier": "1.30",
           "title": "Gemeinden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "1.30.10",
               "title": "Gemeindefinanzen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 1,
+                "Verordnung": 1
               }
             }
           ]
@@ -212,36 +354,40 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "8.20",
           "title": "Arbeitsrecht",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "8.20.10",
               "title": "Arbeitnehmer",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "8.20.10.30",
                   "title": "Sonn- und Feiertage",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Gesetz": 1,
                     "Verordnung": 1
                   }
                 }
@@ -253,21 +399,21 @@
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 9
   },
   "available_years_for_entity": [
     "1780",
+    "1802",
     "1803",
     "1825",
     "1828",
     "1830",
+    "1834",
+    "1837",
     "1851",
     "1873",
     "1874",
     "1875",
-    "1882",
-    "1883",
-    "1887",
     "1888",
     "1889",
     "1893",
@@ -277,30 +423,31 @@
     "1903",
     "1905",
     "1907",
+    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
-    "1917",
     "1918",
-    "1919",
+    "1920",
     "1921",
     "1923",
+    "1924",
     "1925",
     "1926",
-    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1933",
-    "1934",
+    "1932",
     "1935",
     "1937",
     "1938",
     "1939",
+    "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",
@@ -383,7 +530,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

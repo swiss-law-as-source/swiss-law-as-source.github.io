@@ -2,24 +2,28 @@
   "year": "2002",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 17,
-  "categorized": 17,
+  "total": 18,
+  "categorized": 18,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 9,
+      "total": 10,
       "by_topic": {
-        "922.1 Allgemeines": 2,
         "152.0 Allgemeine Organisation, Zuständigkeit, Information": 1,
-        "152.1 Regierungsrat": 1,
+        "152.22 Direktionen": 1,
+        "215.32 Grundbuch": 1,
+        "215.33 Seybuch": 1,
         "31 Strafrecht": 1,
-        "922.5 Wildschäden": 1,
-        "922.6 Wildtierschutz": 1
+        "324 Ordnungsbussen": 1,
+        "414.1 Ausbildung": 1,
+        "414.5 Besoldung und Pensionierung": 1,
+        "661.52 Natürliche Personen": 1
       },
       "by_global_category": {
-        "7.70.20 Tierschutz": 2,
-        "1.20.20.20.10 Entschädigungen": 1,
-        "6.30.50.10 Jäger": 1
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 2,
+        "1.40.10 Römisch-Katholische Kirche": 2,
+        "1.20.20.30.20 Direktionen und Ämter": 1,
+        "3.50 Ordnungsbussen": 1
       }
     },
     "Gesetz": {
@@ -28,12 +32,12 @@
         "152.0 Allgemeine Organisation, Zuständigkeit, Information": 1,
         "153.3 Entschädigungen": 1,
         "430.12 Lehrmittel": 1,
-        "435.1 Allgemeines": 1
+        "922.1 Allgemeines": 1
       },
       "by_global_category": {
         "1.20.20.20.10 Entschädigungen": 1,
         "4.120.40 Lehrmittel": 1,
-        "4.30.30 Berufsorientierung": 1
+        "7.70.20 Tierschutz": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -46,15 +50,6 @@
         "8.10.70 Heil- und Betäubungsmittel": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "154.1 Allgemeine Bestimmungen": 1
-      },
-      "by_global_category": {
-        "1.20.20.60 Verwaltungsgebühren": 1
-      }
-    },
     "Reglement": {
       "total": 1,
       "by_topic": {
@@ -63,29 +58,32 @@
       "by_global_category": {
         "4.100.10 Stipendien": 1
       }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {},
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 5,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Gesetz": 2,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Gesetz": 2
       },
       "children": [
         {
           "identifier": "15",
           "title": "Behörden",
-          "total": 5,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Verordnung": 2,
-            "Gesetz": 2,
-            "Verordnung des Parlaments (Dekret)": 1
+            "Gesetz": 2
           },
           "children": [
             {
@@ -109,13 +107,24 @@
                   }
                 },
                 {
-                  "identifier": "152.1",
-                  "title": "Regierungsrat",
+                  "identifier": "152.2",
+                  "title": "Zentralverwaltung",
                   "total": 1,
-                  "own": 1,
+                  "own": 0,
                   "by_type": {
                     "Verordnung": 1
-                  }
+                  },
+                  "children": [
+                    {
+                      "identifier": "152.22",
+                      "title": "Direktionen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
                 }
               ]
             },
@@ -138,24 +147,66 @@
                   }
                 }
               ]
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
             {
-              "identifier": "154",
-              "title": "Gebühren, Mehrwertsteuer",
-              "total": 1,
+              "identifier": "215",
+              "title": "Sachenrecht",
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Verordnung": 2
               },
               "children": [
                 {
-                  "identifier": "154.1",
-                  "title": "Allgemeine Bestimmungen",
-                  "total": 1,
-                  "own": 1,
+                  "identifier": "215.3",
+                  "title": "Besitz und Grundbuch",
+                  "total": 2,
+                  "own": 0,
                   "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
-                  }
+                    "Verordnung": 2
+                  },
+                  "children": [
+                    {
+                      "identifier": "215.32",
+                      "title": "Grundbuch",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    },
+                    {
+                      "identifier": "215.33",
+                      "title": "Seybuch",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -166,10 +217,10 @@
     {
       "identifier": "3",
       "title": "Strafrecht, Strafrechtspflege, Strafvollzug",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
@@ -180,26 +231,87 @@
           "by_type": {
             "Verordnung": 1
           }
+        },
+        {
+          "identifier": "32",
+          "title": "Strafverfahren",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "324",
+              "title": "Ordnungsbussen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
+        "Verordnung": 2,
+        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
         {
-          "identifier": "43",
-          "title": "Ausbildung und Wissenschaft",
-          "total": 3,
+          "identifier": "41",
+          "title": "Kirche",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 2,
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "414",
+              "title": "Geistliche",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "414.1",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "414.5",
+                  "title": "Besoldung und Pensionierung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "43",
+          "title": "Ausbildung und Wissenschaft",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
             "Reglement": 1
           },
           "children": [
@@ -235,26 +347,6 @@
               ]
             },
             {
-              "identifier": "435",
-              "title": "Berufsbildung, Weiterbildung, Berufsberatung",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "435.1",
-                  "title": "Allgemeines",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            },
-            {
               "identifier": "438",
               "title": "Staatsbeiträge, Ausbildungsbeiträge, Stiftungen",
               "total": 1,
@@ -271,6 +363,59 @@
                   "by_type": {
                     "Reglement": 1
                   }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "66",
+          "title": "Steuern und Abgaben",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "661",
+              "title": "Direkte Kantons- und Gemeindesteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "661.5",
+                  "title": "Steuerveranlagung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "661.52",
+                      "title": "Natürliche Personen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -343,55 +488,37 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 4,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 4
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "92",
           "title": "Forstwesen, Jagd, Fischerei",
-          "total": 4,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 4
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "922",
               "title": "Jagd- und Wildtierschutz",
-              "total": 4,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 4
+                "Gesetz": 1
               },
               "children": [
                 {
                   "identifier": "922.1",
                   "title": "Allgemeines",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Verordnung": 2
-                  }
-                },
-                {
-                  "identifier": "922.5",
-                  "title": "Wildschäden",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung": 1
-                  }
-                },
-                {
-                  "identifier": "922.6",
-                  "title": "Wildtierschutz",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -405,65 +532,133 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Gesetz": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung": 3,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
             "Gesetz": 1,
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 3,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1,
                 "Gesetz": 1,
-                "Verordnung des Parlaments (Dekret)": 1
+                "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "1.20.20.20",
                   "title": "Regierung",
-                  "total": 2,
+                  "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Verordnung": 1,
                     "Gesetz": 1
                   },
                   "children": [
                     {
                       "identifier": "1.20.20.20.10",
                       "title": "Entschädigungen",
-                      "total": 2,
-                      "own": 2,
+                      "total": 1,
+                      "own": 1,
                       "by_type": {
-                        "Verordnung": 1,
                         "Gesetz": 1
                       }
                     }
                   ]
                 },
                 {
-                  "identifier": "1.20.20.60",
-                  "title": "Verwaltungsgebühren",
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
                   "total": 1,
-                  "own": 1,
+                  "own": 0,
                   "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.20",
+                      "title": "Direktionen und Ämter",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
                   }
                 }
               ]
@@ -473,35 +668,35 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
-        "Reglement": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "4.30",
-          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "identifier": "3.50",
+          "title": "Ordnungsbussen",
           "total": 1,
-          "own": 0,
+          "own": 1,
           "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "4.30.30",
-              "title": "Berufsorientierung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
-        },
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Gesetz": 1
+      },
+      "children": [
         {
           "identifier": "4.100",
           "title": "Ausbildungsbeiträge",
@@ -545,72 +740,30 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "6.30.50",
-              "title": "Jagd",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.30.50.10",
-                  "title": "Jäger",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 2
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "7.70.20",
               "title": "Tierschutz",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Verordnung": 2
+                "Gesetz": 1
               }
             }
           ]
@@ -650,22 +803,23 @@
     }
   ],
   "languages_available": {
-    "de": 17,
-    "fr": 15
+    "de": 18,
+    "fr": 16
   },
   "available_years_for_entity": [
     "1562",
-    "1809",
     "1828",
     "1837",
+    "1846",
     "1851",
     "1852",
     "1859",
     "1862",
+    "1864",
     "1868",
     "1874",
-    "1875",
     "1876",
+    "1877",
     "1889",
     "1893",
     "1899",
@@ -673,42 +827,32 @@
     "1903",
     "1907",
     "1909",
-    "1910",
     "1911",
-    "1914",
-    "1916",
-    "1922",
+    "1917",
     "1923",
     "1924",
-    "1930",
     "1931",
     "1934",
     "1936",
-    "1937",
-    "1938",
     "1939",
     "1940",
+    "1942",
     "1943",
     "1944",
     "1945",
-    "1946",
-    "1947",
     "1948",
+    "1949",
     "1950",
     "1951",
     "1954",
     "1956",
     "1957",
-    "1958",
     "1959",
     "1960",
     "1961",
-    "1962",
-    "1963",
     "1964",
     "1965",
     "1966",
-    "1967",
     "1968",
     "1969",
     "1970",
@@ -718,7 +862,6 @@
     "1974",
     "1975",
     "1976",
-    "1977",
     "1978",
     "1979",
     "1980",

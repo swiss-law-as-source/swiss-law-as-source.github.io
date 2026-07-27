@@ -2,22 +2,37 @@
   "year": "2005",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 10,
-  "categorized": 10,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 5,
+      "total": 6,
+      "by_topic": {
+        "142.1 Regierungsrat": 1,
+        "621.1 Allgemeine Bestimmungen": 1,
+        "813.2 Verkehr mit Betäubungsmitteln und Giften": 1,
+        "814 Umweltschutz": 1,
+        "911 Im allgemeinen": 1,
+        "912 In den Berggebieten": 1
+      },
+      "by_global_category": {
+        "7.60.70 Gifte, Chemikalien": 1,
+        "7.60.20 Gewässerschutz": 1,
+        "9.10 Wirtschaftsförderung": 1,
+        "9.40 Wirtschaftliche Entwicklung in Berggebieten": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
       "by_topic": {
         "142.2 Angestellte": 1,
+        "145.5 Rechtsanwälte": 1,
         "420 Kulturförderung": 1,
-        "421.1 Archive und Bibliotheken": 1,
-        "621.1 Allgemeine Bestimmungen": 1,
         "911 Im allgemeinen": 1
       },
       "by_global_category": {
         "4.180.20 Kulturförderung": 1,
-        "4.170.30 Bibliotheken": 1,
         "9.10 Wirtschaftsförderung": 1
       }
     },
@@ -32,28 +47,12 @@
       }
     },
     "Anderes": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "142.2 Angestellte": 1
-      },
-      "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "420 Kulturförderung": 1
+        "814 Umweltschutz": 2
       },
       "by_global_category": {
-        "4.180.20 Kulturförderung": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "822.6 Schwarzarbeit": 1
-      },
-      "by_global_category": {
-        "8.20.20.50 Schwarzarbeit": 1
+        "7.60.20 Gewässerschutz": 1
       }
     }
   },
@@ -61,20 +60,20 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden und Gemeinden",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Gesetz": 2,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "14",
           "title": "Behörden",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
+            "Gesetz": 2,
             "Verordnung": 1
           },
           "children": [
@@ -84,18 +83,46 @@
               "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 1,
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Gesetz": 1
               },
               "children": [
                 {
+                  "identifier": "142.1",
+                  "title": "Regierungsrat",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
                   "identifier": "142.2",
                   "title": "Angestellte",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Anderes": 1,
-                    "Verordnung": 1
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "145",
+              "title": "Behörden der Rechtspflege, Rechtsanwälte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "145.5",
+                  "title": "Rechtsanwälte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -107,52 +134,29 @@
     {
       "identifier": "4",
       "title": "Erziehung, Kultur",
-      "total": 3,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "42",
           "title": "Kultur",
-          "total": 3,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 2,
             "Gesetz": 1
           },
           "children": [
             {
               "identifier": "420",
               "title": "Kulturförderung",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "421",
-              "title": "Dokumentation",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "421.1",
-                  "title": "Archive und Bibliotheken",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -255,40 +259,52 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung": 2,
+        "Anderes": 2
       },
       "children": [
         {
-          "identifier": "82",
-          "title": "Arbeit",
-          "total": 1,
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung": 2,
+            "Anderes": 2
           },
           "children": [
             {
-              "identifier": "822",
-              "title": "Arbeitnehmerschutz",
+              "identifier": "813",
+              "title": "Heilmittel, Betäubungsmittel, Gifte",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "822.6",
-                  "title": "Schwarzarbeit",
+                  "identifier": "813.2",
+                  "title": "Verkehr mit Betäubungsmitteln und Giften",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
+                    "Verordnung": 1
                   }
                 }
               ]
+            },
+            {
+              "identifier": "814",
+              "title": "Umweltschutz",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Anderes": 2,
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -297,24 +313,36 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "91",
           "title": "Wirtschaftliche Entwicklung",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "911",
               "title": "Im allgemeinen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "912",
+              "title": "In den Berggebieten",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -330,51 +358,28 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
         "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "4.170",
-          "title": "Dokumentation",
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.170.30",
-              "title": "Bibliotheken",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "4.180",
-          "title": "Kunst, Kultur, Sport",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "4.180.20",
               "title": "Kulturförderung",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -424,42 +429,43 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
-          "total": 1,
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung": 2,
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "8.20.20",
-              "title": "Arbeitsmarkt",
-              "total": 1,
-              "own": 0,
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.20.20.50",
-                  "title": "Schwarzarbeit",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
-                  }
-                }
-              ]
+                "Verordnung": 1,
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "7.60.70",
+              "title": "Gifte, Chemikalien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -468,15 +474,26 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "9.10",
           "title": "Wirtschaftsförderung",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "9.40",
+          "title": "Wirtschaftliche Entwicklung in Berggebieten",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -487,45 +504,38 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 14
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -534,7 +544,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -587,7 +596,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

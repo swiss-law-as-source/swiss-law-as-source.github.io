@@ -2,43 +2,59 @@
   "year": "1990",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 7,
-  "categorized": 7,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 3,
+    "Anderes": {
+      "total": 6,
       "by_topic": {
-        "VI C/2 Bezug der Bundessteuern": 1,
-        "VI C/4 Gebühren – Taxen – Abgaben": 1,
-        "VI E/212 Jäger": 1
+        "IV A/1 Allgemeines": 4,
+        "I D/22 Weitere Abstimmungen und Wahlen": 1,
+        "IV G/5 Schutzgebiete": 1
       },
       "by_global_category": {
-        "6.20.10.10 Bundessteuern": 1,
-        "8.30.110 Arbeitslosenversicherung": 1,
-        "6.30.50.10 Jäger": 1
+        "1.40.30 Evangelisch-Reformierte Kirche": 2,
+        "1.40.10 Römisch-Katholische Kirche": 2,
+        "1.20.10.10 Wahl des Parlaments": 1,
+        "7.70.10 Landschaftsschutz": 1
       }
     },
-    "Reglement": {
+    "Verordnung": {
       "total": 2,
       "by_topic": {
-        "II A/6 Angestellte des Kantons": 1,
-        "III A Gerichtsorganisation": 1
+        "VIII B/1 Allgemeines": 1,
+        "VIII C/32 Ausländische Arbeiter": 1
       },
       "by_global_category": {}
     },
-    "Anderes": {
-      "total": 2,
+    "Reglement": {
+      "total": 1,
       "by_topic": {
-        "IV A/1 Allgemeines": 2
+        "II A/6 Angestellte des Kantons": 1
+      },
+      "by_global_category": {}
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "VI E/211 Allgemeines": 1
       },
       "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 1,
-        "1.40.10 Römisch-Katholische Kirche": 1
+        "7.70.20 Tierschutz": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "I",
+      "title": "Verfassung und Rechte des Volkes",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Anderes": 1
+      }
+    },
     {
       "identifier": "II",
       "title": "Organisation des Kantons und der Gemeinden",
@@ -49,30 +65,30 @@
       }
     },
     {
-      "identifier": "III",
-      "title": "Gerichtswesen – Zivilrecht – Strafrecht",
-      "total": 1,
-      "own": 1,
-      "by_type": {
-        "Reglement": 1
-      }
-    },
-    {
       "identifier": "IV",
       "title": "Kirche – Schule – Kultur",
-      "total": 2,
-      "own": 2,
+      "total": 5,
+      "own": 5,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 5
       }
     },
     {
       "identifier": "VI",
       "title": "Finanzen – Regalien",
-      "total": 3,
-      "own": 3,
+      "total": 1,
+      "own": 1,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung des Parlaments (Dekret)": 1
+      }
+    },
+    {
+      "identifier": "VIII",
+      "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Verordnung": 2
       }
     }
   ],
@@ -80,77 +96,37 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 5
       },
       "children": [
         {
-          "identifier": "1.40",
-          "title": "Kirche und Staat",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Anderes": 2
-          },
-          "children": [
-            {
-              "identifier": "1.40.10",
-              "title": "Römisch-Katholische Kirche",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            },
-            {
-              "identifier": "1.40.30",
-              "title": "Evangelisch-Reformierte Kirche",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 2
-      },
-      "children": [
-        {
-          "identifier": "6.20",
-          "title": "Steuern",
+          "identifier": "1.20",
+          "title": "Behörden",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "6.20.10",
-              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "identifier": "1.20.10",
+              "title": "Parlament",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Anderes": 1
               },
               "children": [
                 {
-                  "identifier": "6.20.10.10",
-                  "title": "Bundessteuern",
+                  "identifier": "1.20.10.10",
+                  "title": "Wahl des Parlaments",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung": 1
+                    "Anderes": 1
                   }
                 }
               ]
@@ -158,63 +134,72 @@
           ]
         },
         {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Anderes": 4
           },
           "children": [
             {
-              "identifier": "6.30.50",
-              "title": "Jagd",
-              "total": 1,
-              "own": 0,
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.30.50.10",
-                  "title": "Jäger",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+                "Anderes": 2
+              }
+            },
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
             }
           ]
         }
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
-          "total": 1,
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Anderes": 1,
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
-              "identifier": "8.30.110",
-              "title": "Arbeitslosenversicherung",
+              "identifier": "7.70.10",
+              "title": "Landschaftsschutz",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "7.70.20",
+              "title": "Tierschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -223,40 +208,43 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 10
   },
   "available_years_for_entity": [
     "1807",
     "1835",
     "1859",
+    "1877",
     "1878",
+    "1879",
+    "1888",
     "1889",
-    "1892",
     "1893",
     "1900",
     "1901",
     "1905",
+    "1906",
     "1909",
     "1910",
     "1911",
     "1915",
     "1918",
-    "1922",
     "1923",
+    "1926",
     "1927",
     "1928",
     "1931",
     "1934",
     "1941",
     "1943",
-    "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
     "1950",
     "1951",
     "1957",
-    "1958",
     "1959",
     "1960",
     "1962",
@@ -321,8 +309,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

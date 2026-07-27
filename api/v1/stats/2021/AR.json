@@ -2,11 +2,25 @@
   "year": "2021",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 2,
-  "categorized": 2,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
+      "total": 7,
+      "by_topic": {
+        "113 Notrecht": 3,
+        "122 Niederlassung und Aufenthalt": 1,
+        "33 Strafregister, Strafkontrolle": 1,
+        "911 Im allgemeinen": 1,
+        "955.3 Lotterien, Spiele, Wetten": 1
+      },
+      "by_global_category": {
+        "8.10.100.10 Epidemien, Pandemien": 4,
+        "1.20.20.60 Verwaltungsgebühren": 1
+      }
+    },
+    "Gesetz": {
       "total": 2,
       "by_topic": {
         "852 Heime und andere Fürsorgeeinrichtungen": 1,
@@ -15,21 +29,50 @@
       "by_global_category": {
         "6.10.30 Staatsbeiträge, Subventionen": 1
       }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "323 Bussenerhebung auf der Stelle": 1
+      },
+      "by_global_category": {
+        "3.50 Ordnungsbussen": 1
+      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 1,
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden und Gemeinden",
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 4
       },
       "children": [
         {
-          "identifier": "85",
-          "title": "Fürsorge",
+          "identifier": "11",
+          "title": "Grundlagen",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3
+          },
+          "children": [
+            {
+              "identifier": "113",
+              "title": "Notrecht",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 3
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung und Aufenthalt",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -37,8 +80,8 @@
           },
           "children": [
             {
-              "identifier": "852",
-              "title": "Heime und andere Fürsorgeeinrichtungen",
+              "identifier": "122",
+              "title": "Niederlassung und Aufenthalt",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -50,17 +93,90 @@
       ]
     },
     {
-      "identifier": "9",
-      "title": "Volkswirtschaft",
-      "total": 1,
+      "identifier": "3",
+      "title": "Strafrecht, Strafrechtspflege, Strafvollzug",
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "95",
-          "title": "Industrie, Gewerbe und Handel",
+          "identifier": "32",
+          "title": "Strafverfahren",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "323",
+              "title": "Bussenerhebung auf der Stelle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "33",
+          "title": "Strafregister, Strafkontrolle",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "85",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "852",
+              "title": "Heime und andere Fürsorgeeinrichtungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "91",
+          "title": "Wirtschaftliche Entwicklung",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -68,20 +184,43 @@
           },
           "children": [
             {
+              "identifier": "911",
+              "title": "Im allgemeinen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "95",
+          "title": "Industrie, Gewerbe und Handel",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
               "identifier": "955",
               "title": "Dienstleistungsgewerbe",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "955.3",
                   "title": "Lotterien, Spiele, Wetten",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Gesetz": 1,
                     "Verordnung": 1
                   }
                 }
@@ -94,12 +233,74 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "3.50",
+          "title": "Ordnungsbussen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -108,7 +309,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -117,8 +318,50 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 4
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 4
+          },
+          "children": [
+            {
+              "identifier": "8.10.100",
+              "title": "Krankheitsbekämpfung",
+              "total": 4,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 4
+              },
+              "children": [
+                {
+                  "identifier": "8.10.100.10",
+                  "title": "Epidemien, Pandemien",
+                  "total": 4,
+                  "own": 4,
+                  "by_type": {
+                    "Verordnung": 4
+                  }
+                }
+              ]
             }
           ]
         }
@@ -126,45 +369,38 @@
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 10
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -173,7 +409,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -226,7 +461,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

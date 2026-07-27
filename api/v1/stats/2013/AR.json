@@ -2,25 +2,76 @@
   "year": "2013",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 2,
-  "categorized": 2,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "621.1 Allgemeine Bestimmungen": 1,
-        "920 Allgemeines": 1
+        "920 Allgemeines": 2,
+        "812.1 Allgemeines": 1
       },
       "by_global_category": {
-        "9.20.80.10 Rebbau": 1
+        "9.20.80.10 Rebbau": 2
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "142.2 Angestellte": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "6",
-      "title": "Finanzen, Regalien",
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden und Gemeinden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "142",
+              "title": "Regierungsrat und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "142.2",
+                  "title": "Angestellte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -28,8 +79,8 @@
       },
       "children": [
         {
-          "identifier": "62",
-          "title": "Steuern und Abgaben",
+          "identifier": "81",
+          "title": "Gesundheit",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -37,8 +88,8 @@
           },
           "children": [
             {
-              "identifier": "621",
-              "title": "Direkte Staats- und Gemeindesteuern",
+              "identifier": "812",
+              "title": "Spitalwesen, Krankenpflege",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -46,8 +97,8 @@
               },
               "children": [
                 {
-                  "identifier": "621.1",
-                  "title": "Allgemeine Bestimmungen",
+                  "identifier": "812.1",
+                  "title": "Allgemeines",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -63,28 +114,28 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "92",
           "title": "Landwirtschaft",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "920",
               "title": "Allgemeines",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               }
             }
           ]
@@ -94,39 +145,92 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "9",
-      "title": "Wirtschaft",
+      "identifier": "1",
+      "title": "Staat",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "9.20",
           "title": "Landwirtschaft",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "9.20.80",
               "title": "Pflanzenbau",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               },
               "children": [
                 {
                   "identifier": "9.20.80.10",
                   "title": "Rebbau",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Verordnung": 1
+                    "Verordnung": 2
                   }
                 }
               ]
@@ -137,45 +241,38 @@
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 4
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -184,7 +281,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -237,7 +333,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

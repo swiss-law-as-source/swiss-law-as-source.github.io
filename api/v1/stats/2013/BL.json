@@ -2,35 +2,27 @@
   "year": "2013",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 19,
-  "categorized": 19,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 6,
+      "total": 12,
       "by_topic": {
-        "834 Berufliche Vorsorge": 2,
-        "145 Sicherheitsdirektion": 1,
-        "26 Vollzug, Rechtshilfe": 1,
+        "140 Verwaltungsorganisation": 2,
+        "790 Landschaftsschutz": 2,
+        "11 Bürgerrechte": 1,
+        "36 Staatsbeiträge": 1,
+        "54 Gewerbe und Industrie": 1,
         "640 Allgemeines": 1,
         "76 Schutz vor Feuer und weiteren Naturgefahren": 1
       },
       "by_global_category": {
-        "1.20.20.40.50 Renten, Versicherungsansprüche": 2,
-        "1.20.20.60 Verwaltungsgebühren": 1,
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "7.70.50 Naturschutz": 2,
+        "1.20.20.30.20 Direktionen und Ämter": 1,
+        "9.50.10.20 Tourismus": 1,
+        "4.120.110 Qualitätssicherung": 1,
         "5.20.30.10 Feuerwehr": 1
-      }
-    },
-    "Reglement": {
-      "total": 5,
-      "by_topic": {
-        "640 Allgemeines": 4,
-        "140 Verwaltungsorganisation": 1
-      },
-      "by_global_category": {
-        "4.20.10 Mittelschule": 2,
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -50,13 +42,41 @@
     "Gesetz": {
       "total": 3,
       "by_topic": {
-        "33 Steuern": 1,
-        "43 Verkehrswege": 1,
-        "54 Gewerbe und Industrie": 1
+        "34 Abgaben": 1,
+        "76 Schutz vor Feuer und weiteren Naturgefahren": 1,
+        "834 Berufliche Vorsorge": 1
       },
       "by_global_category": {
-        "6.20.40 Erbschafts- und Schenkungssteuern": 1,
-        "9.50.10.50 Kino-, Theater- und Unterhaltungsgewerbe": 1
+        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1,
+        "5.20.30.10 Feuerwehr": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "146 Bildungs-, Kultur- und Sportdirektion": 1
+      },
+      "by_global_category": {
+        "1.20.20.30.20 Direktionen und Ämter": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "26 Vollzug, Rechtshilfe": 1
+      },
+      "by_global_category": {
+        "3.20.60 Kosten": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "834 Berufliche Vorsorge": 1
+      },
+      "by_global_category": {
+        "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     }
   },
@@ -64,41 +84,50 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
+        "Verordnung": 3,
         "Interkantonale Vereinbarung": 2,
-        "Reglement": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
+          "identifier": "11",
+          "title": "Bürgerrechte",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 4,
+          "total": 5,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Interkantonale Vereinbarung": 2,
-            "Reglement": 1,
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "140",
               "title": "Verwaltungsorganisation",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Reglement": 1
+                "Verordnung": 2
               }
             },
             {
-              "identifier": "145",
-              "title": "Sicherheitsdirektion",
+              "identifier": "146",
+              "title": "Bildungs-, Kultur- und Sportdirektion",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Anderes": 1
               }
             },
             {
@@ -120,7 +149,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Reglement": 1
       },
       "children": [
         {
@@ -129,7 +158,7 @@
           "total": 1,
           "own": 1,
           "by_type": {
-            "Verordnung": 1
+            "Reglement": 1
           }
         }
       ]
@@ -137,39 +166,29 @@
     {
       "identifier": "3",
       "title": "Finanzen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "33",
-          "title": "Steuern",
+          "identifier": "34",
+          "title": "Abgaben",
           "total": 1,
           "own": 1,
           "by_type": {
             "Gesetz": 1
           }
-        }
-      ]
-    },
-    {
-      "identifier": "4",
-      "title": "Bau, Werke, Verkehr, Energie",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "43",
-          "title": "Verkehrswege",
+          "identifier": "36",
+          "title": "Staatsbeiträge",
           "total": 1,
           "own": 1,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           }
         }
       ]
@@ -180,7 +199,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -189,7 +208,7 @@
           "total": 1,
           "own": 1,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           }
         }
       ]
@@ -197,10 +216,9 @@
     {
       "identifier": "6",
       "title": "Kultur, Bildung, Ausbildung",
-      "total": 7,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 4,
         "Interkantonale Vereinbarung": 2,
         "Verordnung": 1
       },
@@ -217,20 +235,18 @@
         {
           "identifier": "64",
           "title": "Schulen",
-          "total": 5,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 4,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "640",
               "title": "Allgemeines",
-              "total": 5,
-              "own": 5,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Reglement": 4,
                 "Verordnung": 1
               }
             }
@@ -261,20 +277,42 @@
     {
       "identifier": "7",
       "title": "Öffentliche Sicherheit, Umweltschutz",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 3,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "76",
           "title": "Schutz vor Feuer und weiteren Naturgefahren",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Gesetz": 1
           }
+        },
+        {
+          "identifier": "79",
+          "title": "Natur- und Heimatschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "790",
+              "title": "Landschaftsschutz",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
         }
       ]
     },
@@ -284,7 +322,8 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -293,7 +332,8 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -302,7 +342,8 @@
               "total": 2,
               "own": 2,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Gesetz": 1
               }
             }
           ]
@@ -334,58 +375,54 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 3
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 3,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 3
+                "Verordnung": 1,
+                "Anderes": 1
               },
               "children": [
                 {
-                  "identifier": "1.20.20.40",
-                  "title": "Personalrecht",
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
                   "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Verordnung": 2
+                    "Verordnung": 1,
+                    "Anderes": 1
                   },
                   "children": [
                     {
-                      "identifier": "1.20.20.40.50",
-                      "title": "Renten, Versicherungsansprüche",
+                      "identifier": "1.20.20.30.20",
+                      "title": "Direktionen und Ämter",
                       "total": 2,
                       "own": 2,
                       "by_type": {
-                        "Verordnung": 2
+                        "Verordnung": 1,
+                        "Anderes": 1
                       }
                     }
                   ]
-                },
-                {
-                  "identifier": "1.20.20.60",
-                  "title": "Verwaltungsgebühren",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
                 }
               ]
             }
@@ -394,53 +431,61 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 3,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.60",
+              "title": "Kosten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "4.10",
-          "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 2,
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1,
             "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "4.10.30",
-              "title": "Volksschule, Primarschule, Sekundarschule I",
-              "total": 2,
-              "own": 2,
+              "identifier": "4.120.110",
+              "title": "Qualitätssicherung",
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Reglement": 1,
                 "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "4.20",
-          "title": "Sekundarstufe II",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Reglement": 2
-          },
-          "children": [
-            {
-              "identifier": "4.20.10",
-              "title": "Mittelschule",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Reglement": 2
               }
             }
           ]
@@ -450,37 +495,41 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "5.20",
           "title": "Bevölkerungsschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "5.20.30",
               "title": "Feuerwehr / Elementarschäden",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Gesetz": 1
               },
               "children": [
                 {
                   "identifier": "5.20.30.10",
                   "title": "Feuerwehr",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Verordnung": 1
+                    "Verordnung": 1,
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -492,15 +541,50 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
         "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "6.20",
-          "title": "Steuern",
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -508,12 +592,43 @@
           },
           "children": [
             {
-              "identifier": "6.20.40",
-              "title": "Erbschafts- und Schenkungssteuern",
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
                 "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.10",
+                  "title": "Strassenverkehrssteuern und -abgaben",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
               }
             }
           ]
@@ -558,7 +673,7 @@
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 3,
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -588,7 +703,7 @@
           "own": 0,
           "by_type": {
             "Interkantonale Vereinbarung": 1,
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
@@ -598,7 +713,7 @@
               "own": 0,
               "by_type": {
                 "Interkantonale Vereinbarung": 1,
-                "Gesetz": 1
+                "Verordnung": 1
               },
               "children": [
                 {
@@ -611,12 +726,12 @@
                   }
                 },
                 {
-                  "identifier": "9.50.10.50",
-                  "title": "Kino-, Theater- und Unterhaltungsgewerbe",
+                  "identifier": "9.50.10.20",
+                  "title": "Tourismus",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Gesetz": 1
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -627,48 +742,39 @@
     }
   ],
   "languages_available": {
-    "de": 19
+    "de": 23
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -679,12 +785,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

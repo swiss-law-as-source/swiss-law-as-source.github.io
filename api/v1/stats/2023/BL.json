@@ -2,17 +2,35 @@
   "year": "2023",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 4,
-  "categorized": 4,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
-    "Verfassung": {
-      "total": 1,
+    "Verordnung": {
+      "total": 7,
       "by_topic": {
-        "10 Grundlagen": 1
+        "140 Verwaltungsorganisation": 2,
+        "35 Versicherungen": 1,
+        "42 Öffentliche Werke": 1,
+        "48 Verkehr": 1,
+        "844 Mietzinsbeiträge": 1
       },
       "by_global_category": {
-        "1.10.10 Verfassung": 1
+        "5.20.30.40.10 Elementarschadenversicherung": 1,
+        "7.30.40 Submission": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "10 Grundlagen": 1,
+        "11 Bürgerrechte": 1,
+        "48 Verkehr": 1
+      },
+      "by_global_category": {
+        "4.80.40 Integration fremdsprachiger Schüler": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -23,34 +41,17 @@
       "by_global_category": {
         "1.10.40 Interkantonale Zusammenarbeit": 1
       }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "25 Strafprozess": 1
-      },
-      "by_global_category": {
-        "3.20.60 Kosten": 1
-      }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "33 Steuern": 1
-      },
-      "by_global_category": {
-        "6.20.10.20 Staatssteuern": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verfassung": 1,
+        "Gesetz": 2,
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -60,29 +61,38 @@
           "total": 2,
           "own": 2,
           "by_type": {
-            "Verfassung": 1,
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1
           }
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "25",
-          "title": "Strafprozess",
+          "identifier": "11",
+          "title": "Bürgerrechte",
           "total": 1,
           "own": 1,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           }
+        },
+        {
+          "identifier": "14",
+          "title": "Regierungsrat und Verwaltung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "140",
+              "title": "Verwaltungsorganisation",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
         }
       ]
     },
@@ -92,17 +102,79 @@
       "total": 1,
       "own": 0,
       "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "35",
+          "title": "Versicherungen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
         "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "33",
-          "title": "Steuern",
+          "identifier": "42",
+          "title": "Öffentliche Werke",
           "total": 1,
           "own": 1,
           "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "48",
+          "title": "Verkehr",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Verordnung": 1,
             "Gesetz": 1
           }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "84",
+          "title": "Wohnverhältnisse",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "844",
+              "title": "Mietzinsbeiträge",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
@@ -111,32 +183,21 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verfassung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verfassung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
-            {
-              "identifier": "1.10.10",
-              "title": "Verfassung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verfassung": 1
-              }
-            },
             {
               "identifier": "1.10.40",
               "title": "Interkantonale Zusammenarbeit",
@@ -151,8 +212,39 @@
       ]
     },
     {
-      "identifier": "3",
-      "title": "Strafrecht",
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.80.40",
+              "title": "Integration fremdsprachiger Schüler",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -160,8 +252,8 @@
       },
       "children": [
         {
-          "identifier": "3.20",
-          "title": "Strafprozess",
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -169,8 +261,95 @@
           },
           "children": [
             {
-              "identifier": "3.20.60",
-              "title": "Kosten",
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.40",
+                  "title": "Gebäudeversicherung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "5.20.30.40.10",
+                      "title": "Elementarschadenversicherung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -180,93 +359,42 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "6.20",
-          "title": "Steuern",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "6.20.10",
-              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.20.10.20",
-                  "title": "Staatssteuern",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 12
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -277,12 +405,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

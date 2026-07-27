@@ -2,8 +2,8 @@
   "year": "1999",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 4,
-  "categorized": 4,
+  "total": 5,
+  "categorized": 5,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -18,11 +18,18 @@
     "Verordnung": {
       "total": 1,
       "by_topic": {
-        "530 Allgemeine Bestimmungen": 1
+        "35 Strafrechtspflege": 1
       },
       "by_global_category": {
-        "8.20.20.30 Personenfreizügigkeit": 1
+        "5.30.30 Waffen und Munition": 1
       }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "507 Lebensmittel, Chemikalien, Tabak, ökologisches Gleichgewicht": 1
+      },
+      "by_global_category": {}
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -36,51 +43,53 @@
   },
   "by_topic_tree": [
     {
+      "identifier": "3",
+      "title": "Rechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "35",
+          "title": "Strafrechtspflege",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
       "identifier": "5",
       "title": "Gesundheit, Arbeit, Sozialrecht",
       "total": 3,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Verordnung": 1
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "50",
           "title": "Sanitätswesen",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 2,
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
               "identifier": "507",
               "title": "Lebensmittel, Chemikalien, Tabak, ökologisches Gleichgewicht",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Anderes": 2
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "53",
-          "title": "Arbeitsrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "530",
-              "title": "Allgemeine Bestimmungen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
+                "Anderes": 2,
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -109,6 +118,37 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.30",
+              "title": "Waffen und Munition",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
@@ -143,11 +183,10 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -202,59 +241,24 @@
               ]
             }
           ]
-        },
-        {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "8.20.20",
-              "title": "Arbeitsmarkt",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.20.20.30",
-                  "title": "Personenfreizügigkeit",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 4,
-    "it": 4
+    "de": 5,
+    "it": 5
   },
   "available_years_for_entity": [
-    "1846",
     "1877",
     "1901",
     "1908",
     "1913",
-    "1916",
     "1917",
-    "1922",
+    "1918",
     "1923",
     "1925",
     "1927",
-    "1929",
-    "1932",
     "1936",
     "1937",
     "1943",
@@ -264,7 +268,6 @@
     "1951",
     "1952",
     "1953",
-    "1954",
     "1955",
     "1956",
     "1957",
@@ -335,8 +338,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

@@ -2,8 +2,8 @@
   "year": "1995",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 30,
-  "categorized": 30,
+  "total": 31,
+  "categorized": 31,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -30,16 +30,18 @@
       }
     },
     "Verordnung": {
-      "total": 6,
+      "total": 7,
       "by_topic": {
         "164 Lohn und Entschädigungen": 3,
         "132 Wahlen und Abstimmungen": 1,
+        "153 Regierung und Verwaltung · Verwaltungsgebühren": 1,
         "861 Sozialer Wohnungsbau · Erhaltung von Wohnraum": 1,
         "955 Schifffahrt · Rheinhäfen": 1
       },
       "by_global_category": {
         "1.20.20.40.40 Löhne, Entschädigungen": 3,
-        "1.10.90.20.10 Wahlen und Abstimmungen": 1
+        "1.10.90.20.10 Wahlen und Abstimmungen": 1,
+        "1.20.20.20.30 Staatskanzlei": 1
       }
     },
     "Gesetz": {
@@ -99,10 +101,10 @@
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen · Organisation",
-      "total": 7,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Verordnung": 4,
+        "Verordnung": 5,
         "Gesetz": 2,
         "Reglement": 1
       },
@@ -119,6 +121,26 @@
             {
               "identifier": "132",
               "title": "Wahlen und Abstimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "15",
+          "title": "Organisation des Kantons",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "153",
+              "title": "Regierung und Verwaltung · Verwaltungsgebühren",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -554,10 +576,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 10,
+      "total": 11,
       "own": 0,
       "by_type": {
-        "Verordnung": 4,
+        "Verordnung": 5,
         "Gesetz": 3,
         "Gemeindeerlass": 1,
         "Reglement": 1,
@@ -609,10 +631,10 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 9,
+          "total": 10,
           "own": 0,
           "by_type": {
-            "Verordnung": 3,
+            "Verordnung": 4,
             "Gesetz": 3,
             "Gemeindeerlass": 1,
             "Reglement": 1,
@@ -642,15 +664,35 @@
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 7,
+              "total": 8,
               "own": 0,
               "by_type": {
-                "Verordnung": 3,
+                "Verordnung": 4,
                 "Gesetz": 2,
                 "Reglement": 1,
                 "Anderes": 1
               },
               "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.30",
+                      "title": "Staatskanzlei",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                },
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
@@ -1034,7 +1076,7 @@
     }
   ],
   "languages_available": {
-    "de": 30
+    "de": 31
   },
   "available_years_for_entity": [
     "1756",

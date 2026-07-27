@@ -2,14 +2,15 @@
   "year": "2012",
   "year_semantics": "enactment",
   "entity": "TG",
-  "total": 12,
-  "categorized": 12,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 10,
+      "total": 11,
       "by_topic": {
         "551 Polizeikorps": 2,
+        "141 Bürgerrecht": 1,
         "173.3 Rekurskommissionen, Organisation, Geschäftsgang": 1,
         "187.1 Organisation der Evangelischen Landeskirche": 1,
         "188.2 Erlasse der Katholischen Landeskirche": 1,
@@ -19,6 +20,7 @@
         "641 Sondersteuern. Erbschaftssteuer": 1
       },
       "by_global_category": {
+        "1.10.60 Bürgerrecht": 1,
         "1.20.70.10.60 Kantonale Rekurskommissionen": 1,
         "1.40.30 Evangelisch-Reformierte Kirche": 1,
         "1.40.10 Römisch-Katholische Kirche": 1,
@@ -31,12 +33,14 @@
       }
     },
     "Reglement": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "187.1 Organisation der Evangelischen Landeskirche": 1
+        "187.1 Organisation der Evangelischen Landeskirche": 1,
+        "412.6 Interkantonale Vereinbarungen": 1
       },
       "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 1
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "4.100.20 Schulgelder": 1
       }
     },
     "Anderes": {
@@ -53,12 +57,33 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 4
+        "Anderes": 4,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "14",
+          "title": "Bürgerrecht. Niederlassung. Aufenthalt",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "141",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "17",
           "title": "Staatliche Gewalten. Behörden",
@@ -180,21 +205,43 @@
     {
       "identifier": "4",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Reglement": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "412",
+              "title": "Berufliches Bildungswesen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "412.6",
+                  "title": "Interkantonale Vereinbarungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "415",
               "title": "Sport",
@@ -284,13 +331,33 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Anderes": 4,
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -443,12 +510,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.20",
+              "title": "Schulgelder",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.180",
           "title": "Kunst, Kultur, Sport",
@@ -546,16 +634,16 @@
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 14
   },
   "available_years_for_entity": [
     "1803",
     "1825",
     "1828",
+    "1829",
     "1831",
     "1834",
     "1846",
-    "1861",
     "1869",
     "1870",
     "1886",
@@ -567,30 +655,21 @@
     "1906",
     "1907",
     "1909",
-    "1911",
     "1914",
-    "1917",
     "1918",
-    "1923",
-    "1925",
     "1926",
-    "1927",
-    "1930",
     "1931",
     "1933",
     "1934",
+    "1935",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1947",
+    "1946",
     "1948",
-    "1951",
     "1955",
-    "1956",
     "1958",
-    "1959",
-    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",

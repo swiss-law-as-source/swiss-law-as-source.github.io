@@ -2,25 +2,31 @@
   "year": "1999",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 17,
-  "categorized": 17,
+  "total": 33,
+  "categorized": 33,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 7,
+      "total": 21,
       "by_topic": {
+        "790 Landschaftsschutz": 9,
+        "70 Polizei und Öffentliche Sicherheit": 2,
+        "11 Bürgerrechte": 1,
         "142 Finanz- und Kirchendirektion": 1,
-        "156 Lehrpersonen, besondere Bestimmungen": 1,
-        "157 Personalrecht II": 1,
+        "18 Gemeinden": 1,
         "217 Beurkundungswesen": 1,
+        "26 Vollzug, Rechtshilfe": 1,
         "53 Fischerei": 1,
-        "70 Polizei und Öffentliche Sicherheit": 1,
+        "57 Forstwirtschaft": 1,
         "90 Gesundheitspflege": 1
       },
       "by_global_category": {
+        "7.70.50 Naturschutz": 9,
+        "1.10.80 Ausweise": 1,
         "1.20.20.30.20 Direktionen und Ämter": 1,
-        "4.90.20 Löhne, Entschädigungen": 1,
+        "1.30.10 Gemeindefinanzen": 1,
         "1.50.20.10 Ausbildung": 1,
+        "5.30.30 Waffen und Munition": 1,
         "8.10.60 Spitalexterne Krankenpflege": 1
       }
     },
@@ -39,14 +45,25 @@
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
+        "10 Grundlagen": 1,
         "25 Strafprozess": 1,
-        "38 Regalien, Konzessionen": 1
+        "53 Fischerei": 1,
+        "837 Arbeitslosenversicherung": 1
       },
       "by_global_category": {
         "3.20.10 Strafprozessordnungen": 1,
-        "6.30.30 Salzregal": 1
+        "8.30.110 Arbeitslosenversicherung": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "92 Sozialmedizin": 2
+      },
+      "by_global_category": {
+        "8.30.60.10.20 Vereinbarungen": 2
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -55,40 +72,37 @@
         "10 Grundlagen": 1
       },
       "by_global_category": {}
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {},
-      "by_global_category": {}
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "92 Sozialmedizin": 1
-      },
-      "by_global_category": {
-        "8.30.60.10.20 Vereinbarungen": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Verordnung": 3,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "10",
           "title": "Grundlagen",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "11",
+          "title": "Bürgerrechte",
           "total": 1,
           "own": 1,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung": 1
           }
         },
         {
@@ -112,43 +126,23 @@
           ]
         },
         {
-          "identifier": "15",
-          "title": "Personalrecht I",
-          "total": 2,
-          "own": 0,
+          "identifier": "18",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 1,
           "by_type": {
-            "Verordnung": 2
-          },
-          "children": [
-            {
-              "identifier": "156",
-              "title": "Lehrpersonen, besondere Bestimmungen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "157",
-              "title": "Personalrecht II",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
+            "Verordnung": 1
+          }
         }
       ]
     },
     {
       "identifier": "2",
       "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 2,
         "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
@@ -182,25 +176,14 @@
             "Gesetz": 1,
             "Interkantonale Vereinbarung": 1
           }
-        }
-      ]
-    },
-    {
-      "identifier": "3",
-      "title": "Finanzen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "38",
-          "title": "Regalien, Konzessionen",
+          "identifier": "26",
+          "title": "Vollzug, Rechtshilfe",
           "total": 1,
           "own": 1,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           }
         }
       ]
@@ -208,15 +191,26 @@
     {
       "identifier": "5",
       "title": "Volkswirtschaft",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "53",
           "title": "Fischerei",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Verordnung": 1,
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "57",
+          "title": "Forstwirtschaft",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -262,31 +256,82 @@
     {
       "identifier": "7",
       "title": "Öffentliche Sicherheit, Umweltschutz",
-      "total": 1,
+      "total": 11,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 11
       },
       "children": [
         {
           "identifier": "70",
           "title": "Polizei und Öffentliche Sicherheit",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           }
+        },
+        {
+          "identifier": "79",
+          "title": "Natur- und Heimatschutz",
+          "total": 9,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 9
+          },
+          "children": [
+            {
+              "identifier": "790",
+              "title": "Landschaftsschutz",
+              "total": 9,
+              "own": 9,
+              "by_type": {
+                "Verordnung": 9
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherungen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "837",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "9",
       "title": "Gesundheit",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -301,10 +346,10 @@
         {
           "identifier": "92",
           "title": "Sozialmedizin",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           }
         }
       ]
@@ -314,12 +359,32 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 4
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.80",
+              "title": "Ausweise",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -359,6 +424,26 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         },
@@ -440,12 +525,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 3,
-        "Anderes": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -509,26 +593,6 @@
           ]
         },
         {
-          "identifier": "4.90",
-          "title": "Lehrkörper",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.90.20",
-              "title": "Löhne, Entschädigungen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
           "identifier": "4.140",
           "title": "Anerkennung von Diplomen",
           "total": 1,
@@ -540,30 +604,61 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "6.30.30",
-              "title": "Salzregal",
+              "identifier": "5.30.30",
+              "title": "Waffen und Munition",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 9,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 9
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 9,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 9
+          },
+          "children": [
+            {
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
+              "total": 9,
+              "own": 9,
+              "by_type": {
+                "Verordnung": 9
               }
             }
           ]
@@ -573,11 +668,12 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Verordnung": 1,
-        "Anderes": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -603,42 +699,52 @@
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "8.30.60",
               "title": "KVG",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 2
               },
               "children": [
                 {
                   "identifier": "8.30.60.10",
                   "title": "Tarife",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 2
                   },
                   "children": [
                     {
                       "identifier": "8.30.60.10.20",
                       "title": "Vereinbarungen",
-                      "total": 1,
-                      "own": 1,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
-                        "Anderes": 1
+                        "Anderes": 2
                       }
                     }
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -646,48 +752,39 @@
     }
   ],
   "languages_available": {
-    "de": 17
+    "de": 33
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -698,12 +795,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

@@ -2,29 +2,84 @@
   "year": "1996",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 3,
-  "categorized": 3,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
+        "815 Lebensmittelpolizei": 2,
         "811 Allgemeine Bestimmungen, medizinische und andere Berufe im Gesundheitswesen": 1,
         "931 Allgemeine Bestimmungen": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "8.10.130.10.10 Lebensmittelaufsicht": 1
+      }
     },
     "Gesetz": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
-        "611 Kreditinstitute des öffentlichen Rechts": 1
+        "133 Information und Akteneinsicht": 1,
+        "611 Kreditinstitute des öffentlichen Rechts": 1,
+        "931 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
+        "1.10.120 Information der Öffentlichkeit": 1,
         "6.10.50 Privatisierungen": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "815 Lebensmittelpolizei": 1
+      },
+      "by_global_category": {
+        "8.10.130.10.10 Lebensmittelaufsicht": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "955.3 Lotterien, Spiele, Wetten": 1
+      },
+      "by_global_category": {
+        "9.50.10.60.30 Spielbanken": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden und Gemeinden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "13",
+          "title": "Politische Rechte",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "133",
+              "title": "Information und Akteneinsicht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Regalien",
@@ -59,19 +114,21 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 3,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 1,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung des Parlaments (Dekret)": 3,
+            "Anderes": 1
           },
           "children": [
             {
@@ -82,6 +139,16 @@
               "by_type": {
                 "Verordnung des Parlaments (Dekret)": 1
               }
+            },
+            {
+              "identifier": "815",
+              "title": "Lebensmittelpolizei",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 2,
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -90,29 +157,64 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "93",
           "title": "Forstwesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
               "identifier": "931",
               "title": "Allgemeine Bestimmungen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung des Parlaments (Dekret)": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "95",
+          "title": "Industrie, Gewerbe und Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "955",
+              "title": "Dienstleistungsgewerbe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "955.3",
+                  "title": "Lotterien, Spiele, Wetten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -120,6 +222,37 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.120",
+              "title": "Information der Öffentlichkeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
@@ -150,48 +283,152 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.10",
+                  "title": "Lebensmittel und Gebrauchsgegenstände",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "8.10.130.10.10",
+                      "title": "Lebensmittelaufsicht",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Verordnung des Parlaments (Dekret)": 1,
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.60",
+                  "title": "Glücksspiel und Lotterien",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "9.50.10.60.30",
+                      "title": "Spielbanken",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 9
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -200,7 +437,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -253,7 +489,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

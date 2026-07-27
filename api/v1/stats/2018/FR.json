@@ -2,39 +2,68 @@
   "year": "2018",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 7,
-  "categorized": 7,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
-    "Reglement": {
-      "total": 3,
+    "Verordnung": {
+      "total": 8,
       "by_topic": {
-        "412.0 Allgemeine Bestimmungen": 1,
-        "412.4 Fachmittelschulausbildung": 1,
+        "10 VERFASSUNG": 1,
+        "122.70 Allgemeine Bestimmungen": 1,
+        "481.0 Allgemeine Bestimmungen": 1,
+        "551 Kantonspolizei": 1,
+        "710 Allgemeine Bestimmungen": 1,
+        "821.0 Allgemeine Bestimmungen": 1,
+        "822.0 Allgemeine Bestimmungen": 1,
+        "834.2 Alters- und Pflegeheime": 1
+      },
+      "by_global_category": {
+        "4.180.20 Kulturförderung": 2,
+        "3.20.40 Verdeckte Ermittlung": 1,
+        "7.10.10 Pläne": 1,
+        "4.10.20 Kindergarten": 1,
+        "8.30.60.30 Spitallisten": 1
+      }
+    },
+    "Reglement": {
+      "total": 5,
+      "by_topic": {
+        "114.1 Bürgerrecht": 1,
+        "124 Amtliche Veröffentlichungen": 1,
+        "732.1 Gebäudeversicherung": 1,
+        "820 Allgemeine Bestimmungen": 1,
         "900 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
-        "4.20.10 Mittelschule": 1,
-        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
+        "1.10.60 Bürgerrecht": 1,
+        "5.20.30.20 Brandschutz": 1,
+        "8.10.60 Spitalexterne Krankenpflege": 1,
         "9.10 Wirtschaftsförderung": 1
       }
     },
-    "Verordnung": {
-      "total": 2,
+    "Gesetz": {
+      "total": 4,
       "by_topic": {
+        "112 Gebiet": 1,
         "140 Allgemeine Bestimmungen": 1,
+        "412.0 Allgemeine Bestimmungen": 1,
         "631 Kantonssteuern": 1
       },
       "by_global_category": {
-        "1.30.10 Gemeindefinanzen": 1
+        "1.10.50.20 Grenzen": 1,
+        "1.30.10 Gemeindefinanzen": 1,
+        "4.20.10 Mittelschule": 1
       }
     },
-    "Gesetz": {
+    "Anderes": {
       "total": 1,
       "by_topic": {
-        "631 Kantonssteuern": 1
+        "214.5 Grundbuch": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
+      }
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -50,19 +79,123 @@
     {
       "identifier": "1",
       "title": "STAAT - VOLK - BEHÖRDEN",
-      "total": 1,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 2,
+        "Gesetz": 2,
+        "Reglement": 2
       },
       "children": [
+        {
+          "identifier": "10",
+          "title": "VERFASSUNG",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "11",
+          "title": "VOLK UND GEBIET",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "112",
+              "title": "Gebiet",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "114",
+              "title": "Bürgerrecht - Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "114.1",
+                  "title": "Bürgerrecht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Staatsrat und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.7",
+                  "title": "Staatspersonal",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "122.70",
+                      "title": "Allgemeine Bestimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "124",
+              "title": "Amtliche Veröffentlichungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "14",
           "title": "GEMEINDEN",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -71,8 +204,50 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "PRIVATRECHT - ZIVILPROZESS - ZWANGSVOLLSTRECKUNG",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "ZIVILRECHT",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "214",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "214.5",
+                  "title": "Grundbuch",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -84,25 +259,26 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 2
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "SCHULE",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 2
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "412",
               "title": "Mittelschulunterricht",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Reglement": 2
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -111,16 +287,38 @@
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Reglement": 1
+                    "Gesetz": 1
                   }
-                },
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "48",
+          "title": "KULTURELLE ANGELEGENHEITEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "481",
+              "title": "Kulturelle Institutionen des Staates",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
                 {
-                  "identifier": "412.4",
-                  "title": "Fachmittelschulausbildung",
+                  "identifier": "481.0",
+                  "title": "Allgemeine Bestimmungen",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Reglement": 1
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -130,33 +328,61 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "FINANZEN",
-      "total": 2,
+      "identifier": "5",
+      "title": "LANDESVERTEIDIGUNG - POLIZEI",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
         "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "55",
+          "title": "POLIZEI",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "551",
+              "title": "Kantonspolizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "FINANZEN",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "63",
           "title": "STEUERN",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "631",
               "title": "Kantonssteuern",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -166,12 +392,65 @@
     {
       "identifier": "7",
       "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
+        "Reglement": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "71",
+          "title": "RAUMPLANUNG UND BAUWESEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "710",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "73",
+          "title": "SCHUTZ GEGEN FEUER- UND ELEMENTARSCHÄDEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "732",
+              "title": "Versicherungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "732.1",
+                  "title": "Gebäudeversicherung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "74",
           "title": "ÖFFENTLICHE WERKE",
@@ -189,6 +468,110 @@
               "by_type": {
                 "Interkantonale Vereinbarung": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "GESUNDHEIT",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "820",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
+            {
+              "identifier": "821",
+              "title": "Gesundheitspolizeiliche Massnahmen und Gesundheitsförderung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "821.0",
+                  "title": "Allgemeine Bestimmungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "822",
+              "title": "Spitäler",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "822.0",
+                  "title": "Allgemeine Bestimmungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "SOZIALHILFE UND SOZIALVORSORGE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "834",
+              "title": "Spezialisierte Anstalten und Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "834.2",
+                  "title": "Alters- und Pflegeheime",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -230,19 +613,61 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Gesetz": 2,
+        "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.50",
+              "title": "Gebiet",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.50.20",
+                  "title": "Grenzen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.30",
           "title": "Gemeinden",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -251,7 +676,80 @@
               "total": 1,
               "own": 1,
               "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
                 "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.40",
+              "title": "Verdeckte Ermittlung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -261,19 +759,40 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Reglement": 2
+        "Verordnung": 3,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "4.20",
-          "title": "Sekundarstufe II",
-          "total": 2,
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 2
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.20",
+              "title": "Kindergarten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
           },
           "children": [
             {
@@ -282,17 +801,70 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Gesetz": 1
               }
-            },
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
             {
-              "identifier": "4.20.20",
-              "title": "Fachmittelschulen, Diplommittelschulen",
+              "identifier": "4.180.20",
+              "title": "Kulturförderung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
                 "Reglement": 1
-              }
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.20",
+                  "title": "Brandschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -301,12 +873,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.10",
+              "title": "Pläne",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
@@ -341,6 +934,69 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.60",
+              "title": "Spitalexterne Krankenpflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.30",
+                  "title": "Spitallisten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 1,
@@ -362,11 +1018,10 @@
     }
   ],
   "languages_available": {
-    "de": 7,
-    "fr": 7
+    "de": 19,
+    "fr": 19
   },
   "available_years_for_entity": [
-    "1804",
     "1808",
     "1825",
     "1831",
@@ -377,44 +1032,33 @@
     "1848",
     "1850",
     "1852",
-    "1857",
     "1859",
     "1866",
     "1867",
     "1868",
     "1873",
-    "1874",
     "1875",
     "1879",
-    "1884",
+    "1880",
     "1889",
     "1893",
     "1899",
-    "1907",
     "1909",
-    "1910",
-    "1911",
     "1913",
-    "1914",
-    "1916",
     "1917",
     "1918",
     "1920",
     "1921",
     "1922",
-    "1923",
     "1924",
-    "1925",
     "1926",
-    "1927",
+    "1928",
     "1929",
     "1930",
     "1931",
     "1934",
     "1935",
-    "1937",
     "1938",
-    "1939",
     "1942",
     "1943",
     "1946",
@@ -493,7 +1137,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

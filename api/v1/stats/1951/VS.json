@@ -2,10 +2,20 @@
   "year": "1951",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 3,
-  "categorized": 3,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "748 Luftfahrt": 1,
+        "818 Krankheiten, Hygiene": 1
+      },
+      "by_global_category": {
+        "8.10.100.20 Tuberkulose": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -15,20 +25,13 @@
         "7.50.30 Seilbahnen, Skilifte": 1
       }
     },
-    "Gesetz": {
+    "Verordnung": {
       "total": 1,
       "by_topic": {
-        "80 Gesundheitswesen": 1
-      },
-      "by_global_category": {}
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "818 Krankheiten, Hygiene": 1
+        "748 Luftfahrt": 1
       },
       "by_global_category": {
-        "8.10.100.20 Tuberkulose": 1
+        "7.50.70.10 Luftfahrzeuge": 1
       }
     }
   },
@@ -36,19 +39,23 @@
     {
       "identifier": "7",
       "title": "Öffentliche Werke, Energie, Verkehr",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Reglement": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "74",
           "title": "Verkehr",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Reglement": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -59,6 +66,16 @@
               "by_type": {
                 "Interkantonale Vereinbarung": 1
               }
+            },
+            {
+              "identifier": "748",
+              "title": "Luftfahrt",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 1,
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -67,22 +84,12 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Soziale Sicherheit",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
-        {
-          "identifier": "80",
-          "title": "Gesundheitswesen",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Gesetz": 1
-          }
-        },
         {
           "identifier": "81",
           "title": "Krankenanstalten, Rettungswesen, Umweltschutz",
@@ -110,19 +117,21 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "7.50",
           "title": "Verkehr",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -133,6 +142,26 @@
               "by_type": {
                 "Interkantonale Vereinbarung": 1
               }
+            },
+            {
+              "identifier": "7.50.70",
+              "title": "Luftfahrt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.70.10",
+                  "title": "Luftfahrzeuge",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -182,30 +211,26 @@
     }
   ],
   "languages_available": {
-    "de": 3,
-    "fr": 3
+    "de": 4,
+    "fr": 4
   },
   "available_years_for_entity": [
     "1802",
-    "1828",
     "1850",
     "1855",
+    "1856",
     "1864",
     "1877",
     "1882",
     "1891",
-    "1898",
     "1900",
-    "1905",
     "1907",
-    "1911",
     "1912",
-    "1916",
     "1922",
     "1923",
-    "1931",
-    "1932",
-    "1934",
+    "1924",
+    "1926",
+    "1933",
     "1935",
     "1936",
     "1937",
@@ -213,18 +238,15 @@
     "1939",
     "1943",
     "1944",
-    "1946",
     "1948",
     "1949",
     "1950",
     "1951",
-    "1952",
     "1954",
     "1955",
     "1957",
     "1958",
     "1959",
-    "1960",
     "1961",
     "1962",
     "1963",
@@ -238,6 +260,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",
@@ -312,7 +335,6 @@
     "SH",
     "SO",
     "SZ",
-    "TG",
     "TI",
     "UR",
     "VD",

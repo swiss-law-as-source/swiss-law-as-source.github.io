@@ -2,10 +2,51 @@
   "year": "2014",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 7,
-  "categorized": 7,
+  "total": 24,
+  "categorized": 24,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 13,
+      "by_topic": {
+        "790 Landschaftsschutz": 6,
+        "834 Berufliche Vorsorge": 2,
+        "11 Bürgerrechte": 1,
+        "26 Vollzug, Rechtshilfe": 1,
+        "34 Abgaben": 1,
+        "42 Öffentliche Werke": 1,
+        "48 Verkehr": 1
+      },
+      "by_global_category": {
+        "7.70.50 Naturschutz": 6,
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 2,
+        "1.10.70.10.10 Einwohnerkontrolle": 1,
+        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1,
+        "7.10.50 Verfahren": 1,
+        "1.20.50 Datenschutz": 1
+      }
+    },
+    "Reglement": {
+      "total": 3,
+      "by_topic": {
+        "140 Verwaltungsorganisation": 2,
+        "17 Gerichte, Verwaltungsverfahren und Anwaltsrecht": 1
+      },
+      "by_global_category": {}
+    },
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "146 Bildungs-, Kultur- und Sportdirektion": 1,
+        "31 Finanzhaushalt": 1,
+        "683 Kaufmännische Berufe": 1
+      },
+      "by_global_category": {
+        "1.20.20.30.20 Direktionen und Ämter": 1,
+        "1.20.20.70 New Public Management": 1,
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 3,
       "by_topic": {
@@ -18,75 +59,95 @@
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 1,
       "by_topic": {
-        "212 Vollzugserlasse zum OR": 1,
-        "233 Schuldbetreibung und Konkurs": 1
-      },
-      "by_global_category": {}
-    },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "26 Vollzug, Rechtshilfe": 1,
-        "42 Öffentliche Werke": 1
+        "41 Enteignung": 1
       },
       "by_global_category": {
-        "7.10.50 Verfahren": 1
+        "1.30.40 Aufgabenteilung Kanton-Gemeinden": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "834 Berufliche Vorsorge": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.20 Renten": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
-      "total": 3,
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
-        "Verordnung": 1
+        "Reglement": 3,
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "21",
-          "title": "Zivilrecht",
+          "identifier": "11",
+          "title": "Bürgerrechte",
           "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "14",
+          "title": "Regierungsrat und Verwaltung",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Reglement": 2,
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "212",
-              "title": "Vollzugserlasse zum OR",
+              "identifier": "140",
+              "title": "Verwaltungsorganisation",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 2
+              }
+            },
+            {
+              "identifier": "146",
+              "title": "Bildungs-, Kultur- und Sportdirektion",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Anderes": 1
               }
             }
           ]
         },
         {
-          "identifier": "23",
-          "title": "Vollstreckung, Rechtshilfe",
+          "identifier": "17",
+          "title": "Gerichte, Verwaltungsverfahren und Anwaltsrecht",
           "total": 1,
-          "own": 0,
+          "own": 1,
           "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "233",
-              "title": "Schuldbetreibung und Konkurs",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
-        },
+            "Reglement": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
         {
           "identifier": "26",
           "title": "Vollzug, Rechtshilfe",
@@ -99,15 +160,55 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Bau, Werke, Verkehr, Energie",
-      "total": 3,
+      "identifier": "3",
+      "title": "Finanzen",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "31",
+          "title": "Finanzhaushalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
+        {
+          "identifier": "34",
+          "title": "Abgaben",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Enteignung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
         {
           "identifier": "42",
           "title": "Öffentliche Werke",
@@ -129,10 +230,11 @@
         {
           "identifier": "48",
           "title": "Verkehr",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung": 1
           }
         }
       ]
@@ -156,16 +258,323 @@
           }
         }
       ]
+    },
+    {
+      "identifier": "6",
+      "title": "Kultur, Bildung, Ausbildung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "68",
+          "title": "Berufliche Ausbildung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "683",
+              "title": "Kaufmännische Berufe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Öffentliche Sicherheit, Umweltschutz",
+      "total": 6,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 6
+      },
+      "children": [
+        {
+          "identifier": "79",
+          "title": "Natur- und Heimatschutz",
+          "total": 6,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 6
+          },
+          "children": [
+            {
+              "identifier": "790",
+              "title": "Landschaftsschutz",
+              "total": 6,
+              "own": 6,
+              "by_type": {
+                "Verordnung": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Soziale Sicherheit",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherungen",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "834",
+              "title": "Berufliche Vorsorge",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 2,
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "1",
+      "title": "Staat",
+      "total": 8,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 4,
+        "Anderes": 2,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.10",
+                  "title": "Niederlassung und Aufenthalt Schweizer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.10.10",
+                      "title": "Einwohnerkontrolle",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 6,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3,
+            "Anderes": 2,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 5,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2,
+                "Verordnung": 2,
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.20",
+                      "title": "Renten",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung des Parlaments (Dekret)": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.20",
+                      "title": "Direktionen und Ämter",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 2
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Verordnung": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.70",
+                  "title": "New Public Management",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.40",
+              "title": "Aufgabenteilung Kanton-Gemeinden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.20",
+              "title": "Fachmittelschulen, Diplommittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 8,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 8
       },
       "children": [
         {
@@ -184,6 +593,57 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.10",
+                  "title": "Strassenverkehrssteuern und -abgaben",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 6,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 6
+          },
+          "children": [
+            {
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
+              "total": 6,
+              "own": 6,
+              "by_type": {
+                "Verordnung": 6
               }
             }
           ]
@@ -234,48 +694,39 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 24
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -286,12 +737,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

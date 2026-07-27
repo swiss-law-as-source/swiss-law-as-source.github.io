@@ -2,14 +2,13 @@
   "year": "2008",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 14,
-  "categorized": 14,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 5,
+      "total": 4,
       "by_topic": {
-        "416.3 Berufslehre": 1,
         "511.5 Interkantonale Zusammenarbeit": 1,
         "711.6 Öffentliche Bauvorschriften": 1
       },
@@ -18,18 +17,13 @@
         "7.10.70 Parkplätze": 1
       }
     },
-    "Reglement": {
-      "total": 4,
-      "by_topic": {},
-      "by_global_category": {}
-    },
     "Verordnung": {
       "total": 2,
       "by_topic": {
-        "415 Hochschulen": 1
+        "131.5 Verwaltung": 1
       },
       "by_global_category": {
-        "4.100.20 Schulgelder": 1
+        "1.10.90.20.10 Wahlen und Abstimmungen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -41,41 +35,59 @@
         "6.30.60.20 Reviere": 2
       }
     },
-    "Gesetz": {
+    "Reglement": {
       "total": 1,
       "by_topic": {
-        "221 Zivilprozessordnung": 1
+        "413.4 Schüler": 1
       },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {},
       "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht, Zivilprozessrecht, Vollstreckung",
+      "identifier": "1",
+      "title": "Grundlagen, Organisation, Gemeinden",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "22",
-          "title": "Zivilprozessrecht",
+          "identifier": "13",
+          "title": "Gemeinden",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "221",
-              "title": "Zivilprozessordnung",
+              "identifier": "131",
+              "title": "Grundlagen",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Gesetz": 1
-              }
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "131.5",
+                  "title": "Verwaltung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -84,48 +96,37 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Anderes": 1
+            "Reglement": 1
           },
           "children": [
             {
-              "identifier": "415",
-              "title": "Hochschulen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "416",
-              "title": "Berufsbildung",
+              "identifier": "413",
+              "title": "Volksschule",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Reglement": 1
               },
               "children": [
                 {
-                  "identifier": "416.3",
-                  "title": "Berufslehre",
+                  "identifier": "413.4",
+                  "title": "Schüler",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Anderes": 1
+                    "Reglement": 1
                   }
                 }
               ]
@@ -263,18 +264,17 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "4.100",
-          "title": "Ausbildungsbeiträge",
+          "identifier": "1.10",
+          "title": "Grundlagen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -282,12 +282,66 @@
           },
           "children": [
             {
-              "identifier": "4.100.20",
-              "title": "Schulgelder",
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.20",
+                  "title": "Politische Rechte",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.90.20.10",
+                      "title": "Wahlen und Abstimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Reglement": 1
               }
             }
           ]
@@ -389,21 +443,21 @@
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 10
   },
   "available_years_for_entity": [
     "1780",
+    "1802",
     "1803",
     "1825",
     "1828",
     "1830",
+    "1834",
+    "1837",
     "1851",
     "1873",
     "1874",
     "1875",
-    "1882",
-    "1883",
-    "1887",
     "1888",
     "1889",
     "1893",
@@ -413,30 +467,31 @@
     "1903",
     "1905",
     "1907",
+    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
-    "1917",
     "1918",
-    "1919",
+    "1920",
     "1921",
     "1923",
+    "1924",
     "1925",
     "1926",
-    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1933",
-    "1934",
+    "1932",
     "1935",
     "1937",
     "1938",
     "1939",
+    "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",
@@ -519,7 +574,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

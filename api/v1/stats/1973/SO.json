@@ -7,10 +7,11 @@
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 9,
+      "total": 10,
       "by_topic": {
         "416.3 Berufslehre": 2,
         "126.515.82 Mittelschule": 1,
+        "414.6 Unterricht": 1,
         "535 Zivilschutz in den Gemeinden": 1,
         "618.5 Prävention und Intervention": 1,
         "711.6 Öffentliche Bauvorschriften": 1,
@@ -19,30 +20,38 @@
       },
       "by_global_category": {
         "4.90.30 Ausbildung": 1,
+        "4.20.10 Mittelschule": 1,
         "7.50.30 Seilbahnen, Skilifte": 1,
         "8.10.30.10 Ärzte": 1
       }
     },
     "Verordnung": {
-      "total": 3,
+      "total": 2,
       "by_topic": {
-        "416.2 Berufsberatung": 1,
-        "618.5 Prävention und Intervention": 1,
-        "725.1 Kantonsstrassen": 1
+        "414.6 Unterricht": 1,
+        "416.2 Berufsberatung": 1
       },
       "by_global_category": {
-        "4.30.30 Berufsorientierung": 1,
-        "5.20.30.10 Feuerwehr": 1,
-        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1
+        "4.20.10 Mittelschule": 1,
+        "4.30.30 Berufsorientierung": 1
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 1,
       "by_topic": {
         "125.6 Arbeitsgerichte": 1
       },
       "by_global_category": {
         "1.20.70.10.50 Arbeits- und Mietgericht": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "414.44 Aufnahme, Promotion, Entlassung": 1
+      },
+      "by_global_category": {
+        "4.20.10 Mittelschule": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -154,23 +163,68 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Verordnung": 1
+        "Anderes": 3,
+        "Verordnung": 2,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 3,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
-            "Verordnung": 1
+            "Anderes": 3,
+            "Verordnung": 2,
+            "Reglement": 1
           },
           "children": [
+            {
+              "identifier": "414",
+              "title": "Mittelschulen",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1,
+                "Verordnung": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.4",
+                  "title": "Schüler",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "414.44",
+                      "title": "Aufnahme, Promotion, Entlassung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "414.6",
+                  "title": "Unterricht",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 1,
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "416",
               "title": "Berufsbildung",
@@ -239,42 +293,38 @@
     {
       "identifier": "6",
       "title": "Finanzen, Regalien",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
         "Anderes": 1,
-        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "61",
           "title": "Finanzen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "618",
               "title": "Gebäudeversicherung und Feuerpolizei",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1,
-                "Verordnung": 1
+                "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "618.5",
                   "title": "Prävention und Intervention",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Anderes": 1,
-                    "Verordnung": 1
+                    "Anderes": 1
                   }
                 }
               ]
@@ -317,11 +367,10 @@
     {
       "identifier": "7",
       "title": "Bauwesen, öffentliche Werke, Verkehr",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Verordnung": 1
+        "Anderes": 2
       },
       "children": [
         {
@@ -349,37 +398,6 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "72",
-          "title": "Öffentliche Werke",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "725",
-              "title": "Tiefbau",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "725.1",
-                  "title": "Kantonsstrassen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
                   }
                 }
               ]
@@ -508,13 +526,38 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Verordnung": 2,
+        "Anderes": 2,
+        "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Reglement": 1,
+                "Verordnung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.30",
           "title": "Sekundarstufe II (Berufliche Grundausbildung)",
@@ -558,48 +601,6 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "5.20",
-          "title": "Bevölkerungsschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "5.20.30",
-              "title": "Feuerwehr / Elementarschäden",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "5.20.30.10",
-                  "title": "Feuerwehr",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
@@ -633,43 +634,21 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "7.50",
           "title": "Verkehr",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
-            {
-              "identifier": "7.50.20",
-              "title": "Strassenverkehr",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "7.50.20.10",
-                  "title": "Strassenverkehrssteuern und -abgaben",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            },
             {
               "identifier": "7.50.30",
               "title": "Seilbahnen, Skilifte",
@@ -731,17 +710,17 @@
   },
   "available_years_for_entity": [
     "1780",
+    "1802",
     "1803",
     "1825",
     "1828",
     "1830",
+    "1834",
+    "1837",
     "1851",
     "1873",
     "1874",
     "1875",
-    "1882",
-    "1883",
-    "1887",
     "1888",
     "1889",
     "1893",
@@ -751,30 +730,31 @@
     "1903",
     "1905",
     "1907",
+    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
-    "1917",
     "1918",
-    "1919",
+    "1920",
     "1921",
     "1923",
+    "1924",
     "1925",
     "1926",
-    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1933",
-    "1934",
+    "1932",
     "1935",
     "1937",
     "1938",
     "1939",
+    "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",
@@ -857,7 +837,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

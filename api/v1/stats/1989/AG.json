@@ -2,10 +2,25 @@
   "year": "1989",
   "year_semantics": "enactment",
   "entity": "AG",
-  "total": 8,
-  "categorized": 8,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 5,
+      "by_topic": {
+        "155 Gerichte": 2,
+        "471 Allgemeines": 1,
+        "761 Schutzpläne – Hochwasserschutz": 1,
+        "995 Öffentlicher Verkehr": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.40 Bezirks-, Amts- und Friedensgericht": 1,
+        "1.20.70.30 Besoldung und Entschädigung der Richter": 1,
+        "4.100.10 Stipendien": 1,
+        "7.60.20 Gewässerschutz": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 3,
       "by_topic": {
@@ -17,39 +32,57 @@
         "4.120.10 Schulkoordination": 1
       }
     },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "585 Brandschutz": 1,
-        "587 Kaminfeger": 1
-      },
-      "by_global_category": {
-        "5.20.30.20 Brandschutz": 1,
-        "5.20.30.30 Kaminfeger": 1
-      }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "585 Brandschutz": 1,
-        "587 Kaminfeger": 1
-      },
-      "by_global_category": {
-        "5.20.30.20 Brandschutz": 1,
-        "5.20.30.30 Kaminfeger": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "471 Allgemeines": 1
+        "585 Brandschutz": 1
       },
       "by_global_category": {
-        "4.100.10 Stipendien": 1
+        "5.20.30.20 Brandschutz": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "759 Fuss- und Wanderwege": 1
+      },
+      "by_global_category": {
+        "7.30.30.20 Fuss- und Wanderwege": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staatsrechtliche Grundlagen – Organisation",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 2
+      },
+      "children": [
+        {
+          "identifier": "15",
+          "title": "Organisation des Kantons",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 2
+          },
+          "children": [
+            {
+              "identifier": "155",
+              "title": "Gerichte",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Erziehung – Wissenschaft – Kultur",
@@ -105,41 +138,80 @@
     {
       "identifier": "5",
       "title": "Gesamtverteidigung – Polizei – Feuerwehr",
-      "total": 4,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Anderes": 2
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "58",
           "title": "Feuerwehr – Brandschutz",
-          "total": 4,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 2,
-            "Anderes": 2
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "585",
               "title": "Brandschutz",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1,
-                "Anderes": 1
+                "Gesetz": 1
               }
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanung und Bauwesen – Enteignung – Strassen – Energie – Umweltschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "75",
+          "title": "Strassen: Bau, Benützung, Unterhalt",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
             {
-              "identifier": "587",
-              "title": "Kaminfeger",
-              "total": 2,
-              "own": 2,
+              "identifier": "759",
+              "title": "Fuss- und Wanderwege",
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1,
-                "Anderes": 1
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "76",
+          "title": "Gewässer",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "761",
+              "title": "Schutzpläne – Hochwasserschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -149,28 +221,31 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft – Verkehr",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "99",
           "title": "Verkehr",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2
+            "Interkantonale Vereinbarung": 2,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "995",
               "title": "Öffentlicher Verkehr",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Interkantonale Vereinbarung": 1,
+                "Anderes": 1
               }
             },
             {
@@ -188,6 +263,68 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 2
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 2
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 2
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.40",
+                      "title": "Bezirks-, Amts- und Friedensgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung des Parlaments (Dekret)": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.70.30",
+                  "title": "Besoldung und Entschädigung der Richter",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -243,51 +380,37 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 4,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Anderes": 2
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "5.20",
           "title": "Bevölkerungsschutz",
-          "total": 4,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 2,
-            "Anderes": 2
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "5.20.30",
               "title": "Feuerwehr / Elementarschäden",
-              "total": 4,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 2,
-                "Anderes": 2
+                "Gesetz": 1
               },
               "children": [
                 {
                   "identifier": "5.20.30.20",
                   "title": "Brandschutz",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Verordnung": 1,
-                    "Anderes": 1
-                  }
-                },
-                {
-                  "identifier": "5.20.30.30",
-                  "title": "Kaminfeger",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Verordnung": 1,
-                    "Anderes": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -295,49 +418,110 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.30",
+              "title": "Strassen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.30.20",
+                  "title": "Fuss- und Wanderwege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 10
   },
   "available_years_for_entity": [
     "1803",
-    "1819",
     "1828",
     "1832",
-    "1845",
-    "1853",
+    "1838",
+    "1840",
     "1856",
+    "1861",
     "1862",
+    "1869",
     "1871",
+    "1873",
+    "1885",
     "1889",
     "1901",
-    "1905",
-    "1906",
-    "1907",
     "1908",
     "1909",
+    "1910",
     "1911",
-    "1912",
-    "1914",
+    "1913",
     "1915",
-    "1916",
     "1917",
     "1918",
     "1919",
+    "1921",
     "1922",
-    "1923",
     "1924",
     "1925",
     "1928",
     "1930",
+    "1931",
     "1932",
     "1934",
     "1937",
     "1938",
     "1939",
-    "1940",
-    "1941",
     "1942",
     "1943",
     "1944",
@@ -356,7 +540,6 @@
     "1959",
     "1960",
     "1961",
-    "1962",
     "1963",
     "1964",
     "1965",
@@ -368,6 +551,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",

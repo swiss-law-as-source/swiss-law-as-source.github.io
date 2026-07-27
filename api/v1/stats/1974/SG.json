@@ -2,23 +2,41 @@
   "year": "1974",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 16,
-  "categorized": 16,
+  "total": 20,
+  "categorized": 20,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
+        "671 Naturschutz": 2,
         "141 Allgemein": 1,
         "211 Allgemein": 1,
-        "323 Gemeindespitäler": 1,
-        "714 Schifffahrt": 1
+        "323 Gemeindespitäler": 1
       },
       "by_global_category": {
         "1.20.20.30.10 Departemente": 1,
         "4.10.20 Kindergarten": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1,
-        "7.50.60.10 Schiffssteuern": 1
+        "7.70.30 Pflanzenschutz": 1,
+        "7.70.50 Naturschutz": 1
+      }
+    },
+    "Gesetz": {
+      "total": 5,
+      "by_topic": {
+        "161 Verantwortlichkeit": 1,
+        "211 Allgemein": 1,
+        "251 Turnen und Sport": 1,
+        "714 Schifffahrt": 1,
+        "851 Salzhandel": 1
+      },
+      "by_global_category": {
+        "1.20.40 Staatshaftung": 1,
+        "4.10.20 Kindergarten": 1,
+        "4.180.30 Sport": 1,
+        "7.50.60.10 Schiffssteuern": 1,
+        "6.30.30 Salzregal": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -33,36 +51,27 @@
         "7.30.20.20 Gewässernutzung": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
+    "Anderes": {
       "total": 3,
       "by_topic": {
-        "381 Öffentliche Fürsorge": 1,
+        "0 Einleitung: Gesetzessammlung und Amtsblatt": 1,
+        "175 Evangelische Konfession": 1,
+        "553 Gastwirtschaft": 1
+      },
+      "by_global_category": {
+        "1.10.100.10 Gesetzessammlungen": 1,
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "9.50.10.10 Berufsausübungsbewilligungen": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
         "851 Salzhandel": 1,
         "971 Schuldbetreibung und Konkurs": 1
       },
       "by_global_category": {
-        "6.10.30 Staatsbeiträge, Subventionen": 1,
         "6.30.30 Salzregal": 1
-      }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "211 Allgemein": 1,
-        "851 Salzhandel": 1
-      },
-      "by_global_category": {
-        "4.10.20 Kindergarten": 1,
-        "6.30.30 Salzregal": 1
-      }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "0 Einleitung: Gesetzessammlung und Amtsblatt": 1
-      },
-      "by_global_category": {
-        "1.10.100.10 Gesetzessammlungen": 1
       }
     },
     "Reglement": {
@@ -72,15 +81,6 @@
       },
       "by_global_category": {
         "4.90.30 Ausbildung": 1
-      }
-    },
-    "Staatsvertrag": {
-      "total": 1,
-      "by_topic": {
-        "853 Jagd": 1
-      },
-      "by_global_category": {
-        "6.30.50.10 Jäger": 1
       }
     }
   },
@@ -97,10 +97,11 @@
     {
       "identifier": "1",
       "title": "Grundlagen und Organisation von Kanton und Gemeinden",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -122,16 +123,56 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "16",
+          "title": "Verantwortlichkeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "161",
+              "title": "Verantwortlichkeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "17",
+          "title": "Staat und Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "175",
+              "title": "Evangelische Konfession",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
+        "Gesetz": 2,
         "Verordnung": 1,
         "Reglement": 1
       },
@@ -167,17 +208,36 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "25",
+          "title": "Turnen und Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "251",
+              "title": "Turnen und Sport",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -199,10 +259,21 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Arbeit und Gewerbe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
         {
-          "identifier": "38",
-          "title": "Fürsorge und Heimaufenthalt",
+          "identifier": "55",
+          "title": "Gewerbepolizei",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -210,8 +281,8 @@
           },
           "children": [
             {
-              "identifier": "381",
-              "title": "Öffentliche Fürsorge",
+              "identifier": "553",
+              "title": "Gastwirtschaft",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -225,9 +296,10 @@
     {
       "identifier": "6",
       "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -250,6 +322,26 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "67",
+          "title": "Umweltschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "671",
+              "title": "Naturschutz",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
         }
       ]
     },
@@ -260,7 +352,7 @@
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 3,
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -269,7 +361,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -278,7 +370,7 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -328,23 +420,21 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
         "Gesetz": 1,
-        "Anderes": 1,
-        "Staatsvertrag": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "85",
           "title": "Regalien",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
             "Gesetz": 1,
-            "Anderes": 1,
-            "Staatsvertrag": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -355,15 +445,6 @@
               "by_type": {
                 "Gesetz": 1,
                 "Anderes": 1
-              }
-            },
-            {
-              "identifier": "853",
-              "title": "Jagd",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Staatsvertrag": 1
               }
             }
           ]
@@ -406,10 +487,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 3,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -446,10 +528,11 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -482,6 +565,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "1.20.40",
+              "title": "Staatshaftung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -490,10 +602,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
+        "Gesetz": 2,
         "Verordnung": 1,
         "Reglement": 1
       },
@@ -539,39 +651,56 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.30",
+              "title": "Sport",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 5,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
         "Verordnung": 1,
         "Gesetz": 1,
-        "Staatsvertrag": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1,
-                "Anderes": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -579,12 +708,11 @@
         {
           "identifier": "6.30",
           "title": "Monopole, Staatliche Unternehmen",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
             "Gesetz": 1,
-            "Anderes": 1,
-            "Staatsvertrag": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -596,26 +724,6 @@
                 "Gesetz": 1,
                 "Anderes": 1
               }
-            },
-            {
-              "identifier": "6.30.50",
-              "title": "Jagd",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Staatsvertrag": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.30.50.10",
-                  "title": "Jäger",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Staatsvertrag": 1
-                  }
-                }
-              ]
             }
           ]
         }
@@ -624,11 +732,12 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 3,
-        "Verordnung": 1
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -688,7 +797,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -697,7 +806,7 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -706,7 +815,78 @@
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung": 1
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "7.70.30",
+              "title": "Pflanzenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.10",
+                  "title": "Berufsausübungsbewilligungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
                   }
                 }
               ]
@@ -717,46 +897,38 @@
     }
   ],
   "languages_available": {
-    "de": 16
+    "de": 20
   },
   "available_years_for_entity": [
     "1845",
     "1870",
-    "1883",
-    "1884",
-    "1885",
     "1890",
     "1899",
     "1901",
-    "1902",
     "1903",
-    "1906",
-    "1907",
-    "1910",
     "1911",
+    "1912",
     "1914",
-    "1918",
     "1919",
-    "1926",
-    "1930",
-    "1931",
+    "1923",
+    "1929",
+    "1933",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1946",
     "1947",
     "1948",
     "1949",
-    "1950",
     "1951",
     "1952",
     "1953",
     "1955",
-    "1956",
     "1957",
     "1958",
     "1959",
@@ -825,9 +997,11 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
+    "AG",
     "AI",
     "AR",
     "BE",
@@ -851,6 +1025,7 @@
     "TI",
     "UR",
     "VD",
+    "VS",
     "ZG",
     "ZH"
   ]

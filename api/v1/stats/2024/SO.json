@@ -2,20 +2,23 @@
   "year": "2024",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 6,
-  "categorized": 6,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
-    "Reglement": {
-      "total": 3,
+    "Verordnung": {
+      "total": 5,
       "by_topic": {
-        "618.5 Prävention und Intervention": 2,
-        "618.1 Grundlagen": 1
+        "811.1 Organisation des Sanitätswesens": 2,
+        "125.1 Grundlagen und Organisation": 1,
+        "614.15 Steuerverordnungen und -weisungen": 1,
+        "711.6 Öffentliche Bauvorschriften": 1
       },
       "by_global_category": {
-        "2.10.40.10 Schätzung von Grundstücken": 1,
-        "5.20.30.10 Feuerwehr": 1,
-        "5.20.30.20 Brandschutz": 1
+        "4.170.20 Archive": 1,
+        "7.10.50 Verfahren": 1,
+        "8.30.60.40 Einschränkung der Zulassung von Leistungserbringern": 1,
+        "8.10.30.30 Krankenpflegepersonal": 1
       }
     },
     "Anderes": {
@@ -28,17 +31,61 @@
         "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
       }
     },
-    "Verordnung": {
-      "total": 1,
+    "Gesetz": {
+      "total": 2,
       "by_topic": {
+        "618.1 Grundlagen": 1,
         "811.1 Organisation des Sanitätswesens": 1
       },
       "by_global_category": {
+        "5.20.30.10 Feuerwehr": 1,
         "8.10.30.30 Krankenpflegepersonal": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Grundlagen, Organisation, Gemeinden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "Organisation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "125",
+              "title": "Gerichte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "125.1",
+                  "title": "Grundlagen und Organisation",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
@@ -95,30 +142,63 @@
     {
       "identifier": "6",
       "title": "Finanzen, Regalien",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 3,
+        "Verordnung": 1,
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "61",
           "title": "Finanzen",
-          "total": 4,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Reglement": 3,
+            "Verordnung": 1,
+            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
             {
-              "identifier": "618",
-              "title": "Gebäudeversicherung und Feuerpolizei",
-              "total": 4,
+              "identifier": "614",
+              "title": "Kantonale Steuern",
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Reglement": 3,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "614.1",
+                  "title": "Staats- und Gemeindesteuer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "614.15",
+                      "title": "Steuerverordnungen und -weisungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "618",
+              "title": "Gebäudeversicherung und Feuerpolizei",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
                 "Anderes": 1
               },
               "children": [
@@ -128,17 +208,8 @@
                   "total": 2,
                   "own": 2,
                   "by_type": {
-                    "Anderes": 1,
-                    "Reglement": 1
-                  }
-                },
-                {
-                  "identifier": "618.5",
-                  "title": "Prävention und Intervention",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Reglement": 2
+                    "Gesetz": 1,
+                    "Anderes": 1
                   }
                 }
               ]
@@ -148,8 +219,8 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Verkehr",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -157,8 +228,8 @@
       },
       "children": [
         {
-          "identifier": "81",
-          "title": "Gesundheit",
+          "identifier": "71",
+          "title": "Bauwesen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -166,8 +237,8 @@
           },
           "children": [
             {
-              "identifier": "811",
-              "title": "Sanitätswesen",
+              "identifier": "711",
+              "title": "Bau- und Raumplanungsrecht",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -175,8 +246,8 @@
               },
               "children": [
                 {
-                  "identifier": "811.1",
-                  "title": "Organisation des Sanitätswesens",
+                  "identifier": "711.6",
+                  "title": "Öffentliche Bauvorschriften",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -188,46 +259,81 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Sanitätswesen",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.1",
+                  "title": "Organisation des Sanitätswesens",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Verordnung": 2,
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht",
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
+          "identifier": "4.170",
+          "title": "Dokumentation",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
+              "identifier": "4.170.20",
+              "title": "Archive",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.40.10",
-                  "title": "Schätzung von Grundstücken",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                }
-              ]
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -236,28 +342,28 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 2
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "5.20",
           "title": "Bevölkerungsschutz",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 2
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "5.20.30",
               "title": "Feuerwehr / Elementarschäden",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Reglement": 2
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -266,16 +372,7 @@
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Reglement": 1
-                  }
-                },
-                {
-                  "identifier": "5.20.30.20",
-                  "title": "Brandschutz",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -287,12 +384,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.50",
+              "title": "Verfahren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -318,15 +436,50 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.30",
+                  "title": "Krankenpflegepersonal",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -334,8 +487,8 @@
           },
           "children": [
             {
-              "identifier": "8.10.30",
-              "title": "Medizinische Berufe",
+              "identifier": "8.30.60",
+              "title": "KVG",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -343,8 +496,8 @@
               },
               "children": [
                 {
-                  "identifier": "8.10.30.30",
-                  "title": "Krankenpflegepersonal",
+                  "identifier": "8.30.60.40",
+                  "title": "Einschränkung der Zulassung von Leistungserbringern",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -359,21 +512,21 @@
     }
   ],
   "languages_available": {
-    "de": 6
+    "de": 9
   },
   "available_years_for_entity": [
     "1780",
+    "1802",
     "1803",
     "1825",
     "1828",
     "1830",
+    "1834",
+    "1837",
     "1851",
     "1873",
     "1874",
     "1875",
-    "1882",
-    "1883",
-    "1887",
     "1888",
     "1889",
     "1893",
@@ -383,30 +536,31 @@
     "1903",
     "1905",
     "1907",
+    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
-    "1917",
     "1918",
-    "1919",
+    "1920",
     "1921",
     "1923",
+    "1924",
     "1925",
     "1926",
-    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1933",
-    "1934",
+    "1932",
     "1935",
     "1937",
     "1938",
     "1939",
+    "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",
@@ -489,7 +643,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

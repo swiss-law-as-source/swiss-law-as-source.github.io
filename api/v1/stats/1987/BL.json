@@ -2,42 +2,43 @@
   "year": "1987",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 3,
-  "categorized": 3,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "36 Staatsbeiträge": 1,
+        "56 Handel": 1
+      },
+      "by_global_category": {
+        "9.60.30 Preisüberwachung": 1
+      }
+    },
     "Gesetz": {
       "total": 1,
       "by_topic": {
-        "18 Gemeinden": 1
+        "213 Grundstückserwerb": 1
       },
       "by_global_category": {
-        "6.10.20.10 Interkantonale Zusammenarbeit mit Lastenausgleich": 1
+        "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1
       }
     },
-    "Verordnung": {
+    "Anderes": {
       "total": 1,
       "by_topic": {
-        "31 Finanzhaushalt": 1
+        "36 Staatsbeiträge": 1
       },
       "by_global_category": {
-        "6.10.10 Budget und Rechnung": 1
-      }
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "643 Weiterführende Schulen": 1
-      },
-      "by_global_category": {
-        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
+        "4.70.20 Weiterbildung Lehrpersonen": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "1",
-      "title": "Staat, Volk, Behörden",
+      "identifier": "2",
+      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -45,19 +46,52 @@
       },
       "children": [
         {
-          "identifier": "18",
-          "title": "Gemeinden",
+          "identifier": "21",
+          "title": "Zivilrecht",
           "total": 1,
-          "own": 1,
+          "own": 0,
           "by_type": {
             "Gesetz": 1
-          }
+          },
+          "children": [
+            {
+              "identifier": "213",
+              "title": "Grundstückserwerb",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "3",
       "title": "Finanzen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "36",
+          "title": "Staatsbeiträge",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Anderes": 1,
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Volkswirtschaft",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -65,8 +99,8 @@
       },
       "children": [
         {
-          "identifier": "31",
-          "title": "Finanzhaushalt",
+          "identifier": "56",
+          "title": "Handel",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -74,103 +108,30 @@
           }
         }
       ]
-    },
-    {
-      "identifier": "6",
-      "title": "Kultur, Bildung, Ausbildung",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Reglement": 1
-      },
-      "children": [
-        {
-          "identifier": "64",
-          "title": "Schulen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "643",
-              "title": "Weiterführende Schulen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Reglement": 1
-              }
-            }
-          ]
-        }
-      ]
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "identifier": "2",
+      "title": "Zivilrecht",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 1
-      },
-      "children": [
-        {
-          "identifier": "4.20",
-          "title": "Sekundarstufe II",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "4.20.20",
-              "title": "Fachmittelschulen, Diplommittelschulen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Reglement": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "6.10",
-          "title": "Finanzen",
-          "total": 2,
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
             "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "6.10.10",
-              "title": "Budget und Rechnung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "6.10.20",
-              "title": "Finanzausgleich",
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -178,8 +139,8 @@
               },
               "children": [
                 {
-                  "identifier": "6.10.20.10",
-                  "title": "Interkantonale Zusammenarbeit mit Lastenausgleich",
+                  "identifier": "2.10.40.20",
+                  "title": "Erwerb von Grundstücke durch Personen im Ausland",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -191,51 +152,104 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.70",
+          "title": "Weiterbildung (Quartärstufe)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.70.20",
+              "title": "Weiterbildung Lehrpersonen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.30",
+              "title": "Preisüberwachung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 4
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -246,12 +260,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

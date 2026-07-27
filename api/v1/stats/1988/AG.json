@@ -2,11 +2,35 @@
   "year": "1988",
   "year_semantics": "enactment",
   "entity": "AG",
-  "total": 2,
-  "categorized": 2,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "131 Allgemeines – Wahlen und Abstimmungen": 1,
+        "152 Grosser Rat": 1,
+        "405 Schuldienste": 1
+      },
+      "by_global_category": {
+        "1.10.90.20.10 Wahlen und Abstimmungen": 1,
+        "1.20.10.10 Wahl des Parlaments": 1,
+        "4.30.30 Berufsorientierung": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
+        "423 Mittelschulen": 1,
+        "761 Schutzpläne – Hochwasserschutz": 1
+      },
+      "by_global_category": {
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
+        "7.60.20 Gewässerschutz": 1
+      }
+    },
+    "Gesetz": {
       "total": 1,
       "by_topic": {
         "152 Grosser Rat": 1
@@ -14,30 +38,22 @@
       "by_global_category": {
         "1.20.10.10 Wahl des Parlaments": 1
       }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "423 Mittelschulen": 1
-      },
-      "by_global_category": {
-        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen – Organisation",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "15",
-          "title": "Organisation des Kantons",
+          "identifier": "13",
+          "title": "Politische Rechte",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -45,11 +61,33 @@
           },
           "children": [
             {
-              "identifier": "152",
-              "title": "Grosser Rat",
+              "identifier": "131",
+              "title": "Allgemeines – Wahlen und Abstimmungen",
               "total": 1,
               "own": 1,
               "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "15",
+          "title": "Organisation des Kantons",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "152",
+              "title": "Grosser Rat",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               }
             }
@@ -60,12 +98,33 @@
     {
       "identifier": "4",
       "title": "Erziehung – Wissenschaft – Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "40",
+          "title": "Allgemeines",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "405",
+              "title": "Schuldienste",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "42",
           "title": "Schulen",
@@ -87,21 +146,53 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanung und Bauwesen – Enteignung – Strassen – Energie – Umweltschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "76",
+          "title": "Gewässer",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "761",
+              "title": "Schutzpläne – Hochwasserschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "1.20",
-          "title": "Behörden",
+          "identifier": "1.10",
+          "title": "Grundlagen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -109,8 +200,8 @@
           },
           "children": [
             {
-              "identifier": "1.20.10",
-              "title": "Parlament",
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -118,11 +209,56 @@
               },
               "children": [
                 {
+                  "identifier": "1.10.90.20",
+                  "title": "Politische Rechte",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.90.20.10",
+                      "title": "Wahlen und Abstimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.10",
+              "title": "Parlament",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
                   "identifier": "1.20.10.10",
                   "title": "Wahl des Parlaments",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Gesetz": 1,
                     "Verordnung": 1
                   }
                 }
@@ -135,10 +271,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -160,51 +297,100 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.30",
+              "title": "Berufsorientierung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 6
   },
   "available_years_for_entity": [
     "1803",
-    "1819",
     "1828",
     "1832",
-    "1845",
-    "1853",
+    "1838",
+    "1840",
     "1856",
+    "1861",
     "1862",
+    "1869",
     "1871",
+    "1873",
+    "1885",
     "1889",
     "1901",
-    "1905",
-    "1906",
-    "1907",
     "1908",
     "1909",
+    "1910",
     "1911",
-    "1912",
-    "1914",
+    "1913",
     "1915",
-    "1916",
     "1917",
     "1918",
     "1919",
+    "1921",
     "1922",
-    "1923",
     "1924",
     "1925",
     "1928",
     "1930",
+    "1931",
     "1932",
     "1934",
     "1937",
     "1938",
     "1939",
-    "1940",
-    "1941",
     "1942",
     "1943",
     "1944",
@@ -223,7 +409,6 @@
     "1959",
     "1960",
     "1961",
-    "1962",
     "1963",
     "1964",
     "1965",
@@ -235,6 +420,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",

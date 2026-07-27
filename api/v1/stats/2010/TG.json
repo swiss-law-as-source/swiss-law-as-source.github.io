@@ -2,38 +2,48 @@
   "year": "2010",
   "year_semantics": "enactment",
   "entity": "TG",
-  "total": 17,
-  "categorized": 17,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 10,
+      "total": 15,
       "by_topic": {
         "173.1 Gerichtsorganisation": 2,
         "143 Ausweisschriften": 1,
         "187.1 Organisation der Evangelischen Landeskirche": 1,
         "187.2 Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung": 1,
+        "188.2 Erlasse der Katholischen Landeskirche": 1,
+        "211.3 Erbrecht": 1,
+        "313 Verwaltungsstrafrecht": 1,
         "411.4 Sonderschule": 1,
         "411.6 Staatsbeiträge": 1,
         "73 Energie": 1,
-        "741 Strassenverkehr": 1
+        "741 Strassenverkehr": 1,
+        "812 Heilmittel. Betäubungsmittel. Tabak": 1
       },
       "by_global_category": {
         "1.40.30 Evangelisch-Reformierte Kirche": 2,
         "1.10.80 Ausweise": 1,
         "1.20.70.10.40 Bezirks-, Amts- und Friedensgericht": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "2.10.30 Erbrecht": 1,
+        "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
         "4.80.10 Sonderschulen": 1,
-        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1
+        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1,
+        "8.10.120.20 Rauchverbote": 1
       }
     },
     "Anderes": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
+        "188.2 Erlasse der Katholischen Landeskirche": 1,
         "211.44 Geoinformation": 1,
         "27 Zivilrechtspflege": 1,
         "414 Hochschulen": 1
       },
       "by_global_category": {
+        "1.40.10 Römisch-Katholische Kirche": 1,
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
         "3.20.10 Strafprozessordnungen": 1,
         "4.50.10 Pädagogik": 1
@@ -72,10 +82,10 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Anderes": 4,
+        "Anderes": 6,
         "Verordnung": 1
       },
       "children": [
@@ -133,10 +143,10 @@
         {
           "identifier": "18",
           "title": "Staat und Kirche",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 4
           },
           "children": [
             {
@@ -167,6 +177,26 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "188",
+              "title": "Katholische Landeskirche",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "188.2",
+                  "title": "Erlasse der Katholischen Landeskirche",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 2
+                  }
+                }
+              ]
             }
           ]
         }
@@ -175,21 +205,30 @@
     {
       "identifier": "2",
       "title": "Privatrecht - Zivilrechtspflege - Vollstreckung",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 3
       },
       "children": [
         {
           "identifier": "21",
           "title": "Zivilgesetzbuch",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
+            {
+              "identifier": "211.3",
+              "title": "Erbrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "211.4",
               "title": "Sachenrecht",
@@ -220,6 +259,37 @@
           "by_type": {
             "Anderes": 1
           }
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht - Strafrechtspflege - Strafvollzug",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "Strafrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "313",
+              "title": "Verwaltungsstrafrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -334,20 +404,22 @@
     {
       "identifier": "8",
       "title": "Gesundheit - Arbeit - Soziale Sicherheit",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Reglement": 1,
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -369,6 +441,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "812",
+              "title": "Heilmittel. Betäubungsmittel. Tabak",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         },
@@ -399,11 +480,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
-        "Verordnung": 1
+        "Anderes": 5,
+        "Verordnung": 2
       },
       "children": [
         {
@@ -429,12 +510,33 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.50",
+                  "title": "Verwaltungsverfahren, Verwaltungsrechtspflege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
@@ -471,12 +573,21 @@
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 4
           },
           "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            },
             {
               "identifier": "1.40.30",
               "title": "Evangelisch-Reformierte Kirche",
@@ -493,21 +604,21 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Anderes": 1
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
-            "Anderes": 1
+            "Anderes": 2,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -540,6 +651,15 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "2.10.30",
+              "title": "Erbrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             },
             {
               "identifier": "2.10.40",
@@ -714,19 +834,21 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Reglement": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -748,6 +870,26 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.10.120",
+              "title": "Suchtprävention",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.120.20",
+                  "title": "Rauchverbote",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -755,16 +897,16 @@
     }
   ],
   "languages_available": {
-    "de": 17
+    "de": 23
   },
   "available_years_for_entity": [
     "1803",
     "1825",
     "1828",
+    "1829",
     "1831",
     "1834",
     "1846",
-    "1861",
     "1869",
     "1870",
     "1886",
@@ -776,30 +918,21 @@
     "1906",
     "1907",
     "1909",
-    "1911",
     "1914",
-    "1917",
     "1918",
-    "1923",
-    "1925",
     "1926",
-    "1927",
-    "1930",
     "1931",
     "1933",
     "1934",
+    "1935",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1947",
+    "1946",
     "1948",
-    "1951",
     "1955",
-    "1956",
     "1958",
-    "1959",
-    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",

@@ -2,10 +2,32 @@
   "year": "1999",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 5,
-  "categorized": 5,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 4,
+      "by_topic": {
+        "920 Allgemeines": 3,
+        "955.1 Gastgewerbe und Handel mit geistigen Getränken": 1
+      },
+      "by_global_category": {
+        "9.20.10 Förderungsmassnahmen": 1,
+        "9.20.40 Berggebiete": 1,
+        "6.30.10 Alkohol": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "231 Allgemeine Bestimmungen": 1,
+        "524 Waffenhandel": 1
+      },
+      "by_global_category": {
+        "5.30.30 Waffen und Munition": 1
+      }
+    },
     "Anderes": {
       "total": 1,
       "by_topic": {
@@ -24,25 +46,7 @@
         "4.100.20 Schulgelder": 1
       }
     },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "824.0 Entsandte Arbeitnehmende": 1
-      },
-      "by_global_category": {
-        "8.20.20.20 Entsendung von Arbeitnehmern": 1
-      }
-    },
     "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "955.1 Gastgewerbe und Handel mit geistigen Getränken": 1
-      },
-      "by_global_category": {
-        "6.30.10 Alkohol": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
         "955.1 Gastgewerbe und Handel mit geistigen Getränken": 1
@@ -53,6 +57,37 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "23",
+          "title": "Zivilrechtspflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "231",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Erziehung, Kultur",
@@ -100,8 +135,8 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -109,8 +144,8 @@
       },
       "children": [
         {
-          "identifier": "82",
-          "title": "Arbeit",
+          "identifier": "52",
+          "title": "Polizei",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -118,24 +153,13 @@
           },
           "children": [
             {
-              "identifier": "824",
-              "title": "Arbeitsmarkt",
+              "identifier": "524",
+              "title": "Waffenhandel",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "824.0",
-                  "title": "Entsandte Arbeitnehmende",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
@@ -144,13 +168,33 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 4,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "92",
+          "title": "Landwirtschaft",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 3
+          },
+          "children": [
+            {
+              "identifier": "920",
+              "title": "Allgemeines",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 3
+              }
+            }
+          ]
+        },
         {
           "identifier": "95",
           "title": "Industrie, Gewerbe und Handel",
@@ -231,6 +275,37 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.30",
+              "title": "Waffen und Munition",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 2,
@@ -265,42 +340,40 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung des Parlaments (Dekret)": 2
       },
       "children": [
         {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
-          "total": 1,
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung des Parlaments (Dekret)": 2
           },
           "children": [
             {
-              "identifier": "8.20.20",
-              "title": "Arbeitsmarkt",
+              "identifier": "9.20.10",
+              "title": "Förderungsmassnahmen",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.20.20.20",
-                  "title": "Entsendung von Arbeitnehmern",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            },
+            {
+              "identifier": "9.20.40",
+              "title": "Berggebiete",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
             }
           ]
         }
@@ -308,45 +381,38 @@
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 9
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -355,7 +421,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -408,7 +473,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

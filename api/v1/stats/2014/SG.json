@@ -2,44 +2,64 @@
   "year": "2014",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 13,
-  "categorized": 13,
+  "total": 26,
+  "categorized": 26,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 5,
+      "total": 11,
       "by_topic": {
+        "321 Kantonale Spitäler": 5,
+        "211 Allgemein": 1,
+        "215 Mittelschulen": 1,
         "217 Universität": 1,
-        "320 Kantonale Spitäler": 1,
-        "321 Kantonale Spitäler": 1,
-        "322 Kantonale Psychiatrische Kliniken": 1,
-        "325 Übrige Einrichtungen": 1
+        "232 Berufliche Grundausbildung": 1,
+        "325 Übrige Einrichtungen": 1,
+        "854 Fischerei": 1
       },
       "by_global_category": {
-        "6.10.30 Staatsbeiträge, Subventionen": 3,
+        "6.10.30 Staatsbeiträge, Subventionen": 6,
+        "4.120.60 Schulbauten": 2,
+        "4.100.10 Stipendien": 1,
         "7.30.10 Staatliche Gebäude und Liegenschaften": 1
       }
     },
     "Verordnung": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
         "125 Volksrechte": 1,
         "213 Volksschulen": 1,
-        "322 Kantonale Psychiatrische Kliniken": 1
+        "217 Universität": 1,
+        "276 Bibliotheken": 1,
+        "671 Naturschutz": 1,
+        "914 Sachenrecht und Grundbuch": 1
       },
       "by_global_category": {
         "1.10.90.20.10 Wahlen und Abstimmungen": 1,
-        "4.90.20 Löhne, Entschädigungen": 1,
-        "8.70.30.10 Alters- und Pflegeheime": 1
+        "4.170.30 Bibliotheken": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
       }
     },
     "Reglement": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
-        "216 Pädagogische Hochschule": 3
+        "216 Pädagogische Hochschule": 3,
+        "217 Universität": 1
       },
       "by_global_category": {
-        "4.50.10 Pädagogik": 3
+        "4.50.10 Pädagogik": 3,
+        "4.90.50 Universitätspersonal": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "140 Allgemein": 1,
+        "213 Volksschulen": 1
+      },
+      "by_global_category": {
+        "1.10.120 Information der Öffentlichkeit": 1,
+        "4.90.20 Löhne, Entschädigungen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -52,16 +72,26 @@
         "9.20.90.20 Viehhandel": 1,
         "5.20.30.20 Brandschutz": 1
       }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "277 Kulturerbe": 1
+      },
+      "by_global_category": {
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen und Organisation von Kanton und Gemeinden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -83,32 +113,75 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "14",
+          "title": "Staatsverwaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "140",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 5,
+      "total": 13,
       "own": 0,
       "by_type": {
-        "Reglement": 3,
-        "Anderes": 2
+        "Anderes": 6,
+        "Reglement": 4,
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Schulen",
-          "total": 5,
+          "total": 10,
           "own": 0,
           "by_type": {
-            "Reglement": 3,
-            "Anderes": 2
+            "Anderes": 4,
+            "Reglement": 4,
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
+              "identifier": "211",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
               "identifier": "213",
               "title": "Volksschulen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "215",
+              "title": "Mittelschulen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -127,6 +200,57 @@
             {
               "identifier": "217",
               "title": "Universität",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Anderes": 2,
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "23",
+          "title": "Berufliche Ausbildung und Berufsberatung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "232",
+              "title": "Berufliche Grundausbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "27",
+          "title": "Kultur",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "276",
+              "title": "Bibliotheken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "277",
+              "title": "Kulturerbe",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -140,49 +264,28 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 4,
-        "Verordnung": 1
+        "Anderes": 6
       },
       "children": [
         {
           "identifier": "32",
           "title": "Einrichtungen der Gesundheitspflege",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Anderes": 4,
-            "Verordnung": 1
+            "Anderes": 6
           },
           "children": [
             {
-              "identifier": "320",
-              "title": "Kantonale Spitäler",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            },
-            {
               "identifier": "321",
               "title": "Kantonale Spitäler",
-              "total": 1,
-              "own": 1,
+              "total": 5,
+              "own": 5,
               "by_type": {
-                "Anderes": 1
-              }
-            },
-            {
-              "identifier": "322",
-              "title": "Kantonale Psychiatrische Kliniken",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Verordnung": 1,
-                "Anderes": 1
+                "Anderes": 5
               }
             },
             {
@@ -201,10 +304,11 @@
     {
       "identifier": "6",
       "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -226,18 +330,59 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "67",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "671",
+              "title": "Naturschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "85",
+          "title": "Regalien",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "854",
+              "title": "Fischerei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "87",
           "title": "Feuerschutz",
@@ -259,12 +404,10 @@
           ]
         }
       ]
-    }
-  ],
-  "by_global_category_tree": [
+    },
     {
-      "identifier": "1",
-      "title": "Staat",
+      "identifier": "9",
+      "title": "Zivilrecht, Strafrecht, Rechtspflege",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -272,12 +415,47 @@
       },
       "children": [
         {
-          "identifier": "1.10",
-          "title": "Grundlagen",
+          "identifier": "91",
+          "title": "Zivilrecht",
           "total": 1,
           "own": 0,
           "by_type": {
             "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "914",
+              "title": "Sachenrecht und Grundbuch",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -310,6 +488,57 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "1.10.120",
+              "title": "Information der Öffentlichkeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -318,11 +547,13 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "total": 9,
       "own": 0,
       "by_type": {
-        "Reglement": 3,
-        "Anderes": 1
+        "Reglement": 4,
+        "Anderes": 3,
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -348,10 +579,11 @@
         {
           "identifier": "4.90",
           "title": "Lehrkörper",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1,
+            "Reglement": 1
           },
           "children": [
             {
@@ -360,7 +592,76 @@
               "total": 1,
               "own": 1,
               "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "4.90.50",
+              "title": "Universitätspersonal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.10",
+              "title": "Stipendien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "4.120.60",
+              "title": "Schulbauten",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.30",
+              "title": "Bibliotheken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -412,28 +713,28 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 3
+        "Anderes": 6
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 3,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Anderes": 3
+            "Anderes": 6
           },
           "children": [
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
-              "total": 3,
-              "own": 3,
+              "total": 6,
+              "own": 6,
               "by_type": {
-                "Anderes": 3
+                "Anderes": 6
               }
             }
           ]
@@ -443,10 +744,10 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
@@ -468,46 +769,24 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "8.70",
-          "title": "Fürsorge",
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "8.70.30",
-              "title": "Heime",
+              "identifier": "7.70.70",
+              "title": "Denkmalschutz, Kulturgüterschutz",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.70.30.10",
-                  "title": "Alters- und Pflegeheime",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -557,46 +836,38 @@
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 26
   },
   "available_years_for_entity": [
     "1845",
     "1870",
-    "1883",
-    "1884",
-    "1885",
     "1890",
     "1899",
     "1901",
-    "1902",
     "1903",
-    "1906",
-    "1907",
-    "1910",
     "1911",
+    "1912",
     "1914",
-    "1918",
     "1919",
-    "1926",
-    "1930",
-    "1931",
+    "1923",
+    "1929",
+    "1933",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1946",
     "1947",
     "1948",
     "1949",
-    "1950",
     "1951",
     "1952",
     "1953",
     "1955",
-    "1956",
     "1957",
     "1958",
     "1959",
@@ -665,7 +936,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

@@ -6,27 +6,56 @@
   "categorized": 2,
   "uncategorized": 0,
   "by_type": {
-    "Gemeindeerlass": {
-      "total": 2,
+    "Verordnung": {
+      "total": 1,
       "by_topic": {
-        "BeE 7 Raum- und Bauordnung · Energie · Umweltschutz": 1,
+        "813 Kollektivstreitigkeiten": 1
+      },
+      "by_global_category": {
+        "8.20.30 Einigungsämter": 1
+      }
+    },
+    "Gemeindeerlass": {
+      "total": 1,
+      "by_topic": {
         "RiE 77 Wasser · Energie": 1
       },
       "by_global_category": {
-        "7.60.20 Gewässerschutz": 1,
         "7.30.20.20 Gewässernutzung": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "BeE",
-      "title": "Einwohnergemeinde Bettingen",
+      "identifier": "8",
+      "title": "Arbeit · Soziale Sicherheit",
       "total": 1,
-      "own": 1,
+      "own": 0,
       "by_type": {
-        "Gemeindeerlass": 1
-      }
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "813",
+              "title": "Kollektivstreitigkeiten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "identifier": "RiE",
@@ -42,10 +71,10 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gemeindeerlass": 2
+        "Gemeindeerlass": 1
       },
       "children": [
         {
@@ -78,23 +107,34 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
         {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gemeindeerlass": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "7.60.20",
-              "title": "Gewässerschutz",
+              "identifier": "8.20.30",
+              "title": "Einigungsämter",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gemeindeerlass": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -244,11 +284,11 @@
     "2026"
   ],
   "available_entities_for_year": [
-    "AG",
     "AR",
     "BS",
     "CH",
     "NE",
+    "SG",
     "SO",
     "VS",
     "ZG"

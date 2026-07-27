@@ -2,37 +2,41 @@
   "year": "1983",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 13,
-  "categorized": 13,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 6,
-      "by_topic": {
-        "213 Volksschulen": 3,
-        "217 Universität": 1,
-        "236 Berufsberatung": 1,
-        "271 Allgemein": 1
-      },
-      "by_global_category": {
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
-        "4.80.10 Sonderschulen": 1,
-        "4.90.20 Löhne, Entschädigungen": 1,
-        "4.30.30 Berufsorientierung": 1,
-        "4.170.30 Bibliotheken": 1
-      }
-    },
     "Anderes": {
-      "total": 4,
+      "total": 3,
       "by_topic": {
         "173 Katholische Konfession": 2,
-        "143 Staatspersonal": 1,
-        "553 Gastwirtschaft": 1
+        "143 Staatspersonal": 1
       },
       "by_global_category": {
         "1.40.10 Römisch-Katholische Kirche": 2,
+        "4.90.20 Löhne, Entschädigungen": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "217 Universität": 1,
+        "511 Arbeitnehmerschutz": 1
+      },
+      "by_global_category": {
         "4.90.20 Löhne, Entschädigungen": 1,
-        "9.50.10.10 Berufsausübungsbewilligungen": 1
+        "8.20.40 Heimarbeit": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
+        "271 Allgemein": 1,
+        "321 Kantonale Spitäler": 1
+      },
+      "by_global_category": {
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
+        "8.10.20.10 Kantonsspitäler": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -43,6 +47,15 @@
       },
       "by_global_category": {
         "6.20.40 Erbschafts- und Schenkungssteuern": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "213 Volksschulen": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
       }
     },
     "Reglement": {
@@ -110,21 +123,21 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 7,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 4,
         "Anderes": 2,
+        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Schulen",
-          "total": 5,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 3,
+            "Gesetz": 1,
             "Reglement": 1,
             "Anderes": 1
           },
@@ -132,10 +145,10 @@
             {
               "identifier": "213",
               "title": "Volksschulen",
-              "total": 3,
-              "own": 3,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Verordnung": 3
+                "Gesetz": 1
               }
             },
             {
@@ -159,32 +172,12 @@
           ]
         },
         {
-          "identifier": "23",
-          "title": "Berufliche Ausbildung und Berufsberatung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "236",
-              "title": "Berufsberatung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        },
-        {
           "identifier": "27",
           "title": "Kultur",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -193,7 +186,7 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Anderes": 1
               }
             }
           ]
@@ -203,21 +196,32 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "32",
           "title": "Einrichtungen der Gesundheitspflege",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "321",
+              "title": "Kantonale Spitäler",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "325",
               "title": "Übrige Einrichtungen",
@@ -237,25 +241,25 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "55",
-          "title": "Gewerbepolizei",
+          "identifier": "51",
+          "title": "Arbeitsrecht",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "553",
-              "title": "Gastwirtschaft",
+              "identifier": "511",
+              "title": "Arbeitnehmerschutz",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -329,11 +333,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 7,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
-        "Anderes": 3,
+        "Anderes": 2,
+        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
@@ -343,7 +347,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -352,7 +356,7 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -360,11 +364,10 @@
         {
           "identifier": "4.30",
           "title": "Sekundarstufe II (Berufliche Grundausbildung)",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1,
-            "Anderes": 1
+            "Reglement": 1
           },
           "children": [
             {
@@ -386,35 +389,6 @@
                   }
                 }
               ]
-            },
-            {
-              "identifier": "4.30.30",
-              "title": "Berufsorientierung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "4.80",
-          "title": "Sonderpädagogik",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.80.10",
-              "title": "Sonderschulen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
             }
           ]
         },
@@ -434,26 +408,6 @@
               "own": 2,
               "by_type": {
                 "Anderes": 2
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "4.170",
-          "title": "Dokumentation",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.170.30",
-              "title": "Bibliotheken",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
               }
             }
           ]
@@ -492,8 +446,8 @@
       ]
     },
     {
-      "identifier": "9",
-      "title": "Wirtschaft",
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -501,8 +455,8 @@
       },
       "children": [
         {
-          "identifier": "9.50",
-          "title": "Gewerbe",
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -510,8 +464,40 @@
           },
           "children": [
             {
-              "identifier": "9.50.10",
-              "title": "Dienstleistungen",
+              "identifier": "7.70.70",
+              "title": "Denkmalschutz, Kulturgüterschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -519,8 +505,8 @@
               },
               "children": [
                 {
-                  "identifier": "9.50.10.10",
-                  "title": "Berufsausübungsbewilligungen",
+                  "identifier": "8.10.20.10",
+                  "title": "Kantonsspitäler",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -530,51 +516,63 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.40",
+              "title": "Heimarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 11
   },
   "available_years_for_entity": [
     "1845",
     "1870",
-    "1883",
-    "1884",
-    "1885",
     "1890",
     "1899",
     "1901",
-    "1902",
     "1903",
-    "1906",
-    "1907",
-    "1910",
     "1911",
+    "1912",
     "1914",
-    "1918",
     "1919",
-    "1926",
-    "1930",
-    "1931",
+    "1923",
+    "1929",
+    "1933",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1946",
     "1947",
     "1948",
     "1949",
-    "1950",
     "1951",
     "1952",
     "1953",
     "1955",
-    "1956",
     "1957",
     "1958",
     "1959",
@@ -643,7 +641,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

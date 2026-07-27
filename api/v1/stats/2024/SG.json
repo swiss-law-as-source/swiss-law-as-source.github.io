@@ -2,22 +2,49 @@
   "year": "2024",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 13,
-  "categorized": 13,
+  "total": 18,
+  "categorized": 18,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 6,
+    "Verordnung": {
+      "total": 7,
       "by_topic": {
-        "573 Standortförderung": 2,
+        "331 Krankenversicherung": 2,
+        "312 Medizinische Berufe und andere Berufe der Gesundheitspflege": 1,
+        "315 Lebensmittelpolizei": 1,
         "355 Berufliche Alters-, Hinterlassenen- und Invalidenvorsorge": 1,
         "451 Polizei": 1,
-        "577 Forschung": 1,
-        "611 Förderung der Landwirtschaft": 1
+        "452 Waffen und Sprengstoff": 1
       },
       "by_global_category": {
-        "6.10.10 Budget und Rechnung": 3,
-        "6.10.30 Staatsbeiträge, Subventionen": 2
+        "8.30.60.30 Spitallisten": 2,
+        "8.10.30.30 Krankenpflegepersonal": 1,
+        "8.10.130.10.10 Lebensmittelaufsicht": 1,
+        "1.20.50 Datenschutz": 1,
+        "5.30.30 Waffen und Munition": 1
+      }
+    },
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "320 Kantonale Spitäler": 2,
+        "217 Universität": 1
+      },
+      "by_global_category": {
+        "8.10.20.10 Kantonsspitäler": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 3,
+      "by_topic": {
+        "573 Standortförderung": 1,
+        "577 Forschung": 1,
+        "869 Übrige Unternehmungen": 1
+      },
+      "by_global_category": {
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "4.160 Wissenschaft, Forschung": 1,
+        "6.10.10 Budget und Rechnung": 1
       }
     },
     "Reglement": {
@@ -30,17 +57,6 @@
         "4.100.10 Stipendien": 2
       }
     },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "312 Medizinische Berufe und andere Berufe der Gesundheitspflege": 1,
-        "734 Wasserbau": 1
-      },
-      "by_global_category": {
-        "8.10.30.30 Krankenpflegepersonal": 1,
-        "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1
-      }
-    },
     "Interkantonale Vereinbarung": {
       "total": 2,
       "by_topic": {
@@ -51,7 +67,7 @@
         "7.60.20 Gewässerschutz": 1
       }
     },
-    "Verordnung": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
         "312 Medizinische Berufe und andere Berufe der Gesundheitspflege": 1
@@ -65,19 +81,21 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 2
+        "Reglement": 2,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Schulen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -87,6 +105,15 @@
               "own": 1,
               "by_type": {
                 "Reglement": 1
+              }
+            },
+            {
+              "identifier": "217",
+              "title": "Universität",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -116,23 +143,24 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 4,
+      "total": 9,
       "own": 0,
       "by_type": {
+        "Anderes": 6,
         "Gesetz": 1,
         "Verordnung": 1,
-        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "31",
           "title": "Gesundheitspflege",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Gesetz": 1,
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -143,6 +171,55 @@
               "by_type": {
                 "Gesetz": 1,
                 "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "315",
+              "title": "Lebensmittelpolizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "32",
+          "title": "Einrichtungen der Gesundheitspflege",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "320",
+              "title": "Kantonale Spitäler",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "33",
+          "title": "Krankenversicherung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "331",
+              "title": "Krankenversicherung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
               }
             }
           ]
@@ -174,19 +251,19 @@
     {
       "identifier": "4",
       "title": "Landesverteidigung, öffentliche Sicherheit und Ordnung",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "45",
           "title": "Öffentliche Sicherheit und Ordnung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 2
           },
           "children": [
             {
@@ -195,7 +272,16 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "452",
+              "title": "Waffen und Sprengstoff",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -205,28 +291,28 @@
     {
       "identifier": "5",
       "title": "Arbeit und Gewerbe",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 3
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "57",
           "title": "Wirtschaftsförderung",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 3
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "573",
               "title": "Standortförderung",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 1
               }
             },
             {
@@ -243,66 +329,14 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
+      "identifier": "7",
+      "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "61",
-          "title": "Landwirtschaft",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "611",
-              "title": "Förderung der Landwirtschaft",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
-        {
-          "identifier": "73",
-          "title": "Öffentliches Baurecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "734",
-              "title": "Wasserbau",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "75",
           "title": "Gewässernutzung und -schutz",
@@ -324,16 +358,79 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "86",
+          "title": "Staatliche Unternehmungen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "869",
+              "title": "Übrige Unternehmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 2
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Reglement": 2,
+        "Anderes": 1
       },
       "children": [
         {
@@ -355,43 +452,83 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.160",
+          "title": "Wissenschaft, Forschung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.30",
+              "title": "Waffen und Munition",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 5,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 5
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 5,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 5
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "6.10.10",
               "title": "Budget und Rechnung",
-              "total": 3,
-              "own": 3,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 3
+                "Anderes": 1
               }
             },
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 1
               }
             }
           ]
@@ -401,44 +538,12 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
-        {
-          "identifier": "7.30",
-          "title": "Öffentliche Werke",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "7.30.20",
-              "title": "Wasserbau",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "7.30.20.10",
-                  "title": "Gewässerkorrekturen / Hochwasserschutz",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
@@ -464,9 +569,10 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 6,
       "own": 0,
       "by_type": {
+        "Anderes": 4,
         "Gesetz": 1,
         "Verordnung": 1
       },
@@ -474,13 +580,34 @@
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
+            "Anderes": 2,
             "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.10",
+                  "title": "Kantonsspitäler",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "8.10.30",
               "title": "Medizinische Berufe",
@@ -502,6 +629,68 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.10",
+                  "title": "Lebensmittel und Gebrauchsgegenstände",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "8.10.130.10.10",
+                      "title": "Lebensmittelaufsicht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.30",
+                  "title": "Spitallisten",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 2
+                  }
+                }
+              ]
             }
           ]
         }
@@ -509,46 +698,38 @@
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 18
   },
   "available_years_for_entity": [
     "1845",
     "1870",
-    "1883",
-    "1884",
-    "1885",
     "1890",
     "1899",
     "1901",
-    "1902",
     "1903",
-    "1906",
-    "1907",
-    "1910",
     "1911",
+    "1912",
     "1914",
-    "1918",
     "1919",
-    "1926",
-    "1930",
-    "1931",
+    "1923",
+    "1929",
+    "1933",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1946",
     "1947",
     "1948",
     "1949",
-    "1950",
     "1951",
     "1952",
     "1953",
     "1955",
-    "1956",
     "1957",
     "1958",
     "1959",
@@ -617,7 +798,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

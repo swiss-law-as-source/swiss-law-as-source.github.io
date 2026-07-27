@@ -2,23 +2,25 @@
   "year": "2001",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 7,
-  "categorized": 7,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 6,
+      "total": 7,
       "by_topic": {
-        "421 Volksschule": 4,
+        "421 Volksschule": 3,
+        "76 Fischereiregal": 2,
         "18 Publikation der Erlasse": 1,
-        "82 Umweltschutz, Klimaschutz": 1
+        "910 Förderung der Landwirtschaft": 1
       },
       "by_global_category": {
         "1.10.90.20.10 Wahlen und Abstimmungen": 1,
+        "4.80.60 Sonderklassen": 1,
+        "4.90.10 Anstellung": 1,
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
-        "4.70.20 Weiterbildung Lehrpersonen": 1,
-        "4.120.120 Schulversicherung": 1,
-        "4.80.40 Integration fremdsprachiger Schüler": 1
+        "6.30.60.10 Patente": 1,
+        "9.20.60 Landwirtschaftlicher Kredit": 1
       }
     },
     "Anderes": {
@@ -29,6 +31,13 @@
       "by_global_category": {
         "7.30.40 Submission": 1
       }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "82 Umweltschutz, Klimaschutz": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
@@ -55,31 +64,51 @@
     {
       "identifier": "4",
       "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 4
+        "Verordnung": 3
       },
       "children": [
         {
           "identifier": "42",
           "title": "Erziehung",
-          "total": 4,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 4
+            "Verordnung": 3
           },
           "children": [
             {
               "identifier": "421",
               "title": "Volksschule",
-              "total": 4,
-              "own": 4,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 4
+                "Verordnung": 3
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Finanzwesen, Regalien",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "76",
+          "title": "Fischereiregal",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Verordnung": 2
+          }
         }
       ]
     },
@@ -90,7 +119,7 @@
       "own": 0,
       "by_type": {
         "Anderes": 1,
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -119,8 +148,39 @@
           "total": 1,
           "own": 1,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           }
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "91",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "910",
+              "title": "Förderung der Landwirtschaft",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     }
@@ -182,10 +242,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 4
+        "Verordnung": 3
       },
       "children": [
         {
@@ -209,26 +269,6 @@
           ]
         },
         {
-          "identifier": "4.70",
-          "title": "Weiterbildung (Quartärstufe)",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.70.20",
-              "title": "Weiterbildung Lehrpersonen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
           "identifier": "4.80",
           "title": "Sonderpädagogik",
           "total": 1,
@@ -238,8 +278,8 @@
           },
           "children": [
             {
-              "identifier": "4.80.40",
-              "title": "Integration fremdsprachiger Schüler",
+              "identifier": "4.80.60",
+              "title": "Sonderklassen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -249,8 +289,8 @@
           ]
         },
         {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "identifier": "4.90",
+          "title": "Lehrkörper",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -258,13 +298,55 @@
           },
           "children": [
             {
-              "identifier": "4.120.120",
-              "title": "Schulversicherung",
+              "identifier": "4.90.10",
+              "title": "Anstellung",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Verordnung": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.60",
+              "title": "Fischerei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.30.60.10",
+                  "title": "Patente",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -300,26 +382,53 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.60",
+              "title": "Landwirtschaftlicher Kredit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 7,
-    "it": 7
+    "de": 9,
+    "it": 9
   },
   "available_years_for_entity": [
-    "1846",
     "1877",
     "1901",
     "1908",
     "1913",
-    "1916",
     "1917",
-    "1922",
+    "1918",
     "1923",
     "1925",
     "1927",
-    "1929",
-    "1932",
     "1936",
     "1937",
     "1943",
@@ -329,7 +438,6 @@
     "1951",
     "1952",
     "1953",
-    "1954",
     "1955",
     "1956",
     "1957",
@@ -400,8 +508,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

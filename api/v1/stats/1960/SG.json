@@ -2,28 +2,37 @@
   "year": "1960",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 9,
-  "categorized": 9,
+  "total": 5,
+  "categorized": 5,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 6,
+    "Gesetz": {
+      "total": 2,
       "by_topic": {
-        "751 Gewässernutzung": 3,
-        "873 Gebäudeversicherung": 2,
-        "872 Feuerwehr": 1
+        "751 Gewässernutzung": 1,
+        "873 Gebäudeversicherung": 1
       },
       "by_global_category": {
-        "7.30.20.20 Gewässernutzung": 3,
-        "5.20.30.20 Brandschutz": 1
+        "7.30.20.20 Gewässernutzung": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 1,
       "by_topic": {
-        "873 Gebäudeversicherung": 2
+        "553 Gastwirtschaft": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "9.50.10.10 Berufsausübungsbewilligungen": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "751 Gewässernutzung": 1
+      },
+      "by_global_category": {
+        "7.30.20.20 Gewässernutzung": 1
+      }
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -37,30 +46,64 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "7",
-      "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
-      "total": 3,
+      "identifier": "5",
+      "title": "Arbeit und Gewerbe",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "55",
+          "title": "Gewerbepolizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "553",
+              "title": "Gastwirtschaft",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "75",
           "title": "Gewässernutzung und -schutz",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 3
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "751",
               "title": "Gewässernutzung",
-              "total": 3,
-              "own": 3,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 3
+                "Gesetz": 1,
+                "Verordnung": 1
               }
             }
           ]
@@ -70,12 +113,11 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 6,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -101,30 +143,19 @@
         {
           "identifier": "87",
           "title": "Feuerschutz",
-          "total": 5,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 3,
-            "Anderes": 2
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "872",
-              "title": "Feuerwehr",
+              "identifier": "873",
+              "title": "Gebäudeversicherung",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "873",
-              "title": "Gebäudeversicherung",
-              "total": 4,
-              "own": 4,
-              "by_type": {
-                "Verordnung": 2,
-                "Anderes": 2
+                "Gesetz": 1
               }
             }
           ]
@@ -133,48 +164,6 @@
     }
   ],
   "by_global_category_tree": [
-    {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "5.20",
-          "title": "Bevölkerungsschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "5.20.30",
-              "title": "Feuerwehr / Elementarschäden",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "5.20.30.20",
-                  "title": "Brandschutz",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
@@ -209,37 +198,83 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 3
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "7.30.20",
               "title": "Wasserbau",
-              "total": 3,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 3
+                "Gesetz": 1,
+                "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "7.30.20.20",
                   "title": "Gewässernutzung",
-                  "total": 3,
-                  "own": 3,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Verordnung": 3
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.10",
+                  "title": "Berufsausübungsbewilligungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
                   }
                 }
               ]
@@ -250,46 +285,38 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 5
   },
   "available_years_for_entity": [
     "1845",
     "1870",
-    "1883",
-    "1884",
-    "1885",
     "1890",
     "1899",
     "1901",
-    "1902",
     "1903",
-    "1906",
-    "1907",
-    "1910",
     "1911",
+    "1912",
     "1914",
-    "1918",
     "1919",
-    "1926",
-    "1930",
-    "1931",
+    "1923",
+    "1929",
+    "1933",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1946",
     "1947",
     "1948",
     "1949",
-    "1950",
     "1951",
     "1952",
     "1953",
     "1955",
-    "1956",
     "1957",
     "1958",
     "1959",
@@ -358,11 +385,13 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",
@@ -378,9 +407,7 @@
     "OW",
     "SG",
     "SO",
-    "TG",
     "VD",
-    "VS",
     "ZH"
   ]
 }

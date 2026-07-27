@@ -2,10 +2,30 @@
   "year": "2006",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 21,
-  "categorized": 21,
+  "total": 29,
+  "categorized": 29,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 9,
+      "by_topic": {
+        "790 Landschaftsschutz": 3,
+        "140 Verwaltungsorganisation": 1,
+        "516 Produktion, Absatz": 1,
+        "640 Allgemeines": 1,
+        "70 Polizei und Öffentliche Sicherheit": 1,
+        "854 Alters- und Pflegeheime": 1,
+        "97 Lebensmittelkontrolle": 1
+      },
+      "by_global_category": {
+        "7.70.50 Naturschutz": 3,
+        "1.10.110 Gesetzgebungsverfahren": 1,
+        "4.120.60 Schulbauten": 1,
+        "4.180.30 Sport": 1,
+        "8.70.30.10 Alters- und Pflegeheime": 1,
+        "8.10.130.10.10 Lebensmittelaufsicht": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 8,
       "by_topic": {
@@ -22,20 +42,33 @@
         "4.100.30 Schulgebühren": 1
       }
     },
-    "Verordnung": {
+    "Gesetz": {
       "total": 6,
       "by_topic": {
-        "211 Vollzugserlasse zum ZGB": 3,
-        "19 Kirchen": 1,
-        "640 Allgemeines": 1,
-        "854 Alters- und Pflegeheime": 1
+        "211 Vollzugserlasse zum ZGB": 2,
+        "16 Ombudsperson, Datenschutz, Archivierung": 1,
+        "43 Verkehrswege": 1,
+        "54 Gewerbe und Industrie": 1,
+        "90 Gesundheitspflege": 1
       },
       "by_global_category": {
-        "2.10.20.10 Vormundschaft": 2,
+        "4.170.20 Archive": 1,
+        "2.10.10.10 Eingetragene Partnerschaft": 1,
+        "9.10 Wirtschaftsförderung": 1,
+        "8.10.120.10 Alkoholismus": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 3,
+      "by_topic": {
+        "19 Kirchen": 1,
+        "211 Vollzugserlasse zum ZGB": 1,
+        "36 Staatsbeiträge": 1
+      },
+      "by_global_category": {
         "1.40.30 Evangelisch-Reformierte Kirche": 1,
-        "1.50.20.20 Gebühren, Tarife": 1,
-        "4.120.60 Schulbauten": 1,
-        "8.70.30.10 Alters- und Pflegeheime": 1
+        "2.10.10.10 Eingetragene Partnerschaft": 1,
+        "8.30.60.20 Prämienverbilligungen": 1
       }
     },
     "Anderes": {
@@ -50,32 +83,9 @@
       }
     },
     "Reglement": {
-      "total": 2,
-      "by_topic": {
-        "19 Kirchen": 2
-      },
-      "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 2,
-      "by_topic": {
-        "211 Vollzugserlasse zum ZGB": 2
-      },
-      "by_global_category": {
-        "2.10.10.10 Eingetragene Partnerschaft": 1,
-        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
-      }
-    },
-    "Gesetz": {
       "total": 1,
-      "by_topic": {
-        "211 Vollzugserlasse zum ZGB": 1
-      },
-      "by_global_category": {
-        "2.10.10.10 Eingetragene Partnerschaft": 1
-      }
+      "by_topic": {},
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
@@ -85,22 +95,33 @@
       "total": 5,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
+        "Verordnung": 1,
         "Anderes": 1,
         "Interkantonale Vereinbarung": 1,
-        "Verordnung": 1
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "140",
+              "title": "Verwaltungsorganisation",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "143",
               "title": "Volkswirtschafts- und Gesundheitsdirektion",
@@ -122,13 +143,21 @@
           ]
         },
         {
+          "identifier": "16",
+          "title": "Ombudsperson, Datenschutz, Archivierung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
           "identifier": "19",
           "title": "Kirchen",
-          "total": 3,
-          "own": 3,
+          "total": 1,
+          "own": 1,
           "by_type": {
-            "Reglement": 2,
-            "Verordnung": 1
+            "Verordnung des Parlaments (Dekret)": 1
           }
         }
       ]
@@ -136,35 +165,32 @@
     {
       "identifier": "2",
       "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
-      "total": 7,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
-        "Verordnung des Parlaments (Dekret)": 2,
-        "Gesetz": 1,
+        "Gesetz": 2,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Zivilrecht",
-          "total": 6,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 3,
-            "Verordnung des Parlaments (Dekret)": 2,
-            "Gesetz": 1
+            "Gesetz": 2,
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
               "identifier": "211",
               "title": "Vollzugserlasse zum ZGB",
-              "total": 6,
-              "own": 6,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 3,
-                "Verordnung des Parlaments (Dekret)": 2,
-                "Gesetz": 1
+                "Gesetz": 2,
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -181,12 +207,33 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Bau, Werke, Verkehr, Energie",
+      "identifier": "3",
+      "title": "Finanzen",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "36",
+          "title": "Staatsbeiträge",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -196,6 +243,56 @@
           "own": 1,
           "by_type": {
             "Interkantonale Vereinbarung": 1
+          }
+        },
+        {
+          "identifier": "43",
+          "title": "Verkehrswege",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Volkswirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "51",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "516",
+              "title": "Produktion, Absatz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "54",
+          "title": "Gewerbe und Industrie",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
           }
         }
       ]
@@ -285,12 +382,22 @@
     {
       "identifier": "7",
       "title": "Öffentliche Sicherheit, Umweltschutz",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Verordnung": 4,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "70",
+          "title": "Polizei und Öffentliche Sicherheit",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
         {
           "identifier": "78",
           "title": "Umweltschutz",
@@ -299,6 +406,26 @@
           "by_type": {
             "Anderes": 1
           }
+        },
+        {
+          "identifier": "79",
+          "title": "Natur- und Heimatschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3
+          },
+          "children": [
+            {
+              "identifier": "790",
+              "title": "Landschaftsschutz",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 3
+              }
+            }
+          ]
         }
       ]
     },
@@ -332,44 +459,52 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Gesundheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "90",
+          "title": "Gesundheitspflege",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "97",
+          "title": "Lebensmittelkontrolle",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Reglement": 1
+        "Verordnung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
-          "identifier": "1.40",
-          "title": "Kirche und Staat",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1,
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "1.40.30",
-              "title": "Evangelisch-Reformierte Kirche",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Verordnung": 1,
-                "Reglement": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "1.50",
-          "title": "Juristische Berufe",
+          "identifier": "1.10",
+          "title": "Grundlagen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -377,24 +512,33 @@
           },
           "children": [
             {
-              "identifier": "1.50.20",
-              "title": "Notare",
+              "identifier": "1.10.110",
+              "title": "Gesetzgebungsverfahren",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "1.50.20.20",
-                  "title": "Gebühren, Tarife",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
             }
           ]
         }
@@ -403,23 +547,21 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 5,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 2,
-        "Verordnung": 2,
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 5,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 2,
-            "Verordnung": 2,
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
@@ -443,46 +585,6 @@
                   }
                 }
               ]
-            },
-            {
-              "identifier": "2.10.20",
-              "title": "Familienrecht",
-              "total": 2,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 2
-              },
-              "children": [
-                {
-                  "identifier": "2.10.20.10",
-                  "title": "Vormundschaft",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Verordnung": 2
-                  }
-                }
-              ]
-            },
-            {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.40.30",
-                  "title": "Grundbuch und Grundbuchvermessung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
-                  }
-                }
-              ]
             }
           ]
         }
@@ -491,11 +593,12 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 2,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -546,6 +649,46 @@
           "by_type": {
             "Interkantonale Vereinbarung": 1
           }
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.20",
+              "title": "Archive",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.30",
+              "title": "Sport",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -594,9 +737,10 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 3,
         "Anderes": 1
       },
       "children": [
@@ -619,26 +763,50 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3
+          },
+          "children": [
+            {
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 3
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Anderes": 1,
-        "Verordnung": 1
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -657,6 +825,88 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.120",
+              "title": "Suchtprävention",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.120.10",
+                  "title": "Alkoholismus",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.10",
+                  "title": "Lebensmittel und Gebrauchsgegenstände",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "8.10.130.10.10",
+                      "title": "Lebensmittelaufsicht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.20",
+                  "title": "Prämienverbilligungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
                   }
                 }
               ]
@@ -695,51 +945,62 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "9.10",
+          "title": "Wirtschaftsförderung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 21
+    "de": 29
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -750,12 +1011,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

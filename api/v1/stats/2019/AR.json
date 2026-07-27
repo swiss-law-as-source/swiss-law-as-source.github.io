@@ -2,10 +2,23 @@
   "year": "2019",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 7,
-  "categorized": 7,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "862 Versicherung": 2,
+        "122 Niederlassung und Aufenthalt": 1,
+        "131.1 Allgemeine Bestimmungen": 1,
+        "143 Verwaltungsrechtspflege": 1
+      },
+      "by_global_category": {
+        "1.10.70.10.10 Einwohnerkontrolle": 1,
+        "1.20.40 Staatshaftung": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 4,
       "by_topic": {
@@ -18,32 +31,47 @@
         "5.30.10.50 Polizeiliche Zusammenarbeit": 1
       }
     },
-    "Verordnung": {
+    "Anderes": {
       "total": 2,
       "by_topic": {
-        "131.1 Allgemeine Bestimmungen": 1,
-        "212.3 Verwandtschaft": 1
+        "141 Kantonsrat": 1
       },
       "by_global_category": {
-        "2.50.30 Vollstreckung": 1
+        "1.20.10.20 Entschädigung der Parlamentarier": 1
       }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {},
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden und Gemeinden",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 3,
+        "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung und Aufenthalt",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "13",
           "title": "Politische Rechte",
@@ -74,46 +102,34 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "21",
-          "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
-          "total": 1,
+          "identifier": "14",
+          "title": "Behörden",
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "212",
-              "title": "Personen-, Familien- und Erbrecht",
+              "identifier": "141",
+              "title": "Kantonsrat",
               "total": 1,
-              "own": 0,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "143",
+              "title": "Verwaltungsrechtspflege",
+              "total": 1,
+              "own": 1,
               "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "212.3",
-                  "title": "Verwandtschaft",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
@@ -182,6 +198,37 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "86",
+          "title": "Schutz gegen Feuer- und Elementarschäden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "862",
+              "title": "Versicherung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Volkswirtschaft",
       "total": 2,
@@ -226,17 +273,18 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 1,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "2.50",
-          "title": "Zivilrechtspflege",
+          "identifier": "1.10",
+          "title": "Grundlagen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -244,8 +292,71 @@
           },
           "children": [
             {
-              "identifier": "2.50.30",
-              "title": "Vollstreckung",
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.10",
+                  "title": "Niederlassung und Aufenthalt Schweizer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.10.10",
+                      "title": "Einwohnerkontrolle",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.10",
+              "title": "Parlament",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.10.20",
+                  "title": "Entschädigung der Parlamentarier",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.40",
+              "title": "Staatshaftung",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -320,45 +431,38 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 11
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -367,7 +471,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -420,7 +523,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

@@ -2,18 +2,19 @@
   "year": "1958",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 4,
-  "categorized": 4,
+  "total": 5,
+  "categorized": 5,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
       "total": 2,
       "by_topic": {
         "72 Steuern": 1,
-        "870 Strassenverkehr": 1
+        "803 Enteignungen, Perimeter, Beschaffungen": 1
       },
       "by_global_category": {
-        "6.20.10.50 Kirchen- und Kultussteuern": 1
+        "6.20.10.50 Kirchen- und Kultussteuern": 1,
+        "7.20 Enteignung": 1
       }
     },
     "Verordnung": {
@@ -32,6 +33,15 @@
       },
       "by_global_category": {
         "6.20.40 Erbschafts- und Schenkungssteuern": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "803 Enteignungen, Perimeter, Beschaffungen": 1
+      },
+      "by_global_category": {
+        "7.20 Enteignung": 1
       }
     }
   },
@@ -81,28 +91,31 @@
     {
       "identifier": "8",
       "title": "Planung, Bau, Wasserwirtschaft, Gewässerschutz, Umweltschutz, Gebäude- und Elementarschadenversicherung, Schätzungen, Verkehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
-          "identifier": "87",
-          "title": "Verkehrswesen",
-          "total": 1,
+          "identifier": "80",
+          "title": "Planung, Bau",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
-              "identifier": "870",
-              "title": "Strassenverkehr",
-              "total": 1,
-              "own": 1,
+              "identifier": "803",
+              "title": "Enteignungen, Perimeter, Beschaffungen",
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Gesetz": 1
+                "Gesetz": 1,
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -194,26 +207,44 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "7.20",
+          "title": "Enteignung",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 4,
-    "it": 4
+    "de": 5,
+    "it": 5
   },
   "available_years_for_entity": [
-    "1846",
     "1877",
     "1901",
     "1908",
     "1913",
-    "1916",
     "1917",
-    "1922",
+    "1918",
     "1923",
     "1925",
     "1927",
-    "1929",
-    "1932",
     "1936",
     "1937",
     "1943",
@@ -223,7 +254,6 @@
     "1951",
     "1952",
     "1953",
-    "1954",
     "1955",
     "1956",
     "1957",
@@ -294,20 +324,16 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",
     "AI",
-    "AR",
-    "BE",
     "BL",
     "BS",
     "CH",
     "FR",
     "GE",
-    "GL",
     "GR",
     "LU",
     "NE",

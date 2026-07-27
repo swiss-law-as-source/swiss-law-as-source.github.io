@@ -2,43 +2,67 @@
   "year": "2020",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 26,
-  "categorized": 26,
+  "total": 50,
+  "categorized": 50,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 19,
+      "total": 35,
       "by_topic": {
-        "821.40 Notmassnahmen": 16,
+        "821.40 Notmassnahmen": 26,
+        "631 Kantonssteuern": 2,
+        "958 Lotterien, Wetten und Spiele": 2,
+        "122.70 Allgemeine Bestimmungen": 1,
+        "140 Allgemeine Bestimmungen": 1,
+        "433 Pädagogische Hochschule": 1,
+        "480 Allgemeine Bestimmungen - Kulturförderung": 1,
+        "635.4 Besteuerung der Motorfahrzeuge und Schiffe": 1
+      },
+      "by_global_category": {
+        "8.10.100.10 Epidemien, Pandemien": 23,
+        "4.180.20 Kulturförderung": 3,
+        "1.10.90.10 Gleichstellung von Mann und Frau": 1,
+        "4.50.10 Pädagogik": 1,
+        "6.20.10.60 Quellensteuern": 1,
+        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1,
+        "4.30.30 Berufsorientierung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 7,
+      "by_topic": {
+        "821.40 Notmassnahmen": 3,
+        "115 Politische Rechte": 1,
         "140 Allgemeine Bestimmungen": 1,
         "184 E-GOVERNMENT": 1,
         "958 Lotterien, Wetten und Spiele": 1
       },
       "by_global_category": {
-        "8.10.100.10 Epidemien, Pandemien": 13,
-        "1.20.60.10 E-Government": 1,
-        "3.50 Ordnungsbussen": 1,
-        "6.10.30 Staatsbeiträge, Subventionen": 1,
-        "4.180.10.10 Film, Theater, Unterhaltung": 1
+        "8.10.100.10 Epidemien, Pandemien": 3,
+        "1.10.90.20.40 Politikfinanzierung, Transparenz": 1,
+        "1.20.60.10 E-Government": 1
       }
     },
-    "Gesetz": {
-      "total": 4,
+    "Anderes": {
+      "total": 3,
       "by_topic": {
-        "821.40 Notmassnahmen": 3,
-        "731.3 Brandbekämpfung": 1
+        "31 STRAFRECHT": 1,
+        "431.0 Allgemeine Bestimmungen": 1,
+        "822.2 Netz für die Pflege im Bereich psychische Gesundheit": 1
       },
       "by_global_category": {
-        "8.10.100.10 Epidemien, Pandemien": 3,
-        "5.20.30.20 Brandschutz": 1
+        "10 Publikationen ohne Text": 1,
+        "8.10.20.20 Psychiatrische Kliniken": 1
       }
     },
     "Reglement": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "821.40 Notmassnahmen": 2
+        "821.40 Notmassnahmen": 2,
+        "433 Pädagogische Hochschule": 1
       },
       "by_global_category": {
+        "4.50.10 Pädagogik": 1,
         "4.160 Wissenschaft, Forschung": 1,
         "8.10.100.10 Epidemien, Pandemien": 1
       }
@@ -51,33 +75,108 @@
       "by_global_category": {
         "10 Publikationen ohne Text": 1
       }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "821.40 Notmassnahmen": 1
+      },
+      "by_global_category": {
+        "8.10.100.10 Epidemien, Pandemien": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "STAAT - VOLK - BEHÖRDEN",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Gesetz": 3,
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "14",
-          "title": "GEMEINDEN",
+          "identifier": "11",
+          "title": "VOLK UND GEBIET",
           "total": 1,
           "own": 0,
           "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "115",
+              "title": "Politische Rechte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Staatsrat und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.7",
+                  "title": "Staatspersonal",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "122.70",
+                      "title": "Allgemeine Bestimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "14",
+          "title": "GEMEINDEN",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "140",
               "title": "Allgemeine Bestimmungen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               }
             }
@@ -89,7 +188,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -98,7 +197,7 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -106,12 +205,35 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "BILDUNG - KULTUR - SPORT",
+      "identifier": "3",
+      "title": "STRAFRECHT - STRAFPROZESS - STRAFVOLLZUG",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "STRAFRECHT",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "BILDUNG - KULTUR - SPORT",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -144,126 +266,53 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "73",
-          "title": "SCHUTZ GEGEN FEUER- UND ELEMENTARSCHÄDEN",
-          "total": 1,
+          "identifier": "43",
+          "title": "HOCHSCHULEN",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Anderes": 1,
+            "Reglement": 1,
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "731",
-              "title": "Verhütung und Bekämpfung",
+              "identifier": "431",
+              "title": "Universität",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Gesetz": 1
+                "Anderes": 1
               },
               "children": [
                 {
-                  "identifier": "731.3",
-                  "title": "Brandbekämpfung",
+                  "identifier": "431.0",
+                  "title": "Allgemeine Bestimmungen",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Gesetz": 1
+                    "Anderes": 1
                   }
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "8",
-      "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
-      "total": 21,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 16,
-        "Gesetz": 3,
-        "Reglement": 2
-      },
-      "children": [
-        {
-          "identifier": "82",
-          "title": "GESUNDHEIT",
-          "total": 21,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 16,
-            "Gesetz": 3,
-            "Reglement": 2
-          },
-          "children": [
+            },
             {
-              "identifier": "821",
-              "title": "Gesundheitspolizeiliche Massnahmen und Gesundheitsförderung",
-              "total": 21,
-              "own": 0,
+              "identifier": "433",
+              "title": "Pädagogische Hochschule",
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 16,
-                "Gesetz": 3,
-                "Reglement": 2
-              },
-              "children": [
-                {
-                  "identifier": "821.4",
-                  "title": "Krankheitsbekämpfung",
-                  "total": 21,
-                  "own": 0,
-                  "by_type": {
-                    "Verordnung": 16,
-                    "Gesetz": 3,
-                    "Reglement": 2
-                  },
-                  "children": [
-                    {
-                      "identifier": "821.40",
-                      "title": "Notmassnahmen",
-                      "total": 21,
-                      "own": 21,
-                      "by_type": {
-                        "Verordnung": 16,
-                        "Gesetz": 3,
-                        "Reglement": 2
-                      }
-                    }
-                  ]
-                }
-              ]
+                "Reglement": 1,
+                "Verordnung": 1
+              }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "WIRTSCHAFT",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "95",
-          "title": "DIENSTLEISTUNGSGEWERBE",
+          "identifier": "48",
+          "title": "KULTURELLE ANGELEGENHEITEN",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -271,8 +320,8 @@
           },
           "children": [
             {
-              "identifier": "958",
-              "title": "Lotterien, Wetten und Spiele",
+              "identifier": "480",
+              "title": "Allgemeine Bestimmungen - Kulturförderung",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -282,30 +331,37 @@
           ]
         }
       ]
-    }
-  ],
-  "by_global_category_tree": [
+    },
     {
-      "identifier": "1",
-      "title": "Staat",
-      "total": 1,
+      "identifier": "6",
+      "title": "FINANZEN",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 3
       },
       "children": [
         {
-          "identifier": "1.20",
-          "title": "Behörden",
-          "total": 1,
+          "identifier": "63",
+          "title": "STEUERN",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 3
           },
           "children": [
             {
-              "identifier": "1.20.60",
-              "title": "Informatik",
+              "identifier": "631",
+              "title": "Kantonssteuern",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            },
+            {
+              "identifier": "635",
+              "title": "Besondere Steuern",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -313,8 +369,8 @@
               },
               "children": [
                 {
-                  "identifier": "1.20.60.10",
-                  "title": "E-Government",
+                  "identifier": "635.4",
+                  "title": "Besteuerung der Motorfahrzeuge und Schiffe",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -328,35 +384,279 @@
       ]
     },
     {
-      "identifier": "3",
-      "title": "Strafrecht",
-      "total": 1,
+      "identifier": "8",
+      "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
+      "total": 33,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 26,
+        "Gesetz": 3,
+        "Reglement": 2,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "3.50",
-          "title": "Ordnungsbussen",
-          "total": 1,
-          "own": 1,
+          "identifier": "82",
+          "title": "GESUNDHEIT",
+          "total": 33,
+          "own": 0,
           "by_type": {
-            "Verordnung": 1
-          }
+            "Verordnung": 26,
+            "Gesetz": 3,
+            "Reglement": 2,
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "821",
+              "title": "Gesundheitspolizeiliche Massnahmen und Gesundheitsförderung",
+              "total": 32,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 26,
+                "Gesetz": 3,
+                "Reglement": 2,
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "821.4",
+                  "title": "Krankheitsbekämpfung",
+                  "total": 32,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 26,
+                    "Gesetz": 3,
+                    "Reglement": 2,
+                    "Verordnung des Parlaments (Dekret)": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "821.40",
+                      "title": "Notmassnahmen",
+                      "total": 32,
+                      "own": 32,
+                      "by_type": {
+                        "Verordnung": 26,
+                        "Gesetz": 3,
+                        "Reglement": 2,
+                        "Verordnung des Parlaments (Dekret)": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "822",
+              "title": "Spitäler",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "822.2",
+                  "title": "Netz für die Pflege im Bereich psychische Gesundheit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "WIRTSCHAFT",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "95",
+          "title": "DIENSTLEISTUNGSGEWERBE",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "958",
+              "title": "Lotterien, Wetten und Spiele",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 2,
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.10",
+                  "title": "Gleichstellung von Mann und Frau",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "1.10.90.20",
+                  "title": "Politische Rechte",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.90.20.40",
+                      "title": "Politikfinanzierung, Transparenz",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.60",
+              "title": "Informatik",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.60.10",
+                  "title": "E-Government",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
-        "Verordnung": 1
+        "Verordnung": 5,
+        "Reglement": 2
       },
       "children": [
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.30",
+              "title": "Berufsorientierung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.50.10",
+              "title": "Pädagogik",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.160",
           "title": "Wissenschaft, Forschung",
@@ -369,73 +669,20 @@
         {
           "identifier": "4.180",
           "title": "Kunst, Kultur, Sport",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 3
           },
           "children": [
             {
-              "identifier": "4.180.10",
-              "title": "Kunst",
-              "total": 1,
-              "own": 0,
+              "identifier": "4.180.20",
+              "title": "Kulturförderung",
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "4.180.10.10",
-                  "title": "Film, Theater, Unterhaltung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "5.20",
-          "title": "Bevölkerungsschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "5.20.30",
-              "title": "Feuerwehr / Elementarschäden",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "5.20.30.20",
-                  "title": "Brandschutz",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
+                "Verordnung": 3
+              }
             }
           ]
         }
@@ -451,8 +698,8 @@
       },
       "children": [
         {
-          "identifier": "6.10",
-          "title": "Finanzen",
+          "identifier": "6.20",
+          "title": "Steuern",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -460,13 +707,66 @@
           },
           "children": [
             {
-              "identifier": "6.10.30",
-              "title": "Staatsbeiträge, Subventionen",
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
                 "Verordnung": 1
-              }
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.60",
+                  "title": "Quellensteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.20",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.20.10",
+                  "title": "Strassenverkehrssteuern und -abgaben",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -475,44 +775,70 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 17,
+      "total": 29,
       "own": 0,
       "by_type": {
-        "Verordnung": 13,
+        "Verordnung": 23,
         "Gesetz": 3,
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 17,
+          "total": 29,
           "own": 0,
           "by_type": {
-            "Verordnung": 13,
+            "Verordnung": 23,
             "Gesetz": 3,
+            "Anderes": 1,
+            "Verordnung des Parlaments (Dekret)": 1,
             "Reglement": 1
           },
           "children": [
             {
-              "identifier": "8.10.100",
-              "title": "Krankheitsbekämpfung",
-              "total": 17,
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 13,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.20",
+                  "title": "Psychiatrische Kliniken",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.100",
+              "title": "Krankheitsbekämpfung",
+              "total": 28,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 23,
                 "Gesetz": 3,
+                "Verordnung des Parlaments (Dekret)": 1,
                 "Reglement": 1
               },
               "children": [
                 {
                   "identifier": "8.10.100.10",
                   "title": "Epidemien, Pandemien",
-                  "total": 17,
-                  "own": 17,
+                  "total": 28,
+                  "own": 28,
                   "by_type": {
-                    "Verordnung": 13,
+                    "Verordnung": 23,
                     "Gesetz": 3,
+                    "Verordnung des Parlaments (Dekret)": 1,
                     "Reglement": 1
                   }
                 }
@@ -525,19 +851,19 @@
     {
       "identifier": "10",
       "title": "Publikationen ohne Text",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
       }
     }
   ],
   "languages_available": {
-    "de": 26,
-    "fr": 26
+    "de": 50,
+    "fr": 50
   },
   "available_years_for_entity": [
-    "1804",
     "1808",
     "1825",
     "1831",
@@ -548,44 +874,33 @@
     "1848",
     "1850",
     "1852",
-    "1857",
     "1859",
     "1866",
     "1867",
     "1868",
     "1873",
-    "1874",
     "1875",
     "1879",
-    "1884",
+    "1880",
     "1889",
     "1893",
     "1899",
-    "1907",
     "1909",
-    "1910",
-    "1911",
     "1913",
-    "1914",
-    "1916",
     "1917",
     "1918",
     "1920",
     "1921",
     "1922",
-    "1923",
     "1924",
-    "1925",
     "1926",
-    "1927",
+    "1928",
     "1929",
     "1930",
     "1931",
     "1934",
     "1935",
-    "1937",
     "1938",
-    "1939",
     "1942",
     "1943",
     "1946",
@@ -664,7 +979,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

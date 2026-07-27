@@ -2,28 +2,41 @@
   "year": "2008",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 5,
-  "categorized": 5,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
-        "814 Umweltschutz": 1,
-        "822.4 Familienzulagen, Familienausgleichskasse": 1
+        "222.2 Arbeitsvertrag": 1,
+        "822.4 Familienzulagen, Familienausgleichskasse": 1,
+        "851 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
-        "7.60.80 Umweltgefährdende Stoffe": 1,
-        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1
+        "2.20.10.40.20.30 Landwirtschaft": 1,
+        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1,
+        "8.70.10 Sozialhilfe": 1
       }
     },
-    "Gesetz": {
-      "total": 1,
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
       "by_topic": {
-        "145.3 Organisation und Zuständigkeit der Rechtspflegebehörden": 1
+        "412.2 Anstellung, Besoldung und Pensionskasse der Lehrer": 1,
+        "956.1 Mass und Gewicht": 1
       },
       "by_global_category": {
-        "1.20.70.10.10.20 Staatsanwaltschaft": 1
+        "4.90.10 Anstellung": 1,
+        "9.60.20 Messwesen, Zahlungsverkehr": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "811 Allgemeine Bestimmungen, medizinische und andere Berufe im Gesundheitswesen": 1
+      },
+      "by_global_category": {
+        "8.10.30.70 Naturheilpraktiker": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -32,6 +45,15 @@
         "812.1 Allgemeines": 1
       },
       "by_global_category": {}
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "822.4 Familienzulagen, Familienausgleichskasse": 1
+      },
+      "by_global_category": {
+        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1
+      }
     },
     "Anderes": {
       "total": 1,
@@ -45,39 +67,81 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "1",
-      "title": "Staat, Volk, Behörden und Gemeinden",
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "14",
-          "title": "Behörden",
+          "identifier": "22",
+          "title": "Ergänzungs- und Ausführungserlasse zum OR",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "145",
-              "title": "Behörden der Rechtspflege, Rechtsanwälte",
+              "identifier": "222",
+              "title": "Einzelne Vertragsverhältnisse",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "145.3",
-                  "title": "Organisation und Zuständigkeit der Rechtspflegebehörden",
+                  "identifier": "222.2",
+                  "title": "Arbeitsvertrag",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Gesetz": 1
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Erziehung, Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Erziehung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "412",
+              "title": "Volksschule",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "412.2",
+                  "title": "Anstellung, Besoldung und Pensionskasse der Lehrer",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
                   }
                 }
               ]
@@ -89,11 +153,13 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Interkantonale Vereinbarung": 1
+        "Reglement": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -102,10 +168,19 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
-            "Verordnung": 1
+            "Reglement": 1,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "811",
+              "title": "Allgemeine Bestimmungen, medizinische und andere Berufe im Gesundheitswesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
             {
               "identifier": "812",
               "title": "Spitalwesen, Krankenpflege",
@@ -125,21 +200,46 @@
                   }
                 }
               ]
-            },
-            {
-              "identifier": "814",
-              "title": "Umweltschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
             }
           ]
         },
         {
           "identifier": "82",
           "title": "Arbeit",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "822",
+              "title": "Arbeitnehmerschutz",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "822.4",
+                  "title": "Familienzulagen, Familienausgleichskasse",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "85",
+          "title": "Fürsorge",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -147,24 +247,13 @@
           },
           "children": [
             {
-              "identifier": "822",
-              "title": "Arbeitnehmerschutz",
+              "identifier": "851",
+              "title": "Allgemeine Bestimmungen",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "822.4",
-                  "title": "Familienzulagen, Familienausgleichskasse",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
@@ -173,36 +262,40 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "95",
           "title": "Industrie, Gewerbe und Handel",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "956",
               "title": "Handel",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
                 "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "956.1",
                   "title": "Mass und Gewicht",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1,
                     "Anderes": 1
                   }
                 }
@@ -215,57 +308,57 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "1",
-      "title": "Staat",
+      "identifier": "2",
+      "title": "Zivilrecht",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "1.20",
-          "title": "Behörden",
+          "identifier": "2.20",
+          "title": "Einführungsgesetzgebung OR",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "1.20.70",
-              "title": "Gerichtsorganisation",
+              "identifier": "2.20.10",
+              "title": "Vertragsverhältnisse",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "1.20.70.10",
-                  "title": "Gerichtsbehörden",
+                  "identifier": "2.20.10.40",
+                  "title": "Arbeitsvertragsrecht",
                   "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Gesetz": 1
+                    "Verordnung": 1
                   },
                   "children": [
                     {
-                      "identifier": "1.20.70.10.10",
-                      "title": "Untersuchungs- und Anklagebehörden",
+                      "identifier": "2.20.10.40.20",
+                      "title": "Normalarbeitsverträge",
                       "total": 1,
                       "own": 0,
                       "by_type": {
-                        "Gesetz": 1
+                        "Verordnung": 1
                       },
                       "children": [
                         {
-                          "identifier": "1.20.70.10.10.20",
-                          "title": "Staatsanwaltschaft",
+                          "identifier": "2.20.10.40.20.30",
+                          "title": "Landwirtschaft",
                           "total": 1,
                           "own": 1,
                           "by_type": {
-                            "Gesetz": 1
+                            "Verordnung": 1
                           }
                         }
                       ]
@@ -279,30 +372,30 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
+          "identifier": "4.90",
+          "title": "Lehrkörper",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
-              "identifier": "7.60.80",
-              "title": "Umweltgefährdende Stoffe",
+              "identifier": "4.90.10",
+              "title": "Anstellung",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -312,15 +405,82 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Reglement": 1,
+        "Gesetz": 1
       },
       "children": [
         {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.70",
+                  "title": "Naturheilpraktiker",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.100",
+              "title": "Familienzulagen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.100.10",
+                  "title": "Landwirtschaftliche Arbeitnehmer",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -328,24 +488,13 @@
           },
           "children": [
             {
-              "identifier": "8.30.100",
-              "title": "Familienzulagen",
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.30.100.10",
-                  "title": "Landwirtschaftliche Arbeitnehmer",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
@@ -354,27 +503,30 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "9.60",
           "title": "Handel",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "9.60.20",
               "title": "Messwesen, Zahlungsverkehr",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
                 "Anderes": 1
               }
             }
@@ -384,45 +536,38 @@
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 10
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -431,7 +576,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -484,7 +628,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

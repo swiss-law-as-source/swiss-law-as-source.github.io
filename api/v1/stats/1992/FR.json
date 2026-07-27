@@ -2,35 +2,52 @@
   "year": "1992",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 12,
-  "categorized": 12,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
-      "total": 5,
+    "Anderes": {
+      "total": 6,
       "by_topic": {
-        "214.6 Grundbuchvermessung": 1,
-        "32 STRAFPROZESS": 1,
-        "815 Klimaschutz": 1,
-        "821.30 Allgemeine Bestimmungen": 1,
-        "913.5 Milch und Milchprodukte": 1
+        "631 Kantonssteuern": 1,
+        "741 Strassen": 1,
+        "810 Allgemeine Bestimmungen": 1,
+        "813 Luftreinhaltung": 1,
+        "841.4 Berufliche Alters-, Hinterlassenen- und Invalidenvorsorge": 1,
+        "87 WOHNVERHÄLTNISSE": 1
       },
       "by_global_category": {
-        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
-        "3.20.70 Opferhilfe": 1,
+        "6.20.30 Liegenschaftssteuern": 1,
+        "7.60.20 Gewässerschutz": 1,
+        "7.60.90 Schadenbekämpfung": 1,
+        "2.10.10.20.10 BVG-Stiftungen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "130 Allgemeine Bestimmungen": 1,
+        "32 STRAFPROZESS": 1,
+        "913.5 Milch und Milchprodukte": 1,
+        "946 Spielapparate und Spielbanken": 1
+      },
+      "by_global_category": {
+        "3.20.70 Opferhilfe": 2,
         "9.20.10 Förderungsmassnahmen": 1
       }
     },
     "Reglement": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "151 Verwaltungsrechtspflege des Kantonsgerichts": 1,
-        "821.32 Trinkwasser": 1,
-        "946 Spielapparate und Spielbanken": 1
+        "741 Strassen": 1,
+        "917 Bodenverbesserungen (Meliorationen)": 1,
+        "952 Gastgewerbe": 1
       },
       "by_global_category": {
         "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
-        "8.10.130.20 Wasserversorgung": 1
+        "9.20.50 Meliorationen": 1,
+        "6.30.10 Alkohol": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -50,35 +67,40 @@
       "by_global_category": {
         "3.20.50 Rechtshilfe": 1
       }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "821.31 Fleisch": 1
-      },
-      "by_global_category": {}
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "841.4 Berufliche Alters-, Hinterlassenen- und Invalidenvorsorge": 1
-      },
-      "by_global_category": {
-        "2.10.10.20.10 BVG-Stiftungen": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "STAAT - VOLK - BEHÖRDEN",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "13",
+          "title": "RECHTSPFLEGE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "130",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "14",
           "title": "GEMEINDEN",
@@ -133,48 +155,6 @@
       ]
     },
     {
-      "identifier": "2",
-      "title": "PRIVATRECHT - ZIVILPROZESS - ZWANGSVOLLSTRECKUNG",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "21",
-          "title": "ZIVILRECHT",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "214",
-              "title": "Sachenrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "214.6",
-                  "title": "Grundbuchvermessung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "3",
       "title": "STRAFRECHT - STRAFPROZESS - STRAFVOLLZUG",
       "total": 2,
@@ -205,100 +185,105 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
-      "total": 5,
+      "identifier": "6",
+      "title": "FINANZEN",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
-        "Verordnung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "63",
+          "title": "STEUERN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "631",
+              "title": "Kantonssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
+      "total": 2,
+      "own": 0,
+      "by_type": {
         "Reglement": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "81",
-          "title": "UMWELTSCHUTZ",
-          "total": 1,
+          "identifier": "74",
+          "title": "ÖFFENTLICHE WERKE",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Reglement": 1,
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "815",
-              "title": "Klimaschutz",
-              "total": 1,
-              "own": 1,
+              "identifier": "741",
+              "title": "Strassen",
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Gesetz": 1
+                "Reglement": 1,
+                "Anderes": 1
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Anderes": 4
+      },
+      "children": [
         {
-          "identifier": "82",
-          "title": "GESUNDHEIT",
-          "total": 3,
+          "identifier": "81",
+          "title": "UMWELTSCHUTZ",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1,
-            "Reglement": 1
+            "Anderes": 2
           },
           "children": [
             {
-              "identifier": "821",
-              "title": "Gesundheitspolizeiliche Massnahmen und Gesundheitsförderung",
-              "total": 3,
-              "own": 0,
+              "identifier": "810",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1,
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "821.3",
-                  "title": "Lebensmittel und Gebrauchsgegenstände",
-                  "total": 3,
-                  "own": 0,
-                  "by_type": {
-                    "Gesetz": 1,
-                    "Verordnung": 1,
-                    "Reglement": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "821.30",
-                      "title": "Allgemeine Bestimmungen",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Gesetz": 1
-                      }
-                    },
-                    {
-                      "identifier": "821.31",
-                      "title": "Fleisch",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung": 1
-                      }
-                    },
-                    {
-                      "identifier": "821.32",
-                      "title": "Trinkwasser",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Reglement": 1
-                      }
-                    }
-                  ]
-                }
-              ]
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "813",
+              "title": "Luftreinhaltung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         },
@@ -332,26 +317,36 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "87",
+          "title": "WOHNVERHÄLTNISSE",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
         }
       ]
     },
     {
       "identifier": "9",
       "title": "WIRTSCHAFT",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Reglement": 1
+        "Gesetz": 2,
+        "Reglement": 2
       },
       "children": [
         {
           "identifier": "91",
           "title": "LANDWIRTSCHAFT",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Reglement": 1
           },
           "children": [
             {
@@ -373,6 +368,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "917",
+              "title": "Bodenverbesserungen (Meliorationen)",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
             }
           ]
         },
@@ -382,12 +386,32 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "946",
               "title": "Spielapparate und Spielbanken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "95",
+          "title": "DIENSTLEISTUNGSGEWERBE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "952",
+              "title": "Gastgewerbe",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -477,21 +501,19 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Gesetz": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
-            "Gesetz": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -524,26 +546,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.40.30",
-                  "title": "Grundbuch und Grundbuchvermessung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
             }
           ]
         }
@@ -552,21 +554,21 @@
     {
       "identifier": "3",
       "title": "Strafrecht",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "3.20",
           "title": "Strafprozess",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
-            "Gesetz": 1
+            "Gesetz": 2,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -581,10 +583,10 @@
             {
               "identifier": "3.20.70",
               "title": "Opferhilfe",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Gesetz": 1
+                "Gesetz": 2
               }
             }
           ]
@@ -592,17 +594,38 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Reglement": 1
       },
       "children": [
         {
-          "identifier": "8.10",
-          "title": "Gesundheitswesen",
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.30",
+              "title": "Liegenschaftssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -610,24 +633,53 @@
           },
           "children": [
             {
-              "identifier": "8.10.130",
-              "title": "Hygiene",
+              "identifier": "6.30.10",
+              "title": "Alkohol",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.10.130.20",
-                  "title": "Wasserversorgung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                }
-              ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "7.60.90",
+              "title": "Schadenbekämpfung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -636,19 +688,21 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "9.20",
           "title": "Landwirtschaft",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Reglement": 1
           },
           "children": [
             {
@@ -659,6 +713,15 @@
               "by_type": {
                 "Gesetz": 1
               }
+            },
+            {
+              "identifier": "9.20.50",
+              "title": "Meliorationen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
             }
           ]
         }
@@ -666,11 +729,10 @@
     }
   ],
   "languages_available": {
-    "de": 12,
-    "fr": 12
+    "de": 16,
+    "fr": 16
   },
   "available_years_for_entity": [
-    "1804",
     "1808",
     "1825",
     "1831",
@@ -681,44 +743,33 @@
     "1848",
     "1850",
     "1852",
-    "1857",
     "1859",
     "1866",
     "1867",
     "1868",
     "1873",
-    "1874",
     "1875",
     "1879",
-    "1884",
+    "1880",
     "1889",
     "1893",
     "1899",
-    "1907",
     "1909",
-    "1910",
-    "1911",
     "1913",
-    "1914",
-    "1916",
     "1917",
     "1918",
     "1920",
     "1921",
     "1922",
-    "1923",
     "1924",
-    "1925",
     "1926",
-    "1927",
+    "1928",
     "1929",
     "1930",
     "1931",
     "1934",
     "1935",
-    "1937",
     "1938",
-    "1939",
     "1942",
     "1943",
     "1946",
@@ -797,7 +848,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

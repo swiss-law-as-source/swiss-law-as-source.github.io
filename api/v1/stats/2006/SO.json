@@ -2,10 +2,38 @@
   "year": "2006",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 12,
-  "categorized": 12,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
+    "Reglement": {
+      "total": 7,
+      "by_topic": {
+        "125.4 Amtsgerichte": 4,
+        "125.1 Grundlagen und Organisation": 1,
+        "125.9 Verwaltungsgerichtsbarkeit": 1,
+        "413.4 Schüler": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.40 Bezirks-, Amts- und Friedensgericht": 4,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+      }
+    },
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "112.1 Erwerb, Beibehaltung, Verlust": 1,
+        "122.5 Staatskanzlei": 1,
+        "212.1 Personenrecht": 1,
+        "413.6 Unterricht": 1,
+        "513.6 Glücks- und Geschicklichkeitsspiele": 1
+      },
+      "by_global_category": {
+        "1.10.60 Bürgerrecht": 1,
+        "4.170.20 Archive": 1,
+        "1.30.20 Gemeindebeiträge": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 4,
       "by_topic": {
@@ -18,38 +46,10 @@
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
       }
     },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "114 Informations- und Datenschutz": 1,
-        "126.515.85 Volksschule": 1
-      },
-      "by_global_category": {
-        "1.10.90.20.10 Wahlen und Abstimmungen": 1,
-        "4.90.20 Löhne, Entschädigungen": 1
-      }
-    },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "122.5 Staatskanzlei": 1,
-        "614.7 Hundesteuer, Hundehaltung": 1
-      },
-      "by_global_category": {
-        "4.170.20 Archive": 1,
-        "5.30.20.10 Hunde, gefährliche Tiere": 1
-      }
-    },
-    "Reglement": {
-      "total": 2,
-      "by_topic": {
-        "125.1 Grundlagen und Organisation": 1
-      },
-      "by_global_category": {}
-    },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "113 Politische Rechte": 1,
         "411.21 Schulkoordination und Schuljahrbeginn": 1,
         "436.91 Schlösser": 1
       },
@@ -57,55 +57,47 @@
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
         "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
       }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "122.5 Staatskanzlei": 1,
+        "614.7 Hundesteuer, Hundehaltung": 1,
+        "98 Wirtschaftliche Kriegsvorsorge": 1
+      },
+      "by_global_category": {
+        "4.170.20 Archive": 1,
+        "5.30.20.10 Hunde, gefährliche Tiere": 1,
+        "5.20.20 Landesversorgung": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 4,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Verordnung": 1,
-        "Reglement": 1,
-        "Anderes": 1
+        "Reglement": 6,
+        "Verordnung": 2,
+        "Anderes": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "11",
           "title": "Grundlagen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "114",
-              "title": "Informations- und Datenschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "12",
-          "title": "Organisation",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
             "Verordnung": 1,
-            "Reglement": 1,
             "Anderes": 1
           },
           "children": [
             {
-              "identifier": "122",
-              "title": "Regierungsrat",
+              "identifier": "112",
+              "title": "Bürgerrecht",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -113,8 +105,8 @@
               },
               "children": [
                 {
-                  "identifier": "122.5",
-                  "title": "Staatskanzlei",
+                  "identifier": "112.1",
+                  "title": "Erwerb, Beibehaltung, Verlust",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -124,12 +116,56 @@
               ]
             },
             {
-              "identifier": "125",
-              "title": "Gerichte",
+              "identifier": "113",
+              "title": "Politische Rechte",
               "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "Organisation",
+          "total": 8,
+          "own": 0,
+          "by_type": {
+            "Reglement": 6,
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Regierungsrat",
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Reglement": 1
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.5",
+                  "title": "Staatskanzlei",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "125",
+              "title": "Gerichte",
+              "total": 6,
+              "own": 0,
+              "by_type": {
+                "Reglement": 6
               },
               "children": [
                 {
@@ -140,59 +176,66 @@
                   "by_type": {
                     "Reglement": 1
                   }
+                },
+                {
+                  "identifier": "125.4",
+                  "title": "Amtsgerichte",
+                  "total": 4,
+                  "own": 4,
+                  "by_type": {
+                    "Reglement": 4
+                  }
+                },
+                {
+                  "identifier": "125.9",
+                  "title": "Verwaltungsgerichtsbarkeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
                 }
               ]
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilprozessrecht, Vollstreckung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
             {
-              "identifier": "126",
-              "title": "Staatspersonal",
+              "identifier": "212",
+              "title": "Einzelne Rechtsgebiete",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "126.5",
-                  "title": "Staatliche Leistungen aus dem Anstellungsverhältnis",
+                  "identifier": "212.1",
+                  "title": "Personenrecht",
                   "total": 1,
-                  "own": 0,
+                  "own": 1,
                   "by_type": {
-                    "Anderes": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "126.51",
-                      "title": "Besoldungen",
-                      "total": 1,
-                      "own": 0,
-                      "by_type": {
-                        "Anderes": 1
-                      },
-                      "children": [
-                        {
-                          "identifier": "126.515",
-                          "title": "Besoldungen, Einzelregelungen",
-                          "total": 1,
-                          "own": 0,
-                          "by_type": {
-                            "Anderes": 1
-                          },
-                          "children": [
-                            {
-                              "identifier": "126.515.85",
-                              "title": "Volksschule",
-                              "total": 1,
-                              "own": 1,
-                              "by_type": {
-                                "Anderes": 1
-                              }
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+                    "Verordnung": 1
+                  }
                 }
               ]
             }
@@ -234,21 +277,25 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Reglement": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Interkantonale Vereinbarung": 1,
-            "Anderes": 1
+            "Anderes": 1,
+            "Reglement": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -282,6 +329,36 @@
                       }
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "identifier": "413",
+              "title": "Volksschule",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.4",
+                  "title": "Schüler",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                },
+                {
+                  "identifier": "413.6",
+                  "title": "Unterricht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
                 }
               ]
             }
@@ -334,21 +411,23 @@
     {
       "identifier": "5",
       "title": "Polizei, Militär, Zivilschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 1,
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "51",
           "title": "Polizei",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Interkantonale Vereinbarung": 1,
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -372,32 +451,10 @@
                   }
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen, Regalien",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "61",
-          "title": "Finanzen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
+            },
             {
-              "identifier": "614",
-              "title": "Kantonale Steuern",
+              "identifier": "513",
+              "title": "Gewerbe- und Handelspolizei",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -405,8 +462,8 @@
               },
               "children": [
                 {
-                  "identifier": "614.7",
-                  "title": "Hundesteuer, Hundehaltung",
+                  "identifier": "513.6",
+                  "title": "Glücks- und Geschicklichkeitsspiele",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -418,12 +475,10 @@
           ]
         }
       ]
-    }
-  ],
-  "by_global_category_tree": [
+    },
     {
-      "identifier": "1",
-      "title": "Staat",
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -431,8 +486,8 @@
       },
       "children": [
         {
-          "identifier": "1.10",
-          "title": "Grundlagen",
+          "identifier": "61",
+          "title": "Finanzen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -440,8 +495,8 @@
           },
           "children": [
             {
-              "identifier": "1.10.90",
-              "title": "Grundrechte, Politische Rechte",
+              "identifier": "614",
+              "title": "Kantonale Steuern",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -449,24 +504,13 @@
               },
               "children": [
                 {
-                  "identifier": "1.10.90.20",
-                  "title": "Politische Rechte",
+                  "identifier": "614.7",
+                  "title": "Hundesteuer, Hundehaltung",
                   "total": 1,
-                  "own": 0,
+                  "own": 1,
                   "by_type": {
                     "Gesetz": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.10.90.20.10",
-                      "title": "Wahlen und Abstimmungen",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Gesetz": 1
-                      }
-                    }
-                  ]
+                  }
                 }
               ]
             }
@@ -475,61 +519,40 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1,
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "4.10",
-          "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1,
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "4.10.30",
-              "title": "Volksschule, Primarschule, Sekundarschule I",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1,
-                "Anderes": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "4.90",
-          "title": "Lehrkörper",
+          "identifier": "98",
+          "title": "Wirtschaftliche Kriegsvorsorge",
           "total": 1,
-          "own": 0,
+          "own": 1,
           "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "4.90.20",
-              "title": "Löhne, Entschädigungen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        },
+            "Gesetz": 1
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 6,
+      "own": 0,
+      "by_type": {
+        "Reglement": 4,
+        "Verordnung": 2
+      },
+      "children": [
         {
-          "identifier": "4.170",
-          "title": "Dokumentation",
+          "identifier": "1.10",
+          "title": "Grundlagen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -537,8 +560,70 @@
           },
           "children": [
             {
-              "identifier": "4.170.20",
-              "title": "Archive",
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Reglement": 4
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 4,
+              "own": 0,
+              "by_type": {
+                "Reglement": 4
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 4,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 4
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.40",
+                      "title": "Bezirks-, Amts- und Friedensgericht",
+                      "total": 4,
+                      "own": 4,
+                      "by_type": {
+                        "Reglement": 4
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.20",
+              "title": "Gemeindebeiträge",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -550,16 +635,97 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 3,
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 5,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 1,
         "Anderes": 1,
+        "Reglement": 1,
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Anderes": 1,
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.20",
+              "title": "Archive",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.20",
+              "title": "Landesversorgung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "5.30",
           "title": "Innere Sicherheit",
@@ -568,7 +734,7 @@
           "by_type": {
             "Interkantonale Vereinbarung": 1,
             "Anderes": 1,
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -599,7 +765,7 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -608,7 +774,7 @@
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -650,21 +816,21 @@
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 22
   },
   "available_years_for_entity": [
     "1780",
+    "1802",
     "1803",
     "1825",
     "1828",
     "1830",
+    "1834",
+    "1837",
     "1851",
     "1873",
     "1874",
     "1875",
-    "1882",
-    "1883",
-    "1887",
     "1888",
     "1889",
     "1893",
@@ -674,30 +840,31 @@
     "1903",
     "1905",
     "1907",
+    "1908",
     "1909",
     "1911",
     "1912",
     "1914",
     "1915",
-    "1917",
     "1918",
-    "1919",
+    "1920",
     "1921",
     "1923",
+    "1924",
     "1925",
     "1926",
-    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
-    "1933",
-    "1934",
+    "1932",
     "1935",
     "1937",
     "1938",
     "1939",
+    "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",
@@ -780,7 +947,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

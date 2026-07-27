@@ -2,39 +2,39 @@
   "year": "1986",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 11,
-  "categorized": 11,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 5,
+      "total": 4,
       "by_topic": {
-        "152.0 Allgemeine Organisation, Zuständigkeit, Information": 3,
-        "433.5 Diplommittelschulen": 2
+        "433.5 Diplommittelschulen": 2,
+        "122.1 Schweizer/-innen": 1,
+        "152.0 Allgemeine Organisation, Zuständigkeit, Information": 1
       },
       "by_global_category": {
-        "1.20.50 Datenschutz": 3,
-        "4.20.20 Fachmittelschulen, Diplommittelschulen": 2
-      }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "152.0 Allgemeine Organisation, Zuständigkeit, Information": 1,
-        "922.1 Allgemeines": 1
-      },
-      "by_global_category": {
-        "1.20.50 Datenschutz": 1,
-        "7.70.20 Tierschutz": 1
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 2,
+        "1.20.50 Datenschutz": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
       "total": 2,
       "by_topic": {
-        "162.1 Obergericht": 1
+        "162.1 Obergericht": 1,
+        "669.8 Grenzgänger/-innen": 1
       },
       "by_global_category": {
         "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "152.0 Allgemeine Organisation, Zuständigkeit, Information": 1
+      },
+      "by_global_category": {
+        "1.20.50 Datenschutz": 1
       }
     },
     "Anderes": {
@@ -60,42 +60,73 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 5,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
+        "Verordnung": 2,
         "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "15",
-          "title": "Behörden",
-          "total": 4,
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung, Aufenthalt",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 3,
-            "Gesetz": 1
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.1",
+                  "title": "Schweizer/-innen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "15",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "152",
               "title": "Regierungsrat und Verwaltung",
-              "total": 4,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 3,
-                "Gesetz": 1
+                "Gesetz": 1,
+                "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "152.0",
                   "title": "Allgemeine Organisation, Zuständigkeit, Information",
-                  "total": 4,
-                  "own": 4,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Verordnung": 3,
-                    "Gesetz": 1
+                    "Gesetz": 1,
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -182,6 +213,48 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "66",
+          "title": "Steuern und Abgaben",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "669",
+              "title": "Steuerabkommen, Doppelbesteuerung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "669.8",
+                  "title": "Grenzgänger/-innen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
       "total": 1,
@@ -222,81 +295,39 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "9",
-      "title": "Volkswirtschaft",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "92",
-          "title": "Forstwesen, Jagd, Fischerei",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "922",
-              "title": "Jagd- und Wildtierschutz",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "922.1",
-                  "title": "Allgemeines",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 5,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
         "Gesetz": 1,
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 5,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 3,
             "Gesetz": 1,
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.20.50",
               "title": "Datenschutz",
-              "total": 4,
-              "own": 4,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 3,
-                "Gesetz": 1
+                "Gesetz": 1,
+                "Verordnung": 1
               }
             },
             {
@@ -371,11 +402,10 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -408,47 +438,28 @@
               ]
             }
           ]
-        },
-        {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "7.70.20",
-              "title": "Tierschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 11,
-    "fr": 10
+    "de": 9,
+    "fr": 9
   },
   "available_years_for_entity": [
     "1562",
-    "1809",
     "1828",
     "1837",
+    "1846",
     "1851",
     "1852",
     "1859",
     "1862",
+    "1864",
     "1868",
     "1874",
-    "1875",
     "1876",
+    "1877",
     "1889",
     "1893",
     "1899",
@@ -456,42 +467,32 @@
     "1903",
     "1907",
     "1909",
-    "1910",
     "1911",
-    "1914",
-    "1916",
-    "1922",
+    "1917",
     "1923",
     "1924",
-    "1930",
     "1931",
     "1934",
     "1936",
-    "1937",
-    "1938",
     "1939",
     "1940",
+    "1942",
     "1943",
     "1944",
     "1945",
-    "1946",
-    "1947",
     "1948",
+    "1949",
     "1950",
     "1951",
     "1954",
     "1956",
     "1957",
-    "1958",
     "1959",
     "1960",
     "1961",
-    "1962",
-    "1963",
     "1964",
     "1965",
     "1966",
-    "1967",
     "1968",
     "1969",
     "1970",
@@ -501,7 +502,6 @@
     "1974",
     "1975",
     "1976",
-    "1977",
     "1978",
     "1979",
     "1980",

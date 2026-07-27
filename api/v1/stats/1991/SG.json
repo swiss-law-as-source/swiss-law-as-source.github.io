@@ -2,43 +2,41 @@
   "year": "1991",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 19,
-  "categorized": 19,
+  "total": 21,
+  "categorized": 21,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
+        "321 Kantonale Spitäler": 2,
+        "131 Kantonsrat": 1,
         "141 Allgemein": 1,
-        "171 Allgemein": 1,
-        "321 Kantonale Spitäler": 1,
+        "251 Turnen und Sport": 1,
         "325 Übrige Einrichtungen": 1,
         "381 Öffentliche Fürsorge": 1,
-        "732 Tiefbauten des Staates": 1,
-        "737 Wohnungsbau": 1
+        "732 Tiefbauten des Staates": 1
       },
       "by_global_category": {
+        "8.10.20.10 Kantonsspitäler": 2,
         "6.10.30 Staatsbeiträge, Subventionen": 2,
+        "1.20.10.20 Entschädigung der Parlamentarier": 1,
         "7.30.10 Staatliche Gebäude und Liegenschaften": 1,
-        "1.40.40 Andere Religionen": 1,
-        "8.10.20.10 Kantonsspitäler": 1,
-        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
+        "4.180.30 Sport": 1
       }
     },
     "Verordnung": {
       "total": 6,
       "by_topic": {
+        "831 Finanzhaushalt des Staates": 2,
         "217 Universität": 1,
         "321 Kantonale Spitäler": 1,
-        "351 Allgemein": 1,
-        "671 Naturschutz": 1,
-        "831 Finanzhaushalt des Staates": 1,
+        "371 Kinderzulagen": 1,
         "961 Zivilrechtspflege": 1
       },
       "by_global_category": {
-        "4.90.20 Löhne, Entschädigungen": 1,
-        "8.30.40 Ergänzungsleistungen": 1,
-        "6.10.30 Staatsbeiträge, Subventionen": 1
+        "6.10.30 Staatsbeiträge, Subventionen": 2,
+        "4.90.20 Löhne, Entschädigungen": 1
       }
     },
     "Anderes": {
@@ -49,6 +47,16 @@
       },
       "by_global_category": {
         "4.20.10 Mittelschule": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "351 Allgemein": 1,
+        "671 Naturschutz": 1
+      },
+      "by_global_category": {
+        "8.30.40 Ergänzungsleistungen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -69,15 +77,6 @@
       "by_global_category": {
         "4.90.30 Ausbildung": 1
       }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "737 Wohnungsbau": 1
-      },
-      "by_global_category": {
-        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
-      }
     }
   },
   "by_topic_tree": [
@@ -90,6 +89,26 @@
         "Anderes": 2
       },
       "children": [
+        {
+          "identifier": "13",
+          "title": "Kantonsrat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "131",
+              "title": "Kantonsrat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "14",
           "title": "Staatsverwaltung",
@@ -109,36 +128,16 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "17",
-          "title": "Staat und Kirche",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "171",
-              "title": "Allgemein",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
         }
       ]
     },
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 3,
         "Reglement": 1
       },
       "children": [
@@ -172,37 +171,58 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "25",
+          "title": "Turnen und Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "251",
+              "title": "Turnen und Sport",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
-        "Verordnung": 2
+        "Anderes": 5,
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "32",
           "title": "Einrichtungen der Gesundheitspflege",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
+            "Anderes": 3,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "321",
               "title": "Kantonale Spitäler",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 1,
-                "Anderes": 1
+                "Anderes": 2,
+                "Verordnung": 1
               }
             },
             {
@@ -222,7 +242,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -231,7 +251,27 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "37",
+          "title": "Familienschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "371",
+              "title": "Kinderzulagen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -264,7 +304,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -273,7 +313,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -282,7 +322,7 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -292,23 +332,21 @@
     {
       "identifier": "7",
       "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
-      "total": 4,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
         "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "73",
           "title": "Öffentliches Baurecht",
-          "total": 4,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
             "Interkantonale Vereinbarung": 1,
-            "Gesetz": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -320,16 +358,6 @@
                 "Interkantonale Vereinbarung": 1,
                 "Anderes": 1
               }
-            },
-            {
-              "identifier": "737",
-              "title": "Wohnungsbau",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Gesetz": 1,
-                "Anderes": 1
-              }
             }
           ]
         }
@@ -338,11 +366,11 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1,
-        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
@@ -369,19 +397,19 @@
         {
           "identifier": "83",
           "title": "Finanzhaushalt des Staates",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "831",
               "title": "Finanzhaushalt des Staates",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               }
             }
           ]
@@ -451,8 +479,8 @@
       },
       "children": [
         {
-          "identifier": "1.40",
-          "title": "Kirche und Staat",
+          "identifier": "1.20",
+          "title": "Behörden",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -460,13 +488,24 @@
           },
           "children": [
             {
-              "identifier": "1.40.40",
-              "title": "Andere Religionen",
+              "identifier": "1.20.10",
+              "title": "Parlament",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
                 "Anderes": 1
-              }
+              },
+              "children": [
+                {
+                  "identifier": "1.20.10.20",
+                  "title": "Entschädigung der Parlamentarier",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -475,10 +514,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 3,
         "Reglement": 1
       },
       "children": [
@@ -531,38 +570,58 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.30",
+              "title": "Sport",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Verordnung": 1,
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Anderes": 2,
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
-              "total": 3,
-              "own": 3,
+              "total": 4,
+              "own": 4,
               "by_type": {
                 "Anderes": 2,
-                "Verordnung": 1
+                "Verordnung": 2
               }
             }
           ]
@@ -623,39 +682,38 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "8.10.20",
               "title": "Kranken- und Pflegeanstalten",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 2
               },
               "children": [
                 {
                   "identifier": "8.10.20.10",
                   "title": "Kantonsspitäler",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 2
                   }
                 }
               ]
@@ -668,7 +726,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -677,29 +735,7 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "8.40",
-          "title": "Wohnverhältnisse",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1,
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "8.40.10",
-              "title": "Eigentums- und Wohnungsbauförderung",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Gesetz": 1,
-                "Anderes": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -708,46 +744,38 @@
     }
   ],
   "languages_available": {
-    "de": 19
+    "de": 21
   },
   "available_years_for_entity": [
     "1845",
     "1870",
-    "1883",
-    "1884",
-    "1885",
     "1890",
     "1899",
     "1901",
-    "1902",
     "1903",
-    "1906",
-    "1907",
-    "1910",
     "1911",
+    "1912",
     "1914",
-    "1918",
     "1919",
-    "1926",
-    "1930",
-    "1931",
+    "1923",
+    "1929",
+    "1933",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1946",
     "1947",
     "1948",
     "1949",
-    "1950",
     "1951",
     "1952",
     "1953",
     "1955",
-    "1956",
     "1957",
     "1958",
     "1959",
@@ -816,7 +844,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

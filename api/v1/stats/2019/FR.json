@@ -2,10 +2,52 @@
   "year": "2019",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 7,
-  "categorized": 7,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 10,
+      "by_topic": {
+        "631 Kantonssteuern": 2,
+        "122.70 Allgemeine Bestimmungen": 1,
+        "140 Allgemeine Bestimmungen": 1,
+        "184 E-GOVERNMENT": 1,
+        "411.0 Allgemeine Bestimmungen": 1,
+        "550 Allgemeine Bestimmungen": 1,
+        "551 Kantonspolizei": 1,
+        "710 Allgemeine Bestimmungen": 1,
+        "813 Luftreinhaltung": 1
+      },
+      "by_global_category": {
+        "1.30.10 Gemeindefinanzen": 1,
+        "1.20.60.10 E-Government": 1,
+        "4.10.20 Kindergarten": 1,
+        "5.30.10.30 Personal": 1,
+        "6.20.30 Liegenschaftssteuern": 1,
+        "7.10.10 Pläne": 1
+      }
+    },
+    "Reglement": {
+      "total": 7,
+      "by_topic": {
+        "122.3 Oberamtmänner": 1,
+        "122.91 Öffentliches Beschaffungswesen": 1,
+        "17 DATENSCHUTZ - INFORMATION DER ÖFFENTLICHKEIT - ARCHIVIERUNG": 1,
+        "411.5 Sonderschulen": 1,
+        "433 Pädagogische Hochschule": 1,
+        "770 Allgemeine Bestimmungen": 1,
+        "834.1 Heime für Behinderte und Schwererziehbare": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.40 Regierungsstatthalter, Oberamtmann": 1,
+        "7.30.40 Submission": 1,
+        "4.170.20 Archive": 1,
+        "4.80.10 Sonderschulen": 1,
+        "4.50.10 Pädagogik": 1,
+        "2.10.20.20 Pflegekinder, Adoption": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 4,
       "by_topic": {
@@ -19,22 +61,13 @@
         "5.30.10.50 Polizeiliche Zusammenarbeit": 1
       }
     },
-    "Reglement": {
-      "total": 2,
-      "by_topic": {
-        "122.91 Öffentliches Beschaffungswesen": 2
-      },
-      "by_global_category": {
-        "7.30.40 Submission": 2
-      }
-    },
-    "Verordnung": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "710 Allgemeine Bestimmungen": 1
+        "900 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
-        "7.10.10 Pläne": 1
+        "9.10 Wirtschaftsförderung": 1
       }
     }
   },
@@ -42,11 +75,13 @@
     {
       "identifier": "1",
       "title": "STAAT - VOLK - BEHÖRDEN",
-      "total": 4,
+      "total": 8,
       "own": 0,
       "by_type": {
+        "Reglement": 3,
         "Interkantonale Vereinbarung": 2,
-        "Reglement": 2
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
@@ -72,40 +107,71 @@
         {
           "identifier": "12",
           "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Reglement": 2,
+            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "122",
               "title": "Staatsrat und Verwaltung",
-              "total": 3,
+              "total": 4,
               "own": 0,
               "by_type": {
                 "Reglement": 2,
+                "Verordnung": 1,
                 "Interkantonale Vereinbarung": 1
               },
               "children": [
                 {
-                  "identifier": "122.9",
-                  "title": "Regeln über die Amtsführung",
-                  "total": 3,
+                  "identifier": "122.3",
+                  "title": "Oberamtmänner",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                },
+                {
+                  "identifier": "122.7",
+                  "title": "Staatspersonal",
+                  "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Reglement": 2,
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "122.70",
+                      "title": "Allgemeine Bestimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "122.9",
+                  "title": "Regeln über die Amtsführung",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1,
                     "Interkantonale Vereinbarung": 1
                   },
                   "children": [
                     {
                       "identifier": "122.91",
                       "title": "Öffentliches Beschaffungswesen",
-                      "total": 3,
-                      "own": 3,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
-                        "Reglement": 2,
+                        "Reglement": 1,
                         "Interkantonale Vereinbarung": 1
                       }
                     }
@@ -114,27 +180,170 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "14",
+          "title": "GEMEINDEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "140",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "17",
+          "title": "DATENSCHUTZ - INFORMATION DER ÖFFENTLICHKEIT - ARCHIVIERUNG",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        },
+        {
+          "identifier": "18",
+          "title": "VERSCHIEDENE BESTIMMUNGEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "184",
+              "title": "E-GOVERNMENT",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "BILDUNG - KULTUR - SPORT",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Reglement": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "SCHULE",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Kindergarten – Primarschule – Orientierungsschule",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "411.0",
+                  "title": "Allgemeine Bestimmungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "411.5",
+                  "title": "Sonderschulen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "43",
+          "title": "HOCHSCHULEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "433",
+              "title": "Pädagogische Hochschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "5",
       "title": "LANDESVERTEIDIGUNG - POLIZEI",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "55",
           "title": "POLIZEI",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "550",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "551",
+              "title": "Kantonspolizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "559",
               "title": "Interkantonale Zusammenarbeit",
@@ -149,12 +358,44 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
-      "total": 1,
+      "identifier": "6",
+      "title": "FINANZEN",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "63",
+          "title": "STEUERN",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "631",
+              "title": "Kantonssteuern",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -176,18 +417,122 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "77",
+          "title": "ENERGIE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "770",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "UMWELTSCHUTZ",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "813",
+              "title": "Luftreinhaltung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "SOZIALHILFE UND SOZIALVORSORGE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "834",
+              "title": "Spezialisierte Anstalten und Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "834.1",
+                  "title": "Heime für Behinderte und Schwererziehbare",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "9",
       "title": "WIRTSCHAFT",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "90",
+          "title": "WIRTSCHAFTLICHE ENTWICKLUNG",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "900",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "95",
           "title": "DIENSTLEISTUNGSGEWERBE",
@@ -213,32 +558,274 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Verordnung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.40",
+                      "title": "Regierungsstatthalter, Oberamtmann",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.60",
+              "title": "Informatik",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.60.10",
+                  "title": "E-Government",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.20",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.20.20",
+                  "title": "Pflegekinder, Adoption",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Reglement": 3,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.20",
+              "title": "Kindergarten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.50.10",
+              "title": "Pädagogik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.80.10",
+              "title": "Sonderschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.20",
+              "title": "Archive",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "5.30",
           "title": "Innere Sicherheit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "5.30.10",
               "title": "Polizei",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Verordnung": 1,
                 "Interkantonale Vereinbarung": 1
               },
               "children": [
+                {
+                  "identifier": "5.30.10.30",
+                  "title": "Personal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
                 {
                   "identifier": "5.30.10.50",
                   "title": "Polizeiliche Zusammenarbeit",
@@ -255,13 +842,44 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 4,
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.30",
+              "title": "Liegenschaftssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 3,
+      "own": 0,
+      "by_type": {
         "Verordnung": 1,
+        "Reglement": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -288,34 +906,53 @@
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 2,
+            "Reglement": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "7.30.40",
               "title": "Submission",
-              "total": 3,
-              "own": 3,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Reglement": 2,
+                "Reglement": 1,
                 "Interkantonale Vereinbarung": 1
               }
             }
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "9.10",
+          "title": "Wirtschaftsförderung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 7,
-    "fr": 7
+    "de": 22,
+    "fr": 22
   },
   "available_years_for_entity": [
-    "1804",
     "1808",
     "1825",
     "1831",
@@ -326,44 +963,33 @@
     "1848",
     "1850",
     "1852",
-    "1857",
     "1859",
     "1866",
     "1867",
     "1868",
     "1873",
-    "1874",
     "1875",
     "1879",
-    "1884",
+    "1880",
     "1889",
     "1893",
     "1899",
-    "1907",
     "1909",
-    "1910",
-    "1911",
     "1913",
-    "1914",
-    "1916",
     "1917",
     "1918",
     "1920",
     "1921",
     "1922",
-    "1923",
     "1924",
-    "1925",
     "1926",
-    "1927",
+    "1928",
     "1929",
     "1930",
     "1931",
     "1934",
     "1935",
-    "1937",
     "1938",
-    "1939",
     "1942",
     "1943",
     "1946",
@@ -442,7 +1068,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

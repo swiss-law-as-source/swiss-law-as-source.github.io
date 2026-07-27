@@ -2,22 +2,26 @@
   "year": "1981",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 10,
-  "categorized": 10,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 4,
+      "total": 6,
       "by_topic": {
         "145.3 Organisation und Zuständigkeit der Rechtspflegebehörden": 1,
+        "233 Rechtskosten": 1,
         "326 Internationale Rechtshilfe": 1,
-        "822.2 Heimarbeit": 1,
-        "955.3 Lotterien, Spiele, Wetten": 1
+        "742 Gewässerunterhalt und Verbauung": 1,
+        "955.3 Lotterien, Spiele, Wetten": 1,
+        "956.3 Ausübung des Handels": 1
       },
       "by_global_category": {
         "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
+        "1.20.70.50 Gerichtskosten, Gerichtsgebühren": 1,
         "3.20.50 Rechtshilfe": 1,
-        "8.20.40 Heimarbeit": 1
+        "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1,
+        "5.30.40 Sprengstoffe": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -33,15 +37,18 @@
       }
     },
     "Verordnung": {
-      "total": 3,
+      "total": 1,
       "by_topic": {
-        "955.3 Lotterien, Spiele, Wetten": 2,
-        "811 Allgemeine Bestimmungen, medizinische und andere Berufe im Gesundheitswesen": 1
+        "325 Untersuchungsgefängnis": 1
       },
-      "by_global_category": {
-        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
-        "9.50.10.60.30 Spielbanken": 1
-      }
+      "by_global_category": {}
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "955.3 Lotterien, Spiele, Wetten": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
@@ -88,8 +95,8 @@
       ]
     },
     {
-      "identifier": "3",
-      "title": "Strafrecht, Strafrechtspflege, Strafvollzug",
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -97,14 +104,56 @@
       },
       "children": [
         {
-          "identifier": "32",
-          "title": "Strafverfahren",
+          "identifier": "23",
+          "title": "Zivilrechtspflege",
           "total": 1,
           "own": 0,
           "by_type": {
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
+            {
+              "identifier": "233",
+              "title": "Rechtskosten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht, Strafrechtspflege, Strafvollzug",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "32",
+          "title": "Strafverfahren",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "325",
+              "title": "Untersuchungsgefängnis",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "326",
               "title": "Internationale Rechtshilfe",
@@ -192,35 +241,54 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 3,
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Interkantonale Vereinbarung": 1,
         "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "74",
+          "title": "Wasserbau und Wasserwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "742",
+              "title": "Gewässerunterhalt und Verbauung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
-            {
-              "identifier": "811",
-              "title": "Allgemeine Bestimmungen, medizinische und andere Berufe im Gesundheitswesen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
             {
               "identifier": "812",
               "title": "Spitalwesen, Krankenpflege",
@@ -242,37 +310,6 @@
               ]
             }
           ]
-        },
-        {
-          "identifier": "82",
-          "title": "Arbeit",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          },
-          "children": [
-            {
-              "identifier": "822",
-              "title": "Arbeitnehmerschutz",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              },
-              "children": [
-                {
-                  "identifier": "822.2",
-                  "title": "Heimarbeit",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -282,8 +319,8 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -292,27 +329,47 @@
           "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2,
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung des Parlaments (Dekret)": 2,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "955",
               "title": "Dienstleistungsgewerbe",
-              "total": 3,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 2,
+                "Gesetz": 1,
                 "Verordnung des Parlaments (Dekret)": 1
               },
               "children": [
                 {
                   "identifier": "955.3",
                   "title": "Lotterien, Spiele, Wetten",
-                  "total": 3,
-                  "own": 3,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Verordnung": 2,
+                    "Gesetz": 1,
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "956",
+              "title": "Handel",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "956.3",
+                  "title": "Ausübung des Handels",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
                     "Verordnung des Parlaments (Dekret)": 1
                   }
                 }
@@ -327,19 +384,19 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung des Parlaments (Dekret)": 2
           },
           "children": [
             {
@@ -354,6 +411,26 @@
                 {
                   "identifier": "1.20.20.50",
                   "title": "Verwaltungsverfahren, Verwaltungsrechtspflege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.50",
+                  "title": "Gerichtskosten, Gerichtsgebühren",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -400,11 +477,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Verordnung": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -426,23 +502,34 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
         {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
-              "identifier": "4.120.90",
-              "title": "Gesundheitspflege, schulpsychologische Dienste",
+              "identifier": "5.30.40",
+              "title": "Sprengstoffe",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -492,8 +579,8 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -501,8 +588,8 @@
       },
       "children": [
         {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -510,64 +597,22 @@
           },
           "children": [
             {
-              "identifier": "8.20.40",
-              "title": "Heimarbeit",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "9.50",
-          "title": "Gewerbe",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "9.50.10",
-              "title": "Dienstleistungen",
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung des Parlaments (Dekret)": 1
               },
               "children": [
                 {
-                  "identifier": "9.50.10.60",
-                  "title": "Glücksspiel und Lotterien",
+                  "identifier": "7.30.20.10",
+                  "title": "Gewässerkorrekturen / Hochwasserschutz",
                   "total": 1,
-                  "own": 0,
+                  "own": 1,
                   "by_type": {
-                    "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "9.50.10.60.30",
-                      "title": "Spielbanken",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung": 1
-                      }
-                    }
-                  ]
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
                 }
               ]
             }
@@ -577,45 +622,38 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 11
   },
   "available_years_for_entity": [
     "1881",
     "1882",
     "1883",
-    "1889",
     "1896",
     "1900",
     "1902",
-    "1907",
-    "1908",
-    "1911",
     "1912",
     "1913",
     "1914",
-    "1916",
     "1917",
-    "1923",
+    "1920",
     "1924",
     "1925",
-    "1928",
-    "1929",
-    "1930",
     "1931",
     "1932",
-    "1937",
     "1940",
     "1941",
-    "1946",
+    "1942",
+    "1947",
     "1948",
     "1949",
     "1951",
     "1952",
+    "1953",
     "1955",
-    "1956",
     "1957",
-    "1958",
     "1959",
+    "1960",
+    "1962",
     "1963",
     "1964",
     "1965",
@@ -624,7 +662,6 @@
     "1969",
     "1970",
     "1971",
-    "1972",
     "1973",
     "1974",
     "1975",
@@ -677,7 +714,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

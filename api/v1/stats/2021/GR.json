@@ -2,31 +2,40 @@
   "year": "2021",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 11,
-  "categorized": 11,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 11,
+      "total": 4,
       "by_topic": {
-        "173 Gerichtsbehörden": 2,
+        "35 Strafrechtspflege": 2,
         "15 Politische Rechte": 1,
-        "425 Mittelschule": 1,
-        "44 Förderung Behinderter": 1,
-        "544 Alters- und Hinterlassenenversicherung, Invalidenversicherung": 1,
-        "73 Finanzausgleich": 1,
-        "92 Forstwirtschaft": 1,
-        "932 Wirtschaftsförderung": 1,
-        "935 Gewerbepolizei": 1,
-        "96 Förderung digitale Transformation": 1
+        "215 Kindes- und Erwachsenenschutz": 1
       },
       "by_global_category": {
-        "9.10 Wirtschaftsförderung": 2,
         "1.20.10.10 Wahl des Parlaments": 1,
-        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
-        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
-        "8.30.40 Ergänzungsleistungen": 1,
-        "1.30.10 Gemeindefinanzen": 1
+        "2.10.20.10 Vormundschaft": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "15 Politische Rechte": 1,
+        "803 Enteignungen, Perimeter, Beschaffungen": 1
+      },
+      "by_global_category": {
+        "1.20.10.10 Wahl des Parlaments": 1,
+        "7.30.40 Submission": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "170 Politische Behörden und Mitarbeitende": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
       }
     }
   },
@@ -37,35 +46,37 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Verordnung": 1
+        "Gesetz": 1,
+        "Verordnung": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "15",
           "title": "Politische Rechte",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1
           }
         },
         {
           "identifier": "17",
           "title": "Organisation des Kantons",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Reglement": 1
           },
           "children": [
             {
-              "identifier": "173",
-              "title": "Gerichtsbehörden",
-              "total": 2,
-              "own": 2,
+              "identifier": "170",
+              "title": "Politische Behörden und Mitarbeitende",
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 2
+                "Reglement": 1
               }
             }
           ]
@@ -73,8 +84,39 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
+      "identifier": "2",
+      "title": "Zivilrecht, Vollstreckung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "215",
+              "title": "Kindes- und Erwachsenenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Rechtspflege",
       "total": 2,
       "own": 0,
       "by_type": {
@@ -82,142 +124,44 @@
       },
       "children": [
         {
-          "identifier": "42",
-          "title": "Erziehung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "425",
-              "title": "Mittelschule",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "44",
-          "title": "Förderung Behinderter",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "54",
-          "title": "Sozialversicherung, Arbeitsvermittlung, Öffentliche Sozialhilfe, Familienschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "544",
-              "title": "Alters- und Hinterlassenenversicherung, Invalidenversicherung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Finanzwesen, Regalien",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "73",
-          "title": "Finanzausgleich",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Volkswirtschaft",
-      "total": 4,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 4
-      },
-      "children": [
-        {
-          "identifier": "92",
-          "title": "Forstwirtschaft",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        },
-        {
-          "identifier": "93",
-          "title": "Wirtschaftsförderung, Handel, Industrie, Gewerbe",
+          "identifier": "35",
+          "title": "Strafrechtspflege",
           "total": 2,
-          "own": 0,
+          "own": 2,
           "by_type": {
             "Verordnung": 2
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Planung, Bau, Wasserwirtschaft, Gewässerschutz, Umweltschutz, Gebäude- und Elementarschadenversicherung, Schätzungen, Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "80",
+          "title": "Planung, Bau",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "932",
-              "title": "Wirtschaftsförderung",
+              "identifier": "803",
+              "title": "Enteignungen, Perimeter, Beschaffungen",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "935",
-              "title": "Gewerbepolizei",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               }
             }
           ]
-        },
-        {
-          "identifier": "96",
-          "title": "Förderung digitale Transformation",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
         }
       ]
     }
@@ -229,65 +173,69 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Anderes": 1
+        "Gesetz": 1,
+        "Verordnung": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1,
-            "Anderes": 1
+            "Reglement": 1
           },
           "children": [
             {
               "identifier": "1.20.10",
               "title": "Parlament",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "1.20.10.10",
                   "title": "Wahl des Parlaments",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Gesetz": 1,
                     "Verordnung": 1
                   }
                 }
               ]
             },
             {
-              "identifier": "1.20.70",
-              "title": "Gerichtsorganisation",
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Reglement": 1
               },
               "children": [
                 {
-                  "identifier": "1.20.70.10",
-                  "title": "Gerichtsbehörden",
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
                   "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 1
+                    "Reglement": 1
                   },
                   "children": [
                     {
-                      "identifier": "1.20.70.10.30",
-                      "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
                       "total": 1,
                       "own": 1,
                       "by_type": {
-                        "Anderes": 1
+                        "Reglement": 1
                       }
                     }
                   ]
@@ -295,32 +243,12 @@
               ]
             }
           ]
-        },
-        {
-          "identifier": "1.30",
-          "title": "Gemeinden",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "1.30.10",
-              "title": "Gemeindefinanzen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
         }
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "identifier": "2",
+      "title": "Zivilrecht",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -328,8 +256,8 @@
       },
       "children": [
         {
-          "identifier": "4.20",
-          "title": "Sekundarstufe II",
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -337,88 +265,75 @@
           },
           "children": [
             {
-              "identifier": "4.20.20",
-              "title": "Fachmittelschulen, Diplommittelschulen",
+              "identifier": "2.10.20",
+              "title": "Familienrecht",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
                 "Verordnung": 1
-              }
+              },
+              "children": [
+                {
+                  "identifier": "2.10.20.10",
+                  "title": "Vormundschaft",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "8.30.40",
-              "title": "Ergänzungsleistungen",
+              "identifier": "7.30.40",
+              "title": "Submission",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 1
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 2
-      },
-      "children": [
-        {
-          "identifier": "9.10",
-          "title": "Wirtschaftsförderung",
-          "total": 2,
-          "own": 2,
-          "by_type": {
-            "Verordnung": 2
-          }
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 11,
-    "it": 11
+    "de": 7,
+    "it": 7
   },
   "available_years_for_entity": [
-    "1846",
     "1877",
     "1901",
     "1908",
     "1913",
-    "1916",
     "1917",
-    "1922",
+    "1918",
     "1923",
     "1925",
     "1927",
-    "1929",
-    "1932",
     "1936",
     "1937",
     "1943",
@@ -428,7 +343,6 @@
     "1951",
     "1952",
     "1953",
-    "1954",
     "1955",
     "1956",
     "1957",
@@ -499,8 +413,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

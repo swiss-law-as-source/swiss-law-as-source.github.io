@@ -2,30 +2,32 @@
   "year": "1974",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 7,
-  "categorized": 7,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "35 Strafrechtspflege": 2,
-        "47 Turnen und Sport": 1
+        "47 Turnen und Sport": 2
       },
       "by_global_category": {
-        "3.60.10 Leumundszeugnisse": 1,
-        "3.20.60 Kosten": 1,
-        "4.180.30 Sport": 1
+        "4.180.30 Sport": 2,
+        "1.20.70.10.10.20 Staatsanwaltschaft": 1,
+        "3.20.60 Kosten": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "35 Strafrechtspflege": 2
+        "35 Strafrechtspflege": 2,
+        "78 Salzregal": 1
       },
       "by_global_category": {
         "3.20.20 Gerichtsmedizin": 1,
-        "3.20.60 Kosten": 1
+        "3.20.60 Kosten": 1,
+        "6.30.30 Salzregal": 1
       }
     },
     "Anderes": {
@@ -35,6 +37,15 @@
       },
       "by_global_category": {
         "2.50.20 Rechtshilfe": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "425 Mittelschule": 1
+      },
+      "by_global_category": {
+        "4.20.10 Mittelschule": 1
       }
     },
     "Gesetz": {
@@ -54,8 +65,8 @@
       "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 2,
         "Verordnung": 2,
+        "Verordnung des Parlaments (Dekret)": 2,
         "Anderes": 1
       },
       "children": [
@@ -74,8 +85,8 @@
           "total": 4,
           "own": 4,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 2,
-            "Verordnung": 2
+            "Verordnung": 2,
+            "Verordnung des Parlaments (Dekret)": 2
           }
         }
       ]
@@ -83,20 +94,41 @@
     {
       "identifier": "4",
       "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 2,
+        "Reglement": 1,
         "Gesetz": 1
       },
       "children": [
         {
+          "identifier": "42",
+          "title": "Erziehung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "425",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "47",
           "title": "Turnen und Sport",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           }
         },
         {
@@ -120,9 +152,93 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Finanzwesen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "78",
+          "title": "Salzregal",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.10",
+                      "title": "Untersuchungs- und Anklagebehörden",
+                      "total": 1,
+                      "own": 0,
+                      "by_type": {
+                        "Verordnung": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "1.20.70.10.10.20",
+                          "title": "Staatsanwaltschaft",
+                          "total": 1,
+                          "own": 1,
+                          "by_type": {
+                            "Verordnung": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht",
@@ -157,11 +273,11 @@
     {
       "identifier": "3",
       "title": "Strafrecht",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Verordnung des Parlaments (Dekret)": 2,
-        "Verordnung": 2
+        "Verordnung": 1
       },
       "children": [
         {
@@ -194,23 +310,55 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Reglement": 1
+      },
+      "children": [
         {
-          "identifier": "3.60",
-          "title": "Strafregister",
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Reglement": 1
           },
           "children": [
             {
-              "identifier": "3.60.10",
-              "title": "Leumundszeugnisse",
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "4.180.30",
+              "title": "Sport",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
               }
             }
           ]
@@ -218,30 +366,30 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
-          "identifier": "4.180",
-          "title": "Kunst, Kultur, Sport",
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
-              "identifier": "4.180.30",
-              "title": "Sport",
+              "identifier": "6.30.30",
+              "title": "Salzregal",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -281,23 +429,19 @@
     }
   ],
   "languages_available": {
-    "de": 7,
-    "it": 7
+    "de": 10,
+    "it": 10
   },
   "available_years_for_entity": [
-    "1846",
     "1877",
     "1901",
     "1908",
     "1913",
-    "1916",
     "1917",
-    "1922",
+    "1918",
     "1923",
     "1925",
     "1927",
-    "1929",
-    "1932",
     "1936",
     "1937",
     "1943",
@@ -307,7 +451,6 @@
     "1951",
     "1952",
     "1953",
-    "1954",
     "1955",
     "1956",
     "1957",
@@ -378,10 +521,10 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
+    "AG",
     "AI",
     "AR",
     "BE",
@@ -405,6 +548,7 @@
     "TI",
     "UR",
     "VD",
+    "VS",
     "ZG",
     "ZH"
   ]

@@ -2,10 +2,38 @@
   "year": "2004",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 12,
-  "categorized": 12,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 13,
+      "by_topic": {
+        "145 Sicherheitsdirektion": 2,
+        "640 Allgemeines": 2,
+        "157 Personalrecht II": 1,
+        "17 Gerichte, Verwaltungsverfahren und Anwaltsrecht": 1,
+        "36 Staatsbeiträge": 1,
+        "37 Banken": 1,
+        "49 Energie": 1,
+        "645 Besondere Dienste": 1,
+        "78 Umweltschutz": 1,
+        "837 Arbeitslosenversicherung": 1,
+        "93 Spitäler": 1
+      },
+      "by_global_category": {
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
+        "4.160 Wissenschaft, Forschung": 1,
+        "6.40.10 Kantonalbanken": 1,
+        "7.50.40 Rohrleitungen": 1,
+        "4.80.20 Hochbegabtenförderung": 1,
+        "4.80.50 Logopädie": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "7.60.80 Umweltgefährdende Stoffe": 1,
+        "8.30.110 Arbeitslosenversicherung": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 5,
       "by_topic": {
@@ -20,35 +48,15 @@
         "8.10.30.30 Krankenpflegepersonal": 1
       }
     },
-    "Verordnung": {
-      "total": 3,
-      "by_topic": {
-        "36 Staatsbeiträge": 2,
-        "37 Banken": 1
-      },
-      "by_global_category": {
-        "4.180.30 Sport": 1,
-        "4.160 Wissenschaft, Forschung": 1,
-        "6.40.10 Kantonalbanken": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
+    "Gesetz": {
       "total": 2,
       "by_topic": {
-        "211 Vollzugserlasse zum ZGB": 1,
-        "37 Banken": 1
+        "37 Banken": 1,
+        "44 Gewässer": 1
       },
       "by_global_category": {
-        "6.40.10 Kantonalbanken": 1
-      }
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "640 Allgemeines": 1
-      },
-      "by_global_category": {
-        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
+        "6.40.10 Kantonalbanken": 1,
+        "7.30.20.20 Gewässernutzung": 1
       }
     },
     "Anderes": {
@@ -59,27 +67,47 @@
       "by_global_category": {
         "7.60.20 Gewässerschutz": 1
       }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "834 Berufliche Vorsorge": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Verordnung": 4,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "145",
+              "title": "Sicherheitsdirektion",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            },
             {
               "identifier": "149",
               "title": "Interkantonale Vereinbarungen",
@@ -90,57 +118,55 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "21",
-          "title": "Zivilrecht",
+          "identifier": "15",
+          "title": "Personalrecht I",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "211",
-              "title": "Vollzugserlasse zum ZGB",
+              "identifier": "157",
+              "title": "Personalrecht II",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Verordnung": 1
               }
             }
           ]
+        },
+        {
+          "identifier": "17",
+          "title": "Gerichte, Verwaltungsverfahren und Anwaltsrecht",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
         }
       ]
     },
     {
       "identifier": "3",
       "title": "Finanzen",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "36",
           "title": "Staatsbeiträge",
-          "total": 2,
-          "own": 2,
+          "total": 1,
+          "own": 1,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 1
           }
         },
         {
@@ -149,7 +175,37 @@
           "total": 2,
           "own": 2,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1,
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "44",
+          "title": "Gewässer",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "49",
+          "title": "Energie",
+          "total": 1,
+          "own": 1,
+          "by_type": {
             "Verordnung": 1
           }
         }
@@ -158,30 +214,39 @@
     {
       "identifier": "6",
       "title": "Kultur, Bildung, Ausbildung",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 3,
-        "Reglement": 1
+        "Verordnung": 3,
+        "Interkantonale Vereinbarung": 3
       },
       "children": [
         {
           "identifier": "64",
           "title": "Schulen",
-          "total": 3,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2,
-            "Reglement": 1
+            "Verordnung": 3,
+            "Interkantonale Vereinbarung": 2
           },
           "children": [
             {
               "identifier": "640",
               "title": "Allgemeines",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            },
+            {
+              "identifier": "645",
+              "title": "Besondere Dienste",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Verordnung": 1
               }
             },
             {
@@ -220,38 +285,84 @@
     {
       "identifier": "7",
       "title": "Öffentliche Sicherheit, Umweltschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "78",
           "title": "Umweltschutz",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1
           }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherungen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "834",
+              "title": "Berufliche Vorsorge",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            },
+            {
+              "identifier": "837",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "9",
       "title": "Gesundheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "93",
           "title": "Spitäler",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           }
         }
@@ -262,10 +373,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -287,36 +400,97 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2,
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung des Parlaments (Dekret)": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.50",
+                  "title": "Verwaltungsverfahren, Verwaltungsrechtspflege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Reglement": 1,
+        "Verordnung": 4,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
-          "identifier": "4.20",
-          "title": "Sekundarstufe II",
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "4.20.20",
-              "title": "Fachmittelschulen, Diplommittelschulen",
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -324,9 +498,10 @@
         {
           "identifier": "4.80",
           "title": "Sonderpädagogik",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
@@ -337,6 +512,24 @@
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "4.80.20",
+              "title": "Hochbegabtenförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "4.80.50",
+              "title": "Logopädie",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -349,26 +542,6 @@
           "by_type": {
             "Verordnung": 1
           }
-        },
-        {
-          "identifier": "4.180",
-          "title": "Kunst, Kultur, Sport",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.180.30",
-              "title": "Sport",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
         }
       ]
     },
@@ -378,8 +551,8 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -388,8 +561,8 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1,
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -398,8 +571,8 @@
               "total": 2,
               "own": 2,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1,
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Gesetz": 1
               }
             }
           ]
@@ -409,19 +582,73 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.20.20",
+                  "title": "Gewässernutzung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.40",
+              "title": "Rohrleitungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -432,6 +659,15 @@
               "by_type": {
                 "Anderes": 1
               }
+            },
+            {
+              "identifier": "7.60.80",
+              "title": "Umweltgefährdende Stoffe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -440,10 +676,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -476,53 +713,64 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 22
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -533,12 +781,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

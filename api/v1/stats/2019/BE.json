@@ -6,6 +6,24 @@
   "categorized": 22,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 9,
+      "by_topic": {
+        "551 Allgemeines": 2,
+        "153.0 Dienstverhältnis, Gehalt": 1,
+        "410.1 Allgemeines": 1,
+        "414.1 Ausbildung": 1,
+        "432.21 Allgemeines": 1,
+        "815.2 Krebseerkrankungen": 1,
+        "860 Allgemeines": 1
+      },
+      "by_global_category": {
+        "4.40.20 Theologische Fakultät": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "5.30.60 Sicherheitsunternehmen": 1,
+        "8.70.10 Sozialhilfe": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 8,
       "by_topic": {
@@ -21,57 +39,42 @@
         "7.30.40 Submission": 1
       }
     },
-    "Verordnung": {
-      "total": 6,
+    "Gesetz": {
+      "total": 3,
       "by_topic": {
-        "551 Allgemeines": 2,
-        "861 Sozialhilfe im Asyl- und Flüchtlingsbereich": 2,
         "122.2 Ausländer/-innen": 1,
-        "521 Bevölkerungsschutz": 1
+        "551 Allgemeines": 1,
+        "861 Sozialhilfe im Asyl- und Flüchtlingsbereich": 1
       },
       "by_global_category": {
         "1.10.70.20.10 Asylwesen": 2
       }
     },
-    "Gesetz": {
-      "total": 4,
-      "by_topic": {
-        "521 Bevölkerungsschutz": 1,
-        "522 Zivilschutz": 1,
-        "731 Allgemeines": 1
-      },
-      "by_global_category": {
-        "7.30.40 Submission": 1
-      }
-    },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 3,
-      "by_topic": {
-        "945 Interkantonale Vereinbarungen": 2,
-        "559 Interkantonale Vereinbarungen": 1
-      },
-      "by_global_category": {
-        "5.30.10.50 Polizeiliche Zusammenarbeit": 1
-      }
-    },
-    "Reglement": {
       "total": 1,
       "by_topic": {
-        "916.14 Rebbau": 1
+        "152.0 Allgemeine Organisation, Zuständigkeit, Information": 1
       },
-      "by_global_category": {
-        "9.20.80.10 Rebbau": 1
-      }
+      "by_global_category": {}
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "222.153.2 Normalarbeitsvertrag": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Verordnung": 1
       },
       "children": [
@@ -112,7 +115,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -121,12 +124,64 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
                   "identifier": "122.2",
                   "title": "Ausländer/-innen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "15",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "152",
+              "title": "Regierungsrat und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "152.0",
+                  "title": "Allgemeine Organisation, Zuständigkeit, Information",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "153",
+              "title": "Dienstrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "153.0",
+                  "title": "Dienstverhältnis, Gehalt",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -140,48 +195,173 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Landesverteidigung, Polizei",
-      "total": 8,
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
-        "Gesetz": 2,
-        "Interkantonale Vereinbarung": 2,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "52",
-          "title": "Gesamtverteidigung und Katastrophenhilfe",
-          "total": 3,
+          "identifier": "22",
+          "title": "Ergänzungs- und Ausführungserlasse zum OR",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 2,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "222",
+              "title": "Einzelne Vertragsverhältnisse",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "222.15",
+                  "title": "Arbeitsvertrag",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "222.153.2",
+                      "title": "Normalarbeitsvertrag",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Kirche",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "410",
+              "title": "Organisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "410.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "414",
+              "title": "Geistliche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.1",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "43",
+          "title": "Ausbildung und Wissenschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
             "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "521",
-              "title": "Bevölkerungsschutz",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "522",
-              "title": "Zivilschutz",
+              "identifier": "432",
+              "title": "Volksschule",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Gesetz": 1
-              }
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "432.2",
+                  "title": "Volksschule",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "432.21",
+                      "title": "Allgemeines",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 2,
+        "Gesetz": 1
+      },
+      "children": [
         {
           "identifier": "55",
           "title": "Polizei",
@@ -190,26 +370,26 @@
           "by_type": {
             "Verordnung": 2,
             "Interkantonale Vereinbarung": 2,
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "551",
               "title": "Allgemeines",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 2,
+                "Gesetz": 1
               }
             },
             {
               "identifier": "559",
               "title": "Interkantonale Vereinbarungen",
-              "total": 3,
-              "own": 3,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Interkantonale Vereinbarung": 2,
-                "Anderes": 1
+                "Interkantonale Vereinbarung": 2
               }
             }
           ]
@@ -219,31 +399,28 @@
     {
       "identifier": "7",
       "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "73",
           "title": "Öffentliche Werke",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
-            "Gesetz": 1
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "731",
               "title": "Allgemeines",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1,
-                "Gesetz": 1
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -253,28 +430,70 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "815",
+              "title": "Krankheitsbekämpfung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "815.2",
+                  "title": "Krebseerkrankungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "86",
           "title": "Sozialhilfe",
           "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
+              "identifier": "860",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
               "identifier": "861",
               "title": "Sozialhilfe im Asyl- und Flüchtlingsbereich",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Verordnung": 2
+                "Gesetz": 1
               }
             }
           ]
@@ -284,74 +503,28 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 5,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
-        "Anderes": 2,
-        "Reglement": 1
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
-          "identifier": "91",
-          "title": "Landwirtschaft",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "916",
-              "title": "Produktion und Absatz",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "916.1",
-                  "title": "Pflanzenbau",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Reglement": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "916.14",
-                      "title": "Rebbau",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Reglement": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
           "identifier": "94",
           "title": "Handel",
-          "total": 4,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2,
-            "Anderes": 2
+            "Interkantonale Vereinbarung": 2
           },
           "children": [
             {
               "identifier": "945",
               "title": "Interkantonale Vereinbarungen",
-              "total": 4,
-              "own": 4,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Interkantonale Vereinbarung": 2,
-                "Anderes": 2
+                "Interkantonale Vereinbarung": 2
               }
             }
           ]
@@ -366,7 +539,7 @@
       "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Gesetz": 2,
         "Interkantonale Vereinbarung": 2
       },
       "children": [
@@ -376,7 +549,7 @@
           "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2,
+            "Gesetz": 2,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
@@ -406,7 +579,7 @@
               "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 2
+                "Gesetz": 2
               },
               "children": [
                 {
@@ -415,7 +588,7 @@
                   "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Verordnung": 2
+                    "Gesetz": 2
                   },
                   "children": [
                     {
@@ -424,7 +597,7 @@
                       "total": 2,
                       "own": 2,
                       "by_type": {
-                        "Verordnung": 2
+                        "Gesetz": 2
                       }
                     }
                   ]
@@ -456,13 +629,64 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.40",
+          "title": "Tertiärstufe: Universitäten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.40.20",
+              "title": "Theologische Fakultät",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
       "total": 2,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 1,
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -472,30 +696,37 @@
           "own": 0,
           "by_type": {
             "Interkantonale Vereinbarung": 1,
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "5.30.10",
               "title": "Polizei",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1,
-                "Anderes": 1
+                "Interkantonale Vereinbarung": 1
               },
               "children": [
                 {
                   "identifier": "5.30.10.50",
                   "title": "Polizeiliche Zusammenarbeit",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1,
-                    "Anderes": 1
+                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
+            },
+            {
+              "identifier": "5.30.60",
+              "title": "Sicherheitsunternehmen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -504,31 +735,28 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1,
-            "Gesetz": 1
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "7.30.40",
               "title": "Submission",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1,
-                "Gesetz": 1
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -536,42 +764,31 @@
       ]
     },
     {
-      "identifier": "9",
-      "title": "Wirtschaft",
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "9.20",
-          "title": "Landwirtschaft",
+          "identifier": "8.70",
+          "title": "Fürsorge",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "9.20.80",
-              "title": "Pflanzenbau",
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "9.20.80.10",
-                  "title": "Rebbau",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                }
-              ]
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -584,17 +801,18 @@
   },
   "available_years_for_entity": [
     "1562",
-    "1809",
     "1828",
     "1837",
+    "1846",
     "1851",
     "1852",
     "1859",
     "1862",
+    "1864",
     "1868",
     "1874",
-    "1875",
     "1876",
+    "1877",
     "1889",
     "1893",
     "1899",
@@ -602,42 +820,32 @@
     "1903",
     "1907",
     "1909",
-    "1910",
     "1911",
-    "1914",
-    "1916",
-    "1922",
+    "1917",
     "1923",
     "1924",
-    "1930",
     "1931",
     "1934",
     "1936",
-    "1937",
-    "1938",
     "1939",
     "1940",
+    "1942",
     "1943",
     "1944",
     "1945",
-    "1946",
-    "1947",
     "1948",
+    "1949",
     "1950",
     "1951",
     "1954",
     "1956",
     "1957",
-    "1958",
     "1959",
     "1960",
     "1961",
-    "1962",
-    "1963",
     "1964",
     "1965",
     "1966",
-    "1967",
     "1968",
     "1969",
     "1970",
@@ -647,7 +855,6 @@
     "1974",
     "1975",
     "1976",
-    "1977",
     "1978",
     "1979",
     "1980",

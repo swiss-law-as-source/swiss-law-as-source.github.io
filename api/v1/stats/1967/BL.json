@@ -2,31 +2,67 @@
   "year": "1967",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 3,
-  "categorized": 3,
+  "total": 5,
+  "categorized": 5,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
+    "Gesetz": {
       "total": 2,
       "by_topic": {
-        "33 Steuern": 1,
-        "40 Raum- und Bauordnung": 1
+        "45 Wasserversorgung": 2
       },
       "by_global_category": {
-        "6.20.10.40 Pauschale Steueranrechnung": 1
+        "7.30.20.20 Gewässernutzung": 1,
+        "8.10.130.20 Wasserversorgung": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
-        "45 Wasserversorgung": 1
+        "13 Landrat": 1
+      },
+      "by_global_category": {}
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "33 Steuern": 1
       },
       "by_global_category": {
-        "7.30.20.20 Gewässernutzung": 1
+        "6.20.10.40 Pauschale Steueranrechnung": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "82 Arbeitnehmerschutz": 1
+      },
+      "by_global_category": {
+        "8.70.20 Jugendschutz, Jugendhilfe": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "13",
+          "title": "Landrat",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "Finanzen",
@@ -53,26 +89,36 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Gesetz": 2
       },
       "children": [
         {
-          "identifier": "40",
-          "title": "Raum- und Bauordnung",
+          "identifier": "45",
+          "title": "Wasserversorgung",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Gesetz": 2
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "Arbeitnehmerschutz",
           "total": 1,
           "own": 1,
           "by_type": {
             "Anderes": 1
-          }
-        },
-        {
-          "identifier": "45",
-          "title": "Wasserversorgung",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
           }
         }
       ]
@@ -127,7 +173,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -136,7 +182,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -145,7 +191,7 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -154,7 +200,7 @@
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -162,51 +208,105 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.20",
+                  "title": "Wasserversorgung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.20",
+              "title": "Jugendschutz, Jugendhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 5
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -217,12 +317,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",
@@ -282,7 +382,6 @@
     "AG",
     "AI",
     "AR",
-    "BE",
     "BL",
     "BS",
     "CH",

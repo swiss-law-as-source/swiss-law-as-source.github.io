@@ -2,17 +2,21 @@
   "year": "1952",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 2,
-  "categorized": 2,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 1,
+      "total": 5,
       "by_topic": {
-        "314 Heilmittel und Betäubungsmittel": 1
+        "511 Arbeitnehmerschutz": 3,
+        "713 Eisenbahnen": 1,
+        "914 Sachenrecht und Grundbuch": 1
       },
       "by_global_category": {
-        "8.10.70 Heil- und Betäubungsmittel": 1
+        "8.20.10.10 Sicherheit": 3,
+        "7.50.10.20 Eisenbahn": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
       }
     },
     "Gesetz": {
@@ -27,8 +31,39 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "3",
-      "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
+      "identifier": "5",
+      "title": "Arbeit und Gewerbe",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3
+      },
+      "children": [
+        {
+          "identifier": "51",
+          "title": "Arbeitsrecht",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3
+          },
+          "children": [
+            {
+              "identifier": "511",
+              "title": "Arbeitnehmerschutz",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -36,8 +71,8 @@
       },
       "children": [
         {
-          "identifier": "31",
-          "title": "Gesundheitspflege",
+          "identifier": "71",
+          "title": "Verkehr",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -45,8 +80,8 @@
           },
           "children": [
             {
-              "identifier": "314",
-              "title": "Heilmittel und Betäubungsmittel",
+              "identifier": "713",
+              "title": "Eisenbahnen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -87,22 +122,19 @@
           ]
         }
       ]
-    }
-  ],
-  "by_global_category_tree": [
+    },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "identifier": "9",
+      "title": "Zivilrecht, Strafrecht, Rechtspflege",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "8.10",
-          "title": "Gesundheitswesen",
+          "identifier": "91",
+          "title": "Zivilrecht",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -110,8 +142,8 @@
           },
           "children": [
             {
-              "identifier": "8.10.70",
-              "title": "Heil- und Betäubungsmittel",
+              "identifier": "914",
+              "title": "Sachenrecht und Grundbuch",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -119,16 +151,135 @@
               }
             }
           ]
-        },
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
         {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
           "total": 1,
           "own": 0,
           "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.10",
+              "title": "Öffentlicher Verkehr",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.10.20",
+                  "title": "Eisenbahn",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3,
             "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "8.20.10",
+              "title": "Arbeitnehmer",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 3
+              },
+              "children": [
+                {
+                  "identifier": "8.20.10.10",
+                  "title": "Sicherheit",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Verordnung": 3
+                  }
+                }
+              ]
+            },
             {
               "identifier": "8.20.20",
               "title": "Arbeitsmarkt",
@@ -155,46 +306,38 @@
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 6
   },
   "available_years_for_entity": [
     "1845",
     "1870",
-    "1883",
-    "1884",
-    "1885",
     "1890",
     "1899",
     "1901",
-    "1902",
     "1903",
-    "1906",
-    "1907",
-    "1910",
     "1911",
+    "1912",
     "1914",
-    "1918",
     "1919",
-    "1926",
-    "1930",
-    "1931",
+    "1923",
+    "1929",
+    "1933",
     "1937",
     "1938",
     "1939",
     "1940",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1946",
     "1947",
     "1948",
     "1949",
-    "1950",
     "1951",
     "1952",
     "1953",
     "1955",
-    "1956",
     "1957",
     "1958",
     "1959",
@@ -263,7 +406,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",
@@ -281,7 +425,6 @@
     "TI",
     "UR",
     "VD",
-    "VS",
     "ZH"
   ]
 }

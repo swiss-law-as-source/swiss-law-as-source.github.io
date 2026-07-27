@@ -2,27 +2,49 @@
   "year": "2008",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 13,
-  "categorized": 13,
+  "total": 20,
+  "categorized": 20,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 8,
+      "total": 10,
       "by_topic": {
-        "11 Bürgerrechte": 2,
-        "90 Gesundheitspflege": 2,
-        "91 Medizinalpersonen": 2,
+        "10 Grundlagen": 1,
+        "16 Ombudsperson, Datenschutz, Archivierung": 1,
+        "17 Gerichte, Verwaltungsverfahren und Anwaltsrecht": 1,
+        "211 Vollzugserlasse zum ZGB": 1,
+        "52 Jagd": 1,
         "54 Gewerbe und Industrie": 1,
-        "838 Kinder- und Familienzulagen": 1
+        "642 Sekundarschulen": 1,
+        "645 Besondere Dienste": 1,
+        "838 Kinder- und Familienzulagen": 1,
+        "90 Gesundheitspflege": 1
       },
       "by_global_category": {
-        "1.10.70.10.10 Einwohnerkontrolle": 2,
+        "4.170.10 Statistik": 1,
+        "7.30.40 Submission": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "6.30.50.10 Jäger": 1,
         "8.20.10.30 Sonn- und Feiertage": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
         "8.30.100.20 Arbeitnehmer und Selbständige": 1,
-        "8.10.30.40 Hebammen": 1,
-        "8.10.120.10 Alkoholismus": 1,
-        "8.10.70 Heil- und Betäubungsmittel": 1,
-        "8.10.30.10 Ärzte": 1
+        "8.10.30.40 Hebammen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 5,
+      "by_topic": {
+        "10 Grundlagen": 2,
+        "11 Bürgerrechte": 1,
+        "31 Finanzhaushalt": 1,
+        "90 Gesundheitspflege": 1
+      },
+      "by_global_category": {
+        "1.20.40 Staatshaftung": 1,
+        "4.170.10 Statistik": 1,
+        "1.10.70.10.10 Einwohnerkontrolle": 1,
+        "6.10.40 Finanzkontrolle": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -48,10 +70,10 @@
     "Anderes": {
       "total": 1,
       "by_topic": {
-        "31 Finanzhaushalt": 1
+        "54 Gewerbe und Industrie": 1
       },
       "by_global_category": {
-        "6.10.40 Finanzkontrolle": 1
+        "9.50.10.40 Taxigewerbe": 1
       }
     }
   },
@@ -59,20 +81,31 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 3,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Gesetz": 3,
+        "Verordnung": 3,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
+          "identifier": "10",
+          "title": "Grundlagen",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Gesetz": 2,
+            "Verordnung": 1
+          }
+        },
+        {
           "identifier": "11",
           "title": "Bürgerrechte",
-          "total": 2,
-          "own": 2,
+          "total": 1,
+          "own": 1,
           "by_type": {
-            "Verordnung": 2
+            "Gesetz": 1
           }
         },
         {
@@ -94,6 +127,55 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "16",
+          "title": "Ombudsperson, Datenschutz, Archivierung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "17",
+          "title": "Gerichte, Verwaltungsverfahren und Anwaltsrecht",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "211",
+              "title": "Vollzugserlasse zum ZGB",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -103,7 +185,7 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
@@ -113,7 +195,7 @@
           "total": 1,
           "own": 1,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1
           }
         },
         {
@@ -130,18 +212,29 @@
     {
       "identifier": "5",
       "title": "Volkswirtschaft",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "54",
-          "title": "Gewerbe und Industrie",
+          "identifier": "52",
+          "title": "Jagd",
           "total": 1,
           "own": 1,
           "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "54",
+          "title": "Gewerbe und Industrie",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           }
         }
@@ -150,21 +243,41 @@
     {
       "identifier": "6",
       "title": "Kultur, Bildung, Ausbildung",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "64",
           "title": "Schulen",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "642",
+              "title": "Sekundarschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "645",
+              "title": "Besondere Dienste",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "649",
               "title": "Interkantonale Vereinbarungen",
@@ -232,10 +345,11 @@
     {
       "identifier": "9",
       "title": "Gesundheit",
-      "total": 4,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 4
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -244,16 +358,8 @@
           "total": 2,
           "own": 2,
           "by_type": {
-            "Verordnung": 2
-          }
-        },
-        {
-          "identifier": "91",
-          "title": "Medizinalpersonen",
-          "total": 2,
-          "own": 2,
-          "by_type": {
-            "Verordnung": 2
+            "Verordnung": 1,
+            "Gesetz": 1
           }
         }
       ]
@@ -266,46 +372,108 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Gesetz": 2
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "1.10.70",
               "title": "Niederlassung und Aufenthalt",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 2
+                "Gesetz": 1
               },
               "children": [
                 {
                   "identifier": "1.10.70.10",
                   "title": "Niederlassung und Aufenthalt Schweizer",
-                  "total": 2,
+                  "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Verordnung": 2
+                    "Gesetz": 1
                   },
                   "children": [
                     {
                       "identifier": "1.10.70.10.10",
                       "title": "Einwohnerkontrolle",
-                      "total": 2,
-                      "own": 2,
+                      "total": 1,
+                      "own": 1,
                       "by_type": {
-                        "Verordnung": 2
+                        "Gesetz": 1
                       }
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.40",
+              "title": "Staatshaftung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
                 }
               ]
             }
@@ -316,19 +484,22 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 3,
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "4.10",
           "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -339,6 +510,57 @@
               "by_type": {
                 "Interkantonale Vereinbarung": 1
               }
+            },
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.90",
+              "title": "Gesundheitspflege, schulpsychologische Dienste",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.10",
+              "title": "Statistik",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -347,10 +569,11 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -359,7 +582,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -368,8 +591,39 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Gesetz": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.50",
+              "title": "Jagd",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.30.50.10",
+                  "title": "Jäger",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -378,12 +632,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.50",
           "title": "Verkehr",
@@ -420,71 +695,33 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 6,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 6
+        "Verordnung": 3
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 4,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 4
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "8.10.30",
               "title": "Medizinische Berufe",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 1
               },
               "children": [
-                {
-                  "identifier": "8.10.30.10",
-                  "title": "Ärzte",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                },
                 {
                   "identifier": "8.10.30.40",
                   "title": "Hebammen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            },
-            {
-              "identifier": "8.10.70",
-              "title": "Heil- und Betäubungsmittel",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "8.10.120",
-              "title": "Suchtprävention",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.10.120.10",
-                  "title": "Alkoholismus",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -558,51 +795,84 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.40",
+                  "title": "Taxigewerbe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 20
   },
   "available_years_for_entity": [
     "1815",
     "1828",
+    "1829",
     "1834",
     "1836",
-    "1865",
     "1870",
     "1876",
     "1881",
-    "1892",
+    "1886",
     "1896",
     "1902",
-    "1907",
-    "1908",
     "1909",
     "1911",
-    "1914",
     "1916",
     "1919",
     "1920",
     "1921",
-    "1922",
-    "1923",
     "1925",
-    "1935",
+    "1931",
     "1936",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1944",
-    "1946",
+    "1945",
     "1947",
     "1948",
-    "1949",
     "1950",
     "1951",
     "1952",
     "1954",
-    "1955",
     "1956",
     "1957",
     "1958",
@@ -613,12 +883,12 @@
     "1963",
     "1964",
     "1965",
-    "1966",
     "1967",
     "1968",
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

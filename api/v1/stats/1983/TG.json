@@ -2,8 +2,8 @@
   "year": "1983",
   "year_semantics": "enactment",
   "entity": "TG",
-  "total": 8,
-  "categorized": 8,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
@@ -17,28 +17,35 @@
         "4.80.10 Sonderschulen": 1
       }
     },
-    "Gesetz": {
+    "Verordnung": {
       "total": 3,
       "by_topic": {
-        "211.41 Grundbesitz": 1,
+        "45 Natur- und Heimatschutz": 1,
+        "822 Arbeitnehmerschutz": 1,
+        "832 Kranken- und Unfallversicherung": 1
+      },
+      "by_global_category": {
+        "7.70.20 Tierschutz": 1,
+        "8.20.40 Heimarbeit": 1,
+        "8.30.70 UVG": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "142.6 Grenzverkehr": 2
+      },
+      "by_global_category": {}
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
         "641 Sondersteuern. Erbschaftssteuer": 1,
         "721 Wasserwirtschaft. Wasserbau. Gewässer": 1
       },
       "by_global_category": {
-        "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1,
         "5.30.20.10 Hunde, gefährliche Tiere": 1,
         "7.30.20.20 Gewässernutzung": 1
-      }
-    },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "188.2 Erlasse der Katholischen Landeskirche": 1,
-        "45 Natur- und Heimatschutz": 1
-      },
-      "by_global_category": {
-        "1.40.10 Römisch-Katholische Kirche": 1,
-        "7.70.20 Tierschutz": 1
       }
     }
   },
@@ -46,42 +53,62 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
-        "Anderes": 1
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
-          "identifier": "18",
-          "title": "Staat und Kirche",
-          "total": 3,
+          "identifier": "14",
+          "title": "Bürgerrecht. Niederlassung. Aufenthalt",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2,
-            "Anderes": 1
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "142",
+              "title": "Niederlassung und Aufenthalt. Fremdenpolizei. Grenzverkehr",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "142.6",
+                  "title": "Grenzverkehr",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "18",
+          "title": "Staat und Kirche",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
           },
           "children": [
             {
               "identifier": "188",
               "title": "Katholische Landeskirche",
-              "total": 3,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 2,
-                "Anderes": 1
+                "Interkantonale Vereinbarung": 2
               },
               "children": [
-                {
-                  "identifier": "188.2",
-                  "title": "Erlasse der Katholischen Landeskirche",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                },
                 {
                   "identifier": "188.3",
                   "title": "Übereinkünfte mit Nachbarkantonen",
@@ -89,48 +116,6 @@
                   "own": 2,
                   "by_type": {
                     "Interkantonale Vereinbarung": 2
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Privatrecht - Zivilrechtspflege - Vollstreckung",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "21",
-          "title": "Zivilgesetzbuch",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "211.4",
-              "title": "Sachenrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "211.41",
-                  "title": "Grundbesitz",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
                   }
                 }
               ]
@@ -252,80 +237,86 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "822",
+              "title": "Arbeitnehmerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Kranken- und Unfallversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
-        "Anderes": 1
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2,
-            "Anderes": 1
+            "Interkantonale Vereinbarung": 2
           },
           "children": [
             {
               "identifier": "1.40.10",
               "title": "Römisch-Katholische Kirche",
-              "total": 3,
-              "own": 3,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Interkantonale Vereinbarung": 2,
-                "Anderes": 1
+                "Interkantonale Vereinbarung": 2
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.40.20",
-                  "title": "Erwerb von Grundstücke durch Personen im Ausland",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
             }
           ]
         }
@@ -466,19 +457,70 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.40",
+              "title": "Heimarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.70",
+              "title": "UVG",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 10
   },
   "available_years_for_entity": [
     "1803",
     "1825",
     "1828",
+    "1829",
     "1831",
     "1834",
     "1846",
-    "1861",
     "1869",
     "1870",
     "1886",
@@ -490,30 +532,21 @@
     "1906",
     "1907",
     "1909",
-    "1911",
     "1914",
-    "1917",
     "1918",
-    "1923",
-    "1925",
     "1926",
-    "1927",
-    "1930",
     "1931",
     "1933",
     "1934",
+    "1935",
     "1937",
     "1938",
-    "1941",
     "1943",
-    "1947",
+    "1946",
     "1948",
-    "1951",
     "1955",
-    "1956",
     "1958",
-    "1959",
-    "1960",
+    "1961",
     "1964",
     "1965",
     "1966",
