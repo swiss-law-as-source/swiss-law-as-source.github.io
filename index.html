@@ -1,312 +1,595 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swiss Law — Federal & Cantonal Legislation</title>
+    <title>Swiss Law Collection — Dashboard</title>
     <style>
         :root {
             --red: #D52B1E;
             --dark: #1a1a1a;
             --gray: #f5f5f5;
             --border: #e0e0e0;
-            --cantonal: #2B6ED5;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
+        [hidden] { display: none !important; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             color: var(--dark);
             line-height: 1.6;
             background: #fff;
         }
-        header {
-            background: var(--red);
-            color: #fff;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
+        header { background: var(--red); color: white; padding: 2rem; text-align: center; }
         header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
-        header p { opacity: 0.9; font-size: 0.95rem; }
-        .container { max-width: 960px; margin: 0 auto; padding: 1.5rem 1rem; }
-        .search-box {
-            position: sticky;
-            top: 0;
-            background: #fff;
-            padding: 1rem 0;
-            z-index: 10;
-            border-bottom: 1px solid var(--border);
+        header p { opacity: 0.9; font-size: 1rem; }
+        nav { background: var(--dark); padding: 0.5rem 2rem; text-align: center; }
+        nav a { color: #ccc; text-decoration: none; margin: 0 1rem; font-size: 0.9rem; }
+        nav a:hover { color: white; }
+        main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem; margin-bottom: 2.5rem;
         }
-        .search-box input {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            font-size: 1rem;
-            border: 2px solid var(--border);
-            border-radius: 6px;
-            outline: none;
-            transition: border-color 0.2s;
+        .kpi-card {
+            background: var(--gray); border-radius: 8px; padding: 1.2rem;
+            text-align: center; border: 1px solid var(--border);
         }
-        .search-box input:focus { border-color: var(--red); }
-        .filter-row {
-            display: flex;
-            gap: 0.5rem;
-            margin-top: 0.5rem;
-            flex-wrap: wrap;
-            align-items: center;
+        .kpi-card .value { font-size: 2rem; font-weight: 700; color: var(--red); }
+        .kpi-card .label { font-size: 0.8rem; color: #666; margin-top: 0.2rem; }
+        .chart-section { margin-bottom: 3rem; }
+        .chart-section h2 {
+            font-size: 1.3rem; margin-bottom: 1rem;
+            border-bottom: 2px solid var(--red); padding-bottom: 0.5rem;
         }
-        .filter-btn {
-            padding: 0.3rem 0.8rem;
-            font-size: 0.8rem;
-            border: 1px solid var(--border);
-            border-radius: 4px;
-            background: #fff;
-            cursor: pointer;
-            transition: all 0.15s;
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+        .table-wrap { overflow-x: auto; }
+        .data-table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+        .data-table th, .data-table td { border: 1px solid var(--border); padding: 0.35rem 0.6rem; text-align: right; }
+        .data-table th { background: var(--gray); position: sticky; top: 0; }
+        .data-table th:first-child, .data-table td:first-child { text-align: left; font-weight: 600; }
+        .data-table tbody tr:nth-child(even) { background: #fafafa; }
+        .data-table td.zero { color: #bbb; }
+        .data-table tfoot td { font-weight: 700; background: var(--gray); }
+        .table-note { font-size: 0.8rem; color: #666; margin-top: 0.75rem; }
+        .tab-bar { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap; align-items: center; }
+        .tab-bar .tab-label { font-size: 0.82rem; color: #666; margin-right: 0.25rem; }
+        .tab-bar button, .filter-bar select, .filter-bar button {
+            background: var(--gray); border: 1px solid var(--border); border-radius: 4px;
+            padding: 0.3rem 0.8rem; cursor: pointer; font-size: 0.82rem;
         }
-        .filter-btn:hover { background: var(--gray); }
-        .filter-btn.active {
-            background: var(--red);
-            color: #fff;
-            border-color: var(--red);
+        .tab-bar button.active { background: var(--red); color: white; border-color: var(--red); }
+        .filter-bar { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap;
+            background: var(--gray); border: 1px solid var(--border); border-radius: 8px;
+            padding: 0.6rem 1rem; margin-bottom: 1.2rem; }
+        .filter-bar label { font-size: 0.82rem; color: #666; }
+        .filter-bar select { background: #fff; }
+        .chip {
+            display: inline-flex; align-items: center; gap: 0.35rem;
+            background: var(--red); color: #fff; border-radius: 999px;
+            padding: 0.15rem 0.7rem; font-size: 0.8rem; cursor: pointer;
         }
-        .filter-btn.active-cantonal {
-            background: var(--cantonal);
-            color: #fff;
-            border-color: var(--cantonal);
-        }
-        .stats {
-            margin-top: 0.5rem;
-            font-size: 0.85rem;
-            color: #666;
-        }
-        .category-header {
-            margin-top: 2rem;
-            margin-bottom: 0.5rem;
-            padding-bottom: 0.3rem;
-            border-bottom: 2px solid var(--red);
-            font-size: 1.1rem;
-            font-weight: 600;
-        }
-        .category-header.cantonal {
-            border-bottom-color: var(--cantonal);
-        }
-        .scope-badge {
-            font-size: 0.65rem;
-            padding: 0.15rem 0.4rem;
-            border-radius: 3px;
-            font-weight: 500;
-            vertical-align: middle;
-            margin-left: 0.5rem;
-        }
-        .scope-badge.federal { background: #fdeaea; color: var(--red); }
-        .scope-badge.cantonal { background: #eaf0fd; color: var(--cantonal); }
-        .law-list { list-style: none; }
-        .law-item {
-            padding: 0.5rem 0;
-            border-bottom: 1px solid var(--border);
-            display: flex;
-            gap: 1rem;
-            align-items: baseline;
-        }
-        .law-item:last-child { border-bottom: none; }
-        .sr-number {
-            font-family: "SF Mono", "Fira Code", monospace;
-            font-size: 0.85rem;
-            color: var(--red);
-            white-space: nowrap;
-            min-width: 7rem;
-            font-weight: 600;
-        }
-        .sr-number.cantonal { color: var(--cantonal); }
-        .sr-number a { color: inherit; text-decoration: none; }
-        .sr-number a:hover { text-decoration: underline; }
-        .law-title { font-size: 0.9rem; }
-        .hidden { display: none; }
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            font-size: 0.8rem;
-            color: #999;
-            border-top: 1px solid var(--border);
-            margin-top: 3rem;
-        }
-        footer a { color: var(--red); }
-        @media (max-width: 600px) {
-            .law-item { flex-direction: column; gap: 0.1rem; }
-            .sr-number { min-width: auto; }
-        }
+        .chip:hover { opacity: 0.85; }
+        .hint { font-size: 0.78rem; color: #888; }
+        footer { text-align: center; padding: 2rem; color: #666; font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
+        footer a { color: var(--red); text-decoration: none; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Swiss Law</h1>
-        <p>Federal & Cantonal Legislation — version-controlled on GitHub</p>
+        <h1>Swiss Law Collection</h1>
+        <p>30,000+ unique federal and cantonal laws &mdash; version-controlled, harmonized, served as JSON</p>
     </header>
-    <div class="container">
-        <div class="search-box">
-            <input type="text" id="search" placeholder="Search by number or title (e.g. &quot;obligationenrecht&quot; or &quot;300.100&quot;)..." autocomplete="off">
-            <div class="filter-row">
-                <button class="filter-btn active" data-scope="all">All</button>
-                <button class="filter-btn" data-scope="federal">Federal</button>
-                <button class="filter-btn" data-scope="cantonal">Cantonal</button>
-                <select id="canton-filter" style="padding:0.3rem;font-size:0.8rem;border:1px solid var(--border);border-radius:4px;display:none;">
-                    <option value="">All Cantons</option>
-                </select>
+    <nav>
+        <a href="index.html"><strong>Dashboard</strong></a>
+        <a href="laws.html">Laws</a>
+        <a href="api.html">API</a>
+    </nav>
+    <main>
+        <div class="kpi-grid" id="kpis"></div>
+
+        <!-- Section A: standalone harmonized domains -->
+        <div class="chart-section">
+            <h2>Legal domains — harmonized (federal + cantonal)</h2>
+            <div class="tab-bar" id="domains-scope">
+                <span class="tab-label">Scope:</span>
+                <button class="active" data-scope="total">All</button>
+                <button data-scope="federal">Federal</button>
+                <button data-scope="cantonal">Cantonal</button>
             </div>
-            <div class="stats" id="stats">Loading index...</div>
+            <div class="tab-bar" id="domains-form">
+                <span class="tab-label">View:</span>
+                <button class="active" data-form="treemap">Treemap</button>
+                <button data-form="sunburst">Sunburst</button>
+            </div>
+            <div class="echart" id="domains-chart" style="height:520px"></div>
+            <div class="tab-bar" id="domain-split-bar" hidden>
+                <span class="tab-label">Selected: <b id="domain-split-name"></b> — split by:</span>
+                <button class="active" data-split="none">None</button>
+                <button data-split="canton">Canton</button>
+                <button data-split="type">Type</button>
+                <button data-split="canton-type">Canton → Type</button>
+            </div>
+            <div class="echart" id="domain-split-chart" style="height:380px; display:none"></div>
+            <p class="table-note">One taxonomy for federal and cantonal law (LexFind "domaine juridique").
+               Click a tile to zoom and to enable the secondary split (available for the two top tree levels, cantonal laws).
+               Labels in de/fr/it: <a href="api/v1/categories/global.json">categories API</a>.</p>
         </div>
-        <div id="results"></div>
-    </div>
+
+        <!-- Section B: linked dashboard (cantonal) -->
+        <div class="chart-section">
+            <h2>Cantonal laws explorer — linked charts</h2>
+            <div class="filter-bar" id="filters">
+                <label>From</label><select id="year-from"></select>
+                <label>to</label><select id="year-to"></select>
+                <span id="filter-chips"></span>
+                <button id="clear-filters">Clear filters</button>
+                <span class="hint">Click a canton or a type to cross-filter — all three charts stay in sync.
+                    Federal law is in the domains chart above.</span>
+            </div>
+            <div class="grid-2">
+                <div>
+                    <h3 style="font-size:1.05rem;margin-bottom:0.5rem">Laws by canton</h3>
+                    <div class="echart" id="canton-chart" style="height:440px"></div>
+                </div>
+                <div>
+                    <h3 style="font-size:1.05rem;margin-bottom:0.5rem">Instrument types</h3>
+                    <div class="echart" id="types-chart" style="height:440px"></div>
+                </div>
+            </div>
+            <h3 style="font-size:1.05rem;margin:1.5rem 0 0.5rem">Laws by version year (stacked by type)</h3>
+            <div class="echart" id="years-chart" style="height:340px"></div>
+        </div>
+
+        <div class="chart-section">
+            <h2>Intercantonal agreements (concordats) by domain</h2>
+            <p class="hint" id="concordats-filter-state" style="margin-bottom:0.5rem"></p>
+            <div class="table-wrap" id="concordats-table"></div>
+            <p class="table-note" id="concordats-notes"></p>
+        </div>
+    </main>
     <footer>
-        Data from <a href="https://www.fedlex.admin.ch" target="_blank">Fedlex</a> &
-        cantonal sources |
-        Source on <a href="https://github.com/benjamin-arfa/swiss-law" target="_blank">GitHub</a> |
-        <a href="laws.html">Law Index</a> |
-        <a href="diff.html">Diff Viewer</a> |
-        <a href="stats.html">Statistics</a> |
-        <a href="crossrefs.html">Cross-Refs</a> |
-        <a href="cross_level_refs.html">Federal ↔ Cantonal</a> |
-        <a href="api.html">API Docs</a> |
-        Updated automatically
+        <a href="https://github.com/benjamin-arfa/swiss-law">GitHub Repository</a> &middot;
+        Data: <a href="https://www.fedlex.admin.ch">Fedlex</a> + <a href="https://www.lexfind.ch">LexFind</a> &middot;
+        More tools: <a href="diff.html">Diff viewer</a> &middot;
+        <a href="crossrefs.html">Federal cross-refs</a> &middot;
+        <a href="cross_level_refs.html">Federal &harr; cantonal</a>
     </footer>
+
+    <script src="assets/echarts.min.js"></script>
     <script>
-        const REPO_BASE = "https://github.com/benjamin-arfa/swiss-law/blob/main/";
-        let allLaws = [];
-        let activeScope = "all";
-        let activeCanton = "";
+    (async function() {
+        const stats = await (await fetch('stats.json', { cache: 'no-cache' })).json();
 
-        async function init() {
-            const res = await fetch("laws.json");
-            allLaws = await res.json();
+        // KPIs
+        const kpis = [
+            { value: stats.total_laws.toLocaleString(), label: 'Unique laws' },
+            { value: stats.federal_laws.toLocaleString(), label: 'Federal' },
+            { value: stats.cantonal_laws.toLocaleString(), label: 'Cantonal' },
+            { value: Object.keys(stats.by_canton || {}).length, label: 'Cantons' },
+            { value: (stats.total_files || 0).toLocaleString(), label: 'Files (all languages)' },
+        ];
+        document.getElementById('kpis').innerHTML = kpis.map(k =>
+            `<div class="kpi-card"><div class="value">${k.value}</div><div class="label">${k.label}</div></div>`
+        ).join('');
 
-            // Populate canton filter dropdown
-            const cantons = [...new Set(allLaws.filter(l => l.scope === "cantonal").map(l => l.canton))].sort();
-            const select = document.getElementById("canton-filter");
-            for (const c of cantons) {
-                const opt = document.createElement("option");
-                opt.value = c;
-                opt.textContent = c.toUpperCase() + " – " + (allLaws.find(l => l.canton === c)?.cat.split(" – ")[1] || c);
-                select.appendChild(opt);
-            }
-
-            updateStats();
-            renderResults(getFiltered().slice(0, 200), true);
+        // Muted categorical palette — validated (CVD-safe adjacent pairs on
+        // white; low-contrast slots relieved by direct labels).
+        const PALETTE = ['#4a86c9', '#4e9a4e', '#d987aa', '#d9a441',
+                         '#3aa985', '#d97a4e', '#6a5cb8', '#d16a69'];
+        const GRAY = '#9a9a94';
+        const BLUE_RAMP = ['#c7dcf5', '#9ec4ec', '#74abe3', '#4a91da', '#2a78d6', '#1f5eae'];
+        const INK = '#1a1a1a', INK2 = '#52514e';
+        const charts = [];
+        function makeChart(id) {
+            const c = echarts.init(document.getElementById(id));
+            charts.push(c);
+            return c;
         }
+        window.addEventListener('resize', () => charts.forEach(c => c.resize()));
 
-        function getFiltered() {
-            let filtered = allLaws;
-            if (activeScope !== "all") {
-                filtered = filtered.filter(l => l.scope === activeScope);
-            }
-            if (activeCanton) {
-                filtered = filtered.filter(l => l.canton === activeCanton);
-            }
-            const query = document.getElementById("search").value.trim();
-            if (query) {
-                const terms = query.toLowerCase().split(/\s+/);
-                filtered = filtered.filter(law => {
-                    const text = `${law.sr} ${law.title} ${law.cat}`.toLowerCase();
-                    return terms.every(t => text.includes(t));
-                });
-            }
-            return filtered;
+        const typeLabels = stats.category_type_labels || {};
+        const enType = t => (typeLabels[t] && typeLabels[t].en) || t;
+        // Fixed type order (largest overall first) — color follows the type
+        // everywhere, independent of any filter.
+        const TYPE_ORDER = Object.keys(stats.by_category_type || {});
+        const typeColor = t => {
+            const i = TYPE_ORDER.indexOf(t);
+            return i >= 0 && i < PALETTE.length ? PALETTE[i] : GRAY;
+        };
+
+        // ════════ Section B: linked dashboard over the year×canton×type cube ════════
+        const cube = stats.category_type_by_canton_by_year || {};
+        const YEARS = Object.keys(cube).sort();
+        const state = { canton: null, type: null, y1: null, y2: null };
+        let conc = null;   // concordats data — loaded later, table joins the filters
+
+        const selFrom = document.getElementById('year-from');
+        const selTo = document.getElementById('year-to');
+        selFrom.innerHTML = '<option value="">All</option>' +
+            YEARS.map(y => `<option>${y}</option>`).join('');
+        selTo.innerHTML = YEARS.map(y => `<option>${y}</option>`).join('') +
+            '<option value="" selected>Now</option>';
+        selFrom.addEventListener('change', () => { state.y1 = selFrom.value || null; renderAll(); });
+        selTo.addEventListener('change', () => { state.y2 = selTo.value || null; renderAll(); });
+        document.getElementById('clear-filters').addEventListener('click', () => {
+            state.canton = state.type = state.y1 = state.y2 = null;
+            selFrom.value = ''; selTo.value = '';
+            renderAll();
+        });
+
+        function inRange(y) {
+            return (!state.y1 || y >= state.y1) && (!state.y2 || y <= state.y2);
         }
-
-        function updateStats() {
-            const filtered = getFiltered();
-            const federal = allLaws.filter(l => l.scope === "federal").length;
-            const cantonal = allLaws.filter(l => l.scope === "cantonal").length;
-            document.getElementById("stats").textContent =
-                `${allLaws.length.toLocaleString()} laws (${federal.toLocaleString()} federal, ${cantonal.toLocaleString()} cantonal)`;
-        }
-
-        function renderResults(laws, isInitial) {
-            const container = document.getElementById("results");
-            const total = getFiltered().length;
-
-            if (laws.length === 0) {
-                container.innerHTML = '<p style="margin-top:2rem;color:#666;">No results found.</p>';
-                document.getElementById("stats").textContent = "0 results found";
-                return;
-            }
-
-            // Group by category
-            const groups = {};
-            for (const law of laws) {
-                if (!groups[law.cat]) groups[law.cat] = [];
-                groups[law.cat].push(law);
-            }
-
-            let html = "";
-            for (const [cat, items] of Object.entries(groups)) {
-                const isCantonal = items[0]?.scope === "cantonal";
-                html += `<div class="category-header${isCantonal ? ' cantonal' : ''}">${cat}</div><ul class="law-list">`;
-                for (const item of items) {
-                    const url = REPO_BASE + item.path;
-                    const numClass = item.scope === "cantonal" ? "sr-number cantonal" : "sr-number";
-                    html += `<li class="law-item">
-                        <span class="${numClass}"><a href="${url}" target="_blank">${item.sr}</a></span>
-                        <span class="law-title">${item.title}</span>
-                    </li>`;
+        function aggregate({ byCanton = false, byType = false, byYear = false,
+                             useCanton = true, useType = true } = {}) {
+            const out = {};
+            for (const y of YEARS) {
+                if (!inRange(y)) continue;
+                for (const [canton, types] of Object.entries(cube[y])) {
+                    if (useCanton && state.canton && canton !== state.canton) continue;
+                    for (const [t, n] of Object.entries(types)) {
+                        if (useType && state.type && t !== state.type) continue;
+                        const key = byCanton ? canton : byType ? t : byYear ? y : 'all';
+                        if (byYear && byType) {
+                            (out[y] ??= {})[t] = ((out[y] ??= {})[t] || 0) + n;
+                        } else {
+                            out[key] = (out[key] || 0) + n;
+                        }
+                    }
                 }
-                html += "</ul>";
             }
-
-            if (isInitial && laws.length < total) {
-                html += `<p style="margin-top:1rem;color:#666;font-size:0.85rem;">Showing first ${laws.length} of ${total.toLocaleString()} laws. Type to search all.</p>`;
-            }
-
-            if (!isInitial) {
-                document.getElementById("stats").textContent = `${total.toLocaleString()} result${total !== 1 ? "s" : ""} found`;
-            }
-
-            container.innerHTML = html;
+            return out;
         }
 
-        function applyFilters() {
-            const filtered = getFiltered();
-            const query = document.getElementById("search").value.trim();
-            if (query) {
-                renderResults(filtered, false);
+        const cantonChart = makeChart('canton-chart');
+        const typesChart = makeChart('types-chart');
+        const yearsChart = makeChart('years-chart');
+
+        function renderChips() {
+            const chips = [];
+            if (state.canton) chips.push(`<span class="chip" data-clear="canton">${state.canton} ✕</span>`);
+            if (state.type) chips.push(`<span class="chip" data-clear="type">${enType(state.type)} ✕</span>`);
+            document.getElementById('filter-chips').innerHTML = chips.join(' ');
+        }
+        document.getElementById('filter-chips').addEventListener('click', e => {
+            const k = e.target.dataset && e.target.dataset.clear;
+            if (k) { state[k] = null; renderAll(); }
+        });
+
+        function renderCanton() {
+            // canton facet ignores its own filter (PowerBI style) but dims unselected
+            const data = Object.entries(aggregate({ byCanton: true, useCanton: false }))
+                .map(([name, value]) => ({
+                    name, value,
+                    itemStyle: state.canton && name !== state.canton
+                        ? { opacity: 0.3 } : undefined,
+                }));
+            cantonChart.setOption({
+                tooltip: { formatter: p => `${p.name}: <b>${p.value.toLocaleString()}</b> laws` },
+                series: [{
+                    type: 'treemap', roam: false, nodeClick: false,
+                    breadcrumb: { show: false },
+                    itemStyle: { borderColor: '#fff', borderWidth: 2, gapWidth: 2 },
+                    label: { color: '#fff', fontSize: 12,
+                             formatter: p => `${p.name}\n${p.value.toLocaleString()}` },
+                    color: BLUE_RAMP, colorMappingBy: 'value',
+                    data,
+                }],
+            }, true);
+        }
+
+        function renderTypes() {
+            const agg = aggregate({ byType: true, useType: false });
+            const data = TYPE_ORDER.filter(t => agg[t]).map(t => ({
+                name: enType(t), value: agg[t],
+                itemStyle: {
+                    color: typeColor(t),
+                    opacity: state.type && t !== state.type ? 0.3 : 1,
+                },
+                _type: t,
+            }));
+            typesChart.setOption({
+                tooltip: { formatter: p =>
+                    `${p.name}: <b>${p.value.toLocaleString()}</b> (${p.percent}%)` },
+                legend: { bottom: 0, type: 'scroll', textStyle: { color: INK2, fontSize: 11 } },
+                series: [{
+                    type: 'pie', radius: ['40%', '66%'], center: ['50%', '44%'],
+                    itemStyle: { borderColor: '#fff', borderWidth: 2, borderRadius: 3 },
+                    label: { color: INK, fontSize: 11,
+                             formatter: p => `${p.name}\n${p.value.toLocaleString()}` },
+                    labelLine: { length: 8, length2: 6 },
+                    data,
+                }],
+            }, true);
+        }
+
+        function renderYears() {
+            const perYear = aggregate({ byYear: true, byType: true });
+            const years = YEARS.filter(inRange).filter(y => perYear[y]);
+            const activeTypes = TYPE_ORDER.filter(t =>
+                (!state.type || t === state.type) && years.some(y => perYear[y][t]));
+            yearsChart.setOption({
+                tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+                legend: { top: 0, type: 'scroll',
+                          data: activeTypes.map(enType),
+                          textStyle: { color: INK2, fontSize: 11 } },
+                grid: { left: 50, right: 20, top: 30, bottom: 40 },
+                xAxis: { type: 'category', data: years,
+                         axisLabel: { color: INK2 } },
+                yAxis: { type: 'value', axisLabel: { color: INK2 },
+                         splitLine: { lineStyle: { color: '#eee' } } },
+                series: activeTypes.map(t => ({
+                    name: enType(t), type: 'bar', stack: 'laws',
+                    itemStyle: { color: typeColor(t) },
+                    emphasis: { focus: 'series' },
+                    data: years.map(y => perYear[y][t] || 0),
+                })),
+            }, true);
+        }
+
+        function renderAll() {
+            renderChips();
+            renderCanton();
+            renderTypes();
+            renderYears();
+            renderConcordats();
+        }
+        cantonChart.on('click', p => {
+            if (!p.name) return;
+            state.canton = state.canton === p.name ? null : p.name;
+            renderAll();
+        });
+        typesChart.on('click', p => {
+            const t = p.data && p.data._type;
+            if (!t) return;
+            state.type = state.type === t ? null : t;
+            renderAll();
+        });
+        yearsChart.on('click', p => {
+            const y = p.name;
+            if (!y) return;
+            if (state.y1 === y && state.y2 === y) {
+                state.y1 = state.y2 = null; selFrom.value = ''; selTo.value = '';
             } else {
-                renderResults(filtered.slice(0, 200), true);
-                updateStats();
+                state.y1 = state.y2 = y; selFrom.value = y; selTo.value = y;
             }
+            renderAll();
+        });
+        renderAll();
+
+        // ════════ Section A: standalone harmonized domains ════════
+        let harm = null;
+        try {
+            harm = await (await fetch('api/v1/stats/harmonized_categories.json', { cache: 'no-cache' })).json();
+        } catch (e) {}
+        if (harm) {
+            const domainsChart = makeChart('domains-chart');
+            const splitChart = makeChart('domain-split-chart');
+            let scope = 'total', form = 'treemap', split = 'none';
+            let selected = null;   // node with by_canton/by_type/by_canton_type
+
+            const nodeName = m => m.identifier + ' ' +
+                (m.title.en || m.title.de || m.title.fr || '');
+
+            function toNodes(nodes, topColor) {
+                return nodes.map((n, i) => {
+                    const c = topColor || (i < PALETTE.length ? PALETTE[i] : GRAY);
+                    const node = {
+                        name: nodeName(n),
+                        value: n[scope],
+                        _meta: n,
+                        itemStyle: topColor ? undefined : { color: c },
+                    };
+                    if (n.children) {
+                        const kids = toNodes(n.children, c).filter(k => k.value > 0);
+                        if (kids.length) node.children = kids;
+                    }
+                    return node;
+                }).filter(n => n.value > 0);
+            }
+
+            function domainTooltip(p) {
+                const m = p.data && p.data._meta;
+                if (!m) return p.name;
+                const t = m.title || {};
+                return `<b>${m.identifier}</b> ${t.en || t.de || ''}` +
+                    (t.de && t.en ? `<br><span style="color:#888">${t.de}</span>` : '') +
+                    (t.fr ? `<br><span style="color:#888">${t.fr}</span>` : '') +
+                    (t.it ? `<br><span style="color:#888">${t.it}</span>` : '') +
+                    `<br>Total: <b>${m.total.toLocaleString()}</b>` +
+                    ` · Federal: ${m.federal.toLocaleString()}` +
+                    ` · Cantonal: ${m.cantonal.toLocaleString()}`;
+            }
+
+            function renderDomains() {
+                const data = toNodes(harm.tree);
+                domainsChart.clear();
+                if (form === 'treemap') {
+                    domainsChart.setOption({
+                        tooltip: { formatter: domainTooltip },
+                        series: [{
+                            type: 'treemap', data,
+                            leafDepth: 2, roam: false,
+                            breadcrumb: { show: true, top: 0 },
+                            itemStyle: { borderColor: '#fff', borderWidth: 2, gapWidth: 2 },
+                            upperLabel: { show: true, height: 22, color: '#fff' },
+                            label: { color: '#fff', fontSize: 11 },
+                            colorSaturation: [0.3, 0.55],
+                        }],
+                    });
+                } else {
+                    domainsChart.setOption({
+                        tooltip: { formatter: domainTooltip },
+                        series: [{
+                            type: 'sunburst', data,
+                            radius: ['12%', '92%'],
+                            nodeClick: 'rootToNode',
+                            itemStyle: { borderColor: '#fff', borderWidth: 1.5 },
+                            label: { minAngle: 8, color: INK, fontSize: 10,
+                                     formatter: p => p.name.split(' ')[0] },
+                        }],
+                    });
+                }
+            }
+
+            function renderSplit() {
+                const el = document.getElementById('domain-split-chart');
+                if (!selected || split === 'none') {
+                    el.style.display = 'none';
+                    return;
+                }
+                el.style.display = '';
+                splitChart.resize();
+                splitChart.clear();
+                if (split === 'canton') {
+                    const data = Object.entries(selected.by_canton || {})
+                        .map(([name, value]) => ({ name, value }));
+                    splitChart.setOption({
+                        tooltip: { formatter: p => `${p.name}: <b>${p.value.toLocaleString()}</b>` },
+                        series: [{
+                            type: 'treemap', data, roam: false, nodeClick: false,
+                            breadcrumb: { show: false },
+                            itemStyle: { borderColor: '#fff', borderWidth: 2, gapWidth: 2 },
+                            label: { color: '#fff', formatter: p => `${p.name}\n${p.value.toLocaleString()}` },
+                            color: BLUE_RAMP, colorMappingBy: 'value',
+                        }],
+                    });
+                } else if (split === 'type') {
+                    const data = TYPE_ORDER
+                        .filter(t => (selected.by_type || {})[t])
+                        .map(t => ({ name: enType(t), value: selected.by_type[t],
+                                     itemStyle: { color: typeColor(t) } }));
+                    splitChart.setOption({
+                        tooltip: { formatter: p => `${p.name}: <b>${p.value.toLocaleString()}</b> (${p.percent}%)` },
+                        legend: { bottom: 0, type: 'scroll', textStyle: { color: INK2, fontSize: 11 } },
+                        series: [{
+                            type: 'pie', radius: ['40%', '66%'], center: ['50%', '44%'],
+                            itemStyle: { borderColor: '#fff', borderWidth: 2, borderRadius: 3 },
+                            label: { color: INK, fontSize: 11,
+                                     formatter: p => `${p.name}\n${p.value.toLocaleString()}` },
+                            data,
+                        }],
+                    });
+                } else { // canton-type chained
+                    const data = Object.entries(selected.by_canton_type || {})
+                        .map(([canton, types]) => ({
+                            name: canton,
+                            value: Object.values(types).reduce((a, b) => a + b, 0),
+                            children: TYPE_ORDER.filter(t => types[t]).map(t => ({
+                                name: enType(t), value: types[t],
+                                itemStyle: { color: typeColor(t) },
+                            })),
+                        }));
+                    splitChart.setOption({
+                        tooltip: { formatter: p => `${p.treePathInfo ? p.treePathInfo.map(x => x.name).slice(1).join(' › ') : p.name}: <b>${p.value.toLocaleString()}</b>` },
+                        series: [{
+                            type: 'treemap', data, leafDepth: 1,
+                            breadcrumb: { show: true, top: 0 },
+                            itemStyle: { borderColor: '#fff', borderWidth: 2, gapWidth: 2 },
+                            upperLabel: { show: true, height: 20, color: '#fff' },
+                            label: { color: '#fff', fontSize: 11 },
+                        }],
+                    });
+                }
+            }
+
+            function selectNode(meta) {
+                if (meta && (meta.by_canton || meta.by_type)) {
+                    selected = meta;
+                    document.getElementById('domain-split-name').textContent = nodeName(meta);
+                    document.getElementById('domain-split-bar').hidden = false;
+                } else if (!meta) {
+                    selected = null;
+                    document.getElementById('domain-split-bar').hidden = true;
+                }
+                renderSplit();
+            }
+            domainsChart.on('click', p => selectNode(p.data && p.data._meta));
+
+            document.getElementById('domains-scope').addEventListener('click', e => {
+                if (e.target.tagName !== 'BUTTON') return;
+                document.querySelectorAll('#domains-scope button').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                scope = e.target.dataset.scope;
+                renderDomains();
+            });
+            document.getElementById('domains-form').addEventListener('click', e => {
+                if (e.target.tagName !== 'BUTTON') return;
+                document.querySelectorAll('#domains-form button').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                form = e.target.dataset.form;
+                renderDomains();
+            });
+            document.getElementById('domain-split-bar').addEventListener('click', e => {
+                if (e.target.tagName !== 'BUTTON') return;
+                document.querySelectorAll('#domain-split-bar button').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                split = e.target.dataset.split;
+                renderSplit();
+            });
+            renderDomains();
+        } else {
+            document.getElementById('domains-chart').textContent = 'Harmonized category data unavailable.';
         }
 
-        // Scope filter buttons
-        document.querySelectorAll(".filter-btn").forEach(btn => {
-            btn.addEventListener("click", () => {
-                document.querySelectorAll(".filter-btn").forEach(b => b.classList.remove("active", "active-cantonal"));
-                const scope = btn.dataset.scope;
-                activeScope = scope;
-                btn.classList.add(scope === "cantonal" ? "active-cantonal" : "active");
-
-                // Show/hide canton dropdown
-                const cantonSelect = document.getElementById("canton-filter");
-                cantonSelect.style.display = (scope === "cantonal" || scope === "all") ? "inline-block" : "none";
-                if (scope === "federal") {
-                    activeCanton = "";
-                    cantonSelect.value = "";
+        // ════════ Concordats table (linked to the canton + year filters) ════════
+        try {
+            conc = await (await fetch('api/v1/stats/concordats_by_domain.json', { cache: 'no-cache' })).json();
+            document.getElementById('concordats-notes').innerHTML =
+                `Data: ${conc.source}. ` + conc.notes.join('. ') + '.';
+            renderConcordats();
+        } catch (e) {
+            document.getElementById('concordats-table').textContent = 'Concordats data unavailable.';
+        }
+        function renderConcordats() {
+            if (!conc) return;
+            const keys = conc.domains.map(d => d.key);
+            let filtered = !!(state.y1 || state.y2);
+            if (filtered && !conc.by_year) {
+                filtered = false;
+                document.getElementById('concordats-filter-state').textContent =
+                    'Date filtering needs the latest data — please hard-reload the page (Ctrl/Cmd+Shift+R).';
+            }
+            // Full range → precomputed all-time table (includes undated laws);
+            // a year filter recomputes from by_year and excludes undated ones.
+            let cantons = conc.cantons, totals = conc.totals;
+            if (filtered) {
+                cantons = {}; totals = Object.fromEntries(keys.map(k => [k, 0]));
+                totals.total = 0;
+                for (const c of Object.keys(conc.cantons))
+                    cantons[c] = Object.fromEntries([...keys.map(k => [k, 0]), ['total', 0]]);
+                for (const [y, perCanton] of Object.entries(conc.by_year || {})) {
+                    if (y === 'unknown' || !inRange(y)) continue;
+                    for (const [c, row] of Object.entries(perCanton)) {
+                        for (const [k, n] of Object.entries(row)) {
+                            cantons[c][k] += n; cantons[c].total += n;
+                            totals[k] += n; totals.total += n;
+                        }
+                    }
                 }
-
-                applyFilters();
-            });
-        });
-
-        // Canton dropdown filter
-        document.getElementById("canton-filter").addEventListener("change", (e) => {
-            activeCanton = e.target.value;
-            applyFilters();
-        });
-
-        // Search input
-        let debounceTimer;
-        document.getElementById("search").addEventListener("input", (e) => {
-            clearTimeout(debounceTimer);
-            debounceTimer = setTimeout(() => applyFilters(), 150);
-        });
-
-        init();
+            }
+            const cell = v => `<td${v === 0 ? ' class="zero"' : ''}>${v.toLocaleString()}</td>`;
+            const head = '<tr><th>Canton</th>' +
+                conc.domains.map(d => `<th>${d.label_en || d.label_fr}</th>`).join('') + '<th>Total</th></tr>';
+            const body = Object.entries(cantons).map(([canton, row]) => {
+                const hl = state.canton === canton
+                    ? ' style="background:#fdeceb;font-weight:600"' : '';
+                return `<tr${hl}><td>${canton}</td>${keys.map(k => cell(row[k])).join('')}${cell(row.total)}</tr>`;
+            }).join('');
+            const foot = '<tr><td>Total</td>' +
+                keys.map(k => `<td>${totals[k].toLocaleString()}</td>`).join('') +
+                `<td>${totals.total.toLocaleString()}</td></tr>`;
+            document.getElementById('concordats-table').innerHTML =
+                `<table class="data-table"><thead>${head}</thead><tbody>${body}</tbody><tfoot>${foot}</tfoot></table>`;
+            document.getElementById('concordats-filter-state').textContent = filtered
+                ? `Filtered: entry into force ${state.y1 || 'beginning'} – ${state.y2 || 'now'}`
+                  + ' (concordats without a dated version are excluded from filtered view).'
+                : 'Showing all concordats. The From/To year filter above also applies to this table'
+                  + (state.canton ? ` — ${state.canton} highlighted.` : '.');
+        }
+    })();
     </script>
 </body>
 </html>

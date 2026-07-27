@@ -67,12 +67,9 @@
         <p>Per-entity index — languages, text volume &amp; article counts per law</p>
     </header>
     <nav>
-        <a href="index.html">Search</a>
-        <a href="laws.html"><strong>Law Index</strong></a>
-        <a href="diff.html">Diff Viewer</a>
-        <a href="stats.html">Statistics</a>
-        <a href="cross_level_refs.html">Cross-Refs</a>
-        <a href="api.html">API Docs</a>
+        <a href="index.html">Dashboard</a>
+        <a href="laws.html"><strong>Laws</strong></a>
+        <a href="api.html">API</a>
     </nav>
     <main>
         <div class="kpi-grid" id="entity-kpis"></div>
@@ -104,7 +101,7 @@
 
     <script>
     (async function() {
-        const idx = await (await fetch('api/v1/laws/index.json')).json();
+        const idx = await (await fetch('api/v1/laws/index.json', { cache: 'no-cache' })).json();
         const cache = {};
         const PAGE = 500;
         let current = null, sortKey = 'id', sortDir = 1, shown = PAGE;
@@ -115,9 +112,29 @@
         const sel = document.getElementById('entity');
         const codes = Object.keys(idx.entities).sort((a, b) =>
             (a !== 'CH') - (b !== 'CH') || a.localeCompare(b));
-        sel.innerHTML = codes.map(c =>
+        sel.innerHTML = `<option value="ALL">ALL — search across all entities (${idx.total_laws.toLocaleString()})</option>` +
+            codes.map(c =>
             `<option value="${c}">${c} — ${idx.entities[c].name} (${idx.entities[c].laws.toLocaleString()})</option>`
         ).join('');
+
+        async function loadAll() {
+            // Cross-entity search backed by the flat search index (laws.json).
+            const laws = await (await fetch('laws.json', { cache: 'no-cache' })).json();
+            const enc = p => p.split('/').map(encodeURIComponent).join('/');
+            const sums = Object.values(idx.entities).reduce(
+                (a, e) => ({ c: a.c + e.total_chars, n: a.n + e.total_articles }), { c: 0, n: 0 });
+            return {
+                laws: laws.length,
+                total_chars: sums.c, total_articles: sums.n,
+                link_base: idx.link_base,
+                items: laws.map(l => ({
+                    id: (l.canton ? l.canton.toUpperCase() + ' ' : 'CH ') + l.sr,
+                    title: l.title,
+                    link: idx.link_base + enc(l.path),
+                    languages: Object.fromEntries((l.languages || []).map(x => [x, { chars: 0, articles: 0, path: l.path }])),
+                })),
+            };
+        }
 
         function metric(item, key) {
             const langs = Object.values(item.languages);
