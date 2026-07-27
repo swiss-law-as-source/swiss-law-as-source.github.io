@@ -2,10 +2,21 @@
   "year": "1973",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 2,
-  "categorized": 2,
+  "total": 3,
+  "categorized": 3,
   "uncategorized": 0,
   "by_type": {
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "317 Fachhochschule": 1,
+        "853 Salz": 1
+      },
+      "by_global_category": {
+        "9.20.70.10 Landwirtschaftliche Schule": 1,
+        "6.30.30 Salzregal": 1
+      }
+    },
     "Verordnung": {
       "total": 1,
       "by_topic": {
@@ -14,18 +25,40 @@
       "by_global_category": {
         "3.50 Ordnungsbussen": 1
       }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "853 Salz": 1
-      },
-      "by_global_category": {
-        "6.30.30 Salzregal": 1
-      }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "3",
+      "title": "Bildung - Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "Bildung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "317",
+              "title": "Fachhochschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Bau - Strassen - Wasser - Energie - Verkehr",
@@ -140,16 +173,59 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.70",
+              "title": "Landwirtschaftliches Bildungswesen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.20.70.10",
+                  "title": "Landwirtschaftliche Schule",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 3
   },
   "available_years_for_entity": [
     "1632",
     "1787",
     "1842",
     "1850",
+    "1890",
     "1900",
     "1909",
     "1911",
@@ -162,6 +238,7 @@
     "1948",
     "1949",
     "1951",
+    "1954",
     "1959",
     "1960",
     "1961",

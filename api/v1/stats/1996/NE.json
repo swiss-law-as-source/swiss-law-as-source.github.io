@@ -2,8 +2,8 @@
   "year": "1996",
   "year_semantics": "enactment",
   "entity": "NE",
-  "total": 56,
-  "categorized": 56,
+  "total": 57,
+  "categorized": 57,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -107,12 +107,14 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "568 Entreprises de sécurité": 1
+        "568 Entreprises de sécurité": 1,
+        "916.32 Lait": 1
       },
       "by_global_category": {
-        "5.30.60 Sicherheitsunternehmen": 1
+        "5.30.60 Sicherheitsunternehmen": 1,
+        "9.20.100 Milch": 1
       }
     }
   },
@@ -727,13 +729,45 @@
     {
       "identifier": "9",
       "title": "Économie",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Autre": 4,
+        "Accord intercantonal": 1,
         "Règlement": 1
       },
       "children": [
+        {
+          "identifier": "91",
+          "title": "Agriculture",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Accord intercantonal": 1
+          },
+          "children": [
+            {
+              "identifier": "916",
+              "title": "Production",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Accord intercantonal": 1
+              },
+              "children": [
+                {
+                  "identifier": "916.32",
+                  "title": "Lait",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Accord intercantonal": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "92",
           "title": "Forêts – Chasse – Pêche",
@@ -1403,12 +1437,33 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Accord intercantonal": 1,
         "Autre": 1
       },
       "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Accord intercantonal": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.100",
+              "title": "Milch",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Accord intercantonal": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "9.50",
           "title": "Gewerbe",
@@ -1444,7 +1499,7 @@
     }
   ],
   "languages_available": {
-    "fr": 56
+    "fr": 57
   },
   "available_years_for_entity": [
     "1832",

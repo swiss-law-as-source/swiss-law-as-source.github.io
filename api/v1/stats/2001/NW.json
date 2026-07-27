@@ -2,8 +2,8 @@
   "year": "2001",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 15,
-  "categorized": 15,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -26,6 +26,17 @@
         "6.20.60 Verrechnungssteuer": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 4,
+      "by_topic": {
+        "612 Öffentliche Bauten": 2,
+        "152 Vollziehende Gewalt": 1,
+        "711 Allgemeine Bestimmungen": 1
+      },
+      "by_global_category": {
+        "7.30.40 Submission": 2
+      }
+    },
     "Gesetz": {
       "total": 4,
       "by_topic": {
@@ -38,17 +49,6 @@
         "1.20.20.60 Verwaltungsgebühren": 1,
         "8.20.20.40 Arbeitsvermittlung und Personalverleih": 1,
         "9.50.10.60.30 Spielbanken": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 3,
-      "by_topic": {
-        "152 Vollziehende Gewalt": 1,
-        "317 Fachhochschule": 1,
-        "711 Allgemeine Bestimmungen": 1
-      },
-      "by_global_category": {
-        "9.20.70.10 Landwirtschaftliche Schule": 1
       }
     },
     "Reglement": {
@@ -167,23 +167,21 @@
     {
       "identifier": "3",
       "title": "Bildung - Kultur",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Reglement": 1,
-        "Interkantonale Vereinbarung": 1
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "31",
           "title": "Bildung",
-          "total": 4,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Verordnung": 2,
-            "Reglement": 1,
-            "Interkantonale Vereinbarung": 1
+            "Reglement": 1
           },
           "children": [
             {
@@ -203,15 +201,6 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
-              }
-            },
-            {
-              "identifier": "317",
-              "title": "Fachhochschule",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -252,6 +241,37 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Bau - Strassen - Wasser - Energie - Verkehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "Planung und Bau",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          },
+          "children": [
+            {
+              "identifier": "612",
+              "title": "Öffentliche Bauten",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
               }
             }
           ]
@@ -576,6 +596,37 @@
       ]
     },
     {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
@@ -620,44 +671,12 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
         "Gesetz": 1
       },
       "children": [
-        {
-          "identifier": "9.20",
-          "title": "Landwirtschaft",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "9.20.70",
-              "title": "Landwirtschaftliches Bildungswesen",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "9.20.70.10",
-                  "title": "Landwirtschaftliche Schule",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
         {
           "identifier": "9.50",
           "title": "Gewerbe",
@@ -704,13 +723,14 @@
     }
   ],
   "languages_available": {
-    "de": 15
+    "de": 16
   },
   "available_years_for_entity": [
     "1632",
     "1787",
     "1842",
     "1850",
+    "1890",
     "1900",
     "1909",
     "1911",
@@ -723,6 +743,7 @@
     "1948",
     "1949",
     "1951",
+    "1954",
     "1959",
     "1960",
     "1961",

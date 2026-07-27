@@ -2,8 +2,8 @@
   "year": "1979",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 11,
-  "categorized": 11,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -22,6 +22,17 @@
         "1.20.20.40.50 Renten, Versicherungsansprüche": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "145 Sicherheitsdirektion": 1,
+        "78 Umweltschutz": 1
+      },
+      "by_global_category": {
+        "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
+        "7.60.20 Gewässerschutz": 1
+      }
+    },
     "Anderes": {
       "total": 2,
       "by_topic": {
@@ -29,15 +40,6 @@
       },
       "by_global_category": {
         "8.10.90 Rettungsdienst": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "78 Umweltschutz": 1
-      },
-      "by_global_category": {
-        "7.60.20 Gewässerschutz": 1
       }
     },
     "Gesetz": {
@@ -51,6 +53,37 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Regierungsrat und Verwaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "145",
+              "title": "Sicherheitsdirektion",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Bau, Werke, Verkehr, Energie",
@@ -231,6 +264,48 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.50",
+                  "title": "Polizeiliche Zusammenarbeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 5,
@@ -367,7 +442,7 @@
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 12
   },
   "available_years_for_entity": [
     "1815",
@@ -379,8 +454,8 @@
     "1876",
     "1881",
     "1886",
-    "1896",
     "1902",
+    "1903",
     "1909",
     "1911",
     "1916",

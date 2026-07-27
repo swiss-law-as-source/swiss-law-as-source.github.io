@@ -2,8 +2,8 @@
   "year": "2007",
   "year_semantics": "enactment",
   "entity": "ZH",
-  "total": 42,
-  "categorized": 42,
+  "total": 43,
+  "categorized": 43,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -93,16 +93,17 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
+        "131 Organisation und Aufgaben": 1,
+        "551 Polizeiorganisation": 1,
         "61 Finanzhaushalt": 1,
-        "851 Sozialhilfe": 1,
-        "923 Fischerei": 1
+        "851 Sozialhilfe": 1
       },
       "by_global_category": {
+        "4.180.30 Sport": 1,
         "1.10.40 Interkantonale Zusammenarbeit": 1,
-        "8.70.30.20 Kinder- und Jugendheime": 1,
-        "6.30.60.20 Reviere": 1
+        "8.70.30.20 Kinder- und Jugendheime": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -121,14 +122,35 @@
     {
       "identifier": "1",
       "title": "Staat – Volk – Behörden",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Anderes": 3,
         "Gesetz": 2,
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "13",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "131",
+              "title": "Organisation und Aufgaben",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "17",
           "title": "Behörden und Verwaltung",
@@ -480,10 +502,11 @@
     {
       "identifier": "5",
       "title": "Militär – Bevölkerungsschutz – Polizei – Tierschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Gesetz": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -498,10 +521,11 @@
         {
           "identifier": "55",
           "title": "Polizei",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -511,6 +535,15 @@
               "own": 1,
               "by_type": {
                 "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "551",
+              "title": "Polizeiorganisation",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -713,33 +746,12 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
-        {
-          "identifier": "92",
-          "title": "Forstwesen. Jagd. Fischerei",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "923",
-              "title": "Fischerei",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "93",
           "title": "Industrie und Gewerbe",
@@ -1045,12 +1057,13 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 11,
+      "total": 12,
       "own": 0,
       "by_type": {
         "Anderes": 7,
         "Verordnung": 2,
-        "Reglement": 2
+        "Reglement": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -1161,6 +1174,26 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.30",
+              "title": "Sport",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -1209,12 +1242,11 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
         "Verordnung": 1,
-        "Anderes": 1,
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -1262,37 +1294,6 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "6.30.60",
-              "title": "Fischerei",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.30.60.20",
-                  "title": "Reviere",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
@@ -1501,7 +1502,7 @@
     }
   ],
   "languages_available": {
-    "de": 42
+    "de": 43
   },
   "available_years_for_entity": [
     "1825",
@@ -1512,6 +1513,7 @@
     "1879",
     "1880",
     "1886",
+    "1887",
     "1899",
     "1900",
     "1901",
@@ -1527,6 +1529,7 @@
     "1925",
     "1926",
     "1927",
+    "1928",
     "1929",
     "1930",
     "1931",
@@ -1534,11 +1537,13 @@
     "1934",
     "1936",
     "1937",
+    "1938",
     "1942",
     "1943",
     "1944",
     "1945",
     "1946",
+    "1947",
     "1948",
     "1949",
     "1951",

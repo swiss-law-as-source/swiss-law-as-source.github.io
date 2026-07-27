@@ -2,8 +2,8 @@
   "year": "1990",
   "year_semantics": "enactment",
   "entity": "OW",
-  "total": 11,
-  "categorized": 11,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -40,6 +40,15 @@
       },
       "by_global_category": {
         "7.70.20 Tierschutz": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "416 Berufsbildung, Berufsberatung, Erwachsenenbildung": 1
+      },
+      "by_global_category": {
+        "9.30.30 Bildungswesen": 1
       }
     }
   },
@@ -87,12 +96,22 @@
     {
       "identifier": "4",
       "title": "ERZIEHUNG, BILDUNG, KULTUR",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "416",
+          "title": "Berufsbildung, Berufsberatung, Erwachsenenbildung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        },
         {
           "identifier": "451",
           "title": "Kulturpflege und Kulturförderung",
@@ -351,10 +370,41 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.30",
+          "title": "Forstwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.30.30",
+              "title": "Bildungswesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 12
   },
   "available_years_for_entity": [
     "1825",

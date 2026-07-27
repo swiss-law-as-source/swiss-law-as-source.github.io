@@ -2,8 +2,8 @@
   "year": "1973",
   "year_semantics": "enactment",
   "entity": "OW",
-  "total": 14,
-  "categorized": 14,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
@@ -48,6 +48,15 @@
       },
       "by_global_category": {
         "8.30.70 UVG": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "650 Regalien": 1
+      },
+      "by_global_category": {
+        "6.30.30 Salzregal": 1
       }
     },
     "Gesetz": {
@@ -163,13 +172,23 @@
     {
       "identifier": "6",
       "title": "FINANZEN, REGALIEN, STAATLICHE UNTERNEHMUNGEN",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "650",
+          "title": "Regalien",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        },
         {
           "identifier": "651",
           "title": "Jagd, Fischerei",
@@ -496,12 +515,33 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.30",
+              "title": "Salzregal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "6.40",
           "title": "Staatliche Unternehmen",
@@ -630,7 +670,7 @@
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 15
   },
   "available_years_for_entity": [
     "1825",

@@ -73,8 +73,11 @@
             <li><b>Laws are (law, version) pairs.</b> All year filtering uses the <i>enactment date</i>
                 (original act), never the current consolidated version's date. A 1970 concordat amended
                 in 2015 counts as 1970.</li>
-            <li><b>Date provenance is ranked</b>: <code>lexwork_api</code> (the portal's
-                <code>date_of_decision</code>, authoritative) &gt; <code>sibling:&lt;CANTON&gt;</code>
+            <li><b>Date provenance is ranked</b>: <code>lexfind_family</code> (LexFind's
+                <code>family_active_since</code> — the act's original date, from LexFind's frontend
+                API, available for all 26 cantons) &gt; <code>lexwork_api</code> (the portal's
+                <code>date_of_decision</code>, authoritative but sometimes the canton's accession
+                decision) &gt; <code>sibling:&lt;CANTON&gt;</code>
                 (a concordat is the same act in every member canton — dates propagate from cantons
                 with authoritative data, only when all authoritative siblings agree) &gt;
                 <code>text</code> (parsed "vom / du / del D. Month YYYY" from the stored law text) &gt;
@@ -85,8 +88,9 @@
                 <i>accession</i> decision rather than the concordat's original date — proven by
                 sibling groups whose authoritative dates conflict across cantons. chstat counted 2003
                 <i>membership</i>, a question no public source answers directly today.</li>
-            <li><b>"Unexplained"</b> therefore contains: concordats delisted from the public LexFind
-                record since 2003 (only the Institute's internal database has them), plus
+            <li><b>"Unexplained"</b> therefore contains: concordats no longer attached to LexFind's
+                public systematics catalogs (LexFind's own <code>global/stats</code> reports more
+                texts of law than the catalogs enumerate — the detached/delisted slice), plus
                 accession-vs-membership date semantics.</li>
         </ul>
 
@@ -98,7 +102,14 @@
            <span class="pill delisting_or_coverage">delisting</span> = we hold fewer than chstat counted
            (removed from the public record); <span class="pill reconciled">reconciled</span> = within ±5.</p>
 
-        <h2>5. Data-quality provenance</h2>
+        <h2>5. Comparison by domain (chstat 2003 vs ours)</h2>
+        <div class="table-wrap" id="domain-table">loading…</div>
+        <p class="note">chstat's six domains vs our concordats existing ≤2003 (same domain mapping:
+           harmonized-taxonomy top levels {1,5}, {8}, {4}, {7}, {9}, {6}). "Other" holds civil/criminal-law
+           concordats and those without a source domain — chstat's internal database classified everything,
+           so our named-domain columns undercount by roughly the Other column's size.</p>
+
+        <h2>6. Data-quality provenance</h2>
         <h3>Enactment-date sources (concordats enacted ≤ 2003)</h3>
         <div class="table-wrap" id="prov-table"></div>
         <h3>Instrument types</h3>
@@ -106,7 +117,7 @@
         <h3>Legal domains (harmonized taxonomy)</h3>
         <p id="domain-summary"></p>
 
-        <h2>6. Source data</h2>
+        <h2>7. Source data</h2>
         <ul>
             <li><a href="api/v1/stats/concordats_chstat_comparison.json">Reconciliation JSON</a> (this page's data)</li>
             <li><a href="api/v1/stats/concordats_by_domain.json">Concordats by domain</a> (with per-year breakdowns; CSV export on the <a href="index.html">dashboard</a>)</li>
@@ -127,9 +138,10 @@
             fetch('api/v1/stats/concordats_chstat_comparison.json', opt).then(r => r.json()),
             fetch('stats.json', opt).then(r => r.json()),
         ]);
-        let harm = null, unc = null;
+        let harm = null, unc = null, conc = null;
         try { harm = await (await fetch('api/v1/stats/harmonized_categories.json', opt)).json(); } catch (e) {}
         try { unc = await (await fetch('api/v1/quality/unclassified_types.json', opt)).json(); } catch (e) {}
+        try { conc = await (await fetch('api/v1/stats/concordats_by_domain.json', opt)).json(); } catch (e) {}
 
         const n = x => (x || 0).toLocaleString();
         const active = Object.values(cmp.cantons).reduce((s, v) => s + v.ours_enacted_until_2003.active, 0);
@@ -183,6 +195,32 @@ ours, all concordats (any date):       ${n(Object.values(cmp.cantons).reduce((s,
             a.click();
             URL.revokeObjectURL(a.href);
         });
+
+        // domain comparison (chstat per-domain vs ours <=2003 and all-time)
+        if (conc) {
+            const keys6 = ['etat', 'sante', 'educ', 'infra', 'eco', 'fin'];
+            const chstatDom = {};
+            keys6.forEach(k => chstatDom[k] = rows.reduce((s, [, v]) => s + (v.chstat_2003[k] || 0), 0));
+            const ours03 = {}, oursAll = {};
+            [...keys6, 'autres'].forEach(k => { ours03[k] = 0; oursAll[k] = conc.totals[k] || 0; });
+            for (const [y, pc] of Object.entries(conc.by_year || {})) {
+                if (y === 'unknown' || y > '2003') continue;
+                for (const row of Object.values(pc))
+                    for (const [k, nn] of Object.entries(row)) if (k in ours03) ours03[k] += nn;
+            }
+            const labels = Object.fromEntries(conc.domains.map(d => [d.key, d.label_en || d.label_fr]));
+            const dhead = '<tr><th>Domain</th><th>chstat 2003</th><th>ours ≤2003</th><th>ours all-time</th><th>Δ ≤2003 vs chstat</th></tr>';
+            const dbody = keys6.map(k =>
+                `<tr><td>${labels[k]}</td><td>${n(chstatDom[k])}</td><td>${n(ours03[k])}</td>` +
+                `<td>${n(oursAll[k])}</td><td>${n(ours03[k] - chstatDom[k])}</td></tr>`).join('') +
+                `<tr><td>${labels.autres} (not in chstat)</td><td>—</td><td>${n(ours03.autres)}</td>` +
+                `<td>${n(oursAll.autres)}</td><td>—</td></tr>`;
+            const dfoot = `<tr><td>Total</td><td>${n(cmp.chstat_total)}</td>` +
+                `<td>${n(Object.values(ours03).reduce((a, b) => a + b, 0))}</td>` +
+                `<td>${n(Object.values(oursAll).reduce((a, b) => a + b, 0))}</td><td></td></tr>`;
+            document.getElementById('domain-table').innerHTML =
+                `<table class="data-table"><thead>${dhead}</thead><tbody>${dbody}</tbody><tfoot>${dfoot}</tfoot></table>`;
+        }
 
         // provenance
         const prov = Object.entries(cmp.date_provenance_total || {}).sort((a, b) => b[1] - a[1]);

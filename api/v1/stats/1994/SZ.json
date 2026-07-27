@@ -2,10 +2,21 @@
   "year": "1994",
   "year_semantics": "enactment",
   "entity": "SZ",
-  "total": 8,
-  "categorized": 8,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
+    "Interkantonale Vereinbarung": {
+      "total": 4,
+      "by_topic": {
+        "77 Fischerei": 3,
+        "43 Öffentliches Beschaffungswesen": 1
+      },
+      "by_global_category": {
+        "6.30.60.20 Reviere": 3,
+        "7.30.40 Submission": 1
+      }
+    },
     "Verordnung": {
       "total": 3,
       "by_topic": {
@@ -122,6 +133,26 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Planungs- und Baurecht, Strassen, Wege, Gewässer",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "43",
+          "title": "Öffentliches Beschaffungswesen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        }
+      ]
+    },
+    {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Sicherheit und Gesundheit",
       "total": 1,
@@ -196,9 +227,10 @@
     {
       "identifier": "7",
       "title": "Umwelt- und Tierschutz, Jagd und Fischerei, Verkehr",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 3,
         "Verordnung": 1
       },
       "children": [
@@ -209,6 +241,15 @@
           "own": 1,
           "by_type": {
             "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "77",
+          "title": "Fischerei",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Interkantonale Vereinbarung": 3
           }
         }
       ]
@@ -396,9 +437,10 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 3,
         "Verordnung": 1
       },
       "children": [
@@ -432,18 +474,70 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 3
+          },
+          "children": [
+            {
+              "identifier": "6.30.60",
+              "title": "Fischerei",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 3
+              },
+              "children": [
+                {
+                  "identifier": "6.30.60.20",
+                  "title": "Reviere",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 3
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -468,7 +562,7 @@
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 12
   },
   "available_years_for_entity": [
     "1824",

@@ -51,12 +51,13 @@
         "230 Allgemein": 2,
         "421 Bevölkerungsschutz": 1,
         "854 Fischerei": 1,
-        "962 Strafrechtspflege": 1
+        "871 Feuerpolizei": 1
       },
       "by_global_category": {
         "4.30.40 Passerelle": 1,
         "4.90.30 Ausbildung": 1,
-        "6.30.60.20 Reviere": 1
+        "6.30.60.20 Reviere": 1,
+        "5.20.30.20 Brandschutz": 1
       }
     },
     "Gesetz": {
@@ -478,10 +479,10 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
@@ -503,21 +504,10 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Zivilrecht, Strafrecht, Rechtspflege",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "96",
-          "title": "Zivil- und Strafrechtspflege",
+          "identifier": "87",
+          "title": "Feuerschutz",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -525,8 +515,8 @@
           },
           "children": [
             {
-              "identifier": "962",
-              "title": "Strafrechtspflege",
+              "identifier": "871",
+              "title": "Feuerpolizei",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -830,6 +820,48 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.20",
+                  "title": "Brandschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
@@ -1106,6 +1138,7 @@
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
     "1957",
     "1958",

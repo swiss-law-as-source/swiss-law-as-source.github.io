@@ -43,6 +43,15 @@
         "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "3.31 Submission": 1
+      },
+      "by_global_category": {
+        "7.30.40 Submission": 1
+      }
+    },
     "Verordnung": {
       "total": 1,
       "by_topic": {
@@ -50,15 +59,6 @@
       },
       "by_global_category": {
         "9.20.80.20 Schädlingsbekämpfung": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "70.11 Berufs- und Weiterbildung": 1
-      },
-      "by_global_category": {
-        "4.100.20 Schulgelder": 1
       }
     }
   },
@@ -107,12 +107,33 @@
     {
       "identifier": "3",
       "title": "Allgemeine Funktionen im Gemeinwesen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "3.3",
+          "title": "Öffentliche Unternehmung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "3.31",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "3.9",
           "title": "Strafrecht, Strafprozess, Strafvollzug",
@@ -300,33 +321,12 @@
     {
       "identifier": "70",
       "title": "Handel - Gewerbe - Industrie",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
-        {
-          "identifier": "70.1",
-          "title": "Allgemeine Massnahmen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "70.11",
-              "title": "Berufs- und Weiterbildung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "70.3",
           "title": "Übrige Wirtschaftszweige",
@@ -429,37 +429,6 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "4.100",
-          "title": "Ausbildungsbeiträge",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.100.20",
-              "title": "Schulgelder",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
@@ -493,12 +462,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.50",
           "title": "Verkehr",
@@ -641,6 +631,7 @@
     "1966",
     "1967",
     "1968",
+    "1969",
     "1970",
     "1971",
     "1972",

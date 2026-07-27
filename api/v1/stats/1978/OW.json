@@ -2,8 +2,8 @@
   "year": "1978",
   "year_semantics": "enactment",
   "entity": "OW",
-  "total": 5,
-  "categorized": 5,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
@@ -19,12 +19,14 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
-        "510 Polizei": 1
+        "510 Polizei": 2,
+        "651 Jagd, Fischerei": 1
       },
       "by_global_category": {
-        "5.30.10.50 Polizeiliche Zusammenarbeit": 1
+        "5.30.10.50 Polizeiliche Zusammenarbeit": 2,
+        "6.30.60.20 Reviere": 1
       }
     },
     "Verordnung": {
@@ -79,6 +81,26 @@
     {
       "identifier": "5",
       "title": "SICHERHEIT, BEVÖLKERUNGSSCHUTZ",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2
+      },
+      "children": [
+        {
+          "identifier": "510",
+          "title": "Polizei",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "FINANZEN, REGALIEN, STAATLICHE UNTERNEHMUNGEN",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -86,8 +108,8 @@
       },
       "children": [
         {
-          "identifier": "510",
-          "title": "Polizei",
+          "identifier": "651",
+          "title": "Jagd, Fischerei",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -172,6 +194,48 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.50",
+                  "title": "Polizeiliche Zusammenarbeit",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -179,8 +243,8 @@
       },
       "children": [
         {
-          "identifier": "5.30",
-          "title": "Innere Sicherheit",
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -188,8 +252,8 @@
           },
           "children": [
             {
-              "identifier": "5.30.10",
-              "title": "Polizei",
+              "identifier": "6.30.60",
+              "title": "Fischerei",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -197,8 +261,8 @@
               },
               "children": [
                 {
-                  "identifier": "5.30.10.50",
-                  "title": "Polizeiliche Zusammenarbeit",
+                  "identifier": "6.30.60.20",
+                  "title": "Reviere",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -255,7 +319,7 @@
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 7
   },
   "available_years_for_entity": [
     "1825",

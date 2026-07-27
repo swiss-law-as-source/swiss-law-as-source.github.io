@@ -2,8 +2,8 @@
   "year": "1999",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 29,
-  "categorized": 29,
+  "total": 28,
+  "categorized": 28,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
@@ -67,18 +67,6 @@
         "8.10.20.10 Kantonsspitäler": 1
       }
     },
-    "Interkantonale Vereinbarung": {
-      "total": 3,
-      "by_topic": {
-        "431.5 Interkantonale Zusammenarbeit": 1,
-        "435 Interkantonale Zusammenarbeit": 1,
-        "822.0 Allgemeine Bestimmungen": 1
-      },
-      "by_global_category": {
-        "4.120.10 Schulkoordination": 1,
-        "8.10.20.10 Kantonsspitäler": 1
-      }
-    },
     "Verordnung": {
       "total": 3,
       "by_topic": {
@@ -88,6 +76,17 @@
       "by_global_category": {
         "8.10.100.10 Epidemien, Pandemien": 2,
         "6.30.50.10 Jäger": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "416 Schulkoordination": 1,
+        "435 Interkantonale Zusammenarbeit": 1
+      },
+      "by_global_category": {
+        "4.10.20 Kindergarten": 1,
+        "4.120.10 Schulkoordination": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -306,11 +305,12 @@
         {
           "identifier": "41",
           "title": "SCHULE",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Anderes": 1,
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -352,38 +352,27 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "416",
+              "title": "Schulkoordination",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
             }
           ]
         },
         {
           "identifier": "43",
           "title": "HOCHSCHULEN",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
-            {
-              "identifier": "431",
-              "title": "Universität",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "431.5",
-                  "title": "Interkantonale Zusammenarbeit",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
-            },
             {
               "identifier": "435",
               "title": "Interkantonale Zusammenarbeit",
@@ -513,26 +502,24 @@
     {
       "identifier": "8",
       "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
-      "total": 10,
+      "total": 9,
       "own": 0,
       "by_type": {
         "Reglement": 3,
         "Verordnung": 2,
         "Gesetz": 2,
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "82",
           "title": "GESUNDHEIT",
-          "total": 7,
+          "total": 6,
           "own": 0,
           "by_type": {
             "Verordnung": 2,
             "Gesetz": 2,
             "Reglement": 1,
-            "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           },
           "children": [
@@ -582,23 +569,13 @@
             {
               "identifier": "822",
               "title": "Spitäler",
-              "total": 3,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1,
                 "Gesetz": 1,
                 "Anderes": 1
               },
               "children": [
-                {
-                  "identifier": "822.0",
-                  "title": "Allgemeine Bestimmungen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                },
                 {
                   "identifier": "822.1",
                   "title": "Freiburger spital",
@@ -967,14 +944,34 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 2,
         "Gesetz": 1,
-        "Reglement": 1,
-        "Interkantonale Vereinbarung": 1
+        "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.20",
+              "title": "Kindergarten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.50",
           "title": "Tertiärstufe: Fachhochschulen",
@@ -1193,12 +1190,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 8,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Reglement": 3,
         "Verordnung": 2,
-        "Interkantonale Vereinbarung": 1,
         "Gesetz": 1,
         "Anderes": 1
       },
@@ -1206,11 +1202,10 @@
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 6,
+          "total": 5,
           "own": 0,
           "by_type": {
             "Verordnung": 2,
-            "Interkantonale Vereinbarung": 1,
             "Gesetz": 1,
             "Anderes": 1,
             "Reglement": 1
@@ -1219,10 +1214,9 @@
             {
               "identifier": "8.10.20",
               "title": "Kranken- und Pflegeanstalten",
-              "total": 3,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1,
                 "Gesetz": 1,
                 "Anderes": 1
               },
@@ -1230,10 +1224,9 @@
                 {
                   "identifier": "8.10.20.10",
                   "title": "Kantonsspitäler",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1,
                     "Gesetz": 1
                   }
                 },
@@ -1334,8 +1327,8 @@
     }
   ],
   "languages_available": {
-    "de": 29,
-    "fr": 29
+    "de": 28,
+    "fr": 28
   },
   "available_years_for_entity": [
     "1808",
@@ -1376,6 +1369,7 @@
     "1931",
     "1934",
     "1935",
+    "1936",
     "1938",
     "1942",
     "1943",
