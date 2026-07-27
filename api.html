@@ -178,14 +178,14 @@
 
         <!-- Overview -->
         <div class="kpi-grid" id="kpis">
-            <div class="kpi-card"><div class="value" id="kpi-total">53,692</div><div class="label">Total Laws</div></div>
-            <div class="kpi-card"><div class="value">14</div><div class="label">Cantons</div></div>
-            <div class="kpi-card"><div class="value">1802&ndash;now</div><div class="label">Years Covered</div></div>
+            <div class="kpi-card"><div class="value" id="kpi-total">27,968</div><div class="label">Total Laws</div></div>
+            <div class="kpi-card"><div class="value">26</div><div class="label">Cantons</div></div>
+            <div class="kpi-card"><div class="value">1564&ndash;now</div><div class="label">Years Covered</div></div>
             <div class="kpi-card"><div class="value">de / fr / it</div><div class="label">Languages</div></div>
         </div>
 
         <p>
-            The Swiss Law Collection serves <strong>53,000+ federal and cantonal laws</strong> as static JSON files
+            The Swiss Law Collection serves <strong>62,000+ files covering 28,000+ unique federal and cantonal laws</strong> as static JSON files
             via GitHub Pages. No authentication, no API key, no rate limits. All endpoints return JSON and are
             accessible from any HTTP client or browser.
         </p>
@@ -221,15 +221,15 @@
             <h3>Response</h3>
             <table class="param-table">
                 <tr><th>Field</th><th>Type</th><th>Description</th></tr>
-                <tr><td><code>years</code></td><td>int[]</td><td>Array of years with publications (1802&ndash;2066)</td></tr>
+                <tr><td><code>years</code></td><td>int[]</td><td>Array of years with publications (1564&ndash;2066)</td></tr>
                 <tr><td><code>total_publications</code></td><td>int</td><td>Total number of law entries across all years</td></tr>
                 <tr><td><code>earliest_year</code></td><td>int</td><td>First year in the dataset</td></tr>
                 <tr><td><code>latest_year</code></td><td>int</td><td>Last year in the dataset</td></tr>
             </table>
             <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>{
-  "years": [1802, 1803, 1807, "...", 2024, 2025, 2066],
-  "total_publications": 53692,
-  "earliest_year": 1802,
+  "years": [1564, 1803, 1807, "...", 2024, 2025, 2066],
+  "total_publications": 27968,
+  "earliest_year": 1564,
   "latest_year": 2066
 }</pre>
             <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>curl -s https://swiss-law-as-source.github.io/api/v1/publications/index.json | jq '.total_publications'</pre>
@@ -316,7 +316,7 @@
             <h3>Response</h3>
             <table class="param-table">
                 <tr><th>Field</th><th>Type</th><th>Description</th></tr>
-                <tr><td><code>years</code></td><td>string[]</td><td>Available years (<code>"1802"</code> through <code>"2066"</code>)</td></tr>
+                <tr><td><code>years</code></td><td>string[]</td><td>Available years (<code>"1564"</code> through <code>"2066"</code>)</td></tr>
                 <tr><td><code>entities</code></td><td>string[]</td><td>Entity codes (see below)</td></tr>
                 <tr><td><code>total_files</code></td><td>int</td><td>Total number of year&times;entity JSON files</td></tr>
             </table>
@@ -324,19 +324,31 @@
             <div class="entity-grid">
                 <span><strong>CH</strong> (Federal)</span>
                 <span>AG (Aargau)</span>
+                <span>AI (Appenzell IR)</span>
                 <span>AR (Appenzell AR)</span>
                 <span>BE (Bern)</span>
                 <span>BL (Basel-Land)</span>
                 <span>BS (Basel-Stadt)</span>
                 <span>FR (Fribourg)</span>
+                <span>GE (Genève)</span>
                 <span>GL (Glarus)</span>
                 <span>GR (Graubünden)</span>
+                <span>JU (Jura)</span>
                 <span>LU (Luzern)</span>
+                <span>NE (Neuchâtel)</span>
+                <span>NW (Nidwalden)</span>
+                <span>OW (Obwalden)</span>
                 <span>SG (St. Gallen)</span>
+                <span>SH (Schaffhausen)</span>
                 <span>SO (Solothurn)</span>
+                <span>SZ (Schwyz)</span>
                 <span>TG (Thurgau)</span>
+                <span>TI (Ticino)</span>
+                <span>UR (Uri)</span>
+                <span>VD (Vaud)</span>
                 <span>VS (Valais)</span>
                 <span>ZG (Zug)</span>
+                <span>ZH (Zürich)</span>
             </div>
         </div>
 
@@ -434,6 +446,29 @@
 }</pre>
         </div>
 
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method">GET</span>
+                <span class="endpoint-url">/api/v1/stats/concordats_by_domain.json</span>
+            </div>
+            <div class="endpoint-desc">
+                Intercantonal agreements (concordats) per canton, broken down by thematic domain
+                (following the chstat.ch "Concordats par domaine" layout). Counts are deduplicated
+                across language versions. Data: LexFind (Institut pour le fédéralisme).
+            </div>
+            <h3>Response Fields</h3>
+            <table class="param-table">
+                <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+                <tr><td><code>domains</code></td><td>object[]</td><td>Domain definitions: <code>key</code>, <code>label_fr</code>, <code>global_category_codes</code> (top-level LexFind codes)</td></tr>
+                <tr><td><code>cantons</code></td><td>object</td><td>Per canton code: counts per domain key + <code>total</code> (all 26 cantons present)</td></tr>
+                <tr><td><code>totals</code></td><td>object</td><td>Column totals per domain key + overall <code>total</code></td></tr>
+                <tr><td><code>total_concordats</code></td><td>int</td><td>Total unique concordats</td></tr>
+                <tr><td><code>unclassified_in_autres</code></td><td>int</td><td>Concordats without a global_category (counted in <code>autres</code>)</td></tr>
+                <tr><td><code>notes</code></td><td>string[]</td><td>Known coverage gaps (e.g. ZH partial, GR unclassified)</td></tr>
+            </table>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>curl -s https://swiss-law-as-source.github.io/api/v1/stats/concordats_by_domain.json | jq '.cantons.BE'</pre>
+        </div>
+
         <!-- ────────────────────────────────────────── -->
         <h2 id="global">3. Global Data Files</h2>
         <p>Large aggregate files covering the entire dataset. Useful for dashboards or full exports, but consider the per-year endpoints for targeted queries.</p>
@@ -444,7 +479,7 @@
                 <span class="endpoint-url">/stats.json</span>
             </div>
             <div class="endpoint-desc">
-                Aggregate statistics across all 53,000+ laws: totals, breakdowns by language, canton,
+                Aggregate statistics across all 28,000+ unique laws: totals, breakdowns by language, canton,
                 SR category, law type, year, and cross-tabulations (canton&times;year, type&times;canton, etc.).
             </div>
             <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>curl -s https://swiss-law-as-source.github.io/stats.json | jq 'keys'
@@ -458,12 +493,12 @@
         <div class="endpoint">
             <div class="endpoint-header">
                 <span class="method">GET</span>
-                <span class="endpoint-url">/tags.json</span>
+                <span class="endpoint-url">https://raw.githubusercontent.com/benjamin-arfa/swiss-law/main/docs/tags.json</span>
             </div>
             <div class="endpoint-desc">
-                Per-law metadata index grouped by scope. Contains every law's ID, title, language, version date, and category fields.
+                Per-law metadata index grouped by scope (hosted in the source repo, one entry per language file). Contains every law's ID, title, language, version date, and category fields.
             </div>
-            <div class="note">This file is approximately <strong>19 MB</strong>. For targeted queries, prefer the per-year publications endpoint.</div>
+            <div class="note">This file is approximately <strong>22 MB</strong>. For targeted queries, prefer the per-year publications endpoint.</div>
             <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>{
   "federal": [
     { "id": "0.101", "title": "...", "language": "de", "version_date": "...", "sr_category": "...", "source": "..." }
@@ -473,7 +508,7 @@
     "BE": [ ... ],
     ...
   },
-  "total": 53692
+  "total": 62686
 }</pre>
         </div>
 
