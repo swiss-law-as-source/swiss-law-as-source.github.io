@@ -144,7 +144,10 @@
 
         <div class="chart-section">
             <h2>Intercantonal agreements (concordats) by domain</h2>
-            <p class="hint" id="concordats-filter-state" style="margin-bottom:0.5rem"></p>
+            <div class="tab-bar">
+                <span class="hint" id="concordats-filter-state" style="flex:1"></span>
+                <button id="concordats-csv">Export CSV</button>
+            </div>
             <div class="table-wrap" id="concordats-table"></div>
             <p class="table-note" id="concordats-notes"></p>
         </div>
@@ -543,24 +546,16 @@
         } catch (e) {
             document.getElementById('concordats-table').textContent = 'Concordats data unavailable.';
         }
-        function renderConcordats() {
-            if (!conc) return;
+        function computeConcTable() {
             const keys = conc.domains.map(d => d.key);
-            let filtered = !!(state.y1 || state.y2);
-            if (filtered && !conc.by_year) {
-                filtered = false;
-                document.getElementById('concordats-filter-state').textContent =
-                    'Date filtering needs the latest data — please hard-reload the page (Ctrl/Cmd+Shift+R).';
-            }
-            // Full range → precomputed all-time table (includes undated laws);
-            // a year filter recomputes from by_year and excludes undated ones.
+            let filtered = !!(state.y1 || state.y2) && !!conc.by_year;
             let cantons = conc.cantons, totals = conc.totals;
             if (filtered) {
                 cantons = {}; totals = Object.fromEntries(keys.map(k => [k, 0]));
                 totals.total = 0;
                 for (const c of Object.keys(conc.cantons))
                     cantons[c] = Object.fromEntries([...keys.map(k => [k, 0]), ['total', 0]]);
-                for (const [y, perCanton] of Object.entries(conc.by_year || {})) {
+                for (const [y, perCanton] of Object.entries(conc.by_year)) {
                     if (y === 'unknown' || !inRange(y)) continue;
                     for (const [c, row] of Object.entries(perCanton)) {
                         for (const [k, n] of Object.entries(row)) {
@@ -570,6 +565,15 @@
                     }
                 }
             }
+            let undated = 0;
+            for (const r of Object.values((conc.by_year || {}).unknown || {}))
+                undated += Object.values(r).reduce((a, b) => a + b, 0);
+            return { keys, filtered, cantons, totals, undated };
+        }
+
+        function renderConcordats() {
+            if (!conc) return;
+            const { keys, filtered, cantons, totals, undated } = computeConcTable();
             const cell = v => `<td${v === 0 ? ' class="zero"' : ''}>${v.toLocaleString()}</td>`;
             const head = '<tr><th>Canton</th>' +
                 conc.domains.map(d => `<th>${d.label_en || d.label_fr}</th>`).join('') + '<th>Total</th></tr>';
@@ -583,12 +587,45 @@
                 `<td>${totals.total.toLocaleString()}</td></tr>`;
             document.getElementById('concordats-table').innerHTML =
                 `<table class="data-table"><thead>${head}</thead><tbody>${body}</tbody><tfoot>${foot}</tfoot></table>`;
-            document.getElementById('concordats-filter-state').textContent = filtered
-                ? `Filtered: entry into force ${state.y1 || 'beginning'} – ${state.y2 || 'now'}`
-                  + ' (concordats without a dated version are excluded from filtered view).'
-                : 'Showing all concordats. The From/To year filter above also applies to this table'
-                  + (state.canton ? ` — ${state.canton} highlighted.` : '.');
+
+            let msg;
+            if ((state.y1 || state.y2) && !conc.by_year) {
+                msg = 'Date filtering needs the latest data — please hard-reload the page (Ctrl/Cmd+Shift+R).';
+            } else if (filtered) {
+                const later = conc.totals.total - totals.total - undated;
+                msg = `Filtered: current version in force ${state.y1 || 'beginning'} – ${state.y2 || 'now'}: `
+                    + `${totals.total.toLocaleString()} concordats. Note: the year is the entry-into-force date `
+                    + `of the CURRENT consolidated version — ${later.toLocaleString()} concordats whose current `
+                    + `version is dated outside this range (mostly older laws amended later) and ${undated} undated `
+                    + `ones are not shown. For historic comparisons (e.g. chstat 2003) use the unfiltered table.`;
+            } else {
+                msg = 'Showing all concordats. The From/To year filter above also applies here '
+                    + '(years = entry into force of the current consolidated version)'
+                    + (state.canton ? ` — ${state.canton} highlighted.` : '.');
+            }
+            document.getElementById('concordats-filter-state').textContent = msg;
         }
+
+        document.getElementById('concordats-csv').addEventListener('click', () => {
+            if (!conc) return;
+            const { keys, filtered, cantons, totals } = computeConcTable();
+            const labels = conc.domains.map(d => d.label_en || d.label_fr);
+            const lines = [
+                `# Swiss Law Collection — intercantonal agreements (concordats) by domain`,
+                `# Filter: ${filtered ? `current version in force ${state.y1 || 'beginning'} - ${state.y2 || 'now'}` : 'none (all concordats)'}`,
+                `# Source: ${conc.source}`,
+                ['Canton', ...labels, 'Total'].join(','),
+                ...Object.entries(cantons).map(([c, row]) =>
+                    [c, ...keys.map(k => row[k]), row.total].join(',')),
+                ['Total', ...keys.map(k => totals[k]), totals.total].join(','),
+            ];
+            const blob = new Blob([lines.join('\n')], { type: 'text/csv' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `concordats_${state.y1 || 'all'}_${state.y2 || 'now'}.csv`;
+            a.click();
+            URL.revokeObjectURL(a.href);
+        });
     })();
     </script>
 </body>
