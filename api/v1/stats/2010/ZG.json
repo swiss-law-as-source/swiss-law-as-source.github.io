@@ -1,16 +1,17 @@
 {
   "year": "2010",
   "entity": "ZG",
-  "total": 22,
-  "categorized": 22,
+  "total": 24,
+  "categorized": 24,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 9,
+      "total": 10,
       "by_topic": {
         "153 Verwaltungsorganisation": 2,
         "413 Berufsbildung, Spezialausbildung": 1,
         "414 Mittelschulen, Fachhochschulen und Technische Fachschulen": 1,
+        "632 Kantons- und Gemeindesteuern": 1,
         "651 Kantonalbank": 1,
         "751 Strassen": 1,
         "85 Wohnverhältnisse": 1,
@@ -58,17 +59,27 @@
         "6.10.30 Staatsbeiträge, Subventionen": 1,
         "7.50.20.40 Personenbeförderung": 1
       }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "154 Behörden und Beamte": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.40 Löhne, Entschädigungen": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -94,10 +105,11 @@
         {
           "identifier": "15",
           "title": "Regierungsrat, Staatskanzlei, Verwaltung",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 2,
+            "Reglement": 1
           },
           "children": [
             {
@@ -107,6 +119,15 @@
               "own": 2,
               "by_type": {
                 "Anderes": 2
+              }
+            },
+            {
+              "identifier": "154",
+              "title": "Behörden und Beamte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
               }
             }
           ]
@@ -259,12 +280,32 @@
     {
       "identifier": "6",
       "title": "Finanzen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
+        {
+          "identifier": "63",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "632",
+              "title": "Kantons- und Gemeindesteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "65",
           "title": "Unternehmungen",
@@ -440,11 +481,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Anderes": 3,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -470,19 +512,21 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 3
+            "Anderes": 3,
+            "Reglement": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 3,
+              "total": 4,
               "own": 0,
               "by_type": {
-                "Anderes": 3
+                "Anderes": 3,
+                "Reglement": 1
               },
               "children": [
                 {
@@ -501,6 +545,26 @@
                       "own": 2,
                       "by_type": {
                         "Anderes": 2
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
                       }
                     }
                   ]
@@ -804,29 +868,43 @@
     }
   ],
   "languages_available": {
-    "de": 22
+    "de": 24
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
+    "1896",
+    "1900",
     "1904",
     "1910",
     "1912",
     "1921",
+    "1925",
+    "1928",
     "1929",
+    "1938",
+    "1940",
     "1941",
     "1944",
     "1947",
+    "1949",
+    "1950",
+    "1951",
     "1953",
     "1954",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1963",
     "1964",
+    "1966",
     "1967",
+    "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",
@@ -836,6 +914,7 @@
     "1980",
     "1981",
     "1982",
+    "1983",
     "1984",
     "1985",
     "1987",
@@ -844,8 +923,11 @@
     "1990",
     "1991",
     "1992",
+    "1993",
+    "1994",
     "1995",
     "1996",
+    "1997",
     "1998",
     "1999",
     "2000",

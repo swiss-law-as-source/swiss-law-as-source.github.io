@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,6 @@
             --dark: #1a1a1a;
             --gray: #f5f5f5;
             --border: #e0e0e0;
-            --blue: #2563eb;
-            --green: #16a34a;
         }
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
@@ -43,15 +41,8 @@
             font-size: 1.3rem; margin-bottom: 1rem;
             border-bottom: 2px solid var(--red); padding-bottom: 0.5rem;
         }
-        .bar-chart { display: flex; flex-direction: column; gap: 0.4rem; }
-        .bar-row { display: flex; align-items: center; gap: 0.75rem; }
-        .bar-label { min-width: 240px; font-size: 0.82rem; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-        .bar-container { flex: 1; background: var(--gray); border-radius: 4px; height: 24px; overflow: hidden; }
-        .bar-fill { height: 100%; border-radius: 4px; min-width: 2px; }
-        .bar-value { min-width: 50px; font-size: 0.82rem; font-weight: 600; color: #444; }
-        .timeline-chart svg { width: 100%; height: 250px; }
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
-        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } .bar-label { min-width: 120px; } }
+        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
         .table-wrap { overflow-x: auto; }
         .data-table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
         .data-table th, .data-table td { border: 1px solid var(--border); padding: 0.35rem 0.6rem; text-align: right; }
@@ -61,20 +52,33 @@
         .data-table td.zero { color: #bbb; }
         .data-table tfoot td { font-weight: 700; background: var(--gray); }
         .table-note { font-size: 0.8rem; color: #666; margin-top: 0.75rem; }
-        .tab-bar { display: flex; gap: 0.5rem; margin-bottom: 1rem; flex-wrap: wrap; }
-        .tab-bar button {
+        .tab-bar { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap; align-items: center; }
+        .tab-bar .tab-label { font-size: 0.82rem; color: #666; margin-right: 0.25rem; }
+        .tab-bar button, .filter-bar select, .filter-bar button {
             background: var(--gray); border: 1px solid var(--border); border-radius: 4px;
             padding: 0.3rem 0.8rem; cursor: pointer; font-size: 0.82rem;
         }
         .tab-bar button.active { background: var(--red); color: white; border-color: var(--red); }
+        .filter-bar { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap;
+            background: var(--gray); border: 1px solid var(--border); border-radius: 8px;
+            padding: 0.6rem 1rem; margin-bottom: 1.2rem; }
+        .filter-bar label { font-size: 0.82rem; color: #666; }
+        .filter-bar select { background: #fff; }
+        .chip {
+            display: inline-flex; align-items: center; gap: 0.35rem;
+            background: var(--red); color: #fff; border-radius: 999px;
+            padding: 0.15rem 0.7rem; font-size: 0.8rem; cursor: pointer;
+        }
+        .chip:hover { opacity: 0.85; }
+        .hint { font-size: 0.78rem; color: #888; }
         footer { text-align: center; padding: 2rem; color: #666; font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
         footer a { color: var(--red); text-decoration: none; }
     </style>
 </head>
 <body>
     <header>
-        <h1>Statistiken</h1>
-        <p>Swiss Law Collection &mdash; Federal + Cantonal Coverage &amp; Analytics</p>
+        <h1>Statistics</h1>
+        <p>Swiss Law Collection &mdash; federal + cantonal coverage &amp; analytics</p>
     </header>
     <nav>
         <a href="index.html">Search</a>
@@ -87,52 +91,62 @@
     <main>
         <div class="kpi-grid" id="kpis"></div>
 
+        <!-- Section A: standalone harmonized domains -->
         <div class="chart-section">
-            <h2>Rechtsgebiete — harmonisiert (Bund + Kantone)</h2>
+            <h2>Legal domains — harmonized (federal + cantonal)</h2>
             <div class="tab-bar" id="domains-scope">
-                <button class="active" data-scope="total">Alle</button>
-                <button data-scope="federal">Bund</button>
-                <button data-scope="cantonal">Kantone</button>
+                <span class="tab-label">Scope:</span>
+                <button class="active" data-scope="total">All</button>
+                <button data-scope="federal">Federal</button>
+                <button data-scope="cantonal">Cantonal</button>
             </div>
             <div class="tab-bar" id="domains-form">
+                <span class="tab-label">View:</span>
                 <button class="active" data-form="treemap">Treemap</button>
                 <button data-form="sunburst">Sunburst</button>
             </div>
             <div class="echart" id="domains-chart" style="height:520px"></div>
-            <p class="table-note">Eine Taxonomie für Bundes- und Kantonsrecht (LexFind «domaine juridique»).
-               Klick = hineinzoomen. Labels in de/fr/it: <a href="api/v1/categories/global.json">categories API</a>.</p>
+            <div class="tab-bar" id="domain-split-bar" hidden>
+                <span class="tab-label">Selected: <b id="domain-split-name"></b> — split by:</span>
+                <button class="active" data-split="none">None</button>
+                <button data-split="canton">Canton</button>
+                <button data-split="type">Type</button>
+                <button data-split="canton-type">Canton → Type</button>
+            </div>
+            <div class="echart" id="domain-split-chart" style="height:380px; display:none"></div>
+            <p class="table-note">One taxonomy for federal and cantonal law (LexFind "domaine juridique").
+               Click a tile to zoom and to enable the secondary split (available for the two top tree levels, cantonal laws).
+               Labels in de/fr/it: <a href="api/v1/categories/global.json">categories API</a>.</p>
         </div>
 
-        <div class="grid-2">
-            <div class="chart-section">
-                <h2>Erlasstypen (kantonal)</h2>
-                <div class="echart" id="types-chart" style="height:340px"></div>
+        <!-- Section B: linked dashboard (cantonal) -->
+        <div class="chart-section">
+            <h2>Cantonal laws explorer — linked charts</h2>
+            <div class="filter-bar" id="filters">
+                <label>From</label><select id="year-from"></select>
+                <label>to</label><select id="year-to"></select>
+                <span id="filter-chips"></span>
+                <button id="clear-filters">Clear filters</button>
+                <span class="hint">Click a canton or a type to cross-filter — all three charts stay in sync.
+                    Federal law is in the domains chart above.</span>
             </div>
-            <div class="chart-section">
-                <h2>Files by Language</h2>
-                <div class="echart" id="lang-chart" style="height:340px"></div>
+            <div class="grid-2">
+                <div>
+                    <h3 style="font-size:1.05rem;margin-bottom:0.5rem">Laws by canton</h3>
+                    <div class="echart" id="canton-chart" style="height:440px"></div>
+                </div>
+                <div>
+                    <h3 style="font-size:1.05rem;margin-bottom:0.5rem">Instrument types</h3>
+                    <div class="echart" id="types-chart" style="height:440px"></div>
+                </div>
             </div>
-        </div>
-
-        <div class="grid-2">
-            <div class="chart-section">
-                <h2>Laws by Canton</h2>
-                <div class="echart" id="canton-chart" style="height:340px"></div>
-            </div>
-            <div class="chart-section">
-                <h2>By Source</h2>
-                <div class="echart" id="source-chart" style="height:340px"></div>
-            </div>
+            <h3 style="font-size:1.05rem;margin:1.5rem 0 0.5rem">Laws by version year (stacked by type)</h3>
+            <div class="echart" id="years-chart" style="height:340px"></div>
         </div>
 
         <div class="chart-section">
-            <h2>Laws by Version Date (Year)</h2>
-            <div class="tab-bar" id="year-tabs"></div>
-            <div class="timeline-chart" id="timeline-chart"></div>
-        </div>
-
-        <div class="chart-section">
-            <h2>Concordats intercantonaux par domaine</h2>
+            <h2>Intercantonal agreements (concordats) by domain</h2>
+            <p class="hint" id="concordats-filter-state" style="margin-bottom:0.5rem"></p>
             <div class="table-wrap" id="concordats-table"></div>
             <p class="table-note" id="concordats-notes"></p>
         </div>
@@ -149,103 +163,220 @@
 
         // KPIs
         const kpis = [
-            { value: stats.total_laws.toLocaleString(), label: 'Unique Laws' },
+            { value: stats.total_laws.toLocaleString(), label: 'Unique laws' },
             { value: stats.federal_laws.toLocaleString(), label: 'Federal' },
             { value: stats.cantonal_laws.toLocaleString(), label: 'Cantonal' },
             { value: Object.keys(stats.by_canton || {}).length, label: 'Cantons' },
-            { value: (stats.total_files || 0).toLocaleString(), label: 'Total Files (all languages)' },
+            { value: (stats.total_files || 0).toLocaleString(), label: 'Files (all languages)' },
         ];
         document.getElementById('kpis').innerHTML = kpis.map(k =>
             `<div class="kpi-card"><div class="value">${k.value}</div><div class="label">${k.label}</div></div>`
         ).join('');
 
-        // ─── Interactive charts (ECharts, vendored) ─────────────────────
-        // Categorical palette: validated 8-slot order (CVD-safe adjacent
-        // pairs on white); low-contrast slots are relieved by direct labels.
-        const PALETTE = ['#2a78d6', '#008300', '#e87ba4', '#eda100',
-                         '#1baf7a', '#eb6834', '#4a3aa7', '#e34948'];
+        // Muted categorical palette — validated (CVD-safe adjacent pairs on
+        // white; low-contrast slots relieved by direct labels).
+        const PALETTE = ['#4a86c9', '#4e9a4e', '#d987aa', '#d9a441',
+                         '#3aa985', '#d97a4e', '#6a5cb8', '#d16a69'];
         const GRAY = '#9a9a94';
+        const BLUE_RAMP = ['#c7dcf5', '#9ec4ec', '#74abe3', '#4a91da', '#2a78d6', '#1f5eae'];
         const INK = '#1a1a1a', INK2 = '#52514e';
         const charts = [];
-
         function makeChart(id) {
-            const el = document.getElementById(id);
-            const c = echarts.init(el);
+            const c = echarts.init(document.getElementById(id));
             charts.push(c);
             return c;
         }
         window.addEventListener('resize', () => charts.forEach(c => c.resize()));
 
-        function foldTop(data, n = 7, otherLabel = 'Übrige') {
-            const entries = Object.entries(data).sort((a, b) => b[1] - a[1]);
-            if (entries.length <= n + 1) return entries;
-            const top = entries.slice(0, n);
-            const rest = entries.slice(n).reduce((s, e) => s + e[1], 0);
-            return [...top, [otherLabel, rest]];
+        const typeLabels = stats.category_type_labels || {};
+        const enType = t => (typeLabels[t] && typeLabels[t].en) || t;
+        // Fixed type order (largest overall first) — color follows the type
+        // everywhere, independent of any filter.
+        const TYPE_ORDER = Object.keys(stats.by_category_type || {});
+        const typeColor = t => {
+            const i = TYPE_ORDER.indexOf(t);
+            return i >= 0 && i < PALETTE.length ? PALETTE[i] : GRAY;
+        };
+
+        // ════════ Section B: linked dashboard over the year×canton×type cube ════════
+        const cube = stats.category_type_by_canton_by_year || {};
+        const YEARS = Object.keys(cube).sort();
+        const state = { canton: null, type: null, y1: null, y2: null };
+        let conc = null;   // concordats data — loaded later, table joins the filters
+
+        const selFrom = document.getElementById('year-from');
+        const selTo = document.getElementById('year-to');
+        selFrom.innerHTML = '<option value="">All</option>' +
+            YEARS.map(y => `<option>${y}</option>`).join('');
+        selTo.innerHTML = YEARS.map(y => `<option>${y}</option>`).join('') +
+            '<option value="" selected>Now</option>';
+        selFrom.addEventListener('change', () => { state.y1 = selFrom.value || null; renderAll(); });
+        selTo.addEventListener('change', () => { state.y2 = selTo.value || null; renderAll(); });
+        document.getElementById('clear-filters').addEventListener('click', () => {
+            state.canton = state.type = state.y1 = state.y2 = null;
+            selFrom.value = ''; selTo.value = '';
+            renderAll();
+        });
+
+        function inRange(y) {
+            return (!state.y1 || y >= state.y1) && (!state.y2 || y <= state.y2);
+        }
+        function aggregate({ byCanton = false, byType = false, byYear = false,
+                             useCanton = true, useType = true } = {}) {
+            const out = {};
+            for (const y of YEARS) {
+                if (!inRange(y)) continue;
+                for (const [canton, types] of Object.entries(cube[y])) {
+                    if (useCanton && state.canton && canton !== state.canton) continue;
+                    for (const [t, n] of Object.entries(types)) {
+                        if (useType && state.type && t !== state.type) continue;
+                        const key = byCanton ? canton : byType ? t : byYear ? y : 'all';
+                        if (byYear && byType) {
+                            (out[y] ??= {})[t] = ((out[y] ??= {})[t] || 0) + n;
+                        } else {
+                            out[key] = (out[key] || 0) + n;
+                        }
+                    }
+                }
+            }
+            return out;
         }
 
-        function donut(id, data, tooltipExtra) {
-            const entries = foldTop(data);
-            makeChart(id).setOption({
-                tooltip: {
-                    formatter: p => `${p.name}: <b>${p.value.toLocaleString()}</b> (${p.percent}%)`
-                        + (tooltipExtra ? tooltipExtra(p.name) : ''),
+        const cantonChart = makeChart('canton-chart');
+        const typesChart = makeChart('types-chart');
+        const yearsChart = makeChart('years-chart');
+
+        function renderChips() {
+            const chips = [];
+            if (state.canton) chips.push(`<span class="chip" data-clear="canton">${state.canton} ✕</span>`);
+            if (state.type) chips.push(`<span class="chip" data-clear="type">${enType(state.type)} ✕</span>`);
+            document.getElementById('filter-chips').innerHTML = chips.join(' ');
+        }
+        document.getElementById('filter-chips').addEventListener('click', e => {
+            const k = e.target.dataset && e.target.dataset.clear;
+            if (k) { state[k] = null; renderAll(); }
+        });
+
+        function renderCanton() {
+            // canton facet ignores its own filter (PowerBI style) but dims unselected
+            const data = Object.entries(aggregate({ byCanton: true, useCanton: false }))
+                .map(([name, value]) => ({
+                    name, value,
+                    itemStyle: state.canton && name !== state.canton
+                        ? { opacity: 0.3 } : undefined,
+                }));
+            cantonChart.setOption({
+                tooltip: { formatter: p => `${p.name}: <b>${p.value.toLocaleString()}</b> laws` },
+                series: [{
+                    type: 'treemap', roam: false, nodeClick: false,
+                    breadcrumb: { show: false },
+                    itemStyle: { borderColor: '#fff', borderWidth: 2, gapWidth: 2 },
+                    label: { color: '#fff', fontSize: 12,
+                             formatter: p => `${p.name}\n${p.value.toLocaleString()}` },
+                    color: BLUE_RAMP, colorMappingBy: 'value',
+                    data,
+                }],
+            }, true);
+        }
+
+        function renderTypes() {
+            const agg = aggregate({ byType: true, useType: false });
+            const data = TYPE_ORDER.filter(t => agg[t]).map(t => ({
+                name: enType(t), value: agg[t],
+                itemStyle: {
+                    color: typeColor(t),
+                    opacity: state.type && t !== state.type ? 0.3 : 1,
                 },
+                _type: t,
+            }));
+            typesChart.setOption({
+                tooltip: { formatter: p =>
+                    `${p.name}: <b>${p.value.toLocaleString()}</b> (${p.percent}%)` },
                 legend: { bottom: 0, type: 'scroll', textStyle: { color: INK2, fontSize: 11 } },
                 series: [{
-                    type: 'pie',
-                    radius: ['42%', '68%'],
-                    center: ['50%', '44%'],
+                    type: 'pie', radius: ['40%', '66%'], center: ['50%', '44%'],
                     itemStyle: { borderColor: '#fff', borderWidth: 2, borderRadius: 3 },
                     label: { color: INK, fontSize: 11,
                              formatter: p => `${p.name}\n${p.value.toLocaleString()}` },
                     labelLine: { length: 8, length2: 6 },
-                    emphasis: { scaleSize: 4 },
-                    color: PALETTE,
-                    data: entries.map(([name, value]) => ({ name, value })),
+                    data,
                 }],
-            });
+            }, true);
         }
 
-        const typeLabels = stats.category_type_labels || {};
-        donut('types-chart', stats.by_category_type || {}, name => {
-            const l = typeLabels[name];
-            return l ? `<br><span style="color:#888">${l.fr} · ${l.it}</span>` : '';
-        });
-        donut('lang-chart', stats.by_languages || {});
-        donut('source-chart', stats.by_source || {});
+        function renderYears() {
+            const perYear = aggregate({ byYear: true, byType: true });
+            const years = YEARS.filter(inRange).filter(y => perYear[y]);
+            const activeTypes = TYPE_ORDER.filter(t =>
+                (!state.type || t === state.type) && years.some(y => perYear[y][t]));
+            yearsChart.setOption({
+                tooltip: { trigger: 'axis', axisPointer: { type: 'shadow' } },
+                legend: { top: 0, type: 'scroll',
+                          data: activeTypes.map(enType),
+                          textStyle: { color: INK2, fontSize: 11 } },
+                grid: { left: 50, right: 20, top: 30, bottom: 40 },
+                xAxis: { type: 'category', data: years,
+                         axisLabel: { color: INK2 } },
+                yAxis: { type: 'value', axisLabel: { color: INK2 },
+                         splitLine: { lineStyle: { color: '#eee' } } },
+                series: activeTypes.map(t => ({
+                    name: enType(t), type: 'bar', stack: 'laws',
+                    itemStyle: { color: typeColor(t) },
+                    emphasis: { focus: 'series' },
+                    data: years.map(y => perYear[y][t] || 0),
+                })),
+            }, true);
+        }
 
-        // Canton treemap — magnitude via single-hue sequential fill
-        const cantonData = Object.entries(stats.by_canton || {})
-            .map(([name, value]) => ({ name, value }));
-        makeChart('canton-chart').setOption({
-            tooltip: { formatter: p => `${p.name}: <b>${p.value.toLocaleString()}</b> laws` },
-            series: [{
-                type: 'treemap',
-                roam: false, nodeClick: false, breadcrumb: { show: false },
-                itemStyle: { borderColor: '#fff', borderWidth: 2, gapWidth: 2 },
-                label: { color: '#fff', fontSize: 12,
-                         formatter: p => `${p.name}\n${p.value.toLocaleString()}` },
-                color: ['#c7dcf5', '#9ec4ec', '#74abe3', '#4a91da', '#2a78d6', '#1f5eae'],
-                colorMappingBy: 'value',
-                data: cantonData,
-            }],
+        function renderAll() {
+            renderChips();
+            renderCanton();
+            renderTypes();
+            renderYears();
+            renderConcordats();
+        }
+        cantonChart.on('click', p => {
+            if (!p.name) return;
+            state.canton = state.canton === p.name ? null : p.name;
+            renderAll();
         });
+        typesChart.on('click', p => {
+            const t = p.data && p.data._type;
+            if (!t) return;
+            state.type = state.type === t ? null : t;
+            renderAll();
+        });
+        yearsChart.on('click', p => {
+            const y = p.name;
+            if (!y) return;
+            if (state.y1 === y && state.y2 === y) {
+                state.y1 = state.y2 = null; selFrom.value = ''; selTo.value = '';
+            } else {
+                state.y1 = state.y2 = y; selFrom.value = y; selTo.value = y;
+            }
+            renderAll();
+        });
+        renderAll();
 
-        // Harmonized domains — treemap / sunburst with drill-down
+        // ════════ Section A: standalone harmonized domains ════════
         let harm = null;
         try {
             harm = await (await fetch('api/v1/stats/harmonized_categories.json')).json();
         } catch (e) {}
         if (harm) {
             const domainsChart = makeChart('domains-chart');
-            let scope = 'total', form = 'treemap';
+            const splitChart = makeChart('domain-split-chart');
+            let scope = 'total', form = 'treemap', split = 'none';
+            let selected = null;   // node with by_canton/by_type/by_canton_type
+
+            const nodeName = m => m.identifier + ' ' +
+                (m.title.en || m.title.de || m.title.fr || '');
 
             function toNodes(nodes, topColor) {
                 return nodes.map((n, i) => {
                     const c = topColor || (i < PALETTE.length ? PALETTE[i] : GRAY);
                     const node = {
-                        name: n.identifier + ' ' + (n.title.de || n.title.fr || ''),
+                        name: nodeName(n),
                         value: n[scope],
                         _meta: n,
                         itemStyle: topColor ? undefined : { color: c },
@@ -262,12 +393,13 @@
                 const m = p.data && p.data._meta;
                 if (!m) return p.name;
                 const t = m.title || {};
-                return `<b>${m.identifier}</b> ${t.de || ''}` +
+                return `<b>${m.identifier}</b> ${t.en || t.de || ''}` +
+                    (t.de && t.en ? `<br><span style="color:#888">${t.de}</span>` : '') +
                     (t.fr ? `<br><span style="color:#888">${t.fr}</span>` : '') +
                     (t.it ? `<br><span style="color:#888">${t.it}</span>` : '') +
                     `<br>Total: <b>${m.total.toLocaleString()}</b>` +
-                    ` · Bund: ${m.federal.toLocaleString()}` +
-                    ` · Kantone: ${m.cantonal.toLocaleString()}`;
+                    ` · Federal: ${m.federal.toLocaleString()}` +
+                    ` · Cantonal: ${m.cantonal.toLocaleString()}`;
             }
 
             function renderDomains() {
@@ -283,7 +415,7 @@
                             itemStyle: { borderColor: '#fff', borderWidth: 2, gapWidth: 2 },
                             upperLabel: { show: true, height: 22, color: '#fff' },
                             label: { color: '#fff', fontSize: 11 },
-                            colorSaturation: [0.35, 0.6],
+                            colorSaturation: [0.3, 0.55],
                         }],
                     });
                 } else {
@@ -301,6 +433,80 @@
                 }
             }
 
+            function renderSplit() {
+                const el = document.getElementById('domain-split-chart');
+                if (!selected || split === 'none') {
+                    el.style.display = 'none';
+                    return;
+                }
+                el.style.display = '';
+                splitChart.resize();
+                splitChart.clear();
+                if (split === 'canton') {
+                    const data = Object.entries(selected.by_canton || {})
+                        .map(([name, value]) => ({ name, value }));
+                    splitChart.setOption({
+                        tooltip: { formatter: p => `${p.name}: <b>${p.value.toLocaleString()}</b>` },
+                        series: [{
+                            type: 'treemap', data, roam: false, nodeClick: false,
+                            breadcrumb: { show: false },
+                            itemStyle: { borderColor: '#fff', borderWidth: 2, gapWidth: 2 },
+                            label: { color: '#fff', formatter: p => `${p.name}\n${p.value.toLocaleString()}` },
+                            color: BLUE_RAMP, colorMappingBy: 'value',
+                        }],
+                    });
+                } else if (split === 'type') {
+                    const data = TYPE_ORDER
+                        .filter(t => (selected.by_type || {})[t])
+                        .map(t => ({ name: enType(t), value: selected.by_type[t],
+                                     itemStyle: { color: typeColor(t) } }));
+                    splitChart.setOption({
+                        tooltip: { formatter: p => `${p.name}: <b>${p.value.toLocaleString()}</b> (${p.percent}%)` },
+                        legend: { bottom: 0, type: 'scroll', textStyle: { color: INK2, fontSize: 11 } },
+                        series: [{
+                            type: 'pie', radius: ['40%', '66%'], center: ['50%', '44%'],
+                            itemStyle: { borderColor: '#fff', borderWidth: 2, borderRadius: 3 },
+                            label: { color: INK, fontSize: 11,
+                                     formatter: p => `${p.name}\n${p.value.toLocaleString()}` },
+                            data,
+                        }],
+                    });
+                } else { // canton-type chained
+                    const data = Object.entries(selected.by_canton_type || {})
+                        .map(([canton, types]) => ({
+                            name: canton,
+                            value: Object.values(types).reduce((a, b) => a + b, 0),
+                            children: TYPE_ORDER.filter(t => types[t]).map(t => ({
+                                name: enType(t), value: types[t],
+                                itemStyle: { color: typeColor(t) },
+                            })),
+                        }));
+                    splitChart.setOption({
+                        tooltip: { formatter: p => `${p.treePathInfo ? p.treePathInfo.map(x => x.name).slice(1).join(' › ') : p.name}: <b>${p.value.toLocaleString()}</b>` },
+                        series: [{
+                            type: 'treemap', data, leafDepth: 1,
+                            breadcrumb: { show: true, top: 0 },
+                            itemStyle: { borderColor: '#fff', borderWidth: 2, gapWidth: 2 },
+                            upperLabel: { show: true, height: 20, color: '#fff' },
+                            label: { color: '#fff', fontSize: 11 },
+                        }],
+                    });
+                }
+            }
+
+            function selectNode(meta) {
+                if (meta && (meta.by_canton || meta.by_type)) {
+                    selected = meta;
+                    document.getElementById('domain-split-name').textContent = nodeName(meta);
+                    document.getElementById('domain-split-bar').hidden = false;
+                } else if (!meta) {
+                    selected = null;
+                    document.getElementById('domain-split-bar').hidden = true;
+                }
+                renderSplit();
+            }
+            domainsChart.on('click', p => selectNode(p.data && p.data._meta));
+
             document.getElementById('domains-scope').addEventListener('click', e => {
                 if (e.target.tagName !== 'BUTTON') return;
                 document.querySelectorAll('#domains-scope button').forEach(b => b.classList.remove('active'));
@@ -315,77 +521,67 @@
                 form = e.target.dataset.form;
                 renderDomains();
             });
+            document.getElementById('domain-split-bar').addEventListener('click', e => {
+                if (e.target.tagName !== 'BUTTON') return;
+                document.querySelectorAll('#domain-split-bar button').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                split = e.target.dataset.split;
+                renderSplit();
+            });
             renderDomains();
         } else {
             document.getElementById('domains-chart').textContent = 'Harmonized category data unavailable.';
         }
 
-        // Timeline
-        let timelineMode = 'all';
-        const yearScope = stats.by_year_scope || {};
-
-        function renderTimeline(mode) {
-            const byYear = stats.by_year || {};
-            let years;
-            if (mode === 'all') {
-                years = Object.entries(byYear).map(([y, c]) => [parseInt(y), c]);
-            } else {
-                years = Object.entries(yearScope).map(([y, scopes]) => [parseInt(y), scopes[mode] || 0]);
-            }
-            years = years.filter(([y]) => y >= 1970 && y <= 2027).sort((a, b) => a[0] - b[0]);
-            const max = Math.max(...years.map(y => y[1]), 1);
-            const svgW = 1000, svgH = 250;
-            const m = { top: 20, right: 10, bottom: 40, left: 50 };
-            const pW = svgW - m.left - m.right, pH = svgH - m.top - m.bottom;
-            const bW = Math.max(2, pW / years.length - 1);
-            let svg = `<svg viewBox="0 0 ${svgW} ${svgH}">`;
-            for (let i = 0; i <= 4; i++) {
-                const y = m.top + pH - (pH * i / 4), val = Math.round(max * i / 4);
-                svg += `<line x1="${m.left}" y1="${y}" x2="${svgW-m.right}" y2="${y}" stroke="#eee"/>`;
-                svg += `<text x="${m.left-5}" y="${y+4}" text-anchor="end" font-size="10" fill="#666">${val}</text>`;
-            }
-            const color = mode === 'federal' ? '#D52B1E' : mode === 'cantonal' ? '#2563eb' : '#D52B1E';
-            years.forEach(([year, count], i) => {
-                const x = m.left + (i * (pW / years.length));
-                const h = (count / max) * pH, y = m.top + pH - h;
-                svg += `<rect x="${x}" y="${y}" width="${bW}" height="${h}" fill="${color}" opacity="0.85"><title>${year}: ${count}</title></rect>`;
-                if (year % 5 === 0) svg += `<text x="${x+bW/2}" y="${svgH-10}" text-anchor="middle" font-size="10" fill="#666">${year}</text>`;
-            });
-            svg += '</svg>';
-            document.getElementById('timeline-chart').innerHTML = svg;
-        }
-
-        const tabs = ['all', 'federal', 'cantonal'];
-        document.getElementById('year-tabs').innerHTML = tabs.map(t =>
-            `<button class="${t === 'all' ? 'active' : ''}" data-mode="${t}">${t.charAt(0).toUpperCase() + t.slice(1)}</button>`
-        ).join('');
-        document.getElementById('year-tabs').addEventListener('click', e => {
-            if (e.target.tagName !== 'BUTTON') return;
-            document.querySelectorAll('#year-tabs button').forEach(b => b.classList.remove('active'));
-            e.target.classList.add('active');
-            renderTimeline(e.target.dataset.mode);
-        });
-        renderTimeline('all');
-
-        // Concordats by domain (chstat.ch-style table)
+        // ════════ Concordats table (linked to the canton + year filters) ════════
         try {
-            const conc = await (await fetch('api/v1/stats/concordats_by_domain.json')).json();
-            const keys = conc.domains.map(d => d.key);
-            const cell = v => `<td${v === 0 ? ' class="zero"' : ''}>${v.toLocaleString()}</td>`;
-            const head = '<tr><th>Canton</th>' +
-                conc.domains.map(d => `<th>${d.label_fr}</th>`).join('') + '<th>Total</th></tr>';
-            const body = Object.entries(conc.cantons).map(([canton, row]) =>
-                `<tr><td>${canton}</td>${keys.map(k => cell(row[k])).join('')}${cell(row.total)}</tr>`
-            ).join('');
-            const foot = '<tr><td>Total</td>' +
-                keys.map(k => `<td>${conc.totals[k].toLocaleString()}</td>`).join('') +
-                `<td>${conc.totals.total.toLocaleString()}</td></tr>`;
-            document.getElementById('concordats-table').innerHTML =
-                `<table class="data-table"><thead>${head}</thead><tbody>${body}</tbody><tfoot>${foot}</tfoot></table>`;
+            conc = await (await fetch('api/v1/stats/concordats_by_domain.json')).json();
             document.getElementById('concordats-notes').innerHTML =
-                `Données: ${conc.source}. ` + conc.notes.join('. ') + '.';
+                `Data: ${conc.source}. ` + conc.notes.join('. ') + '.';
+            renderConcordats();
         } catch (e) {
             document.getElementById('concordats-table').textContent = 'Concordats data unavailable.';
+        }
+        function renderConcordats() {
+            if (!conc) return;
+            const keys = conc.domains.map(d => d.key);
+            const filtered = !!(state.y1 || state.y2);
+            // Full range → precomputed all-time table (includes undated laws);
+            // a year filter recomputes from by_year and excludes undated ones.
+            let cantons = conc.cantons, totals = conc.totals;
+            if (filtered) {
+                cantons = {}; totals = Object.fromEntries(keys.map(k => [k, 0]));
+                totals.total = 0;
+                for (const c of Object.keys(conc.cantons))
+                    cantons[c] = Object.fromEntries([...keys.map(k => [k, 0]), ['total', 0]]);
+                for (const [y, perCanton] of Object.entries(conc.by_year || {})) {
+                    if (y === 'unknown' || !inRange(y)) continue;
+                    for (const [c, row] of Object.entries(perCanton)) {
+                        for (const [k, n] of Object.entries(row)) {
+                            cantons[c][k] += n; cantons[c].total += n;
+                            totals[k] += n; totals.total += n;
+                        }
+                    }
+                }
+            }
+            const cell = v => `<td${v === 0 ? ' class="zero"' : ''}>${v.toLocaleString()}</td>`;
+            const head = '<tr><th>Canton</th>' +
+                conc.domains.map(d => `<th>${d.label_en || d.label_fr}</th>`).join('') + '<th>Total</th></tr>';
+            const body = Object.entries(cantons).map(([canton, row]) => {
+                const hl = state.canton === canton
+                    ? ' style="background:#fdeceb;font-weight:600"' : '';
+                return `<tr${hl}><td>${canton}</td>${keys.map(k => cell(row[k])).join('')}${cell(row.total)}</tr>`;
+            }).join('');
+            const foot = '<tr><td>Total</td>' +
+                keys.map(k => `<td>${totals[k].toLocaleString()}</td>`).join('') +
+                `<td>${totals.total.toLocaleString()}</td></tr>`;
+            document.getElementById('concordats-table').innerHTML =
+                `<table class="data-table"><thead>${head}</thead><tbody>${body}</tbody><tfoot>${foot}</tfoot></table>`;
+            document.getElementById('concordats-filter-state').textContent = filtered
+                ? `Filtered: entry into force ${state.y1 || 'beginning'} – ${state.y2 || 'now'}`
+                  + ' (concordats without a dated version are excluded from filtered view).'
+                : 'Showing all concordats. The From/To year filter above also applies to this table'
+                  + (state.canton ? ` — ${state.canton} highlighted.` : '.');
         }
     })();
     </script>
