@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verification Report — Swiss Law Collection</title>
+    <style>
+        :root { --red: #D52B1E; --dark: #1a1a1a; --gray: #f5f5f5; --border: #e0e0e0;
+                --ok: #4e9a4e; --warn: #d9a441; --bad: #d16a69; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        [hidden] { display: none !important; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+               color: var(--dark); line-height: 1.6; background: #fff; }
+        header { background: var(--red); color: white; padding: 2rem; text-align: center; }
+        header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
+        header p { opacity: 0.9; }
+        nav { background: var(--dark); padding: 0.5rem 2rem; text-align: center; }
+        nav a { color: #ccc; text-decoration: none; margin: 0 1rem; font-size: 0.9rem; }
+        nav a:hover { color: white; }
+        main { max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+        h2 { font-size: 1.3rem; margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--red); padding-bottom: 0.5rem; }
+        h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+        p, li { margin-bottom: 0.6rem; font-size: 0.95rem; }
+        ul { padding-left: 1.4rem; }
+        a { color: var(--red); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .waterfall { background: var(--gray); border: 1px solid var(--border); border-radius: 8px;
+                     padding: 1.2rem 1.5rem; font-family: "SF Mono", Consolas, monospace;
+                     font-size: 0.95rem; white-space: pre; overflow-x: auto; }
+        .data-table { border-collapse: collapse; width: 100%; font-size: 0.84rem; }
+        .data-table th, .data-table td { border: 1px solid var(--border); padding: 0.3rem 0.55rem; text-align: right; }
+        .data-table th { background: var(--gray); position: sticky; top: 0; }
+        .data-table th:first-child, .data-table td:first-child { text-align: left; font-weight: 600; }
+        .data-table tbody tr:nth-child(even) { background: #fafafa; }
+        .data-table tfoot td { font-weight: 700; background: var(--gray); }
+        .table-wrap { overflow-x: auto; }
+        .pill { display: inline-block; border-radius: 999px; padding: 0 0.6rem; font-size: 0.75rem; color: #fff; }
+        .pill.dating { background: var(--warn); }
+        .pill.delisting_or_coverage { background: var(--bad); }
+        .pill.reconciled { background: var(--ok); }
+        .note { font-size: 0.8rem; color: #666; margin-top: 0.5rem; }
+        .btn { background: var(--gray); border: 1px solid var(--border); border-radius: 4px;
+               padding: 0.3rem 0.9rem; cursor: pointer; font-size: 0.82rem; margin-bottom: 0.6rem; }
+        footer { text-align: center; padding: 2rem; color: #666; font-size: 0.85rem;
+                 border-top: 1px solid var(--border); margin-top: 3rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Verification Report</h1>
+        <p>Concordat data vs chstat.ch 2003 &mdash; methodology, reconciliation &amp; data-quality provenance</p>
+    </header>
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="laws.html">Laws</a>
+        <a href="api.html">API</a>
+        <a href="verification.html"><strong>Verification</strong></a>
+    </nav>
+    <main>
+        <h2>1. Question under verification</h2>
+        <p>Does this collection's concordat data reproduce the reference table
+           <a href="https://www.chstat.ch/fr/data-theme/1842/Concordats-par-domaine" rel="noopener">
+           "Concordats par domaine" (chstat.ch, 2003)</a>, which was computed by the
+           Institute of Federalism from the same underlying source (LexFind)?
+           This page renders live from the published data — it updates with every regeneration.</p>
+
+        <h2>2. Reconciliation</h2>
+        <div class="waterfall" id="waterfall">loading…</div>
+        <p class="note" id="waterfall-note"></p>
+
+        <h2>3. Methodology</h2>
+        <ul>
+            <li><b>Laws are (law, version) pairs.</b> All year filtering uses the <i>enactment date</i>
+                (original act), never the current consolidated version's date. A 1970 concordat amended
+                in 2015 counts as 1970.</li>
+            <li><b>Date provenance is ranked</b>: <code>lexwork_api</code> (the portal's
+                <code>date_of_decision</code>, authoritative) &gt; <code>sibling:&lt;CANTON&gt;</code>
+                (a concordat is the same act in every member canton — dates propagate from cantons
+                with authoritative data, only when all authoritative siblings agree) &gt;
+                <code>text</code> (parsed "vom / du / del D. Month YYYY" from the stored law text) &gt;
+                <code>version_date_only</code>. Higher provenance overwrites lower, never vice versa.</li>
+            <li><b>Repealed laws are included and flagged</b> (<code>is_active: false</code> from the
+                LexFind catalogs) — the collection is not in-force-only.</li>
+            <li><b>The accession caveat</b>: LexWork's decision date is frequently each canton's
+                <i>accession</i> decision rather than the concordat's original date — proven by
+                sibling groups whose authoritative dates conflict across cantons. chstat counted 2003
+                <i>membership</i>, a question no public source answers directly today.</li>
+            <li><b>"Unexplained"</b> therefore contains: concordats delisted from the public LexFind
+                record since 2003 (only the Institute's internal database has them), plus
+                accession-vs-membership date semantics.</li>
+        </ul>
+
+        <h2>4. Per-canton reconciliation</h2>
+        <button class="btn" id="csv-btn">Export CSV</button>
+        <div class="table-wrap" id="canton-table">loading…</div>
+        <p class="note">Diagnosis: <span class="pill dating">dating</span> = we hold at least as many
+           concordats as chstat counted, but dates place some outside 2003 (date semantics, improvable);
+           <span class="pill delisting_or_coverage">delisting</span> = we hold fewer than chstat counted
+           (removed from the public record); <span class="pill reconciled">reconciled</span> = within ±5.</p>
+
+        <h2>5. Data-quality provenance</h2>
+        <h3>Enactment-date sources (concordats enacted ≤ 2003)</h3>
+        <div class="table-wrap" id="prov-table"></div>
+        <h3>Instrument types</h3>
+        <p id="type-summary"></p>
+        <h3>Legal domains (harmonized taxonomy)</h3>
+        <p id="domain-summary"></p>
+
+        <h2>6. Source data</h2>
+        <ul>
+            <li><a href="api/v1/stats/concordats_chstat_comparison.json">Reconciliation JSON</a> (this page's data)</li>
+            <li><a href="api/v1/stats/concordats_by_domain.json">Concordats by domain</a> (with per-year breakdowns; CSV export on the <a href="index.html">dashboard</a>)</li>
+            <li><a href="api/v1/quality/unclassified_types.json">Instrument-type review list</a> (every "Other" law with its rule-based classification)</li>
+            <li><a href="api/v1/coverage.json">Coverage audit</a> (local files vs source catalogs, per canton × type)</li>
+        </ul>
+    </main>
+    <footer>
+        <a href="https://github.com/benjamin-arfa/swiss-law">GitHub</a> &middot;
+        Data: <a href="https://www.fedlex.admin.ch">Fedlex</a> + <a href="https://www.lexfind.ch">LexFind</a> &middot;
+        Reference: <a href="https://www.chstat.ch">chstat.ch</a> (Institute of Federalism)
+    </footer>
+
+    <script>
+    (async function() {
+        const opt = { cache: 'no-cache' };
+        const [cmp, stats] = await Promise.all([
+            fetch('api/v1/stats/concordats_chstat_comparison.json', opt).then(r => r.json()),
+            fetch('stats.json', opt).then(r => r.json()),
+        ]);
+        let harm = null, unc = null;
+        try { harm = await (await fetch('api/v1/stats/harmonized_categories.json', opt)).json(); } catch (e) {}
+        try { unc = await (await fetch('api/v1/quality/unclassified_types.json', opt)).json(); } catch (e) {}
+
+        const n = x => (x || 0).toLocaleString();
+        const active = Object.values(cmp.cantons).reduce((s, v) => s + v.ours_enacted_until_2003.active, 0);
+        const repealed = Object.values(cmp.cantons).reduce((s, v) => s + v.ours_enacted_until_2003.repealed_listed, 0);
+        document.getElementById('waterfall').textContent =
+`chstat 2003 reference:                 ${n(cmp.chstat_total)}
+├─ ours, enacted ≤2003, still active:  ${n(active)}
+├─ ours, enacted ≤2003, repealed:      ${n(repealed)}   (listed by LexFind, is_active: false)
+└─ unexplained:                        ${n(cmp.unexplained_total)}   (delisted from the public record + accession-date semantics)
+
+ours, undated:                         ${n(cmp.undated_total)}
+ours, all concordats (any date):       ${n(Object.values(cmp.cantons).reduce((s,v)=>s+v.all_time_total,0))}`;
+        document.getElementById('waterfall-note').textContent =
+            'Diagnosis split: ' + Object.entries(cmp.diagnosis_totals || {})
+                .map(([k, v]) => `${k}: ${v} cantons`).join(' · ');
+
+        // per-canton table
+        const rows = Object.entries(cmp.cantons);
+        const head = '<tr><th>Canton</th><th>chstat 2003</th><th>active ≤2003</th>' +
+            '<th>repealed ≤2003</th><th>total ≤2003</th><th>unexplained</th>' +
+            '<th>all-time</th><th>undated</th><th>diagnosis</th></tr>';
+        const body = rows.map(([c, v]) => {
+            const o = v.ours_enacted_until_2003;
+            return `<tr><td>${c}</td><td>${n(v.chstat_2003.total)}</td><td>${n(o.active)}</td>` +
+                `<td>${n(o.repealed_listed)}</td><td>${n(o.total)}</td><td>${n(v.unexplained)}</td>` +
+                `<td>${n(v.all_time_total)}</td><td>${n(v.undated)}</td>` +
+                `<td style="text-align:center"><span class="pill ${v.diagnosis}">${v.diagnosis.replace('_or_coverage','')}</span></td></tr>`;
+        }).join('');
+        const tot = k => rows.reduce((s, [, v]) => s + (k === 'ch' ? v.chstat_2003.total
+            : k === 'a' ? v.ours_enacted_until_2003.active : k === 'r' ? v.ours_enacted_until_2003.repealed_listed
+            : k === 't' ? v.ours_enacted_until_2003.total : k === 'u' ? v.unexplained
+            : k === 'all' ? v.all_time_total : v.undated), 0);
+        const foot = `<tr><td>Total</td><td>${n(tot('ch'))}</td><td>${n(tot('a'))}</td>` +
+            `<td>${n(tot('r'))}</td><td>${n(tot('t'))}</td><td>${n(tot('u'))}</td>` +
+            `<td>${n(tot('all'))}</td><td>${n(tot('un'))}</td><td></td></tr>`;
+        document.getElementById('canton-table').innerHTML =
+            `<table class="data-table"><thead>${head}</thead><tbody>${body}</tbody><tfoot>${foot}</tfoot></table>`;
+
+        document.getElementById('csv-btn').addEventListener('click', () => {
+            const lines = [
+                '# Swiss Law Collection — verification vs chstat.ch 2003',
+                `# ${cmp.note}`,
+                'canton,chstat_2003,active_le2003,repealed_le2003,total_le2003,unexplained,all_time,undated,diagnosis',
+                ...rows.map(([c, v]) => [c, v.chstat_2003.total, v.ours_enacted_until_2003.active,
+                    v.ours_enacted_until_2003.repealed_listed, v.ours_enacted_until_2003.total,
+                    v.unexplained, v.all_time_total, v.undated, v.diagnosis].join(',')),
+            ];
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(new Blob([lines.join('\n')], { type: 'text/csv' }));
+            a.download = 'verification_chstat_2003.csv';
+            a.click();
+            URL.revokeObjectURL(a.href);
+        });
+
+        // provenance
+        const prov = Object.entries(cmp.date_provenance_total || {}).sort((a, b) => b[1] - a[1]);
+        document.getElementById('prov-table').innerHTML =
+            '<table class="data-table"><thead><tr><th>Source</th><th>Laws</th></tr></thead><tbody>' +
+            prov.map(([k, v]) => `<tr><td>${k}</td><td>${n(v)}</td></tr>`).join('') +
+            '</tbody></table>';
+
+        const tp = stats.type_provenance || {};
+        document.getElementById('type-summary').innerHTML =
+            `${n(tp.lexfind)} laws typed by LexFind, <b>${n(tp.inferred)}</b> filled from title rules` +
+            (unc ? ` — of ${n(unc.total)} laws LexFind files under "Other", ${n(unc.classified)} are rule-classified,
+             ${n(unc.residual)} remain genuinely other instruments
+             (<a href="api/v1/quality/unclassified_types.json">full review list</a>).` : '.');
+
+        if (harm) {
+            const c = harm.counts || {};
+            document.getElementById('domain-summary').innerHTML =
+                `Federal: ${n(c.federal_lexfind)} classified by LexFind + ${n(c.federal_fallback)} via SR-prefix fallback
+                 (${n(c.federal_unmapped)} unmapped). Cantonal: ${n(c.cantonal_classified)} classified
+                 (${n(c.cantonal_lexfind)} LexFind, ${n(c.cantonal_canton_systematics)} inferred from canton systematics,
+                 ${n(c.cantonal_title_keywords)} from title keywords), ${n(c.cantonal_unclassified)} unclassified.`;
+        }
+    })();
+    </script>
+</body>
+</html>

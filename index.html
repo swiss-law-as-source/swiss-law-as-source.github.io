@@ -157,7 +157,8 @@
     <footer>
         <a href="https://github.com/benjamin-arfa/swiss-law">GitHub Repository</a> &middot;
         Data: <a href="https://www.fedlex.admin.ch">Fedlex</a> + <a href="https://www.lexfind.ch">LexFind</a> &middot;
-        More tools: <a href="diff.html">Diff viewer</a> &middot;
+        More tools: <a href="verification.html">Verification report</a> &middot;
+        <a href="diff.html">Diff viewer</a> &middot;
         <a href="crossrefs.html">Federal cross-refs</a> &middot;
         <a href="cross_level_refs.html">Federal &harr; cantonal</a>
     </footer>
@@ -599,7 +600,7 @@
                     + `${totals.total.toLocaleString()} concordats (year = original enactment date; a 1970 `
                     + `concordat amended in 2015 counts as 1970). ${later.toLocaleString()} enacted outside `
                     + `the range and ${undated} undated are not shown. Verification vs chstat 2003: `
-                    + `<a href="api/v1/stats/concordats_chstat_comparison.json">comparison JSON</a>.`;
+                    + `<a href="verification.html">full verification report</a>.`;
             } else {
                 msg = 'Showing all concordats (currently in force). The From/To year filter above also applies '
                     + 'here (years = original enactment date)'
