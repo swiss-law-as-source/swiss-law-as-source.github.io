@@ -1,10 +1,10 @@
 {
-  "note": "Verification: our concordats ENACTED on or before 2003 and still in force today, vs chstat.ch's 2003 table (data-theme 1842, Institute of Federalism / LexFind). Differences stem from: concordats repealed since 2003 (absent from our in-force collection), domain classification gaps ('autres'), and undated laws. Year = original enactment date.",
+  "note": "Reconciliation vs chstat.ch 2003 (data-theme 1842, Institute of Federalism / LexFind). ours = concordats ENACTED <= 2003 as listed by LexFind today, split active / repealed_listed. unexplained = chstat - ours: concordats delisted from LexFind entirely + accession-vs-decision-date differences (cantons accede at different times; our date is the act's decision date) + undated laws. Improve dates with enrich_dates_lexwork.sh then enrich-dates --siblings.",
   "source_chstat": "https://www.chstat.ch/fr/data-theme/1842/Concordats-par-domaine",
   "chstat_total": 2522,
   "ours_enacted_until_2003_total": 1707,
-  "ours_all_time_total": 2820,
-  "undated": 167,
+  "unexplained_total": 815,
+  "undated_total": 167,
   "cantons": {
     "AG": {
       "chstat_2003": {
@@ -17,16 +17,15 @@
         "total": 112
       },
       "ours_enacted_until_2003": {
-        "etat": 7,
-        "sante": 8,
-        "educ": 18,
-        "infra": 18,
-        "eco": 6,
-        "fin": 18,
-        "autres": 3,
+        "active": 49,
+        "repealed_listed": 29,
         "total": 78
       },
-      "delta_total": -34
+      "undated": 12,
+      "unexplained": 34,
+      "date_provenance": {
+        "text": 78
+      }
     },
     "AI": {
       "chstat_2003": {
@@ -39,16 +38,15 @@
         "total": 66
       },
       "ours_enacted_until_2003": {
-        "etat": 3,
-        "sante": 0,
-        "educ": 7,
-        "infra": 4,
-        "eco": 5,
-        "fin": 9,
-        "autres": 4,
+        "active": 29,
+        "repealed_listed": 3,
         "total": 32
       },
-      "delta_total": -34
+      "undated": 4,
+      "unexplained": 34,
+      "date_provenance": {
+        "text": 32
+      }
     },
     "AR": {
       "chstat_2003": {
@@ -61,16 +59,15 @@
         "total": 94
       },
       "ours_enacted_until_2003": {
-        "etat": 2,
-        "sante": 6,
-        "educ": 14,
-        "infra": 5,
-        "eco": 4,
-        "fin": 4,
-        "autres": 8,
+        "active": 31,
+        "repealed_listed": 12,
         "total": 43
       },
-      "delta_total": -51
+      "undated": 5,
+      "unexplained": 51,
+      "date_provenance": {
+        "text": 43
+      }
     },
     "BE": {
       "chstat_2003": {
@@ -83,16 +80,15 @@
         "total": 140
       },
       "ours_enacted_until_2003": {
-        "etat": 21,
-        "sante": 4,
-        "educ": 15,
-        "infra": 4,
-        "eco": 7,
-        "fin": 4,
-        "autres": 5,
+        "active": 45,
+        "repealed_listed": 15,
         "total": 60
       },
-      "delta_total": -80
+      "undated": 0,
+      "unexplained": 80,
+      "date_provenance": {
+        "text": 60
+      }
     },
     "BL": {
       "chstat_2003": {
@@ -105,16 +101,16 @@
         "total": 159
       },
       "ours_enacted_until_2003": {
-        "etat": 20,
-        "sante": 19,
-        "educ": 37,
-        "infra": 23,
-        "eco": 15,
-        "fin": 7,
-        "autres": 4,
+        "active": 69,
+        "repealed_listed": 56,
         "total": 125
       },
-      "delta_total": -34
+      "undated": 2,
+      "unexplained": 34,
+      "date_provenance": {
+        "text": 95,
+        "version_date_only": 30
+      }
     },
     "BS": {
       "chstat_2003": {
@@ -127,16 +123,16 @@
         "total": 141
       },
       "ours_enacted_until_2003": {
-        "etat": 18,
-        "sante": 16,
-        "educ": 19,
-        "infra": 19,
-        "eco": 4,
-        "fin": 2,
-        "autres": 6,
+        "active": 45,
+        "repealed_listed": 39,
         "total": 84
       },
-      "delta_total": -57
+      "undated": 1,
+      "unexplained": 57,
+      "date_provenance": {
+        "text": 82,
+        "version_date_only": 2
+      }
     },
     "FR": {
       "chstat_2003": {
@@ -149,16 +145,15 @@
         "total": 92
       },
       "ours_enacted_until_2003": {
-        "etat": 5,
-        "sante": 5,
-        "educ": 17,
-        "infra": 7,
-        "eco": 12,
-        "fin": 9,
-        "autres": 8,
+        "active": 39,
+        "repealed_listed": 24,
         "total": 63
       },
-      "delta_total": -29
+      "undated": 14,
+      "unexplained": 29,
+      "date_provenance": {
+        "text": 63
+      }
     },
     "GE": {
       "chstat_2003": {
@@ -171,16 +166,16 @@
         "total": 59
       },
       "ours_enacted_until_2003": {
-        "etat": 9,
-        "sante": 1,
-        "educ": 19,
-        "infra": 3,
-        "eco": 3,
-        "fin": 5,
-        "autres": 10,
+        "active": 29,
+        "repealed_listed": 21,
         "total": 50
       },
-      "delta_total": -9
+      "undated": 0,
+      "unexplained": 9,
+      "date_provenance": {
+        "text": 40,
+        "version_date_only": 10
+      }
     },
     "GL": {
       "chstat_2003": {
@@ -193,16 +188,16 @@
         "total": 83
       },
       "ours_enacted_until_2003": {
-        "etat": 2,
-        "sante": 4,
-        "educ": 4,
-        "infra": 13,
-        "eco": 3,
-        "fin": 9,
-        "autres": 5,
+        "active": 23,
+        "repealed_listed": 17,
         "total": 40
       },
-      "delta_total": -43
+      "undated": 0,
+      "unexplained": 43,
+      "date_provenance": {
+        "text": 28,
+        "version_date_only": 12
+      }
     },
     "GR": {
       "chstat_2003": {
@@ -215,16 +210,15 @@
         "total": 67
       },
       "ours_enacted_until_2003": {
-        "etat": 0,
-        "sante": 3,
-        "educ": 5,
-        "infra": 5,
-        "eco": 7,
-        "fin": 4,
-        "autres": 2,
+        "active": 13,
+        "repealed_listed": 13,
         "total": 26
       },
-      "delta_total": -41
+      "undated": 17,
+      "unexplained": 41,
+      "date_provenance": {
+        "text": 26
+      }
     },
     "JU": {
       "chstat_2003": {
@@ -237,16 +231,15 @@
         "total": 84
       },
       "ours_enacted_until_2003": {
-        "etat": 14,
-        "sante": 10,
-        "educ": 11,
-        "infra": 2,
-        "eco": 8,
-        "fin": 1,
-        "autres": 7,
+        "active": 38,
+        "repealed_listed": 15,
         "total": 53
       },
-      "delta_total": -31
+      "undated": 18,
+      "unexplained": 31,
+      "date_provenance": {
+        "text": 53
+      }
     },
     "LU": {
       "chstat_2003": {
@@ -259,16 +252,16 @@
         "total": 79
       },
       "ours_enacted_until_2003": {
-        "etat": 3,
-        "sante": 6,
-        "educ": 13,
-        "infra": 7,
-        "eco": 6,
-        "fin": 6,
-        "autres": 8,
+        "active": 28,
+        "repealed_listed": 21,
         "total": 49
       },
-      "delta_total": -30
+      "undated": 1,
+      "unexplained": 30,
+      "date_provenance": {
+        "version_date_only": 3,
+        "text": 46
+      }
     },
     "NE": {
       "chstat_2003": {
@@ -281,16 +274,16 @@
         "total": 93
       },
       "ours_enacted_until_2003": {
-        "etat": 6,
-        "sante": 2,
-        "educ": 24,
-        "infra": 6,
-        "eco": 6,
-        "fin": 19,
-        "autres": 11,
+        "active": 59,
+        "repealed_listed": 15,
         "total": 74
       },
-      "delta_total": -19
+      "undated": 5,
+      "unexplained": 19,
+      "date_provenance": {
+        "version_date_only": 32,
+        "text": 42
+      }
     },
     "NW": {
       "chstat_2003": {
@@ -303,16 +296,16 @@
         "total": 86
       },
       "ours_enacted_until_2003": {
-        "etat": 5,
-        "sante": 15,
-        "educ": 12,
-        "infra": 7,
-        "eco": 7,
-        "fin": 4,
-        "autres": 5,
+        "active": 29,
+        "repealed_listed": 26,
         "total": 55
       },
-      "delta_total": -31
+      "undated": 18,
+      "unexplained": 31,
+      "date_provenance": {
+        "text": 54,
+        "version_date_only": 1
+      }
     },
     "OW": {
       "chstat_2003": {
@@ -325,16 +318,15 @@
         "total": 85
       },
       "ours_enacted_until_2003": {
-        "etat": 6,
-        "sante": 13,
-        "educ": 16,
-        "infra": 16,
-        "eco": 6,
-        "fin": 7,
-        "autres": 1,
+        "active": 30,
+        "repealed_listed": 35,
         "total": 65
       },
-      "delta_total": -20
+      "undated": 3,
+      "unexplained": 20,
+      "date_provenance": {
+        "text": 65
+      }
     },
     "SG": {
       "chstat_2003": {
@@ -347,16 +339,16 @@
         "total": 218
       },
       "ours_enacted_until_2003": {
-        "etat": 17,
-        "sante": 30,
-        "educ": 51,
-        "infra": 55,
-        "eco": 12,
-        "fin": 38,
-        "autres": 9,
+        "active": 142,
+        "repealed_listed": 70,
         "total": 212
       },
-      "delta_total": -6
+      "undated": 1,
+      "unexplained": 6,
+      "date_provenance": {
+        "text": 202,
+        "version_date_only": 10
+      }
     },
     "SH": {
       "chstat_2003": {
@@ -369,16 +361,15 @@
         "total": 69
       },
       "ours_enacted_until_2003": {
-        "etat": 4,
-        "sante": 3,
-        "educ": 13,
-        "infra": 6,
-        "eco": 6,
-        "fin": 6,
-        "autres": 3,
+        "active": 23,
+        "repealed_listed": 18,
         "total": 41
       },
-      "delta_total": -28
+      "undated": 5,
+      "unexplained": 28,
+      "date_provenance": {
+        "text": 41
+      }
     },
     "SO": {
       "chstat_2003": {
@@ -391,16 +382,16 @@
         "total": 118
       },
       "ours_enacted_until_2003": {
-        "etat": 20,
-        "sante": 4,
-        "educ": 14,
-        "infra": 11,
-        "eco": 7,
-        "fin": 22,
-        "autres": 7,
+        "active": 60,
+        "repealed_listed": 25,
         "total": 85
       },
-      "delta_total": -33
+      "undated": 12,
+      "unexplained": 33,
+      "date_provenance": {
+        "text": 84,
+        "version_date_only": 1
+      }
     },
     "SZ": {
       "chstat_2003": {
@@ -413,16 +404,15 @@
         "total": 96
       },
       "ours_enacted_until_2003": {
-        "etat": 3,
-        "sante": 6,
-        "educ": 12,
-        "infra": 20,
-        "eco": 5,
-        "fin": 12,
-        "autres": 3,
+        "active": 38,
+        "repealed_listed": 23,
         "total": 61
       },
-      "delta_total": -35
+      "undated": 3,
+      "unexplained": 35,
+      "date_provenance": {
+        "text": 61
+      }
     },
     "TG": {
       "chstat_2003": {
@@ -435,16 +425,16 @@
         "total": 114
       },
       "ours_enacted_until_2003": {
-        "etat": 23,
-        "sante": 10,
-        "educ": 25,
-        "infra": 19,
-        "eco": 11,
-        "fin": 17,
-        "autres": 7,
+        "active": 78,
+        "repealed_listed": 34,
         "total": 112
       },
-      "delta_total": -2
+      "undated": 0,
+      "unexplained": 2,
+      "date_provenance": {
+        "version_date_only": 2,
+        "text": 110
+      }
     },
     "TI": {
       "chstat_2003": {
@@ -457,16 +447,15 @@
         "total": 44
       },
       "ours_enacted_until_2003": {
-        "etat": 1,
-        "sante": 0,
-        "educ": 17,
-        "infra": 3,
-        "eco": 2,
-        "fin": 5,
-        "autres": 4,
+        "active": 13,
+        "repealed_listed": 19,
         "total": 32
       },
-      "delta_total": -12
+      "undated": 14,
+      "unexplained": 12,
+      "date_provenance": {
+        "text": 32
+      }
     },
     "UR": {
       "chstat_2003": {
@@ -479,16 +468,15 @@
         "total": 67
       },
       "ours_enacted_until_2003": {
-        "etat": 2,
-        "sante": 5,
-        "educ": 11,
-        "infra": 3,
-        "eco": 3,
-        "fin": 3,
-        "autres": 5,
+        "active": 17,
+        "repealed_listed": 15,
         "total": 32
       },
-      "delta_total": -35
+      "undated": 2,
+      "unexplained": 35,
+      "date_provenance": {
+        "text": 32
+      }
     },
     "VD": {
       "chstat_2003": {
@@ -501,16 +489,15 @@
         "total": 98
       },
       "ours_enacted_until_2003": {
-        "etat": 3,
-        "sante": 3,
-        "educ": 14,
-        "infra": 8,
-        "eco": 8,
-        "fin": 8,
-        "autres": 8,
+        "active": 35,
+        "repealed_listed": 17,
         "total": 52
       },
-      "delta_total": -46
+      "undated": 0,
+      "unexplained": 46,
+      "date_provenance": {
+        "text": 52
+      }
     },
     "VS": {
       "chstat_2003": {
@@ -523,16 +510,15 @@
         "total": 63
       },
       "ours_enacted_until_2003": {
-        "etat": 4,
-        "sante": 10,
-        "educ": 12,
-        "infra": 1,
-        "eco": 4,
-        "fin": 3,
-        "autres": 9,
+        "active": 27,
+        "repealed_listed": 16,
         "total": 43
       },
-      "delta_total": -20
+      "undated": 0,
+      "unexplained": 20,
+      "date_provenance": {
+        "text": 43
+      }
     },
     "ZG": {
       "chstat_2003": {
@@ -545,16 +531,15 @@
         "total": 68
       },
       "ours_enacted_until_2003": {
-        "etat": 6,
-        "sante": 7,
-        "educ": 16,
-        "infra": 7,
-        "eco": 7,
-        "fin": 8,
-        "autres": 9,
+        "active": 33,
+        "repealed_listed": 27,
         "total": 60
       },
-      "delta_total": -8
+      "undated": 2,
+      "unexplained": 8,
+      "date_provenance": {
+        "text": 60
+      }
     },
     "ZH": {
       "chstat_2003": {
@@ -567,16 +552,16 @@
         "total": 127
       },
       "ours_enacted_until_2003": {
-        "etat": 14,
-        "sante": 2,
-        "educ": 19,
-        "infra": 23,
-        "eco": 1,
-        "fin": 13,
-        "autres": 8,
+        "active": 61,
+        "repealed_listed": 19,
         "total": 80
       },
-      "delta_total": -47
+      "undated": 28,
+      "unexplained": 47,
+      "date_provenance": {
+        "version_date_only": 11,
+        "text": 69
+      }
     }
   }
 }
