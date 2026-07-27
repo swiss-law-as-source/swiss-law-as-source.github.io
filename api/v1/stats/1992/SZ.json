@@ -2,29 +2,35 @@
   "year": "1992",
   "year_semantics": "enactment",
   "entity": "SZ",
-  "total": 8,
-  "categorized": 8,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
+        "143 Regierungsrat, Verwaltung": 1,
         "25 Strafvollzug": 1,
+        "312 Landwirtschaft": 1,
         "35 Arbeitnehmerschutz": 1,
         "72 Natur-, Landschafts- und Heimatschutz": 1
       },
       "by_global_category": {
+        "1.20.20.20.30 Staatskanzlei": 1,
+        "9.20.120 Tierseuchen": 1,
         "8.10.110 Unfallbekämpfung": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "140 Allgemeines": 1,
         "624 Maturitätsschulen (Gymnasien), Handels- und Fachmittelschulen": 1,
         "72 Natur-, Landschafts- und Heimatschutz": 1
       },
       "by_global_category": {
+        "1.10.120 Information der Öffentlichkeit": 1,
         "4.70.10 Erwachsenenbildung": 1,
         "7.70.20 Tierschutz": 1
       }
@@ -51,6 +57,48 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Grundlagen und Organisation, öffentliche Abgaben",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Behörden und Verwaltung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "140",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "143",
+              "title": "Regierungsrat, Verwaltung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht, Strafrecht, Rechtspflege",
@@ -95,12 +143,32 @@
     {
       "identifier": "3",
       "title": "Volkswirtschaft, Sozialgesetzgebung",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "31",
+          "title": "Volkswirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "312",
+              "title": "Landwirtschaft",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "35",
           "title": "Arbeitnehmerschutz",
@@ -199,6 +267,80 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.120",
+              "title": "Information der Öffentlichkeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.30",
+                      "title": "Staatskanzlei",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "Strafrecht",
@@ -406,10 +548,41 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.120",
+              "title": "Tierseuchen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 11
   },
   "available_years_for_entity": [
     "1824",
@@ -417,6 +590,7 @@
     "1841",
     "1842",
     "1858",
+    "1870",
     "1874",
     "1896",
     "1898",
@@ -450,6 +624,7 @@
     "1955",
     "1958",
     "1959",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -473,6 +648,7 @@
     "1982",
     "1983",
     "1984",
+    "1985",
     "1986",
     "1987",
     "1988",
@@ -508,7 +684,6 @@
     "2018",
     "2019",
     "2020",
-    "2021",
     "2022",
     "2023",
     "2024",

@@ -2,12 +2,12 @@
   "year": "1991",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 28,
-  "categorized": 28,
+  "total": 36,
+  "categorized": 36,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 11,
+      "total": 12,
       "by_topic": {
         "785 Schifffahrt": 2,
         "122.72 Besoldungen": 1,
@@ -16,6 +16,7 @@
         "412.3 Handelsdiplom": 1,
         "511 Organisation und Verwaltung": 1,
         "614 Finanzkontrolle": 1,
+        "731.1 Vorbeugende Massnahmen": 1,
         "731.3 Brandbekämpfung": 1,
         "781 Strassenverkehr": 1,
         "952 Gastgewerbe": 1
@@ -31,10 +32,35 @@
         "7.50.60.10 Schiffssteuern": 1
       }
     },
+    "Gesetz": {
+      "total": 9,
+      "by_topic": {
+        "150 Allgemeine Bestimmungen": 1,
+        "412.0 Allgemeine Bestimmungen": 1,
+        "480 Allgemeine Bestimmungen - Kulturförderung": 1,
+        "481.0 Allgemeine Bestimmungen": 1,
+        "482 Kulturgüterschutz": 1,
+        "785 Schifffahrt": 1,
+        "831.0 Allgemeine Bestimmungen": 1,
+        "836 Familienzulagen": 1,
+        "952 Gastgewerbe": 1
+      },
+      "by_global_category": {
+        "4.180.20 Kulturförderung": 2,
+        "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
+        "4.20.10 Mittelschule": 1,
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
+        "8.70.10 Sozialhilfe": 1,
+        "8.30.120 Mutterschaftsversicherung, Mutterschaftsbeiträge": 1,
+        "6.30.10 Alkohol": 1
+      }
+    },
     "Reglement": {
-      "total": 6,
+      "total": 8,
       "by_topic": {
         "122.72 Besoldungen": 1,
+        "413.5 Schulzahnpflege": 1,
+        "422 Bautechnischen Schule": 1,
         "426 Weiterbildung": 1,
         "551 Kantonspolizei": 1,
         "836 Familienzulagen": 1,
@@ -43,26 +69,10 @@
       },
       "by_global_category": {
         "1.20.20.40.10 Anstellung": 1,
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
         "5.30.10.30 Personal": 1,
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
         "6.30.60.20 Reviere": 1
-      }
-    },
-    "Gesetz": {
-      "total": 6,
-      "by_topic": {
-        "150 Allgemeine Bestimmungen": 1,
-        "480 Allgemeine Bestimmungen - Kulturförderung": 1,
-        "481.0 Allgemeine Bestimmungen": 1,
-        "482 Kulturgüterschutz": 1,
-        "785 Schifffahrt": 1,
-        "952 Gastgewerbe": 1
-      },
-      "by_global_category": {
-        "4.180.20 Kulturförderung": 2,
-        "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
-        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
-        "6.30.10 Alkohol": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -77,12 +87,23 @@
       }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "141.1 Zusammenschlüsse": 1
+        "141.1 Zusammenschlüsse": 1,
+        "551 Kantonspolizei": 1
       },
       "by_global_category": {
-        "1.30.50 Gemeindefusionen": 1
+        "1.30.50 Gemeindefusionen": 1,
+        "5.30.10.30 Personal": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "551 Kantonspolizei": 1
+      },
+      "by_global_category": {
+        "5.30.10.30 Personal": 1
       }
     }
   },
@@ -223,32 +244,44 @@
     {
       "identifier": "4",
       "title": "BILDUNG - KULTUR - SPORT",
-      "total": 5,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Gesetz": 3,
-        "Anderes": 1,
-        "Reglement": 1
+        "Gesetz": 4,
+        "Reglement": 3,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "SCHULE",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1,
+            "Anderes": 1,
+            "Reglement": 1
           },
           "children": [
             {
               "identifier": "412",
               "title": "Mittelschulunterricht",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Gesetz": 1,
                 "Anderes": 1
               },
               "children": [
+                {
+                  "identifier": "412.0",
+                  "title": "Allgemeine Bestimmungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                },
                 {
                   "identifier": "412.3",
                   "title": "Handelsdiplom",
@@ -259,18 +292,47 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "413",
+              "title": "Schuldienste",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.5",
+                  "title": "Schulzahnpflege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "identifier": "42",
           "title": "BERUFSBILDUNG",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 2
           },
           "children": [
+            {
+              "identifier": "422",
+              "title": "Bautechnischen Schule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
             {
               "identifier": "426",
               "title": "Weiterbildung",
@@ -336,10 +398,11 @@
     {
       "identifier": "5",
       "title": "LANDESVERTEIDIGUNG - POLIZEI",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Anderes": 2,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Reglement": 1
       },
       "children": [
@@ -366,18 +429,22 @@
         {
           "identifier": "55",
           "title": "POLIZEI",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Anderes": 1,
             "Reglement": 1
           },
           "children": [
             {
               "identifier": "551",
               "title": "Kantonspolizei",
-              "total": 1,
-              "own": 1,
+              "total": 3,
+              "own": 3,
               "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Anderes": 1,
                 "Reglement": 1
               }
             }
@@ -451,31 +518,40 @@
     {
       "identifier": "7",
       "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 4,
+        "Anderes": 5,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "73",
           "title": "SCHUTZ GEGEN FEUER- UND ELEMENTARSCHÄDEN",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "731",
               "title": "Verhütung und Bekämpfung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 2
               },
               "children": [
+                {
+                  "identifier": "731.1",
+                  "title": "Vorbeugende Massnahmen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
                 {
                   "identifier": "731.3",
                   "title": "Brandbekämpfung",
@@ -525,28 +601,51 @@
     {
       "identifier": "8",
       "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "83",
           "title": "SOZIALHILFE UND SOZIALVORSORGE",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Gesetz": 2,
             "Reglement": 1
           },
           "children": [
             {
+              "identifier": "831",
+              "title": "Sozialhilfe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "831.0",
+                  "title": "Allgemeine Bestimmungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
               "identifier": "836",
               "title": "Familienzulagen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Reglement": 1
+                "Reglement": 1,
+                "Gesetz": 1
               }
             }
           ]
@@ -735,29 +834,52 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
-        "Anderes": 1
+        "Gesetz": 3,
+        "Anderes": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "4.20",
           "title": "Sekundarstufe II",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "4.20.10",
               "title": "Mittelschule",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.90",
+              "title": "Gesundheitspflege, schulpsychologische Dienste",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Reglement": 1
               }
             }
           ]
@@ -787,10 +909,11 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 3,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Reglement": 1
       },
       "children": [
@@ -848,27 +971,33 @@
         {
           "identifier": "5.30",
           "title": "Innere Sicherheit",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Anderes": 1,
             "Reglement": 1
           },
           "children": [
             {
               "identifier": "5.30.10",
               "title": "Polizei",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Anderes": 1,
                 "Reglement": 1
               },
               "children": [
                 {
                   "identifier": "5.30.10.30",
                   "title": "Personal",
-                  "total": 1,
-                  "own": 1,
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Anderes": 1,
                     "Reglement": 1
                   }
                 }
@@ -1037,15 +1166,67 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.120",
+              "title": "Mutterschaftsversicherung, Mutterschaftsbeiträge",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 28,
-    "fr": 28
+    "de": 36,
+    "fr": 36
   },
   "available_years_for_entity": [
+    "1000",
     "1808",
-    "1825",
+    "1826",
     "1831",
     "1832",
     "1834",
@@ -1063,11 +1244,11 @@
     "1879",
     "1880",
     "1889",
-    "1892",
+    "1891",
     "1893",
     "1899",
     "1909",
-    "1912",
+    "1911",
     "1913",
     "1917",
     "1918",
@@ -1080,6 +1261,7 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
     "1935",
     "1936",
@@ -1096,7 +1278,6 @@
     "1954",
     "1955",
     "1957",
-    "1958",
     "1959",
     "1960",
     "1961",

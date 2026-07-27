@@ -2,14 +2,15 @@
   "year": "1988",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 13,
-  "categorized": 13,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 5,
+      "total": 6,
       "by_topic": {
         "145 Sicherheitsdirektion": 1,
+        "147 Landeskanzlei": 1,
         "17 Gerichte, Verwaltungsverfahren und Anwaltsrecht": 1,
         "78 Umweltschutz": 1,
         "856 Frauenhäuser": 1,
@@ -17,6 +18,7 @@
       },
       "by_global_category": {
         "3.70.20 Schutzaufsicht": 1,
+        "7.30.10 Staatliche Gebäude und Liegenschaften": 1,
         "1.20.70.10.10.20 Staatsanwaltschaft": 1,
         "8.10.20.30 Patientenrechte": 1
       }
@@ -47,6 +49,15 @@
         "5.20.30.20 Brandschutz": 1
       }
     },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "35 Versicherungen": 2
+      },
+      "by_global_category": {
+        "5.20.30.40.10 Elementarschadenversicherung": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -61,25 +72,34 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Verordnung": 3,
         "Gesetz": 2
       },
       "children": [
         {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "145",
               "title": "Sicherheitsdirektion",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "147",
+              "title": "Landeskanzlei",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -112,12 +132,22 @@
     {
       "identifier": "3",
       "title": "Finanzen",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Reglement": 2,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "35",
+          "title": "Versicherungen",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Reglement": 2
+          }
+        },
         {
           "identifier": "38",
           "title": "Regalien, Konzessionen",
@@ -356,28 +386,31 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "5.20",
           "title": "Bevölkerungsschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Reglement": 1
           },
           "children": [
             {
               "identifier": "5.20.30",
               "title": "Feuerwehr / Elementarschäden",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 1,
+                "Reglement": 1
               },
               "children": [
                 {
@@ -388,6 +421,26 @@
                   "by_type": {
                     "Anderes": 1
                   }
+                },
+                {
+                  "identifier": "5.20.30.40",
+                  "title": "Gebäudeversicherung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "5.20.30.40.10",
+                      "title": "Elementarschadenversicherung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -429,12 +482,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.10",
+              "title": "Staatliche Gebäude und Liegenschaften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
@@ -533,7 +607,7 @@
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 16
   },
   "available_years_for_entity": [
     "1815",
@@ -541,6 +615,7 @@
     "1829",
     "1834",
     "1836",
+    "1851",
     "1870",
     "1876",
     "1881",
@@ -555,9 +630,11 @@
     "1921",
     "1925",
     "1931",
+    "1934",
     "1936",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1945",
     "1947",
@@ -566,6 +643,7 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",

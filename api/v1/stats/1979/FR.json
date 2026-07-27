@@ -2,19 +2,19 @@
   "year": "1979",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 16,
-  "categorized": 16,
+  "total": 18,
+  "categorized": 18,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
       "total": 7,
       "by_topic": {
         "710 Allgemeine Bestimmungen": 6,
-        "821.22 Betäubungsmittel": 1
+        "635.2 Erbschafts- und Schenkungssteuern": 1
       },
       "by_global_category": {
         "7.10.10 Pläne": 6,
-        "8.10.70 Heil- und Betäubungsmittel": 1
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1
       }
     },
     "Anderes": {
@@ -34,6 +34,17 @@
         "8.10.60 Spitalexterne Krankenpflege": 1
       }
     },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "121 Grosser Rat": 1,
+        "821.32 Trinkwasser": 1,
+        "923 Fischerei": 1
+      },
+      "by_global_category": {
+        "8.10.130.20 Wasserversorgung": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -51,16 +62,40 @@
       "by_global_category": {
         "4.30.10.10 Hauswirtschaftliche Ausbildung": 1
       }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "923 Fischerei": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "STAAT - VOLK - BEHÖRDEN",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "121",
+              "title": "Grosser Rat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "BILDUNG - KULTUR - SPORT",
@@ -166,6 +201,48 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "FINANZEN",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "63",
+          "title": "STEUERN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "635",
+              "title": "Besondere Steuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "635.2",
+                  "title": "Erbschafts- und Schenkungssteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
       "total": 9,
@@ -254,7 +331,7 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
@@ -264,7 +341,7 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
+            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
@@ -274,25 +351,25 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Gesetz": 1
               },
               "children": [
                 {
-                  "identifier": "821.2",
-                  "title": "Heilmittel",
+                  "identifier": "821.3",
+                  "title": "Lebensmittel und Gebrauchsgegenstände",
                   "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Verordnung": 1
+                    "Gesetz": 1
                   },
                   "children": [
                     {
-                      "identifier": "821.22",
-                      "title": "Betäubungsmittel",
+                      "identifier": "821.32",
+                      "title": "Trinkwasser",
                       "total": 1,
                       "own": 1,
                       "by_type": {
-                        "Verordnung": 1
+                        "Gesetz": 1
                       }
                     }
                   ]
@@ -514,6 +591,37 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.40",
+              "title": "Erbschafts- und Schenkungssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 9,
@@ -603,7 +711,7 @@
       "own": 0,
       "by_type": {
         "Anderes": 1,
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -613,7 +721,7 @@
           "own": 0,
           "by_type": {
             "Anderes": 1,
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -626,13 +734,24 @@
               }
             },
             {
-              "identifier": "8.10.70",
-              "title": "Heil- und Betäubungsmittel",
+              "identifier": "8.10.130",
+              "title": "Hygiene",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Verordnung": 1
-              }
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.20",
+                  "title": "Wasserversorgung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -640,12 +759,13 @@
     }
   ],
   "languages_available": {
-    "de": 16,
-    "fr": 16
+    "de": 18,
+    "fr": 18
   },
   "available_years_for_entity": [
+    "1000",
     "1808",
-    "1825",
+    "1826",
     "1831",
     "1832",
     "1834",
@@ -663,11 +783,11 @@
     "1879",
     "1880",
     "1889",
-    "1892",
+    "1891",
     "1893",
     "1899",
     "1909",
-    "1912",
+    "1911",
     "1913",
     "1917",
     "1918",
@@ -680,6 +800,7 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
     "1935",
     "1936",
@@ -696,7 +817,6 @@
     "1954",
     "1955",
     "1957",
-    "1958",
     "1959",
     "1960",
     "1961",

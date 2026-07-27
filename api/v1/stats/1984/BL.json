@@ -15,14 +15,15 @@
         "35 Versicherungen": 1,
         "36 Staatsbeiträge": 1,
         "54 Gewerbe und Industrie": 1,
+        "645 Besondere Dienste": 1,
         "837 Arbeitslosenversicherung": 1,
-        "90 Gesundheitspflege": 1,
-        "91 Medizinalpersonen": 1
+        "90 Gesundheitspflege": 1
       },
       "by_global_category": {
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
         "9.60.40 Konsumentenschutz": 1,
         "8.10.100.10 Epidemien, Pandemien": 1,
+        "4.10.20 Kindergarten": 1,
         "8.20.20.50 Schwarzarbeit": 1,
         "8.20.20.20 Entsendung von Arbeitnehmern": 1,
         "8.30.110 Arbeitslosenversicherung": 1,
@@ -49,13 +50,13 @@
         "1.10.10 Verfassung": 1
       }
     },
-    "Gesetz": {
+    "Anderes": {
       "total": 1,
       "by_topic": {
-        "11 Bürgerrechte": 1
+        "145 Sicherheitsdirektion": 1
       },
       "by_global_category": {
-        "1.10.60 Bürgerrecht": 1
+        "1.20.20.30.20 Direktionen und Ämter": 1
       }
     },
     "Reglement": {
@@ -84,7 +85,7 @@
       "by_type": {
         "Verordnung": 2,
         "Verfassung": 1,
-        "Gesetz": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -97,21 +98,13 @@
           }
         },
         {
-          "identifier": "11",
-          "title": "Bürgerrechte",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Gesetz": 1
-          }
-        },
-        {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -121,6 +114,15 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "145",
+              "title": "Sicherheitsdirektion",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -188,21 +190,23 @@
     {
       "identifier": "6",
       "title": "Kultur, Bildung, Ausbildung",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 2,
         "Reglement": 1,
+        "Verordnung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "64",
           "title": "Schulen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -212,6 +216,15 @@
               "own": 1,
               "by_type": {
                 "Reglement": 1
+              }
+            },
+            {
+              "identifier": "645",
+              "title": "Besondere Dienste",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -310,24 +323,15 @@
     {
       "identifier": "9",
       "title": "Gesundheit",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "90",
           "title": "Gesundheitspflege",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        },
-        {
-          "identifier": "91",
-          "title": "Medizinalpersonen",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -345,17 +349,16 @@
       "own": 0,
       "by_type": {
         "Verfassung": 1,
-        "Gesetz": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verfassung": 1,
-            "Gesetz": 1
+            "Verfassung": 1
           },
           "children": [
             {
@@ -366,15 +369,48 @@
               "by_type": {
                 "Verfassung": 1
               }
-            },
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
             {
-              "identifier": "1.10.60",
-              "title": "Bürgerrecht",
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Gesetz": 1
-              }
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.20",
+                      "title": "Direktionen und Ämter",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -425,13 +461,34 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 2,
+        "Verordnung": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.20",
+              "title": "Kindergarten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.90",
           "title": "Lehrkörper",
@@ -616,6 +673,7 @@
     "1829",
     "1834",
     "1836",
+    "1851",
     "1870",
     "1876",
     "1881",
@@ -630,9 +688,11 @@
     "1921",
     "1925",
     "1931",
+    "1934",
     "1936",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1945",
     "1947",
@@ -641,6 +701,7 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",

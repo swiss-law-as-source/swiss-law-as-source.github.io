@@ -2,43 +2,46 @@
   "year": "2017",
   "year_semantics": "enactment",
   "entity": "NE",
-  "total": 11,
-  "categorized": 11,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
-      "total": 3,
-      "by_topic": {
-        "150.5 Traitement des données": 1,
-        "740 Dispositions générales": 1,
-        "933.5 Loteries, paris professionnels": 1
-      },
-      "by_global_category": {
-        "1.10.120 Information der Öffentlichkeit": 1,
-        "9.50.10.60.30 Spielbanken": 1
-      }
-    },
     "Reglement": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
-        "150.5 Traitement des données": 1,
-        "162.1 Tribunal cantonal": 1,
-        "701 Dispositions générales": 1
+        "150.2 Publications officielles": 1,
+        "416.1 Dispositions générales": 1,
+        "701 Dispositions générales": 1,
+        "75 Géoinformation": 1,
+        "813.1 Placement": 1
       },
       "by_global_category": {
-        "1.10.120 Information der Öffentlichkeit": 1,
-        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "8.30.110 Arbeitslosenversicherung": 1
       }
     },
     "Verordnung": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
-        "933.1 Établissements publics": 2,
+        "152.51 Statut de la fonction publique": 1,
+        "410.1 Dispositions générales": 1,
+        "410.84 Orthophonie": 1,
+        "60 Gestion financière": 1,
         "701 Dispositions générales": 1
       },
       "by_global_category": {
-        "7.60.60 Strahlenschutz": 2
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "4.80.50 Logopädie": 1,
+        "6.10.40 Finanzkontrolle": 1
       }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "416.1 Dispositions générales": 1
+      },
+      "by_global_category": {}
     },
     "Anderes": {
       "total": 1,
@@ -61,11 +64,11 @@
     {
       "identifier": "1",
       "title": "État – Peuple – Autorités",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 2,
-        "Loi": 1
+        "Règlement": 1,
+        "Autre": 1
       },
       "children": [
         {
@@ -74,13 +77,119 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Loi": 1,
-            "Règlement": 1
+            "Règlement": 1,
+            "Autre": 1
           },
           "children": [
             {
               "identifier": "150",
               "title": "Dispositions générales",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "150.2",
+                  "title": "Publications officielles",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "152",
+              "title": "Conseil d'État et administration cantonale",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "152.51",
+                  "title": "Statut de la fonction publique",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Enseignement – Science – Culture – Environnement",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Autre": 2,
+        "Loi": 1,
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Enseignement",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Autre": 2,
+            "Loi": 1,
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "410",
+              "title": "Scolarité obligatoire",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Autre": 2
+              },
+              "children": [
+                {
+                  "identifier": "410.1",
+                  "title": "Dispositions générales",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                },
+                {
+                  "identifier": "410.8",
+                  "title": "Aide à la jeunesse",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "410.84",
+                      "title": "Orthophonie",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Autre": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "416",
+              "title": "Université",
               "total": 2,
               "own": 0,
               "by_type": {
@@ -89,8 +198,8 @@
               },
               "children": [
                 {
-                  "identifier": "150.5",
-                  "title": "Traitement des données",
+                  "identifier": "416.1",
+                  "title": "Dispositions générales",
                   "total": 2,
                   "own": 2,
                   "by_type": {
@@ -101,37 +210,26 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finances",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
         {
-          "identifier": "16",
-          "title": "Organisation judiciaire – Avocats et notaires",
+          "identifier": "60",
+          "title": "Gestion financière",
           "total": 1,
-          "own": 0,
+          "own": 1,
           "by_type": {
-            "Règlement": 1
-          },
-          "children": [
-            {
-              "identifier": "162",
-              "title": "Autorités judiciaires",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Règlement": 1
-              },
-              "children": [
-                {
-                  "identifier": "162.1",
-                  "title": "Tribunal cantonal",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Règlement": 1
-                  }
-                }
-              ]
-            }
-          ]
+            "Autre": 1
+          }
         }
       ]
     },
@@ -142,8 +240,7 @@
       "own": 0,
       "by_type": {
         "Autre": 2,
-        "Règlement": 1,
-        "Loi": 1
+        "Règlement": 2
       },
       "children": [
         {
@@ -169,22 +266,53 @@
           ]
         },
         {
-          "identifier": "74",
-          "title": "Énergie",
+          "identifier": "75",
+          "title": "Géoinformation",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Règlement": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Travail",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Loi": 1
+            "Règlement": 1
           },
           "children": [
             {
-              "identifier": "740",
-              "title": "Dispositions générales",
+              "identifier": "813",
+              "title": "Marché du travail",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Loi": 1
-              }
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "813.1",
+                  "title": "Placement",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -193,53 +321,37 @@
     {
       "identifier": "9",
       "title": "Économie",
-      "total": 4,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Autre": 2,
-        "Accord intercantonal": 1,
-        "Loi": 1
+        "Accord intercantonal": 1
       },
       "children": [
         {
           "identifier": "93",
           "title": "Industrie et artisanat",
-          "total": 4,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Autre": 2,
-            "Accord intercantonal": 1,
-            "Loi": 1
+            "Accord intercantonal": 1
           },
           "children": [
             {
               "identifier": "933",
               "title": "Services",
-              "total": 4,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Autre": 2,
-                "Accord intercantonal": 1,
-                "Loi": 1
+                "Accord intercantonal": 1
               },
               "children": [
                 {
-                  "identifier": "933.1",
-                  "title": "Établissements publics",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Autre": 2
-                  }
-                },
-                {
                   "identifier": "933.5",
                   "title": "Loteries, paris professionnels",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Accord intercantonal": 1,
-                    "Loi": 1
+                    "Accord intercantonal": 1
                   }
                 }
               ]
@@ -253,69 +365,46 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 2,
-        "Loi": 1
+        "Autre": 1
       },
       "children": [
-        {
-          "identifier": "1.10",
-          "title": "Grundlagen",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Loi": 1,
-            "Règlement": 1
-          },
-          "children": [
-            {
-              "identifier": "1.10.120",
-              "title": "Information der Öffentlichkeit",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Loi": 1,
-                "Règlement": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "1.20",
           "title": "Behörden",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Autre": 1
           },
           "children": [
             {
-              "identifier": "1.20.70",
-              "title": "Gerichtsorganisation",
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Règlement": 1
+                "Autre": 1
               },
               "children": [
                 {
-                  "identifier": "1.20.70.10",
-                  "title": "Gerichtsbehörden",
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
                   "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Règlement": 1
+                    "Autre": 1
                   },
                   "children": [
                     {
-                      "identifier": "1.20.70.10.20",
-                      "title": "Obere Gerichte, Bundesgerichte",
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
                       "total": 1,
                       "own": 1,
                       "by_type": {
-                        "Règlement": 1
+                        "Autre": 1
                       }
                     }
                   ]
@@ -327,12 +416,136 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Autre": 3
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Autre": 2
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "4.80.50",
+              "title": "Logopädie",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.40",
+              "title": "Finanzkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
       },
       "children": [
         {
@@ -354,77 +567,35 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Autre": 2
-          },
-          "children": [
-            {
-              "identifier": "7.60.60",
-              "title": "Strahlenschutz",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Autre": 2
-              }
-            }
-          ]
         }
       ]
     },
     {
-      "identifier": "9",
-      "title": "Wirtschaft",
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Règlement": 1
       },
       "children": [
         {
-          "identifier": "9.50",
-          "title": "Gewerbe",
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Loi": 1
+            "Règlement": 1
           },
           "children": [
             {
-              "identifier": "9.50.10",
-              "title": "Dienstleistungen",
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Loi": 1
-              },
-              "children": [
-                {
-                  "identifier": "9.50.10.60",
-                  "title": "Glücksspiel und Lotterien",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Loi": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "9.50.10.60.30",
-                      "title": "Spielbanken",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Loi": 1
-                      }
-                    }
-                  ]
-                }
-              ]
+                "Règlement": 1
+              }
             }
           ]
         }
@@ -432,17 +603,18 @@
     }
   ],
   "languages_available": {
-    "fr": 11
+    "fr": 13
   },
   "available_years_for_entity": [
     "1832",
+    "1849",
     "1857",
-    "1858",
     "1864",
     "1866",
     "1871",
     "1873",
     "1874",
+    "1879",
     "1885",
     "1887",
     "1888",
@@ -461,19 +633,19 @@
     "1912",
     "1913",
     "1914",
-    "1916",
     "1919",
     "1920",
     "1923",
     "1924",
     "1925",
+    "1926",
     "1927",
-    "1928",
     "1930",
     "1931",
     "1933",
     "1934",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1941",
@@ -488,6 +660,7 @@
     "1953",
     "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",

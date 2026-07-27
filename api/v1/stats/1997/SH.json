@@ -2,22 +2,26 @@
   "year": "1997",
   "year_semantics": "enactment",
   "entity": "SH",
-  "total": 12,
-  "categorized": 12,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 7,
+      "total": 10,
       "by_topic": {
         "410.4 Lehrkräfte": 2,
+        "74 Verkehr": 2,
+        "50 Allgemeine Bestimmungen": 1,
         "64 Steuern": 1,
-        "74 Verkehr": 1,
+        "66 Wehrpflichtersatzabgabe": 1,
         "832.1 Krankenversicherung": 1,
         "837 Arbeitslosenversicherung": 1,
         "921 Forstwesen": 1
       },
       "by_global_category": {
         "7.50.20.10 Strassenverkehrssteuern und -abgaben": 2,
+        "5.10.20 Wehrpflichtersatz": 1,
+        "7.50.20.40 Personenbeförderung": 1,
         "8.30.60.30 Spitallisten": 1,
         "8.30.110 Arbeitslosenversicherung": 1
       }
@@ -117,8 +121,8 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen",
+      "identifier": "5",
+      "title": "Gesamtverteidigung - Wehrdienste",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -126,8 +130,37 @@
       },
       "children": [
         {
+          "identifier": "50",
+          "title": "Allgemeine Bestimmungen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
           "identifier": "64",
           "title": "Steuern",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "66",
+          "title": "Wehrpflichtersatzabgabe",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -139,11 +172,11 @@
     {
       "identifier": "7",
       "title": "Raumplanung und Bauwesen - Öffentliche Werke - Energie - Verkehr",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -169,10 +202,10 @@
         {
           "identifier": "74",
           "title": "Verkehr",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           }
         }
       ]
@@ -268,30 +301,61 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.10",
+          "title": "Verteidigung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.10.20",
+              "title": "Wehrpflichtersatz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3
       },
       "children": [
         {
           "identifier": "7.50",
           "title": "Verkehr",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 3
           },
           "children": [
             {
               "identifier": "7.50.20",
               "title": "Strassenverkehr",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 3
               },
               "children": [
                 {
@@ -301,6 +365,15 @@
                   "own": 2,
                   "by_type": {
                     "Verordnung": 2
+                  }
+                },
+                {
+                  "identifier": "7.50.20.40",
+                  "title": "Personenbeförderung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -365,7 +438,7 @@
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 15
   },
   "available_years_for_entity": [
     "1828",
@@ -387,11 +460,13 @@
     "1928",
     "1929",
     "1930",
+    "1934",
     "1936",
     "1937",
     "1939",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1947",
     "1948",
@@ -403,6 +478,7 @@
     "1955",
     "1956",
     "1957",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -417,6 +493,7 @@
     "1972",
     "1973",
     "1974",
+    "1975",
     "1976",
     "1977",
     "1978",

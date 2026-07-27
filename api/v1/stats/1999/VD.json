@@ -2,10 +2,56 @@
   "year": "1999",
   "year_semantics": "enactment",
   "entity": "VD",
-  "total": 14,
-  "categorized": 14,
+  "total": 26,
+  "categorized": 26,
   "uncategorized": 0,
   "by_type": {
+    "Reglement": {
+      "total": 14,
+      "by_topic": {
+        "171 Parlement": 1,
+        "173.000 Organisation judiciaire": 1,
+        "180.100 Église évangélique réformée": 1,
+        "340.000 Exécution des peines et des mesures": 1,
+        "340.100 Établissements d'exécution des peines": 1,
+        "431 Statistiques": 1,
+        "520.000 Protection civile en général": 1,
+        "614 Contrôle des finances": 1,
+        "800.000 Organisation de la santé en général": 1,
+        "814.000 Protection de l'environnement": 1,
+        "850.400 Protection et aide à la jeunesse / Foyers pour enfants et adolescents": 1,
+        "923.900 Conventions (pêche)": 1,
+        "963.100 Lutte contre les incendies et les éléments naturels en général": 1,
+        "963.400 Assurances": 1
+      },
+      "by_global_category": {
+        "1.20.70.20 Gerichtspersonal": 1,
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "4.170.10 Statistik": 1,
+        "6.10.40 Finanzkontrolle": 1,
+        "8.70.20 Jugendschutz, Jugendhilfe": 1,
+        "6.30.60.20 Reviere": 1,
+        "5.20.30.10 Feuerwehr": 1,
+        "5.20.30.20 Brandschutz": 1
+      }
+    },
+    "Gesetz": {
+      "total": 5,
+      "by_topic": {
+        "173.600 Prud'hommes, office de conciliation en matière d'égalité": 1,
+        "180.100 Église évangélique réformée": 1,
+        "221.400 Registre du commerce": 1,
+        "431 Statistiques": 1,
+        "900.000 Développement économique en général": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.50 Arbeits- und Mietgericht": 1,
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "2.20.20.10 Handelsregister": 1,
+        "4.170.10 Statistik": 1,
+        "9.10 Wirtschaftsförderung": 1
+      }
+    },
     "Anderes": {
       "total": 5,
       "by_topic": {
@@ -21,34 +67,6 @@
         "7.10.20 Zonen": 1,
         "9.20.80.10 Rebbau": 1,
         "9.20.120 Tierseuchen": 1
-      }
-    },
-    "Reglement": {
-      "total": 5,
-      "by_topic": {
-        "180.100 Église évangélique réformée": 1,
-        "431 Statistiques": 1,
-        "850.400 Protection et aide à la jeunesse / Foyers pour enfants et adolescents": 1,
-        "923.900 Conventions (pêche)": 1,
-        "963.400 Assurances": 1
-      },
-      "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 1,
-        "4.170.10 Statistik": 1,
-        "8.70.20 Jugendschutz, Jugendhilfe": 1,
-        "6.30.60.20 Reviere": 1,
-        "5.20.30.20 Brandschutz": 1
-      }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "221.400 Registre du commerce": 1,
-        "431 Statistiques": 1
-      },
-      "by_global_category": {
-        "2.20.20.10 Handelsregister": 1,
-        "4.170.10 Statistik": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -67,41 +85,96 @@
     {
       "identifier": "1",
       "title": "ÉTAT - PEUPLE - AUTORITÉS",
-      "total": 2,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Autre": 1,
-        "Règlement": 1
+        "Règlement": 3,
+        "Loi": 2,
+        "Autre": 1
       },
       "children": [
         {
+          "identifier": "17",
+          "title": "AUTORITÉS",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Règlement": 2,
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "171",
+              "title": "Parlement",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            },
+            {
+              "identifier": "173",
+              "title": "Tribunaux",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1,
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "173.000",
+                  "title": "Organisation judiciaire",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                },
+                {
+                  "identifier": "173.600",
+                  "title": "Prud'hommes, office de conciliation en matière d'égalité",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
           "identifier": "18",
           "title": "ÉGLISE, RELIGION",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Autre": 1,
-            "Règlement": 1
+            "Règlement": 1,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "180",
               "title": "Église",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
                 "Autre": 1,
-                "Règlement": 1
+                "Règlement": 1,
+                "Loi": 1
               },
               "children": [
                 {
                   "identifier": "180.100",
                   "title": "Église évangélique réformée",
-                  "total": 2,
-                  "own": 2,
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
                     "Autre": 1,
-                    "Règlement": 1
+                    "Règlement": 1,
+                    "Loi": 1
                   }
                 }
               ]
@@ -144,6 +217,57 @@
                   "own": 1,
                   "by_type": {
                     "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "DROIT PÉNAL - PROCÉDURE PÉNALE - EXÉCUTION",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Règlement": 2
+      },
+      "children": [
+        {
+          "identifier": "33",
+          "title": "EXÉCUTION PÉNALE",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Règlement": 2
+          },
+          "children": [
+            {
+              "identifier": "340",
+              "title": "Peines",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Règlement": 2
+              },
+              "children": [
+                {
+                  "identifier": "340.000",
+                  "title": "Exécution des peines et des mesures",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                },
+                {
+                  "identifier": "340.100",
+                  "title": "Établissements d'exécution des peines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
                   }
                 }
               ]
@@ -219,14 +343,77 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "FINANCES",
+      "identifier": "5",
+      "title": "DÉFENSE GENERALE - PROTECTION DE LA POPULATION",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "50",
+          "title": "Défense et protection",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "520",
+              "title": "Protection civile",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "520.000",
+                  "title": "Protection civile en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "FINANCES",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1,
         "Autre": 1
       },
       "children": [
+        {
+          "identifier": "60",
+          "title": "GESTION FINANCIÈRE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "614",
+              "title": "Contrôle des finances",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "64",
           "title": "CONTRIBUTIONS PUBLIQUES",
@@ -294,12 +481,63 @@
     {
       "identifier": "8",
       "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 3
       },
       "children": [
+        {
+          "identifier": "80",
+          "title": "SANTÉ",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Règlement": 2
+          },
+          "children": [
+            {
+              "identifier": "800",
+              "title": "Organisation de la santé",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "800.000",
+                  "title": "Organisation de la santé en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "814",
+              "title": "Protection de l'équilibre écologique",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "814.000",
+                  "title": "Protection de l'environnement",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "85",
           "title": "ACTION SOCIALE",
@@ -336,14 +574,46 @@
     {
       "identifier": "9",
       "title": "ÉCONOMIE - COOPÉRATION TECHNIQUE",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
+        "Règlement": 3,
         "Autre": 2,
-        "Règlement": 2,
+        "Loi": 1,
         "Accord intercantonal": 1
       },
       "children": [
+        {
+          "identifier": "90",
+          "title": "DÉVELOPPEMENT ÉCONOMIQUE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "900",
+              "title": "Développement économique",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "900.000",
+                  "title": "Développement économique en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "91",
           "title": "AGRICULTURE",
@@ -432,21 +702,30 @@
         {
           "identifier": "96",
           "title": "ASSURANCES, INCENDIES ET ELEMENTS NATURELS",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 2
           },
           "children": [
             {
               "identifier": "963",
               "title": "Lutte contre les incendies et les éléments naturels",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Règlement": 1
+                "Règlement": 2
               },
               "children": [
+                {
+                  "identifier": "963.100",
+                  "title": "Lutte contre les incendies et les éléments naturels en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                },
                 {
                   "identifier": "963.400",
                   "title": "Assurances",
@@ -467,31 +746,87 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Autre": 1,
-        "Règlement": 1
+        "Loi": 2,
+        "Règlement": 2,
+        "Autre": 1
       },
       "children": [
         {
-          "identifier": "1.40",
-          "title": "Kirche und Staat",
+          "identifier": "1.20",
+          "title": "Behörden",
           "total": 2,
           "own": 0,
           "by_type": {
-            "Autre": 1,
+            "Loi": 1,
             "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Loi": 1,
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Loi": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.50",
+                      "title": "Arbeits- und Mietgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Loi": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.70.20",
+                  "title": "Gerichtspersonal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Autre": 1,
+            "Règlement": 1,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "1.40.30",
               "title": "Evangelisch-Reformierte Kirche",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
                 "Autre": 1,
-                "Règlement": 1
+                "Règlement": 1,
+                "Loi": 1
               }
             }
           ]
@@ -587,30 +922,39 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 2
       },
       "children": [
         {
           "identifier": "5.20",
           "title": "Bevölkerungsschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 2
           },
           "children": [
             {
               "identifier": "5.20.30",
               "title": "Feuerwehr / Elementarschäden",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Règlement": 1
+                "Règlement": 2
               },
               "children": [
+                {
+                  "identifier": "5.20.30.10",
+                  "title": "Feuerwehr",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                },
                 {
                   "identifier": "5.20.30.20",
                   "title": "Brandschutz",
@@ -629,14 +973,34 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Règlement": 2,
         "Autre": 1,
-        "Règlement": 1,
         "Accord intercantonal": 1
       },
       "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.40",
+              "title": "Finanzkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "6.20",
           "title": "Steuern",
@@ -769,12 +1133,22 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Autre": 2
+        "Autre": 2,
+        "Loi": 1
       },
       "children": [
+        {
+          "identifier": "9.10",
+          "title": "Wirtschaftsförderung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Loi": 1
+          }
+        },
         {
           "identifier": "9.20",
           "title": "Landwirtschaft",
@@ -819,7 +1193,7 @@
     }
   ],
   "languages_available": {
-    "fr": 14
+    "fr": 26
   },
   "available_years_for_entity": [
     "1803",
@@ -865,6 +1239,7 @@
     "1942",
     "1943",
     "1944",
+    "1945",
     "1946",
     "1947",
     "1948",

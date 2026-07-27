@@ -2,24 +2,26 @@
   "year": "1994",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 11,
-  "categorized": 11,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 5,
+      "total": 6,
       "by_topic": {
         "17 Gemeinden": 1,
         "211 Allgemeines": 1,
         "268 Beurkundungsrecht": 1,
         "751 Förderung des Wohnungsbaues": 1,
-        "852 Bergbau": 1
+        "852 Bergbau": 1,
+        "866 Bankwesen": 1
       },
       "by_global_category": {
         "1.30.10 Gemeindefinanzen": 1,
         "1.50.20.20 Gebühren, Tarife": 1,
         "8.40.10 Eigentums- und Wohnungsbauförderung": 1,
-        "6.30.20 Bergwerk": 1
+        "6.30.20 Bergwerk": 1,
+        "6.40.10 Kantonalbanken": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -33,20 +35,15 @@
         "7.30.40 Submission": 1
       }
     },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "122 Niederlassung und Aufenthalt": 1
-      },
-      "by_global_category": {}
-    },
     "Gesetz": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "751 Förderung des Wohnungsbaues": 1
+        "751 Förderung des Wohnungsbaues": 1,
+        "825 Bäuerlicher Grundbesitz": 1
       },
       "by_global_category": {
-        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1,
+        "9.20.30 Bäuerliches Bodenrecht": 1
       }
     },
     "Anderes": {
@@ -61,33 +58,12 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
-        {
-          "identifier": "12",
-          "title": "Bürgerrecht, Niederlassung und Aufenthalt",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "122",
-              "title": "Niederlassung und Aufenthalt",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "17",
           "title": "Gemeinden",
@@ -239,13 +215,35 @@
     {
       "identifier": "8",
       "title": "Wirtschaft",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 2,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "82",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "825",
+              "title": "Bäuerlicher Grundbesitz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "84",
           "title": "Jagd und Fischerei",
@@ -282,6 +280,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "86",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "866",
+              "title": "Bankwesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -355,11 +373,12 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 2,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -400,6 +419,26 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "6.40",
+          "title": "Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "6.40.10",
+              "title": "Kantonalbanken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -469,18 +508,51 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.30",
+              "title": "Bäuerliches Bodenrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 12
   },
   "available_years_for_entity": [
+    "1000",
     "1632",
     "1787",
     "1842",
     "1850",
     "1890",
     "1900",
+    "1901",
     "1909",
     "1911",
     "1926",

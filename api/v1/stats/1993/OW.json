@@ -2,23 +2,25 @@
   "year": "1993",
   "year_semantics": "enactment",
   "entity": "OW",
-  "total": 15,
-  "categorized": 15,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 6,
+      "total": 8,
       "by_topic": {
-        "833 Vereinbarungen mit psychiatrischen Kliniken": 2,
+        "833 Vereinbarungen mit psychiatrischen Kliniken": 3,
         "350 Opferhilfe": 1,
         "410 Schulen": 1,
         "630 Finanzausgleich": 1,
-        "832 Vereinbarungen mit Spitälern": 1
+        "832 Vereinbarungen mit Spitälern": 1,
+        "853 Alters-, Hinterlassenen- und Invalidenversicherung": 1
       },
       "by_global_category": {
-        "8.10.20.20 Psychiatrische Kliniken": 2,
+        "8.10.20.20 Psychiatrische Kliniken": 3,
         "3.20.70 Opferhilfe": 1,
-        "4.50.10 Pädagogik": 1
+        "4.50.10 Pädagogik": 1,
+        "8.30.30 AHV / IV": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -38,14 +40,26 @@
       }
     },
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "174 Interkantonale Zusammenarbeit": 1,
-        "451 Kulturpflege und Kulturförderung": 1
+        "451 Kulturpflege und Kulturförderung": 1,
+        "540 Bevölkerungsschutz": 1
       },
       "by_global_category": {
         "1.10.40 Interkantonale Zusammenarbeit": 1,
-        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
+        "5.20.20 Landesversorgung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "630 Finanzausgleich": 1,
+        "855 Arbeitslosenversicherung": 1
+      },
+      "by_global_category": {
+        "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven": 1
       }
     },
     "Anderes": {
@@ -55,15 +69,6 @@
       },
       "by_global_category": {
         "4.20.10 Mittelschule": 1
-      }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "855 Arbeitslosenversicherung": 1
-      },
-      "by_global_category": {
-        "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven": 1
       }
     }
   },
@@ -151,11 +156,32 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "FINANZEN, REGALIEN, STAATLICHE UNTERNEHMUNGEN",
-      "total": 2,
+      "identifier": "5",
+      "title": "SICHERHEIT, BEVÖLKERUNGSSCHUTZ",
+      "total": 1,
       "own": 0,
       "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "540",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "FINANZEN, REGALIEN, STAATLICHE UNTERNEHMUNGEN",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1,
         "Interkantonale Vereinbarung": 1
       },
@@ -163,9 +189,10 @@
         {
           "identifier": "630",
           "title": "Finanzausgleich",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung des Parlaments (Dekret)": 1
           }
         },
@@ -183,11 +210,12 @@
     {
       "identifier": "8",
       "title": "GESUNDHEIT, ARBEIT, SOZIALE SICHERHEIT",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
+        "Anderes": 4,
         "Interkantonale Vereinbarung": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Gesetz": 1
       },
       "children": [
@@ -203,11 +231,20 @@
         {
           "identifier": "833",
           "title": "Vereinbarungen mit psychiatrischen Kliniken",
-          "total": 3,
-          "own": 3,
+          "total": 4,
+          "own": 4,
           "by_type": {
-            "Anderes": 2,
+            "Anderes": 3,
             "Interkantonale Vereinbarung": 1
+          }
+        },
+        {
+          "identifier": "853",
+          "title": "Alters-, Hinterlassenen- und Invalidenversicherung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
           }
         },
         {
@@ -363,6 +400,37 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.20",
+              "title": "Landesversorgung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
@@ -427,41 +495,42 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 3,
         "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
+            "Anderes": 3,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "8.10.20",
               "title": "Kranken- und Pflegeanstalten",
-              "total": 3,
+              "total": 4,
               "own": 0,
               "by_type": {
-                "Anderes": 2,
+                "Anderes": 3,
                 "Interkantonale Vereinbarung": 1
               },
               "children": [
                 {
                   "identifier": "8.10.20.20",
                   "title": "Psychiatrische Kliniken",
-                  "total": 3,
-                  "own": 3,
+                  "total": 4,
+                  "own": 4,
                   "by_type": {
-                    "Anderes": 2,
+                    "Anderes": 3,
                     "Interkantonale Vereinbarung": 1
                   }
                 }
@@ -499,15 +568,36 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 15
+    "de": 19
   },
   "available_years_for_entity": [
     "1825",
+    "1834",
     "1850",
     "1874",
     "1877",
@@ -515,6 +605,7 @@
     "1880",
     "1892",
     "1895",
+    "1899",
     "1911",
     "1913",
     "1914",
@@ -547,6 +638,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -605,8 +697,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

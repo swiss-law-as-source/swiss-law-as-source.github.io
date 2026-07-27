@@ -2,55 +2,73 @@
   "year": "1998",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 29,
-  "categorized": 29,
+  "total": 35,
+  "categorized": 35,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 10,
+      "by_topic": {
+        "16 Politische Rechte": 1,
+        "173 Richterliche Behörden": 1,
+        "21 Vollstreckung des Zivilrechts": 1,
+        "27 Zivilrechtspflege": 1,
+        "45 Natur- und Heimatschutz": 1,
+        "50 Katastrophenschutz, Militärwesen": 1,
+        "66 Wehrpflichtersatz": 1,
+        "740 Öffentlicher Verkehr": 1
+      },
+      "by_global_category": {
+        "1.10.90.20.30 Ausstand, Unvereinbarkeit": 1,
+        "1.20.70.50 Gerichtskosten, Gerichtsgebühren": 1,
+        "5.10.30 Militärverwaltung": 1,
+        "5.10.20 Wehrpflichtersatz": 1
+      }
+    },
     "Anderes": {
-      "total": 11,
+      "total": 10,
       "by_topic": {
         "21 Vollstreckung des Zivilrechts": 5,
         "45 Natur- und Heimatschutz": 3,
-        "414 Höhere Ausbildung": 2,
-        "85 Unterstützung": 1
+        "414 Höhere Ausbildung": 2
       },
       "by_global_category": {
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 5,
         "7.70.10 Landschaftsschutz": 3,
         "4.100.20 Schulgelder": 1,
-        "4.100.30 Schulgebühren": 1,
-        "1.10.70.20.10 Asylwesen": 1
-      }
-    },
-    "Gesetz": {
-      "total": 7,
-      "by_topic": {
-        "16 Politische Rechte": 1,
-        "21 Vollstreckung des Zivilrechts": 1,
-        "45 Natur- und Heimatschutz": 1,
-        "50 Katastrophenschutz, Militärwesen": 1,
-        "66 Wehrpflichtersatz": 1
-      },
-      "by_global_category": {
-        "1.10.90.20.30 Ausstand, Unvereinbarkeit": 1,
-        "5.10.30 Militärverwaltung": 1,
-        "5.10.20 Wehrpflichtersatz": 1
+        "4.100.30 Schulgebühren": 1
       }
     },
     "Reglement": {
-      "total": 6,
+      "total": 8,
       "by_topic": {
+        "55 Kantonspolizei": 2,
+        "93 Gewerbe": 2,
         "15 Grundrechte": 1,
-        "55 Kantonspolizei": 1,
         "90 Wirtschaftspolitik": 1,
-        "91 Landwirtschaft": 1,
-        "93 Gewerbe": 1
+        "91 Landwirtschaft": 1
       },
       "by_global_category": {
         "1.10.90.10 Gleichstellung von Mann und Frau": 1,
+        "3.20.40 Verdeckte Ermittlung": 1,
         "9.10 Wirtschaftsförderung": 1,
         "9.20.10 Förderungsmassnahmen": 1,
-        "9.50.10.60.30 Spielbanken": 1
+        "9.50.10.60.30 Spielbanken": 1,
+        "9.50.10.60.10 Lotteriefonds": 1
+      }
+    },
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "177 Rechtsanwälte": 1,
+        "50 Katastrophenschutz, Militärwesen": 1,
+        "91 Landwirtschaft": 1,
+        "923 Fischerei": 1
+      },
+      "by_global_category": {
+        "1.50.10.30 Unentgeltliche Rechtspflege": 1,
+        "5.30.30 Waffen und Munition": 1,
+        "9.20.80.10 Rebbau": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -63,28 +81,18 @@
         "4.60 Tertiärstufe: Höhere Fachschulen": 1,
         "9.60.50 Binnenmarkt, Handelshemmnisse": 1
       }
-    },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "50 Katastrophenschutz, Militärwesen": 1,
-        "91 Landwirtschaft": 1
-      },
-      "by_global_category": {
-        "5.30.30 Waffen und Munition": 1,
-        "9.20.80.10 Rebbau": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Reglement": 1,
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -104,17 +112,47 @@
           "by_type": {
             "Gesetz": 1
           }
+        },
+        {
+          "identifier": "17",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "173",
+              "title": "Richterliche Behörden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "177",
+              "title": "Rechtsanwälte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "2",
       "title": "Privatrecht, Zivilrechtspflege",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Anderes": 5,
-        "Gesetz": 1
+        "Gesetz": 2
       },
       "children": [
         {
@@ -124,6 +162,15 @@
           "own": 6,
           "by_type": {
             "Anderes": 5,
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "27",
+          "title": "Zivilrechtspflege",
+          "total": 1,
+          "own": 1,
+          "by_type": {
             "Gesetz": 1
           }
         }
@@ -177,12 +224,12 @@
     {
       "identifier": "5",
       "title": "Sicherheit",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Reglement": 2,
         "Verordnung": 1,
-        "Gesetz": 1,
-        "Reglement": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -198,10 +245,10 @@
         {
           "identifier": "55",
           "title": "Kantonspolizei",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 2
           }
         }
       ]
@@ -227,33 +274,44 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit, Soziale Sicherheit",
+      "identifier": "7",
+      "title": "Öffentliche Werke, Energie, Verkehr",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "85",
-          "title": "Unterstützung",
+          "identifier": "74",
+          "title": "Verkehr",
           "total": 1,
-          "own": 1,
+          "own": 0,
           "by_type": {
-            "Anderes": 1
-          }
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "740",
+              "title": "Öffentlicher Verkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Reglement": 3,
-        "Verordnung": 1,
+        "Reglement": 4,
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -277,12 +335,32 @@
           }
         },
         {
+          "identifier": "92",
+          "title": "Forstwesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "923",
+              "title": "Fischerei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "93",
           "title": "Gewerbe",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 2
           }
         },
         {
@@ -301,56 +379,24 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Gesetz": 2,
         "Reglement": 1,
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
             "Reglement": 1,
             "Gesetz": 1
           },
           "children": [
-            {
-              "identifier": "1.10.70",
-              "title": "Niederlassung und Aufenthalt",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "1.10.70.20",
-                  "title": "Niederlassung und Aufenthalt Ausländer",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Anderes": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.10.70.20.10",
-                      "title": "Asylwesen",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Anderes": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            },
             {
               "identifier": "1.10.90",
               "title": "Grundrechte, Politische Rechte",
@@ -389,6 +435,68 @@
                       }
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.50",
+                  "title": "Gerichtskosten, Gerichtsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.50.10",
+              "title": "Anwälte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.10.30",
+                  "title": "Unentgeltliche Rechtspflege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
                 }
               ]
             }
@@ -433,6 +541,37 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.40",
+              "title": "Verdeckte Ermittlung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
             }
           ]
         }
@@ -583,10 +722,10 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Reglement": 3,
+        "Reglement": 4,
         "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
@@ -644,30 +783,39 @@
         {
           "identifier": "9.50",
           "title": "Gewerbe",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 2
           },
           "children": [
             {
               "identifier": "9.50.10",
               "title": "Dienstleistungen",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Reglement": 1
+                "Reglement": 2
               },
               "children": [
                 {
                   "identifier": "9.50.10.60",
                   "title": "Glücksspiel und Lotterien",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Reglement": 1
+                    "Reglement": 2
                   },
                   "children": [
+                    {
+                      "identifier": "9.50.10.60.10",
+                      "title": "Lotteriefonds",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    },
                     {
                       "identifier": "9.50.10.60.30",
                       "title": "Spielbanken",
@@ -707,8 +855,8 @@
     }
   ],
   "languages_available": {
-    "de": 29,
-    "fr": 26
+    "de": 35,
+    "fr": 32
   },
   "available_years_for_entity": [
     "1802",
@@ -718,14 +866,19 @@
     "1864",
     "1877",
     "1882",
+    "1887",
     "1891",
     "1900",
     "1907",
     "1912",
+    "1919",
+    "1920",
     "1922",
     "1923",
     "1924",
     "1926",
+    "1929",
+    "1932",
     "1933",
     "1935",
     "1936",
@@ -738,6 +891,7 @@
     "1949",
     "1950",
     "1951",
+    "1953",
     "1954",
     "1955",
     "1957",

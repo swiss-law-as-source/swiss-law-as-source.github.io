@@ -2,10 +2,22 @@
   "year": "1972",
   "year_semantics": "enactment",
   "entity": "OW",
-  "total": 9,
-  "categorized": 9,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "120 Gleichstellung": 1,
+        "122 Volksabstimmungen, Wahlen": 1,
+        "510 Polizei": 1
+      },
+      "by_global_category": {
+        "1.10.90.10 Gleichstellung von Mann und Frau": 2,
+        "5.30.10.10 Kantonspolizei": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 3,
       "by_topic": {
@@ -17,16 +29,6 @@
         "2.80 Schiedsgerichtsbarkeit": 1,
         "4.80.50 Logopädie": 1,
         "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1
-      }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "120 Gleichstellung": 1,
-        "122 Volksabstimmungen, Wahlen": 1
-      },
-      "by_global_category": {
-        "1.10.90.10 Gleichstellung von Mann und Frau": 2
       }
     },
     "Verordnung": {
@@ -143,6 +145,26 @@
           "own": 1,
           "by_type": {
             "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "SICHERHEIT, BEVÖLKERUNGSSCHUTZ",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "510",
+          "title": "Polizei",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
           }
         }
       ]
@@ -306,6 +328,48 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.10",
+                  "title": "Kantonspolizei",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 2,
@@ -384,10 +448,11 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 10
   },
   "available_years_for_entity": [
     "1825",
+    "1834",
     "1850",
     "1874",
     "1877",
@@ -395,6 +460,7 @@
     "1880",
     "1892",
     "1895",
+    "1899",
     "1911",
     "1913",
     "1914",
@@ -427,6 +493,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -485,12 +552,12 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",

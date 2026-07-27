@@ -2,12 +2,12 @@
   "year": "2000",
   "year_semantics": "enactment",
   "entity": "VD",
-  "total": 28,
-  "categorized": 28,
+  "total": 32,
+  "categorized": 32,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 11,
+      "total": 15,
       "by_topic": {
         "642.000 Impôts cantonaux sur le revenu et la fortune des personnes physiques et morales": 3,
         "412 Enseignement secondaire supérieur": 2,
@@ -15,14 +15,22 @@
         "142.100 Établissement et séjour des étrangers": 1,
         "142.200 Réfugiés, asile": 1,
         "180.100 Église évangélique réformée": 1,
-        "813 Commerce des toxiques": 1
+        "400.000 Instruction publique": 1,
+        "413.000 Formation professionnelle en général": 1,
+        "414.100 Université en général": 1,
+        "801.100 Soins à domicile": 1,
+        "811.100 Médecins": 1
       },
       "by_global_category": {
         "1.10.70.20.20 Zwangsmassnahmen": 1,
         "1.10.70.20.10 Asylwesen": 1,
         "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "4.120.60 Schulbauten": 1,
         "4.100.30 Schulgebühren": 1,
-        "7.60.70 Gifte, Chemikalien": 1,
+        "4.30.10.10 Hauswirtschaftliche Ausbildung": 1,
+        "4.160 Wissenschaft, Forschung": 1,
+        "8.10.60 Spitalexterne Krankenpflege": 1,
+        "8.10.30.10 Ärzte": 1,
         "9.20.130 Alpfahrt": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1
       }
@@ -337,10 +345,10 @@
     {
       "identifier": "4",
       "title": "ECOLE - SCIENCE - CULTURE",
-      "total": 4,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Règlement": 2,
+        "Règlement": 5,
         "Accord intercantonal": 1,
         "Autre": 1
       },
@@ -348,10 +356,10 @@
         {
           "identifier": "40",
           "title": "ÉDUCATION , FORMATION",
-          "total": 4,
+          "total": 7,
           "own": 0,
           "by_type": {
-            "Règlement": 2,
+            "Règlement": 5,
             "Accord intercantonal": 1,
             "Autre": 1
           },
@@ -359,12 +367,22 @@
             {
               "identifier": "400",
               "title": "École",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Règlement": 1,
                 "Accord intercantonal": 1
               },
               "children": [
+                {
+                  "identifier": "400.000",
+                  "title": "Instruction publique ",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                },
                 {
                   "identifier": "400.900",
                   "title": "Conventions (école)",
@@ -384,6 +402,46 @@
               "by_type": {
                 "Règlement": 2
               }
+            },
+            {
+              "identifier": "413",
+              "title": "Formation professionnelle",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.000",
+                  "title": "Formation professionnelle en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "414",
+              "title": "Université",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.100",
+                  "title": "Université en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
             },
             {
               "identifier": "419",
@@ -530,23 +588,43 @@
     {
       "identifier": "8",
       "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Autre": 2,
-        "Règlement": 1
+        "Règlement": 2,
+        "Autre": 2
       },
       "children": [
         {
           "identifier": "80",
           "title": "SANTÉ",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Autre": 1,
-            "Règlement": 1
+            "Règlement": 2,
+            "Autre": 1
           },
           "children": [
+            {
+              "identifier": "800",
+              "title": "Organisation de la santé",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "801.100",
+                  "title": "Soins à domicile",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "810",
               "title": "Établissements sanitaires et apparentés",
@@ -568,13 +646,24 @@
               ]
             },
             {
-              "identifier": "813",
-              "title": "Commerce des toxiques",
+              "identifier": "811",
+              "title": "Professions de la santé ",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
                 "Règlement": 1
-              }
+              },
+              "children": [
+                {
+                  "identifier": "811.100",
+                  "title": "Médecins",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
             }
           ]
         },
@@ -909,38 +998,41 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 6,
+      "total": 9,
       "own": 0,
       "by_type": {
+        "Règlement": 4,
         "Autre": 4,
-        "Règlement": 1,
         "Accord intercantonal": 1
       },
       "children": [
         {
           "identifier": "4.30",
           "title": "Sekundarstufe II (Berufliche Grundausbildung)",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Règlement": 1,
             "Autre": 1
           },
           "children": [
             {
               "identifier": "4.30.10",
               "title": "Berufsfachschulen",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Règlement": 1,
                 "Autre": 1
               },
               "children": [
                 {
                   "identifier": "4.30.10.10",
                   "title": "Hauswirtschaftliche Ausbildung",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Règlement": 1,
                     "Autre": 1
                   }
                 }
@@ -1001,22 +1093,33 @@
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Règlement": 1,
             "Accord intercantonal": 1
           },
           "children": [
             {
               "identifier": "4.120.60",
               "title": "Schulbauten",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Règlement": 1,
                 "Accord intercantonal": 1
               }
             }
           ]
+        },
+        {
+          "identifier": "4.160",
+          "title": "Wissenschaft, Forschung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Règlement": 1
+          }
         }
       ]
     },
@@ -1126,26 +1229,47 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 2,
+        "Autre": 2
       },
       "children": [
         {
-          "identifier": "7.60",
-          "title": "Umweltschutz",
-          "total": 1,
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 2
           },
           "children": [
             {
-              "identifier": "7.60.70",
-              "title": "Gifte, Chemikalien",
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.60",
+              "title": "Spitalexterne Krankenpflege",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -1153,18 +1277,7 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Autre": 2
-      },
-      "children": [
+        },
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
@@ -1240,7 +1353,7 @@
     }
   ],
   "languages_available": {
-    "fr": 28
+    "fr": 32
   },
   "available_years_for_entity": [
     "1803",
@@ -1286,6 +1399,7 @@
     "1942",
     "1943",
     "1944",
+    "1945",
     "1946",
     "1947",
     "1948",

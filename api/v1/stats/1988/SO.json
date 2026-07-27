@@ -51,22 +51,15 @@
         "4.60 Tertiärstufe: Höhere Fachschulen": 1
       }
     },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "125.9 Verwaltungsgerichtsbarkeit": 1
-      },
-      "by_global_category": {
-        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1
-      }
-    },
     "Gesetz": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "423.5 Geistliche": 1
+        "423.5 Geistliche": 1,
+        "626 Jagd und Vogelschutz": 1
       },
       "by_global_category": {
-        "1.40.10 Römisch-Katholische Kirche": 1
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "7.70.20 Tierschutz": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -83,33 +76,30 @@
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 8,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Verordnung": 5,
-        "Anderes": 2,
-        "Reglement": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 7,
+          "total": 6,
           "own": 0,
           "by_type": {
             "Verordnung": 4,
-            "Anderes": 2,
-            "Reglement": 1
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "125",
               "title": "Gerichte",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1,
-                "Reglement": 1
+                "Anderes": 1
               },
               "children": [
                 {
@@ -119,15 +109,6 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
-                  }
-                },
-                {
-                  "identifier": "125.9",
-                  "title": "Verwaltungsgerichtsbarkeit",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
                   }
                 }
               ]
@@ -483,10 +464,11 @@
     {
       "identifier": "6",
       "title": "Finanzen, Regalien",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Verordnung": 1,
+        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -524,18 +506,20 @@
         {
           "identifier": "62",
           "title": "Regalien",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "626",
               "title": "Jagd und Vogelschutz",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Interkantonale Vereinbarung": 1
               }
             }
@@ -590,11 +574,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 6,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Verordnung": 3,
-        "Reglement": 1,
         "Anderes": 1,
         "Gesetz": 1
       },
@@ -653,11 +636,10 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
             "Verordnung": 1,
-            "Reglement": 1,
             "Anderes": 1
           },
           "children": [
@@ -695,32 +677,21 @@
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Reglement": 1,
                 "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "1.20.70.10",
                   "title": "Gerichtsbehörden",
-                  "total": 2,
+                  "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Reglement": 1,
                     "Anderes": 1
                   },
                   "children": [
-                    {
-                      "identifier": "1.20.70.10.20",
-                      "title": "Obere Gerichte, Bundesgerichte",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Reglement": 1
-                      }
-                    },
                     {
                       "identifier": "1.20.70.10.40",
                       "title": "Bezirks-, Amts- und Friedensgericht",
@@ -1013,6 +984,37 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.20",
+              "title": "Tierschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         }

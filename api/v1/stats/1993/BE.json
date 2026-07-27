@@ -2,42 +2,56 @@
   "year": "1993",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 17,
-  "categorized": 17,
+  "total": 27,
+  "categorized": 27,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 12,
+      "by_topic": {
+        "103 Amtliche Veröffentlichungen": 2,
+        "212.2 Juristische Personen": 1,
+        "322 Informatik in der Strafjustiz": 1,
+        "326 Opferhilfe": 1,
+        "342 Anstalten": 1,
+        "426.1 Naturschutz": 1,
+        "430.25 Anstellung": 1,
+        "432.21 Allgemeines": 1,
+        "820 Allgemeines": 1,
+        "832.0 Arbeit in Industrie, Gewerbe und Handel": 1,
+        "935.9 Weitere bewilligungspflichtige Gewerbe": 1
+      },
+      "by_global_category": {
+        "2.10.10.20.10 BVG-Stiftungen": 1,
+        "3.30 Jugendstrafrecht und Jugendstrafprozessrecht": 1,
+        "3.20.70 Opferhilfe": 1,
+        "8.70.30.20 Kinder- und Jugendheime": 1,
+        "7.70.50 Naturschutz": 1,
+        "4.90.10 Anstellung": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "7.60.90 Schadenbekämpfung": 1,
+        "9.50.10.40 Taxigewerbe": 1
+      }
+    },
     "Gesetz": {
-      "total": 7,
+      "total": 9,
       "by_topic": {
         "103 Amtliche Veröffentlichungen": 1,
         "107 Information der Bevölkerung": 1,
+        "153.4 Pensionskasse": 1,
         "430.25 Anstellung": 1,
         "762 Öffentlicher Verkehr": 1,
         "841.1 Alters- und Hinterlassenenversicherung": 1,
         "841.2 Invalidenversicherung": 1,
-        "935.1 Gastgewerbe und Handel mit geistigen Getränken": 1
+        "935.1 Gastgewerbe und Handel mit geistigen Getränken": 1,
+        "935.5 Geldspiele": 1
       },
       "by_global_category": {
         "8.30.30 AHV / IV": 2,
         "1.10.120 Information der Öffentlichkeit": 1,
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
         "4.90.10 Anstellung": 1,
         "6.30.10 Alkohol": 1
-      }
-    },
-    "Verordnung": {
-      "total": 6,
-      "by_topic": {
-        "103 Amtliche Veröffentlichungen": 2,
-        "342 Anstalten": 1,
-        "426.1 Naturschutz": 1,
-        "430.25 Anstellung": 1,
-        "820 Allgemeines": 1
-      },
-      "by_global_category": {
-        "8.70.30.20 Kinder- und Jugendheime": 1,
-        "7.70.50 Naturschutz": 1,
-        "4.90.10 Anstellung": 1,
-        "7.60.90 Schadenbekämpfung": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -47,6 +61,15 @@
       },
       "by_global_category": {
         "1.10.40 Interkantonale Zusammenarbeit": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "153.4 Pensionskasse": 2
+      },
+      "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 2
       }
     },
     "Verfassung": {
@@ -72,11 +95,12 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 6,
+      "total": 9,
       "own": 0,
       "by_type": {
+        "Gesetz": 3,
         "Verordnung": 2,
-        "Gesetz": 2,
+        "Reglement": 2,
         "Verfassung": 1,
         "Interkantonale Vereinbarung": 1
       },
@@ -125,10 +149,12 @@
         {
           "identifier": "15",
           "title": "Behörden",
-          "total": 1,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Reglement": 2,
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -150,6 +176,70 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "153",
+              "title": "Dienstrecht",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Reglement": 2,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "153.4",
+                  "title": "Pensionskasse",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Reglement": 2,
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "212",
+              "title": "Personenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "212.2",
+                  "title": "Juristische Personen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -158,12 +248,41 @@
     {
       "identifier": "3",
       "title": "Strafrecht, Strafrechtspflege, Strafvollzug",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 3
       },
       "children": [
+        {
+          "identifier": "32",
+          "title": "Strafverfahren",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "322",
+              "title": "Informatik in der Strafjustiz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "326",
+              "title": "Opferhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "34",
           "title": "Strafvollzug",
@@ -189,10 +308,10 @@
     {
       "identifier": "4",
       "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Verordnung": 3,
         "Verordnung des Parlaments (Dekret)": 1,
         "Gesetz": 1
       },
@@ -231,12 +350,12 @@
         {
           "identifier": "43",
           "title": "Ausbildung und Wissenschaft",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Verordnung des Parlaments (Dekret)": 1,
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -269,6 +388,37 @@
                       "by_type": {
                         "Verordnung des Parlaments (Dekret)": 1,
                         "Gesetz": 1,
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "432",
+              "title": "Volksschule",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "432.2",
+                  "title": "Volksschule",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "432.21",
+                      "title": "Allgemeines",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
                         "Verordnung": 1
                       }
                     }
@@ -314,11 +464,11 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 2
       },
       "children": [
         {
@@ -338,6 +488,37 @@
               "by_type": {
                 "Verordnung": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Arbeitnehmerschutz",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "832.0",
+                  "title": "Arbeit in Industrie, Gewerbe und Handel",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         },
@@ -386,28 +567,31 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "93",
           "title": "Industrie und Gewerbe",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 2,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "935",
               "title": "Dienstleistungsgewerbe",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Gesetz": 1
+                "Gesetz": 2,
+                "Verordnung": 1
               },
               "children": [
                 {
@@ -417,6 +601,24 @@
                   "own": 1,
                   "by_type": {
                     "Gesetz": 1
+                  }
+                },
+                {
+                  "identifier": "935.5",
+                  "title": "Geldspiele",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                },
+                {
+                  "identifier": "935.9",
+                  "title": "Weitere bewilligungspflichtige Gewerbe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -430,12 +632,13 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
+        "Reglement": 2,
         "Verfassung": 1,
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -477,20 +680,179 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Reglement": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Reglement": 2,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 3,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 2,
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 3,
+                      "own": 3,
+                      "by_type": {
+                        "Reglement": 2,
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.10",
+              "title": "Personenrecht, Zivilstand",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.10.20",
+                  "title": "Stiftungen, Stiftungsaufsicht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.10.10.20.10",
+                      "title": "BVG-Stiftungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.70",
+              "title": "Opferhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "3.30",
+          "title": "Jugendstrafrecht und Jugendstrafprozessrecht",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Verordnung des Parlaments (Dekret)": 1,
-        "Gesetz": 1,
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.90",
           "title": "Lehrkörper",
@@ -661,13 +1023,56 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.40",
+                  "title": "Taxigewerbe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 17,
-    "fr": 16
+    "de": 27,
+    "fr": 26
   },
   "available_years_for_entity": [
+    "1000",
     "1562",
     "1828",
     "1837",
@@ -679,6 +1084,7 @@
     "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
     "1877",
     "1889",
@@ -690,12 +1096,14 @@
     "1909",
     "1911",
     "1917",
+    "1918",
     "1923",
     "1924",
     "1931",
     "1934",
     "1936",
     "1937",
+    "1938",
     "1939",
     "1940",
     "1942",

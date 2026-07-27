@@ -2,12 +2,12 @@
   "year": "1997",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 24,
-  "categorized": 24,
+  "total": 28,
+  "categorized": 28,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 16,
+      "total": 17,
       "by_topic": {
         "910 Förderung im Allgemeinen": 3,
         "901 Im Allgemeinen": 2,
@@ -20,7 +20,8 @@
         "764 Personentransporte": 1,
         "913 Boden- und Waldverbesserung": 1,
         "915 Landwirtschaftliche Berufsbildung": 1,
-        "921.1 Allgemeines, Schutz und Erhaltung des Waldes": 1
+        "921.1 Allgemeines, Schutz und Erhaltung des Waldes": 1,
+        "930 Allgemeines": 1
       },
       "by_global_category": {
         "9.10 Wirtschaftsförderung": 2,
@@ -31,13 +32,15 @@
         "5.30.10.30 Personal": 1,
         "7.50.20.40 Personenbeförderung": 1,
         "9.20.50 Meliorationen": 1,
-        "4.30.10.10 Hauswirtschaftliche Ausbildung": 1
+        "4.30.10.10 Hauswirtschaftliche Ausbildung": 1,
+        "9.50.10.20 Tourismus": 1
       }
     },
     "Gesetz": {
-      "total": 8,
+      "total": 9,
       "by_topic": {
         "410.5 Jüdische Gemeinden": 1,
+        "551 Allgemeines": 1,
         "752.4 Wassernutzung": 1,
         "901 Im Allgemeinen": 1,
         "902 In den Berggebieten": 1,
@@ -53,6 +56,22 @@
         "9.40 Wirtschaftliche Entwicklung in Berggebieten": 1,
         "9.20.50 Meliorationen": 1,
         "6.40.10 Kantonalbanken": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "436.1 Allgemeines": 1
+      },
+      "by_global_category": {}
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "661.54 Bewertung von Grundstücken und Wasserkräften": 1
+      },
+      "by_global_category": {
+        "2.10.40.10 Schätzung von Grundstücken": 1
       }
     }
   },
@@ -166,11 +185,12 @@
     {
       "identifier": "4",
       "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Gesetz": 1,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -224,33 +244,67 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "43",
+          "title": "Ausbildung und Wissenschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "436",
+              "title": "Universität",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "436.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "5",
       "title": "Landesverteidigung, Polizei",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "55",
           "title": "Polizei",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "551",
               "title": "Allgemeines",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               }
             },
@@ -262,6 +316,59 @@
               "by_type": {
                 "Verordnung": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "66",
+          "title": "Steuern und Abgaben",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "661",
+              "title": "Direkte Kantons- und Gemeindesteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "661.5",
+                  "title": "Steuerveranlagung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "661.54",
+                      "title": "Bewertung von Grundstücken und Wasserkräften",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung des Parlaments (Dekret)": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -342,10 +449,10 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 14,
+      "total": 15,
       "own": 0,
       "by_type": {
-        "Verordnung": 8,
+        "Verordnung": 9,
         "Gesetz": 6
       },
       "children": [
@@ -452,6 +559,26 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "93",
+          "title": "Industrie und Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "930",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         },
@@ -569,30 +696,42 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "2.10.40",
               "title": "Sachenrecht",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
                 "Verordnung": 1
               },
               "children": [
+                {
+                  "identifier": "2.10.40.10",
+                  "title": "Schätzung von Grundstücken",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                },
                 {
                   "identifier": "2.10.40.30",
                   "title": "Grundbuch und Grundbuchvermessung",
@@ -800,10 +939,10 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 8,
+      "total": 9,
       "own": 0,
       "by_type": {
-        "Verordnung": 5,
+        "Verordnung": 6,
         "Gesetz": 3
       },
       "children": [
@@ -856,15 +995,47 @@
           "by_type": {
             "Gesetz": 1
           }
+        },
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.20",
+                  "title": "Tourismus",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 24,
-    "fr": 23
+    "de": 28,
+    "fr": 27
   },
   "available_years_for_entity": [
+    "1000",
     "1562",
     "1828",
     "1837",
@@ -876,6 +1047,7 @@
     "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
     "1877",
     "1889",
@@ -887,12 +1059,14 @@
     "1909",
     "1911",
     "1917",
+    "1918",
     "1923",
     "1924",
     "1931",
     "1934",
     "1936",
     "1937",
+    "1938",
     "1939",
     "1940",
     "1942",

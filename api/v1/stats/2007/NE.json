@@ -2,46 +2,51 @@
   "year": "2007",
   "year_semantics": "enactment",
   "entity": "NE",
-  "total": 19,
-  "categorized": 19,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
-      "total": 4,
+    "Reglement": {
+      "total": 9,
       "by_topic": {
+        "451.2 Musique": 3,
+        "414.1 Dispositions générales": 2,
+        "152.51 Statut de la fonction publique": 1,
         "322 Procédure pénale neuchâteloise": 1,
-        "740 Dispositions générales": 1,
-        "75 Géoinformation": 1
+        "735.1 Construction et entretien des routes": 1,
+        "740 Dispositions générales": 1
       },
       "by_global_category": {
-        "3.20.10 Strafprozessordnungen": 1,
-        "7.40.40 Elektrizität": 1,
-        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
+        "4.80.30 Kunst- und Sportschulen": 2,
+        "8.10.120.20 Rauchverbote": 1,
+        "4.100.20 Schulgelder": 1,
+        "7.30.30.10 Nationalstrassen": 1,
+        "7.40.40 Elektrizität": 1
       }
     },
-    "Reglement": {
+    "Verordnung": {
       "total": 4,
       "by_topic": {
-        "740 Dispositions générales": 2,
-        "322 Procédure pénale neuchâteloise": 1,
-        "75 Géoinformation": 1
+        "261 Procédure ordinaire": 1,
+        "60 Gestion financière": 1,
+        "805.2 Protection de l'air": 1,
+        "861 Prévention et défense contre le feu": 1
       },
       "by_global_category": {
-        "7.40.40 Elektrizität": 2,
-        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
+        "6.10.40 Finanzkontrolle": 1,
+        "7.60.30.10 Feinstaub/Smog": 1
       }
     },
     "Anderes": {
       "total": 4,
       "by_topic": {
-        "916.12 Viticulture": 2,
-        "62 Banque cantonale": 1,
-        "820.3 Prestations complémentaires à l'assurance-vieillesse et survivants et à l'assurance-invalidité": 1
+        "416.31 Faculté des lettres et sciences humaines": 2,
+        "416.33 Faculté de droit et des sciences économiques": 2
       },
       "by_global_category": {
-        "9.20.80.10 Rebbau": 2,
-        "6.40.10 Kantonalbanken": 1,
-        "8.30.40 Ergänzungsleistungen": 1
+        "4.40.30 Wirtschaftsfakultät": 2,
+        "4.40.50 Philosophische Fakultäten": 1,
+        "4.80.50 Logopädie": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -54,57 +59,115 @@
         "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
       }
     },
-    "Verordnung": {
+    "Gesetz": {
       "total": 3,
       "by_topic": {
-        "410.1 Dispositions générales": 1,
-        "410.83 Office médico-pédagogique": 1,
-        "410.84 Orthophonie": 1
+        "414.1 Dispositions générales": 1,
+        "60 Gestion financière": 1
       },
       "by_global_category": {
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
-        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
-        "4.80.50 Logopädie": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "441 Observatoire cantonal": 1
-      },
-      "by_global_category": {
-        "4.160 Wissenschaft, Forschung": 1
+        "6.10.40 Finanzkontrolle": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "3",
-      "title": "Droit pénal – Procédure pénale – Exécution",
-      "total": 2,
+      "identifier": "1",
+      "title": "État – Peuple – Autorités",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Loi": 1,
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "15",
+          "title": "Autorités",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "152",
+              "title": "Conseil d'État et administration cantonale",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "152.51",
+                  "title": "Statut de la fonction publique",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Droit privé – Procédure civile – Exécution",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "26",
+          "title": "Poursuite pour dettes et faillite",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "261",
+              "title": "Procédure ordinaire",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Droit pénal – Procédure pénale – Exécution",
+      "total": 1,
+      "own": 0,
+      "by_type": {
         "Règlement": 1
       },
       "children": [
         {
           "identifier": "32",
           "title": "Procédure pénale",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Loi": 1,
             "Règlement": 1
           },
           "children": [
             {
               "identifier": "322",
               "title": "Procédure pénale neuchâteloise",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Loi": 1,
                 "Règlement": 1
               }
             }
@@ -115,72 +178,44 @@
     {
       "identifier": "4",
       "title": "Enseignement – Science – Culture – Environnement",
-      "total": 6,
+      "total": 12,
       "own": 0,
       "by_type": {
-        "Autre": 3,
+        "Règlement": 5,
+        "Autre": 4,
         "Accord intercantonal": 2,
-        "Ordonnance parlementaire (décret)": 1
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Enseignement",
-          "total": 5,
+          "total": 9,
           "own": 0,
           "by_type": {
-            "Autre": 3,
-            "Accord intercantonal": 2
+            "Autre": 4,
+            "Accord intercantonal": 2,
+            "Règlement": 2,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "410",
               "title": "Scolarité obligatoire",
-              "total": 4,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Autre": 3,
                 "Accord intercantonal": 1
               },
               "children": [
                 {
                   "identifier": "410.1",
                   "title": "Dispositions générales",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Accord intercantonal": 1,
-                    "Autre": 1
+                    "Accord intercantonal": 1
                   }
-                },
-                {
-                  "identifier": "410.8",
-                  "title": "Aide à la jeunesse",
-                  "total": 2,
-                  "own": 0,
-                  "by_type": {
-                    "Autre": 2
-                  },
-                  "children": [
-                    {
-                      "identifier": "410.83",
-                      "title": "Office médico-pédagogique",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Autre": 1
-                      }
-                    },
-                    {
-                      "identifier": "410.84",
-                      "title": "Orthophonie",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Autre": 1
-                      }
-                    }
-                  ]
                 }
               ]
             },
@@ -203,25 +238,87 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "414",
+              "title": "Formation professionnelle",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Règlement": 2,
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.1",
+                  "title": "Dispositions générales",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Règlement": 2,
+                    "Loi": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "416",
+              "title": "Université",
+              "total": 4,
+              "own": 0,
+              "by_type": {
+                "Autre": 4
+              },
+              "children": [
+                {
+                  "identifier": "416.3",
+                  "title": "Facultés",
+                  "total": 4,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 4
+                  },
+                  "children": [
+                    {
+                      "identifier": "416.31",
+                      "title": "Faculté des lettres et sciences humaines",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Autre": 2
+                      }
+                    },
+                    {
+                      "identifier": "416.33",
+                      "title": "Faculté de droit et des sciences économiques",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Autre": 2
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
         {
-          "identifier": "44",
-          "title": "Science",
-          "total": 1,
+          "identifier": "45",
+          "title": "Culture",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Ordonnance parlementaire (décret)": 1
+            "Règlement": 3
           },
           "children": [
             {
-              "identifier": "441",
-              "title": "Observatoire cantonal",
-              "total": 1,
-              "own": 1,
+              "identifier": "451.2",
+              "title": "Musique",
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Ordonnance parlementaire (décret)": 1
+                "Règlement": 3
               }
             }
           ]
@@ -231,18 +328,20 @@
     {
       "identifier": "6",
       "title": "Finances",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Loi": 1,
         "Autre": 1
       },
       "children": [
         {
-          "identifier": "62",
-          "title": "Banque cantonale",
-          "total": 1,
-          "own": 1,
+          "identifier": "60",
+          "title": "Gestion financière",
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Loi": 1,
             "Autre": 1
           }
         }
@@ -251,59 +350,77 @@
     {
       "identifier": "7",
       "title": "Travaux publics – Énergie – Transports et communications",
-      "total": 5,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 3,
-        "Loi": 2
+        "Règlement": 2
       },
       "children": [
         {
-          "identifier": "74",
-          "title": "Énergie",
-          "total": 3,
+          "identifier": "73",
+          "title": "Travaux publics",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Règlement": 2,
-            "Loi": 1
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "735",
+              "title": "Routes et autres voies de transport et de communication",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "735.1",
+                  "title": "Construction et entretien des routes",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "74",
+          "title": "Énergie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
           },
           "children": [
             {
               "identifier": "740",
               "title": "Dispositions générales",
-              "total": 3,
-              "own": 3,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Règlement": 2,
-                "Loi": 1
+                "Règlement": 1
               }
             }
           ]
-        },
-        {
-          "identifier": "75",
-          "title": "Géoinformation",
-          "total": 2,
-          "own": 2,
-          "by_type": {
-            "Loi": 1,
-            "Règlement": 1
-          }
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 2
       },
       "children": [
         {
-          "identifier": "82",
-          "title": "Assurances sociales",
+          "identifier": "80",
+          "title": "Santé",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -311,8 +428,8 @@
           },
           "children": [
             {
-              "identifier": "820",
-              "title": "Assurance-vieillesse et survivants – Assurance-invalidité",
+              "identifier": "805",
+              "title": "Protection de l'équilibre écologique",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -320,8 +437,8 @@
               },
               "children": [
                 {
-                  "identifier": "820.3",
-                  "title": "Prestations complémentaires à l'assurance-vieillesse et survivants et à l'assurance-invalidité",
+                  "identifier": "805.2",
+                  "title": "Protection de l'air",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -331,46 +448,24 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Économie",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Autre": 2
-      },
-      "children": [
+        },
         {
-          "identifier": "91",
-          "title": "Agriculture",
-          "total": 2,
+          "identifier": "86",
+          "title": "Protection contre les dommages dus aux éléments",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Autre": 2
+            "Autre": 1
           },
           "children": [
             {
-              "identifier": "916",
-              "title": "Production",
-              "total": 2,
-              "own": 0,
+              "identifier": "861",
+              "title": "Prévention et défense contre le feu",
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Autre": 2
-              },
-              "children": [
-                {
-                  "identifier": "916.12",
-                  "title": "Viticulture",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Autre": 2
-                  }
-                }
-              ]
+                "Autre": 1
+              }
             }
           ]
         }
@@ -379,113 +474,16 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Loi": 1,
-        "Règlement": 1
-      },
-      "children": [
-        {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Loi": 1,
-            "Règlement": 1
-          },
-          "children": [
-            {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
-              "total": 2,
-              "own": 0,
-              "by_type": {
-                "Loi": 1,
-                "Règlement": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.40.30",
-                  "title": "Grundbuch und Grundbuchvermessung",
-                  "total": 2,
-                  "own": 2,
-                  "by_type": {
-                    "Loi": 1,
-                    "Règlement": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "3",
-      "title": "Strafrecht",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Loi": 1
-      },
-      "children": [
-        {
-          "identifier": "3.20",
-          "title": "Strafprozess",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Loi": 1
-          },
-          "children": [
-            {
-              "identifier": "3.20.10",
-              "title": "Strafprozessordnungen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Loi": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Autre": 3,
-        "Accord intercantonal": 1,
-        "Ordonnance parlementaire (décret)": 1
+        "Autre": 4,
+        "Règlement": 3,
+        "Accord intercantonal": 1
       },
       "children": [
-        {
-          "identifier": "4.10",
-          "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Autre": 1
-          },
-          "children": [
-            {
-              "identifier": "4.10.30",
-              "title": "Volksschule, Primarschule, Sekundarschule I",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Autre": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "4.20",
           "title": "Sekundarstufe II",
@@ -507,14 +505,53 @@
           ]
         },
         {
-          "identifier": "4.80",
-          "title": "Sonderpädagogik",
-          "total": 1,
+          "identifier": "4.40",
+          "title": "Tertiärstufe: Universitäten",
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Autre": 3
+          },
+          "children": [
+            {
+              "identifier": "4.40.30",
+              "title": "Wirtschaftsfakultät",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Autre": 2
+              }
+            },
+            {
+              "identifier": "4.40.50",
+              "title": "Philosophische Fakultäten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Règlement": 2,
             "Autre": 1
           },
           "children": [
+            {
+              "identifier": "4.80.30",
+              "title": "Kunst- und Sportschulen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Règlement": 2
+              }
+            },
             {
               "identifier": "4.80.50",
               "title": "Logopädie",
@@ -527,60 +564,54 @@
           ]
         },
         {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Règlement": 1
           },
           "children": [
             {
-              "identifier": "4.120.90",
-              "title": "Gesundheitspflege, schulpsychologische Dienste",
+              "identifier": "4.100.20",
+              "title": "Schulgelder",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Autre": 1
+                "Règlement": 1
               }
             }
           ]
-        },
-        {
-          "identifier": "4.160",
-          "title": "Wissenschaft, Forschung",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Ordonnance parlementaire (décret)": 1
-          }
         }
       ]
     },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Loi": 1,
         "Autre": 1
       },
       "children": [
         {
-          "identifier": "6.40",
-          "title": "Staatliche Unternehmen",
-          "total": 1,
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Loi": 1,
             "Autre": 1
           },
           "children": [
             {
-              "identifier": "6.40.10",
-              "title": "Kantonalbanken",
-              "total": 1,
-              "own": 1,
+              "identifier": "6.10.40",
+              "title": "Finanzkontrolle",
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Loi": 1,
                 "Autre": 1
               }
             }
@@ -595,28 +626,88 @@
       "own": 0,
       "by_type": {
         "Règlement": 2,
-        "Loi": 1
+        "Autre": 1
       },
       "children": [
         {
-          "identifier": "7.40",
-          "title": "Energie",
-          "total": 3,
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Règlement": 2,
-            "Loi": 1
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.30",
+              "title": "Strassen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.30.10",
+                  "title": "Nationalstrassen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.40",
+          "title": "Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
           },
           "children": [
             {
               "identifier": "7.40.40",
               "title": "Elektrizität",
-              "total": 3,
-              "own": 3,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Règlement": 2,
-                "Loi": 1
+                "Règlement": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.30",
+              "title": "Lufthygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.60.30.10",
+                  "title": "Feinstaub/Smog",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -628,65 +719,34 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Règlement": 1
       },
       "children": [
         {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Règlement": 1
           },
           "children": [
             {
-              "identifier": "8.30.40",
-              "title": "Ergänzungsleistungen",
+              "identifier": "8.10.120",
+              "title": "Suchtprävention",
               "total": 1,
-              "own": 1,
-              "by_type": {
-                "Autre": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Autre": 2
-      },
-      "children": [
-        {
-          "identifier": "9.20",
-          "title": "Landwirtschaft",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Autre": 2
-          },
-          "children": [
-            {
-              "identifier": "9.20.80",
-              "title": "Pflanzenbau",
-              "total": 2,
               "own": 0,
               "by_type": {
-                "Autre": 2
+                "Règlement": 1
               },
               "children": [
                 {
-                  "identifier": "9.20.80.10",
-                  "title": "Rebbau",
-                  "total": 2,
-                  "own": 2,
+                  "identifier": "8.10.120.20",
+                  "title": "Rauchverbote",
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Autre": 2
+                    "Règlement": 1
                   }
                 }
               ]
@@ -697,17 +757,18 @@
     }
   ],
   "languages_available": {
-    "fr": 19
+    "fr": 23
   },
   "available_years_for_entity": [
     "1832",
+    "1849",
     "1857",
-    "1858",
     "1864",
     "1866",
     "1871",
     "1873",
     "1874",
+    "1879",
     "1885",
     "1887",
     "1888",
@@ -726,19 +787,19 @@
     "1912",
     "1913",
     "1914",
-    "1916",
     "1919",
     "1920",
     "1923",
     "1924",
     "1925",
+    "1926",
     "1927",
-    "1928",
     "1930",
     "1931",
     "1933",
     "1934",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1941",
@@ -753,6 +814,7 @@
     "1953",
     "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",

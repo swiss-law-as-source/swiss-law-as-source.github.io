@@ -2,37 +2,44 @@
   "year": "2003",
   "year_semantics": "enactment",
   "entity": "JU",
-  "total": 10,
-  "categorized": 10,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 6,
+      "total": 8,
       "by_topic": {
         "922 Chasse, protection du gibier et des oiseaux": 2,
+        "173 Membres des autorités, fonctionnaires et employés": 1,
         "410.1 Fondement": 1,
         "414 Université et Haute école": 1,
+        "832 Assurance en cas de maladie et d'accidents": 1,
         "871 Prévention des incendies": 1,
         "923 Pêche": 1
       },
       "by_global_category": {
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
         "4.80.70 Stütz- und Nachhilfeunterricht": 1,
         "4.50.20 Soziales": 1,
+        "8.30.60.40 Einschränkung der Zulassung von Leistungserbringern": 1,
         "5.20.30.30 Kaminfeger": 1,
         "6.30.50.10 Jäger": 1
+      }
+    },
+    "Reglement": {
+      "total": 3,
+      "by_topic": {
+        "413 Formation professionnelle": 2,
+        "222 Contrats": 1
+      },
+      "by_global_category": {
+        "4.20.30 Handelsmittelschulen, Informatikmittelschulen": 1
       }
     },
     "Gesetz": {
       "total": 1,
       "by_topic": {
         "188 Avocats": 1
-      },
-      "by_global_category": {}
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "222 Contrats": 1
       },
       "by_global_category": {}
     },
@@ -59,12 +66,33 @@
     {
       "identifier": "1",
       "title": "État, peuple, autorités",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Autre": 1,
         "Loi": 1
       },
       "children": [
+        {
+          "identifier": "17",
+          "title": "Autorités",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "173",
+              "title": "Membres des autorités, fonctionnaires et employés",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "18",
           "title": "Organisation judiciaire, avocats et notaires",
@@ -121,20 +149,22 @@
     {
       "identifier": "4",
       "title": "Éducation, science, culture, Église",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Autre": 3,
+        "Règlement": 2,
         "Accord intercantonal": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Education et science",
-          "total": 4,
+          "total": 6,
           "own": 0,
           "by_type": {
             "Autre": 3,
+            "Règlement": 2,
             "Accord intercantonal": 1
           },
           "children": [
@@ -150,9 +180,10 @@
             {
               "identifier": "413",
               "title": "Formation professionnelle",
-              "total": 1,
-              "own": 1,
+              "total": 3,
+              "own": 3,
               "by_type": {
+                "Règlement": 2,
                 "Accord intercantonal": 1
               }
             },
@@ -172,12 +203,32 @@
     {
       "identifier": "8",
       "title": "Santé, travail, sécurité sociale",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Ordonnance": 1
+        "Ordonnance": 2
       },
       "children": [
+        {
+          "identifier": "83",
+          "title": "Assurances sociales",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Assurance en cas de maladie et d'accidents",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "87",
           "title": "Protection contre les incendies et les dommages dus aux éléments",
@@ -245,15 +296,89 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Autre": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Autre": 3,
+        "Règlement": 1,
         "Accord intercantonal": 1
       },
       "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.30",
+              "title": "Handelsmittelschulen, Informatikmittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.50",
           "title": "Tertiärstufe: Fachhochschulen",
@@ -397,10 +522,52 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Ordonnance": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Ordonnance": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.40",
+                  "title": "Einschränkung der Zulassung von Leistungserbringern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Ordonnance": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "fr": 10
+    "fr": 14
   },
   "available_years_for_entity": [
     "1828",

@@ -2,31 +2,25 @@
   "year": "1983",
   "year_semantics": "enactment",
   "entity": "OW",
-  "total": 9,
-  "categorized": 9,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 6,
       "by_topic": {
         "101 Verfassung, Kantonsgebiet": 1,
+        "510 Polizei": 1,
+        "546 Feuerwehr": 1,
         "774 Schifffahrt": 1,
         "841 Arbeitnehmerschutz": 1,
         "851 Kranken- und Unfallversicherung": 1
       },
       "by_global_category": {
+        "5.30.10.30 Personal": 1,
+        "5.20.30.10 Feuerwehr": 1,
         "8.20.40 Heimarbeit": 1,
         "8.30.70 UVG": 1
-      }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "752 Gewässernutzung": 2
-      },
-      "by_global_category": {
-        "7.30.20.20 Gewässernutzung": 1,
-        "7.40.20 Wasserkraft": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -37,6 +31,15 @@
       "by_global_category": {
         "8.70.10 Sozialhilfe": 1,
         "8.70.70 Alimentenbevorschussung": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "752 Gewässernutzung": 1
+      },
+      "by_global_category": {
+        "7.30.20.20 Gewässernutzung": 1
       }
     },
     "Gesetz": {
@@ -71,21 +74,50 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "RAUM- UND BAUORDNUNG, ÖFFENTLICHE WERKE, ENERGIE, VERKEHR, UMWELTSCHUTZ",
-      "total": 3,
+      "identifier": "5",
+      "title": "SICHERHEIT, BEVÖLKERUNGSSCHUTZ",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 3
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "510",
+          "title": "Polizei",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
+        {
+          "identifier": "546",
+          "title": "Feuerwehr",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "RAUM- UND BAUORDNUNG, ÖFFENTLICHE WERKE, ENERGIE, VERKEHR, UMWELTSCHUTZ",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "752",
           "title": "Gewässernutzung",
-          "total": 2,
-          "own": 2,
+          "total": 1,
+          "own": 1,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 1
           }
         },
         {
@@ -143,12 +175,85 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
       "total": 2,
       "own": 0,
       "by_type": {
         "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.10",
+                  "title": "Feuerwehr",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.30",
+                  "title": "Personal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
       },
       "children": [
         {
@@ -179,26 +284,6 @@
                   }
                 }
               ]
-            }
-          ]
-        },
-        {
-          "identifier": "7.40",
-          "title": "Energie",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "7.40.20",
-              "title": "Wasserkraft",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
             }
           ]
         }
@@ -290,10 +375,11 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 10
   },
   "available_years_for_entity": [
     "1825",
+    "1834",
     "1850",
     "1874",
     "1877",
@@ -301,6 +387,7 @@
     "1880",
     "1892",
     "1895",
+    "1899",
     "1911",
     "1913",
     "1914",
@@ -333,6 +420,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -391,8 +479,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

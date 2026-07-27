@@ -2,10 +2,27 @@
   "year": "1990",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 15,
-  "categorized": 15,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 5,
+      "by_topic": {
+        "30 Gesundheit": 1,
+        "812 Arbeitnehmerschutz": 1,
+        "861 Sozialer Wohnungsbau · Erhaltung von Wohnraum": 1,
+        "89 Sozialhilfe · Sozialbeiträge": 1,
+        "952 Strassenverkehr": 1
+      },
+      "by_global_category": {
+        "8.10.10 Ethik": 1,
+        "8.10.110 Unfallbekämpfung": 1,
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1,
+        "8.70.100 Familienpolitik, Familienförderung": 1,
+        "7.10.70 Parkplätze": 1
+      }
+    },
     "Gemeindeerlass": {
       "total": 5,
       "by_topic": {
@@ -15,17 +32,17 @@
         "1.30.60 Bürgergemeinden, Allmend": 5
       }
     },
-    "Gesetz": {
+    "Anderes": {
       "total": 3,
       "by_topic": {
-        "30 Gesundheit": 1,
-        "812 Arbeitnehmerschutz": 1,
-        "952 Strassenverkehr": 1
+        "215 Obligationenrecht: Spezielle Erlasse": 1,
+        "340 Heilmittelkontrolle · Gifte": 1,
+        "772 Energie- und Wasserversorgung": 1
       },
       "by_global_category": {
-        "8.10.10 Ethik": 1,
-        "8.10.110 Unfallbekämpfung": 1,
-        "7.10.70 Parkplätze": 1
+        "2.20.10.40.20.10 Hausangestellte": 1,
+        "8.10.70 Heil- und Betäubungsmittel": 1,
+        "8.10.130.20 Wasserversorgung": 1
       }
     },
     "Verordnung": {
@@ -38,15 +55,6 @@
       "by_global_category": {
         "8.70.30.10 Alters- und Pflegeheime": 1,
         "8.30.70 UVG": 1
-      }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "340 Heilmittelkontrolle · Gifte": 1
-      },
-      "by_global_category": {
-        "8.10.70 Heil- und Betäubungsmittel": 1
       }
     },
     "Reglement": {
@@ -74,6 +82,37 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "2",
+      "title": "Zivilrecht · Strafrecht · Rechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Bundeszivilrecht: Ergänzende kantonale Erlasse",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "215",
+              "title": "Obligationenrecht: Spezielle Erlasse",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "Gesundheit",
@@ -201,13 +240,34 @@
     {
       "identifier": "7",
       "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "77",
+          "title": "Wasser · Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "772",
+              "title": "Energie- und Wasserversorgung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "78",
           "title": "Umweltschutz",
@@ -235,10 +295,10 @@
     {
       "identifier": "8",
       "title": "Arbeit · Soziale Sicherheit",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
+        "Gesetz": 3,
         "Verordnung": 1
       },
       "children": [
@@ -281,6 +341,35 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "86",
+          "title": "Soziale Wohnungsvorsorge · Heime · Behindertenhilfe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "861",
+              "title": "Sozialer Wohnungsbau · Erhaltung von Wohnraum",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "89",
+          "title": "Sozialhilfe · Sozialbeiträge",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
         }
       ]
     },
@@ -358,6 +447,70 @@
       ]
     },
     {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "2.20",
+          "title": "Einführungsgesetzgebung OR",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "2.20.10",
+              "title": "Vertragsverhältnisse",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.20.10.40",
+                  "title": "Arbeitsvertragsrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.20.10.40.20",
+                      "title": "Normalarbeitsverträge",
+                      "total": 1,
+                      "own": 0,
+                      "by_type": {
+                        "Anderes": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "2.20.10.40.20.10",
+                          "title": "Hausangestellte",
+                          "total": 1,
+                          "own": 1,
+                          "by_type": {
+                            "Anderes": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 1,
@@ -422,22 +575,22 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 5,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
-        "Verordnung": 2,
-        "Anderes": 1
+        "Gesetz": 4,
+        "Anderes": 2,
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Gesetz": 2,
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
@@ -466,6 +619,26 @@
               "by_type": {
                 "Gesetz": 1
               }
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.20",
+                  "title": "Wasserversorgung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
             }
           ]
         },
@@ -490,12 +663,33 @@
           ]
         },
         {
-          "identifier": "8.70",
-          "title": "Fürsorge",
+          "identifier": "8.40",
+          "title": "Wohnverhältnisse",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.40.10",
+              "title": "Eigentums- und Wohnungsbauförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -517,6 +711,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.70.100",
+              "title": "Familienpolitik, Familienförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -524,7 +727,7 @@
     }
   ],
   "languages_available": {
-    "de": 15
+    "de": 19
   },
   "available_years_for_entity": [
     "1019",
@@ -538,13 +741,16 @@
     "1857",
     "1860",
     "1863",
+    "1864",
     "1870",
     "1872",
+    "1875",
     "1876",
     "1879",
     "1882",
     "1883",
     "1886",
+    "1889",
     "1891",
     "1892",
     "1894",
@@ -569,18 +775,21 @@
     "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
     "1932",
     "1933",
+    "1934",
     "1935",
     "1936",
     "1937",
     "1938",
     "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",

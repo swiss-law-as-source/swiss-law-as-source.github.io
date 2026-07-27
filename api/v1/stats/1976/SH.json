@@ -2,10 +2,21 @@
   "year": "1976",
   "year_semantics": "enactment",
   "entity": "SH",
-  "total": 7,
-  "categorized": 7,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "13 Staat und Kirche": 1,
+        "84 Wohnverhältnisse": 1
+      },
+      "by_global_category": {
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
+      }
+    },
     "Gesetz": {
       "total": 2,
       "by_topic": {
@@ -33,6 +44,13 @@
       },
       "by_global_category": {}
     },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "811 Medizinalpersonen und Pflegepersonal": 1
+      },
+      "by_global_category": {}
+    },
     "Staatsvertrag": {
       "total": 1,
       "by_topic": {
@@ -41,18 +59,29 @@
       "by_global_category": {
         "7.60.20 Gewässerschutz": 1
       }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "84 Wohnverhältnisse": 1
-      },
-      "by_global_category": {
-        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
-      }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat - Volk - Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "13",
+          "title": "Staat und Kirche",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Privatrecht - Zivilrechtspflege - Vollstreckung",
@@ -146,9 +175,10 @@
     {
       "identifier": "8",
       "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Staatsvertrag": 1,
         "Anderes": 1
       },
@@ -156,12 +186,22 @@
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Staatsvertrag": 1
           },
           "children": [
+            {
+              "identifier": "811",
+              "title": "Medizinalpersonen und Pflegepersonal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "814",
               "title": "Umweltschutz",
@@ -197,6 +237,37 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
@@ -334,7 +405,7 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 9
   },
   "available_years_for_entity": [
     "1828",
@@ -356,11 +427,13 @@
     "1928",
     "1929",
     "1930",
+    "1934",
     "1936",
     "1937",
     "1939",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1947",
     "1948",
@@ -372,6 +445,7 @@
     "1955",
     "1956",
     "1957",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -386,6 +460,7 @@
     "1972",
     "1973",
     "1974",
+    "1975",
     "1976",
     "1977",
     "1978",

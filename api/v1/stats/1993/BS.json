@@ -2,10 +2,28 @@
   "year": "1993",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 26,
-  "categorized": 26,
+  "total": 30,
+  "categorized": 30,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 7,
+      "by_topic": {
+        "519 Gebühren": 2,
+        "786 Abfallbeseitigung": 2,
+        "214 Sachenrecht: Spezielle Erlasse": 1,
+        "351 Lebensmittelpolizei": 1,
+        "912 Jagd und Fischerei": 1
+      },
+      "by_global_category": {
+        "7.60.10 Abfälle": 2,
+        "9.20.30 Bäuerliches Bodenrecht": 1,
+        "8.10.130.10.10 Lebensmittelaufsicht": 1,
+        "1.10.70.10.10 Einwohnerkontrolle": 1,
+        "3.20.20 Gerichtsmedizin": 1,
+        "7.70.20 Tierschutz": 1
+      }
+    },
     "Gemeindeerlass": {
       "total": 7,
       "by_topic": {
@@ -38,43 +56,30 @@
         "1.20.20.60 Verwaltungsgebühren": 1
       }
     },
-    "Verordnung": {
-      "total": 4,
-      "by_topic": {
-        "214 Sachenrecht: Spezielle Erlasse": 1,
-        "351 Lebensmittelpolizei": 1,
-        "519 Gebühren": 1,
-        "786 Abfallbeseitigung": 1
-      },
-      "by_global_category": {
-        "9.20.30 Bäuerliches Bodenrecht": 1,
-        "8.10.130.10.10 Lebensmittelaufsicht": 1,
-        "3.20.20 Gerichtsmedizin": 1,
-        "7.60.10 Abfälle": 1
-      }
-    },
-    "Anderes": {
-      "total": 4,
-      "by_topic": {
-        "329 Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege": 1,
-        "835 Arbeitslosenversicherung und ergänzende kantonale Massnahmen": 1,
-        "839 Sozialversicherungsprozess": 1
-      },
-      "by_global_category": {
-        "6.10.30 Staatsbeiträge, Subventionen": 1,
-        "8.30.110 Arbeitslosenversicherung": 1
-      }
-    },
     "Reglement": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
+        "152 Grosser Rat · Ombudsfrau · Ombudsmann": 1,
         "365 Tierhaltung und Tierschutz": 1,
         "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1,
         "439 Lehrerprüfungen": 1
       },
       "by_global_category": {
+        "1.10.120 Information der Öffentlichkeit": 1,
         "5.30.20.10 Hunde, gefährliche Tiere": 1,
         "4.90.30 Ausbildung": 1
+      }
+    },
+    "Anderes": {
+      "total": 4,
+      "by_topic": {
+        "215 Obligationenrecht: Spezielle Erlasse": 1,
+        "329 Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege": 1,
+        "839 Sozialversicherungsprozess": 1
+      },
+      "by_global_category": {
+        "2.20.10.40.20.30 Landwirtschaft": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
     "Gesetz": {
@@ -92,10 +97,11 @@
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen · Organisation",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Interkantonale Vereinbarung": 2,
+        "Reglement": 1
       },
       "children": [
         {
@@ -121,12 +127,22 @@
         {
           "identifier": "15",
           "title": "Organisation des Kantons",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Reglement": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "152",
+              "title": "Grosser Rat · Ombudsfrau · Ombudsmann",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
             {
               "identifier": "153",
               "title": "Regierung und Verwaltung · Verwaltungsgebühren",
@@ -143,10 +159,11 @@
     {
       "identifier": "2",
       "title": "Zivilrecht · Strafrecht · Rechtspflege",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 1,
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1,
         "Gesetz": 1
       },
@@ -154,10 +171,11 @@
         {
           "identifier": "21",
           "title": "Bundeszivilrecht: Ergänzende kantonale Erlasse",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -167,6 +185,15 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "215",
+              "title": "Obligationenrecht: Spezielle Erlasse",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -375,28 +402,28 @@
     {
       "identifier": "5",
       "title": "Polizei · Militär · Feuerwehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "51",
           "title": "Polizei",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "519",
               "title": "Gebühren",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               }
             }
           ]
@@ -406,28 +433,28 @@
     {
       "identifier": "7",
       "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "78",
           "title": "Umweltschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "786",
               "title": "Abfallbeseitigung",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               }
             }
           ]
@@ -437,30 +464,21 @@
     {
       "identifier": "8",
       "title": "Arbeit · Soziale Sicherheit",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "83",
           "title": "Sozialversicherung",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 1
           },
           "children": [
-            {
-              "identifier": "835",
-              "title": "Arbeitslosenversicherung und ergänzende kantonale Massnahmen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            },
             {
               "identifier": "839",
               "title": "Sozialversicherungsprozess",
@@ -477,12 +495,33 @@
     {
       "identifier": "9",
       "title": "Wirtschaft und Verkehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "91",
+          "title": "Wirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "912",
+              "title": "Jagd und Fischerei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "95",
           "title": "Verkehr",
@@ -528,19 +567,23 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 3
+        "Interkantonale Vereinbarung": 3,
+        "Verordnung": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2
+            "Interkantonale Vereinbarung": 2,
+            "Verordnung": 1,
+            "Reglement": 1
           },
           "children": [
             {
@@ -550,6 +593,46 @@
               "own": 2,
               "by_type": {
                 "Interkantonale Vereinbarung": 2
+              }
+            },
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.10",
+                  "title": "Niederlassung und Aufenthalt Schweizer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.10.10",
+                      "title": "Einwohnerkontrolle",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.10.120",
+              "title": "Information der Öffentlichkeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
               }
             }
           ]
@@ -580,6 +663,70 @@
                   "by_type": {
                     "Interkantonale Vereinbarung": 1
                   }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "2.20",
+          "title": "Einführungsgesetzgebung OR",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "2.20.10",
+              "title": "Vertragsverhältnisse",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.20.10.40",
+                  "title": "Arbeitsvertragsrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.20.10.40.20",
+                      "title": "Normalarbeitsverträge",
+                      "total": 1,
+                      "own": 0,
+                      "by_type": {
+                        "Anderes": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "2.20.10.40.20.30",
+                          "title": "Landwirtschaft",
+                          "total": 1,
+                          "own": 1,
+                          "by_type": {
+                            "Anderes": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -810,30 +957,50 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Gemeindeerlass": 3,
-        "Verordnung": 1
+        "Verordnung": 3
       },
       "children": [
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
-          "total": 4,
+          "total": 5,
           "own": 0,
           "by_type": {
             "Gemeindeerlass": 3,
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "7.60.10",
               "title": "Abfälle",
-              "total": 4,
-              "own": 4,
+              "total": 5,
+              "own": 5,
               "by_type": {
                 "Gemeindeerlass": 3,
+                "Verordnung": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.20",
+              "title": "Tierschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
                 "Verordnung": 1
               }
             }
@@ -844,11 +1011,10 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -892,26 +1058,6 @@
               ]
             }
           ]
-        },
-        {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "8.30.110",
-              "title": "Arbeitslosenversicherung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
         }
       ]
     },
@@ -948,7 +1094,7 @@
     }
   ],
   "languages_available": {
-    "de": 26
+    "de": 30
   },
   "available_years_for_entity": [
     "1019",
@@ -962,13 +1108,16 @@
     "1857",
     "1860",
     "1863",
+    "1864",
     "1870",
     "1872",
+    "1875",
     "1876",
     "1879",
     "1882",
     "1883",
     "1886",
+    "1889",
     "1891",
     "1892",
     "1894",
@@ -993,18 +1142,21 @@
     "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
     "1932",
     "1933",
+    "1934",
     "1935",
     "1936",
     "1937",
     "1938",
     "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",

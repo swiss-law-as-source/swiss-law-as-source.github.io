@@ -2,21 +2,23 @@
   "year": "1988",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 23,
-  "categorized": 23,
+  "total": 24,
+  "categorized": 24,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "215 Mittelschulen": 2,
         "321 Kantonale Spitäler": 2,
+        "143 Staatspersonal": 1,
         "173 Katholische Konfession": 1,
         "331 Krankenversicherung": 1,
         "381 Öffentliche Fürsorge": 1
       },
       "by_global_category": {
         "4.120.60 Schulbauten": 2,
+        "1.20.20.20.10 Entschädigungen": 1,
         "1.40.10 Römisch-Katholische Kirche": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1
       }
@@ -38,9 +40,10 @@
       }
     },
     "Gesetz": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "217 Universität": 1,
+        "710 Allgemein": 1,
         "732 Tiefbauten des Staates": 1,
         "811 Staatssteuern": 1,
         "914 Sachenrecht und Grundbuch": 1
@@ -74,27 +77,39 @@
       "by_global_category": {
         "9.20.50 Meliorationen": 1
       }
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "941 Gerichtsorganisation und -verfahren": 1
-      },
-      "by_global_category": {
-        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen und Organisation von Kanton und Gemeinden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "14",
+          "title": "Staatsverwaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "143",
+              "title": "Staatspersonal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "17",
           "title": "Staat und Kirche",
@@ -369,14 +384,34 @@
     {
       "identifier": "7",
       "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
+        "Gesetz": 2,
         "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "71",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "710",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "73",
           "title": "Öffentliches Baurecht",
@@ -440,11 +475,10 @@
     {
       "identifier": "9",
       "title": "Zivilrecht, Strafrecht, Rechtspflege",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Reglement": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -466,26 +500,6 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "94",
-          "title": "Gerichtsorganisation und -verfahren",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "941",
-              "title": "Gerichtsorganisation und -verfahren",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Reglement": 1
-              }
-            }
-          ]
         }
       ]
     }
@@ -497,7 +511,7 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
+        "Anderes": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
@@ -507,34 +521,34 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "1.20.70",
-              "title": "Gerichtsorganisation",
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Reglement": 1
+                "Anderes": 1
               },
               "children": [
                 {
-                  "identifier": "1.20.70.10",
-                  "title": "Gerichtsbehörden",
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
                   "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Reglement": 1
+                    "Anderes": 1
                   },
                   "children": [
                     {
-                      "identifier": "1.20.70.10.30",
-                      "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
+                      "identifier": "1.20.20.20.10",
+                      "title": "Entschädigungen",
                       "total": 1,
                       "own": 1,
                       "by_type": {
-                        "Reglement": 1
+                        "Anderes": 1
                       }
                     }
                   ]
@@ -831,7 +845,7 @@
     }
   ],
   "languages_available": {
-    "de": 23
+    "de": 24
   },
   "available_years_for_entity": [
     "1845",
@@ -845,6 +859,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",

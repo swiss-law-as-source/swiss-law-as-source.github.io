@@ -2,22 +2,43 @@
   "year": "1981",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 8,
-  "categorized": 8,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
         "I C/3 Ausweisschriften": 1,
         "II C/5 Ärzte, Tierärzte, Apotheker": 1,
+        "IV B/32 Unterricht – Lehrmittel": 1,
+        "IV G/5 Schutzgebiete": 1,
         "VII B/532 Konzessionen": 1
       },
       "by_global_category": {
         "1.10.80 Ausweise": 1,
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "4.10.20 Kindergarten": 1,
+        "7.70.10 Landschaftsschutz": 1,
         "7.30.20.20 Gewässernutzung": 1
       }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "II C/1 Allgemein": 1,
+        "IX B/22 Gastgewerbe": 1
+      },
+      "by_global_category": {
+        "1.20.10.20 Entschädigung der Parlamentarier": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "IV B/51 Berufsbildung": 2
+      },
+      "by_global_category": {}
     },
     "Interkantonale Vereinbarung": {
       "total": 2,
@@ -29,17 +50,10 @@
         "6.30.60.20 Reviere": 1
       }
     },
-    "Reglement": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
         "IV B/51 Berufsbildung": 1
-      },
-      "by_global_category": {}
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "IX B/22 Gastgewerbe": 1
       },
       "by_global_category": {}
     },
@@ -66,19 +80,21 @@
     {
       "identifier": "II",
       "title": "Organisation des Kantons und der Gemeinden",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       }
     },
     {
       "identifier": "IV",
       "title": "Kirche – Schule – Kultur",
-      "total": 1,
-      "own": 1,
+      "total": 5,
+      "own": 5,
       "by_type": {
-        "Reglement": 1
+        "Anderes": 2,
+        "Reglement": 2,
+        "Gesetz": 1
       }
     },
     {
@@ -123,10 +139,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 3
       },
       "children": [
         {
@@ -152,12 +168,32 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
+            {
+              "identifier": "1.20.10",
+              "title": "Parlament",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.10.20",
+                  "title": "Entschädigung der Parlamentarier",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
@@ -188,6 +224,37 @@
                   ]
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.20",
+              "title": "Kindergarten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -238,11 +305,11 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1,
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -295,22 +362,45 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.10",
+              "title": "Landschaftsschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 13
   },
   "available_years_for_entity": [
+    "1800",
     "1807",
     "1835",
     "1859",
+    "1872",
     "1877",
     "1878",
     "1879",
     "1888",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
@@ -320,11 +410,13 @@
     "1911",
     "1915",
     "1918",
+    "1922",
     "1923",
     "1926",
     "1927",
     "1928",
     "1931",
+    "1933",
     "1934",
     "1941",
     "1943",
@@ -336,14 +428,17 @@
     "1950",
     "1951",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
     "1962",
     "1963",
     "1964",
     "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

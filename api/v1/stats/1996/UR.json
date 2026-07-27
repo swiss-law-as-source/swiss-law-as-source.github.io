@@ -2,8 +2,8 @@
   "year": "1996",
   "year_semantics": "enactment",
   "entity": "UR",
-  "total": 9,
-  "categorized": 9,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
@@ -22,24 +22,30 @@
       }
     },
     "Reglement": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "30.21 Grundlagen": 1,
+        "40.43 Gewässerschutz, Schadenwehr": 1,
         "50.2 Schifffahrt": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "7.60.90 Schadenbekämpfung": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
+        "3.31 Submission": 1,
+        "40.2 Wald, Weide": 1
+      },
+      "by_global_category": {
+        "7.30.40 Submission": 1
+      }
     },
     "Anderes": {
       "total": 1,
       "by_topic": {
         "10.13 Lehreinrichtungen": 1
-      },
-      "by_global_category": {}
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "40.2 Wald, Weide": 1
       },
       "by_global_category": {}
     }
@@ -48,10 +54,11 @@
     {
       "identifier": "3",
       "title": "Allgemeine Funktionen im Gemeinwesen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -70,6 +77,26 @@
               "own": 1,
               "by_type": {
                 "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "3.3",
+          "title": "Öffentliche Unternehmung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "3.31",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -213,10 +240,11 @@
     {
       "identifier": "40",
       "title": "Pflege der Umwelt - Nutzung der Natur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -227,6 +255,26 @@
           "by_type": {
             "Verordnung des Parlaments (Dekret)": 1
           }
+        },
+        {
+          "identifier": "40.4",
+          "title": "Wasser",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "40.43",
+              "title": "Gewässerschutz, Schadenwehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -336,6 +384,58 @@
       ]
     },
     {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.90",
+              "title": "Schadenbekämpfung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
@@ -368,13 +468,14 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 11
   },
   "available_years_for_entity": [
     "1859",
     "1869",
     "1888",
     "1889",
+    "1890",
     "1891",
     "1902",
     "1911",
@@ -398,7 +499,6 @@
     "1961",
     "1962",
     "1964",
-    "1965",
     "1966",
     "1967",
     "1968",

@@ -2,22 +2,25 @@
   "year": "1989",
   "year_semantics": "enactment",
   "entity": "GE",
-  "total": 12,
-  "categorized": 12,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 8,
+      "total": 11,
       "by_topic": {
+        "C 1 Instruction publique": 2,
         "H 1 Circulation": 2,
+        "L 2 Eaux et énergies": 2,
         "E 1 Droit civil et droit des obligations": 1,
         "E 6 Professions juridiques": 1,
         "F 2 Séjour et établissements, police des étrangers, recensement": 1,
         "K 4 Médicaments, stupéfiants, produits divers": 1,
-        "L 2 Eaux et énergies": 1,
         "M 1 Améliorations foncières, droit foncier rural": 1
       },
       "by_global_category": {
+        "4.120.60 Schulbauten": 1,
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
         "7.60.30.10 Feinstaub/Smog": 1,
         "8.10.70 Heil- und Betäubungsmittel": 1,
         "1.20.20.30.30 Kommissionen": 1,
@@ -27,13 +30,14 @@
     "Gesetz": {
       "total": 4,
       "by_topic": {
-        "J 6 Protection de la jeunesse": 2,
         "A 2 Constitution et principes généraux": 1,
+        "C 1 Instruction publique": 1,
+        "J 6 Protection de la jeunesse": 1,
         "L 4 Monuments et sites, décoration": 1
       },
       "by_global_category": {
         "1.20.40 Staatshaftung": 1,
-        "8.70.20 Jugendschutz, Jugendhilfe": 1,
+        "4.100.10 Stipendien": 1,
         "2.10.20.20 Pflegekinder, Adoption": 1,
         "7.70.60 Uferschutz": 1
       }
@@ -46,6 +50,16 @@
       "total": 1,
       "own": 1,
       "by_type": {
+        "Loi": 1
+      }
+    },
+    {
+      "identifier": "C",
+      "title": "Instruction publique, culture",
+      "total": 3,
+      "own": 3,
+      "by_type": {
+        "Règlement": 2,
         "Loi": 1
       }
     },
@@ -79,10 +93,10 @@
     {
       "identifier": "J",
       "title": "Législation sociale",
-      "total": 2,
-      "own": 2,
+      "total": 1,
+      "own": 1,
       "by_type": {
-        "Loi": 2
+        "Loi": 1
       }
     },
     {
@@ -97,10 +111,10 @@
     {
       "identifier": "L",
       "title": "Domaine public et travaux",
-      "total": 2,
-      "own": 2,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Règlement": 1,
+        "Règlement": 2,
         "Loi": 1
       }
     },
@@ -222,6 +236,67 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Règlement": 2,
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "4.60",
+          "title": "Tertiärstufe: Höhere Fachschulen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Règlement": 1
+          }
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.10",
+              "title": "Stipendien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.60",
+              "title": "Schulbauten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 2,
@@ -287,11 +362,10 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 1,
-        "Loi": 1
+        "Règlement": 1
       },
       "children": [
         {
@@ -310,26 +384,6 @@
               "own": 1,
               "by_type": {
                 "Règlement": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "8.70",
-          "title": "Fürsorge",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Loi": 1
-          },
-          "children": [
-            {
-              "identifier": "8.70.20",
-              "title": "Jugendschutz, Jugendhilfe",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Loi": 1
               }
             }
           ]
@@ -369,15 +423,18 @@
     }
   ],
   "languages_available": {
-    "fr": 12
+    "fr": 15
   },
   "available_years_for_entity": [
     "1564",
     "1726",
     "1749",
+    "1803",
     "1815",
     "1816",
     "1817",
+    "1825",
+    "1834",
     "1841",
     "1847",
     "1849",
@@ -389,6 +446,7 @@
     "1876",
     "1878",
     "1881",
+    "1886",
     "1887",
     "1889",
     "1892",
@@ -401,7 +459,9 @@
     "1907",
     "1908",
     "1909",
+    "1912",
     "1918",
+    "1919",
     "1923",
     "1925",
     "1927",

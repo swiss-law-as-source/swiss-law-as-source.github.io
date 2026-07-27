@@ -2,20 +2,33 @@
   "year": "1982",
   "year_semantics": "enactment",
   "entity": "ZG",
-  "total": 7,
-  "categorized": 7,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "213 Familienrecht": 1,
+        "844 Familienversicherung": 1,
         "861 Sozialhilfe": 1,
         "942 Gewerbe- und Handelspolizei": 1
       },
       "by_global_category": {
         "2.10.20.30 Fürsorgerischer Freiheitsentzug": 1,
+        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1,
         "8.70.10 Sozialhilfe": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "511 Polizeiliche Zusammenarbeit": 1,
+        "942 Gewerbe- und Handelspolizei": 1
+      },
+      "by_global_category": {
+        "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
+        "9.60.20 Messwesen, Zahlungsverkehr": 1
       }
     },
     "Reglement": {
@@ -25,15 +38,6 @@
       },
       "by_global_category": {
         "4.10.20 Kindergarten": 1
-      }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "511 Polizeiliche Zusammenarbeit": 1
-      },
-      "by_global_category": {
-        "5.30.10.50 Polizeiliche Zusammenarbeit": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -152,12 +156,12 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Anderes": 1,
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -178,6 +182,26 @@
               "by_type": {
                 "Anderes": 1,
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "84",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "844",
+              "title": "Familienversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -207,27 +231,30 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft, Landwirtschaft, Forst, Gewerbe, Handel, Industrie",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "94",
           "title": "Gewerbe, Handel, Industrie",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Gesetz": 1
           },
           "children": [
             {
               "identifier": "942",
               "title": "Gewerbe- und Handelspolizei",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Verordnung": 1,
                 "Gesetz": 1
               }
             }
@@ -355,12 +382,12 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Anderes": 1,
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -398,6 +425,37 @@
           ]
         },
         {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.100",
+              "title": "Familienzulagen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.100.10",
+                  "title": "Landwirtschaftliche Arbeitnehmer",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
           "identifier": "8.70",
           "title": "Fürsorge",
           "total": 1,
@@ -418,10 +476,41 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.20",
+              "title": "Messwesen, Zahlungsverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 9
   },
   "available_years_for_entity": [
     "1825",
@@ -437,8 +526,9 @@
     "1919",
     "1921",
     "1925",
-    "1926",
+    "1928",
     "1929",
+    "1932",
     "1937",
     "1938",
     "1940",

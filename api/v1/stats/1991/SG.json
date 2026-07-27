@@ -2,10 +2,28 @@
   "year": "1991",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 22,
-  "categorized": 22,
+  "total": 26,
+  "categorized": 26,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 9,
+      "by_topic": {
+        "831 Finanzhaushalt des Staates": 2,
+        "871 Feuerpolizei": 2,
+        "217 Universität": 1,
+        "321 Kantonale Spitäler": 1,
+        "371 Kinderzulagen": 1,
+        "941 Gerichtsorganisation und -verfahren": 1,
+        "961 Zivilrechtspflege": 1
+      },
+      "by_global_category": {
+        "6.10.30 Staatsbeiträge, Subventionen": 2,
+        "5.20.30.10 Feuerwehr": 2,
+        "4.90.20 Löhne, Entschädigungen": 1,
+        "1.20.70.30 Besoldung und Entschädigung der Richter": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 8,
       "by_topic": {
@@ -25,20 +43,6 @@
         "4.180.30 Sport": 1
       }
     },
-    "Verordnung": {
-      "total": 6,
-      "by_topic": {
-        "831 Finanzhaushalt des Staates": 2,
-        "217 Universität": 1,
-        "321 Kantonale Spitäler": 1,
-        "371 Kinderzulagen": 1,
-        "961 Zivilrechtspflege": 1
-      },
-      "by_global_category": {
-        "6.10.30 Staatsbeiträge, Subventionen": 2,
-        "4.90.20 Löhne, Entschädigungen": 1
-      }
-    },
     "Interkantonale Vereinbarung": {
       "total": 3,
       "by_topic": {
@@ -52,10 +56,11 @@
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "215 Mittelschulen": 1,
-        "871 Feuerpolizei": 1
+        "871 Feuerpolizei": 1,
+        "941 Gerichtsorganisation und -verfahren": 1
       },
       "by_global_category": {
         "4.20.10 Mittelschule": 1
@@ -379,10 +384,10 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Verordnung": 4,
         "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
@@ -430,18 +435,20 @@
         {
           "identifier": "87",
           "title": "Feuerschutz",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "871",
               "title": "Feuerpolizei",
-              "total": 1,
-              "own": 1,
+              "total": 3,
+              "own": 3,
               "by_type": {
+                "Verordnung": 2,
                 "Anderes": 1
               }
             }
@@ -452,12 +459,33 @@
     {
       "identifier": "9",
       "title": "Zivilrecht, Strafrecht, Rechtspflege",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "94",
+          "title": "Gerichtsorganisation und -verfahren",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "941",
+              "title": "Gerichtsorganisation und -verfahren",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
+        },
         {
           "identifier": "96",
           "title": "Zivil- und Strafrechtspflege",
@@ -485,19 +513,19 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
@@ -512,6 +540,26 @@
                 {
                   "identifier": "1.20.10.20",
                   "title": "Entschädigung der Parlamentarier",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.30",
+                  "title": "Besoldung und Entschädigung der Richter",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -604,6 +652,48 @@
               "by_type": {
                 "Anderes": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.10",
+                  "title": "Feuerwehr",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
             }
           ]
         }
@@ -760,7 +850,7 @@
     }
   ],
   "languages_available": {
-    "de": 22
+    "de": 26
   },
   "available_years_for_entity": [
     "1845",
@@ -774,6 +864,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",

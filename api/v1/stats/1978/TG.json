@@ -2,10 +2,22 @@
   "year": "1978",
   "year_semantics": "enactment",
   "entity": "TG",
-  "total": 9,
-  "categorized": 9,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "187.1 Organisation der Evangelischen Landeskirche": 1,
+        "188.2 Erlasse der Katholischen Landeskirche": 1,
+        "923 Fischerei": 1
+      },
+      "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 3,
       "by_topic": {
@@ -47,22 +59,16 @@
       "by_global_category": {
         "1.40.10 Römisch-Katholische Kirche": 1
       }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "923 Fischerei": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Gesetz": 1,
         "Staatsvertrag": 1
       },
@@ -90,19 +96,41 @@
         {
           "identifier": "18",
           "title": "Staat und Kirche",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Anderes": 2,
             "Staatsvertrag": 1
           },
           "children": [
             {
-              "identifier": "188",
-              "title": "Katholische Landeskirche",
+              "identifier": "187",
+              "title": "Evangelische Landeskirche",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Staatsvertrag": 1
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "187.1",
+                  "title": "Organisation der Evangelischen Landeskirche",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "188",
+              "title": "Katholische Landeskirche",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Staatsvertrag": 1,
+                "Anderes": 1
               },
               "children": [
                 {
@@ -112,6 +140,15 @@
                   "own": 1,
                   "by_type": {
                     "Staatsvertrag": 1
+                  }
+                },
+                {
+                  "identifier": "188.2",
+                  "title": "Erlasse der Katholischen Landeskirche",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
                   }
                 }
               ]
@@ -312,28 +349,40 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Staatsvertrag": 1
       },
       "children": [
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Anderes": 2,
             "Staatsvertrag": 1
           },
           "children": [
             {
               "identifier": "1.40.10",
               "title": "Römisch-Katholische Kirche",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Staatsvertrag": 1,
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Staatsvertrag": 1
+                "Anderes": 1
               }
             }
           ]
@@ -500,7 +549,7 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 11
   },
   "available_years_for_entity": [
     "1803",
@@ -530,8 +579,10 @@
     "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1946",
+    "1947",
     "1948",
     "1955",
     "1958",
@@ -602,6 +653,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

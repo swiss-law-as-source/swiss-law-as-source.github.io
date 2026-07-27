@@ -2,16 +2,18 @@
   "year": "2002",
   "year_semantics": "enactment",
   "entity": "JU",
-  "total": 22,
-  "categorized": 22,
+  "total": 27,
+  "categorized": 27,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 12,
+      "total": 15,
       "by_topic": {
         "850 Dispositions générales": 2,
         "131 Recensement et statistique annuelle de la population": 1,
+        "144 Intégration des étrangers": 1,
         "173 Membres des autorités, fonctionnaires et employés": 1,
+        "181 Organisation judiciaire générale": 1,
         "271 Dispositions générales": 1,
         "410.3 Constructions scolaires": 1,
         "413 Formation professionnelle": 1,
@@ -19,17 +21,36 @@
         "702 Aménagement du territoire": 1,
         "810 Généralités, promotion de la santé, soins hospitaliers et soins à domicile": 1,
         "817 Police des denrées alimentaires": 1,
-        "837 Assurance-chômage": 1
+        "837 Assurance-chômage": 1,
+        "853 Enfants placés en pension": 1
       },
       "by_global_category": {
         "8.70.10 Sozialhilfe": 2,
         "4.170.10 Statistik": 1,
+        "1.10.70.20.30 Integration": 1,
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "1.20.70.10.10.20 Staatsanwaltschaft": 1,
         "4.120.60 Schulbauten": 1,
         "4.20.30 Handelsmittelschulen, Informatikmittelschulen": 1,
         "7.10.10 Pläne": 1,
         "8.10.130.10.30 Pilze": 1,
-        "8.30.110 Arbeitslosenversicherung": 1
+        "8.30.110 Arbeitslosenversicherung": 1,
+        "2.10.20.20 Pflegekinder, Adoption": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "170 Dispositions générales": 1,
+        "551 Police cantonale": 1,
+        "922 Chasse, protection du gibier et des oiseaux": 1,
+        "935.5 Loteries, paris et jeux": 1
+      },
+      "by_global_category": {
+        "1.10.120 Information der Öffentlichkeit": 1,
+        "5.30.10.10 Kantonspolizei": 1,
+        "7.70.20 Tierschutz": 1,
+        "9.50.10.60.30 Spielbanken": 1
       }
     },
     "Anderes": {
@@ -53,17 +74,6 @@
         "4.180.10.10 Film, Theater, Unterhaltung": 1
       }
     },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "170 Dispositions générales": 1,
-        "922 Chasse, protection du gibier et des oiseaux": 1
-      },
-      "by_global_category": {
-        "1.10.120 Information der Öffentlichkeit": 1,
-        "7.70.20 Tierschutz": 1
-      }
-    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
@@ -83,10 +93,11 @@
     {
       "identifier": "1",
       "title": "État, peuple, autorités",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Autre": 2,
+        "Ordonnance": 2,
         "Loi": 1
       },
       "children": [
@@ -106,6 +117,26 @@
               "own": 1,
               "by_type": {
                 "Autre": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "14",
+          "title": "Droit de cité, établissement, séjour",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "144",
+              "title": "Intégration des étrangers",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
               }
             }
           ]
@@ -136,6 +167,26 @@
               "own": 1,
               "by_type": {
                 "Autre": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "18",
+          "title": "Organisation judiciaire, avocats et notaires",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "181",
+              "title": "Organisation judiciaire générale",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
               }
             }
           ]
@@ -239,10 +290,11 @@
     {
       "identifier": "5",
       "title": "Défense nationale, police",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Ordonnance": 1
+        "Ordonnance": 1,
+        "Loi": 1
       },
       "children": [
         {
@@ -261,6 +313,26 @@
               "own": 1,
               "by_type": {
                 "Ordonnance": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "55",
+          "title": "Police",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "551",
+              "title": "Police cantonale",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
               }
             }
           ]
@@ -332,10 +404,10 @@
     {
       "identifier": "8",
       "title": "Santé, travail, sécurité sociale",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Ordonnance": 4,
+        "Ordonnance": 5,
         "Autre": 1
       },
       "children": [
@@ -392,10 +464,10 @@
         {
           "identifier": "85",
           "title": "Aide sociale",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Ordonnance": 2
+            "Ordonnance": 3
           },
           "children": [
             {
@@ -406,6 +478,15 @@
               "by_type": {
                 "Ordonnance": 2
               }
+            },
+            {
+              "identifier": "853",
+              "title": "Enfants placés en pension",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
+              }
             }
           ]
         }
@@ -414,10 +495,10 @@
     {
       "identifier": "9",
       "title": "Économie",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Loi": 1,
+        "Loi": 2,
         "Ordonnance parlementaire (décret)": 1,
         "Accord intercantonal": 1,
         "Traité international": 1
@@ -446,28 +527,31 @@
         {
           "identifier": "93",
           "title": "Industrie et artisanat",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Ordonnance parlementaire (décret)": 1
+            "Ordonnance parlementaire (décret)": 1,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "935",
               "title": "Services",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Ordonnance parlementaire (décret)": 1
+                "Ordonnance parlementaire (décret)": 1,
+                "Loi": 1
               },
               "children": [
                 {
                   "identifier": "935.5",
                   "title": "Loteries, paris et jeux",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Ordonnance parlementaire (décret)": 1
+                    "Ordonnance parlementaire (décret)": 1,
+                    "Loi": 1
                   }
                 }
               ]
@@ -491,9 +575,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Ordonnance": 2,
         "Loi": 1,
         "Autre": 1
       },
@@ -501,12 +586,44 @@
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Ordonnance": 1,
             "Loi": 1
           },
           "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Ordonnance": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Ordonnance": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.30",
+                      "title": "Integration",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Ordonnance": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "1.10.120",
               "title": "Information der Öffentlichkeit",
@@ -521,10 +638,11 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Autre": 1,
+            "Ordonnance": 1
           },
           "children": [
             {
@@ -555,6 +673,90 @@
                       }
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Ordonnance": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Ordonnance": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.10",
+                      "title": "Untersuchungs- und Anklagebehörden",
+                      "total": 1,
+                      "own": 0,
+                      "by_type": {
+                        "Ordonnance": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "1.20.70.10.10.20",
+                          "title": "Staatsanwaltschaft",
+                          "total": 1,
+                          "own": 1,
+                          "by_type": {
+                            "Ordonnance": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Ordonnance": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.20",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Ordonnance": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.20.20",
+                  "title": "Pflegekinder, Adoption",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Ordonnance": 1
+                  }
                 }
               ]
             }
@@ -667,6 +869,48 @@
                   "own": 1,
                   "by_type": {
                     "Accord intercantonal": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.10",
+                  "title": "Kantonspolizei",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
                   }
                 }
               ]
@@ -819,10 +1063,63 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.60",
+                  "title": "Glücksspiel und Lotterien",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Loi": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "9.50.10.60.30",
+                      "title": "Spielbanken",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Loi": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "fr": 22
+    "fr": 27
   },
   "available_years_for_entity": [
     "1828",

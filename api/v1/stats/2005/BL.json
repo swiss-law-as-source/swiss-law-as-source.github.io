@@ -2,30 +2,33 @@
   "year": "2005",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 29,
-  "categorized": 29,
+  "total": 37,
+  "categorized": 37,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 14,
+      "total": 18,
       "by_topic": {
         "156 Lehrpersonen, besondere Bestimmungen": 2,
         "33 Steuern": 2,
+        "49 Energie": 2,
+        "646 Lehrpersonen": 2,
         "11 Bürgerrechte": 1,
+        "211 Vollzugserlasse zum ZGB": 1,
         "233 Schuldbetreibung und Konkurs": 1,
-        "49 Energie": 1,
         "643 Weiterführende Schulen": 1,
         "645 Besondere Dienste": 1,
-        "646 Lehrpersonen": 1,
         "78 Umweltschutz": 1,
         "790 Landschaftsschutz": 1,
         "82 Arbeitnehmerschutz": 1,
+        "838 Kinder- und Familienzulagen": 1,
         "854 Alters- und Pflegeheime": 1
       },
       "by_global_category": {
         "1.10.70.20.30 Integration": 1,
         "4.90.20 Löhne, Entschädigungen": 1,
         "4.90.10 Anstellung": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
         "6.20.10.20 Staatssteuern": 1,
         "5.10.20 Wehrpflichtersatz": 1,
         "7.40.40 Elektrizität": 1,
@@ -33,30 +36,49 @@
         "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
         "7.60.20 Gewässerschutz": 1,
         "7.70.50 Naturschutz": 1,
+        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1,
         "8.70.30.10 Alters- und Pflegeheime": 1
       }
     },
     "Gesetz": {
-      "total": 5,
+      "total": 6,
       "by_topic": {
-        "24 Strafrecht": 1,
         "26 Vollzug, Rechtshilfe": 1,
         "33 Steuern": 1,
-        "54 Gewerbe und Industrie": 1
+        "54 Gewerbe und Industrie": 1,
+        "838 Kinder- und Familienzulagen": 1,
+        "94 Alter und Pflege": 1
       },
       "by_global_category": {
         "6.20.10.10 Bundessteuern": 1,
-        "9.10 Wirtschaftsförderung": 1
+        "9.10 Wirtschaftsförderung": 1,
+        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1,
+        "8.70.30.10 Alters- und Pflegeheime": 1
       }
     },
     "Reglement": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
-        "640 Allgemeines": 2,
+        "640 Allgemeines": 3,
         "643 Weiterführende Schulen": 2
       },
       "by_global_category": {
-        "4.20.10 Mittelschule": 4
+        "4.20.10 Mittelschule": 5
+      }
+    },
+    "Anderes": {
+      "total": 4,
+      "by_topic": {
+        "144 Bau- und Umweltschutzdirektion": 1,
+        "61 Tierschutz": 1,
+        "854 Alters- und Pflegeheime": 1,
+        "93 Spitäler": 1
+      },
+      "by_global_category": {
+        "1.20.20.30.20 Direktionen und Ämter": 1,
+        "4.170.30 Bibliotheken": 1,
+        "8.70.30.10 Alters- und Pflegeheime": 1,
+        "8.30.60.10.20 Vereinbarungen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -67,17 +89,6 @@
       },
       "by_global_category": {
         "1.10.40 Interkantonale Zusammenarbeit": 1
-      }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "144 Bau- und Umweltschutzdirektion": 1,
-        "93 Spitäler": 1
-      },
-      "by_global_category": {
-        "1.20.20.30.20 Direktionen und Ämter": 1,
-        "8.30.60.10.20 Vereinbarungen": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -169,10 +180,30 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "211",
+              "title": "Vollzugserlasse zum ZGB",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "23",
           "title": "Vollstreckung, Rechtshilfe",
@@ -192,15 +223,6 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "24",
-          "title": "Strafrecht",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Gesetz": 1
-          }
         },
         {
           "identifier": "26",
@@ -248,19 +270,19 @@
     {
       "identifier": "4",
       "title": "Bau, Werke, Verkehr, Energie",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "49",
           "title": "Energie",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           }
         }
       ]
@@ -290,30 +312,40 @@
     {
       "identifier": "6",
       "title": "Kultur, Bildung, Ausbildung",
-      "total": 7,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Reglement": 4,
-        "Verordnung": 3
+        "Reglement": 5,
+        "Verordnung": 4,
+        "Anderes": 1
       },
       "children": [
         {
+          "identifier": "61",
+          "title": "Tierschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
+        {
           "identifier": "64",
           "title": "Schulen",
-          "total": 7,
+          "total": 9,
           "own": 0,
           "by_type": {
-            "Reglement": 4,
-            "Verordnung": 3
+            "Reglement": 5,
+            "Verordnung": 4
           },
           "children": [
             {
               "identifier": "640",
               "title": "Allgemeines",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Reglement": 2
+                "Reglement": 3
               }
             },
             {
@@ -338,10 +370,10 @@
             {
               "identifier": "646",
               "title": "Lehrpersonen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               }
             }
           ]
@@ -391,10 +423,12 @@
     {
       "identifier": "8",
       "title": "Soziale Sicherheit",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 3,
+        "Gesetz": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -407,20 +441,44 @@
           }
         },
         {
-          "identifier": "85",
-          "title": "Sozialhilfe",
-          "total": 1,
+          "identifier": "83",
+          "title": "Sozialversicherungen",
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "838",
+              "title": "Kinder- und Familienzulagen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "85",
+          "title": "Sozialhilfe",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "854",
               "title": "Alters- und Pflegeheime",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Anderes": 1,
                 "Verordnung": 1
               }
             }
@@ -431,10 +489,11 @@
     {
       "identifier": "9",
       "title": "Gesundheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -444,6 +503,15 @@
           "own": 1,
           "by_type": {
             "Anderes": 1
+          }
+        },
+        {
+          "identifier": "94",
+          "title": "Alter und Pflege",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
           }
         }
       ]
@@ -558,32 +626,75 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 8,
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 4,
-        "Verordnung": 4
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 10,
+      "own": 0,
+      "by_type": {
+        "Reglement": 5,
+        "Verordnung": 4,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "4.20",
           "title": "Sekundarstufe II",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Reglement": 4,
+            "Reglement": 5,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "4.20.10",
               "title": "Mittelschule",
-              "total": 5,
-              "own": 5,
+              "total": 6,
+              "own": 6,
               "by_type": {
-                "Reglement": 4,
+                "Reglement": 5,
                 "Verordnung": 1
               }
             }
@@ -634,6 +745,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.30",
+              "title": "Bibliotheken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -820,20 +951,23 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Anderes": 2,
+        "Verordnung": 2,
+        "Gesetz": 2
       },
       "children": [
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -866,34 +1000,62 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "8.30.100",
+              "title": "Familienzulagen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.100.10",
+                  "title": "Landwirtschaftliche Arbeitnehmer",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 1,
+                    "Gesetz": 1
+                  }
+                }
+              ]
             }
           ]
         },
         {
           "identifier": "8.70",
           "title": "Fürsorge",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Anderes": 1,
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "8.70.30",
               "title": "Heime",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Anderes": 1,
+                "Verordnung": 1,
+                "Gesetz": 1
               },
               "children": [
                 {
                   "identifier": "8.70.30.10",
                   "title": "Alters- und Pflegeheime",
-                  "total": 1,
-                  "own": 1,
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
-                    "Verordnung": 1
+                    "Anderes": 1,
+                    "Verordnung": 1,
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -924,7 +1086,7 @@
     }
   ],
   "languages_available": {
-    "de": 29
+    "de": 37
   },
   "available_years_for_entity": [
     "1815",
@@ -932,6 +1094,7 @@
     "1829",
     "1834",
     "1836",
+    "1851",
     "1870",
     "1876",
     "1881",
@@ -946,9 +1109,11 @@
     "1921",
     "1925",
     "1931",
+    "1934",
     "1936",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1945",
     "1947",
@@ -957,6 +1122,7 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",

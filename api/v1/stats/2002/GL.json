@@ -2,21 +2,20 @@
   "year": "2002",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 20,
-  "categorized": 20,
+  "total": 25,
+  "categorized": 25,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 11,
+      "total": 12,
       "by_topic": {
         "IV B/12 Förder- und Betreuungsangebote (befristet)": 3,
+        "IV B/31 Allgemeines": 2,
+        "VIII D/21 Krankenversicherung": 2,
         "III B/4 Stiftungsaufsicht": 1,
-        "IV B/31 Allgemeines": 1,
         "IV B/32 Unterricht – Lehrmittel": 1,
         "IV B/4 Kantonsschule": 1,
         "IX D/1 Förderung im Allgemeinen": 1,
-        "IX D/3 Alpen und Wildheuet": 1,
-        "VIII D/21 Krankenversicherung": 1,
         "VIII E/21 Allgemeines und Organisatorisches": 1
       },
       "by_global_category": {
@@ -24,18 +23,21 @@
         "4.110 Familienergänzende Tagesstrukturen": 1,
         "4.80.20 Hochbegabtenförderung": 1,
         "4.80.40 Integration fremdsprachiger Schüler": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
         "4.120.40 Lehrmittel": 1,
         "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
         "7.70.10 Landschaftsschutz": 1,
-        "2.20.10.20.10 Landwirtschaftliche Pacht": 1,
+        "8.30.60.20 Prämienverbilligungen": 1,
         "8.30.60.40 Einschränkung der Zulassung von Leistungserbringern": 1
       }
     },
     "Anderes": {
-      "total": 4,
+      "total": 6,
       "by_topic": {
         "II C/6 Verschiedene Berechtigte": 1,
         "IV B/31 Allgemeines": 1,
+        "IV B/51 Berufsbildung": 1,
+        "IV C/2 Anstellung – Berufsauftrag": 1,
         "VII B/55 Linthwerk": 1,
         "VIII A/211 Allgemeines": 1
       },
@@ -45,20 +47,25 @@
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "I F Information der Öffentlichkeit – Datenschutz – Archivwesen": 1,
         "II A/6 Angestellte des Kantons": 1,
         "III I Rechtsanwälte": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "1.20.50 Datenschutz": 1
+      }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "II C/4 Lehrpersonen": 1
+        "II C/4 Lehrpersonen": 1,
+        "IV B/50 Berufsvorbereitung": 1
       },
       "by_global_category": {
-        "4.90.20 Löhne, Entschädigungen": 1
+        "4.90.20 Löhne, Entschädigungen": 1,
+        "4.30.50 Brückenangebote": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -79,6 +86,15 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "I",
+      "title": "Verfassung und Rechte des Volkes",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Gesetz": 1
+      }
+    },
     {
       "identifier": "II",
       "title": "Organisation des Kantons und der Gemeinden",
@@ -104,11 +120,12 @@
     {
       "identifier": "IV",
       "title": "Kirche – Schule – Kultur",
-      "total": 8,
-      "own": 8,
+      "total": 12,
+      "own": 12,
       "by_type": {
-        "Verordnung": 6,
-        "Anderes": 1,
+        "Verordnung": 7,
+        "Anderes": 3,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Reglement": 1
       }
     },
@@ -124,20 +141,20 @@
     {
       "identifier": "VIII",
       "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
-      "total": 3,
-      "own": 3,
+      "total": 4,
+      "own": 4,
       "by_type": {
-        "Verordnung": 2,
+        "Verordnung": 3,
         "Anderes": 1
       }
     },
     {
       "identifier": "IX",
       "title": "Volkswirtschaft",
-      "total": 2,
-      "own": 2,
+      "total": 1,
+      "own": 1,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 1
       }
     }
   ],
@@ -145,19 +162,21 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -190,6 +209,15 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -198,10 +226,10 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -250,10 +278,23 @@
               ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 9,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 6,
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Anderes": 1
+      },
+      "children": [
         {
-          "identifier": "2.20",
-          "title": "Einführungsgesetzgebung OR",
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -261,51 +302,16 @@
           },
           "children": [
             {
-              "identifier": "2.20.10",
-              "title": "Vertragsverhältnisse",
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.20.10.20",
-                  "title": "Miete und Pacht",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "2.20.10.20.10",
-                      "title": "Landwirtschaftliche Pacht",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung": 1
-                      }
-                    }
-                  ]
-                }
-              ]
+              }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 7,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 5,
-        "Verordnung des Parlaments (Dekret)": 1,
-        "Anderes": 1
-      },
-      "children": [
+        },
         {
           "identifier": "4.20",
           "title": "Sekundarstufe II",
@@ -322,6 +328,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.50",
+              "title": "Brückenangebote",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -460,30 +486,39 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "8.30.60",
               "title": "KVG",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               },
               "children": [
+                {
+                  "identifier": "8.30.60.20",
+                  "title": "Prämienverbilligungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
                 {
                   "identifier": "8.30.60.40",
                   "title": "Einschränkung der Zulassung von Leistungserbringern",
@@ -501,17 +536,20 @@
     }
   ],
   "languages_available": {
-    "de": 20
+    "de": 25
   },
   "available_years_for_entity": [
+    "1800",
     "1807",
     "1835",
     "1859",
+    "1872",
     "1877",
     "1878",
     "1879",
     "1888",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
@@ -521,11 +559,13 @@
     "1911",
     "1915",
     "1918",
+    "1922",
     "1923",
     "1926",
     "1927",
     "1928",
     "1931",
+    "1933",
     "1934",
     "1941",
     "1943",
@@ -537,14 +577,17 @@
     "1950",
     "1951",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
     "1962",
     "1963",
     "1964",
     "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

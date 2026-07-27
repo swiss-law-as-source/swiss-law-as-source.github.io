@@ -2,15 +2,17 @@
   "year": "2000",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 35,
-  "categorized": 35,
+  "total": 38,
+  "categorized": 38,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 22,
+      "total": 24,
       "by_topic": {
         "790 Landschaftsschutz": 12,
+        "11 Bürgerrechte": 1,
         "142 Finanz- und Kirchendirektion": 1,
+        "42 Öffentliche Werke": 1,
         "640 Allgemeines": 1,
         "73 Bevölkerungsschutz": 1,
         "854 Alters- und Pflegeheime": 1,
@@ -20,6 +22,7 @@
       "by_global_category": {
         "7.70.50 Naturschutz": 12,
         "1.10.90.10 Gleichstellung von Mann und Frau": 1,
+        "7.30.40 Submission": 1,
         "4.30.50 Brückenangebote": 1,
         "1.30.20 Gemeindebeiträge": 1,
         "8.10.90 Rettungsdienst": 1
@@ -43,51 +46,61 @@
       }
     },
     "Anderes": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
         "145 Sicherheitsdirektion": 2,
-        "19 Kirchen": 1
+        "146 Bildungs-, Kultur- und Sportdirektion": 1,
+        "19 Kirchen": 1,
+        "683 Kaufmännische Berufe": 1
       },
       "by_global_category": {
-        "1.20.20.30.20 Direktionen und Ämter": 1,
-        "1.40.10 Römisch-Katholische Kirche": 1
-      }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "42 Öffentliche Werke": 1,
-        "54 Gewerbe und Industrie": 1
-      },
-      "by_global_category": {
-        "7.30.40 Submission": 1,
-        "9.50.10.60.30 Spielbanken": 1
+        "1.20.20.30.20 Direktionen und Ämter": 2,
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {},
       "by_global_category": {}
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "54 Gewerbe und Industrie": 1
+      },
+      "by_global_category": {
+        "9.50.10.60.30 Spielbanken": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
-        "Verordnung": 1
+        "Anderes": 4,
+        "Verordnung": 2
       },
       "children": [
         {
+          "identifier": "11",
+          "title": "Bürgerrechte",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
+            "Anderes": 3,
             "Verordnung": 1
           },
           "children": [
@@ -107,6 +120,15 @@
               "own": 2,
               "by_type": {
                 "Anderes": 2
+              }
+            },
+            {
+              "identifier": "146",
+              "title": "Bildungs-, Kultur- und Sportdirektion",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -128,7 +150,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -137,7 +159,7 @@
           "total": 1,
           "own": 1,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           }
         }
       ]
@@ -186,11 +208,12 @@
     {
       "identifier": "6",
       "title": "Kultur, Bildung, Ausbildung",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 5,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -235,12 +258,22 @@
         {
           "identifier": "68",
           "title": "Berufliche Ausbildung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "683",
+              "title": "Kaufmännische Berufe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "687",
               "title": "Berufe im Gesundheitswesen",
@@ -361,11 +394,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Anderes": 2
+        "Anderes": 3,
+        "Verordnung": 2
       },
       "children": [
         {
@@ -402,37 +435,37 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 2
               },
               "children": [
                 {
                   "identifier": "1.20.20.30",
                   "title": "Verwaltung",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 2
                   },
                   "children": [
                     {
                       "identifier": "1.20.20.30.20",
                       "title": "Direktionen und Ämter",
-                      "total": 1,
-                      "own": 1,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
-                        "Anderes": 1
+                        "Anderes": 2
                       }
                     }
                   ]
@@ -486,10 +519,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 4,
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
@@ -516,10 +550,11 @@
         {
           "identifier": "4.20",
           "title": "Sekundarstufe II",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -529,6 +564,15 @@
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "4.20.20",
+              "title": "Fachmittelschulen, Diplommittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -572,8 +616,7 @@
       "total": 13,
       "own": 0,
       "by_type": {
-        "Verordnung": 12,
-        "Gesetz": 1
+        "Verordnung": 13
       },
       "children": [
         {
@@ -582,7 +625,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
@@ -591,7 +634,7 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -715,7 +758,7 @@
     }
   ],
   "languages_available": {
-    "de": 35
+    "de": 38
   },
   "available_years_for_entity": [
     "1815",
@@ -723,6 +766,7 @@
     "1829",
     "1834",
     "1836",
+    "1851",
     "1870",
     "1876",
     "1881",
@@ -737,9 +781,11 @@
     "1921",
     "1925",
     "1931",
+    "1934",
     "1936",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1945",
     "1947",
@@ -748,6 +794,7 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",

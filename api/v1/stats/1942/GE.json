@@ -2,18 +2,20 @@
   "year": "1942",
   "year_semantics": "enactment",
   "entity": "GE",
-  "total": 3,
-  "categorized": 3,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "E 4 Droit pénal et procédure pénale": 2,
-        "I 2 Professions et métiers divers": 1
+        "I 2 Professions et métiers divers": 1,
+        "L 5 Police des constructions, sécurité publique": 1
       },
       "by_global_category": {
-        "3.70.20 Schutzaufsicht": 1
+        "3.70.20 Schutzaufsicht": 1,
+        "9.50.10.30.10 Camping": 1
       }
     }
   },
@@ -30,6 +32,15 @@
     {
       "identifier": "I",
       "title": "Commerce, industrie, arts et métiers, logement",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Règlement": 1
+      }
+    },
+    {
+      "identifier": "L",
+      "title": "Domaine public et travaux",
       "total": 1,
       "own": 1,
       "by_type": {
@@ -68,18 +79,74 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.30",
+                  "title": "Gastwirtschaft",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Règlement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "9.50.10.30.10",
+                      "title": "Camping",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Règlement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "fr": 3
+    "fr": 4
   },
   "available_years_for_entity": [
     "1564",
     "1726",
     "1749",
+    "1803",
     "1815",
     "1816",
     "1817",
+    "1825",
+    "1834",
     "1841",
     "1847",
     "1849",
@@ -91,6 +158,7 @@
     "1876",
     "1878",
     "1881",
+    "1886",
     "1887",
     "1889",
     "1892",
@@ -103,7 +171,9 @@
     "1907",
     "1908",
     "1909",
+    "1912",
     "1918",
+    "1919",
     "1923",
     "1925",
     "1927",
@@ -204,8 +274,10 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
+    "BS",
     "CH",
     "FR",
     "GE",

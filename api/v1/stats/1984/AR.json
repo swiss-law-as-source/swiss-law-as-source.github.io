@@ -2,16 +2,40 @@
   "year": "1984",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 3,
-  "categorized": 3,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 1,
+    "Verordnung": {
+      "total": 3,
       "by_topic": {
+        "621.2 Bewertung von Grundstücken": 1,
+        "822.4 Familienzulagen, Familienausgleichskasse": 1,
+        "955.3 Lotterien, Spiele, Wetten": 1
+      },
+      "by_global_category": {
+        "2.10.40.10 Schätzung von Grundstücken": 1,
+        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "415.1 Staatsbeiträge": 1,
         "822.1 Arbeit in Industrie, Gewerbe und Handel": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "822.4 Familienzulagen, Familienausgleichskasse": 1
+      },
+      "by_global_category": {
+        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1
+      }
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -21,29 +45,21 @@
       "by_global_category": {
         "10 Publikationen ohne Text": 1
       }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "955.3 Lotterien, Spiele, Wetten": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 2,
+      "identifier": "4",
+      "title": "Erziehung, Kultur",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
       },
       "children": [
         {
-          "identifier": "82",
-          "title": "Arbeit",
+          "identifier": "41",
+          "title": "Erziehung",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -51,12 +67,103 @@
           },
           "children": [
             {
-              "identifier": "822",
-              "title": "Arbeitnehmerschutz",
+              "identifier": "415",
+              "title": "Staatsbeiträge und Stipendien",
               "total": 1,
               "own": 0,
               "by_type": {
                 "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "415.1",
+                  "title": "Staatsbeiträge",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "62",
+          "title": "Steuern und Abgaben",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "621",
+              "title": "Direkte Staats- und Gemeindesteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "621.2",
+                  "title": "Bewertung von Grundstücken",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Gesetz": 1,
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "Arbeit",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "822",
+              "title": "Arbeitnehmerschutz",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1,
+                "Gesetz": 1,
+                "Verordnung": 1
               },
               "children": [
                 {
@@ -66,6 +173,16 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "822.4",
+                  "title": "Familienzulagen, Familienausgleichskasse",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -139,6 +256,114 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.10",
+                  "title": "Schätzung von Grundstücken",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.60",
+          "title": "Tertiärstufe: Höhere Fachschulen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.100",
+              "title": "Familienzulagen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.100.10",
+                  "title": "Landwirtschaftliche Arbeitnehmer",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "10",
       "title": "Publikationen ohne Text",
       "total": 1,
@@ -149,7 +374,7 @@
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 7
   },
   "available_years_for_entity": [
     "1881",
@@ -191,6 +416,7 @@
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

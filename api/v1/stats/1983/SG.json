@@ -2,10 +2,23 @@
   "year": "1983",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 11,
-  "categorized": 11,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "217 Universität": 1,
+        "453 Niederlassung": 1,
+        "511 Arbeitnehmerschutz": 1,
+        "873 Gebäudeversicherung": 1
+      },
+      "by_global_category": {
+        "4.90.20 Löhne, Entschädigungen": 1,
+        "8.20.40 Heimarbeit": 1
+      }
+    },
     "Anderes": {
       "total": 3,
       "by_topic": {
@@ -17,15 +30,14 @@
         "4.90.20 Löhne, Entschädigungen": 1
       }
     },
-    "Verordnung": {
+    "Gesetz": {
       "total": 2,
       "by_topic": {
-        "217 Universität": 1,
-        "511 Arbeitnehmerschutz": 1
+        "213 Volksschulen": 1,
+        "231 Allgemein": 1
       },
       "by_global_category": {
-        "4.90.20 Löhne, Entschädigungen": 1,
-        "8.20.40 Heimarbeit": 1
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -47,15 +59,6 @@
       },
       "by_global_category": {
         "6.20.40 Erbschafts- und Schenkungssteuern": 1
-      }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "213 Volksschulen": 1
-      },
-      "by_global_category": {
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
       }
     },
     "Reglement": {
@@ -123,11 +126,11 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Anderes": 2,
-        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
@@ -167,6 +170,26 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "23",
+          "title": "Berufliche Ausbildung und Berufsberatung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "231",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -236,6 +259,37 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Landesverteidigung, öffentliche Sicherheit und Ordnung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "45",
+          "title": "Öffentliche Sicherheit und Ordnung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "453",
+              "title": "Niederlassung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "5",
       "title": "Arbeit und Gewerbe",
       "total": 1,
@@ -269,10 +323,11 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -291,6 +346,26 @@
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "87",
+          "title": "Feuerschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "873",
+              "title": "Gebäudeversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -541,7 +616,7 @@
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 14
   },
   "available_years_for_entity": [
     "1845",
@@ -555,6 +630,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",

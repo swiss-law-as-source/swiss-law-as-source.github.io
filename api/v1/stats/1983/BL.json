@@ -2,8 +2,8 @@
   "year": "1983",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 14,
-  "categorized": 14,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
@@ -21,16 +21,17 @@
         "8.10.100.10 Epidemien, Pandemien": 1
       }
     },
-    "Anderes": {
+    "Verordnung": {
       "total": 3,
       "by_topic": {
-        "146 Bildungs-, Kultur- und Sportdirektion": 1,
-        "19 Kirchen": 1,
-        "82 Arbeitnehmerschutz": 1
+        "211 Vollzugserlasse zum ZGB": 1,
+        "61 Tierschutz": 1,
+        "687 Berufe im Gesundheitswesen": 1
       },
       "by_global_category": {
-        "4.30.30 Berufsorientierung": 1,
-        "1.40.20 Christkatholische Kirche": 1
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "7.70.20 Tierschutz": 1,
+        "4.30.10.10 Hauswirtschaftliche Ausbildung": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -43,23 +44,23 @@
         "5.30.10.50 Polizeiliche Zusammenarbeit": 1
       }
     },
-    "Verordnung": {
+    "Gesetz": {
       "total": 2,
       "by_topic": {
-        "61 Tierschutz": 1,
-        "687 Berufe im Gesundheitswesen": 1
-      },
-      "by_global_category": {
-        "7.70.20 Tierschutz": 1,
-        "4.30.10.10 Hauswirtschaftliche Ausbildung": 1
-      }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "10 Grundlagen": 1
+        "10 Grundlagen": 1,
+        "140 Verwaltungsorganisation": 1
       },
       "by_global_category": {}
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "19 Kirchen": 1,
+        "82 Arbeitnehmerschutz": 1
+      },
+      "by_global_category": {
+        "1.40.20 Christkatholische Kirche": 1
+      }
     },
     "Staatsvertrag": {
       "total": 1,
@@ -76,10 +77,10 @@
       "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Gesetz": 2,
         "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -99,25 +100,17 @@
           "own": 0,
           "by_type": {
             "Verordnung des Parlaments (Dekret)": 1,
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "140",
               "title": "Verwaltungsorganisation",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              }
-            },
-            {
-              "identifier": "146",
-              "title": "Bildungs-, Kultur- und Sportdirektion",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Gesetz": 1
               }
             }
           ]
@@ -130,6 +123,37 @@
           "by_type": {
             "Anderes": 1
           }
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "211",
+              "title": "Vollzugserlasse zum ZGB",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -319,23 +343,63 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "4.30",
           "title": "Sekundarstufe II (Berufliche Grundausbildung)",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
@@ -357,15 +421,6 @@
                   }
                 }
               ]
-            },
-            {
-              "identifier": "4.30.30",
-              "title": "Berufsorientierung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
             }
           ]
         }
@@ -528,7 +583,7 @@
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 15
   },
   "available_years_for_entity": [
     "1815",
@@ -536,6 +591,7 @@
     "1829",
     "1834",
     "1836",
+    "1851",
     "1870",
     "1876",
     "1881",
@@ -550,9 +606,11 @@
     "1921",
     "1925",
     "1931",
+    "1934",
     "1936",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1945",
     "1947",
@@ -561,6 +619,7 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",

@@ -2,20 +2,24 @@
   "year": "1988",
   "year_semantics": "enactment",
   "entity": "VD",
-  "total": 12,
-  "categorized": 12,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 4,
+      "total": 8,
       "by_topic": {
+        "840 Logement en général": 3,
         "340.100 Établissements d'exécution des peines": 1,
         "912 Zones de montagne": 1,
+        "913 Améliorations foncières, bâtiments agricoles, remembrement parcellaire": 1,
         "931 Mines et carrières": 1,
         "943.100 Affiches, publicité, réclame": 1
       },
       "by_global_category": {
-        "9.20.10 Förderungsmassnahmen": 1,
+        "9.20.10 Förderungsmassnahmen": 2,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1,
         "6.30.20 Bergwerk": 1,
         "7.10.60 Plakate und Werbung": 1
       }
@@ -230,9 +234,10 @@
     {
       "identifier": "8",
       "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Règlement": 3,
         "Loi": 1
       },
       "children": [
@@ -255,31 +260,60 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "84",
+          "title": "LOGEMENT",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Règlement": 3
+          },
+          "children": [
+            {
+              "identifier": "840",
+              "title": "Logement en général",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Règlement": 3
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "9",
       "title": "ÉCONOMIE - COOPÉRATION TECHNIQUE",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Règlement": 3,
+        "Règlement": 4,
         "Loi": 3
       },
       "children": [
         {
           "identifier": "91",
           "title": "AGRICULTURE",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 2
           },
           "children": [
             {
               "identifier": "912",
               "title": "Zones de montagne",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            },
+            {
+              "identifier": "913",
+              "title": "Améliorations foncières, bâtiments agricoles, remembrement parcellaire",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -410,13 +444,33 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Règlement": 1,
+        "Règlement": 2,
         "Loi": 1
       },
       "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "6.30",
           "title": "Monopole, Staatliche Unternehmen",
@@ -510,10 +564,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Loi": 1,
+        "Règlement": 1
       },
       "children": [
         {
@@ -546,21 +601,10 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Règlement": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "9.20",
-          "title": "Landwirtschaft",
+          "identifier": "8.40",
+          "title": "Wohnverhältnisse",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -568,8 +612,8 @@
           },
           "children": [
             {
-              "identifier": "9.20.10",
-              "title": "Förderungsmassnahmen",
+              "identifier": "8.40.10",
+              "title": "Eigentums- und Wohnungsbauförderung",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -579,10 +623,41 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Règlement": 2
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Règlement": 2
+          },
+          "children": [
+            {
+              "identifier": "9.20.10",
+              "title": "Förderungsmassnahmen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Règlement": 2
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "fr": 12
+    "fr": 16
   },
   "available_years_for_entity": [
     "1803",
@@ -628,6 +703,7 @@
     "1942",
     "1943",
     "1944",
+    "1945",
     "1946",
     "1947",
     "1948",

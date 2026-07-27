@@ -2,18 +2,19 @@
   "year": "1984",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 19,
-  "categorized": 19,
+  "total": 21,
+  "categorized": 21,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 8,
+      "total": 9,
       "by_topic": {
         "562 Handel · Märkte · Schaustellungen": 2,
         "151 Publikation von Erlassen": 1,
         "164 Lohn und Entschädigungen": 1,
         "166 Pensionsversicherung": 1,
         "214 Sachenrecht: Spezielle Erlasse": 1,
+        "415 Jugendhilfe · Schulfürsorge": 1,
         "783 Gewässerschutz": 1,
         "812 Arbeitnehmerschutz": 1
       },
@@ -22,50 +23,56 @@
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
         "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
         "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1,
+        "8.70.20 Jugendschutz, Jugendhilfe": 1,
         "7.60.20 Gewässerschutz": 1,
         "8.20.40 Heimarbeit": 1
       }
     },
     "Anderes": {
-      "total": 5,
+      "total": 3,
       "by_topic": {
         "166 Pensionsversicherung": 1,
-        "329 Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege": 1,
         "331 Öffentliche Spitäler": 1,
-        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1,
-        "730 Hochbauten": 1
+        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1
       },
       "by_global_category": {
-        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
-        "8.10.90 Rettungsdienst": 1
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
+      }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "170 Gemeinden": 1,
+        "415 Jugendhilfe · Schulfürsorge": 1,
+        "61 Finanzordnung": 1
+      },
+      "by_global_category": {
+        "8.70.20 Jugendschutz, Jugendhilfe": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
     "Gemeindeerlass": {
       "total": 3,
       "by_topic": {
-        "BaB 11 Grundlagen": 1,
         "BaB 16 Gemeindepersonal": 1,
+        "BeE 3 Gesundheit": 1,
         "RiE 890 Fürsorge": 1
       },
       "by_global_category": {
-        "1.30.60 Bürgergemeinden, Allmend": 1,
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "8.10.130.40 Bestattungswesen, Friedhöfe": 1,
         "8.70.10 Sozialhilfe": 1
       }
     },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "170 Gemeinden": 1
-      },
-      "by_global_category": {}
-    },
     "Reglement": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1
+        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1,
+        "835 Arbeitslosenversicherung und ergänzende kantonale Massnahmen": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "8.30.110 Arbeitslosenversicherung": 1
+      }
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -194,32 +201,12 @@
     {
       "identifier": "3",
       "title": "Gesundheit",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 1
       },
       "children": [
-        {
-          "identifier": "32",
-          "title": "Krankheiten · Kranken- und Betagtenpflege",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "329",
-              "title": "Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "33",
           "title": "Spitäler · Sanitätsdienst",
@@ -245,13 +232,37 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1,
         "Anderes": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "415",
+              "title": "Jugendhilfe · Schulfürsorge",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "42",
           "title": "Berufsbildung · Berufsschulen · Fachhochschule",
@@ -308,35 +319,34 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 2,
+      "identifier": "6",
+      "title": "Finanzen · Staatliche Liegenschaften und Materiallagerplätze · Monopole",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "73",
-          "title": "Hochbauten",
+          "identifier": "61",
+          "title": "Finanzordnung",
           "total": 1,
-          "own": 0,
+          "own": 1,
           "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "730",
-              "title": "Hochbauten",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        },
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
         {
           "identifier": "78",
           "title": "Umweltschutz",
@@ -362,10 +372,11 @@
     {
       "identifier": "8",
       "title": "Arbeit · Soziale Sicherheit",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Verordnung": 1,
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -385,6 +396,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "835",
+              "title": "Arbeitslosenversicherung und ergänzende kantonale Massnahmen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -414,10 +445,19 @@
     {
       "identifier": "BaB",
       "title": "Bürgergemeinde Basel",
-      "total": 2,
-      "own": 2,
+      "total": 1,
+      "own": 1,
       "by_type": {
-        "Gemeindeerlass": 2
+        "Gemeindeerlass": 1
+      }
+    },
+    {
+      "identifier": "BeE",
+      "title": "Einwohnergemeinde Bettingen",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Gemeindeerlass": 1
       }
     },
     {
@@ -434,11 +474,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 5,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Gemeindeerlass": 2,
+        "Gemeindeerlass": 1,
         "Anderes": 1
       },
       "children": [
@@ -500,26 +540,6 @@
               ]
             }
           ]
-        },
-        {
-          "identifier": "1.30",
-          "title": "Gemeinden",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gemeindeerlass": 1
-          },
-          "children": [
-            {
-              "identifier": "1.30.60",
-              "title": "Bürgergemeinden, Allmend",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gemeindeerlass": 1
-              }
-            }
-          ]
         }
       ]
     },
@@ -566,6 +586,37 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
@@ -599,12 +650,13 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
+        "Gemeindeerlass": 2,
+        "Verordnung": 2,
         "Anderes": 1,
-        "Verordnung": 1,
-        "Gemeindeerlass": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -613,17 +665,28 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gemeindeerlass": 1
           },
           "children": [
             {
-              "identifier": "8.10.90",
-              "title": "Rettungsdienst",
+              "identifier": "8.10.130",
+              "title": "Hygiene",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Anderes": 1
-              }
+                "Gemeindeerlass": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.40",
+                  "title": "Bestattungswesen, Friedhöfe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gemeindeerlass": 1
+                  }
+                }
+              ]
             }
           ]
         },
@@ -648,12 +711,34 @@
           ]
         },
         {
-          "identifier": "8.70",
-          "title": "Fürsorge",
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gemeindeerlass": 1
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 1,
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -663,6 +748,16 @@
               "own": 1,
               "by_type": {
                 "Gemeindeerlass": 1
+              }
+            },
+            {
+              "identifier": "8.70.20",
+              "title": "Jugendschutz, Jugendhilfe",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
               }
             }
           ]
@@ -702,7 +797,7 @@
     }
   ],
   "languages_available": {
-    "de": 19
+    "de": 21
   },
   "available_years_for_entity": [
     "1019",
@@ -716,13 +811,16 @@
     "1857",
     "1860",
     "1863",
+    "1864",
     "1870",
     "1872",
+    "1875",
     "1876",
     "1879",
     "1882",
     "1883",
     "1886",
+    "1889",
     "1891",
     "1892",
     "1894",
@@ -747,18 +845,21 @@
     "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
     "1932",
     "1933",
+    "1934",
     "1935",
     "1936",
     "1937",
     "1938",
     "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",

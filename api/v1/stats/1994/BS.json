@@ -2,29 +2,34 @@
   "year": "1994",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 20,
-  "categorized": 20,
+  "total": 24,
+  "categorized": 24,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 9,
+      "total": 11,
       "by_topic": {
         "370 Wohnhygiene · Baden · Kunsteisbahnen": 2,
         "162 Dienstverhältnis": 1,
         "19 Staat und Kirche": 1,
         "30 Gesundheit": 1,
+        "329 Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege": 1,
+        "65 Spezielle Steuern und Abgaben": 1,
         "66 Bundessteuern": 1,
         "730 Hochbauten": 1,
         "735 Sicherheit und Brandschutz für Bauten": 1,
-        "772 Energie- und Wasserversorgung": 1
+        "89 Sozialhilfe · Sozialbeiträge": 1
       },
       "by_global_category": {
         "8.10.130.30 Badeanstalten": 2,
         "8.10.30.10 Ärzte": 1,
         "1.20.20.60 Verwaltungsgebühren": 1,
+        "8.10.60 Spitalexterne Krankenpflege": 1,
+        "6.20.90 Kurtaxen, Beherbergungstaxen": 1,
         "6.20.10.10 Bundessteuern": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1,
-        "8.20.10.10 Sicherheit": 1
+        "8.20.10.10 Sicherheit": 1,
+        "8.70.100 Familienpolitik, Familienförderung": 1
       }
     },
     "Gemeindeerlass": {
@@ -41,14 +46,18 @@
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
         "132 Wahlen und Abstimmungen": 1,
-        "832 Alters- und Hinterlassenenversicherung · Invalidenversicherung · Ergänzende kantonale Alters- und Invalidenhilfe": 1
+        "832 Alters- und Hinterlassenenversicherung · Invalidenversicherung · Ergänzende kantonale Alters- und Invalidenhilfe": 1,
+        "911 Landwirtschaft · Forstwesen · Freizeitgärten": 1,
+        "915 Bank und Kredit": 1
       },
       "by_global_category": {
         "1.10.90.20.10 Wahlen und Abstimmungen": 1,
-        "8.30.30 AHV / IV": 1
+        "8.30.30 AHV / IV": 1,
+        "2.20.10.20.10 Landwirtschaftliche Pacht": 1,
+        "6.40.10 Kantonalbanken": 1
       }
     },
     "Anderes": {
@@ -141,10 +150,10 @@
     {
       "identifier": "3",
       "title": "Gesundheit",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
+        "Verordnung": 4,
         "Reglement": 1
       },
       "children": [
@@ -156,6 +165,26 @@
           "by_type": {
             "Verordnung": 1
           }
+        },
+        {
+          "identifier": "32",
+          "title": "Krankheiten · Kranken- und Betagtenpflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "329",
+              "title": "Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         },
         {
           "identifier": "33",
@@ -253,12 +282,21 @@
     {
       "identifier": "6",
       "title": "Finanzen · Staatliche Liegenschaften und Materiallagerplätze · Monopole",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "65",
+          "title": "Spezielle Steuern und Abgaben",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
         {
           "identifier": "66",
           "title": "Bundessteuern",
@@ -273,11 +311,10 @@
     {
       "identifier": "7",
       "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Anderes": 1
+        "Verordnung": 2
       },
       "children": [
         {
@@ -308,36 +345,17 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "77",
-          "title": "Wasser · Energie",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "772",
-              "title": "Energie- und Wasserversorgung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Arbeit · Soziale Sicherheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -359,34 +377,55 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "89",
+          "title": "Sozialhilfe · Sozialbeiträge",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
         }
       ]
     },
     {
       "identifier": "9",
       "title": "Wirtschaft und Verkehr",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "91",
           "title": "Wirtschaft",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Gesetz": 2,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "911",
               "title": "Landwirtschaft · Forstwesen · Freizeitgärten",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "915",
+              "title": "Bank und Kredit",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Gesetz": 1
               }
             }
           ]
@@ -531,6 +570,59 @@
       ]
     },
     {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "2.20",
+          "title": "Einführungsgesetzgebung OR",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "2.20.10",
+              "title": "Vertragsverhältnisse",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.20.10.20",
+                  "title": "Miete und Pacht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.20.10.20.10",
+                      "title": "Landwirtschaftliche Pacht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 4,
@@ -575,10 +667,11 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 3,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -604,10 +697,10 @@
         {
           "identifier": "6.20",
           "title": "Steuern",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
@@ -629,6 +722,35 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "6.20.90",
+              "title": "Kurtaxen, Beherbergungstaxen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "6.40",
+          "title": "Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.40.10",
+              "title": "Kantonalbanken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -637,20 +759,20 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Verordnung": 4,
+        "Verordnung": 6,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 3
+            "Verordnung": 4
           },
           "children": [
             {
@@ -672,6 +794,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.10.60",
+              "title": "Spitalexterne Krankenpflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             },
             {
               "identifier": "8.10.130",
@@ -745,12 +876,32 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.100",
+              "title": "Familienpolitik, Familienförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 20
+    "de": 24
   },
   "available_years_for_entity": [
     "1019",
@@ -764,13 +915,16 @@
     "1857",
     "1860",
     "1863",
+    "1864",
     "1870",
     "1872",
+    "1875",
     "1876",
     "1879",
     "1882",
     "1883",
     "1886",
+    "1889",
     "1891",
     "1892",
     "1894",
@@ -795,18 +949,21 @@
     "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
     "1932",
     "1933",
+    "1934",
     "1935",
     "1936",
     "1937",
     "1938",
     "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",

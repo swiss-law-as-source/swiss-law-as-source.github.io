@@ -6,72 +6,30 @@
   "categorized": 4,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 2,
-      "by_topic": {
-        "151.4 Zusammenarbeit mit anderen Kantonen": 1,
-        "411.2 Evangelisch-reformierte": 1
-      },
-      "by_global_category": {
-        "1.10.40 Interkantonale Zusammenarbeit": 1,
-        "1.40.30 Evangelisch-Reformierte Kirche": 1
-      }
-    },
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "213.2 Verwandtschaft": 1,
-        "430.10 Grundlage": 1
+        "430.10 Grundlage": 1,
+        "815.1 Übertragbare Krankheiten": 1
       },
       "by_global_category": {
         "2.10.20.20 Pflegekinder, Adoption": 1,
-        "4.10.20 Kindergarten": 1
+        "4.10.20 Kindergarten": 1,
+        "8.10.100.10 Epidemien, Pandemien": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "411.2 Evangelisch-reformierte": 1
+      },
+      "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1
       }
     }
   },
   "by_topic_tree": [
-    {
-      "identifier": "1",
-      "title": "Staat, Volk, Behörden",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "15",
-          "title": "Behörden",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "151",
-              "title": "Grosser Rat",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "151.4",
-                  "title": "Zusammenarbeit mit anderen Kantonen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "identifier": "2",
       "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
@@ -198,38 +156,60 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "815",
+              "title": "Krankheitsbekämpfung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "815.1",
+                  "title": "Übertragbare Krankheiten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 1
       },
       "children": [
-        {
-          "identifier": "1.10",
-          "title": "Grundlagen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "1.10.40",
-              "title": "Interkantonale Zusammenarbeit",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
@@ -324,6 +304,48 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.100",
+              "title": "Krankheitsbekämpfung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.100.10",
+                  "title": "Epidemien, Pandemien",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
@@ -331,6 +353,7 @@
     "fr": 4
   },
   "available_years_for_entity": [
+    "1000",
     "1562",
     "1828",
     "1837",
@@ -342,6 +365,7 @@
     "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
     "1877",
     "1889",
@@ -353,12 +377,14 @@
     "1909",
     "1911",
     "1917",
+    "1918",
     "1923",
     "1924",
     "1931",
     "1934",
     "1936",
     "1937",
+    "1938",
     "1939",
     "1940",
     "1942",

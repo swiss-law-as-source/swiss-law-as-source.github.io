@@ -2,36 +2,57 @@
   "year": "2000",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 10,
-  "categorized": 10,
+  "total": 32,
+  "categorized": 32,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
-      "total": 5,
+    "Verordnung": {
+      "total": 17,
       "by_topic": {
-        "521 Kantons- und Gemeindesteuern": 1,
+        "521 Kantons- und Gemeindesteuern": 6,
+        "165 Personal": 4,
+        "14 Veröffentlichung der Erlasse": 2,
+        "654 Schiffahrt": 2,
+        "221 Allgemeines": 1,
+        "716 Betäubungsmittel": 1,
+        "742 Krankenversicherung und Unfallversicherung": 1
+      },
+      "by_global_category": {
+        "6.20.10.20 Staatssteuern": 4,
+        "4.90.10 Anstellung": 2,
+        "4.90.20 Löhne, Entschädigungen": 2,
+        "6.20.10.60 Quellensteuern": 2,
+        "2.20.10.50 Ehe- und Partnerschaftsvermittlungen": 1,
+        "7.50.60.10 Schiffssteuern": 1,
+        "8.10.70 Heil- und Betäubungsmittel": 1
+      }
+    },
+    "Gesetz": {
+      "total": 8,
+      "by_topic": {
+        "521 Kantons- und Gemeindesteuern": 2,
+        "14 Veröffentlichung der Erlasse": 1,
         "531 Direkte Bundessteuer": 1,
         "654 Schiffahrt": 1,
+        "714 Kantonsspital, Heime und Anstalten": 1,
         "732 Arbeitsmarkt und Arbeitsbeschaffung": 1,
         "741 Alters-, Hinterlassenen- und Invalidenversicherung": 1
       },
       "by_global_category": {
-        "6.20.10.20 Staatssteuern": 1,
+        "6.20.10.20 Staatssteuern": 2,
         "6.20.10.10 Bundessteuern": 1,
+        "8.10.20.10 Kantonsspitäler": 1,
         "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven": 1,
         "8.70.50.10 Eingliederungsstätten, Werkstätte": 1
       }
     },
-    "Verordnung": {
-      "total": 3,
+    "Anderes": {
+      "total": 4,
       "by_topic": {
-        "221 Allgemeines": 1,
-        "521 Kantons- und Gemeindesteuern": 1,
-        "654 Schiffahrt": 1
+        "311 Allgemeine Vorschriften": 4
       },
       "by_global_category": {
-        "2.20.10.50 Ehe- und Partnerschaftsvermittlungen": 1,
-        "6.20.10.20 Staatssteuern": 1
+        "4.90.20 Löhne, Entschädigungen": 4
       }
     },
     "Interkantonale Vereinbarung": {
@@ -44,9 +65,60 @@
         "4.120.100 Schulbehörden": 1,
         "4.50.10 Pädagogik": 1
       }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "521 Kantons- und Gemeindesteuern": 1
+      },
+      "by_global_category": {
+        "6.20.10.20 Staatssteuern": 1
+      }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat - Volk - Behörden",
+      "total": 7,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 6,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Veröffentlichung der Erlasse",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Verordnung": 2,
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "16",
+          "title": "Behörden und Personal",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 4
+          },
+          "children": [
+            {
+              "identifier": "165",
+              "title": "Personal",
+              "total": 4,
+              "own": 4,
+              "by_type": {
+                "Verordnung": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht - Strafrecht - Rechtspflege - Vollzug",
@@ -81,21 +153,32 @@
     {
       "identifier": "3",
       "title": "Bildung - Kultur",
-      "total": 2,
+      "total": 6,
       "own": 0,
       "by_type": {
+        "Anderes": 4,
         "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
           "identifier": "31",
           "title": "Bildung",
-          "total": 2,
+          "total": 6,
           "own": 0,
           "by_type": {
+            "Anderes": 4,
             "Interkantonale Vereinbarung": 2
           },
           "children": [
+            {
+              "identifier": "311",
+              "title": "Allgemeine Vorschriften",
+              "total": 4,
+              "own": 4,
+              "by_type": {
+                "Anderes": 4
+              }
+            },
             {
               "identifier": "312",
               "title": "Volksschule",
@@ -121,31 +204,34 @@
     {
       "identifier": "5",
       "title": "Finanzen",
-      "total": 3,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
-        "Verordnung": 1
+        "Verordnung": 6,
+        "Gesetz": 3,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "52",
           "title": "Kantonale und kommunale Steuern",
-          "total": 2,
+          "total": 9,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Verordnung": 6,
+            "Gesetz": 2,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "521",
               "title": "Kantons- und Gemeindesteuern",
-              "total": 2,
-              "own": 2,
+              "total": 9,
+              "own": 9,
               "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
+                "Verordnung": 6,
+                "Gesetz": 2,
+                "Anderes": 1
               }
             }
           ]
@@ -175,31 +261,31 @@
     {
       "identifier": "6",
       "title": "Bau - Strassen - Wasser - Energie - Verkehr",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "65",
           "title": "Verkehr",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "654",
               "title": "Schiffahrt",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
+                "Verordnung": 2,
+                "Gesetz": 1
               }
             }
           ]
@@ -209,12 +295,43 @@
     {
       "identifier": "7",
       "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Gesetz": 3,
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "71",
+          "title": "Gesundheit",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "714",
+              "title": "Kantonsspital, Heime und Anstalten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "716",
+              "title": "Betäubungsmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "73",
           "title": "Arbeit",
@@ -238,10 +355,11 @@
         {
           "identifier": "74",
           "title": "Sozialversicherung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -251,6 +369,15 @@
               "own": 1,
               "by_type": {
                 "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "742",
+              "title": "Krankenversicherung und Unfallversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -304,9 +431,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 10,
       "own": 0,
       "by_type": {
+        "Verordnung": 4,
+        "Anderes": 4,
         "Interkantonale Vereinbarung": 2
       },
       "children": [
@@ -326,6 +455,37 @@
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 8,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 4,
+            "Anderes": 4
+          },
+          "children": [
+            {
+              "identifier": "4.90.10",
+              "title": "Anstellung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            },
+            {
+              "identifier": "4.90.20",
+              "title": "Löhne, Entschädigungen",
+              "total": 6,
+              "own": 6,
+              "by_type": {
+                "Anderes": 4,
+                "Verordnung": 2
               }
             }
           ]
@@ -355,31 +515,34 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 3,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
-        "Verordnung": 1
+        "Verordnung": 6,
+        "Gesetz": 3,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "6.20",
           "title": "Steuern",
-          "total": 3,
+          "total": 10,
           "own": 0,
           "by_type": {
-            "Gesetz": 2,
-            "Verordnung": 1
+            "Verordnung": 6,
+            "Gesetz": 3,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "6.20.10",
               "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
-              "total": 3,
+              "total": 10,
               "own": 0,
               "by_type": {
-                "Gesetz": 2,
-                "Verordnung": 1
+                "Verordnung": 6,
+                "Gesetz": 3,
+                "Anderes": 1
               },
               "children": [
                 {
@@ -394,10 +557,62 @@
                 {
                   "identifier": "6.20.10.20",
                   "title": "Staatssteuern",
+                  "total": 7,
+                  "own": 7,
+                  "by_type": {
+                    "Verordnung": 4,
+                    "Gesetz": 2,
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "6.20.10.60",
+                  "title": "Quellensteuern",
                   "total": 2,
                   "own": 2,
                   "by_type": {
-                    "Gesetz": 1,
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.60",
+              "title": "Schifffahrt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.60.10",
+                  "title": "Schiffssteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
                     "Verordnung": 1
                   }
                 }
@@ -410,12 +625,54 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Gesetz": 3,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.10",
+                  "title": "Kantonsspitäler",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.70",
+              "title": "Heil- und Betäubungsmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "8.20",
           "title": "Arbeitsrecht",
@@ -482,15 +739,17 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 32
   },
   "available_years_for_entity": [
+    "1000",
     "1632",
     "1787",
     "1842",
     "1850",
     "1890",
     "1900",
+    "1901",
     "1909",
     "1911",
     "1926",

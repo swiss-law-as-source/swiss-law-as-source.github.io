@@ -2,8 +2,8 @@
   "year": "2010",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 23,
-  "categorized": 23,
+  "total": 24,
+  "categorized": 24,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -13,7 +13,7 @@
         "258 Strafvollzug · Gefängniswesen": 2,
         "212 Personen- und Familienrecht: Spezielle Erlasse": 1,
         "410 Schulen": 1,
-        "411 Behörden · Personal": 1,
+        "424 Berufsmaturitäten": 1,
         "494 Förderung von Wissenschaft, Kunst und Kultur": 1,
         "772 Energie- und Wasserversorgung": 1,
         "815 Kinderbetreuung": 1
@@ -22,7 +22,7 @@
         "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
         "3.30 Jugendstrafrecht und Jugendstrafprozessrecht": 1,
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
-        "4.120.80 Schulleitung": 1,
+        "4.30.20 Berufsmaturitätsschulen": 1,
         "4.180.20 Kulturförderung": 1,
         "7.30.10 Staatliche Gebäude und Liegenschaften": 1,
         "4.10.10 Krippen, Kinderhorte": 1
@@ -32,16 +32,16 @@
       "total": 6,
       "by_topic": {
         "BeE 6 Finanzen · Gemeindegrundstücke": 2,
+        "BaB 153 Bürgerrat · Verwaltung": 1,
         "BeE 153 Gemeinderat und Gemeindeverwaltung · Verwaltungsgebühren": 1,
         "RiE 153 Gemeinderat und Gemeindeverwaltung · Verwaltungsgebühren": 1,
-        "RiE 49 Bildende Kunst und Denkmalschutz": 1,
-        "RiE 61 Finanzordnung": 1
+        "RiE 49 Bildende Kunst und Denkmalschutz": 1
       },
       "by_global_category": {
         "7.30.10 Staatliche Gebäude und Liegenschaften": 2,
+        "1.10.60 Bürgerrecht": 1,
         "1.20.20.60 Verwaltungsgebühren": 1,
-        "4.180.20 Kulturförderung": 1,
-        "1.30.10 Gemeindefinanzen": 1
+        "4.180.20 Kulturförderung": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -74,6 +74,15 @@
         "952 Strassenverkehr": 1
       },
       "by_global_category": {}
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "955 Schifffahrt · Rheinhäfen": 1
+      },
+      "by_global_category": {
+        "7.50.60.10 Schiffssteuern": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -209,11 +218,10 @@
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
             "Anderes": 1,
-            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
@@ -227,21 +235,32 @@
               }
             },
             {
-              "identifier": "411",
-              "title": "Behörden · Personal",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
-            {
               "identifier": "419",
               "title": "Schulgeld · Schulabkommen · Anerkennungsabkommen",
               "total": 1,
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "42",
+          "title": "Berufsbildung · Berufsschulen · Fachhochschule",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "424",
+              "title": "Berufsmaturitäten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -354,19 +373,21 @@
     {
       "identifier": "9",
       "title": "Wirtschaft und Verkehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Reglement": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "95",
           "title": "Verkehr",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -377,10 +398,28 @@
               "by_type": {
                 "Reglement": 1
               }
+            },
+            {
+              "identifier": "955",
+              "title": "Schifffahrt · Rheinhäfen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
       ]
+    },
+    {
+      "identifier": "BaB",
+      "title": "Bürgergemeinde Basel",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Gemeindeerlass": 1
+      }
     },
     {
       "identifier": "BeE",
@@ -394,10 +433,10 @@
     {
       "identifier": "RiE",
       "title": "Einwohnergemeinde Riehen",
-      "total": 3,
-      "own": 3,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Gemeindeerlass": 3
+        "Gemeindeerlass": 2
       }
     }
   ],
@@ -415,12 +454,22 @@
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gemeindeerlass": 1,
             "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gemeindeerlass": 1
+              }
+            },
             {
               "identifier": "1.10.70",
               "title": "Niederlassung und Aufenthalt",
@@ -482,26 +531,6 @@
                   }
                 }
               ]
-            }
-          ]
-        },
-        {
-          "identifier": "1.30",
-          "title": "Gemeinden",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gemeindeerlass": 1
-          },
-          "children": [
-            {
-              "identifier": "1.30.10",
-              "title": "Gemeindefinanzen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gemeindeerlass": 1
-              }
             }
           ]
         }
@@ -571,8 +600,8 @@
           ]
         },
         {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -580,8 +609,8 @@
           },
           "children": [
             {
-              "identifier": "4.120.80",
-              "title": "Schulleitung",
+              "identifier": "4.30.20",
+              "title": "Berufsmaturitätsschulen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -694,11 +723,12 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Gemeindeerlass": 2,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -722,12 +752,43 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.60",
+              "title": "Schifffahrt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.60.10",
+                  "title": "Schiffssteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 23
+    "de": 24
   },
   "available_years_for_entity": [
     "1019",
@@ -741,13 +802,16 @@
     "1857",
     "1860",
     "1863",
+    "1864",
     "1870",
     "1872",
+    "1875",
     "1876",
     "1879",
     "1882",
     "1883",
     "1886",
+    "1889",
     "1891",
     "1892",
     "1894",
@@ -772,18 +836,21 @@
     "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
     "1932",
     "1933",
+    "1934",
     "1935",
     "1936",
     "1937",
     "1938",
     "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",

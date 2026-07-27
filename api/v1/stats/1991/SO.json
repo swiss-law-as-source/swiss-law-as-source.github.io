@@ -2,27 +2,18 @@
   "year": "1991",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 18,
-  "categorized": 18,
+  "total": 20,
+  "categorized": 20,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 8,
-      "by_topic": {
-        "618.1 Grundlagen": 1,
-        "618.2 Feuerwehr-Dienst": 1
-      },
-      "by_global_category": {
-        "5.20.30.10 Feuerwehr": 1
-      }
-    },
     "Verordnung": {
-      "total": 8,
+      "total": 9,
       "by_topic": {
         "126.511.3 Zulagen und andere Vergütungen": 1,
         "126.515.85 Volksschule": 1,
         "128.2 Prüfungen, Ausbildung": 1,
         "212.2 Familienrecht": 1,
+        "331 Zuständigkeiten, Verfahren, Kosten": 1,
         "413.6 Unterricht": 1,
         "414.48 Absenzen- und Disziplinarwesen": 1,
         "511.1 Organisation": 1
@@ -36,6 +27,23 @@
         "4.20.10 Mittelschule": 1,
         "5.30.60 Sicherheitsunternehmen": 1
       }
+    },
+    "Anderes": {
+      "total": 8,
+      "by_topic": {
+        "331 Zuständigkeiten, Verfahren, Kosten": 1,
+        "618.2 Feuerwehr-Dienst": 1
+      },
+      "by_global_category": {
+        "5.20.30.10 Feuerwehr": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "331 Zuständigkeiten, Verfahren, Kosten": 1
+      },
+      "by_global_category": {}
     },
     "Reglement": {
       "total": 1,
@@ -204,6 +212,43 @@
       ]
     },
     {
+      "identifier": "3",
+      "title": "Strafrecht, Strafprozessordnung, Strafvollzug",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "33",
+          "title": "Strafvollzug",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "331",
+              "title": "Zuständigkeiten, Verfahren, Kosten",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
       "total": 2,
@@ -325,21 +370,21 @@
     {
       "identifier": "6",
       "title": "Finanzen, Regalien",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "61",
           "title": "Finanzen",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -365,21 +410,12 @@
             {
               "identifier": "618",
               "title": "Gebäudeversicherung und Feuerpolizei",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 1
               },
               "children": [
-                {
-                  "identifier": "618.1",
-                  "title": "Grundlagen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                },
                 {
                   "identifier": "618.2",
                   "title": "Feuerwehr-Dienst",
@@ -723,7 +759,7 @@
     }
   ],
   "languages_available": {
-    "de": 18
+    "de": 20
   },
   "available_years_for_entity": [
     "1780",

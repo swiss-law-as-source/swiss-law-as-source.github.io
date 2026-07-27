@@ -2,14 +2,15 @@
   "year": "1996",
   "year_semantics": "enactment",
   "entity": "ZG",
-  "total": 15,
-  "categorized": 15,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "751 Strassen": 4,
+        "122 Niederlassung, Aufenthalt, Migration": 1,
         "842 Krankenversicherung": 1,
         "845 Arbeitslosigkeit": 1,
         "943 Gastgewerbe": 1
@@ -19,8 +20,9 @@
       }
     },
     "Verordnung": {
-      "total": 6,
+      "total": 7,
       "by_topic": {
+        "154 Behörden und Beamte": 1,
         "163 Anwaltsrecht": 1,
         "216 Obligationenrecht": 1,
         "413 Berufsbildung, Spezialausbildung": 1,
@@ -30,10 +32,20 @@
       },
       "by_global_category": {
         "8.10.30.30 Krankenpflegepersonal": 2,
+        "1.20.20.40.30 Arbeitszeit, Ferien, Urlaub": 1,
         "1.50.10.20 Honorare": 1,
         "1.10.90.10 Gleichstellung von Mann und Frau": 1,
         "5.10.20 Wehrpflichtersatz": 1,
         "9.60.10 Ladenöffnungszeiten": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "414 Mittelschulen, Fachhochschulen und Technische Fachschulen": 2
+      },
+      "by_global_category": {
+        "4.20.30 Handelsmittelschulen, Informatikmittelschulen": 2
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -59,13 +71,54 @@
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1,
+        "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung, Aufenthalt, Migration",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Niederlassung, Aufenthalt, Migration",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "15",
+          "title": "Regierungsrat, Staatskanzlei, Verwaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "154",
+              "title": "Behörden und Beamte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "16",
           "title": "Gerichtsorganisation, Verwaltungsrechtspflege, Anwaltsrecht",
@@ -132,18 +185,20 @@
     {
       "identifier": "4",
       "title": "Schule, Kultur, Natur- und Heimatschutz, Kirche",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Reglement": 2,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Reglement": 2,
             "Verordnung": 1
           },
           "children": [
@@ -154,6 +209,15 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "414",
+              "title": "Mittelschulen, Fachhochschulen und Technische Fachschulen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 2
               }
             }
           ]
@@ -332,10 +396,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Verordnung": 3,
         "Anderes": 1
       },
       "children": [
@@ -373,12 +437,44 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.30",
+                      "title": "Arbeitszeit, Ferien, Urlaub",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
@@ -440,6 +536,37 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 2
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 2
+          },
+          "children": [
+            {
+              "identifier": "4.20.30",
+              "title": "Handelsmittelschulen, Informatikmittelschulen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 2
+              }
             }
           ]
         }
@@ -614,7 +741,7 @@
     }
   ],
   "languages_available": {
-    "de": 15
+    "de": 19
   },
   "available_years_for_entity": [
     "1825",
@@ -630,8 +757,9 @@
     "1919",
     "1921",
     "1925",
-    "1926",
+    "1928",
     "1929",
+    "1932",
     "1937",
     "1938",
     "1940",

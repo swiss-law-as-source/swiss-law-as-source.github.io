@@ -2,10 +2,21 @@
   "year": "1969",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 5,
-  "categorized": 5,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "170 Politische Behörden und Mitarbeitende": 1,
+        "504 Heilmittel, Betäubungsmittel": 1
+      },
+      "by_global_category": {
+        "1.20.20.10.10 Delegation": 1,
+        "7.60.70 Gifte, Chemikalien": 1
+      }
+    },
     "Anderes": {
       "total": 2,
       "by_topic": {
@@ -32,18 +43,40 @@
         "421 Volksschule": 1
       },
       "by_global_category": {}
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "504 Heilmittel, Betäubungsmittel": 1
-      },
-      "by_global_category": {
-        "7.60.70 Gifte, Chemikalien": 1
-      }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Grundlagen, Bürgerrecht, Organisation",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "17",
+          "title": "Organisation des Kantons",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "170",
+              "title": "Politische Behörden und Mitarbeitende",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "Rechtspflege",
@@ -152,6 +185,59 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.10",
+                  "title": "Organisation",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.10.10",
+                      "title": "Delegation",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "2",
       "title": "Zivilrecht",
       "total": 2,
@@ -237,10 +323,11 @@
     }
   ],
   "languages_available": {
-    "de": 5,
-    "it": 5
+    "de": 6,
+    "it": 6
   },
   "available_years_for_entity": [
+    "1870",
     "1877",
     "1901",
     "1908",
@@ -253,9 +340,11 @@
     "1936",
     "1937",
     "1943",
+    "1944",
     "1946",
     "1947",
     "1948",
+    "1950",
     "1951",
     "1952",
     "1953",

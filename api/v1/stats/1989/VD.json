@@ -2,34 +2,107 @@
   "year": "1989",
   "year_semantics": "enactment",
   "entity": "VD",
-  "total": 6,
-  "categorized": 6,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
-    "Reglement": {
-      "total": 3,
-      "by_topic": {
-        "340.000 Exécution des peines et des mesures": 1,
-        "922.000 Chasse et protection des animaux en général": 1,
-        "963.400 Assurances": 1
-      },
-      "by_global_category": {
-        "7.70.20 Tierschutz": 1
-      }
-    },
     "Gesetz": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
+        "160 Exercice des droits politiques": 1,
+        "173.300 Tribunal cantonal, Cours cantonales": 1,
+        "814.100 Élimination et recyclage des déchets": 1,
         "831.400 Prévoyance professionnelle": 1,
         "840 Logement en général": 1,
         "922.000 Chasse et protection des animaux en général": 1
       },
       "by_global_category": {
+        "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
+        "7.60.10 Abfälle": 1,
+        "7.70.20 Tierschutz": 1
+      }
+    },
+    "Reglement": {
+      "total": 6,
+      "by_topic": {
+        "340.000 Exécution des peines et des mesures": 1,
+        "432 Archives": 1,
+        "450 Protection de la nature, du paysage, des monuments et des sites": 1,
+        "813 Commerce des toxiques": 1,
+        "922.000 Chasse et protection des animaux en général": 1,
+        "963.400 Assurances": 1
+      },
+      "by_global_category": {
+        "4.170.20 Archive": 1,
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
+        "7.60.70 Gifte, Chemikalien": 1,
         "7.70.20 Tierschutz": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "ÉTAT - PEUPLE - AUTORITÉS",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Loi": 2
+      },
+      "children": [
+        {
+          "identifier": "16",
+          "title": "DROITS POLITIQUES",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "160",
+              "title": "Exercice des droits politiques",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "17",
+          "title": "AUTORITÉS",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "173",
+              "title": "Tribunaux",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "173.300",
+                  "title": "Tribunal cantonal, Cours cantonales",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "DROIT PÉNAL - PROCÉDURE PÉNALE - EXÉCUTION",
@@ -73,14 +146,107 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
+      "identifier": "4",
+      "title": "ECOLE - SCIENCE - CULTURE",
       "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 2
+        "Règlement": 2
       },
       "children": [
+        {
+          "identifier": "43",
+          "title": "DOCUMENTATION",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "432",
+              "title": "Archives",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "45",
+          "title": "PROTECTION DE LA NATURE, DU PAYSAGE, DES MONUMENTS ET DES SITES",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "450",
+              "title": "Protection de la nature, du paysage, des monuments et des sites",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Loi": 3,
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "80",
+          "title": "SANTÉ",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1,
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "813",
+              "title": "Commerce des toxiques",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            },
+            {
+              "identifier": "814",
+              "title": "Protection de l'équilibre écologique",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "814.100",
+                  "title": "Élimination et recyclage des déchets",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "83",
           "title": "ASSURANCES SOCIALES",
@@ -214,22 +380,125 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 1,
         "Loi": 1
       },
       "children": [
         {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.50",
+                  "title": "Verwaltungsverfahren, Verwaltungsrechtspflege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.20",
+              "title": "Archive",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Règlement": 3,
+        "Loi": 2
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
           "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1,
+            "Loi": 1,
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            },
+            {
+              "identifier": "7.60.70",
+              "title": "Gifte, Chemikalien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Règlement": 2,
             "Loi": 1
           },
           "children": [
@@ -242,6 +511,15 @@
                 "Règlement": 1,
                 "Loi": 1
               }
+            },
+            {
+              "identifier": "7.70.70",
+              "title": "Denkmalschutz, Kulturgüterschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
             }
           ]
         }
@@ -249,7 +527,7 @@
     }
   ],
   "languages_available": {
-    "fr": 6
+    "fr": 12
   },
   "available_years_for_entity": [
     "1803",
@@ -295,6 +573,7 @@
     "1942",
     "1943",
     "1944",
+    "1945",
     "1946",
     "1947",
     "1948",

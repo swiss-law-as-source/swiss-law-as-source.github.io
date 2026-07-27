@@ -2,10 +2,23 @@
   "year": "1986",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 5,
-  "categorized": 5,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "411 Obligatorische Schule": 1,
+        "416 Ausbildungsbeihilfen": 1,
+        "85 Unterstützung": 1
+      },
+      "by_global_category": {
+        "4.80.10 Sonderschulen": 1,
+        "4.100.10 Stipendien": 1,
+        "8.70.80 Schwangerschaftsberatung": 1
+      }
+    },
     "Reglement": {
       "total": 2,
       "by_topic": {
@@ -16,26 +29,21 @@
         "1.20.50 Datenschutz": 1
       }
     },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "412 Berufsbildung": 1,
+        "55 Kantonspolizei": 1
+      },
+      "by_global_category": {
+        "4.90.10 Anstellung": 1,
+        "5.30.10.10 Kantonspolizei": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
         "34 Strafvollzug": 1
-      },
-      "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "85 Unterstützung": 1
-      },
-      "by_global_category": {
-        "8.70.80 Schwangerschaftsberatung": 1
-      }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "922 Jagd": 1
       },
       "by_global_category": {}
     }
@@ -92,6 +100,77 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 2,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Obligatorische Schule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "412",
+              "title": "Berufsbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "416",
+              "title": "Ausbildungsbeihilfen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "55",
+          "title": "Kantonspolizei",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheit, Soziale Sicherheit",
       "total": 1,
@@ -108,37 +187,6 @@
           "by_type": {
             "Gesetz": 1
           }
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "92",
-          "title": "Forstwesen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "922",
-              "title": "Jagd",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
         }
       ]
     }
@@ -170,6 +218,120 @@
               "by_type": {
                 "Reglement": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.80.10",
+              "title": "Sonderschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.10",
+              "title": "Anstellung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.10",
+              "title": "Stipendien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.10",
+                  "title": "Kantonspolizei",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -208,8 +370,8 @@
     }
   ],
   "languages_available": {
-    "de": 5,
-    "fr": 5
+    "de": 8,
+    "fr": 8
   },
   "available_years_for_entity": [
     "1802",
@@ -219,14 +381,19 @@
     "1864",
     "1877",
     "1882",
+    "1887",
     "1891",
     "1900",
     "1907",
     "1912",
+    "1919",
+    "1920",
     "1922",
     "1923",
     "1924",
     "1926",
+    "1929",
+    "1932",
     "1933",
     "1935",
     "1936",
@@ -239,6 +406,7 @@
     "1949",
     "1950",
     "1951",
+    "1953",
     "1954",
     "1955",
     "1957",

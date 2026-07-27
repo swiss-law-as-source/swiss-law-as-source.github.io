@@ -2,10 +2,38 @@
   "year": "2002",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 25,
-  "categorized": 25,
+  "total": 34,
+  "categorized": 34,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 14,
+      "by_topic": {
+        "331 Krankenversicherung": 5,
+        "143 Staatspersonal": 1,
+        "216 Pädagogische Hochschule": 1,
+        "381 Öffentliche Fürsorge": 1,
+        "387 Heimaufenthalt": 1,
+        "453 Niederlassung": 1,
+        "610 Allgemein": 1,
+        "643 Veterinärwesen": 1,
+        "811 Staatssteuern": 1,
+        "816 Kursaalabgabe": 1
+      },
+      "by_global_category": {
+        "8.30.60.10.20 Vereinbarungen": 2,
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
+        "4.50.10 Pädagogik": 1,
+        "8.30.60.40 Einschränkung der Zulassung von Leistungserbringern": 1,
+        "8.10.20.20 Psychiatrische Kliniken": 1,
+        "8.10.60 Spitalexterne Krankenpflege": 1,
+        "1.10.70.20.10 Asylwesen": 1,
+        "8.70.50.10 Eingliederungsstätten, Werkstätte": 1,
+        "1.10.80 Ausweise": 1,
+        "9.20.120 Tierseuchen": 1,
+        "6.20.80 Vergnügungssteuern": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 11,
       "by_topic": {
@@ -29,35 +57,6 @@
         "7.30.40 Submission": 1
       }
     },
-    "Verordnung": {
-      "total": 6,
-      "by_topic": {
-        "331 Krankenversicherung": 2,
-        "143 Staatspersonal": 1,
-        "387 Heimaufenthalt": 1,
-        "610 Allgemein": 1,
-        "816 Kursaalabgabe": 1
-      },
-      "by_global_category": {
-        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
-        "8.10.60 Spitalexterne Krankenpflege": 1,
-        "8.30.60.10.20 Vereinbarungen": 1,
-        "8.70.50.10 Eingliederungsstätten, Werkstätte": 1,
-        "6.20.80 Vergnügungssteuern": 1
-      }
-    },
-    "Gesetz": {
-      "total": 4,
-      "by_topic": {
-        "320 Kantonale Spitäler": 1,
-        "610 Allgemein": 1,
-        "734 Wasserbau": 1,
-        "841 Öffentliches Beschaffungswesen": 1
-      },
-      "by_global_category": {
-        "7.30.40 Submission": 1
-      }
-    },
     "Interkantonale Vereinbarung": {
       "total": 3,
       "by_topic": {
@@ -70,9 +69,23 @@
       }
     },
     "Anderes": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
-        "217 Universität": 1
+        "217 Universität": 1,
+        "231 Allgemein": 1,
+        "322 Kantonale Psychiatrische Kliniken": 1
+      },
+      "by_global_category": {
+        "4.30.50 Brückenangebote": 1,
+        "8.10.20.20 Psychiatrische Kliniken": 1
+      }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "320 Kantonale Spitäler": 1,
+        "610 Allgemein": 1,
+        "734 Wasserbau": 1
       },
       "by_global_category": {}
     }
@@ -133,19 +146,21 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 3,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Schulen",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 2,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -158,8 +173,37 @@
               }
             },
             {
+              "identifier": "216",
+              "title": "Pädagogische Hochschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
               "identifier": "217",
               "title": "Universität",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "23",
+          "title": "Berufliche Ausbildung und Berufsberatung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "231",
+              "title": "Allgemein",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -173,22 +217,22 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 11,
+      "total": 16,
       "own": 0,
       "by_type": {
-        "Anderes": 7,
+        "Anderes": 11,
         "Interkantonale Vereinbarung": 2,
-        "Gesetz": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "32",
           "title": "Einrichtungen der Gesundheitspflege",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Anderes": 4,
+            "Anderes": 5,
             "Gesetz": 1
           },
           "children": [
@@ -214,10 +258,10 @@
             {
               "identifier": "322",
               "title": "Kantonale Psychiatrische Kliniken",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 3
               }
             }
           ]
@@ -225,19 +269,19 @@
         {
           "identifier": "33",
           "title": "Krankenversicherung",
-          "total": 2,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 5
           },
           "children": [
             {
               "identifier": "331",
               "title": "Krankenversicherung",
-              "total": 2,
-              "own": 2,
+              "total": 5,
+              "own": 5,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 5
               }
             }
           ]
@@ -265,20 +309,21 @@
         {
           "identifier": "38",
           "title": "Fürsorge und Heimaufenthalt",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Interkantonale Vereinbarung": 1,
-            "Anderes": 1,
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "381",
               "title": "Öffentliche Fürsorge",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Verordnung": 1,
                 "Interkantonale Vereinbarung": 1
               }
             },
@@ -297,14 +342,45 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
-      "total": 3,
+      "identifier": "4",
+      "title": "Landesverteidigung, öffentliche Sicherheit und Ordnung",
+      "total": 1,
       "own": 0,
       "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "45",
+          "title": "Öffentliche Sicherheit und Ordnung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "453",
+              "title": "Niederlassung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
         "Gesetz": 1,
-        "Verordnung": 1,
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -331,6 +407,26 @@
             {
               "identifier": "611",
               "title": "Förderung der Landwirtschaft",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "64",
+          "title": "Tierhaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "643",
+              "title": "Veterinärwesen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -401,20 +497,29 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Gesetz": 1,
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Steuern und Finanzausgleich",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "811",
+              "title": "Staatssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "816",
               "title": "Kursaalabgabe",
@@ -429,20 +534,18 @@
         {
           "identifier": "84",
           "title": "Öffentliches Beschaffungswesen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "841",
               "title": "Öffentliches Beschaffungswesen",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1,
                 "Anderes": 1
               }
             }
@@ -455,13 +558,65 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.10.80",
+              "title": "Ausweise",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -529,12 +684,53 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.50",
+              "title": "Brückenangebote",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.50.10",
+              "title": "Pädagogik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
@@ -591,30 +787,27 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
-        "Gesetz": 1
+        "Anderes": 3
       },
       "children": [
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "7.30.40",
               "title": "Submission",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Gesetz": 1,
                 "Anderes": 1
               }
             }
@@ -656,29 +849,29 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 7,
+      "total": 11,
       "own": 0,
       "by_type": {
-        "Anderes": 6,
+        "Anderes": 10,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 4,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Anderes": 4
+            "Anderes": 6
           },
           "children": [
             {
               "identifier": "8.10.20",
               "title": "Kranken- und Pflegeanstalten",
-              "total": 3,
+              "total": 5,
               "own": 0,
               "by_type": {
-                "Anderes": 3
+                "Anderes": 5
               },
               "children": [
                 {
@@ -693,10 +886,10 @@
                 {
                   "identifier": "8.10.20.20",
                   "title": "Psychiatrische Kliniken",
-                  "total": 2,
-                  "own": 2,
+                  "total": 4,
+                  "own": 4,
                   "by_type": {
-                    "Anderes": 2
+                    "Anderes": 4
                   }
                 }
               ]
@@ -715,40 +908,49 @@
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 3
           },
           "children": [
             {
               "identifier": "8.30.60",
               "title": "KVG",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 3
               },
               "children": [
                 {
                   "identifier": "8.30.60.10",
                   "title": "Tarife",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 2
                   },
                   "children": [
                     {
                       "identifier": "8.30.60.10.20",
                       "title": "Vereinbarungen",
-                      "total": 1,
-                      "own": 1,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
-                        "Anderes": 1
+                        "Anderes": 2
                       }
                     }
                   ]
+                },
+                {
+                  "identifier": "8.30.60.40",
+                  "title": "Einschränkung der Zulassung von Leistungserbringern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
                 }
               ]
             }
@@ -793,19 +995,19 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "9.20",
           "title": "Landwirtschaft",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
@@ -827,6 +1029,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "9.20.120",
+              "title": "Tierseuchen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -834,7 +1045,7 @@
     }
   ],
   "languages_available": {
-    "de": 25
+    "de": 34
   },
   "available_years_for_entity": [
     "1845",
@@ -848,6 +1059,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",

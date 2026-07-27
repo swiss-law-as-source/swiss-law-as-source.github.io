@@ -2,8 +2,8 @@
   "year": "1990",
   "year_semantics": "enactment",
   "entity": "NE",
-  "total": 12,
-  "categorized": 12,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -19,22 +19,48 @@
         "4.170.20 Archive": 1
       }
     },
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "410.51 Admission – Avancement – Doublement volontaire – Promotion – Libération": 1,
+        "501 Chefs de section militaire": 1,
+        "701 Dispositions générales": 1,
+        "761.1 Dispositions générales": 1,
+        "813.3 Travailleurs étrangers": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "7.10.20 Zonen": 1
+      }
+    },
     "Gesetz": {
-      "total": 6,
+      "total": 2,
       "by_topic": {
         "152.55 Caisse de pensions": 1,
-        "162.6 Statut des magistrats et fonctionnaires judiciaires": 1,
-        "224 Bail": 1,
-        "635 Lods": 1,
-        "637.0 Impôt fédéral direct": 1,
-        "705 Extraction de matériaux": 1
+        "162.6 Statut des magistrats et fonctionnaires judiciaires": 1
       },
       "by_global_category": {
         "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
-        "1.20.70.40 Renten und Versicherungsansprücher der Richter": 1,
-        "6.20.20 Handänderungssteuern": 1,
-        "6.20.10.10 Bundessteuern": 1,
-        "6.30.20 Bergwerk": 1
+        "1.20.70.40 Renten und Versicherungsansprücher der Richter": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "807.1 Maladies transmissibles": 1,
+        "810.4 Conflits collectifs de travail": 1
+      },
+      "by_global_category": {
+        "8.20.30 Einigungsämter": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "701 Dispositions générales": 1
+      },
+      "by_global_category": {
+        "7.10.20 Zonen": 1
       }
     }
   },
@@ -117,45 +143,56 @@
       ]
     },
     {
-      "identifier": "2",
-      "title": "Droit privé – Procédure civile – Exécution",
-      "total": 1,
+      "identifier": "4",
+      "title": "Enseignement – Science – Culture – Environnement",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Autre": 2
       },
       "children": [
         {
-          "identifier": "22",
-          "title": "Dispositions complémentaires et d'exécution du code des obligations",
+          "identifier": "41",
+          "title": "Enseignement",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Loi": 1
+            "Autre": 1
           },
           "children": [
             {
-              "identifier": "224",
-              "title": "Bail",
+              "identifier": "410",
+              "title": "Scolarité obligatoire",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Loi": 1
-              }
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "410.5",
+                  "title": "Élèves",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "410.51",
+                      "title": "Admission – Avancement – Doublement volontaire – Promotion – Libération",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Autre": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "4",
-      "title": "Enseignement – Science – Culture – Environnement",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Autre": 1
-      },
-      "children": [
+        },
         {
           "identifier": "44",
           "title": "Science",
@@ -190,48 +227,93 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finances",
-      "total": 2,
+      "identifier": "5",
+      "title": "Défense générale – Police",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Loi": 2
+        "Autre": 1
       },
       "children": [
         {
-          "identifier": "63",
-          "title": "Contributions publiques",
-          "total": 2,
+          "identifier": "50",
+          "title": "Défense militaire",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Loi": 2
+            "Autre": 1
           },
           "children": [
             {
-              "identifier": "635",
-              "title": "Lods",
+              "identifier": "501",
+              "title": "Chefs de section militaire",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Loi": 1
+                "Autre": 1
               }
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Travaux publics – Énergie – Transports et communications",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Autre": 2,
+        "Ordonnance parlementaire (décret)": 1
+      },
+      "children": [
+        {
+          "identifier": "70",
+          "title": "Aménagement du territoire",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1,
+            "Autre": 1
+          },
+          "children": [
             {
-              "identifier": "637",
-              "title": "Exécution des droits et impôts fédéraux",
+              "identifier": "701",
+              "title": "Dispositions générales",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1,
+                "Autre": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "76",
+          "title": "Transports et communications",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "761",
+              "title": "Circulation routière",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Loi": 1
+                "Autre": 1
               },
               "children": [
                 {
-                  "identifier": "637.0",
-                  "title": "Impôt fédéral direct",
+                  "identifier": "761.1",
+                  "title": "Dispositions générales",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Loi": 1
+                    "Autre": 1
                   }
                 }
               ]
@@ -241,45 +323,98 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Travaux publics – Énergie – Transports et communications",
-      "total": 1,
+      "identifier": "8",
+      "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Autre": 3,
+        "Règlement": 2
       },
       "children": [
         {
-          "identifier": "70",
-          "title": "Aménagement du territoire",
+          "identifier": "80",
+          "title": "Santé",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Loi": 1
+            "Règlement": 1
           },
           "children": [
             {
-              "identifier": "705",
-              "title": "Extraction de matériaux",
+              "identifier": "807",
+              "title": "Lutte contre les maladies",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Loi": 1
-              }
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "807.1",
+                  "title": "Maladies transmissibles",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "8",
-      "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Autre": 2
-      },
-      "children": [
+        },
+        {
+          "identifier": "81",
+          "title": "Travail",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1,
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "810",
+              "title": "Contrat de travail voir sous 225",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "810.4",
+                  "title": "Conflits collectifs de travail",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "813",
+              "title": "Marché du travail",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "813.3",
+                  "title": "Travailleurs étrangers",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "82",
           "title": "Assurances sociales",
@@ -407,12 +542,32 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 2
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.170",
           "title": "Dokumentation",
@@ -436,70 +591,33 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 3,
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 3
+        "Ordonnance parlementaire (décret)": 1,
+        "Autre": 1
       },
       "children": [
         {
-          "identifier": "6.20",
-          "title": "Steuern",
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
           "total": 2,
           "own": 0,
           "by_type": {
-            "Loi": 2
+            "Ordonnance parlementaire (décret)": 1,
+            "Autre": 1
           },
           "children": [
             {
-              "identifier": "6.20.10",
-              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
-              "total": 1,
-              "own": 0,
+              "identifier": "7.10.20",
+              "title": "Zonen",
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Loi": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.20.10.10",
-                  "title": "Bundessteuern",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Loi": 1
-                  }
-                }
-              ]
-            },
-            {
-              "identifier": "6.20.20",
-              "title": "Handänderungssteuern",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Loi": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Loi": 1
-          },
-          "children": [
-            {
-              "identifier": "6.30.20",
-              "title": "Bergwerk",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Loi": 1
+                "Ordonnance parlementaire (décret)": 1,
+                "Autre": 1
               }
             }
           ]
@@ -509,10 +627,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Autre": 2
+        "Autre": 2,
+        "Règlement": 1
       },
       "children": [
         {
@@ -534,22 +653,43 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.30",
+              "title": "Einigungsämter",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "fr": 12
+    "fr": 16
   },
   "available_years_for_entity": [
     "1832",
+    "1849",
     "1857",
-    "1858",
     "1864",
     "1866",
     "1871",
     "1873",
     "1874",
+    "1879",
     "1885",
     "1887",
     "1888",
@@ -568,19 +708,19 @@
     "1912",
     "1913",
     "1914",
-    "1916",
     "1919",
     "1920",
     "1923",
     "1924",
     "1925",
+    "1926",
     "1927",
-    "1928",
     "1930",
     "1931",
     "1933",
     "1934",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1941",
@@ -595,6 +735,7 @@
     "1953",
     "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",

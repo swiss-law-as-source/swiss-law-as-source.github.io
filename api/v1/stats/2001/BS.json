@@ -2,52 +2,64 @@
   "year": "2001",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 18,
-  "categorized": 18,
+  "total": 24,
+  "categorized": 24,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 7,
+      "total": 9,
       "by_topic": {
         "154 Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden": 1,
         "164 Lohn und Entschädigungen": 1,
         "212 Personen- und Familienrecht: Spezielle Erlasse": 1,
         "292 Notariat": 1,
+        "31 Medizinalpersonen · Komplementärmedizin": 1,
+        "328 Zahnhygiene": 1,
         "410 Schulen": 1,
-        "411 Behörden · Personal": 1,
+        "419 Schulgeld · Schulabkommen · Anerkennungsabkommen": 1,
         "911 Landwirtschaft · Forstwesen · Freizeitgärten": 1
       },
       "by_global_category": {
         "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
         "1.50.20.20 Gebühren, Tarife": 1,
-        "4.120.30 Schulaufsicht": 1
+        "8.10.30.10 Ärzte": 1,
+        "4.100.20 Schulgelder": 1
       }
     },
     "Anderes": {
-      "total": 4,
+      "total": 8,
       "by_topic": {
         "111 Kantonsverfassung": 1,
         "171 Einwohnergemeinde Basel": 1,
+        "329 Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege": 1,
         "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1,
-        "442 Hochschulförderung · Finanzmittel · Gebühren": 1
+        "441 Organisation · Behörden · Personal": 1,
+        "442 Hochschulförderung · Finanzmittel · Gebühren": 1,
+        "446 Fakultäten": 1,
+        "952 Strassenverkehr": 1
       },
       "by_global_category": {
         "1.10.50.20 Grenzen": 1,
+        "8.70.30.10 Alters- und Pflegeheime": 1,
         "4.60 Tertiärstufe: Höhere Fachschulen": 1,
-        "4.120.30 Schulaufsicht": 1
+        "4.90.20 Löhne, Entschädigungen": 1,
+        "4.120.30 Schulaufsicht": 1,
+        "8.10.30.60 Psychotherapeuten": 1,
+        "7.10.70 Parkplätze": 1
       }
     },
-    "Gesetz": {
+    "Gemeindeerlass": {
       "total": 3,
       "by_topic": {
-        "154 Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden": 1,
-        "724 Öffentlicher Raum": 1,
-        "861 Sozialer Wohnungsbau · Erhaltung von Wohnraum": 1
+        "BaB 16 Gemeindepersonal": 1,
+        "BeE 6 Finanzen · Gemeindegrundstücke": 1,
+        "RiE 117 Gemeindegebiet": 1
       },
       "by_global_category": {
-        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
-        "5.30.20.20 Gemeingebrauch": 1
+        "8.70.10 Sozialhilfe": 1,
+        "1.30.10 Gemeindefinanzen": 1,
+        "1.10.50.20 Grenzen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -61,15 +73,22 @@
         "7.60.40 Lärmschutz": 1
       }
     },
-    "Gemeindeerlass": {
-      "total": 2,
+    "Gesetz": {
+      "total": 1,
       "by_topic": {
-        "BaB 16 Gemeindepersonal": 1,
-        "RiE 117 Gemeindegebiet": 1
+        "154 Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden": 1
       },
       "by_global_category": {
-        "8.70.10 Sozialhilfe": 1,
-        "1.10.50.20 Grenzen": 1
+        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "413 Mittelschulen": 1
+      },
+      "by_global_category": {
+        "4.20.10 Mittelschule": 1
       }
     }
   },
@@ -223,12 +242,53 @@
     {
       "identifier": "3",
       "title": "Gesundheit",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "31",
+          "title": "Medizinalpersonen · Komplementärmedizin",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "32",
+          "title": "Krankheiten · Kranken- und Betagtenpflege",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "328",
+              "title": "Zahnhygiene",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "329",
+              "title": "Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "33",
           "title": "Spitäler · Sanitätsdienst",
@@ -254,20 +314,22 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 4,
+      "total": 7,
       "own": 0,
       "by_type": {
+        "Anderes": 4,
         "Verordnung": 2,
-        "Anderes": 2
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 2,
+            "Reglement": 1
           },
           "children": [
             {
@@ -280,8 +342,17 @@
               }
             },
             {
-              "identifier": "411",
-              "title": "Behörden · Personal",
+              "identifier": "413",
+              "title": "Mittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
+            {
+              "identifier": "419",
+              "title": "Schulgeld · Schulabkommen · Anerkennungsabkommen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -313,15 +384,33 @@
         {
           "identifier": "44",
           "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 3
           },
           "children": [
             {
+              "identifier": "441",
+              "title": "Organisation · Behörden · Personal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
               "identifier": "442",
               "title": "Hochschulförderung · Finanzmittel · Gebühren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "446",
+              "title": "Fakultäten",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -333,74 +422,13 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "72",
-          "title": "Strassen: Bau, Benützung, Unterhalt",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "724",
-              "title": "Öffentlicher Raum",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "8",
-      "title": "Arbeit · Soziale Sicherheit",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "86",
-          "title": "Soziale Wohnungsvorsorge · Heime · Behindertenhilfe",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "861",
-              "title": "Sozialer Wohnungsbau · Erhaltung von Wohnraum",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "9",
       "title": "Wirtschaft und Verkehr",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Verordnung": 1,
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -427,12 +455,22 @@
         {
           "identifier": "95",
           "title": "Verkehr",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "952",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "956",
               "title": "Luftverkehr",
@@ -456,6 +494,15 @@
       }
     },
     {
+      "identifier": "BeE",
+      "title": "Einwohnergemeinde Bettingen",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Gemeindeerlass": 1
+      }
+    },
+    {
       "identifier": "RiE",
       "title": "Einwohnergemeinde Riehen",
       "total": 1,
@@ -469,12 +516,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Verordnung": 3,
+        "Gemeindeerlass": 2,
         "Anderes": 1,
-        "Gemeindeerlass": 1,
         "Gesetz": 1
       },
       "children": [
@@ -590,6 +637,26 @@
           ]
         },
         {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gemeindeerlass": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "1.50",
           "title": "Juristische Berufe",
           "total": 1,
@@ -625,13 +692,34 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 3,
+        "Reglement": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.60",
           "title": "Tertiärstufe: Höhere Fachschulen",
@@ -642,22 +730,60 @@
           }
         },
         {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
-          "total": 2,
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.20",
+              "title": "Löhne, Entschädigungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.20",
+              "title": "Schulgelder",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "4.120.30",
               "title": "Schulaufsicht",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1,
                 "Anderes": 1
               }
             }
@@ -666,56 +792,35 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "5.30",
-          "title": "Innere Sicherheit",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "5.30.20",
-              "title": "Öffentliche Ruhe und Ordnung",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "5.30.20.20",
-                  "title": "Gemeingebrauch",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.70",
+              "title": "Parkplätze",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
@@ -741,9 +846,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1,
         "Gemeindeerlass": 1
       },
@@ -751,12 +858,44 @@
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "8.10.30.60",
+                  "title": "Psychotherapeuten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "8.10.90",
               "title": "Rettungsdienst",
@@ -771,10 +910,11 @@
         {
           "identifier": "8.70",
           "title": "Fürsorge",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gemeindeerlass": 1
+            "Gemeindeerlass": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -785,6 +925,26 @@
               "by_type": {
                 "Gemeindeerlass": 1
               }
+            },
+            {
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.10",
+                  "title": "Alters- und Pflegeheime",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -792,7 +952,7 @@
     }
   ],
   "languages_available": {
-    "de": 18
+    "de": 24
   },
   "available_years_for_entity": [
     "1019",
@@ -806,13 +966,16 @@
     "1857",
     "1860",
     "1863",
+    "1864",
     "1870",
     "1872",
+    "1875",
     "1876",
     "1879",
     "1882",
     "1883",
     "1886",
+    "1889",
     "1891",
     "1892",
     "1894",
@@ -837,18 +1000,21 @@
     "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
     "1932",
     "1933",
+    "1934",
     "1935",
     "1936",
     "1937",
     "1938",
     "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",

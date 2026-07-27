@@ -2,22 +2,33 @@
   "year": "1983",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 5,
-  "categorized": 5,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "430.17 Schulgeld": 1,
         "432.1 Kindergarten": 1,
         "704 See- und Flussufer": 1,
-        "825 Bodenschutz": 1
+        "825 Bodenschutz": 1,
+        "854 Verbesserung des Wohnungsangebotes": 1
       },
       "by_global_category": {
         "4.100.20 Schulgelder": 1,
         "4.10.20 Kindergarten": 1,
-        "7.70.60 Uferschutz": 1
+        "7.70.60 Uferschutz": 1,
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "432.1 Kindergarten": 1
+      },
+      "by_global_category": {
+        "4.10.20 Kindergarten": 1
       }
     },
     "Staatsvertrag": {
@@ -30,19 +41,21 @@
     {
       "identifier": "4",
       "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "43",
           "title": "Ausbildung und Wissenschaft",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -79,18 +92,20 @@
             {
               "identifier": "432",
               "title": "Volksschule",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "432.1",
                   "title": "Kindergarten",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Gesetz": 1,
                     "Verordnung": 1
                   }
                 }
@@ -134,10 +149,10 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
@@ -159,6 +174,26 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "85",
+          "title": "Wohnungswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "854",
+              "title": "Verbesserung des Wohnungsangebotes",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
@@ -167,27 +202,30 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "4.10",
           "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "4.10.20",
               "title": "Kindergarten",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               }
             }
@@ -245,13 +283,45 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.40",
+          "title": "Wohnverhältnisse",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.40.10",
+              "title": "Eigentums- und Wohnungsbauförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 5,
-    "fr": 4
+    "de": 7,
+    "fr": 6
   },
   "available_years_for_entity": [
+    "1000",
     "1562",
     "1828",
     "1837",
@@ -263,6 +333,7 @@
     "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
     "1877",
     "1889",
@@ -274,12 +345,14 @@
     "1909",
     "1911",
     "1917",
+    "1918",
     "1923",
     "1924",
     "1931",
     "1934",
     "1936",
     "1937",
+    "1938",
     "1939",
     "1940",
     "1942",

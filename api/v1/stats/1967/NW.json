@@ -2,10 +2,20 @@
   "year": "1967",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 2,
-  "categorized": 2,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "631 Allgemeine Bestimmungen": 1,
+        "651 Strassenverkehr": 1
+      },
+      "by_global_category": {
+        "7.60.20 Gewässerschutz": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -21,6 +31,24 @@
         "651 Strassenverkehr": 1
       },
       "by_global_category": {}
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "714 Kantonsspital, Heime und Anstalten": 1
+      },
+      "by_global_category": {
+        "8.10.20.10 Kantonsspitäler": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "714 Kantonsspital, Heime und Anstalten": 1
+      },
+      "by_global_category": {
+        "8.10.20.10 Kantonsspitäler": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -58,28 +86,85 @@
     {
       "identifier": "6",
       "title": "Bau - Strassen - Wasser - Energie - Verkehr",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
-          "identifier": "65",
-          "title": "Verkehr",
+          "identifier": "63",
+          "title": "Wasserrecht",
           "total": 1,
           "own": 0,
           "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "631",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "65",
+          "title": "Verkehr",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
               "identifier": "651",
               "title": "Strassenverkehr",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "71",
+          "title": "Gesundheit",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "714",
+              "title": "Kantonsspital, Heime und Anstalten",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 1,
+                "Verordnung": 1
               }
             }
           ]
@@ -129,18 +214,97 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.10",
+                  "title": "Kantonsspitäler",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 6
   },
   "available_years_for_entity": [
+    "1000",
     "1632",
     "1787",
     "1842",
     "1850",
     "1890",
     "1900",
+    "1901",
     "1909",
     "1911",
     "1926",

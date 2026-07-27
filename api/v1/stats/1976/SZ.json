@@ -2,19 +2,45 @@
   "year": "1976",
   "year_semantics": "enactment",
   "entity": "SZ",
-  "total": 4,
-  "categorized": 4,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "611 Organisation": 1,
         "624 Maturitätsschulen (Gymnasien), Handels- und Fachmittelschulen": 1,
         "68 Turnen und Sport": 1
       },
       "by_global_category": {
+        "4.120.30 Schulaufsicht": 1,
         "4.150 Schulsport": 1
       }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "77 Fischerei": 1,
+        "782 Strassenverkehr": 1
+      },
+      "by_global_category": {}
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "451 Wasserrecht": 1
+      },
+      "by_global_category": {
+        "7.30.20.20 Gewässernutzung": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "611 Organisation": 1
+      },
+      "by_global_category": {}
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -24,26 +50,73 @@
       "by_global_category": {
         "4.90.30 Ausbildung": 1
       }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "782 Strassenverkehr": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "6",
-      "title": "Erziehung, Bildung, Kultur",
-      "total": 3,
+      "identifier": "4",
+      "title": "Planungs- und Baurecht, Strassen, Wege, Gewässer",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "45",
+          "title": "Öffentliche Gewässer",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "451",
+              "title": "Wasserrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Erziehung, Bildung, Kultur",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Anderes": 3,
+        "Reglement": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "61",
+          "title": "Volksschulen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "611",
+              "title": "Organisation",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "62",
           "title": "Sekundarstufe ll",
@@ -88,12 +161,21 @@
     {
       "identifier": "7",
       "title": "Umwelt- und Tierschutz, Jagd und Fischerei, Verkehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 2
       },
       "children": [
+        {
+          "identifier": "77",
+          "title": "Fischerei",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
         {
           "identifier": "78",
           "title": "Verkehr",
@@ -121,11 +203,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Anderes": 1
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -149,6 +231,26 @@
           ]
         },
         {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.30",
+              "title": "Schulaufsicht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "4.150",
           "title": "Schulsport",
           "total": 1,
@@ -158,10 +260,52 @@
           }
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.20.20",
+                  "title": "Gewässernutzung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 8
   },
   "available_years_for_entity": [
     "1824",
@@ -169,6 +313,7 @@
     "1841",
     "1842",
     "1858",
+    "1870",
     "1874",
     "1896",
     "1898",
@@ -202,6 +347,7 @@
     "1955",
     "1958",
     "1959",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -225,6 +371,7 @@
     "1982",
     "1983",
     "1984",
+    "1985",
     "1986",
     "1987",
     "1988",
@@ -260,7 +407,6 @@
     "2018",
     "2019",
     "2020",
-    "2021",
     "2022",
     "2023",
     "2024",

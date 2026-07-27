@@ -2,21 +2,36 @@
   "year": "1999",
   "year_semantics": "enactment",
   "entity": "UR",
-  "total": 8,
-  "categorized": 8,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
+        "2.33 Regierungsrat, Verwaltung": 1,
         "30.44 Waffen, Munition": 1,
         "50.13 Strassenverkehr": 1,
+        "70.11 Berufs- und Weiterbildung": 1,
         "9.21 Einführungsgesetz": 1
       },
       "by_global_category": {
         "5.30.30 Waffen und Munition": 1,
         "7.50.20.40 Personenbeförderung": 1,
+        "4.30.20 Berufsmaturitätsschulen": 1,
         "2.20.10.50 Ehe- und Partnerschaftsvermittlungen": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 3,
+      "by_topic": {
+        "2.4 Angestellte": 1,
+        "30.21 Grundlagen": 1,
+        "9.36 Bodenverbesserung": 1
+      },
+      "by_global_category": {
+        "8.10.30.40 Hebammen": 1,
+        "9.20.50 Meliorationen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -27,16 +42,6 @@
       },
       "by_global_category": {
         "8.10.130.10.10 Lebensmittelaufsicht": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 2,
-      "by_topic": {
-        "2.4 Angestellte": 1,
-        "9.36 Bodenverbesserung": 1
-      },
-      "by_global_category": {
-        "9.20.50 Meliorationen": 1
       }
     },
     "Gesetz": {
@@ -51,12 +56,33 @@
     {
       "identifier": "2",
       "title": "Politische Rechte - Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "2.3",
+          "title": "Behörden: im Einzelnen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "2.33",
+              "title": "Regierungsrat, Verwaltung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "2.4",
           "title": "Angestellte",
@@ -154,9 +180,10 @@
     {
       "identifier": "30",
       "title": "Polizeiliche Aufgaben",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
         "Interkantonale Vereinbarung": 1,
         "Reglement": 1
       },
@@ -164,12 +191,22 @@
         {
           "identifier": "30.2",
           "title": "Gesundheitspolizei",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "30.21",
+              "title": "Grundlagen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            },
             {
               "identifier": "30.23",
               "title": "Lebensmittelpolizei",
@@ -253,6 +290,37 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "70",
+      "title": "Handel - Gewerbe - Industrie",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "70.1",
+          "title": "Allgemeine Massnahmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "70.11",
+              "title": "Berufs- und Weiterbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
@@ -293,6 +361,37 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.20",
+              "title": "Berufsmaturitätsschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
             }
           ]
         }
@@ -374,21 +473,43 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.40",
+                  "title": "Hebammen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "8.10.130",
               "title": "Hygiene",
@@ -457,13 +578,14 @@
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 11
   },
   "available_years_for_entity": [
     "1859",
     "1869",
     "1888",
     "1889",
+    "1890",
     "1891",
     "1902",
     "1911",
@@ -487,7 +609,6 @@
     "1961",
     "1962",
     "1964",
-    "1965",
     "1966",
     "1967",
     "1968",

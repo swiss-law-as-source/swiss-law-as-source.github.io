@@ -2,8 +2,8 @@
   "year": "1958",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 3,
-  "categorized": 3,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
@@ -17,6 +17,15 @@
         "7.50.20.20 Strassenverkehrspolizei": 1
       }
     },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "123.2 Amtschreibereien": 1
+      },
+      "by_global_category": {
+        "1.10.50.10 Gebietseinteilung, Bezirke": 1
+      }
+    },
     "Anderes": {
       "total": 1,
       "by_topic": {
@@ -28,6 +37,48 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Grundlagen, Organisation, Gemeinden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "Organisation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "123",
+              "title": "Amtei- und Bezirksbehörden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "123.2",
+                  "title": "Amtschreibereien",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
@@ -160,12 +211,44 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.50",
+              "title": "Gebiet",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.50.10",
+                  "title": "Gebietseinteilung, Bezirke",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
@@ -253,7 +336,7 @@
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 4
   },
   "available_years_for_entity": [
     "1780",
@@ -394,8 +477,8 @@
     "BL",
     "BS",
     "CH",
-    "FR",
     "GE",
+    "GL",
     "GR",
     "LU",
     "NE",

@@ -2,12 +2,12 @@
   "year": "1987",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 35,
-  "categorized": 35,
+  "total": 36,
+  "categorized": 36,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 17,
+      "total": 18,
       "by_topic": {
         "126.515.3 Ärzteschaft und Pflegepersonal staatlicher Anstalten, Chefarzt des Kinderpsychiatrischen und Schulpsychologischen Dienstes": 3,
         "125.9 Verwaltungsgerichtsbarkeit": 1,
@@ -20,6 +20,7 @@
         "513.4 Verkaufsläden": 1,
         "614.15 Steuerverordnungen und -weisungen": 1,
         "614.17 Steuerabkommen": 1,
+        "618.1 Grundlagen": 1,
         "812.5 Umweltgefährdende Stoffe": 1,
         "817.5 Ausserkantonale Spitäler": 1
       },
@@ -31,13 +32,15 @@
         "4.20.30 Handelsmittelschulen, Informatikmittelschulen": 1,
         "4.20.10 Mittelschule": 1,
         "9.60.10 Ladenöffnungszeiten": 1,
+        "5.20.30.10 Feuerwehr": 1,
         "7.60.80 Umweltgefährdende Stoffe": 1
       }
     },
     "Anderes": {
-      "total": 16,
+      "total": 17,
       "by_topic": {
         "416.3 Berufslehre": 11,
+        "131.7 Finanzausgleich": 1,
         "615.1 Gebühren": 1,
         "618.1 Grundlagen": 1,
         "618.2 Feuerwehr-Dienst": 1,
@@ -45,17 +48,9 @@
       },
       "by_global_category": {
         "5.20.30.10 Feuerwehr": 2,
+        "1.30.10 Gemeindefinanzen": 1,
         "1.20.20.60 Verwaltungsgebühren": 1,
         "9.60.100 Entwicklung und Zusammenarbeit": 1
-      }
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "125.7 Obergericht": 1
-      },
-      "by_global_category": {
-        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1
       }
     },
     "Gesetz": {
@@ -76,38 +71,27 @@
       "own": 0,
       "by_type": {
         "Verordnung": 5,
-        "Reglement": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 6,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Verordnung": 5,
-            "Reglement": 1
+            "Verordnung": 5
           },
           "children": [
             {
               "identifier": "125",
               "title": "Gerichte",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Reglement": 1,
                 "Verordnung": 1
               },
               "children": [
-                {
-                  "identifier": "125.7",
-                  "title": "Obergericht",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                },
                 {
                   "identifier": "125.9",
                   "title": "Verwaltungsgerichtsbarkeit",
@@ -178,6 +162,37 @@
                       ]
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "13",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "131",
+              "title": "Grundlagen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "131.7",
+                  "title": "Finanzausgleich",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
                 }
               ]
             }
@@ -430,21 +445,21 @@
     {
       "identifier": "6",
       "title": "Finanzen, Regalien",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
-        "Verordnung": 2
+        "Verordnung": 3,
+        "Anderes": 3
       },
       "children": [
         {
           "identifier": "61",
           "title": "Finanzen",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Anderes": 3,
-            "Verordnung": 2
+            "Verordnung": 3,
+            "Anderes": 3
           },
           "children": [
             {
@@ -510,19 +525,21 @@
             {
               "identifier": "618",
               "title": "Gebäudeversicherung und Feuerpolizei",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 2,
+                "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "618.1",
                   "title": "Grundlagen",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 1,
+                    "Verordnung": 1
                   }
                 },
                 {
@@ -642,19 +659,17 @@
       "own": 0,
       "by_type": {
         "Verordnung": 5,
-        "Anderes": 1,
-        "Reglement": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 7,
+          "total": 6,
           "own": 0,
           "by_type": {
             "Verordnung": 5,
-            "Anderes": 1,
-            "Reglement": 1
+            "Anderes": 1
           },
           "children": [
             {
@@ -701,32 +716,21 @@
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Reglement": 1,
                 "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "1.20.70.10",
                   "title": "Gerichtsbehörden",
-                  "total": 2,
+                  "total": 1,
                   "own": 0,
                   "by_type": {
-                    "Reglement": 1,
                     "Verordnung": 1
                   },
                   "children": [
-                    {
-                      "identifier": "1.20.70.10.20",
-                      "title": "Obere Gerichte, Bundesgerichte",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Reglement": 1
-                      }
-                    },
                     {
                       "identifier": "1.20.70.10.30",
                       "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
@@ -739,6 +743,26 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -871,37 +895,41 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "5.20",
           "title": "Bevölkerungsschutz",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 2,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "5.20.30",
               "title": "Feuerwehr / Elementarschäden",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 2,
+                "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "5.20.30.10",
                   "title": "Feuerwehr",
-                  "total": 2,
-                  "own": 2,
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
-                    "Anderes": 2
+                    "Anderes": 2,
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -985,7 +1013,7 @@
     }
   ],
   "languages_available": {
-    "de": 35
+    "de": 36
   },
   "available_years_for_entity": [
     "1780",

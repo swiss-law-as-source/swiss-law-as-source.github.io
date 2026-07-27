@@ -2,8 +2,8 @@
   "year": "1999",
   "year_semantics": "enactment",
   "entity": "OW",
-  "total": 20,
-  "categorized": 20,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -27,6 +27,22 @@
         "7.70.50 Naturschutz": 1
       }
     },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 6,
+      "by_topic": {
+        "415 Hochschulen, Fachhochschulen, Fachschulen": 2,
+        "416 Berufsbildung, Berufsberatung, Erwachsenenbildung": 1,
+        "816 Lebensmittel und Gebrauchsgegenstände": 1,
+        "851 Kranken- und Unfallversicherung": 1,
+        "910 Wirtschaftsförderung": 1
+      },
+      "by_global_category": {
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "8.10.30.40 Hebammen": 1,
+        "8.10.130.10.10 Lebensmittelaufsicht": 1,
+        "9.10 Wirtschaftsförderung": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 5,
       "by_topic": {
@@ -40,29 +56,17 @@
         "8.30.110 Arbeitslosenversicherung": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 5,
-      "by_topic": {
-        "415 Hochschulen, Fachhochschulen, Fachschulen": 2,
-        "416 Berufsbildung, Berufsberatung, Erwachsenenbildung": 1,
-        "816 Lebensmittel und Gebrauchsgegenstände": 1,
-        "851 Kranken- und Unfallversicherung": 1
-      },
-      "by_global_category": {
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
-        "8.10.30.40 Hebammen": 1,
-        "8.10.130.10.10 Lebensmittelaufsicht": 1
-      }
-    },
     "Gesetz": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "130 Organisation des Kantons": 1,
+        "818 Tierseuchen, Tierhaltung, Tierhandel": 1,
         "851 Kranken- und Unfallversicherung": 1,
         "910 Wirtschaftsförderung": 1
       },
       "by_global_category": {
         "1.20.20.20.10 Entschädigungen": 1,
+        "9.20.120 Tierseuchen": 1,
         "9.10 Wirtschaftsförderung": 1
       }
     }
@@ -230,12 +234,12 @@
     {
       "identifier": "8",
       "title": "GESUNDHEIT, ARBEIT, SOZIALE SICHERHEIT",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 2,
+        "Gesetz": 2,
         "Anderes": 1,
-        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
@@ -247,6 +251,15 @@
           "by_type": {
             "Interkantonale Vereinbarung": 1,
             "Anderes": 1
+          }
+        },
+        {
+          "identifier": "818",
+          "title": "Tierseuchen, Tierhaltung, Tierhandel",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
           }
         },
         {
@@ -273,19 +286,21 @@
     {
       "identifier": "9",
       "title": "VOLKSWIRTSCHAFT",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "910",
           "title": "Wirtschaftsförderung",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1
           }
         }
       ]
@@ -685,29 +700,52 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "9.10",
           "title": "Wirtschaftsförderung",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        },
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
           "total": 1,
-          "own": 1,
+          "own": 0,
           "by_type": {
             "Gesetz": 1
-          }
+          },
+          "children": [
+            {
+              "identifier": "9.20.120",
+              "title": "Tierseuchen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 20
+    "de": 22
   },
   "available_years_for_entity": [
     "1825",
+    "1834",
     "1850",
     "1874",
     "1877",
@@ -715,6 +753,7 @@
     "1880",
     "1892",
     "1895",
+    "1899",
     "1911",
     "1913",
     "1914",
@@ -747,6 +786,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -805,8 +845,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

@@ -2,17 +2,18 @@
   "year": "1991",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 14,
-  "categorized": 14,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 8,
+      "total": 10,
       "by_topic": {
-        "VIII E/25 Fonds": 3,
+        "VIII E/25 Fonds": 4,
         "IV E Stipendien": 1,
         "IV G/1 Allgemeines": 1,
         "IV G/2 Denkmal- und Ortsbildschutz": 1,
+        "IX C Fremdenverkehr und Tourismus": 1,
         "VIII B/1 Allgemeines": 1,
         "VIII D/6 Arbeitsvermittlung und Personalverleih, Arbeitslosenversicherung und Ausgesteuertenhilfe": 1
       },
@@ -20,39 +21,52 @@
         "8.70.60 Spenden und gemeinnützige Sammlungen": 3,
         "4.100.10 Stipendien": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1,
-        "8.20.20.40 Arbeitsvermittlung und Personalverleih": 1
+        "9.50.10.20 Tourismus": 1,
+        "8.20.20.40 Arbeitsvermittlung und Personalverleih": 1,
+        "8.70.20 Jugendschutz, Jugendhilfe": 1
       }
     },
     "Anderes": {
-      "total": 4,
+      "total": 6,
       "by_topic": {
         "II C/3 Polizei": 1,
         "IV A/21 Evangelische Kirche": 1,
         "IX C Fremdenverkehr und Tourismus": 1,
-        "IX E/2 Förster": 1
+        "IX E/2 Förster": 1,
+        "V D/1 Versicherung im Monopol und Wettbewerb": 1,
+        "VIII B/3 Abfallbeseitigung": 1
       },
       "by_global_category": {
         "5.30.10.30 Personal": 1,
         "1.40.30 Evangelisch-Reformierte Kirche": 1,
         "6.20.90 Kurtaxen, Beherbergungstaxen": 1,
-        "9.30.30 Bildungswesen": 1
+        "9.30.30 Bildungswesen": 1,
+        "7.60.10 Abfälle": 1
       }
     },
     "Gesetz": {
-      "total": 1,
+      "total": 4,
       "by_topic": {
-        "II F Staatshaftung": 1
+        "II F Staatshaftung": 1,
+        "III B/2 Ergänzende Anordnungen zum OR": 1,
+        "IX C Fremdenverkehr und Tourismus": 1,
+        "VIII D/7 Erwerbsersatzleistungen für einkommensschwache Eltern": 1
       },
       "by_global_category": {
-        "1.20.40 Staatshaftung": 1
+        "1.20.40 Staatshaftung": 1,
+        "9.50.10.20 Tourismus": 1,
+        "8.30.110 Arbeitslosenversicherung": 1
       }
     },
     "Reglement": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "III F Strafprozessrecht und Strafvollzug": 1
+        "III F Strafprozessrecht und Strafvollzug": 1,
+        "III I Rechtsanwälte": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "1.50.10.10 Ausbildung": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -69,10 +83,11 @@
     {
       "identifier": "III",
       "title": "Gerichtswesen – Zivilrecht – Strafrecht",
-      "total": 1,
-      "own": 1,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Reglement": 1
+        "Reglement": 2,
+        "Gesetz": 1
       }
     },
     {
@@ -86,21 +101,34 @@
       }
     },
     {
+      "identifier": "V",
+      "title": "Schutz und Abwehr",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Anderes": 1
+      }
+    },
+    {
       "identifier": "VIII",
       "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
-      "total": 5,
-      "own": 5,
+      "total": 8,
+      "own": 8,
       "by_type": {
-        "Verordnung": 5
+        "Verordnung": 6,
+        "Anderes": 1,
+        "Gesetz": 1
       }
     },
     {
       "identifier": "IX",
       "title": "Volkswirtschaft",
-      "total": 2,
-      "own": 2,
+      "total": 4,
+      "own": 4,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Gesetz": 1,
+        "Verordnung": 1
       }
     }
   ],
@@ -108,11 +136,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Gesetz": 1,
-        "Anderes": 1
+        "Anderes": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -152,6 +181,37 @@
               "by_type": {
                 "Anderes": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.50.10",
+              "title": "Anwälte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.10.10",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -283,12 +343,44 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 4,
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 4
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 6,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 5,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -323,14 +415,43 @@
           ]
         },
         {
-          "identifier": "8.70",
-          "title": "Fürsorge",
-          "total": 3,
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 3
+            "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 4
+          },
+          "children": [
+            {
+              "identifier": "8.70.20",
+              "title": "Jugendschutz, Jugendhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "8.70.60",
               "title": "Spenden und gemeinnützige Sammlungen",
@@ -347,10 +468,12 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -372,22 +495,59 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.20",
+                  "title": "Tourismus",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 22
   },
   "available_years_for_entity": [
+    "1800",
     "1807",
     "1835",
     "1859",
+    "1872",
     "1877",
     "1878",
     "1879",
     "1888",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
@@ -397,11 +557,13 @@
     "1911",
     "1915",
     "1918",
+    "1922",
     "1923",
     "1926",
     "1927",
     "1928",
     "1931",
+    "1933",
     "1934",
     "1941",
     "1943",
@@ -413,14 +575,17 @@
     "1950",
     "1951",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
     "1962",
     "1963",
     "1964",
     "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

@@ -2,19 +2,21 @@
   "year": "1992",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 14,
-  "categorized": 14,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
+        "144 Bau- und Umweltschutzdirektion": 1,
         "78 Umweltschutz": 1,
         "790 Landschaftsschutz": 1,
         "82 Arbeitnehmerschutz": 1,
         "91 Medizinalpersonen": 1
       },
       "by_global_category": {
+        "7.30.10 Staatliche Gebäude und Liegenschaften": 1,
         "7.70.50 Naturschutz": 1,
         "8.20.10.20 Arbeitszeit": 1
       }
@@ -32,6 +34,18 @@
         "8.30.60.10.20 Vereinbarungen": 1
       }
     },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "42 Öffentliche Werke": 1,
+        "52 Jagd": 1,
+        "791 Denkmal- und Heimatschutz": 1
+      },
+      "by_global_category": {
+        "7.70.20 Tierschutz": 1,
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
+      }
+    },
     "Anderes": {
       "total": 3,
       "by_topic": {
@@ -40,16 +54,6 @@
       },
       "by_global_category": {
         "8.30.60.10.20 Vereinbarungen": 1
-      }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "42 Öffentliche Werke": 1,
-        "791 Denkmal- und Heimatschutz": 1
-      },
-      "by_global_category": {
-        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
       }
     },
     "Reglement": {
@@ -73,19 +77,21 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -95,6 +101,15 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            },
+            {
+              "identifier": "144",
+              "title": "Bau- und Umweltschutzdirektion",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -144,19 +159,21 @@
     {
       "identifier": "5",
       "title": "Volkswirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "52",
           "title": "Jagd",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Gesetz": 1
           }
         }
       ]
@@ -360,32 +377,53 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1,
-        "Verordnung": 1,
-        "Gesetz": 1
+        "Verordnung": 2,
+        "Gesetz": 2,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
-          "total": 3,
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
           "own": 0,
           "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.10",
+              "title": "Staatliche Gebäude und Liegenschaften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 2,
             "Verordnung des Parlaments (Dekret)": 1,
-            "Verordnung": 1,
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "7.70.20",
               "title": "Tierschutz",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Gesetz": 1
               }
             },
             {
@@ -502,7 +540,7 @@
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 16
   },
   "available_years_for_entity": [
     "1815",
@@ -510,6 +548,7 @@
     "1829",
     "1834",
     "1836",
+    "1851",
     "1870",
     "1876",
     "1881",
@@ -524,9 +563,11 @@
     "1921",
     "1925",
     "1931",
+    "1934",
     "1936",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1945",
     "1947",
@@ -535,6 +576,7 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",

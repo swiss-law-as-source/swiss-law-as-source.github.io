@@ -2,13 +2,14 @@
   "year": "1995",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 14,
-  "categorized": 14,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 5,
+      "total": 6,
       "by_topic": {
+        "I C/23 Ausländer": 1,
         "IX E/1 Forstwirtschaft": 1,
         "V C/1 Allgemeines": 1,
         "VIII B/21 Allgemeines": 1,
@@ -16,6 +17,7 @@
         "VIII E/21 Allgemeines und Organisatorisches": 1
       },
       "by_global_category": {
+        "1.10.70.20.10 Asylwesen": 1,
         "5.20.30.10 Feuerwehr": 1,
         "7.60.20 Gewässerschutz": 1,
         "8.20.20.40 Arbeitsvermittlung und Personalverleih": 1,
@@ -23,16 +25,29 @@
       }
     },
     "Verordnung": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "IV B/4 Kantonsschule": 1,
         "VIII A/51 Allgemeines": 1,
+        "VIII A/52 Fleisch": 1,
         "VIII B/21 Allgemeines": 1
       },
       "by_global_category": {
         "4.20.10 Mittelschule": 1,
         "7.60.70 Gifte, Chemikalien": 1,
         "7.60.20 Gewässerschutz": 1
+      }
+    },
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "V C/4 Kaminfeger": 1,
+        "VII B/2 Öffentliche Bauten": 1,
+        "VIII A/52 Fleisch": 1
+      },
+      "by_global_category": {
+        "5.20.30.30 Kaminfeger": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
     "Reglement": {
@@ -44,17 +59,6 @@
       "by_global_category": {
         "1.40.30 Evangelisch-Reformierte Kirche": 1,
         "5.20.30.40.10 Elementarschadenversicherung": 1
-      }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "V C/4 Kaminfeger": 1,
-        "VII B/2 Öffentliche Bauten": 1
-      },
-      "by_global_category": {
-        "5.20.30.30 Kaminfeger": 1,
-        "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -77,6 +81,15 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "I",
+      "title": "Verfassung und Rechte des Volkes",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Gesetz": 1
+      }
+    },
     {
       "identifier": "IV",
       "title": "Kirche – Schule – Kultur",
@@ -120,11 +133,12 @@
     {
       "identifier": "VIII",
       "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
-      "total": 5,
-      "own": 5,
+      "total": 7,
+      "own": 7,
       "by_type": {
+        "Verordnung": 3,
         "Gesetz": 3,
-        "Verordnung": 2
+        "Anderes": 1
       }
     },
     {
@@ -141,13 +155,56 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.30",
           "title": "Gemeinden",
@@ -446,17 +503,20 @@
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 17
   },
   "available_years_for_entity": [
+    "1800",
     "1807",
     "1835",
     "1859",
+    "1872",
     "1877",
     "1878",
     "1879",
     "1888",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
@@ -466,11 +526,13 @@
     "1911",
     "1915",
     "1918",
+    "1922",
     "1923",
     "1926",
     "1927",
     "1928",
     "1931",
+    "1933",
     "1934",
     "1941",
     "1943",
@@ -482,14 +544,17 @@
     "1950",
     "1951",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
     "1962",
     "1963",
     "1964",
     "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

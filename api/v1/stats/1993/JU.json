@@ -2,14 +2,14 @@
   "year": "1993",
   "year_semantics": "enactment",
   "entity": "JU",
-  "total": 28,
-  "categorized": 28,
+  "total": 32,
+  "categorized": 32,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 20,
+      "total": 24,
       "by_topic": {
-        "811 Professions sanitaires": 7,
+        "811 Professions sanitaires": 9,
         "413 Formation professionnelle": 3,
         "810 Généralités, promotion de la santé, soins hospitaliers et soins à domicile": 2,
         "172 Gouvernement, administration et conseils consultatifs": 1,
@@ -19,6 +19,8 @@
         "410.2 Corps enseignant": 1,
         "412 Ecole moyenne": 1,
         "641 Impôts directs de l'Etat et des communes": 1,
+        "730 Dispositions générales": 1,
+        "836 Allocations familiales": 1,
         "935.2 Tourisme": 1
       },
       "by_global_category": {
@@ -29,8 +31,10 @@
         "4.90.20 Löhne, Entschädigungen": 1,
         "4.120.100 Schulbehörden": 1,
         "4.30.50 Brückenangebote": 1,
+        "8.10.30.10 Ärzte": 1,
         "8.10.30.100 Tierärzte": 1,
         "8.10.30.20 Zahnärzte": 1,
+        "8.10.90 Rettungsdienst": 1,
         "8.10.30.30 Krankenpflegepersonal": 1,
         "8.10.30.80 Fusspfleger": 1,
         "8.10.30.60 Psychotherapeuten": 1,
@@ -267,22 +271,53 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Santé, travail, sécurité sociale",
-      "total": 9,
+      "identifier": "7",
+      "title": "Constructions, travaux publics, énergie, transports et communications",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Ordonnance": 7,
-        "Autre": 2
+        "Ordonnance": 1
+      },
+      "children": [
+        {
+          "identifier": "73",
+          "title": "Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "730",
+              "title": "Dispositions générales",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Santé, travail, sécurité sociale",
+      "total": 12,
+      "own": 0,
+      "by_type": {
+        "Ordonnance": 9,
+        "Autre": 3
       },
       "children": [
         {
           "identifier": "81",
           "title": "Santé",
-          "total": 9,
+          "total": 11,
           "own": 0,
           "by_type": {
-            "Ordonnance": 7,
+            "Ordonnance": 9,
             "Autre": 2
           },
           "children": [
@@ -298,10 +333,30 @@
             {
               "identifier": "811",
               "title": "Professions sanitaires",
-              "total": 7,
-              "own": 7,
+              "total": 9,
+              "own": 9,
               "by_type": {
-                "Ordonnance": 7
+                "Ordonnance": 9
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Assurances sociales",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "836",
+              "title": "Allocations familiales",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
               }
             }
           ]
@@ -613,30 +668,39 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 6,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Ordonnance": 6
+        "Ordonnance": 8
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 6,
+          "total": 8,
           "own": 0,
           "by_type": {
-            "Ordonnance": 6
+            "Ordonnance": 8
           },
           "children": [
             {
               "identifier": "8.10.30",
               "title": "Medizinische Berufe",
-              "total": 6,
+              "total": 7,
               "own": 0,
               "by_type": {
-                "Ordonnance": 6
+                "Ordonnance": 7
               },
               "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Ordonnance": 1
+                  }
+                },
                 {
                   "identifier": "8.10.30.20",
                   "title": "Zahnärzte",
@@ -692,6 +756,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.10.90",
+              "title": "Rettungsdienst",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
+              }
             }
           ]
         }
@@ -741,7 +814,7 @@
     }
   ],
   "languages_available": {
-    "fr": 28
+    "fr": 32
   },
   "available_years_for_entity": [
     "1828",

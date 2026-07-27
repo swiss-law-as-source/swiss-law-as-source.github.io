@@ -2,21 +2,12 @@
   "year": "1990",
   "year_semantics": "enactment",
   "entity": "JU",
-  "total": 33,
-  "categorized": 33,
+  "total": 40,
+  "categorized": 40,
   "uncategorized": 0,
   "by_type": {
-    "Staatsvertrag": {
-      "total": 11,
-      "by_topic": {
-        "97 Coopération": 11
-      },
-      "by_global_category": {
-        "1.10.40 Interkantonale Zusammenarbeit": 1
-      }
-    },
     "Verordnung": {
-      "total": 9,
+      "total": 12,
       "by_topic": {
         "173 Membres des autorités, fonctionnaires et employés": 2,
         "415 Gymnastique et sport": 2,
@@ -24,31 +15,49 @@
         "443 Encouragement des activités culturelles": 1,
         "641 Impôts directs de l'Etat et des communes": 1,
         "701 Constructions": 1,
-        "810 Généralités, promotion de la santé, soins hospitaliers et soins à domicile": 1
+        "810 Généralités, promotion de la santé, soins hospitaliers et soins à domicile": 1,
+        "814 Protection de l'équilibre écologique": 1,
+        "875 Défense contre le feu et lutte contre les dommages dus aux éléments": 1,
+        "935.2 Tourisme": 1
       },
       "by_global_category": {
         "4.150 Schulsport": 2,
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
-        "4.180.10.10 Film, Theater, Unterhaltung": 1
+        "4.180.10.10 Film, Theater, Unterhaltung": 1,
+        "5.20.30.10 Feuerwehr": 1,
+        "6.20.90 Kurtaxen, Beherbergungstaxen": 1
       }
     },
     "Gesetz": {
-      "total": 9,
+      "total": 11,
       "by_topic": {
         "410.1 Fondement": 2,
         "173 Membres des autorités, fonctionnaires et employés": 1,
+        "321 Dispositions générales": 1,
         "413 Formation professionnelle": 1,
         "742 Chemins de fer": 1,
         "810 Généralités, promotion de la santé, soins hospitaliers et soins à domicile": 1,
         "812 Substances thérapeutiques, stupéfiants et poisons": 1,
         "823 Marché du travail": 1,
+        "935.2 Tourisme": 1,
         "97 Coopération": 1
       },
       "by_global_category": {
         "4.10.20 Kindergarten": 2,
+        "3.20.10 Strafprozessordnungen": 1,
         "7.50.10.20 Eisenbahn": 1,
         "8.10.70 Heil- und Betäubungsmittel": 1,
         "8.30.110 Arbeitslosenversicherung": 1,
+        "9.50.10.20 Tourismus": 1,
+        "1.10.40 Interkantonale Zusammenarbeit": 1
+      }
+    },
+    "Staatsvertrag": {
+      "total": 11,
+      "by_topic": {
+        "97 Coopération": 11
+      },
+      "by_global_category": {
         "1.10.40 Interkantonale Zusammenarbeit": 1
       }
     },
@@ -61,6 +70,14 @@
       "by_global_category": {
         "1.10.40 Interkantonale Zusammenarbeit": 1
       }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
+        "172 Gouvernement, administration et conseils consultatifs": 1,
+        "413 Formation professionnelle": 1
+      },
+      "by_global_category": {}
     },
     "Reglement": {
       "total": 2,
@@ -77,11 +94,12 @@
     {
       "identifier": "1",
       "title": "État, peuple, autorités",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Autre": 3,
         "Accord intercantonal": 1,
+        "Ordonnance parlementaire (décret)": 1,
         "Règlement": 1,
         "Loi": 1
       },
@@ -99,14 +117,24 @@
         {
           "identifier": "17",
           "title": "Autorités",
-          "total": 4,
+          "total": 5,
           "own": 0,
           "by_type": {
             "Autre": 2,
+            "Ordonnance parlementaire (décret)": 1,
             "Règlement": 1,
             "Loi": 1
           },
           "children": [
+            {
+              "identifier": "172",
+              "title": "Gouvernement, administration et conseils consultatifs",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
+              }
+            },
             {
               "identifier": "173",
               "title": "Membres des autorités, fonctionnaires et employés",
@@ -123,25 +151,58 @@
       ]
     },
     {
+      "identifier": "3",
+      "title": "Droit pénal, procédure pénale, exécution",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "32",
+          "title": "Procédure pénale",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "321",
+              "title": "Dispositions générales",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Éducation, science, culture, Église",
-      "total": 7,
+      "total": 8,
       "own": 0,
       "by_type": {
         "Loi": 3,
         "Ordonnance": 3,
-        "Règlement": 1
+        "Règlement": 1,
+        "Ordonnance parlementaire (décret)": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Education et science",
-          "total": 6,
+          "total": 7,
           "own": 0,
           "by_type": {
             "Loi": 3,
             "Ordonnance": 2,
-            "Règlement": 1
+            "Règlement": 1,
+            "Ordonnance parlementaire (décret)": 1
           },
           "children": [
             {
@@ -156,11 +217,12 @@
             {
               "identifier": "413",
               "title": "Formation professionnelle",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
                 "Loi": 1,
-                "Règlement": 1
+                "Règlement": 1,
+                "Ordonnance parlementaire (décret)": 1
               }
             },
             {
@@ -282,21 +344,23 @@
     {
       "identifier": "8",
       "title": "Santé, travail, sécurité sociale",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Loi": 3,
+        "Ordonnance": 2,
         "Autre": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Santé",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Loi": 2,
-            "Autre": 1
+            "Autre": 1,
+            "Ordonnance": 1
           },
           "children": [
             {
@@ -316,6 +380,15 @@
               "own": 1,
               "by_type": {
                 "Loi": 1
+              }
+            },
+            {
+              "identifier": "814",
+              "title": "Protection de l'équilibre écologique",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
               }
             }
           ]
@@ -339,20 +412,75 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "87",
+          "title": "Protection contre les incendies et les dommages dus aux éléments",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "875",
+              "title": "Défense contre le feu et lutte contre les dommages dus aux éléments",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "9",
       "title": "Économie",
-      "total": 13,
+      "total": 15,
       "own": 0,
       "by_type": {
         "Traité international": 11,
-        "Loi": 1,
+        "Loi": 2,
+        "Autre": 1,
         "Accord intercantonal": 1
       },
       "children": [
+        {
+          "identifier": "93",
+          "title": "Industrie et artisanat",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Autre": 1,
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "935",
+              "title": "Services",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Autre": 1,
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "935.2",
+                  "title": "Tourisme",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Autre": 1,
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "97",
           "title": "Coopération",
@@ -462,6 +590,37 @@
       ]
     },
     {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.10",
+              "title": "Strafprozessordnungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 5,
@@ -528,6 +687,79 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Ordonnance": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Ordonnance": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.10",
+                  "title": "Feuerwehr",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Ordonnance": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.90",
+              "title": "Kurtaxen, Beherbergungstaxen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
             }
           ]
         }
@@ -625,10 +857,52 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.20",
+                  "title": "Tourismus",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "fr": 33
+    "fr": 40
   },
   "available_years_for_entity": [
     "1828",

@@ -2,21 +2,27 @@
   "year": "1990",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 6,
-  "categorized": 6,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 8,
       "by_topic": {
         "767 Schifffahrt": 2,
         "152.22 Direktionen": 1,
+        "813.1 Allgemeines": 1,
+        "820 Allgemeines": 1,
+        "823 Reinhaltung der Luft": 1,
+        "824 Lärmbekämpfung": 1,
         "836.1 Krisenbekämpfung und Arbeitsbeschaffung": 1
       },
       "by_global_category": {
         "1.20.20.30.20 Direktionen und Ämter": 1,
         "7.50.60.10 Schiffssteuern": 1,
         "5.30.20.20 Gemeingebrauch": 1,
+        "7.60.50 Umweltverträglichkeitsprüfung": 1,
+        "7.60.40 Lärmschutz": 1,
         "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven": 1
       }
     },
@@ -133,12 +139,81 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 5
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "813",
+              "title": "Heilmittel, Betäubungsmittel, Chemikalien",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "813.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "82",
+          "title": "Umweltschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3
+          },
+          "children": [
+            {
+              "identifier": "820",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "823",
+              "title": "Reinhaltung der Luft",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "824",
+              "title": "Lärmbekämpfung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "83",
           "title": "Arbeit",
@@ -272,12 +347,12 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Verordnung": 3,
         "Gesetz": 1,
-        "Verordnung des Parlaments (Dekret)": 1,
-        "Verordnung": 1
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -314,6 +389,35 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "7.60.40",
+              "title": "Lärmschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "7.60.50",
+              "title": "Umweltverträglichkeitsprüfung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -363,10 +467,11 @@
     }
   ],
   "languages_available": {
-    "de": 6,
-    "fr": 6
+    "de": 10,
+    "fr": 10
   },
   "available_years_for_entity": [
+    "1000",
     "1562",
     "1828",
     "1837",
@@ -378,6 +483,7 @@
     "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
     "1877",
     "1889",
@@ -389,12 +495,14 @@
     "1909",
     "1911",
     "1917",
+    "1918",
     "1923",
     "1924",
     "1931",
     "1934",
     "1936",
     "1937",
+    "1938",
     "1939",
     "1940",
     "1942",

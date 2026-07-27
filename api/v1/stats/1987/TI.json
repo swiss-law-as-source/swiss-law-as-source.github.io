@@ -2,10 +2,25 @@
   "year": "1987",
   "year_semantics": "enactment",
   "entity": "TI",
-  "total": 9,
-  "categorized": 9,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
+    "Reglement": {
+      "total": 5,
+      "by_topic": {
+        "A11.3 SVILUPPO ECONOMICO E MISURE A FAVORE DEI SINGOLI RAMI ECONOMICI": 1,
+        "181 Organizzazione del Comune": 1,
+        "184 Finanze comunali, perequazione finanziaria": 1,
+        "414 Scuola media superiore": 1,
+        "482 Protezione degli animali": 1
+      },
+      "by_global_category": {
+        "1.30.10 Gemeindefinanzen": 1,
+        "4.20.10 Mittelschule": 1,
+        "7.70.20 Tierschutz": 1
+      }
+    },
     "Gesetz": {
       "total": 4,
       "by_topic": {
@@ -20,17 +35,6 @@
         "8.70.80 Schwangerschaftsberatung": 1
       }
     },
-    "Reglement": {
-      "total": 3,
-      "by_topic": {
-        "A11.3 SVILUPPO ECONOMICO E MISURE A FAVORE DEI SINGOLI RAMI ECONOMICI": 1,
-        "181 Organizzazione del Comune": 1,
-        "482 Protezione degli animali": 1
-      },
-      "by_global_category": {
-        "7.70.20 Tierschutz": 1
-      }
-    },
     "Verordnung": {
       "total": 2,
       "by_topic": {
@@ -40,17 +44,24 @@
       "by_global_category": {
         "8.10.130.30 Badeanstalten": 1
       }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "A4.2 NORME DEL DIRITTO PENALE": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "STATO - POPOLO - AUTORITÀ",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Legge": 2,
-        "Regolamento": 1
+        "Regolamento": 2
       },
       "children": [
         {
@@ -76,11 +87,11 @@
         {
           "identifier": "18",
           "title": "Comuni, patriziati",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Legge": 1,
-            "Regolamento": 1
+            "Regolamento": 2,
+            "Legge": 1
           },
           "children": [
             {
@@ -92,6 +103,15 @@
                 "Legge": 1,
                 "Regolamento": 1
               }
+            },
+            {
+              "identifier": "184",
+              "title": "Finanze comunali, perequazione finanziaria",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
+              }
             }
           ]
         }
@@ -100,13 +120,33 @@
     {
       "identifier": "4",
       "title": "SCUOLA - CULTURA - SPORT - NATURA",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Legge": 1,
-        "Regolamento": 1
+        "Regolamento": 2,
+        "Legge": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Ordini scolastici",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Regolamento": 1
+          },
+          "children": [
+            {
+              "identifier": "414",
+              "title": "Scuola media superiore",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "48",
           "title": "Natura e paesaggio",
@@ -227,12 +267,33 @@
     {
       "identifier": "A",
       "title": "Atti abrogati della numerazione prima del luglio 2018",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Ordinanza parlamentaria (decreto legislativo)": 1,
         "Regolamento": 1
       },
       "children": [
+        {
+          "identifier": "A4",
+          "title": "NORME DEL DIRITTO CIVILE E PENALE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordinanza parlamentaria (decreto legislativo)": 1
+          },
+          "children": [
+            {
+              "identifier": "A4.2",
+              "title": "NORME DEL DIRITTO PENALE",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordinanza parlamentaria (decreto legislativo)": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "A11",
           "title": "COMMERCIO, INDUSTRIA, ARTI E MESTIERI, SVILUPPO ECONOMICO",
@@ -260,10 +321,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Legge": 1
+        "Legge": 1,
+        "Regolamento": 1
       },
       "children": [
         {
@@ -282,6 +344,57 @@
               "own": 1,
               "by_type": {
                 "Legge": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Regolamento": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Regolamento": 1
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Regolamento": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
               }
             }
           ]
@@ -387,7 +500,7 @@
     }
   ],
   "languages_available": {
-    "it": 9
+    "it": 12
   },
   "available_years_for_entity": [
     "1803",
@@ -395,17 +508,26 @@
     "1896",
     "1907",
     "1909",
+    "1910",
     "1911",
+    "1912",
     "1913",
+    "1914",
     "1915",
     "1918",
     "1921",
+    "1923",
+    "1924",
     "1926",
     "1928",
+    "1929",
+    "1931",
     "1933",
+    "1934",
     "1935",
     "1937",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
@@ -416,8 +538,10 @@
     "1951",
     "1952",
     "1954",
+    "1956",
     "1957",
     "1958",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -425,6 +549,7 @@
     "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

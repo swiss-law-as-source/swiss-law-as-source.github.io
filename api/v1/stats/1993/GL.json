@@ -2,10 +2,25 @@
   "year": "1993",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 12,
-  "categorized": 12,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 5,
+      "by_topic": {
+        "VI A/1 Finanzhaushalt": 2,
+        "I C/12 Kantons- und Gemeindebürgerrecht": 1,
+        "V D/1 Versicherung im Monopol und Wettbewerb": 1,
+        "VIII D/12 Invalidenversicherung": 1
+      },
+      "by_global_category": {
+        "1.30.10 Gemeindefinanzen": 2,
+        "1.10.60 Bürgerrecht": 1,
+        "5.20.30.40.10 Elementarschadenversicherung": 1,
+        "8.30.30 AHV / IV": 1
+      }
+    },
     "Anderes": {
       "total": 4,
       "by_topic": {
@@ -54,24 +69,16 @@
       "by_global_category": {
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
       }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "VI A/1 Finanzhaushalt": 1
-      },
-      "by_global_category": {
-        "1.30.10 Gemeindefinanzen": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "I",
       "title": "Verfassung und Rechte des Volkes",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
+        "Gesetz": 1,
         "Anderes": 1
       }
     },
@@ -97,19 +104,20 @@
     {
       "identifier": "V",
       "title": "Schutz und Abwehr",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       }
     },
     {
       "identifier": "VI",
       "title": "Finanzen – Regalien",
-      "total": 2,
-      "own": 2,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Gesetz": 1,
+        "Gesetz": 2,
         "Interkantonale Vereinbarung": 1
       }
     },
@@ -126,10 +134,11 @@
     {
       "identifier": "VIII",
       "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
       }
     },
     {
@@ -146,28 +155,30 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Gesetz": 1
+        "Gesetz": 3,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.10.60",
               "title": "Bürgerrecht",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Anderes": 1
               }
             }
@@ -176,19 +187,19 @@
         {
           "identifier": "1.30",
           "title": "Gemeinden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 2
           },
           "children": [
             {
               "identifier": "1.30.10",
               "title": "Gemeindefinanzen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Gesetz": 1
+                "Gesetz": 2
               }
             }
           ]
@@ -274,12 +285,55 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.40",
+                  "title": "Gebäudeversicherung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "5.20.30.40.10",
+                      "title": "Elementarschadenversicherung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "5.30",
           "title": "Innere Sicherheit",
@@ -419,10 +473,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -455,22 +510,45 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 16
   },
   "available_years_for_entity": [
+    "1800",
     "1807",
     "1835",
     "1859",
+    "1872",
     "1877",
     "1878",
     "1879",
     "1888",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
@@ -480,11 +558,13 @@
     "1911",
     "1915",
     "1918",
+    "1922",
     "1923",
     "1926",
     "1927",
     "1928",
     "1931",
+    "1933",
     "1934",
     "1941",
     "1943",
@@ -496,14 +576,17 @@
     "1950",
     "1951",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
     "1962",
     "1963",
     "1964",
     "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

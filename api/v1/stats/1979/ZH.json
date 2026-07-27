@@ -2,20 +2,35 @@
   "year": "1979",
   "year_semantics": "enactment",
   "entity": "ZH",
-  "total": 9,
-  "categorized": 9,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
+        "211 Allgemeine Gerichtsorganisation": 1,
         "235 Obligationenrecht": 1,
         "913 Bodenverbesserung": 1,
         "916.1 Tierzucht": 1
       },
       "by_global_category": {
+        "1.20.70.20 Gerichtspersonal": 1,
         "2.20.10.10 Versteigerungen": 1,
         "9.20.50 Meliorationen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "61 Finanzhaushalt": 1,
+        "747 Schifffahrt": 1,
+        "910 Allgemeine Bestimmungen": 1,
+        "935.3 Märkte und Reisendengewerbe. Unterhaltungsgewerbe": 1
+      },
+      "by_global_category": {
+        "6.10.10 Budget und Rechnung": 1,
+        "9.60.60 Reisendengewerbe": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -28,13 +43,14 @@
         "6.20.40 Erbschafts- und Schenkungssteuern": 1
       }
     },
-    "Gesetz": {
-      "total": 2,
+    "Reglement": {
+      "total": 1,
       "by_topic": {
-        "747 Schifffahrt": 1,
-        "910 Allgemeine Bestimmungen": 1
+        "211 Allgemeine Gerichtsorganisation": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "1.20.20.40.80 Personalausschüsse, paritätische Kommissionen": 1
+      }
     },
     "Staatsvertrag": {
       "total": 1,
@@ -59,12 +75,35 @@
     {
       "identifier": "2",
       "title": "Gerichtsorganisation – Zivilrecht – Notariat – Grundbuch",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "21",
+          "title": "Gerichtsorganisation",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "211",
+              "title": "Allgemeine Gerichtsorganisation",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "23",
           "title": "Zivilrecht",
@@ -90,13 +129,23 @@
     {
       "identifier": "6",
       "title": "Finanzen – Steuern",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1,
         "Staatsvertrag": 1
       },
       "children": [
+        {
+          "identifier": "61",
+          "title": "Finanzhaushalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
         {
           "identifier": "672",
           "title": "Gegenrechtserklärungen",
@@ -154,11 +203,11 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Gesetz": 1,
+        "Gesetz": 2,
         "Anderes": 1
       },
       "children": [
@@ -231,11 +280,117 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "93",
+          "title": "Industrie und Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "935",
+              "title": "Dienstleistungsgewerbe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "935.3",
+                  "title": "Märkte und Reisendengewerbe. Unterhaltungsgewerbe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.80",
+                      "title": "Personalausschüsse, paritätische Kommissionen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.20",
+                  "title": "Gerichtspersonal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht",
@@ -281,14 +436,35 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1,
         "Staatsvertrag": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.10",
+              "title": "Budget und Rechnung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "6.20",
           "title": "Steuern",
@@ -355,10 +531,11 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -380,15 +557,37 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.60",
+              "title": "Reisendengewerbe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 13
   },
   "available_years_for_entity": [
+    "1000",
     "1825",
+    "1834",
     "1841",
     "1846",
     "1866",
@@ -401,9 +600,13 @@
     "1900",
     "1901",
     "1902",
+    "1906",
     "1908",
+    "1910",
     "1911",
+    "1913",
     "1914",
+    "1915",
     "1916",
     "1919",
     "1920",
@@ -416,6 +619,7 @@
     "1929",
     "1930",
     "1931",
+    "1932",
     "1933",
     "1934",
     "1936",
@@ -440,6 +644,7 @@
     "1959",
     "1960",
     "1961",
+    "1962",
     "1963",
     "1964",
     "1965",

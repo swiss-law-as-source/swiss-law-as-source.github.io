@@ -2,10 +2,28 @@
   "year": "2005",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 25,
-  "categorized": 25,
+  "total": 26,
+  "categorized": 26,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 7,
+      "by_topic": {
+        "61 Finanzhaushalt": 3,
+        "14 Bürgerrecht. Niederlassung. Aufenthalt": 1,
+        "175 Gemeinden und Burgerschaften": 1,
+        "52 Zivilschutz": 1,
+        "94 Dienstleistungen": 1
+      },
+      "by_global_category": {
+        "1.10.70.20.30 Integration": 1,
+        "1.30.50 Gemeindefusionen": 1,
+        "6.10.10 Budget und Rechnung": 1,
+        "1.20.20.10.10 Delegation": 1,
+        "6.10.40 Finanzkontrolle": 1,
+        "9.60.20 Messwesen, Zahlungsverkehr": 1
+      }
+    },
     "Anderes": {
       "total": 7,
       "by_topic": {
@@ -18,35 +36,20 @@
         "7.70.50 Naturschutz": 1
       }
     },
-    "Verordnung": {
-      "total": 6,
-      "by_topic": {
-        "61 Finanzhaushalt": 3,
-        "14 Bürgerrecht. Niederlassung. Aufenthalt": 1,
-        "91 Landwirtschaft": 1,
-        "94 Dienstleistungen": 1
-      },
-      "by_global_category": {
-        "1.10.70.20.30 Integration": 1,
-        "6.10.10 Budget und Rechnung": 1,
-        "1.20.20.10.10 Delegation": 1,
-        "6.10.40 Finanzkontrolle": 1,
-        "8.10.130.10.20.10 Schlachthöfe": 1,
-        "9.60.20 Messwesen, Zahlungsverkehr": 1
-      }
-    },
     "Reglement": {
-      "total": 5,
+      "total": 6,
       "by_topic": {
         "178 Notare": 2,
         "40 Allgemeine Bestimmungen": 2,
-        "419 Pädagogische Hochschule": 1
+        "419 Pädagogische Hochschule": 1,
+        "91 Landwirtschaft": 1
       },
       "by_global_category": {
         "1.50.20.20 Gebühren, Tarife": 1,
         "4.120.30 Schulaufsicht": 1,
         "4.120.60 Schulbauten": 1,
-        "1.20.20.40.10 Anstellung": 1
+        "1.20.20.40.10 Anstellung": 1,
+        "8.10.30.100 Tierärzte": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -65,17 +68,14 @@
       "total": 2,
       "by_topic": {
         "412 Berufsbildung": 1,
-        "85 Unterstützung": 1
+        "52 Zivilschutz": 1
       },
-      "by_global_category": {
-        "2.50.30 Vollstreckung": 1
-      }
+      "by_global_category": {}
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 2,
+      "total": 1,
       "by_topic": {
-        "61 Finanzhaushalt": 1,
-        "70 Raumplanung, Bauwesen": 1
+        "61 Finanzhaushalt": 1
       },
       "by_global_category": {}
     }
@@ -84,11 +84,11 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Reglement": 2
       },
       "children": [
         {
@@ -103,12 +103,22 @@
         {
           "identifier": "17",
           "title": "Behörden",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Reglement": 2
+            "Reglement": 2,
+            "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "175",
+              "title": "Gemeinden und Burgerschaften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "178",
               "title": "Notare",
@@ -204,6 +214,28 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "52",
+          "title": "Zivilschutz",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "Finanzen und Steuern",
       "total": 5,
@@ -228,54 +260,15 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Öffentliche Werke, Energie, Verkehr",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
-      },
-      "children": [
-        {
-          "identifier": "70",
-          "title": "Raumplanung, Bauwesen",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          }
-        }
-      ]
-    },
-    {
-      "identifier": "8",
-      "title": "Gesundheit, Soziale Sicherheit",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "85",
-          "title": "Unterstützung",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Gesetz": 1
-          }
-        }
-      ]
-    },
-    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 5,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Verordnung": 2,
-        "Interkantonale Vereinbarung": 1
+        "Reglement": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -285,7 +278,7 @@
           "own": 2,
           "by_type": {
             "Anderes": 1,
-            "Verordnung": 1
+            "Reglement": 1
           }
         },
         {
@@ -314,10 +307,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Verordnung": 3,
         "Reglement": 2,
         "Interkantonale Vereinbarung": 1
       },
@@ -439,6 +432,26 @@
           ]
         },
         {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.50",
+              "title": "Gemeindefusionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "1.50",
           "title": "Juristische Berufe",
           "total": 1,
@@ -466,37 +479,6 @@
                   }
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "2.50",
-          "title": "Zivilrechtspflege",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "2.50.30",
-              "title": "Vollstreckung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
             }
           ]
         }
@@ -648,7 +630,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Reglement": 1
       },
       "children": [
         {
@@ -657,48 +639,26 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Reglement": 1
           },
           "children": [
             {
-              "identifier": "8.10.130",
-              "title": "Hygiene",
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Reglement": 1
               },
               "children": [
                 {
-                  "identifier": "8.10.130.10",
-                  "title": "Lebensmittel und Gebrauchsgegenstände",
+                  "identifier": "8.10.30.100",
+                  "title": "Tierärzte",
                   "total": 1,
-                  "own": 0,
+                  "own": 1,
                   "by_type": {
-                    "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "8.10.130.10.20",
-                      "title": "Fleischhygiene",
-                      "total": 1,
-                      "own": 0,
-                      "by_type": {
-                        "Verordnung": 1
-                      },
-                      "children": [
-                        {
-                          "identifier": "8.10.130.10.20.10",
-                          "title": "Schlachthöfe",
-                          "total": 1,
-                          "own": 1,
-                          "by_type": {
-                            "Verordnung": 1
-                          }
-                        }
-                      ]
-                    }
-                  ]
+                    "Reglement": 1
+                  }
                 }
               ]
             }
@@ -739,8 +699,8 @@
     }
   ],
   "languages_available": {
-    "de": 25,
-    "fr": 25
+    "de": 26,
+    "fr": 26
   },
   "available_years_for_entity": [
     "1802",
@@ -750,14 +710,19 @@
     "1864",
     "1877",
     "1882",
+    "1887",
     "1891",
     "1900",
     "1907",
     "1912",
+    "1919",
+    "1920",
     "1922",
     "1923",
     "1924",
     "1926",
+    "1929",
+    "1932",
     "1933",
     "1935",
     "1936",
@@ -770,6 +735,7 @@
     "1949",
     "1950",
     "1951",
+    "1953",
     "1954",
     "1955",
     "1957",

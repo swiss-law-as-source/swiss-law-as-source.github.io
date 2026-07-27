@@ -2,10 +2,26 @@
   "year": "1985",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 14,
-  "categorized": 14,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 5,
+      "by_topic": {
+        "372 Elternschaftsbeiträge": 1,
+        "456 Hundepolizei": 1,
+        "552 Handel": 1,
+        "554 Unterhaltungsgewerbe": 1,
+        "813 Finanzausgleich": 1
+      },
+      "by_global_category": {
+        "8.30.120 Mutterschaftsversicherung, Mutterschaftsbeiträge": 1,
+        "5.30.20.10 Hunde, gefährliche Tiere": 1,
+        "9.60.60 Reisendengewerbe": 1,
+        "4.180.10.10 Film, Theater, Unterhaltung": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 4,
       "by_topic": {
@@ -36,28 +52,16 @@
       }
     },
     "Verordnung": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "314 Heilmittel und Betäubungsmittel": 1,
         "325 Übrige Einrichtungen": 1,
-        "331 Krankenversicherung": 1
+        "331 Krankenversicherung": 1,
+        "813 Finanzausgleich": 1
       },
       "by_global_category": {
         "8.10.70 Heil- und Betäubungsmittel": 1,
         "8.70.80 Schwangerschaftsberatung": 1
-      }
-    },
-    "Gesetz": {
-      "total": 3,
-      "by_topic": {
-        "372 Elternschaftsbeiträge": 1,
-        "552 Handel": 1,
-        "554 Unterhaltungsgewerbe": 1
-      },
-      "by_global_category": {
-        "8.30.120 Mutterschaftsversicherung, Mutterschaftsbeiträge": 1,
-        "9.60.60 Reisendengewerbe": 1,
-        "4.180.10.10 Film, Theater, Unterhaltung": 1
       }
     }
   },
@@ -252,6 +256,37 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Landesverteidigung, öffentliche Sicherheit und Ordnung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "45",
+          "title": "Öffentliche Sicherheit und Ordnung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "456",
+              "title": "Hundepolizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "5",
       "title": "Arbeit und Gewerbe",
       "total": 2,
@@ -316,6 +351,40 @@
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Steuern und Finanzausgleich",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "813",
+              "title": "Finanzausgleich",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
               }
             }
           ]
@@ -436,6 +505,48 @@
                 {
                   "identifier": "4.180.10.10",
                   "title": "Film, Theater, Unterhaltung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.20",
+              "title": "Öffentliche Ruhe und Ordnung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.20.10",
+                  "title": "Hunde, gefährliche Tiere",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -656,7 +767,7 @@
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 17
   },
   "available_years_for_entity": [
     "1845",
@@ -670,6 +781,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",
@@ -780,6 +892,7 @@
     "SG",
     "SH",
     "SO",
+    "SZ",
     "TG",
     "TI",
     "UR",

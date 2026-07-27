@@ -2,46 +2,79 @@
   "year": "1999",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 7,
-  "categorized": 7,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "II A/6 Angestellte des Kantons": 1,
+        "IX B/25 Handelspolizei": 1,
+        "IX E/2 Förster": 1,
+        "VIII B/21 Allgemeines": 1,
+        "VIII E/25 Fonds": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.30 Arbeitszeit, Ferien, Urlaub": 1,
+        "5.30.30 Waffen und Munition": 1,
+        "7.60.20 Gewässerschutz": 1,
+        "8.70.60 Spenden und gemeinnützige Sammlungen": 1
+      }
+    },
     "Anderes": {
       "total": 4,
       "by_topic": {
-        "IX D/5 Bildungs- und Forschungswesen": 1,
+        "VII C/11 Allgemeines": 1,
         "VIII A/212 Ausbildung": 1,
         "VIII B/41 Lärmschutz an Strassen": 1,
         "VIII B/42 Schiessanlagen": 1
       },
       "by_global_category": {
-        "9.20.70.10 Landwirtschaftliche Schule": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 2,
         "8.10.30.30 Krankenpflegepersonal": 1,
-        "6.10.30 Staatsbeiträge, Subventionen": 1,
         "7.60.40 Lärmschutz": 1
       }
     },
-    "Verordnung": {
-      "total": 3,
+    "Reglement": {
+      "total": 2,
       "by_topic": {
-        "IX B/25 Handelspolizei": 1,
-        "IX E/2 Förster": 1,
-        "VIII E/25 Fonds": 1
+        "IX B/31 Kantonalbank": 1,
+        "VIII A/23 Fürsorge für Psychischkranke und Suchtabhängige": 1
       },
       "by_global_category": {
-        "5.30.30 Waffen und Munition": 1,
-        "8.70.60 Spenden und gemeinnützige Sammlungen": 1
+        "6.40.10 Kantonalbanken": 1,
+        "8.10.20.20 Psychiatrische Kliniken": 1
       }
     }
   },
   "by_topic_tree": [
     {
+      "identifier": "II",
+      "title": "Organisation des Kantons und der Gemeinden",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Verordnung": 1
+      }
+    },
+    {
+      "identifier": "VII",
+      "title": "Raumplanung – Bauwesen – Öffentliche Werke – Verkehr – Energie",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Anderes": 1
+      }
+    },
+    {
       "identifier": "VIII",
       "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
-      "total": 4,
-      "own": 4,
+      "total": 6,
+      "own": 6,
       "by_type": {
-        "Anderes": 3,
+        "Anderes": 4,
+        "Reglement": 1,
         "Verordnung": 1
       }
     },
@@ -52,11 +85,64 @@
       "own": 3,
       "by_type": {
         "Verordnung": 2,
-        "Anderes": 1
+        "Reglement": 1
       }
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.30",
+                      "title": "Arbeitszeit, Ferien, Urlaub",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
@@ -91,28 +177,49 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "6.40",
+          "title": "Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "6.40.10",
+              "title": "Kantonalbanken",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Reglement": 1
               }
             }
           ]
@@ -122,21 +229,30 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "7.60.40",
               "title": "Lärmschutz",
@@ -153,9 +269,10 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
         "Anderes": 1,
         "Verordnung": 1
       },
@@ -163,12 +280,33 @@
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Reglement": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.20",
+                  "title": "Psychiatrische Kliniken",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "8.10.30",
               "title": "Medizinische Berufe",
@@ -212,62 +350,23 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "9.20",
-          "title": "Landwirtschaft",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "9.20.70",
-              "title": "Landwirtschaftliches Bildungswesen",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "9.20.70.10",
-                  "title": "Landwirtschaftliche Schule",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 11
   },
   "available_years_for_entity": [
+    "1800",
     "1807",
     "1835",
     "1859",
+    "1872",
     "1877",
     "1878",
     "1879",
     "1888",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
@@ -277,11 +376,13 @@
     "1911",
     "1915",
     "1918",
+    "1922",
     "1923",
     "1926",
     "1927",
     "1928",
     "1931",
+    "1933",
     "1934",
     "1941",
     "1943",
@@ -293,14 +394,17 @@
     "1950",
     "1951",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
     "1962",
     "1963",
     "1964",
     "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

@@ -2,19 +2,22 @@
   "year": "1987",
   "year_semantics": "enactment",
   "entity": "ZH",
-  "total": 8,
-  "categorized": 8,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
+        "413.3 Berufsbildung": 2,
         "182 Römisch-katholische Körperschaft": 1,
-        "413.3 Berufsbildung": 1,
-        "415.1 Allgemeines": 1
+        "215 Rechtsanwälte": 1,
+        "415.1 Allgemeines": 1,
+        "713 Luftreinhaltung. Lärmschutz": 1
       },
       "by_global_category": {
         "1.40.10 Römisch-Katholische Kirche": 1,
+        "1.50.10.20 Honorare": 1,
         "4.120.60 Schulbauten": 1
       }
     },
@@ -38,6 +41,13 @@
       "by_global_category": {
         "1.40.10 Römisch-Katholische Kirche": 1
       }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "413.3 Berufsbildung": 1
+      },
+      "by_global_category": {}
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -82,39 +92,74 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Bildung – Dokumentation – Kultur",
-      "total": 2,
+      "identifier": "2",
+      "title": "Gerichtsorganisation – Zivilrecht – Notariat – Grundbuch",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Gerichtsorganisation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "215",
+              "title": "Rechtsanwälte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bildung – Dokumentation – Kultur",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Bildung",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 3,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "413",
               "title": "Mittelschulen. Berufsbildung",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2,
+                "Gesetz": 1
               },
               "children": [
                 {
                   "identifier": "413.3",
                   "title": "Berufsbildung",
-                  "total": 1,
-                  "own": 1,
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
-                    "Verordnung": 1
+                    "Verordnung": 2,
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -166,10 +211,11 @@
     {
       "identifier": "7",
       "title": "Raumplanung – Baurecht – Umwelt – Energie – Verkehr",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -195,18 +241,20 @@
         {
           "identifier": "71",
           "title": "Umweltschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "713",
               "title": "Luftreinhaltung. Lärmschutz",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Verordnung": 1,
                 "Anderes": 1
               }
             }
@@ -261,10 +309,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -284,6 +333,37 @@
               "by_type": {
                 "Anderes": 2
               }
+            }
+          ]
+        },
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.50.10",
+              "title": "Anwälte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.10.20",
+                  "title": "Honorare",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -426,10 +506,12 @@
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 12
   },
   "available_years_for_entity": [
+    "1000",
     "1825",
+    "1834",
     "1841",
     "1846",
     "1866",
@@ -442,9 +524,13 @@
     "1900",
     "1901",
     "1902",
+    "1906",
     "1908",
+    "1910",
     "1911",
+    "1913",
     "1914",
+    "1915",
     "1916",
     "1919",
     "1920",
@@ -457,6 +543,7 @@
     "1929",
     "1930",
     "1931",
+    "1932",
     "1933",
     "1934",
     "1936",
@@ -481,6 +568,7 @@
     "1959",
     "1960",
     "1961",
+    "1962",
     "1963",
     "1964",
     "1965",

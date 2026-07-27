@@ -2,14 +2,16 @@
   "year": "1999",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 12,
-  "categorized": 12,
+  "total": 18,
+  "categorized": 18,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 5,
+      "total": 7,
       "by_topic": {
         "222.16 Ehe- und Partnerschaftsvermittlung": 1,
+        "341 Im Allgemeinen": 1,
+        "521 Bevölkerungsschutz": 1,
         "559 Interkantonale Vereinbarungen": 1,
         "768 Luftfahrt": 1,
         "821 Gewässerschutz, Kanalisation, Abfallbeseitigung": 1,
@@ -23,16 +25,30 @@
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "426.4 Denkmalpflege, archäologischer Dienst und Kulturgüterschutz": 1,
+        "622 Finanzkontrolle": 1,
         "661.6 Justizbehörden und Rechtsmittel": 1,
         "662 Erbschafts- und Schenkungssteuer": 1
       },
       "by_global_category": {
         "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
+        "6.10.40 Finanzkontrolle": 1,
         "1.20.70.10.60 Kantonale Rekurskommissionen": 1,
         "6.20.40 Erbschafts- und Schenkungssteuern": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 3,
+      "by_topic": {
+        "411.2 Evangelisch-reformierte": 1,
+        "411.3 Römisch-katholische": 1,
+        "752.4 Wassernutzung": 1
+      },
+      "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -45,20 +61,15 @@
       }
     },
     "Reglement": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "436.26 Philosophisch-historische Fakultät": 1,
         "436.29 Evangelisch-theologische Fakultät": 1
       },
       "by_global_category": {
+        "4.40.50 Philosophische Fakultäten": 1,
         "4.40.20 Theologische Fakultät": 1
       }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "752.4 Wassernutzung": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
@@ -147,15 +158,87 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 2,
+      "identifier": "3",
+      "title": "Strafrecht, Strafrechtspflege, Strafvollzug",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Reglement": 1
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "34",
+          "title": "Strafvollzug",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "341",
+              "title": "Im Allgemeinen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Reglement": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Kirche",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Kirchgemeinden",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "411.2",
+                  "title": "Evangelisch-reformierte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "411.3",
+                  "title": "Römisch-katholische",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "42",
           "title": "Kultur",
@@ -190,30 +273,39 @@
         {
           "identifier": "43",
           "title": "Ausbildung und Wissenschaft",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 2
           },
           "children": [
             {
               "identifier": "436",
               "title": "Universität",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Reglement": 1
+                "Reglement": 2
               },
               "children": [
                 {
                   "identifier": "436.2",
                   "title": "Einzelne Fakultäten",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Reglement": 1
+                    "Reglement": 2
                   },
                   "children": [
+                    {
+                      "identifier": "436.26",
+                      "title": "Philosophisch-historische Fakultät",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    },
                     {
                       "identifier": "436.29",
                       "title": "Evangelisch-theologische Fakultät",
@@ -234,12 +326,33 @@
     {
       "identifier": "5",
       "title": "Landesverteidigung, Polizei",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "52",
+          "title": "Gesamtverteidigung und Katastrophenhilfe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "521",
+              "title": "Bevölkerungsschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "55",
           "title": "Polizei",
@@ -265,12 +378,32 @@
     {
       "identifier": "6",
       "title": "Finanzen, Regalien",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Gesetz": 3
       },
       "children": [
+        {
+          "identifier": "62",
+          "title": "Finanzhaushalt",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "622",
+              "title": "Finanzkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "66",
           "title": "Steuern und Abgaben",
@@ -454,9 +587,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Interkantonale Vereinbarung": 1,
         "Gesetz": 1
       },
@@ -522,6 +656,35 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -570,24 +733,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Reglement": 2
       },
       "children": [
         {
           "identifier": "4.40",
           "title": "Tertiärstufe: Universitäten",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 2
           },
           "children": [
             {
               "identifier": "4.40.20",
               "title": "Theologische Fakultät",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
+            {
+              "identifier": "4.40.50",
+              "title": "Philosophische Fakultäten",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -643,12 +815,32 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 2
       },
       "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.40",
+              "title": "Finanzkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "6.20",
           "title": "Steuern",
@@ -756,10 +948,11 @@
     }
   ],
   "languages_available": {
-    "de": 12,
-    "fr": 11
+    "de": 18,
+    "fr": 17
   },
   "available_years_for_entity": [
+    "1000",
     "1562",
     "1828",
     "1837",
@@ -771,6 +964,7 @@
     "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
     "1877",
     "1889",
@@ -782,12 +976,14 @@
     "1909",
     "1911",
     "1917",
+    "1918",
     "1923",
     "1924",
     "1931",
     "1934",
     "1936",
     "1937",
+    "1938",
     "1939",
     "1940",
     "1942",

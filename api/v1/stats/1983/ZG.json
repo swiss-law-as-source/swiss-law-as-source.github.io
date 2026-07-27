@@ -2,26 +2,76 @@
   "year": "1983",
   "year_semantics": "enactment",
   "entity": "ZG",
-  "total": 4,
-  "categorized": 4,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
+        "512 Polizei": 1,
         "833 Arbeitnehmerschutz": 1,
         "842 Krankenversicherung": 1,
         "844 Familienversicherung": 1,
         "861 Sozialhilfe": 1
       },
       "by_global_category": {
+        "5.30.10.30 Personal": 1,
         "8.20.40 Heimarbeit": 1,
         "8.30.70 UVG": 1,
         "8.70.10 Sozialhilfe": 1
       }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "54 Notorganisation": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "5",
+      "title": "Polizei, Militär, Zivilschutz, Notorganisation",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "51",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "512",
+              "title": "Polizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "54",
+          "title": "Notorganisation",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
@@ -105,6 +155,48 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.30",
+                  "title": "Personal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 3,
@@ -177,7 +269,7 @@
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 6
   },
   "available_years_for_entity": [
     "1825",
@@ -193,8 +285,9 @@
     "1919",
     "1921",
     "1925",
-    "1926",
+    "1928",
     "1929",
+    "1932",
     "1937",
     "1938",
     "1940",

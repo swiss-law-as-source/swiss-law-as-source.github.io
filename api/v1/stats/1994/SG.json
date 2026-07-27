@@ -42,18 +42,16 @@
       }
     },
     "Verordnung": {
-      "total": 6,
+      "total": 5,
       "by_topic": {
         "331 Krankenversicherung": 2,
         "672 Übriger Umweltschutz": 2,
-        "734 Wasserbau": 1,
         "815 Bundessteuern": 1
       },
       "by_global_category": {
         "8.10.30.90 Apotheker": 1,
         "8.10.30.10 Ärzte": 1,
         "7.60.40 Lärmschutz": 1,
-        "5.20.30.10 Feuerwehr": 1,
         "6.20.10.10 Bundessteuern": 1
       }
     },
@@ -82,6 +80,16 @@
         "1.50.10.20 Honorare": 1
       }
     },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "813 Finanzausgleich": 1,
+        "963 Rechtsanwälte und Rechtsagenten": 1
+      },
+      "by_global_category": {
+        "1.50.10.10 Ausbildung": 1
+      }
+    },
     "Staatsvertrag": {
       "total": 1,
       "by_topic": {
@@ -89,15 +97,6 @@
       },
       "by_global_category": {
         "7.30.40 Submission": 1
-      }
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "963 Rechtsanwälte und Rechtsagenten": 1
-      },
-      "by_global_category": {
-        "1.50.10.10 Ausbildung": 1
       }
     }
   },
@@ -366,24 +365,22 @@
     {
       "identifier": "7",
       "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
-      "total": 11,
+      "total": 10,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 8,
         "Anderes": 1,
-        "Verordnung": 1,
         "Staatsvertrag": 1
       },
       "children": [
         {
           "identifier": "73",
           "title": "Öffentliches Baurecht",
-          "total": 9,
+          "total": 8,
           "own": 0,
           "by_type": {
             "Interkantonale Vereinbarung": 6,
             "Anderes": 1,
-            "Verordnung": 1,
             "Staatsvertrag": 1
           },
           "children": [
@@ -394,15 +391,6 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
-              }
-            },
-            {
-              "identifier": "734",
-              "title": "Wasserbau",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
               }
             },
             {
@@ -442,10 +430,11 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 8,
+      "total": 9,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 5,
+        "Reglement": 1,
         "Verordnung": 1,
         "Gesetz": 1,
         "Anderes": 1
@@ -454,10 +443,11 @@
         {
           "identifier": "81",
           "title": "Steuern und Finanzausgleich",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Interkantonale Vereinbarung": 1,
+            "Reglement": 1,
             "Verordnung": 1
           },
           "children": [
@@ -468,6 +458,15 @@
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "813",
+              "title": "Finanzausgleich",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
               }
             },
             {
@@ -682,48 +681,6 @@
           "by_type": {
             "Anderes": 1
           }
-        }
-      ]
-    },
-    {
-      "identifier": "5",
-      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "5.20",
-          "title": "Bevölkerungsschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "5.20.30",
-              "title": "Feuerwehr / Elementarschäden",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "5.20.30.10",
-                  "title": "Feuerwehr",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     },
@@ -1040,6 +997,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",

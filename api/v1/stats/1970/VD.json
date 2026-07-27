@@ -2,33 +2,37 @@
   "year": "1970",
   "year_semantics": "enactment",
   "entity": "VD",
-  "total": 12,
-  "categorized": 12,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "172.110 Gouvernement en général": 1,
+        "180.200 Église catholique": 1,
         "916.400 Lutte contre les épizooties": 1,
         "935.100 Tourisme": 1,
         "963.100 Lutte contre les incendies et les éléments naturels en général": 1
       },
       "by_global_category": {
+        "1.40.10 Römisch-Katholische Kirche": 1,
         "9.20.120 Tierseuchen": 1,
         "9.50.10.20 Tourismus": 1,
         "5.20.30.10 Feuerwehr": 1
       }
     },
     "Reglement": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
+        "211.250 Tutelle": 1,
         "725.200 Entretien des routes": 1,
         "916.400 Lutte contre les épizooties": 1,
         "935.100 Tourisme": 1,
         "963.100 Lutte contre les incendies et les éléments naturels en général": 1
       },
       "by_global_category": {
+        "2.10.20.10 Vormundschaft": 1,
         "9.20.120 Tierseuchen": 1,
         "9.50.10.20 Tourismus": 1,
         "5.20.30.10 Feuerwehr": 1
@@ -60,11 +64,11 @@
     {
       "identifier": "1",
       "title": "ÉTAT - PEUPLE - AUTORITÉS",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Autre": 2,
-        "Loi": 1
+        "Loi": 2,
+        "Autre": 2
       },
       "children": [
         {
@@ -122,28 +126,73 @@
         {
           "identifier": "18",
           "title": "ÉGLISE, RELIGION",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Autre": 1,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "180",
               "title": "Église",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Autre": 1
+                "Autre": 1,
+                "Loi": 1
               },
               "children": [
                 {
                   "identifier": "180.200",
                   "title": "Église catholique",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Autre": 1,
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "DROIT PRIVÉ - PROCÉDURE CIVILE - EXÉCUTION",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "DROIT CIVIL",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "211",
+              "title": "Dispositions complémentaires et d'exécution du Code civil",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "211.250",
+                  "title": "Tutelle",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Autre": 1
+                    "Règlement": 1
                   }
                 }
               ]
@@ -377,29 +426,74 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 1,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Autre": 1,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "1.40.10",
               "title": "Römisch-Katholische Kirche",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Autre": 1
+                "Autre": 1,
+                "Loi": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.20",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.20.10",
+                  "title": "Vormundschaft",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -583,7 +677,7 @@
     }
   ],
   "languages_available": {
-    "fr": 12
+    "fr": 14
   },
   "available_years_for_entity": [
     "1803",
@@ -629,6 +723,7 @@
     "1942",
     "1943",
     "1944",
+    "1945",
     "1946",
     "1947",
     "1948",

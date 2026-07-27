@@ -2,18 +2,20 @@
   "year": "1989",
   "year_semantics": "enactment",
   "entity": "TG",
-  "total": 5,
-  "categorized": 5,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "16 Politische Rechte": 1,
-        "641 Sondersteuern. Erbschaftssteuer": 1
+        "641 Sondersteuern. Erbschaftssteuer": 1,
+        "822 Arbeitnehmerschutz": 1
       },
       "by_global_category": {
-        "6.20.40 Erbschafts- und Schenkungssteuern": 1
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1,
+        "8.20.10.30 Sonn- und Feiertage": 1
       }
     },
     "Anderes": {
@@ -29,6 +31,13 @@
       "by_global_category": {
         "6.20.40 Erbschafts- und Schenkungssteuern": 1
       }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "742 Eisenbahnen": 1
+      },
+      "by_global_category": {}
     },
     "Reglement": {
       "total": 1,
@@ -114,14 +123,66 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
+      "identifier": "7",
+      "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "74",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "742",
+              "title": "Eisenbahnen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "82",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "822",
+              "title": "Arbeitnehmerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "83",
           "title": "Sozialversicherung",
@@ -183,12 +244,44 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.10",
+              "title": "Arbeitnehmer",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.10.30",
+                  "title": "Sonn- und Feiertage",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
@@ -213,7 +306,7 @@
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 7
   },
   "available_years_for_entity": [
     "1803",
@@ -243,8 +336,10 @@
     "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1946",
+    "1947",
     "1948",
     "1955",
     "1958",

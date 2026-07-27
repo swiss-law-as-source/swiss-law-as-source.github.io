@@ -2,16 +2,17 @@
   "year": "1983",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 14,
-  "categorized": 14,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 6,
+      "total": 7,
       "by_topic": {
         "122.1 Geschäftsführung": 1,
         "126.55 Dienstalterszulagen": 1,
         "414.6 Unterricht": 1,
+        "614.7 Hundesteuer, Hundehaltung": 1,
         "822.3 Heimarbeit": 1,
         "823.2 Ausländische Arbeitnehmer": 1,
         "832.3 Unfallversicherung": 1
@@ -19,6 +20,7 @@
       "by_global_category": {
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
         "4.20.10 Mittelschule": 1,
+        "5.30.20.10 Hunde, gefährliche Tiere": 1,
         "8.20.40 Heimarbeit": 1,
         "8.30.70 UVG": 1
       }
@@ -43,21 +45,21 @@
         "6.30.60.20 Reviere": 2
       }
     },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "413.4 Schüler": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+      }
+    },
     "Staatsvertrag": {
       "total": 1,
       "by_topic": {
         "614.17 Steuerabkommen": 1
       },
       "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "614.7 Hundesteuer, Hundehaltung": 1
-      },
-      "by_global_category": {
-        "5.30.20.10 Hunde, gefährliche Tiere": 1
-      }
     }
   },
   "by_topic_tree": [
@@ -137,23 +139,45 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Anderes": 2,
+        "Reglement": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Reglement": 1,
             "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "413",
+              "title": "Volksschule",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.4",
+                  "title": "Schüler",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "414",
               "title": "Mittelschulen",
@@ -290,7 +314,7 @@
       "by_type": {
         "Interkantonale Vereinbarung": 2,
         "Staatsvertrag": 1,
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -300,7 +324,7 @@
           "own": 0,
           "by_type": {
             "Staatsvertrag": 1,
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
@@ -310,7 +334,7 @@
               "own": 0,
               "by_type": {
                 "Staatsvertrag": 1,
-                "Gesetz": 1
+                "Verordnung": 1
               },
               "children": [
                 {
@@ -339,7 +363,7 @@
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Gesetz": 1
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -530,12 +554,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.20",
           "title": "Sekundarstufe II",
@@ -564,7 +609,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -573,7 +618,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
@@ -582,7 +627,7 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
               },
               "children": [
                 {
@@ -591,7 +636,7 @@
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Gesetz": 1
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -726,7 +771,7 @@
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 15
   },
   "available_years_for_entity": [
     "1780",

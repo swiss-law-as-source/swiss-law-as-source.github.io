@@ -2,8 +2,8 @@
   "year": "1990",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 9,
-  "categorized": 9,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
@@ -20,6 +20,17 @@
         "1.20.20.40.40 Löhne, Entschädigungen": 1
       }
     },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "31 Strafrechtspflege - Strafvollzug": 1,
+        "721 Wasserbau": 1,
+        "814 Umweltschutz": 1
+      },
+      "by_global_category": {
+        "7.30.20.20 Gewässernutzung": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -29,13 +40,13 @@
         "5.30.10.50 Polizeiliche Zusammenarbeit": 1
       }
     },
-    "Gesetz": {
+    "Anderes": {
       "total": 1,
       "by_topic": {
-        "721 Wasserbau": 1
+        "814 Umweltschutz": 1
       },
       "by_global_category": {
-        "7.30.20.20 Gewässernutzung": 1
+        "1.20.20.60 Verwaltungsgebühren": 1
       }
     }
   },
@@ -68,6 +79,26 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrechtspflege - Strafvollzug",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "Strafrechtspflege - Strafvollzug",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
         }
       ]
     },
@@ -157,12 +188,36 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Soziale Sicherheit",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
+        "Anderes": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Krankenanstalten, Rettungswesen, Umweltschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "814",
+              "title": "Umweltschutz",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "84",
           "title": "Wohnungswesen",
@@ -179,28 +234,31 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Reglement": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 1,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Reglement": 1
+                "Reglement": 1,
+                "Anderes": 1
               },
               "children": [
                 {
@@ -222,6 +280,15 @@
                       }
                     }
                   ]
+                },
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
                 }
               ]
             }
@@ -319,8 +386,8 @@
     }
   ],
   "languages_available": {
-    "de": 9,
-    "fr": 9
+    "de": 12,
+    "fr": 12
   },
   "available_years_for_entity": [
     "1802",
@@ -330,14 +397,19 @@
     "1864",
     "1877",
     "1882",
+    "1887",
     "1891",
     "1900",
     "1907",
     "1912",
+    "1919",
+    "1920",
     "1922",
     "1923",
     "1924",
     "1926",
+    "1929",
+    "1932",
     "1933",
     "1935",
     "1936",
@@ -350,6 +422,7 @@
     "1949",
     "1950",
     "1951",
+    "1953",
     "1954",
     "1955",
     "1957",

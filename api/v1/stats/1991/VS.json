@@ -2,17 +2,18 @@
   "year": "1991",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 12,
-  "categorized": 12,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "18 Kirchen, Staat": 1,
         "21 Vollstreckung des Zivilrechts": 1,
         "27 Zivilrechtspflege": 1,
         "40 Allgemeine Bestimmungen": 1,
+        "50 Katastrophenschutz, Militärwesen": 1,
         "62 Kantonalbank": 1,
         "85 Unterstützung": 1,
         "922 Jagd": 1
@@ -25,25 +26,41 @@
         "7.70.20 Tierschutz": 1
       }
     },
+    "Reglement": {
+      "total": 5,
+      "by_topic": {
+        "21 Vollstreckung des Zivilrechts": 1,
+        "40 Allgemeine Bestimmungen": 1,
+        "413 Mittelschule": 1,
+        "922 Jagd": 1,
+        "93 Gewerbe": 1
+      },
+      "by_global_category": {
+        "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1,
+        "1.20.20.30.30 Kommissionen": 1,
+        "4.20.30 Handelsmittelschulen, Informatikmittelschulen": 1,
+        "7.70.20 Tierschutz": 1
+      }
+    },
     "Anderes": {
-      "total": 4,
+      "total": 3,
       "by_topic": {
         "45 Natur- und Heimatschutz": 1,
         "741 Strassenverkehr": 1,
-        "814 Umweltschutz": 1,
         "85 Unterstützung": 1
       },
       "by_global_category": {
-        "7.70.10 Landschaftsschutz": 1,
-        "1.20.20.60 Verwaltungsgebühren": 1
+        "7.70.10 Landschaftsschutz": 1
       }
     },
-    "Reglement": {
+    "Verordnung": {
       "total": 1,
       "by_topic": {
-        "93 Gewerbe": 1
+        "412 Berufsbildung": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "4.90.20 Löhne, Entschädigungen": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -70,19 +87,21 @@
     {
       "identifier": "2",
       "title": "Privatrecht, Zivilrechtspflege",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Gesetz": 2,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Vollstreckung des Zivilrechts",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Reglement": 1
           }
         },
         {
@@ -99,21 +118,54 @@
     {
       "identifier": "4",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Reglement": 2,
         "Gesetz": 1,
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "40",
           "title": "Allgemeine Bestimmungen",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Reglement": 1,
             "Gesetz": 1
           }
+        },
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "412",
+              "title": "Berufsbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "413",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
         },
         {
           "identifier": "45",
@@ -122,6 +174,26 @@
           "own": 1,
           "by_type": {
             "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "50",
+          "title": "Katastrophenschutz, Militärwesen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
           }
         }
       ]
@@ -180,33 +252,13 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Soziale Sicherheit",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Anderes": 1
       },
       "children": [
-        {
-          "identifier": "81",
-          "title": "Krankenanstalten, Rettungswesen, Umweltschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "814",
-              "title": "Umweltschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "85",
           "title": "Unterstützung",
@@ -222,29 +274,31 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Reglement": 1
+        "Reglement": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "92",
           "title": "Forstwesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Reglement": 1
           },
           "children": [
             {
               "identifier": "922",
               "title": "Jagd",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Gesetz": 1
+                "Gesetz": 1,
+                "Reglement": 1
               }
             }
           ]
@@ -268,7 +322,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Reglement": 1
       },
       "children": [
         {
@@ -277,7 +331,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Reglement": 1
           },
           "children": [
             {
@@ -286,17 +340,28 @@
               "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Reglement": 1
               },
               "children": [
                 {
-                  "identifier": "1.20.20.60",
-                  "title": "Verwaltungsgebühren",
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
                   "total": 1,
-                  "own": 1,
+                  "own": 0,
                   "by_type": {
-                    "Anderes": 1
-                  }
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.30",
+                      "title": "Kommissionen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -307,37 +372,41 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Gesetz": 2,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Reglement": 1
           },
           "children": [
             {
               "identifier": "2.10.40",
               "title": "Sachenrecht",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Gesetz": 1
+                "Gesetz": 1,
+                "Reglement": 1
               },
               "children": [
                 {
                   "identifier": "2.10.40.20",
                   "title": "Erwerb von Grundstücke durch Personen im Ausland",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Gesetz": 1
+                    "Gesetz": 1,
+                    "Reglement": 1
                   }
                 }
               ]
@@ -369,12 +438,54 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
+        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.30",
+              "title": "Handelsmittelschulen, Informatikmittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.20",
+              "title": "Löhne, Entschädigungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
@@ -431,21 +542,23 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Anderes": 1,
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Anderes": 1,
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Reglement": 1
           },
           "children": [
             {
@@ -460,10 +573,11 @@
             {
               "identifier": "7.70.20",
               "title": "Tierschutz",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Gesetz": 1
+                "Gesetz": 1,
+                "Reglement": 1
               }
             }
           ]
@@ -472,8 +586,8 @@
     }
   ],
   "languages_available": {
-    "de": 12,
-    "fr": 12
+    "de": 17,
+    "fr": 17
   },
   "available_years_for_entity": [
     "1802",
@@ -483,14 +597,19 @@
     "1864",
     "1877",
     "1882",
+    "1887",
     "1891",
     "1900",
     "1907",
     "1912",
+    "1919",
+    "1920",
     "1922",
     "1923",
     "1924",
     "1926",
+    "1929",
+    "1932",
     "1933",
     "1935",
     "1936",
@@ -503,6 +622,7 @@
     "1949",
     "1950",
     "1951",
+    "1953",
     "1954",
     "1955",
     "1957",

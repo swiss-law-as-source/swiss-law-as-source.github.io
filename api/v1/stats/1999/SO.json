@@ -2,17 +2,18 @@
   "year": "1999",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 20,
-  "categorized": 20,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
       "total": 7,
       "by_topic": {
-        "811.4 Andere Berufe der Gesundheitspflege": 2,
         "416.3 Berufslehre": 1,
         "512.2 Waffen, Munition, Sprengstoffe": 1,
         "513.6 Glücks- und Geschicklichkeitsspiele": 1,
+        "811.1 Organisation des Sanitätswesens": 1,
+        "811.4 Andere Berufe der Gesundheitspflege": 1,
         "812.5 Umweltgefährdende Stoffe": 1
       },
       "by_global_category": {
@@ -20,6 +21,21 @@
         "5.30.30 Waffen und Munition": 1,
         "9.50.10.60.30 Spielbanken": 1,
         "7.60.90 Schadenbekämpfung": 1
+      }
+    },
+    "Anderes": {
+      "total": 5,
+      "by_topic": {
+        "331 Zuständigkeiten, Verfahren, Kosten": 1,
+        "411.26 Hochschulen, Fachschulen (Interkantonale Vereinbarungen)": 1,
+        "416.3 Berufslehre": 1,
+        "511.1 Organisation": 1,
+        "712.9 Gewässerschutz": 1
+      },
+      "by_global_category": {
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "5.30.10.30 Personal": 1,
+        "7.60.20 Gewässerschutz": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -38,20 +54,6 @@
         "4.140 Anerkennung von Diplomen": 1
       }
     },
-    "Anderes": {
-      "total": 4,
-      "by_topic": {
-        "411.26 Hochschulen, Fachschulen (Interkantonale Vereinbarungen)": 1,
-        "416.3 Berufslehre": 1,
-        "511.1 Organisation": 1,
-        "712.9 Gewässerschutz": 1
-      },
-      "by_global_category": {
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
-        "5.30.10.30 Personal": 1,
-        "7.60.20 Gewässerschutz": 1
-      }
-    },
     "Reglement": {
       "total": 3,
       "by_topic": {
@@ -63,9 +65,10 @@
       }
     },
     "Gesetz": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "122.1 Geschäftsführung": 1
+        "122.1 Geschäftsführung": 1,
+        "811.1 Organisation des Sanitätswesens": 1
       },
       "by_global_category": {}
     }
@@ -108,6 +111,37 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht, Strafprozessordnung, Strafvollzug",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "33",
+          "title": "Strafvollzug",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "331",
+              "title": "Zuständigkeiten, Verfahren, Kosten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -366,33 +400,46 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Verordnung": 3,
+        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 4,
+          "total": 5,
           "own": 0,
           "by_type": {
             "Verordnung": 3,
+            "Gesetz": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "811",
               "title": "Sanitätswesen",
-              "total": 3,
+              "total": 4,
               "own": 0,
               "by_type": {
                 "Verordnung": 2,
+                "Gesetz": 1,
                 "Interkantonale Vereinbarung": 1
               },
               "children": [
+                {
+                  "identifier": "811.1",
+                  "title": "Organisation des Sanitätswesens",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                },
                 {
                   "identifier": "811.3",
                   "title": "Anerkennung von Ausbildungsabschlüssen",
@@ -405,10 +452,10 @@
                 {
                   "identifier": "811.4",
                   "title": "Andere Berufe der Gesundheitspflege",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Verordnung": 2
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -704,7 +751,7 @@
     }
   ],
   "languages_available": {
-    "de": 20
+    "de": 22
   },
   "available_years_for_entity": [
     "1780",

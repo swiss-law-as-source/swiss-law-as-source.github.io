@@ -2,17 +2,19 @@
   "year": "1989",
   "year_semantics": "enactment",
   "entity": "JU",
-  "total": 10,
-  "categorized": 10,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 7,
+      "total": 10,
       "by_topic": {
-        "641 Impôts directs de l'Etat et des communes": 3,
+        "641 Impôts directs de l'Etat et des communes": 4,
         "173 Membres des autorités, fonctionnaires et employés": 1,
         "213 Droit de la famille": 1,
+        "648 Exécution des droits et impôts fédéraux": 1,
         "823 Marché du travail": 1,
+        "836 Allocations familiales": 1,
         "921 Forêts": 1
       },
       "by_global_category": {
@@ -20,6 +22,7 @@
         "1.40.10 Römisch-Katholische Kirche": 1,
         "6.20.100 Steuerbefreiung und -erleichterungen": 1,
         "8.30.50 BVG": 1,
+        "6.20.60 Verrechnungssteuer": 1,
         "8.30.110 Arbeitslosenversicherung": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1
       }
@@ -34,6 +37,15 @@
         "8.10.130.50 Tierkörperentsorgung": 1
       }
     },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "173 Membres des autorités, fonctionnaires et employés": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.10 Entschädigungen": 1
+      }
+    },
     "Reglement": {
       "total": 1,
       "by_topic": {
@@ -42,15 +54,32 @@
       "by_global_category": {
         "1.10.60 Bürgerrecht": 1
       }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "222 Contrats": 1
+      },
+      "by_global_category": {}
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "836 Allocations familiales": 1
+      },
+      "by_global_category": {
+        "8.30.100.20 Arbeitnehmer und Selbständige": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "État, peuple, autorités",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Ordonnance parlementaire (décret)": 1,
         "Autre": 1,
         "Règlement": 1
       },
@@ -58,9 +87,10 @@
         {
           "identifier": "17",
           "title": "Autorités",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Ordonnance parlementaire (décret)": 1,
             "Autre": 1,
             "Règlement": 1
           },
@@ -68,9 +98,10 @@
             {
               "identifier": "173",
               "title": "Membres des autorités, fonctionnaires et employés",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Ordonnance parlementaire (décret)": 1,
                 "Autre": 1
               }
             },
@@ -90,10 +121,10 @@
     {
       "identifier": "2",
       "title": "Droit privé, procédure civile, exécution",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 2
       },
       "children": [
         {
@@ -115,34 +146,63 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "22",
+          "title": "Dispositions complémentaires et d'exécution du Code des obligations",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "222",
+              "title": "Contrats",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "6",
       "title": "Finances, régales",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Ordonnance": 3
+        "Ordonnance": 5
       },
       "children": [
         {
           "identifier": "64",
           "title": "Impôts et droits",
-          "total": 3,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Ordonnance": 3
+            "Ordonnance": 5
           },
           "children": [
             {
               "identifier": "641",
               "title": "Impôts directs de l'Etat et des communes",
-              "total": 3,
-              "own": 3,
+              "total": 4,
+              "own": 4,
               "by_type": {
-                "Ordonnance": 3
+                "Ordonnance": 4
+              }
+            },
+            {
+              "identifier": "648",
+              "title": "Exécution des droits et impôts fédéraux",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
               }
             }
           ]
@@ -152,11 +212,13 @@
     {
       "identifier": "8",
       "title": "Santé, travail, sécurité sociale",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Accord intercantonal": 1,
-        "Autre": 1
+        "Autre": 1,
+        "Loi": 1,
+        "Ordonnance": 1
       },
       "children": [
         {
@@ -195,6 +257,28 @@
               "own": 1,
               "by_type": {
                 "Autre": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Assurances sociales",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Loi": 1,
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "836",
+              "title": "Allocations familiales",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Loi": 1,
+                "Ordonnance": 1
               }
             }
           ]
@@ -269,11 +353,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Autre": 2,
-        "Règlement": 1
+        "Règlement": 1,
+        "Ordonnance parlementaire (décret)": 1
       },
       "children": [
         {
@@ -299,21 +384,43 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Ordonnance parlementaire (décret)": 1,
             "Autre": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Ordonnance parlementaire (décret)": 1,
                 "Autre": 1
               },
               "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Ordonnance parlementaire (décret)": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.10",
+                      "title": "Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Ordonnance parlementaire (décret)": 1
+                      }
+                    }
+                  ]
+                },
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
@@ -363,11 +470,11 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Autre": 1,
-        "Ordonnance": 1
+        "Ordonnance": 2,
+        "Autre": 1
       },
       "children": [
         {
@@ -393,12 +500,21 @@
         {
           "identifier": "6.20",
           "title": "Steuern",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Ordonnance": 1
+            "Ordonnance": 2
           },
           "children": [
+            {
+              "identifier": "6.20.60",
+              "title": "Verrechnungssteuer",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
+              }
+            },
             {
               "identifier": "6.20.100",
               "title": "Steuerbefreiung und -erleichterungen",
@@ -415,11 +531,12 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Accord intercantonal": 1,
         "Ordonnance": 1,
+        "Loi": 1,
         "Autre": 1
       },
       "children": [
@@ -457,10 +574,11 @@
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Ordonnance": 1,
+            "Loi": 1,
             "Autre": 1
           },
           "children": [
@@ -472,6 +590,26 @@
               "by_type": {
                 "Ordonnance": 1
               }
+            },
+            {
+              "identifier": "8.30.100",
+              "title": "Familienzulagen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.100.20",
+                  "title": "Arbeitnehmer und Selbständige",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
             },
             {
               "identifier": "8.30.110",
@@ -488,7 +626,7 @@
     }
   ],
   "languages_available": {
-    "fr": 10
+    "fr": 16
   },
   "available_years_for_entity": [
     "1828",

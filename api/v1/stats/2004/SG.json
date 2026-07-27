@@ -2,27 +2,37 @@
   "year": "2004",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 31,
-  "categorized": 31,
+  "total": 40,
+  "categorized": 40,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 13,
+      "total": 23,
       "by_topic": {
-        "331 Krankenversicherung": 5,
+        "331 Krankenversicherung": 10,
         "143 Staatspersonal": 2,
+        "141 Allgemein": 1,
         "142 Datenschutz und Informatik": 1,
         "151 Allgemein": 1,
+        "213 Volksschulen": 1,
         "236 Berufsberatung": 1,
+        "315 Lebensmittelpolizei": 1,
+        "351 Allgemein": 1,
         "381 Öffentliche Fürsorge": 1,
         "451 Polizei": 1,
+        "453 Niederlassung": 1,
         "552 Handel": 1
       },
       "by_global_category": {
-        "8.30.60.10.10 TARMED": 2,
+        "8.30.60.10.10 TARMED": 4,
+        "8.10.60 Spitalexterne Krankenpflege": 2,
+        "1.20.20.10.10 Delegation": 1,
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
         "4.30.30 Berufsorientierung": 1,
+        "8.10.130.10.10 Lebensmittelaufsicht": 1,
         "8.30.60.10.20 Vereinbarungen": 1,
+        "8.30.40 Ergänzungsleistungen": 1,
         "8.70.30.10 Alters- und Pflegeheime": 1,
         "9.50.10.10 Berufsausübungsbewilligungen": 1,
         "8.20.10.30 Sonn- und Feiertage": 1
@@ -74,14 +84,12 @@
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 1,
       "by_topic": {
-        "230 Allgemein": 1,
-        "513 Normalarbeitsverträge": 1
+        "230 Allgemein": 1
       },
       "by_global_category": {
-        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
-        "2.20.10.40.20.30 Landwirtschaft": 1
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
       }
     }
   },
@@ -89,10 +97,10 @@
     {
       "identifier": "1",
       "title": "Grundlagen und Organisation von Kanton und Gemeinden",
-      "total": 8,
+      "total": 9,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
+        "Verordnung": 4,
         "Gesetz": 2,
         "Verordnung des Parlaments (Dekret)": 2,
         "Anderes": 1
@@ -121,12 +129,21 @@
         {
           "identifier": "14",
           "title": "Staatsverwaltung",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 3
+            "Verordnung": 4
           },
           "children": [
+            {
+              "identifier": "141",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "142",
               "title": "Datenschutz und Informatik",
@@ -194,22 +211,31 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 8,
+      "total": 9,
       "own": 0,
       "by_type": {
-        "Anderes": 6,
+        "Anderes": 7,
         "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
           "identifier": "21",
           "title": "Schulen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
+            {
+              "identifier": "213",
+              "title": "Volksschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "217",
               "title": "Universität",
@@ -286,29 +312,69 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 6,
+      "total": 13,
       "own": 0,
       "by_type": {
-        "Anderes": 5,
-        "Verordnung": 1
+        "Anderes": 11,
+        "Verordnung": 2
       },
       "children": [
         {
-          "identifier": "33",
-          "title": "Krankenversicherung",
-          "total": 5,
+          "identifier": "31",
+          "title": "Gesundheitspflege",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 5
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "315",
+              "title": "Lebensmittelpolizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "33",
+          "title": "Krankenversicherung",
+          "total": 10,
+          "own": 0,
+          "by_type": {
+            "Anderes": 10
           },
           "children": [
             {
               "identifier": "331",
               "title": "Krankenversicherung",
-              "total": 5,
-              "own": 5,
+              "total": 10,
+              "own": 10,
               "by_type": {
-                "Anderes": 5
+                "Anderes": 10
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "35",
+          "title": "Alters-, Hinterlassenen- und Invalidenversicherung sowie -hilfe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "351",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -338,12 +404,12 @@
     {
       "identifier": "4",
       "title": "Landesverteidigung, öffentliche Sicherheit und Ordnung",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Gesetz": 1,
-        "Interkantonale Vereinbarung": 1,
-        "Verordnung": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -371,15 +437,24 @@
         {
           "identifier": "45",
           "title": "Öffentliche Sicherheit und Ordnung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "451",
               "title": "Polizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "453",
+              "title": "Niederlassung",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -393,34 +468,13 @@
     {
       "identifier": "5",
       "title": "Arbeit und Gewerbe",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
         "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
-        {
-          "identifier": "51",
-          "title": "Arbeitsrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "513",
-              "title": "Normalarbeitsverträge",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "55",
           "title": "Gewerbepolizei",
@@ -532,32 +586,52 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Verordnung des Parlaments (Dekret)": 2,
-        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               },
               "children": [
+                {
+                  "identifier": "1.20.20.10",
+                  "title": "Organisation",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.10.10",
+                      "title": "Delegation",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                },
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
@@ -625,76 +699,12 @@
       ]
     },
     {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "2.20",
-          "title": "Einführungsgesetzgebung OR",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "2.20.10",
-              "title": "Vertragsverhältnisse",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.20.10.40",
-                  "title": "Arbeitsvertragsrecht",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Anderes": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "2.20.10.40.20",
-                      "title": "Normalarbeitsverträge",
-                      "total": 1,
-                      "own": 0,
-                      "by_type": {
-                        "Anderes": 1
-                      },
-                      "children": [
-                        {
-                          "identifier": "2.20.10.40.20.30",
-                          "title": "Landwirtschaft",
-                          "total": 1,
-                          "own": 1,
-                          "by_type": {
-                            "Anderes": 1
-                          }
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 7,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Anderes": 5,
+        "Anderes": 6,
         "Interkantonale Vereinbarung": 2
       },
       "children": [
@@ -771,15 +781,24 @@
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "4.120.60",
               "title": "Schulbauten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "4.120.90",
+              "title": "Gesundheitspflege, schulpsychologische Dienste",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -937,14 +956,65 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 6,
+      "total": 12,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
-        "Verordnung": 2,
+        "Anderes": 8,
+        "Verordnung": 3,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 3
+          },
+          "children": [
+            {
+              "identifier": "8.10.60",
+              "title": "Spitalexterne Krankenpflege",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.10",
+                  "title": "Lebensmittel und Gebrauchsgegenstände",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "8.10.130.10.10",
+                      "title": "Lebensmittelaufsicht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "8.20",
           "title": "Arbeitsrecht",
@@ -982,37 +1052,47 @@
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 3,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Anderes": 3
+            "Anderes": 5,
+            "Verordnung": 1
           },
           "children": [
             {
+              "identifier": "8.30.40",
+              "title": "Ergänzungsleistungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
               "identifier": "8.30.60",
               "title": "KVG",
-              "total": 3,
+              "total": 5,
               "own": 0,
               "by_type": {
-                "Anderes": 3
+                "Anderes": 5
               },
               "children": [
                 {
                   "identifier": "8.30.60.10",
                   "title": "Tarife",
-                  "total": 3,
+                  "total": 5,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 3
+                    "Anderes": 5
                   },
                   "children": [
                     {
                       "identifier": "8.30.60.10.10",
                       "title": "TARMED",
-                      "total": 2,
-                      "own": 2,
+                      "total": 4,
+                      "own": 4,
                       "by_type": {
-                        "Anderes": 2
+                        "Anderes": 4
                       }
                     },
                     {
@@ -1107,7 +1187,7 @@
     }
   ],
   "languages_available": {
-    "de": 31
+    "de": 40
   },
   "available_years_for_entity": [
     "1845",
@@ -1121,6 +1201,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",

@@ -2,20 +2,24 @@
   "year": "1969",
   "year_semantics": "enactment",
   "entity": "GE",
-  "total": 8,
-  "categorized": 8,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
-        "M 2 Agriculture et viticulture": 2,
         "I 1 Commerce, industrie et tourisme": 1,
-        "I 2 Professions et métiers divers": 1
+        "I 2 Professions et métiers divers": 1,
+        "J 3 Assurances contre la maladie et les accidents": 1,
+        "M 2 Agriculture et viticulture": 1,
+        "M 3 Animaux": 1
       },
       "by_global_category": {
-        "7.60.70 Gifte, Chemikalien": 2,
-        "9.60.10 Ladenöffnungszeiten": 1
+        "9.60.10 Ladenöffnungszeiten": 1,
+        "4.120.120 Schulversicherung": 1,
+        "7.60.70 Gifte, Chemikalien": 1,
+        "9.20.120 Tierseuchen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -79,6 +83,15 @@
       }
     },
     {
+      "identifier": "J",
+      "title": "Législation sociale",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Règlement": 1
+      }
+    },
+    {
       "identifier": "M",
       "title": "Agriculture, forêts, chasse et pêche",
       "total": 2,
@@ -112,10 +125,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Accord intercantonal": 1
+        "Accord intercantonal": 1,
+        "Règlement": 1
       },
       "children": [
         {
@@ -137,34 +151,54 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.120",
+              "title": "Schulversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 2
+        "Règlement": 1
       },
       "children": [
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Règlement": 2
+            "Règlement": 1
           },
           "children": [
             {
               "identifier": "7.60.70",
               "title": "Gifte, Chemikalien",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Règlement": 2
+                "Règlement": 1
               }
             }
           ]
@@ -205,12 +239,32 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 2
       },
       "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.120",
+              "title": "Tierseuchen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "9.60",
           "title": "Handel",
@@ -235,15 +289,18 @@
     }
   ],
   "languages_available": {
-    "fr": 8
+    "fr": 9
   },
   "available_years_for_entity": [
     "1564",
     "1726",
     "1749",
+    "1803",
     "1815",
     "1816",
     "1817",
+    "1825",
+    "1834",
     "1841",
     "1847",
     "1849",
@@ -255,6 +312,7 @@
     "1876",
     "1878",
     "1881",
+    "1886",
     "1887",
     "1889",
     "1892",
@@ -267,7 +325,9 @@
     "1907",
     "1908",
     "1909",
+    "1912",
     "1918",
+    "1919",
     "1923",
     "1925",
     "1927",

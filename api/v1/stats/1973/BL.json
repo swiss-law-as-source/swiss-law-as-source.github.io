@@ -2,17 +2,20 @@
   "year": "1973",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 6,
-  "categorized": 6,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "11 Bürgerrechte": 1,
         "24 Strafrecht": 1,
         "41 Enteignung": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "1.10.70.10.10 Einwohnerkontrolle": 1
+      }
     },
     "Interkantonale Vereinbarung": {
       "total": 2,
@@ -26,9 +29,10 @@
       }
     },
     "Gesetz": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "833 Ergänzungsleistungen": 1
+        "833 Ergänzungsleistungen": 1,
+        "90 Gesundheitspflege": 1
       },
       "by_global_category": {
         "8.30.40 Ergänzungsleistungen": 1
@@ -45,6 +49,26 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "11",
+          "title": "Bürgerrechte",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Rechtspflege, Vollzugserlasse zu ZGB, OR",
@@ -149,12 +173,22 @@
     {
       "identifier": "9",
       "title": "Gesundheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "90",
+          "title": "Gesundheitspflege",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
         {
           "identifier": "95",
           "title": "Heil- und Betäubungsmittel, Chemikalien",
@@ -168,6 +202,59 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.10",
+                  "title": "Niederlassung und Aufenthalt Schweizer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.10.10",
+                      "title": "Einwohnerkontrolle",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
@@ -284,7 +371,7 @@
     }
   ],
   "languages_available": {
-    "de": 6
+    "de": 8
   },
   "available_years_for_entity": [
     "1815",
@@ -292,6 +379,7 @@
     "1829",
     "1834",
     "1836",
+    "1851",
     "1870",
     "1876",
     "1881",
@@ -306,9 +394,11 @@
     "1921",
     "1925",
     "1931",
+    "1934",
     "1936",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1945",
     "1947",
@@ -317,6 +407,7 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",

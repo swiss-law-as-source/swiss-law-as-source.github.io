@@ -10,18 +10,18 @@
       "total": 7,
       "by_topic": {
         "521 Allgemeine Bestimmungen": 3,
+        "123 Ausweisschriften": 1,
         "233 Rechtskosten": 1,
         "811 Allgemeine Bestimmungen, medizinische und andere Berufe im Gesundheitswesen": 1,
-        "831 Allgemeine Bestimmungen": 1,
-        "920 Allgemeines": 1
+        "831 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
+        "1.10.80 Ausweise": 1,
         "1.20.20.60 Verwaltungsgebühren": 1,
         "1.20.50 Datenschutz": 1,
         "5.30.10.40 Gebühren": 1,
         "8.30.60.40 Einschränkung der Zulassung von Leistungserbringern": 1,
-        "8.30.20 ATSG": 1,
-        "7.70.10 Landschaftsschutz": 1
+        "8.30.20 ATSG": 1
       }
     },
     "Gesetz": {
@@ -50,12 +50,33 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden und Gemeinden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung und Aufenthalt",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "123",
+              "title": "Ausweisschriften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "14",
           "title": "Behörden",
@@ -245,19 +266,22 @@
           ]
         }
       ]
-    },
+    }
+  ],
+  "by_global_category_tree": [
     {
-      "identifier": "9",
-      "title": "Volkswirtschaft",
-      "total": 1,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 3,
+        "Gesetz": 2
       },
       "children": [
         {
-          "identifier": "92",
-          "title": "Landwirtschaft",
+          "identifier": "1.10",
+          "title": "Grundlagen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -265,8 +289,8 @@
           },
           "children": [
             {
-              "identifier": "920",
-              "title": "Allgemeines",
+              "identifier": "1.10.80",
+              "title": "Ausweise",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -274,21 +298,7 @@
               }
             }
           ]
-        }
-      ]
-    }
-  ],
-  "by_global_category_tree": [
-    {
-      "identifier": "1",
-      "title": "Staat",
-      "total": 4,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 2,
-        "Gesetz": 2
-      },
-      "children": [
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -399,37 +409,6 @@
                   }
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "7.70.10",
-              "title": "Landschaftsschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
             }
           ]
         }
@@ -562,6 +541,7 @@
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

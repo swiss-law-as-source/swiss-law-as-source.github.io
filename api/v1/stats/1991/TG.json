@@ -2,36 +2,53 @@
   "year": "1991",
   "year_semantics": "enactment",
   "entity": "TG",
-  "total": 10,
-  "categorized": 10,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 7,
+      "total": 10,
       "by_topic": {
+        "176 Anwaltswesen": 2,
         "170 Allgemein": 1,
-        "176 Anwaltswesen": 1,
+        "187.2 Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung": 1,
         "211.1 Personenrecht": 1,
         "211.2 Familienrecht": 1,
         "211.43 Grundbuch": 1,
         "221.4 Handelsregister": 1,
+        "411.6 Staatsbeiträge": 1,
         "913 Flurwesen. Bodenverbesserung. Landwirtschaftliche Betriebsbauten": 1
       },
       "by_global_category": {
         "1.10.100.10 Gesetzessammlungen": 1,
         "1.50.10.20 Honorare": 1,
+        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
         "2.10.20.10 Vormundschaft": 1,
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
         "2.20.20.10 Handelsregister": 1,
+        "4.80.30 Kunst- und Sportschulen": 1,
         "9.20.50 Meliorationen": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "176 Anwaltswesen": 1,
         "34 Strafvollzug": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "1.50.10.20 Honorare": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "141 Bürgerrecht": 1
+      },
+      "by_global_category": {
+        "1.10.60 Bürgerrecht": 1
+      }
     },
     "Reglement": {
       "total": 1,
@@ -47,21 +64,42 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 3,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 5,
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "17",
-          "title": "Staatliche Gewalten. Behörden",
-          "total": 2,
+          "identifier": "14",
+          "title": "Bürgerrecht. Niederlassung. Aufenthalt",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Anderes": 1
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "141",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "17",
+          "title": "Staatliche Gewalten. Behörden",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Anderes": 3,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -76,10 +114,10 @@
             {
               "identifier": "176",
               "title": "Anwaltswesen",
-              "total": 1,
-              "own": 1,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 3
               }
             }
           ]
@@ -87,12 +125,32 @@
         {
           "identifier": "18",
           "title": "Staat und Kirche",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
+            {
+              "identifier": "187",
+              "title": "Evangelische Landeskirche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "187.2",
+                  "title": "Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "188",
               "title": "Katholische Landeskirche",
@@ -218,6 +276,48 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schule",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Volksschule. Kindergarten",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "411.6",
+                  "title": "Staatsbeiträge",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Volkswirtschaft",
       "total": 1,
@@ -253,22 +353,33 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 5,
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "1.10.100",
               "title": "Amtliche Veröffentlichungen",
@@ -292,8 +403,8 @@
           ]
         },
         {
-          "identifier": "1.40",
-          "title": "Kirche und Staat",
+          "identifier": "1.20",
+          "title": "Behörden",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -301,8 +412,59 @@
           },
           "children": [
             {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.30",
+                      "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
               "identifier": "1.40.10",
               "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -314,28 +476,28 @@
         {
           "identifier": "1.50",
           "title": "Juristische Berufe",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "1.50.10",
               "title": "Anwälte",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 2
               },
               "children": [
                 {
                   "identifier": "1.50.10.20",
                   "title": "Honorare",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 2
                   }
                 }
               ]
@@ -438,6 +600,37 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.80.30",
+              "title": "Kunst- und Sportschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 1,
@@ -470,7 +663,7 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 15
   },
   "available_years_for_entity": [
     "1803",
@@ -500,8 +693,10 @@
     "1935",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1946",
+    "1947",
     "1948",
     "1955",
     "1958",

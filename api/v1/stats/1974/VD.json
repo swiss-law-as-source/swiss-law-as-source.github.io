@@ -2,8 +2,8 @@
   "year": "1974",
   "year_semantics": "enactment",
   "entity": "VD",
-  "total": 8,
-  "categorized": 8,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
@@ -31,11 +31,13 @@
       }
     },
     "Reglement": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "812.000 Substances thérapeutiques en général": 1,
         "814.300 Protection des eaux": 1
       },
       "by_global_category": {
+        "8.10.30.100 Tierärzte": 1,
         "7.60.20 Gewässerschutz": 1
       }
     },
@@ -167,10 +169,10 @@
     {
       "identifier": "8",
       "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Règlement": 1,
+        "Règlement": 2,
         "Autre": 1,
         "Loi": 1,
         "Ordonnance parlementaire (décret)": 1
@@ -179,15 +181,35 @@
         {
           "identifier": "80",
           "title": "SANTÉ",
-          "total": 4,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Règlement": 1,
+            "Règlement": 2,
             "Autre": 1,
             "Loi": 1,
             "Ordonnance parlementaire (décret)": 1
           },
           "children": [
+            {
+              "identifier": "812",
+              "title": "Substances thérapeutiques",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "812.000",
+                  "title": "Substances thérapeutiques en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "814",
               "title": "Protection de l'équilibre écologique",
@@ -310,10 +332,52 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.100",
+                  "title": "Tierärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "fr": 8
+    "fr": 9
   },
   "available_years_for_entity": [
     "1803",
@@ -359,6 +423,7 @@
     "1942",
     "1943",
     "1944",
+    "1945",
     "1946",
     "1947",
     "1948",

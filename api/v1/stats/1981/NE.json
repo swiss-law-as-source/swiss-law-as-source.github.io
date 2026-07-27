@@ -2,16 +2,18 @@
   "year": "1981",
   "year_semantics": "enactment",
   "entity": "NE",
-  "total": 18,
-  "categorized": 18,
+  "total": 21,
+  "categorized": 21,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 11,
+      "total": 13,
       "by_topic": {
         "152.51 Statut de la fonction publique": 5,
         "415.5 Maîtres de l'enseignement professionnel": 3,
+        "152.109 Commission cantonale de l'informatique": 1,
         "152.55 Caisse de pensions": 1,
+        "162.6 Statut des magistrats et fonctionnaires judiciaires": 1,
         "414.6 Dispositions financières": 1,
         "416.4 Statut du corps enseignant et du personnel administratif": 1
       },
@@ -20,32 +22,42 @@
         "4.60 Tertiärstufe: Höhere Fachschulen": 1,
         "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
         "4.90.40 Personalvorsorge, Pensionskassen": 1,
+        "1.20.70.20 Gerichtspersonal": 1,
         "4.90.20 Löhne, Entschädigungen": 1,
         "4.90.50 Universitätspersonal": 1
       }
     },
     "Reglement": {
-      "total": 4,
+      "total": 3,
       "by_topic": {
         "152.51 Statut de la fonction publique": 1,
-        "442.4 Bibliothèques": 1,
-        "802.55 Centre de consultation en matière de grossesse": 1,
-        "811.3 Travail à domicile": 1
+        "161 Organisation judiciaire": 1,
+        "410.81 Orientation scolaire et professionnelle": 1
       },
       "by_global_category": {
-        "4.170.30 Bibliotheken": 1,
-        "8.70.80 Schwangerschaftsberatung": 1,
-        "8.20.40 Heimarbeit": 1
+        "4.30.30 Berufsorientierung": 1
       }
     },
     "Verordnung": {
       "total": 3,
       "by_topic": {
-        "152.51 Statut de la fonction publique": 1,
-        "821.2 Assurance-accidents": 1
+        "503 Installations et tirs": 1,
+        "731.22 Utilisation des eaux": 1
       },
       "by_global_category": {
-        "8.30.70 UVG": 1
+        "5.30.50 Schiesstände": 1,
+        "7.30.20.20 Gewässernutzung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "213.3 Tutelle": 1,
+        "410.81 Orientation scolaire et professionnelle": 1
+      },
+      "by_global_category": {
+        "2.10.20.10 Vormundschaft": 1,
+        "4.30.30 Berufsorientierung": 1
       }
     }
   },
@@ -53,11 +65,11 @@
     {
       "identifier": "1",
       "title": "État – Peuple – Autorités",
-      "total": 8,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Autre": 7,
-        "Règlement": 1
+        "Autre": 8,
+        "Règlement": 2
       },
       "children": [
         {
@@ -83,16 +95,66 @@
                 {
                   "identifier": "152.51",
                   "title": "Statut de la fonction publique",
-                  "total": 7,
-                  "own": 7,
+                  "total": 6,
+                  "own": 6,
                   "by_type": {
-                    "Autre": 6,
+                    "Autre": 5,
                     "Règlement": 1
                   }
                 },
                 {
                   "identifier": "152.55",
                   "title": "Caisse de pensions",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                },
+                {
+                  "identifier": "152.109",
+                  "title": "Commission cantonale de l'informatique",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "16",
+          "title": "Organisation judiciaire – Avocats et notaires",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1,
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "161",
+              "title": "Organisation judiciaire",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            },
+            {
+              "identifier": "162",
+              "title": "Autorités judiciaires",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "162.6",
+                  "title": "Statut des magistrats et fonctionnaires judiciaires",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -106,24 +168,103 @@
       ]
     },
     {
+      "identifier": "2",
+      "title": "Droit privé – Procédure civile – Exécution",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Dispositions complémentaires et d'exécution du code civil",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "213",
+              "title": "Droit de la famille",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "213.3",
+                  "title": "Tutelle",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "4",
       "title": "Enseignement – Science – Culture – Environnement",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Autre": 5,
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Enseignement",
-          "total": 5,
+          "total": 7,
           "own": 0,
           "by_type": {
-            "Autre": 5
+            "Autre": 5,
+            "Règlement": 1,
+            "Loi": 1
           },
           "children": [
+            {
+              "identifier": "410",
+              "title": "Scolarité obligatoire",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1,
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "410.8",
+                  "title": "Aide à la jeunesse",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Règlement": 1,
+                    "Loi": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "410.81",
+                      "title": "Orientation scolaire et professionnelle",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Règlement": 1,
+                        "Loi": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "414",
               "title": "Formation professionnelle",
@@ -185,126 +326,21 @@
               ]
             }
           ]
-        },
-        {
-          "identifier": "44",
-          "title": "Science",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Règlement": 1
-          },
-          "children": [
-            {
-              "identifier": "442",
-              "title": "Documentation",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Règlement": 1
-              },
-              "children": [
-                {
-                  "identifier": "442.4",
-                  "title": "Bibliothèques",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Règlement": 1
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     },
     {
-      "identifier": "8",
-      "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
-      "total": 3,
+      "identifier": "5",
+      "title": "Défense générale – Police",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 2,
         "Autre": 1
       },
       "children": [
         {
-          "identifier": "80",
-          "title": "Santé",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Règlement": 1
-          },
-          "children": [
-            {
-              "identifier": "802",
-              "title": "Établissements hospitaliers – Institutions parahospitalières",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Règlement": 1
-              },
-              "children": [
-                {
-                  "identifier": "802.5",
-                  "title": "Institutions parahospitalières",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Règlement": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "802.55",
-                      "title": "Centre de consultation en matière de grossesse",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Règlement": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "81",
-          "title": "Travail",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Règlement": 1
-          },
-          "children": [
-            {
-              "identifier": "811",
-              "title": "Protection des travailleurs",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Règlement": 1
-              },
-              "children": [
-                {
-                  "identifier": "811.3",
-                  "title": "Travail à domicile",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Règlement": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "82",
-          "title": "Assurances sociales",
+          "identifier": "50",
+          "title": "Défense militaire",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -312,8 +348,39 @@
           },
           "children": [
             {
-              "identifier": "821",
-              "title": "Assurance-maladie et accidents",
+              "identifier": "503",
+              "title": "Installations et tirs",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Travaux publics – Énergie – Transports et communications",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "73",
+          "title": "Travaux publics",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "731",
+              "title": "Eaux",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -321,13 +388,24 @@
               },
               "children": [
                 {
-                  "identifier": "821.2",
-                  "title": "Assurance-accidents",
+                  "identifier": "731.2",
+                  "title": "Economie hydraulique",
                   "total": 1,
-                  "own": 1,
+                  "own": 0,
                   "by_type": {
                     "Autre": 1
-                  }
+                  },
+                  "children": [
+                    {
+                      "identifier": "731.22",
+                      "title": "Utilisation des eaux",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Autre": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -340,19 +418,19 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Autre": 2
           },
           "children": [
             {
@@ -385,6 +463,68 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.20",
+                  "title": "Gerichtspersonal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.20",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.20.10",
+                  "title": "Vormundschaft",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -393,13 +533,36 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 8,
+      "total": 9,
       "own": 0,
       "by_type": {
         "Autre": 7,
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       },
       "children": [
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1,
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.30",
+              "title": "Berufsorientierung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Règlement": 1,
+                "Loi": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.60",
           "title": "Tertiärstufe: Höhere Fachschulen",
@@ -455,62 +618,21 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "4.170",
-          "title": "Dokumentation",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Règlement": 1
-          },
-          "children": [
-            {
-              "identifier": "4.170.30",
-              "title": "Bibliotheken",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Règlement": 1
-              }
-            }
-          ]
         }
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 2,
         "Autre": 1
       },
       "children": [
         {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Règlement": 1
-          },
-          "children": [
-            {
-              "identifier": "8.20.40",
-              "title": "Heimarbeit",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Règlement": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -518,8 +640,8 @@
           },
           "children": [
             {
-              "identifier": "8.30.70",
-              "title": "UVG",
+              "identifier": "5.30.50",
+              "title": "Schiesstände",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -527,24 +649,46 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
         {
-          "identifier": "8.70",
-          "title": "Fürsorge",
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Autre": 1
           },
           "children": [
             {
-              "identifier": "8.70.80",
-              "title": "Schwangerschaftsberatung",
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Règlement": 1
-              }
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.20.20",
+                  "title": "Gewässernutzung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -552,17 +696,18 @@
     }
   ],
   "languages_available": {
-    "fr": 18
+    "fr": 21
   },
   "available_years_for_entity": [
     "1832",
+    "1849",
     "1857",
-    "1858",
     "1864",
     "1866",
     "1871",
     "1873",
     "1874",
+    "1879",
     "1885",
     "1887",
     "1888",
@@ -581,19 +726,19 @@
     "1912",
     "1913",
     "1914",
-    "1916",
     "1919",
     "1920",
     "1923",
     "1924",
     "1925",
+    "1926",
     "1927",
-    "1928",
     "1930",
     "1931",
     "1933",
     "1934",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1941",
@@ -608,6 +753,7 @@
     "1953",
     "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",

@@ -2,40 +2,50 @@
   "year": "1998",
   "year_semantics": "enactment",
   "entity": "VD",
-  "total": 15,
-  "categorized": 15,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 6,
+      "total": 10,
       "by_topic": {
         "910.100 Mesures d'encouragement": 3,
+        "725.000 Routes et voies de communications en général": 2,
+        "414.100 Université en général": 1,
         "721.300 Approvisionnement en eau": 1,
+        "810.000 Établissements sanitaires en général": 1,
         "916.300 Production animale en général": 1,
         "923.000 Pêche en général": 1
       },
       "by_global_category": {
         "9.20.10 Förderungsmassnahmen": 2,
+        "4.90.50 Universitätspersonal": 1,
         "8.10.130.20 Wasserversorgung": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
         "6.30.60.20 Reviere": 1
       }
     },
     "Anderes": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
-        "172.210 Départements et services": 1,
+        "172.210 Départements et services": 2,
+        "170.300 Médiation": 1,
+        "173.300 Tribunal cantonal, Cours cantonales": 1,
         "211.500 Acquisition d'immeubles par des personnes à l'Étranger": 1,
         "812.000 Substances thérapeutiques en général": 1
       },
       "by_global_category": {
-        "1.20.20.30.10 Departemente": 1,
+        "1.20.20.30.10 Departemente": 2,
+        "1.20.30 Ombudsperson": 1,
+        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
         "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1,
         "8.10.70 Heil- und Betäubungsmittel": 1
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
+        "171 Parlement": 1,
         "658 Exécution des droits et impôts fédéraux": 1,
         "935.200 Professions soumises à autorisation": 1,
         "935.500 Jeux de hasard et maisons de jeux, loteries": 1
@@ -61,24 +71,26 @@
     {
       "identifier": "1",
       "title": "ÉTAT - PEUPLE - AUTORITÉS",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 4,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "17",
           "title": "AUTORITÉS",
-          "total": 1,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Autre": 4,
+            "Loi": 1
           },
           "children": [
             {
-              "identifier": "172.2",
-              "title": "Administration",
+              "identifier": "170",
+              "title": "Autorités en général",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -86,8 +98,57 @@
               },
               "children": [
                 {
+                  "identifier": "170.300",
+                  "title": "Médiation",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "171",
+              "title": "Parlement",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            },
+            {
+              "identifier": "172.2",
+              "title": "Administration",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Autre": 2
+              },
+              "children": [
+                {
                   "identifier": "172.210",
                   "title": "Départements et services",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Autre": 2
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "173",
+              "title": "Tribunaux",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "173.300",
+                  "title": "Tribunal cantonal, Cours cantonales",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -143,6 +204,48 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "ECOLE - SCIENCE - CULTURE",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "40",
+          "title": "ÉDUCATION , FORMATION",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "414",
+              "title": "Université",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.100",
+                  "title": "Université en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "FINANCES",
       "total": 1,
@@ -176,19 +279,19 @@
     {
       "identifier": "7",
       "title": "TRAVAUX PUBLICS - ÉNERGIE - TRANSPORTS - COMMUNICATIONS",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 3
       },
       "children": [
         {
           "identifier": "72",
           "title": "DOMAINE PUBLIC",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 3
           },
           "children": [
             {
@@ -210,6 +313,26 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "725",
+              "title": "Routes et voies de communications",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Règlement": 2
+              },
+              "children": [
+                {
+                  "identifier": "725.000",
+                  "title": "Routes et voies de communications en général",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Règlement": 2
+                  }
+                }
+              ]
             }
           ]
         }
@@ -218,21 +341,43 @@
     {
       "identifier": "8",
       "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Règlement": 1,
         "Autre": 1
       },
       "children": [
         {
           "identifier": "80",
           "title": "SANTÉ",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Règlement": 1,
             "Autre": 1
           },
           "children": [
+            {
+              "identifier": "810",
+              "title": "Établissements sanitaires et apparentés",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "810.000",
+                  "title": "Établissements sanitaires en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "812",
               "title": "Substances thérapeutiques",
@@ -439,24 +584,64 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 4
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Autre": 4
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Autre": 2
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 2
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.10",
+                      "title": "Departemente",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Autre": 2
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.30",
+              "title": "Ombudsperson",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -464,8 +649,8 @@
               },
               "children": [
                 {
-                  "identifier": "1.20.20.30",
-                  "title": "Verwaltung",
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
                   "total": 1,
                   "own": 0,
                   "by_type": {
@@ -473,8 +658,8 @@
                   },
                   "children": [
                     {
-                      "identifier": "1.20.20.30.10",
-                      "title": "Departemente",
+                      "identifier": "1.20.70.10.30",
+                      "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
                       "total": 1,
                       "own": 1,
                       "by_type": {
@@ -526,6 +711,37 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.50",
+              "title": "Universitätspersonal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
             }
           ]
         }
@@ -585,12 +801,32 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 2
       },
       "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "6.30",
           "title": "Monopole, Staatliche Unternehmen",
@@ -774,7 +1010,7 @@
     }
   ],
   "languages_available": {
-    "fr": 15
+    "fr": 23
   },
   "available_years_for_entity": [
     "1803",
@@ -820,6 +1056,7 @@
     "1942",
     "1943",
     "1944",
+    "1945",
     "1946",
     "1947",
     "1948",

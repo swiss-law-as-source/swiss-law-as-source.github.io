@@ -2,25 +2,43 @@
   "year": "1996",
   "year_semantics": "enactment",
   "entity": "SH",
-  "total": 13,
-  "categorized": 13,
+  "total": 18,
+  "categorized": 18,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 6,
+      "total": 8,
       "by_topic": {
         "15 Grundrechte": 1,
         "172 Regierungsrat und Verwaltung": 1,
+        "28 Schuldbetreibung und Konkurs": 1,
         "413.2 Kantonsschule Schaffhausen, Mittelschule": 1,
         "811 Medizinalpersonen und Pflegepersonal": 1,
+        "817 Lebensmittel und Gebrauchsgegenstände": 1,
         "832.1 Krankenversicherung": 1,
         "837 Arbeitslosenversicherung": 1
       },
       "by_global_category": {
         "1.10.90.10 Gleichstellung von Mann und Frau": 1,
         "1.20.20.70 New Public Management": 1,
+        "2.60.10 Organisation": 1,
         "4.20.10 Mittelschule": 1,
         "8.10.30.60 Psychotherapeuten": 1
+      }
+    },
+    "Anderes": {
+      "total": 5,
+      "by_topic": {
+        "412.1 Berufsbildung": 2,
+        "172 Regierungsrat und Verwaltung": 1,
+        "725 Strassenbau": 1,
+        "817 Lebensmittel und Gebrauchsgegenstände": 1
+      },
+      "by_global_category": {
+        "1.20.20.70 New Public Management": 1,
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "7.10.10 Pläne": 1,
+        "8.10.130.10.10 Lebensmittelaufsicht": 1
       }
     },
     "Gesetz": {
@@ -31,15 +49,6 @@
       },
       "by_global_category": {
         "1.10.70.20.20 Zwangsmassnahmen": 1
-      }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "412.1 Berufsbildung": 2
-      },
-      "by_global_category": {
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1
       }
     },
     "Staatsvertrag": {
@@ -68,11 +77,12 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Gesetz": 2,
         "Verordnung": 2,
+        "Anderes": 1,
         "Staatsvertrag": 1
       },
       "children": [
@@ -108,11 +118,12 @@
         {
           "identifier": "17",
           "title": "Behörden und Verwaltung",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Gesetz": 1,
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -127,10 +138,11 @@
             {
               "identifier": "172",
               "title": "Regierungsrat und Verwaltung",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Anderes": 1
               }
             }
           ]
@@ -142,6 +154,26 @@
           "own": 1,
           "by_type": {
             "Staatsvertrag": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Privatrecht - Zivilrechtspflege - Vollstreckung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "28",
+          "title": "Schuldbetreibung und Konkurs",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
           }
         }
       ]
@@ -213,22 +245,55 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
-      "total": 4,
+      "identifier": "7",
+      "title": "Raumplanung und Bauwesen - Öffentliche Werke - Energie - Verkehr",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "72",
+          "title": "Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "725",
+              "title": "Strassenbau",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
+      "total": 6,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 4,
+        "Anderes": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Anderes": 1
           },
           "children": [
             {
@@ -237,6 +302,16 @@
               "total": 1,
               "own": 1,
               "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "817",
+              "title": "Lebensmittel und Gebrauchsgegenstände",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 1,
                 "Verordnung": 1
               }
             }
@@ -292,11 +367,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -365,6 +441,51 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.70",
+                  "title": "New Public Management",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 1,
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.60",
+          "title": "Schuldbetreibungs- und Konkursrecht",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -372,24 +493,13 @@
           },
           "children": [
             {
-              "identifier": "1.20.20",
-              "title": "Regierung und Verwaltung",
+              "identifier": "2.60.10",
+              "title": "Organisation",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "1.20.20.70",
-                  "title": "New Public Management",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
@@ -436,21 +546,54 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.10",
+              "title": "Pläne",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -472,6 +615,37 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.10",
+                  "title": "Lebensmittel und Gebrauchsgegenstände",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "8.10.130.10.10",
+                      "title": "Lebensmittelaufsicht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -479,7 +653,7 @@
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 18
   },
   "available_years_for_entity": [
     "1828",
@@ -501,11 +675,13 @@
     "1928",
     "1929",
     "1930",
+    "1934",
     "1936",
     "1937",
     "1939",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1947",
     "1948",
@@ -517,6 +693,7 @@
     "1955",
     "1956",
     "1957",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -531,6 +708,7 @@
     "1972",
     "1973",
     "1974",
+    "1975",
     "1976",
     "1977",
     "1978",

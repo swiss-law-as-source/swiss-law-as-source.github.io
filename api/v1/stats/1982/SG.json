@@ -2,30 +2,34 @@
   "year": "1982",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 17,
-  "categorized": 17,
+  "total": 20,
+  "categorized": 20,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "215 Mittelschulen": 2,
         "232 Berufliche Grundausbildung": 2,
         "141 Allgemein": 1,
         "325 Übrige Einrichtungen": 1,
-        "752 Gewässerschutz": 1
+        "752 Gewässerschutz": 1,
+        "813 Finanzausgleich": 1
       },
       "by_global_category": {
         "4.150 Schulsport": 3,
         "6.40.10 Kantonalbanken": 1,
         "4.120.60 Schulbauten": 1,
-        "7.60.20 Gewässerschutz": 1
+        "7.60.20 Gewässerschutz": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1
       }
     },
     "Verordnung": {
-      "total": 4,
+      "total": 6,
       "by_topic": {
         "213 Volksschulen": 1,
+        "312 Medizinische Berufe und andere Berufe der Gesundheitspflege": 1,
+        "325 Übrige Einrichtungen": 1,
         "554 Unterhaltungsgewerbe": 1,
         "645 Tierschutz": 1,
         "854 Fischerei": 1
@@ -161,9 +165,10 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
@@ -171,12 +176,22 @@
         {
           "identifier": "31",
           "title": "Gesundheitspflege",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "312",
+              "title": "Medizinische Berufe und andere Berufe der Gesundheitspflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "314",
               "title": "Heilmittel und Betäubungsmittel",
@@ -191,18 +206,20 @@
         {
           "identifier": "32",
           "title": "Einrichtungen der Gesundheitspflege",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "325",
               "title": "Übrige Einrichtungen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Verordnung": 1,
                 "Anderes": 1
               }
             }
@@ -354,12 +371,33 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Steuern und Finanzausgleich",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "813",
+              "title": "Finanzausgleich",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "85",
           "title": "Regalien",
@@ -384,6 +422,37 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -628,7 +697,7 @@
     }
   ],
   "languages_available": {
-    "de": 17
+    "de": 20
   },
   "available_years_for_entity": [
     "1845",
@@ -642,6 +711,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",

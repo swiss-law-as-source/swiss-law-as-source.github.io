@@ -2,8 +2,8 @@
   "year": "1997",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 25,
-  "categorized": 25,
+  "total": 27,
+  "categorized": 27,
   "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
@@ -23,6 +23,23 @@
         "6.30.50.10 Jäger": 1
       }
     },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 7,
+      "by_topic": {
+        "321 Kantonale Spitäler": 2,
+        "173 Katholische Konfession": 1,
+        "381 Öffentliche Fürsorge": 1,
+        "732 Tiefbauten des Staates": 1,
+        "841 Öffentliches Beschaffungswesen": 1,
+        "962 Strafrechtspflege": 1
+      },
+      "by_global_category": {
+        "8.10.20.10 Kantonsspitäler": 2,
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "7.30.40 Submission": 1
+      }
+    },
     "Verordnung": {
       "total": 6,
       "by_topic": {
@@ -39,29 +56,16 @@
         "7.60.20 Gewässerschutz": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 6,
-      "by_topic": {
-        "321 Kantonale Spitäler": 2,
-        "381 Öffentliche Fürsorge": 1,
-        "732 Tiefbauten des Staates": 1,
-        "841 Öffentliches Beschaffungswesen": 1,
-        "962 Strafrechtspflege": 1
-      },
-      "by_global_category": {
-        "8.10.20.10 Kantonsspitäler": 2,
-        "6.10.30 Staatsbeiträge, Subventionen": 1,
-        "7.30.40 Submission": 1
-      }
-    },
     "Anderes": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "312 Medizinische Berufe und andere Berufe der Gesundheitspflege": 3,
-        "873 Gebäudeversicherung": 1
+        "217 Universität": 1,
+        "941 Gerichtsorganisation und -verfahren": 1
       },
       "by_global_category": {
-        "4.140 Anerkennung von Diplomen": 3
+        "4.140 Anerkennung von Diplomen": 3,
+        "1.20.70.50 Gerichtskosten, Gerichtsgebühren": 1
       }
     },
     "Reglement": {
@@ -83,13 +87,14 @@
     {
       "identifier": "1",
       "title": "Grundlagen und Organisation von Kanton und Gemeinden",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Anderes": 2,
         "Interkantonale Vereinbarung": 2,
         "Verordnung": 1,
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -144,25 +149,47 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "17",
+          "title": "Staat und Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "173",
+              "title": "Katholische Konfession",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Schulen",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2
+            "Interkantonale Vereinbarung": 2,
+            "Anderes": 1
           },
           "children": [
             {
@@ -177,9 +204,10 @@
             {
               "identifier": "217",
               "title": "Universität",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Anderes": 1,
                 "Interkantonale Vereinbarung": 1
               }
             }
@@ -387,10 +415,10 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -433,10 +461,21 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Zivilrecht, Strafrecht, Rechtspflege",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
         {
-          "identifier": "87",
-          "title": "Feuerschutz",
+          "identifier": "94",
+          "title": "Gerichtsorganisation und -verfahren",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -444,8 +483,8 @@
           },
           "children": [
             {
-              "identifier": "873",
-              "title": "Gebäudeversicherung",
+              "identifier": "941",
+              "title": "Gerichtsorganisation und -verfahren",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -453,18 +492,7 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Zivilrecht, Strafrecht, Rechtspflege",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
+        },
         {
           "identifier": "96",
           "title": "Zivil- und Strafrechtspflege",
@@ -492,21 +520,22 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Verordnung": 1,
-        "Anderes": 1
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Anderes": 1
+            "Anderes": 2,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -550,6 +579,46 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.50",
+                  "title": "Gerichtskosten, Gerichtsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
             }
           ]
         }
@@ -871,7 +940,7 @@
     }
   ],
   "languages_available": {
-    "de": 25
+    "de": 27
   },
   "available_years_for_entity": [
     "1845",
@@ -885,6 +954,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",

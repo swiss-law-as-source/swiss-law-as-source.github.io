@@ -2,15 +2,16 @@
   "year": "2001",
   "year_semantics": "enactment",
   "entity": "OW",
-  "total": 31,
-  "categorized": 31,
+  "total": 35,
+  "categorized": 35,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 11,
+      "total": 13,
       "by_topic": {
         "641 Steuern": 5,
         "451 Kulturpflege und Kulturförderung": 2,
+        "921 Förderung der Landwirtschaft": 2,
         "410 Schulen": 1,
         "783 Gewässerschutz": 1,
         "786 Natur- und Landschaftsschutz": 1,
@@ -18,12 +19,35 @@
       },
       "by_global_category": {
         "7.70.70 Denkmalschutz, Kulturgüterschutz": 2,
+        "9.20.10 Förderungsmassnahmen": 2,
         "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
         "6.20.10.10 Bundessteuern": 1,
         "6.20.60 Verrechnungssteuer": 1,
         "6.20.10.40 Pauschale Steueranrechnung": 1,
         "7.60.20 Gewässerschutz": 1,
         "7.70.10 Landschaftsschutz": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 10,
+      "by_topic": {
+        "415 Hochschulen, Fachhochschulen, Fachschulen": 2,
+        "138 Informatik": 1,
+        "410 Schulen": 1,
+        "418 Turnen und Sport": 1,
+        "661 Kantonalbank und Bürgschaftsfonds": 1,
+        "710 Raum- und Bauordnung": 1,
+        "740 Wasserbau": 1,
+        "810 Gesundheit": 1,
+        "975 Markt und Gewerbe": 1
+      },
+      "by_global_category": {
+        "4.50.10 Pädagogik": 2,
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
+        "4.180.30 Sport": 1,
+        "6.40.10 Kantonalbanken": 1,
+        "7.10.10 Pläne": 1,
+        "9.50.10.60.30 Spielbanken": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -42,35 +66,17 @@
         "7.30.40 Submission": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 9,
-      "by_topic": {
-        "415 Hochschulen, Fachhochschulen, Fachschulen": 2,
-        "138 Informatik": 1,
-        "410 Schulen": 1,
-        "418 Turnen und Sport": 1,
-        "661 Kantonalbank und Bürgschaftsfonds": 1,
-        "740 Wasserbau": 1,
-        "810 Gesundheit": 1,
-        "975 Markt und Gewerbe": 1
-      },
-      "by_global_category": {
-        "4.50.10 Pädagogik": 2,
-        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
-        "4.180.30 Sport": 1,
-        "6.40.10 Kantonalbanken": 1,
-        "9.50.10.60.30 Spielbanken": 1
-      }
-    },
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "740 Wasserbau": 1,
-        "774 Schifffahrt": 1
+        "774 Schifffahrt": 1,
+        "921 Förderung der Landwirtschaft": 1
       },
       "by_global_category": {
         "7.30.20.20 Gewässernutzung": 1,
-        "7.50.60.10 Schiffssteuern": 1
+        "7.50.60.10 Schiffssteuern": 1,
+        "2.20.10.20.10 Landwirtschaftliche Pacht": 1
       }
     }
   },
@@ -208,15 +214,24 @@
     {
       "identifier": "7",
       "title": "RAUM- UND BAUORDNUNG, ÖFFENTLICHE WERKE, ENERGIE, VERKEHR, UMWELTSCHUTZ",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
+        "Anderes": 3,
         "Gesetz": 2,
-        "Anderes": 2,
         "Interkantonale Vereinbarung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "710",
+          "title": "Raum- und Bauordnung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
         {
           "identifier": "720",
           "title": "Strassen und Wege",
@@ -307,13 +322,24 @@
     {
       "identifier": "9",
       "title": "VOLKSWIRTSCHAFT",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
+        "Anderes": 3,
         "Interkantonale Vereinbarung": 2,
-        "Anderes": 1
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "921",
+          "title": "Förderung der Landwirtschaft",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Anderes": 2,
+            "Gesetz": 1
+          }
+        },
         {
           "identifier": "975",
           "title": "Markt und Gewerbe",
@@ -328,6 +354,59 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "2.20",
+          "title": "Einführungsgesetzgebung OR",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "2.20.10",
+              "title": "Vertragsverhältnisse",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.20.10.20",
+                  "title": "Miete und Pacht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.20.10.20.10",
+                      "title": "Landwirtschaftliche Pacht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -485,14 +564,34 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 10,
+      "total": 11,
       "own": 0,
       "by_type": {
+        "Anderes": 5,
         "Interkantonale Vereinbarung": 4,
-        "Anderes": 4,
         "Gesetz": 2
       },
       "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.10",
+              "title": "Pläne",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
@@ -630,13 +729,33 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Anderes": 1
+        "Anderes": 3,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "9.20.10",
+              "title": "Förderungsmassnahmen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
+        },
         {
           "identifier": "9.50",
           "title": "Gewerbe",
@@ -687,10 +806,11 @@
     }
   ],
   "languages_available": {
-    "de": 31
+    "de": 35
   },
   "available_years_for_entity": [
     "1825",
+    "1834",
     "1850",
     "1874",
     "1877",
@@ -698,6 +818,7 @@
     "1880",
     "1892",
     "1895",
+    "1899",
     "1911",
     "1913",
     "1914",
@@ -730,6 +851,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -788,8 +910,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

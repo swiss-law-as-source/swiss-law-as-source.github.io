@@ -2,20 +2,31 @@
   "year": "2018",
   "year_semantics": "enactment",
   "entity": "NE",
-  "total": 8,
-  "categorized": 8,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
       "total": 3,
       "by_topic": {
-        "414.1 Dispositions générales": 1,
-        "461.3 Protection des biens culturels": 1,
-        "916.12 Viticulture": 1
+        "150.5 Traitement des données": 1,
+        "727 Gérance du domaine public et privé de l'État": 1,
+        "740 Dispositions générales": 1
       },
       "by_global_category": {
-        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
-        "9.20.80.10 Rebbau": 1
+        "1.10.120 Information der Öffentlichkeit": 1,
+        "7.40.40 Elektrizität": 1
+      }
+    },
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "727 Gérance du domaine public et privé de l'État": 2,
+        "461.3 Protection des biens culturels": 1
+      },
+      "by_global_category": {
+        "7.10.10 Pläne": 2,
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -28,24 +39,57 @@
     "Gesetz": {
       "total": 2,
       "by_topic": {
-        "461.3 Protection des biens culturels": 1,
-        "806 Police des denrées alimentaires": 1
+        "727 Gérance du domaine public et privé de l'État": 1,
+        "740 Dispositions générales": 1
       },
       "by_global_category": {
-        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
-      }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "461.3 Protection des biens culturels": 1
-      },
-      "by_global_category": {
-        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
+        "7.40.40 Elektrizität": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "État – Peuple – Autorités",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "15",
+          "title": "Autorités",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "150",
+              "title": "Dispositions générales",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "150.5",
+                  "title": "Traitement des données",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "Droit pénal – Procédure pénale – Exécution",
@@ -80,76 +124,37 @@
     {
       "identifier": "4",
       "title": "Enseignement – Science – Culture – Environnement",
-      "total": 4,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 2,
-        "Loi": 1,
         "Autre": 1
       },
       "children": [
         {
-          "identifier": "41",
-          "title": "Enseignement",
+          "identifier": "46",
+          "title": "Environnement",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Règlement": 1
-          },
-          "children": [
-            {
-              "identifier": "414",
-              "title": "Formation professionnelle",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Règlement": 1
-              },
-              "children": [
-                {
-                  "identifier": "414.1",
-                  "title": "Dispositions générales",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Règlement": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "46",
-          "title": "Environnement",
-          "total": 3,
-          "own": 0,
-          "by_type": {
-            "Loi": 1,
-            "Autre": 1,
-            "Règlement": 1
+            "Autre": 1
           },
           "children": [
             {
               "identifier": "461",
               "title": "Protection de la nature",
-              "total": 3,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Loi": 1,
-                "Autre": 1,
-                "Règlement": 1
+                "Autre": 1
               },
               "children": [
                 {
                   "identifier": "461.3",
                   "title": "Protection des biens culturels",
-                  "total": 3,
-                  "own": 3,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Loi": 1,
-                    "Autre": 1,
-                    "Règlement": 1
+                    "Autre": 1
                   }
                 }
               ]
@@ -159,73 +164,59 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
-      "total": 1,
+      "identifier": "7",
+      "title": "Travaux publics – Énergie – Transports et communications",
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Autre": 2,
+        "Loi": 2,
+        "Règlement": 2
       },
       "children": [
         {
-          "identifier": "80",
-          "title": "Santé",
-          "total": 1,
+          "identifier": "72",
+          "title": "Constructions",
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Loi": 1
-          },
-          "children": [
-            {
-              "identifier": "806",
-              "title": "Police des denrées alimentaires",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Loi": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "9",
-      "title": "Économie",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Règlement": 1
-      },
-      "children": [
-        {
-          "identifier": "91",
-          "title": "Agriculture",
-          "total": 1,
-          "own": 0,
-          "by_type": {
+            "Autre": 2,
+            "Loi": 1,
             "Règlement": 1
           },
           "children": [
             {
-              "identifier": "916",
-              "title": "Production",
-              "total": 1,
-              "own": 0,
+              "identifier": "727",
+              "title": "Gérance du domaine public et privé de l'État",
+              "total": 4,
+              "own": 4,
               "by_type": {
+                "Autre": 2,
+                "Loi": 1,
                 "Règlement": 1
-              },
-              "children": [
-                {
-                  "identifier": "916.12",
-                  "title": "Viticulture",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Règlement": 1
-                  }
-                }
-              ]
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "74",
+          "title": "Énergie",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1,
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "740",
+              "title": "Dispositions générales",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Règlement": 1,
+                "Loi": 1
+              }
             }
           ]
         }
@@ -234,35 +225,29 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Loi": 1,
-        "Autre": 1,
         "Règlement": 1
       },
       "children": [
         {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
-          "total": 3,
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Loi": 1,
-            "Autre": 1,
             "Règlement": 1
           },
           "children": [
             {
-              "identifier": "7.70.70",
-              "title": "Denkmalschutz, Kulturgüterschutz",
-              "total": 3,
-              "own": 3,
+              "identifier": "1.10.120",
+              "title": "Information der Öffentlichkeit",
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Loi": 1,
-                "Autre": 1,
                 "Règlement": 1
               }
             }
@@ -271,42 +256,75 @@
       ]
     },
     {
-      "identifier": "9",
-      "title": "Wirtschaft",
-      "total": 1,
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Autre": 3,
+        "Règlement": 1,
+        "Loi": 1
       },
       "children": [
         {
-          "identifier": "9.20",
-          "title": "Landwirtschaft",
-          "total": 1,
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Autre": 2
           },
           "children": [
             {
-              "identifier": "9.20.80",
-              "title": "Pflanzenbau",
-              "total": 1,
-              "own": 0,
+              "identifier": "7.10.10",
+              "title": "Pläne",
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Règlement": 1
-              },
-              "children": [
-                {
-                  "identifier": "9.20.80.10",
-                  "title": "Rebbau",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Règlement": 1
-                  }
-                }
-              ]
+                "Autre": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.40",
+          "title": "Energie",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1,
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "7.40.40",
+              "title": "Elektrizität",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Règlement": 1,
+                "Loi": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.70",
+              "title": "Denkmalschutz, Kulturgüterschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
             }
           ]
         }
@@ -314,17 +332,18 @@
     }
   ],
   "languages_available": {
-    "fr": 8
+    "fr": 10
   },
   "available_years_for_entity": [
     "1832",
+    "1849",
     "1857",
-    "1858",
     "1864",
     "1866",
     "1871",
     "1873",
     "1874",
+    "1879",
     "1885",
     "1887",
     "1888",
@@ -343,19 +362,19 @@
     "1912",
     "1913",
     "1914",
-    "1916",
     "1919",
     "1920",
     "1923",
     "1924",
     "1925",
+    "1926",
     "1927",
-    "1928",
     "1930",
     "1931",
     "1933",
     "1934",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1941",
@@ -370,6 +389,7 @@
     "1953",
     "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",

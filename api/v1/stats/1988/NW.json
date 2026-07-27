@@ -2,17 +2,31 @@
   "year": "1988",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 7,
-  "categorized": 7,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
-        "211 Allgemeines": 1,
-        "611 Raumplanung und Baurecht": 1
+        "611 Raumplanung und Baurecht": 2,
+        "165 Personal": 1,
+        "211 Allgemeines": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
+      }
+    },
+    "Reglement": {
+      "total": 3,
+      "by_topic": {
+        "911 Allgemeine Bestimmungen": 2,
+        "866 Bankwesen": 1
+      },
+      "by_global_category": {
+        "5.30.10.30 Personal": 2,
+        "6.40.10 Kantonalbanken": 1
+      }
     },
     "Anderes": {
       "total": 2,
@@ -23,15 +37,6 @@
       "by_global_category": {
         "4.20.10 Mittelschule": 1,
         "4.180.20 Kulturförderung": 1
-      }
-    },
-    "Reglement": {
-      "total": 2,
-      "by_topic": {
-        "911 Allgemeine Bestimmungen": 2
-      },
-      "by_global_category": {
-        "5.30.10.30 Personal": 2
       }
     },
     "Verordnung": {
@@ -45,6 +50,37 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat - Volk - Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "16",
+          "title": "Behörden und Personal",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "165",
+              "title": "Personal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht - Strafrecht - Rechtspflege - Vollzug",
@@ -151,28 +187,59 @@
     {
       "identifier": "6",
       "title": "Bau - Strassen - Wasser - Energie - Verkehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 2
       },
       "children": [
         {
           "identifier": "61",
           "title": "Planung und Bau",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 2
           },
           "children": [
             {
               "identifier": "611",
               "title": "Raumplanung und Baurecht",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "86",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "866",
+              "title": "Bankwesen",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Reglement": 1
               }
             }
           ]
@@ -212,6 +279,59 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -306,6 +426,37 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "6.40",
+          "title": "Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "6.40.10",
+              "title": "Kantonalbanken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
@@ -338,15 +489,17 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 10
   },
   "available_years_for_entity": [
+    "1000",
     "1632",
     "1787",
     "1842",
     "1850",
     "1890",
     "1900",
+    "1901",
     "1909",
     "1911",
     "1926",

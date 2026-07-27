@@ -2,8 +2,8 @@
   "year": "1980",
   "year_semantics": "enactment",
   "entity": "NE",
-  "total": 13,
-  "categorized": 13,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -26,21 +26,30 @@
       }
     },
     "Reglement": {
-      "total": 2,
+      "total": 5,
       "by_topic": {
         "410.1 Dispositions générales": 1,
-        "60 Gestion financière": 1
+        "60 Gestion financière": 1,
+        "805.3 Traitement des déchets": 1,
+        "807.2 Vaccinations": 1,
+        "820.1 Assurance-vieilllesse et survivants": 1
       },
       "by_global_category": {
-        "6.10.10 Budget und Rechnung": 1
+        "6.10.10 Budget und Rechnung": 1,
+        "7.60.10 Abfälle": 1,
+        "8.30.30 AHV / IV": 1
       }
     },
     "Gesetz": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "152.10 Organisation": 1
+        "253 Conventions intercantonales": 1,
+        "60 Gestion financière": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "2.50.30 Vollstreckung": 1,
+        "1.30.10 Gemeindefinanzen": 1
+      }
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -50,68 +59,77 @@
       "by_global_category": {
         "4.120.10 Schulkoordination": 1
       }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "60 Gestion financière": 1
-      },
-      "by_global_category": {
-        "6.10.10 Budget und Rechnung": 1
-      }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "933.4 Cinéma": 1
-      },
-      "by_global_category": {
-        "6.10.30 Staatsbeiträge, Subventionen": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "État – Peuple – Autorités",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Autre": 1,
-        "Loi": 1
+        "Autre": 1
       },
       "children": [
         {
           "identifier": "15",
           "title": "Autorités",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Autre": 1,
-            "Loi": 1
+            "Autre": 1
           },
           "children": [
             {
               "identifier": "152",
               "title": "Conseil d'État et administration cantonale",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Autre": 1,
-                "Loi": 1
+                "Autre": 1
               },
               "children": [
                 {
                   "identifier": "152.10",
                   "title": "Organisation",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Autre": 1,
-                    "Loi": 1
+                    "Autre": 1
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Droit privé – Procédure civile – Exécution",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "25",
+          "title": "Procédure civile",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "253",
+              "title": "Conventions intercantonales",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
             }
           ]
         }
@@ -224,7 +242,7 @@
       "by_type": {
         "Autre": 2,
         "Règlement": 1,
-        "Ordonnance parlementaire (décret)": 1
+        "Loi": 1
       },
       "children": [
         {
@@ -235,7 +253,7 @@
           "by_type": {
             "Autre": 2,
             "Règlement": 1,
-            "Ordonnance parlementaire (décret)": 1
+            "Loi": 1
           }
         }
       ]
@@ -274,21 +292,94 @@
     {
       "identifier": "8",
       "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Règlement": 3,
         "Autre": 1
       },
       "children": [
         {
-          "identifier": "82",
-          "title": "Assurances sociales",
-          "total": 1,
+          "identifier": "80",
+          "title": "Santé",
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Règlement": 2
+          },
+          "children": [
+            {
+              "identifier": "805",
+              "title": "Protection de l'équilibre écologique",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "805.3",
+                  "title": "Traitement des déchets",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "807",
+              "title": "Lutte contre les maladies",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "807.2",
+                  "title": "Vaccinations",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "82",
+          "title": "Assurances sociales",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1,
             "Autre": 1
           },
           "children": [
+            {
+              "identifier": "820",
+              "title": "Assurance-vieillesse et survivants – Assurance-invalidité",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "820.1",
+                  "title": "Assurance-vieilllesse et survivants",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "821",
               "title": "Assurance-maladie et accidents",
@@ -323,58 +414,17 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "9",
-      "title": "Économie",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Autre": 1
-      },
-      "children": [
-        {
-          "identifier": "93",
-          "title": "Industrie et artisanat",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Autre": 1
-          },
-          "children": [
-            {
-              "identifier": "933",
-              "title": "Services",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Autre": 1
-              },
-              "children": [
-                {
-                  "identifier": "933.4",
-                  "title": "Cinéma",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Autre": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 1,
+        "Loi": 1
       },
       "children": [
         {
@@ -416,6 +466,57 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "2.50",
+          "title": "Zivilrechtspflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "2.50.30",
+              "title": "Vollstreckung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
             }
           ]
         }
@@ -478,43 +579,71 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 5,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Autre": 3,
-        "Règlement": 1,
-        "Ordonnance parlementaire (décret)": 1
+        "Autre": 2,
+        "Règlement": 1
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 5,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Autre": 3,
-            "Règlement": 1,
-            "Ordonnance parlementaire (décret)": 1
+            "Autre": 2,
+            "Règlement": 1
           },
           "children": [
             {
               "identifier": "6.10.10",
               "title": "Budget und Rechnung",
-              "total": 3,
-              "own": 3,
+              "total": 2,
+              "own": 2,
               "by_type": {
                 "Règlement": 1,
-                "Autre": 1,
-                "Ordonnance parlementaire (décret)": 1
+                "Autre": 1
               }
             },
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Autre": 2
+                "Autre": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
               }
             }
           ]
@@ -524,21 +653,32 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Règlement": 1,
         "Autre": 1
       },
       "children": [
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Règlement": 1,
             "Autre": 1
           },
           "children": [
+            {
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            },
             {
               "identifier": "8.30.60",
               "title": "KVG",
@@ -576,17 +716,18 @@
     }
   ],
   "languages_available": {
-    "fr": 13
+    "fr": 15
   },
   "available_years_for_entity": [
     "1832",
+    "1849",
     "1857",
-    "1858",
     "1864",
     "1866",
     "1871",
     "1873",
     "1874",
+    "1879",
     "1885",
     "1887",
     "1888",
@@ -605,19 +746,19 @@
     "1912",
     "1913",
     "1914",
-    "1916",
     "1919",
     "1920",
     "1923",
     "1924",
     "1925",
+    "1926",
     "1927",
-    "1928",
     "1930",
     "1931",
     "1933",
     "1934",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1941",
@@ -632,6 +773,7 @@
     "1953",
     "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",

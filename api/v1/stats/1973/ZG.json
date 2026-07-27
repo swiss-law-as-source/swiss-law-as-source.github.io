@@ -2,8 +2,8 @@
   "year": "1973",
   "year_semantics": "enactment",
   "entity": "ZG",
-  "total": 4,
-  "categorized": 4,
+  "total": 5,
+  "categorized": 5,
   "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
@@ -23,6 +23,15 @@
       },
       "by_global_category": {
         "3.50 Ordnungsbussen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "651 Kantonalbank": 1
+      },
+      "by_global_category": {
+        "6.40.10 Kantonalbanken": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -79,12 +88,33 @@
     {
       "identifier": "6",
       "title": "Finanzen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "65",
+          "title": "Unternehmungen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "651",
+              "title": "Kantonalbank",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "66",
           "title": "Salzregal",
@@ -152,11 +182,12 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Anderes": 1,
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -198,12 +229,32 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "6.40",
+          "title": "Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.40.10",
+              "title": "Kantonalbanken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 5
   },
   "available_years_for_entity": [
     "1825",
@@ -219,8 +270,9 @@
     "1919",
     "1921",
     "1925",
-    "1926",
+    "1928",
     "1929",
+    "1932",
     "1937",
     "1938",
     "1940",

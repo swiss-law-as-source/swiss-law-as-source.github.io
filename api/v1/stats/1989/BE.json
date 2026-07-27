@@ -2,34 +2,42 @@
   "year": "1989",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 9,
-  "categorized": 9,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 5,
+      "total": 7,
       "by_topic": {
         "155.2 Verwaltungsrechtspflege": 1,
+        "213.3 Kindes- und Erwachsenenschutz": 1,
         "525 Finanzierung": 1,
         "751.1 Unterhalt und Korrektion der Gewässer": 1,
         "823 Reinhaltung der Luft": 1,
-        "836.1 Krisenbekämpfung und Arbeitsbeschaffung": 1
+        "836.1 Krisenbekämpfung und Arbeitsbeschaffung": 1,
+        "841.3 Ergänzungsleistungen zur Alters-, Hinterlassenen- und Invalidenversicherung": 1
       },
       "by_global_category": {
         "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
+        "2.10.20.10 Vormundschaft": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1,
-        "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven": 1
+        "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven": 1,
+        "8.30.40 Ergänzungsleistungen": 1
       }
     },
     "Verordnung": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
         "153.4 Pensionskasse": 1,
+        "551 Allgemeines": 1,
         "701 Grundlagen": 1,
-        "751.1 Unterhalt und Korrektion der Gewässer": 1
+        "751.1 Unterhalt und Korrektion der Gewässer": 1,
+        "841.3 Ergänzungsleistungen zur Alters-, Hinterlassenen- und Invalidenversicherung": 1
       },
       "by_global_category": {
-        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
+        "1.20.50 Datenschutz": 1,
+        "8.30.40 Ergänzungsleistungen": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -140,12 +148,55 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Landesverteidigung, Polizei",
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
       "total": 1,
       "own": 0,
       "by_type": {
         "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "213",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "213.3",
+                  "title": "Kindes- und Erwachsenenschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -164,6 +215,26 @@
               "own": 1,
               "by_type": {
                 "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "55",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "551",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -239,10 +310,11 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Gesetz": 3,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -295,6 +367,40 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "84",
+          "title": "Sozialversicherung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "841",
+              "title": "Alters-, Hinterlassenen- und Invalidenversicherung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "841.3",
+                  "title": "Ergänzungsleistungen zur Alters-, Hinterlassenen- und Invalidenversicherung",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -303,10 +409,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 2,
         "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
@@ -314,10 +420,10 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
+            "Verordnung": 2,
             "Gesetz": 1,
             "Verordnung des Parlaments (Dekret)": 1
           },
@@ -364,6 +470,15 @@
               ]
             },
             {
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
               "total": 1,
@@ -379,6 +494,48 @@
                   "own": 1,
                   "by_type": {
                     "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.20",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.20.10",
+                  "title": "Vormundschaft",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -421,10 +578,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -457,15 +615,38 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.40",
+              "title": "Ergänzungsleistungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 9,
-    "fr": 9
+    "de": 13,
+    "fr": 13
   },
   "available_years_for_entity": [
+    "1000",
     "1562",
     "1828",
     "1837",
@@ -477,6 +658,7 @@
     "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
     "1877",
     "1889",
@@ -488,12 +670,14 @@
     "1909",
     "1911",
     "1917",
+    "1918",
     "1923",
     "1924",
     "1931",
     "1934",
     "1936",
     "1937",
+    "1938",
     "1939",
     "1940",
     "1942",

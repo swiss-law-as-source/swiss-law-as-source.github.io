@@ -2,17 +2,29 @@
   "year": "1986",
   "year_semantics": "enactment",
   "entity": "OW",
-  "total": 3,
-  "categorized": 3,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "133 Regierungsrat und Staatsverwaltung": 1
+        "133 Regierungsrat und Staatsverwaltung": 1,
+        "213 Sachenrecht, Grundbuch, Grundstückschätzungen": 1
       },
       "by_global_category": {
-        "1.20.20.40.20 Eid": 1
+        "1.20.20.40.20 Eid": 1,
+        "2.10.40.10 Schätzung von Grundstücken": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "610 Finanzhaushalt": 1,
+        "651 Jagd, Fischerei": 1
+      },
+      "by_global_category": {
+        "6.30.50.10 Jäger": 1
       }
     },
     "Anderes": {
@@ -24,12 +36,14 @@
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
       }
     },
-    "Verordnung": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "610 Finanzhaushalt": 1
+        "213 Sachenrecht, Grundbuch, Grundstückschätzungen": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "2.10.40.10 Schätzung von Grundstücken": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -56,19 +70,23 @@
     {
       "identifier": "2",
       "title": "ZIVILRECHT, VOLLSTRECKUNG",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "213",
           "title": "Sachenrecht, Grundbuch, Grundstückschätzungen",
-          "total": 1,
-          "own": 1,
+          "total": 3,
+          "own": 3,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1
           }
         }
       ]
@@ -76,15 +94,24 @@
     {
       "identifier": "6",
       "title": "FINANZEN, REGALIEN, STAATLICHE UNTERNEHMUNGEN",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "610",
           "title": "Finanzhaushalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
+        {
+          "identifier": "651",
+          "title": "Jagd, Fischerei",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -151,30 +178,46 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "2.10.40",
               "title": "Sachenrecht",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
+                "Gesetz": 1,
+                "Verordnung des Parlaments (Dekret)": 1,
                 "Anderes": 1
               },
               "children": [
+                {
+                  "identifier": "2.10.40.10",
+                  "title": "Schätzung von Grundstücken",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                },
                 {
                   "identifier": "2.10.40.30",
                   "title": "Grundbuch und Grundbuchvermessung",
@@ -189,13 +232,56 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.50",
+              "title": "Jagd",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.30.50.10",
+                  "title": "Jäger",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 6
   },
   "available_years_for_entity": [
     "1825",
+    "1834",
     "1850",
     "1874",
     "1877",
@@ -203,6 +289,7 @@
     "1880",
     "1892",
     "1895",
+    "1899",
     "1911",
     "1913",
     "1914",
@@ -235,6 +322,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -293,8 +381,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

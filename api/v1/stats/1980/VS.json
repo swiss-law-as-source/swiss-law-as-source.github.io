@@ -2,10 +2,23 @@
   "year": "1980",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 6,
-  "categorized": 6,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "173 Richterliche Behörden": 1,
+        "61 Finanzhaushalt": 1,
+        "85 Unterstützung": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.10.20 Staatsanwaltschaft": 1,
+        "6.10.10 Budget und Rechnung": 1,
+        "2.50.30 Vollstreckung": 1
+      }
+    },
     "Anderes": {
       "total": 2,
       "by_topic": {
@@ -26,15 +39,6 @@
         "9.50.10.60.10 Lotteriefonds": 1
       }
     },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "61 Finanzhaushalt": 1
-      },
-      "by_global_category": {
-        "6.10.10 Budget und Rechnung": 1
-      }
-    },
     "Staatsvertrag": {
       "total": 1,
       "by_topic": {
@@ -49,28 +53,31 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "17",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "173",
               "title": "Richterliche Behörden",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 1,
+                "Gesetz": 1
               }
             }
           ]
@@ -89,6 +96,26 @@
         {
           "identifier": "61",
           "title": "Finanzhaushalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "85",
+          "title": "Unterstützung",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -152,6 +179,101 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.10",
+                      "title": "Untersuchungs- und Anklagebehörden",
+                      "total": 1,
+                      "own": 0,
+                      "by_type": {
+                        "Gesetz": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "1.20.70.10.10.20",
+                          "title": "Staatsanwaltschaft",
+                          "total": 1,
+                          "own": 1,
+                          "by_type": {
+                            "Gesetz": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "2.50",
+          "title": "Zivilrechtspflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "2.50.30",
+              "title": "Vollstreckung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
@@ -302,8 +424,8 @@
     }
   ],
   "languages_available": {
-    "de": 6,
-    "fr": 6
+    "de": 8,
+    "fr": 8
   },
   "available_years_for_entity": [
     "1802",
@@ -313,14 +435,19 @@
     "1864",
     "1877",
     "1882",
+    "1887",
     "1891",
     "1900",
     "1907",
     "1912",
+    "1919",
+    "1920",
     "1922",
     "1923",
     "1924",
     "1926",
+    "1929",
+    "1932",
     "1933",
     "1935",
     "1936",
@@ -333,6 +460,7 @@
     "1949",
     "1950",
     "1951",
+    "1953",
     "1954",
     "1955",
     "1957",

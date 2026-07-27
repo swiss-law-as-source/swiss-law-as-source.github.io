@@ -2,18 +2,20 @@
   "year": "1993",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 8,
-  "categorized": 8,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "145.5 Rechtsanwälte": 1,
-        "414.2 Berufslehre, Berufsschule": 1
+        "414.2 Berufslehre, Berufsschule": 1,
+        "812.1 Allgemeines": 1
       },
       "by_global_category": {
-        "1.50.10.10 Ausbildung": 1
+        "1.50.10.10 Ausbildung": 1,
+        "8.10.60 Spitalexterne Krankenpflege": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -44,6 +46,15 @@
         "731.1 Strassen": 1
       },
       "by_global_category": {}
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "811 Allgemeine Bestimmungen, medizinische und andere Berufe im Gesundheitswesen": 1
+      },
+      "by_global_category": {
+        "8.10.30.20 Zahnärzte": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -276,6 +287,59 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Allgemeine Bestimmungen, medizinische und andere Berufe im Gesundheitswesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
+            {
+              "identifier": "812",
+              "title": "Spitalwesen, Krankenpflege",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "812.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
@@ -404,6 +468,59 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.20",
+                  "title": "Zahnärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.60",
+              "title": "Spitalexterne Krankenpflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 1,
@@ -436,7 +553,7 @@
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 10
   },
   "available_years_for_entity": [
     "1881",
@@ -478,6 +595,7 @@
     "1969",
     "1970",
     "1971",
+    "1972",
     "1973",
     "1974",
     "1975",

@@ -2,25 +2,30 @@
   "year": "2002",
   "year_semantics": "enactment",
   "entity": "UR",
-  "total": 16,
-  "categorized": 16,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 9,
+      "total": 11,
       "by_topic": {
         "9.23 Notariat, Advokatur": 2,
+        "1.41 Bürgerrecht": 1,
+        "10.11 Grundlagen": 1,
         "10.24 Kantonale Mittelschule": 1,
         "10.6 Archive, Bibliotheken": 1,
         "2.2 Behörden: allgemeine Bestimmungen": 1,
-        "2.33 Regierungsrat, Verwaltung": 1,
+        "20.22 Kranken- und Unfallversicherung": 1,
         "3.9 Strafrecht, Strafprozess, Strafvollzug": 1,
         "60.1 Grundlagen": 1,
         "9.22 Zivilprozess, Vollstreckung, Rechtshilfe": 1
       },
       "by_global_category": {
+        "1.10.80 Ausweise": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
         "4.20.10 Mittelschule": 1,
         "4.170.20 Archive": 1,
+        "8.30.60.40 Einschränkung der Zulassung von Leistungserbringern": 1,
         "3.10.20 Schwangerschaftsabbruch": 1,
         "1.50.20.10 Ausbildung": 1,
         "1.50.10.10 Ausbildung": 1
@@ -46,16 +51,56 @@
       "by_global_category": {
         "6.40.10 Kantonalbanken": 1
       }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "20.22 Kranken- und Unfallversicherung": 1
+      },
+      "by_global_category": {
+        "8.30.60.30 Spitallisten": 1
+      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "Politische Rechte - Behörden",
-      "total": 2,
+      "identifier": "1",
+      "title": "Staat - Volk",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 2
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "1.4",
+          "title": "Volk",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.41",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Politische Rechte - Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
       },
       "children": [
         {
@@ -66,26 +111,6 @@
           "by_type": {
             "Reglement": 1
           }
-        },
-        {
-          "identifier": "2.3",
-          "title": "Behörden: im Einzelnen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "2.33",
-              "title": "Regierungsrat, Verwaltung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Reglement": 1
-              }
-            }
-          ]
         }
       ]
     },
@@ -173,14 +198,34 @@
     {
       "identifier": "10",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 7,
+      "total": 8,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 4,
-        "Reglement": 2,
+        "Reglement": 3,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "10.1",
+          "title": "Volksschule",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "10.11",
+              "title": "Grundlagen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "10.2",
           "title": "Mittelschule, Fachhochschule, Hochschule, Stipendien",
@@ -229,6 +274,40 @@
           "by_type": {
             "Reglement": 1
           }
+        }
+      ]
+    },
+    {
+      "identifier": "20",
+      "title": "Arbeit - Soziale Sicherheit - Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "20.2",
+          "title": "Sozialversicherung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "20.22",
+              "title": "Kranken- und Unfallversicherung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 1,
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -288,12 +367,32 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 2
+        "Reglement": 3
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.80",
+              "title": "Ausweise",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.50",
           "title": "Juristische Berufe",
@@ -381,13 +480,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 4,
-        "Reglement": 2
+        "Reglement": 3
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.20",
           "title": "Sekundarstufe II",
@@ -500,16 +619,71 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.30",
+                  "title": "Spitallisten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "8.30.60.40",
+                  "title": "Einschränkung der Zulassung von Leistungserbringern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 16
+    "de": 19
   },
   "available_years_for_entity": [
     "1859",
     "1869",
     "1888",
     "1889",
+    "1890",
     "1891",
     "1902",
     "1911",
@@ -533,7 +707,6 @@
     "1961",
     "1962",
     "1964",
-    "1965",
     "1966",
     "1967",
     "1968",

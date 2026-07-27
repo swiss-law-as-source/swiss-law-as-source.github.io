@@ -2,35 +2,40 @@
   "year": "1998",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 16,
-  "categorized": 16,
+  "total": 28,
+  "categorized": 28,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 8,
+      "total": 17,
       "by_topic": {
-        "165 Personal": 5,
-        "152 Vollziehende Gewalt": 1,
+        "165 Personal": 12,
+        "152 Vollziehende Gewalt": 2,
+        "122 Niederlassung und Aufenthalt": 1,
         "332 Unterschutzstellungen": 1,
         "732 Arbeitsmarkt und Arbeitsbeschaffung": 1
       },
       "by_global_category": {
+        "1.20.20.40.40 Löhne, Entschädigungen": 6,
+        "1.10.70.20.10 Asylwesen": 1,
         "1.20.20.40.30 Arbeitszeit, Ferien, Urlaub": 1,
-        "1.20.20.40.40 Löhne, Entschädigungen": 1,
         "1.20.20.40.60 Ausbildung, Weiterbildung": 1,
         "1.20.20.40.70 Parkplätze": 1,
         "7.70.10 Landschaftsschutz": 1
       }
     },
     "Gesetz": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "151 Gesetzgebende Gewalt": 1,
         "152 Vollziehende Gewalt": 1,
         "165 Personal": 1,
+        "741 Alters-, Hinterlassenen- und Invalidenversicherung": 1,
         "83 Forstwesen": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "8.30.40 Ergänzungsleistungen": 1
+      }
     },
     "Reglement": {
       "total": 2,
@@ -40,6 +45,16 @@
       },
       "by_global_category": {
         "4.80.10 Sonderschulen": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "613 Feuerschutz": 2
+      },
+      "by_global_category": {
+        "5.20.30.20 Brandschutz": 1,
+        "5.20.30.30 Kaminfeger": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -63,24 +78,44 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 11,
+      "total": 20,
       "own": 0,
       "by_type": {
-        "Verordnung": 6,
+        "Verordnung": 15,
         "Gesetz": 3,
         "Reglement": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung und Aufenthalt",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "15",
           "title": "Organisation der kantonalen Gewalten",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
             "Gesetz": 2,
+            "Verordnung": 2,
             "Reglement": 1,
-            "Verordnung": 1,
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
@@ -97,11 +132,11 @@
             {
               "identifier": "152",
               "title": "Vollziehende Gewalt",
-              "total": 3,
-              "own": 3,
+              "total": 4,
+              "own": 4,
               "by_type": {
+                "Verordnung": 2,
                 "Gesetz": 1,
-                "Verordnung": 1,
                 "Verordnung des Parlaments (Dekret)": 1
               }
             }
@@ -110,20 +145,20 @@
         {
           "identifier": "16",
           "title": "Behörden und Personal",
-          "total": 6,
+          "total": 13,
           "own": 0,
           "by_type": {
-            "Verordnung": 5,
+            "Verordnung": 12,
             "Gesetz": 1
           },
           "children": [
             {
               "identifier": "165",
               "title": "Personal",
-              "total": 6,
-              "own": 6,
+              "total": 13,
+              "own": 13,
               "by_type": {
-                "Verordnung": 5,
+                "Verordnung": 12,
                 "Gesetz": 1
               }
             }
@@ -184,12 +219,44 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
-      "total": 1,
+      "identifier": "6",
+      "title": "Bau - Strassen - Wasser - Energie - Verkehr",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "Planung und Bau",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "613",
+              "title": "Feuerschutz",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -208,6 +275,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "74",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "741",
+              "title": "Alters-, Hinterlassenen- und Invalidenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -260,37 +347,79 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Verordnung": 4
+        "Verordnung": 10
       },
       "children": [
         {
-          "identifier": "1.20",
-          "title": "Behörden",
-          "total": 4,
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 4
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 9,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 9
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 4,
+              "total": 9,
               "own": 0,
               "by_type": {
-                "Verordnung": 4
+                "Verordnung": 9
               },
               "children": [
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
-                  "total": 4,
+                  "total": 9,
                   "own": 0,
                   "by_type": {
-                    "Verordnung": 4
+                    "Verordnung": 9
                   },
                   "children": [
                     {
@@ -305,10 +434,10 @@
                     {
                       "identifier": "1.20.20.40.40",
                       "title": "Löhne, Entschädigungen",
-                      "total": 1,
-                      "own": 1,
+                      "total": 6,
+                      "own": 6,
                       "by_type": {
-                        "Verordnung": 1
+                        "Verordnung": 6
                       }
                     },
                     {
@@ -369,6 +498,57 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.20",
+                  "title": "Brandschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "5.20.30.30",
+                  "title": "Kaminfeger",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
@@ -393,6 +573,37 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.40",
+              "title": "Ergänzungsleistungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -432,15 +643,17 @@
     }
   ],
   "languages_available": {
-    "de": 16
+    "de": 28
   },
   "available_years_for_entity": [
+    "1000",
     "1632",
     "1787",
     "1842",
     "1850",
     "1890",
     "1900",
+    "1901",
     "1909",
     "1911",
     "1926",

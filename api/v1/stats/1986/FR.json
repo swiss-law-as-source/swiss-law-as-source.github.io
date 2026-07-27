@@ -2,10 +2,32 @@
   "year": "1986",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 22,
-  "categorized": 22,
+  "total": 25,
+  "categorized": 25,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 8,
+      "by_topic": {
+        "114.21 Einwohnerkontrolle": 1,
+        "16 HAFTUNG DER GEMEINWESEN": 1,
+        "214.5 Grundbuch": 1,
+        "725 Tierschutz": 1,
+        "834.1 Heime für Behinderte und Schwererziehbare": 1,
+        "912.5 Pflanzenschutz": 1,
+        "941 Werbung": 1,
+        "954 Medien": 1
+      },
+      "by_global_category": {
+        "1.10.70.10.10 Einwohnerkontrolle": 1,
+        "1.20.40 Staatshaftung": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "7.70.20 Tierschutz": 1,
+        "7.70.30 Pflanzenschutz": 1,
+        "7.10.60 Plakate und Werbung": 1,
+        "1.10.120 Information der Öffentlichkeit": 1
+      }
+    },
     "Anderes": {
       "total": 8,
       "by_topic": {
@@ -24,46 +46,29 @@
         "8.30.10 Ausgleichskassen": 1
       }
     },
-    "Gesetz": {
+    "Reglement": {
       "total": 7,
       "by_topic": {
-        "114.21 Einwohnerkontrolle": 1,
-        "16 HAFTUNG DER GEMEINWESEN": 1,
-        "214.5 Grundbuch": 1,
-        "411.0 Allgemeine Bestimmungen": 1,
-        "912.5 Pflanzenschutz": 1,
-        "941 Werbung": 1,
-        "954 Medien": 1
-      },
-      "by_global_category": {
-        "1.10.70.10.10 Einwohnerkontrolle": 1,
-        "1.20.40 Staatshaftung": 1,
-        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
-        "4.10.20 Kindergarten": 1,
-        "7.70.30 Pflanzenschutz": 1,
-        "7.10.60 Plakate und Werbung": 1,
-        "1.10.120 Information der Öffentlichkeit": 1
-      }
-    },
-    "Reglement": {
-      "total": 5,
-      "by_topic": {
+        "122.70 Allgemeine Bestimmungen": 1,
+        "211.2 Zivilstand": 1,
         "214.5 Grundbuch": 1,
         "261 Notariat": 1,
+        "411.0 Allgemeine Bestimmungen": 1,
         "417 Schüleraustausch": 1,
-        "922 Jagd": 1,
         "941 Werbung": 1
       },
       "by_global_category": {
+        "1.20.20.40.30 Arbeitszeit, Ferien, Urlaub": 1,
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "4.10.20 Kindergarten": 1,
         "7.10.60 Plakate und Werbung": 1
       }
     },
     "Verordnung": {
       "total": 2,
       "by_topic": {
-        "770 Allgemeine Bestimmungen": 1,
-        "922 Jagd": 1
+        "340 Allgemeine Bestimmungen": 1,
+        "770 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {}
     }
@@ -72,11 +77,12 @@
     {
       "identifier": "1",
       "title": "STAAT - VOLK - BEHÖRDEN",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Gesetz": 2,
-        "Anderes": 2
+        "Anderes": 2,
+        "Reglement": 1
       },
       "children": [
         {
@@ -128,12 +134,44 @@
         {
           "identifier": "12",
           "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Reglement": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "122",
+              "title": "Staatsrat und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.7",
+                  "title": "Staatspersonal",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "122.70",
+                      "title": "Allgemeine Bestimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "129",
               "title": "Verschiedene Bestimmungen",
@@ -170,10 +208,10 @@
     {
       "identifier": "2",
       "title": "PRIVATRECHT - ZIVILPROZESS - ZWANGSVOLLSTRECKUNG",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
+        "Reglement": 3,
         "Gesetz": 1,
         "Anderes": 1
       },
@@ -181,13 +219,33 @@
         {
           "identifier": "21",
           "title": "ZIVILRECHT",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Reglement": 1
+            "Reglement": 2,
+            "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "211",
+              "title": "Personenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "211.2",
+                  "title": "Zivilstand",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "214",
               "title": "Sachenrecht",
@@ -239,28 +297,31 @@
     {
       "identifier": "3",
       "title": "STRAFRECHT - STRAFPROZESS - STRAFVOLLZUG",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "34",
           "title": "STRAF- UND MASSNAHMENVOLLZUG",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 2,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "340",
               "title": "Allgemeine Bestimmungen",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 2,
+                "Verordnung": 1
               }
             }
           ]
@@ -273,9 +334,8 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Anderes": 1,
-        "Reglement": 1
+        "Reglement": 2,
+        "Anderes": 1
       },
       "children": [
         {
@@ -284,9 +344,8 @@
           "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Anderes": 1,
-            "Reglement": 1
+            "Reglement": 2,
+            "Anderes": 1
           },
           "children": [
             {
@@ -295,7 +354,7 @@
               "total": 2,
               "own": 0,
               "by_type": {
-                "Gesetz": 1,
+                "Reglement": 1,
                 "Anderes": 1
               },
               "children": [
@@ -305,7 +364,7 @@
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Gesetz": 1
+                    "Reglement": 1
                   }
                 },
                 {
@@ -377,12 +436,33 @@
     {
       "identifier": "7",
       "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "72",
+          "title": "NATUR- UND HEIMATSCHUTZ - TIERSCHUTZ",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "725",
+              "title": "Tierschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "77",
           "title": "ENERGIE",
@@ -408,12 +488,44 @@
     {
       "identifier": "8",
       "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "83",
+          "title": "SOZIALHILFE UND SOZIALVORSORGE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "834",
+              "title": "Spezialisierte Anstalten und Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "834.1",
+                  "title": "Heime für Behinderte und Schwererziehbare",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "84",
           "title": "SOZIALVERSICHERUNGEN",
@@ -450,12 +562,11 @@
     {
       "identifier": "9",
       "title": "WIRTSCHAFT",
-      "total": 6,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Gesetz": 3,
-        "Reglement": 2,
-        "Verordnung": 1
+        "Reglement": 1
       },
       "children": [
         {
@@ -486,28 +597,6 @@
                   }
                 }
               ]
-            }
-          ]
-        },
-        {
-          "identifier": "92",
-          "title": "FORSTWESEN - JAGD - FISCHEREI",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1,
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "922",
-              "title": "Jagd",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Verordnung": 1,
-                "Reglement": 1
-              }
             }
           ]
         },
@@ -560,11 +649,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Gesetz": 3,
-        "Anderes": 2
+        "Anderes": 2,
+        "Reglement": 1
       },
       "children": [
         {
@@ -625,12 +715,44 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Reglement": 1,
             "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.30",
+                      "title": "Arbeitszeit, Ferien, Urlaub",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "1.20.40",
               "title": "Staatshaftung",
@@ -727,7 +849,7 @@
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Reglement": 1
       },
       "children": [
         {
@@ -736,7 +858,7 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Reglement": 1
           },
           "children": [
             {
@@ -745,7 +867,7 @@
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Reglement": 1
               }
             }
           ]
@@ -786,10 +908,10 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
+        "Gesetz": 3,
         "Reglement": 1
       },
       "children": [
@@ -818,12 +940,21 @@
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 2
           },
           "children": [
+            {
+              "identifier": "7.70.20",
+              "title": "Tierschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "7.70.30",
               "title": "Pflanzenschutz",
@@ -870,12 +1001,13 @@
     }
   ],
   "languages_available": {
-    "de": 22,
-    "fr": 22
+    "de": 25,
+    "fr": 25
   },
   "available_years_for_entity": [
+    "1000",
     "1808",
-    "1825",
+    "1826",
     "1831",
     "1832",
     "1834",
@@ -893,11 +1025,11 @@
     "1879",
     "1880",
     "1889",
-    "1892",
+    "1891",
     "1893",
     "1899",
     "1909",
-    "1912",
+    "1911",
     "1913",
     "1917",
     "1918",
@@ -910,6 +1042,7 @@
     "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
     "1935",
     "1936",
@@ -926,7 +1059,6 @@
     "1954",
     "1955",
     "1957",
-    "1958",
     "1959",
     "1960",
     "1961",

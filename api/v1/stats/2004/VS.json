@@ -2,8 +2,8 @@
   "year": "2004",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 22,
-  "categorized": 22,
+  "total": 28,
+  "categorized": 28,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
@@ -28,12 +28,31 @@
         "9.60.20 Messwesen, Zahlungsverkehr": 1
       }
     },
+    "Verordnung": {
+      "total": 7,
+      "by_topic": {
+        "73 Energie": 2,
+        "16 Politische Rechte": 1,
+        "22 Vollstreckung des Obligationenrecht": 1,
+        "61 Finanzhaushalt": 1,
+        "91 Landwirtschaft": 1,
+        "93 Gewerbe": 1
+      },
+      "by_global_category": {
+        "1.10.90.20.10 Wahlen und Abstimmungen": 1,
+        "9.50.10.90 Konsumkredit": 1,
+        "1.30.10 Gemeindefinanzen": 1,
+        "9.20.80.10 Rebbau": 1
+      }
+    },
     "Reglement": {
-      "total": 5,
+      "total": 7,
       "by_topic": {
         "411 Obligatorische Schule": 1,
         "417 Tertiärstufe und Weiterbildung": 1,
         "419 Pädagogische Hochschule": 1,
+        "65 Hundesteuer, direkte Bundessteuer": 1,
+        "747 Schifffahrt": 1,
         "82 Arbeit": 1,
         "85 Unterstützung": 1
       },
@@ -41,29 +60,20 @@
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
         "9.50.10.20 Tourismus": 1,
         "4.50.10 Pädagogik": 1,
+        "6.20.70 Hundesteuern": 1,
+        "7.50.60.10 Schiffssteuern": 1,
         "8.70.10 Sozialhilfe": 1
       }
     },
-    "Verordnung": {
-      "total": 4,
-      "by_topic": {
-        "22 Vollstreckung des Obligationenrecht": 1,
-        "73 Energie": 1,
-        "91 Landwirtschaft": 1,
-        "93 Gewerbe": 1
-      },
-      "by_global_category": {
-        "9.50.10.90 Konsumkredit": 1,
-        "9.20.80.10 Rebbau": 1
-      }
-    },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "70 Raumplanung, Bauwesen": 2
+        "70 Raumplanung, Bauwesen": 2,
+        "85 Unterstützung": 1
       },
       "by_global_category": {
-        "7.10.50 Verfahren": 2
+        "7.10.50 Verfahren": 2,
+        "1.10.70.20.10 Asylwesen": 1
       }
     }
   },
@@ -71,19 +81,21 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 3
+        "Gesetz": 3,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "16",
           "title": "Politische Rechte",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Verordnung": 1
           }
         },
         {
@@ -191,18 +203,21 @@
     {
       "identifier": "6",
       "title": "Finanzen und Steuern",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Gesetz": 2,
+        "Verordnung": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "61",
           "title": "Finanzhaushalt",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Verordnung": 1,
             "Gesetz": 1
           }
         },
@@ -214,18 +229,28 @@
           "by_type": {
             "Gesetz": 1
           }
+        },
+        {
+          "identifier": "65",
+          "title": "Hundesteuer, direkte Bundessteuer",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
         }
       ]
     },
     {
       "identifier": "7",
       "title": "Öffentliche Werke, Energie, Verkehr",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Anderes": 2,
         "Gesetz": 2,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Reglement": 1
       },
       "children": [
         {
@@ -240,22 +265,43 @@
         {
           "identifier": "73",
           "title": "Energie",
-          "total": 3,
-          "own": 3,
+          "total": 4,
+          "own": 4,
           "by_type": {
             "Gesetz": 2,
-            "Verordnung": 1
+            "Verordnung": 2
           }
+        },
+        {
+          "identifier": "74",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "747",
+              "title": "Schifffahrt",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Gesundheit, Soziale Sicherheit",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Reglement": 2,
+        "Anderes": 1,
         "Gesetz": 1
       },
       "children": [
@@ -271,9 +317,10 @@
         {
           "identifier": "85",
           "title": "Unterstützung",
-          "total": 2,
-          "own": 2,
+          "total": 3,
+          "own": 3,
           "by_type": {
+            "Anderes": 1,
             "Gesetz": 1,
             "Reglement": 1
           }
@@ -322,6 +369,112 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.20",
+                  "title": "Politische Rechte",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.90.20.10",
+                      "title": "Wahlen und Abstimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -374,13 +527,45 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.70",
+              "title": "Hundesteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Gesetz": 2
+        "Gesetz": 2,
+        "Reglement": 1
       },
       "children": [
         {
@@ -426,10 +611,11 @@
         {
           "identifier": "7.50",
           "title": "Verkehr",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Reglement": 1
           },
           "children": [
             {
@@ -448,6 +634,26 @@
                   "own": 1,
                   "by_type": {
                     "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "7.50.60",
+              "title": "Schifffahrt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.50.60.10",
+                  "title": "Schiffssteuern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
                   }
                 }
               ]
@@ -601,8 +807,8 @@
     }
   ],
   "languages_available": {
-    "de": 22,
-    "fr": 22
+    "de": 28,
+    "fr": 28
   },
   "available_years_for_entity": [
     "1802",
@@ -612,14 +818,19 @@
     "1864",
     "1877",
     "1882",
+    "1887",
     "1891",
     "1900",
     "1907",
     "1912",
+    "1919",
+    "1920",
     "1922",
     "1923",
     "1924",
     "1926",
+    "1929",
+    "1932",
     "1933",
     "1935",
     "1936",
@@ -632,6 +843,7 @@
     "1949",
     "1950",
     "1951",
+    "1953",
     "1954",
     "1955",
     "1957",

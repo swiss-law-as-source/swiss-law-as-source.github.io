@@ -2,8 +2,8 @@
   "year": "1986",
   "year_semantics": "enactment",
   "entity": "ZH",
-  "total": 13,
-  "categorized": 13,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -27,14 +27,24 @@
     "Gesetz": {
       "total": 3,
       "by_topic": {
-        "173 Bezirksverwaltung": 1,
         "413.4 Hauswirtschaft": 1,
+        "52 Bevölkerungsschutz": 1,
         "632 Erbschafts- und Schenkungssteuer": 1
       },
       "by_global_category": {
-        "1.10.50.10 Gebietseinteilung, Bezirke": 1,
         "4.30.10.10 Hauswirtschaftliche Ausbildung": 1,
         "6.20.40 Erbschafts- und Schenkungssteuern": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "182 Römisch-katholische Körperschaft": 1,
+        "413.250 Aufnahmereglemente": 1
+      },
+      "by_global_category": {
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -64,37 +74,16 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
-          "identifier": "17",
-          "title": "Behörden und Verwaltung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "173",
-              "title": "Bezirksverwaltung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
-        },
-        {
           "identifier": "18",
           "title": "Kirche und Staat. Religionsgemeinschaften",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
@@ -116,6 +105,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "182",
+              "title": "Römisch-katholische Körperschaft",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -155,10 +153,11 @@
     {
       "identifier": "4",
       "title": "Bildung – Dokumentation – Kultur",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Verordnung": 3,
+        "Reglement": 1,
         "Gesetz": 1,
         "Anderes": 1
       },
@@ -166,10 +165,11 @@
         {
           "identifier": "41",
           "title": "Bildung",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
             "Verordnung": 3,
+            "Reglement": 1,
             "Gesetz": 1,
             "Anderes": 1
           },
@@ -197,13 +197,34 @@
             {
               "identifier": "413",
               "title": "Mittelschulen. Berufsbildung",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
+                "Reglement": 1,
                 "Verordnung": 1,
                 "Gesetz": 1
               },
               "children": [
+                {
+                  "identifier": "413.2",
+                  "title": "Mittelschulen",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "413.250",
+                      "title": "Aufnahmereglemente",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                },
                 {
                   "identifier": "413.3",
                   "title": "Berufsbildung",
@@ -245,6 +266,26 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Militär – Bevölkerungsschutz – Polizei – Tierschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "52",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
         }
       ]
     },
@@ -351,41 +392,9 @@
       "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Gesetz": 1
+        "Anderes": 3
       },
       "children": [
-        {
-          "identifier": "1.10",
-          "title": "Grundlagen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "1.10.50",
-              "title": "Gebiet",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "1.10.50.10",
-                  "title": "Gebietseinteilung, Bezirke",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -442,12 +451,21 @@
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "1.40.30",
               "title": "Evangelisch-Reformierte Kirche",
@@ -517,14 +535,35 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
         "Gesetz": 1,
         "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.20",
+              "title": "Fachmittelschulen, Diplommittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.30",
           "title": "Sekundarstufe II (Berufliche Grundausbildung)",
@@ -644,10 +683,12 @@
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 15
   },
   "available_years_for_entity": [
+    "1000",
     "1825",
+    "1834",
     "1841",
     "1846",
     "1866",
@@ -660,9 +701,13 @@
     "1900",
     "1901",
     "1902",
+    "1906",
     "1908",
+    "1910",
     "1911",
+    "1913",
     "1914",
+    "1915",
     "1916",
     "1919",
     "1920",
@@ -675,6 +720,7 @@
     "1929",
     "1930",
     "1931",
+    "1932",
     "1933",
     "1934",
     "1936",
@@ -699,6 +745,7 @@
     "1959",
     "1960",
     "1961",
+    "1962",
     "1963",
     "1964",
     "1965",

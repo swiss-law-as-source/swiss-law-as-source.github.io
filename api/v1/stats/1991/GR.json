@@ -2,30 +2,45 @@
   "year": "1991",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 5,
-  "categorized": 5,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "170 Politische Behörden und Mitarbeitende": 1,
+        "421 Volksschule": 1,
+        "548 Familienschutz": 1,
+        "74 Jagdregal": 1,
+        "82 Umweltschutz, Klimaschutz": 1
+      },
+      "by_global_category": {
+        "4.70.20 Weiterbildung Lehrpersonen": 1,
+        "8.30.120 Mutterschaftsversicherung, Mutterschaftsbeiträge": 1,
+        "7.60.50 Umweltverträglichkeitsprüfung": 1
+      }
+    },
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "420 Allgemeine Bestimmungen": 1,
+        "545 Arbeitslosenversicherung, Arbeitsvermittlung": 1,
         "548 Familienschutz": 1
       },
       "by_global_category": {
         "4.10.20 Kindergarten": 1,
+        "8.30.110 Arbeitslosenversicherung": 1,
         "8.30.120 Mutterschaftsversicherung, Mutterschaftsbeiträge": 1
       }
     },
-    "Verordnung": {
-      "total": 2,
+    "Reglement": {
+      "total": 1,
       "by_topic": {
-        "421 Volksschule": 1,
-        "548 Familienschutz": 1
+        "506 Krankenpflege": 1
       },
       "by_global_category": {
-        "4.70.20 Weiterbildung Lehrpersonen": 1,
-        "8.30.120 Mutterschaftsversicherung, Mutterschaftsbeiträge": 1
+        "8.10.60 Spitalexterne Krankenpflege": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -39,6 +54,37 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Grundlagen, Bürgerrecht, Organisation",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "17",
+          "title": "Organisation des Kantons",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "170",
+              "title": "Politische Behörden und Mitarbeitende",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
@@ -84,23 +130,53 @@
     {
       "identifier": "5",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
+        "Gesetz": 2,
+        "Reglement": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "54",
-          "title": "Sozialversicherung, Arbeitsvermittlung, Öffentliche Sozialhilfe, Familienschutz",
-          "total": 2,
+          "identifier": "50",
+          "title": "Sanitätswesen",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "506",
+              "title": "Krankenpflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "54",
+          "title": "Sozialversicherung, Arbeitsvermittlung, Öffentliche Sozialhilfe, Familienschutz",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 2,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "545",
+              "title": "Arbeitslosenversicherung, Arbeitsvermittlung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "548",
               "title": "Familienschutz",
@@ -112,6 +188,46 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Finanzwesen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "74",
+          "title": "Jagdregal",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Planung, Bau, Wasserwirtschaft, Gewässerschutz, Umweltschutz, Gebäude- und Elementarschadenversicherung, Schätzungen, Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "Umweltschutz, Klimaschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
         }
       ]
     },
@@ -190,25 +306,86 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.50",
+              "title": "Umweltverträglichkeitsprüfung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2,
+        "Reglement": 1,
         "Anderes": 1
       },
       "children": [
         {
-          "identifier": "8.30",
-          "title": "Sozialversicherungsrecht",
-          "total": 2,
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.60",
+              "title": "Spitalexterne Krankenpflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 2,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "8.30.120",
               "title": "Mutterschaftsversicherung, Mutterschaftsbeiträge",
@@ -256,10 +433,11 @@
     }
   ],
   "languages_available": {
-    "de": 5,
-    "it": 5
+    "de": 10,
+    "it": 10
   },
   "available_years_for_entity": [
+    "1870",
     "1877",
     "1901",
     "1908",
@@ -272,9 +450,11 @@
     "1936",
     "1937",
     "1943",
+    "1944",
     "1946",
     "1947",
     "1948",
+    "1950",
     "1951",
     "1952",
     "1953",

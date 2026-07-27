@@ -2,8 +2,8 @@
   "year": "1972",
   "year_semantics": "enactment",
   "entity": "NE",
-  "total": 15,
-  "categorized": 15,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -22,6 +22,17 @@
         "9.60.20 Messwesen, Zahlungsverkehr": 1
       }
     },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "150.2 Publications officielles": 1,
+        "820.2 Assurance-invalidité": 1,
+        "832.3 Établissements spécialisés pour personnes âgées": 1
+      },
+      "by_global_category": {
+        "8.70.30.10 Alters- und Pflegeheime": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 3,
       "by_topic": {
@@ -31,34 +42,23 @@
         "6.20.40 Erbschafts- und Schenkungssteuern": 3
       }
     },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "442.4 Bibliothèques": 1,
-        "941.9 Salons de coiffure": 1
-      },
-      "by_global_category": {
-        "4.170.30 Bibliotheken": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 2,
-      "by_topic": {
-        "832.3 Établissements spécialisés pour personnes âgées": 1,
-        "841 Encouragement à la construction de logements": 1
-      },
-      "by_global_category": {
-        "8.70.30.10 Alters- und Pflegeheime": 1,
-        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
-      }
-    },
     "Verordnung": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "152.7 Commissions administratives": 1
+        "152.7 Commissions administratives": 1,
+        "766.3 Restrictions de navigation": 1
       },
       "by_global_category": {
         "1.20.20.30.30 Kommissionen": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "832.3 Établissements spécialisés pour personnes âgées": 1
+      },
+      "by_global_category": {
+        "8.70.30.10 Alters- und Pflegeheime": 1
       }
     }
   },
@@ -66,21 +66,43 @@
     {
       "identifier": "1",
       "title": "État – Peuple – Autorités",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Loi": 1,
         "Autre": 1
       },
       "children": [
         {
           "identifier": "15",
           "title": "Autorités",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Loi": 1,
             "Autre": 1
           },
           "children": [
+            {
+              "identifier": "150",
+              "title": "Dispositions générales",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "150.2",
+                  "title": "Publications officielles",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "152",
               "title": "Conseil d'État et administration cantonale",
@@ -108,11 +130,10 @@
     {
       "identifier": "4",
       "title": "Enseignement – Science – Culture – Environnement",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Autre": 1,
-        "Loi": 1
+        "Autre": 1
       },
       "children": [
         {
@@ -132,37 +153,6 @@
               "by_type": {
                 "Autre": 1
               }
-            }
-          ]
-        },
-        {
-          "identifier": "44",
-          "title": "Science",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Loi": 1
-          },
-          "children": [
-            {
-              "identifier": "442",
-              "title": "Documentation",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Loi": 1
-              },
-              "children": [
-                {
-                  "identifier": "442.4",
-                  "title": "Bibliothèques",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Loi": 1
-                  }
-                }
-              ]
             }
           ]
         }
@@ -200,27 +190,26 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
-      "total": 7,
+      "identifier": "7",
+      "title": "Travaux publics – Énergie – Transports et communications",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Autre": 5,
-        "Ordonnance parlementaire (décret)": 2
+        "Autre": 1
       },
       "children": [
         {
-          "identifier": "82",
-          "title": "Assurances sociales",
-          "total": 2,
+          "identifier": "76",
+          "title": "Transports et communications",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Autre": 2
+            "Autre": 1
           },
           "children": [
             {
-              "identifier": "820",
-              "title": "Assurance-vieillesse et survivants – Assurance-invalidité",
+              "identifier": "766",
+              "title": "Navigation",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -228,11 +217,58 @@
               },
               "children": [
                 {
-                  "identifier": "820.2",
-                  "title": "Assurance-invalidité",
+                  "identifier": "766.3",
+                  "title": "Restrictions de navigation",
                   "total": 1,
                   "own": 1,
                   "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
+      "total": 8,
+      "own": 0,
+      "by_type": {
+        "Autre": 5,
+        "Loi": 2,
+        "Ordonnance parlementaire (décret)": 1
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "Assurances sociales",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Autre": 2,
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "820",
+              "title": "Assurance-vieillesse et survivants – Assurance-invalidité",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Loi": 1,
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "820.2",
+                  "title": "Assurance-invalidité",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Loi": 1,
                     "Autre": 1
                   }
                 }
@@ -274,54 +310,37 @@
         {
           "identifier": "83",
           "title": "Assistance sociale",
-          "total": 4,
+          "total": 5,
           "own": 0,
           "by_type": {
             "Autre": 3,
+            "Loi": 1,
             "Ordonnance parlementaire (décret)": 1
           },
           "children": [
             {
               "identifier": "832",
               "title": "Établissements spécialisés",
-              "total": 4,
+              "total": 5,
               "own": 0,
               "by_type": {
                 "Autre": 3,
+                "Loi": 1,
                 "Ordonnance parlementaire (décret)": 1
               },
               "children": [
                 {
                   "identifier": "832.3",
                   "title": "Établissements spécialisés pour personnes âgées",
-                  "total": 4,
-                  "own": 4,
+                  "total": 5,
+                  "own": 5,
                   "by_type": {
                     "Autre": 3,
+                    "Loi": 1,
                     "Ordonnance parlementaire (décret)": 1
                   }
                 }
               ]
-            }
-          ]
-        },
-        {
-          "identifier": "84",
-          "title": "Habitat",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Ordonnance parlementaire (décret)": 1
-          },
-          "children": [
-            {
-              "identifier": "841",
-              "title": "Encouragement à la construction de logements",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Ordonnance parlementaire (décret)": 1
-              }
             }
           ]
         }
@@ -330,31 +349,28 @@
     {
       "identifier": "9",
       "title": "Économie",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Autre": 1,
-        "Loi": 1
+        "Autre": 1
       },
       "children": [
         {
           "identifier": "94",
           "title": "Commerce",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Autre": 1,
-            "Loi": 1
+            "Autre": 1
           },
           "children": [
             {
               "identifier": "941",
               "title": "Police du commerce",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Autre": 1,
-                "Loi": 1
+                "Autre": 1
               },
               "children": [
                 {
@@ -364,15 +380,6 @@
                   "own": 1,
                   "by_type": {
                     "Autre": 1
-                  }
-                },
-                {
-                  "identifier": "941.9",
-                  "title": "Salons de coiffure",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Loi": 1
                   }
                 }
               ]
@@ -437,37 +444,6 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Loi": 1
-      },
-      "children": [
-        {
-          "identifier": "4.170",
-          "title": "Dokumentation",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Loi": 1
-          },
-          "children": [
-            {
-              "identifier": "4.170.30",
-              "title": "Bibliotheken",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Loi": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 4,
@@ -526,7 +502,8 @@
       "own": 0,
       "by_type": {
         "Autre": 5,
-        "Ordonnance parlementaire (décret)": 2
+        "Loi": 1,
+        "Ordonnance parlementaire (décret)": 1
       },
       "children": [
         {
@@ -550,52 +527,35 @@
           ]
         },
         {
-          "identifier": "8.40",
-          "title": "Wohnverhältnisse",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Ordonnance parlementaire (décret)": 1
-          },
-          "children": [
-            {
-              "identifier": "8.40.10",
-              "title": "Eigentums- und Wohnungsbauförderung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Ordonnance parlementaire (décret)": 1
-              }
-            }
-          ]
-        },
-        {
           "identifier": "8.70",
           "title": "Fürsorge",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
             "Autre": 4,
+            "Loi": 1,
             "Ordonnance parlementaire (décret)": 1
           },
           "children": [
             {
               "identifier": "8.70.30",
               "title": "Heime",
-              "total": 5,
+              "total": 6,
               "own": 0,
               "by_type": {
                 "Autre": 4,
+                "Loi": 1,
                 "Ordonnance parlementaire (décret)": 1
               },
               "children": [
                 {
                   "identifier": "8.70.30.10",
                   "title": "Alters- und Pflegeheime",
-                  "total": 5,
-                  "own": 5,
+                  "total": 6,
+                  "own": 6,
                   "by_type": {
                     "Autre": 4,
+                    "Loi": 1,
                     "Ordonnance parlementaire (décret)": 1
                   }
                 }
@@ -638,17 +598,18 @@
     }
   ],
   "languages_available": {
-    "fr": 15
+    "fr": 16
   },
   "available_years_for_entity": [
     "1832",
+    "1849",
     "1857",
-    "1858",
     "1864",
     "1866",
     "1871",
     "1873",
     "1874",
+    "1879",
     "1885",
     "1887",
     "1888",
@@ -667,19 +628,19 @@
     "1912",
     "1913",
     "1914",
-    "1916",
     "1919",
     "1920",
     "1923",
     "1924",
     "1925",
+    "1926",
     "1927",
-    "1928",
     "1930",
     "1931",
     "1933",
     "1934",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1941",
@@ -694,6 +655,7 @@
     "1953",
     "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",
@@ -767,6 +729,7 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",

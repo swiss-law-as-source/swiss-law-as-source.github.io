@@ -2,17 +2,18 @@
   "year": "1985",
   "year_semantics": "enactment",
   "entity": "VD",
-  "total": 10,
-  "categorized": 10,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 5,
+      "total": 6,
       "by_topic": {
         "221.300 Bail à loyer et à ferme": 1,
         "412 Enseignement secondaire supérieur": 1,
         "700 Aménagement du territoire et droit de la construction en général": 1,
         "800.000 Organisation de la santé en général": 1,
+        "840 Logement en général": 1,
         "900.000 Développement économique en général": 1
       },
       "by_global_category": {
@@ -21,14 +22,16 @@
       }
     },
     "Reglement": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "916.120 Viticulture": 2,
         "700 Aménagement du territoire et droit de la construction en général": 1,
+        "821.000 Conflits du travail": 1,
         "900.000 Développement économique en général": 1
       },
       "by_global_category": {
         "9.20.80.10 Rebbau": 2,
+        "8.20.30 Einigungsämter": 1,
         "9.10 Wirtschaftsförderung": 1
       }
     },
@@ -195,10 +198,11 @@
     {
       "identifier": "8",
       "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Loi": 2,
+        "Règlement": 1
       },
       "children": [
         {
@@ -229,6 +233,57 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "82",
+          "title": "TRAVAIL",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "821",
+              "title": "Droit du travail",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "821.000",
+                  "title": "Conflits du travail",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "84",
+          "title": "LOGEMENT",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "840",
+              "title": "Logement en général",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
             }
           ]
         }
@@ -420,6 +475,37 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.30",
+              "title": "Einigungsämter",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 4,
@@ -474,7 +560,7 @@
     }
   ],
   "languages_available": {
-    "fr": 10
+    "fr": 12
   },
   "available_years_for_entity": [
     "1803",
@@ -520,6 +606,7 @@
     "1942",
     "1943",
     "1944",
+    "1945",
     "1946",
     "1947",
     "1948",
@@ -622,6 +709,7 @@
     "SG",
     "SH",
     "SO",
+    "SZ",
     "TG",
     "TI",
     "UR",

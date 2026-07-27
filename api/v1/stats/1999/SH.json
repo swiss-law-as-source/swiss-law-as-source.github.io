@@ -2,22 +2,26 @@
   "year": "1999",
   "year_semantics": "enactment",
   "entity": "SH",
-  "total": 13,
-  "categorized": 13,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 6,
+      "total": 8,
       "by_topic": {
         "211.4 Sachenrecht": 3,
+        "211.2 Familienrecht": 1,
         "410.3 Organisatorische Bestimmungen": 1,
         "413.5 Auswärtige Mittelschulen": 1,
+        "836 Familen- und Sozialzulagen": 1,
         "90 Allgemeines": 1
       },
       "by_global_category": {
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 3,
+        "8.70.70 Alimentenbevorschussung": 1,
         "4.120.30 Schulaufsicht": 1,
         "4.70.10 Erwachsenenbildung": 1,
+        "8.70.10 Sozialhilfe": 1,
         "9.10 Wirtschaftsförderung": 1
       }
     },
@@ -43,17 +47,20 @@
         "6.10.30 Staatsbeiträge, Subventionen": 2
       }
     },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "836 Familen- und Sozialzulagen": 1,
+        "910 Förderung im Allgemeinen": 1
+      },
+      "by_global_category": {
+        "8.70.10 Sozialhilfe": 1
+      }
+    },
     "Reglement": {
       "total": 1,
       "by_topic": {
         "171 Kantonsrat": 1
-      },
-      "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "910 Förderung im Allgemeinen": 1
       },
       "by_global_category": {}
     }
@@ -93,21 +100,30 @@
     {
       "identifier": "2",
       "title": "Privatrecht - Zivilrechtspflege - Vollstreckung",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung": 4
       },
       "children": [
         {
           "identifier": "21",
           "title": "Zivilrecht",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 3
+            "Verordnung": 4
           },
           "children": [
+            {
+              "identifier": "211.2",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "211.4",
               "title": "Sachenrecht",
@@ -220,10 +236,12 @@
     {
       "identifier": "8",
       "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Interkantonale Vereinbarung": 2,
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -249,10 +267,12 @@
         {
           "identifier": "83",
           "title": "Sozialversicherung",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -274,6 +294,16 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "836",
+              "title": "Familen- und Sozialzulagen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -471,10 +501,12 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Interkantonale Vereinbarung": 2,
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -560,6 +592,37 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "8.70.70",
+              "title": "Alimentenbevorschussung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -585,7 +648,7 @@
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 16
   },
   "available_years_for_entity": [
     "1828",
@@ -607,11 +670,13 @@
     "1928",
     "1929",
     "1930",
+    "1934",
     "1936",
     "1937",
     "1939",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1947",
     "1948",
@@ -623,6 +688,7 @@
     "1955",
     "1956",
     "1957",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -637,6 +703,7 @@
     "1972",
     "1973",
     "1974",
+    "1975",
     "1976",
     "1977",
     "1978",

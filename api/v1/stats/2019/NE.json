@@ -2,42 +2,33 @@
   "year": "2019",
   "year_semantics": "enactment",
   "entity": "NE",
-  "total": 10,
-  "categorized": 10,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
+    "Verordnung": {
       "total": 3,
       "by_topic": {
-        "322 Procédure pénale neuchâteloise": 1,
-        "60 Gestion financière": 1,
-        "636.2 Taxe des chiens": 1
+        "152.1 Organisation, procédure administrative, émoluments": 1,
+        "821.12 Application de la LAMA": 1,
+        "832.3 Établissements spécialisés pour personnes âgées": 1
       },
       "by_global_category": {
-        "7.30.40 Submission": 1,
-        "6.20.70 Hundesteuern": 1
+        "1.20.20.30.30 Kommissionen": 1,
+        "8.70.30.10 Alters- und Pflegeheime": 1
       }
     },
     "Reglement": {
       "total": 3,
       "by_topic": {
-        "636.2 Taxe des chiens": 2,
-        "60 Gestion financière": 1
+        "414.1 Dispositions générales": 1,
+        "414.24 École technique du soir": 1,
+        "636.2 Taxe des chiens": 1
       },
       "by_global_category": {
-        "7.30.40 Submission": 1,
-        "6.20.70 Hundesteuern": 1,
+        "4.140 Anerkennung von Diplomen": 1,
+        "8.10.80 Apotheken und Drogerien": 1,
         "5.30.20.10 Hunde, gefährliche Tiere": 1
-      }
-    },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "152.1 Organisation, procédure administrative, émoluments": 1,
-        "740 Dispositions générales": 1
-      },
-      "by_global_category": {
-        "1.20.20.30.30 Kommissionen": 1
       }
     },
     "Anderes": {
@@ -46,16 +37,26 @@
         "414.1 Dispositions générales": 2
       },
       "by_global_category": {}
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "161 Organisation judiciaire": 1
+      },
+      "by_global_category": {
+        "1.20.70.50 Gerichtskosten, Gerichtsgebühren": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "État – Peuple – Autorités",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 1,
+        "Loi": 1
       },
       "children": [
         {
@@ -88,21 +89,10 @@
               ]
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "3",
-      "title": "Droit pénal – Procédure pénale – Exécution",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Loi": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "32",
-          "title": "Procédure pénale",
+          "identifier": "16",
+          "title": "Organisation judiciaire – Avocats et notaires",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -110,8 +100,8 @@
           },
           "children": [
             {
-              "identifier": "322",
-              "title": "Procédure pénale neuchâteloise",
+              "identifier": "161",
+              "title": "Organisation judiciaire",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -125,38 +115,62 @@
     {
       "identifier": "4",
       "title": "Enseignement – Science – Culture – Environnement",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Autre": 2
+        "Autre": 2,
+        "Règlement": 2
       },
       "children": [
         {
           "identifier": "41",
           "title": "Enseignement",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Autre": 2
+            "Autre": 2,
+            "Règlement": 2
           },
           "children": [
             {
               "identifier": "414",
               "title": "Formation professionnelle",
-              "total": 2,
+              "total": 4,
               "own": 0,
               "by_type": {
-                "Autre": 2
+                "Autre": 2,
+                "Règlement": 2
               },
               "children": [
                 {
                   "identifier": "414.1",
                   "title": "Dispositions générales",
-                  "total": 2,
-                  "own": 2,
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
-                    "Autre": 2
+                    "Autre": 2,
+                    "Règlement": 1
                   }
+                },
+                {
+                  "identifier": "414.2",
+                  "title": "Écoles professionnelles",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Règlement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "414.24",
+                      "title": "École technique du soir",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Règlement": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -167,51 +181,37 @@
     {
       "identifier": "6",
       "title": "Finances",
-      "total": 5,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 3,
-        "Loi": 2
+        "Règlement": 1
       },
       "children": [
         {
-          "identifier": "60",
-          "title": "Gestion financière",
-          "total": 2,
-          "own": 2,
-          "by_type": {
-            "Loi": 1,
-            "Règlement": 1
-          }
-        },
-        {
           "identifier": "63",
           "title": "Contributions publiques",
-          "total": 3,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Règlement": 2,
-            "Loi": 1
+            "Règlement": 1
           },
           "children": [
             {
               "identifier": "636",
               "title": "Autres contributions publiques",
-              "total": 3,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Règlement": 2,
-                "Loi": 1
+                "Règlement": 1
               },
               "children": [
                 {
                   "identifier": "636.2",
                   "title": "Taxe des chiens",
-                  "total": 3,
-                  "own": 3,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Règlement": 2,
-                    "Loi": 1
+                    "Règlement": 1
                   }
                 }
               ]
@@ -221,17 +221,17 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Travaux publics – Énergie – Transports et communications",
-      "total": 1,
+      "identifier": "8",
+      "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 2
       },
       "children": [
         {
-          "identifier": "74",
-          "title": "Énergie",
+          "identifier": "82",
+          "title": "Assurances sociales",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -239,13 +239,66 @@
           },
           "children": [
             {
-              "identifier": "740",
-              "title": "Dispositions générales",
+              "identifier": "821",
+              "title": "Assurance-maladie et accidents",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
                 "Autre": 1
-              }
+              },
+              "children": [
+                {
+                  "identifier": "821.1",
+                  "title": "Assurance-maladie",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "821.12",
+                      "title": "Application de la LAMA",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Autre": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Assistance sociale",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Établissements spécialisés",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "832.3",
+                  "title": "Établissements spécialisés pour personnes âgées",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -256,19 +309,21 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 1,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Autre": 1,
+            "Loi": 1
           },
           "children": [
             {
@@ -301,8 +356,48 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.50",
+                  "title": "Gerichtskosten, Gerichtsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.140",
+          "title": "Anerkennung von Diplomen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Règlement": 1
+          }
         }
       ]
     },
@@ -349,68 +444,63 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 1,
-        "Règlement": 1
+        "Règlement": 1,
+        "Autre": 1
       },
       "children": [
         {
-          "identifier": "6.20",
-          "title": "Steuern",
-          "total": 2,
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Loi": 1,
             "Règlement": 1
           },
           "children": [
             {
-              "identifier": "6.20.70",
-              "title": "Hundesteuern",
-              "total": 2,
-              "own": 2,
+              "identifier": "8.10.80",
+              "title": "Apotheken und Drogerien",
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Loi": 1,
                 "Règlement": 1
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
-      "own": 0,
-      "by_type": {
-        "Loi": 1,
-        "Règlement": 1
-      },
-      "children": [
+        },
         {
-          "identifier": "7.30",
-          "title": "Öffentliche Werke",
-          "total": 2,
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Loi": 1,
-            "Règlement": 1
+            "Autre": 1
           },
           "children": [
             {
-              "identifier": "7.30.40",
-              "title": "Submission",
-              "total": 2,
-              "own": 2,
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 1,
+              "own": 0,
               "by_type": {
-                "Loi": 1,
-                "Règlement": 1
-              }
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.10",
+                  "title": "Alters- und Pflegeheime",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -418,17 +508,18 @@
     }
   ],
   "languages_available": {
-    "fr": 10
+    "fr": 9
   },
   "available_years_for_entity": [
     "1832",
+    "1849",
     "1857",
-    "1858",
     "1864",
     "1866",
     "1871",
     "1873",
     "1874",
+    "1879",
     "1885",
     "1887",
     "1888",
@@ -447,19 +538,19 @@
     "1912",
     "1913",
     "1914",
-    "1916",
     "1919",
     "1920",
     "1923",
     "1924",
     "1925",
+    "1926",
     "1927",
-    "1928",
     "1930",
     "1931",
     "1933",
     "1934",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1941",
@@ -474,6 +565,7 @@
     "1953",
     "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",

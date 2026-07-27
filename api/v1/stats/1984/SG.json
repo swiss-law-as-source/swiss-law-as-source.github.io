@@ -2,13 +2,14 @@
   "year": "1984",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 14,
-  "categorized": 14,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 6,
+      "total": 7,
       "by_topic": {
+        "113 Kantonswappen": 1,
         "151 Allgemein": 1,
         "161 Verantwortlichkeit": 1,
         "173 Katholische Konfession": 1,
@@ -18,18 +19,32 @@
       },
       "by_global_category": {
         "4.170.20 Archive": 2,
+        "1.10.20 Wappen": 1,
         "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1,
         "6.30.60.20 Reviere": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "233 Soziale Ausbildungsstätten": 1,
+        "351 Allgemein": 1,
         "714 Schifffahrt": 1
       },
       "by_global_category": {
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "8.30.10 Ausgleichskassen": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "211 Allgemein": 1,
+        "941 Gerichtsorganisation und -verfahren": 1
+      },
+      "by_global_category": {
+        "4.90.30 Ausbildung": 1,
+        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -52,15 +67,6 @@
         "7.20 Enteignung": 1
       }
     },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "211 Allgemein": 1
-      },
-      "by_global_category": {
-        "4.90.30 Ausbildung": 1
-      }
-    },
     "Staatsvertrag": {
       "total": 1,
       "by_topic": {
@@ -75,13 +81,33 @@
     {
       "identifier": "1",
       "title": "Grundlagen und Organisation von Kanton und Gemeinden",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "11",
+          "title": "Verfassung, Kantonswappen und -gebiet",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "113",
+              "title": "Kantonswappen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "15",
           "title": "Gemeinde- und Bezirksverwaltung",
@@ -231,12 +257,33 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "35",
+          "title": "Alters-, Hinterlassenen- und Invalidenversicherung sowie -hilfe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "351",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "38",
           "title": "Fürsorge und Heimaufenthalt",
@@ -357,10 +404,11 @@
     {
       "identifier": "9",
       "title": "Zivilrecht, Strafrecht, Rechtspflege",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -382,11 +430,105 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "94",
+          "title": "Gerichtsorganisation und -verfahren",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "941",
+              "title": "Gerichtsorganisation und -verfahren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.20",
+              "title": "Wappen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.30",
+                      "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -567,10 +709,41 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.10",
+              "title": "Ausgleichskassen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 17
   },
   "available_years_for_entity": [
     "1845",
@@ -584,6 +757,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",

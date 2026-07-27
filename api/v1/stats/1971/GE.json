@@ -2,10 +2,21 @@
   "year": "1971",
   "year_semantics": "enactment",
   "entity": "GE",
-  "total": 5,
-  "categorized": 5,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
+    "Reglement": {
+      "total": 3,
+      "by_topic": {
+        "C 1 Instruction publique": 1,
+        "C 2 Formation professionnelle": 1,
+        "J 2 Placement et chômage": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+      }
+    },
     "Gesetz": {
       "total": 2,
       "by_topic": {
@@ -16,14 +27,6 @@
         "4.120.10 Schulkoordination": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1
       }
-    },
-    "Reglement": {
-      "total": 2,
-      "by_topic": {
-        "C 2 Formation professionnelle": 1,
-        "J 2 Placement et chômage": 1
-      },
-      "by_global_category": {}
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -37,11 +40,11 @@
     {
       "identifier": "C",
       "title": "Instruction publique, culture",
-      "total": 2,
-      "own": 2,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Loi": 1,
-        "Règlement": 1
+        "Règlement": 2,
+        "Loi": 1
       }
     },
     {
@@ -68,12 +71,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Règlement": 1,
         "Loi": 1
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
@@ -129,15 +153,18 @@
     }
   ],
   "languages_available": {
-    "fr": 5
+    "fr": 6
   },
   "available_years_for_entity": [
     "1564",
     "1726",
     "1749",
+    "1803",
     "1815",
     "1816",
     "1817",
+    "1825",
+    "1834",
     "1841",
     "1847",
     "1849",
@@ -149,6 +176,7 @@
     "1876",
     "1878",
     "1881",
+    "1886",
     "1887",
     "1889",
     "1892",
@@ -161,7 +189,9 @@
     "1907",
     "1908",
     "1909",
+    "1912",
     "1918",
+    "1919",
     "1923",
     "1925",
     "1927",

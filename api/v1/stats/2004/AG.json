@@ -2,8 +2,8 @@
   "year": "2004",
   "year_semantics": "enactment",
   "entity": "AG",
-  "total": 28,
-  "categorized": 28,
+  "total": 29,
+  "categorized": 29,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -48,6 +48,19 @@
         "1.20.20.40.50 Renten, Versicherungsansprüche": 1
       }
     },
+    "Anderes": {
+      "total": 4,
+      "by_topic": {
+        "673 Gebäudeversicherung": 2,
+        "530 Bund – Grenzwacht – Interkantonale Vereinbarungen": 1,
+        "963 Arbeitsverhältnisse": 1
+      },
+      "by_global_category": {
+        "5.40.10 Grenzwacht": 1,
+        "5.20.30.40.10 Elementarschadenversicherung": 1,
+        "2.20.10.40.20.30 Landwirtschaft": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 3,
       "by_topic": {
@@ -57,17 +70,6 @@
       },
       "by_global_category": {
         "1.10.40 Interkantonale Zusammenarbeit": 1
-      }
-    },
-    "Anderes": {
-      "total": 3,
-      "by_topic": {
-        "673 Gebäudeversicherung": 2,
-        "963 Arbeitsverhältnisse": 1
-      },
-      "by_global_category": {
-        "5.20.30.40.10 Elementarschadenversicherung": 1,
-        "2.20.10.40.20.30 Landwirtschaft": 1
       }
     },
     "Gesetz": {
@@ -406,10 +408,11 @@
     {
       "identifier": "5",
       "title": "Gesamtverteidigung – Polizei – Feuerwehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -428,6 +431,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "53",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "530",
+              "title": "Bund – Grenzwacht – Interkantonale Vereinbarungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -839,11 +862,11 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -905,6 +928,26 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "5.40",
+          "title": "Zölle",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "5.40.10",
+              "title": "Grenzwacht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -997,7 +1040,7 @@
     }
   ],
   "languages_available": {
-    "de": 28
+    "de": 29
   },
   "available_years_for_entity": [
     "1803",

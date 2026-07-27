@@ -2,34 +2,41 @@
   "year": "2005",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 17,
-  "categorized": 17,
+  "total": 24,
+  "categorized": 24,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 7,
-      "by_topic": {
-        "416.3 Berufslehre": 3,
-        "411.26 Hochschulen, Fachschulen (Interkantonale Vereinbarungen)": 1,
-        "425.1 Verband der Evangelisch-Reformierten Kirchgemeinden des Kantons Solothurn": 1
-      },
-      "by_global_category": {
-        "8.10.30.80 Fusspfleger": 1,
-        "1.40.30 Evangelisch-Reformierte Kirche": 1
-      }
-    },
     "Verordnung": {
-      "total": 6,
+      "total": 9,
       "by_topic": {
         "817.1 Kantonales Spital": 2,
         "124.2 Haftung des Gemeinwesens": 1,
         "125.8 Haftrichter": 1,
+        "128.1 Kurse": 1,
+        "128.2 Prüfungen, Ausbildung": 1,
         "413.2 Behörde": 1,
-        "531 Kantonale Organisation": 1
+        "531 Kantonale Organisation": 1,
+        "832.1 Krankenversicherung": 1
       },
       "by_global_category": {
         "1.20.40 Staatshaftung": 1,
-        "4.120.80 Schulleitung": 1
+        "1.50.10.10 Ausbildung": 1,
+        "4.120.80 Schulleitung": 1,
+        "8.30.60.40 Einschränkung der Zulassung von Leistungserbringern": 1
+      }
+    },
+    "Anderes": {
+      "total": 9,
+      "by_topic": {
+        "416.3 Berufslehre": 3,
+        "411.26 Hochschulen, Fachschulen (Interkantonale Vereinbarungen)": 1,
+        "425.1 Verband der Evangelisch-Reformierten Kirchgemeinden des Kantons Solothurn": 1,
+        "618.1 Grundlagen": 1,
+        "817.1 Kantonales Spital": 1
+      },
+      "by_global_category": {
+        "8.10.30.80 Fusspfleger": 1,
+        "1.40.30 Evangelisch-Reformierte Kirche": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -41,6 +48,17 @@
       },
       "by_global_category": {
         "7.50.20.20 Strassenverkehrspolizei": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "125.9 Verwaltungsgerichtsbarkeit": 1,
+        "618.5 Prävention und Intervention": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1,
+        "5.20.30.10 Feuerwehr": 1
       }
     },
     "Gesetz": {
@@ -55,19 +73,21 @@
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 4,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 2,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 4,
+            "Reglement": 1
           },
           "children": [
             {
@@ -93,15 +113,54 @@
             {
               "identifier": "125",
               "title": "Gerichte",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Reglement": 1
               },
               "children": [
                 {
                   "identifier": "125.8",
                   "title": "Haftrichter",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "125.9",
+                  "title": "Verwaltungsgerichtsbarkeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "128",
+              "title": "Staatliche Kurse und Prüfungen",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "128.1",
+                  "title": "Kurse",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "128.2",
+                  "title": "Prüfungen, Ausbildung",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -327,6 +386,60 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "Finanzen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "618",
+              "title": "Gebäudeversicherung und Feuerpolizei",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "618.1",
+                  "title": "Grundlagen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "618.5",
+                  "title": "Prävention und Intervention",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Bauwesen, öffentliche Werke, Verkehr",
       "total": 1,
@@ -371,37 +484,72 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 3,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 2,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "817",
               "title": "Spitalwesen",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 2,
+                "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "817.1",
                   "title": "Kantonales Spital",
-                  "total": 2,
-                  "own": 2,
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
-                    "Verordnung": 2
+                    "Verordnung": 2,
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Sozialrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Kranken- und Unfallversicherung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "832.1",
+                  "title": "Krankenversicherung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -415,20 +563,22 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 2,
+        "Reglement": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Reglement": 1
           },
           "children": [
             {
@@ -439,6 +589,37 @@
               "by_type": {
                 "Verordnung": 1
               }
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.20",
+                      "title": "Obere Gerichte, Bundesgerichte",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -459,6 +640,37 @@
               "by_type": {
                 "Anderes": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.50.10",
+              "title": "Anwälte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.10.10",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -490,6 +702,48 @@
               "by_type": {
                 "Verordnung": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.10",
+                  "title": "Feuerwehr",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -540,10 +794,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -576,12 +831,43 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.40",
+                  "title": "Einschränkung der Zulassung von Leistungserbringern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 17
+    "de": 24
   },
   "available_years_for_entity": [
     "1780",

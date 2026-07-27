@@ -2,20 +2,23 @@
   "year": "2004",
   "year_semantics": "enactment",
   "entity": "VD",
-  "total": 32,
-  "categorized": 32,
+  "total": 39,
+  "categorized": 39,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 18,
+      "total": 22,
       "by_topic": {
         "412 Enseignement secondaire supérieur": 2,
         "414.100 Université en général": 2,
         "817 Denrées alimentaires et objets d'usage courant": 2,
+        "172.160 Préfets": 1,
         "173.000 Organisation judiciaire": 1,
         "178 Notaires": 1,
         "312.100 Contraventions": 1,
-        "417.500 Formation des handicapés": 1,
+        "741.100 Impôts et taxes de circulation": 1,
+        "810.000 Établissements sanitaires en général": 1,
+        "811.000 Professions de la santé en général": 1,
         "831.000 AVS/AI en général": 1,
         "850.050 Aide sociale": 1,
         "850.350 Pensions alimentaires": 1,
@@ -23,12 +26,16 @@
         "850.600 Intégration des handicapés": 1,
         "916.105 Cultures végétales en général": 1,
         "935.200 Professions soumises à autorisation": 1,
+        "935.300 Auberges et débits de boisson": 1,
         "943.000 Exercice du commerce en particulier": 1
       },
       "by_global_category": {
+        "1.20.20.20.40 Regierungsstatthalter, Oberamtmann": 1,
         "3.50 Ordnungsbussen": 1,
         "4.100.30 Schulgebühren": 1,
         "4.30.30 Berufsorientierung": 1,
+        "1.20.20.30.20 Direktionen und Ämter": 1,
+        "8.10.20.30 Patientenrechte": 1,
         "8.10.130.10.10 Lebensmittelaufsicht": 1,
         "8.10.130.10.30 Pilze": 1,
         "1.10.70.20.10 Asylwesen": 1,
@@ -36,12 +43,14 @@
         "8.70.20 Jugendschutz, Jugendhilfe": 1,
         "8.70.30.10 Alters- und Pflegeheime": 1,
         "5.30.60 Sicherheitsunternehmen": 1,
+        "9.50.10.10 Berufsausübungsbewilligungen": 1,
         "9.50.10.70 Prostitution": 1
       }
     },
     "Gesetz": {
-      "total": 10,
+      "total": 11,
       "by_topic": {
+        "141 Droit de cité": 1,
         "173.300 Tribunal cantonal, Cours cantonales": 1,
         "175.600 Fusions et collaboration intercommunale": 1,
         "178 Notaires": 1,
@@ -54,6 +63,7 @@
         "943.000 Exercice du commerce en particulier": 1
       },
       "by_global_category": {
+        "1.10.60 Bürgerrecht": 1,
         "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1,
         "1.30.50 Gemeindefusionen": 1,
         "8.70.70 Alimentenbevorschussung": 1,
@@ -62,13 +72,16 @@
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
         "172.300 Engagement, statut et rapports de service du personnel de l'État": 1,
+        "173.300 Tribunal cantonal, Cours cantonales": 1,
+        "836.000 Allocations familiales en général": 1,
         "914 Crédit agricole": 1
       },
       "by_global_category": {
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1,
         "9.20.10 Förderungsmassnahmen": 1
       }
     },
@@ -88,27 +101,67 @@
     {
       "identifier": "1",
       "title": "ÉTAT - PEUPLE - AUTORITÉS",
-      "total": 8,
+      "total": 11,
       "own": 0,
       "by_type": {
-        "Loi": 3,
-        "Ordonnance parlementaire (décret)": 2,
-        "Règlement": 2,
-        "Autre": 1
+        "Loi": 4,
+        "Règlement": 3,
+        "Autre": 2,
+        "Ordonnance parlementaire (décret)": 2
       },
       "children": [
         {
-          "identifier": "17",
-          "title": "AUTORITÉS",
-          "total": 8,
+          "identifier": "14",
+          "title": "DROIT DE CITÉ - ÉTABLISSEMENT - SÉJOUR",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Loi": 3,
-            "Ordonnance parlementaire (décret)": 2,
-            "Règlement": 2,
-            "Autre": 1
+            "Loi": 1
           },
           "children": [
+            {
+              "identifier": "141",
+              "title": "Droit de cité",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "17",
+          "title": "AUTORITÉS",
+          "total": 10,
+          "own": 0,
+          "by_type": {
+            "Règlement": 3,
+            "Loi": 3,
+            "Autre": 2,
+            "Ordonnance parlementaire (décret)": 2
+          },
+          "children": [
+            {
+              "identifier": "172.1",
+              "title": "Gouvernement",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "172.160",
+                  "title": "Préfets",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "172.2",
               "title": "Administration",
@@ -134,10 +187,11 @@
             {
               "identifier": "173",
               "title": "Tribunaux",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
                 "Règlement": 1,
+                "Autre": 1,
                 "Loi": 1
               },
               "children": [
@@ -153,9 +207,10 @@
                 {
                   "identifier": "173.300",
                   "title": "Tribunal cantonal, Cours cantonales",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Autre": 1,
                     "Loi": 1
                   }
                 }
@@ -262,20 +317,20 @@
     {
       "identifier": "4",
       "title": "ECOLE - SCIENCE - CULTURE",
-      "total": 7,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Règlement": 5,
+        "Règlement": 4,
         "Loi": 2
       },
       "children": [
         {
           "identifier": "40",
           "title": "ÉDUCATION , FORMATION",
-          "total": 7,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Règlement": 5,
+            "Règlement": 4,
             "Loi": 2
           },
           "children": [
@@ -313,20 +368,18 @@
             {
               "identifier": "417",
               "title": "Autres formations",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Règlement": 1,
                 "Loi": 1
               },
               "children": [
                 {
                   "identifier": "417.500",
                   "title": "Formation des handicapés",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Règlement": 1,
                     "Loi": 1
                   }
                 }
@@ -368,24 +421,107 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
-      "total": 10,
+      "identifier": "7",
+      "title": "TRAVAUX PUBLICS - ÉNERGIE - TRANSPORTS - COMMUNICATIONS",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 7,
-        "Loi": 3
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "74",
+          "title": "TRANSPORTS",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "741",
+              "title": "Circulation routière",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "741.100",
+                  "title": "Impôts et taxes de circulation",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
+      "total": 13,
+      "own": 0,
+      "by_type": {
+        "Règlement": 9,
+        "Loi": 3,
+        "Autre": 1
       },
       "children": [
         {
           "identifier": "80",
           "title": "SANTÉ",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Règlement": 2
+            "Règlement": 4
           },
           "children": [
+            {
+              "identifier": "810",
+              "title": "Établissements sanitaires et apparentés",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "810.000",
+                  "title": "Établissements sanitaires en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "811",
+              "title": "Professions de la santé ",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.000",
+                  "title": "Professions de la santé en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "817",
               "title": "Denrées alimentaires et objets d'usage courant",
@@ -400,10 +536,11 @@
         {
           "identifier": "83",
           "title": "ASSURANCES SOCIALES",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 1,
+            "Autre": 1
           },
           "children": [
             {
@@ -422,6 +559,26 @@
                   "own": 1,
                   "by_type": {
                     "Règlement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "836",
+              "title": "Allocations familiales",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "836.000",
+                  "title": "Allocations familiales en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
                   }
                 }
               ]
@@ -496,10 +653,10 @@
     {
       "identifier": "9",
       "title": "ÉCONOMIE - COOPÉRATION TECHNIQUE",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Règlement": 3,
+        "Règlement": 4,
         "Autre": 1,
         "Loi": 1
       },
@@ -548,25 +705,34 @@
         {
           "identifier": "93",
           "title": "INDUSTRIE, ARTS ET MÉTIERS",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Règlement": 2,
+            "Règlement": 3,
             "Loi": 1
           },
           "children": [
             {
               "identifier": "935",
               "title": "Services",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Règlement": 1
+                "Règlement": 2
               },
               "children": [
                 {
                   "identifier": "935.200",
                   "title": "Professions soumises à autorisation",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                },
+                {
+                  "identifier": "935.300",
+                  "title": "Auberges et débits de boisson",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -606,24 +772,34 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 6,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Ordonnance parlementaire (décret)": 2,
-        "Loi": 2,
-        "Règlement": 1,
-        "Autre": 1
+        "Loi": 3,
+        "Règlement": 3,
+        "Autre": 2,
+        "Ordonnance parlementaire (décret)": 2
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Loi": 1,
             "Règlement": 1
           },
           "children": [
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            },
             {
               "identifier": "1.10.70",
               "title": "Niederlassung und Aufenthalt",
@@ -660,10 +836,11 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 3,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Autre": 1,
+            "Règlement": 2,
+            "Autre": 2,
             "Ordonnance parlementaire (décret)": 1,
             "Loi": 1
           },
@@ -671,13 +848,54 @@
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 2,
+              "total": 4,
               "own": 0,
               "by_type": {
+                "Règlement": 2,
                 "Autre": 1,
                 "Ordonnance parlementaire (décret)": 1
               },
               "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Règlement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.40",
+                      "title": "Regierungsstatthalter, Oberamtmann",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Règlement": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Règlement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.20",
+                      "title": "Direktionen und Ämter",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Règlement": 1
+                      }
+                    }
+                  ]
+                },
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
@@ -705,27 +923,30 @@
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Autre": 1,
                 "Loi": 1
               },
               "children": [
                 {
                   "identifier": "1.20.70.10",
                   "title": "Gerichtsbehörden",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
+                    "Autre": 1,
                     "Loi": 1
                   },
                   "children": [
                     {
                       "identifier": "1.20.70.10.20",
                       "title": "Obere Gerichte, Bundesgerichte",
-                      "total": 1,
-                      "own": 1,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
+                        "Autre": 1,
                         "Loi": 1
                       }
                     }
@@ -872,22 +1093,42 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 7,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Règlement": 5,
+        "Règlement": 6,
         "Loi": 2
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Règlement": 2
+            "Règlement": 3
           },
           "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.30",
+                  "title": "Patientenrechte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "8.10.130",
               "title": "Hygiene",
@@ -987,11 +1228,11 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Règlement": 2,
         "Autre": 1,
-        "Règlement": 1,
         "Loi": 1
       },
       "children": [
@@ -1018,23 +1259,32 @@
         {
           "identifier": "9.50",
           "title": "Gewerbe",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Règlement": 1,
+            "Règlement": 2,
             "Loi": 1
           },
           "children": [
             {
               "identifier": "9.50.10",
               "title": "Dienstleistungen",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Règlement": 1,
+                "Règlement": 2,
                 "Loi": 1
               },
               "children": [
+                {
+                  "identifier": "9.50.10.10",
+                  "title": "Berufsausübungsbewilligungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                },
                 {
                   "identifier": "9.50.10.70",
                   "title": "Prostitution",
@@ -1053,7 +1303,7 @@
     }
   ],
   "languages_available": {
-    "fr": 32
+    "fr": 39
   },
   "available_years_for_entity": [
     "1803",
@@ -1099,6 +1349,7 @@
     "1942",
     "1943",
     "1944",
+    "1945",
     "1946",
     "1947",
     "1948",

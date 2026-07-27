@@ -2,19 +2,22 @@
   "year": "1998",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 17,
-  "categorized": 17,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 10,
+      "total": 13,
       "by_topic": {
         "170.1 Gemeindegesetz": 1,
         "215.32 Grundbuch": 1,
         "321 Im Allgemeinen": 1,
+        "423 Kulturförderung": 1,
+        "436.1 Allgemeines": 1,
         "437.1 Allgemeines": 1,
         "706 Finanzierung": 1,
         "761.6 Steuern und Abgaben": 1,
+        "766 Rohrleitungsanlagen": 1,
         "841.1 Alters- und Hinterlassenenversicherung": 1,
         "866.1 Zuschussdekret": 1,
         "916.7 Viehhandel": 1
@@ -22,7 +25,9 @@
       "by_global_category": {
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
         "1.20.50 Datenschutz": 1,
+        "4.180.20 Kulturförderung": 1,
         "4.150 Schulsport": 1,
+        "7.50.40 Rohrleitungen": 1,
         "8.30.10 Ausgleichskassen": 1,
         "8.70.10 Sozialhilfe": 1,
         "9.20.90.20 Viehhandel": 1
@@ -53,15 +58,6 @@
       "total": 1,
       "by_topic": {},
       "by_global_category": {}
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "661.54 Bewertung von Grundstücken und Wasserkräften": 1
-      },
-      "by_global_category": {
-        "2.10.40.10 Schätzung von Grundstücken": 1
-      }
     }
   },
   "by_topic_tree": [
@@ -229,21 +225,61 @@
     {
       "identifier": "4",
       "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 3
       },
       "children": [
         {
-          "identifier": "43",
-          "title": "Ausbildung und Wissenschaft",
+          "identifier": "42",
+          "title": "Kultur",
           "total": 1,
           "own": 0,
           "by_type": {
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "423",
+              "title": "Kulturförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "43",
+          "title": "Ausbildung und Wissenschaft",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "436",
+              "title": "Universität",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "436.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "437",
               "title": "Turnen und Sport",
@@ -269,65 +305,12 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Regalien",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
-      },
-      "children": [
-        {
-          "identifier": "66",
-          "title": "Steuern und Abgaben",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
-          },
-          "children": [
-            {
-              "identifier": "661",
-              "title": "Direkte Kantons- und Gemeindesteuern",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
-              },
-              "children": [
-                {
-                  "identifier": "661.5",
-                  "title": "Steuerveranlagung",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "661.54",
-                      "title": "Bewertung von Grundstücken und Wasserkräften",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung des Parlaments (Dekret)": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "7",
       "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Verordnung": 3,
         "Gesetz": 1
       },
       "children": [
@@ -354,10 +337,10 @@
         {
           "identifier": "76",
           "title": "Verkehr",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
+            "Verordnung": 2,
             "Gesetz": 1
           },
           "children": [
@@ -382,6 +365,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "766",
+              "title": "Rohrleitungsanlagen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -591,42 +583,30 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "2.10.40",
               "title": "Sachenrecht",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1,
                 "Verordnung": 1
               },
               "children": [
-                {
-                  "identifier": "2.10.40.10",
-                  "title": "Schätzung von Grundstücken",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung des Parlaments (Dekret)": 1
-                  }
-                },
                 {
                   "identifier": "2.10.40.30",
                   "title": "Grundbuch und Grundbuchvermessung",
@@ -645,10 +625,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
@@ -659,25 +639,47 @@
           "by_type": {
             "Verordnung": 1
           }
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.20",
+              "title": "Kulturförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "7.50",
           "title": "Verkehr",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -699,6 +701,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "7.50.40",
+              "title": "Rohrleitungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -820,10 +831,11 @@
     }
   ],
   "languages_available": {
-    "de": 17,
-    "fr": 14
+    "de": 19,
+    "fr": 16
   },
   "available_years_for_entity": [
+    "1000",
     "1562",
     "1828",
     "1837",
@@ -835,6 +847,7 @@
     "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
     "1877",
     "1889",
@@ -846,12 +859,14 @@
     "1909",
     "1911",
     "1917",
+    "1918",
     "1923",
     "1924",
     "1931",
     "1934",
     "1936",
     "1937",
+    "1938",
     "1939",
     "1940",
     "1942",

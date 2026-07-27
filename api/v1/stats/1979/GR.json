@@ -2,10 +2,29 @@
   "year": "1979",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 4,
-  "categorized": 4,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "44 Förderung Behinderter": 1,
+        "506 Krankenpflege": 1
+      },
+      "by_global_category": {
+        "8.70.20 Jugendschutz, Jugendhilfe": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "32 Zivilrechtspflege": 1
+      },
+      "by_global_category": {
+        "2.40 Unlauterer Wettbewerb / Kartellrecht": 1
+      }
+    },
     "Anderes": {
       "total": 1,
       "by_topic": {
@@ -15,14 +34,12 @@
         "4.120.60 Schulbauten": 1
       }
     },
-    "Gesetz": {
+    "Verordnung": {
       "total": 1,
       "by_topic": {
-        "44 Förderung Behinderter": 1
+        "506 Krankenpflege": 1
       },
-      "by_global_category": {
-        "8.70.20 Jugendschutz, Jugendhilfe": 1
-      }
+      "by_global_category": {}
     },
     "Reglement": {
       "total": 1,
@@ -44,6 +61,26 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "3",
+      "title": "Rechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "32",
+          "title": "Zivilrechtspflege",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
@@ -88,27 +125,33 @@
     {
       "identifier": "5",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "50",
           "title": "Sanitätswesen",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1,
             "Reglement": 1
           },
           "children": [
             {
               "identifier": "506",
               "title": "Krankenpflege",
-              "total": 1,
-              "own": 1,
+              "total": 3,
+              "own": 3,
               "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1,
                 "Reglement": 1
               }
             }
@@ -138,6 +181,26 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "2.40",
+          "title": "Unlauterer Wettbewerb / Kartellrecht",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -254,10 +317,11 @@
     }
   ],
   "languages_available": {
-    "de": 4,
-    "it": 4
+    "de": 7,
+    "it": 7
   },
   "available_years_for_entity": [
+    "1870",
     "1877",
     "1901",
     "1908",
@@ -270,9 +334,11 @@
     "1936",
     "1937",
     "1943",
+    "1944",
     "1946",
     "1947",
     "1948",
+    "1950",
     "1951",
     "1952",
     "1953",

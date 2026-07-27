@@ -2,8 +2,8 @@
   "year": "1963",
   "year_semantics": "enactment",
   "entity": "ZH",
-  "total": 6,
-  "categorized": 6,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
@@ -20,21 +20,27 @@
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "181.1 Grundlagen": 1,
+        "182 Römisch-katholische Körperschaft": 1,
         "741 Strassenverkehr": 1
       },
       "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 1
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1
       }
     },
     "Verordnung": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
+        "810 Grundlagen und Organisation des Gesundheitswesens": 1,
+        "818.6 Bestattungswesen": 1,
         "836 Familienzulagen": 1
       },
       "by_global_category": {
+        "8.10.30.10 Ärzte": 1,
+        "8.10.130.40 Bestattungswesen, Friedhöfe": 1,
         "8.30.100.20 Arbeitnehmer und Selbständige": 1
       }
     }
@@ -43,21 +49,21 @@
     {
       "identifier": "1",
       "title": "Staat – Volk – Behörden",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Gesetz": 2,
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "18",
           "title": "Kirche und Staat. Religionsgemeinschaften",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Gesetz": 2,
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
@@ -85,10 +91,11 @@
             {
               "identifier": "182",
               "title": "Römisch-katholische Körperschaft",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Gesetz": 1
+                "Gesetz": 1,
+                "Anderes": 1
               }
             }
           ]
@@ -150,12 +157,52 @@
     {
       "identifier": "8",
       "title": "Gesundheit – Arbeit – Soziale Sicherheit",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 3
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "810",
+              "title": "Grundlagen und Organisation des Gesundheitswesens",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "818",
+              "title": "Krankheitsbekämpfung und Gesundheitsförderung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "818.6",
+                  "title": "Bestattungswesen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "83",
           "title": "Sozialversicherung",
@@ -183,30 +230,31 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Gesetz": 2,
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Gesetz": 2,
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "1.40.10",
               "title": "Römisch-Katholische Kirche",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Gesetz": 1
+                "Gesetz": 1,
+                "Anderes": 1
               }
             },
             {
@@ -268,12 +316,63 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 3
       },
       "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.40",
+                  "title": "Bestattungswesen, Friedhöfe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
@@ -309,10 +408,12 @@
     }
   ],
   "languages_available": {
-    "de": 6
+    "de": 9
   },
   "available_years_for_entity": [
+    "1000",
     "1825",
+    "1834",
     "1841",
     "1846",
     "1866",
@@ -325,9 +426,13 @@
     "1900",
     "1901",
     "1902",
+    "1906",
     "1908",
+    "1910",
     "1911",
+    "1913",
     "1914",
+    "1915",
     "1916",
     "1919",
     "1920",
@@ -340,6 +445,7 @@
     "1929",
     "1930",
     "1931",
+    "1932",
     "1933",
     "1934",
     "1936",
@@ -364,6 +470,7 @@
     "1959",
     "1960",
     "1961",
+    "1962",
     "1963",
     "1964",
     "1965",

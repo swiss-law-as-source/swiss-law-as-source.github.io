@@ -2,10 +2,24 @@
   "year": "1996",
   "year_semantics": "enactment",
   "entity": "ZH",
-  "total": 11,
-  "categorized": 11,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "171 Kantonsrat": 2,
+        "211 Allgemeine Gerichtsorganisation": 1,
+        "34 Opferhilfe": 1,
+        "61 Finanzhaushalt": 1
+      },
+      "by_global_category": {
+        "1.10.70.20.20 Zwangsmassnahmen": 1,
+        "3.20.70 Opferhilfe": 1,
+        "6.10.10 Budget und Rechnung": 1
+      }
+    },
     "Anderes": {
       "total": 5,
       "by_topic": {
@@ -19,16 +33,6 @@
         "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
         "1.20.70.10.40 Bezirks-, Amts- und Friedensgericht": 1,
         "8.10.70 Heil- und Betäubungsmittel": 1
-      }
-    },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "171 Kantonsrat": 1,
-        "61 Finanzhaushalt": 1
-      },
-      "by_global_category": {
-        "6.10.10 Budget und Rechnung": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -57,29 +61,30 @@
     {
       "identifier": "1",
       "title": "Staat – Volk – Behörden",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "17",
           "title": "Behörden und Verwaltung",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Anderes": 1
+            "Anderes": 2,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "171",
               "title": "Kantonsrat",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Anderes": 1,
                 "Verordnung": 1
               }
             },
@@ -110,21 +115,32 @@
     {
       "identifier": "2",
       "title": "Gerichtsorganisation – Zivilrecht – Notariat – Grundbuch",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Gerichtsorganisation",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "211",
+              "title": "Allgemeine Gerichtsorganisation",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "212",
               "title": "Gerichte",
@@ -146,6 +162,26 @@
               ]
             }
           ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht – Strafvollzug – Opferhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "34",
+          "title": "Opferhilfe",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
         }
       ]
     },
@@ -350,12 +386,55 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.20",
+                      "title": "Zwangsmassnahmen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -426,6 +505,37 @@
                   ]
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.70",
+              "title": "Opferhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -598,10 +708,12 @@
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 14
   },
   "available_years_for_entity": [
+    "1000",
     "1825",
+    "1834",
     "1841",
     "1846",
     "1866",
@@ -614,9 +726,13 @@
     "1900",
     "1901",
     "1902",
+    "1906",
     "1908",
+    "1910",
     "1911",
+    "1913",
     "1914",
+    "1915",
     "1916",
     "1919",
     "1920",
@@ -629,6 +745,7 @@
     "1929",
     "1930",
     "1931",
+    "1932",
     "1933",
     "1934",
     "1936",
@@ -653,6 +770,7 @@
     "1959",
     "1960",
     "1961",
+    "1962",
     "1963",
     "1964",
     "1965",

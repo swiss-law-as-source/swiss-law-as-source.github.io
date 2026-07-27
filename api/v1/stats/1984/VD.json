@@ -2,33 +2,39 @@
   "year": "1984",
   "year_semantics": "enactment",
   "entity": "VD",
-  "total": 12,
-  "categorized": 12,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 4,
+      "total": 7,
       "by_topic": {
+        "211.250 Tutelle": 1,
         "400.000 Instruction publique": 1,
         "400.450 Écoles privées": 1,
         "741.100 Impôts et taxes de circulation": 1,
-        "923.000 Pêche en général": 1
+        "831.000 AVS/AI en général": 1,
+        "923.000 Pêche en général": 1,
+        "963.400 Assurances": 1
       },
       "by_global_category": {
+        "2.10.20.10 Vormundschaft": 1,
         "4.10.20 Kindergarten": 1,
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
-        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1
+        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1,
+        "8.30.30 AHV / IV": 1,
+        "5.20.30.20 Brandschutz": 1
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
-        "172.400 Salaires, retraites, indemnités et assurances du personnel de l'État": 1,
+        "172.400 Salaires, retraites, indemnités et assurances du personnel de l'État": 2,
         "400.000 Instruction publique": 1,
         "400.450 Écoles privées": 1
       },
       "by_global_category": {
-        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 2,
         "4.10.20 Kindergarten": 1,
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
       }
@@ -45,6 +51,16 @@
         "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1
       }
     },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "270 Procédure civile en général": 1,
+        "747.200 Police de la navigation": 1
+      },
+      "by_global_category": {
+        "2.50.10 Kosten": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
@@ -53,53 +69,109 @@
       "by_global_category": {
         "7.10.10 Pläne": 1
       }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "747.200 Police de la navigation": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "ÉTAT - PEUPLE - AUTORITÉS",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Loi": 2
       },
       "children": [
         {
           "identifier": "17",
           "title": "AUTORITÉS",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Loi": 1
+            "Loi": 2
           },
           "children": [
             {
               "identifier": "172.2",
               "title": "Administration",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Loi": 1
+                "Loi": 2
               },
               "children": [
                 {
                   "identifier": "172.400",
                   "title": "Salaires, retraites, indemnités et assurances du personnel de l'État",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Loi": 1
+                    "Loi": 2
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "DROIT PRIVÉ - PROCÉDURE CIVILE - EXÉCUTION",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1,
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "DROIT CIVIL",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "211",
+              "title": "Dispositions complémentaires et d'exécution du Code civil",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "211.250",
+                  "title": "Tutelle",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "27",
+          "title": "PROCÉDURE CIVILE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "270",
+              "title": "Procédure civile en général",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
             }
           ]
         }
@@ -352,12 +424,54 @@
       ]
     },
     {
-      "identifier": "9",
-      "title": "ÉCONOMIE - COOPÉRATION TECHNIQUE",
+      "identifier": "8",
+      "title": "SANTÉ - TRAVAIL - SÉCURITÉ SOCIALE",
       "total": 1,
       "own": 0,
       "by_type": {
         "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "ASSURANCES SOCIALES",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "831",
+              "title": "AVS / AI / Prévoyance professionnelle",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "831.000",
+                  "title": "AVS/AI en général",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "ÉCONOMIE - COOPÉRATION TECHNIQUE",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Règlement": 2
       },
       "children": [
         {
@@ -390,6 +504,37 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "96",
+          "title": "ASSURANCES, INCENDIES ET ELEMENTS NATURELS",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "963",
+              "title": "Lutte contre les incendies et les éléments naturels",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "963.400",
+                  "title": "Assurances",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -398,51 +543,114 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Loi": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Loi": 1
+            "Loi": 2
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Loi": 1
+                "Loi": 2
               },
               "children": [
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Loi": 1
+                    "Loi": 2
                   },
                   "children": [
                     {
                       "identifier": "1.20.20.40.50",
                       "title": "Renten, Versicherungsansprüche",
-                      "total": 1,
-                      "own": 1,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
-                        "Loi": 1
+                        "Loi": 2
                       }
                     }
                   ]
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1,
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.20",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.20.10",
+                  "title": "Vormundschaft",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "2.50",
+          "title": "Zivilrechtspflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "2.50.10",
+              "title": "Kosten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
             }
           ]
         }
@@ -487,6 +695,48 @@
                 "Règlement": 1,
                 "Loi": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.20",
+                  "title": "Brandschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -617,10 +867,41 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "fr": 12
+    "fr": 17
   },
   "available_years_for_entity": [
     "1803",
@@ -666,6 +947,7 @@
     "1942",
     "1943",
     "1944",
+    "1945",
     "1946",
     "1947",
     "1948",

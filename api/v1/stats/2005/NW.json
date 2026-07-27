@@ -2,8 +2,8 @@
   "year": "2005",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 19,
-  "categorized": 19,
+  "total": 25,
+  "categorized": 25,
   "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
@@ -22,16 +22,21 @@
       }
     },
     "Verordnung": {
-      "total": 4,
+      "total": 9,
       "by_topic": {
-        "331 Allgemeine Bestimmungen": 2,
-        "319 Sport": 1,
-        "721 Allgemeine Bestimmungen": 1
+        "331 Allgemeine Bestimmungen": 3,
+        "263 Strafrechtspflege": 2,
+        "721 Allgemeine Bestimmungen": 2,
+        "132 Kantonale Wahlen und Abstimmungen": 1,
+        "319 Sport": 1
       },
       "by_global_category": {
+        "1.20.10.10 Wahl des Parlaments": 1,
+        "3.20.30 DNA-Profile": 1,
         "4.180.30 Sport": 1,
         "7.70.10 Landschaftsschutz": 1,
-        "6.10.30 Staatsbeiträge, Subventionen": 1
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "7.70.20 Tierschutz": 1
       }
     },
     "Gesetz": {
@@ -65,16 +70,26 @@
       "by_global_category": {
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
       }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "714 Kantonsspital, Heime und Anstalten": 1
+      },
+      "by_global_category": {
+        "8.10.20.10 Kantonsspitäler": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -96,16 +111,67 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "13",
+          "title": "Politische Rechte",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "132",
+              "title": "Kantonale Wahlen und Abstimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht - Strafrecht - Rechtspflege - Vollzug",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "26",
+          "title": "Rechtspflege",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "263",
+              "title": "Strafrechtspflege",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "3",
       "title": "Bildung - Kultur",
-      "total": 7,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
+        "Verordnung": 4,
         "Interkantonale Vereinbarung": 2,
         "Anderes": 1,
         "Reglement": 1
@@ -164,19 +230,19 @@
         {
           "identifier": "33",
           "title": "Natur- und Landschaftsschutz",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 3
           },
           "children": [
             {
               "identifier": "331",
               "title": "Allgemeine Bestimmungen",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 3
               }
             }
           ]
@@ -217,24 +283,35 @@
     {
       "identifier": "7",
       "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 2,
+        "Anderes": 1,
         "Reglement": 1,
-        "Gesetz": 1,
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "71",
           "title": "Gesundheit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Reglement": 1
           },
           "children": [
+            {
+              "identifier": "714",
+              "title": "Kantonsspital, Heime und Anstalten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "717",
               "title": "Lebensmittel und Gebrauchsgegenstände",
@@ -249,21 +326,21 @@
         {
           "identifier": "72",
           "title": "Umweltschutz",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "721",
               "title": "Allgemeine Bestimmungen",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
+                "Verordnung": 2,
+                "Gesetz": 1
               }
             }
           ]
@@ -378,10 +455,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -401,6 +479,37 @@
               "by_type": {
                 "Interkantonale Vereinbarung": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.10",
+              "title": "Parlament",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.10.10",
+                  "title": "Wahl des Parlaments",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -454,6 +563,37 @@
                   ]
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.30",
+              "title": "DNA-Profile",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -587,24 +727,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "7.70.10",
               "title": "Landschaftsschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "7.70.20",
+              "title": "Tierschutz",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -618,9 +767,10 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Reglement": 1,
         "Gesetz": 1
       },
@@ -628,12 +778,33 @@
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Reglement": 1
           },
           "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.10",
+                  "title": "Kantonsspitäler",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "8.10.130",
               "title": "Hygiene",
@@ -744,15 +915,17 @@
     }
   ],
   "languages_available": {
-    "de": 19
+    "de": 25
   },
   "available_years_for_entity": [
+    "1000",
     "1632",
     "1787",
     "1842",
     "1850",
     "1890",
     "1900",
+    "1901",
     "1909",
     "1911",
     "1926",

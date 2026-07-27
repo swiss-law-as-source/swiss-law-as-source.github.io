@@ -2,33 +2,36 @@
   "year": "1973",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 16,
-  "categorized": 16,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 6,
+      "total": 7,
       "by_topic": {
         "164 Lohn und Entschädigungen": 2,
         "321 Übertragbare Krankheiten": 1,
+        "439 Lehrerprüfungen": 1,
         "695 Gebäudeversicherung": 1,
         "727 Strassenreinigung und Kehrichtabfuhr": 1,
         "831 Ausgleichskassen": 1
       },
       "by_global_category": {
-        "4.90.20 Löhne, Entschädigungen": 2,
+        "4.90.20 Löhne, Entschädigungen": 3,
         "8.30.10 Ausgleichskassen": 1
       }
     },
     "Anderes": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "695 Gebäudeversicherung": 2,
         "172 Einwohnergemeinde Basel: Verhältnis zur Bürgergemeinde": 1,
+        "410 Schulen": 1,
         "447 Wissenschaftliche Institute und spezielle Forschungsbereiche": 1
       },
       "by_global_category": {
         "8.70.60 Spenden und gemeinnützige Sammlungen": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
         "4.40.40 Naturwissenschaftliche Fakultäten": 1
       }
     },
@@ -40,6 +43,15 @@
         "727 Strassenreinigung und Kehrichtabfuhr": 1
       },
       "by_global_category": {}
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "154 Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden": 1
+      },
+      "by_global_category": {
+        "1.20.70.30 Besoldung und Entschädigung der Richter": 1
+      }
     },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
@@ -69,14 +81,35 @@
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen · Organisation",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
+        "Reglement": 1,
         "Anderes": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "15",
+          "title": "Organisation des Kantons",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "154",
+              "title": "Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "16",
           "title": "Staatspersonal",
@@ -173,12 +206,53 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "410",
+              "title": "Schulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "43",
+          "title": "Lehrerbildung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "439",
+              "title": "Lehrerprüfungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "44",
           "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
@@ -326,15 +400,77 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Anderes": 1
+        "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.30",
+                  "title": "Besoldung und Entschädigung der Richter",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 3,
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.40",
           "title": "Tertiärstufe: Universitäten",
@@ -358,19 +494,19 @@
         {
           "identifier": "4.90",
           "title": "Lehrkörper",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 3
           },
           "children": [
             {
               "identifier": "4.90.20",
               "title": "Löhne, Entschädigungen",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 3
               }
             }
           ]
@@ -462,7 +598,7 @@
     }
   ],
   "languages_available": {
-    "de": 16
+    "de": 19
   },
   "available_years_for_entity": [
     "1019",
@@ -476,13 +612,16 @@
     "1857",
     "1860",
     "1863",
+    "1864",
     "1870",
     "1872",
+    "1875",
     "1876",
     "1879",
     "1882",
     "1883",
     "1886",
+    "1889",
     "1891",
     "1892",
     "1894",
@@ -507,18 +646,21 @@
     "1924",
     "1925",
     "1926",
+    "1927",
     "1928",
     "1929",
     "1930",
     "1931",
     "1932",
     "1933",
+    "1934",
     "1935",
     "1936",
     "1937",
     "1938",
     "1940",
     "1941",
+    "1942",
     "1943",
     "1944",
     "1945",

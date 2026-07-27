@@ -2,32 +2,36 @@
   "year": "1981",
   "year_semantics": "enactment",
   "entity": "GE",
-  "total": 7,
-  "categorized": 7,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "B 5 Statuts, traitements et retraite": 1,
+        "C 1 Instruction publique": 1,
         "F 4 Police du feu": 1,
         "K 1 Police sanitaire, lutte contre les maladies": 1,
         "M 3 Animaux": 1
       },
       "by_global_category": {
+        "4.100.20 Schulgelder": 1,
         "5.20.30.10 Feuerwehr": 1,
         "9.20.130 Alpfahrt": 1
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "B 4 Organisation de l’administration": 1,
+        "E 1 Droit civil et droit des obligations": 1,
         "E 3 Procédure civile": 1,
         "L 5 Police des constructions, sécurité publique": 1
       },
       "by_global_category": {
         "1.20.50 Datenschutz": 1,
+        "1.10.90.10 Gleichstellung von Mann und Frau": 1,
         "2.50.30 Vollstreckung": 1,
         "5.20.30.30 Kaminfeger": 1
       }
@@ -45,12 +49,21 @@
       }
     },
     {
-      "identifier": "E",
-      "title": "Droit civil et droit pénal, organisation judiciaire et procédure",
+      "identifier": "C",
+      "title": "Instruction publique, culture",
       "total": 1,
       "own": 1,
       "by_type": {
-        "Loi": 1
+        "Règlement": 1
+      }
+    },
+    {
+      "identifier": "E",
+      "title": "Droit civil et droit pénal, organisation judiciaire et procédure",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Loi": 2
       }
     },
     {
@@ -94,12 +107,43 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Loi": 2
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.10",
+                  "title": "Gleichstellung von Mann und Frau",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -147,6 +191,37 @@
               "own": 1,
               "by_type": {
                 "Loi": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.20",
+              "title": "Schulgelder",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
               }
             }
           ]
@@ -240,15 +315,18 @@
     }
   ],
   "languages_available": {
-    "fr": 7
+    "fr": 9
   },
   "available_years_for_entity": [
     "1564",
     "1726",
     "1749",
+    "1803",
     "1815",
     "1816",
     "1817",
+    "1825",
+    "1834",
     "1841",
     "1847",
     "1849",
@@ -260,6 +338,7 @@
     "1876",
     "1878",
     "1881",
+    "1886",
     "1887",
     "1889",
     "1892",
@@ -272,7 +351,9 @@
     "1907",
     "1908",
     "1909",
+    "1912",
     "1918",
+    "1919",
     "1923",
     "1925",
     "1927",

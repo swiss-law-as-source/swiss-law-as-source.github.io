@@ -2,48 +2,44 @@
   "year": "2001",
   "year_semantics": "enactment",
   "entity": "ZH",
-  "total": 19,
-  "categorized": 19,
+  "total": 25,
+  "categorized": 25,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 8,
+      "by_topic": {
+        "211 Allgemeine Gerichtsorganisation": 3,
+        "25 Grundbuch": 1,
+        "33 Strafvollzug": 1,
+        "634 Bundesabgaben": 1,
+        "741 Strassenverkehr": 1,
+        "813.1 Kantonale Spitäler": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 2,
+        "1.20.70.50 Gerichtskosten, Gerichtsgebühren": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "6.20.10.40 Pauschale Steueranrechnung": 1
+      }
+    },
     "Anderes": {
-      "total": 6,
+      "total": 8,
       "by_topic": {
         "415.42 Wirtschaftswissenschaftliche Fakultät": 2,
         "415.45 Philosophische Fakultät": 2,
+        "414.1 Grundlagen": 1,
+        "415.44 Vetsuisse-Fakultät": 1,
         "415.46 Mathematisch-naturwissenschaftliche Fakultät": 1,
         "821 Arbeitsvertrag. Arbeitsrechtliche Streitigkeiten": 1
       },
       "by_global_category": {
         "4.40.30 Wirtschaftsfakultät": 2,
         "4.40.50 Philosophische Fakultäten": 2,
+        "4.90.50 Universitätspersonal": 1,
+        "4.40.60 Human- und Veterianärmedizinische Fakultät": 1,
         "4.40.40 Naturwissenschaftliche Fakultäten": 1,
         "2.20.10.40.10.10 Allgemeinverbindlichkeitserklärungen": 1
-      }
-    },
-    "Verordnung": {
-      "total": 4,
-      "by_topic": {
-        "172 Regierungsrat und kantonale Verwaltung": 1,
-        "25 Grundbuch": 1,
-        "741 Strassenverkehr": 1,
-        "813.1 Kantonale Spitäler": 1
-      },
-      "by_global_category": {
-        "1.10.110 Gesetzgebungsverfahren": 1,
-        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
-      }
-    },
-    "Gesetz": {
-      "total": 3,
-      "by_topic": {
-        "15  Gleichstellung Mann und Frau": 1,
-        "551 Polizeiorganisation": 1,
-        "748 Luftfahrt": 1
-      },
-      "by_global_category": {
-        "1.10.90.10 Gleichstellung von Mann und Frau": 1,
-        "7.50.70.20 Flughäfen, Flugplätze": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -70,17 +66,36 @@
         "4.90.30 Ausbildung": 1,
         "4.160 Wissenschaft, Forschung": 1
       }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "15  Gleichstellung Mann und Frau": 1,
+        "748 Luftfahrt": 1
+      },
+      "by_global_category": {
+        "1.10.90.10 Gleichstellung von Mann und Frau": 1,
+        "7.50.70.20 Flughäfen, Flugplätze": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "212.2 Bezirksgerichte": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.40 Bezirks-, Amts- und Friedensgericht": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat – Volk – Behörden",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Verordnung": 1
+        "Gesetz": 1
       },
       "children": [
         {
@@ -91,38 +106,60 @@
           "by_type": {
             "Gesetz": 1
           }
-        },
-        {
-          "identifier": "17",
-          "title": "Behörden und Verwaltung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "172",
-              "title": "Regierungsrat und kantonale Verwaltung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
         }
       ]
     },
     {
       "identifier": "2",
       "title": "Gerichtsorganisation – Zivilrecht – Notariat – Grundbuch",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 4,
+        "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "21",
+          "title": "Gerichtsorganisation",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "211",
+              "title": "Allgemeine Gerichtsorganisation",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung": 3
+              }
+            },
+            {
+              "identifier": "212",
+              "title": "Gerichte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "212.2",
+                  "title": "Bezirksgerichte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "25",
           "title": "Grundbuch",
@@ -135,12 +172,32 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Bildung – Dokumentation – Kultur",
-      "total": 9,
+      "identifier": "3",
+      "title": "Strafrecht – Strafvollzug – Opferhilfe",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 7,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "33",
+          "title": "Strafvollzug",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bildung – Dokumentation – Kultur",
+      "total": 11,
+      "own": 0,
+      "by_type": {
+        "Anderes": 9,
         "Interkantonale Vereinbarung": 1,
         "Reglement": 1
       },
@@ -148,10 +205,10 @@
         {
           "identifier": "41",
           "title": "Bildung",
-          "total": 9,
+          "total": 11,
           "own": 0,
           "by_type": {
-            "Anderes": 7,
+            "Anderes": 9,
             "Interkantonale Vereinbarung": 1,
             "Reglement": 1
           },
@@ -179,20 +236,20 @@
             {
               "identifier": "414",
               "title": "Fachhochschulen",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 1,
+                "Anderes": 2,
                 "Reglement": 1
               },
               "children": [
                 {
                   "identifier": "414.1",
                   "title": "Grundlagen",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Anderes": 1
+                    "Anderes": 2
                   }
                 },
                 {
@@ -209,10 +266,10 @@
             {
               "identifier": "415",
               "title": "Universität",
-              "total": 6,
+              "total": 7,
               "own": 0,
               "by_type": {
-                "Anderes": 6
+                "Anderes": 7
               },
               "children": [
                 {
@@ -227,10 +284,10 @@
                 {
                   "identifier": "415.4",
                   "title": "Fakultäten. Kliniken. Institute und Sammlungen",
-                  "total": 5,
+                  "total": 6,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 5
+                    "Anderes": 6
                   },
                   "children": [
                     {
@@ -240,6 +297,15 @@
                       "own": 2,
                       "by_type": {
                         "Anderes": 2
+                      }
+                    },
+                    {
+                      "identifier": "415.44",
+                      "title": "Vetsuisse-Fakultät",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
                       }
                     },
                     {
@@ -269,30 +335,30 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Militär – Bevölkerungsschutz – Polizei – Tierschutz",
+      "identifier": "6",
+      "title": "Finanzen – Steuern",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "55",
-          "title": "Polizei",
+          "identifier": "63",
+          "title": "Steuern",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "551",
-              "title": "Polizeiorganisation",
+              "identifier": "634",
+              "title": "Bundesabgaben",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Verordnung": 1
               }
             }
           ]
@@ -463,21 +529,21 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Verordnung": 3,
         "Gesetz": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -499,15 +565,69 @@
                   }
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3,
+            "Anderes": 1
+          },
+          "children": [
             {
-              "identifier": "1.10.110",
-              "title": "Gesetzgebungsverfahren",
-              "total": 1,
-              "own": 1,
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 4,
+              "own": 0,
               "by_type": {
-                "Verordnung": 1
-              }
+                "Verordnung": 3,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 3,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 2,
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.20",
+                      "title": "Obere Gerichte, Bundesgerichte",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Verordnung": 2
+                      }
+                    },
+                    {
+                      "identifier": "1.20.70.10.40",
+                      "title": "Bezirks-, Amts- und Friedensgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.70.50",
+                  "title": "Gerichtskosten, Gerichtsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -612,10 +732,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 9,
+      "total": 11,
       "own": 0,
       "by_type": {
-        "Anderes": 7,
+        "Anderes": 9,
         "Reglement": 1,
         "Interkantonale Vereinbarung": 1
       },
@@ -623,10 +743,10 @@
         {
           "identifier": "4.40",
           "title": "Tertiärstufe: Universitäten",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Anderes": 5
+            "Anderes": 6
           },
           "children": [
             {
@@ -655,17 +775,26 @@
               "by_type": {
                 "Anderes": 2
               }
+            },
+            {
+              "identifier": "4.40.60",
+              "title": "Human- und Veterianärmedizinische Fakultät",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         },
         {
           "identifier": "4.90",
           "title": "Lehrkörper",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Reglement": 1,
-            "Anderes": 1
+            "Anderes": 2,
+            "Reglement": 1
           },
           "children": [
             {
@@ -680,10 +809,10 @@
             {
               "identifier": "4.90.50",
               "title": "Universitätspersonal",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 2
               }
             }
           ]
@@ -705,6 +834,48 @@
           "by_type": {
             "Anderes": 1
           }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.10",
+              "title": "Einkommens- Vermögenssteuern / Gewinn- Kapitalsteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.20.10.40",
+                  "title": "Pauschale Steueranrechnung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -794,10 +965,12 @@
     }
   ],
   "languages_available": {
-    "de": 19
+    "de": 25
   },
   "available_years_for_entity": [
+    "1000",
     "1825",
+    "1834",
     "1841",
     "1846",
     "1866",
@@ -810,9 +983,13 @@
     "1900",
     "1901",
     "1902",
+    "1906",
     "1908",
+    "1910",
     "1911",
+    "1913",
     "1914",
+    "1915",
     "1916",
     "1919",
     "1920",
@@ -825,6 +1002,7 @@
     "1929",
     "1930",
     "1931",
+    "1932",
     "1933",
     "1934",
     "1936",
@@ -849,6 +1027,7 @@
     "1959",
     "1960",
     "1961",
+    "1962",
     "1963",
     "1964",
     "1965",

@@ -2,10 +2,26 @@
   "year": "1987",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 13,
-  "categorized": 13,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "331 Krankenversicherung": 1,
+        "451 Polizei": 1,
+        "551 Mass und Gewicht": 1,
+        "672 Übriger Umweltschutz": 1,
+        "941 Gerichtsorganisation und -verfahren": 1
+      },
+      "by_global_category": {
+        "8.10.30.50 Chiropraktiker, Physiotherapeuten": 1,
+        "1.20.50 Datenschutz": 1,
+        "9.60.20 Messwesen, Zahlungsverkehr": 1,
+        "1.20.70.10.60 Kantonale Rekurskommissionen": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 4,
       "by_topic": {
@@ -27,16 +43,6 @@
       "by_global_category": {
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
         "4.120.20 Schulgemeinden": 1
-      }
-    },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "331 Krankenversicherung": 1,
-        "672 Übriger Umweltschutz": 1
-      },
-      "by_global_category": {
-        "8.10.30.50 Chiropraktiker, Physiotherapeuten": 1
       }
     },
     "Gesetz": {
@@ -160,23 +166,65 @@
       ]
     },
     {
-      "identifier": "5",
-      "title": "Arbeit und Gewerbe",
+      "identifier": "4",
+      "title": "Landesverteidigung, öffentliche Sicherheit und Ordnung",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "45",
+          "title": "Öffentliche Sicherheit und Ordnung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "451",
+              "title": "Polizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Arbeit und Gewerbe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "55",
           "title": "Gewerbepolizei",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "551",
+              "title": "Mass und Gewicht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "553",
               "title": "Gastwirtschaft",
@@ -266,31 +314,34 @@
     {
       "identifier": "9",
       "title": "Zivilrecht, Strafrecht, Rechtspflege",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Reglement": 2,
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "94",
           "title": "Gerichtsorganisation und -verfahren",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Reglement": 2,
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "941",
               "title": "Gerichtsorganisation und -verfahren",
-              "total": 3,
-              "own": 3,
+              "total": 4,
+              "own": 4,
               "by_type": {
                 "Reglement": 2,
-                "Gesetz": 1
+                "Gesetz": 1,
+                "Verordnung": 1
               }
             }
           ]
@@ -302,37 +353,50 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Reglement": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Reglement": 2
           },
           "children": [
             {
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Reglement": 2
+                "Reglement": 2,
+                "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "1.20.70.10",
                   "title": "Gerichtsbehörden",
-                  "total": 2,
+                  "total": 3,
                   "own": 0,
                   "by_type": {
-                    "Reglement": 2
+                    "Reglement": 2,
+                    "Verordnung": 1
                   },
                   "children": [
                     {
@@ -347,9 +411,10 @@
                     {
                       "identifier": "1.20.70.10.60",
                       "title": "Kantonale Rekurskommissionen",
-                      "total": 1,
-                      "own": 1,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
+                        "Verordnung": 1,
                         "Reglement": 1
                       }
                     }
@@ -508,10 +573,11 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -544,12 +610,32 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.20",
+              "title": "Messwesen, Zahlungsverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 16
   },
   "available_years_for_entity": [
     "1845",
@@ -563,6 +649,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",

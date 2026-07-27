@@ -2,10 +2,25 @@
   "year": "1983",
   "year_semantics": "enactment",
   "entity": "SZ",
-  "total": 10,
-  "categorized": 10,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "38 Sozialhilfe": 1,
+        "54 Öffentliche Ordnung und Sicherheit": 1,
+        "622 Berufsbildung und Berufsberatung": 1,
+        "67 Kulturförderung": 1
+      },
+      "by_global_category": {
+        "8.70.10 Sozialhilfe": 1,
+        "5.30.20.10 Hunde, gefährliche Tiere": 1,
+        "4.30.30 Berufsorientierung": 1,
+        "4.170.30 Bibliotheken": 1
+      }
+    },
     "Verordnung": {
       "total": 3,
       "by_topic": {
@@ -17,19 +32,6 @@
         "8.20.40 Heimarbeit": 1,
         "8.30.50 BVG": 1,
         "7.70.10 Landschaftsschutz": 1
-      }
-    },
-    "Gesetz": {
-      "total": 3,
-      "by_topic": {
-        "38 Sozialhilfe": 1,
-        "54 Öffentliche Ordnung und Sicherheit": 1,
-        "67 Kulturförderung": 1
-      },
-      "by_global_category": {
-        "8.70.10 Sozialhilfe": 1,
-        "5.30.20.10 Hunde, gefährliche Tiere": 1,
-        "4.170.30 Bibliotheken": 1
       }
     },
     "Anderes": {
@@ -44,12 +46,14 @@
       }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "452 Wasserrechtskonzessionen": 1
+        "452 Wasserrechtskonzessionen": 1,
+        "574 Spitäler": 1
       },
       "by_global_category": {
-        "7.30.20.20 Gewässernutzung": 1
+        "7.30.20.20 Gewässernutzung": 1,
+        "8.10.20.20 Psychiatrische Kliniken": 1
       }
     },
     "Reglement": {
@@ -147,10 +151,11 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Sicherheit und Gesundheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -161,30 +166,60 @@
           "by_type": {
             "Gesetz": 1
           }
+        },
+        {
+          "identifier": "57",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "574",
+              "title": "Spitäler",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "6",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Anderes": 1,
-        "Reglement": 1,
-        "Gesetz": 1
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "62",
           "title": "Sekundarstufe ll",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Anderes": 1,
             "Reglement": 1
           },
           "children": [
+            {
+              "identifier": "622",
+              "title": "Berufsbildung und Berufsberatung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "623",
               "title": "Mittelschulen",
@@ -241,12 +276,12 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Anderes": 1,
-        "Reglement": 1,
-        "Gesetz": 1
+        "Reglement": 1
       },
       "children": [
         {
@@ -275,6 +310,26 @@
               "own": 1,
               "by_type": {
                 "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.30",
+              "title": "Berufsorientierung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -409,13 +464,45 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
+        "Anderes": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.20",
+                  "title": "Psychiatrische Kliniken",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "8.20",
           "title": "Arbeitsrecht",
@@ -480,7 +567,7 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 12
   },
   "available_years_for_entity": [
     "1824",
@@ -488,6 +575,7 @@
     "1841",
     "1842",
     "1858",
+    "1870",
     "1874",
     "1896",
     "1898",
@@ -521,6 +609,7 @@
     "1955",
     "1958",
     "1959",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -544,6 +633,7 @@
     "1982",
     "1983",
     "1984",
+    "1985",
     "1986",
     "1987",
     "1988",
@@ -579,7 +669,6 @@
     "2018",
     "2019",
     "2020",
-    "2021",
     "2022",
     "2023",
     "2024",

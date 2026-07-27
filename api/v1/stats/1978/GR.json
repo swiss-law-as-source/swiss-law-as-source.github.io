@@ -2,8 +2,8 @@
   "year": "1978",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 8,
-  "categorized": 8,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -27,6 +27,16 @@
         "6.20.40 Erbschafts- und Schenkungssteuern": 1
       }
     },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "31 Allgemeine Bestimmungen": 1,
+        "546 Öffentliche Sozialhilfe": 1
+      },
+      "by_global_category": {
+        "8.70.10 Sozialhilfe": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 2,
       "by_topic": {
@@ -38,22 +48,13 @@
         "8.70.10 Sozialhilfe": 1
       }
     },
-    "Gesetz": {
+    "Reglement": {
       "total": 1,
       "by_topic": {
-        "546 Öffentliche Sozialhilfe": 1
+        "45 Hilfsinstitutionen für Schulung und Ausbildung": 1
       },
       "by_global_category": {
-        "8.70.10 Sozialhilfe": 1
-      }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "85 Amtliche Immobilienbewertungen": 1
-      },
-      "by_global_category": {
-        "2.10.40.10 Schätzung von Grundstücken": 1
+        "4.100.10 Stipendien": 1
       }
     }
   },
@@ -120,14 +121,44 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
+      "identifier": "3",
+      "title": "Rechtspflege",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "Allgemeine Bestimmungen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "45",
+          "title": "Hilfsinstitutionen für Schulung und Ausbildung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        },
         {
           "identifier": "49",
           "title": "Kultur, Naturschutz",
@@ -203,26 +234,6 @@
           }
         }
       ]
-    },
-    {
-      "identifier": "8",
-      "title": "Planung, Bau, Wasserwirtschaft, Gewässerschutz, Umweltschutz, Gebäude- und Elementarschadenversicherung, Schätzungen, Verkehr",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "85",
-          "title": "Amtliche Immobilienbewertungen",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Anderes": 1
-          }
-        }
-      ]
     }
   ],
   "by_global_category_tree": [
@@ -282,21 +293,19 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
@@ -307,26 +316,37 @@
               "by_type": {
                 "Verordnung": 1
               }
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
             {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
+              "identifier": "4.100.10",
+              "title": "Stipendien",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.40.10",
-                  "title": "Schätzung von Grundstücken",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
+                "Reglement": 1
+              }
             }
           ]
         }
@@ -430,10 +450,11 @@
     }
   ],
   "languages_available": {
-    "de": 8,
-    "it": 8
+    "de": 9,
+    "it": 9
   },
   "available_years_for_entity": [
+    "1870",
     "1877",
     "1901",
     "1908",
@@ -446,9 +467,11 @@
     "1936",
     "1937",
     "1943",
+    "1944",
     "1946",
     "1947",
     "1948",
+    "1950",
     "1951",
     "1952",
     "1953",
@@ -526,6 +549,7 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BE",
     "BL",

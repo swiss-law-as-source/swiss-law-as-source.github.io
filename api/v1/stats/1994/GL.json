@@ -2,10 +2,26 @@
   "year": "1994",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 12,
-  "categorized": 12,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "II C/5 Ärzte, Tierärzte, Apotheker": 1,
+        "V E Militärwesen": 1,
+        "VI C/1 Allgemeines, Kantons- und Gemeindesteuern": 1,
+        "VI C/2 Bezug der Bundessteuern": 1,
+        "VIII B/21 Allgemeines": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "6.20.10.60 Quellensteuern": 1,
+        "6.20.120 Doppelbesteuerung": 1,
+        "7.60.20 Gewässerschutz": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 5,
       "by_topic": {
@@ -17,20 +33,6 @@
         "6.30.60.20 Reviere": 2,
         "7.60.10 Abfälle": 2,
         "7.30.40 Submission": 1
-      }
-    },
-    "Verordnung": {
-      "total": 4,
-      "by_topic": {
-        "V E Militärwesen": 1,
-        "VI C/1 Allgemeines, Kantons- und Gemeindesteuern": 1,
-        "VI C/2 Bezug der Bundessteuern": 1,
-        "VIII B/21 Allgemeines": 1
-      },
-      "by_global_category": {
-        "6.20.10.60 Quellensteuern": 1,
-        "6.20.120 Doppelbesteuerung": 1,
-        "7.60.20 Gewässerschutz": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -57,16 +59,26 @@
       "by_global_category": {
         "9.20.30 Bäuerliches Bodenrecht": 1
       }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "V D/1 Versicherung im Monopol und Wettbewerb": 1
+      },
+      "by_global_category": {
+        "5.20.30.40.10 Elementarschadenversicherung": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "II",
       "title": "Organisation des Kantons und der Gemeinden",
-      "total": 3,
-      "own": 3,
+      "total": 4,
+      "own": 4,
       "by_type": {
         "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1,
         "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       }
@@ -74,9 +86,10 @@
     {
       "identifier": "V",
       "title": "Schutz und Abwehr",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
+        "Reglement": 1,
         "Verordnung": 1
       }
     },
@@ -111,6 +124,112 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.40",
+                  "title": "Gebäudeversicherung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "5.20.30.40.10",
+                      "title": "Elementarschadenversicherung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
@@ -292,17 +411,20 @@
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 14
   },
   "available_years_for_entity": [
+    "1800",
     "1807",
     "1835",
     "1859",
+    "1872",
     "1877",
     "1878",
     "1879",
     "1888",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
@@ -312,11 +434,13 @@
     "1911",
     "1915",
     "1918",
+    "1922",
     "1923",
     "1926",
     "1927",
     "1928",
     "1931",
+    "1933",
     "1934",
     "1941",
     "1943",
@@ -328,14 +452,17 @@
     "1950",
     "1951",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
     "1962",
     "1963",
     "1964",
     "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

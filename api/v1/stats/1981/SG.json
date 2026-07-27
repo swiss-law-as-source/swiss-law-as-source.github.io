@@ -2,10 +2,31 @@
   "year": "1981",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 16,
-  "categorized": 16,
+  "total": 21,
+  "categorized": 21,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 9,
+      "by_topic": {
+        "215 Mittelschulen": 3,
+        "113 Kantonswappen": 1,
+        "151 Allgemein": 1,
+        "161 Verantwortlichkeit": 1,
+        "312 Medizinische Berufe und andere Berufe der Gesundheitspflege": 1,
+        "314 Heilmittel und Betäubungsmittel": 1,
+        "911 Allgemein": 1
+      },
+      "by_global_category": {
+        "4.20.10 Mittelschule": 2,
+        "1.10.20 Wappen": 1,
+        "1.30.10 Gemeindefinanzen": 1,
+        "1.20.40 Staatshaftung": 1,
+        "4.50.10 Pädagogik": 1,
+        "8.10.70 Heil- und Betäubungsmittel": 1,
+        "8.70.70 Alimentenbevorschussung": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 7,
       "by_topic": {
@@ -23,20 +44,15 @@
         "6.20.100 Steuerbefreiung und -erleichterungen": 1
       }
     },
-    "Verordnung": {
-      "total": 6,
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
       "by_topic": {
-        "215 Mittelschulen": 3,
-        "113 Kantonswappen": 1,
-        "161 Verantwortlichkeit": 1,
-        "911 Allgemein": 1
+        "173 Katholische Konfession": 1,
+        "411 Militär": 1
       },
       "by_global_category": {
-        "4.20.10 Mittelschule": 2,
-        "1.10.20 Wappen": 1,
-        "1.20.40 Staatshaftung": 1,
-        "4.50.10 Pädagogik": 1,
-        "8.70.70 Alimentenbevorschussung": 1
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "5.10.40 Waffenplätze, Zeughäuser": 1
       }
     },
     "Staatsvertrag": {
@@ -57,24 +73,23 @@
         "4.90.30 Ausbildung": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
+    "Anderes": {
       "total": 1,
       "by_topic": {
-        "411 Militär": 1
+        "451 Polizei": 1
       },
-      "by_global_category": {
-        "5.10.40 Waffenplätze, Zeughäuser": 1
-      }
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen und Organisation von Kanton und Gemeinden",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 3,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -89,6 +104,26 @@
             {
               "identifier": "113",
               "title": "Kantonswappen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "15",
+          "title": "Gemeinde- und Bezirksverwaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "151",
+              "title": "Allgemein",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -113,6 +148,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "17",
+          "title": "Staat und Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "173",
+              "title": "Katholische Konfession",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -170,12 +225,42 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "31",
+          "title": "Gesundheitspflege",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "312",
+              "title": "Medizinische Berufe und andere Berufe der Gesundheitspflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "314",
+              "title": "Heilmittel und Betäubungsmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "32",
           "title": "Einrichtungen der Gesundheitspflege",
@@ -201,10 +286,10 @@
     {
       "identifier": "4",
       "title": "Landesverteidigung, öffentliche Sicherheit und Ordnung",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
@@ -219,6 +304,26 @@
             {
               "identifier": "411",
               "title": "Militär",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "45",
+          "title": "Öffentliche Sicherheit und Ordnung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "451",
+              "title": "Polizei",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -347,10 +452,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 3,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -389,6 +495,46 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.10",
+              "title": "Gemeindefinanzen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -625,12 +771,33 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.70",
+              "title": "Heil- und Betäubungsmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "8.70",
           "title": "Fürsorge",
@@ -697,7 +864,7 @@
     }
   ],
   "languages_available": {
-    "de": 16
+    "de": 21
   },
   "available_years_for_entity": [
     "1845",
@@ -711,6 +878,7 @@
     "1914",
     "1919",
     "1923",
+    "1927",
     "1929",
     "1933",
     "1937",

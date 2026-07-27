@@ -2,17 +2,20 @@
   "year": "2001",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 24,
-  "categorized": 24,
+  "total": 28,
+  "categorized": 28,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 11,
+      "total": 15,
       "by_topic": {
-        "790 Landschaftsschutz": 3,
+        "790 Landschaftsschutz": 4,
         "140 Verwaltungsorganisation": 1,
         "142 Finanz- und Kirchendirektion": 1,
         "145 Sicherheitsdirektion": 1,
+        "52 Jagd": 1,
+        "681 Berufsbildung, berufliche Grundbildung": 1,
+        "81 Arbeitsmarkt": 1,
         "90 Gesundheitspflege": 1,
         "91 Medizinalpersonen": 1
       },
@@ -21,6 +24,9 @@
         "1.10.40 Interkantonale Zusammenarbeit": 1,
         "1.10.90.10 Gleichstellung von Mann und Frau": 1,
         "5.30.10.40 Gebühren": 1,
+        "6.30.50.10 Jäger": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "8.20.20.50 Schwarzarbeit": 1,
         "8.10.120.10 Alkoholismus": 1
       }
     },
@@ -41,23 +47,23 @@
         "8.10.90 Rettungsdienst": 1
       }
     },
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "144 Bau- und Umweltschutzdirektion": 1,
+        "93 Spitäler": 1
+      },
+      "by_global_category": {
+        "1.20.20.30.20 Direktionen und Ämter": 1,
+        "8.30.60.10.20 Vereinbarungen": 1
+      }
+    },
     "Gesetz": {
       "total": 3,
       "by_topic": {
         "17 Gerichte, Verwaltungsverfahren und Anwaltsrecht": 2
       },
       "by_global_category": {}
-    },
-    "Anderes": {
-      "total": 3,
-      "by_topic": {
-        "19 Kirchen": 1,
-        "93 Spitäler": 1
-      },
-      "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 1,
-        "8.30.60.10.20 Vereinbarungen": 1
-      }
     },
     "Verordnung des Parlaments (Dekret)": {
       "total": 2,
@@ -79,17 +85,18 @@
       "by_type": {
         "Verordnung": 3,
         "Gesetz": 2,
-        "Verordnung des Parlaments (Dekret)": 1,
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 3
+            "Verordnung": 3,
+            "Anderes": 1
           },
           "children": [
             {
@@ -111,6 +118,15 @@
               }
             },
             {
+              "identifier": "144",
+              "title": "Bau- und Umweltschutzdirektion",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
               "identifier": "145",
               "title": "Sicherheitsdirektion",
               "total": 1,
@@ -129,15 +145,6 @@
           "by_type": {
             "Gesetz": 2,
             "Verordnung des Parlaments (Dekret)": 1
-          }
-        },
-        {
-          "identifier": "19",
-          "title": "Kirchen",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Anderes": 1
           }
         }
       ]
@@ -172,12 +179,33 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Kultur, Bildung, Ausbildung",
-      "total": 2,
+      "identifier": "5",
+      "title": "Volkswirtschaft",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "52",
+          "title": "Jagd",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Kultur, Bildung, Ausbildung",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -203,12 +231,22 @@
         {
           "identifier": "68",
           "title": "Berufliche Ausbildung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "681",
+              "title": "Berufsbildung, berufliche Grundbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "687",
               "title": "Berufe im Gesundheitswesen",
@@ -225,28 +263,28 @@
     {
       "identifier": "7",
       "title": "Öffentliche Sicherheit, Umweltschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung": 4
       },
       "children": [
         {
           "identifier": "79",
           "title": "Natur- und Heimatschutz",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 3
+            "Verordnung": 4
           },
           "children": [
             {
               "identifier": "790",
               "title": "Landschaftsschutz",
-              "total": 3,
-              "own": 3,
+              "total": 4,
+              "own": 4,
               "by_type": {
-                "Verordnung": 3
+                "Verordnung": 4
               }
             }
           ]
@@ -256,12 +294,22 @@
     {
       "identifier": "8",
       "title": "Soziale Sicherheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Arbeitsmarkt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
         {
           "identifier": "83",
           "title": "Sozialversicherungen",
@@ -334,8 +382,8 @@
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Verordnung des Parlaments (Dekret)": 1,
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -379,6 +427,48 @@
           ]
         },
         {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.20",
+                      "title": "Direktionen und Ämter",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "identifier": "1.30",
           "title": "Gemeinden",
           "total": 1,
@@ -394,26 +484,6 @@
               "own": 1,
               "by_type": {
                 "Verordnung des Parlaments (Dekret)": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "1.40",
-          "title": "Kirche und Staat",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "1.40.30",
-              "title": "Evangelisch-Reformierte Kirche",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
               }
             }
           ]
@@ -503,6 +573,68 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.50",
+              "title": "Jagd",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.30.50.10",
+                  "title": "Jäger",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 5,
@@ -577,11 +709,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1,
-        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
@@ -616,6 +748,37 @@
                 {
                   "identifier": "8.10.120.10",
                   "title": "Alkoholismus",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.20",
+              "title": "Arbeitsmarkt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.20.50",
+                  "title": "Schwarzarbeit",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -672,7 +835,7 @@
     }
   ],
   "languages_available": {
-    "de": 24
+    "de": 28
   },
   "available_years_for_entity": [
     "1815",
@@ -680,6 +843,7 @@
     "1829",
     "1834",
     "1836",
+    "1851",
     "1870",
     "1876",
     "1881",
@@ -694,9 +858,11 @@
     "1921",
     "1925",
     "1931",
+    "1934",
     "1936",
     "1937",
     "1938",
+    "1941",
     "1943",
     "1945",
     "1947",
@@ -705,6 +871,7 @@
     "1951",
     "1952",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",

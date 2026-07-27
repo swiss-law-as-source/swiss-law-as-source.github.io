@@ -2,19 +2,35 @@
   "year": "1982",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 8,
-  "categorized": 8,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
-      "total": 3,
+    "Reglement": {
+      "total": 4,
       "by_topic": {
         "172 Staatsrat und Verwaltung": 1,
+        "178 Notare": 1,
+        "419 Pädagogische Hochschule": 1,
+        "44 Kulturförderung": 1
+      },
+      "by_global_category": {
+        "1.50.20.20 Gebühren, Tarife": 1,
+        "4.50.10 Pädagogik": 1,
+        "4.170.20 Archive": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "172 Staatsrat und Verwaltung": 1,
+        "40 Allgemeine Bestimmungen": 1,
         "417 Tertiärstufe und Weiterbildung": 1,
         "747 Schifffahrt": 1
       },
       "by_global_category": {
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "4.90.20 Löhne, Entschädigungen": 1,
         "9.50.10.20 Tourismus": 1
       }
     },
@@ -29,45 +45,46 @@
         "9.50.10.80.10 Banken, Börsen": 1,
         "7.30.20.20 Gewässernutzung": 1
       }
-    },
-    "Reglement": {
-      "total": 2,
-      "by_topic": {
-        "419 Pädagogische Hochschule": 1,
-        "44 Kulturförderung": 1
-      },
-      "by_global_category": {
-        "4.50.10 Pädagogik": 1,
-        "4.170.20 Archive": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Reglement": 2,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "17",
           "title": "Behörden",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Reglement": 2,
             "Gesetz": 1
           },
           "children": [
             {
               "identifier": "172",
               "title": "Staatsrat und Verwaltung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 1,
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "178",
+              "title": "Notare",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Gesetz": 1
+                "Reglement": 1
               }
             }
           ]
@@ -77,13 +94,22 @@
     {
       "identifier": "4",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Reglement": 2
       },
       "children": [
+        {
+          "identifier": "40",
+          "title": "Allgemeine Bestimmungen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
         {
           "identifier": "41",
           "title": "Schulen",
@@ -211,10 +237,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -258,16 +285,48 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.50.20",
+              "title": "Notare",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.20.20",
+                  "title": "Gebühren, Tarife",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 2
+        "Reglement": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -286,6 +345,26 @@
               "own": 1,
               "by_type": {
                 "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.20",
+              "title": "Löhne, Entschädigungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -421,8 +500,8 @@
     }
   ],
   "languages_available": {
-    "de": 8,
-    "fr": 8
+    "de": 11,
+    "fr": 11
   },
   "available_years_for_entity": [
     "1802",
@@ -432,14 +511,19 @@
     "1864",
     "1877",
     "1882",
+    "1887",
     "1891",
     "1900",
     "1907",
     "1912",
+    "1919",
+    "1920",
     "1922",
     "1923",
     "1924",
     "1926",
+    "1929",
+    "1932",
     "1933",
     "1935",
     "1936",
@@ -452,6 +536,7 @@
     "1949",
     "1950",
     "1951",
+    "1953",
     "1954",
     "1955",
     "1957",

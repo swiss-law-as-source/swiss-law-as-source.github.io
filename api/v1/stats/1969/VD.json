@@ -2,10 +2,21 @@
   "year": "1969",
   "year_semantics": "enactment",
   "entity": "VD",
-  "total": 3,
-  "categorized": 3,
+  "total": 5,
+  "categorized": 5,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "312.100 Contraventions": 2,
+        "450 Protection de la nature, du paysage, des monuments et des sites": 1
+      },
+      "by_global_category": {
+        "3.50 Ordnungsbussen": 2,
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -13,15 +24,6 @@
       },
       "by_global_category": {
         "2.80 Schiedsgerichtsbarkeit": 1
-      }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "312.100 Contraventions": 1
-      },
-      "by_global_category": {
-        "3.50 Ordnungsbussen": 1
       }
     },
     "Anderes": {
@@ -69,6 +71,48 @@
     {
       "identifier": "3",
       "title": "DROIT PÉNAL - PROCÉDURE PÉNALE - EXÉCUTION",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Loi": 2
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "DROIT PÉNAL, PROCÉDURE PÉNALE",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Loi": 2
+          },
+          "children": [
+            {
+              "identifier": "312",
+              "title": "Procédure pénale",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Loi": 2
+              },
+              "children": [
+                {
+                  "identifier": "312.100",
+                  "title": "Contraventions",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Loi": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "ECOLE - SCIENCE - CULTURE",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -76,8 +120,8 @@
       },
       "children": [
         {
-          "identifier": "31",
-          "title": "DROIT PÉNAL, PROCÉDURE PÉNALE",
+          "identifier": "45",
+          "title": "PROTECTION DE LA NATURE, DU PAYSAGE, DES MONUMENTS ET DES SITES",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -85,24 +129,13 @@
           },
           "children": [
             {
-              "identifier": "312",
-              "title": "Procédure pénale",
+              "identifier": "450",
+              "title": "Protection de la nature, du paysage, des monuments et des sites",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Loi": 1
-              },
-              "children": [
-                {
-                  "identifier": "312.100",
-                  "title": "Contraventions",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Loi": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
@@ -164,19 +197,19 @@
     {
       "identifier": "3",
       "title": "Strafrecht",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Loi": 2
       },
       "children": [
         {
           "identifier": "3.50",
           "title": "Ordnungsbussen",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Loi": 1
+            "Loi": 2
           }
         }
       ]
@@ -211,10 +244,41 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.70",
+              "title": "Denkmalschutz, Kulturgüterschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "fr": 3
+    "fr": 5
   },
   "available_years_for_entity": [
     "1803",
@@ -260,6 +324,7 @@
     "1942",
     "1943",
     "1944",
+    "1945",
     "1946",
     "1947",
     "1948",

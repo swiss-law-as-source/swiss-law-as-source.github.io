@@ -2,10 +2,22 @@
   "year": "1987",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 5,
-  "categorized": 5,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 3,
+      "by_topic": {
+        "II C/1 Allgemein": 1,
+        "III B/5 Zivilstandswesen": 1,
+        "III G Verwaltungsrechtspflege": 1
+      },
+      "by_global_category": {
+        "1.20.10.20 Entschädigung der Parlamentarier": 1,
+        "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1
+      }
+    },
     "Anderes": {
       "total": 2,
       "by_topic": {
@@ -17,24 +29,22 @@
         "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1
       }
     },
-    "Gesetz": {
-      "total": 2,
+    "Verordnung": {
+      "total": 1,
       "by_topic": {
-        "IV G/3 Pflanzen- und Tierschutz": 1,
+        "II C/1 Allgemein": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.10 Entschädigungen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
         "IX D/2 Bäuerlicher Grundbesitz": 1
       },
       "by_global_category": {
-        "7.70.20 Tierschutz": 1,
         "2.20.10.20.10 Landwirtschaftliche Pacht": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "III G Verwaltungsrechtspflege": 1
-      },
-      "by_global_category": {
-        "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1
       }
     }
   },
@@ -42,29 +52,21 @@
     {
       "identifier": "II",
       "title": "Organisation des Kantons und der Gemeinden",
-      "total": 1,
-      "own": 1,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2,
+        "Verordnung des Parlaments (Dekret)": 1
       }
     },
     {
       "identifier": "III",
       "title": "Gerichtswesen – Zivilrecht – Strafrecht",
-      "total": 2,
-      "own": 2,
+      "total": 3,
+      "own": 3,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung des Parlaments (Dekret)": 2,
         "Anderes": 1
-      }
-    },
-    {
-      "identifier": "IV",
-      "title": "Kirche – Schule – Kultur",
-      "total": 1,
-      "own": 1,
-      "by_type": {
-        "Gesetz": 1
       }
     },
     {
@@ -81,33 +83,73 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1,
-        "Anderes": 1
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1,
-            "Anderes": 1
+            "Verordnung des Parlaments (Dekret)": 2,
+            "Anderes": 2
           },
           "children": [
             {
-              "identifier": "1.20.20",
-              "title": "Regierung und Verwaltung",
-              "total": 2,
+              "identifier": "1.20.10",
+              "title": "Parlament",
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1,
-                "Anderes": 1
+                "Verordnung des Parlaments (Dekret)": 1
               },
               "children": [
+                {
+                  "identifier": "1.20.10.20",
+                  "title": "Entschädigung der Parlamentarier",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2,
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.10",
+                      "title": "Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                },
                 {
                   "identifier": "1.20.20.50",
                   "title": "Verwaltungsverfahren, Verwaltungsrechtspflege",
@@ -207,51 +249,23 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "7.70",
-          "title": "Natur- und Heimatschutz",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "7.70.20",
-              "title": "Tierschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Gesetz": 1
-              }
-            }
-          ]
-        }
-      ]
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 7
   },
   "available_years_for_entity": [
+    "1800",
     "1807",
     "1835",
     "1859",
+    "1872",
     "1877",
     "1878",
     "1879",
     "1888",
     "1889",
+    "1892",
     "1893",
     "1900",
     "1901",
@@ -261,11 +275,13 @@
     "1911",
     "1915",
     "1918",
+    "1922",
     "1923",
     "1926",
     "1927",
     "1928",
     "1931",
+    "1933",
     "1934",
     "1941",
     "1943",
@@ -277,14 +293,17 @@
     "1950",
     "1951",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
     "1962",
     "1963",
     "1964",
     "1965",
     "1966",
     "1967",
+    "1968",
     "1969",
     "1970",
     "1971",

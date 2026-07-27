@@ -2,24 +2,38 @@
   "year": "2003",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 18,
-  "categorized": 18,
+  "total": 24,
+  "categorized": 24,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 5,
+      "total": 7,
       "by_topic": {
+        "726 Öffentliches Beschaffungswesen": 2,
+        "80 Gesundheitswesen": 2,
         "64 Steuern": 1,
-        "726 Öffentliches Beschaffungswesen": 1,
-        "80 Gesundheitswesen": 1,
         "810 Krankenanstalten, Rettungswesen": 1,
         "93 Gewerbe": 1
       },
       "by_global_category": {
+        "7.30.40 Submission": 2,
         "6.20.10.40 Pauschale Steueranrechnung": 1,
-        "7.30.40 Submission": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1,
         "9.50.10.60.30 Spielbanken": 1
+      }
+    },
+    "Reglement": {
+      "total": 5,
+      "by_topic": {
+        "725 Strassen": 2,
+        "413 Mittelschule": 1,
+        "417 Tertiärstufe und Weiterbildung": 1,
+        "741 Strassenverkehr": 1
+      },
+      "by_global_category": {
+        "4.20.10 Mittelschule": 1,
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -33,40 +47,31 @@
         "4.180.10.10 Film, Theater, Unterhaltung": 1
       }
     },
-    "Reglement": {
+    "Gesetz": {
       "total": 4,
       "by_topic": {
-        "413 Mittelschule": 1,
-        "417 Tertiärstufe und Weiterbildung": 1,
-        "725 Strassen": 1,
-        "741 Strassenverkehr": 1
-      },
-      "by_global_category": {
-        "4.20.10 Mittelschule": 1,
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
-        "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1
-      }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "417 Tertiärstufe und Weiterbildung": 1,
-        "91 Landwirtschaft": 1
-      },
-      "by_global_category": {
-        "4.100.20 Schulgelder": 1,
-        "9.20.120 Tierseuchen": 1
-      }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
+        "726 Öffentliches Beschaffungswesen": 1,
+        "80 Gesundheitswesen": 1,
         "82 Arbeit": 1,
         "94 Dienstleistungen": 1
       },
       "by_global_category": {
+        "7.30.40 Submission": 1,
         "8.20.20.20 Entsendung von Arbeitnehmern": 1,
         "4.140 Anerkennung von Diplomen": 1
+      }
+    },
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "417 Tertiärstufe und Weiterbildung": 1,
+        "70 Raumplanung, Bauwesen": 1,
+        "91 Landwirtschaft": 1
+      },
+      "by_global_category": {
+        "4.100.20 Schulgelder": 1,
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "9.20.120 Tierseuchen": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -196,39 +201,52 @@
     {
       "identifier": "7",
       "title": "Öffentliche Werke, Energie, Verkehr",
-      "total": 3,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
-        "Verordnung": 1
+        "Reglement": 3,
+        "Verordnung": 2,
+        "Anderes": 1,
+        "Gesetz": 1
       },
       "children": [
         {
+          "identifier": "70",
+          "title": "Raumplanung, Bauwesen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
+        {
           "identifier": "72",
           "title": "Öffentliche Werke",
-          "total": 2,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Reglement": 1,
-            "Verordnung": 1
+            "Reglement": 2,
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "725",
               "title": "Strassen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Reglement": 1
+                "Reglement": 2
               }
             },
             {
               "identifier": "726",
               "title": "Öffentliches Beschaffungswesen",
-              "total": 1,
-              "own": 1,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2,
+                "Gesetz": 1
               }
             }
           ]
@@ -258,20 +276,21 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Soziale Sicherheit",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Gesetz": 1
+        "Verordnung": 3,
+        "Gesetz": 2
       },
       "children": [
         {
           "identifier": "80",
           "title": "Gesundheitswesen",
-          "total": 1,
-          "own": 1,
+          "total": 3,
+          "own": 3,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Gesetz": 1
           }
         },
         {
@@ -347,6 +366,59 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -518,29 +590,32 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 2,
+        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "7.30.40",
               "title": "Submission",
-              "total": 1,
-              "own": 1,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2,
+                "Gesetz": 1
               }
             }
           ]
@@ -696,8 +771,8 @@
     }
   ],
   "languages_available": {
-    "de": 18,
-    "fr": 18
+    "de": 24,
+    "fr": 24
   },
   "available_years_for_entity": [
     "1802",
@@ -707,14 +782,19 @@
     "1864",
     "1877",
     "1882",
+    "1887",
     "1891",
     "1900",
     "1907",
     "1912",
+    "1919",
+    "1920",
     "1922",
     "1923",
     "1924",
     "1926",
+    "1929",
+    "1932",
     "1933",
     "1935",
     "1936",
@@ -727,6 +807,7 @@
     "1949",
     "1950",
     "1951",
+    "1953",
     "1954",
     "1955",
     "1957",

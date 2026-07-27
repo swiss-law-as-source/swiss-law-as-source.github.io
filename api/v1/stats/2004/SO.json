@@ -2,14 +2,17 @@
   "year": "2004",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 11,
-  "categorized": 11,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 8,
+      "total": 11,
       "by_topic": {
         "115 Wirkungsorientierte Verwaltungsführung (WoV)": 1,
+        "122.2 Departemente": 1,
+        "414.47 Schlussprüfungen": 1,
+        "431 Kulturförderung": 1,
         "811.1 Organisation des Sanitätswesens": 1,
         "823.2 Ausländische Arbeitnehmer": 1,
         "834 Arbeitslosenversicherung": 1,
@@ -19,6 +22,9 @@
       },
       "by_global_category": {
         "1.20.20.70 New Public Management": 1,
+        "1.20.20.10.10 Delegation": 1,
+        "4.20.10 Mittelschule": 1,
+        "4.180.20 Kulturförderung": 1,
         "8.10.30.10 Ärzte": 1,
         "8.20.20.20 Entsendung von Arbeitnehmern": 1,
         "8.30.110 Arbeitslosenversicherung": 1,
@@ -45,16 +51,23 @@
       "by_global_category": {
         "4.120.40 Lehrmittel": 1
       }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "817.1 Kantonales Spital": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
@@ -81,19 +94,21 @@
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "122",
               "title": "Regierungsrat",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Interkantonale Vereinbarung": 1,
+                "Verordnung": 1
               },
               "children": [
                 {
@@ -103,6 +118,15 @@
                   "own": 1,
                   "by_type": {
                     "Interkantonale Vereinbarung": 1
+                  }
+                },
+                {
+                  "identifier": "122.2",
+                  "title": "Departemente",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -114,9 +138,10 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
@@ -124,10 +149,11 @@
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Anderes": 1,
+            "Verordnung": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
@@ -163,6 +189,37 @@
               ]
             },
             {
+              "identifier": "414",
+              "title": "Mittelschulen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.4",
+                  "title": "Schüler",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "414.47",
+                      "title": "Schlussprüfungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "identifier": "415",
               "title": "Hochschulen",
               "total": 1,
@@ -172,25 +229,47 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "43",
+          "title": "Kultur",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "431",
+              "title": "Kulturförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung": 3,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -209,6 +288,26 @@
                   "own": 1,
                   "by_type": {
                     "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "817",
+              "title": "Spitalwesen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "817.1",
+                  "title": "Kantonales Spital",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -366,11 +465,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -396,21 +495,41 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               },
               "children": [
+                {
+                  "identifier": "1.20.20.10",
+                  "title": "Organisation",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.10.10",
+                      "title": "Delegation",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                },
                 {
                   "identifier": "1.20.20.70",
                   "title": "New Public Management",
@@ -429,12 +548,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
@@ -451,6 +591,26 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.20",
+              "title": "Kulturförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -623,7 +783,7 @@
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 15
   },
   "available_years_for_entity": [
     "1780",

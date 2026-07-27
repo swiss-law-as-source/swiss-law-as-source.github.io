@@ -2,16 +2,20 @@
   "year": "2001",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 16,
-  "categorized": 16,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 9,
+      "total": 13,
       "by_topic": {
         "152.22 Direktionen": 2,
         "123.2 Ausweise": 1,
+        "282.2 Betreibungs- und Konkursbeamtinnen und -beamte": 1,
+        "414.1 Ausbildung": 1,
+        "414.5 Besoldung und Pensionierung": 1,
         "426.1 Naturschutz": 1,
+        "661.1 Allgemeines": 1,
         "752.3 Wasserversorgung": 1,
         "811.1 Gesundheitsfachpersonen": 1,
         "860 Allgemeines": 1
@@ -20,9 +24,26 @@
         "1.10.80 Ausweise": 1,
         "1.20.20.30.30 Kommissionen": 1,
         "1.20.20.10.10 Delegation": 1,
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1,
         "7.70.50 Naturschutz": 1,
         "8.10.130.20 Wasserversorgung": 1,
         "8.70.10 Sozialhilfe": 1
+      }
+    },
+    "Reglement": {
+      "total": 5,
+      "by_topic": {
+        "436.23 Rechtswissenschaftliche Fakultät": 2,
+        "436.22 Wirtschafts- und Sozialwissenschaftliche Fakultät": 1,
+        "436.29 Evangelisch-theologische Fakultät": 1,
+        "436.31 Christkatholische und Evangelische Theologische Fakultät": 1
+      },
+      "by_global_category": {
+        "4.40.20 Theologische Fakultät": 2,
+        "4.40.30 Wirtschaftsfakultät": 1,
+        "4.40.10 Rechtswissenschaftliche Fakultät": 1,
+        "4.40.50 Philosophische Fakultäten": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -32,17 +53,6 @@
       },
       "by_global_category": {
         "7.30.40 Submission": 1
-      }
-    },
-    "Reglement": {
-      "total": 2,
-      "by_topic": {
-        "436.23 Rechtswissenschaftliche Fakultät": 1,
-        "436.29 Evangelisch-theologische Fakultät": 1
-      },
-      "by_global_category": {
-        "4.40.50 Philosophische Fakultäten": 1,
-        "4.40.20 Theologische Fakultät": 1
       }
     },
     "Anderes": {
@@ -146,15 +156,97 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 3,
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 2,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "28",
+          "title": "Schuldbetreibung und Konkurs",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "282",
+              "title": "Organisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "282.2",
+                  "title": "Betreibungs- und Konkursbeamtinnen und -beamte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
+      "total": 8,
+      "own": 0,
+      "by_type": {
+        "Reglement": 5,
+        "Verordnung": 3
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Kirche",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "414",
+              "title": "Geistliche",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "414.1",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "414.5",
+                  "title": "Besoldung und Pensionierung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "42",
           "title": "Kultur",
@@ -189,37 +281,46 @@
         {
           "identifier": "43",
           "title": "Ausbildung und Wissenschaft",
-          "total": 2,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Reglement": 2
+            "Reglement": 5
           },
           "children": [
             {
               "identifier": "436",
               "title": "Universität",
-              "total": 2,
+              "total": 5,
               "own": 0,
               "by_type": {
-                "Reglement": 2
+                "Reglement": 5
               },
               "children": [
                 {
                   "identifier": "436.2",
                   "title": "Einzelne Fakultäten",
-                  "total": 2,
+                  "total": 4,
                   "own": 0,
                   "by_type": {
-                    "Reglement": 2
+                    "Reglement": 4
                   },
                   "children": [
                     {
-                      "identifier": "436.23",
-                      "title": "Rechtswissenschaftliche Fakultät",
+                      "identifier": "436.22",
+                      "title": "Wirtschafts- und Sozialwissenschaftliche Fakultät",
                       "total": 1,
                       "own": 1,
                       "by_type": {
                         "Reglement": 1
+                      }
+                    },
+                    {
+                      "identifier": "436.23",
+                      "title": "Rechtswissenschaftliche Fakultät",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Reglement": 2
                       }
                     },
                     {
@@ -232,6 +333,57 @@
                       }
                     }
                   ]
+                },
+                {
+                  "identifier": "436.31",
+                  "title": "Christkatholische und Evangelische Theologische Fakultät",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "66",
+          "title": "Steuern und Abgaben",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "661",
+              "title": "Direkte Kantons- und Gemeindesteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "661.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
                 }
               ]
             }
@@ -372,10 +524,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung": 5
       },
       "children": [
         {
@@ -459,30 +611,77 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Reglement": 2
+        "Reglement": 5
       },
       "children": [
         {
           "identifier": "4.40",
           "title": "Tertiärstufe: Universitäten",
-          "total": 2,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Reglement": 2
+            "Reglement": 5
           },
           "children": [
             {
+              "identifier": "4.40.10",
+              "title": "Rechtswissenschaftliche Fakultät",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            },
+            {
               "identifier": "4.40.20",
               "title": "Theologische Fakultät",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 2
+              }
+            },
+            {
+              "identifier": "4.40.30",
+              "title": "Wirtschaftsfakultät",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -621,10 +820,11 @@
     }
   ],
   "languages_available": {
-    "de": 16,
-    "fr": 11
+    "de": 23,
+    "fr": 18
   },
   "available_years_for_entity": [
+    "1000",
     "1562",
     "1828",
     "1837",
@@ -636,6 +836,7 @@
     "1864",
     "1868",
     "1874",
+    "1875",
     "1876",
     "1877",
     "1889",
@@ -647,12 +848,14 @@
     "1909",
     "1911",
     "1917",
+    "1918",
     "1923",
     "1924",
     "1931",
     "1934",
     "1936",
     "1937",
+    "1938",
     "1939",
     "1940",
     "1942",

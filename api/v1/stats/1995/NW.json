@@ -2,8 +2,8 @@
   "year": "1995",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 4,
-  "categorized": 4,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
@@ -26,6 +26,13 @@
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
       }
     },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "311 Allgemeine Vorschriften": 1
+      },
+      "by_global_category": {}
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -33,6 +40,15 @@
       },
       "by_global_category": {
         "4.140 Anerkennung von Diplomen": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "742 Krankenversicherung und Unfallversicherung": 1
+      },
+      "by_global_category": {
+        "8.30.60.30 Spitallisten": 1
       }
     }
   },
@@ -102,21 +118,32 @@
     {
       "identifier": "3",
       "title": "Bildung - Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "31",
           "title": "Bildung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "311",
+              "title": "Allgemeine Vorschriften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "314",
               "title": "Mittelschule",
@@ -124,6 +151,37 @@
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "74",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "742",
+              "title": "Krankenversicherung und Unfallversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -279,6 +337,48 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.30",
+                  "title": "Spitallisten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 1,
@@ -311,15 +411,17 @@
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 6
   },
   "available_years_for_entity": [
+    "1000",
     "1632",
     "1787",
     "1842",
     "1850",
     "1890",
     "1900",
+    "1901",
     "1909",
     "1911",
     "1926",

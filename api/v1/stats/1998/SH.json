@@ -2,44 +2,52 @@
   "year": "1998",
   "year_semantics": "enactment",
   "entity": "SH",
-  "total": 12,
-  "categorized": 12,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "12 Gemeinden": 1,
         "172 Regierungsrat und Verwaltung": 1,
         "721 Wasserbau und Wasserwirtschaft": 1,
+        "831.3 Ergänzungsleistungen zur Alters-, Hinterlassenen- und Invalidenversicherung": 1,
         "90 Allgemeines": 1
       },
       "by_global_category": {
         "9.60.50 Binnenmarkt, Handelshemmnisse": 1,
+        "8.30.40 Ergänzungsleistungen": 1,
         "9.10 Wirtschaftsförderung": 1
       }
     },
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "51 Militärische Verteidigung und Waffen": 1,
+        "700 Allgemeines": 1,
+        "721 Wasserbau und Wasserwirtschaft": 1,
+        "831.3 Ergänzungsleistungen zur Alters-, Hinterlassenen- und Invalidenversicherung": 1,
+        "85 Sozialhilfe": 1
+      },
+      "by_global_category": {
+        "5.30.30 Waffen und Munition": 1,
+        "8.30.40 Ergänzungsleistungen": 1,
+        "8.70.10 Sozialhilfe": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "173.4 Kantonsgericht": 1,
+        "181 Regierungsrat": 1,
         "211.4 Sachenrecht": 1,
         "64 Steuern": 1
       },
       "by_global_category": {
         "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1,
+        "1.20.20.20.20 Renten": 1,
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
-      }
-    },
-    "Verordnung": {
-      "total": 3,
-      "by_topic": {
-        "51 Militärische Verteidigung und Waffen": 1,
-        "700 Allgemeines": 1,
-        "721 Wasserbau und Wasserwirtschaft": 1
-      },
-      "by_global_category": {
-        "5.30.30 Waffen und Munition": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -52,17 +60,26 @@
         "4.60 Tertiärstufe: Höhere Fachschulen": 1,
         "6.30.60.20 Reviere": 1
       }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "410.1 Allgemeines Schulrecht": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Gesetz": 2,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 2
       },
       "children": [
         {
@@ -114,6 +131,26 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "18",
+          "title": "Personalrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "181",
+              "title": "Regierungsrat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -151,21 +188,43 @@
     {
       "identifier": "4",
       "title": "Erziehung - Kultur - Natur- und Heimatschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule und Ausbildung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
+            {
+              "identifier": "410",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "410.1",
+                  "title": "Allgemeines Schulrecht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "412",
               "title": "Berufsbildung",
@@ -285,6 +344,61 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "831",
+              "title": "Alters-, Hinterlassenen- und Invalidenversicherung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "831.3",
+                  "title": "Ergänzungsleistungen zur Alters-, Hinterlassenen- und Invalidenversicherung",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "85",
+          "title": "Sozialhilfe",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 2,
@@ -330,21 +444,52 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung des Parlaments (Dekret)": 2
           },
           "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.20",
+                      "title": "Renten",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung des Parlaments (Dekret)": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
@@ -425,12 +570,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.60",
           "title": "Tertiärstufe: Höhere Fachschulen",
@@ -516,6 +682,60 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.40",
+              "title": "Ergänzungsleistungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 2,
@@ -557,7 +777,7 @@
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 17
   },
   "available_years_for_entity": [
     "1828",
@@ -579,11 +799,13 @@
     "1928",
     "1929",
     "1930",
+    "1934",
     "1936",
     "1937",
     "1939",
     "1941",
     "1943",
+    "1944",
     "1945",
     "1947",
     "1948",
@@ -595,6 +817,7 @@
     "1955",
     "1956",
     "1957",
+    "1960",
     "1961",
     "1962",
     "1963",
@@ -609,6 +832,7 @@
     "1972",
     "1973",
     "1974",
+    "1975",
     "1976",
     "1977",
     "1978",

@@ -2,10 +2,26 @@
   "year": "1995",
   "year_semantics": "enactment",
   "entity": "JU",
-  "total": 13,
-  "categorized": 13,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 7,
+      "by_topic": {
+        "810 Généralités, promotion de la santé, soins hospitaliers et soins à domicile": 2,
+        "811 Professions sanitaires": 2,
+        "410.2 Corps enseignant": 1,
+        "832 Assurance en cas de maladie et d'accidents": 1,
+        "916.4 Production animale": 1
+      },
+      "by_global_category": {
+        "4.90.30 Ausbildung": 1,
+        "8.10.20.20 Psychiatrische Kliniken": 1,
+        "8.30.60.20 Prämienverbilligungen": 1,
+        "1.20.20.30.30 Kommissionen": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 5,
       "by_topic": {
@@ -20,18 +36,6 @@
         "4.140 Anerkennung von Diplomen": 1,
         "7.30.40 Submission": 1,
         "8.10.130.50 Tierkörperentsorgung": 1
-      }
-    },
-    "Verordnung": {
-      "total": 5,
-      "by_topic": {
-        "810 Généralités, promotion de la santé, soins hospitaliers et soins à domicile": 2,
-        "811 Professions sanitaires": 2,
-        "410.2 Corps enseignant": 1
-      },
-      "by_global_category": {
-        "4.90.30 Ausbildung": 1,
-        "8.10.20.20 Psychiatrische Kliniken": 1
       }
     },
     "Gesetz": {
@@ -219,10 +223,10 @@
     {
       "identifier": "8",
       "title": "Santé, travail, sécurité sociale",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Ordonnance": 3,
+        "Ordonnance": 4,
         "Autre": 1
       },
       "children": [
@@ -256,15 +260,36 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "83",
+          "title": "Assurances sociales",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Assurance en cas de maladie et d'accidents",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "9",
       "title": "Économie",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Ordonnance": 1,
         "Accord intercantonal": 1,
         "Traité international": 1
       },
@@ -272,21 +297,32 @@
         {
           "identifier": "91",
           "title": "Agriculture",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Ordonnance": 1,
             "Accord intercantonal": 1
           },
           "children": [
             {
               "identifier": "916",
               "title": "Production et vente",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Ordonnance": 1,
                 "Accord intercantonal": 1
               },
               "children": [
+                {
+                  "identifier": "916.4",
+                  "title": "Production animale",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Ordonnance": 1
+                  }
+                },
                 {
                   "identifier": "916.5",
                   "title": "Lutte contre les épizooties",
@@ -316,10 +352,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Loi": 1,
+        "Ordonnance": 1
       },
       "children": [
         {
@@ -348,6 +385,48 @@
                   "by_type": {
                     "Loi": 1
                   }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Ordonnance": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Ordonnance": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.30",
+                      "title": "Kommissionen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Ordonnance": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -545,10 +624,10 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Ordonnance": 1,
+        "Ordonnance": 2,
         "Accord intercantonal": 1
       },
       "children": [
@@ -603,12 +682,43 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Ordonnance": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.20",
+                  "title": "Prämienverbilligungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Ordonnance": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "fr": 13
+    "fr": 15
   },
   "available_years_for_entity": [
     "1828",

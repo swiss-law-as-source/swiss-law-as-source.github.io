@@ -2,17 +2,19 @@
   "year": "1991",
   "year_semantics": "enactment",
   "entity": "JU",
-  "total": 16,
-  "categorized": 16,
+  "total": 18,
+  "categorized": 18,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 13,
+      "total": 15,
       "by_topic": {
         "173 Membres des autorités, fonctionnaires et employés": 4,
         "176 Emoluments": 1,
+        "182 Autorités judiciaires": 1,
         "410.3 Constructions scolaires": 1,
         "413 Formation professionnelle": 1,
+        "452 Protection des sites et du paysage": 1,
         "641 Impôts directs de l'Etat et des communes": 1,
         "810 Généralités, promotion de la santé, soins hospitaliers et soins à domicile": 1,
         "823 Marché du travail": 1,
@@ -24,8 +26,10 @@
         "1.20.20.20.10 Entschädigungen": 2,
         "1.20.20.40.40 Löhne, Entschädigungen": 2,
         "1.20.20.60 Verwaltungsgebühren": 1,
+        "1.20.70.10.50 Arbeits- und Mietgericht": 1,
         "4.120.60 Schulbauten": 1,
         "4.120.30 Schulaufsicht": 1,
+        "7.70.10 Landschaftsschutz": 1,
         "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven": 1,
         "8.30.10 Ausgleichskassen": 1,
         "9.20.10 Förderungsmassnahmen": 1,
@@ -54,10 +58,10 @@
     {
       "identifier": "1",
       "title": "État, peuple, autorités",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Ordonnance": 3,
+        "Ordonnance": 4,
         "Autre": 2
       },
       "children": [
@@ -91,16 +95,36 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "18",
+          "title": "Organisation judiciaire, avocats et notaires",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance": 1
+          },
+          "children": [
+            {
+              "identifier": "182",
+              "title": "Autorités judiciaires",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Éducation, science, culture, Église",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Autre": 1,
+        "Autre": 2,
         "Ordonnance": 1
       },
       "children": [
@@ -130,6 +154,26 @@
               "own": 1,
               "by_type": {
                 "Ordonnance": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "45",
+          "title": "Protection de la nature et du paysage",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "452",
+              "title": "Protection des sites et du paysage",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
               }
             }
           ]
@@ -379,20 +423,20 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Ordonnance": 3,
+        "Ordonnance": 4,
         "Autre": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Ordonnance": 3,
+            "Ordonnance": 4,
             "Autre": 2
           },
           "children": [
@@ -456,6 +500,37 @@
                   "by_type": {
                     "Autre": 1
                   }
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Ordonnance": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Ordonnance": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.50",
+                      "title": "Arbeits- und Mietgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Ordonnance": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -530,6 +605,37 @@
               "own": 1,
               "by_type": {
                 "Ordonnance": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.10",
+              "title": "Landschaftsschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
               }
             }
           ]
@@ -652,7 +758,7 @@
     }
   ],
   "languages_available": {
-    "fr": 16
+    "fr": 18
   },
   "available_years_for_entity": [
     "1828",

@@ -2,10 +2,44 @@
   "year": "1993",
   "year_semantics": "enactment",
   "entity": "NE",
-  "total": 17,
-  "categorized": 17,
+  "total": 25,
+  "categorized": 25,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 7,
+      "by_topic": {
+        "215.41 Registre foncier": 1,
+        "224 Bail": 1,
+        "410.1 Dispositions générales": 1,
+        "414.6 Dispositions financières": 1,
+        "766.3 Restrictions de navigation": 1,
+        "822.3 Caisse cantonale de compensation pour allocations familiales": 1,
+        "916.42 Lutte contre les épizooties": 1
+      },
+      "by_global_category": {
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "1.10.70.20.30 Integration": 1,
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "8.30.30 AHV / IV": 1,
+        "9.20.120 Tierseuchen": 1
+      }
+    },
+    "Gesetz": {
+      "total": 5,
+      "by_topic": {
+        "151 Grand Conseil": 1,
+        "354 Conventions intercantonales": 1,
+        "802.54 Service cantonal de médecine du travail et d'hygiène industrielle": 1,
+        "916.5 Commerce du bétail": 1,
+        "933.1 Établissements publics": 1
+      },
+      "by_global_category": {
+        "3.20.50 Rechtshilfe": 1,
+        "8.10.130.50 Tierkörperentsorgung": 1,
+        "6.30.10 Alkohol": 1
+      }
+    },
     "Anderes": {
       "total": 5,
       "by_topic": {
@@ -21,29 +55,17 @@
         "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
-    "Verordnung": {
-      "total": 3,
+    "Reglement": {
+      "total": 4,
       "by_topic": {
-        "215.11 Propriété foncière rurale": 1,
+        "60 Gestion financière": 2,
         "215.41 Registre foncier": 1,
-        "916.5 Commerce du bétail": 1
+        "933.1 Établissements publics": 1
       },
       "by_global_category": {
-        "9.20.30 Bäuerliches Bodenrecht": 1,
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
-        "8.10.130.50 Tierkörperentsorgung": 1
-      }
-    },
-    "Gesetz": {
-      "total": 3,
-      "by_topic": {
-        "354 Conventions intercantonales": 1,
-        "802.54 Service cantonal de médecine du travail et d'hygiène industrielle": 1,
-        "916.5 Commerce du bétail": 1
-      },
-      "by_global_category": {
-        "3.20.50 Rechtshilfe": 1,
-        "8.10.130.50 Tierkörperentsorgung": 1
+        "6.10.40 Finanzkontrolle": 1,
+        "6.30.10 Alkohol": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -54,17 +76,6 @@
       },
       "by_global_category": {
         "4.140 Anerkennung von Diplomen": 3
-      }
-    },
-    "Reglement": {
-      "total": 2,
-      "by_topic": {
-        "820.1 Assurance-vieilllesse et survivants": 1,
-        "933.1 Établissements publics": 1
-      },
-      "by_global_category": {
-        "8.30.10 Ausgleichskassen": 1,
-        "6.30.10 Alkohol": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -79,12 +90,44 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "Droit privé – Procédure civile – Exécution",
-      "total": 3,
+      "identifier": "1",
+      "title": "État – Peuple – Autorités",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Autre": 3
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "15",
+          "title": "Autorités",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "151",
+              "title": "Grand Conseil",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Droit privé – Procédure civile – Exécution",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Autre": 3,
+        "Règlement": 1
       },
       "children": [
         {
@@ -93,7 +136,8 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Autre": 2
+            "Règlement": 1,
+            "Autre": 1
           },
           "children": [
             {
@@ -102,24 +146,17 @@
               "total": 2,
               "own": 0,
               "by_type": {
-                "Autre": 2
+                "Règlement": 1,
+                "Autre": 1
               },
               "children": [
                 {
-                  "identifier": "215.11",
-                  "title": "Propriété foncière rurale",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Autre": 1
-                  }
-                },
-                {
                   "identifier": "215.41",
                   "title": "Registre foncier",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Règlement": 1,
                     "Autre": 1
                   }
                 }
@@ -130,19 +167,19 @@
         {
           "identifier": "22",
           "title": "Dispositions complémentaires et d'exécution du code des obligations",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Autre": 2
           },
           "children": [
             {
               "identifier": "224",
               "title": "Bail",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Autre": 1
+                "Autre": 2
               }
             }
           ]
@@ -194,21 +231,63 @@
     {
       "identifier": "4",
       "title": "Enseignement – Science – Culture – Environnement",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Accord intercantonal": 3
+        "Accord intercantonal": 3,
+        "Autre": 2
       },
       "children": [
         {
           "identifier": "41",
           "title": "Enseignement",
-          "total": 3,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Accord intercantonal": 3
+            "Accord intercantonal": 3,
+            "Autre": 2
           },
           "children": [
+            {
+              "identifier": "410",
+              "title": "Scolarité obligatoire",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "410.1",
+                  "title": "Dispositions générales",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "414",
+              "title": "Formation professionnelle",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.6",
+                  "title": "Dispositions financières",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "415",
               "title": "Formation du corps enseignant",
@@ -256,6 +335,28 @@
     {
       "identifier": "6",
       "title": "Finances",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Règlement": 2,
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "60",
+          "title": "Gestion financière",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Règlement": 2,
+            "Autre": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Travaux publics – Énergie – Transports et communications",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -263,13 +364,35 @@
       },
       "children": [
         {
-          "identifier": "60",
-          "title": "Gestion financière",
+          "identifier": "76",
+          "title": "Transports et communications",
           "total": 1,
-          "own": 1,
+          "own": 0,
           "by_type": {
             "Autre": 1
-          }
+          },
+          "children": [
+            {
+              "identifier": "766",
+              "title": "Navigation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "766.3",
+                  "title": "Restrictions de navigation",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -279,9 +402,8 @@
       "total": 4,
       "own": 0,
       "by_type": {
+        "Autre": 2,
         "Loi": 1,
-        "Règlement": 1,
-        "Autre": 1,
         "Ordonnance parlementaire (décret)": 1
       },
       "children": [
@@ -333,46 +455,25 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1,
-            "Autre": 1
+            "Autre": 2
           },
           "children": [
             {
-              "identifier": "820",
-              "title": "Assurance-vieillesse et survivants – Assurance-invalidité",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Règlement": 1
-              },
-              "children": [
-                {
-                  "identifier": "820.1",
-                  "title": "Assurance-vieilllesse et survivants",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Règlement": 1
-                  }
-                }
-              ]
-            },
-            {
               "identifier": "822",
               "title": "Allocations familiales",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Autre": 1
+                "Autre": 2
               },
               "children": [
                 {
                   "identifier": "822.3",
                   "title": "Caisse cantonale de compensation pour allocations familiales",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Autre": 1
+                    "Autre": 2
                   }
                 }
               ]
@@ -404,11 +505,11 @@
     {
       "identifier": "9",
       "title": "Économie",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Loi": 2,
         "Autre": 2,
-        "Loi": 1,
         "Règlement": 1
       },
       "children": [
@@ -418,8 +519,8 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Autre": 1,
-            "Loi": 1
+            "Loi": 1,
+            "Autre": 1
           },
           "children": [
             {
@@ -428,18 +529,26 @@
               "total": 2,
               "own": 0,
               "by_type": {
-                "Autre": 1,
-                "Loi": 1
+                "Loi": 1,
+                "Autre": 1
               },
               "children": [
                 {
                   "identifier": "916.5",
                   "title": "Commerce du bétail",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Autre": 1,
                     "Loi": 1
+                  }
+                },
+                {
+                  "identifier": "916.42",
+                  "title": "Lutte contre les épizooties",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
                   }
                 }
               ]
@@ -449,27 +558,30 @@
         {
           "identifier": "93",
           "title": "Industrie et artisanat",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Loi": 1,
             "Règlement": 1
           },
           "children": [
             {
               "identifier": "933",
               "title": "Services",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Loi": 1,
                 "Règlement": 1
               },
               "children": [
                 {
                   "identifier": "933.1",
                   "title": "Établissements publics",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Loi": 1,
                     "Règlement": 1
                   }
                 }
@@ -504,21 +616,83 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 3
       },
       "children": [
         {
-          "identifier": "1.20",
-          "title": "Behörden",
+          "identifier": "1.10",
+          "title": "Grundlagen",
           "total": 1,
           "own": 0,
           "by_type": {
             "Autre": 1
           },
           "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.30",
+                      "title": "Integration",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Autre": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Autre": 2
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
@@ -557,36 +731,40 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Règlement": 1,
         "Autre": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Règlement": 1,
             "Autre": 1
           },
           "children": [
             {
               "identifier": "2.10.40",
               "title": "Sachenrecht",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Règlement": 1,
                 "Autre": 1
               },
               "children": [
                 {
                   "identifier": "2.10.40.30",
                   "title": "Grundbuch und Grundbuchvermessung",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Règlement": 1,
                     "Autre": 1
                   }
                 }
@@ -650,20 +828,22 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Règlement": 2,
         "Autre": 1,
-        "Règlement": 1
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Autre": 1
+            "Autre": 1,
+            "Règlement": 1
           },
           "children": [
             {
@@ -674,24 +854,35 @@
               "by_type": {
                 "Autre": 1
               }
+            },
+            {
+              "identifier": "6.10.40",
+              "title": "Finanzkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
             }
           ]
         },
         {
           "identifier": "6.30",
           "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Loi": 1,
             "Règlement": 1
           },
           "children": [
             {
               "identifier": "6.30.10",
               "title": "Alkohol",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Loi": 1,
                 "Règlement": 1
               }
             }
@@ -702,42 +893,38 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 5,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Autre": 2,
         "Loi": 1,
-        "Règlement": 1,
         "Ordonnance parlementaire (décret)": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Autre": 1,
             "Loi": 1
           },
           "children": [
             {
               "identifier": "8.10.130",
               "title": "Hygiene",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Autre": 1,
                 "Loi": 1
               },
               "children": [
                 {
                   "identifier": "8.10.130.50",
                   "title": "Tierkörperentsorgung",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Autre": 1,
                     "Loi": 1
                   }
                 }
@@ -751,17 +938,24 @@
           "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1,
-            "Autre": 1
+            "Autre": 2
           },
           "children": [
             {
               "identifier": "8.30.10",
               "title": "Ausgleichskassen",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Règlement": 1,
+                "Autre": 1
+              }
+            },
+            {
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
+              "total": 1,
+              "own": 1,
+              "by_type": {
                 "Autre": 1
               }
             }
@@ -808,8 +1002,8 @@
           },
           "children": [
             {
-              "identifier": "9.20.30",
-              "title": "Bäuerliches Bodenrecht",
+              "identifier": "9.20.120",
+              "title": "Tierseuchen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -822,17 +1016,18 @@
     }
   ],
   "languages_available": {
-    "fr": 17
+    "fr": 25
   },
   "available_years_for_entity": [
     "1832",
+    "1849",
     "1857",
-    "1858",
     "1864",
     "1866",
     "1871",
     "1873",
     "1874",
+    "1879",
     "1885",
     "1887",
     "1888",
@@ -851,19 +1046,19 @@
     "1912",
     "1913",
     "1914",
-    "1916",
     "1919",
     "1920",
     "1923",
     "1924",
     "1925",
+    "1926",
     "1927",
-    "1928",
     "1930",
     "1931",
     "1933",
     "1934",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1941",
@@ -878,6 +1073,7 @@
     "1953",
     "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
     "1959",

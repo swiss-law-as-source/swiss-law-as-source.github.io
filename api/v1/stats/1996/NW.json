@@ -2,22 +2,64 @@
   "year": "1996",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 10,
-  "categorized": 10,
+  "total": 25,
+  "categorized": 25,
   "uncategorized": 0,
   "by_type": {
     "Verordnung des Parlaments (Dekret)": {
-      "total": 4,
+      "total": 8,
       "by_topic": {
+        "611 Raumplanung und Baurecht": 2,
+        "311 Allgemeine Vorschriften": 1,
         "332 Unterschutzstellungen": 1,
-        "611 Raumplanung und Baurecht": 1,
+        "651 Strassenverkehr": 1,
         "741 Alters-, Hinterlassenen- und Invalidenversicherung": 1,
-        "742 Krankenversicherung und Unfallversicherung": 1
+        "742 Krankenversicherung und Unfallversicherung": 1,
+        "854 Gastgewerbe und Handel mit alkoholischen Getränken": 1
       },
       "by_global_category": {
         "7.70.50 Naturschutz": 1,
-        "8.30.30 AHV / IV": 1
+        "8.30.30 AHV / IV": 1,
+        "6.30.10 Alkohol": 1
       }
+    },
+    "Gesetz": {
+      "total": 6,
+      "by_topic": {
+        "122 Niederlassung und Aufenthalt": 1,
+        "214 Grundbuch und Hypothekarwesen": 1,
+        "641 Allgemeine Bestimmungen": 1,
+        "717 Lebensmittel und Gebrauchsgegenstände": 1,
+        "742 Krankenversicherung und Unfallversicherung": 1,
+        "854 Gastgewerbe und Handel mit alkoholischen Getränken": 1
+      },
+      "by_global_category": {
+        "1.10.70.20.10 Asylwesen": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "9.20.120 Tierseuchen": 1,
+        "6.30.10 Alkohol": 1
+      }
+    },
+    "Reglement": {
+      "total": 4,
+      "by_topic": {
+        "321 Kulturförderung": 2,
+        "214 Grundbuch und Hypothekarwesen": 1,
+        "911 Allgemeine Bestimmungen": 1
+      },
+      "by_global_category": {
+        "4.170.30 Bibliotheken": 2,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
+        "5.30.20.10 Hunde, gefährliche Tiere": 1
+      }
+    },
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "611 Raumplanung und Baurecht": 2,
+        "641 Allgemeine Bestimmungen": 1
+      },
+      "by_global_category": {}
     },
     "Interkantonale Vereinbarung": {
       "total": 3,
@@ -28,17 +70,6 @@
       "by_global_category": {
         "8.10.20.10 Kantonsspitäler": 2,
         "8.30.110 Arbeitslosenversicherung": 1
-      }
-    },
-    "Reglement": {
-      "total": 2,
-      "by_topic": {
-        "214 Grundbuch und Hypothekarwesen": 1,
-        "911 Allgemeine Bestimmungen": 1
-      },
-      "by_global_category": {
-        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
-        "5.30.20.10 Hunde, gefährliche Tiere": 1
       }
     },
     "Anderes": {
@@ -53,29 +84,63 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "2",
-      "title": "Zivilrecht - Strafrecht - Rechtspflege - Vollzug",
+      "identifier": "1",
+      "title": "Staat - Volk - Behörden",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung und Aufenthalt",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht - Strafrecht - Rechtspflege - Vollzug",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Zivilgesetzbuch",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Reglement": 1
           },
           "children": [
             {
               "identifier": "214",
               "title": "Grundbuch und Hypothekarwesen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Reglement": 1
               }
             }
@@ -86,12 +151,53 @@
     {
       "identifier": "3",
       "title": "Bildung - Kultur",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 2,
+        "Reglement": 2
       },
       "children": [
+        {
+          "identifier": "31",
+          "title": "Bildung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "311",
+              "title": "Allgemeine Vorschriften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "32",
+          "title": "Kultur",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 2
+          },
+          "children": [
+            {
+              "identifier": "321",
+              "title": "Kulturförderung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 2
+              }
+            }
+          ]
+        },
         {
           "identifier": "33",
           "title": "Natur- und Landschaftsschutz",
@@ -148,15 +254,61 @@
     {
       "identifier": "6",
       "title": "Bau - Strassen - Wasser - Energie - Verkehr",
-      "total": 1,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 3,
+        "Verordnung": 3,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "61",
           "title": "Planung und Bau",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 2,
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "611",
+              "title": "Raumplanung und Baurecht",
+              "total": 4,
+              "own": 4,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 2,
+                "Verordnung": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "64",
+          "title": "Energie",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "641",
+              "title": "Allgemeine Bestimmungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "65",
+          "title": "Verkehr",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -164,8 +316,8 @@
           },
           "children": [
             {
-              "identifier": "611",
-              "title": "Raumplanung und Baurecht",
+              "identifier": "651",
+              "title": "Strassenverkehr",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -179,20 +331,22 @@
     {
       "identifier": "7",
       "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 3,
+        "Gesetz": 2,
         "Verordnung des Parlaments (Dekret)": 2
       },
       "children": [
         {
           "identifier": "71",
           "title": "Gesundheit",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2
+            "Interkantonale Vereinbarung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -203,16 +357,26 @@
               "by_type": {
                 "Interkantonale Vereinbarung": 2
               }
+            },
+            {
+              "identifier": "717",
+              "title": "Lebensmittel und Gebrauchsgegenstände",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         },
         {
           "identifier": "74",
           "title": "Sozialversicherung",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Verordnung des Parlaments (Dekret)": 2,
+            "Gesetz": 1,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
@@ -228,9 +392,10 @@
             {
               "identifier": "742",
               "title": "Krankenversicherung und Unfallversicherung",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung des Parlaments (Dekret)": 1
               }
             },
@@ -241,6 +406,40 @@
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "85",
+          "title": "Industrie und Gewerbe",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "854",
+              "title": "Gastgewerbe und Handel mit alkoholischen Getränken",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -281,32 +480,88 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Anderes": 1,
+        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Anderes": 1,
+            "Gesetz": 1,
             "Reglement": 1
           },
           "children": [
             {
               "identifier": "2.10.40",
               "title": "Sachenrecht",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
                 "Anderes": 1,
+                "Gesetz": 1,
                 "Reglement": 1
               },
               "children": [
@@ -322,13 +577,45 @@
                 {
                   "identifier": "2.10.40.30",
                   "title": "Grundbuch und Grundbuchvermessung",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Gesetz": 1,
                     "Reglement": 1
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 2
+      },
+      "children": [
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 2
+          },
+          "children": [
+            {
+              "identifier": "4.170.30",
+              "title": "Bibliotheken",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 2
+              }
             }
           ]
         }
@@ -371,6 +658,40 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.10",
+              "title": "Alkohol",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung des Parlaments (Dekret)": 1
+              }
             }
           ]
         }
@@ -479,18 +800,51 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.120",
+              "title": "Tierseuchen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 25
   },
   "available_years_for_entity": [
+    "1000",
     "1632",
     "1787",
     "1842",
     "1850",
     "1890",
     "1900",
+    "1901",
     "1909",
     "1911",
     "1926",

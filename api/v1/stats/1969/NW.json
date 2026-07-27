@@ -2,18 +2,33 @@
   "year": "1969",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 8,
-  "categorized": 8,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
-        "842 Fischerei": 3
+        "842 Fischerei": 4,
+        "121 Bürgerrecht": 1
       },
       "by_global_category": {
         "6.30.60.10 Patente": 2,
+        "1.10.60 Bürgerrecht": 1,
         "6.30.60.20 Reviere": 1
+      }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "121 Bürgerrecht": 1,
+        "268 Beurkundungsrecht": 1,
+        "826 Tierseuchen und Viehversicherung": 1
+      },
+      "by_global_category": {
+        "1.10.60 Bürgerrecht": 1,
+        "1.50.20.30 Öffentliche Beurkundung": 1,
+        "8.10.30.100 Tierärzte": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -23,17 +38,6 @@
       },
       "by_global_category": {
         "2.80 Schiedsgerichtsbarkeit": 2
-      }
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "268 Beurkundungsrecht": 1,
-        "826 Tierseuchen und Viehversicherung": 1
-      },
-      "by_global_category": {
-        "1.50.20.30 Öffentliche Beurkundung": 1,
-        "8.10.30.100 Tierärzte": 1
       }
     },
     "Anderes": {
@@ -47,6 +51,40 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat - Volk - Behörden",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung und Aufenthalt",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "121",
+              "title": "Bürgerrecht",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht - Strafrecht - Rechtspflege - Vollzug",
@@ -123,11 +161,12 @@
     {
       "identifier": "8",
       "title": "Wirtschaft",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Anderes": 3,
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -153,19 +192,21 @@
         {
           "identifier": "84",
           "title": "Jagd und Fischerei",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 3
+            "Anderes": 3,
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "842",
               "title": "Fischerei",
-              "total": 3,
-              "own": 3,
+              "total": 4,
+              "own": 4,
               "by_type": {
-                "Anderes": 3
+                "Anderes": 3,
+                "Verordnung": 1
               }
             }
           ]
@@ -177,12 +218,35 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.50",
           "title": "Juristische Berufe",
@@ -373,15 +437,17 @@
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 11
   },
   "available_years_for_entity": [
+    "1000",
     "1632",
     "1787",
     "1842",
     "1850",
     "1890",
     "1900",
+    "1901",
     "1909",
     "1911",
     "1926",
