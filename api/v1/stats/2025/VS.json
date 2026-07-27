@@ -2,55 +2,10 @@
   "year": "2025",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 15,
-  "categorized": 15,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 4,
-      "by_topic": {
-        "172 Staatsrat und Verwaltung": 1,
-        "70 Raumplanung, Bauwesen": 1,
-        "80 Gesundheitswesen": 1,
-        "814 Umweltschutz": 1
-      },
-      "by_global_category": {
-        "1.20.20.30.10 Departemente": 1,
-        "8.10.110 Unfallbekämpfung": 1,
-        "7.60.60 Strahlenschutz": 1
-      }
-    },
-    "Reglement": {
-      "total": 4,
-      "by_topic": {
-        "70 Raumplanung, Bauwesen": 1,
-        "725 Strassen": 1,
-        "741 Strassenverkehr": 1,
-        "93 Gewerbe": 1
-      },
-      "by_global_category": {
-        "7.10.50 Verfahren": 1,
-        "1.30.20 Gemeindebeiträge": 1
-      }
-    },
-    "Gesetz": {
-      "total": 3,
-      "by_topic": {
-        "175 Gemeinden und Burgerschaften": 1,
-        "70 Raumplanung, Bauwesen": 1,
-        "741 Strassenverkehr": 1
-      },
-      "by_global_category": {
-        "1.30.50 Gemeindefusionen": 1
-      }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "22 Vollstreckung des Obligationenrecht": 1
-      },
-      "by_global_category": {}
-    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 2,
       "by_topic": {
@@ -60,38 +15,55 @@
       "by_global_category": {
         "1.30.20 Gemeindebeiträge": 1
       }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "741 Strassenverkehr": 1,
+        "93 Gewerbe": 1
+      },
+      "by_global_category": {
+        "1.30.20 Gemeindebeiträge": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "175 Gemeinden und Burgerschaften": 1
+      },
+      "by_global_category": {
+        "1.30.50 Gemeindefusionen": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "814 Umweltschutz": 1
+      },
+      "by_global_category": {
+        "7.60.60 Strahlenschutz": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "17",
           "title": "Behörden",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
             "Gesetz": 1
           },
           "children": [
-            {
-              "identifier": "172",
-              "title": "Staatsrat und Verwaltung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            },
             {
               "identifier": "175",
               "title": "Gemeinden und Burgerschaften",
@@ -102,26 +74,6 @@
               }
             }
           ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Privatrecht, Zivilrechtspflege",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Anderes": 1
-      },
-      "children": [
-        {
-          "identifier": "22",
-          "title": "Vollstreckung des Obligationenrecht",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Anderes": 1
-          }
         }
       ]
     },
@@ -148,28 +100,15 @@
     {
       "identifier": "7",
       "title": "Öffentliche Werke, Energie, Verkehr",
-      "total": 6,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 3,
-        "Gesetz": 2,
-        "Verordnung": 1
+        "Reglement": 1
       },
       "children": [
         {
-          "identifier": "70",
-          "title": "Raumplanung, Bauwesen",
-          "total": 3,
-          "own": 3,
-          "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1,
-            "Reglement": 1
-          }
-        },
-        {
-          "identifier": "72",
-          "title": "Öffentliche Werke",
+          "identifier": "74",
+          "title": "Verkehr",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -177,33 +116,11 @@
           },
           "children": [
             {
-              "identifier": "725",
-              "title": "Strassen",
+              "identifier": "741",
+              "title": "Strassenverkehr",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Reglement": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "74",
-          "title": "Verkehr",
-          "total": 2,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1,
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "741",
-              "title": "Strassenverkehr",
-              "total": 2,
-              "own": 2,
-              "by_type": {
-                "Gesetz": 1,
                 "Reglement": 1
               }
             }
@@ -214,21 +131,12 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Soziale Sicherheit",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 1
       },
       "children": [
-        {
-          "identifier": "80",
-          "title": "Gesundheitswesen",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        },
         {
           "identifier": "81",
           "title": "Krankenanstalten, Rettungswesen, Umweltschutz",
@@ -278,57 +186,14 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
         "Verordnung des Parlaments (Dekret)": 1,
         "Reglement": 1,
         "Gesetz": 1
       },
       "children": [
-        {
-          "identifier": "1.20",
-          "title": "Behörden",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "1.20.20",
-              "title": "Regierung und Verwaltung",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "1.20.20.30",
-                  "title": "Verwaltung",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.20.20.30.10",
-                      "title": "Departemente",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung": 1
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
         {
           "identifier": "1.30",
           "title": "Gemeinden",
@@ -366,33 +231,12 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
         "Verordnung": 1
       },
       "children": [
-        {
-          "identifier": "7.10",
-          "title": "Raumplanungs- und Baurecht",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "7.10.50",
-              "title": "Verfahren",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Reglement": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
@@ -414,42 +258,11 @@
           ]
         }
       ]
-    },
-    {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "8.10",
-          "title": "Gesundheitswesen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "8.10.110",
-              "title": "Unfallbekämpfung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        }
-      ]
     }
   ],
   "languages_available": {
-    "de": 15,
-    "fr": 14
+    "de": 6,
+    "fr": 6
   },
   "available_years_for_entity": [
     "1802",

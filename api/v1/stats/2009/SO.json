@@ -2,20 +2,22 @@
   "year": "2009",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 11,
-  "categorized": 11,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "711.2 Raumplanung": 1,
         "811.1 Organisation des Sanitätswesens": 1,
-        "812.5 Umweltgefährdende Stoffe": 1
+        "812.5 Umweltgefährdende Stoffe": 1,
+        "832.2 Prämienverbilligung": 1
       },
       "by_global_category": {
         "8.10.120.20 Rauchverbote": 1,
-        "7.60.70 Gifte, Chemikalien": 1
+        "7.60.70 Gifte, Chemikalien": 1,
+        "8.30.60.20 Prämienverbilligungen": 1
       }
     },
     "Anderes": {
@@ -186,10 +188,10 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Verordnung": 3,
         "Reglement": 2
       },
       "children": [
@@ -247,12 +249,33 @@
         {
           "identifier": "83",
           "title": "Sozialrecht",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Reglement": 2
+            "Reglement": 2,
+            "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "832",
+              "title": "Kranken- und Unfallversicherung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "832.2",
+                  "title": "Prämienverbilligung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "837.5",
               "title": "Stiftungen unter staatlicher Verwaltung",
@@ -348,11 +371,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Reglement": 1
       },
       "children": [
         {
@@ -396,12 +419,43 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.20",
+                  "title": "Prämienverbilligungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 12
   },
   "available_years_for_entity": [
     "1780",
@@ -427,6 +481,7 @@
     "1907",
     "1908",
     "1909",
+    "1910",
     "1911",
     "1912",
     "1914",

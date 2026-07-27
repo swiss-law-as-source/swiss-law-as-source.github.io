@@ -2,8 +2,8 @@
   "year": "1987",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 34,
-  "categorized": 34,
+  "total": 35,
+  "categorized": 35,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -49,6 +49,15 @@
         "9.60.100 Entwicklung und Zusammenarbeit": 1
       }
     },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "125.7 Obergericht": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1
+      }
+    },
     "Gesetz": {
       "total": 1,
       "by_topic": {
@@ -63,30 +72,42 @@
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Verordnung": 5
+        "Verordnung": 5,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Verordnung": 5
+            "Verordnung": 5,
+            "Reglement": 1
           },
           "children": [
             {
               "identifier": "125",
               "title": "Gerichte",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Reglement": 1,
                 "Verordnung": 1
               },
               "children": [
+                {
+                  "identifier": "125.7",
+                  "title": "Obergericht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                },
                 {
                   "identifier": "125.9",
                   "title": "Verwaltungsgerichtsbarkeit",
@@ -617,21 +638,23 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Verordnung": 5,
-        "Anderes": 1
+        "Anderes": 1,
+        "Reglement": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 6,
+          "total": 7,
           "own": 0,
           "by_type": {
             "Verordnung": 5,
-            "Anderes": 1
+            "Anderes": 1,
+            "Reglement": 1
           },
           "children": [
             {
@@ -678,21 +701,32 @@
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Reglement": 1,
                 "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "1.20.70.10",
                   "title": "Gerichtsbehörden",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
+                    "Reglement": 1,
                     "Verordnung": 1
                   },
                   "children": [
+                    {
+                      "identifier": "1.20.70.10.20",
+                      "title": "Obere Gerichte, Bundesgerichte",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    },
                     {
                       "identifier": "1.20.70.10.30",
                       "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
@@ -951,7 +985,7 @@
     }
   ],
   "languages_available": {
-    "de": 34
+    "de": 35
   },
   "available_years_for_entity": [
     "1780",
@@ -977,6 +1011,7 @@
     "1907",
     "1908",
     "1909",
+    "1910",
     "1911",
     "1912",
     "1914",

@@ -2,12 +2,12 @@
   "year": "1994",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 18,
-  "categorized": 18,
+  "total": 20,
+  "categorized": 20,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 8,
+      "total": 9,
       "by_topic": {
         "370 Wohnhygiene · Baden · Kunsteisbahnen": 2,
         "162 Dienstverhältnis": 1,
@@ -15,7 +15,8 @@
         "30 Gesundheit": 1,
         "66 Bundessteuern": 1,
         "730 Hochbauten": 1,
-        "735 Sicherheit und Brandschutz für Bauten": 1
+        "735 Sicherheit und Brandschutz für Bauten": 1,
+        "772 Energie- und Wasserversorgung": 1
       },
       "by_global_category": {
         "8.10.130.30 Badeanstalten": 2,
@@ -27,14 +28,16 @@
       }
     },
     "Gemeindeerlass": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "RiE 3 Gesundheit · Bestattungswesen": 2,
         "BeE 3 Gesundheit": 1,
+        "RiE 153 Gemeinderat und Gemeindeverwaltung · Verwaltungsgebühren": 1,
         "RiE 9 Wirtschaft · Freizeitgärten": 1
       },
       "by_global_category": {
-        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 3
+        "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 3,
+        "1.50.20.20 Gebühren, Tarife": 1
       }
     },
     "Gesetz": {
@@ -270,10 +273,11 @@
     {
       "identifier": "7",
       "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
@@ -301,6 +305,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "77",
+          "title": "Wasser · Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "772",
+              "title": "Energie- und Wasserversorgung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -381,10 +405,10 @@
     {
       "identifier": "RiE",
       "title": "Einwohnergemeinde Riehen",
-      "total": 3,
-      "own": 3,
+      "total": 4,
+      "own": 4,
       "by_type": {
-        "Gemeindeerlass": 3
+        "Gemeindeerlass": 4
       }
     }
   ],
@@ -392,11 +416,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Gesetz": 1,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gemeindeerlass": 1
       },
       "children": [
         {
@@ -466,6 +491,37 @@
                   "own": 1,
                   "by_type": {
                     "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 1
+          },
+          "children": [
+            {
+              "identifier": "1.50.20",
+              "title": "Notare",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gemeindeerlass": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.20.20",
+                  "title": "Gebühren, Tarife",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gemeindeerlass": 1
                   }
                 }
               ]
@@ -694,9 +750,10 @@
     }
   ],
   "languages_available": {
-    "de": 18
+    "de": 20
   },
   "available_years_for_entity": [
+    "1019",
     "1756",
     "1825",
     "1828",
@@ -766,6 +823,7 @@
     "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1962",

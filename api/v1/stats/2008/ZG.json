@@ -2,16 +2,17 @@
   "year": "2008",
   "year_semantics": "enactment",
   "entity": "ZG",
-  "total": 29,
-  "categorized": 29,
+  "total": 36,
+  "categorized": 36,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 11,
+      "total": 14,
       "by_topic": {
-        "413 Berufsbildung, Spezialausbildung": 2,
+        "413 Berufsbildung, Spezialausbildung": 3,
+        "154 Behörden und Beamte": 2,
+        "122 Niederlassung, Aufenthalt, Migration": 1,
         "13 Politische Rechte, Gleichstellung": 1,
-        "154 Behörden und Beamte": 1,
         "157 Datenschutz": 1,
         "161 Gerichtsorganisation": 1,
         "215 Sachenrecht": 1,
@@ -24,6 +25,7 @@
         "4.90.20 Löhne, Entschädigungen": 3,
         "1.20.50 Datenschutz": 2,
         "1.10.90.20.10 Wahlen und Abstimmungen": 1,
+        "1.20.20.40.30 Arbeitszeit, Ferien, Urlaub": 1,
         "4.30.50 Brückenangebote": 1,
         "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1
       }
@@ -49,15 +51,32 @@
     "Reglement": {
       "total": 5,
       "by_topic": {
-        "414 Mittelschulen, Fachhochschulen und Technische Fachschulen": 3,
+        "414 Mittelschulen, Fachhochschulen und Technische Fachschulen": 2,
         "412 Volksschule": 1,
+        "446 Kirchgemeinden, Kirchensteuer": 1,
         "921 Förderung im allgemeinen": 1
       },
       "by_global_category": {
-        "4.20.30 Handelsmittelschulen, Informatikmittelschulen": 2,
+        "4.20.30 Handelsmittelschulen, Informatikmittelschulen": 1,
         "4.20.10 Mittelschule": 1,
         "4.20.20 Fachmittelschulen, Diplommittelschulen": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1,
         "9.20.80.20 Schädlingsbekämpfung": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 4,
+      "by_topic": {
+        "151 Regierungsrat": 1,
+        "154 Behörden und Beamte": 1,
+        "161 Gerichtsorganisation": 1,
+        "511 Polizeiliche Zusammenarbeit": 1
+      },
+      "by_global_category": {
+        "1.20.20.30.20 Direktionen und Ämter": 1,
+        "1.20.20.40.10 Anstellung": 1,
+        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1,
+        "4.180.30 Sport": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -74,22 +93,15 @@
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "154 Behörden und Beamte": 1,
         "821 Allgemeines": 1,
         "841 Alters-, Hinterlassenen- und Invalidenversicherung": 1
       },
       "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
         "8.30.40 Ergänzungsleistungen": 1
-      }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "154 Behörden und Beamte": 1
-      },
-      "by_global_category": {
-        "1.20.20.40.10 Anstellung": 1
       }
     }
   },
@@ -97,13 +109,34 @@
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 8,
+      "total": 13,
       "own": 0,
       "by_type": {
-        "Verordnung": 4,
-        "Anderes": 4
+        "Verordnung": 6,
+        "Anderes": 6,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung, Aufenthalt, Migration",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Niederlassung, Aufenthalt, Migration",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "13",
           "title": "Politische Rechte, Gleichstellung",
@@ -117,13 +150,23 @@
         {
           "identifier": "15",
           "title": "Regierungsrat, Staatskanzlei, Verwaltung",
-          "total": 5,
+          "total": 8,
           "own": 0,
           "by_type": {
-            "Anderes": 3,
-            "Verordnung": 2
+            "Anderes": 4,
+            "Verordnung": 3,
+            "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "151",
+              "title": "Regierungsrat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "153",
               "title": "Verwaltungsorganisation",
@@ -136,11 +179,12 @@
             {
               "identifier": "154",
               "title": "Behörden und Beamte",
-              "total": 2,
-              "own": 2,
+              "total": 4,
+              "own": 4,
               "by_type": {
+                "Verordnung": 2,
                 "Anderes": 1,
-                "Verordnung": 1
+                "Gesetz": 1
               }
             },
             {
@@ -157,19 +201,21 @@
         {
           "identifier": "16",
           "title": "Gerichtsorganisation, Verwaltungsrechtspflege, Anwaltsrecht",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "161",
               "title": "Gerichtsorganisation",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Anderes": 1
               }
             }
           ]
@@ -210,13 +256,13 @@
     {
       "identifier": "4",
       "title": "Schule, Kultur, Natur- und Heimatschutz, Kirche",
-      "total": 14,
+      "total": 15,
       "own": 0,
       "by_type": {
+        "Anderes": 5,
         "Interkantonale Vereinbarung": 4,
-        "Reglement": 4,
-        "Verordnung": 3,
-        "Anderes": 3
+        "Reglement": 3,
+        "Verordnung": 3
       },
       "children": [
         {
@@ -226,9 +272,9 @@
           "own": 0,
           "by_type": {
             "Interkantonale Vereinbarung": 4,
-            "Reglement": 4,
+            "Reglement": 3,
             "Verordnung": 3,
-            "Anderes": 2
+            "Anderes": 3
           },
           "children": [
             {
@@ -253,20 +299,20 @@
             {
               "identifier": "413",
               "title": "Berufsbildung, Spezialausbildung",
-              "total": 3,
-              "own": 3,
+              "total": 4,
+              "own": 4,
               "by_type": {
-                "Anderes": 2,
+                "Anderes": 3,
                 "Verordnung": 1
               }
             },
             {
               "identifier": "414",
               "title": "Mittelschulen, Fachhochschulen und Technische Fachschulen",
-              "total": 6,
-              "own": 6,
+              "total": 5,
+              "own": 5,
               "by_type": {
-                "Reglement": 3,
+                "Reglement": 2,
                 "Interkantonale Vereinbarung": 2,
                 "Verordnung": 1
               }
@@ -301,27 +347,58 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "44",
+          "title": "Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "446",
+              "title": "Kirchgemeinden, Kirchensteuer",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "5",
       "title": "Polizei, Militär, Zivilschutz, Notorganisation",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "51",
           "title": "Polizei",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "511",
+              "title": "Polizeiliche Zusammenarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "512",
               "title": "Polizei",
@@ -464,11 +541,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 6,
+      "total": 11,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
-        "Anderes": 3
+        "Anderes": 6,
+        "Verordnung": 4,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -520,20 +598,23 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 4,
+          "total": 8,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
-            "Verordnung": 2
+            "Anderes": 4,
+            "Verordnung": 3,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 2,
+              "total": 5,
               "own": 0,
               "by_type": {
-                "Anderes": 2
+                "Anderes": 3,
+                "Verordnung": 1,
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -557,12 +638,34 @@
                   ]
                 },
                 {
-                  "identifier": "1.20.20.40",
-                  "title": "Personalrecht",
+                  "identifier": "1.20.20.30",
+                  "title": "Verwaltung",
                   "total": 1,
                   "own": 0,
                   "by_type": {
                     "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.30.20",
+                      "title": "Direktionen und Ämter",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 3,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1,
+                    "Verordnung": 1,
+                    "Gesetz": 1
                   },
                   "children": [
                     {
@@ -572,6 +675,24 @@
                       "own": 1,
                       "by_type": {
                         "Anderes": 1
+                      }
+                    },
+                    {
+                      "identifier": "1.20.20.40.30",
+                      "title": "Arbeitszeit, Ferien, Urlaub",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    },
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
                       }
                     }
                   ]
@@ -586,6 +707,57 @@
               "by_type": {
                 "Verordnung": 2
               }
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.20",
+                      "title": "Obere Gerichte, Bundesgerichte",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -597,19 +769,19 @@
       "total": 13,
       "own": 0,
       "by_type": {
-        "Reglement": 4,
         "Verordnung": 4,
         "Interkantonale Vereinbarung": 4,
-        "Anderes": 1
+        "Reglement": 3,
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "4.20",
           "title": "Sekundarstufe II",
-          "total": 4,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Reglement": 4
+            "Reglement": 3
           },
           "children": [
             {
@@ -633,10 +805,10 @@
             {
               "identifier": "4.20.30",
               "title": "Handelsmittelschulen, Informatikmittelschulen",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Reglement": 2
+                "Reglement": 1
               }
             }
           ]
@@ -734,15 +906,24 @@
         {
           "identifier": "4.180",
           "title": "Kunst, Kultur, Sport",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
               "identifier": "4.180.20",
               "title": "Kulturförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "4.180.30",
+              "title": "Sport",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -945,7 +1126,7 @@
     }
   ],
   "languages_available": {
-    "de": 29
+    "de": 36
   },
   "available_years_for_entity": [
     "1825",

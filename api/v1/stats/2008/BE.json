@@ -7,9 +7,10 @@
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 9,
+      "total": 10,
       "by_topic": {
         "152.0 Allgemeine Organisation, Zuständigkeit, Information": 1,
+        "152.22 Direktionen": 1,
         "414.5 Besoldung und Pensionierung": 1,
         "432.21 Allgemeines": 1,
         "432.27 Einfache Sonderpädagogische Massnahmen": 1,
@@ -21,6 +22,7 @@
       },
       "by_global_category": {
         "1.20.50 Datenschutz": 1,
+        "1.20.20.10.10 Delegation": 1,
         "1.40.10 Römisch-Katholische Kirche": 1,
         "4.110 Familienergänzende Tagesstrukturen": 1,
         "4.10.20 Kindergarten": 1,
@@ -43,19 +45,6 @@
         "8.30.40 Ergänzungsleistungen": 1
       }
     },
-    "Interkantonale Vereinbarung": {
-      "total": 4,
-      "by_topic": {
-        "122.3 Schengen / Dublin": 1,
-        "439.7 Kulturelle Kommissionen": 1,
-        "923.9 Interkantonale und internationale Vereinbarungen": 1
-      },
-      "by_global_category": {
-        "1.20.50 Datenschutz": 1,
-        "4.180.10.10 Film, Theater, Unterhaltung": 1,
-        "6.30.60.20 Reviere": 1
-      }
-    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 4,
       "by_topic": {
@@ -69,6 +58,17 @@
         "4.180.30 Sport": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 3,
+      "by_topic": {
+        "122.3 Schengen / Dublin": 1,
+        "439.7 Kulturelle Kommissionen": 1
+      },
+      "by_global_category": {
+        "1.20.50 Datenschutz": 1,
+        "4.180.10.10 Film, Theater, Unterhaltung": 1
+      }
+    },
     "Reglement": {
       "total": 1,
       "by_topic": {},
@@ -79,12 +79,12 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Interkantonale Vereinbarung": 1,
-        "Anderes": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -124,19 +124,19 @@
         {
           "identifier": "15",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "152",
               "title": "Regierungsrat und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               },
               "children": [
                 {
@@ -147,6 +147,26 @@
                   "by_type": {
                     "Verordnung": 1
                   }
+                },
+                {
+                  "identifier": "152.2",
+                  "title": "Zentralverwaltung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "152.22",
+                      "title": "Direktionen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -480,11 +500,10 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -506,37 +525,6 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "92",
-          "title": "Forstwesen, Jagd, Fischerei",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "923",
-              "title": "Fischerei",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "923.9",
-                  "title": "Interkantonale und internationale Vereinbarungen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     }
@@ -545,10 +533,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Verordnung": 3,
         "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
@@ -556,14 +544,45 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
+            "Verordnung": 2,
             "Interkantonale Vereinbarung": 1,
-            "Anderes": 1,
-            "Verordnung": 1
+            "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.10",
+                  "title": "Organisation",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.10.10",
+                      "title": "Delegation",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "1.20.50",
               "title": "Datenschutz",
@@ -689,48 +708,6 @@
               "by_type": {
                 "Anderes": 1
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "6.30.60",
-              "title": "Fischerei",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.30.60.20",
-                  "title": "Reviere",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
-                  }
-                }
-              ]
             }
           ]
         }

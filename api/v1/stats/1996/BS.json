@@ -2,16 +2,19 @@
   "year": "1996",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 20,
-  "categorized": 20,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 6,
+      "total": 9,
       "by_topic": {
         "164 Lohn und Entschädigungen": 1,
         "258 Strafvollzug · Gefängniswesen": 1,
         "413 Mittelschulen": 1,
+        "424 Berufsmaturitäten": 1,
+        "427 Ausbildung in einzelnen Berufen": 1,
+        "772 Energie- und Wasserversorgung": 1,
         "781 Lufthygiene": 1,
         "79 Baurekurskommission": 1,
         "835 Arbeitslosenversicherung und ergänzende kantonale Massnahmen": 1
@@ -19,6 +22,7 @@
       "by_global_category": {
         "1.20.20.40.80 Personalausschüsse, paritätische Kommissionen": 1,
         "4.20.10 Mittelschule": 1,
+        "4.30.20 Berufsmaturitätsschulen": 1,
         "7.10.50 Verfahren": 1,
         "8.30.110 Arbeitslosenversicherung": 1
       }
@@ -230,11 +234,11 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
+        "Verordnung": 3,
         "Reglement": 2,
-        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
@@ -265,6 +269,35 @@
               "own": 1,
               "by_type": {
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "42",
+          "title": "Berufsbildung · Berufsschulen · Fachhochschule",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "424",
+              "title": "Berufsmaturitäten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "427",
+              "title": "Ausbildung in einzelnen Berufen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -365,14 +398,34 @@
     {
       "identifier": "7",
       "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Verordnung": 2,
-        "Staatsvertrag": 1,
-        "Anderes": 1
+        "Staatsvertrag": 1
       },
       "children": [
+        {
+          "identifier": "77",
+          "title": "Wasser · Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "772",
+              "title": "Energie- und Wasserversorgung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "78",
           "title": "Umweltschutz",
@@ -595,11 +648,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Reglement": 2,
-        "Verordnung": 1,
         "Anderes": 1,
         "Interkantonale Vereinbarung": 1,
         "Gesetz": 1
@@ -617,6 +670,26 @@
             {
               "identifier": "4.20.10",
               "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.20",
+              "title": "Berufsmaturitätsschulen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -907,9 +980,10 @@
     }
   ],
   "languages_available": {
-    "de": 20
+    "de": 23
   },
   "available_years_for_entity": [
+    "1019",
     "1756",
     "1825",
     "1828",
@@ -979,6 +1053,7 @@
     "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1962",

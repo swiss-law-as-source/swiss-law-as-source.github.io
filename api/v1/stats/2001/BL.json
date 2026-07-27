@@ -2,8 +2,8 @@
   "year": "2001",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 22,
-  "categorized": 22,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -46,6 +46,17 @@
       },
       "by_global_category": {}
     },
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "19 Kirchen": 1,
+        "93 Spitäler": 1
+      },
+      "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "8.30.60.10.20 Vereinbarungen": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 2,
       "by_topic": {
@@ -55,27 +66,19 @@
       "by_global_category": {
         "1.30.40 Aufgabenteilung Kanton-Gemeinden": 1
       }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "93 Spitäler": 1
-      },
-      "by_global_category": {
-        "8.30.60.10.20 Vereinbarungen": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Verordnung": 3,
         "Gesetz": 2,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -124,6 +127,15 @@
           "by_type": {
             "Gesetz": 2,
             "Verordnung des Parlaments (Dekret)": 1
+          }
+        },
+        {
+          "identifier": "19",
+          "title": "Kirchen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
           }
         }
       ]
@@ -314,11 +326,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -377,6 +390,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -624,7 +657,7 @@
     }
   ],
   "languages_available": {
-    "de": 22
+    "de": 23
   },
   "available_years_for_entity": [
     "1815",

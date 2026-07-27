@@ -2,10 +2,27 @@
   "year": "1989",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 9,
-  "categorized": 9,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 5,
+      "by_topic": {
+        "143 Staatspersonal": 1,
+        "273 Staatsbeiträge": 1,
+        "321 Kantonale Spitäler": 1,
+        "672 Übriger Umweltschutz": 1,
+        "713 Eisenbahnen": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.10 Entschädigungen": 1,
+        "9.50.10.60.10 Lotteriefonds": 1,
+        "8.10.20.10 Kantonsspitäler": 1,
+        "7.60.80 Umweltgefährdende Stoffe": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
+      }
+    },
     "Verordnung": {
       "total": 4,
       "by_topic": {
@@ -20,54 +37,45 @@
         "7.60.80 Umweltgefährdende Stoffe": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 4,
-      "by_topic": {
-        "273 Staatsbeiträge": 1,
-        "321 Kantonale Spitäler": 1,
-        "672 Übriger Umweltschutz": 1,
-        "713 Eisenbahnen": 1
-      },
-      "by_global_category": {
-        "9.50.10.60.10 Lotteriefonds": 1,
-        "8.10.20.10 Kantonsspitäler": 1,
-        "7.60.80 Umweltgefährdende Stoffe": 1,
-        "6.10.30 Staatsbeiträge, Subventionen": 1
-      }
-    },
     "Interkantonale Vereinbarung": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "215 Mittelschulen": 1,
         "371 Kinderzulagen": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "4.20.10 Mittelschule": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen und Organisation von Kanton und Gemeinden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "14",
           "title": "Staatsverwaltung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "143",
               "title": "Staatspersonal",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Anderes": 1,
                 "Verordnung": 1
               }
             }
@@ -78,12 +86,33 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "21",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "215",
+              "title": "Mittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "27",
           "title": "Kultur",
@@ -266,30 +295,53 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Anderes": 1,
                 "Verordnung": 1
               },
               "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.10",
+                      "title": "Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                },
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
@@ -311,6 +363,37 @@
                   ]
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.20",
+          "title": "Sekundarstufe II",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.20.10",
+              "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
             }
           ]
         }
@@ -497,7 +580,7 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 11
   },
   "available_years_for_entity": [
     "1845",

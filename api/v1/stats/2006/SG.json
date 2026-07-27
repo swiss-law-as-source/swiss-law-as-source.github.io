@@ -2,16 +2,17 @@
   "year": "2006",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 24,
-  "categorized": 24,
+  "total": 27,
+  "categorized": 27,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "331 Krankenversicherung": 2,
         "215 Mittelschulen": 1,
         "320 Kantonale Spitäler": 1,
+        "451 Polizei": 1,
         "813 Finanzausgleich": 1,
         "871 Feuerpolizei": 1,
         "872 Feuerwehr": 1
@@ -20,24 +21,28 @@
         "4.20.10 Mittelschule": 1,
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
         "8.30.60.10.10 TARMED": 1,
+        "1.20.50 Datenschutz": 1,
         "1.10.40 Interkantonale Zusammenarbeit": 1,
         "5.20.30.10 Feuerwehr": 1,
         "5.20.30.20 Brandschutz": 1
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 5,
+      "total": 7,
       "by_topic": {
         "312 Medizinische Berufe und andere Berufe der Gesundheitspflege": 2,
         "153 Gemeinschaftliche Unternehmen": 1,
         "230 Allgemein": 1,
-        "451 Polizei": 1
+        "451 Polizei": 1,
+        "455 Geldspiele": 1,
+        "712 Luftseilbahnen und Skilifte": 1
       },
       "by_global_category": {
         "1.30.60 Bürgergemeinden, Allmend": 1,
         "4.90.30 Ausbildung": 1,
         "8.10.30.50 Chiropraktiker, Physiotherapeuten": 1,
-        "5.30.10.50 Polizeiliche Zusammenarbeit": 1
+        "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
+        "7.50.30 Seilbahnen, Skilifte": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -47,7 +52,7 @@
         "321 Kantonale Spitäler": 1,
         "355 Berufliche Alters-, Hinterlassenen- und Invalidenvorsorge": 1,
         "381 Öffentliche Fürsorge": 1,
-        "831 Finanzhaushalt des Staates": 1
+        "455 Geldspiele": 1
       },
       "by_global_category": {
         "4.70.10 Erwachsenenbildung": 1,
@@ -366,27 +371,42 @@
     {
       "identifier": "4",
       "title": "Landesverteidigung, öffentliche Sicherheit und Ordnung",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 2,
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "45",
           "title": "Öffentliche Sicherheit und Ordnung",
-          "total": 1,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 2,
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "451",
               "title": "Polizei",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Verordnung": 1,
+                "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "455",
+              "title": "Geldspiele",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 1,
                 "Interkantonale Vereinbarung": 1
               }
             }
@@ -426,13 +446,44 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 4,
+      "identifier": "7",
+      "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Verordnung": 2
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "71",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "712",
+              "title": "Luftseilbahnen und Skilifte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
@@ -447,26 +498,6 @@
             {
               "identifier": "813",
               "title": "Finanzausgleich",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "83",
-          "title": "Finanzhaushalt des Staates",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "831",
-              "title": "Finanzhaushalt des Staates",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -511,11 +542,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Anderes": 1,
-        "Verordnung": 1,
         "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
@@ -543,10 +574,10 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
@@ -579,6 +610,15 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         },
@@ -918,6 +958,37 @@
       ]
     },
     {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.30",
+              "title": "Seilbahnen, Skilifte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 3,
@@ -1044,7 +1115,7 @@
     }
   ],
   "languages_available": {
-    "de": 24
+    "de": 27
   },
   "available_years_for_entity": [
     "1845",

@@ -2,8 +2,8 @@
   "year": "1976",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 9,
-  "categorized": 9,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -17,6 +17,17 @@
         "4.100.20 Schulgelder": 1,
         "4.40.20 Theologische Fakultät": 1,
         "8.10.30.10 Ärzte": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "18 Publikation der Erlasse": 1,
+        "433 Fortbildung Jugendlicher und Erwachsener": 1
+      },
+      "by_global_category": {
+        "1.10.100.10 Gesetzessammlungen": 1,
+        "4.70.10 Erwachsenenbildung": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -40,15 +51,6 @@
         "8.10.100.10 Epidemien, Pandemien": 1
       }
     },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "433 Fortbildung Jugendlicher und Erwachsener": 1
-      },
-      "by_global_category": {
-        "4.70.10 Erwachsenenbildung": 1
-      }
-    },
     "Anderes": {
       "total": 1,
       "by_topic": {
@@ -60,6 +62,26 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Grundlagen, Bürgerrecht, Organisation",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "18",
+          "title": "Publikation der Erlasse",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "Rechtspflege",
@@ -211,6 +233,48 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.100",
+              "title": "Amtliche Veröffentlichungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.100.10",
+                  "title": "Gesetzessammlungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -386,8 +450,8 @@
     }
   ],
   "languages_available": {
-    "de": 9,
-    "it": 9
+    "de": 10,
+    "it": 10
   },
   "available_years_for_entity": [
     "1877",

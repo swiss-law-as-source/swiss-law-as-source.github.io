@@ -17,15 +17,17 @@
       }
     },
     "Verordnung": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "105 Finanzen": 1,
         "212.2 Familienrecht": 1,
+        "411.27 Lehrmittelkoordination": 1,
         "911 Wirtschaftsförderung": 1
       },
       "by_global_category": {
         "8.10.100.10 Epidemien, Pandemien": 1,
         "2.10.20.30 Fürsorgerischer Freiheitsentzug": 1,
+        "4.120.40 Lehrmittel": 1,
         "9.10 Wirtschaftsförderung": 1
       }
     },
@@ -38,15 +40,6 @@
       "by_global_category": {
         "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
         "4.120.50 Förderung von Informationstechnologien": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "614.3 Erbschafts- und Schenkungssteuer": 1
-      },
-      "by_global_category": {
-        "6.20.40 Erbschafts- und Schenkungssteuern": 1
       }
     }
   },
@@ -170,23 +163,56 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Anderes": 2,
+        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Anderes": 2,
+            "Verordnung": 1,
             "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "411",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "411.2",
+                  "title": "Koordination, Interkantonale Vereinbarungen",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "411.27",
+                      "title": "Lehrmittelkoordination",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "416",
               "title": "Berufsbildung",
@@ -213,48 +239,6 @@
                   "own": 1,
                   "by_type": {
                     "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen, Regalien",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "61",
-          "title": "Finanzen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "614",
-              "title": "Kantonale Steuern",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
-              },
-              "children": [
-                {
-                  "identifier": "614.3",
-                  "title": "Erbschafts- und Schenkungssteuer",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
@@ -397,21 +381,32 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "4.120.40",
+              "title": "Lehrmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "4.120.50",
               "title": "Förderung von Informationstechnologien",
@@ -419,37 +414,6 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Interkantonale Vereinbarung": 1
-      },
-      "children": [
-        {
-          "identifier": "6.20",
-          "title": "Steuern",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Interkantonale Vereinbarung": 1
-          },
-          "children": [
-            {
-              "identifier": "6.20.40",
-              "title": "Erbschafts- und Schenkungssteuern",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -548,6 +512,7 @@
     "1907",
     "1908",
     "1909",
+    "1910",
     "1911",
     "1912",
     "1914",

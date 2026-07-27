@@ -23,26 +23,25 @@
         "8.70.10 Sozialhilfe": 1
       }
     },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "414 Höhere Ausbildung": 1,
+        "45 Natur- und Heimatschutz": 1
+      },
+      "by_global_category": {
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1
+      }
+    },
     "Verordnung": {
       "total": 2,
       "by_topic": {
-        "21 Vollstreckung des Zivilrechts": 1,
-        "743 Seilbahnen und Skilifte": 1
+        "743 Seilbahnen und Skilifte": 1,
+        "80 Gesundheitswesen": 1
       },
       "by_global_category": {
-        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
-        "7.50.30 Seilbahnen, Skilifte": 1
-      }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "45 Natur- und Heimatschutz": 1,
-        "814 Umweltschutz": 1
-      },
-      "by_global_category": {
-        "7.70.50 Naturschutz": 1,
-        "1.20.20.60 Verwaltungsgebühren": 1
+        "7.50.30 Seilbahnen, Skilifte": 1,
+        "1.20.30 Ombudsperson": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -59,12 +58,14 @@
       },
       "by_global_category": {}
     },
-    "Reglement": {
+    "Anderes": {
       "total": 1,
       "by_topic": {
         "45 Natur- und Heimatschutz": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "7.70.50 Naturschutz": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -110,35 +111,35 @@
       ]
     },
     {
-      "identifier": "2",
-      "title": "Privatrecht, Zivilrechtspflege",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Verordnung": 1
-      },
-      "children": [
-        {
-          "identifier": "21",
-          "title": "Vollstreckung des Zivilrechts",
-          "total": 1,
-          "own": 1,
-          "by_type": {
-            "Verordnung": 1
-          }
-        }
-      ]
-    },
-    {
       "identifier": "4",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Reglement": 1,
+        "Reglement": 2,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "414",
+              "title": "Höhere Ausbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "45",
           "title": "Natur- und Heimatschutz",
@@ -211,29 +212,18 @@
       "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "81",
-          "title": "Krankenanstalten, Rettungswesen, Umweltschutz",
+          "identifier": "80",
+          "title": "Gesundheitswesen",
           "total": 1,
-          "own": 0,
+          "own": 1,
           "by_type": {
-            "Anderes": 1
-          },
-          "children": [
-            {
-              "identifier": "814",
-              "title": "Umweltschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Anderes": 1
-              }
-            }
-          ]
+            "Verordnung": 1
+          }
         },
         {
           "identifier": "85",
@@ -285,7 +275,7 @@
       "own": 0,
       "by_type": {
         "Gesetz": 1,
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -295,17 +285,16 @@
           "own": 0,
           "by_type": {
             "Gesetz": 1,
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Gesetz": 1,
-                "Anderes": 1
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -327,61 +316,39 @@
                       }
                     }
                   ]
-                },
-                {
-                  "identifier": "1.20.20.60",
-                  "title": "Verwaltungsgebühren",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
                 }
               ]
+            },
+            {
+              "identifier": "1.20.30",
+              "title": "Ombudsperson",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
       ]
     },
     {
-      "identifier": "2",
-      "title": "Zivilrecht",
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Reglement": 1
       },
       "children": [
         {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
+          "identifier": "4.60",
+          "title": "Tertiärstufe: Höhere Fachschulen",
           "total": 1,
-          "own": 0,
+          "own": 1,
           "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "2.10.40",
-              "title": "Sachenrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.40.30",
-                  "title": "Grundbuch und Grundbuchvermessung",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
-                  }
-                }
-              ]
-            }
-          ]
+            "Reglement": 1
+          }
         }
       ]
     },

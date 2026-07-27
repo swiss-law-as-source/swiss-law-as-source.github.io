@@ -6,63 +6,78 @@
   "categorized": 4,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "731.1 Strassen": 1,
-        "812.1 Allgemeines": 1
-      },
-      "by_global_category": {}
-    },
     "Gesetz": {
       "total": 2,
       "by_topic": {
-        "812.1 Allgemeines": 1,
-        "822.3 Ladenschluss": 1
+        "612 Finanzhaushalt": 1,
+        "812.1 Allgemeines": 1
       },
       "by_global_category": {
-        "8.20.10.30 Sonn- und Feiertage": 1
+        "6.10.10 Budget und Rechnung": 1
       }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "33 Strafregister, Strafkontrolle": 1
+      },
+      "by_global_category": {}
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "812.1 Allgemeines": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "7",
-      "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
+      "identifier": "3",
+      "title": "Strafrecht, Strafrechtspflege, Strafvollzug",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
-          "identifier": "73",
-          "title": "Öffentliche Werke",
+          "identifier": "33",
+          "title": "Strafregister, Strafkontrolle",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "Allgemeine Bestimmungen",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Gesetz": 1
           },
           "children": [
             {
-              "identifier": "731",
-              "title": "Verkehrswege",
+              "identifier": "612",
+              "title": "Finanzhaushalt",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
-                "Anderes": 1
-              },
-              "children": [
-                {
-                  "identifier": "731.1",
-                  "title": "Strassen",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Anderes": 1
-                  }
-                }
-              ]
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -71,10 +86,10 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 3,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
@@ -111,45 +126,14 @@
               ]
             }
           ]
-        },
-        {
-          "identifier": "82",
-          "title": "Arbeit",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "822",
-              "title": "Arbeitnehmerschutz",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "822.3",
-                  "title": "Ladenschluss",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -157,8 +141,8 @@
       },
       "children": [
         {
-          "identifier": "8.20",
-          "title": "Arbeitsrecht",
+          "identifier": "6.10",
+          "title": "Finanzen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -166,24 +150,13 @@
           },
           "children": [
             {
-              "identifier": "8.20.10",
-              "title": "Arbeitnehmer",
+              "identifier": "6.10.10",
+              "title": "Budget und Rechnung",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "8.20.10.30",
-                  "title": "Sonn- und Feiertage",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
+              }
             }
           ]
         }
@@ -209,6 +182,7 @@
     "1925",
     "1931",
     "1932",
+    "1939",
     "1940",
     "1941",
     "1942",

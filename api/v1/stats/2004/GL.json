@@ -2,8 +2,8 @@
   "year": "2004",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 11,
-  "categorized": 11,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -21,14 +21,26 @@
       }
     },
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "I D/21 Landsgemeinde": 1,
-        "II A/6 Angestellte des Kantons": 1
+        "II A/6 Angestellte des Kantons": 1,
+        "V C/1 Allgemeines": 1
       },
       "by_global_category": {
         "1.10.90.20.20 Landsgemeinde": 1,
-        "1.20.20.40.30 Arbeitszeit, Ferien, Urlaub": 1
+        "1.20.20.40.30 Arbeitszeit, Ferien, Urlaub": 1,
+        "5.20.30.20 Brandschutz": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "III F Strafprozessrecht und Strafvollzug": 1,
+        "VIII B/22 Abwasserreinigung": 1
+      },
+      "by_global_category": {
+        "7.60.20 Gewässerschutz": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -49,12 +61,14 @@
       },
       "by_global_category": {}
     },
-    "Interkantonale Vereinbarung": {
+    "Reglement": {
       "total": 1,
       "by_topic": {
-        "III F Strafprozessrecht und Strafvollzug": 1
+        "V C/1 Allgemeines": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "5.20.30.10 Feuerwehr": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -98,6 +112,16 @@
       }
     },
     {
+      "identifier": "V",
+      "title": "Schutz und Abwehr",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Verordnung": 1,
+        "Reglement": 1
+      }
+    },
+    {
       "identifier": "VI",
       "title": "Finanzen – Regalien",
       "total": 2,
@@ -110,10 +134,11 @@
     {
       "identifier": "VIII",
       "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
       }
     }
   ],
@@ -330,6 +355,91 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.20",
+          "title": "Bevölkerungsschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.20.30",
+              "title": "Feuerwehr / Elementarschäden",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.20.30.10",
+                  "title": "Feuerwehr",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                },
+                {
+                  "identifier": "5.20.30.20",
+                  "title": "Brandschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 2,
@@ -373,7 +483,7 @@
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 14
   },
   "available_years_for_entity": [
     "1807",

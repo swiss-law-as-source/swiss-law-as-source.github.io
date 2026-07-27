@@ -2,10 +2,22 @@
   "year": "2001",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 8,
-  "categorized": 8,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "525 Hundepolizei": 1,
+        "750 Allgemeines": 1,
+        "816.1 Übertragbare Krankheiten": 1
+      },
+      "by_global_category": {
+        "5.30.20.10 Hunde, gefährliche Tiere": 1,
+        "8.10.100.20 Tuberkulose": 1
+      }
+    },
     "Gesetz": {
       "total": 3,
       "by_topic": {
@@ -16,16 +28,6 @@
       "by_global_category": {
         "1.20.50 Datenschutz": 1,
         "1.20.20.60 Verwaltungsgebühren": 1
-      }
-    },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "750 Allgemeines": 1,
-        "816.1 Übertragbare Krankheiten": 1
-      },
-      "by_global_category": {
-        "8.10.100.20 Tuberkulose": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -134,6 +136,37 @@
               "by_type": {
                 "Verordnung des Parlaments (Dekret)": 1,
                 "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "52",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "525",
+              "title": "Hundepolizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -322,6 +355,48 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.20",
+              "title": "Öffentliche Ruhe und Ordnung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.20.10",
+                  "title": "Hunde, gefährliche Tiere",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
@@ -396,7 +471,7 @@
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 10
   },
   "available_years_for_entity": [
     "1881",
@@ -414,6 +489,7 @@
     "1925",
     "1931",
     "1932",
+    "1939",
     "1940",
     "1941",
     "1942",

@@ -2,15 +2,16 @@
   "year": "2010",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 52,
-  "categorized": 52,
+  "total": 56,
+  "categorized": 56,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 25,
+      "total": 27,
       "by_topic": {
         "331 Krankenversicherung": 12,
         "453 Niederlassung": 2,
+        "871 Feuerpolizei": 2,
         "962 Strafrechtspflege": 2,
         "113 Kantonswappen": 1,
         "121 Bürgerrecht": 1,
@@ -19,7 +20,7 @@
         "431 Wirtschaftliche Landesversorgung": 1,
         "451 Polizei": 1,
         "633 Bodenverbesserung": 1,
-        "871 Feuerpolizei": 1,
+        "841 Öffentliches Beschaffungswesen": 1,
         "941 Gerichtsorganisation und -verfahren": 1
       },
       "by_global_category": {
@@ -31,17 +32,20 @@
         "8.10.120.20 Rauchverbote": 1,
         "5.20.20 Landesversorgung": 1,
         "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
+        "7.30.40 Submission": 1,
+        "5.20.30.10 Feuerwehr": 1,
         "5.20.30.20 Brandschutz": 1,
         "1.20.70.10.60 Kantonale Rekurskommissionen": 1
       }
     },
     "Gesetz": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "121 Bürgerrecht": 1,
         "146 Statistik": 1,
         "320 Kantonale Spitäler": 1,
         "431 Wirtschaftliche Landesversorgung": 1,
+        "710 Allgemein": 1,
         "741 Energie": 1,
         "961 Zivilrechtspflege": 1,
         "962 Strafrechtspflege": 1
@@ -56,11 +60,12 @@
       }
     },
     "Anderes": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "230 Allgemein": 2,
         "941 Gerichtsorganisation und -verfahren": 2,
         "231 Allgemein": 1,
+        "320 Kantonale Spitäler": 1,
         "351 Allgemein": 1,
         "912 Personen- und Familienrecht": 1
       },
@@ -269,10 +274,10 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 17,
+      "total": 18,
       "own": 0,
       "by_type": {
-        "Anderes": 12,
+        "Anderes": 13,
         "Verordnung": 4,
         "Gesetz": 1
       },
@@ -300,20 +305,21 @@
         {
           "identifier": "32",
           "title": "Einrichtungen der Gesundheitspflege",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Anderes": 1
+            "Anderes": 2,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "320",
               "title": "Kantonale Spitäler",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Gesetz": 1
+                "Gesetz": 1,
+                "Anderes": 1
               }
             },
             {
@@ -490,22 +496,32 @@
     {
       "identifier": "7",
       "title": "Verkehr, öffentliches Baurecht, Energie, Gewässernutzung und -schutz",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Anderes": 4,
-        "Gesetz": 1
+        "Gesetz": 2
       },
       "children": [
         {
           "identifier": "71",
           "title": "Verkehr",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Anderes": 2,
+            "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "710",
+              "title": "Allgemein",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "713",
               "title": "Eisenbahnen",
@@ -562,13 +578,33 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
-        "Verordnung": 1
+        "Verordnung": 3,
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
+        {
+          "identifier": "84",
+          "title": "Öffentliches Beschaffungswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "841",
+              "title": "Öffentliches Beschaffungswesen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "85",
           "title": "Regalien",
@@ -592,19 +628,19 @@
         {
           "identifier": "87",
           "title": "Feuerschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "871",
               "title": "Feuerpolizei",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               }
             }
           ]
@@ -934,10 +970,10 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
+        "Verordnung": 3,
         "Anderes": 2,
         "Gesetz": 1
       },
@@ -945,10 +981,10 @@
         {
           "identifier": "5.20",
           "title": "Bevölkerungsschutz",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 2,
+            "Verordnung": 3,
             "Gesetz": 1
           },
           "children": [
@@ -965,12 +1001,21 @@
             {
               "identifier": "5.20.30",
               "title": "Feuerwehr / Elementarschäden",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               },
               "children": [
+                {
+                  "identifier": "5.20.30.10",
+                  "title": "Feuerwehr",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
                 {
                   "identifier": "5.20.30.20",
                   "title": "Brandschutz",
@@ -1083,13 +1128,34 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.40",
           "title": "Energie",
@@ -1260,7 +1326,7 @@
     }
   ],
   "languages_available": {
-    "de": 52
+    "de": 56
   },
   "available_years_for_entity": [
     "1845",

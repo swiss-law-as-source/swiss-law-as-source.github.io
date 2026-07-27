@@ -2,23 +2,28 @@
   "year": "2009",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 12,
-  "categorized": 12,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 7,
       "by_topic": {
         "122 Niederlassung und Aufenthalt": 1,
+        "131.1 Allgemeine Bestimmungen": 1,
         "414.1 Allgemeine Bestimmungen": 1,
         "421.1 Archive und Bibliotheken": 1,
-        "512.1 Organisation und Verwaltung": 1
+        "512.1 Organisation und Verwaltung": 1,
+        "852 Heime und andere Fürsorgeeinrichtungen": 1,
+        "862 Versicherung": 1
       },
       "by_global_category": {
         "1.10.70.10.10 Einwohnerkontrolle": 1,
+        "1.10.90.20.10 Wahlen und Abstimmungen": 1,
         "4.90.20 Löhne, Entschädigungen": 1,
         "4.170.30 Bibliotheken": 1,
-        "5.10.30 Militärverwaltung": 1
+        "5.10.30 Militärverwaltung": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
     "Gesetz": {
@@ -45,6 +50,16 @@
         "4.180.20 Kulturförderung": 1
       }
     },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
+        "141 Kantonsrat": 1,
+        "415.2 Stipendien": 1
+      },
+      "by_global_category": {
+        "4.100.10 Stipendien": 1
+      }
+    },
     "Anderes": {
       "total": 2,
       "by_topic": {
@@ -61,10 +76,11 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden und Gemeinden",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 2,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Anderes": 1
       },
       "children": [
@@ -89,14 +105,55 @@
           ]
         },
         {
-          "identifier": "14",
-          "title": "Behörden",
+          "identifier": "13",
+          "title": "Politische Rechte",
           "total": 1,
           "own": 0,
           "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "131",
+              "title": "Wahlen und Abstimmungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "131.1",
+                  "title": "Allgemeine Bestimmungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "14",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "141",
+              "title": "Kantonsrat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            },
             {
               "identifier": "142",
               "title": "Regierungsrat und Verwaltung",
@@ -155,21 +212,23 @@
     {
       "identifier": "4",
       "title": "Erziehung, Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Erziehung",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Verordnung": 1,
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
@@ -195,19 +254,21 @@
             {
               "identifier": "415",
               "title": "Staatsbeiträge und Stipendien",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Interkantonale Vereinbarung": 1,
+                "Verordnung des Parlaments (Dekret)": 1
               },
               "children": [
                 {
                   "identifier": "415.2",
                   "title": "Stipendien",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
+                    "Interkantonale Vereinbarung": 1,
+                    "Verordnung des Parlaments (Dekret)": 1
                   }
                 }
               ]
@@ -386,9 +447,10 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Gesetz": 1,
         "Anderes": 1
       },
@@ -425,12 +487,33 @@
           ]
         },
         {
-          "identifier": "86",
-          "title": "Schutz gegen Feuer- und Elementarschäden",
+          "identifier": "85",
+          "title": "Fürsorge",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "852",
+              "title": "Heime und andere Fürsorgeeinrichtungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "86",
+          "title": "Schutz gegen Feuer- und Elementarschäden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -440,6 +523,15 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            },
+            {
+              "identifier": "862",
+              "title": "Versicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -451,20 +543,20 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
+        "Verordnung": 2,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
@@ -488,6 +580,37 @@
                     {
                       "identifier": "1.10.70.10.10",
                       "title": "Einwohnerkontrolle",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.20",
+                  "title": "Politische Rechte",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.90.20.10",
+                      "title": "Wahlen und Abstimmungen",
                       "total": 1,
                       "own": 1,
                       "by_type": {
@@ -536,12 +659,13 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
         "Interkantonale Vereinbarung": 2,
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
@@ -569,19 +693,21 @@
         {
           "identifier": "4.100",
           "title": "Ausbildungsbeiträge",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
               "identifier": "4.100.10",
               "title": "Stipendien",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Interkantonale Vereinbarung": 1,
+                "Verordnung des Parlaments (Dekret)": 1
               }
             }
           ]
@@ -722,10 +848,41 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 17
   },
   "available_years_for_entity": [
     "1881",
@@ -743,6 +900,7 @@
     "1925",
     "1931",
     "1932",
+    "1939",
     "1940",
     "1941",
     "1942",

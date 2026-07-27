@@ -2,10 +2,21 @@
   "year": "1979",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 14,
-  "categorized": 14,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 7,
+      "by_topic": {
+        "710 Allgemeine Bestimmungen": 6,
+        "821.22 Betäubungsmittel": 1
+      },
+      "by_global_category": {
+        "7.10.10 Pläne": 6,
+        "8.10.70 Heil- und Betäubungsmittel": 1
+      }
+    },
     "Anderes": {
       "total": 6,
       "by_topic": {
@@ -21,15 +32,6 @@
         "4.80.10 Sonderschulen": 1,
         "7.30.30.10 Nationalstrassen": 1,
         "8.10.60 Spitalexterne Krankenpflege": 1
-      }
-    },
-    "Verordnung": {
-      "total": 6,
-      "by_topic": {
-        "710 Allgemeine Bestimmungen": 6
-      },
-      "by_global_category": {
-        "7.10.10 Pläne": 6
       }
     },
     "Reglement": {
@@ -209,21 +211,54 @@
     {
       "identifier": "8",
       "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "82",
           "title": "GESUNDHEIT",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "821",
+              "title": "Gesundheitspolizeiliche Massnahmen und Gesundheitsförderung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "821.2",
+                  "title": "Heilmittel",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "821.22",
+                      "title": "Betäubungsmittel",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "823",
               "title": "Spitalexterne Krankenpflege",
@@ -482,19 +517,21 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -505,6 +542,15 @@
               "by_type": {
                 "Anderes": 1
               }
+            },
+            {
+              "identifier": "8.10.70",
+              "title": "Heil- und Betäubungsmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -512,8 +558,8 @@
     }
   ],
   "languages_available": {
-    "de": 14,
-    "fr": 14
+    "de": 15,
+    "fr": 15
   },
   "available_years_for_entity": [
     "1808",
@@ -535,9 +581,11 @@
     "1879",
     "1880",
     "1889",
+    "1892",
     "1893",
     "1899",
     "1909",
+    "1912",
     "1913",
     "1917",
     "1918",
@@ -555,6 +603,7 @@
     "1938",
     "1942",
     "1943",
+    "1944",
     "1946",
     "1948",
     "1949",

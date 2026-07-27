@@ -2,18 +2,20 @@
   "year": "2011",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 22,
-  "categorized": 22,
+  "total": 26,
+  "categorized": 26,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 10,
+      "total": 12,
       "by_topic": {
         "152.0 Allgemeine Organisation, Zuständigkeit, Information": 1,
         "152.22 Direktionen": 1,
         "213.2 Verwandtschaft": 1,
+        "341 Im Allgemeinen": 1,
         "414.3 Dienstverhältnis": 1,
         "436.1 Allgemeines": 1,
+        "551 Allgemeines": 1,
         "72 Bauwesen": 1,
         "741 Allgemeines": 1,
         "842.1 Besondere Bestimmungen für die Krankenversicherung": 1,
@@ -60,22 +62,25 @@
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "436.1 Allgemeines": 1,
-        "436.9 Pädagogische Hochschulen": 1
+        "436.9 Pädagogische Hochschulen": 1,
+        "873.1 Gebäudeversicherung": 1
       },
       "by_global_category": {
         "10 Publikationen ohne Text": 1
       }
     },
     "Reglement": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "161 Allgemeine Gerichtsorganisation": 1
+        "161 Allgemeine Gerichtsorganisation": 1,
+        "162.6 Verwaltungsgericht": 1
       },
       "by_global_category": {
-        "1.20.70.20 Gerichtspersonal": 1
+        "1.20.70.20 Gerichtspersonal": 1,
+        "1.20.70.10.60 Kantonale Rekurskommissionen": 1
       }
     }
   },
@@ -83,11 +88,11 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Reglement": 1
+        "Reglement": 2
       },
       "children": [
         {
@@ -144,10 +149,10 @@
         {
           "identifier": "16",
           "title": "Gerichtsorganisation, Anwälte und Notare",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 2
           },
           "children": [
             {
@@ -158,6 +163,26 @@
               "by_type": {
                 "Reglement": 1
               }
+            },
+            {
+              "identifier": "162",
+              "title": "Gerichtsbehörden",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "162.6",
+                  "title": "Verwaltungsgericht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -234,27 +259,30 @@
     {
       "identifier": "3",
       "title": "Strafrecht, Strafrechtspflege, Strafvollzug",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "34",
           "title": "Strafvollzug",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Gesetz": 1
           },
           "children": [
             {
               "identifier": "341",
               "title": "Im Allgemeinen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Verordnung": 1,
                 "Gesetz": 1
               }
             }
@@ -371,6 +399,37 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "55",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "551",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
       "total": 3,
@@ -416,10 +475,11 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
@@ -472,6 +532,37 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "87",
+          "title": "Schutz gegen Feuer- und Elementarschäden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "873",
+              "title": "Versicherung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "873.1",
+                  "title": "Gebäudeversicherung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -522,21 +613,21 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Verordnung": 3,
-        "Reglement": 1
+        "Reglement": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Verordnung": 2,
-            "Reglement": 1
+            "Reglement": 2
           },
           "children": [
             {
@@ -582,12 +673,32 @@
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Reglement": 1
+                "Reglement": 2
               },
               "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Reglement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.60",
+                      "title": "Kantonale Rekurskommissionen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Reglement": 1
+                      }
+                    }
+                  ]
+                },
                 {
                   "identifier": "1.20.70.20",
                   "title": "Gerichtspersonal",
@@ -803,8 +914,8 @@
     }
   ],
   "languages_available": {
-    "de": 22,
-    "fr": 18
+    "de": 26,
+    "fr": 22
   },
   "available_years_for_entity": [
     "1562",

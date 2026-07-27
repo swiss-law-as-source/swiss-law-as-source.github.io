@@ -2,8 +2,8 @@
   "year": "2010",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 49,
-  "categorized": 49,
+  "total": 53,
+  "categorized": 53,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
@@ -30,7 +30,7 @@
       }
     },
     "Verordnung": {
-      "total": 13,
+      "total": 15,
       "by_topic": {
         "141 Wahlen und Abstimmungen": 1,
         "153.0 Dienstverhältnis, Gehalt": 1,
@@ -40,8 +40,10 @@
         "426.2 Schutz der Orts- und Landschaftsbilder": 1,
         "437.6 Sportfonds": 1,
         "439.6 Volksschule": 1,
+        "521 Bevölkerungsschutz": 1,
         "811.1 Gesundheitsfachpersonen": 1,
         "811.8 Bestattungswesen": 1,
+        "832.0 Arbeit in Industrie, Gewerbe und Handel": 1,
         "854 Verbesserung des Wohnungsangebotes": 1,
         "860 Allgemeines": 1,
         "873.1 Gebäudeversicherung": 1
@@ -73,22 +75,26 @@
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "215.34 Grundbuchvermessung": 1,
         "854 Verbesserung des Wohnungsangebotes": 1,
         "873.1 Gebäudeversicherung": 1
       },
       "by_global_category": {
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
         "8.40.10 Eigentums- und Wohnungsbauförderung": 1
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "439.6 Volksschule": 1
+        "439.6 Volksschule": 1,
+        "731 Allgemeines": 1
       },
       "by_global_category": {
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "7.30.40 Submission": 1
       }
     }
   },
@@ -268,46 +274,51 @@
     {
       "identifier": "2",
       "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "215",
               "title": "Sachenrecht",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Gesetz": 1
               },
               "children": [
                 {
                   "identifier": "215.3",
                   "title": "Besitz und Grundbuch",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
-                    "Verordnung": 1
+                    "Verordnung": 1,
+                    "Gesetz": 1
                   },
                   "children": [
                     {
                       "identifier": "215.34",
                       "title": "Grundbuchvermessung",
-                      "total": 1,
-                      "own": 1,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
-                        "Verordnung": 1
+                        "Verordnung": 1,
+                        "Gesetz": 1
                       }
                     }
                   ]
@@ -449,12 +460,74 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 7,
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 5,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "52",
+          "title": "Gesamtverteidigung und Katastrophenhilfe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "521",
+              "title": "Bevölkerungsschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "73",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "731",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 8,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 6,
         "Gesetz": 2
       },
       "children": [
@@ -488,6 +561,37 @@
                 {
                   "identifier": "811.8",
                   "title": "Bestattungswesen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Arbeitnehmerschutz",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "832.0",
+                  "title": "Arbeit in Industrie, Gewerbe und Handel",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -871,37 +975,41 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "2.10",
           "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "2.10.40",
               "title": "Sachenrecht",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Gesetz": 1
               },
               "children": [
                 {
                   "identifier": "2.10.40.30",
                   "title": "Grundbuch und Grundbuchvermessung",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Verordnung": 1
+                    "Verordnung": 1,
+                    "Gesetz": 1
                   }
                 }
               ]
@@ -1029,12 +1137,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -1186,8 +1315,8 @@
     }
   ],
   "languages_available": {
-    "de": 49,
-    "fr": 49
+    "de": 53,
+    "fr": 53
   },
   "available_years_for_entity": [
     "1562",

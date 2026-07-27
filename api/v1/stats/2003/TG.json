@@ -2,8 +2,8 @@
   "year": "2003",
   "year_semantics": "enactment",
   "entity": "TG",
-  "total": 25,
-  "categorized": 25,
+  "total": 27,
+  "categorized": 27,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -56,6 +56,17 @@
       "by_global_category": {
         "1.10.90.20.30 Ausstand, Unvereinbarkeit": 1,
         "1.40.30 Evangelisch-Reformierte Kirche": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "554.5 Gastgewerbe": 1,
+        "822 Arbeitnehmerschutz": 1
+      },
+      "by_global_category": {
+        "6.30.10 Alkohol": 1,
+        "8.20.10.30 Sonn- und Feiertage": 1
       }
     }
   },
@@ -226,6 +237,48 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Militärwesen - Zivilschutz - Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "55",
+          "title": "Polizeiwesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "554",
+              "title": "Gewerbepolizei. Marktwesen. Gastgewerbe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "554.5",
+                  "title": "Gastgewerbe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "Finanzen",
       "total": 2,
@@ -288,11 +341,12 @@
     {
       "identifier": "8",
       "title": "Gesundheit - Arbeit - Soziale Sicherheit",
-      "total": 8,
+      "total": 9,
       "own": 0,
       "by_type": {
         "Reglement": 6,
-        "Interkantonale Vereinbarung": 2
+        "Interkantonale Vereinbarung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -334,6 +388,26 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "82",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "822",
+              "title": "Arbeitnehmerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         }
@@ -528,6 +602,37 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.10",
+              "title": "Alkohol",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 1,
@@ -561,10 +666,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Reglement": 5
+        "Reglement": 5,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -597,12 +703,43 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.10",
+              "title": "Arbeitnehmer",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.10.30",
+                  "title": "Sonn- und Feiertage",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 25
+    "de": 27
   },
   "available_years_for_entity": [
     "1803",

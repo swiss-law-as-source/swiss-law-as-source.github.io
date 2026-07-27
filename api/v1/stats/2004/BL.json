@@ -2,12 +2,12 @@
   "year": "2004",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 22,
-  "categorized": 22,
+  "total": 25,
+  "categorized": 25,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 13,
+      "total": 14,
       "by_topic": {
         "145 Sicherheitsdirektion": 2,
         "640 Allgemeines": 2,
@@ -16,6 +16,7 @@
         "36 Staatsbeiträge": 1,
         "37 Banken": 1,
         "49 Energie": 1,
+        "643 Weiterführende Schulen": 1,
         "645 Besondere Dienste": 1,
         "78 Umweltschutz": 1,
         "837 Arbeitslosenversicherung": 1,
@@ -49,14 +50,17 @@
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
         "37 Banken": 1,
-        "44 Gewässer": 1
+        "44 Gewässer": 1,
+        "73 Bevölkerungsschutz": 1,
+        "834 Berufliche Vorsorge": 1
       },
       "by_global_category": {
         "6.40.10 Kantonalbanken": 1,
-        "7.30.20.20 Gewässernutzung": 1
+        "7.30.20.20 Gewässernutzung": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
     "Anderes": {
@@ -214,20 +218,20 @@
     {
       "identifier": "6",
       "title": "Kultur, Bildung, Ausbildung",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
+        "Verordnung": 4,
         "Interkantonale Vereinbarung": 3
       },
       "children": [
         {
           "identifier": "64",
           "title": "Schulen",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Verordnung": 3,
+            "Verordnung": 4,
             "Interkantonale Vereinbarung": 2
           },
           "children": [
@@ -238,6 +242,15 @@
               "own": 2,
               "by_type": {
                 "Verordnung": 2
+              }
+            },
+            {
+              "identifier": "643",
+              "title": "Weiterführende Schulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             },
             {
@@ -285,13 +298,23 @@
     {
       "identifier": "7",
       "title": "Öffentliche Sicherheit, Umweltschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "73",
+          "title": "Bevölkerungsschutz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
         {
           "identifier": "78",
           "title": "Umweltschutz",
@@ -307,30 +330,33 @@
     {
       "identifier": "8",
       "title": "Soziale Sicherheit",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "83",
           "title": "Sozialversicherungen",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Verordnung des Parlaments (Dekret)": 1,
+            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "834",
               "title": "Berufliche Vorsorge",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung des Parlaments (Dekret)": 1
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Gesetz": 1
               }
             },
             {
@@ -548,13 +574,33 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "6.40",
           "title": "Staatliche Unternehmen",
@@ -738,7 +784,7 @@
     }
   ],
   "languages_available": {
-    "de": 22
+    "de": 25
   },
   "available_years_for_entity": [
     "1815",

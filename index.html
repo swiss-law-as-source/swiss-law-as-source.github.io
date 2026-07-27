@@ -596,9 +596,10 @@
                 msg = 'Date filtering needs the latest data — please hard-reload the page (Ctrl/Cmd+Shift+R).';
             } else if (filtered) {
                 const later = conc.totals.total - totals.total - undated;
-                msg = `Filtered: enacted ${state.y1 || 'beginning'} – ${state.y2 || 'now'}: `
-                    + `${totals.total.toLocaleString()} concordats (year = original enactment date; a 1970 `
-                    + `concordat amended in 2015 counts as 1970). ${later.toLocaleString()} enacted outside `
+                msg = `Filtered: existed ${state.y1 || 'beginning'} – ${state.y2 || 'now'}: `
+                    + `${totals.total.toLocaleString()} concordats (year = earliest known evidence: own enactment `
+                    + `date, own version history, or sibling-canton authoritative evidence when the canton's `
+                    + `own date is unverified). ${later.toLocaleString()} dated outside `
                     + `the range and ${undated} undated are not shown. Verification vs chstat 2003: `
                     + `<a href="verification.html">full verification report</a>.`;
             } else {

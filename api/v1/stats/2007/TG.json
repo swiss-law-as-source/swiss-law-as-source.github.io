@@ -2,18 +2,20 @@
   "year": "2007",
   "year_semantics": "enactment",
   "entity": "TG",
-  "total": 18,
-  "categorized": 18,
+  "total": 22,
+  "categorized": 22,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 12,
+      "total": 14,
       "by_topic": {
         "187.2 Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung": 1,
+        "188.2 Erlasse der Katholischen Landeskirche": 1,
         "33 Strafregister": 1,
         "411.1 Allgemein": 1,
         "412.2 Berufsbildung": 1,
         "413.1 Allgemein": 1,
+        "413.2 Kantonsschulen. Maturitätsschule für Erwachsene": 1,
         "814.0 Allgemein": 1,
         "817 Lebensmittelpolizei und Gebrauchsgegenstände": 1,
         "823 Arbeitsmarkt und Arbeitsbeschaffung": 1,
@@ -24,9 +26,11 @@
       },
       "by_global_category": {
         "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1,
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
         "4.30.20 Berufsmaturitätsschulen": 1,
         "4.20.10 Mittelschule": 1,
+        "4.20.30 Handelsmittelschulen, Informatikmittelschulen": 1,
         "7.60.10 Abfälle": 1,
         "8.10.130.10.20.10 Schlachthöfe": 1,
         "8.20.20.20 Entsendung von Arbeitnehmern": 1,
@@ -53,32 +57,39 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "54 Innere Sicherheit": 1
+        "54 Innere Sicherheit": 1,
+        "831 Alters-, Hinterlassenen- und Invalidenversicherung, Berufliche Vorsorge": 1
       },
       "by_global_category": {
-        "4.180.30 Sport": 1
+        "4.180.30 Sport": 1,
+        "2.10.10.20.10 BVG-Stiftungen": 1
       }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {},
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "18",
           "title": "Staat und Kirche",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
@@ -93,6 +104,26 @@
                 {
                   "identifier": "187.2",
                   "title": "Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "188",
+              "title": "Katholische Landeskirche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "188.2",
+                  "title": "Erlasse der Katholischen Landeskirche",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -128,20 +159,20 @@
     {
       "identifier": "4",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
+        "Verordnung": 4,
         "Gesetz": 2
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 5,
+          "total": 6,
           "own": 0,
           "by_type": {
-            "Verordnung": 3,
+            "Verordnung": 4,
             "Gesetz": 2
           },
           "children": [
@@ -190,11 +221,11 @@
             {
               "identifier": "413",
               "title": "Mittelschulen",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Gesetz": 1,
-                "Verordnung": 1
+                "Verordnung": 2,
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -204,6 +235,15 @@
                   "own": 2,
                   "by_type": {
                     "Gesetz": 1,
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "413.2",
+                  "title": "Kantonsschulen. Maturitätsschule für Erwachsene",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
                     "Verordnung": 1
                   }
                 }
@@ -236,11 +276,12 @@
     {
       "identifier": "8",
       "title": "Gesundheit - Arbeit - Soziale Sicherheit",
-      "total": 9,
+      "total": 10,
       "own": 0,
       "by_type": {
         "Verordnung": 6,
-        "Gesetz": 3
+        "Gesetz": 3,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -309,21 +350,23 @@
         {
           "identifier": "83",
           "title": "Sozialversicherung",
-          "total": 4,
+          "total": 5,
           "own": 0,
           "by_type": {
             "Gesetz": 2,
-            "Verordnung": 2
+            "Verordnung": 2,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "831",
               "title": "Alters-, Hinterlassenen- und Invalidenversicherung, Berufliche Vorsorge",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
                 "Gesetz": 1,
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Interkantonale Vereinbarung": 1
               }
             },
             {
@@ -385,21 +428,30 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "1.40.30",
               "title": "Evangelisch-Reformierte Kirche",
@@ -416,12 +468,55 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.10",
+              "title": "Personenrecht, Zivilstand",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.10.20",
+                  "title": "Stiftungen, Stiftungsaufsicht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.10.10.20.10",
+                      "title": "BVG-Stiftungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Interkantonale Vereinbarung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "2.50",
           "title": "Zivilrechtspflege",
@@ -447,10 +542,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
+        "Verordnung": 4,
         "Gesetz": 1,
         "Interkantonale Vereinbarung": 1
       },
@@ -480,15 +575,24 @@
         {
           "identifier": "4.20",
           "title": "Sekundarstufe II",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "4.20.10",
               "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "4.20.30",
+              "title": "Handelsmittelschulen, Informatikmittelschulen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -764,7 +868,7 @@
     }
   ],
   "languages_available": {
-    "de": 18
+    "de": 22
   },
   "available_years_for_entity": [
     "1803",

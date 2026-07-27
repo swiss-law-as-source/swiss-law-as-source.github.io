@@ -2,8 +2,8 @@
   "year": "1995",
   "year_semantics": "enactment",
   "entity": "GL",
-  "total": 13,
-  "categorized": 13,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
@@ -46,6 +46,17 @@
         "5.20.30.40.10 Elementarschadenversicherung": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "IV B/4 Kantonsschule": 1,
+        "VIII B/3 Abfallbeseitigung": 1
+      },
+      "by_global_category": {
+        "4.140 Anerkennung von Diplomen": 1,
+        "7.60.10 Abfälle": 1
+      }
+    },
     "Anderes": {
       "total": 2,
       "by_topic": {
@@ -71,11 +82,12 @@
     {
       "identifier": "IV",
       "title": "Kirche – Schule – Kultur",
-      "total": 2,
-      "own": 2,
+      "total": 3,
+      "own": 3,
       "by_type": {
         "Reglement": 1,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
       }
     },
     {
@@ -110,11 +122,12 @@
     {
       "identifier": "VIII",
       "title": "Gesundheit – Umweltschutz – Arbeit – Soziale Sicherheit",
-      "total": 5,
-      "own": 5,
+      "total": 6,
+      "own": 6,
       "by_type": {
         "Gesetz": 3,
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       }
     },
     {
@@ -183,10 +196,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -208,6 +222,15 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.140",
+          "title": "Anerkennung von Diplomen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
         }
       ]
     },
@@ -322,23 +345,34 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
             "Verordnung": 2,
+            "Interkantonale Vereinbarung": 1,
             "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
             {
               "identifier": "7.60.20",
               "title": "Gewässerschutz",
@@ -426,7 +460,7 @@
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 15
   },
   "available_years_for_entity": [
     "1807",

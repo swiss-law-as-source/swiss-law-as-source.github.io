@@ -7,14 +7,15 @@
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 13,
+      "total": 14,
       "by_topic": {
         "215 Sachenrecht": 5,
         "632 Kantons- und Gemeindesteuern": 2,
         "152 Staatskanzlei": 1,
         "213 Familienrecht": 1,
-        "413 Berufsbildung, Spezialausbildung": 1,
         "61 Finanzhaushalt": 1,
+        "721 Baurecht": 1,
+        "722 Gebäudeversicherung, Feuerschutz": 1,
         "740 Allgemeines": 1,
         "925 Tierzucht, Tierseuchen, Viehhandel": 1
       },
@@ -23,6 +24,7 @@
         "4.170.20 Archive": 1,
         "2.10.20.10 Vormundschaft": 1,
         "6.10.10 Budget und Rechnung": 1,
+        "7.30.40 Submission": 1,
         "9.20.120 Tierseuchen": 1
       }
     },
@@ -33,39 +35,15 @@
         "824 Lebensmittelpolizei, Gebrauchsgegenstände": 1
       },
       "by_global_category": {
-        "1.20.20.30.20 Direktionen und Ämter": 2,
+        "1.20.20.30.20 Direktionen und Ämter": 3,
         "1.20.50 Datenschutz": 1,
-        "1.20.20.10.10 Delegation": 1,
         "8.10.130.50 Tierkörperentsorgung": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 4,
-      "by_topic": {
-        "751 Strassen": 2,
-        "414 Mittelschulen, Fachhochschulen und Technische Fachschulen": 1,
-        "740 Allgemeines": 1
-      },
-      "by_global_category": {
-        "6.10.30 Staatsbeiträge, Subventionen": 2
-      }
-    },
-    "Reglement": {
+    "Interkantonale Vereinbarung": {
       "total": 3,
       "by_topic": {
-        "162 Verwaltungsrechtspflege": 1,
-        "413 Berufsbildung, Spezialausbildung": 1,
-        "932 Jagd, Wild- und Vogelschutz": 1
-      },
-      "by_global_category": {
-        "7.20 Enteignung": 1,
-        "9.20.70.10 Landwirtschaftliche Schule": 1,
-        "6.30.50.10 Jäger": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 2,
-      "by_topic": {
+        "332 Vereinbarungen, Konkordate": 1,
         "413 Berufsbildung, Spezialausbildung": 1,
         "414 Mittelschulen, Fachhochschulen und Technische Fachschulen": 1
       },
@@ -73,13 +51,34 @@
         "4.60 Tertiärstufe: Höhere Fachschulen": 1
       }
     },
-    "Gesetz": {
-      "total": 1,
+    "Reglement": {
+      "total": 2,
       "by_topic": {
-        "215 Sachenrecht": 1
+        "162 Verwaltungsrechtspflege": 1,
+        "413 Berufsbildung, Spezialausbildung": 1
+      },
+      "by_global_category": {
+        "7.20 Enteignung": 1,
+        "9.20.70.10 Landwirtschaftliche Schule": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "215 Sachenrecht": 1,
+        "722 Gebäudeversicherung, Feuerschutz": 1
       },
       "by_global_category": {
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 2,
+      "by_topic": {
+        "751 Strassen": 2
+      },
+      "by_global_category": {
+        "6.10.30 Staatsbeiträge, Subventionen": 2
       }
     }
   },
@@ -190,12 +189,42 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schule, Kultur, Natur- und Heimatschutz, Kirche",
-      "total": 5,
+      "identifier": "3",
+      "title": "Strafrecht, Strafprozess, Strafvollzug",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "33",
+          "title": "Strafvollzug",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "332",
+              "title": "Vereinbarungen, Konkordate",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule, Kultur, Natur- und Heimatschutz, Kirche",
+      "total": 3,
+      "own": 0,
+      "by_type": {
         "Interkantonale Vereinbarung": 2,
         "Reglement": 1
       },
@@ -203,10 +232,9 @@
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 5,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
             "Interkantonale Vereinbarung": 2,
             "Reglement": 1
           },
@@ -214,10 +242,9 @@
             {
               "identifier": "413",
               "title": "Berufsbildung, Spezialausbildung",
-              "total": 3,
-              "own": 3,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Anderes": 1,
                 "Reglement": 1,
                 "Interkantonale Vereinbarung": 1
               }
@@ -225,10 +252,9 @@
             {
               "identifier": "414",
               "title": "Mittelschulen, Fachhochschulen und Technische Fachschulen",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 1,
                 "Interkantonale Vereinbarung": 1
               }
             }
@@ -279,30 +305,60 @@
     {
       "identifier": "7",
       "title": "Raumplanung, Bauwesen, Gewässer, Energie, Verkehr",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 3,
-        "Verordnung": 1
+        "Verordnung": 3,
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "74",
-          "title": "Energie",
-          "total": 2,
+          "identifier": "72",
+          "title": "Bauwesen",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
+            "Verordnung": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "721",
+              "title": "Baurecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "722",
+              "title": "Gebäudeversicherung, Feuerschutz",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "74",
+          "title": "Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "740",
               "title": "Allgemeines",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Anderes": 1,
                 "Verordnung": 1
               }
             }
@@ -364,11 +420,10 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft, Landwirtschaft, Forst, Gewerbe, Handel, Industrie",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Verordnung": 1,
-        "Reglement": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -387,26 +442,6 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "93",
-          "title": "Forstwesen, Jagd, Fischerei",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "932",
-              "title": "Jagd, Wild- und Vogelschutz",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Reglement": 1
               }
             }
           ]
@@ -443,41 +478,21 @@
               },
               "children": [
                 {
-                  "identifier": "1.20.20.10",
-                  "title": "Organisation",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Anderes": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.20.20.10.10",
-                      "title": "Delegation",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Anderes": 1
-                      }
-                    }
-                  ]
-                },
-                {
                   "identifier": "1.20.20.30",
                   "title": "Verwaltung",
-                  "total": 2,
+                  "total": 3,
                   "own": 0,
                   "by_type": {
-                    "Anderes": 2
+                    "Anderes": 3
                   },
                   "children": [
                     {
                       "identifier": "1.20.20.30.20",
                       "title": "Direktionen und Ämter",
-                      "total": 2,
-                      "own": 2,
+                      "total": 3,
+                      "own": 3,
                       "by_type": {
-                        "Anderes": 2
+                        "Anderes": 3
                       }
                     }
                   ]
@@ -607,12 +622,11 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Verordnung": 1,
-        "Reglement": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -644,47 +658,17 @@
               }
             }
           ]
-        },
-        {
-          "identifier": "6.30",
-          "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Reglement": 1
-          },
-          "children": [
-            {
-              "identifier": "6.30.50",
-              "title": "Jagd",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Reglement": 1
-              },
-              "children": [
-                {
-                  "identifier": "6.30.50.10",
-                  "title": "Jäger",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Reglement": 1
-                  }
-                }
-              ]
-            }
-          ]
         }
       ]
     },
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -695,6 +679,26 @@
           "by_type": {
             "Anderes": 1
           }
+        },
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },

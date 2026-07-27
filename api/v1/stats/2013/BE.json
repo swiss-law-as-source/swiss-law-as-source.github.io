@@ -2,45 +2,61 @@
   "year": "2013",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 23,
-  "categorized": 23,
+  "total": 35,
+  "categorized": 35,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 15,
+      "total": 20,
       "by_topic": {
+        "432.21 Allgemeines": 3,
         "141 Wahlen und Abstimmungen": 2,
         "432.28 Besondere Volkschulangebot": 2,
         "152.1 Regierungsrat": 1,
+        "212.1 Natürliche Personen": 1,
         "215.32 Grundbuch": 1,
         "215.34 Grundbuchvermessung": 1,
+        "341 Im Allgemeinen": 1,
         "414.3 Dienstverhältnis": 1,
         "423 Kulturförderung": 1,
-        "432.21 Allgemeines": 1,
         "436.1 Allgemeines": 1,
         "767 Schifffahrt": 1,
-        "812.1 Allgemeines": 1
+        "812.1 Allgemeines": 1,
+        "815.1 Übertragbare Krankheiten": 1
       },
       "by_global_category": {
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 2,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 2,
         "4.80.10 Sonderschulen": 2,
         "1.10.90.20.10 Wahlen und Abstimmungen": 1,
         "4.170.20 Archive": 1,
         "1.40.30 Evangelisch-Reformierte Kirche": 1,
         "4.180.20 Kulturförderung": 1,
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
-        "4.120.80 Schulleitung": 1
+        "4.30.30 Berufsorientierung": 1,
+        "4.120.80 Schulleitung": 1,
+        "8.10.100.10 Epidemien, Pandemien": 1
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 10,
       "by_topic": {
+        "121 Bürgerrecht": 1,
+        "122.2 Ausländer/-innen": 1,
         "124 Integration der ausländischen Bevölkerung": 1,
         "151.2 Organisation": 1,
-        "812.1 Allgemeines": 1
+        "152.0 Allgemeine Organisation, Zuständigkeit, Information": 1,
+        "170.1 Gemeindegesetz": 1,
+        "341 Im Allgemeinen": 1,
+        "551 Allgemeines": 1,
+        "812.1 Allgemeines": 1,
+        "935.5 Geldspiele": 1
       },
       "by_global_category": {
-        "1.10.70.20.30 Integration": 1
+        "1.10.60 Bürgerrecht": 1,
+        "1.10.70.20.10 Asylwesen": 1,
+        "1.10.70.20.30 Integration": 1,
+        "1.10.70.10.10 Einwohnerkontrolle": 1,
+        "1.30.50 Gemeindefusionen": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -72,11 +88,11 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 7,
+      "total": 11,
       "own": 0,
       "by_type": {
+        "Gesetz": 6,
         "Verordnung": 3,
-        "Gesetz": 2,
         "Verordnung des Parlaments (Dekret)": 1,
         "Reglement": 1
       },
@@ -84,12 +100,41 @@
         {
           "identifier": "12",
           "title": "Bürgerrecht, Niederlassung, Aufenthalt",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 3
           },
           "children": [
+            {
+              "identifier": "121",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "122",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.2",
+                  "title": "Ausländer/-innen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "124",
               "title": "Integration der ausländischen Bevölkerung",
@@ -124,10 +169,10 @@
         {
           "identifier": "15",
           "title": "Behörden",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
+            "Gesetz": 2,
             "Verordnung des Parlaments (Dekret)": 1,
             "Verordnung": 1
           },
@@ -157,12 +202,22 @@
             {
               "identifier": "152",
               "title": "Regierungsrat und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               },
               "children": [
+                {
+                  "identifier": "152.0",
+                  "title": "Allgemeine Organisation, Zuständigkeit, Information",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                },
                 {
                   "identifier": "152.1",
                   "title": "Regierungsrat",
@@ -206,27 +261,78 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "17",
+          "title": "Gemeindewesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "170",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "170.1",
+                  "title": "Gemeindegesetz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "2",
       "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 3
       },
       "children": [
         {
           "identifier": "21",
           "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 3
           },
           "children": [
+            {
+              "identifier": "212",
+              "title": "Personenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "212.1",
+                  "title": "Natürliche Personen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "215",
               "title": "Sachenrecht",
@@ -272,12 +378,46 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 7,
+      "identifier": "3",
+      "title": "Strafrecht, Strafrechtspflege, Strafvollzug",
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 6,
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "34",
+          "title": "Strafvollzug",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "341",
+              "title": "Im Allgemeinen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
+      "total": 9,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 8,
         "Anderes": 1
       },
       "children": [
@@ -335,38 +475,38 @@
         {
           "identifier": "43",
           "title": "Ausbildung und Wissenschaft",
-          "total": 5,
+          "total": 7,
           "own": 0,
           "by_type": {
-            "Verordnung": 4,
+            "Verordnung": 6,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "432",
               "title": "Volksschule",
-              "total": 3,
+              "total": 5,
               "own": 0,
               "by_type": {
-                "Verordnung": 3
+                "Verordnung": 5
               },
               "children": [
                 {
                   "identifier": "432.2",
                   "title": "Volksschule",
-                  "total": 3,
+                  "total": 5,
                   "own": 0,
                   "by_type": {
-                    "Verordnung": 3
+                    "Verordnung": 5
                   },
                   "children": [
                     {
                       "identifier": "432.21",
                       "title": "Allgemeines",
-                      "total": 1,
-                      "own": 1,
+                      "total": 3,
+                      "own": 3,
                       "by_type": {
-                        "Verordnung": 1
+                        "Verordnung": 3
                       }
                     },
                     {
@@ -427,6 +567,37 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "55",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "551",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
       "total": 1,
@@ -460,21 +631,21 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -498,6 +669,68 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "815",
+              "title": "Krankheitsbekämpfung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "815.1",
+                  "title": "Übertragbare Krankheiten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "93",
+          "title": "Industrie und Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "935",
+              "title": "Dienstleistungsgewerbe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "935.5",
+                  "title": "Geldspiele",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -508,42 +741,80 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 8,
       "own": 0,
       "by_type": {
+        "Gesetz": 5,
         "Verordnung": 2,
-        "Gesetz": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 2,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
+            "Gesetz": 4,
             "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "1.10.70",
-              "title": "Niederlassung und Aufenthalt",
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 3
               },
               "children": [
                 {
-                  "identifier": "1.10.70.20",
-                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "identifier": "1.10.70.10",
+                  "title": "Niederlassung und Aufenthalt Schweizer",
                   "total": 1,
                   "own": 0,
                   "by_type": {
                     "Gesetz": 1
                   },
                   "children": [
+                    {
+                      "identifier": "1.10.70.10.10",
+                      "title": "Einwohnerkontrolle",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 2
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    },
                     {
                       "identifier": "1.10.70.20.30",
                       "title": "Integration",
@@ -633,6 +904,26 @@
           ]
         },
         {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.50",
+              "title": "Gemeindefusionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "1.40",
           "title": "Kirche und Staat",
           "total": 1,
@@ -699,16 +990,36 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 7,
+      "total": 9,
       "own": 0,
       "by_type": {
-        "Verordnung": 6,
+        "Verordnung": 8,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "4.10",
           "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -716,8 +1027,8 @@
           },
           "children": [
             {
-              "identifier": "4.10.30",
-              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "identifier": "4.30.30",
+              "title": "Berufsorientierung",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -817,11 +1128,53 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.100",
+              "title": "Krankheitsbekämpfung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.100.10",
+                  "title": "Epidemien, Pandemien",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 23,
-    "fr": 19
+    "de": 35,
+    "fr": 31
   },
   "available_years_for_entity": [
     "1562",

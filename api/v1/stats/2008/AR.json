@@ -2,30 +2,49 @@
   "year": "2008",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 10,
-  "categorized": 10,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
+        "122 Niederlassung und Aufenthalt": 1,
         "222.2 Arbeitsvertrag": 1,
         "822.4 Familienzulagen, Familienausgleichskasse": 1,
         "851 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
+        "1.20.20.60 Verwaltungsgebühren": 1,
         "2.20.10.40.20.30 Landwirtschaft": 1,
         "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1,
         "8.70.10 Sozialhilfe": 1
       }
     },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 2,
+    "Gesetz": {
+      "total": 4,
       "by_topic": {
+        "415.2 Stipendien": 1,
+        "822.4 Familienzulagen, Familienausgleichskasse": 1,
+        "831 Allgemeine Bestimmungen": 1,
+        "852 Heime und andere Fürsorgeeinrichtungen": 1
+      },
+      "by_global_category": {
+        "4.100.10 Stipendien": 1,
+        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1,
+        "8.30.30 AHV / IV": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 3,
+      "by_topic": {
+        "142.1 Regierungsrat": 1,
         "412.2 Anstellung, Besoldung und Pensionskasse der Lehrer": 1,
         "956.1 Mass und Gewicht": 1
       },
       "by_global_category": {
+        "1.20.20.20.10 Entschädigungen": 1,
         "4.90.10 Anstellung": 1,
         "9.60.20 Messwesen, Zahlungsverkehr": 1
       }
@@ -46,15 +65,6 @@
       },
       "by_global_category": {}
     },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "822.4 Familienzulagen, Familienausgleichskasse": 1
-      },
-      "by_global_category": {
-        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1
-      }
-    },
     "Anderes": {
       "total": 1,
       "by_topic": {
@@ -66,6 +76,69 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden und Gemeinden",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung und Aufenthalt",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "14",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "142",
+              "title": "Regierungsrat und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "142.1",
+                  "title": "Regierungsrat",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
@@ -111,19 +184,21 @@
     {
       "identifier": "4",
       "title": "Erziehung, Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Erziehung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung des Parlaments (Dekret)": 1
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -145,6 +220,26 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "415",
+              "title": "Staatsbeiträge und Stipendien",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "415.2",
+                  "title": "Stipendien",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -153,13 +248,13 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
+        "Gesetz": 3,
         "Verordnung": 2,
         "Reglement": 1,
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -238,12 +333,33 @@
           ]
         },
         {
-          "identifier": "85",
-          "title": "Fürsorge",
+          "identifier": "83",
+          "title": "Sozialversicherung",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "831",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "85",
+          "title": "Fürsorge",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -253,6 +369,15 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "852",
+              "title": "Heime und andere Fürsorgeeinrichtungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -307,6 +432,71 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.10",
+                      "title": "Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung des Parlaments (Dekret)": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht",
@@ -374,10 +564,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung des Parlaments (Dekret)": 1
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -399,18 +590,69 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.10",
+              "title": "Stipendien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Verordnung": 2,
-        "Reglement": 1,
-        "Gesetz": 1
+        "Reglement": 1
       },
       "children": [
         {
@@ -447,13 +689,22 @@
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
+            "Gesetz": 2,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "8.30.100",
               "title": "Familienzulagen",
@@ -536,7 +787,7 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 15
   },
   "available_years_for_entity": [
     "1881",
@@ -554,6 +805,7 @@
     "1925",
     "1931",
     "1932",
+    "1939",
     "1940",
     "1941",
     "1942",

@@ -2,8 +2,8 @@
   "year": "2000",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 35,
-  "categorized": 35,
+  "total": 39,
+  "categorized": 39,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -37,10 +37,11 @@
       }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 12,
+      "total": 13,
       "by_topic": {
         "141.1 Zusammenschlüsse": 11,
-        "122.90 Allgemeine Bestimmungen": 1
+        "122.90 Allgemeine Bestimmungen": 1,
+        "710 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
         "1.30.50 Gemeindefusionen": 11,
@@ -48,14 +49,16 @@
       }
     },
     "Gesetz": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
+        "433 Pädagogische Hochschule": 1,
         "631 Kantonssteuern": 1,
         "770 Allgemeine Bestimmungen": 1,
         "772.1 Freiburgische Elektrizitätswerke": 1,
         "834.2 Alters- und Pflegeheime": 1
       },
       "by_global_category": {
+        "4.50.10 Pädagogik": 1,
         "6.20.10.20 Staatssteuern": 1,
         "7.40.40 Elektrizität": 1,
         "8.70.30.10 Alters- und Pflegeheime": 1
@@ -75,9 +78,11 @@
       }
     },
     "Verordnung": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
-        "821.40 Notmassnahmen": 1
+        "781 Strassenverkehr": 1,
+        "821.40 Notmassnahmen": 1,
+        "922 Jagd": 1
       },
       "by_global_category": {
         "8.10.100.10 Epidemien, Pandemien": 1
@@ -333,6 +338,37 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "BILDUNG - KULTUR - SPORT",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "43",
+          "title": "HOCHSCHULEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "433",
+              "title": "Pädagogische Hochschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "5",
       "title": "LANDESVERTEIDIGUNG - POLIZEI",
       "total": 1,
@@ -418,12 +454,34 @@
     {
       "identifier": "7",
       "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Gesetz": 2,
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "71",
+          "title": "RAUMPLANUNG UND BAUWESEN",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "710",
+              "title": "Allgemeine Bestimmungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "77",
           "title": "ENERGIE",
@@ -461,6 +519,26 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "78",
+          "title": "VERKEHR",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "781",
+              "title": "Strassenverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -639,11 +717,12 @@
     {
       "identifier": "9",
       "title": "WIRTSCHAFT",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Reglement": 1,
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -682,6 +761,26 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "92",
+          "title": "FORSTWESEN - JAGD - FISCHEREI",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "922",
+              "title": "Jagd",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -807,12 +906,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 3
+        "Anderes": 3,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.50.10",
+              "title": "Pädagogik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.170",
           "title": "Dokumentation",
@@ -1152,8 +1272,8 @@
     }
   ],
   "languages_available": {
-    "de": 35,
-    "fr": 35
+    "de": 39,
+    "fr": 39
   },
   "available_years_for_entity": [
     "1808",
@@ -1175,9 +1295,11 @@
     "1879",
     "1880",
     "1889",
+    "1892",
     "1893",
     "1899",
     "1909",
+    "1912",
     "1913",
     "1917",
     "1918",
@@ -1195,6 +1317,7 @@
     "1938",
     "1942",
     "1943",
+    "1944",
     "1946",
     "1948",
     "1949",

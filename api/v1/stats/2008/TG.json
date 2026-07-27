@@ -2,20 +2,35 @@
   "year": "2008",
   "year_semantics": "enactment",
   "entity": "TG",
-  "total": 7,
-  "categorized": 7,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
         "170 Allgemein": 1,
+        "66 Wehrpflichtersatz": 1,
+        "721 Wasserwirtschaft. Wasserbau. Gewässer": 1,
         "817 Lebensmittelpolizei und Gebrauchsgegenstände": 1,
         "836 Familienzulagen, familienrechtliche Unterhaltsbeiträge und Kinderalimente": 1
       },
       "by_global_category": {
         "1.20.50 Datenschutz": 1,
+        "5.10.20 Wehrpflichtersatz": 1,
         "8.10.130.30 Badeanstalten": 1,
+        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1
+      }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "721 Wasserwirtschaft. Wasserbau. Gewässer": 1,
+        "831 Alters-, Hinterlassenen- und Invalidenversicherung, Berufliche Vorsorge": 1,
+        "836 Familienzulagen, familienrechtliche Unterhaltsbeiträge und Kinderalimente": 1
+      },
+      "by_global_category": {
+        "8.30.30 AHV / IV": 1,
         "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1
       }
     },
@@ -35,21 +50,21 @@
         "1.40.30 Evangelisch-Reformierte Kirche": 1
       }
     },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "411.1 Allgemein": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
         "811.3 Einrichtungen für Kranke, Verunfallte und andere Pflegebedürftige": 1
       },
       "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "836 Familienzulagen, familienrechtliche Unterhaltsbeiträge und Kinderalimente": 1
-      },
-      "by_global_category": {
-        "8.30.100.10 Landwirtschaftliche Arbeitnehmer": 1
-      }
     }
   },
   "by_topic_tree": [
@@ -128,14 +143,110 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schule",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Volksschule. Kindergarten",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "411.1",
+                  "title": "Allgemein",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "66",
+          "title": "Wehrpflichtersatz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "72",
+          "title": "Werke",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "721",
+              "title": "Wasserwirtschaft. Wasserbau. Gewässer",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheit - Arbeit - Soziale Sicherheit",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Interkantonale Vereinbarung": 1,
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -182,13 +293,22 @@
         {
           "identifier": "83",
           "title": "Sozialversicherung",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
+            "Gesetz": 2,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "831",
+              "title": "Alters-, Hinterlassenen- und Invalidenversicherung, Berufliche Vorsorge",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "836",
               "title": "Familienzulagen, familienrechtliche Unterhaltsbeiträge und Kinderalimente",
@@ -258,13 +378,75 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.10",
+          "title": "Verteidigung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.10.20",
+              "title": "Wehrpflichtersatz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
-        "Gesetz": 1
+        "Gesetz": 2
       },
       "children": [
         {
@@ -301,13 +483,22 @@
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
+            "Gesetz": 2,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "8.30.100",
               "title": "Familienzulagen",
@@ -336,7 +527,7 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 13
   },
   "available_years_for_entity": [
     "1803",

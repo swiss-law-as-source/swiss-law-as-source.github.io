@@ -2,39 +2,53 @@
   "year": "2014",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 25,
-  "categorized": 25,
+  "total": 31,
+  "categorized": 31,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 16,
+      "total": 20,
       "by_topic": {
         "435.1 Allgemeines": 7,
+        "107 Information der Bevölkerung": 1,
+        "121 Bürgerrecht": 1,
         "124 Integration der ausländischen Bevölkerung": 1,
         "152.21 Staatskanzlei": 1,
+        "153.0 Dienstverhältnis, Gehalt": 1,
         "170.7 Archivierung": 1,
         "213.2 Verwandtschaft": 1,
         "272 Verbote": 1,
         "521 Bevölkerungsschutz": 1,
-        "731 Allgemeines": 1
+        "731 Allgemeines": 1,
+        "842.1 Besondere Bestimmungen für die Krankenversicherung": 1
       },
       "by_global_category": {
+        "1.10.120 Information der Öffentlichkeit": 1,
+        "1.10.60 Bürgerrecht": 1,
         "1.10.70.20.30 Integration": 1,
         "1.20.20.20.30 Staatskanzlei": 1,
+        "1.20.20.40.10 Anstellung": 1,
         "4.170.20 Archive": 1,
         "8.70.70 Alimentenbevorschussung": 1,
-        "7.30.40 Submission": 1
+        "7.30.40 Submission": 1,
+        "8.30.60.40 Einschränkung der Zulassung von Leistungserbringern": 1
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
         "153.4 Pensionskasse": 1,
-        "212.2 Juristische Personen": 1
+        "212.2 Juristische Personen": 1,
+        "410.1 Allgemeines": 1,
+        "622 Finanzkontrolle": 1,
+        "731 Allgemeines": 1
       },
       "by_global_category": {
         "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
-        "2.10.10.20.10 BVG-Stiftungen": 1
+        "2.10.10.20.10 BVG-Stiftungen": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "6.10.40 Finanzkontrolle": 1,
+        "7.30.40 Submission": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -63,35 +77,57 @@
       "by_global_category": {
         "2.10.10.20.10 BVG-Stiftungen": 1
       }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "873.1 Gebäudeversicherung": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 4,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
+        "Verordnung": 6,
         "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "12",
-          "title": "Bürgerrecht, Niederlassung, Aufenthalt",
+          "identifier": "10",
+          "title": "Grundlagen",
           "total": 1,
           "own": 0,
           "by_type": {
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "107",
+              "title": "Information der Bevölkerung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht, Niederlassung, Aufenthalt",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "121",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "124",
               "title": "Integration der ausländischen Bevölkerung",
@@ -106,10 +142,10 @@
         {
           "identifier": "15",
           "title": "Behörden",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
+            "Verordnung": 2,
             "Gesetz": 1
           },
           "children": [
@@ -147,12 +183,22 @@
             {
               "identifier": "153",
               "title": "Dienstrecht",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Verordnung": 1,
                 "Gesetz": 1
               },
               "children": [
+                {
+                  "identifier": "153.0",
+                  "title": "Dienstverhältnis, Gehalt",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
                 {
                   "identifier": "153.4",
                   "title": "Pensionskasse",
@@ -290,22 +336,44 @@
     {
       "identifier": "4",
       "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 8,
+      "total": 9,
       "own": 0,
       "by_type": {
         "Verordnung": 7,
+        "Gesetz": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Kirche",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "410",
+              "title": "Organisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "410.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "412",
               "title": "Pfarrstellen",
@@ -382,29 +450,63 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "62",
+          "title": "Finanzhaushalt",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "622",
+              "title": "Finanzkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Energie und Verkehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "73",
           "title": "Öffentliche Werke",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "731",
               "title": "Allgemeines",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               }
             }
@@ -419,7 +521,7 @@
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 1,
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -454,30 +556,30 @@
           ]
         },
         {
-          "identifier": "87",
-          "title": "Schutz gegen Feuer- und Elementarschäden",
+          "identifier": "84",
+          "title": "Sozialversicherung",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "873",
-              "title": "Versicherung",
+              "identifier": "842",
+              "title": "Kranken- und Unfallversicherung",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Verordnung": 1
               },
               "children": [
                 {
-                  "identifier": "873.1",
-                  "title": "Gebäudeversicherung",
+                  "identifier": "842.1",
+                  "title": "Besondere Bestimmungen für die Krankenversicherung",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Anderes": 1
+                    "Verordnung": 1
                   }
                 }
               ]
@@ -491,23 +593,32 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Verordnung": 2,
-        "Gesetz": 1,
+        "Verordnung": 5,
+        "Gesetz": 2,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 3
           },
           "children": [
+            {
+              "identifier": "1.10.60",
+              "title": "Bürgerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "1.10.70",
               "title": "Niederlassung und Aufenthalt",
@@ -538,26 +649,35 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "1.10.120",
+              "title": "Information der Öffentlichkeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         },
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
+            "Verordnung": 2,
             "Gesetz": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Verordnung": 1,
+                "Verordnung": 2,
                 "Gesetz": 1
               },
               "children": [
@@ -584,12 +704,22 @@
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
-                  "total": 1,
+                  "total": 2,
                   "own": 0,
                   "by_type": {
+                    "Verordnung": 1,
                     "Gesetz": 1
                   },
                   "children": [
+                    {
+                      "identifier": "1.20.20.40.10",
+                      "title": "Anstellung",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    },
                     {
                       "identifier": "1.20.20.40.50",
                       "title": "Renten, Versicherungsansprüche",
@@ -608,18 +738,20 @@
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.40.10",
               "title": "Römisch-Katholische Kirche",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Anderes": 1
               }
             }
@@ -717,29 +849,63 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.40",
+              "title": "Finanzkontrolle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung": 1
           },
           "children": [
             {
               "identifier": "7.30.40",
               "title": "Submission",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               }
             }
@@ -750,11 +916,11 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -789,6 +955,37 @@
           ]
         },
         {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.40",
+                  "title": "Einschränkung der Zulassung von Leistungserbringern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
           "identifier": "8.70",
           "title": "Fürsorge",
           "total": 1,
@@ -812,8 +1009,8 @@
     }
   ],
   "languages_available": {
-    "de": 25,
-    "fr": 20
+    "de": 31,
+    "fr": 26
   },
   "available_years_for_entity": [
     "1562",

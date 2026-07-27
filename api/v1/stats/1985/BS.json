@@ -2,14 +2,13 @@
   "year": "1985",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 13,
-  "categorized": 13,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Gemeindeerlass": {
-      "total": 7,
+      "total": 6,
       "by_topic": {
-        "BaB 11 Grundlagen": 1,
         "BeB 111 Gemeindeordnung": 1,
         "BeB 152 Bürgerrat": 1,
         "BeE 152 Gemeindeversammlung": 1,
@@ -18,8 +17,21 @@
         "RiB 152 Bürgerrat": 1
       },
       "by_global_category": {
-        "1.30.60 Bürgergemeinden, Allmend": 2,
-        "1.10.10 Verfassung": 2
+        "1.10.10 Verfassung": 2,
+        "1.30.60 Bürgergemeinden, Allmend": 1
+      }
+    },
+    "Reglement": {
+      "total": 3,
+      "by_topic": {
+        "365 Tierhaltung und Tierschutz": 1,
+        "441 Organisation · Behörden · Personal": 1,
+        "835 Arbeitslosenversicherung und ergänzende kantonale Massnahmen": 1
+      },
+      "by_global_category": {
+        "5.30.20.10 Hunde, gefährliche Tiere": 1,
+        "4.120.30 Schulaufsicht": 1,
+        "8.30.110 Arbeitslosenversicherung": 1
       }
     },
     "Anderes": {
@@ -51,13 +63,13 @@
         "4.20.20 Fachmittelschulen, Diplommittelschulen": 1
       }
     },
-    "Reglement": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "441 Organisation · Behörden · Personal": 1
+        "415 Jugendhilfe · Schulfürsorge": 1
       },
       "by_global_category": {
-        "4.120.30 Schulaufsicht": 1
+        "8.70.20 Jugendschutz, Jugendhilfe": 1
       }
     }
   },
@@ -65,10 +77,11 @@
     {
       "identifier": "3",
       "title": "Gesundheit",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Reglement": 1
       },
       "children": [
         {
@@ -87,6 +100,26 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "36",
+          "title": "Tierseuchen · Viehhandel · Tierhaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "365",
+              "title": "Tierhaltung und Tierschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
               }
             }
           ]
@@ -116,10 +149,11 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 1,
+        "Gesetz": 1,
         "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
@@ -127,10 +161,11 @@
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -140,6 +175,15 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "415",
+              "title": "Jugendhilfe · Schulfürsorge",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -208,13 +252,35 @@
       ]
     },
     {
-      "identifier": "BaB",
-      "title": "Bürgergemeinde Basel",
+      "identifier": "8",
+      "title": "Arbeit · Soziale Sicherheit",
       "total": 1,
-      "own": 1,
+      "own": 0,
       "by_type": {
-        "Gemeindeerlass": 1
-      }
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "835",
+              "title": "Arbeitslosenversicherung und ergänzende kantonale Massnahmen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     },
     {
       "identifier": "BeB",
@@ -248,10 +314,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gemeindeerlass": 4
+        "Gemeindeerlass": 3
       },
       "children": [
         {
@@ -277,19 +343,19 @@
         {
           "identifier": "1.30",
           "title": "Gemeinden",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Gemeindeerlass": 2
+            "Gemeindeerlass": 1
           },
           "children": [
             {
               "identifier": "1.30.60",
               "title": "Bürgergemeinden, Allmend",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Gemeindeerlass": 2
+                "Gemeindeerlass": 1
               }
             }
           ]
@@ -370,12 +436,55 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.20",
+              "title": "Öffentliche Ruhe und Ordnung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.20.10",
+                  "title": "Hunde, gefährliche Tiere",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -430,14 +539,55 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.20",
+              "title": "Jugendschutz, Jugendhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 15
   },
   "available_years_for_entity": [
+    "1019",
     "1756",
     "1825",
     "1828",
@@ -507,6 +657,7 @@
     "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1962",

@@ -2,18 +2,21 @@
   "year": "1982",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 2,
-  "categorized": 2,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
         "233 Rechtskosten": 1,
-        "31 Strafrecht": 1
+        "31 Strafrecht": 1,
+        "525 Hundepolizei": 1,
+        "955.3 Lotterien, Spiele, Wetten": 1
       },
       "by_global_category": {
-        "1.20.20.60 Verwaltungsgebühren": 1
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "5.30.20.10 Hunde, gefährliche Tiere": 1
       }
     }
   },
@@ -68,6 +71,79 @@
           }
         }
       ]
+    },
+    {
+      "identifier": "5",
+      "title": "Landesverteidigung, Polizei",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "52",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "525",
+              "title": "Hundepolizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "95",
+          "title": "Industrie, Gewerbe und Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "955",
+              "title": "Dienstleistungsgewerbe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "955.3",
+                  "title": "Lotterien, Spiele, Wetten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
@@ -112,10 +188,52 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.20",
+              "title": "Öffentliche Ruhe und Ordnung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.20.10",
+                  "title": "Hunde, gefährliche Tiere",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 4
   },
   "available_years_for_entity": [
     "1881",
@@ -133,6 +251,7 @@
     "1925",
     "1931",
     "1932",
+    "1939",
     "1940",
     "1941",
     "1942",

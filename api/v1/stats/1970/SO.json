@@ -2,8 +2,8 @@
   "year": "1970",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 12,
-  "categorized": 12,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -18,6 +18,17 @@
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
         "1.40.10 Römisch-Katholische Kirche": 1,
         "1.10.80 Ausweise": 1
+      }
+    },
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "128.1 Kurse": 1,
+        "212.2 Familienrecht": 1,
+        "411.3 Staatsbeiträge": 1
+      },
+      "by_global_category": {
+        "1.50.20.10 Ausbildung": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -44,14 +55,6 @@
         "3.20.10 Strafprozessordnungen": 1
       }
     },
-    "Verordnung": {
-      "total": 2,
-      "by_topic": {
-        "212.2 Familienrecht": 1,
-        "411.3 Staatsbeiträge": 1
-      },
-      "by_global_category": {}
-    },
     "Reglement": {
       "total": 1,
       "by_topic": {
@@ -64,20 +67,22 @@
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Gesetz": 1,
+        "Verordnung": 1,
         "Reglement": 1
       },
       "children": [
         {
           "identifier": "12",
           "title": "Organisation",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Gesetz": 1,
+            "Verordnung": 1,
             "Reglement": 1
           },
           "children": [
@@ -104,18 +109,20 @@
             {
               "identifier": "128",
               "title": "Staatliche Kurse und Prüfungen",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Verordnung": 1,
                 "Reglement": 1
               },
               "children": [
                 {
                   "identifier": "128.1",
                   "title": "Kurse",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Verordnung": 1,
                     "Reglement": 1
                   }
                 }
@@ -441,11 +448,12 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -516,6 +524,37 @@
               "by_type": {
                 "Anderes": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "1.50",
+          "title": "Juristische Berufe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.50.20",
+              "title": "Notare",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.50.20.10",
+                  "title": "Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -668,7 +707,7 @@
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 13
   },
   "available_years_for_entity": [
     "1780",
@@ -694,6 +733,7 @@
     "1907",
     "1908",
     "1909",
+    "1910",
     "1911",
     "1912",
     "1914",

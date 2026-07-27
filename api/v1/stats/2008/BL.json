@@ -2,8 +2,8 @@
   "year": "2008",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 20,
-  "categorized": 20,
+  "total": 23,
+  "categorized": 23,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -48,13 +48,25 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "149 Interkantonale Vereinbarungen": 1,
+        "149 Interkantonale Vereinbarungen": 2,
         "649 Interkantonale Vereinbarungen": 1
       },
       "by_global_category": {
+        "4.180.20 Kulturförderung": 1,
         "4.10.20 Kindergarten": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "147 Landeskanzlei": 1,
+        "54 Gewerbe und Industrie": 1
+      },
+      "by_global_category": {
+        "1.20.20.20.30 Staatskanzlei": 1,
+        "9.50.10.40 Taxigewerbe": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -67,26 +79,26 @@
         "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1
       }
     },
-    "Anderes": {
+    "Reglement": {
       "total": 1,
       "by_topic": {
-        "54 Gewerbe und Industrie": 1
+        "19 Kirchen": 1
       },
-      "by_global_category": {
-        "9.50.10.40 Taxigewerbe": 1
-      }
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 7,
+      "total": 10,
       "own": 0,
       "by_type": {
         "Gesetz": 3,
         "Verordnung": 3,
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -111,19 +123,29 @@
         {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 2,
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "149",
-              "title": "Interkantonale Vereinbarungen",
+              "identifier": "147",
+              "title": "Landeskanzlei",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "149",
+              "title": "Interkantonale Vereinbarungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
               }
             }
           ]
@@ -144,6 +166,15 @@
           "own": 1,
           "by_type": {
             "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "19",
+          "title": "Kirchen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
           }
         }
       ]
@@ -369,10 +400,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Gesetz": 2,
+        "Anderes": 1
       },
       "children": [
         {
@@ -420,12 +452,44 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.30",
+                      "title": "Staatskanzlei",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "1.20.40",
               "title": "Staatshaftung",
@@ -484,11 +548,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Verordnung": 3,
-        "Interkantonale Vereinbarung": 1,
+        "Interkantonale Vereinbarung": 2,
         "Gesetz": 1
       },
       "children": [
@@ -560,6 +624,26 @@
               "by_type": {
                 "Verordnung": 1,
                 "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.20",
+              "title": "Kulturförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -840,7 +924,7 @@
     }
   ],
   "languages_available": {
-    "de": 20
+    "de": 23
   },
   "available_years_for_entity": [
     "1815",

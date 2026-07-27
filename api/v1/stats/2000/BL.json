@@ -2,14 +2,15 @@
   "year": "2000",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 33,
-  "categorized": 33,
+  "total": 34,
+  "categorized": 34,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 21,
+      "total": 22,
       "by_topic": {
         "790 Landschaftsschutz": 12,
+        "142 Finanz- und Kirchendirektion": 1,
         "640 Allgemeines": 1,
         "73 Bevölkerungsschutz": 1,
         "854 Alters- und Pflegeheime": 1,
@@ -18,23 +19,22 @@
       },
       "by_global_category": {
         "7.70.50 Naturschutz": 12,
+        "1.10.90.10 Gleichstellung von Mann und Frau": 1,
         "4.30.50 Brückenangebote": 1,
         "1.30.20 Gemeindebeiträge": 1,
         "8.10.90 Rettungsdienst": 1
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 7,
+      "total": 6,
       "by_topic": {
         "649 Interkantonale Vereinbarungen": 2,
-        "149 Interkantonale Vereinbarungen": 1,
         "510 Förderung allgemein": 1,
         "643 Weiterführende Schulen": 1,
         "687 Berufe im Gesundheitswesen": 1,
         "90 Gesundheitspflege": 1
       },
       "by_global_category": {
-        "1.10.40 Interkantonale Zusammenarbeit": 1,
         "4.20.10 Mittelschule": 1,
         "4.140 Anerkennung von Diplomen": 1,
         "4.30.50 Brückenangebote": 1,
@@ -52,19 +52,21 @@
         "1.40.10 Römisch-Katholische Kirche": 1
       }
     },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "42 Öffentliche Werke": 1,
+        "54 Gewerbe und Industrie": 1
+      },
+      "by_global_category": {
+        "7.30.40 Submission": 1,
+        "9.50.10.60.30 Spielbanken": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {},
       "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "54 Gewerbe und Industrie": 1
-      },
-      "by_global_category": {
-        "9.50.10.60.30 Spielbanken": 1
-      }
     }
   },
   "by_topic_tree": [
@@ -75,7 +77,7 @@
       "own": 0,
       "by_type": {
         "Anderes": 3,
-        "Interkantonale Vereinbarung": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -85,9 +87,18 @@
           "own": 0,
           "by_type": {
             "Anderes": 2,
-            "Interkantonale Vereinbarung": 1
+            "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "142",
+              "title": "Finanz- und Kirchendirektion",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "145",
               "title": "Sicherheitsdirektion",
@@ -95,15 +106,6 @@
               "own": 2,
               "by_type": {
                 "Anderes": 2
-              }
-            },
-            {
-              "identifier": "149",
-              "title": "Interkantonale Vereinbarungen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -115,6 +117,26 @@
           "own": 1,
           "by_type": {
             "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "42",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
           }
         }
       ]
@@ -341,9 +363,8 @@
       "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Interkantonale Vereinbarung": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Anderes": 2
       },
       "children": [
         {
@@ -352,17 +373,28 @@
           "total": 1,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Verordnung": 1
           },
           "children": [
             {
-              "identifier": "1.10.40",
-              "title": "Interkantonale Zusammenarbeit",
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
               "total": 1,
-              "own": 1,
+              "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
-              }
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.10",
+                  "title": "Gleichstellung von Mann und Frau",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         },
@@ -516,12 +548,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 12,
+      "total": 13,
       "own": 0,
       "by_type": {
-        "Verordnung": 12
+        "Verordnung": 12,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.40",
+              "title": "Submission",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -641,7 +694,7 @@
     }
   ],
   "languages_available": {
-    "de": 33
+    "de": 34
   },
   "available_years_for_entity": [
     "1815",

@@ -2,8 +2,8 @@
   "year": "1983",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 12,
-  "categorized": 12,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -34,6 +34,17 @@
         "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 3,
+      "by_topic": {
+        "625.7 Interkantonale Vereinbarungen": 2,
+        "423.3 Bistum Basel": 1
+      },
+      "by_global_category": {
+        "6.30.60.20 Reviere": 2,
+        "1.40.10 Römisch-Katholische Kirche": 1
+      }
+    },
     "Staatsvertrag": {
       "total": 1,
       "by_topic": {
@@ -41,13 +52,13 @@
       },
       "by_global_category": {}
     },
-    "Interkantonale Vereinbarung": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
-        "625.7 Interkantonale Vereinbarungen": 1
+        "614.7 Hundesteuer, Hundehaltung": 1
       },
       "by_global_category": {
-        "6.30.60.20 Reviere": 1
+        "5.30.20.10 Hunde, gefährliche Tiere": 1
       }
     }
   },
@@ -128,11 +139,12 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Anderes": 2,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -181,6 +193,37 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "42",
+          "title": "Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "423",
+              "title": "Römisch-katholische Kirche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "423.3",
+                  "title": "Bistum Basel",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
@@ -276,29 +319,32 @@
     {
       "identifier": "6",
       "title": "Finanzen, Regalien",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 2,
         "Staatsvertrag": 1,
-        "Interkantonale Vereinbarung": 1
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "61",
           "title": "Finanzen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Staatsvertrag": 1
+            "Staatsvertrag": 1,
+            "Gesetz": 1
           },
           "children": [
             {
               "identifier": "614",
               "title": "Kantonale Steuern",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Staatsvertrag": 1
+                "Staatsvertrag": 1,
+                "Gesetz": 1
               },
               "children": [
                 {
@@ -320,6 +366,15 @@
                       }
                     }
                   ]
+                },
+                {
+                  "identifier": "614.7",
+                  "title": "Hundesteuer, Hundehaltung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
                 }
               ]
             }
@@ -328,28 +383,28 @@
         {
           "identifier": "62",
           "title": "Regalien",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 2
           },
           "children": [
             {
               "identifier": "625",
               "title": "Fischerei",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Interkantonale Vereinbarung": 2
               },
               "children": [
                 {
                   "identifier": "625.7",
                   "title": "Interkantonale Vereinbarungen",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
+                    "Interkantonale Vereinbarung": 2
                   }
                 }
               ]
@@ -456,10 +511,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -503,6 +559,26 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -538,39 +614,81 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.20",
+              "title": "Öffentliche Ruhe und Ordnung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.20.10",
+                  "title": "Hunde, gefährliche Tiere",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2
       },
       "children": [
         {
           "identifier": "6.30",
           "title": "Monopole, Staatliche Unternehmen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 2
           },
           "children": [
             {
               "identifier": "6.30.60",
               "title": "Fischerei",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Interkantonale Vereinbarung": 2
               },
               "children": [
                 {
                   "identifier": "6.30.60.20",
                   "title": "Reviere",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Interkantonale Vereinbarung": 1
+                    "Interkantonale Vereinbarung": 2
                   }
                 }
               ]
@@ -663,7 +781,7 @@
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 15
   },
   "available_years_for_entity": [
     "1780",
@@ -689,6 +807,7 @@
     "1907",
     "1908",
     "1909",
+    "1910",
     "1911",
     "1912",
     "1914",

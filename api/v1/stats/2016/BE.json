@@ -12,12 +12,13 @@
         "105.3 Amtsbezirke": 1,
         "432.21 Allgemeines": 1,
         "433.1 Mittelschulen": 1,
-        "832.0 Arbeit in Industrie, Gewerbe und Handel": 1
+        "435.1 Allgemeines": 1
       },
       "by_global_category": {
         "1.10.20 Wappen": 1,
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
-        "4.20.10 Mittelschule": 1
+        "4.20.10 Mittelschule": 1,
+        "4.30.40 Passerelle": 1
       }
     },
     "Gesetz": {
@@ -99,19 +100,19 @@
     {
       "identifier": "4",
       "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 3
       },
       "children": [
         {
           "identifier": "43",
           "title": "Ausbildung und Wissenschaft",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 3
           },
           "children": [
             {
@@ -164,6 +165,26 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "435",
+              "title": "Berufsbildung, Weiterbildung, Berufsberatung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "435.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -172,11 +193,10 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 2,
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -204,37 +224,6 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "identifier": "83",
-          "title": "Arbeit",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "832",
-              "title": "Arbeitnehmerschutz",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Verordnung": 1
-              },
-              "children": [
-                {
-                  "identifier": "832.0",
-                  "title": "Arbeit in Industrie, Gewerbe und Handel",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Verordnung": 1
                   }
                 }
               ]
@@ -332,10 +321,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 3
       },
       "children": [
         {
@@ -370,6 +359,26 @@
             {
               "identifier": "4.20.10",
               "title": "Mittelschule",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.40",
+              "title": "Passerelle",
               "total": 1,
               "own": 1,
               "by_type": {

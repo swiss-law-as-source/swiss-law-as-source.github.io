@@ -2,17 +2,18 @@
   "year": "1996",
   "year_semantics": "enactment",
   "entity": "SG",
-  "total": 38,
-  "categorized": 38,
+  "total": 40,
+  "categorized": 40,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 18,
+      "total": 19,
       "by_topic": {
         "143 Staatspersonal": 2,
         "331 Krankenversicherung": 2,
         "151 Allgemein": 1,
         "213 Volksschulen": 1,
+        "275 Kulturförderung": 1,
         "315 Lebensmittelpolizei": 1,
         "325 Übrige Einrichtungen": 1,
         "413 Zivilschutz": 1,
@@ -29,6 +30,7 @@
       "by_global_category": {
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "4.180.20 Kulturförderung": 1,
         "8.10.130.10.10 Lebensmittelaufsicht": 1,
         "8.70.30.10 Alters- und Pflegeheime": 1,
         "8.10.30.40 Hebammen": 1,
@@ -82,14 +84,16 @@
       }
     },
     "Gesetz": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
+        "275 Kulturförderung": 1,
         "315 Lebensmittelpolizei": 1,
         "413 Zivilschutz": 1,
         "752 Gewässerschutz": 1,
         "861 Kantonalbank": 1
       },
       "by_global_category": {
+        "4.180.20 Kulturförderung": 1,
         "7.60.20 Gewässerschutz": 1,
         "6.40.10 Kantonalbanken": 1
       }
@@ -161,10 +165,11 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -182,6 +187,28 @@
               "total": 1,
               "own": 1,
               "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "27",
+          "title": "Kultur",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "275",
+              "title": "Kulturförderung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               }
             }
@@ -851,10 +878,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -872,6 +900,28 @@
               "total": 1,
               "own": 1,
               "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.20",
+              "title": "Kulturförderung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
                 "Verordnung": 1
               }
             }
@@ -1316,7 +1366,7 @@
     }
   ],
   "languages_available": {
-    "de": 38
+    "de": 40
   },
   "available_years_for_entity": [
     "1845",

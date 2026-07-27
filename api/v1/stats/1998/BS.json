@@ -2,8 +2,8 @@
   "year": "1998",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 17,
-  "categorized": 17,
+  "total": 21,
+  "categorized": 21,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -31,26 +31,40 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 6,
+      "total": 7,
       "by_topic": {
         "419 Schulgeld · Schulabkommen · Anerkennungsabkommen": 3,
         "427 Ausbildung in einzelnen Berufen": 1,
         "494 Förderung von Wissenschaft, Kunst und Kultur": 1,
+        "786 Abfallbeseitigung": 1,
         "910 Wirtschaft": 1
       },
       "by_global_category": {
         "4.90.30 Ausbildung": 2,
         "4.60 Tertiärstufe: Höhere Fachschulen": 1,
         "4.140 Anerkennung von Diplomen": 1,
+        "7.60.10 Abfälle": 1,
         "9.60.50 Binnenmarkt, Handelshemmnisse": 1
       }
     },
-    "Anderes": {
-      "total": 1,
+    "Gesetz": {
+      "total": 2,
       "by_topic": {
+        "122 Aufenthalt und Niederlassung": 1,
+        "61 Finanzordnung": 1
+      },
+      "by_global_category": {
+        "6.10.30 Staatsbeiträge, Subventionen": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "215 Obligationenrecht: Spezielle Erlasse": 1,
         "446 Fakultäten": 1
       },
       "by_global_category": {
+        "2.20.10.40.20.30 Landwirtschaft": 1,
         "4.40.10 Rechtswissenschaftliche Fakultät": 1
       }
     },
@@ -66,12 +80,33 @@
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen · Organisation",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Verordnung": 3
+        "Verordnung": 3,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht · Aufenthalt und Niederlassung · Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Aufenthalt und Niederlassung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "15",
           "title": "Organisation des Kantons",
@@ -108,6 +143,37 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht · Strafrecht · Rechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Bundeszivilrecht: Ergänzende kantonale Erlasse",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "215",
+              "title": "Obligationenrecht: Spezielle Erlasse",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -260,12 +326,22 @@
     {
       "identifier": "6",
       "title": "Finanzen · Staatliche Liegenschaften und Materiallagerplätze · Monopole",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "61",
+          "title": "Finanzordnung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
         {
           "identifier": "65",
           "title": "Spezielle Steuern und Abgaben",
@@ -280,21 +356,32 @@
     {
       "identifier": "7",
       "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "78",
           "title": "Umweltschutz",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "786",
+              "title": "Abfallbeseitigung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
             {
               "identifier": "789",
               "title": "Natur- und Landschaftsschutz",
@@ -425,6 +512,70 @@
                   "by_type": {
                     "Verordnung": 1
                   }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "2.20",
+          "title": "Einführungsgesetzgebung OR",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "2.20.10",
+              "title": "Vertragsverhältnisse",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.20.10.40",
+                  "title": "Arbeitsvertragsrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.20.10.40.20",
+                      "title": "Normalarbeitsverträge",
+                      "total": 1,
+                      "own": 0,
+                      "by_type": {
+                        "Anderes": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "2.20.10.40.20.30",
+                          "title": "Landwirtschaft",
+                          "total": 1,
+                          "own": 1,
+                          "by_type": {
+                            "Anderes": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }
@@ -597,12 +748,33 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "6.20",
           "title": "Steuern",
@@ -628,12 +800,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -731,9 +924,10 @@
     }
   ],
   "languages_available": {
-    "de": 17
+    "de": 21
   },
   "available_years_for_entity": [
+    "1019",
     "1756",
     "1825",
     "1828",
@@ -803,6 +997,7 @@
     "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1962",
