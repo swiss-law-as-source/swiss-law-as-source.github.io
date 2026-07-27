@@ -168,6 +168,7 @@
     </header>
     <nav>
         <a href="index.html">Search</a>
+        <a href="laws.html">Law Index</a>
         <a href="diff.html">Diff Viewer</a>
         <a href="stats.html">Statistics</a>
         <a href="crossrefs.html">Cross-Refs</a>
@@ -178,14 +179,14 @@
 
         <!-- Overview -->
         <div class="kpi-grid" id="kpis">
-            <div class="kpi-card"><div class="value" id="kpi-total">27,968</div><div class="label">Total Laws</div></div>
+            <div class="kpi-card"><div class="value" id="kpi-total">30,044</div><div class="label">Total Laws</div></div>
             <div class="kpi-card"><div class="value">26</div><div class="label">Cantons</div></div>
             <div class="kpi-card"><div class="value">1564&ndash;now</div><div class="label">Years Covered</div></div>
             <div class="kpi-card"><div class="value">de / fr / it</div><div class="label">Languages</div></div>
         </div>
 
         <p>
-            The Swiss Law Collection serves <strong>62,000+ files covering 28,000+ unique federal and cantonal laws</strong> as static JSON files
+            The Swiss Law Collection serves <strong>65,000+ files covering 30,000+ unique federal and cantonal laws</strong> as static JSON files
             via GitHub Pages. No authentication, no API key, no rate limits. All endpoints return JSON and are
             accessible from any HTTP client or browser.
         </p>
@@ -201,7 +202,7 @@
             <ol>
                 <li><a href="#publications">Publications API</a> &mdash; laws by year</li>
                 <li><a href="#stats">Statistics API</a> &mdash; per-year per-canton breakdowns</li>
-                <li><a href="#global">Global Data Files</a> &mdash; aggregate stats, tags, law index</li>
+                <li><a href="#global">Global Data Files</a> &mdash; per-entity law index (languages, volumes, articles), aggregate stats, tags, search index</li>
                 <li><a href="#raw">Raw Law Files</a> &mdash; Markdown with YAML frontmatter</li>
                 <li><a href="#examples">Code Examples</a> &mdash; curl, Python, JavaScript</li>
                 <li><a href="#try-it">Try It</a> &mdash; interactive API explorer</li>
@@ -476,10 +477,50 @@
         <div class="endpoint">
             <div class="endpoint-header">
                 <span class="method">GET</span>
+                <span class="endpoint-url">/api/v1/laws/index.json</span>
+            </div>
+            <div class="endpoint-desc">
+                Master index of the per-entity law index: one entry per entity (<code>CH</code> federal + 26 cantons)
+                with law count, total character volume, total article count, and the per-entity file to fetch.
+                Sharded per entity so clients never load one giant file. Browse it at <a href="laws.html">laws.html</a>.
+            </div>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>curl -s https://swiss-law-as-source.github.io/api/v1/laws/index.json | jq '.entities.GR'</pre>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method">GET</span>
+                <span class="endpoint-url">/api/v1/laws/{ENTITY}.json</span>
+            </div>
+            <div class="endpoint-desc">
+                All laws of one entity (<code>CH</code> or a canton code, e.g. <code>BE</code>), one item per unique
+                law with per-language text metrics.
+            </div>
+            <h3>Item Fields</h3>
+            <table class="param-table">
+                <tr><th>Field</th><th>Type</th><th>Description</th></tr>
+                <tr><td><code>id</code></td><td>string</td><td>SR number (CH) or cantonal systematic number</td></tr>
+                <tr><td><code>title</code></td><td>string</td><td>Title in the preferred available language (de &rarr; fr &rarr; it)</td></tr>
+                <tr><td><code>link</code></td><td>string</td><td>GitHub link to the law's Markdown file (URL-encoded)</td></tr>
+                <tr><td><code>languages</code></td><td>object</td><td>Per language: <code>{chars, articles, path}</code> &mdash; body character count, heuristic article count, repo path</td></tr>
+                <tr><td><code>version_date</code></td><td>string?</td><td>Entry-into-force date of the current version</td></tr>
+                <tr><td><code>category_type</code>, <code>systematic_category</code>, <code>global_category</code></td><td>string?</td><td>Classification (cantonal laws)</td></tr>
+            </table>
+            <div class="note">
+                <strong>Article counts are heuristic:</strong> distinct <code>Art. N</code> / <code>Article N</code> /
+                <code>Articolo N</code> / line-leading <code>&sect; N</code> markers per file. Cross-references to other
+                laws inflate the count slightly; metadata-only pages and Roman-numeral treaties count 0.
+            </div>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>curl -s https://swiss-law-as-source.github.io/api/v1/laws/BE.json | jq '.items[0]'</pre>
+        </div>
+
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method">GET</span>
                 <span class="endpoint-url">/stats.json</span>
             </div>
             <div class="endpoint-desc">
-                Aggregate statistics across all 28,000+ unique laws: totals, breakdowns by language, canton,
+                Aggregate statistics across all 30,000+ unique laws: totals, breakdowns by language, canton,
                 SR category, law type, year, and cross-tabulations (canton&times;year, type&times;canton, etc.).
             </div>
             <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>curl -s https://swiss-law-as-source.github.io/stats.json | jq 'keys'
@@ -880,9 +921,9 @@ for year in index["years"]:
     // Update total from live data
     async function updateKpis() {
         try {
-            const res = await fetch(BASE + "/api/v1/publications/index.json");
-            const idx = await res.json();
-            document.getElementById("kpi-total").textContent = idx.total_publications.toLocaleString();
+            const res = await fetch(BASE + "/stats.json");
+            const stats = await res.json();
+            document.getElementById("kpi-total").textContent = stats.total_laws.toLocaleString();
         } catch (e) {}
     }
 

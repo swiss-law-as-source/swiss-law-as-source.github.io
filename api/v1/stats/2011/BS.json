@@ -1,17 +1,19 @@
 {
   "year": "2011",
   "entity": "BS",
-  "total": 23,
-  "categorized": 23,
+  "total": 25,
+  "categorized": 25,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 12,
+      "total": 14,
       "by_topic": {
         "413 Mittelschulen": 3,
         "257 Strafprozess · Rechtshilfe · Opferhilfe": 2,
         "361 Veterinäramt · Tierseuchenbekämpfung · Viehversicherung": 1,
+        "370 Wohnhygiene · Baden · Kunsteisbahnen": 1,
         "410 Schulen": 1,
+        "412 Kindergärten · Primarschulen · Förderangebote": 1,
         "415 Jugendhilfe · Schulfürsorge": 1,
         "46 Erwachsenenbildung": 1,
         "561 Geldspiele · Lotterien": 1,
@@ -19,9 +21,10 @@
         "951 Öffentlicher Verkehr": 1
       },
       "by_global_category": {
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 2,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 3,
         "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
         "9.20.120 Tierseuchen": 1,
+        "8.10.130.30 Badeanstalten": 1,
         "4.20.30 Handelsmittelschulen, Informatikmittelschulen": 1,
         "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
         "4.70.10 Erwachsenenbildung": 1,
@@ -129,10 +132,10 @@
     {
       "identifier": "3",
       "title": "Gesundheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
@@ -154,32 +157,61 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "37",
+          "title": "Wohnhygiene · Baden · Kunsteisbahnen · Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "370",
+              "title": "Wohnhygiene · Baden · Kunsteisbahnen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 7,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Verordnung": 6,
+        "Verordnung": 7,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 6,
+          "total": 7,
           "own": 0,
           "by_type": {
-            "Verordnung": 5,
+            "Verordnung": 6,
             "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "410",
               "title": "Schulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "412",
+              "title": "Kindergärten · Primarschulen · Förderangebote",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -484,28 +516,28 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Verordnung": 5
+        "Verordnung": 6
       },
       "children": [
         {
           "identifier": "4.10",
           "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 3
           },
           "children": [
             {
               "identifier": "4.10.30",
               "title": "Volksschule, Primarschule, Sekundarschule I",
-              "total": 2,
-              "own": 2,
+              "total": 3,
+              "own": 3,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 3
               }
             }
           ]
@@ -691,6 +723,48 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.30",
+                  "title": "Badeanstalten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 2,
@@ -743,50 +817,68 @@
     }
   ],
   "languages_available": {
-    "de": 23
+    "de": 25
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -794,6 +886,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",

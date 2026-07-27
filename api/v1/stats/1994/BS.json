@@ -1,18 +1,32 @@
 {
   "year": "1994",
   "entity": "BS",
-  "total": 4,
-  "categorized": 4,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "30 Gesundheit": 1,
+        "370 Wohnhygiene · Baden · Kunsteisbahnen": 1,
+        "727 Strassenreinigung und Kehrichtabfuhr": 1,
+        "735 Sicherheit und Brandschutz für Bauten": 1
+      },
+      "by_global_category": {
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "8.10.130.30 Badeanstalten": 1,
+        "8.20.10.10 Sicherheit": 1
+      }
+    },
+    "Reglement": {
       "total": 1,
       "by_topic": {
-        "727 Strassenreinigung und Kehrichtabfuhr": 1
+        "331 Öffentliche Spitäler": 1
       },
       "by_global_category": {}
     },
-    "Verordnung": {
+    "Gesetz": {
       "total": 1,
       "by_topic": {
         "727 Strassenreinigung und Kehrichtabfuhr": 1
@@ -36,13 +50,74 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "7",
-      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 2,
+      "identifier": "3",
+      "title": "Gesundheit",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "30",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "33",
+          "title": "Spitäler · Sanitätsdienst",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "331",
+              "title": "Öffentliche Spitäler",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "37",
+          "title": "Wohnhygiene · Baden · Kunsteisbahnen · Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "370",
+              "title": "Wohnhygiene · Baden · Kunsteisbahnen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -66,6 +141,26 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "73",
+          "title": "Hochbauten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "735",
+              "title": "Sicherheit und Brandschutz für Bauten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -80,6 +175,48 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.60",
+                  "title": "Verwaltungsgebühren",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
@@ -110,53 +247,144 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.30",
+                  "title": "Badeanstalten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.10",
+              "title": "Arbeitnehmer",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.10.10",
+                  "title": "Sicherheit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 8
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -164,6 +392,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",

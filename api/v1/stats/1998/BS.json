@@ -1,21 +1,47 @@
 {
   "year": "1998",
   "entity": "BS",
-  "total": 10,
-  "categorized": 10,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
-      "total": 5,
+      "total": 6,
       "by_topic": {
         "419 Schulgeld · Schulabkommen · Anerkennungsabkommen": 3,
         "365 Tierhaltung und Tierschutz": 1,
-        "427 Ausbildung in einzelnen Berufen": 1
+        "427 Ausbildung in einzelnen Berufen": 1,
+        "494 Förderung von Wissenschaft, Kunst und Kultur": 1
       },
       "by_global_category": {
         "4.140 Anerkennung von Diplomen": 2,
         "4.90.30 Ausbildung": 2,
         "7.70.20 Tierschutz": 1
+      }
+    },
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "153 Regierung und Verwaltung · Verwaltungsgebühren": 1,
+        "164 Lohn und Entschädigungen": 1,
+        "415 Jugendhilfe · Schulfürsorge": 1,
+        "65 Spezielle Steuern und Abgaben": 1
+      },
+      "by_global_category": {
+        "1.20.20.70 New Public Management": 1,
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "4.80.50 Logopädie": 1,
+        "6.20.50 Stempelabgabe": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1,
+        "446 Fakultäten": 1
+      },
+      "by_global_category": {
+        "4.40.10 Rechtswissenschaftliche Fakultät": 1
       }
     },
     "Staatsvertrag": {
@@ -26,22 +52,6 @@
       "by_global_category": {
         "7.50.70.20 Flughäfen, Flugplätze": 2
       }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "164 Lohn und Entschädigungen": 1
-      },
-      "by_global_category": {
-        "1.20.20.40.40 Löhne, Entschädigungen": 1
-      }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1
-      },
-      "by_global_category": {}
     },
     "Gemeindeerlass": {
       "total": 1,
@@ -57,12 +67,32 @@
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen · Organisation",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "15",
+          "title": "Organisation des Kantons",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "153",
+              "title": "Regierung und Verwaltung · Verwaltungsgebühren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "16",
           "title": "Staatspersonal",
@@ -119,22 +149,33 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 5,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 4,
-        "Anderes": 1
+        "Interkantonale Vereinbarung": 5,
+        "Anderes": 2,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 3
+            "Interkantonale Vereinbarung": 3,
+            "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "415",
+              "title": "Jugendhilfe · Schulfürsorge",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "419",
               "title": "Schulgeld · Schulabkommen · Anerkennungsabkommen",
@@ -175,6 +216,66 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "44",
+          "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "446",
+              "title": "Fakultäten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "49",
+          "title": "Ausbildungsbeiträge · Wissenschafts- und Kulturpflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "494",
+              "title": "Förderung von Wissenschaft, Kunst und Kultur",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen · Staatliche Liegenschaften und Materiallagerplätze · Monopole",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "65",
+          "title": "Spezielle Steuern und Abgaben",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
         }
       ]
     },
@@ -223,28 +324,28 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 2
               },
               "children": [
                 {
@@ -266,6 +367,15 @@
                       }
                     }
                   ]
+                },
+                {
+                  "identifier": "1.20.20.70",
+                  "title": "New Public Management",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
                 }
               ]
             }
@@ -276,12 +386,54 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 4
+        "Interkantonale Vereinbarung": 4,
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "4.40",
+          "title": "Tertiärstufe: Universitäten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.40.10",
+              "title": "Rechtswissenschaftliche Fakultät",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.80",
+          "title": "Sonderpädagogik",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.80.50",
+              "title": "Logopädie",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.90",
           "title": "Lehrkörper",
@@ -316,21 +468,32 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Gemeindeerlass": 1
       },
       "children": [
         {
           "identifier": "6.20",
           "title": "Steuern",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Gemeindeerlass": 1
           },
           "children": [
+            {
+              "identifier": "6.20.50",
+              "title": "Stempelabgabe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "6.20.70",
               "title": "Hundesteuern",
@@ -409,50 +572,68 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 15
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -460,6 +641,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -522,6 +704,7 @@
     "2026"
   ],
   "available_entities_for_year": [
+    "AG",
     "AI",
     "AR",
     "BE",

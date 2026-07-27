@@ -1,10 +1,36 @@
 {
   "year": "1984",
   "entity": "BS",
-  "total": 5,
-  "categorized": 5,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "562 Handel · Märkte · Schaustellungen": 2,
+        "164 Lohn und Entschädigungen": 1,
+        "166 Pensionsversicherung": 1,
+        "831 Ausgleichskassen": 1
+      },
+      "by_global_category": {
+        "9.60.70 Messen, Märkte": 2,
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
+        "8.30.10 Ausgleichskassen": 1
+      }
+    },
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "166 Pensionsversicherung": 1,
+        "331 Öffentliche Spitäler": 1,
+        "730 Hochbauten": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1
+      }
+    },
     "Gemeindeerlass": {
       "total": 2,
       "by_topic": {
@@ -16,13 +42,6 @@
         "8.70.10 Sozialhilfe": 1
       }
     },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "331 Öffentliche Spitäler": 1
-      },
-      "by_global_category": {}
-    },
     "Gesetz": {
       "total": 1,
       "by_topic": {
@@ -31,18 +50,52 @@
       "by_global_category": {
         "7.30.20.20 Gewässernutzung": 1
       }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "831 Ausgleichskassen": 1
-      },
-      "by_global_category": {
-        "8.30.10 Ausgleichskassen": 1
-      }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staatsrechtliche Grundlagen · Organisation",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "16",
+          "title": "Staatspersonal",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "164",
+              "title": "Lohn und Entschädigungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "166",
+              "title": "Pensionsversicherung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "3",
       "title": "Gesundheit",
@@ -75,14 +128,66 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 1,
+      "identifier": "5",
+      "title": "Polizei · Militär · Feuerwehr",
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "56",
+          "title": "Gewerbepolizei · Waffen und Munition",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "562",
+              "title": "Handel · Märkte · Schaustellungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "73",
+          "title": "Hochbauten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "730",
+              "title": "Hochbauten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "77",
           "title": "Wasser · Energie",
@@ -159,46 +264,65 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gemeindeerlass": 1
+        "Verordnung": 2,
+        "Gemeindeerlass": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Gemeindeerlass": 1
+            "Verordnung": 2,
+            "Gemeindeerlass": 1,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 1,
+              "total": 4,
               "own": 0,
               "by_type": {
-                "Gemeindeerlass": 1
+                "Verordnung": 2,
+                "Gemeindeerlass": 1,
+                "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
-                  "total": 1,
+                  "total": 4,
                   "own": 0,
                   "by_type": {
-                    "Gemeindeerlass": 1
+                    "Verordnung": 2,
+                    "Gemeindeerlass": 1,
+                    "Anderes": 1
                   },
                   "children": [
                     {
                       "identifier": "1.20.20.40.40",
                       "title": "Löhne, Entschädigungen",
-                      "total": 1,
-                      "own": 1,
+                      "total": 2,
+                      "own": 2,
                       "by_type": {
+                        "Verordnung": 1,
                         "Gemeindeerlass": 1
+                      }
+                    },
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Anderes": 1,
+                        "Verordnung": 1
                       }
                     }
                   ]
@@ -302,53 +426,102 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "9.60.70",
+              "title": "Messen, Märkte",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 11
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -356,6 +529,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -420,9 +594,11 @@
   "available_entities_for_year": [
     "AG",
     "AR",
+    "BE",
     "BL",
     "BS",
     "CH",
+    "FR",
     "GE",
     "JU",
     "LU",

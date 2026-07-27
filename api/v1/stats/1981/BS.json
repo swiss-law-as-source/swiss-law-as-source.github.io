@@ -1,26 +1,129 @@
 {
   "year": "1981",
   "entity": "BS",
-  "total": 4,
-  "categorized": 4,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Gemeindeerlass": {
-      "total": 4,
+      "total": 6,
       "by_topic": {
         "BeE 117 Gemeindegebiet": 1,
         "RiE 117 Gemeindegebiet": 1,
+        "RiE 71 Planungskommission": 1,
+        "RiE 72 Allmend": 1,
         "RiE 77 Wasser · Energie": 1,
         "RiE 9 Wirtschaft · Freizeitgärten": 1
       },
       "by_global_category": {
         "1.10.50.20 Grenzen": 2,
+        "9.60.70 Messen, Märkte": 1,
         "7.30.20.20 Gewässernutzung": 1,
         "9.30.20 Forstpersonal": 1
       }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "411 Behörden · Personal": 1,
+        "446 Fakultäten": 1
+      },
+      "by_global_category": {
+        "4.120.80 Schulleitung": 1,
+        "4.40.60 Human- und Veterianärmedizinische Fakultät": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "330 Spitäler": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "3",
+      "title": "Gesundheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "33",
+          "title": "Spitäler · Sanitätsdienst",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "330",
+              "title": "Spitäler",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Erziehung Wissenschafts- und Kulturpflege",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Behörden · Personal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "44",
+          "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "446",
+              "title": "Fakultäten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "BeE",
       "title": "Einwohnergemeinde Bettingen",
@@ -33,10 +136,10 @@
     {
       "identifier": "RiE",
       "title": "Einwohnergemeinde Riehen",
-      "total": 3,
-      "own": 3,
+      "total": 5,
+      "own": 5,
       "by_type": {
-        "Gemeindeerlass": 3
+        "Gemeindeerlass": 5
       }
     }
   ],
@@ -78,6 +181,57 @@
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "4.40",
+          "title": "Tertiärstufe: Universitäten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.40.60",
+              "title": "Human- und Veterianärmedizinische Fakultät",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.80",
+              "title": "Schulleitung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -128,10 +282,10 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gemeindeerlass": 1
+        "Gemeindeerlass": 2
       },
       "children": [
         {
@@ -153,55 +307,93 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.70",
+              "title": "Messen, Märkte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gemeindeerlass": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 9
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -209,6 +401,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -271,11 +464,14 @@
     "2026"
   ],
   "available_entities_for_year": [
+    "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",
     "CH",
+    "FR",
     "GE",
     "JU",
     "NE",

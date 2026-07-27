@@ -1,10 +1,32 @@
 {
   "year": "1990",
   "entity": "BS",
-  "total": 4,
-  "categorized": 4,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "30 Gesundheit": 1,
+        "952 Strassenverkehr": 1
+      },
+      "by_global_category": {
+        "8.10.10 Ethik": 1,
+        "7.10.70 Parkplätze": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "340 Heilmittelkontrolle · Gifte": 1,
+        "730 Hochbauten": 1
+      },
+      "by_global_category": {
+        "8.10.70 Heil- und Betäubungsmittel": 1,
+        "7.10.10 Pläne": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -12,13 +34,22 @@
       },
       "by_global_category": {}
     },
-    "Anderes": {
+    "Verordnung": {
       "total": 1,
       "by_topic": {
-        "340 Heilmittelkontrolle · Gifte": 1
+        "329 Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege": 1
       },
       "by_global_category": {
-        "8.10.70 Heil- und Betäubungsmittel": 1
+        "8.70.30.10 Alters- und Pflegeheime": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "439 Lehrerprüfungen": 1
+      },
+      "by_global_category": {
+        "4.90.30 Ausbildung": 1
       }
     },
     "Staatsvertrag": {
@@ -27,15 +58,6 @@
         "576 Zivilschutz · Katastrophenhilfe": 1
       },
       "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "952 Strassenverkehr": 1
-      },
-      "by_global_category": {
-        "7.10.70 Parkplätze": 1
-      }
     }
   },
   "by_topic_tree": [
@@ -73,12 +95,43 @@
     {
       "identifier": "3",
       "title": "Gesundheit",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "30",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        },
+        {
+          "identifier": "32",
+          "title": "Krankheiten · Kranken- und Betagtenpflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "329",
+              "title": "Ärztliche Versorgung · Spitalexterne Kranken- und Betagtenpflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "34",
           "title": "Heilmittelkontrolle · Gifte",
@@ -95,6 +148,37 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Erziehung Wissenschafts- und Kulturpflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "43",
+          "title": "Lehrerbildung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "439",
+              "title": "Lehrerprüfungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
               }
             }
           ]
@@ -126,6 +210,37 @@
               "own": 1,
               "by_type": {
                 "Staatsvertrag": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "73",
+          "title": "Hochbauten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "730",
+              "title": "Hochbauten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -166,23 +281,65 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.30",
+              "title": "Ausbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
         "Gesetz": 1
       },
       "children": [
         {
           "identifier": "7.10",
           "title": "Raumplanungs- und Baurecht",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "7.10.10",
+              "title": "Pläne",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "7.10.70",
               "title": "Parkplätze",
@@ -199,21 +356,33 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Gesetz": 1,
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "8.10.10",
+              "title": "Ethik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
             {
               "identifier": "8.10.70",
               "title": "Heil- und Betäubungsmittel",
@@ -224,55 +393,104 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.10",
+                  "title": "Alters- und Pflegeheime",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 8
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -280,6 +498,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -343,10 +562,12 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AR",
     "BE",
     "BL",
     "BS",
     "CH",
+    "FR",
     "GE",
     "GL",
     "JU",

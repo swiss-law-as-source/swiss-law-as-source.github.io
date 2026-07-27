@@ -1,8 +1,8 @@
 {
   "year": "2021",
   "entity": "BS",
-  "total": 57,
-  "categorized": 57,
+  "total": 63,
+  "categorized": 63,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -74,6 +74,27 @@
         "8.70.10 Sozialhilfe": 1
       }
     },
+    "Anderes": {
+      "total": 12,
+      "by_topic": {
+        "441 Organisation · Behörden · Personal": 3,
+        "832 Alters- und Hinterlassenenversicherung · Invalidenversicherung · Ergänzende kantonale Alters- und Invalidenhilfe": 2,
+        "215 Obligationenrecht: Spezielle Erlasse": 1,
+        "440 Universität und Universitätsgut": 1,
+        "442 Hochschulförderung · Finanzmittel · Gebühren": 1,
+        "772 Energie- und Wasserversorgung": 1,
+        "910 Wirtschaft": 1
+      },
+      "by_global_category": {
+        "8.30.40 Ergänzungsleistungen": 2,
+        "7.30.10 Staatliche Gebäude und Liegenschaften": 1,
+        "4.90.20 Löhne, Entschädigungen": 1,
+        "4.90.50 Universitätspersonal": 1,
+        "4.120.30 Schulaufsicht": 1,
+        "7.40.10 Energieversorgung": 1,
+        "8.10.100.10 Epidemien, Pandemien": 1
+      }
+    },
     "Reglement": {
       "total": 9,
       "by_topic": {
@@ -90,19 +111,6 @@
         "4.100.10 Stipendien": 1,
         "1.20.50 Datenschutz": 1,
         "9.10 Wirtschaftsförderung": 1
-      }
-    },
-    "Anderes": {
-      "total": 6,
-      "by_topic": {
-        "832 Alters- und Hinterlassenenversicherung · Invalidenversicherung · Ergänzende kantonale Alters- und Invalidenhilfe": 2,
-        "772 Energie- und Wasserversorgung": 1,
-        "910 Wirtschaft": 1
-      },
-      "by_global_category": {
-        "8.30.40 Ergänzungsleistungen": 2,
-        "7.40.10 Energieversorgung": 1,
-        "8.10.100.10 Epidemien, Pandemien": 1
       }
     },
     "Gemeindeerlass": {
@@ -247,19 +255,21 @@
     {
       "identifier": "2",
       "title": "Zivilrecht · Strafrecht · Rechtspflege",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Gesetz": 4
+        "Gesetz": 4,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Bundeszivilrecht: Ergänzende kantonale Erlasse",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -269,6 +279,15 @@
               "own": 1,
               "by_type": {
                 "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "215",
+              "title": "Obligationenrecht: Spezielle Erlasse",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -367,13 +386,52 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 4,
+      "total": 9,
       "own": 0,
       "by_type": {
+        "Anderes": 5,
         "Verordnung": 3,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "44",
+          "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Anderes": 5
+          },
+          "children": [
+            {
+              "identifier": "440",
+              "title": "Universität und Universitätsgut",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "441",
+              "title": "Organisation · Behörden · Personal",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Anderes": 3
+              }
+            },
+            {
+              "identifier": "442",
+              "title": "Hochschulförderung · Finanzmittel · Gebühren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "45",
           "title": "Museen · Archive · Bibliotheken · Dokumentation",
@@ -1019,14 +1077,44 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 8,
       "own": 0,
       "by_type": {
+        "Anderes": 3,
         "Reglement": 2,
         "Verordnung": 2,
         "Gemeindeerlass": 1
       },
       "children": [
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "4.90.20",
+              "title": "Löhne, Entschädigungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "4.90.50",
+              "title": "Universitätspersonal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.100",
           "title": "Ausbildungsbeiträge",
@@ -1050,12 +1138,22 @@
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Gemeindeerlass": 1
           },
           "children": [
+            {
+              "identifier": "4.120.30",
+              "title": "Schulaufsicht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "4.120.60",
               "title": "Schulbauten",
@@ -1199,23 +1297,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Verordnung": 1,
-        "Anderes": 1,
         "Gemeindeerlass": 1
       },
       "children": [
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "7.30.10",
+              "title": "Staatliche Gebäude und Liegenschaften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "7.30.40",
               "title": "Submission",
@@ -1537,50 +1645,68 @@
     }
   ],
   "languages_available": {
-    "de": 57
+    "de": 63
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -1588,6 +1714,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",

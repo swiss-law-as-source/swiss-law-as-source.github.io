@@ -1,10 +1,31 @@
 {
   "year": "1976",
   "entity": "BS",
-  "total": 5,
-  "categorized": 5,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "164 Lohn und Entschädigungen": 1,
+        "322 Alkohol- und Drogenmissbrauch": 1
+      },
+      "by_global_category": {
+        "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "8.10.120.10 Alkoholismus": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "226 Interkantonale Rechtshilfe in Zivilsachen": 1,
+        "427 Ausbildung in einzelnen Berufen": 1
+      },
+      "by_global_category": {
+        "2.50.20 Rechtshilfe": 1
+      }
+    },
     "Gemeindeerlass": {
       "total": 2,
       "by_topic": {
@@ -14,13 +35,6 @@
       "by_global_category": {
         "1.10.50.20 Grenzen": 2
       }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "427 Ausbildung in einzelnen Berufen": 1
-      },
-      "by_global_category": {}
     },
     "Reglement": {
       "total": 1,
@@ -42,6 +56,99 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staatsrechtliche Grundlagen · Organisation",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "16",
+          "title": "Staatspersonal",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "164",
+              "title": "Lohn und Entschädigungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht · Strafrecht · Rechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "22",
+          "title": "Zivilprozess und verwandte Gebiete",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "226",
+              "title": "Interkantonale Rechtshilfe in Zivilsachen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Gesundheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "32",
+          "title": "Krankheiten · Kranken- und Betagtenpflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "322",
+              "title": "Alkohol- und Drogenmissbrauch",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
@@ -158,10 +265,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gemeindeerlass": 2
+        "Gemeindeerlass": 2,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -192,6 +300,79 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.40",
+                      "title": "Löhne, Entschädigungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.50",
+          "title": "Zivilrechtspflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.50.20",
+              "title": "Rechtshilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
             }
           ]
         }
@@ -269,53 +450,113 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.120",
+              "title": "Suchtprävention",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.120.10",
+                  "title": "Alkoholismus",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 8
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -323,6 +564,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -388,9 +630,11 @@
     "AG",
     "AI",
     "AR",
+    "BE",
     "BL",
     "BS",
     "CH",
+    "FR",
     "GE",
     "GL",
     "GR",

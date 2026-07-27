@@ -1,17 +1,22 @@
 {
   "year": "1993",
   "entity": "BE",
-  "total": 5,
-  "categorized": 5,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 2,
+      "total": 5,
       "by_topic": {
+        "103 Amtliche Veröffentlichungen": 1,
+        "342 Anstalten": 1,
+        "430.25 Anstellung": 1,
         "812.56 Pflegetaxen": 1,
         "931 Bergbau": 1
       },
       "by_global_category": {
+        "8.70.30.20 Kinder- und Jugendheime": 1,
+        "4.90.10 Anstellung": 1,
         "8.10.20.20 Psychiatrische Kliniken": 1,
         "6.30.20 Bergwerk": 1
       }
@@ -23,6 +28,15 @@
       },
       "by_global_category": {
         "1.10.40 Interkantonale Zusammenarbeit": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "430.25 Anstellung": 1
+      },
+      "by_global_category": {
+        "4.90.10 Anstellung": 1
       }
     },
     "Reglement": {
@@ -48,12 +62,33 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "103",
+              "title": "Amtliche Veröffentlichungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "15",
           "title": "Behörden",
@@ -80,6 +115,95 @@
                   "by_type": {
                     "Interkantonale Vereinbarung": 1
                   }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht, Strafrechtspflege, Strafvollzug",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "34",
+          "title": "Strafvollzug",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "342",
+              "title": "Anstalten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "43",
+          "title": "Ausbildung und Wissenschaft",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "430",
+              "title": "Allgemeines",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "430.2",
+                  "title": "Lehrer/-innen",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1,
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "430.25",
+                      "title": "Anstellung",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Verordnung des Parlaments (Dekret)": 1,
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
                 }
               ]
             }
@@ -258,6 +382,40 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.10",
+              "title": "Anstellung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
@@ -322,10 +480,10 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
@@ -349,6 +507,37 @@
                 {
                   "identifier": "8.10.20.20",
                   "title": "Psychiatrische Kliniken",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.20",
+                  "title": "Kinder- und Jugendheime",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -405,42 +594,85 @@
     }
   ],
   "languages_available": {
-    "de": 5,
-    "fr": 5
+    "de": 9,
+    "fr": 9
   },
   "available_years_for_entity": [
+    "1562",
     "1828",
     "1837",
     "1851",
+    "1852",
+    "1859",
+    "1862",
     "1864",
+    "1868",
+    "1874",
+    "1876",
     "1877",
     "1889",
+    "1893",
+    "1899",
+    "1902",
+    "1903",
+    "1907",
+    "1909",
+    "1911",
+    "1923",
+    "1924",
+    "1931",
+    "1934",
+    "1936",
+    "1939",
+    "1940",
     "1942",
+    "1945",
     "1949",
     "1950",
+    "1951",
+    "1954",
+    "1957",
     "1959",
     "1960",
+    "1961",
+    "1964",
+    "1966",
     "1967",
+    "1969",
+    "1970",
     "1971",
     "1972",
+    "1973",
     "1974",
     "1975",
+    "1976",
+    "1978",
+    "1979",
     "1980",
     "1981",
     "1982",
+    "1983",
+    "1984",
+    "1985",
     "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
+    "1991",
+    "1992",
     "1993",
     "1994",
     "1995",
     "1996",
+    "1997",
     "1998",
     "1999",
+    "2000",
     "2001",
     "2002",
     "2003",
+    "2004",
     "2005",
     "2006",
     "2007",
@@ -467,10 +699,12 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",
     "CH",
+    "FR",
     "GE",
     "GL",
     "JU",

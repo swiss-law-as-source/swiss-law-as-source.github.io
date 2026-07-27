@@ -1,19 +1,39 @@
 {
   "year": "2004",
   "entity": "BS",
-  "total": 9,
-  "categorized": 9,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 3,
+      "total": 7,
       "by_topic": {
         "421 Allgemeine Gewerbeschule und angegliederte Schulen": 2,
-        "153 Regierung und Verwaltung · Verwaltungsgebühren": 1
+        "446 Fakultäten": 2,
+        "153 Regierung und Verwaltung · Verwaltungsgebühren": 1,
+        "442 Hochschulförderung · Finanzmittel · Gebühren": 1,
+        "452 Archive und Bibliotheken": 1
       },
       "by_global_category": {
         "1.20.20.30.30 Kommissionen": 1,
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "4.120.60 Schulbauten": 1,
+        "4.40.10 Rechtswissenschaftliche Fakultät": 1,
+        "4.40.50 Philosophische Fakultäten": 1,
+        "4.170.30 Bibliotheken": 1
+      }
+    },
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "212 Personen- und Familienrecht: Spezielle Erlasse": 1,
+        "349 Apotheken und Drogerien": 1,
+        "413 Mittelschulen": 1,
+        "452 Archive und Bibliotheken": 1
+      },
+      "by_global_category": {
+        "8.10.80 Apotheken und Drogerien": 1,
+        "4.170.20 Archive": 1
       }
     },
     "Reglement": {
@@ -43,15 +63,6 @@
       },
       "by_global_category": {
         "1.10.40 Interkantonale Zusammenarbeit": 1
-      }
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "452 Archive und Bibliotheken": 1
-      },
-      "by_global_category": {
-        "4.170.20 Archive": 1
       }
     }
   },
@@ -109,12 +120,44 @@
       ]
     },
     {
-      "identifier": "3",
-      "title": "Gesundheit",
+      "identifier": "2",
+      "title": "Zivilrecht · Strafrecht · Rechtspflege",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Bundeszivilrecht: Ergänzende kantonale Erlasse",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "212",
+              "title": "Personen- und Familienrecht: Spezielle Erlasse",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Gesundheit",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -125,20 +168,60 @@
           "by_type": {
             "Reglement": 1
           }
+        },
+        {
+          "identifier": "34",
+          "title": "Heilmittelkontrolle · Gifte",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "349",
+              "title": "Apotheken und Drogerien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 4,
+      "total": 9,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
-        "Reglement": 1,
-        "Verordnung": 1
+        "Anderes": 6,
+        "Verordnung": 2,
+        "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Schulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "413",
+              "title": "Mittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "42",
           "title": "Berufsbildung · Berufsschulen · Fachhochschule",
@@ -180,21 +263,52 @@
           ]
         },
         {
-          "identifier": "45",
-          "title": "Museen · Archive · Bibliotheken · Dokumentation",
-          "total": 1,
+          "identifier": "44",
+          "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Anderes": 3
+          },
+          "children": [
+            {
+              "identifier": "442",
+              "title": "Hochschulförderung · Finanzmittel · Gebühren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "446",
+              "title": "Fakultäten",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "45",
+          "title": "Museen · Archive · Bibliotheken · Dokumentation",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "452",
               "title": "Archive und Bibliotheken",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Anderes": 1
               }
             }
           ]
@@ -319,14 +433,43 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Anderes": 5,
         "Reglement": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "4.40",
+          "title": "Tertiärstufe: Universitäten",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "4.40.10",
+              "title": "Rechtswissenschaftliche Fakultät",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
+              "identifier": "4.40.50",
+              "title": "Philosophische Fakultäten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.60",
           "title": "Tertiärstufe: Höhere Fachschulen",
@@ -357,8 +500,69 @@
           ]
         },
         {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.60",
+              "title": "Schulbauten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
           "identifier": "4.170",
           "title": "Dokumentation",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.20",
+              "title": "Archive",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "4.170.30",
+              "title": "Bibliotheken",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -366,8 +570,8 @@
           },
           "children": [
             {
-              "identifier": "4.170.20",
-              "title": "Archive",
+              "identifier": "8.10.80",
+              "title": "Apotheken und Drogerien",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -380,50 +584,68 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 16
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -431,6 +653,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -496,6 +719,7 @@
     "AG",
     "AI",
     "AR",
+    "BE",
     "BL",
     "BS",
     "CH",

@@ -1,10 +1,22 @@
 {
   "year": "1971",
   "entity": "BS",
-  "total": 2,
-  "categorized": 2,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "162 Dienstverhältnis": 1,
+        "292 Notariat": 1,
+        "361 Veterinäramt · Tierseuchenbekämpfung · Viehversicherung": 1
+      },
+      "by_global_category": {
+        "4.90.50 Universitätspersonal": 1,
+        "9.20.140 Viehversicherungen": 1
+      }
+    },
     "Anderes": {
       "total": 2,
       "by_topic": {
@@ -15,16 +27,112 @@
         "6.10.30 Staatsbeiträge, Subventionen": 1,
         "4.30.20 Berufsmaturitätsschulen": 1
       }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "340 Heilmittelkontrolle · Gifte": 1,
+        "369 Tierkörperverwertung": 1
+      },
+      "by_global_category": {
+        "8.10.70 Heil- und Betäubungsmittel": 1,
+        "8.10.130.50 Tierkörperentsorgung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "361 Veterinäramt · Tierseuchenbekämpfung · Viehversicherung": 1,
+        "569 Sonstige Gewerbe": 1
+      },
+      "by_global_category": {
+        "9.20.140 Viehversicherungen": 1,
+        "4.180.10.10 Film, Theater, Unterhaltung": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "569 Sonstige Gewerbe": 1
+      },
+      "by_global_category": {
+        "4.180.10.10 Film, Theater, Unterhaltung": 1
+      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "3",
-      "title": "Gesundheit",
+      "identifier": "1",
+      "title": "Staatsrechtliche Grundlagen · Organisation",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "16",
+          "title": "Staatspersonal",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "162",
+              "title": "Dienstverhältnis",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht · Strafrecht · Rechtspflege",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "29",
+          "title": "Advokatur und Notariat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "292",
+              "title": "Notariat",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Gesundheit",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 1,
+        "Gesetz": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -43,6 +151,58 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "34",
+          "title": "Heilmittelkontrolle · Gifte",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "340",
+              "title": "Heilmittelkontrolle · Gifte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "36",
+          "title": "Tierseuchen · Viehhandel · Tierhaltung",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "361",
+              "title": "Veterinäramt · Tierseuchenbekämpfung · Viehversicherung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "369",
+              "title": "Tierkörperverwertung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -79,16 +239,53 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "5",
+      "title": "Polizei · Militär · Feuerwehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "56",
+          "title": "Gewerbepolizei · Waffen und Munition",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "569",
+              "title": "Sonstige Gewerbe",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1,
+        "Gesetz": 1,
+        "Reglement": 1
       },
       "children": [
         {
@@ -108,6 +305,60 @@
               "by_type": {
                 "Anderes": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.50",
+              "title": "Universitätspersonal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.10",
+              "title": "Kunst",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1,
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "4.180.10.10",
+                  "title": "Film, Theater, Unterhaltung",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Gesetz": 1,
+                    "Reglement": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -143,53 +394,156 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          },
+          "children": [
+            {
+              "identifier": "8.10.70",
+              "title": "Heil- und Betäubungsmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            },
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.50",
+                  "title": "Tierkörperentsorgung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.140",
+              "title": "Viehversicherungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 10
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -197,6 +551,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -259,11 +614,14 @@
     "2026"
   ],
   "available_entities_for_year": [
+    "AG",
     "AI",
+    "AR",
     "BE",
     "BL",
     "BS",
     "CH",
+    "FR",
     "GL",
     "GR",
     "JU",

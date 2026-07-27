@@ -1,37 +1,367 @@
 {
   "year": "1966",
   "entity": "AG",
-  "total": 0,
-  "message": "No data for AG in 1966.",
+  "total": 5,
+  "categorized": 5,
+  "uncategorized": 0,
+  "by_type": {
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "122 Aufenthalt – Niederlassung – Ausländerrecht": 1,
+        "411 Dienstverhältnis – Besoldung": 1,
+        "428 Besondere Betreuungsbedürfnisse – Sonderschulung": 1
+      },
+      "by_global_category": {
+        "4.90.20 Löhne, Entschädigungen": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "428 Besondere Betreuungsbedürfnisse – Sonderschulung": 1
+      },
+      "by_global_category": {
+        "8.70.30.20 Kinder- und Jugendheime": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "831 Alters- und Hinterlassenenversicherung – Invalidenversicherung": 1
+      },
+      "by_global_category": {
+        "8.30.40 Ergänzungsleistungen": 1
+      }
+    }
+  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staatsrechtliche Grundlagen – Organisation",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "Bürgerrecht – Aufenthalt – Niederlassung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Aufenthalt – Niederlassung – Ausländerrecht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Erziehung – Wissenschaft – Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Lehrkräfte",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Dienstverhältnis – Besoldung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "42",
+          "title": "Schulen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "428",
+              "title": "Besondere Betreuungsbedürfnisse – Sonderschulung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherungen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "831",
+              "title": "Alters- und Hinterlassenenversicherung – Invalidenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.20",
+              "title": "Löhne, Entschädigungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.40",
+              "title": "Ergänzungsleistungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.20",
+                  "title": "Kinder- und Jugendheime",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "languages_available": {
+    "de": 5
+  },
   "available_years_for_entity": [
     "1803",
+    "1828",
     "1832",
+    "1856",
     "1885",
+    "1888",
+    "1889",
+    "1901",
+    "1908",
+    "1909",
+    "1917",
     "1918",
+    "1919",
+    "1922",
+    "1924",
+    "1925",
+    "1928",
+    "1930",
+    "1932",
+    "1937",
+    "1938",
+    "1939",
+    "1942",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1948",
+    "1950",
+    "1951",
+    "1952",
     "1953",
+    "1954",
+    "1955",
+    "1958",
+    "1959",
     "1960",
     "1961",
+    "1963",
+    "1964",
     "1965",
+    "1966",
+    "1968",
+    "1969",
+    "1970",
+    "1971",
+    "1972",
     "1973",
     "1974",
     "1975",
     "1976",
+    "1977",
+    "1978",
+    "1979",
     "1980",
+    "1981",
     "1982",
+    "1983",
     "1984",
+    "1985",
+    "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
+    "1991",
+    "1992",
     "1993",
     "1994",
+    "1995",
     "1996",
     "1997",
+    "1998",
     "1999",
     "2000",
     "2001",
+    "2002",
     "2003",
     "2004",
     "2005",
@@ -58,9 +388,13 @@
     "2026"
   ],
   "available_entities_for_year": [
+    "AG",
     "AI",
     "AR",
+    "BE",
+    "BS",
     "CH",
+    "FR",
     "GE",
     "NE",
     "NW",

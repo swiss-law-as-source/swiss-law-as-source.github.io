@@ -1,40 +1,46 @@
 {
   "year": "2000",
   "entity": "BS",
-  "total": 10,
-  "categorized": 10,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
-    "Verordnung": {
-      "total": 3,
+    "Anderes": {
+      "total": 5,
       "by_topic": {
+        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 2,
+        "111 Kantonsverfassung": 1,
+        "446 Fakultäten": 1,
+        "919 Schweizer Mustermesse": 1
+      },
+      "by_global_category": {
+        "4.40.40 Naturwissenschaftliche Fakultäten": 1,
+        "9.60.70 Messen, Märkte": 1
+      }
+    },
+    "Verordnung": {
+      "total": 5,
+      "by_topic": {
+        "413 Mittelschulen": 2,
         "162 Dienstverhältnis": 1,
         "411 Behörden · Personal": 1,
         "789 Natur- und Landschaftsschutz": 1
       },
       "by_global_category": {
         "8.20.10.40 Mobbing, Sexuelle Belästigung": 1,
+        "4.30.50 Brückenangebote": 1,
         "7.70.30 Pflanzenschutz": 1
       }
     },
-    "Anderes": {
-      "total": 3,
-      "by_topic": {
-        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 2,
-        "919 Schweizer Mustermesse": 1
-      },
-      "by_global_category": {
-        "9.60.70 Messen, Märkte": 1
-      }
-    },
     "Interkantonale Vereinbarung": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
-        "419 Schulgeld · Schulabkommen · Anerkennungsabkommen": 1,
-        "442 Hochschulförderung · Finanzmittel · Gebühren": 1
+        "419 Schulgeld · Schulabkommen · Anerkennungsabkommen": 2,
+        "442 Hochschulförderung · Finanzmittel · Gebühren": 2
       },
       "by_global_category": {
         "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "1.10.40 Interkantonale Zusammenarbeit": 1,
         "4.120.10 Schulkoordination": 1
       }
     },
@@ -51,12 +57,33 @@
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen · Organisation",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "11",
+          "title": "Kantonsverfassung · Staatsgebiet · Regionale und grenzüberschreitende Zusammenarbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "111",
+              "title": "Kantonsverfassung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "16",
           "title": "Staatspersonal",
@@ -82,23 +109,23 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 7,
+      "total": 12,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
-        "Anderes": 2,
-        "Reglement": 2,
-        "Verordnung": 1
+        "Interkantonale Vereinbarung": 4,
+        "Verordnung": 3,
+        "Anderes": 3,
+        "Reglement": 2
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schulen",
-          "total": 2,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Interkantonale Vereinbarung": 1
+            "Verordnung": 3,
+            "Interkantonale Vereinbarung": 2
           },
           "children": [
             {
@@ -111,12 +138,21 @@
               }
             },
             {
+              "identifier": "413",
+              "title": "Mittelschulen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            },
+            {
               "identifier": "419",
               "title": "Schulgeld · Schulabkommen · Anerkennungsabkommen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Interkantonale Vereinbarung": 2
               }
             }
           ]
@@ -155,19 +191,29 @@
         {
           "identifier": "44",
           "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 1
+            "Interkantonale Vereinbarung": 2,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "442",
               "title": "Hochschulförderung · Finanzmittel · Gebühren",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 2
+              }
+            },
+            {
+              "identifier": "446",
+              "title": "Fakultäten",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Interkantonale Vereinbarung": 1
+                "Anderes": 1
               }
             }
           ]
@@ -239,14 +285,87 @@
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.40",
+              "title": "Interkantonale Zusammenarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2,
+        "Verordnung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.50",
+              "title": "Brückenangebote",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.40",
+          "title": "Tertiärstufe: Universitäten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.40.40",
+              "title": "Naturwissenschaftliche Fakultäten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.60",
           "title": "Tertiärstufe: Höhere Fachschulen",
@@ -384,50 +503,68 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 16
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -435,6 +572,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -499,9 +637,11 @@
   "available_entities_for_year": [
     "AG",
     "AI",
+    "BE",
     "BL",
     "BS",
     "CH",
+    "FR",
     "GE",
     "GL",
     "GR",

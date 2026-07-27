@@ -1,17 +1,48 @@
 {
   "year": "1982",
   "entity": "BS",
-  "total": 3,
-  "categorized": 3,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 1,
+    "Verordnung": {
+      "total": 6,
       "by_topic": {
+        "212 Personen- und Familienrecht: Spezielle Erlasse": 1,
+        "330 Spitäler": 1,
+        "349 Apotheken und Drogerien": 1,
+        "430 Lehrerbildung": 1,
+        "447 Wissenschaftliche Institute und spezielle Forschungsbereiche": 1,
+        "561 Geldspiele · Lotterien": 1
+      },
+      "by_global_category": {
+        "8.70.20 Jugendschutz, Jugendhilfe": 1,
+        "8.10.80 Apotheken und Drogerien": 1,
+        "4.90.30 Ausbildung": 1,
+        "4.40.40 Naturwissenschaftliche Fakultäten": 1,
+        "8.70.60 Spenden und gemeinnützige Sammlungen": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "349 Apotheken und Drogerien": 1,
         "39 Bestattungen": 1
       },
       "by_global_category": {
+        "8.10.80 Apotheken und Drogerien": 1,
         "8.10.130.40 Bestattungswesen, Friedhöfe": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "561 Geldspiele · Lotterien": 1,
+        "835 Arbeitslosenversicherung und ergänzende kantonale Massnahmen": 1
+      },
+      "by_global_category": {
+        "8.70.60 Spenden und gemeinnützige Sammlungen": 1,
+        "8.30.110 Arbeitslosenversicherung": 1
       }
     },
     "Staatsvertrag": {
@@ -35,14 +66,88 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "3",
-      "title": "Gesundheit",
+      "identifier": "2",
+      "title": "Zivilrecht · Strafrecht · Rechtspflege",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "21",
+          "title": "Bundeszivilrecht: Ergänzende kantonale Erlasse",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "212",
+              "title": "Personen- und Familienrecht: Spezielle Erlasse",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Gesundheit",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "33",
+          "title": "Spitäler · Sanitätsdienst",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "330",
+              "title": "Spitäler",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "34",
+          "title": "Heilmittelkontrolle · Gifte",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "349",
+              "title": "Apotheken und Drogerien",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "39",
           "title": "Bestattungen",
@@ -51,6 +156,91 @@
           "by_type": {
             "Anderes": 1
           }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Erziehung Wissenschafts- und Kulturpflege",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "43",
+          "title": "Lehrerbildung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "430",
+              "title": "Lehrerbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "44",
+          "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "447",
+              "title": "Wissenschaftliche Institute und spezielle Forschungsbereiche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Polizei · Militär · Feuerwehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "56",
+          "title": "Gewerbepolizei · Waffen und Munition",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "561",
+              "title": "Geldspiele · Lotterien",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -86,6 +276,37 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Arbeit · Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "835",
+              "title": "Arbeitslosenversicherung und ergänzende kantonale Massnahmen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "RiE",
       "title": "Einwohnergemeinde Riehen",
       "total": 1,
@@ -96,6 +317,57 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "4.40",
+          "title": "Tertiärstufe: Universitäten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.40.40",
+              "title": "Naturwissenschaftliche Fakultäten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.30",
+              "title": "Ausbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
@@ -130,23 +402,36 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 8,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Verordnung": 3,
+        "Anderes": 2,
+        "Gesetz": 2,
         "Gemeindeerlass": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
+            "Anderes": 2,
+            "Verordnung": 1,
             "Gemeindeerlass": 1
           },
           "children": [
+            {
+              "identifier": "8.10.80",
+              "title": "Apotheken und Drogerien",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "8.10.130",
               "title": "Hygiene",
@@ -170,55 +455,124 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.20",
+              "title": "Jugendschutz, Jugendhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "8.70.60",
+              "title": "Spenden und gemeinnützige Sammlungen",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 12
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -226,6 +580,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -293,6 +648,7 @@
     "BL",
     "BS",
     "CH",
+    "FR",
     "GE",
     "GL",
     "JU",

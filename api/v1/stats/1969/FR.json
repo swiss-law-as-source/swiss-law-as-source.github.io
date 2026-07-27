@@ -1,27 +1,380 @@
 {
   "year": "1969",
   "entity": "FR",
-  "total": 0,
-  "message": "No data for FR in 1969.",
+  "total": 6,
+  "categorized": 6,
+  "uncategorized": 0,
+  "by_type": {
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 3,
+      "by_topic": {
+        "141.1 Zusammenschlüsse": 3
+      },
+      "by_global_category": {
+        "1.30.50 Gemeindefusionen": 3
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "135 Gerichtskosten": 1
+      },
+      "by_global_category": {
+        "3.20.60 Kosten": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "27 ZIVILPROZESS": 1
+      },
+      "by_global_category": {
+        "2.80 Schiedsgerichtsbarkeit": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "821.44 Alkoholismus und andere Suchtmittelabhängigkeiten": 1
+      },
+      "by_global_category": {
+        "8.10.50 Psychiatrische Dienste": 1
+      }
+    }
+  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "STAAT - VOLK - BEHÖRDEN",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 3,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "13",
+          "title": "RECHTSPFLEGE",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "135",
+              "title": "Gerichtskosten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "14",
+          "title": "GEMEINDEN",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 3
+          },
+          "children": [
+            {
+              "identifier": "141",
+              "title": "Gebietsaufteilung - Namen",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 3
+              },
+              "children": [
+                {
+                  "identifier": "141.1",
+                  "title": "Zusammenschlüsse",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 3
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "PRIVATRECHT - ZIVILPROZESS - ZWANGSVOLLSTRECKUNG",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "27",
+          "title": "ZIVILPROZESS",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "UMWELTSCHUTZ - GESUNDHEIT - SOZIALWESEN",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "GESUNDHEIT",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "821",
+              "title": "Gesundheitspolizeiliche Massnahmen und Gesundheitsförderung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "821.4",
+                  "title": "Krankheitsbekämpfung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "821.44",
+                      "title": "Alkoholismus und andere Suchtmittelabhängigkeiten",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 3
+      },
+      "children": [
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 3
+          },
+          "children": [
+            {
+              "identifier": "1.30.50",
+              "title": "Gemeindefusionen",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.80",
+          "title": "Schiedsgerichtsbarkeit",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.60",
+              "title": "Kosten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.50",
+              "title": "Psychiatrische Dienste",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "languages_available": {
+    "de": 6,
+    "fr": 4
+  },
   "available_years_for_entity": [
+    "1848",
+    "1852",
+    "1859",
+    "1866",
+    "1867",
+    "1868",
+    "1873",
     "1874",
     "1875",
     "1879",
+    "1893",
+    "1899",
     "1914",
+    "1917",
+    "1918",
+    "1920",
+    "1921",
+    "1922",
     "1924",
+    "1926",
     "1929",
     "1930",
+    "1934",
+    "1935",
+    "1938",
+    "1942",
     "1943",
     "1949",
+    "1950",
+    "1951",
     "1953",
+    "1954",
+    "1955",
+    "1957",
+    "1960",
+    "1961",
+    "1962",
+    "1963",
+    "1964",
+    "1965",
+    "1966",
+    "1967",
+    "1968",
+    "1969",
+    "1970",
+    "1971",
+    "1972",
+    "1973",
+    "1974",
+    "1975",
+    "1976",
+    "1977",
+    "1978",
+    "1979",
+    "1980",
+    "1981",
+    "1982",
+    "1983",
+    "1984",
+    "1985",
+    "1986",
+    "1987",
     "1988",
     "1989",
+    "1990",
+    "1991",
     "1992",
+    "1993",
     "1994",
+    "1995",
     "1996",
     "1997",
     "1998",
     "1999",
+    "2000",
     "2001",
     "2002",
     "2003",
@@ -50,10 +403,14 @@
     "2026"
   ],
   "available_entities_for_year": [
+    "AG",
     "AI",
     "AR",
+    "BE",
+    "BL",
     "BS",
     "CH",
+    "FR",
     "GE",
     "JU",
     "LU",

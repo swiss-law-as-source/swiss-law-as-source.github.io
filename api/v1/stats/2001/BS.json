@@ -1,10 +1,33 @@
 {
   "year": "2001",
   "entity": "BS",
-  "total": 7,
-  "categorized": 7,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "154 Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden": 1,
+        "66 Bundessteuern": 1,
+        "780 Umweltschutz": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
+        "6.20.60 Verrechnungssteuer": 1,
+        "7.60.50 Umweltverträglichkeitsprüfung": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "111 Kantonsverfassung": 1,
+        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1
+      },
+      "by_global_category": {
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1
+      }
+    },
     "Staatsvertrag": {
       "total": 2,
       "by_topic": {
@@ -15,24 +38,15 @@
         "7.60.20 Gewässerschutz": 1
       }
     },
-    "Verordnung": {
+    "Gemeindeerlass": {
       "total": 2,
       "by_topic": {
-        "66 Bundessteuern": 1,
-        "780 Umweltschutz": 1
+        "BaB 16 Gemeindepersonal": 1,
+        "RiE 3 Gesundheit · Bestattungswesen": 1
       },
       "by_global_category": {
-        "6.20.60 Verrechnungssteuer": 1,
-        "7.60.50 Umweltverträglichkeitsprüfung": 1
-      }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "421 Allgemeine Gewerbeschule und angegliederte Schulen": 1
-      },
-      "by_global_category": {
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1
+        "8.70.10 Sozialhilfe": 1,
+        "8.10.60 Spitalexterne Krankenpflege": 1
       }
     },
     "Gesetz": {
@@ -43,36 +57,39 @@
       "by_global_category": {
         "7.60.20 Gewässerschutz": 1
       }
-    },
-    "Gemeindeerlass": {
-      "total": 1,
-      "by_topic": {
-        "RiE 3 Gesundheit · Bestattungswesen": 1
-      },
-      "by_global_category": {
-        "8.10.60 Spitalexterne Krankenpflege": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Staatsrechtliche Grundlagen · Organisation",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Staatsvertrag": 1
+        "Anderes": 1,
+        "Staatsvertrag": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "11",
           "title": "Kantonsverfassung · Staatsgebiet · Regionale und grenzüberschreitende Zusammenarbeit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Staatsvertrag": 1
           },
           "children": [
+            {
+              "identifier": "111",
+              "title": "Kantonsverfassung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "119",
               "title": "Grenzüberschreitende Zusammenarbeit",
@@ -80,6 +97,26 @@
               "own": 1,
               "by_type": {
                 "Staatsvertrag": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "15",
+          "title": "Organisation des Kantons",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "154",
+              "title": "Gerichte · Staatsanwaltschaft · Strafverfolgungsbehörden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -191,6 +228,15 @@
       ]
     },
     {
+      "identifier": "BaB",
+      "title": "Bürgergemeinde Basel",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Gemeindeerlass": 1
+      }
+    },
+    {
       "identifier": "RiE",
       "title": "Einwohnergemeinde Riehen",
       "total": 1,
@@ -201,6 +247,59 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.30",
+                      "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -300,10 +399,10 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gemeindeerlass": 1
+        "Gemeindeerlass": 2
       },
       "children": [
         {
@@ -325,55 +424,93 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gemeindeerlass": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 10
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -381,6 +518,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",

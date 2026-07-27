@@ -1,10 +1,33 @@
 {
   "year": "1999",
   "entity": "BS",
-  "total": 4,
-  "categorized": 4,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 4,
+      "by_topic": {
+        "31 Medizinalpersonen · Komplementärmedizin": 3,
+        "568 Waffen und Munition · Sprengstoffe": 1
+      },
+      "by_global_category": {
+        "8.10.30.10 Ärzte": 1,
+        "5.30.30 Waffen und Munition": 1
+      }
+    },
+    "Gemeindeerlass": {
+      "total": 4,
+      "by_topic": {
+        "BeE 3 Gesundheit": 1,
+        "BeE 7 Raum- und Bauordnung · Energie · Umweltschutz": 1,
+        "RiE 3 Gesundheit · Bestattungswesen": 1,
+        "RiE 73 Hochbauten": 1
+      },
+      "by_global_category": {
+        "7.10.10 Pläne": 2
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 2,
       "by_topic": {
@@ -14,33 +37,47 @@
         "4.140 Anerkennung von Diplomen": 2
       }
     },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "568 Waffen und Munition · Sprengstoffe": 1
-      },
-      "by_global_category": {
-        "5.30.30 Waffen und Munition": 1
-      }
-    },
     "Anderes": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "446 Fakultäten": 1,
         "786 Abfallbeseitigung": 1
       },
       "by_global_category": {
+        "4.40.40 Naturwissenschaftliche Fakultäten": 1,
         "7.60.10 Abfälle": 1
       }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 2,
+      "identifier": "3",
+      "title": "Gesundheit",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Verordnung": 3
+      },
+      "children": [
+        {
+          "identifier": "31",
+          "title": "Medizinalpersonen · Komplementärmedizin",
+          "total": 3,
+          "own": 3,
+          "by_type": {
+            "Verordnung": 3
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Erziehung Wissenschafts- und Kulturpflege",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 1
       },
       "children": [
         {
@@ -59,6 +96,26 @@
               "own": 2,
               "by_type": {
                 "Interkantonale Vereinbarung": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "44",
+          "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "446",
+              "title": "Fakultäten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -126,18 +183,57 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "BeE",
+      "title": "Einwohnergemeinde Bettingen",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Gemeindeerlass": 2
+      }
+    },
+    {
+      "identifier": "RiE",
+      "title": "Einwohnergemeinde Riehen",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Gemeindeerlass": 2
+      }
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "4.40",
+          "title": "Tertiärstufe: Universitäten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.40.40",
+              "title": "Naturwissenschaftliche Fakultäten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.140",
           "title": "Anerkennung von Diplomen",
@@ -183,12 +279,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Gemeindeerlass": 2,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 2
+          },
+          "children": [
+            {
+              "identifier": "7.10.10",
+              "title": "Pläne",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gemeindeerlass": 2
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
@@ -210,53 +327,113 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 12
   },
   "available_years_for_entity": [
     "1826",
     "1828",
     "1834",
     "1846",
+    "1852",
     "1853",
     "1858",
     "1860",
     "1863",
     "1876",
+    "1879",
     "1883",
     "1886",
     "1891",
     "1895",
     "1900",
     "1901",
+    "1902",
     "1906",
     "1907",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1915",
     "1918",
     "1919",
+    "1921",
     "1922",
     "1923",
     "1925",
     "1927",
+    "1928",
+    "1929",
+    "1931",
+    "1932",
+    "1933",
     "1935",
+    "1936",
     "1937",
     "1938",
     "1940",
+    "1941",
     "1943",
     "1944",
     "1945",
+    "1946",
+    "1947",
     "1948",
     "1949",
+    "1950",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
+    "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -264,6 +441,7 @@
     "1963",
     "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
