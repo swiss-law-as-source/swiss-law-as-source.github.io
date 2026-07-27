@@ -1,8 +1,8 @@
 {
   "year": "1951",
   "entity": "ZH",
-  "total": 3,
-  "categorized": 3,
+  "total": 5,
+  "categorized": 5,
   "uncategorized": 0,
   "by_type": {
     "Interkantonale Vereinbarung": {
@@ -23,6 +23,24 @@
       },
       "by_global_category": {
         "5.30.10.30 Personal": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "631.7 Handänderungssteuer": 1
+      },
+      "by_global_category": {
+        "6.20.20 Handänderungssteuern": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "702.4 Schutz- und Erholungsgebiete in den Bezirken Meilen, Hinwil, Uster": 1
+      },
+      "by_global_category": {
+        "7.70.10 Landschaftsschutz": 1
       }
     }
   },
@@ -61,12 +79,44 @@
     {
       "identifier": "6",
       "title": "Finanzen – Steuern",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "63",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "631",
+              "title": "Staats- und Gemeindesteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "631.7",
+                  "title": "Handänderungssteuer",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "672",
           "title": "Gegenrechtserklärungen",
@@ -81,12 +131,44 @@
     {
       "identifier": "7",
       "title": "Raumplanung – Baurecht – Umwelt – Energie – Verkehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "70",
+          "title": "Raumplanung und öffentliches Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "702",
+              "title": "Natur- und Heimatschutz",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "702.4",
+                  "title": "Schutz- und Erholungsgebiete in den Bezirken Meilen, Hinwil, Uster",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "74",
           "title": "Verkehr",
@@ -207,12 +289,44 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.20",
+              "title": "Handänderungssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1
       },
       "children": [
         {
@@ -234,12 +348,32 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.10",
+              "title": "Landschaftsschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 5
   },
   "available_years_for_entity": [
     "1825",
@@ -250,6 +384,8 @@
     "1879",
     "1880",
     "1886",
+    "1899",
+    "1900",
     "1901",
     "1902",
     "1908",
@@ -258,25 +394,35 @@
     "1916",
     "1919",
     "1920",
+    "1921",
     "1922",
     "1925",
     "1926",
     "1927",
+    "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1936",
     "1937",
     "1938",
     "1942",
     "1943",
+    "1944",
     "1945",
+    "1946",
     "1948",
+    "1949",
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1963",
@@ -305,6 +451,7 @@
     "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
     "1991",
     "1992",

@@ -1,45 +1,76 @@
 {
   "year": "1998",
   "entity": "GE",
-  "total": 7,
-  "categorized": 7,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 5,
+      "total": 11,
       "by_topic": {
-        "J 3 Assurances contre la maladie et les accidents": 2,
+        "J 3 Assurances contre la maladie et les accidents": 3,
+        "C 1 Instruction publique": 2,
         "E 2 Organisation judiciaire et pouvoir judiciaire": 1,
         "I 2 Professions et métiers divers": 1,
-        "J 4 Assistance": 1
+        "J 4 Assistance": 1,
+        "J 7 Protection de la vieillesse": 1,
+        "K 1 Police sanitaire, lutte contre les maladies": 1,
+        "L 2 Eaux et énergies": 1
       },
       "by_global_category": {
+        "8.30.40 Ergänzungsleistungen": 2,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "4.50.40 Landwirtschaft": 1,
         "5.30.30 Waffen und Munition": 1,
         "8.10.30.50 Chiropraktiker, Physiotherapeuten": 1,
+        "8.10.30.30 Krankenpflegepersonal": 1,
         "4.80.50 Logopädie": 1,
-        "8.30.40 Ergänzungsleistungen": 1
+        "8.10.10 Ethik": 1
       }
     },
     "Gesetz": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "A 2 Constitution et principes généraux": 1,
         "J 6 Protection de la jeunesse": 1
       },
       "by_global_category": {
+        "1.10.90.10 Gleichstellung von Mann und Frau": 1,
         "8.70.20 Jugendschutz, Jugendhilfe": 1
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "C 1 Instruction publique": 1,
         "L 5 Police des constructions, sécurité publique": 1
       },
       "by_global_category": {
+        "4.90.30 Ausbildung": 1,
         "9.60.50 Binnenmarkt, Handelshemmnisse": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "A",
+      "title": "Structure cantonale et principes fondamentaux",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Loi": 1
+      }
+    },
+    {
+      "identifier": "C",
+      "title": "Instruction publique, culture",
+      "total": 3,
+      "own": 3,
+      "by_type": {
+        "Règlement": 2,
+        "Accord intercantonal": 1
+      }
+    },
     {
       "identifier": "E",
       "title": "Droit civil et droit pénal, organisation judiciaire et procédure",
@@ -61,33 +92,126 @@
     {
       "identifier": "J",
       "title": "Législation sociale",
-      "total": 4,
-      "own": 4,
+      "total": 6,
+      "own": 6,
       "by_type": {
-        "Règlement": 3,
+        "Règlement": 5,
         "Loi": 1
+      }
+    },
+    {
+      "identifier": "K",
+      "title": "Santé",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Règlement": 1
       }
     },
     {
       "identifier": "L",
       "title": "Domaine public et travaux",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
+        "Règlement": 1,
         "Accord intercantonal": 1
       }
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "identifier": "1",
+      "title": "Staat",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Loi": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.10",
+                  "title": "Gleichstellung von Mann und Frau",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Règlement": 3,
+        "Accord intercantonal": 1
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.50.40",
+              "title": "Landwirtschaft",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.80",
           "title": "Sonderpädagogik",
@@ -104,6 +228,26 @@
               "own": 1,
               "by_type": {
                 "Règlement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Accord intercantonal": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.30",
+              "title": "Ausbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Accord intercantonal": 1
               }
             }
           ]
@@ -144,31 +288,49 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Règlement": 2,
+        "Règlement": 5,
         "Loi": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 3
           },
           "children": [
             {
-              "identifier": "8.10.30",
-              "title": "Medizinische Berufe",
+              "identifier": "8.10.10",
+              "title": "Ethik",
               "total": 1,
-              "own": 0,
+              "own": 1,
               "by_type": {
                 "Règlement": 1
+              }
+            },
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Règlement": 2
               },
               "children": [
+                {
+                  "identifier": "8.10.30.30",
+                  "title": "Krankenpflegepersonal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                },
                 {
                   "identifier": "8.10.30.50",
                   "title": "Chiropraktiker, Physiotherapeuten",
@@ -185,19 +347,19 @@
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 2
           },
           "children": [
             {
               "identifier": "8.30.40",
               "title": "Ergänzungsleistungen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Règlement": 1
+                "Règlement": 2
               }
             }
           ]
@@ -257,7 +419,7 @@
     }
   ],
   "languages_available": {
-    "fr": 7
+    "fr": 15
   },
   "available_years_for_entity": [
     "1564",
@@ -268,28 +430,48 @@
     "1817",
     "1834",
     "1847",
+    "1849",
+    "1856",
     "1861",
+    "1872",
+    "1875",
     "1878",
+    "1881",
     "1887",
     "1889",
+    "1892",
+    "1895",
     "1899",
+    "1901",
+    "1902",
+    "1903",
     "1907",
     "1909",
     "1918",
     "1923",
+    "1925",
+    "1927",
+    "1928",
     "1929",
     "1930",
+    "1931",
     "1934",
     "1937",
     "1940",
+    "1941",
+    "1942",
     "1943",
+    "1944",
+    "1945",
     "1946",
+    "1947",
     "1948",
     "1950",
     "1951",
     "1952",
     "1953",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",
@@ -299,11 +481,13 @@
     "1962",
     "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
     "1968",
     "1969",
     "1970",
+    "1971",
     "1973",
     "1974",
     "1975",

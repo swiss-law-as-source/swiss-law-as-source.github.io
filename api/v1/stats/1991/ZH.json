@@ -1,21 +1,38 @@
 {
   "year": "1991",
   "entity": "ZH",
-  "total": 7,
-  "categorized": 7,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
         "172 Regierungsrat und kantonale Verwaltung": 1,
+        "212.5 Obergericht": 1,
+        "212.7 Kassationsgericht": 1,
         "410 Allgemeines": 1,
+        "813.2 Spitalplanung und -finanzierung": 1,
         "821 Arbeitsvertrag. Arbeitsrechtliche Streitigkeiten": 1
       },
       "by_global_category": {
+        "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 2,
         "8.70.60 Spenden und gemeinnützige Sammlungen": 1,
         "4.90.20 Löhne, Entschädigungen": 1,
         "2.20.10.40.20.10 Hausangestellte": 1
+      }
+    },
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "132 Finanzausgleich und Staatsbeiträge": 1,
+        "710 Allgemeines": 1,
+        "861 Feuerpolizei und Feuerwehrwesen": 1
+      },
+      "by_global_category": {
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "7.60.80 Umweltgefährdende Stoffe": 1,
+        "5.20.30.20 Brandschutz": 1
       }
     },
     "Gesetz": {
@@ -29,15 +46,13 @@
         "7.70.20 Tierschutz": 1
       }
     },
-    "Verordnung": {
+    "Reglement": {
       "total": 2,
       "by_topic": {
-        "132 Finanzausgleich und Staatsbeiträge": 1,
-        "861 Feuerpolizei und Feuerwehrwesen": 1
+        "412.1 Grundlagen": 2
       },
       "by_global_category": {
-        "6.10.30 Staatsbeiträge, Subventionen": 1,
-        "5.20.30.20 Brandschutz": 1
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 2
       }
     }
   },
@@ -98,20 +113,73 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Bildung – Dokumentation – Kultur",
-      "total": 1,
+      "identifier": "2",
+      "title": "Gerichtsorganisation – Zivilrecht – Notariat – Grundbuch",
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Gerichtsorganisation",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "212",
+              "title": "Gerichte",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "212.5",
+                  "title": "Obergericht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "212.7",
+                  "title": "Kassationsgericht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bildung – Dokumentation – Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Reglement": 2,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Bildung",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Reglement": 2,
             "Anderes": 1
           },
           "children": [
@@ -123,6 +191,26 @@
               "by_type": {
                 "Anderes": 1
               }
+            },
+            {
+              "identifier": "412",
+              "title": "Volksschule",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Reglement": 2
+              },
+              "children": [
+                {
+                  "identifier": "412.1",
+                  "title": "Grundlagen",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Reglement": 2
+                  }
+                }
+              ]
             }
           ]
         }
@@ -160,15 +248,77 @@
       ]
     },
     {
-      "identifier": "8",
-      "title": "Gesundheit – Arbeit – Soziale Sicherheit",
-      "total": 2,
+      "identifier": "7",
+      "title": "Raumplanung – Baurecht – Umwelt – Energie – Verkehr",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "71",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "710",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit – Arbeit – Soziale Sicherheit",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "813",
+              "title": "Spitäler",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "813.2",
+                  "title": "Spitalplanung und -finanzierung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "82",
           "title": "Arbeit",
@@ -213,6 +363,59 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 2
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.20",
+                      "title": "Obere Gerichte, Bundesgerichte",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Anderes": 2
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht",
@@ -280,12 +483,33 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Reglement": 2,
         "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 2
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Reglement": 2
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.90",
           "title": "Lehrkörper",
@@ -387,12 +611,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.80",
+              "title": "Umweltgefährdende Stoffe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -448,7 +693,7 @@
     }
   ],
   "languages_available": {
-    "de": 7
+    "de": 13
   },
   "available_years_for_entity": [
     "1825",
@@ -459,6 +704,8 @@
     "1879",
     "1880",
     "1886",
+    "1899",
+    "1900",
     "1901",
     "1902",
     "1908",
@@ -467,25 +714,35 @@
     "1916",
     "1919",
     "1920",
+    "1921",
     "1922",
     "1925",
     "1926",
     "1927",
+    "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1936",
     "1937",
     "1938",
     "1942",
     "1943",
+    "1944",
     "1945",
+    "1946",
     "1948",
+    "1949",
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1963",
@@ -514,6 +771,7 @@
     "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
     "1991",
     "1992",

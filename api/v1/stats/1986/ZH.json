@@ -1,40 +1,51 @@
 {
   "year": "1986",
   "entity": "ZH",
-  "total": 6,
-  "categorized": 6,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "173 Bezirksverwaltung": 1,
-        "632 Erbschafts- und Schenkungssteuer": 1
-      },
-      "by_global_category": {
-        "1.10.50.10 Gebietseinteilung, Bezirke": 1,
-        "6.20.40 Erbschafts- und Schenkungssteuern": 1
-      }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "213 Untersuchungs- und Anklagebehörden": 1,
-        "61 Finanzhaushalt": 1
-      },
-      "by_global_category": {
-        "1.20.70.10.10.20 Staatsanwaltschaft": 1
-      }
-    },
     "Verordnung": {
-      "total": 2,
+      "total": 6,
       "by_topic": {
+        "412.3 Lehrpersonen an der Volksschule. Staatsbeiträge": 2,
+        "413.3 Berufsbildung": 1,
+        "631.3 Besteuerung der natürlichen und juristischen Personen": 1,
         "632 Erbschafts- und Schenkungssteuer": 1,
         "855 Pflege": 1
       },
       "by_global_category": {
+        "4.120.20 Schulgemeinden": 1,
+        "2.10.10.20.10 BVG-Stiftungen": 1,
         "6.20.40 Erbschafts- und Schenkungssteuern": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1
+      }
+    },
+    "Anderes": {
+      "total": 4,
+      "by_topic": {
+        "181.7 Diakonische Mitarbeiter": 1,
+        "213 Untersuchungs- und Anklagebehörden": 1,
+        "415.1 Allgemeines": 1,
+        "61 Finanzhaushalt": 1
+      },
+      "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "1.20.70.10.10.20 Staatsanwaltschaft": 1,
+        "4.120.60 Schulbauten": 1
+      }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "173 Bezirksverwaltung": 1,
+        "413.4 Hauswirtschaft": 1,
+        "632 Erbschafts- und Schenkungssteuer": 1
+      },
+      "by_global_category": {
+        "1.10.50.10 Gebietseinteilung, Bezirke": 1,
+        "4.30.10.10 Hauswirtschaftliche Ausbildung": 1,
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1
       }
     }
   },
@@ -42,10 +53,11 @@
     {
       "identifier": "1",
       "title": "Staat – Volk – Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -65,6 +77,37 @@
               "by_type": {
                 "Gesetz": 1
               }
+            }
+          ]
+        },
+        {
+          "identifier": "18",
+          "title": "Kirche und Staat. Religionsgemeinschaften",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "181",
+              "title": "Evangelisch-reformierte Landeskirche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "181.7",
+                  "title": "Diakonische Mitarbeiter",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -102,14 +145,110 @@
       ]
     },
     {
-      "identifier": "6",
-      "title": "Finanzen – Steuern",
-      "total": 3,
+      "identifier": "4",
+      "title": "Bildung – Dokumentation – Kultur",
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Verordnung": 3,
         "Gesetz": 1,
-        "Verordnung": 1
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Bildung",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3,
+            "Gesetz": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "412",
+              "title": "Volksschule",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
+              },
+              "children": [
+                {
+                  "identifier": "412.3",
+                  "title": "Lehrpersonen an der Volksschule. Staatsbeiträge",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "413",
+              "title": "Mittelschulen. Berufsbildung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.3",
+                  "title": "Berufsbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "413.4",
+                  "title": "Hauswirtschaft",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "415",
+              "title": "Universität",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "415.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen – Steuern",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
+        "Anderes": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -124,13 +263,33 @@
         {
           "identifier": "63",
           "title": "Steuern",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "631",
+              "title": "Staats- und Gemeindesteuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "631.3",
+                  "title": "Besteuerung der natürlichen und juristischen Personen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "632",
               "title": "Erbschafts- und Schenkungssteuer",
@@ -181,11 +340,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Anderes": 1
+        "Anderes": 2,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -271,6 +430,153 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.10",
+              "title": "Personenrecht, Zivilstand",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.10.20",
+                  "title": "Stiftungen, Stiftungsaufsicht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "2.10.10.20.10",
+                      "title": "BVG-Stiftungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1,
+        "Verordnung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.10",
+              "title": "Berufsfachschulen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "4.30.10.10",
+                  "title": "Hauswirtschaftliche Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.20",
+              "title": "Schulgemeinden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "4.120.60",
+              "title": "Schulbauten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -330,7 +636,7 @@
     }
   ],
   "languages_available": {
-    "de": 6
+    "de": 13
   },
   "available_years_for_entity": [
     "1825",
@@ -341,6 +647,8 @@
     "1879",
     "1880",
     "1886",
+    "1899",
+    "1900",
     "1901",
     "1902",
     "1908",
@@ -349,25 +657,35 @@
     "1916",
     "1919",
     "1920",
+    "1921",
     "1922",
     "1925",
     "1926",
     "1927",
+    "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1936",
     "1937",
     "1938",
     "1942",
     "1943",
+    "1944",
     "1945",
+    "1946",
     "1948",
+    "1949",
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1963",
@@ -396,6 +714,7 @@
     "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
     "1991",
     "1992",

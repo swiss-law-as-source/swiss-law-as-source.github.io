@@ -1,17 +1,18 @@
 {
   "year": "2016",
   "entity": "GE",
-  "total": 9,
-  "categorized": 9,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "C 1 Instruction publique": 3,
         "C 2 Formation professionnelle": 1,
         "E 2 Organisation judiciaire et pouvoir judiciaire": 1,
         "E 4 Droit pénal et procédure pénale": 1,
+        "F 1 Organisation de la police": 1,
         "I 1 Commerce, industrie et tourisme": 1
       },
       "by_global_category": {
@@ -23,24 +24,34 @@
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
-        "A 2 Constitution et principes généraux": 1,
-        "M 1 Améliorations foncières, droit foncier rural": 1
+        "A 2 Constitution et principes généraux": 2,
+        "M 1 Améliorations foncières, droit foncier rural": 1,
+        "M 3 Animaux": 1
       },
       "by_global_category": {
-        "9.20.30 Bäuerliches Bodenrecht": 1
+        "1.30.40 Aufgabenteilung Kanton-Gemeinden": 1,
+        "9.20.30 Bäuerliches Bodenrecht": 1,
+        "9.20.90.20 Viehhandel": 1
       }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "J 1 Relations du travail": 2
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "A",
       "title": "Structure cantonale et principes fondamentaux",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Loi": 1
+        "Loi": 2
       }
     },
     {
@@ -62,6 +73,15 @@
       }
     },
     {
+      "identifier": "F",
+      "title": "Police",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Règlement": 1
+      }
+    },
+    {
       "identifier": "I",
       "title": "Commerce, industrie, arts et métiers, logement",
       "total": 1,
@@ -71,12 +91,21 @@
       }
     },
     {
+      "identifier": "J",
+      "title": "Législation sociale",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Autre": 2
+      }
+    },
+    {
       "identifier": "M",
       "title": "Agriculture, forêts, chasse et pêche",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Loi": 1
+        "Loi": 2
       }
     }
   ],
@@ -84,10 +113,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Loi": 1
       },
       "children": [
         {
@@ -140,6 +170,26 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.30",
+          "title": "Gemeinden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "1.30.40",
+              "title": "Aufgabenteilung Kanton-Gemeinden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
+              }
             }
           ]
         }
@@ -239,19 +289,19 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Loi": 2
       },
       "children": [
         {
           "identifier": "9.20",
           "title": "Landwirtschaft",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Loi": 1
+            "Loi": 2
           },
           "children": [
             {
@@ -262,6 +312,26 @@
               "by_type": {
                 "Loi": 1
               }
+            },
+            {
+              "identifier": "9.20.90",
+              "title": "Tierwirtschaftliche Produktion",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.20.90.20",
+                  "title": "Viehhandel",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -269,7 +339,7 @@
     }
   ],
   "languages_available": {
-    "fr": 9
+    "fr": 14
   },
   "available_years_for_entity": [
     "1564",
@@ -280,28 +350,48 @@
     "1817",
     "1834",
     "1847",
+    "1849",
+    "1856",
     "1861",
+    "1872",
+    "1875",
     "1878",
+    "1881",
     "1887",
     "1889",
+    "1892",
+    "1895",
     "1899",
+    "1901",
+    "1902",
+    "1903",
     "1907",
     "1909",
     "1918",
     "1923",
+    "1925",
+    "1927",
+    "1928",
     "1929",
     "1930",
+    "1931",
     "1934",
     "1937",
     "1940",
+    "1941",
+    "1942",
     "1943",
+    "1944",
+    "1945",
     "1946",
+    "1947",
     "1948",
     "1950",
     "1951",
     "1952",
     "1953",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",
@@ -311,11 +401,13 @@
     "1962",
     "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
     "1968",
     "1969",
     "1970",
+    "1971",
     "1973",
     "1974",
     "1975",

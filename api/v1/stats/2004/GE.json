@@ -1,29 +1,48 @@
 {
   "year": "2004",
   "entity": "GE",
-  "total": 10,
-  "categorized": 10,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 6,
+      "total": 11,
       "by_topic": {
-        "B 4 Organisation de l’administration": 1,
+        "B 4 Organisation de l’administration": 2,
+        "J 3 Assurances contre la maladie et les accidents": 2,
         "E 1 Droit civil et droit des obligations": 1,
+        "E 2 Organisation judiciaire et pouvoir judiciaire": 1,
         "F 1 Organisation de la police": 1,
         "G 3 Défense générale": 1,
-        "J 3 Assurances contre la maladie et les accidents": 1,
+        "I 2 Professions et métiers divers": 1,
+        "J 2 Placement et chômage": 1,
         "L 1 Voies de communication et urbanisme": 1
       },
       "by_global_category": {
-        "5.20.20 Landesversorgung": 1
+        "1.10.120 Information der Öffentlichkeit": 1,
+        "5.20.20 Landesversorgung": 1,
+        "4.100.20 Schulgelder": 1
+      }
+    },
+    "Gesetz": {
+      "total": 4,
+      "by_topic": {
+        "D 3 Impôts et taxes": 1,
+        "I 2 Professions et métiers divers": 1,
+        "I 3 Spectacles, divertissements, jeux et loteries": 1,
+        "J 3 Assurances contre la maladie et les accidents": 1
+      },
+      "by_global_category": {
+        "6.30.10 Alkohol": 1,
+        "9.50.10.60.30 Spielbanken": 1,
+        "8.30.70 UVG": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "D 3 Impôts et taxes": 1,
-        "J 1 Relations du travail": 1
+        "J 1 Relations du travail": 2,
+        "D 3 Impôts et taxes": 1
       },
       "by_global_category": {
         "6.20.40 Erbschafts- und Schenkungssteuern": 1
@@ -37,43 +56,35 @@
       "by_global_category": {
         "1.10.70.20.20 Zwangsmassnahmen": 1
       }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "J 3 Assurances contre la maladie et les accidents": 1
-      },
-      "by_global_category": {
-        "8.30.70 UVG": 1
-      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "B",
       "title": "Organisation du canton",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 2
       }
     },
     {
       "identifier": "D",
       "title": "Finances et contributions",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Autre": 1
+        "Autre": 1,
+        "Loi": 1
       }
     },
     {
       "identifier": "E",
       "title": "Droit civil et droit pénal, organisation judiciaire et procédure",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 2
       }
     },
     {
@@ -96,13 +107,23 @@
       }
     },
     {
-      "identifier": "J",
-      "title": "Législation sociale",
+      "identifier": "I",
+      "title": "Commerce, industrie, arts et métiers, logement",
       "total": 3,
       "own": 3,
       "by_type": {
-        "Autre": 1,
-        "Règlement": 1,
+        "Loi": 2,
+        "Règlement": 1
+      }
+    },
+    {
+      "identifier": "J",
+      "title": "Législation sociale",
+      "total": 6,
+      "own": 6,
+      "by_type": {
+        "Règlement": 3,
+        "Autre": 2,
         "Loi": 1
       }
     },
@@ -120,19 +141,21 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Accord intercantonal": 1
+        "Accord intercantonal": 1,
+        "Règlement": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Accord intercantonal": 1
+            "Accord intercantonal": 1,
+            "Règlement": 1
           },
           "children": [
             {
@@ -165,6 +188,46 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "1.10.120",
+              "title": "Information der Öffentlichkeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.20",
+              "title": "Schulgelder",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
             }
           ]
         }
@@ -204,10 +267,11 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Autre": 1
+        "Autre": 1,
+        "Loi": 1
       },
       "children": [
         {
@@ -226,6 +290,26 @@
               "own": 1,
               "by_type": {
                 "Autre": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.10",
+              "title": "Alkohol",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Loi": 1
               }
             }
           ]
@@ -262,10 +346,63 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.60",
+                  "title": "Glücksspiel und Lotterien",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Loi": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "9.50.10.60.30",
+                      "title": "Spielbanken",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Loi": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "fr": 10
+    "fr": 19
   },
   "available_years_for_entity": [
     "1564",
@@ -276,28 +413,48 @@
     "1817",
     "1834",
     "1847",
+    "1849",
+    "1856",
     "1861",
+    "1872",
+    "1875",
     "1878",
+    "1881",
     "1887",
     "1889",
+    "1892",
+    "1895",
     "1899",
+    "1901",
+    "1902",
+    "1903",
     "1907",
     "1909",
     "1918",
     "1923",
+    "1925",
+    "1927",
+    "1928",
     "1929",
     "1930",
+    "1931",
     "1934",
     "1937",
     "1940",
+    "1941",
+    "1942",
     "1943",
+    "1944",
+    "1945",
     "1946",
+    "1947",
     "1948",
     "1950",
     "1951",
     "1952",
     "1953",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",
@@ -307,11 +464,13 @@
     "1962",
     "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
     "1968",
     "1969",
     "1970",
+    "1971",
     "1973",
     "1974",
     "1975",

@@ -1,10 +1,55 @@
 {
   "year": "1999",
   "entity": "NE",
-  "total": 22,
-  "categorized": 22,
+  "total": 41,
+  "categorized": 41,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 13,
+      "by_topic": {
+        "416.6 Conventions intercantonales": 6,
+        "410.1 Dispositions générales": 2,
+        "60 Gestion financière": 2,
+        "10 Constitution et autres actes fondamentaux": 1,
+        "354 Conventions intercantonales": 1,
+        "418 Bourses": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 2,
+        "4.120.30 Schulaufsicht": 1,
+        "4.50.20 Soziales": 1,
+        "4.180.10.10 Film, Theater, Unterhaltung": 1,
+        "4.100.10 Stipendien": 1,
+        "6.10.10 Budget und Rechnung": 1,
+        "1.10.40 Interkantonale Zusammenarbeit": 1
+      }
+    },
+    "Anderes": {
+      "total": 12,
+      "by_topic": {
+        "132 Établissement et séjour": 2,
+        "916.42 Lutte contre les épizooties": 2,
+        "213.2 Filiation": 1,
+        "410.2 Autorités scolaires": 1,
+        "414.1 Dispositions générales": 1,
+        "416.6 Conventions intercantonales": 1,
+        "740 Dispositions générales": 1,
+        "813.1 Placement": 1,
+        "821.12 Application de la LAMA": 1,
+        "901 Politique régionale": 1
+      },
+      "by_global_category": {
+        "1.20.20.60 Verwaltungsgebühren": 1,
+        "1.10.70.20.10 Asylwesen": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "4.120.30 Schulaufsicht": 1,
+        "8.30.60.10.20 Vereinbarungen": 1,
+        "9.40 Wirtschaftliche Entwicklung in Berggebieten": 1,
+        "9.20.120 Tierseuchen": 1,
+        "8.10.30.100 Tierärzte": 1
+      }
+    },
     "Gesetz": {
       "total": 7,
       "by_topic": {
@@ -33,21 +78,6 @@
         "4.50.10 Pädagogik": 1
       }
     },
-    "Anderes": {
-      "total": 5,
-      "by_topic": {
-        "132 Établissement et séjour": 2,
-        "410.2 Autorités scolaires": 1,
-        "813.1 Placement": 1,
-        "916.42 Lutte contre les épizooties": 1
-      },
-      "by_global_category": {
-        "1.20.20.60 Verwaltungsgebühren": 1,
-        "1.10.70.20.10 Asylwesen": 1,
-        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
-        "8.10.30.100 Tierärzte": 1
-      }
-    },
     "Reglement": {
       "total": 3,
       "by_topic": {
@@ -59,26 +89,29 @@
         "8.10.130.20 Wasserversorgung": 1,
         "9.20.10 Förderungsmassnahmen": 1
       }
-    },
-    "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
-      "by_topic": {
-        "416.6 Conventions intercantonales": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "État – Peuple – Autorités",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Loi": 3,
-        "Autre": 2
+        "Autre": 2,
+        "Ordonnance parlementaire (décret)": 1
       },
       "children": [
+        {
+          "identifier": "10",
+          "title": "Constitution et autres actes fondamentaux",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1
+          }
+        },
         {
           "identifier": "12",
           "title": "Maintien de la tranquillité et de l'ordre public",
@@ -143,19 +176,21 @@
     {
       "identifier": "2",
       "title": "Droit privé – Procédure civile – Exécution",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Loi": 1
+        "Loi": 1,
+        "Autre": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Dispositions complémentaires et d'exécution du code civil",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Loi": 1
+            "Loi": 1,
+            "Autre": 1
           },
           "children": [
             {
@@ -177,6 +212,57 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "213",
+              "title": "Droit de la famille",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "213.2",
+                  "title": "Filiation",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Droit pénal – Procédure pénale – Exécution",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Ordonnance parlementaire (décret)": 1
+      },
+      "children": [
+        {
+          "identifier": "35",
+          "title": "Exécution",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1
+          },
+          "children": [
+            {
+              "identifier": "354",
+              "title": "Conventions intercantonales",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
+              }
             }
           ]
         }
@@ -185,33 +271,34 @@
     {
       "identifier": "4",
       "title": "Enseignement – Science – Culture – Environnement",
-      "total": 7,
+      "total": 17,
       "own": 0,
       "by_type": {
+        "Ordonnance parlementaire (décret)": 9,
         "Accord intercantonal": 4,
-        "Autre": 1,
-        "Loi": 1,
-        "Ordonnance parlementaire (décret)": 1
+        "Autre": 3,
+        "Loi": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Enseignement",
-          "total": 7,
+          "total": 17,
           "own": 0,
           "by_type": {
+            "Ordonnance parlementaire (décret)": 9,
             "Accord intercantonal": 4,
-            "Autre": 1,
-            "Loi": 1,
-            "Ordonnance parlementaire (décret)": 1
+            "Autre": 3,
+            "Loi": 1
           },
           "children": [
             {
               "identifier": "410",
               "title": "Scolarité obligatoire",
-              "total": 3,
+              "total": 5,
               "own": 0,
               "by_type": {
+                "Ordonnance parlementaire (décret)": 2,
                 "Accord intercantonal": 1,
                 "Autre": 1,
                 "Loi": 1
@@ -220,9 +307,10 @@
                 {
                   "identifier": "410.1",
                   "title": "Dispositions générales",
-                  "total": 1,
-                  "own": 1,
+                  "total": 3,
+                  "own": 3,
                   "by_type": {
+                    "Ordonnance parlementaire (décret)": 2,
                     "Accord intercantonal": 1
                   }
                 },
@@ -258,26 +346,57 @@
               ]
             },
             {
-              "identifier": "416",
-              "title": "Université",
-              "total": 4,
+              "identifier": "414",
+              "title": "Formation professionnelle",
+              "total": 1,
               "own": 0,
               "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.1",
+                  "title": "Dispositions générales",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "416",
+              "title": "Université",
+              "total": 10,
+              "own": 0,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 6,
                 "Accord intercantonal": 3,
-                "Ordonnance parlementaire (décret)": 1
+                "Autre": 1
               },
               "children": [
                 {
                   "identifier": "416.6",
                   "title": "Conventions intercantonales",
-                  "total": 4,
-                  "own": 4,
+                  "total": 10,
+                  "own": 10,
                   "by_type": {
+                    "Ordonnance parlementaire (décret)": 6,
                     "Accord intercantonal": 3,
-                    "Ordonnance parlementaire (décret)": 1
+                    "Autre": 1
                   }
                 }
               ]
+            },
+            {
+              "identifier": "418",
+              "title": "Bourses",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
+              }
             }
           ]
         }
@@ -286,12 +405,22 @@
     {
       "identifier": "6",
       "title": "Finances",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Ordonnance parlementaire (décret)": 2,
         "Loi": 1
       },
       "children": [
+        {
+          "identifier": "60",
+          "title": "Gestion financière",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 2
+          }
+        },
         {
           "identifier": "63",
           "title": "Contributions publiques",
@@ -317,10 +446,11 @@
     {
       "identifier": "7",
       "title": "Travaux publics – Énergie – Transports et communications",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Autre": 1
       },
       "children": [
         {
@@ -364,16 +494,36 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "74",
+          "title": "Énergie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "740",
+              "title": "Dispositions générales",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "8",
       "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Autre": 1,
+        "Autre": 2,
         "Règlement": 1
       },
       "children": [
@@ -410,28 +560,90 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "82",
+          "title": "Assurances sociales",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "821",
+              "title": "Assurance-maladie et accidents",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "821.1",
+                  "title": "Assurance-maladie",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "821.12",
+                      "title": "Application de la LAMA",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Autre": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "9",
       "title": "Économie",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Autre": 3,
         "Règlement": 1,
-        "Autre": 1,
         "Accord intercantonal": 1
       },
       "children": [
         {
-          "identifier": "91",
-          "title": "Agriculture",
-          "total": 2,
+          "identifier": "90",
+          "title": "Développement général de l'économie",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Règlement": 1,
             "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "901",
+              "title": "Politique régionale",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "91",
+          "title": "Agriculture",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Autre": 2,
+            "Règlement": 1
           },
           "children": [
             {
@@ -446,19 +658,19 @@
             {
               "identifier": "916",
               "title": "Production",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Autre": 1
+                "Autre": 2
               },
               "children": [
                 {
                   "identifier": "916.42",
                   "title": "Lutte contre les épizooties",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Autre": 1
+                    "Autre": 2
                   }
                 }
               ]
@@ -503,23 +715,34 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Autre": 2,
+        "Ordonnance parlementaire (décret)": 1,
         "Loi": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
+            "Ordonnance parlementaire (décret)": 1,
             "Loi": 1,
             "Autre": 1
           },
           "children": [
+            {
+              "identifier": "1.10.40",
+              "title": "Interkantonale Zusammenarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
+              }
+            },
             {
               "identifier": "1.10.60",
               "title": "Bürgerrecht",
@@ -640,19 +863,21 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "total": 10,
       "own": 0,
       "by_type": {
+        "Ordonnance parlementaire (décret)": 6,
         "Accord intercantonal": 2,
-        "Autre": 1
+        "Autre": 2
       },
       "children": [
         {
           "identifier": "4.10",
           "title": "Vorschule, Primarstufe, Sekundarstufe I",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
+            "Ordonnance parlementaire (décret)": 2,
             "Accord intercantonal": 1,
             "Autre": 1
           },
@@ -669,9 +894,10 @@
             {
               "identifier": "4.10.30",
               "title": "Volksschule, Primarschule, Sekundarschule I",
-              "total": 1,
-              "own": 1,
+              "total": 3,
+              "own": 3,
               "by_type": {
+                "Ordonnance parlementaire (décret)": 2,
                 "Autre": 1
               }
             }
@@ -680,10 +906,11 @@
         {
           "identifier": "4.50",
           "title": "Tertiärstufe: Fachhochschulen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Accord intercantonal": 1
+            "Accord intercantonal": 1,
+            "Ordonnance parlementaire (décret)": 1
           },
           "children": [
             {
@@ -694,6 +921,119 @@
               "by_type": {
                 "Accord intercantonal": 1
               }
+            },
+            {
+              "identifier": "4.50.20",
+              "title": "Soziales",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.10",
+              "title": "Stipendien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1,
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.30",
+              "title": "Schulaufsicht",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1,
+                "Autre": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.10",
+              "title": "Kunst",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "4.180.10.10",
+                  "title": "Film, Theater, Unterhaltung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Ordonnance parlementaire (décret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Ordonnance parlementaire (décret)": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.10",
+              "title": "Budget und Rechnung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
+              }
             }
           ]
         }
@@ -702,10 +1042,10 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Autre": 1,
+        "Autre": 2,
         "Règlement": 1,
         "Loi": 1
       },
@@ -763,6 +1103,48 @@
           ]
         },
         {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.10",
+                  "title": "Tarife",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "8.30.60.10.20",
+                      "title": "Vereinbarungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Autre": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "identifier": "8.70",
           "title": "Fürsorge",
           "total": 1,
@@ -787,19 +1169,21 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Autre": 2,
         "Règlement": 1
       },
       "children": [
         {
           "identifier": "9.20",
           "title": "Landwirtschaft",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 1,
+            "Autre": 1
           },
           "children": [
             {
@@ -810,31 +1194,63 @@
               "by_type": {
                 "Règlement": 1
               }
+            },
+            {
+              "identifier": "9.20.120",
+              "title": "Tierseuchen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
             }
           ]
+        },
+        {
+          "identifier": "9.40",
+          "title": "Wirtschaftliche Entwicklung in Berggebieten",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Autre": 1
+          }
         }
       ]
     }
   ],
   "languages_available": {
-    "fr": 22
+    "fr": 41
   },
   "available_years_for_entity": [
+    "1832",
     "1858",
+    "1864",
+    "1866",
+    "1871",
     "1873",
     "1874",
+    "1885",
+    "1887",
+    "1888",
     "1889",
     "1894",
     "1895",
+    "1896",
+    "1900",
+    "1902",
     "1905",
     "1907",
     "1908",
+    "1909",
     "1910",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1916",
+    "1919",
     "1920",
+    "1923",
     "1924",
     "1925",
     "1927",
@@ -842,15 +1258,22 @@
     "1930",
     "1931",
     "1933",
+    "1934",
     "1935",
     "1937",
+    "1938",
+    "1941",
+    "1942",
     "1943",
     "1945",
     "1946",
     "1947",
     "1948",
+    "1949",
     "1951",
     "1953",
+    "1954",
+    "1955",
     "1957",
     "1958",
     "1959",

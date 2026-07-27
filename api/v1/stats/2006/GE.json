@@ -1,39 +1,57 @@
 {
   "year": "2006",
   "entity": "GE",
-  "total": 15,
-  "categorized": 15,
+  "total": 27,
+  "categorized": 27,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 11,
+      "total": 18,
       "by_topic": {
         "K 3 Professions médicales et auxiliaires": 5,
         "K 1 Police sanitaire, lutte contre les maladies": 3,
+        "E 1 Droit civil et droit des obligations": 2,
+        "K 4 Médicaments, stupéfiants, produits divers": 2,
+        "D 3 Impôts et taxes": 1,
         "F 2 Séjour et établissements, police des étrangers, recensement": 1,
-        "K 4 Médicaments, stupéfiants, produits divers": 1,
-        "L 2 Eaux et énergies": 1
+        "J 2 Placement et chômage": 1,
+        "L 2 Eaux et énergies": 1,
+        "L 7 Expropriation": 1,
+        "M 3 Animaux": 1
       },
       "by_global_category": {
-        "8.20.20.30 Personenfreizügigkeit": 1,
+        "8.20.20.30 Personenfreizügigkeit": 2,
+        "8.10.10 Ethik": 2,
+        "2.10.10.10 Eingetragene Partnerschaft": 1,
+        "2.10.40.30 Grundbuch und Grundbuchvermessung": 1,
         "1.20.20.30.10 Departemente": 1,
         "8.10.90 Rettungsdienst": 1,
         "8.10.130.40 Bestattungswesen, Friedhöfe": 1,
         "8.10.20.30 Patientenrechte": 1,
-        "8.10.10 Ethik": 1,
-        "7.60.70 Gifte, Chemikalien": 1
+        "7.60.70 Gifte, Chemikalien": 1,
+        "7.20 Enteignung": 1,
+        "5.30.20.10 Hunde, gefährliche Tiere": 1
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "C 2 Formation professionnelle": 1,
         "E 4 Droit pénal et procédure pénale": 1,
-        "H 1 Circulation": 1
+        "H 1 Circulation": 1,
+        "K 1 Police sanitaire, lutte contre les maladies": 1
       },
       "by_global_category": {
-        "7.50.10.10 Regionalverkehr": 1
+        "7.50.10.10 Regionalverkehr": 1,
+        "2.10.20.30 Fürsorgerischer Freiheitsentzug": 1
       }
+    },
+    "Anderes": {
+      "total": 4,
+      "by_topic": {
+        "J 1 Relations du travail": 4
+      },
+      "by_global_category": {}
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -54,11 +72,21 @@
       }
     },
     {
+      "identifier": "D",
+      "title": "Finances et contributions",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Règlement": 1
+      }
+    },
+    {
       "identifier": "E",
       "title": "Droit civil et droit pénal, organisation judiciaire et procédure",
-      "total": 2,
-      "own": 2,
+      "total": 4,
+      "own": 4,
       "by_type": {
+        "Règlement": 2,
         "Loi": 1,
         "Accord intercantonal": 1
       }
@@ -82,17 +110,37 @@
       }
     },
     {
+      "identifier": "J",
+      "title": "Législation sociale",
+      "total": 5,
+      "own": 5,
+      "by_type": {
+        "Autre": 4,
+        "Règlement": 1
+      }
+    },
+    {
       "identifier": "K",
       "title": "Santé",
-      "total": 9,
-      "own": 9,
+      "total": 11,
+      "own": 11,
       "by_type": {
-        "Règlement": 9
+        "Règlement": 10,
+        "Loi": 1
       }
     },
     {
       "identifier": "L",
       "title": "Domaine public et travaux",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Règlement": 2
+      }
+    },
+    {
+      "identifier": "M",
+      "title": "Agriculture, forêts, chasse et pêche",
       "total": 1,
       "own": 1,
       "by_type": {
@@ -155,15 +203,150 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Loi": 1,
+        "Règlement": 2,
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Règlement": 2,
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.10",
+              "title": "Personenrecht, Zivilstand",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.10.10",
+                  "title": "Eingetragene Partnerschaft",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "2.10.20",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.20.30",
+                  "title": "Fürsorgerischer Freiheitsentzug",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "2.10.40",
+              "title": "Sachenrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.40.30",
+                  "title": "Grundbuch und Grundbuchvermessung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
         "Règlement": 1
       },
       "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.20",
+              "title": "Öffentliche Ruhe und Ordnung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.20.10",
+                  "title": "Hunde, gefährliche Tiere",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Règlement": 2,
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "7.20",
+          "title": "Enteignung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Règlement": 1
+          }
+        },
         {
           "identifier": "7.50",
           "title": "Verkehr",
@@ -220,28 +403,28 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Règlement": 5
+        "Règlement": 7
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 4,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Règlement": 4
+            "Règlement": 5
           },
           "children": [
             {
               "identifier": "8.10.10",
               "title": "Ethik",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Règlement": 1
+                "Règlement": 2
               }
             },
             {
@@ -298,28 +481,28 @@
         {
           "identifier": "8.20",
           "title": "Arbeitsrecht",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Règlement": 1
+            "Règlement": 2
           },
           "children": [
             {
               "identifier": "8.20.20",
               "title": "Arbeitsmarkt",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Règlement": 1
+                "Règlement": 2
               },
               "children": [
                 {
                   "identifier": "8.20.20.30",
                   "title": "Personenfreizügigkeit",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
-                    "Règlement": 1
+                    "Règlement": 2
                   }
                 }
               ]
@@ -330,7 +513,7 @@
     }
   ],
   "languages_available": {
-    "fr": 15
+    "fr": 27
   },
   "available_years_for_entity": [
     "1564",
@@ -341,28 +524,48 @@
     "1817",
     "1834",
     "1847",
+    "1849",
+    "1856",
     "1861",
+    "1872",
+    "1875",
     "1878",
+    "1881",
     "1887",
     "1889",
+    "1892",
+    "1895",
     "1899",
+    "1901",
+    "1902",
+    "1903",
     "1907",
     "1909",
     "1918",
     "1923",
+    "1925",
+    "1927",
+    "1928",
     "1929",
     "1930",
+    "1931",
     "1934",
     "1937",
     "1940",
+    "1941",
+    "1942",
     "1943",
+    "1944",
+    "1945",
     "1946",
+    "1947",
     "1948",
     "1950",
     "1951",
     "1952",
     "1953",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",
@@ -372,11 +575,13 @@
     "1962",
     "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
     "1968",
     "1969",
     "1970",
+    "1971",
     "1973",
     "1974",
     "1975",

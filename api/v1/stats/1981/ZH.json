@@ -1,38 +1,45 @@
 {
   "year": "1981",
   "entity": "ZH",
-  "total": 5,
-  "categorized": 5,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "722 Strassen": 1,
-        "851 Sozialhilfe": 1
-      },
-      "by_global_category": {
-        "8.70.10 Sozialhilfe": 1
-      }
-    },
     "Verordnung": {
-      "total": 2,
+      "total": 5,
       "by_topic": {
+        "700 Allgemeines": 2,
+        "181.6 Kirchen und Pfarrhäuser": 1,
         "851 Sozialhilfe": 1,
         "910 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
         "8.70.10 Sozialhilfe": 1,
         "9.20.10 Förderungsmassnahmen": 1
       }
     },
-    "Anderes": {
-      "total": 1,
+    "Gesetz": {
+      "total": 3,
       "by_topic": {
-        "181.6 Kirchen und Pfarrhäuser": 1
+        "722 Strassen": 1,
+        "851 Sozialhilfe": 1,
+        "935.3 Märkte und Reisendengewerbe. Unterhaltungsgewerbe": 1
       },
       "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 1
+        "8.70.10 Sozialhilfe": 1,
+        "9.50.10.50 Kino-, Theater- und Unterhaltungsgewerbe": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "181.6 Kirchen und Pfarrhäuser": 1,
+        "811.1 Universitäre Medizinalberufe": 1
+      },
+      "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "8.10.30.10 Ärzte": 1
       }
     }
   },
@@ -40,36 +47,40 @@
     {
       "identifier": "1",
       "title": "Staat – Volk – Behörden",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "18",
           "title": "Kirche und Staat. Religionsgemeinschaften",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "181",
               "title": "Evangelisch-reformierte Landeskirche",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Verordnung": 1,
                 "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "181.6",
                   "title": "Kirchen und Pfarrhäuser",
-                  "total": 1,
-                  "own": 1,
+                  "total": 2,
+                  "own": 2,
                   "by_type": {
+                    "Verordnung": 1,
                     "Anderes": 1
                   }
                 }
@@ -82,12 +93,33 @@
     {
       "identifier": "7",
       "title": "Raumplanung – Baurecht – Umwelt – Energie – Verkehr",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "70",
+          "title": "Raumplanung und öffentliches Baurecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "700",
+              "title": "Allgemeines",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 2
+              }
+            }
+          ]
+        },
         {
           "identifier": "72",
           "title": "Öffentliche Werke",
@@ -113,13 +145,45 @@
     {
       "identifier": "8",
       "title": "Gesundheit – Arbeit – Soziale Sicherheit",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Medizinalberufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.1",
+                  "title": "Universitäre Medizinalberufe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "85",
           "title": "Fürsorge",
@@ -147,10 +211,11 @@
     {
       "identifier": "9",
       "title": "Volkswirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -172,6 +237,37 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "93",
+          "title": "Industrie und Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "935",
+              "title": "Dienstleistungsgewerbe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "935.3",
+                  "title": "Märkte und Reisendengewerbe. Unterhaltungsgewerbe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -180,27 +276,30 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Verordnung": 1,
             "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.40.30",
               "title": "Evangelisch-Reformierte Kirche",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Verordnung": 1,
                 "Anderes": 1
               }
             }
@@ -211,13 +310,45 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Gesetz": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "8.70",
           "title": "Fürsorge",
@@ -245,10 +376,11 @@
     {
       "identifier": "9",
       "title": "Wirtschaft",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -270,12 +402,43 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "9.50",
+          "title": "Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "9.50.10",
+              "title": "Dienstleistungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.50.10.50",
+                  "title": "Kino-, Theater- und Unterhaltungsgewerbe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 10
   },
   "available_years_for_entity": [
     "1825",
@@ -286,6 +449,8 @@
     "1879",
     "1880",
     "1886",
+    "1899",
+    "1900",
     "1901",
     "1902",
     "1908",
@@ -294,25 +459,35 @@
     "1916",
     "1919",
     "1920",
+    "1921",
     "1922",
     "1925",
     "1926",
     "1927",
+    "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1936",
     "1937",
     "1938",
     "1942",
     "1943",
+    "1944",
     "1945",
+    "1946",
     "1948",
+    "1949",
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1963",
@@ -341,6 +516,7 @@
     "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
     "1991",
     "1992",

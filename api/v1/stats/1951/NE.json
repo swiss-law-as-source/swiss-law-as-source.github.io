@@ -1,17 +1,40 @@
 {
   "year": "1951",
   "entity": "NE",
-  "total": 2,
-  "categorized": 2,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 1,
+      "total": 5,
       "by_topic": {
-        "638 Arrangements fiscaux et double imposition": 1
+        "162.22 Tribunal des prud'hommes": 2,
+        "414.1 Dispositions générales": 1,
+        "638 Arrangements fiscaux et double imposition": 1,
+        "832.3 Établissements spécialisés pour personnes âgées": 1
       },
       "by_global_category": {
-        "6.20.120 Doppelbesteuerung": 1
+        "1.20.70.10.50 Arbeits- und Mietgericht": 2,
+        "6.20.120 Doppelbesteuerung": 1,
+        "8.70.30.10 Alters- und Pflegeheime": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "162.22 Tribunal des prud'hommes": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.50 Arbeits- und Mietgericht": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "631 Impôts directs de l'État et des communes": 1
+      },
+      "by_global_category": {
+        "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven": 1
       }
     },
     "Reglement": {
@@ -26,8 +49,54 @@
   },
   "by_topic_tree": [
     {
-      "identifier": "6",
-      "title": "Finances",
+      "identifier": "1",
+      "title": "État – Peuple – Autorités",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Autre": 2,
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "16",
+          "title": "Organisation judiciaire – Avocats et notaires",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Autre": 2,
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "162",
+              "title": "Autorités judiciaires",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Autre": 2,
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "162.22",
+                  "title": "Tribunal des prud'hommes",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Autre": 2,
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Enseignement – Science – Culture – Environnement",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -35,14 +104,67 @@
       },
       "children": [
         {
-          "identifier": "63",
-          "title": "Contributions publiques",
+          "identifier": "41",
+          "title": "Enseignement",
           "total": 1,
           "own": 0,
           "by_type": {
             "Autre": 1
           },
           "children": [
+            {
+              "identifier": "414",
+              "title": "Formation professionnelle",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.1",
+                  "title": "Dispositions générales",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finances",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Ordonnance parlementaire (décret)": 1,
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "63",
+          "title": "Contributions publiques",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1,
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "631",
+              "title": "Impôts directs de l'État et des communes",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
+              }
+            },
             {
               "identifier": "638",
               "title": "Arrangements fiscaux et double imposition",
@@ -59,10 +181,11 @@
     {
       "identifier": "8",
       "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Autre": 1
       },
       "children": [
         {
@@ -95,11 +218,100 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "83",
+          "title": "Assistance sociale",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Établissements spécialisés",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "832.3",
+                  "title": "Établissements spécialisés pour personnes âgées",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Autre": 2,
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Autre": 2,
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Autre": 2,
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 3,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 2,
+                    "Loi": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.50",
+                      "title": "Arbeits- und Mietgericht",
+                      "total": 3,
+                      "own": 3,
+                      "by_type": {
+                        "Autre": 2,
+                        "Loi": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
@@ -134,10 +346,12 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Règlement": 1
+        "Règlement": 1,
+        "Ordonnance parlementaire (décret)": 1,
+        "Autre": 1
       },
       "children": [
         {
@@ -159,29 +373,105 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordonnance parlementaire (décret)": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.20",
+              "title": "Arbeitsmarkt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Ordonnance parlementaire (décret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.20.10",
+                  "title": "Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Ordonnance parlementaire (décret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.10",
+                  "title": "Alters- und Pflegeheime",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "fr": 2
+    "fr": 8
   },
   "available_years_for_entity": [
+    "1832",
     "1858",
+    "1864",
+    "1866",
+    "1871",
     "1873",
     "1874",
+    "1885",
+    "1887",
+    "1888",
     "1889",
     "1894",
     "1895",
+    "1896",
+    "1900",
+    "1902",
     "1905",
     "1907",
     "1908",
+    "1909",
     "1910",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1916",
+    "1919",
     "1920",
+    "1923",
     "1924",
     "1925",
     "1927",
@@ -189,15 +479,22 @@
     "1930",
     "1931",
     "1933",
+    "1934",
     "1935",
     "1937",
+    "1938",
+    "1941",
+    "1942",
     "1943",
     "1945",
     "1946",
     "1947",
     "1948",
+    "1949",
     "1951",
     "1953",
+    "1954",
+    "1955",
     "1957",
     "1958",
     "1959",

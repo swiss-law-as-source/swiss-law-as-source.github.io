@@ -1,20 +1,45 @@
 {
   "year": "1992",
   "entity": "ZH",
-  "total": 3,
-  "categorized": 3,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 8,
       "by_topic": {
+        "724.2 Gewässernutzung. Allgemeines": 2,
         "182 Römisch-katholische Körperschaft": 1,
         "554 Tierschutz. Hunde": 1,
-        "747 Schifffahrt": 1
+        "701 Planung": 1,
+        "724.1 Allgemeines": 1,
+        "747 Schifffahrt": 1,
+        "811.2 Nichtuniversitäre Medizinalberufe": 1
       },
       "by_global_category": {
         "1.40.10 Römisch-Katholische Kirche": 1,
-        "7.70.20 Tierschutz": 1
+        "7.70.20 Tierschutz": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1,
+        "8.10.30.30 Krankenpflegepersonal": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "412.1 Grundlagen": 1
+      },
+      "by_global_category": {
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
+      }
+    },
+    "Anderes": {
+      "total": 1,
+      "by_topic": {
+        "415.44 Vetsuisse-Fakultät": 1
+      },
+      "by_global_category": {
+        "4.100.30 Schulgebühren": 1
       }
     }
   },
@@ -45,6 +70,81 @@
               "by_type": {
                 "Verordnung": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bildung – Dokumentation – Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Bildung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "412",
+              "title": "Volksschule",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "412.1",
+                  "title": "Grundlagen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "415",
+              "title": "Universität",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "415.4",
+                  "title": "Fakultäten. Kliniken. Institute und Sammlungen",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "415.44",
+                      "title": "Vetsuisse-Fakultät",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -84,12 +184,72 @@
     {
       "identifier": "7",
       "title": "Raumplanung – Baurecht – Umwelt – Energie – Verkehr",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 5
       },
       "children": [
+        {
+          "identifier": "70",
+          "title": "Raumplanung und öffentliches Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "701",
+              "title": "Planung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "72",
+          "title": "Öffentliche Werke",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 3
+          },
+          "children": [
+            {
+              "identifier": "724",
+              "title": "Wasserbau. Wasserwirtschaft",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 3
+              },
+              "children": [
+                {
+                  "identifier": "724.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "724.2",
+                  "title": "Gewässernutzung. Allgemeines",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "74",
           "title": "Verkehr",
@@ -107,6 +267,48 @@
               "by_type": {
                 "Verordnung": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit – Arbeit – Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Medizinalberufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.2",
+                  "title": "Nichtuniversitäre Medizinalberufe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -146,14 +348,128 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.100.30",
+              "title": "Schulgebühren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
       "own": 0,
       "by_type": {
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.20",
+              "title": "Wasserbau",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.20.10",
+                  "title": "Gewässerkorrekturen / Hochwasserschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -175,10 +491,52 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.30",
+                  "title": "Krankenpflegepersonal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 3
+    "de": 10
   },
   "available_years_for_entity": [
     "1825",
@@ -189,6 +547,8 @@
     "1879",
     "1880",
     "1886",
+    "1899",
+    "1900",
     "1901",
     "1902",
     "1908",
@@ -197,25 +557,35 @@
     "1916",
     "1919",
     "1920",
+    "1921",
     "1922",
     "1925",
     "1926",
     "1927",
+    "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1936",
     "1937",
     "1938",
     "1942",
     "1943",
+    "1944",
     "1945",
+    "1946",
     "1948",
+    "1949",
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1963",
@@ -244,6 +614,7 @@
     "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
     "1991",
     "1992",

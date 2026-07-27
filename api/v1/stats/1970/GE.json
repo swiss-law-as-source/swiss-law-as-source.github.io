@@ -1,10 +1,23 @@
 {
   "year": "1970",
   "entity": "GE",
-  "total": 2,
-  "categorized": 2,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
+    "Reglement": {
+      "total": 5,
+      "by_topic": {
+        "I 4 Logement": 2,
+        "B 1 Pouvoirs législatif et exécutif": 1,
+        "I 2 Professions et métiers divers": 1,
+        "L 4 Monuments et sites, décoration": 1
+      },
+      "by_global_category": {
+        "9.60.70 Messen, Märkte": 1,
+        "7.70.10 Landschaftsschutz": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 2,
       "by_topic": {
@@ -14,9 +27,27 @@
         "4.120.10 Schulkoordination": 1,
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
       }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "E 3 Procédure civile": 1
+      },
+      "by_global_category": {
+        "2.80 Schiedsgerichtsbarkeit": 1
+      }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "B",
+      "title": "Organisation du canton",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Règlement": 1
+      }
+    },
     {
       "identifier": "C",
       "title": "Instruction publique, culture",
@@ -25,9 +56,56 @@
       "by_type": {
         "Accord intercantonal": 2
       }
+    },
+    {
+      "identifier": "E",
+      "title": "Droit civil et droit pénal, organisation judiciaire et procédure",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Loi": 1
+      }
+    },
+    {
+      "identifier": "I",
+      "title": "Commerce, industrie, arts et métiers, logement",
+      "total": 3,
+      "own": 3,
+      "by_type": {
+        "Règlement": 3
+      }
+    },
+    {
+      "identifier": "L",
+      "title": "Domaine public et travaux",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Règlement": 1
+      }
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "2.80",
+          "title": "Schiedsgerichtsbarkeit",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Loi": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -78,10 +156,72 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.10",
+              "title": "Landschaftsschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.70",
+              "title": "Messen, Märkte",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "fr": 2
+    "fr": 8
   },
   "available_years_for_entity": [
     "1564",
@@ -92,28 +232,48 @@
     "1817",
     "1834",
     "1847",
+    "1849",
+    "1856",
     "1861",
+    "1872",
+    "1875",
     "1878",
+    "1881",
     "1887",
     "1889",
+    "1892",
+    "1895",
     "1899",
+    "1901",
+    "1902",
+    "1903",
     "1907",
     "1909",
     "1918",
     "1923",
+    "1925",
+    "1927",
+    "1928",
     "1929",
     "1930",
+    "1931",
     "1934",
     "1937",
     "1940",
+    "1941",
+    "1942",
     "1943",
+    "1944",
+    "1945",
     "1946",
+    "1947",
     "1948",
     "1950",
     "1951",
     "1952",
     "1953",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",
@@ -123,11 +283,13 @@
     "1962",
     "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
     "1968",
     "1969",
     "1970",
+    "1971",
     "1973",
     "1974",
     "1975",

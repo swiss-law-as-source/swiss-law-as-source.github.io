@@ -1,15 +1,32 @@
 {
   "year": "2002",
   "entity": "ZH",
-  "total": 9,
-  "categorized": 9,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
+    "Anderes": {
+      "total": 5,
+      "by_topic": {
+        "181.5 Besondere Pfarrämter": 1,
+        "414.4 Pädagogische Hochschule Zürich (PHZH)": 1,
+        "704 Geoinformation": 1,
+        "821 Arbeitsvertrag. Arbeitsrechtliche Streitigkeiten": 1,
+        "921 Forstwesen": 1
+      },
+      "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "4.50.10 Pädagogik": 1,
+        "4.170.10 Statistik": 1,
+        "2.20.10.40.10.10 Allgemeinverbindlichkeitserklärungen": 1
+      }
+    },
     "Verordnung": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "823 Arbeitsmarkt und Arbeitsbeschaffung": 2,
         "211 Allgemeine Gerichtsorganisation": 1,
+        "413.5 Gesundheitswesen": 1,
         "822 Arbeitnehmerschutz": 1
       },
       "by_global_category": {
@@ -29,27 +46,67 @@
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1
       }
     },
-    "Anderes": {
+    "Interkantonale Vereinbarung": {
       "total": 2,
       "by_topic": {
-        "821 Arbeitsvertrag. Arbeitsrechtliche Streitigkeiten": 1,
-        "921 Forstwesen": 1
-      },
-      "by_global_category": {
-        "2.20.10.40.10.10 Allgemeinverbindlichkeitserklärungen": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
+        "724.1 Allgemeines": 1,
         "915 Landwirtschaftliche Berufsbildung": 1
       },
       "by_global_category": {
         "9.20.70.10 Landwirtschaftliche Schule": 1
       }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "413.3 Berufsbildung": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat – Volk – Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "18",
+          "title": "Kirche und Staat. Religionsgemeinschaften",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "181",
+              "title": "Evangelisch-reformierte Landeskirche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "181.5",
+                  "title": "Besondere Pfarrämter",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Gerichtsorganisation – Zivilrecht – Notariat – Grundbuch",
@@ -105,19 +162,25 @@
     {
       "identifier": "4",
       "title": "Bildung – Dokumentation – Kultur",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Reglement": 1,
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Bildung",
-          "total": 1,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Reglement": 1,
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -128,6 +191,119 @@
               "by_type": {
                 "Gesetz": 1
               }
+            },
+            {
+              "identifier": "413",
+              "title": "Mittelschulen. Berufsbildung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1,
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.3",
+                  "title": "Berufsbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                },
+                {
+                  "identifier": "413.5",
+                  "title": "Gesundheitswesen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "414",
+              "title": "Fachhochschulen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "414.4",
+                  "title": "Pädagogische Hochschule Zürich (PHZH)",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanung – Baurecht – Umwelt – Energie – Verkehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "70",
+          "title": "Raumplanung und öffentliches Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "704",
+              "title": "Geoinformation",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "72",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "724",
+              "title": "Wasserbau. Wasserwirtschaft",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "724.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -241,10 +417,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
@@ -286,6 +463,26 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -390,9 +587,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 2,
         "Gesetz": 1
       },
       "children": [
@@ -412,6 +610,46 @@
               "own": 1,
               "by_type": {
                 "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.50.10",
+              "title": "Pädagogik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.10",
+              "title": "Statistik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -513,7 +751,7 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 15
   },
   "available_years_for_entity": [
     "1825",
@@ -524,6 +762,8 @@
     "1879",
     "1880",
     "1886",
+    "1899",
+    "1900",
     "1901",
     "1902",
     "1908",
@@ -532,25 +772,35 @@
     "1916",
     "1919",
     "1920",
+    "1921",
     "1922",
     "1925",
     "1926",
     "1927",
+    "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1936",
     "1937",
     "1938",
     "1942",
     "1943",
+    "1944",
     "1945",
+    "1946",
     "1948",
+    "1949",
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1963",
@@ -579,6 +829,7 @@
     "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
     "1991",
     "1992",

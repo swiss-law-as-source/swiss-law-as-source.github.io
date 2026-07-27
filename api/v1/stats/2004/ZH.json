@@ -1,15 +1,17 @@
 {
   "year": "2004",
   "entity": "ZH",
-  "total": 20,
-  "categorized": 20,
+  "total": 31,
+  "categorized": 31,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 13,
+      "total": 17,
       "by_topic": {
         "215 Rechtsanwälte": 3,
         "142 Meldewesen. Niederlassung. Aufenthalt": 2,
+        "212.8 Sozialversicherungsgericht": 2,
+        "813.1 Kantonale Spitäler": 2,
         "211 Allgemeine Gerichtsorganisation": 1,
         "213 Untersuchungs- und Anklagebehörden": 1,
         "231 Personenrecht": 1,
@@ -20,9 +22,12 @@
         "954 Kreditwesen": 1
       },
       "by_global_category": {
+        "8.10.20.10 Kantonsspitäler": 2,
         "4.170.20 Archive": 1,
         "1.10.70.20.10 Asylwesen": 1,
         "1.20.70.10.20 Obere Gerichte, Bundesgerichte": 1,
+        "1.20.70.10.30 Verwaltungs-, Versicherungs- und Sozialversicherungsgericht": 1,
+        "2.80 Schiedsgerichtsbarkeit": 1,
         "1.20.70.10.10.20 Staatsanwaltschaft": 1,
         "4.120.80 Schulleitung": 1,
         "7.50.70.20 Flughäfen, Flugplätze": 1,
@@ -32,12 +37,36 @@
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 8,
       "by_topic": {
-        "181.4 Kirchliches Personalrecht": 2
+        "181.4 Kirchliches Personalrecht": 2,
+        "212.6 Handelsgericht": 1,
+        "412.1 Grundlagen": 1,
+        "413.5 Gesundheitswesen": 1,
+        "415.40 Theologische Fakultät": 1,
+        "415.6 Universitäre Weiterbildung": 1,
+        "811.1 Universitäre Medizinalberufe": 1
       },
       "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 2
+        "1.40.30 Evangelisch-Reformierte Kirche": 2,
+        "1.20.70.20 Gerichtspersonal": 1,
+        "4.120.100 Schulbehörden": 1,
+        "8.10.30.30 Krankenpflegepersonal": 1,
+        "4.40.20 Theologische Fakultät": 1,
+        "4.70.10 Erwachsenenbildung": 1,
+        "8.10.30.10 Ärzte": 1
+      }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "551 Polizeiorganisation": 1,
+        "813.1 Kantonale Spitäler": 1,
+        "84 Wohnverhältnisse": 1
+      },
+      "by_global_category": {
+        "8.10.20.30 Patientenrechte": 1,
+        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -47,16 +76,6 @@
         "33 Strafvollzug": 1
       },
       "by_global_category": {}
-    },
-    "Gesetz": {
-      "total": 2,
-      "by_topic": {
-        "551 Polizeiorganisation": 1,
-        "84 Wohnverhältnisse": 1
-      },
-      "by_global_category": {
-        "8.40.10 Eigentums- und Wohnungsbauförderung": 1
-      }
     },
     "Reglement": {
       "total": 1,
@@ -135,20 +154,22 @@
     {
       "identifier": "2",
       "title": "Gerichtsorganisation – Zivilrecht – Notariat – Grundbuch",
-      "total": 7,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Verordnung": 6,
+        "Verordnung": 8,
+        "Anderes": 1,
         "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Gerichtsorganisation",
-          "total": 5,
+          "total": 8,
           "own": 0,
           "by_type": {
-            "Verordnung": 5
+            "Verordnung": 7,
+            "Anderes": 1
           },
           "children": [
             {
@@ -159,6 +180,36 @@
               "by_type": {
                 "Verordnung": 1
               }
+            },
+            {
+              "identifier": "212",
+              "title": "Gerichte",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "212.6",
+                  "title": "Handelsgericht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "212.8",
+                  "title": "Sozialversicherungsgericht",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                }
+              ]
             },
             {
               "identifier": "213",
@@ -227,18 +278,20 @@
     {
       "identifier": "4",
       "title": "Bildung – Dokumentation – Kultur",
-      "total": 1,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Anderes": 4,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Bildung",
-          "total": 1,
+          "total": 5,
           "own": 0,
           "by_type": {
+            "Anderes": 4,
             "Verordnung": 1
           },
           "children": [
@@ -250,6 +303,86 @@
               "by_type": {
                 "Verordnung": 1
               }
+            },
+            {
+              "identifier": "412",
+              "title": "Volksschule",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "412.1",
+                  "title": "Grundlagen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "413",
+              "title": "Mittelschulen. Berufsbildung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.5",
+                  "title": "Gesundheitswesen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "415",
+              "title": "Universität",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "415.4",
+                  "title": "Fakultäten. Kliniken. Institute und Sammlungen",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "415.40",
+                      "title": "Theologische Fakultät",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                },
+                {
+                  "identifier": "415.6",
+                  "title": "Universitäre Weiterbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -323,13 +456,69 @@
     {
       "identifier": "8",
       "title": "Gesundheit – Arbeit – Soziale Sicherheit",
-      "total": 2,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Verordnung": 1
+        "Verordnung": 3,
+        "Gesetz": 2,
+        "Anderes": 1
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Anderes": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Medizinalberufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.1",
+                  "title": "Universitäre Medizinalberufe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "813",
+              "title": "Spitäler",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "813.1",
+                  "title": "Kantonale Spitäler",
+                  "total": 3,
+                  "own": 3,
+                  "by_type": {
+                    "Verordnung": 2,
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "84",
           "title": "Wohnverhältnisse",
@@ -408,11 +597,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Verordnung": 3,
-        "Anderes": 2
+        "Verordnung": 4,
+        "Anderes": 3
       },
       "children": [
         {
@@ -460,28 +649,30 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 3,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.20.70",
               "title": "Gerichtsorganisation",
-              "total": 2,
+              "total": 4,
               "own": 0,
               "by_type": {
-                "Verordnung": 2
+                "Verordnung": 3,
+                "Anderes": 1
               },
               "children": [
                 {
                   "identifier": "1.20.70.10",
                   "title": "Gerichtsbehörden",
-                  "total": 2,
+                  "total": 3,
                   "own": 0,
                   "by_type": {
-                    "Verordnung": 2
+                    "Verordnung": 3
                   },
                   "children": [
                     {
@@ -512,8 +703,26 @@
                       "by_type": {
                         "Verordnung": 1
                       }
+                    },
+                    {
+                      "identifier": "1.20.70.10.30",
+                      "title": "Verwaltungs-, Versicherungs- und Sozialversicherungsgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
                     }
                   ]
+                },
+                {
+                  "identifier": "1.20.70.20",
+                  "title": "Gerichtspersonal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
                 }
               ]
             }
@@ -542,21 +751,83 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 2,
+      "identifier": "2",
+      "title": "Zivilrecht",
+      "total": 1,
       "own": 0,
       "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "2.80",
+          "title": "Schiedsgerichtsbarkeit",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Anderes": 3,
         "Verordnung": 2
       },
       "children": [
         {
-          "identifier": "4.120",
-          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "identifier": "4.40",
+          "title": "Tertiärstufe: Universitäten",
           "total": 1,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.40.20",
+              "title": "Theologische Fakultät",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.70",
+          "title": "Weiterbildung (Quartärstufe)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.70.10",
+              "title": "Erwachsenenbildung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
             {
@@ -566,6 +837,15 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "4.120.100",
+              "title": "Schulbehörden",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -730,12 +1010,86 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Verordnung": 2,
+        "Anderes": 2,
+        "Gesetz": 2
       },
       "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2,
+            "Anderes": 2,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 3,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2,
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.10",
+                  "title": "Kantonsspitäler",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 2
+                  }
+                },
+                {
+                  "identifier": "8.10.20.30",
+                  "title": "Patientenrechte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "8.10.30.30",
+                  "title": "Krankenpflegepersonal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "8.40",
           "title": "Wohnverhältnisse",
@@ -802,7 +1156,7 @@
     }
   ],
   "languages_available": {
-    "de": 20
+    "de": 31
   },
   "available_years_for_entity": [
     "1825",
@@ -813,6 +1167,8 @@
     "1879",
     "1880",
     "1886",
+    "1899",
+    "1900",
     "1901",
     "1902",
     "1908",
@@ -821,25 +1177,35 @@
     "1916",
     "1919",
     "1920",
+    "1921",
     "1922",
     "1925",
     "1926",
     "1927",
+    "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1936",
     "1937",
     "1938",
     "1942",
     "1943",
+    "1944",
     "1945",
+    "1946",
     "1948",
+    "1949",
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1963",
@@ -868,6 +1234,7 @@
     "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
     "1991",
     "1992",

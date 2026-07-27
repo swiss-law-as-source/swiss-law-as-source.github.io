@@ -1,34 +1,39 @@
 {
   "year": "1989",
   "entity": "GE",
-  "total": 8,
-  "categorized": 8,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 5,
+      "total": 8,
       "by_topic": {
+        "H 1 Circulation": 2,
         "E 1 Droit civil et droit des obligations": 1,
         "E 6 Professions juridiques": 1,
-        "H 1 Circulation": 1,
+        "F 2 Séjour et établissements, police des étrangers, recensement": 1,
+        "K 4 Médicaments, stupéfiants, produits divers": 1,
         "L 2 Eaux et énergies": 1,
         "M 1 Améliorations foncières, droit foncier rural": 1
       },
       "by_global_category": {
+        "7.60.30.10 Feinstaub/Smog": 1,
+        "8.10.70 Heil- und Betäubungsmittel": 1,
         "1.20.20.30.30 Kommissionen": 1,
         "9.20.50 Meliorationen": 1
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
+        "J 6 Protection de la jeunesse": 2,
         "A 2 Constitution et principes généraux": 1,
-        "J 6 Protection de la jeunesse": 1,
         "L 4 Monuments et sites, décoration": 1
       },
       "by_global_category": {
         "1.20.40 Staatshaftung": 1,
         "8.70.20 Jugendschutz, Jugendhilfe": 1,
+        "2.10.20.20 Pflegekinder, Adoption": 1,
         "7.70.60 Uferschutz": 1
       }
     }
@@ -53,8 +58,8 @@
       }
     },
     {
-      "identifier": "H",
-      "title": "Transports et communications",
+      "identifier": "F",
+      "title": "Police",
       "total": 1,
       "own": 1,
       "by_type": {
@@ -62,12 +67,30 @@
       }
     },
     {
+      "identifier": "H",
+      "title": "Transports et communications",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Règlement": 2
+      }
+    },
+    {
       "identifier": "J",
       "title": "Législation sociale",
+      "total": 2,
+      "own": 2,
+      "by_type": {
+        "Loi": 2
+      }
+    },
+    {
+      "identifier": "K",
+      "title": "Santé",
       "total": 1,
       "own": 1,
       "by_type": {
-        "Loi": 1
+        "Règlement": 1
       }
     },
     {
@@ -156,14 +179,88 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "2",
+      "title": "Zivilrecht",
       "total": 1,
       "own": 0,
       "by_type": {
         "Loi": 1
       },
       "children": [
+        {
+          "identifier": "2.10",
+          "title": "Einführungsgesetzgebung zum ZGB",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "2.10.20",
+              "title": "Familienrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "2.10.20.20",
+                  "title": "Pflegekinder, Adoption",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1,
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.30",
+              "title": "Lufthygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.60.30.10",
+                  "title": "Feinstaub/Smog",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Règlement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -189,12 +286,33 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Règlement": 1,
         "Loi": 1
       },
       "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.70",
+              "title": "Heil- und Betäubungsmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "8.70",
           "title": "Fürsorge",
@@ -250,7 +368,7 @@
     }
   ],
   "languages_available": {
-    "fr": 8
+    "fr": 12
   },
   "available_years_for_entity": [
     "1564",
@@ -261,28 +379,48 @@
     "1817",
     "1834",
     "1847",
+    "1849",
+    "1856",
     "1861",
+    "1872",
+    "1875",
     "1878",
+    "1881",
     "1887",
     "1889",
+    "1892",
+    "1895",
     "1899",
+    "1901",
+    "1902",
+    "1903",
     "1907",
     "1909",
     "1918",
     "1923",
+    "1925",
+    "1927",
+    "1928",
     "1929",
     "1930",
+    "1931",
     "1934",
     "1937",
     "1940",
+    "1941",
+    "1942",
     "1943",
+    "1944",
+    "1945",
     "1946",
+    "1947",
     "1948",
     "1950",
     "1951",
     "1952",
     "1953",
     "1954",
+    "1955",
     "1956",
     "1957",
     "1958",
@@ -292,11 +430,13 @@
     "1962",
     "1963",
     "1964",
+    "1965",
     "1966",
     "1967",
     "1968",
     "1969",
     "1970",
+    "1971",
     "1973",
     "1974",
     "1975",
@@ -377,6 +517,7 @@
     "UR",
     "VD",
     "VS",
-    "ZG"
+    "ZG",
+    "ZH"
   ]
 }

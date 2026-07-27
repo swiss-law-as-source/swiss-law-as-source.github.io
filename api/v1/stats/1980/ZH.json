@@ -1,19 +1,36 @@
 {
   "year": "1980",
   "entity": "ZH",
-  "total": 5,
-  "categorized": 5,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
+        "181.6 Kirchen und Pfarrhäuser": 1,
         "211 Allgemeine Gerichtsorganisation": 1,
         "52 Bevölkerungsschutz": 1,
-        "747 Schifffahrt": 1
+        "747 Schifffahrt": 1,
+        "813.1 Kantonale Spitäler": 1,
+        "916.5 Rebbau": 1
       },
       "by_global_category": {
-        "1.20.70.20 Gerichtspersonal": 1
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "1.20.70.20 Gerichtspersonal": 1,
+        "8.10.20.10 Kantonsspitäler": 1,
+        "9.20.80.10 Rebbau": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "181.6 Kirchen und Pfarrhäuser": 1,
+        "813.1 Kantonale Spitäler": 1
+      },
+      "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "8.10.20.10 Kantonsspitäler": 1
       }
     },
     "Reglement": {
@@ -25,6 +42,15 @@
         "1.20.20.40.80 Personalausschüsse, paritätische Kommissionen": 1
       }
     },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "811.1 Universitäre Medizinalberufe": 1
+      },
+      "by_global_category": {
+        "8.10.30.50 Chiropraktiker, Physiotherapeuten": 1
+      }
+    },
     "Gesetz": {
       "total": 1,
       "by_topic": {
@@ -34,6 +60,52 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat – Volk – Behörden",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "18",
+          "title": "Kirche und Staat. Religionsgemeinschaften",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "181",
+              "title": "Evangelisch-reformierte Landeskirche",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "181.6",
+                  "title": "Kirchen und Pfarrhäuser",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 1,
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Gerichtsorganisation – Zivilrecht – Notariat – Grundbuch",
@@ -122,12 +194,70 @@
     {
       "identifier": "8",
       "title": "Gesundheit – Arbeit – Soziale Sicherheit",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Verordnung": 1,
+        "Anderes": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Medizinalberufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.1",
+                  "title": "Universitäre Medizinalberufe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "813",
+              "title": "Spitäler",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "813.1",
+                  "title": "Kantonale Spitäler",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 1,
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "84",
           "title": "Wohnverhältnisse",
@@ -138,17 +268,60 @@
           }
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "91",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "916",
+              "title": "Produktion und Absatz",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "916.5",
+                  "title": "Rebbau",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Reglement": 1,
-        "Verordnung": 1
+        "Anderes": 1
       },
       "children": [
         {
@@ -213,12 +386,144 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1,
+            "Anderes": 1,
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1,
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.10",
+                  "title": "Kantonsspitäler",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Verordnung": 1,
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.50",
+                  "title": "Chiropraktiker, Physiotherapeuten",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "9.20",
+          "title": "Landwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "9.20.80",
+              "title": "Pflanzenbau",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "9.20.80.10",
+                  "title": "Rebbau",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 11
   },
   "available_years_for_entity": [
     "1825",
@@ -229,6 +534,8 @@
     "1879",
     "1880",
     "1886",
+    "1899",
+    "1900",
     "1901",
     "1902",
     "1908",
@@ -237,25 +544,35 @@
     "1916",
     "1919",
     "1920",
+    "1921",
     "1922",
     "1925",
     "1926",
     "1927",
+    "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1936",
     "1937",
     "1938",
     "1942",
     "1943",
+    "1944",
     "1945",
+    "1946",
     "1948",
+    "1949",
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1963",
@@ -284,6 +601,7 @@
     "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
     "1991",
     "1992",

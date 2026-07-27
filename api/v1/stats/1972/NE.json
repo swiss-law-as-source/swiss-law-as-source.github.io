@@ -1,17 +1,43 @@
 {
   "year": "1972",
   "entity": "NE",
-  "total": 1,
-  "categorized": 1,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
-      "total": 1,
+    "Anderes": {
+      "total": 7,
       "by_topic": {
-        "442.4 Bibliothèques": 1
+        "832.3 Établissements spécialisés pour personnes âgées": 3,
+        "417 Éducation physique et sports": 1,
+        "820.2 Assurance-invalidité": 1,
+        "821.12 Application de la LAMA": 1,
+        "941.1 Poids et mesures": 1
+      },
+      "by_global_category": {
+        "8.70.30.10 Alters- und Pflegeheime": 4,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "8.10.40 Medizinische Labors": 1,
+        "9.60.20 Messwesen, Zahlungsverkehr": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "442.4 Bibliothèques": 1,
+        "941.9 Salons de coiffure": 1
       },
       "by_global_category": {
         "4.170.30 Bibliotheken": 1
+      }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "832.3 Établissements spécialisés pour personnes âgées": 1
+      },
+      "by_global_category": {
+        "8.70.30.10 Alters- und Pflegeheime": 1
       }
     }
   },
@@ -19,12 +45,33 @@
     {
       "identifier": "4",
       "title": "Enseignement – Science – Culture – Environnement",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Autre": 1,
         "Loi": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Enseignement",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "417",
+              "title": "Éducation physique et sports",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "44",
           "title": "Science",
@@ -46,6 +93,168 @@
                 {
                   "identifier": "442.4",
                   "title": "Bibliothèques",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Loi": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Santé – Travail – Sécurité sociale – Dommages dus aux éléments",
+      "total": 6,
+      "own": 0,
+      "by_type": {
+        "Autre": 5,
+        "Ordonnance parlementaire (décret)": 1
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "Assurances sociales",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Autre": 2
+          },
+          "children": [
+            {
+              "identifier": "820",
+              "title": "Assurance-vieillesse et survivants – Assurance-invalidité",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "820.2",
+                  "title": "Assurance-invalidité",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "821",
+              "title": "Assurance-maladie et accidents",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Autre": 1
+              },
+              "children": [
+                {
+                  "identifier": "821.1",
+                  "title": "Assurance-maladie",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Autre": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "821.12",
+                      "title": "Application de la LAMA",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Autre": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Assistance sociale",
+          "total": 4,
+          "own": 0,
+          "by_type": {
+            "Autre": 3,
+            "Ordonnance parlementaire (décret)": 1
+          },
+          "children": [
+            {
+              "identifier": "832",
+              "title": "Établissements spécialisés",
+              "total": 4,
+              "own": 0,
+              "by_type": {
+                "Autre": 3,
+                "Ordonnance parlementaire (décret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "832.3",
+                  "title": "Établissements spécialisés pour personnes âgées",
+                  "total": 4,
+                  "own": 4,
+                  "by_type": {
+                    "Autre": 3,
+                    "Ordonnance parlementaire (décret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Économie",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Autre": 1,
+        "Loi": 1
+      },
+      "children": [
+        {
+          "identifier": "94",
+          "title": "Commerce",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Autre": 1,
+            "Loi": 1
+          },
+          "children": [
+            {
+              "identifier": "941",
+              "title": "Police du commerce",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Autre": 1,
+                "Loi": 1
+              },
+              "children": [
+                {
+                  "identifier": "941.1",
+                  "title": "Poids et mesures",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Autre": 1
+                  }
+                },
+                {
+                  "identifier": "941.9",
+                  "title": "Salons de coiffure",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -90,27 +299,169 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 6,
+      "own": 0,
+      "by_type": {
+        "Autre": 5,
+        "Ordonnance parlementaire (décret)": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.40",
+              "title": "Medizinische Labors",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Autre": 4,
+            "Ordonnance parlementaire (décret)": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 5,
+              "own": 0,
+              "by_type": {
+                "Autre": 4,
+                "Ordonnance parlementaire (décret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.10",
+                  "title": "Alters- und Pflegeheime",
+                  "total": 5,
+                  "own": 5,
+                  "by_type": {
+                    "Autre": 4,
+                    "Ordonnance parlementaire (décret)": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Autre": 1
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Autre": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.20",
+              "title": "Messwesen, Zahlungsverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Autre": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "fr": 1
+    "fr": 10
   },
   "available_years_for_entity": [
+    "1832",
     "1858",
+    "1864",
+    "1866",
+    "1871",
     "1873",
     "1874",
+    "1885",
+    "1887",
+    "1888",
     "1889",
     "1894",
     "1895",
+    "1896",
+    "1900",
+    "1902",
     "1905",
     "1907",
     "1908",
+    "1909",
     "1910",
     "1911",
     "1912",
+    "1913",
     "1914",
     "1916",
+    "1919",
     "1920",
+    "1923",
     "1924",
     "1925",
     "1927",
@@ -118,15 +469,22 @@
     "1930",
     "1931",
     "1933",
+    "1934",
     "1935",
     "1937",
+    "1938",
+    "1941",
+    "1942",
     "1943",
     "1945",
     "1946",
     "1947",
     "1948",
+    "1949",
     "1951",
     "1953",
+    "1954",
+    "1955",
     "1957",
     "1958",
     "1959",

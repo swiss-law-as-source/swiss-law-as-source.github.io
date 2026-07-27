@@ -1,15 +1,16 @@
 {
   "year": "1996",
   "entity": "ZH",
-  "total": 9,
-  "categorized": 9,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "177.2 Personalvorsorge": 1,
         "212.1 Friedensrichter": 1,
+        "713 Luftreinhaltung. Lärmschutz": 1,
         "812 Heilmittel": 1,
         "832 Kranken- und Unfallversicherung": 1
       },
@@ -40,12 +41,14 @@
       }
     },
     "Gesetz": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "747 Schifffahrt": 1
+        "747 Schifffahrt": 1,
+        "935.1 Gastgewerbe": 1
       },
       "by_global_category": {
-        "7.50.60.10 Schiffssteuern": 1
+        "7.50.60.10 Schiffssteuern": 1,
+        "6.30.10 Alkohol": 1
       }
     }
   },
@@ -199,12 +202,33 @@
     {
       "identifier": "7",
       "title": "Raumplanung – Baurecht – Umwelt – Energie – Verkehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "71",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "713",
+              "title": "Luftreinhaltung. Lärmschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "74",
           "title": "Verkehr",
@@ -273,6 +297,48 @@
               "by_type": {
                 "Anderes": 1
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "93",
+          "title": "Industrie und Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "935",
+              "title": "Dienstleistungsgewerbe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "935.1",
+                  "title": "Gastgewerbe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -407,10 +473,11 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -429,6 +496,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.10",
+              "title": "Alkohol",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -510,7 +597,7 @@
     }
   ],
   "languages_available": {
-    "de": 9
+    "de": 11
   },
   "available_years_for_entity": [
     "1825",
@@ -521,6 +608,8 @@
     "1879",
     "1880",
     "1886",
+    "1899",
+    "1900",
     "1901",
     "1902",
     "1908",
@@ -529,25 +618,35 @@
     "1916",
     "1919",
     "1920",
+    "1921",
     "1922",
     "1925",
     "1926",
     "1927",
+    "1929",
     "1930",
     "1931",
+    "1933",
     "1934",
+    "1936",
     "1937",
     "1938",
     "1942",
     "1943",
+    "1944",
     "1945",
+    "1946",
     "1948",
+    "1949",
     "1951",
     "1952",
     "1953",
+    "1954",
     "1955",
+    "1956",
     "1957",
     "1958",
+    "1959",
     "1960",
     "1961",
     "1963",
@@ -576,6 +675,7 @@
     "1986",
     "1987",
     "1988",
+    "1989",
     "1990",
     "1991",
     "1992",
