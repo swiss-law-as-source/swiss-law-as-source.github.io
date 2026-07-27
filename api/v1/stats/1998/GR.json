@@ -1,32 +1,39 @@
 {
   "year": "1998",
   "entity": "GR",
-  "total": 6,
-  "categorized": 6,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
         "170 Politische Behörden und Mitarbeitende": 1,
+        "35 Strafrechtspflege": 1,
+        "427 Hochschulen": 1,
         "433 Fortbildung Jugendlicher und Erwachsener": 1,
-        "507 Lebensmittel, Chemikalien, Tabak, ökologisches Gleichgewicht": 1
+        "507 Lebensmittel, Chemikalien, Tabak, ökologisches Gleichgewicht": 1,
+        "830 Gebäudeversicherung": 1
       },
       "by_global_category": {
         "1.20.20.20.30 Staatskanzlei": 1,
+        "1.20.70.10.10.20 Staatsanwaltschaft": 1,
+        "4.50.10 Pädagogik": 1,
         "4.70.10 Erwachsenenbildung": 1,
         "8.10.130.30 Badeanstalten": 1
       }
     },
     "Anderes": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
+        "92 Forstwirtschaft": 2,
         "546 Öffentliche Sozialhilfe": 1,
         "548 Familienschutz": 1
       },
       "by_global_category": {
         "8.70.10 Sozialhilfe": 1,
-        "8.30.120 Mutterschaftsversicherung, Mutterschaftsbeiträge": 1
+        "8.30.120 Mutterschaftsversicherung, Mutterschaftsbeiträge": 1,
+        "9.30.20 Forstpersonal": 1
       }
     },
     "Reglement": {
@@ -72,14 +79,54 @@
       ]
     },
     {
-      "identifier": "4",
-      "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
+      "identifier": "3",
+      "title": "Rechtspflege",
       "total": 1,
       "own": 0,
       "by_type": {
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "35",
+          "title": "Strafrechtspflege",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "42",
+          "title": "Erziehung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "427",
+              "title": "Hochschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "43",
           "title": "Berufsbildung",
@@ -173,12 +220,10 @@
           ]
         }
       ]
-    }
-  ],
-  "by_global_category_tree": [
+    },
     {
-      "identifier": "1",
-      "title": "Staat",
+      "identifier": "8",
+      "title": "Planung, Bau, Wasserwirtschaft, Gewässerschutz, Umweltschutz, Gebäude- und Elementarschadenversicherung, Schätzungen, Verkehr",
       "total": 1,
       "own": 0,
       "by_type": {
@@ -186,12 +231,65 @@
       },
       "children": [
         {
-          "identifier": "1.20",
-          "title": "Behörden",
+          "identifier": "83",
+          "title": "Gebäude- und Elementarschadenversicherung",
           "total": 1,
           "own": 0,
           "by_type": {
             "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "830",
+              "title": "Gebäudeversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "92",
+          "title": "Forstwirtschaft",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Anderes": 2
+          }
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
           },
           "children": [
             {
@@ -224,6 +322,48 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.10",
+                      "title": "Untersuchungs- und Anklagebehörden",
+                      "total": 1,
+                      "own": 0,
+                      "by_type": {
+                        "Verordnung": 1
+                      },
+                      "children": [
+                        {
+                          "identifier": "1.20.70.10.10.20",
+                          "title": "Staatsanwaltschaft",
+                          "total": 1,
+                          "own": 1,
+                          "by_type": {
+                            "Verordnung": 1
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -232,12 +372,32 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.50.10",
+              "title": "Pädagogik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.70",
           "title": "Weiterbildung (Quartärstufe)",
@@ -353,24 +513,95 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "9.30",
+          "title": "Forstwirtschaft",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "9.30.20",
+              "title": "Forstpersonal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 6,
-    "it": 6
+    "de": 11,
+    "it": 11
   },
   "available_years_for_entity": [
+    "1877",
     "1889",
+    "1901",
+    "1908",
+    "1913",
+    "1923",
+    "1925",
+    "1927",
+    "1937",
+    "1943",
+    "1946",
     "1947",
+    "1948",
+    "1951",
     "1952",
+    "1953",
     "1956",
+    "1958",
+    "1959",
+    "1961",
+    "1962",
+    "1963",
+    "1964",
+    "1965",
+    "1966",
+    "1967",
+    "1968",
+    "1969",
+    "1970",
     "1971",
     "1972",
+    "1973",
+    "1974",
     "1975",
     "1976",
+    "1977",
+    "1978",
+    "1979",
     "1980",
+    "1982",
     "1983",
+    "1984",
+    "1985",
+    "1986",
+    "1987",
     "1988",
+    "1989",
+    "1990",
+    "1991",
+    "1992",
+    "1993",
     "1994",
     "1995",
     "1996",
@@ -378,6 +609,7 @@
     "1998",
     "2000",
     "2001",
+    "2002",
     "2003",
     "2004",
     "2005",

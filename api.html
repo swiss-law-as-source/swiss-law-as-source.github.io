@@ -470,6 +470,25 @@
             <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>curl -s https://swiss-law-as-source.github.io/api/v1/stats/concordats_by_domain.json | jq '.cantons.BE'</pre>
         </div>
 
+        <div class="endpoint">
+            <div class="endpoint-header">
+                <span class="method">GET</span>
+                <span class="endpoint-url">/api/v1/categories/{types|global|CANTON|index}.json</span>
+            </div>
+            <div class="endpoint-desc">
+                The category dictionaries behind all statistics — fetch them programmatically to
+                decode or localize aggregation keys.
+            </div>
+            <table class="param-table">
+                <tr><th>File</th><th>Content</th></tr>
+                <tr><td><code>types.json</code></td><td>Instrument types: <code>[{id, label: {de, fr, it}}]</code> (LexFind category ids, language-stable). <code>stats.json</code> <code>by_category_type</code> keys are the German labels; <code>category_type_labels</code> in stats.json carries the same translations inline.</td></tr>
+                <tr><td><code>global.json</code></td><td>Global systematics ("domaine juridique") tree: <code>{identifier, title: {de, fr, it}, children}</code>. <code>by_global_category</code> keys are <code>"&lt;identifier&gt; &lt;german title&gt;"</code>.</td></tr>
+                <tr><td><code>{CANTON}.json</code></td><td>Canton systematics tree (primary language). <code>by_systematic_category</code> keys are <code>"&lt;CANTON&gt; &lt;identifier&gt; &lt;title&gt;"</code>.</td></tr>
+                <tr><td><code>index.json</code></td><td>Lists all available dictionaries.</td></tr>
+            </table>
+            <pre><button class="copy-btn" onclick="copyCode(this)">Copy</button>curl -s https://swiss-law-as-source.github.io/api/v1/categories/types.json | jq '.types[] | select(.id == 2)'</pre>
+        </div>
+
         <!-- ────────────────────────────────────────── -->
         <h2 id="global">3. Global Data Files</h2>
         <p>Large aggregate files covering the entire dataset. Useful for dashboards or full exports, but consider the per-year endpoints for targeted queries.</p>

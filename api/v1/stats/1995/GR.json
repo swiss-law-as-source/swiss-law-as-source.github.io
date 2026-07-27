@@ -1,17 +1,30 @@
 {
   "year": "1995",
   "entity": "GR",
-  "total": 2,
-  "categorized": 2,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
+        "430 Allgemeine Berufsbildung": 1,
+        "506 Krankenpflege": 1,
         "63 Bevölkerungsschutz": 1
       },
       "by_global_category": {
+        "4.30.20 Berufsmaturitätsschulen": 1,
+        "8.10.30.10 Ärzte": 1,
         "5.20.10.20 Baubestimmungen Zivilschutz": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "430 Allgemeine Berufsbildung": 2
+      },
+      "by_global_category": {
+        "4.100.30 Schulgebühren": 2
       }
     },
     "Reglement": {
@@ -25,6 +38,71 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "4",
+      "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "43",
+          "title": "Berufsbildung",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "430",
+              "title": "Allgemeine Berufsbildung",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Anderes": 2,
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "50",
+          "title": "Sanitätswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "506",
+              "title": "Krankenpflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Polizei, Militär, Bevölkerungsschutz, Zivilschutz",
@@ -78,6 +156,58 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.20",
+              "title": "Berufsmaturitätsschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.100",
+          "title": "Ausbildungsbeiträge",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "4.100.30",
+              "title": "Schulgebühren",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
@@ -161,24 +291,106 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 2,
-    "it": 2
+    "de": 6,
+    "it": 6
   },
   "available_years_for_entity": [
+    "1877",
     "1889",
+    "1901",
+    "1908",
+    "1913",
+    "1923",
+    "1925",
+    "1927",
+    "1937",
+    "1943",
+    "1946",
     "1947",
+    "1948",
+    "1951",
     "1952",
+    "1953",
     "1956",
+    "1958",
+    "1959",
+    "1961",
+    "1962",
+    "1963",
+    "1964",
+    "1965",
+    "1966",
+    "1967",
+    "1968",
+    "1969",
+    "1970",
     "1971",
     "1972",
+    "1973",
+    "1974",
     "1975",
     "1976",
+    "1977",
+    "1978",
+    "1979",
     "1980",
+    "1982",
     "1983",
+    "1984",
+    "1985",
+    "1986",
+    "1987",
     "1988",
+    "1989",
+    "1990",
+    "1991",
+    "1992",
+    "1993",
     "1994",
     "1995",
     "1996",
@@ -186,6 +398,7 @@
     "1998",
     "2000",
     "2001",
+    "2002",
     "2003",
     "2004",
     "2005",

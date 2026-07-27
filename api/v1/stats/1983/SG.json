@@ -1,17 +1,19 @@
 {
   "year": "1983",
   "entity": "SG",
-  "total": 4,
-  "categorized": 4,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "143 Staatspersonal": 1,
         "271 Allgemein": 1,
         "321 Kantonale Spitäler": 1
       },
       "by_global_category": {
+        "4.90.20 Löhne, Entschädigungen": 1,
         "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
         "8.10.20.10 Kantonsspitäler": 1
       }
@@ -25,6 +27,15 @@
         "4.120.20 Schulgemeinden": 1
       }
     },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "215 Mittelschulen": 1
+      },
+      "by_global_category": {
+        "4.30.10.10 Hauswirtschaftliche Ausbildung": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -35,22 +46,55 @@
   },
   "by_topic_tree": [
     {
+      "identifier": "1",
+      "title": "Grundlagen und Organisation von Kanton und Gemeinden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Staatsverwaltung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "143",
+              "title": "Staatspersonal",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Gesetz": 1,
+        "Reglement": 1,
         "Anderes": 1
       },
       "children": [
         {
           "identifier": "21",
           "title": "Schulen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 1,
+            "Reglement": 1
           },
           "children": [
             {
@@ -60,6 +104,15 @@
               "own": 1,
               "by_type": {
                 "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "215",
+              "title": "Mittelschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
               }
             }
           ]
@@ -133,12 +186,65 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Reglement": 1,
+        "Anderes": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.30.10",
+              "title": "Berufsfachschulen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "4.30.10.10",
+                  "title": "Hauswirtschaftliche Ausbildung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.20",
+              "title": "Löhne, Entschädigungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
@@ -236,7 +342,7 @@
     }
   ],
   "languages_available": {
-    "de": 4
+    "de": 6
   },
   "available_years_for_entity": [
     "1847",
@@ -252,6 +358,7 @@
     "1941",
     "1943",
     "1947",
+    "1948",
     "1949",
     "1951",
     "1952",
@@ -259,6 +366,7 @@
     "1954",
     "1955",
     "1957",
+    "1959",
     "1960",
     "1961",
     "1962",
@@ -335,8 +443,10 @@
     "CH",
     "FR",
     "GE",
+    "GL",
     "GR",
     "JU",
+    "LU",
     "NE",
     "NW",
     "OW",
