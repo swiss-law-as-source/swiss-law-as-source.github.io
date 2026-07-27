@@ -1,10 +1,23 @@
 {
   "year": "2008",
   "entity": "SO",
-  "total": 5,
-  "categorized": 5,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
+    "Interkantonale Vereinbarung": {
+      "total": 3,
+      "by_topic": {
+        "436.93 Denkmäler": 1,
+        "625.7 Interkantonale Vereinbarungen": 1,
+        "926.2 Rebbau": 1
+      },
+      "by_global_category": {
+        "7.70.70 Denkmalschutz, Kulturgüterschutz": 1,
+        "6.30.60.20 Reviere": 1,
+        "9.20.80.10 Rebbau": 1
+      }
+    },
     "Verordnung": {
       "total": 3,
       "by_topic": {
@@ -15,6 +28,17 @@
         "5.30.30 Waffen und Munition": 1
       }
     },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "511.5 Interkantonale Zusammenarbeit": 1,
+        "711.6 Öffentliche Bauvorschriften": 1
+      },
+      "by_global_category": {
+        "4.180.30 Sport": 1,
+        "7.10.70 Parkplätze": 1
+      }
+    },
     "Gesetz": {
       "total": 1,
       "by_topic": {
@@ -23,36 +47,102 @@
       "by_global_category": {
         "8.20.20.50 Schwarzarbeit": 1
       }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "926.2 Rebbau": 1
-      },
-      "by_global_category": {
-        "9.20.80.10 Rebbau": 1
-      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "5",
-      "title": "Polizei, Militär, Zivilschutz",
+      "identifier": "4",
+      "title": "Schule, Kirche, Kultur",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "43",
+          "title": "Kultur",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "436",
+              "title": "Altertümerschutz",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "436.9",
+                  "title": "Stiftungen zur Erhaltung von Kulturdenkmälern",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "436.93",
+                      "title": "Denkmäler",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Interkantonale Vereinbarung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Polizei, Militär, Zivilschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "51",
           "title": "Polizei",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "511",
+              "title": "Kantonspolizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "511.5",
+                  "title": "Interkantonale Zusammenarbeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "512",
               "title": "Andere polizeiliche Aufgaben",
@@ -69,6 +159,90 @@
                   "own": 1,
                   "by_type": {
                     "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "62",
+          "title": "Regalien",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "625",
+              "title": "Fischerei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "625.7",
+                  "title": "Interkantonale Vereinbarungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "71",
+          "title": "Bauwesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "711",
+              "title": "Bau- und Raumplanungsrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "711.6",
+                  "title": "Öffentliche Bauvorschriften",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
                   }
                 }
               ]
@@ -196,6 +370,37 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.180",
+          "title": "Kunst, Kultur, Sport",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.180.30",
+              "title": "Sport",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
       "total": 1,
@@ -220,6 +425,100 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.30",
+          "title": "Monopole, Staatliche Unternehmen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.30.60",
+              "title": "Fischerei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "6.30.60.20",
+                  "title": "Reviere",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.70",
+              "title": "Parkplätze",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.70",
+              "title": "Denkmalschutz, Kulturgüterschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -312,35 +611,69 @@
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 9
   },
   "available_years_for_entity": [
     "1803",
+    "1825",
+    "1828",
+    "1830",
+    "1851",
     "1873",
+    "1874",
+    "1875",
+    "1888",
+    "1889",
+    "1893",
+    "1898",
+    "1899",
+    "1901",
+    "1903",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
     "1915",
+    "1921",
     "1923",
     "1924",
+    "1925",
     "1926",
+    "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1935",
+    "1937",
+    "1938",
+    "1939",
+    "1941",
     "1943",
+    "1944",
+    "1945",
     "1946",
     "1947",
+    "1948",
     "1949",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
+    "1962",
     "1963",
+    "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -348,6 +681,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",

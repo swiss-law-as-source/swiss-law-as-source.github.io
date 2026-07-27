@@ -1,35 +1,345 @@
 {
   "year": "1962",
   "entity": "SO",
-  "total": 0,
-  "message": "No data for SO in 1962.",
+  "total": 4,
+  "categorized": 4,
+  "uncategorized": 0,
+  "by_type": {
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "125.4 Amtsgerichte": 1,
+        "434.2 Druckerzeugnisse": 1
+      },
+      "by_global_category": {
+        "1.20.70.10.40 Bezirks-, Amts- und Friedensgericht": 1,
+        "8.70.20 Jugendschutz, Jugendhilfe": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "434.2 Druckerzeugnisse": 1
+      },
+      "by_global_category": {
+        "8.70.20 Jugendschutz, Jugendhilfe": 1
+      }
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "712.6 Wasserversorgung": 1
+      },
+      "by_global_category": {
+        "8.10.130.20 Wasserversorgung": 1
+      }
+    }
+  },
+  "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Grundlagen, Organisation, Gemeinden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "12",
+          "title": "Organisation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "125",
+              "title": "Gerichte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "125.4",
+                  "title": "Amtsgerichte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule, Kirche, Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "43",
+          "title": "Kultur",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "434.2",
+              "title": "Druckerzeugnisse",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "71",
+          "title": "Bauwesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "712",
+              "title": "Wasserrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "712.6",
+                  "title": "Wasserversorgung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.40",
+                      "title": "Bezirks-, Amts- und Friedensgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1,
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.20",
+                  "title": "Wasserversorgung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.20",
+              "title": "Jugendschutz, Jugendhilfe",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1,
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "languages_available": {
+    "de": 4
+  },
   "available_years_for_entity": [
     "1803",
+    "1825",
+    "1828",
+    "1830",
+    "1851",
     "1873",
+    "1874",
+    "1875",
+    "1888",
+    "1889",
+    "1893",
+    "1898",
+    "1899",
+    "1901",
+    "1903",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
     "1915",
+    "1921",
     "1923",
     "1924",
+    "1925",
     "1926",
+    "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1935",
+    "1937",
+    "1938",
+    "1939",
+    "1941",
     "1943",
+    "1944",
+    "1945",
     "1946",
     "1947",
+    "1948",
     "1949",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
+    "1962",
     "1963",
+    "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -37,6 +347,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",
@@ -102,6 +413,7 @@
     "NE",
     "SG",
     "SH",
+    "SO",
     "SZ",
     "TI",
     "UR",

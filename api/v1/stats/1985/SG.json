@@ -1,16 +1,17 @@
 {
   "year": "1985",
   "entity": "SG",
-  "total": 11,
-  "categorized": 11,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "151 Allgemein": 1,
         "215 Mittelschulen": 1,
         "217 Universität": 1,
+        "331 Krankenversicherung": 1,
         "714 Schifffahrt": 1
       },
       "by_global_category": {
@@ -20,15 +21,30 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "215 Mittelschulen": 2,
+        "272 Vereinbarungen": 1,
         "752 Gewässerschutz": 1
       },
       "by_global_category": {
         "4.50.10 Pädagogik": 1,
         "4.30.10.10 Hauswirtschaftliche Ausbildung": 1,
+        "7.50.80 Post- und Fernmeldeverkehr": 1,
         "7.60.20 Gewässerschutz": 1
+      }
+    },
+    "Gesetz": {
+      "total": 3,
+      "by_topic": {
+        "251 Turnen und Sport": 1,
+        "552 Handel": 1,
+        "554 Unterhaltungsgewerbe": 1
+      },
+      "by_global_category": {
+        "4.180.30 Sport": 1,
+        "9.60.60 Reisendengewerbe": 1,
+        "4.180.10.10 Film, Theater, Unterhaltung": 1
       }
     },
     "Verordnung": {
@@ -48,15 +64,6 @@
       },
       "by_global_category": {
         "4.20.10 Mittelschule": 1
-      }
-    },
-    "Gesetz": {
-      "total": 1,
-      "by_topic": {
-        "251 Turnen und Sport": 1
-      },
-      "by_global_category": {
-        "4.180.30 Sport": 1
       }
     }
   },
@@ -118,10 +125,10 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 2,
+        "Interkantonale Vereinbarung": 3,
         "Anderes": 2,
         "Staatsvertrag": 1,
         "Gesetz": 1
@@ -172,6 +179,97 @@
             {
               "identifier": "251",
               "title": "Turnen und Sport",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "27",
+          "title": "Kultur",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "272",
+              "title": "Vereinbarungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "33",
+          "title": "Krankenversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "331",
+              "title": "Krankenversicherung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Arbeit und Gewerbe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 2
+      },
+      "children": [
+        {
+          "identifier": "55",
+          "title": "Gewerbepolizei",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 2
+          },
+          "children": [
+            {
+              "identifier": "552",
+              "title": "Handel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "554",
+              "title": "Unterhaltungsgewerbe",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -239,14 +337,14 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 7,
+      "total": 8,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 2,
         "Anderes": 2,
+        "Gesetz": 2,
         "Staatsvertrag": 1,
-        "Verordnung": 1,
-        "Gesetz": 1
+        "Verordnung": 1
       },
       "children": [
         {
@@ -372,12 +470,32 @@
         {
           "identifier": "4.180",
           "title": "Kunst, Kultur, Sport",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 2
           },
           "children": [
+            {
+              "identifier": "4.180.10",
+              "title": "Kunst",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "4.180.10.10",
+                  "title": "Film, Theater, Unterhaltung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "4.180.30",
               "title": "Sport",
@@ -394,11 +512,11 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
-        "Interkantonale Vereinbarung": 1
+        "Interkantonale Vereinbarung": 2,
+        "Anderes": 1
       },
       "children": [
         {
@@ -417,6 +535,26 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "7.50",
+          "title": "Verkehr",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.50.80",
+              "title": "Post- und Fernmeldeverkehr",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -442,15 +580,47 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.60",
+              "title": "Reisendengewerbe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 15
   },
   "available_years_for_entity": [
     "1847",
     "1871",
     "1901",
+    "1903",
     "1911",
     "1914",
     "1929",
@@ -469,6 +639,7 @@
     "1954",
     "1955",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",
@@ -555,6 +726,7 @@
     "SG",
     "SH",
     "SO",
+    "TG",
     "TI",
     "UR",
     "VD",

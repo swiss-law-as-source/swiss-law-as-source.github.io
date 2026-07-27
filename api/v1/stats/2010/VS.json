@@ -1,10 +1,22 @@
 {
   "year": "2010",
   "entity": "VS",
-  "total": 9,
-  "categorized": 9,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
+    "Anderes": {
+      "total": 4,
+      "by_topic": {
+        "80 Gesundheitswesen": 2,
+        "14 Bürgerrecht. Niederlassung. Aufenthalt": 1,
+        "82 Arbeit": 1
+      },
+      "by_global_category": {
+        "1.10.70.20.10 Asylwesen": 1,
+        "8.20.20.20 Entsendung von Arbeitnehmern": 1
+      }
+    },
     "Verordnung": {
       "total": 3,
       "by_topic": {
@@ -53,9 +65,10 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung": 1,
         "Reglement": 1
       },
@@ -63,9 +76,10 @@
         {
           "identifier": "14",
           "title": "Bürgerrecht. Niederlassung. Aufenthalt",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           }
         },
@@ -204,6 +218,35 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheit, Soziale Sicherheit",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 3
+      },
+      "children": [
+        {
+          "identifier": "80",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Anderes": 2
+          }
+        },
+        {
+          "identifier": "82",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 1,
@@ -228,9 +271,10 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung": 1,
         "Reglement": 1
       },
@@ -238,12 +282,44 @@
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "1.10.80",
               "title": "Ausweise",
@@ -372,6 +448,48 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.20",
+              "title": "Arbeitsmarkt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.20.20",
+                  "title": "Entsendung von Arbeitnehmern",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft",
       "total": 1,
@@ -393,7 +511,7 @@
     }
   ],
   "languages_available": {
-    "de": 9,
+    "de": 13,
     "fr": 9
   },
   "available_years_for_entity": [
@@ -402,6 +520,9 @@
     "1855",
     "1882",
     "1891",
+    "1900",
+    "1912",
+    "1923",
     "1924",
     "1933",
     "1936",
@@ -411,6 +532,7 @@
     "1950",
     "1951",
     "1952",
+    "1954",
     "1959",
     "1961",
     "1963",
@@ -418,14 +540,19 @@
     "1965",
     "1966",
     "1967",
+    "1968",
     "1970",
+    "1971",
     "1972",
     "1973",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1981",
     "1982",
+    "1983",
+    "1984",
     "1985",
     "1986",
     "1987",

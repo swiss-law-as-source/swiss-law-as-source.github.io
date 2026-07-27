@@ -1,26 +1,31 @@
 {
   "year": "2003",
   "entity": "SG",
-  "total": 14,
-  "categorized": 14,
+  "total": 26,
+  "categorized": 26,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 9,
+      "total": 19,
       "by_topic": {
+        "331 Krankenversicherung": 9,
         "143 Staatspersonal": 2,
         "215 Mittelschulen": 2,
         "962 Strafrechtspflege": 2,
         "211 Allgemein": 1,
         "213 Volksschulen": 1,
+        "321 Kantonale Spitäler": 1,
         "841 Öffentliches Beschaffungswesen": 1
       },
       "by_global_category": {
+        "8.10.30.50 Chiropraktiker, Physiotherapeuten": 4,
         "4.90.20 Löhne, Entschädigungen": 2,
+        "8.10.20.20 Psychiatrische Kliniken": 2,
         "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
         "4.120.50 Förderung von Informationstechnologien": 1,
         "4.50.10 Pädagogik": 1,
         "4.120.60 Schulbauten": 1,
+        "8.30.60.10.20 Vereinbarungen": 1,
         "7.30.40 Submission": 1,
         "7.30.10 Staatliche Gebäude und Liegenschaften": 1
       }
@@ -41,12 +46,15 @@
       }
     },
     "Verordnung": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
-        "325 Übrige Einrichtungen": 1
+        "325 Übrige Einrichtungen": 1,
+        "941 Gerichtsorganisation und -verfahren": 1,
+        "961 Zivilrechtspflege": 1
       },
       "by_global_category": {
-        "8.70.80 Schwangerschaftsberatung": 1
+        "8.70.80 Schwangerschaftsberatung": 1,
+        "1.20.70.10.50 Arbeits- und Mietgericht": 1
       }
     }
   },
@@ -137,21 +145,32 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 1,
+      "total": 11,
       "own": 0,
       "by_type": {
+        "Anderes": 10,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "32",
           "title": "Einrichtungen der Gesundheitspflege",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "321",
+              "title": "Kantonale Spitäler",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
             {
               "identifier": "325",
               "title": "Übrige Einrichtungen",
@@ -159,6 +178,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "33",
+          "title": "Krankenversicherung",
+          "total": 9,
+          "own": 0,
+          "by_type": {
+            "Anderes": 9
+          },
+          "children": [
+            {
+              "identifier": "331",
+              "title": "Krankenversicherung",
+              "total": 9,
+              "own": 9,
+              "by_type": {
+                "Anderes": 9
               }
             }
           ]
@@ -281,21 +320,52 @@
     {
       "identifier": "9",
       "title": "Zivilrecht, Strafrecht, Rechtspflege",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Verordnung": 2,
         "Anderes": 2
       },
       "children": [
         {
-          "identifier": "96",
-          "title": "Zivil- und Strafrechtspflege",
-          "total": 2,
+          "identifier": "94",
+          "title": "Gerichtsorganisation und -verfahren",
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Anderes": 2
+            "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "941",
+              "title": "Gerichtsorganisation und -verfahren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "96",
+          "title": "Zivil- und Strafrechtspflege",
+          "total": 3,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "961",
+              "title": "Zivilrechtspflege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "962",
               "title": "Strafrechtspflege",
@@ -314,19 +384,21 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Verordnung": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 1,
+            "Verordnung": 1
           },
           "children": [
             {
@@ -354,6 +426,37 @@
                       "own": 1,
                       "by_type": {
                         "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "1.20.70",
+              "title": "Gerichtsorganisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.70.10",
+                  "title": "Gerichtsbehörden",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.70.10.50",
+                      "title": "Arbeits- und Mietgericht",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
                       }
                     }
                   ]
@@ -540,12 +643,106 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 8,
       "own": 0,
       "by_type": {
+        "Anderes": 7,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 6,
+          "own": 0,
+          "by_type": {
+            "Anderes": 6
+          },
+          "children": [
+            {
+              "identifier": "8.10.20",
+              "title": "Kranken- und Pflegeanstalten",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "8.10.20.20",
+                  "title": "Psychiatrische Kliniken",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 2
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 4,
+              "own": 0,
+              "by_type": {
+                "Anderes": 4
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.50",
+                  "title": "Chiropraktiker, Physiotherapeuten",
+                  "total": 4,
+                  "own": 4,
+                  "by_type": {
+                    "Anderes": 4
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.60",
+              "title": "KVG",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.30.60.10",
+                  "title": "Tarife",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "8.30.60.10.20",
+                      "title": "Vereinbarungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "8.70",
           "title": "Fürsorge",
@@ -601,12 +798,13 @@
     }
   ],
   "languages_available": {
-    "de": 14
+    "de": 26
   },
   "available_years_for_entity": [
     "1847",
     "1871",
     "1901",
+    "1903",
     "1911",
     "1914",
     "1929",
@@ -625,6 +823,7 @@
     "1954",
     "1955",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",

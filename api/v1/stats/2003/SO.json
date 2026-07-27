@@ -1,8 +1,8 @@
 {
   "year": "2003",
   "entity": "SO",
-  "total": 12,
-  "categorized": 12,
+  "total": 17,
+  "categorized": 17,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -22,16 +22,33 @@
       }
     },
     "Anderes": {
-      "total": 4,
+      "total": 5,
       "by_topic": {
         "126.515.85 Volksschule": 1,
         "412 Kindergärten": 1,
+        "416.3 Berufslehre": 1,
         "618.2 Feuerwehr-Dienst": 1
       },
       "by_global_category": {
         "4.90.20 Löhne, Entschädigungen": 1,
         "4.10.20 Kindergarten": 1,
         "5.20.30.10 Feuerwehr": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 5,
+      "by_topic": {
+        "411.26 Hochschulen, Fachschulen (Interkantonale Vereinbarungen)": 1,
+        "423.3 Bistum Basel": 1,
+        "511.5 Interkantonale Zusammenarbeit": 1,
+        "813.1 Heilmittel": 1,
+        "943 Handel": 1
+      },
+      "by_global_category": {
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "5.30.10.30 Personal": 1,
+        "8.10.70 Heil- und Betäubungsmittel": 1,
+        "9.60.50 Binnenmarkt, Handelshemmnisse": 1
       }
     },
     "Gesetz": {
@@ -50,15 +67,6 @@
       },
       "by_global_category": {
         "4.20.10 Mittelschule": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "943 Handel": 1
-      },
-      "by_global_category": {
-        "9.60.50 Binnenmarkt, Handelshemmnisse": 1
       }
     }
   },
@@ -187,10 +195,11 @@
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 3,
+      "total": 6,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 2,
         "Reglement": 1,
         "Verordnung": 1
       },
@@ -198,14 +207,46 @@
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 3,
+          "total": 5,
           "own": 0,
           "by_type": {
-            "Anderes": 1,
+            "Anderes": 2,
+            "Interkantonale Vereinbarung": 1,
             "Reglement": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "411",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "411.2",
+                  "title": "Koordination, Interkantonale Vereinbarungen",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "411.26",
+                      "title": "Hochschulen, Fachschulen (Interkantonale Vereinbarungen)",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Interkantonale Vereinbarung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "412",
               "title": "Kindergärten",
@@ -249,19 +290,52 @@
             {
               "identifier": "416",
               "title": "Berufsbildung",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
+                "Anderes": 1,
                 "Verordnung": 1
               },
               "children": [
                 {
                   "identifier": "416.3",
                   "title": "Berufslehre",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 1,
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "42",
+          "title": "Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "423",
+              "title": "Römisch-katholische Kirche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "423.3",
+                  "title": "Bistum Basel",
                   "total": 1,
                   "own": 1,
                   "by_type": {
-                    "Verordnung": 1
+                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
@@ -273,21 +347,43 @@
     {
       "identifier": "5",
       "title": "Polizei, Militär, Zivilschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "51",
           "title": "Polizei",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "511",
+              "title": "Kantonspolizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "511.5",
+                  "title": "Interkantonale Zusammenarbeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "513",
               "title": "Gewerbe- und Handelspolizei",
@@ -428,6 +524,48 @@
       ]
     },
     {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "813",
+              "title": "Heilmittel, Betäubungsmittel, Gifte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "813.1",
+                  "title": "Heilmittel",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Volkswirtschaft",
       "total": 1,
@@ -463,10 +601,11 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -497,6 +636,26 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
             }
           ]
         }
@@ -600,10 +759,11 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -631,6 +791,37 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.30",
+                  "title": "Personal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
@@ -664,6 +855,37 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.70",
+              "title": "Heil- und Betäubungsmittel",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -714,35 +936,69 @@
     }
   ],
   "languages_available": {
-    "de": 12
+    "de": 17
   },
   "available_years_for_entity": [
     "1803",
+    "1825",
+    "1828",
+    "1830",
+    "1851",
     "1873",
+    "1874",
+    "1875",
+    "1888",
+    "1889",
+    "1893",
+    "1898",
+    "1899",
+    "1901",
+    "1903",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
     "1915",
+    "1921",
     "1923",
     "1924",
+    "1925",
     "1926",
+    "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1935",
+    "1937",
+    "1938",
+    "1939",
+    "1941",
     "1943",
+    "1944",
+    "1945",
     "1946",
     "1947",
+    "1948",
     "1949",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
+    "1962",
     "1963",
+    "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -750,6 +1006,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",

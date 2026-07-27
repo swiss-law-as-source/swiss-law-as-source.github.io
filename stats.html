@@ -87,47 +87,48 @@
     <main>
         <div class="kpi-grid" id="kpis"></div>
 
-        <div class="grid-2">
-            <div class="chart-section">
-                <h2>Federal: SR Categories</h2>
-                <div class="bar-chart" id="sr-cat-chart"></div>
+        <div class="chart-section">
+            <h2>Rechtsgebiete — harmonisiert (Bund + Kantone)</h2>
+            <div class="tab-bar" id="domains-scope">
+                <button class="active" data-scope="total">Alle</button>
+                <button data-scope="federal">Bund</button>
+                <button data-scope="cantonal">Kantone</button>
             </div>
-            <div class="chart-section">
-                <h2>Cantonal: Instrument Types</h2>
-                <div class="bar-chart" id="cat-type-chart"></div>
+            <div class="tab-bar" id="domains-form">
+                <button class="active" data-form="treemap">Treemap</button>
+                <button data-form="sunburst">Sunburst</button>
             </div>
+            <div class="echart" id="domains-chart" style="height:520px"></div>
+            <p class="table-note">Eine Taxonomie für Bundes- und Kantonsrecht (LexFind «domaine juridique»).
+               Klick = hineinzoomen. Labels in de/fr/it: <a href="api/v1/categories/global.json">categories API</a>.</p>
         </div>
 
         <div class="grid-2">
+            <div class="chart-section">
+                <h2>Erlasstypen (kantonal)</h2>
+                <div class="echart" id="types-chart" style="height:340px"></div>
+            </div>
             <div class="chart-section">
                 <h2>Files by Language</h2>
-                <div class="bar-chart" id="lang-chart"></div>
-            </div>
-            <div class="chart-section">
-                <h2>By Canton</h2>
-                <div class="bar-chart" id="canton-chart"></div>
+                <div class="echart" id="lang-chart" style="height:340px"></div>
             </div>
         </div>
 
-        <div class="chart-section">
-            <h2>By Source</h2>
-            <div class="bar-chart" id="source-chart"></div>
+        <div class="grid-2">
+            <div class="chart-section">
+                <h2>Laws by Canton</h2>
+                <div class="echart" id="canton-chart" style="height:340px"></div>
+            </div>
+            <div class="chart-section">
+                <h2>By Source</h2>
+                <div class="echart" id="source-chart" style="height:340px"></div>
+            </div>
         </div>
 
         <div class="chart-section">
             <h2>Laws by Version Date (Year)</h2>
             <div class="tab-bar" id="year-tabs"></div>
             <div class="timeline-chart" id="timeline-chart"></div>
-        </div>
-
-        <div class="chart-section">
-            <h2>Top 20 Cantonal Systematic Categories</h2>
-            <div class="bar-chart" id="sys-cat-chart"></div>
-        </div>
-
-        <div class="chart-section">
-            <h2>Top 20 Global Categories (Domaine Juridique)</h2>
-            <div class="bar-chart" id="global-cat-chart"></div>
         </div>
 
         <div class="chart-section">
@@ -141,6 +142,7 @@
         Data: <a href="https://www.fedlex.admin.ch">Fedlex</a> + <a href="https://www.lexfind.ch">LexFind</a>
     </footer>
 
+    <script src="assets/echarts.min.js"></script>
     <script>
     (async function() {
         const stats = await (await fetch('stats.json')).json();
@@ -157,26 +159,166 @@
             `<div class="kpi-card"><div class="value">${k.value}</div><div class="label">${k.label}</div></div>`
         ).join('');
 
-        function renderBarChart(id, data, color = '#D52B1E') {
+        // ─── Interactive charts (ECharts, vendored) ─────────────────────
+        // Categorical palette: validated 8-slot order (CVD-safe adjacent
+        // pairs on white); low-contrast slots are relieved by direct labels.
+        const PALETTE = ['#2a78d6', '#008300', '#e87ba4', '#eda100',
+                         '#1baf7a', '#eb6834', '#4a3aa7', '#e34948'];
+        const GRAY = '#9a9a94';
+        const INK = '#1a1a1a', INK2 = '#52514e';
+        const charts = [];
+
+        function makeChart(id) {
+            const el = document.getElementById(id);
+            const c = echarts.init(el);
+            charts.push(c);
+            return c;
+        }
+        window.addEventListener('resize', () => charts.forEach(c => c.resize()));
+
+        function foldTop(data, n = 7, otherLabel = 'Übrige') {
             const entries = Object.entries(data).sort((a, b) => b[1] - a[1]);
-            const max = entries[0]?.[1] || 1;
-            document.getElementById(id).innerHTML = entries.map(([label, count]) => {
-                const pct = (count / max * 100).toFixed(1);
-                return `<div class="bar-row">
-                    <div class="bar-label" title="${label}">${label}</div>
-                    <div class="bar-container"><div class="bar-fill" style="width:${pct}%;background:${color}"></div></div>
-                    <div class="bar-value">${count.toLocaleString()}</div>
-                </div>`;
-            }).join('');
+            if (entries.length <= n + 1) return entries;
+            const top = entries.slice(0, n);
+            const rest = entries.slice(n).reduce((s, e) => s + e[1], 0);
+            return [...top, [otherLabel, rest]];
         }
 
-        renderBarChart('sr-cat-chart', stats.by_sr_category || {});
-        renderBarChart('cat-type-chart', stats.by_category_type || {}, '#2563eb');
-        renderBarChart('lang-chart', stats.by_languages || stats.by_language || {}, '#16a34a');
-        renderBarChart('canton-chart', stats.by_canton || {}, '#ea580c');
-        renderBarChart('source-chart', stats.by_source || {});
-        renderBarChart('sys-cat-chart', stats.by_systematic_category || {}, '#7c3aed');
-        renderBarChart('global-cat-chart', stats.by_global_category || {}, '#0891b2');
+        function donut(id, data, tooltipExtra) {
+            const entries = foldTop(data);
+            makeChart(id).setOption({
+                tooltip: {
+                    formatter: p => `${p.name}: <b>${p.value.toLocaleString()}</b> (${p.percent}%)`
+                        + (tooltipExtra ? tooltipExtra(p.name) : ''),
+                },
+                legend: { bottom: 0, type: 'scroll', textStyle: { color: INK2, fontSize: 11 } },
+                series: [{
+                    type: 'pie',
+                    radius: ['42%', '68%'],
+                    center: ['50%', '44%'],
+                    itemStyle: { borderColor: '#fff', borderWidth: 2, borderRadius: 3 },
+                    label: { color: INK, fontSize: 11,
+                             formatter: p => `${p.name}\n${p.value.toLocaleString()}` },
+                    labelLine: { length: 8, length2: 6 },
+                    emphasis: { scaleSize: 4 },
+                    color: PALETTE,
+                    data: entries.map(([name, value]) => ({ name, value })),
+                }],
+            });
+        }
+
+        const typeLabels = stats.category_type_labels || {};
+        donut('types-chart', stats.by_category_type || {}, name => {
+            const l = typeLabels[name];
+            return l ? `<br><span style="color:#888">${l.fr} · ${l.it}</span>` : '';
+        });
+        donut('lang-chart', stats.by_languages || {});
+        donut('source-chart', stats.by_source || {});
+
+        // Canton treemap — magnitude via single-hue sequential fill
+        const cantonData = Object.entries(stats.by_canton || {})
+            .map(([name, value]) => ({ name, value }));
+        makeChart('canton-chart').setOption({
+            tooltip: { formatter: p => `${p.name}: <b>${p.value.toLocaleString()}</b> laws` },
+            series: [{
+                type: 'treemap',
+                roam: false, nodeClick: false, breadcrumb: { show: false },
+                itemStyle: { borderColor: '#fff', borderWidth: 2, gapWidth: 2 },
+                label: { color: '#fff', fontSize: 12,
+                         formatter: p => `${p.name}\n${p.value.toLocaleString()}` },
+                color: ['#c7dcf5', '#9ec4ec', '#74abe3', '#4a91da', '#2a78d6', '#1f5eae'],
+                colorMappingBy: 'value',
+                data: cantonData,
+            }],
+        });
+
+        // Harmonized domains — treemap / sunburst with drill-down
+        let harm = null;
+        try {
+            harm = await (await fetch('api/v1/stats/harmonized_categories.json')).json();
+        } catch (e) {}
+        if (harm) {
+            const domainsChart = makeChart('domains-chart');
+            let scope = 'total', form = 'treemap';
+
+            function toNodes(nodes, topColor) {
+                return nodes.map((n, i) => {
+                    const c = topColor || (i < PALETTE.length ? PALETTE[i] : GRAY);
+                    const node = {
+                        name: n.identifier + ' ' + (n.title.de || n.title.fr || ''),
+                        value: n[scope],
+                        _meta: n,
+                        itemStyle: topColor ? undefined : { color: c },
+                    };
+                    if (n.children) {
+                        const kids = toNodes(n.children, c).filter(k => k.value > 0);
+                        if (kids.length) node.children = kids;
+                    }
+                    return node;
+                }).filter(n => n.value > 0);
+            }
+
+            function domainTooltip(p) {
+                const m = p.data && p.data._meta;
+                if (!m) return p.name;
+                const t = m.title || {};
+                return `<b>${m.identifier}</b> ${t.de || ''}` +
+                    (t.fr ? `<br><span style="color:#888">${t.fr}</span>` : '') +
+                    (t.it ? `<br><span style="color:#888">${t.it}</span>` : '') +
+                    `<br>Total: <b>${m.total.toLocaleString()}</b>` +
+                    ` · Bund: ${m.federal.toLocaleString()}` +
+                    ` · Kantone: ${m.cantonal.toLocaleString()}`;
+            }
+
+            function renderDomains() {
+                const data = toNodes(harm.tree);
+                domainsChart.clear();
+                if (form === 'treemap') {
+                    domainsChart.setOption({
+                        tooltip: { formatter: domainTooltip },
+                        series: [{
+                            type: 'treemap', data,
+                            leafDepth: 2, roam: false,
+                            breadcrumb: { show: true, top: 0 },
+                            itemStyle: { borderColor: '#fff', borderWidth: 2, gapWidth: 2 },
+                            upperLabel: { show: true, height: 22, color: '#fff' },
+                            label: { color: '#fff', fontSize: 11 },
+                            colorSaturation: [0.35, 0.6],
+                        }],
+                    });
+                } else {
+                    domainsChart.setOption({
+                        tooltip: { formatter: domainTooltip },
+                        series: [{
+                            type: 'sunburst', data,
+                            radius: ['12%', '92%'],
+                            nodeClick: 'rootToNode',
+                            itemStyle: { borderColor: '#fff', borderWidth: 1.5 },
+                            label: { minAngle: 8, color: INK, fontSize: 10,
+                                     formatter: p => p.name.split(' ')[0] },
+                        }],
+                    });
+                }
+            }
+
+            document.getElementById('domains-scope').addEventListener('click', e => {
+                if (e.target.tagName !== 'BUTTON') return;
+                document.querySelectorAll('#domains-scope button').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                scope = e.target.dataset.scope;
+                renderDomains();
+            });
+            document.getElementById('domains-form').addEventListener('click', e => {
+                if (e.target.tagName !== 'BUTTON') return;
+                document.querySelectorAll('#domains-form button').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                form = e.target.dataset.form;
+                renderDomains();
+            });
+            renderDomains();
+        } else {
+            document.getElementById('domains-chart').textContent = 'Harmonized category data unavailable.';
+        }
 
         // Timeline
         let timelineMode = 'all';

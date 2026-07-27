@@ -1,10 +1,23 @@
 {
   "year": "2001",
   "entity": "VS",
-  "total": 9,
-  "categorized": 9,
+  "total": 10,
+  "categorized": 10,
   "uncategorized": 0,
   "by_type": {
+    "Reglement": {
+      "total": 4,
+      "by_topic": {
+        "40 Allgemeine Bestimmungen": 1,
+        "85 Unterstützung": 1,
+        "923 Fischerei": 1
+      },
+      "by_global_category": {
+        "4.120.80 Schulleitung": 1,
+        "8.70.80 Schwangerschaftsberatung": 1,
+        "6.30.60.20 Reviere": 1
+      }
+    },
     "Verordnung": {
       "total": 3,
       "by_topic": {
@@ -14,17 +27,6 @@
       "by_global_category": {
         "6.20.30 Liegenschaftssteuern": 1,
         "9.10 Wirtschaftsförderung": 1
-      }
-    },
-    "Reglement": {
-      "total": 3,
-      "by_topic": {
-        "85 Unterstützung": 1,
-        "923 Fischerei": 1
-      },
-      "by_global_category": {
-        "8.70.80 Schwangerschaftsberatung": 1,
-        "6.30.60.20 Reviere": 1
       }
     },
     "Gesetz": {
@@ -47,6 +49,26 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "4",
+      "title": "Schule - Wissenschaft - Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "40",
+          "title": "Allgemeine Bestimmungen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen und Steuern",
@@ -143,6 +165,37 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.80",
+              "title": "Schulleitung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
@@ -306,7 +359,7 @@
     }
   ],
   "languages_available": {
-    "de": 9,
+    "de": 10,
     "fr": 7
   },
   "available_years_for_entity": [
@@ -315,6 +368,9 @@
     "1855",
     "1882",
     "1891",
+    "1900",
+    "1912",
+    "1923",
     "1924",
     "1933",
     "1936",
@@ -324,6 +380,7 @@
     "1950",
     "1951",
     "1952",
+    "1954",
     "1959",
     "1961",
     "1963",
@@ -331,14 +388,19 @@
     "1965",
     "1966",
     "1967",
+    "1968",
     "1970",
+    "1971",
     "1972",
     "1973",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1981",
     "1982",
+    "1983",
+    "1984",
     "1985",
     "1986",
     "1987",

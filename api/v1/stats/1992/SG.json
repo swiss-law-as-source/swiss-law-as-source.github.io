@@ -1,21 +1,23 @@
 {
   "year": "1992",
   "entity": "SG",
-  "total": 11,
-  "categorized": 11,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 9,
+      "total": 11,
       "by_topic": {
         "853 Jagd": 2,
         "141 Allgemein": 1,
         "215 Mittelschulen": 1,
         "234 Fachhochschulen": 1,
         "321 Kantonale Spitäler": 1,
+        "331 Krankenversicherung": 1,
         "371 Kinderzulagen": 1,
         "710 Allgemein": 1,
-        "732 Tiefbauten des Staates": 1
+        "732 Tiefbauten des Staates": 1,
+        "871 Feuerpolizei": 1
       },
       "by_global_category": {
         "6.30.50.10 Jäger": 2,
@@ -26,12 +28,15 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "153 Gemeinschaftliche Unternehmen": 1,
-        "234 Fachhochschulen": 1
+        "234 Fachhochschulen": 1,
+        "811 Staatssteuern": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "6.20.100 Steuerbefreiung und -erleichterungen": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -144,10 +149,10 @@
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 3
       },
       "children": [
         {
@@ -162,6 +167,26 @@
             {
               "identifier": "321",
               "title": "Kantonale Spitäler",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "33",
+          "title": "Krankenversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "331",
+              "title": "Krankenversicherung",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -246,12 +271,33 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 3,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "81",
+          "title": "Steuern und Finanzausgleich",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Staatssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "85",
           "title": "Regalien",
@@ -268,6 +314,26 @@
               "own": 2,
               "by_type": {
                 "Anderes": 2
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "87",
+          "title": "Feuerschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "871",
+              "title": "Feuerpolizei",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
               }
             }
           ]
@@ -310,10 +376,11 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Anderes": 3
+        "Anderes": 3,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -332,6 +399,26 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.100",
+              "title": "Steuerbefreiung und -erleichterungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -444,12 +531,13 @@
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 14
   },
   "available_years_for_entity": [
     "1847",
     "1871",
     "1901",
+    "1903",
     "1911",
     "1914",
     "1929",
@@ -468,6 +556,7 @@
     "1954",
     "1955",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",

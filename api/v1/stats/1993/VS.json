@@ -1,8 +1,8 @@
 {
   "year": "1993",
   "entity": "VS",
-  "total": 3,
-  "categorized": 3,
+  "total": 5,
+  "categorized": 5,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -16,9 +16,55 @@
         "6.20.10.40 Pauschale Steueranrechnung": 1,
         "8.40.10 Eigentums- und Wohnungsbauförderung": 1
       }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "34 Strafvollzug": 1
+      },
+      "by_global_category": {}
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "35 Rechtshilfe": 1
+      },
+      "by_global_category": {
+        "3.20.50 Rechtshilfe": 1
+      }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "3",
+      "title": "Strafrechtspflege - Strafvollzug",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "34",
+          "title": "Strafvollzug",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        },
+        {
+          "identifier": "35",
+          "title": "Rechtshilfe",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen und Steuern",
@@ -81,6 +127,37 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.50",
+              "title": "Rechtshilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
@@ -156,7 +233,7 @@
     }
   ],
   "languages_available": {
-    "de": 3,
+    "de": 5,
     "fr": 3
   },
   "available_years_for_entity": [
@@ -165,6 +242,9 @@
     "1855",
     "1882",
     "1891",
+    "1900",
+    "1912",
+    "1923",
     "1924",
     "1933",
     "1936",
@@ -174,6 +254,7 @@
     "1950",
     "1951",
     "1952",
+    "1954",
     "1959",
     "1961",
     "1963",
@@ -181,14 +262,19 @@
     "1965",
     "1966",
     "1967",
+    "1968",
     "1970",
+    "1971",
     "1972",
     "1973",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1981",
     "1982",
+    "1983",
+    "1984",
     "1985",
     "1986",
     "1987",

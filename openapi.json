@@ -1,0 +1,136 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Swiss Law Collection API",
+    "version": "1.0.0",
+    "description": "Static JSON API for 30,000+ unique Swiss federal and cantonal laws, served from GitHub Pages. All endpoints are read-only GET, no authentication, no rate limits. Raw law Markdown files live at https://raw.githubusercontent.com/benjamin-arfa/swiss-law/main/{path} using the `path` values returned by these endpoints. Human-readable documentation with examples: /api.html"
+  },
+  "servers": [{ "url": "https://swiss-law-as-source.github.io" }],
+  "tags": [
+    { "name": "publications", "description": "Laws grouped by entry-into-force year" },
+    { "name": "statistics", "description": "Aggregate and per-year/per-canton statistics" },
+    { "name": "laws", "description": "Per-entity law index with languages, text volume, article counts" },
+    { "name": "categories", "description": "Harmonized category dictionaries (multilingual)" },
+    { "name": "quality", "description": "Coverage and completeness reports" },
+    { "name": "global", "description": "Whole-dataset files" }
+  ],
+  "paths": {
+    "/stats.json": {
+      "get": {
+        "tags": ["global"],
+        "summary": "Aggregate statistics (deduplicated counts)",
+        "description": "total_laws, breakdowns by canton/type/category/year, harmonized-domain summary (by_harmonized_domain), category_type_labels translations, cross-tabs.",
+        "responses": { "200": { "description": "Statistics object", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/laws.json": {
+      "get": {
+        "tags": ["global"],
+        "summary": "Search index — one entry per unique law",
+        "description": "Array of {sr, title, path, cat, scope, canton?, languages}. Powers the search page.",
+        "responses": { "200": { "description": "Law array", "content": { "application/json": { "schema": { "type": "array", "items": { "type": "object" } } } } } }
+      }
+    },
+    "/api/v1/publications/index.json": {
+      "get": {
+        "tags": ["publications"],
+        "summary": "Publication years index",
+        "responses": { "200": { "description": "years, total_publications, earliest_year, latest_year", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/publications/{year}.json": {
+      "get": {
+        "tags": ["publications"],
+        "summary": "All laws that entered into force in a year",
+        "parameters": [{ "name": "year", "in": "path", "required": true, "schema": { "type": "integer" }, "example": 2024 }],
+        "responses": { "200": { "description": "date_prefix, count, publications[] with languages array and category fields", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/stats/index.json": {
+      "get": {
+        "tags": ["statistics"],
+        "summary": "Available years and entities for per-year stats",
+        "responses": { "200": { "description": "years, entities, total_files", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/stats/{year}/{entity}.json": {
+      "get": {
+        "tags": ["statistics"],
+        "summary": "Stats for one year and entity (CH or canton code)",
+        "parameters": [
+          { "name": "year", "in": "path", "required": true, "schema": { "type": "string" }, "example": "2024" },
+          { "name": "entity", "in": "path", "required": true, "schema": { "type": "string" }, "example": "BE" }
+        ],
+        "responses": { "200": { "description": "total, by_type (canonical labels), topic trees, languages_available", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/stats/concordats_by_domain.json": {
+      "get": {
+        "tags": ["statistics"],
+        "summary": "Intercantonal agreements per canton per thematic domain",
+        "responses": { "200": { "description": "domains, cantons{...}, totals, notes", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/stats/harmonized_categories.json": {
+      "get": {
+        "tags": ["statistics"],
+        "summary": "ALL laws (federal + cantonal) on one harmonized taxonomy",
+        "description": "LexFind global systematics tree annotated with {total, federal, cantonal} per node; top_level summary; mapping provenance counts.",
+        "responses": { "200": { "description": "note, counts, top_level[], tree[]", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/laws/index.json": {
+      "get": {
+        "tags": ["laws"],
+        "summary": "Law-index master: entities with counts and volumes",
+        "responses": { "200": { "description": "total_laws, link_base, entities{code: {name, laws, total_chars, total_articles, file}}", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/laws/{entity}.json": {
+      "get": {
+        "tags": ["laws"],
+        "summary": "One entity's laws with per-language chars/articles",
+        "parameters": [{ "name": "entity", "in": "path", "required": true, "schema": { "type": "string", "enum": ["CH","AG","AI","AR","BE","BL","BS","FR","GE","GL","GR","JU","LU","NE","NW","OW","SG","SH","SO","SZ","TG","TI","UR","VD","VS","ZG","ZH"] }, "example": "GR" }],
+        "responses": { "200": { "description": "items[] with {id, title, link, languages: {lang: {chars, articles, path}}, category fields}", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/categories/index.json": {
+      "get": {
+        "tags": ["categories"],
+        "summary": "Available category dictionaries",
+        "responses": { "200": { "description": "types, global, cantons{...}", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/categories/types.json": {
+      "get": {
+        "tags": ["categories"],
+        "summary": "Instrument types with labels in de/fr/it",
+        "description": "LexFind category ids are language-stable; stats keys use the German label.",
+        "responses": { "200": { "description": "types: [{id, label: {de, fr, it}}]", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/categories/global.json": {
+      "get": {
+        "tags": ["categories"],
+        "summary": "Harmonized taxonomy tree (domaine juridique), multilingual",
+        "responses": { "200": { "description": "tree: [{identifier, title: {de, fr, it}, children}]", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/categories/{canton}.json": {
+      "get": {
+        "tags": ["categories"],
+        "summary": "One canton's systematics tree (primary language)",
+        "parameters": [{ "name": "canton", "in": "path", "required": true, "schema": { "type": "string" }, "example": "BS" }],
+        "responses": { "200": { "description": "canton, tree[]", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    },
+    "/api/v1/coverage.json": {
+      "get": {
+        "tags": ["quality"],
+        "summary": "Completeness audit vs LexFind/Fedlex catalogs",
+        "description": "Per canton × instrument type: catalog/present/missing; federal SRs vs Fedlex.",
+        "responses": { "200": { "description": "note, cantons{XX: {by_type, missing}}, federal, total_missing", "content": { "application/json": { "schema": { "type": "object" } } } } }
+      }
+    }
+  }
+}

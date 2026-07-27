@@ -1,30 +1,209 @@
 {
   "year": "1970",
   "entity": "SO",
-  "total": 2,
-  "categorized": 2,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
-        "423.7 Klöster": 1
+        "413.6 Unterricht": 1,
+        "423.7 Klöster": 1,
+        "512.1 Fremdenpolizei": 1
       },
       "by_global_category": {
-        "1.40.10 Römisch-Katholische Kirche": 1
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1,
+        "1.10.80 Ausweise": 1
       }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 3,
+      "by_topic": {
+        "411.21 Schulkoordination und Schuljahrbeginn": 1,
+        "527.1 Truppenübungsplatz Guldenthal": 1,
+        "614.3 Erbschafts- und Schenkungssteuer": 1
+      },
+      "by_global_category": {
+        "4.120.10 Schulkoordination": 1,
+        "5.10.40 Waffenplätze, Zeughäuser": 1,
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1
+      }
+    },
+    "Reglement": {
+      "total": 1,
+      "by_topic": {
+        "128.1 Kurse": 1
+      },
+      "by_global_category": {}
+    },
+    "Verordnung": {
+      "total": 1,
+      "by_topic": {
+        "212.2 Familienrecht": 1
+      },
+      "by_global_category": {}
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "Schule, Kirche, Kultur",
+      "identifier": "1",
+      "title": "Grundlagen, Organisation, Gemeinden",
       "total": 1,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "12",
+          "title": "Organisation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "128",
+              "title": "Staatliche Kurse und Prüfungen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "128.1",
+                  "title": "Kurse",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilprozessrecht, Vollstreckung",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "212",
+              "title": "Einzelne Rechtsgebiete",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "212.2",
+                  "title": "Familienrecht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule, Kirche, Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schule",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1,
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "411",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "411.2",
+                  "title": "Koordination, Interkantonale Vereinbarungen",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "411.21",
+                      "title": "Schulkoordination und Schuljahrbeginn",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Interkantonale Vereinbarung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "identifier": "413",
+              "title": "Volksschule",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "413.6",
+                  "title": "Unterricht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "42",
           "title": "Kirche",
@@ -57,18 +236,154 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "5",
+      "title": "Polizei, Militär, Zivilschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "51",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "512",
+              "title": "Andere polizeiliche Aufgaben",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "512.1",
+                  "title": "Fremdenpolizei",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "52",
+          "title": "Militär",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "527",
+              "title": "Truppenübungsplätze",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "527.1",
+                  "title": "Truppenübungsplatz Guldenthal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Regalien",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "614",
+              "title": "Kantonale Steuern",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "614.3",
+                  "title": "Erbschafts- und Schenkungssteuer",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.80",
+              "title": "Ausweise",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
@@ -90,38 +405,186 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.10",
+              "title": "Schulkoordination",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.10",
+          "title": "Verteidigung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.10.40",
+              "title": "Waffenplätze, Zeughäuser",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.20",
+          "title": "Steuern",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.20.40",
+              "title": "Erbschafts- und Schenkungssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 9
   },
   "available_years_for_entity": [
     "1803",
+    "1825",
+    "1828",
+    "1830",
+    "1851",
     "1873",
+    "1874",
+    "1875",
+    "1888",
+    "1889",
+    "1893",
+    "1898",
+    "1899",
+    "1901",
+    "1903",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
     "1915",
+    "1921",
     "1923",
     "1924",
+    "1925",
     "1926",
+    "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1935",
+    "1937",
+    "1938",
+    "1939",
+    "1941",
     "1943",
+    "1944",
+    "1945",
     "1946",
     "1947",
+    "1948",
     "1949",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
+    "1962",
     "1963",
+    "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -129,6 +592,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",

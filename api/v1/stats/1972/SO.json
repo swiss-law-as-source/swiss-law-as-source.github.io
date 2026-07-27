@@ -1,29 +1,36 @@
 {
   "year": "1972",
   "entity": "SO",
-  "total": 5,
-  "categorized": 5,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
         "212.2 Familienrecht": 1,
-        "413.2 Behörde": 1
+        "232.5 Interkantonal": 1,
+        "413.2 Behörde": 1,
+        "416.9 Höhere berufliche Lehranstalten": 1,
+        "811.4 Andere Berufe der Gesundheitspflege": 1
       },
       "by_global_category": {
-        "4.120.30 Schulaufsicht": 1
+        "4.120.30 Schulaufsicht": 1,
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "8.10.30.30 Krankenpflegepersonal": 1
       }
     },
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "435.1 Allgemeines": 1,
-        "813.1 Heilmittel": 1
+        "813.1 Heilmittel": 1,
+        "813.3 Gifte": 1
       },
       "by_global_category": {
         "7.70.30 Pflanzenschutz": 1,
-        "8.10.70 Heil- und Betäubungsmittel": 1
+        "8.10.70 Heil- und Betäubungsmittel": 1,
+        "7.60.70 Gifte, Chemikalien": 1
       }
     }
   },
@@ -31,10 +38,10 @@
     {
       "identifier": "2",
       "title": "Zivilrecht, Zivilprozessrecht, Vollstreckung",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
         {
@@ -67,26 +74,57 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "23",
+          "title": "Vollstreckung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "232",
+              "title": "Verfahren",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "232.5",
+                  "title": "Interkantonal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "4",
       "title": "Schule, Kirche, Kultur",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1,
+        "Anderes": 2,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           },
           "children": [
             {
@@ -101,6 +139,26 @@
                 {
                   "identifier": "413.2",
                   "title": "Behörde",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "416",
+              "title": "Berufsbildung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "416.9",
+                  "title": "Höhere berufliche Lehranstalten",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -147,33 +205,64 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Anderes": 1
           },
           "children": [
             {
-              "identifier": "813",
-              "title": "Heilmittel, Betäubungsmittel, Gifte",
+              "identifier": "811",
+              "title": "Sanitätswesen",
               "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.4",
+                  "title": "Andere Berufe der Gesundheitspflege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "813",
+              "title": "Heilmittel, Betäubungsmittel, Gifte",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 2
               },
               "children": [
                 {
                   "identifier": "813.1",
                   "title": "Heilmittel",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "813.3",
+                  "title": "Gifte",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -191,12 +280,21 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 2
       },
       "children": [
+        {
+          "identifier": "4.60",
+          "title": "Tertiärstufe: Höhere Fachschulen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        },
         {
           "identifier": "4.120",
           "title": "Qualitätssicherung, Aufsicht, Leitung",
@@ -222,12 +320,32 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.70",
+              "title": "Gifte, Chemikalien",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.70",
           "title": "Natur- und Heimatschutz",
@@ -253,21 +371,43 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Anderes": 1,
             "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.30",
+                  "title": "Krankenpflegepersonal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "8.10.70",
               "title": "Heil- und Betäubungsmittel",
@@ -283,35 +423,69 @@
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 9
   },
   "available_years_for_entity": [
     "1803",
+    "1825",
+    "1828",
+    "1830",
+    "1851",
     "1873",
+    "1874",
+    "1875",
+    "1888",
+    "1889",
+    "1893",
+    "1898",
+    "1899",
+    "1901",
+    "1903",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
     "1915",
+    "1921",
     "1923",
     "1924",
+    "1925",
     "1926",
+    "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1935",
+    "1937",
+    "1938",
+    "1939",
+    "1941",
     "1943",
+    "1944",
+    "1945",
     "1946",
     "1947",
+    "1948",
     "1949",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
+    "1962",
     "1963",
+    "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -319,6 +493,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",

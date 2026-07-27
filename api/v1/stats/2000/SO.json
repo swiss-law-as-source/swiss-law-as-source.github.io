@@ -1,23 +1,29 @@
 {
   "year": "2000",
   "entity": "SO",
-  "total": 6,
-  "categorized": 6,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 4,
+      "total": 7,
       "by_topic": {
         "111.3 Solothurnische Gesetzessammlung": 1,
         "122.1 Geschäftsführung": 1,
+        "425.1 Verband der Evangelisch-Reformierten Kirchgemeinden des Kantons Solothurn": 1,
         "513.6 Glücks- und Geschicklichkeitsspiele": 1,
-        "513.7 Vermittlung zu Ehe oder fester Partnerschaft": 1
+        "513.7 Vermittlung zu Ehe oder fester Partnerschaft": 1,
+        "712.9 Gewässerschutz": 1,
+        "812.5 Umweltgefährdende Stoffe": 1
       },
       "by_global_category": {
         "1.10.100.10 Gesetzessammlungen": 1,
         "1.20.20.10.10 Delegation": 1,
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
         "9.50.10.60.30 Spielbanken": 1,
-        "2.20.10.50 Ehe- und Partnerschaftsvermittlungen": 1
+        "2.20.10.50 Ehe- und Partnerschaftsvermittlungen": 1,
+        "7.60.20 Gewässerschutz": 1,
+        "7.60.10 Abfälle": 1
       }
     },
     "Gesetz": {
@@ -30,34 +36,53 @@
         "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1,
         "7.30.30.10 Nationalstrassen": 1
       }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "416.3 Berufslehre": 2
+      },
+      "by_global_category": {}
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "111.6 Volkszählung": 1
+      },
+      "by_global_category": {
+        "4.170.10 Statistik": 1
+      }
     }
   },
   "by_topic_tree": [
     {
       "identifier": "1",
       "title": "Grundlagen, Organisation, Gemeinden",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "11",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
               "identifier": "111",
               "title": "Staatsrechtliche Erlasse",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Verordnung des Parlaments (Dekret)": 1
               },
               "children": [
                 {
@@ -67,6 +92,15 @@
                   "own": 1,
                   "by_type": {
                     "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "111.6",
+                  "title": "Volkszählung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung des Parlaments (Dekret)": 1
                   }
                 }
               ]
@@ -160,6 +194,80 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schule, Kirche, Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2,
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "41",
+          "title": "Schule",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "416",
+              "title": "Berufsbildung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "416.3",
+                  "title": "Berufslehre",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 2
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "42",
+          "title": "Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "425",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "425.1",
+                  "title": "Verband der Evangelisch-Reformierten Kirchgemeinden des Kantons Solothurn",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "5",
       "title": "Polizei, Militär, Zivilschutz",
       "total": 2,
@@ -213,12 +321,44 @@
     {
       "identifier": "7",
       "title": "Bauwesen, öffentliche Werke, Verkehr",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Verordnung": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "71",
+          "title": "Bauwesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "712",
+              "title": "Wasserrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "712.9",
+                  "title": "Gewässerschutz",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "72",
           "title": "Öffentliche Werke",
@@ -251,16 +391,58 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "812",
+              "title": "Umweltschutz",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "812.5",
+                  "title": "Umweltgefährdende Stoffe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 3
       },
       "children": [
         {
@@ -333,6 +515,26 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -413,11 +615,43 @@
       ]
     },
     {
-      "identifier": "7",
-      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.10",
+              "title": "Statistik",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 2,
         "Gesetz": 1
       },
       "children": [
@@ -449,6 +683,35 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 2
+          },
+          "children": [
+            {
+              "identifier": "7.60.10",
+              "title": "Abfälle",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
             }
           ]
         }
@@ -509,35 +772,69 @@
     }
   ],
   "languages_available": {
-    "de": 6
+    "de": 12
   },
   "available_years_for_entity": [
     "1803",
+    "1825",
+    "1828",
+    "1830",
+    "1851",
     "1873",
+    "1874",
+    "1875",
+    "1888",
+    "1889",
+    "1893",
+    "1898",
+    "1899",
+    "1901",
+    "1903",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
     "1915",
+    "1921",
     "1923",
     "1924",
+    "1925",
     "1926",
+    "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1935",
+    "1937",
+    "1938",
+    "1939",
+    "1941",
     "1943",
+    "1944",
+    "1945",
     "1946",
     "1947",
+    "1948",
     "1949",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
+    "1962",
     "1963",
+    "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -545,6 +842,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",

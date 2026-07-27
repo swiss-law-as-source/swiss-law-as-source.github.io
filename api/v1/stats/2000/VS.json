@@ -1,17 +1,19 @@
 {
   "year": "2000",
   "entity": "VS",
-  "total": 4,
-  "categorized": 4,
+  "total": 6,
+  "categorized": 6,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
-        "45 Natur- und Heimatschutz": 2
+        "45 Natur- und Heimatschutz": 2,
+        "14 Bürgerrecht. Niederlassung. Aufenthalt": 1
       },
       "by_global_category": {
-        "7.70.10 Landschaftsschutz": 2
+        "7.70.10 Landschaftsschutz": 2,
+        "1.10.70.20.10 Asylwesen": 1
       }
     },
     "Verordnung": {
@@ -31,9 +33,38 @@
       "by_global_category": {
         "1.20.70.10.60 Kantonale Rekurskommissionen": 1
       }
+    },
+    "Verordnung des Parlaments (Dekret)": {
+      "total": 1,
+      "by_topic": {
+        "85 Unterstützung": 1
+      },
+      "by_global_category": {
+        "1.10.70.20.10 Asylwesen": 1
+      }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "14",
+          "title": "Bürgerrecht. Niederlassung. Aufenthalt",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schule - Wissenschaft - Kultur",
@@ -75,18 +106,86 @@
           }
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung des Parlaments (Dekret)": 1
+      },
+      "children": [
+        {
+          "identifier": "85",
+          "title": "Unterstützung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          }
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
+        "Verordnung des Parlaments (Dekret)": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.70",
+              "title": "Niederlassung und Aufenthalt",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1,
+                "Verordnung des Parlaments (Dekret)": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.70.20",
+                  "title": "Niederlassung und Aufenthalt Ausländer",
+                  "total": 2,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1,
+                    "Verordnung des Parlaments (Dekret)": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.70.20.10",
+                      "title": "Asylwesen",
+                      "total": 2,
+                      "own": 2,
+                      "by_type": {
+                        "Anderes": 1,
+                        "Verordnung des Parlaments (Dekret)": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -195,7 +294,7 @@
     }
   ],
   "languages_available": {
-    "de": 4,
+    "de": 6,
     "fr": 4
   },
   "available_years_for_entity": [
@@ -204,6 +303,9 @@
     "1855",
     "1882",
     "1891",
+    "1900",
+    "1912",
+    "1923",
     "1924",
     "1933",
     "1936",
@@ -213,6 +315,7 @@
     "1950",
     "1951",
     "1952",
+    "1954",
     "1959",
     "1961",
     "1963",
@@ -220,14 +323,19 @@
     "1965",
     "1966",
     "1967",
+    "1968",
     "1970",
+    "1971",
     "1972",
     "1973",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1981",
     "1982",
+    "1983",
+    "1984",
     "1985",
     "1986",
     "1987",

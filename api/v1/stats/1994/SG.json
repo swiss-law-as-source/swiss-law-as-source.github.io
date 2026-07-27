@@ -1,29 +1,17 @@
 {
   "year": "1994",
   "entity": "SG",
-  "total": 18,
-  "categorized": 18,
+  "total": 24,
+  "categorized": 24,
   "uncategorized": 0,
   "by_type": {
-    "Interkantonale Vereinbarung": {
-      "total": 9,
-      "by_topic": {
-        "736 Arbeitsvergaben": 5,
-        "752 Gewässerschutz": 2,
-        "215 Mittelschulen": 1,
-        "811 Staatssteuern": 1
-      },
-      "by_global_category": {
-        "7.30.40 Submission": 5,
-        "7.60.10 Abfälle": 2,
-        "4.70.10 Erwachsenenbildung": 1,
-        "6.20.40 Erbschafts- und Schenkungssteuern": 1
-      }
-    },
     "Anderes": {
-      "total": 6,
+      "total": 11,
       "by_topic": {
         "215 Mittelschulen": 2,
+        "331 Krankenversicherung": 2,
+        "672 Übriger Umweltschutz": 2,
+        "234 Fachhochschulen": 1,
         "381 Öffentliche Fürsorge": 1,
         "451 Polizei": 1,
         "732 Tiefbauten des Staates": 1,
@@ -32,8 +20,28 @@
       "by_global_category": {
         "4.20.10 Mittelschule": 1,
         "4.150 Schulsport": 1,
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "8.10.30.90 Apotheker": 1,
+        "8.10.30.10 Ärzte": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1,
+        "7.60.40 Lärmschutz": 1,
         "6.30.60.20 Reviere": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 10,
+      "by_topic": {
+        "736 Arbeitsvergaben": 5,
+        "752 Gewässerschutz": 2,
+        "215 Mittelschulen": 1,
+        "811 Staatssteuern": 1,
+        "841 Öffentliches Beschaffungswesen": 1
+      },
+      "by_global_category": {
+        "7.30.40 Submission": 6,
+        "7.60.10 Abfälle": 2,
+        "4.70.10 Erwachsenenbildung": 1,
+        "6.20.40 Erbschafts- und Schenkungssteuern": 1
       }
     },
     "Verordnung": {
@@ -92,10 +100,10 @@
     {
       "identifier": "2",
       "title": "Erziehung, Bildung, Kultur",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 3,
         "Verordnung": 1,
         "Interkantonale Vereinbarung": 1
       },
@@ -131,18 +139,58 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "23",
+          "title": "Berufliche Ausbildung und Berufsberatung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "234",
+              "title": "Fachhochschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
         }
       ]
     },
     {
       "identifier": "3",
       "title": "Gesundheitspflege, Sozialversicherung, Fürsorge",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 3
       },
       "children": [
+        {
+          "identifier": "33",
+          "title": "Krankenversicherung",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "331",
+              "title": "Krankenversicherung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
+              }
+            }
+          ]
+        },
         {
           "identifier": "38",
           "title": "Fürsorge und Heimaufenthalt",
@@ -190,6 +238,37 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Landwirtschaft, Tierhaltung, Waldwirtschaft, Umweltschutz",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "67",
+          "title": "Umweltschutz",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "672",
+              "title": "Übriger Umweltschutz",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Anderes": 2
               }
             }
           ]
@@ -264,10 +343,10 @@
     {
       "identifier": "8",
       "title": "Öffentliche Finanzen, Regalien, staatliche Unternehmungen, Feuerschutz",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 1,
+        "Interkantonale Vereinbarung": 2,
         "Anderes": 1
       },
       "children": [
@@ -283,6 +362,26 @@
             {
               "identifier": "811",
               "title": "Staatssteuern",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "84",
+          "title": "Öffentliches Beschaffungswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "841",
+              "title": "Öffentliches Beschaffungswesen",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -371,10 +470,10 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Anderes": 2,
+        "Anderes": 3,
         "Interkantonale Vereinbarung": 1,
         "Verordnung": 1
       },
@@ -398,6 +497,15 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "4.60",
+          "title": "Tertiärstufe: Höhere Fachschulen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Anderes": 1
+          }
         },
         {
           "identifier": "4.70",
@@ -536,30 +644,31 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 8,
+      "total": 10,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 7,
-        "Staatsvertrag": 1
+        "Interkantonale Vereinbarung": 8,
+        "Staatsvertrag": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
-          "total": 6,
+          "total": 7,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 5,
+            "Interkantonale Vereinbarung": 6,
             "Staatsvertrag": 1
           },
           "children": [
             {
               "identifier": "7.30.40",
               "title": "Submission",
-              "total": 6,
-              "own": 6,
+              "total": 7,
+              "own": 7,
               "by_type": {
-                "Interkantonale Vereinbarung": 5,
+                "Interkantonale Vereinbarung": 6,
                 "Staatsvertrag": 1
               }
             }
@@ -568,10 +677,11 @@
         {
           "identifier": "7.60",
           "title": "Umweltschutz",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Interkantonale Vereinbarung": 2
+            "Interkantonale Vereinbarung": 2,
+            "Anderes": 1
           },
           "children": [
             {
@@ -582,6 +692,66 @@
               "by_type": {
                 "Interkantonale Vereinbarung": 2
               }
+            },
+            {
+              "identifier": "7.60.40",
+              "title": "Lärmschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 2
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.10",
+                  "title": "Ärzte",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                },
+                {
+                  "identifier": "8.10.30.90",
+                  "title": "Apotheker",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
             }
           ]
         }
@@ -589,12 +759,13 @@
     }
   ],
   "languages_available": {
-    "de": 18
+    "de": 24
   },
   "available_years_for_entity": [
     "1847",
     "1871",
     "1901",
+    "1903",
     "1911",
     "1914",
     "1929",
@@ -613,6 +784,7 @@
     "1954",
     "1955",
     "1957",
+    "1958",
     "1959",
     "1960",
     "1961",

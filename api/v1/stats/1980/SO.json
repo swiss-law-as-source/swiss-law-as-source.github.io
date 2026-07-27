@@ -1,44 +1,97 @@
 {
   "year": "1980",
   "entity": "SO",
-  "total": 2,
-  "categorized": 2,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
-    "Gesetz": {
-      "total": 1,
+    "Anderes": {
+      "total": 6,
       "by_topic": {
+        "416.3 Berufslehre": 2,
+        "412 Kindergärten": 1,
+        "712.9 Gewässerschutz": 1,
+        "817.4 Vereinbarungen mit Stiftungen": 1,
+        "837.3 Interkantonale Vereinbarungen": 1
+      },
+      "by_global_category": {
+        "4.120.30 Schulaufsicht": 1,
+        "7.60.20 Gewässerschutz": 1,
+        "8.70.30.20 Kinder- und Jugendheime": 1
+      }
+    },
+    "Gesetz": {
+      "total": 2,
+      "by_topic": {
+        "212.2 Familienrecht": 1,
         "411.26 Hochschulen, Fachschulen (Interkantonale Vereinbarungen)": 1
       },
-      "by_global_category": {}
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "416.3 Berufslehre": 1
-      },
-      "by_global_category": {}
+      "by_global_category": {
+        "8.70.70 Alimentenbevorschussung": 1
+      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "4",
-      "title": "Schule, Kirche, Kultur",
-      "total": 2,
+      "identifier": "2",
+      "title": "Zivilrecht, Zivilprozessrecht, Vollstreckung",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
-        "Anderes": 1
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "21",
+          "title": "Zivilrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "212",
+              "title": "Einzelne Rechtsgebiete",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "212.2",
+                  "title": "Familienrecht",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schule, Kirche, Kultur",
+      "total": 4,
+      "own": 0,
+      "by_type": {
+        "Anderes": 3,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 2,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Gesetz": 1,
-            "Anderes": 1
+            "Anderes": 3,
+            "Gesetz": 1
           },
           "children": [
             {
@@ -73,8 +126,59 @@
               ]
             },
             {
+              "identifier": "412",
+              "title": "Kindergärten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            },
+            {
               "identifier": "416",
               "title": "Berufsbildung",
+              "total": 2,
+              "own": 0,
+              "by_type": {
+                "Anderes": 2
+              },
+              "children": [
+                {
+                  "identifier": "416.3",
+                  "title": "Berufslehre",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 2
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen, öffentliche Werke, Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "71",
+          "title": "Bauwesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "712",
+              "title": "Wasserrecht",
               "total": 1,
               "own": 0,
               "by_type": {
@@ -82,8 +186,8 @@
               },
               "children": [
                 {
-                  "identifier": "416.3",
-                  "title": "Berufslehre",
+                  "identifier": "712.9",
+                  "title": "Gewässerschutz",
                   "total": 1,
                   "own": 1,
                   "by_type": {
@@ -95,39 +199,251 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 2
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "817",
+              "title": "Spitalwesen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "817.4",
+                  "title": "Vereinbarungen mit Stiftungen",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "identifier": "83",
+          "title": "Sozialrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "837.3",
+              "title": "Interkantonale Vereinbarungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
-  "by_global_category_tree": [],
+  "by_global_category_tree": [
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "4.120",
+          "title": "Qualitätssicherung, Aufsicht, Leitung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "4.120.30",
+              "title": "Schulaufsicht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.60",
+          "title": "Umweltschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.60.20",
+              "title": "Gewässerschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1,
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.30",
+              "title": "Heime",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.70.30.20",
+                  "title": "Kinder- und Jugendheime",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            },
+            {
+              "identifier": "8.70.70",
+              "title": "Alimentenbevorschussung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "languages_available": {
-    "de": 2
+    "de": 8
   },
   "available_years_for_entity": [
     "1803",
+    "1825",
+    "1828",
+    "1830",
+    "1851",
     "1873",
+    "1874",
+    "1875",
+    "1888",
+    "1889",
+    "1893",
+    "1898",
+    "1899",
+    "1901",
+    "1903",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
     "1915",
+    "1921",
     "1923",
     "1924",
+    "1925",
     "1926",
+    "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1935",
+    "1937",
+    "1938",
+    "1939",
+    "1941",
     "1943",
+    "1944",
+    "1945",
     "1946",
     "1947",
+    "1948",
     "1949",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
+    "1962",
     "1963",
+    "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -135,6 +451,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",

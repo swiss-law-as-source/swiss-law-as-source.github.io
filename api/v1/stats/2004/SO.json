@@ -1,18 +1,19 @@
 {
   "year": "2004",
   "entity": "SO",
-  "total": 10,
-  "categorized": 10,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "112.2 Jung- und Neubürgerwesen": 1,
         "126.515.85 Volksschule": 1,
         "131.7 Finanzausgleich": 1,
         "431 Kulturförderung": 1,
         "512.2 Waffen, Munition, Sprengstoffe": 1,
+        "834 Arbeitslosenversicherung": 1,
         "912 Berggebiet": 1
       },
       "by_global_category": {
@@ -21,22 +22,26 @@
         "1.30.10 Gemeindefinanzen": 1,
         "7.30.10 Staatliche Gebäude und Liegenschaften": 1,
         "5.30.40 Sprengstoffe": 1,
+        "8.30.110 Arbeitslosenversicherung": 1,
         "9.40 Wirtschaftliche Entwicklung in Berggebieten": 1
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "834 Arbeitslosenversicherung": 1,
         "836.1 Wohnungsbau": 1
       },
       "by_global_category": {
+        "8.30.110 Arbeitslosenversicherung": 1,
         "8.40.10 Eigentums- und Wohnungsbauförderung": 1
       }
     },
     "Anderes": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "411.27 Lehrmittelkoordination": 1
+        "411.27 Lehrmittelkoordination": 1,
+        "837.3 Interkantonale Vereinbarungen": 1
       },
       "by_global_category": {
         "4.120.40 Lehrmittel": 1
@@ -300,21 +305,35 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 1,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Verordnung": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "83",
           "title": "Sozialrecht",
-          "total": 1,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 2,
+            "Verordnung": 1,
+            "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "834",
+              "title": "Arbeitslosenversicherung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "836",
               "title": "Wohnungsbau, Hypothekar-Hilfe",
@@ -334,6 +353,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "837.3",
+              "title": "Interkantonale Vereinbarungen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
             }
           ]
         }
@@ -562,12 +590,35 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 2,
+        "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1,
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.110",
+              "title": "Arbeitslosenversicherung",
+              "total": 2,
+              "own": 2,
+              "by_type": {
+                "Gesetz": 1,
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "8.40",
           "title": "Wohnverhältnisse",
@@ -612,35 +663,69 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 13
   },
   "available_years_for_entity": [
     "1803",
+    "1825",
+    "1828",
+    "1830",
+    "1851",
     "1873",
+    "1874",
+    "1875",
+    "1888",
+    "1889",
+    "1893",
+    "1898",
+    "1899",
+    "1901",
+    "1903",
+    "1907",
     "1908",
     "1909",
+    "1911",
+    "1912",
+    "1914",
     "1915",
+    "1921",
     "1923",
     "1924",
+    "1925",
     "1926",
+    "1928",
     "1929",
+    "1930",
     "1931",
     "1932",
     "1935",
+    "1937",
+    "1938",
+    "1939",
+    "1941",
     "1943",
+    "1944",
+    "1945",
     "1946",
     "1947",
+    "1948",
     "1949",
+    "1951",
     "1952",
     "1953",
     "1954",
     "1955",
     "1956",
     "1957",
+    "1958",
     "1959",
     "1960",
+    "1961",
+    "1962",
     "1963",
+    "1964",
     "1965",
+    "1966",
     "1967",
     "1968",
     "1969",
@@ -648,6 +733,7 @@
     "1971",
     "1972",
     "1973",
+    "1974",
     "1975",
     "1976",
     "1977",

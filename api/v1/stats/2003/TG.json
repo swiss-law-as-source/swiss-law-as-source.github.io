@@ -1,46 +1,58 @@
 {
   "year": "2003",
   "entity": "TG",
-  "total": 6,
-  "categorized": 6,
+  "total": 19,
+  "categorized": 19,
   "uncategorized": 0,
   "by_type": {
-    "Anderes": {
-      "total": 2,
+    "Reglement": {
+      "total": 8,
       "by_topic": {
+        "811.2 Ausbildung. Schulen": 6,
+        "412.2 Berufsbildung": 1,
+        "414 Hochschulen": 1
+      },
+      "by_global_category": {
+        "8.10.30.30 Krankenpflegepersonal": 5,
+        "4.50.10 Pädagogik": 1
+      }
+    },
+    "Anderes": {
+      "total": 4,
+      "by_topic": {
+        "187.1 Organisation der Evangelischen Landeskirche": 2,
         "187.2 Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung": 1,
         "922 Jagd und Vogelschutz": 1
       },
       "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "1.40.30 Evangelisch-Reformierte Kirche": 3,
         "6.30.50.10 Jäger": 1
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 2,
+      "total": 4,
       "by_topic": {
+        "811.1 Berufe des Gesundheitswesens": 2,
         "554.1 Gewerbe. Marktwesen. Öffentliche Veranstaltungen": 1,
         "946 Handelshemmnisse": 1
       },
       "by_global_category": {
+        "4.140 Anerkennung von Diplomen": 2,
         "9.50.10.60.30 Spielbanken": 1,
         "9.60.50 Binnenmarkt, Handelshemmnisse": 1
       }
     },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "412.2 Berufsbildung": 1
-      },
-      "by_global_category": {}
-    },
     "Verordnung": {
-      "total": 1,
+      "total": 3,
       "by_topic": {
-        "554.1 Gewerbe. Marktwesen. Öffentliche Veranstaltungen": 1
+        "554.1 Gewerbe. Marktwesen. Öffentliche Veranstaltungen": 1,
+        "66 Wehrpflichtersatz": 1,
+        "73 Energie": 1
       },
       "by_global_category": {
-        "9.60.60 Reisendengewerbe": 1
+        "9.60.60 Reisendengewerbe": 1,
+        "5.10.20 Wehrpflichtersatz": 1,
+        "7.40.10 Energieversorgung": 1
       }
     }
   },
@@ -48,30 +60,39 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 3
       },
       "children": [
         {
           "identifier": "18",
           "title": "Staat und Kirche",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 3
           },
           "children": [
             {
               "identifier": "187",
               "title": "Evangelische Landeskirche",
-              "total": 1,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Anderes": 1
+                "Anderes": 3
               },
               "children": [
+                {
+                  "identifier": "187.1",
+                  "title": "Organisation der Evangelischen Landeskirche",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Anderes": 2
+                  }
+                },
                 {
                   "identifier": "187.2",
                   "title": "Pfarramt. Mission. Kapitel. Pensionskasse. Ausbildung",
@@ -90,19 +111,19 @@
     {
       "identifier": "4",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Reglement": 1
+        "Reglement": 2
       },
       "children": [
         {
           "identifier": "41",
           "title": "Schule",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Reglement": 1
+            "Reglement": 2
           },
           "children": [
             {
@@ -124,6 +145,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "414",
+              "title": "Hochschulen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
             }
           ]
         }
@@ -167,6 +197,100 @@
                   "by_type": {
                     "Verordnung": 1,
                     "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Finanzen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "66",
+          "title": "Wehrpflichtersatz",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "73",
+          "title": "Energie",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit - Arbeit - Soziale Sicherheit",
+      "total": 8,
+      "own": 0,
+      "by_type": {
+        "Reglement": 6,
+        "Interkantonale Vereinbarung": 2
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 8,
+          "own": 0,
+          "by_type": {
+            "Reglement": 6,
+            "Interkantonale Vereinbarung": 2
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Berufe des Gesundheitswesens und Einrichtungen für Kranke, Verunfallte und andere Pflegebedürftige",
+              "total": 8,
+              "own": 0,
+              "by_type": {
+                "Reglement": 6,
+                "Interkantonale Vereinbarung": 2
+              },
+              "children": [
+                {
+                  "identifier": "811.1",
+                  "title": "Berufe des Gesundheitswesens",
+                  "total": 2,
+                  "own": 2,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 2
+                  }
+                },
+                {
+                  "identifier": "811.2",
+                  "title": "Ausbildung. Schulen",
+                  "total": 6,
+                  "own": 6,
+                  "by_type": {
+                    "Reglement": 6
                   }
                 }
               ]
@@ -232,28 +356,100 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 1,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 1
+        "Anderes": 3
       },
       "children": [
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
-          "total": 1,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 3
           },
           "children": [
             {
               "identifier": "1.40.30",
               "title": "Evangelisch-Reformierte Kirche",
+              "total": 3,
+              "own": 3,
+              "by_type": {
+                "Anderes": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 3,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 2,
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "4.50",
+          "title": "Tertiärstufe: Fachhochschulen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "4.50.10",
+              "title": "Pädagogik",
               "total": 1,
               "own": 1,
               "by_type": {
-                "Anderes": 1
+                "Reglement": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.140",
+          "title": "Anerkennung von Diplomen",
+          "total": 2,
+          "own": 2,
+          "by_type": {
+            "Interkantonale Vereinbarung": 2
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "5.10",
+          "title": "Verteidigung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.10.20",
+              "title": "Wehrpflichtersatz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
               }
             }
           ]
@@ -294,6 +490,79 @@
                   "own": 1,
                   "by_type": {
                     "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.40",
+          "title": "Energie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.40.10",
+              "title": "Energieversorgung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 5,
+      "own": 0,
+      "by_type": {
+        "Reglement": 5
+      },
+      "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 5,
+          "own": 0,
+          "by_type": {
+            "Reglement": 5
+          },
+          "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 5,
+              "own": 0,
+              "by_type": {
+                "Reglement": 5
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.30",
+                  "title": "Krankenpflegepersonal",
+                  "total": 5,
+                  "own": 5,
+                  "by_type": {
+                    "Reglement": 5
                   }
                 }
               ]
@@ -388,7 +657,7 @@
     }
   ],
   "languages_available": {
-    "de": 6
+    "de": 19
   },
   "available_years_for_entity": [
     "1826",
@@ -403,6 +672,9 @@
     "1890",
     "1891",
     "1892",
+    "1896",
+    "1902",
+    "1906",
     "1907",
     "1914",
     "1918",
@@ -414,6 +686,7 @@
     "1937",
     "1938",
     "1949",
+    "1955",
     "1958",
     "1964",
     "1965",
@@ -436,7 +709,9 @@
     "1982",
     "1983",
     "1984",
+    "1985",
     "1986",
+    "1987",
     "1988",
     "1989",
     "1990",
@@ -451,6 +726,7 @@
     "1999",
     "2000",
     "2001",
+    "2002",
     "2003",
     "2004",
     "2005",

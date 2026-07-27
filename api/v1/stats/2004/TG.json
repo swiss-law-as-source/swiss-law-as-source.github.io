@@ -1,8 +1,8 @@
 {
   "year": "2004",
   "entity": "TG",
-  "total": 13,
-  "categorized": 13,
+  "total": 15,
+  "categorized": 15,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -21,16 +21,27 @@
       }
     },
     "Verordnung": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "412.2 Berufsbildung": 1,
         "416 Förderung der Ausbildung. Stipendien": 1,
+        "823 Arbeitsmarkt und Arbeitsbeschaffung": 1,
         "831 Alters-, Hinterlassenen- und Invalidenversicherung, Berufliche Vorsorge": 1
       },
       "by_global_category": {
         "4.30.20 Berufsmaturitätsschulen": 1,
         "4.100.20 Schulgelder": 1,
+        "8.20.20.30 Personenfreizügigkeit": 1,
         "8.30.30 AHV / IV": 1
+      }
+    },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "551 Polizeikorps": 1
+      },
+      "by_global_category": {
+        "5.30.10.30 Personal": 1
       }
     },
     "Gesetz": {
@@ -43,11 +54,6 @@
         "7.20 Enteignung": 1,
         "7.30.40 Submission": 1
       }
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {},
-      "by_global_category": {}
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -186,6 +192,37 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Militärwesen - Zivilschutz - Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "55",
+          "title": "Polizeiwesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "551",
+              "title": "Polizeikorps",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Reglement": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Bauwesen - Öffentliche Werke - Energie - Verkehr",
       "total": 3,
@@ -231,12 +268,32 @@
     {
       "identifier": "8",
       "title": "Gesundheit - Arbeit - Soziale Sicherheit",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "82",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "823",
+              "title": "Arbeitsmarkt und Arbeitsbeschaffung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "83",
           "title": "Sozialversicherung",
@@ -405,6 +462,48 @@
       ]
     },
     {
+      "identifier": "5",
+      "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Reglement": 1
+      },
+      "children": [
+        {
+          "identifier": "5.30",
+          "title": "Innere Sicherheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Reglement": 1
+          },
+          "children": [
+            {
+              "identifier": "5.30.10",
+              "title": "Polizei",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Reglement": 1
+              },
+              "children": [
+                {
+                  "identifier": "5.30.10.30",
+                  "title": "Personal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Reglement": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
       "total": 3,
@@ -450,12 +549,43 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
+        {
+          "identifier": "8.20",
+          "title": "Arbeitsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.20.20",
+              "title": "Arbeitsmarkt",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.20.20.30",
+                  "title": "Personenfreizügigkeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
@@ -480,7 +610,7 @@
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 15
   },
   "available_years_for_entity": [
     "1826",
@@ -495,6 +625,9 @@
     "1890",
     "1891",
     "1892",
+    "1896",
+    "1902",
+    "1906",
     "1907",
     "1914",
     "1918",
@@ -506,6 +639,7 @@
     "1937",
     "1938",
     "1949",
+    "1955",
     "1958",
     "1964",
     "1965",
@@ -528,7 +662,9 @@
     "1982",
     "1983",
     "1984",
+    "1985",
     "1986",
+    "1987",
     "1988",
     "1989",
     "1990",
@@ -543,6 +679,7 @@
     "1999",
     "2000",
     "2001",
+    "2002",
     "2003",
     "2004",
     "2005",
