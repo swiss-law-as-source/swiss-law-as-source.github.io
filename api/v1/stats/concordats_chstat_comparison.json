@@ -2,9 +2,23 @@
   "note": "Reconciliation vs chstat.ch 2003 (data-theme 1842, Institute of Federalism / LexFind). ours = concordats ENACTED <= 2003 as listed by LexFind today, split active / repealed_listed. unexplained = chstat - ours: concordats delisted from LexFind entirely + accession-vs-decision-date differences (cantons accede at different times; our date is the act's decision date) + undated laws. Improve dates with enrich_dates_lexwork.sh then enrich-dates --siblings.",
   "source_chstat": "https://www.chstat.ch/fr/data-theme/1842/Concordats-par-domaine",
   "chstat_total": 2522,
-  "ours_enacted_until_2003_total": 1707,
-  "unexplained_total": 815,
-  "undated_total": 167,
+  "ours_enacted_until_2003_total": 1767,
+  "unexplained_total": 755,
+  "undated_total": 116,
+  "diagnosis_totals": {
+    "dating": 17,
+    "delisting_or_coverage": 7,
+    "reconciled": 2
+  },
+  "date_provenance_total": {
+    "sibling:TG": 13,
+    "text": 1563,
+    "lexwork_api": 102,
+    "version_date_only": 73,
+    "sibling:BL": 5,
+    "sibling:GR": 10,
+    "sibling:SO": 1
+  },
   "cantons": {
     "AG": {
       "chstat_2003": {
@@ -17,14 +31,19 @@
         "total": 112
       },
       "ours_enacted_until_2003": {
-        "active": 49,
-        "repealed_listed": 29,
-        "total": 78
+        "active": 58,
+        "repealed_listed": 30,
+        "total": 88
       },
-      "undated": 12,
-      "unexplained": 34,
+      "all_time_total": 131,
+      "undated": 3,
+      "unexplained": 24,
+      "diagnosis": "dating",
       "date_provenance": {
-        "text": 78
+        "text": 73,
+        "sibling:TG": 1,
+        "lexwork_api": 13,
+        "sibling:BL": 1
       }
     },
     "AI": {
@@ -42,10 +61,13 @@
         "repealed_listed": 3,
         "total": 32
       },
+      "all_time_total": 62,
       "undated": 4,
       "unexplained": 34,
+      "diagnosis": "delisting_or_coverage",
       "date_provenance": {
-        "text": 32
+        "text": 31,
+        "sibling:GR": 1
       }
     },
     "AR": {
@@ -59,14 +81,17 @@
         "total": 94
       },
       "ours_enacted_until_2003": {
-        "active": 31,
-        "repealed_listed": 12,
-        "total": 43
+        "active": 33,
+        "repealed_listed": 13,
+        "total": 46
       },
-      "undated": 5,
-      "unexplained": 51,
+      "all_time_total": 65,
+      "undated": 0,
+      "unexplained": 48,
+      "diagnosis": "delisting_or_coverage",
       "date_provenance": {
-        "text": 43
+        "text": 41,
+        "lexwork_api": 5
       }
     },
     "BE": {
@@ -84,10 +109,14 @@
         "repealed_listed": 15,
         "total": 60
       },
+      "all_time_total": 119,
       "undated": 0,
       "unexplained": 80,
+      "diagnosis": "delisting_or_coverage",
       "date_provenance": {
-        "text": 60
+        "text": 58,
+        "sibling:BL": 1,
+        "sibling:TG": 1
       }
     },
     "BL": {
@@ -101,15 +130,19 @@
         "total": 159
       },
       "ours_enacted_until_2003": {
-        "active": 69,
-        "repealed_listed": 56,
-        "total": 125
+        "active": 74,
+        "repealed_listed": 58,
+        "total": 132
       },
+      "all_time_total": 185,
       "undated": 2,
-      "unexplained": 34,
+      "unexplained": 27,
+      "diagnosis": "dating",
       "date_provenance": {
-        "text": 95,
-        "version_date_only": 30
+        "text": 92,
+        "lexwork_api": 35,
+        "version_date_only": 3,
+        "sibling:TG": 2
       }
     },
     "BS": {
@@ -123,15 +156,19 @@
         "total": 141
       },
       "ours_enacted_until_2003": {
-        "active": 45,
+        "active": 46,
         "repealed_listed": 39,
-        "total": 84
+        "total": 85
       },
+      "all_time_total": 141,
       "undated": 1,
-      "unexplained": 57,
+      "unexplained": 56,
+      "diagnosis": "dating",
       "date_provenance": {
-        "text": 82,
-        "version_date_only": 2
+        "text": 79,
+        "sibling:BL": 3,
+        "version_date_only": 2,
+        "sibling:TG": 1
       }
     },
     "FR": {
@@ -145,14 +182,17 @@
         "total": 92
       },
       "ours_enacted_until_2003": {
-        "active": 39,
-        "repealed_listed": 24,
-        "total": 63
+        "active": 40,
+        "repealed_listed": 25,
+        "total": 65
       },
-      "undated": 14,
-      "unexplained": 29,
+      "all_time_total": 125,
+      "undated": 9,
+      "unexplained": 27,
+      "diagnosis": "dating",
       "date_provenance": {
-        "text": 63
+        "text": 64,
+        "lexwork_api": 1
       }
     },
     "GE": {
@@ -170,8 +210,10 @@
         "repealed_listed": 21,
         "total": 50
       },
+      "all_time_total": 75,
       "undated": 0,
       "unexplained": 9,
+      "diagnosis": "dating",
       "date_provenance": {
         "text": 40,
         "version_date_only": 10
@@ -188,15 +230,19 @@
         "total": 83
       },
       "ours_enacted_until_2003": {
-        "active": 23,
+        "active": 27,
         "repealed_listed": 17,
-        "total": 40
+        "total": 44
       },
+      "all_time_total": 69,
       "undated": 0,
-      "unexplained": 43,
+      "unexplained": 39,
+      "diagnosis": "delisting_or_coverage",
       "date_provenance": {
+        "sibling:TG": 1,
         "text": 28,
-        "version_date_only": 12
+        "lexwork_api": 13,
+        "version_date_only": 2
       }
     },
     "GR": {
@@ -210,14 +256,18 @@
         "total": 67
       },
       "ours_enacted_until_2003": {
-        "active": 13,
-        "repealed_listed": 13,
-        "total": 26
+        "active": 21,
+        "repealed_listed": 20,
+        "total": 41
       },
-      "undated": 17,
-      "unexplained": 41,
+      "all_time_total": 52,
+      "undated": 0,
+      "unexplained": 26,
+      "diagnosis": "delisting_or_coverage",
       "date_provenance": {
-        "text": 26
+        "sibling:GR": 1,
+        "lexwork_api": 15,
+        "text": 25
       }
     },
     "JU": {
@@ -235,8 +285,10 @@
         "repealed_listed": 15,
         "total": 53
       },
+      "all_time_total": 133,
       "undated": 18,
       "unexplained": 31,
+      "diagnosis": "dating",
       "date_provenance": {
         "text": 53
       }
@@ -256,11 +308,15 @@
         "repealed_listed": 21,
         "total": 49
       },
+      "all_time_total": 81,
       "undated": 1,
       "unexplained": 30,
+      "diagnosis": "dating",
       "date_provenance": {
-        "version_date_only": 3,
-        "text": 46
+        "lexwork_api": 2,
+        "text": 45,
+        "sibling:TG": 1,
+        "version_date_only": 1
       }
     },
     "NE": {
@@ -274,14 +330,16 @@
         "total": 93
       },
       "ours_enacted_until_2003": {
-        "active": 59,
+        "active": 60,
         "repealed_listed": 15,
-        "total": 74
+        "total": 75
       },
+      "all_time_total": 94,
       "undated": 5,
-      "unexplained": 19,
+      "unexplained": 18,
+      "diagnosis": "dating",
       "date_provenance": {
-        "version_date_only": 32,
+        "version_date_only": 33,
         "text": 42
       }
     },
@@ -296,14 +354,16 @@
         "total": 86
       },
       "ours_enacted_until_2003": {
-        "active": 29,
+        "active": 30,
         "repealed_listed": 26,
-        "total": 55
+        "total": 56
       },
+      "all_time_total": 133,
       "undated": 18,
-      "unexplained": 31,
+      "unexplained": 30,
+      "diagnosis": "dating",
       "date_provenance": {
-        "text": 54,
+        "text": 55,
         "version_date_only": 1
       }
     },
@@ -322,8 +382,10 @@
         "repealed_listed": 35,
         "total": 65
       },
+      "all_time_total": 128,
       "undated": 3,
       "unexplained": 20,
+      "diagnosis": "dating",
       "date_provenance": {
         "text": 65
       }
@@ -339,15 +401,18 @@
         "total": 218
       },
       "ours_enacted_until_2003": {
-        "active": 142,
+        "active": 141,
         "repealed_listed": 70,
-        "total": 212
+        "total": 211
       },
+      "all_time_total": 238,
       "undated": 1,
-      "unexplained": 6,
+      "unexplained": 7,
+      "diagnosis": "dating",
       "date_provenance": {
-        "text": 202,
-        "version_date_only": 10
+        "text": 199,
+        "version_date_only": 10,
+        "sibling:TG": 2
       }
     },
     "SH": {
@@ -361,14 +426,17 @@
         "total": 69
       },
       "ours_enacted_until_2003": {
-        "active": 23,
+        "active": 25,
         "repealed_listed": 18,
-        "total": 41
+        "total": 43
       },
+      "all_time_total": 74,
       "undated": 5,
-      "unexplained": 28,
+      "unexplained": 26,
+      "diagnosis": "dating",
       "date_provenance": {
-        "text": 41
+        "text": 42,
+        "sibling:SO": 1
       }
     },
     "SO": {
@@ -382,15 +450,18 @@
         "total": 118
       },
       "ours_enacted_until_2003": {
-        "active": 60,
-        "repealed_listed": 25,
-        "total": 85
+        "active": 64,
+        "repealed_listed": 33,
+        "total": 97
       },
-      "undated": 12,
-      "unexplained": 33,
+      "all_time_total": 123,
+      "undated": 0,
+      "unexplained": 21,
+      "diagnosis": "dating",
       "date_provenance": {
-        "text": 84,
-        "version_date_only": 1
+        "text": 81,
+        "lexwork_api": 15,
+        "sibling:TG": 1
       }
     },
     "SZ": {
@@ -405,13 +476,16 @@
       },
       "ours_enacted_until_2003": {
         "active": 38,
-        "repealed_listed": 23,
-        "total": 61
+        "repealed_listed": 24,
+        "total": 62
       },
-      "undated": 3,
-      "unexplained": 35,
+      "all_time_total": 96,
+      "undated": 2,
+      "unexplained": 34,
+      "diagnosis": "dating",
       "date_provenance": {
-        "text": 61
+        "text": 60,
+        "sibling:GR": 2
       }
     },
     "TG": {
@@ -425,15 +499,19 @@
         "total": 114
       },
       "ours_enacted_until_2003": {
-        "active": 78,
+        "active": 77,
         "repealed_listed": 34,
-        "total": 112
+        "total": 111
       },
+      "all_time_total": 139,
       "undated": 0,
-      "unexplained": 2,
+      "unexplained": 3,
+      "diagnosis": "reconciled",
       "date_provenance": {
-        "version_date_only": 2,
-        "text": 110
+        "lexwork_api": 3,
+        "text": 102,
+        "sibling:GR": 5,
+        "sibling:TG": 1
       }
     },
     "TI": {
@@ -451,8 +529,10 @@
         "repealed_listed": 19,
         "total": 32
       },
+      "all_time_total": 82,
       "undated": 14,
       "unexplained": 12,
+      "diagnosis": "dating",
       "date_provenance": {
         "text": 32
       }
@@ -472,8 +552,10 @@
         "repealed_listed": 15,
         "total": 32
       },
+      "all_time_total": 57,
       "undated": 2,
       "unexplained": 35,
+      "diagnosis": "delisting_or_coverage",
       "date_provenance": {
         "text": 32
       }
@@ -493,8 +575,10 @@
         "repealed_listed": 17,
         "total": 52
       },
+      "all_time_total": 100,
       "undated": 0,
       "unexplained": 46,
+      "diagnosis": "dating",
       "date_provenance": {
         "text": 52
       }
@@ -514,10 +598,14 @@
         "repealed_listed": 16,
         "total": 43
       },
+      "all_time_total": 62,
       "undated": 0,
       "unexplained": 20,
+      "diagnosis": "delisting_or_coverage",
       "date_provenance": {
-        "text": 43
+        "text": 41,
+        "sibling:GR": 1,
+        "sibling:TG": 1
       }
     },
     "ZG": {
@@ -531,14 +619,17 @@
         "total": 68
       },
       "ours_enacted_until_2003": {
-        "active": 33,
+        "active": 36,
         "repealed_listed": 27,
-        "total": 60
+        "total": 63
       },
-      "undated": 2,
-      "unexplained": 8,
+      "all_time_total": 121,
+      "undated": 0,
+      "unexplained": 5,
+      "diagnosis": "reconciled",
       "date_provenance": {
-        "text": 60
+        "text": 62,
+        "sibling:TG": 1
       }
     },
     "ZH": {
@@ -556,8 +647,10 @@
         "repealed_listed": 19,
         "total": 80
       },
+      "all_time_total": 151,
       "undated": 28,
       "unexplained": 47,
+      "diagnosis": "dating",
       "date_provenance": {
         "version_date_only": 11,
         "text": 69

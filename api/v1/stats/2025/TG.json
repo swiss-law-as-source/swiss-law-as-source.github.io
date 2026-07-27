@@ -2,31 +2,22 @@
   "year": "2025",
   "year_semantics": "enactment",
   "entity": "TG",
-  "total": 10,
-  "categorized": 10,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "170 Allgemein": 1,
+        "188.2 Erlasse der Katholischen Landeskirche": 1,
         "551 Polizeikorps": 1,
         "640 Staats- und Gemeindesteuern": 1
       },
       "by_global_category": {
         "1.10.120 Information der Öffentlichkeit": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1,
         "5.30.10.30 Personal": 1
-      }
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "187.1 Organisation der Evangelischen Landeskirche": 1,
-        "188.2 Erlasse der Katholischen Landeskirche": 1
-      },
-      "by_global_category": {
-        "1.40.30 Evangelisch-Reformierte Kirche": 1,
-        "1.40.10 Römisch-Katholische Kirche": 1
       }
     },
     "Reglement": {
@@ -36,6 +27,17 @@
       },
       "by_global_category": {
         "4.60 Tertiärstufe: Höhere Fachschulen": 2
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 2,
+      "by_topic": {
+        "552 Interkantonale Zusammenarbeit": 1,
+        "831 Alters-, Hinterlassenen- und Invalidenversicherung, Berufliche Vorsorge": 1
+      },
+      "by_global_category": {
+        "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
+        "2.10.10.20.10 BVG-Stiftungen": 1
       }
     },
     "Gesetz": {
@@ -49,13 +51,13 @@
         "8.30.30 AHV / IV": 1
       }
     },
-    "Interkantonale Vereinbarung": {
+    "Anderes": {
       "total": 1,
       "by_topic": {
-        "831 Alters-, Hinterlassenen- und Invalidenversicherung, Berufliche Vorsorge": 1
+        "187.1 Organisation der Evangelischen Landeskirche": 1
       },
       "by_global_category": {
-        "2.10.10.20.10 BVG-Stiftungen": 1
+        "1.40.30 Evangelisch-Reformierte Kirche": 1
       }
     }
   },
@@ -188,19 +190,21 @@
     {
       "identifier": "5",
       "title": "Militärwesen - Zivilschutz - Polizeiwesen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "55",
           "title": "Polizeiwesen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -210,6 +214,15 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            },
+            {
+              "identifier": "552",
+              "title": "Interkantonale Zusammenarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             }
           ]
@@ -440,28 +453,31 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "5.30",
           "title": "Innere Sicherheit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 1,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
               "identifier": "5.30.10",
               "title": "Polizei",
-              "total": 1,
+              "total": 2,
               "own": 0,
               "by_type": {
-                "Verordnung": 1
+                "Verordnung": 1,
+                "Interkantonale Vereinbarung": 1
               },
               "children": [
                 {
@@ -471,6 +487,15 @@
                   "own": 1,
                   "by_type": {
                     "Verordnung": 1
+                  }
+                },
+                {
+                  "identifier": "5.30.10.50",
+                  "title": "Polizeiliche Zusammenarbeit",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
                   }
                 }
               ]
@@ -543,7 +568,7 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 11
   },
   "available_years_for_entity": [
     "1669",
@@ -563,7 +588,6 @@
     "1890",
     "1896",
     "1902",
-    "1906",
     "1907",
     "1909",
     "1911",

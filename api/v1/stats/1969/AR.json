@@ -2,10 +2,22 @@
   "year": "1969",
   "year_semantics": "enactment",
   "entity": "AR",
-  "total": 5,
-  "categorized": 5,
+  "total": 7,
+  "categorized": 7,
   "uncategorized": 0,
   "by_type": {
+    "Interkantonale Vereinbarung": {
+      "total": 3,
+      "by_topic": {
+        "162 Pastorations- und Steuerabkommen": 1,
+        "234 Interkantonale Vereinbarungen": 1,
+        "822.4 Familienzulagen, Familienausgleichskasse": 1
+      },
+      "by_global_category": {
+        "1.40.30 Evangelisch-Reformierte Kirche": 1,
+        "2.80 Schiedsgerichtsbarkeit": 1
+      }
+    },
     "Verordnung": {
       "total": 2,
       "by_topic": {
@@ -15,35 +27,50 @@
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
       }
     },
-    "Interkantonale Vereinbarung": {
-      "total": 1,
-      "by_topic": {
-        "234 Interkantonale Vereinbarungen": 1
-      },
-      "by_global_category": {
-        "2.80 Schiedsgerichtsbarkeit": 1
-      }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "525 Hundepolizei": 1
-      },
-      "by_global_category": {
-        "6.20.70 Hundesteuern": 1
-      }
-    },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
+        "525 Hundepolizei": 1,
         "742 Gewässerunterhalt und Verbauung": 1
       },
       "by_global_category": {
+        "6.20.70 Hundesteuern": 1,
         "7.30.20.10 Gewässerkorrekturen / Hochwasserschutz": 1
       }
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden und Gemeinden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "16",
+          "title": "Staat und Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "162",
+              "title": "Pastorations- und Steuerabkommen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
@@ -179,9 +206,82 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "82",
+          "title": "Arbeit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "822",
+              "title": "Arbeitnehmerschutz",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "822.4",
+                  "title": "Familienzulagen, Familienausgleichskasse",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.30",
+              "title": "Evangelisch-Reformierte Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht",
@@ -309,7 +409,7 @@
     }
   ],
   "languages_available": {
-    "de": 5
+    "de": 7
   },
   "available_years_for_entity": [
     "1881",
@@ -336,6 +436,7 @@
     "1931",
     "1932",
     "1937",
+    "1940",
     "1941",
     "1943",
     "1946",

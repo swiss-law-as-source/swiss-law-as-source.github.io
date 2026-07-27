@@ -2,8 +2,8 @@
   "year": "1980",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 8,
-  "categorized": 8,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Anderes": {
@@ -31,6 +31,15 @@
       "by_global_category": {
         "8.70.70 Alimentenbevorschussung": 1,
         "7.50.60.10 Schiffssteuern": 1
+      }
+    },
+    "Interkantonale Vereinbarung": {
+      "total": 1,
+      "by_topic": {
+        "811.1 Organisation des Sanitätswesens": 1
+      },
+      "by_global_category": {
+        "3.20.20 Gerichtsmedizin": 1
       }
     }
   },
@@ -248,21 +257,43 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, Sozialrecht",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Anderes": 2
+        "Anderes": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
           "identifier": "81",
           "title": "Gesundheit",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Interkantonale Vereinbarung": 1,
             "Anderes": 1
           },
           "children": [
+            {
+              "identifier": "811",
+              "title": "Sanitätswesen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.1",
+                  "title": "Organisation des Sanitätswesens",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Interkantonale Vereinbarung": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "817",
               "title": "Spitalwesen",
@@ -309,6 +340,37 @@
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Interkantonale Vereinbarung": 1
+      },
+      "children": [
+        {
+          "identifier": "3.20",
+          "title": "Strafprozess",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "3.20.20",
+              "title": "Gerichtsmedizin",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
@@ -458,7 +520,7 @@
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 9
   },
   "available_years_for_entity": [
     "1780",
@@ -516,6 +578,7 @@
     "1950",
     "1951",
     "1952",
+    "1953",
     "1954",
     "1955",
     "1956",
@@ -587,8 +650,7 @@
     "2022",
     "2023",
     "2024",
-    "2025",
-    "2026"
+    "2025"
   ],
   "available_entities_for_year": [
     "AG",

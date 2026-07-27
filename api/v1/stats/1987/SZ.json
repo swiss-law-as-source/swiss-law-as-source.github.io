@@ -2,8 +2,8 @@
   "year": "1987",
   "year_semantics": "enactment",
   "entity": "SZ",
-  "total": 8,
-  "categorized": 8,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
@@ -18,25 +18,35 @@
         "2.10.40.20 Erwerb von Grundstücke durch Personen im Ausland": 1
       }
     },
-    "Anderes": {
-      "total": 3,
+    "Verordnung": {
+      "total": 2,
       "by_topic": {
-        "362 Alters- und Hinterlassenen-, Invalidenversicherung": 1,
+        "25 Strafvollzug": 1,
+        "362 Alters- und Hinterlassenen-, Invalidenversicherung": 1
+      },
+      "by_global_category": {
+        "8.70.50.10 Eingliederungsstätten, Werkstätte": 1
+      }
+    },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
         "611 Organisation": 1,
         "0 Register": 1
       },
       "by_global_category": {
-        "8.70.50.10 Eingliederungsstätten, Werkstätte": 1,
         "4.120.60 Schulbauten": 1,
         "1.10.100.10 Gesetzessammlungen": 1
       }
     },
-    "Verordnung": {
+    "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
-        "25 Strafvollzug": 1
+        "27 Schuldbetreibung und Konkurs; Vollstreckung": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "2.50.30 Vollstreckung": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -83,11 +93,12 @@
     {
       "identifier": "2",
       "title": "Zivilrecht, Strafrecht, Rechtspflege",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
         "Gesetz": 1,
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -117,6 +128,15 @@
           "own": 1,
           "by_type": {
             "Verordnung": 1
+          }
+        },
+        {
+          "identifier": "27",
+          "title": "Schuldbetreibung und Konkurs; Vollstreckung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
           }
         }
       ]
@@ -281,10 +301,11 @@
     {
       "identifier": "2",
       "title": "Zivilrecht",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Gesetz": 1
+        "Gesetz": 1,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -315,6 +336,26 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "2.50",
+          "title": "Zivilrechtspflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "2.50.30",
+              "title": "Vollstreckung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
             }
           ]
         }
@@ -395,7 +436,7 @@
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 9
   },
   "available_years_for_entity": [
     "1824",
