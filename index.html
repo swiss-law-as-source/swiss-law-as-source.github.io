@@ -581,42 +581,45 @@
         // Default type: intercantonal agreements, from the legacy endpoint.
         // Other instrument types load from api/v1/stats/types/ when selected.
         let currentTypeSlug = 'interkantonale_vereinbarung';
-        let concExt = null;   // chstat-calibrated table — the only concordat counting
+        let concSig = null;   // computed signatory table — the concordat statistic
         const typeCache = {};
         const isConcordatType = () => currentTypeSlug === 'interkantonale_vereinbarung';
-        const inExtMode = () => isConcordatType() && !!concExt && conc === concExt;
+        const inSigMode = () => isConcordatType() && !!concSig && conc === concSig;
 
         function setConcNotes() {
             document.getElementById('concordats-notes').innerHTML =
                 `Data: ${conc.source}. ` + conc.notes.join('. ') + '.';
             const m = document.getElementById('concordats-methodology');
             m.hidden = !isConcordatType();
-            if (inExtMode()) {
-                m.innerHTML = `<b>Methodology (chstat/BADAC, cumulative since 1848):</b> `
-                    + `each agreement counts once per <b>signatory canton</b> — an agreement `
-                    + `signed by 10 cantons counts 10, not 1. All cells are computed from our `
-                    + `signatory-weighted data (cantons publishing the text ∪ cantons named in `
-                    + `titles); ≤2003 cells are calibrated per canton so canton totals equal `
-                    + `chstat's published 2003 figures `
-                    + `(<b>${conc.baseline_memberships_2003.toLocaleString()}</b> memberships — `
-                    + `correcting the delisting of long-repealed agreements), while the domain `
-                    + `and year structure stays computed. Post-2003 adds `
-                    + `<b>${conc.post_2003_memberships.toLocaleString()}</b> unscaled `
-                    + `memberships, for a cumulative total of `
-                    + `<b>${conc.total_memberships.toLocaleString()}</b>. `
-                    + `<a href="data.html">Data downloads &amp; SDMX →</a>`;
+            if (inSigMode()) {
+                m.innerHTML = `<b>Methodology (computed signatory counting):</b> each `
+                    + `agreement counts <b>once per signing canton</b> — an agreement signed `
+                    + `by 10 cantons counts 10, not 1. Signatories per agreement = cantons `
+                    + `publishing the text in their collections ∪ cantons named in any `
+                    + `language version's title (LexFind/LexWork publish no official member `
+                    + `lists). Computed purely from the source data — no scaling: `
+                    + `<b>${conc.total_memberships.toLocaleString()}</b> memberships across `
+                    + `<b>${conc.total_agreements.toLocaleString()}</b> distinct agreements `
+                    + `(+${conc.memberships_added_by_title_evidence.toLocaleString()} from `
+                    + `title evidence). Reference: chstat/BADAC counted `
+                    + `<b>${conc.chstat_2003_reference.toLocaleString()}</b> memberships up to `
+                    + `2003; our computed ≤2003 value is `
+                    + `<b>${conc.memberships_until_2003.toLocaleString()}</b> — the difference `
+                    + `is historical attrition (long-repealed agreements were delisted from `
+                    + `today's collections; see the <a href="verification.html">verification `
+                    + `report</a>). <a href="data.html">Data downloads &amp; SDMX →</a>`;
             }
         }
 
         function concForCurrentSelection() {
-            if (isConcordatType()) return concExt || conc;
+            if (isConcordatType()) return concSig || conc;
             return typeCache[currentTypeSlug] || conc;
         }
 
         try {
             try {
-                concExt = await (await fetch('api/v1/stats/concordats_by_domain_extrapolated.json', { cache: 'no-cache' })).json();
-                conc = concExt;
+                concSig = await (await fetch('api/v1/stats/concordats_by_domain_signatories.json', { cache: 'no-cache' })).json();
+                conc = concSig;
             } catch (e) {
                 // pre-regeneration deploy: fall back to the legacy table
                 conc = await (await fetch('api/v1/stats/concordats_by_domain.json', { cache: 'no-cache' })).json();
@@ -674,10 +677,10 @@
                     + `the range and ${undated} undated are not shown.`
                     + (isConcordatType() ? ' Verification vs chstat 2003: '
                     + '<a href="verification.html">full verification report</a>.' : '');
-            } else if (inExtMode()) {
-                msg = 'Cumulative memberships since 1848: chstat 2003 baseline + agreements '
-                    + 'concluded after 2003. The From/To year filter applies (the baseline '
-                    + 'counts as one block at 2003)'
+            } else if (inSigMode()) {
+                msg = 'Computed concordat memberships: one occurrence per signing canton '
+                    + 'per agreement. The From/To year filter applies (years = earliest '
+                    + 'known evidence per agreement)'
                     + (state.canton ? ` — ${state.canton} highlighted.` : '.');
             } else {
                 msg = `Showing all ${unit} (currently in force). The From/To year filter above also applies `
@@ -703,7 +706,7 @@
             const blob = new Blob([lines.join('\n')], { type: 'text/csv' });
             const a = document.createElement('a');
             a.href = URL.createObjectURL(blob);
-            a.download = `${currentTypeSlug}${inExtMode() ? '_since1848' : ''}`
+            a.download = `${currentTypeSlug}${inSigMode() ? '_signatories' : ''}`
                 + `_by_domain_${state.y1 || 'all'}_${state.y2 || 'now'}.csv`;
             a.click();
             URL.revokeObjectURL(a.href);

@@ -562,31 +562,10 @@
           "statistics"
         ],
         "summary": "Concordats per canton per domain — signatory-canton counting (chstat/BADAC 2003 methodology)",
-        "description": "Each agreement counts once per signatory canton (an agreement signed by 10 cantons counts 10). Signatory sets are estimated per agreement: cantons publishing the text in their collections, union cantons named in any language version's title. Same shape as concordats_by_domain.json, plus total_memberships, total_agreements, memberships_until_2003 (validation vs chstat_2003_reference = 2522) and memberships_added_by_title_evidence.",
+        "description": "THE computed concordats statistic: one occurrence per SIGNING canton per agreement (signed by 10 cantons -> 10). Signatories = cantons publishing the text plus cantons named in any language version's title. No scaling, no external baseline; chstat_2003_reference (2,522) is a comparison figure only. Same shape as concordats_by_domain.json plus total_memberships, total_agreements, memberships_until_2003, memberships_added_by_title_evidence.",
         "responses": {
           "200": {
             "description": "domains, cantons{...}, totals, by_year, memberships_until_2003, notes",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/v1/stats/concordats_by_domain_extrapolated.json": {
-      "get": {
-        "tags": [
-          "statistics"
-        ],
-        "summary": "Cumulative concordat memberships since 1848 — chstat 2003 baseline + post-2003 data",
-        "description": "chstat/BADAC counting (one count per signatory canton). All cells are computed from the collection's signatory-weighted series; cells <= 2003 are calibrated per canton (largest-remainder) so canton totals equal chstat's published 2003 figures (2,522 overall) while the domain and year structure stays computed. Post-2003 cells are unscaled. Includes a 'calibration' block (targets, our counts, factors). Same shape as concordats_by_domain.json.",
-        "responses": {
-          "200": {
-            "description": "domains, cantons{...}, totals, by_year, baseline_memberships_2003, post_2003_memberships, notes",
             "content": {
               "application/json": {
                 "schema": {
@@ -668,26 +647,6 @@
         "responses": {
           "200": {
             "description": "instrument_type,canton,year,domain,count",
-            "content": {
-              "text/csv": {
-                "schema": {
-                  "type": "string"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/v1/csv/concordats_memberships_since_1848.csv": {
-      "get": {
-        "tags": [
-          "data-exports"
-        ],
-        "summary": "Concordat memberships since 1848 (chstat methodology)",
-        "responses": {
-          "200": {
-            "description": "canton,year,<domains>,total; the 1848-2003 chstat baseline is one block at year 2003",
             "content": {
               "text/csv": {
                 "schema": {
@@ -801,6 +760,46 @@
               "application/json": {
                 "schema": {
                   "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/csv/concordats_memberships.csv": {
+      "get": {
+        "tags": [
+          "data-exports"
+        ],
+        "summary": "Concordat memberships — computed signatory counting",
+        "responses": {
+          "200": {
+            "description": "canton,year,<domains>,total; one occurrence per signing canton per agreement, no scaling",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/csv/undated_laws.csv": {
+      "get": {
+        "tags": [
+          "data-exports"
+        ],
+        "summary": "Undated laws — fillable correction template",
+        "responses": {
+          "200": {
+            "description": "Fill corrected_enactment_date + correction_note, then `legalize-ch import-dates` applies them to the law files (enactment_date_source: manual_import)",
+            "content": {
+              "text/csv": {
+                "schema": {
+                  "type": "string"
                 }
               }
             }

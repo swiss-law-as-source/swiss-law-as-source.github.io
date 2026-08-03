@@ -86,8 +86,8 @@
         </str:DataStructureComponents>
       </str:DataStructure>
       <str:DataStructure id="DSD_CONCORDATS" agencyID="SLC" version="1.0">
-        <com:Name xml:lang="en">Intercantonal agreement memberships since 1848 (chstat-calibrated)</com:Name>
-        <com:Annotations><com:Annotation><com:AnnotationType>METHODOLOGY</com:AnnotationType><com:AnnotationText xml:lang="en">chstat/BADAC counting: one observation unit per signatory canton of an agreement (signatories = cantons publishing the text plus cantons named in titles). Observations with TIME_PERIOD &lt;= 2003 are computed from the Swiss Law Collection's signatory-weighted series and calibrated per canton so canton totals equal chstat.ch/BADAC's published 2003 figures (2,522 overall); later periods are unscaled.</com:AnnotationText></com:Annotation></com:Annotations>
+        <com:Name xml:lang="en">Intercantonal agreement memberships (computed signatory counting)</com:Name>
+        <com:Annotations><com:Annotation><com:AnnotationType>METHODOLOGY</com:AnnotationType><com:AnnotationText xml:lang="en">chstat/BADAC counting: one observation unit per signatory canton of an agreement (signatories = cantons publishing the text plus cantons named in titles). Observations with TIME_PERIOD &lt;= 2003 are computed from the Swiss Law Collection's collections — no scaling, no external baseline. chstat.ch/BADAC's 2003 figure (2,522 memberships &lt;= 2003) is an external comparison reference only; the computed value is lower because long-repealed agreements were delisted upstream.</com:AnnotationText></com:Annotation></com:Annotations>
         <str:DataStructureComponents>
           <str:DimensionList id="DimensionDescriptor">
             <str:Dimension id="CANTON" position="1"><str:ConceptIdentity><Ref id="CANTON" maintainableParentID="CS_SLC" agencyID="SLC" maintainableParentVersion="1.0" package="conceptscheme" class="Concept"/></str:ConceptIdentity><str:LocalRepresentation><str:Enumeration><Ref id="CL_CANTON" agencyID="SLC" version="1.0" package="codelist" class="Codelist"/></str:Enumeration></str:LocalRepresentation></str:Dimension>

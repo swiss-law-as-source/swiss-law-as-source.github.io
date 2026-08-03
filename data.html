@@ -85,14 +85,15 @@
                     fédéralisme de l'Université de Fribourg (<a href="https://www.lexfind.ch">LexFind</a>).
                     Concordats 1848–2003: baseline <a href="https://www.chstat.ch/fr/data-theme/1842/Concordats-par-domaine">chstat.ch/BADAC</a>.</dd>
                 <dt>Methodology (concordats)</dt>
-                <dd>chstat/BADAC counting: each agreement counts once per <b>signatory
-                    canton</b> — an agreement signed by 10 cantons counts 10, not 1.
-                    All cells are computed from this collection's signatory-weighted
-                    series (cantons publishing the text ∪ cantons named in any language
-                    version's title); ≤2003 cells are calibrated per canton so canton
-                    totals equal chstat's published 2003 figures (2,522 memberships
-                    overall — correcting historical delisting), keeping the computed
-                    domain and year structure. Post-2003 counts are unscaled.</dd>
+                <dd>Computed signatory counting: each agreement counts <b>once per
+                    signing canton</b> — an agreement signed by 10 cantons counts 10,
+                    not 1. Signatories per agreement = cantons publishing the text in
+                    their collections ∪ cantons named in any language version's title
+                    (no official member lists exist). Computed purely from the source
+                    data — no scaling, no external baseline. chstat/BADAC's 2003
+                    figure (2,522 memberships ≤2003) is a comparison reference only;
+                    the computed value is lower due to historical delisting (see the
+                    <a href="verification.html">verification report</a>).</dd>
                 <dt>Methodology (other instrument types)</dt>
                 <dd>One count per unique law (language versions deduplicated), by the
                     canton publishing it, under its LexFind legal domain; years are
@@ -152,10 +153,17 @@
                 <li><a href="api/v1/csv/laws_cube.csv" download>laws_cube.csv</a>
                     <span class="desc">— everything: all instrument types × cantons ×
                     years × domains (long format)</span></li>
-                <li><a href="api/v1/csv/concordats_memberships_since_1848.csv" download>
-                    concordats_memberships_since_1848.csv</a>
-                    <span class="desc">— concordat memberships, chstat methodology,
-                    cumulative since 1848</span></li>
+                <li><a href="api/v1/csv/concordats_memberships.csv" download>
+                    concordats_memberships.csv</a>
+                    <span class="desc">— concordat memberships, computed signatory
+                    counting (1 per signing canton per agreement)</span></li>
+                <li><a href="api/v1/csv/undated_laws.csv" download>undated_laws.csv</a>
+                    <span class="desc">— correction template: fill
+                    <code>corrected_enactment_date</code> + <code>correction_note</code>
+                    and run <code>legalize-ch import-dates undated_laws.csv</code> in the
+                    <a href="https://github.com/benjamin-arfa/swiss-law">law repo</a> (or
+                    submit the filled file as a GitHub issue) — your corrections improve
+                    these statistics on the next regeneration</span></li>
                 <li><a href="api/v1/csv/index.json">index.json</a>
                     <span class="desc">— machine-readable list of all CSV exports</span></li>
                 <li><a href="undated.html">Undated laws (review page)</a>
@@ -164,7 +172,7 @@
                     (<a href="api/v1/quality/undated_laws.json">JSON</a>)</span></li>
             </ul>
             <p class="table-note">JSON endpoints:
-                <a href="api/v1/stats/concordats_by_domain_extrapolated.json">chstat-calibrated table</a> ·
+                <a href="api/v1/stats/concordats_by_domain_signatories.json">computed concordats table</a> ·
                 <a href="api/v1/stats/concordats_signatories.json">distinct agreements with signing cantons</a> ·
                 <a href="api/v1/stats/types/index.json">per-type tables</a> ·
                 <a href="api.html">full API documentation</a></p>
@@ -212,7 +220,7 @@
         const typeCache = {};
 
         try {
-            conc = await fetchJSON('api/v1/stats/concordats_by_domain_extrapolated.json');
+            conc = await fetchJSON('api/v1/stats/concordats_by_domain_signatories.json');
         } catch (e) {
             conc = await fetchJSON('api/v1/stats/concordats_by_domain.json');
         }

@@ -77,6 +77,15 @@
       "unexplained": null,
       "undated": 0,
       "change_reason": "The <=2003 part of the headline concordats table is now COMPUTED from the collection's signatory-weighted series (signatories = publishing cantons ∪ cantons named in titles) and calibrated per canton with largest-remainder integerization so each canton's <=2003 total equals chstat/BADAC's published 2003 figure (2,522 overall). Previously chstat's table was pasted as a single cumulative block at year 2003. by_year now carries the real computed year distribution; post-2003 counts are unscaled."
+    },
+    {
+      "version": 9,
+      "date": "2026-08-03",
+      "date_basis": "unchanged; concordat headline switched from 'computed + calibrated to chstat' to 'purely computed'",
+      "existed_by_2003": 1855,
+      "unexplained": null,
+      "undated": 0,
+      "change_reason": "All scaling removed on user decision: the concordats statistic is now computed purely from the source data — one occurrence per signing canton per agreement (signatories = publishing cantons ∪ cantons named in titles). chstat/BADAC 2003 (2,522) remains an external comparison reference only; the computed ≤2003 value is 1,855, the difference being historical attrition (delisted agreements). A correction round-trip was added: api/v1/csv/undated_laws.csv template + `legalize-ch import-dates` apply user-supplied dates as enactment_date_source: manual_import."
     }
   ]
 }

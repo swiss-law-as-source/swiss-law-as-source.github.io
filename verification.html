@@ -65,15 +65,17 @@
            "Concordats par domaine" (chstat.ch, 2003)</a>, which was computed by the
            Institute of Federalism from the same underlying source (LexFind)?
            This page renders live from the published data — it updates with every regeneration.</p>
-        <p><b>Answer in short:</b> not fully from surviving texts alone — agreements
-           repealed decades ago were delisted from today's collections (historical
-           attrition). The headline table is therefore <b>computed</b> from our
-           signatory-weighted series and <b>calibrated per canton</b> so that each
-           canton's ≤2003 total equals chstat's published figure — the domain split and
-           year distribution stay our computed structure, nothing is copied cell by
-           cell. Post-2003 counts are ours, unscaled
-           (<span id="headline-formula">see below</span>). This page documents what
-           today's collections alone reproduce and how the calibration closes the rest.</p>
+        <p><b>Answer in short:</b> not fully — and the statistic does not try to.
+           The published concordats table is <b>computed purely from the source data</b>:
+           one occurrence per signing canton per agreement, signatories estimated as the
+           cantons publishing the text ∪ the cantons named in any language version's
+           title. No scaling, no external baseline
+           (<span id="headline-formula">see below</span>). chstat/BADAC's 2003 figure is
+           kept as an external comparison reference; the difference is historical
+           attrition — agreements repealed decades ago were delisted from today's
+           collections. Filling in missing dates via the
+           <a href="undated.html">undated-laws review</a> and importing corrections
+           (<code>legalize-ch import-dates</code>) improves the statistic.</p>
 
         <h2>2. Reconciliation</h2>
         <div class="waterfall" id="waterfall">loading…</div>
@@ -86,9 +88,8 @@
                 (an agreement signed by 10 cantons counts 10, not 1). Signatory sets for
                 our post-2003 data are estimated per agreement: cantons publishing the
                 text in their collections ∪ cantons named in any language version's
-                title. ≤2003 cells are our computed series scaled per canton
-                (largest-remainder integerization) so canton totals equal chstat's
-                published 2003 figures — computed and calibrated, not copied.</li>
+                title. Computed purely from the source data — no scaling; chstat's
+                2003 table is an external comparison reference only.</li>
             <li><b>Laws are (law, version) pairs.</b> All year filtering uses the <i>enactment date</i>
                 (original act), never the current consolidated version's date. A 1970 concordat amended
                 in 2015 counts as 1970.</li>
@@ -146,7 +147,7 @@
         <h2>8. Source data</h2>
         <ul>
             <li><a href="api/v1/stats/concordats_chstat_comparison.json">Reconciliation JSON</a> (this page's data)</li>
-            <li><a href="api/v1/stats/concordats_by_domain_extrapolated.json">Headline table</a> (chstat 2003 baseline + post-2003 signatory-weighted; CSV &amp; SDMX on the <a href="data.html">data page</a>)</li>
+            <li><a href="api/v1/stats/concordats_by_domain_signatories.json">The computed concordats table</a> (one occurrence per signing canton per agreement; CSV &amp; SDMX on the <a href="data.html">data page</a>)</li>
             <li><a href="undated.html">Undated laws review page</a> (<a href="api/v1/quality/undated_laws.json">JSON</a> — every law excluded from year statistics, with its raw upstream date values)</li>
             <li><a href="api/v1/stats/concordats_by_domain.json">Concordats by domain</a> (published-collections counting, with per-year breakdowns)</li>
             <li><a href="api/v1/stats/concordats_signatories.json">Distinct agreements with signing cantons</a> (signatories = cantons whose collections publish the text)</li>
@@ -168,12 +169,11 @@
             fetch('api/v1/stats/concordats_chstat_comparison.json', opt).then(r => r.json()),
             fetch('stats.json', opt).then(r => r.json()),
         ]);
-        let harm = null, unc = null, conc = null, sig = null, ext = null;
+        let harm = null, unc = null, conc = null, sig = null;
         try { harm = await (await fetch('api/v1/stats/harmonized_categories.json', opt)).json(); } catch (e) {}
         try { unc = await (await fetch('api/v1/quality/unclassified_types.json', opt)).json(); } catch (e) {}
         try { conc = await (await fetch('api/v1/stats/concordats_by_domain.json', opt)).json(); } catch (e) {}
         try { sig = await (await fetch('api/v1/stats/concordats_by_domain_signatories.json', opt)).json(); } catch (e) {}
-        try { ext = await (await fetch('api/v1/stats/concordats_by_domain_extrapolated.json', opt)).json(); } catch (e) {}
         let clog = null;
         try { clog = await (await fetch('api/v1/quality/methodology_changelog.json', opt)).json(); } catch (e) {}
 
@@ -181,27 +181,30 @@
         const active = Object.values(cmp.cantons).reduce((s, v) => s + v.ours_enacted_until_2003.active, 0);
         const repealed = Object.values(cmp.cantons).reduce((s, v) => s + v.ours_enacted_until_2003.repealed_listed, 0);
         let wf = '';
-        if (ext) wf +=
-`our statistic (dashboard & data page), canton memberships:
-├─ ≤2003: computed (signatory-weighted), calibrated:    ${n(ext.baseline_memberships_2003)}   canton totals = chstat's (${n(cmp.chstat_total)}); domain & year structure computed
-└─ concluded after 2003, signatory-weighted, unscaled:  +${n(ext.post_2003_memberships)}
-                                        cumulative:      ${n(ext.total_memberships)}
+        if (sig) wf +=
+`our statistic (dashboard & data page) — computed, one occurrence per signing canton per agreement:
+├─ total memberships (all years):               ${n(sig.total_memberships)}   across ${n(sig.total_agreements)} distinct agreements
+├─ … thereof enacted ≤2003:                     ${n(sig.memberships_until_2003)}
+└─ title evidence beyond published copies:      +${n(sig.memberships_added_by_title_evidence)}   (cantons named in titles but not publishing the text)
+
+comparison with the chstat/BADAC 2003 reference:
+├─ chstat 2003 (Institute of Federalism DB):    ${n(cmp.chstat_total)}   memberships, cumulative 1848-2003
+├─ our computed ≤2003 (above):                  ${n(sig.memberships_until_2003)}
+└─ difference — historical attrition:           ${n(cmp.chstat_total - sig.memberships_until_2003)}   (agreements repealed decades ago, delisted from today's collections)
 
 `;
         wf +=
-`provenance check — why ≤2003 uses chstat's table instead of recomputing it
-(what today's collections alone still contain for ≤2003):
-├─ published copies:                            ${n(active + repealed)}   (${n(active)} active + ${n(repealed)} repealed but listed)`;
-        if (sig) wf += `
-├─ signatory-weighted (publ. ∪ named-in-title): ${n(sig.memberships_until_2003)}   (${n(sig.total_agreements)} distinct agreements; grouping merges revisions)`;
-        wf += `
-└─ not recoverable from today's collections:    ${n(cmp.unexplained_total)}   (vs published counting — agreements delisted upstream, historical attrition)
+`published copies only (no signatory estimation), ≤2003:
+├─ still active:                                ${n(active)}
+├─ repealed but listed:                         ${n(repealed)}
+└─ vs chstat ("unexplained"):                   ${n(cmp.unexplained_total)}
 
 ours, undated:                                  ${n(cmp.undated_total)}
 ours, all published copies (any date):          ${n(Object.values(cmp.cantons).reduce((s,v)=>s+v.all_time_total,0))}`;
         document.getElementById('waterfall').textContent = wf;
-        if (ext) document.getElementById('headline-formula').textContent =
-            `${n(ext.baseline_memberships_2003)} + ${n(ext.post_2003_memberships)} post-2003 = ${n(ext.total_memberships)} memberships`;
+        if (sig) document.getElementById('headline-formula').textContent =
+            `${n(sig.total_memberships)} memberships across ${n(sig.total_agreements)} agreements, `
+            + `${n(sig.memberships_until_2003)} ≤2003`;
         document.getElementById('waterfall-note').innerHTML =
             'Diagnosis split: ' + Object.entries(cmp.diagnosis_totals || {})
                 .map(([k, v]) => `${k}: ${v} cantons`).join(' · ') +

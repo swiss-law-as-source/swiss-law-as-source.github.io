@@ -193,8 +193,8 @@
             if (ttype) {
                 conc = await fetchJSON(`api/v1/stats/types/${encodeURIComponent(ttype)}_by_domain.json`);
             } else {
-                // chstat-calibrated cumulative table (falls back pre-deploy)
-                conc = await fetchJSON('api/v1/stats/concordats_by_domain_extrapolated.json')
+                // computed signatory-counting table (falls back pre-deploy)
+                conc = await fetchJSON('api/v1/stats/concordats_by_domain_signatories.json')
                     .catch(() => fetchJSON('api/v1/stats/concordats_by_domain.json'));
             }
             const tbl = SLCharts.concTable(conc, y1, y2);
