@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiss Law Collection — Embedded chart</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #1a1a1a; background: #fff;
+            display: flex; flex-direction: column;
+        }
+        #chart { flex: 1; min-height: 0; }
+        #table-wrap { flex: 1; overflow: auto; padding: 0.5rem; display: none; }
+        .tile-map { display: grid; grid-template-columns: repeat(9, minmax(48px, 1fr));
+                    gap: 4px; padding: 0.5rem; }
+        .tile { border-radius: 4px; padding: 0.3rem 0.25rem; font-size: 0.7rem;
+                line-height: 1.2; display: flex; flex-direction: column; align-items: center; }
+        .tile b { font-size: 0.75rem; }
+        .data-table { border-collapse: collapse; width: 100%; font-size: 0.8rem; }
+        .data-table th, .data-table td { border: 1px solid #e0e0e0; padding: 0.3rem 0.5rem; text-align: right; }
+        .data-table th { background: #f5f5f5; position: sticky; top: 0; }
+        .data-table th:first-child, .data-table td:first-child { text-align: left; font-weight: 600; }
+        .data-table tbody tr:nth-child(even) { background: #fafafa; }
+        .data-table td.zero { color: #bbb; }
+        .data-table tfoot td { font-weight: 700; background: #f5f5f5; }
+        footer {
+            flex: none; font-size: 0.72rem; color: #888; padding: 0.3rem 0.8rem;
+            border-top: 1px solid #eee; display: flex; gap: 0.5rem;
+            align-items: baseline; white-space: nowrap; overflow: hidden;
+        }
+        footer .t { overflow: hidden; text-overflow: ellipsis; flex: 1; }
+        footer a { color: #D52B1E; text-decoration: none; }
+        #usage { padding: 1.5rem; font-size: 0.85rem; line-height: 1.7; display: none; }
+        #usage code { background: #f5f5f5; padding: 0.1rem 0.3rem; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <div id="chart"></div>
+    <div id="table-wrap"></div>
+    <div id="usage">
+        <p><b>Swiss Law Collection — embeddable charts.</b> Pass a <code>chart</code> parameter:</p>
+        <p>
+            <code>embed.html?chart=domains</code> — harmonized legal domains
+            (options: <code>scope=federal|cantonal</code>, <code>form=sunburst</code>,
+            <code>domain=&lt;top-level code&gt;</code>, <code>y1</code>/<code>y2</code> enactment-year range)<br>
+            <code>embed.html?chart=cantons</code> — cantonal laws by canton
+            (options: <code>canton=ZH</code>, <code>type=Gesetz</code>, <code>y1</code>/<code>y2</code>)<br>
+            <code>embed.html?chart=types</code> — instrument types (same options)<br>
+            <code>embed.html?chart=years</code> — laws by enactment year (same options)<br>
+            <code>embed.html?chart=concordats</code> — canton × domain data widget
+            (options: <code>ttype=&lt;type slug&gt;</code>, <code>y1</code>/<code>y2</code>,
+            <code>view=grid|chart|map</code>)
+        </p>
+    </div>
+    <footer>
+        <span class="t" id="foot-title">Swiss Law Collection</span>
+        <a id="foot-link" href="index.html" target="_blank" rel="noopener">Swiss Law Collection</a>
+        <span>· Data: Fedlex + LexFind</span>
+    </footer>
+
+    <script src="assets/echarts.min.js"></script>
+    <script src="assets/charts.js"></script>
+    <script>
+    (async function () {
+        const P = new URLSearchParams(location.search);
+        const kind = P.get('chart');
+        const y1 = P.get('y1') || null, y2 = P.get('y2') || null;
+        const el = document.getElementById('chart');
+        const { PALETTE, GRAY } = SLCharts;
+
+        function showUsage() {
+            el.style.display = 'none';
+            document.getElementById('usage').style.display = 'block';
+        }
+        function setTitle(t) {
+            document.getElementById('foot-title').textContent = t;
+            document.title = `${t} — Swiss Law Collection`;
+        }
+        function initChart(option) {
+            const c = echarts.init(el);
+            c.setOption(option);
+            window.addEventListener('resize', () => c.resize());
+            return c;
+        }
+        const fetchJSON = async url =>
+            (await fetch(url, { cache: 'no-cache' })).json();
+        const rangeText = () =>
+            (y1 || y2) ? ` (enacted ${y1 || 'beginning'}–${y2 || 'now'})` : '';
+
+        async function renderDomains() {
+            const scope = ['federal', 'cantonal'].includes(P.get('scope'))
+                ? P.get('scope') : 'total';
+            const form = P.get('form') === 'sunburst' ? 'sunburst' : 'treemap';
+            const domain = P.get('domain') || '';
+            const harm = await fetchJSON('api/v1/stats/harmonized_categories.json');
+            let data;
+            if (!y1 && !y2) {
+                const tree = domain
+                    ? harm.tree.filter(n => n.identifier === domain) : harm.tree;
+                data = SLCharts.harmTreeToNodes(tree, scope);
+                if (domain && data[0]) {
+                    const i = harm.tree.findIndex(n => n.identifier === domain);
+                    data[0].itemStyle = { color: i < PALETTE.length ? PALETTE[i] : GRAY };
+                }
+            } else {
+                const cube = await fetchJSON('api/v1/stats/harmonized_by_year.json');
+                const sums = {};
+                for (const [y, codes] of Object.entries(cube.years)) {
+                    if ((y1 && y < y1) || (y2 && y > y2)) continue;
+                    for (const [code, fc] of Object.entries(codes)) {
+                        (sums[code] ??= [0, 0])[0] += fc[0];
+                        sums[code][1] += fc[1];
+                    }
+                }
+                const val = fc => scope === 'federal' ? fc[0]
+                    : scope === 'cantonal' ? fc[1] : fc[0] + fc[1];
+                const meta = (n, fc) => ({ identifier: n.identifier, title: n.title,
+                    total: fc[0] + fc[1], federal: fc[0], cantonal: fc[1] });
+                data = harm.tree
+                    .map((n, i) => {
+                        if (domain && n.identifier !== domain) return null;
+                        const fc = sums[n.identifier] || [0, 0];
+                        const node = {
+                            name: SLCharts.nodeName(n), value: val(fc), _meta: meta(n, fc),
+                            itemStyle: { color: i < PALETTE.length ? PALETTE[i] : GRAY },
+                        };
+                        const kids = (n.children || [])
+                            .filter(c => sums[c.identifier])
+                            .map(c => ({ name: SLCharts.nodeName(c),
+                                         value: val(sums[c.identifier]),
+                                         _meta: meta(c, sums[c.identifier]) }))
+                            .filter(k => k.value > 0);
+                        if (kids.length) node.children = kids;
+                        return node;
+                    })
+                    .filter(n => n && n.value > 0);
+            }
+            initChart(form === 'treemap'
+                ? SLCharts.domainsTreemapOption(data)
+                : SLCharts.domainsSunburstOption(data));
+            setTitle(`Legal domains — harmonized${scope !== 'total' ? ` (${scope})` : ''}${rangeText()}`);
+        }
+
+        async function renderCube() {
+            const stats = await fetchJSON('stats.json');
+            const cube = stats.category_type_by_canton_by_year || {};
+            const canton = P.get('canton') || null;
+            const type = P.get('type') || null;
+            const enType = SLCharts.enTypeFactory(stats.category_type_labels || {});
+            const TYPE_ORDER = Object.keys(stats.by_category_type || {});
+            const typeColor = SLCharts.typeColorFactory(TYPE_ORDER);
+            const filters = { y1, y2, canton, type };
+
+            if (kind === 'cantons') {
+                const data = Object.entries(SLCharts.aggregateCube(cube,
+                    { ...filters, byCanton: true, useCanton: false }))
+                    .map(([name, value]) => ({
+                        name, value,
+                        itemStyle: canton && name !== canton ? { opacity: 0.3 } : undefined,
+                    }));
+                initChart(SLCharts.cantonTreemapOption(data));
+                setTitle(`Cantonal laws by canton${type ? ` — ${enType(type)}` : ''}${rangeText()}`);
+            } else if (kind === 'types') {
+                const agg = SLCharts.aggregateCube(cube,
+                    { ...filters, byType: true, useType: false });
+                const data = TYPE_ORDER.filter(t => agg[t]).map(t => ({
+                    name: enType(t), value: agg[t],
+                    itemStyle: { color: typeColor(t),
+                                 opacity: type && t !== type ? 0.3 : 1 },
+                }));
+                initChart(SLCharts.typesDonutOption(data));
+                setTitle(`Instrument types${canton ? ` — ${canton}` : ''}${rangeText()}`);
+            } else {   // years
+                const perYear = SLCharts.aggregateCube(cube,
+                    { ...filters, byYear: true, byType: true });
+                const years = Object.keys(perYear).sort();
+                const activeTypes = TYPE_ORDER.filter(t =>
+                    (!type || t === type) && years.some(y => perYear[y][t]));
+                initChart(SLCharts.yearsStackOption(years, activeTypes, perYear,
+                                                    enType, typeColor));
+                setTitle(`Laws by enactment year${canton ? ` — ${canton}` : ''}`
+                         + `${type ? ` — ${enType(type)}` : ''}`);
+            }
+        }
+
+        async function renderConcTable() {
+            const ttype = P.get('ttype');
+            const view = P.get('view') || 'grid';   // grid | chart | map
+            let conc;
+            if (ttype) {
+                conc = await fetchJSON(`api/v1/stats/types/${encodeURIComponent(ttype)}_by_domain.json`);
+            } else {
+                // chstat-calibrated cumulative table (falls back pre-deploy)
+                conc = await fetchJSON('api/v1/stats/concordats_by_domain_extrapolated.json')
+                    .catch(() => fetchJSON('api/v1/stats/concordats_by_domain.json'));
+            }
+            const tbl = SLCharts.concTable(conc, y1, y2);
+            if (view === 'chart') {
+                initChart(SLCharts.concChartOption(conc, tbl));
+            } else {
+                el.style.display = 'none';
+                const wrap = document.getElementById('table-wrap');
+                wrap.style.display = 'block';
+                wrap.innerHTML = view === 'map'
+                    ? SLCharts.tileMapHTML(conc, tbl)
+                    : SLCharts.concTableHTML(conc, tbl, null);
+            }
+            setTitle(`${conc.title}${rangeText()}`);
+        }
+
+        try {
+            if (kind === 'domains') await renderDomains();
+            else if (['cantons', 'types', 'years'].includes(kind)) await renderCube();
+            else if (kind === 'concordats') await renderConcTable();
+            else showUsage();
+        } catch (e) {
+            el.textContent = 'Chart data unavailable.';
+            el.style.cssText = 'padding:1.5rem;font-size:0.85rem;color:#888;flex:none';
+        }
+    })();
+    </script>
+</body>
+</html>

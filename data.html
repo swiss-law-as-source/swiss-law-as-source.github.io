@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiss Law Collection — Data downloads &amp; SDMX</title>
+    <style>
+        :root { --red: #D52B1E; --dark: #1a1a1a; --gray: #f5f5f5; --border: #e0e0e0; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        [hidden] { display: none !important; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+               color: var(--dark); line-height: 1.6; background: #fff; }
+        header { background: var(--red); color: white; padding: 1.5rem 2rem; }
+        header h1 { font-size: 1.4rem; }
+        header p { opacity: 0.9; font-size: 0.9rem; }
+        nav { background: var(--dark); padding: 0.5rem 2rem; }
+        nav a { color: #ccc; text-decoration: none; margin-right: 2rem; font-size: 0.9rem; }
+        nav a:hover { color: white; }
+        main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
+        section { margin-bottom: 2.5rem; }
+        h2 { font-size: 1.15rem; margin-bottom: 0.8rem;
+             border-bottom: 2px solid var(--red); padding-bottom: 0.4rem; }
+        .meta-block { background: var(--gray); border: 1px solid var(--border);
+                      border-radius: 8px; padding: 1rem 1.2rem; font-size: 0.88rem; }
+        .meta-block dt { font-weight: 600; margin-top: 0.5rem; }
+        .meta-block dt:first-child { margin-top: 0; }
+        .meta-block dd { margin-left: 0; color: #444; }
+        .table-wrap { overflow-x: auto; }
+        .data-table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+        .data-table th, .data-table td { border: 1px solid var(--border); padding: 0.35rem 0.6rem; text-align: right; }
+        .data-table th { background: var(--gray); position: sticky; top: 0; }
+        .data-table th:first-child, .data-table td:first-child { text-align: left; font-weight: 600; }
+        .data-table tbody tr:nth-child(even) { background: #fafafa; }
+        .data-table td.zero { color: #bbb; }
+        .data-table tfoot td { font-weight: 700; background: var(--gray); }
+        .table-note { font-size: 0.8rem; color: #666; margin-top: 0.75rem; }
+        .tab-bar { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap; align-items: center; }
+        .tab-bar .tab-label { font-size: 0.82rem; color: #666; }
+        .tab-bar button, .tab-bar select {
+            background: var(--gray); border: 1px solid var(--border); border-radius: 4px;
+            padding: 0.3rem 0.8rem; cursor: pointer; font-size: 0.82rem;
+        }
+        .tab-bar select { background: #fff; }
+        .hint { font-size: 0.78rem; color: #888; }
+        .tab-bar button.active { background: var(--red); color: white; border-color: var(--red); }
+        .tile-map { display: grid; grid-template-columns: repeat(9, minmax(52px, 1fr));
+                    gap: 4px; max-width: 680px; margin: 0.5rem 0; }
+        .tile { border-radius: 4px; padding: 0.3rem 0.25rem; font-size: 0.7rem;
+                line-height: 1.2; display: flex; flex-direction: column; align-items: center; }
+        .tile b { font-size: 0.75rem; }
+        #chart-view { height: 420px; }
+        ul.dl { list-style: none; font-size: 0.88rem; }
+        ul.dl li { padding: 0.35rem 0; border-bottom: 1px dashed var(--border); }
+        ul.dl a { color: var(--red); text-decoration: none; font-weight: 600; }
+        ul.dl .desc { color: #666; font-size: 0.82rem; }
+        code { background: var(--gray); padding: 0.1rem 0.35rem; border-radius: 3px;
+               font-size: 0.82rem; }
+        #embed-snippet { width: 100%; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+                         font-size: 0.78rem; border: 1px solid var(--border); border-radius: 4px;
+                         padding: 0.5rem; resize: vertical; background: var(--gray); }
+        footer { text-align: center; padding: 2rem; color: #666; font-size: 0.85rem;
+                 border-top: 1px solid var(--border); margin-top: 3rem; }
+        footer a { color: var(--red); text-decoration: none; }
+    </style>
+    <script src="assets/banner.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Data downloads &amp; SDMX</h1>
+        <p>Concordats par domaine &amp; cantonal acts — machine-readable exports</p>
+    </header>
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="laws.html">Laws</a>
+        <a href="data.html"><strong>Data</strong></a>
+        <a href="verification.html">Verification</a>
+        <a href="api.html">API</a>
+    </nav>
+    <main>
+        <section>
+            <h2>About this dataset</h2>
+            <dl class="meta-block">
+                <dt>Source</dt>
+                <dd>Calculs propres basés sur la base de données de l'Institut pour le
+                    fédéralisme de l'Université de Fribourg (<a href="https://www.lexfind.ch">LexFind</a>).
+                    Concordats 1848–2003: baseline <a href="https://www.chstat.ch/fr/data-theme/1842/Concordats-par-domaine">chstat.ch/BADAC</a>.</dd>
+                <dt>Methodology (concordats)</dt>
+                <dd>chstat/BADAC counting: each agreement counts once per <b>signatory
+                    canton</b> — an agreement signed by 10 cantons counts 10, not 1.
+                    All cells are computed from this collection's signatory-weighted
+                    series (cantons publishing the text ∪ cantons named in any language
+                    version's title); ≤2003 cells are calibrated per canton so canton
+                    totals equal chstat's published 2003 figures (2,522 memberships
+                    overall — correcting historical delisting), keeping the computed
+                    domain and year structure. Post-2003 counts are unscaled.</dd>
+                <dt>Methodology (other instrument types)</dt>
+                <dd>One count per unique law (language versions deduplicated), by the
+                    canton publishing it, under its LexFind legal domain; years are
+                    enactment years.</dd>
+                <dt>Data year</dt>
+                <dd id="meta-year">–</dd>
+                <dt>Licence / citation</dt>
+                <dd>Free to reuse with attribution: “Swiss Law Collection
+                    (swiss-law-as-source.github.io), based on LexFind data”.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Données</h2>
+            <div class="tab-bar">
+                <span class="tab-label">Instrument type:</span>
+                <select id="type-select"><option value="">Intercantonal agreements (chstat methodology)</option></select>
+                <span class="tab-label">Enacted from</span>
+                <select id="year-from"><option value="">Beginning</option></select>
+                <span class="tab-label">to</span>
+                <select id="year-to"><option value="" selected>Now</option></select>
+                <button id="view-csv">Télécharger cette vue (CSV)</button>
+            </div>
+            <div class="tab-bar" id="view-bar">
+                <span class="tab-label">Vue :</span>
+                <button class="active" data-view="grid">Tableau</button>
+                <button data-view="chart">Graphique</button>
+                <button data-view="map">Carte</button>
+            </div>
+            <div class="table-wrap" id="table"></div>
+            <div id="chart-view" hidden></div>
+            <div id="map-view" hidden></div>
+            <p class="table-note" id="table-note"></p>
+        </section>
+
+        <section>
+            <h2>Intégrer ce widget</h2>
+            <p class="hint" style="margin-bottom:0.5rem">Copy the snippet — the embedded
+               widget stays live and mirrors the type, years and view selected above
+               (Tableau, Graphique or Carte).</p>
+            <textarea id="embed-snippet" readonly rows="3" spellcheck="false"></textarea>
+            <div class="tab-bar" style="margin-top:0.5rem">
+                <button id="embed-copy">Copy</button>
+                <a id="embed-preview" href="#" target="_blank" rel="noopener"
+                   style="font-size:0.82rem">Preview (this server) ↗</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Download (CSV)</h2>
+            <ul class="dl">
+                <li><a href="#" id="dl-current">Current view</a>
+                    <span class="desc">— the table above with its filters, columns =
+                    legal domains (same as the button in the table section)</span></li>
+                <li id="dl-categories-li"><span class="desc">One category, all cantons ×
+                    all years:</span><span id="dl-categories"></span></li>
+                <li><a href="api/v1/csv/laws_cube.csv" download>laws_cube.csv</a>
+                    <span class="desc">— everything: all instrument types × cantons ×
+                    years × domains (long format)</span></li>
+                <li><a href="api/v1/csv/concordats_memberships_since_1848.csv" download>
+                    concordats_memberships_since_1848.csv</a>
+                    <span class="desc">— concordat memberships, chstat methodology,
+                    cumulative since 1848</span></li>
+                <li><a href="api/v1/csv/index.json">index.json</a>
+                    <span class="desc">— machine-readable list of all CSV exports</span></li>
+                <li><a href="undated.html">Undated laws (review page)</a>
+                    <span class="desc">— every law excluded from year-based statistics,
+                    with its raw upstream date values
+                    (<a href="api/v1/quality/undated_laws.json">JSON</a>)</span></li>
+            </ul>
+            <p class="table-note">JSON endpoints:
+                <a href="api/v1/stats/concordats_by_domain_extrapolated.json">chstat-calibrated table</a> ·
+                <a href="api/v1/stats/concordats_signatories.json">distinct agreements with signing cantons</a> ·
+                <a href="api/v1/stats/types/index.json">per-type tables</a> ·
+                <a href="api.html">full API documentation</a></p>
+        </section>
+
+        <section>
+            <h2>SDMX</h2>
+            <p class="hint" style="margin-bottom:0.5rem">Agency <code>SLC</code>, version
+               1.0. Structures (codelists <code>CL_CANTON</code>, <code>CL_DOMAIN</code>,
+               <code>CL_INSTRUMENT_TYPE</code>, DSDs and dataflows) plus data in SDMX-CSV
+               and SDMX-ML 2.1 (generic).</p>
+            <ul class="dl">
+                <li><a href="api/sdmx/structures.xml">structures.xml</a>
+                    <span class="desc">— all structural artefacts: codelists, concept
+                    scheme <code>CS_SLC</code>, <code>DSD_LAWS</code>,
+                    <code>DSD_CONCORDATS</code>, dataflows</span></li>
+                <li><code>DF_LAWS</code> — cantonal acts
+                    (type × canton × domain × year):
+                    <a href="api/sdmx/data/df_laws.sdmx.csv">SDMX-CSV</a> ·
+                    <a href="api/sdmx/data/df_laws.xml">SDMX-ML</a></li>
+                <li><code>DF_CONCORDATS</code> — concordat memberships, chstat
+                    methodology (canton × domain × year; 2003 = cumulative 1848–2003
+                    baseline):
+                    <a href="api/sdmx/data/df_concordats.sdmx.csv">SDMX-CSV</a> ·
+                    <a href="api/sdmx/data/df_concordats.xml">SDMX-ML</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <a href="index.html">Dashboard</a> &middot;
+        Data: <a href="https://www.fedlex.admin.ch">Fedlex</a> +
+        <a href="https://www.lexfind.ch">LexFind</a> &middot;
+        Baseline 2003: <a href="https://www.chstat.ch/fr/data-theme/1842/Concordats-par-domaine">chstat.ch</a>
+    </footer>
+
+    <script src="assets/echarts.min.js"></script>
+    <script src="assets/charts.js"></script>
+    <script>
+    (async function () {
+        const SITE_BASE = 'https://swiss-law-as-source.github.io/';
+        const fetchJSON = async url => (await fetch(url, { cache: 'no-cache' })).json();
+        let conc = null, currentSlug = '';   // '' = concordats (chstat-calibrated)
+        let y1 = null, y2 = null, view = 'grid';
+        let chartInstance = null;
+        const typeCache = {};
+
+        try {
+            conc = await fetchJSON('api/v1/stats/concordats_by_domain_extrapolated.json');
+        } catch (e) {
+            conc = await fetchJSON('api/v1/stats/concordats_by_domain.json');
+        }
+        const concDefault = conc;
+
+        // Data year = latest year key in the default table
+        const years = Object.keys(conc.by_year || {}).filter(y => /^\d{4}$/.test(y)).sort();
+        document.getElementById('meta-year').textContent =
+            years.length ? `1848–${years[years.length - 1]} (concordats); regenerated with each data update` : '–';
+
+        // year selects
+        const selFrom = document.getElementById('year-from');
+        const selTo = document.getElementById('year-to');
+        selFrom.innerHTML = '<option value="">Beginning</option>' +
+            years.map(y => `<option>${y}</option>`).join('');
+        selTo.innerHTML = years.map(y => `<option>${y}</option>`).join('') +
+            '<option value="" selected>Now</option>';
+        selFrom.addEventListener('change', () => { y1 = selFrom.value || null; render(); });
+        selTo.addEventListener('change', () => { y2 = selTo.value || null; render(); });
+
+        // type selector from types/index.json (concordats stay the default entry)
+        const typeSel = document.getElementById('type-select');
+        try {
+            const idx = await fetchJSON('api/v1/stats/types/index.json');
+            typeSel.innerHTML = '<option value="">Intercantonal agreements (chstat methodology)</option>' +
+                idx.types.filter(t => t.slug !== 'interkantonale_vereinbarung')
+                    .map(t => `<option value="${t.slug}">${t.label.en || t.label.de} (${t.total.toLocaleString()})</option>`)
+                    .join('');
+        } catch (e) {}
+        typeSel.addEventListener('change', async () => {
+            currentSlug = typeSel.value;
+            if (currentSlug && !typeCache[currentSlug]) {
+                typeCache[currentSlug] = await fetchJSON(
+                    `api/v1/stats/types/${currentSlug}_by_domain.json`);
+            }
+            conc = currentSlug ? typeCache[currentSlug] : concDefault;
+            render();
+        });
+
+        function render() {
+            const tbl = SLCharts.concTable(conc, y1, y2);
+            document.getElementById('table').hidden = view !== 'grid';
+            document.getElementById('chart-view').hidden = view !== 'chart';
+            document.getElementById('map-view').hidden = view !== 'map';
+            if (view === 'grid') {
+                document.getElementById('table').innerHTML =
+                    SLCharts.concTableHTML(conc, tbl, null);
+            } else if (view === 'chart') {
+                if (!chartInstance) {
+                    chartInstance = echarts.init(document.getElementById('chart-view'));
+                    window.addEventListener('resize', () => chartInstance.resize());
+                }
+                chartInstance.resize();
+                chartInstance.setOption(SLCharts.concChartOption(conc, tbl), true);
+            } else {
+                document.getElementById('map-view').innerHTML =
+                    SLCharts.tileMapHTML(conc, tbl);
+            }
+            document.getElementById('table-note').textContent =
+                `${conc.title}. ` + (conc.methodology || '');
+            // embed snippet follows the selection (type, years, view)
+            const params = new URLSearchParams({ chart: 'concordats' });
+            if (currentSlug) params.set('ttype', currentSlug);
+            if (y1) params.set('y1', y1);
+            if (y2) params.set('y2', y2);
+            if (view !== 'grid') params.set('view', view);
+            const pub = new URL('embed.html', SITE_BASE);
+            const loc = new URL('embed.html', location.href);
+            pub.search = loc.search = params.toString();
+            document.getElementById('embed-snippet').value =
+                `<iframe src="${pub.href}" width="800" height="560" style="border:0" ` +
+                `loading="lazy" title="Swiss Law Collection data widget"></iframe>`;
+            document.getElementById('embed-preview').href = loc.href;
+        }
+        document.getElementById('view-bar').addEventListener('click', e => {
+            if (e.target.tagName !== 'BUTTON') return;
+            document.querySelectorAll('#view-bar button').forEach(b => b.classList.remove('active'));
+            e.target.classList.add('active');
+            view = e.target.dataset.view;
+            render();
+        });
+        render();
+
+        function downloadCurrentView() {
+            const { keys, filtered, cantons, totals } = SLCharts.concTable(conc, y1, y2);
+            const labels = conc.domains.map(d => d.label_en || d.label_fr);
+            const lines = [
+                `# Swiss Law Collection — ${conc.title}`,
+                `# Filter: ${filtered ? `enacted ${y1 || 'beginning'} - ${y2 || 'now'}` : 'none'}`,
+                `# Source: ${conc.source}`,
+                ['Canton', ...labels, 'Total'].join(','),
+                ...Object.entries(cantons).map(([c, row]) =>
+                    [c, ...keys.map(k => row[k]), row.total].join(',')),
+                ['Total', ...keys.map(k => totals[k]), totals.total].join(','),
+            ];
+            const blob = new Blob([lines.join('\n')], { type: 'text/csv' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = `${currentSlug || 'concordats_since1848'}_by_domain_${y1 || 'all'}_${y2 || 'now'}.csv`;
+            a.click();
+            URL.revokeObjectURL(a.href);
+        }
+        document.getElementById('view-csv').addEventListener('click', downloadCurrentView);
+        document.getElementById('dl-current').addEventListener('click', e => {
+            e.preventDefault();
+            downloadCurrentView();
+        });
+
+        // per-category CSV links
+        try {
+            const idx = await fetchJSON('api/v1/csv/index.json');
+            const cats = idx.files.filter(f => f.file.endsWith('_canton_year.csv'));
+            document.getElementById('dl-categories').innerHTML = ' ' + cats.map(f =>
+                `<a href="api/v1/csv/${f.file}" download>${f.file}</a>`).join(' · ');
+        } catch (e) {
+            document.getElementById('dl-categories').innerHTML =
+                ' <span class="desc">(regenerate the API to populate)</span>';
+        }
+
+        document.getElementById('embed-copy').addEventListener('click', () => {
+            const ta = document.getElementById('embed-snippet');
+            ta.select();
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(ta.value).catch(() => document.execCommand('copy'));
+            } else {
+                document.execCommand('copy');
+            }
+            const btn = document.getElementById('embed-copy');
+            btn.textContent = 'Copied ✓';
+            setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
+        });
+    })();
+    </script>
+</body>
+</html>

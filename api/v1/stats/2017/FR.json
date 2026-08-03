@@ -2,13 +2,14 @@
   "year": "2017",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 12,
-  "categorized": 12,
+  "total": 13,
+  "categorized": 13,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 8,
+      "total": 9,
       "by_topic": {
+        "122.70 Allgemeine Bestimmungen": 1,
         "150 Allgemeine Bestimmungen": 1,
         "184 E-GOVERNMENT": 1,
         "340 Allgemeine Bestimmungen": 1,
@@ -19,6 +20,7 @@
         "810 Allgemeine Bestimmungen": 1
       },
       "by_global_category": {
+        "1.10.90.10 Gleichstellung von Mann und Frau": 1,
         "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
         "1.20.60.10 E-Government": 1,
         "4.120.90 Gesundheitspflege, schulpsychologische Dienste": 1,
@@ -56,11 +58,12 @@
     {
       "identifier": "1",
       "title": "STAAT - VOLK - BEHÖRDEN",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
         "Gesetz": 1,
+        "Anderes": 1,
         "Reglement": 1
       },
       "children": [
@@ -72,6 +75,48 @@
           "by_type": {
             "Gesetz": 1
           }
+        },
+        {
+          "identifier": "12",
+          "title": "KANTONSBEHÖRDEN UND VERWALTUNG",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "122",
+              "title": "Staatsrat und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "122.7",
+                  "title": "Staatspersonal",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Anderes": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "122.70",
+                      "title": "Allgemeine Bestimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Anderes": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         },
         {
           "identifier": "15",
@@ -372,13 +417,45 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
+        "Anderes": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Anderes": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.10",
+                  "title": "Gleichstellung von Mann und Frau",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Anderes": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -539,11 +616,10 @@
     }
   ],
   "languages_available": {
-    "de": 12,
-    "fr": 12
+    "de": 13,
+    "fr": 13
   },
   "available_years_for_entity": [
-    "1000",
     "1808",
     "1826",
     "1831",

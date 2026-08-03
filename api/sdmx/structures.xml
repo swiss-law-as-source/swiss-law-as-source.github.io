@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mes:Structure xmlns:mes="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message" xmlns:str="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/structure" xmlns:com="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common">
+  <mes:Header>
+    <mes:ID>SLC_STRUCTURES</mes:ID>
+    <mes:Test>false</mes:Test>
+    <mes:Prepared>2026-08-03T00:00:00</mes:Prepared>
+    <mes:Sender id="SLC"/>
+  </mes:Header>
+  <mes:Structures>
+    <str:Codelists>
+      <str:Codelist id="CL_CANTON" agencyID="SLC" version="1.0">
+        <com:Name xml:lang="en">Swiss cantons</com:Name>
+        <str:Code id="AG"><com:Name xml:lang="fr">Argovie</com:Name></str:Code>
+        <str:Code id="AI"><com:Name xml:lang="fr">Appenzell Rhodes-Intérieures</com:Name></str:Code>
+        <str:Code id="AR"><com:Name xml:lang="fr">Appenzell Rhodes-Extérieures</com:Name></str:Code>
+        <str:Code id="BE"><com:Name xml:lang="fr">Berne</com:Name></str:Code>
+        <str:Code id="BL"><com:Name xml:lang="fr">Bâle-Campagne</com:Name></str:Code>
+        <str:Code id="BS"><com:Name xml:lang="fr">Bâle-Ville</com:Name></str:Code>
+        <str:Code id="FR"><com:Name xml:lang="fr">Fribourg</com:Name></str:Code>
+        <str:Code id="GE"><com:Name xml:lang="fr">Genève</com:Name></str:Code>
+        <str:Code id="GL"><com:Name xml:lang="fr">Glaris</com:Name></str:Code>
+        <str:Code id="GR"><com:Name xml:lang="fr">Grisons</com:Name></str:Code>
+        <str:Code id="JU"><com:Name xml:lang="fr">Jura</com:Name></str:Code>
+        <str:Code id="LU"><com:Name xml:lang="fr">Lucerne</com:Name></str:Code>
+        <str:Code id="NE"><com:Name xml:lang="fr">Neuchâtel</com:Name></str:Code>
+        <str:Code id="NW"><com:Name xml:lang="fr">Nidwald</com:Name></str:Code>
+        <str:Code id="OW"><com:Name xml:lang="fr">Obwald</com:Name></str:Code>
+        <str:Code id="SG"><com:Name xml:lang="fr">Saint-Gall</com:Name></str:Code>
+        <str:Code id="SH"><com:Name xml:lang="fr">Schaffhouse</com:Name></str:Code>
+        <str:Code id="SO"><com:Name xml:lang="fr">Soleure</com:Name></str:Code>
+        <str:Code id="SZ"><com:Name xml:lang="fr">Schwytz</com:Name></str:Code>
+        <str:Code id="TG"><com:Name xml:lang="fr">Thurgovie</com:Name></str:Code>
+        <str:Code id="TI"><com:Name xml:lang="fr">Tessin</com:Name></str:Code>
+        <str:Code id="UR"><com:Name xml:lang="fr">Uri</com:Name></str:Code>
+        <str:Code id="VD"><com:Name xml:lang="fr">Vaud</com:Name></str:Code>
+        <str:Code id="VS"><com:Name xml:lang="fr">Valais</com:Name></str:Code>
+        <str:Code id="ZG"><com:Name xml:lang="fr">Zoug</com:Name></str:Code>
+        <str:Code id="ZH"><com:Name xml:lang="fr">Zurich</com:Name></str:Code>
+      </str:Codelist>
+      <str:Codelist id="CL_DOMAIN" agencyID="SLC" version="1.0">
+        <com:Name xml:lang="en">Legal domains (chstat/BADAC)</com:Name>
+        <str:Code id="etat"><com:Name xml:lang="fr">Organisation de l'état, sécurité</com:Name></str:Code>
+        <str:Code id="sante"><com:Name xml:lang="fr">Santé, sécurité sociale</com:Name></str:Code>
+        <str:Code id="educ"><com:Name xml:lang="fr">Éducation, science, culture</com:Name></str:Code>
+        <str:Code id="infra"><com:Name xml:lang="fr">Infrastructure, trafic, environnement</com:Name></str:Code>
+        <str:Code id="eco"><com:Name xml:lang="fr">Économie, agriculture</com:Name></str:Code>
+        <str:Code id="fin"><com:Name xml:lang="fr">Finances publiques, impôts</com:Name></str:Code>
+        <str:Code id="autres"><com:Name xml:lang="fr">Autres / non classés</com:Name></str:Code>
+      </str:Codelist>
+      <str:Codelist id="CL_INSTRUMENT_TYPE" agencyID="SLC" version="1.0">
+        <com:Name xml:lang="en">Instrument types (LexFind)</com:Name>
+        <str:Code id="staatsvertrag"><com:Name xml:lang="fr">Traité international</com:Name></str:Code>
+        <str:Code id="interkantonale_vereinbarung"><com:Name xml:lang="fr">Accord intercantonal</com:Name></str:Code>
+        <str:Code id="verfassung"><com:Name xml:lang="fr">Constitution</com:Name></str:Code>
+        <str:Code id="gesetz"><com:Name xml:lang="fr">Loi</com:Name></str:Code>
+        <str:Code id="anderes"><com:Name xml:lang="fr">Autre</com:Name></str:Code>
+        <str:Code id="verordnung"><com:Name xml:lang="fr">Ordonnance</com:Name></str:Code>
+        <str:Code id="reglement"><com:Name xml:lang="fr">Règlement</com:Name></str:Code>
+        <str:Code id="dekret"><com:Name xml:lang="fr">Ordonnance parlementaire (décret)</com:Name></str:Code>
+        <str:Code id="gemeindeerlass"><com:Name xml:lang="fr">Acte législatif communal</com:Name></str:Code>
+      </str:Codelist>
+    </str:Codelists>
+    <str:Concepts>
+      <str:ConceptScheme id="CS_SLC" agencyID="SLC" version="1.0">
+        <com:Name xml:lang="en">Swiss Law Collection concepts</com:Name>
+        <str:Concept id="INSTRUMENT_TYPE"><com:Name xml:lang="en">Instrument type</com:Name></str:Concept>
+        <str:Concept id="CANTON"><com:Name xml:lang="en">Canton</com:Name></str:Concept>
+        <str:Concept id="DOMAIN"><com:Name xml:lang="en">Legal domain (chstat/BADAC nomenclature)</com:Name></str:Concept>
+        <str:Concept id="TIME_PERIOD"><com:Name xml:lang="en">Enactment year</com:Name></str:Concept>
+        <str:Concept id="OBS_VALUE"><com:Name xml:lang="en">Count</com:Name></str:Concept>
+      </str:ConceptScheme>
+    </str:Concepts>
+    <str:DataStructures>
+      <str:DataStructure id="DSD_LAWS" agencyID="SLC" version="1.0">
+        <com:Name xml:lang="en">Cantonal acts by instrument type, canton, legal domain and enactment year</com:Name>
+        <str:DataStructureComponents>
+          <str:DimensionList id="DimensionDescriptor">
+            <str:Dimension id="INSTRUMENT_TYPE" position="1"><str:ConceptIdentity><Ref id="INSTRUMENT_TYPE" maintainableParentID="CS_SLC" agencyID="SLC" maintainableParentVersion="1.0" package="conceptscheme" class="Concept"/></str:ConceptIdentity><str:LocalRepresentation><str:Enumeration><Ref id="CL_INSTRUMENT_TYPE" agencyID="SLC" version="1.0" package="codelist" class="Codelist"/></str:Enumeration></str:LocalRepresentation></str:Dimension>
+            <str:Dimension id="CANTON" position="2"><str:ConceptIdentity><Ref id="CANTON" maintainableParentID="CS_SLC" agencyID="SLC" maintainableParentVersion="1.0" package="conceptscheme" class="Concept"/></str:ConceptIdentity><str:LocalRepresentation><str:Enumeration><Ref id="CL_CANTON" agencyID="SLC" version="1.0" package="codelist" class="Codelist"/></str:Enumeration></str:LocalRepresentation></str:Dimension>
+            <str:Dimension id="DOMAIN" position="3"><str:ConceptIdentity><Ref id="DOMAIN" maintainableParentID="CS_SLC" agencyID="SLC" maintainableParentVersion="1.0" package="conceptscheme" class="Concept"/></str:ConceptIdentity><str:LocalRepresentation><str:Enumeration><Ref id="CL_DOMAIN" agencyID="SLC" version="1.0" package="codelist" class="Codelist"/></str:Enumeration></str:LocalRepresentation></str:Dimension>
+            <str:TimeDimension id="TIME_PERIOD" position="4"><str:ConceptIdentity><Ref id="TIME_PERIOD" maintainableParentID="CS_SLC" agencyID="SLC" maintainableParentVersion="1.0" package="conceptscheme" class="Concept"/></str:ConceptIdentity></str:TimeDimension>
+          </str:DimensionList>
+          <str:MeasureList id="MeasureDescriptor">
+            <str:PrimaryMeasure id="OBS_VALUE"><str:ConceptIdentity><Ref id="OBS_VALUE" maintainableParentID="CS_SLC" agencyID="SLC" maintainableParentVersion="1.0" package="conceptscheme" class="Concept"/></str:ConceptIdentity></str:PrimaryMeasure>
+          </str:MeasureList>
+        </str:DataStructureComponents>
+      </str:DataStructure>
+      <str:DataStructure id="DSD_CONCORDATS" agencyID="SLC" version="1.0">
+        <com:Name xml:lang="en">Intercantonal agreement memberships since 1848 (chstat-calibrated)</com:Name>
+        <com:Annotations><com:Annotation><com:AnnotationType>METHODOLOGY</com:AnnotationType><com:AnnotationText xml:lang="en">chstat/BADAC counting: one observation unit per signatory canton of an agreement (signatories = cantons publishing the text plus cantons named in titles). Observations with TIME_PERIOD &lt;= 2003 are computed from the Swiss Law Collection's signatory-weighted series and calibrated per canton so canton totals equal chstat.ch/BADAC's published 2003 figures (2,522 overall); later periods are unscaled.</com:AnnotationText></com:Annotation></com:Annotations>
+        <str:DataStructureComponents>
+          <str:DimensionList id="DimensionDescriptor">
+            <str:Dimension id="CANTON" position="1"><str:ConceptIdentity><Ref id="CANTON" maintainableParentID="CS_SLC" agencyID="SLC" maintainableParentVersion="1.0" package="conceptscheme" class="Concept"/></str:ConceptIdentity><str:LocalRepresentation><str:Enumeration><Ref id="CL_CANTON" agencyID="SLC" version="1.0" package="codelist" class="Codelist"/></str:Enumeration></str:LocalRepresentation></str:Dimension>
+            <str:Dimension id="DOMAIN" position="2"><str:ConceptIdentity><Ref id="DOMAIN" maintainableParentID="CS_SLC" agencyID="SLC" maintainableParentVersion="1.0" package="conceptscheme" class="Concept"/></str:ConceptIdentity><str:LocalRepresentation><str:Enumeration><Ref id="CL_DOMAIN" agencyID="SLC" version="1.0" package="codelist" class="Codelist"/></str:Enumeration></str:LocalRepresentation></str:Dimension>
+            <str:TimeDimension id="TIME_PERIOD" position="3"><str:ConceptIdentity><Ref id="TIME_PERIOD" maintainableParentID="CS_SLC" agencyID="SLC" maintainableParentVersion="1.0" package="conceptscheme" class="Concept"/></str:ConceptIdentity></str:TimeDimension>
+          </str:DimensionList>
+          <str:MeasureList id="MeasureDescriptor">
+            <str:PrimaryMeasure id="OBS_VALUE"><str:ConceptIdentity><Ref id="OBS_VALUE" maintainableParentID="CS_SLC" agencyID="SLC" maintainableParentVersion="1.0" package="conceptscheme" class="Concept"/></str:ConceptIdentity></str:PrimaryMeasure>
+          </str:MeasureList>
+        </str:DataStructureComponents>
+      </str:DataStructure>
+    </str:DataStructures>
+    <str:Dataflows>
+      <str:Dataflow id="DF_LAWS" agencyID="SLC" version="1.0">
+        <com:Name xml:lang="en">Cantonal acts</com:Name>
+        <str:Structure><Ref id="DSD_LAWS" agencyID="SLC" version="1.0" package="datastructure" class="DataStructure"/></str:Structure>
+      </str:Dataflow>
+      <str:Dataflow id="DF_CONCORDATS" agencyID="SLC" version="1.0">
+        <com:Name xml:lang="en">Concordat memberships (chstat methodology)</com:Name>
+        <str:Structure><Ref id="DSD_CONCORDATS" agencyID="SLC" version="1.0" package="datastructure" class="DataStructure"/></str:Structure>
+      </str:Dataflow>
+    </str:Dataflows>
+  </mes:Structures>
+</mes:Structure>

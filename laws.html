@@ -53,13 +53,23 @@
         .lang-badge {
             display: inline-block; background: var(--gray); border: 1px solid var(--border);
             border-radius: 4px; padding: 0 0.35rem; margin-right: 0.25rem; font-size: 0.75rem;
+            color: var(--dark);
         }
+        a.lang-badge:hover { border-color: var(--red); color: var(--red); text-decoration: none; }
+        #lang-popover {
+            position: absolute; z-index: 50; background: #fff; border: 1px solid var(--border);
+            border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+            padding: 0.6rem 0.9rem; font-size: 0.85rem; min-width: 180px;
+        }
+        #lang-popover .pop-title { font-weight: 600; margin-bottom: 0.3rem; font-size: 0.8rem; }
+        #lang-popover a { display: block; padding: 0.15rem 0; }
         .note { font-size: 0.8rem; color: #666; margin: 0.75rem 0 2rem; }
         .load-more { margin: 1rem auto; display: block; padding: 0.5rem 1.5rem;
             background: var(--gray); border: 1px solid var(--border); border-radius: 6px; cursor: pointer; }
         footer { text-align: center; padding: 2rem; color: #666; font-size: 0.85rem; border-top: 1px solid var(--border); margin-top: 3rem; }
         footer a { color: var(--red); text-decoration: none; }
     </style>
+    <script src="assets/banner.js" defer></script>
 </head>
 <body>
     <header>
@@ -69,6 +79,8 @@
     <nav>
         <a href="index.html">Dashboard</a>
         <a href="laws.html"><strong>Laws</strong></a>
+        <a href="data.html">Data</a>
+        <a href="verification.html">Verification</a>
         <a href="api.html">API</a>
     </nav>
     <main>
@@ -106,6 +118,7 @@
         const cache = {};
         const PAGE = 500;
         let current = null, sortKey = 'id', sortDir = 1, shown = PAGE;
+        let renderedItems = [];
 
         document.getElementById('article-note').textContent =
             'Characters = markdown body length per language version. Articles: ' + idx.article_count_note;
@@ -118,10 +131,26 @@
             `<option value="${c}">${c} — ${idx.entities[c].name} (${idx.entities[c].laws.toLocaleString()})</option>`
         ).join('');
 
+        const enc = p => p.split('/').map(encodeURIComponent).join('/');
+        const LANG_NAMES = { de: 'Deutsch', fr: 'Français', it: 'Italiano' };
+
+        // Per-language file links. Entity files carry a per-language path; in
+        // ALL mode the path is derived by swapping the language segment
+        // (ch/<entity>/<lang>/<nr>.md).
+        function langLinks(item) {
+            const base = idx.link_base;
+            return Object.entries(item.languages).map(([lang, d]) => {
+                let path = d.path || '';
+                if (!path && item.link) return { lang, url: item.link };
+                const parts = path.split('/');
+                if (parts.length >= 3) parts[2] = lang;
+                return { lang, url: base + enc(parts.join('/')) };
+            });
+        }
+
         async function loadAll() {
             // Cross-entity search backed by the flat search index (laws.json).
             const laws = await (await fetch('laws.json', { cache: 'no-cache' })).json();
-            const enc = p => p.split('/').map(encodeURIComponent).join('/');
             const sums = Object.values(idx.entities).reduce(
                 (a, e) => ({ c: a.c + e.total_chars, n: a.n + e.total_articles }), { c: 0, n: 0 });
             return {
@@ -164,14 +193,16 @@
                 { value: q ? items.length.toLocaleString() : '—', label: 'Matching filter' },
             ].map(k => `<div class="kpi-card"><div class="value">${k.value}</div><div class="label">${k.label}</div></div>`).join('');
 
-            const rows = items.slice(0, shown).map(i => {
+            renderedItems = items.slice(0, shown);
+            const rows = renderedItems.map((i, rowIdx) => {
+                const links = Object.fromEntries(langLinks(i).map(l => [l.lang, l.url]));
                 const langCells = Object.entries(i.languages).map(([l, d]) =>
-                    `<span class="lang-badge" title="${d.chars.toLocaleString()} chars, ${d.articles} art.">${l}</span>`).join('');
+                    `<a class="lang-badge" href="${links[l] || i.link}" target="_blank" rel="noopener" title="${LANG_NAMES[l] || l} — ${d.chars.toLocaleString()} chars, ${d.articles} art.">${l}</a>`).join('');
                 const chars = Object.values(i.languages).reduce((s, l) => s + l.chars, 0);
                 const arts = Object.values(i.languages).reduce((s, l) => s + l.articles, 0);
                 const versions = i.version_dates ? ` title="versions: ${i.version_dates.join(', ')} (${i.enactment_date_source || ''})"` : (i.enactment_date_source ? ` title="source: ${i.enactment_date_source}"` : '');
                 return `<tr>
-                    <td><a href="${i.link}" target="_blank" rel="noopener">${i.id}</a></td>
+                    <td><a href="${i.link}" data-row="${rowIdx}" target="_blank" rel="noopener">${i.id}</a></td>
                     <td>${(i.title || '').replace(/</g, '&lt;')}</td>
                     <td class="num"${versions}>${i.enactment_date || '—'}</td>
                     <td>${langCells}</td>
@@ -198,6 +229,42 @@
             shown = PAGE;
             render();
         }
+
+        // Language popover: clicking a law number with several language
+        // versions offers de / fr / it instead of jumping straight to the
+        // preferred file. Single-language laws navigate directly.
+        const popover = document.createElement('div');
+        popover.id = 'lang-popover';
+        popover.hidden = true;
+        document.body.appendChild(popover);
+        function hidePopover() { popover.hidden = true; }
+        document.getElementById('laws-body').addEventListener('click', e => {
+            const a = e.target.closest('a[data-row]');
+            if (!a) return;
+            const item = renderedItems[+a.dataset.row];
+            if (!item) return;
+            const links = langLinks(item);
+            if (links.length < 2) return;   // direct navigation
+            e.preventDefault();
+            popover.innerHTML =
+                `<div class="pop-title">${item.id} — open in:</div>` +
+                links.map(l =>
+                    `<a href="${l.url}" target="_blank" rel="noopener">` +
+                    `<b>${l.lang}</b> ${LANG_NAMES[l.lang] || ''}</a>`).join('');
+            const r = a.getBoundingClientRect();
+            popover.style.left = `${window.scrollX + r.left}px`;
+            popover.style.top = `${window.scrollY + r.bottom + 4}px`;
+            popover.hidden = false;
+        });
+        document.addEventListener('click', e => {
+            if (!popover.hidden && !popover.contains(e.target) &&
+                !e.target.closest('a[data-row]')) hidePopover();
+        });
+        popover.addEventListener('click', e => {
+            if (e.target.closest('a')) hidePopover();
+        });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') hidePopover(); });
+        window.addEventListener('scroll', hidePopover, { passive: true });
 
         sel.addEventListener('change', e => load(e.target.value));
         document.getElementById('filter').addEventListener('input', () => { shown = PAGE; render(); });

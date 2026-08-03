@@ -10332,6 +10332,7 @@
   },
   "notes": [
     "\"Other\" includes civil law, criminal law and concordats without a legal domain in LexFind's public database (~28% unclassified at the source)",
-    "Coverage follows the imported collections — run backfill-lexfind to complete under-represented cantons"
+    "Coverage follows the imported collections — run backfill-lexfind to complete under-represented cantons",
+    "Counting unit: canton memberships, not distinct treaties — each agreement counts once per signatory canton whose collection publishes it (a 26-canton concordat counts 26), matching the chstat.ch methodology. Distinct agreements with their signing cantons: /api/v1/stats/concordats_signatories.json"
   ]
 }

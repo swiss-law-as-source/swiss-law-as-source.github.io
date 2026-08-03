@@ -1,64 +1,82 @@
 {
- "canonical_date_policy": {
-  "frozen_since": "2026-07-27",
-  "canonical_source": "lexfind_family",
-  "definition": "The canonical date of a law is LexFind's family_active_since (frontend API, texts-of-law/{id}/with-version-groups): the original date of the act's family, available for all 26 cantons. Laws without family data fall back, in fixed order, to: lexwork_api date_of_decision, sibling-group evidence, text-parsed date, current version date — this fallback order is part of the frozen definition.",
-  "policy": "The date methodology is FROZEN. Headline numbers may only change when the underlying data changes (new laws imported, source corrections upstream), and every such change must be recorded in the changelog below."
- },
- "changelog": [
-  {
-   "version": 1,
-   "date": "2026-07-27",
-   "date_basis": "version_date (current consolidated version only)",
-   "existed_by_2003": 1299,
-   "unexplained": null,
-   "undated": 231,
-   "change_reason": "Initial implementation. Flawed: a 1970 concordat amended in 2015 was dated 2015, so older-but-amended laws were excluded from historical filters."
+  "canonical_date_policy": {
+    "frozen_since": "2026-07-27",
+    "canonical_source": "lexfind_family",
+    "definition": "The canonical date of a law is LexFind's family_active_since (frontend API, texts-of-law/{id}/with-version-groups): the original date of the act's family, available for all 26 cantons. Laws without family data fall back, in fixed order, to: lexwork_api date_of_decision, sibling-group evidence, text-parsed date, current version date — this fallback order is part of the frozen definition.",
+    "policy": "The date methodology is FROZEN. Headline numbers may only change when the underlying data changes (new laws imported, source corrections upstream), and every such change must be recorded in the changelog below."
   },
-  {
-   "version": 2,
-   "date": "2026-07-27",
-   "date_basis": "enactment_date from text parsing (93% hit rate) + federal git history",
-   "existed_by_2003": 1707,
-   "unexplained": 815,
-   "undated": 167,
-   "change_reason": "Laws became (law, version) pairs; enactment dates parsed from the stored texts. Weak provenance: text parses sometimes captured amendment or quoted dates."
-  },
-  {
-   "version": 3,
-   "date": "2026-07-27",
-   "date_basis": "LexWork date_of_decision (authoritative, 14 portal cantons) upgrading text parses",
-   "existed_by_2003": 1624,
-   "unexplained": 898,
-   "undated": 111,
-   "change_reason": "Authoritative portal dates corrected optimistic text parses (the count DROPPED because wrong early dates were fixed). Revealed a defect of this basis: date_of_decision is often the canton's ACCESSION decision, not the act's original date — proven by 72 sibling groups with conflicting authoritative dates."
-  },
-  {
-   "version": 4,
-   "date": "2026-07-27",
-   "date_basis": "LexFind family_active_since MIXED with version/sibling evidence (transitional)",
-   "existed_by_2003": 2035,
-   "unexplained": 487,
-   "undated": 0,
-   "change_reason": "family_active_since is the act's original date. Validation: sibling-group date conflicts collapsed from 72 to 4. Transitional: family dates were still MIXED with own-version minima and sibling evidence (min of all), inflating the count."
-  },
-  {
-   "version": 5,
-   "date": "2026-07-27",
-   "date_basis": "FROZEN: family_active_since alone when present; fixed fallback chain otherwise",
-   "existed_by_2003": 1952,
-   "unexplained": 570,
-   "undated": 0,
-   "change_reason": "Methodology freeze (user directive): a lexfind_family date is used AS-IS, never mixed with version minima or sibling evidence — deterministic and auditable. The count moved 2,035 -> 1,952 because 83 laws had version-history dates earlier than their family date; under the frozen definition the family date governs. CANONICAL from here on: numbers change only when underlying data changes, recorded here."
-  },
-  {
-   "version": 6,
-   "date": "2026-07-27",
-   "date_basis": "unchanged (frozen v5) — DATA change: family dates extended to ALL laws",
-   "existed_by_2003": 1952,
-   "unexplained": 570,
-   "undated": 0,
-   "change_reason": "Full LexFind family-date pass over every cantonal law (24,557 files updated, all 26 cantons). Concordat headline numbers UNCHANGED (they already carried family dates) — demonstrating the frozen methodology's stability. Collection-wide effect: lexfind_family provenance 2,468 -> 22,300 of 24,400 dated cantonal laws (25,315 total); 2,100 dated via the frozen fallback chain (lexwork_api/text/sibling); 915 without any date; 365 laws have no LexFind tol id (reported separately, keep prior basis)."
-  }
- ]
+  "changelog": [
+    {
+      "version": 1,
+      "date": "2026-07-27",
+      "date_basis": "version_date (current consolidated version only)",
+      "existed_by_2003": 1299,
+      "unexplained": null,
+      "undated": 231,
+      "change_reason": "Initial implementation. Flawed: a 1970 concordat amended in 2015 was dated 2015, so older-but-amended laws were excluded from historical filters."
+    },
+    {
+      "version": 2,
+      "date": "2026-07-27",
+      "date_basis": "enactment_date from text parsing (93% hit rate) + federal git history",
+      "existed_by_2003": 1707,
+      "unexplained": 815,
+      "undated": 167,
+      "change_reason": "Laws became (law, version) pairs; enactment dates parsed from the stored texts. Weak provenance: text parses sometimes captured amendment or quoted dates."
+    },
+    {
+      "version": 3,
+      "date": "2026-07-27",
+      "date_basis": "LexWork date_of_decision (authoritative, 14 portal cantons) upgrading text parses",
+      "existed_by_2003": 1624,
+      "unexplained": 898,
+      "undated": 111,
+      "change_reason": "Authoritative portal dates corrected optimistic text parses (the count DROPPED because wrong early dates were fixed). Revealed a defect of this basis: date_of_decision is often the canton's ACCESSION decision, not the act's original date — proven by 72 sibling groups with conflicting authoritative dates."
+    },
+    {
+      "version": 4,
+      "date": "2026-07-27",
+      "date_basis": "LexFind family_active_since MIXED with version/sibling evidence (transitional)",
+      "existed_by_2003": 2035,
+      "unexplained": 487,
+      "undated": 0,
+      "change_reason": "family_active_since is the act's original date. Validation: sibling-group date conflicts collapsed from 72 to 4. Transitional: family dates were still MIXED with own-version minima and sibling evidence (min of all), inflating the count."
+    },
+    {
+      "version": 5,
+      "date": "2026-07-27",
+      "date_basis": "FROZEN: family_active_since alone when present; fixed fallback chain otherwise",
+      "existed_by_2003": 1952,
+      "unexplained": 570,
+      "undated": 0,
+      "change_reason": "Methodology freeze (user directive): a lexfind_family date is used AS-IS, never mixed with version minima or sibling evidence — deterministic and auditable. The count moved 2,035 -> 1,952 because 83 laws had version-history dates earlier than their family date; under the frozen definition the family date governs. CANONICAL from here on: numbers change only when underlying data changes, recorded here."
+    },
+    {
+      "version": 6,
+      "date": "2026-07-27",
+      "date_basis": "unchanged (frozen v5) — DATA change: family dates extended to ALL laws",
+      "existed_by_2003": 1952,
+      "unexplained": 570,
+      "undated": 0,
+      "change_reason": "Full LexFind family-date pass over every cantonal law (24,557 files updated, all 26 cantons). Concordat headline numbers UNCHANGED (they already carried family dates) — demonstrating the frozen methodology's stability. Collection-wide effect: lexfind_family provenance 2,468 -> 22,300 of 24,400 dated cantonal laws (25,315 total); 2,100 dated via the frozen fallback chain (lexwork_api/text/sibling); 915 without any date; 365 laws have no LexFind tol id (reported separately, keep prior basis)."
+    },
+    {
+      "version": 7,
+      "date": "2026-08-03",
+      "date_basis": "unchanged (frozen policy), plus a plausibility floor: dates before year 1400 are treated as unknown",
+      "existed_by_2003": 1950,
+      "unexplained": 572,
+      "undated": 0,
+      "change_reason": "Data-quality floor (MIN_PLAUSIBLE_YEAR = 1400): LexFind serves 1000-01-01 as an 'unknown' placeholder (348 files, mostly BE 669.x — 188 'Anderes' + 3 'Verordnung' unique laws were charted at year 1000), and one LexWork century typo (BS 561.112: 1019-02-01 for 2019-02-01) created a 1019 bucket. Implausible dates now land in the 'unknown' bucket; the earliest genuine entries (1562/1564 concordats) are unaffected. Frontmatter keeps the raw upstream values as provenance. Counts in existed-by-2003 comparisons drop accordingly (sentinel-dated laws no longer counted as pre-2003). Headline concordat numbers are unchanged (the sentinel-dated laws were 'Anderes'/'Verordnung', not concordats)."
+    },
+    {
+      "version": 8,
+      "date": "2026-08-03",
+      "date_basis": "unchanged; concordat headline table switched from 'chstat 2003 copied verbatim' to 'computed + calibrated'",
+      "existed_by_2003": 2522,
+      "unexplained": null,
+      "undated": 0,
+      "change_reason": "The <=2003 part of the headline concordats table is now COMPUTED from the collection's signatory-weighted series (signatories = publishing cantons ∪ cantons named in titles) and calibrated per canton with largest-remainder integerization so each canton's <=2003 total equals chstat/BADAC's published 2003 figure (2,522 overall). Previously chstat's table was pasted as a single cumulative block at year 2003. by_year now carries the real computed year distribution; post-2003 counts are unscaled."
+    }
+  ]
 }
