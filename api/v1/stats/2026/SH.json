@@ -2,10 +2,21 @@
   "year": "2026",
   "year_semantics": "enactment",
   "entity": "SH",
-  "total": 1,
-  "categorized": 1,
+  "total": 3,
+  "categorized": 3,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "160 Allgemeines": 1,
+        "831.1 Alters- und Hinterlassenenversicherung": 1
+      },
+      "by_global_category": {
+        "1.10.90.20.10 Wahlen und Abstimmungen": 1,
+        "8.30.30 AHV / IV": 1
+      }
+    },
     "Anderes": {
       "total": 1,
       "by_topic": {
@@ -17,6 +28,37 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat - Volk - Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "16",
+          "title": "Politische Rechte",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "160",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "4",
       "title": "Erziehung - Kultur - Natur- und Heimatschutz",
@@ -58,9 +100,135 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit - Umweltschutz - Arbeit - Soziale Sicherheit",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "83",
+          "title": "Sozialversicherung",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "831",
+              "title": "Alters-, Hinterlassenen- und Invalidenversicherung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "831.1",
+                  "title": "Alters- und Hinterlassenenversicherung",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.90",
+              "title": "Grundrechte, Politische Rechte",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.10.90.20",
+                  "title": "Politische Rechte",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Verordnung": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.10.90.20.10",
+                      "title": "Wahlen und Abstimmungen",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Verordnung": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "8.30",
+          "title": "Sozialversicherungsrecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "8.30.30",
+              "title": "AHV / IV",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "uncategorized",
       "title": "Unklassifizierbar",
@@ -72,7 +240,7 @@
     }
   ],
   "languages_available": {
-    "de": 1
+    "de": 3
   },
   "available_years_for_entity": [
     "1828",
@@ -182,20 +350,26 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BL",
     "BS",
     "CH",
     "FR",
     "GE",
+    "GL",
+    "GR",
     "JU",
     "LU",
     "NW",
+    "OW",
     "SG",
     "SH",
     "SO",
+    "SZ",
     "TG",
     "TI",
+    "UR",
     "VD",
     "VS",
     "ZG",

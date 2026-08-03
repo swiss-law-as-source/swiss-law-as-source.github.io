@@ -2,24 +2,23 @@
   "year": "2006",
   "year_semantics": "enactment",
   "entity": "OW",
-  "total": 27,
-  "categorized": 27,
+  "total": 29,
+  "categorized": 29,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
       "total": 10,
       "by_topic": {
         "330 Strafvollzug, Strafregister": 3,
+        "416 Berufsbildung, Berufsberatung, Erwachsenenbildung": 2,
         "851 Kranken- und Unfallversicherung": 2,
-        "414 Mittelschulen": 1,
-        "416 Berufsbildung, Berufsberatung, Erwachsenenbildung": 1,
         "710 Raum- und Bauordnung": 1,
         "818 Tierseuchen, Tierhaltung, Tierhandel": 1,
         "832 Vereinbarungen mit Spitälern": 1
       },
       "by_global_category": {
-        "4.20.10 Mittelschule": 1,
         "4.120.100 Schulbehörden": 1,
+        "4.30.50 Brückenangebote": 1,
         "7.70.20 Tierschutz": 1,
         "5.30.20.10 Hunde, gefährliche Tiere": 1,
         "8.30.60.10.10 TARMED": 1,
@@ -27,11 +26,12 @@
       }
     },
     "Verordnung des Parlaments (Dekret)": {
-      "total": 8,
+      "total": 9,
       "by_topic": {
         "111 Bürgerrecht": 1,
         "174 Interkantonale Zusammenarbeit": 1,
         "410 Schulen": 1,
+        "412 Volksschule": 1,
         "510 Polizei": 1,
         "540 Bevölkerungsschutz": 1,
         "780 Umweltschutz": 1,
@@ -42,6 +42,7 @@
         "1.10.60 Bürgerrecht": 1,
         "1.10.40 Interkantonale Zusammenarbeit": 1,
         "4.80.10 Sonderschulen": 1,
+        "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
         "5.30.10.50 Polizeiliche Zusammenarbeit": 1,
         "7.60.20 Gewässerschutz": 1,
         "8.20.20.20 Entsendung von Arbeitnehmern": 1
@@ -71,6 +72,15 @@
       "by_global_category": {
         "9.20.100 Milch": 2,
         "2.10.40.30 Grundbuch und Grundbuchvermessung": 1
+      }
+    },
+    "Gesetz": {
+      "total": 1,
+      "by_topic": {
+        "410 Schulen": 1
+      },
+      "by_global_category": {
+        "4.80.10 Sonderschulen": 1
       }
     }
   },
@@ -148,40 +158,42 @@
     {
       "identifier": "4",
       "title": "ERZIEHUNG, BILDUNG, KULTUR",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 2,
+        "Verordnung des Parlaments (Dekret)": 2,
         "Anderes": 2,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "410",
           "title": "Schulen",
-          "total": 3,
-          "own": 3,
+          "total": 4,
+          "own": 4,
           "by_type": {
             "Interkantonale Vereinbarung": 2,
+            "Gesetz": 1,
             "Verordnung des Parlaments (Dekret)": 1
           }
         },
         {
-          "identifier": "414",
-          "title": "Mittelschulen",
+          "identifier": "412",
+          "title": "Volksschule",
           "total": 1,
           "own": 1,
           "by_type": {
-            "Anderes": 1
+            "Verordnung des Parlaments (Dekret)": 1
           }
         },
         {
           "identifier": "416",
           "title": "Berufsbildung, Berufsberatung, Erwachsenenbildung",
-          "total": 1,
-          "own": 1,
+          "total": 2,
+          "own": 2,
           "by_type": {
-            "Anderes": 1
+            "Anderes": 2
           }
         }
       ]
@@ -413,17 +425,38 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 7,
       "own": 0,
       "by_type": {
+        "Verordnung des Parlaments (Dekret)": 2,
         "Anderes": 2,
         "Interkantonale Vereinbarung": 2,
-        "Verordnung des Parlaments (Dekret)": 1
+        "Gesetz": 1
       },
       "children": [
         {
-          "identifier": "4.20",
-          "title": "Sekundarstufe II",
+          "identifier": "4.10",
+          "title": "Vorschule, Primarstufe, Sekundarstufe I",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung des Parlaments (Dekret)": 1
+          },
+          "children": [
+            {
+              "identifier": "4.10.30",
+              "title": "Volksschule, Primarschule, Sekundarschule I",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung des Parlaments (Dekret)": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.30",
+          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
           "total": 1,
           "own": 0,
           "by_type": {
@@ -431,8 +464,8 @@
           },
           "children": [
             {
-              "identifier": "4.20.10",
-              "title": "Mittelschule",
+              "identifier": "4.30.50",
+              "title": "Brückenangebote",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -444,18 +477,20 @@
         {
           "identifier": "4.80",
           "title": "Sonderpädagogik",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
+            "Gesetz": 1,
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
               "identifier": "4.80.10",
               "title": "Sonderschulen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung des Parlaments (Dekret)": 1
               }
             }
@@ -790,7 +825,7 @@
     }
   ],
   "languages_available": {
-    "de": 27
+    "de": 29
   },
   "available_years_for_entity": [
     "1825",
@@ -894,7 +929,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",

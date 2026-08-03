@@ -2,21 +2,22 @@
   "year": "2008",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 19,
-  "categorized": 19,
+  "total": 21,
+  "categorized": 21,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 9,
+      "total": 10,
       "by_topic": {
         "841 Jagd und Vogelschutz": 5,
-        "165 Personal": 1,
+        "165 Personal": 2,
         "641 Allgemeine Bestimmungen": 1,
         "721 Allgemeine Bestimmungen": 1,
         "923 Innere Sicherheit und Veranstaltungen": 1
       },
       "by_global_category": {
         "1.20.20.40.40 Löhne, Entschädigungen": 1,
+        "4.90.10 Anstellung": 1,
         "7.40.10 Energieversorgung": 1,
         "7.60.70 Gifte, Chemikalien": 1,
         "6.30.50.10 Jäger": 1,
@@ -25,17 +26,19 @@
       }
     },
     "Gesetz": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
         "165 Personal": 3,
         "651 Strassenverkehr": 2,
         "211 Allgemeines": 1,
-        "23 Datenschutz und Registerharmonisierung": 1
+        "23 Datenschutz und Registerharmonisierung": 1,
+        "323 Archivierung": 1
       },
       "by_global_category": {
         "1.20.20.40.50 Renten, Versicherungsansprüche": 3,
         "7.50.20.10 Strassenverkehrssteuern und -abgaben": 2,
-        "1.20.50 Datenschutz": 1
+        "1.20.50 Datenschutz": 1,
+        "4.170.20 Archive": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -62,31 +65,31 @@
     {
       "identifier": "1",
       "title": "Staat - Volk - Behörden",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
         "Gesetz": 3,
-        "Verordnung": 1
+        "Verordnung": 2
       },
       "children": [
         {
           "identifier": "16",
           "title": "Behörden und Personal",
-          "total": 4,
+          "total": 5,
           "own": 0,
           "by_type": {
             "Gesetz": 3,
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
             {
               "identifier": "165",
               "title": "Personal",
-              "total": 4,
-              "own": 4,
+              "total": 5,
+              "own": 5,
               "by_type": {
                 "Gesetz": 3,
-                "Verordnung": 1
+                "Verordnung": 2
               }
             }
           ]
@@ -132,6 +135,37 @@
             "Gesetz": 1,
             "Interkantonale Vereinbarung": 1
           }
+        }
+      ]
+    },
+    {
+      "identifier": "3",
+      "title": "Bildung - Kultur",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "32",
+          "title": "Kultur",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "323",
+              "title": "Archivierung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -413,6 +447,58 @@
       ]
     },
     {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "4.90",
+          "title": "Lehrkörper",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "4.90.10",
+              "title": "Anstellung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.20",
+              "title": "Archive",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
       "total": 1,
@@ -633,7 +719,7 @@
     }
   ],
   "languages_available": {
-    "de": 19
+    "de": 21
   },
   "available_years_for_entity": [
     "1000",

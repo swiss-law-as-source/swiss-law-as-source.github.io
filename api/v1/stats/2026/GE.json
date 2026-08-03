@@ -7,24 +7,25 @@
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
-      "total": 5,
+      "total": 4,
       "by_topic": {
         "C 1 Instruction publique": 2,
-        "I 1 Commerce, industrie et tourisme": 1,
-        "L 1 Voies de communication et urbanisme": 1,
-        "L 2 Eaux et énergies": 1
+        "B 1 Pouvoirs législatif et exécutif": 1,
+        "L 4 Monuments et sites, décoration": 1
       },
       "by_global_category": {
+        "1.20.20.20.30 Staatskanzlei": 1,
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
-        "4.180.10.10 Film, Theater, Unterhaltung": 1
+        "7.70.50 Naturschutz": 1
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "F 1 Organisation de la police": 1,
         "F 3 Police de la rue et autres lieux publics": 1,
-        "I 1 Commerce, industrie et tourisme": 1
+        "I 1 Commerce, industrie et tourisme": 1,
+        "L 2 Eaux et énergies": 1
       },
       "by_global_category": {
         "8.10.130.30 Badeanstalten": 1,
@@ -33,6 +34,15 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "B",
+      "title": "Organisation du canton",
+      "total": 1,
+      "own": 1,
+      "by_type": {
+        "Règlement": 1
+      }
+    },
     {
       "identifier": "C",
       "title": "Instruction publique, culture",
@@ -54,10 +64,9 @@
     {
       "identifier": "I",
       "title": "Commerce, industrie, arts et métiers, logement",
-      "total": 2,
-      "own": 2,
+      "total": 1,
+      "own": 1,
       "by_type": {
-        "Règlement": 1,
         "Loi": 1
       }
     },
@@ -67,18 +76,72 @@
       "total": 2,
       "own": 2,
       "by_type": {
-        "Règlement": 2
+        "Loi": 1,
+        "Règlement": 1
       }
     }
   ],
   "by_global_category_tree": [
     {
-      "identifier": "4",
-      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 3,
+      "identifier": "1",
+      "title": "Staat",
+      "total": 1,
       "own": 0,
       "by_type": {
-        "Règlement": 2,
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Règlement": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Règlement": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.30",
+                      "title": "Staatskanzlei",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Règlement": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1,
         "Loi": 1
       },
       "children": [
@@ -105,34 +168,62 @@
         {
           "identifier": "4.180",
           "title": "Kunst, Kultur, Sport",
-          "total": 2,
+          "total": 1,
           "own": 0,
           "by_type": {
-            "Règlement": 1,
             "Loi": 1
           },
           "children": [
             {
               "identifier": "4.180.10",
               "title": "Kunst",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Règlement": 1,
                 "Loi": 1
               },
               "children": [
                 {
                   "identifier": "4.180.10.10",
                   "title": "Film, Theater, Unterhaltung",
-                  "total": 2,
-                  "own": 2,
+                  "total": 1,
+                  "own": 1,
                   "by_type": {
-                    "Règlement": 1,
                     "Loi": 1
                   }
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Règlement": 1
+      },
+      "children": [
+        {
+          "identifier": "7.70",
+          "title": "Natur- und Heimatschutz",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Règlement": 1
+          },
+          "children": [
+            {
+              "identifier": "7.70.50",
+              "title": "Naturschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Règlement": 1
+              }
             }
           ]
         }
@@ -321,20 +412,26 @@
   ],
   "available_entities_for_year": [
     "AG",
+    "AI",
     "AR",
     "BL",
     "BS",
     "CH",
     "FR",
     "GE",
+    "GL",
+    "GR",
     "JU",
     "LU",
     "NW",
+    "OW",
     "SG",
     "SH",
     "SO",
+    "SZ",
     "TG",
     "TI",
+    "UR",
     "VD",
     "VS",
     "ZG",

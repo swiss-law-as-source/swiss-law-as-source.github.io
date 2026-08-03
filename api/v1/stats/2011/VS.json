@@ -2,8 +2,8 @@
   "year": "2011",
   "year_semantics": "enactment",
   "entity": "VS",
-  "total": 17,
-  "categorized": 17,
+  "total": 18,
+  "categorized": 18,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
@@ -24,23 +24,13 @@
         "9.20.120 Tierseuchen": 1
       }
     },
-    "Verordnung": {
-      "total": 3,
-      "by_topic": {
-        "172 Staatsrat und Verwaltung": 1,
-        "85 Unterstützung": 1
-      },
-      "by_global_category": {
-        "1.20.20.40.10 Anstellung": 1,
-        "8.70.50.10 Eingliederungsstätten, Werkstätte": 1
-      }
-    },
     "Reglement": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "172 Staatsrat und Verwaltung": 1,
         "173 Richterliche Behörden": 1,
-        "413 Mittelschule": 1
+        "413 Mittelschule": 1,
+        "42 Forschung": 1
       },
       "by_global_category": {
         "4.70.10 Erwachsenenbildung": 1,
@@ -59,12 +49,23 @@
       }
     },
     "Anderes": {
-      "total": 1,
+      "total": 2,
       "by_topic": {
-        "45 Natur- und Heimatschutz": 1
+        "45 Natur- und Heimatschutz": 1,
+        "61 Finanzhaushalt": 1
       },
       "by_global_category": {
-        "7.70.10 Landschaftsschutz": 1
+        "7.70.10 Landschaftsschutz": 1,
+        "1.30.10 Gemeindefinanzen": 1
+      }
+    },
+    "Verordnung": {
+      "total": 2,
+      "by_topic": {
+        "85 Unterstützung": 1
+      },
+      "by_global_category": {
+        "8.70.50.10 Eingliederungsstätten, Werkstätte": 1
       }
     },
     "Verordnung des Parlaments (Dekret)": {
@@ -79,12 +80,11 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 5,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Gesetz": 2,
-        "Reglement": 2,
-        "Verordnung": 1
+        "Reglement": 2
       },
       "children": [
         {
@@ -99,12 +99,11 @@
         {
           "identifier": "17",
           "title": "Behörden",
-          "total": 4,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Reglement": 2,
-            "Gesetz": 1,
-            "Verordnung": 1
+            "Gesetz": 1
           },
           "children": [
             {
@@ -119,10 +118,9 @@
             {
               "identifier": "172",
               "title": "Staatsrat und Verwaltung",
-              "total": 2,
-              "own": 2,
+              "total": 1,
+              "own": 1,
               "by_type": {
-                "Verordnung": 1,
                 "Reglement": 1
               }
             },
@@ -142,12 +140,12 @@
     {
       "identifier": "4",
       "title": "Schule - Wissenschaft - Kultur",
-      "total": 5,
+      "total": 6,
       "own": 0,
       "by_type": {
         "Interkantonale Vereinbarung": 2,
+        "Reglement": 2,
         "Gesetz": 1,
-        "Reglement": 1,
         "Anderes": 1
       },
       "children": [
@@ -200,6 +198,15 @@
           ]
         },
         {
+          "identifier": "42",
+          "title": "Forschung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Reglement": 1
+          }
+        },
+        {
           "identifier": "45",
           "title": "Natur- und Heimatschutz",
           "total": 1,
@@ -213,19 +220,21 @@
     {
       "identifier": "6",
       "title": "Finanzen und Steuern",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Gesetz": 2
+        "Gesetz": 2,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "61",
           "title": "Finanzhaushalt",
-          "total": 2,
-          "own": 2,
+          "total": 3,
+          "own": 3,
           "by_type": {
-            "Gesetz": 2
+            "Gesetz": 2,
+            "Anderes": 1
           }
         }
       ]
@@ -290,17 +299,16 @@
       "own": 0,
       "by_type": {
         "Gesetz": 3,
-        "Verordnung": 1,
-        "Reglement": 1
+        "Reglement": 1,
+        "Anderes": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 3,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
             "Gesetz": 1,
             "Reglement": 1
           },
@@ -308,33 +316,12 @@
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 2,
+              "total": 1,
               "own": 0,
               "by_type": {
-                "Verordnung": 1,
                 "Gesetz": 1
               },
               "children": [
-                {
-                  "identifier": "1.20.20.40",
-                  "title": "Personalrecht",
-                  "total": 1,
-                  "own": 0,
-                  "by_type": {
-                    "Verordnung": 1
-                  },
-                  "children": [
-                    {
-                      "identifier": "1.20.20.40.10",
-                      "title": "Anstellung",
-                      "total": 1,
-                      "own": 1,
-                      "by_type": {
-                        "Verordnung": 1
-                      }
-                    }
-                  ]
-                },
                 {
                   "identifier": "1.20.20.70",
                   "title": "New Public Management",
@@ -393,19 +380,21 @@
         {
           "identifier": "1.30",
           "title": "Gemeinden",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Gesetz": 2
+            "Gesetz": 2,
+            "Anderes": 1
           },
           "children": [
             {
               "identifier": "1.30.10",
               "title": "Gemeindefinanzen",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
-                "Gesetz": 1
+                "Gesetz": 1,
+                "Anderes": 1
               }
             },
             {
@@ -641,8 +630,8 @@
     }
   ],
   "languages_available": {
-    "de": 17,
-    "fr": 15
+    "de": 18,
+    "fr": 16
   },
   "available_years_for_entity": [
     "1802",

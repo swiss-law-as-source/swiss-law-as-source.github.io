@@ -2,8 +2,8 @@
   "year": "1982",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 8,
-  "categorized": 8,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -23,12 +23,14 @@
       }
     },
     "Gesetz": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
+        "153.4 Pensionskasse": 1,
         "430.26 Versicherung": 1,
         "704 See- und Flussufer": 1
       },
       "by_global_category": {
+        "1.20.20.40.50 Renten, Versicherungsansprüche": 1,
         "4.90.40 Personalvorsorge, Pensionskassen": 1,
         "7.70.60 Uferschutz": 1
       }
@@ -44,6 +46,48 @@
     }
   },
   "by_topic_tree": [
+    {
+      "identifier": "1",
+      "title": "Staat, Volk, Behörden",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "15",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "153",
+              "title": "Dienstrecht",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "153.4",
+                  "title": "Pensionskasse",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
     {
       "identifier": "2",
       "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
@@ -311,13 +355,56 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
+        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "1.20",
+          "title": "Behörden",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.20.20",
+              "title": "Regierung und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "1.20.20.40",
+                  "title": "Personalrecht",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.40.50",
+                      "title": "Renten, Versicherungsansprüche",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "1.40",
           "title": "Kirche und Staat",
@@ -543,8 +630,8 @@
     }
   ],
   "languages_available": {
-    "de": 8,
-    "fr": 8
+    "de": 9,
+    "fr": 9
   },
   "available_years_for_entity": [
     "1000",

@@ -2,8 +2,8 @@
   "note": "Reconciliation vs chstat.ch 2003 (data-theme 1842, Institute of Federalism / LexFind). ours = concordats with EARLIEST KNOWN EVIDENCE of existence <= 2003 (own enactment date, own version history, or the sibling group's authoritative minimum when the canton's own date is unverified — a concordat is the same act in every member canton), split active / repealed_listed. Authoritative accession dates are kept: a canton that verifiably joined after 2003 is not counted. unexplained = chstat - ours: concordats delisted from LexFind entirely + accession-vs-decision-date differences (cantons accede at different times; our date is the act's decision date) + undated laws. Improve dates with enrich_dates_lexwork.sh then enrich-dates --siblings.",
   "source_chstat": "https://www.chstat.ch/fr/data-theme/1842/Concordats-par-domaine",
   "chstat_total": 2522,
-  "ours_enacted_until_2003_total": 1952,
-  "unexplained_total": 570,
+  "ours_enacted_until_2003_total": 1950,
+  "unexplained_total": 572,
   "undated_total": 0,
   "diagnosis_totals": {
     "dating": 14,
@@ -11,22 +11,22 @@
     "reconciled": 5
   },
   "year_evidence_le2003": {
-    "lexfind_family": 1664,
-    "own_enactment": 217,
-    "sibling_group": 58,
+    "lexfind_family": 1658,
+    "own_enactment": 218,
+    "sibling_group": 61,
     "own_versions": 13
   },
   "date_provenance_total": {
-    "version_date_only": 51,
     "sibling:GR": 2,
-    "sibling:GL": 6,
-    "lexfind_family": 1664,
-    "sibling:AG": 7,
-    "text": 186,
     "sibling:TG": 1,
     "lexwork_api": 33,
     "sibling:VS": 1,
-    "sibling:BE": 1
+    "sibling:BE": 2,
+    "sibling:AG": 7,
+    "lexfind_family": 1658,
+    "text": 187,
+    "sibling:GL": 6,
+    "version_date_only": 53
   },
   "cantons": {
     "AG": {
@@ -40,8 +40,8 @@
         "total": 112
       },
       "ours_enacted_until_2003": {
-        "active": 42,
-        "repealed_listed": 33,
+        "active": 41,
+        "repealed_listed": 34,
         "total": 75
       },
       "all_time_total": 131,
@@ -49,8 +49,10 @@
       "unexplained": 37,
       "diagnosis": "dating",
       "date_provenance": {
-        "lexfind_family": 50,
+        "lexfind_family": 48,
         "text": 12,
+        "version_date_only": 1,
+        "sibling:BE": 1,
         "lexwork_api": 11,
         "sibling:AG": 2
       }
@@ -150,9 +152,9 @@
       "unexplained": 27,
       "diagnosis": "dating",
       "date_provenance": {
-        "lexfind_family": 117,
+        "lexfind_family": 116,
         "text": 10,
-        "version_date_only": 3,
+        "version_date_only": 4,
         "sibling:GL": 1,
         "sibling:BE": 1
       }
@@ -319,16 +321,16 @@
         "total": 79
       },
       "ours_enacted_until_2003": {
-        "active": 30,
+        "active": 29,
         "repealed_listed": 23,
-        "total": 53
+        "total": 52
       },
       "all_time_total": 81,
       "undated": 0,
-      "unexplained": 26,
+      "unexplained": 27,
       "diagnosis": "dating",
       "date_provenance": {
-        "lexfind_family": 48,
+        "lexfind_family": 47,
         "text": 3,
         "sibling:GL": 1,
         "version_date_only": 1
@@ -380,8 +382,8 @@
       "unexplained": 1,
       "diagnosis": "reconciled",
       "date_provenance": {
-        "lexfind_family": 81,
-        "text": 4
+        "lexfind_family": 80,
+        "text": 5
       }
     },
     "OW": {
@@ -395,16 +397,16 @@
         "total": 85
       },
       "ours_enacted_until_2003": {
-        "active": 43,
+        "active": 42,
         "repealed_listed": 41,
-        "total": 84
+        "total": 83
       },
       "all_time_total": 128,
       "undated": 0,
-      "unexplained": 1,
+      "unexplained": 2,
       "diagnosis": "reconciled",
       "date_provenance": {
-        "lexfind_family": 83,
+        "lexfind_family": 82,
         "text": 1
       }
     },

@@ -2,12 +2,12 @@
   "year": "2004",
   "year_semantics": "enactment",
   "entity": "FR",
-  "total": 56,
-  "categorized": 56,
+  "total": 59,
+  "categorized": 59,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 32,
+      "total": 33,
       "by_topic": {
         "922 Jagd": 3,
         "511 Organisation und Verwaltung": 2,
@@ -27,6 +27,7 @@
         "426 Weiterbildung": 1,
         "432.12 Fachhochschule Westschweiz//Freiburg (HES-SO//FRG)": 1,
         "481.4 Konservatorium": 1,
+        "612 Staatsrechnung": 1,
         "741 Strassen": 1,
         "753 Seen und Flüsse": 1,
         "821.41 Übertragbare Krankheiten": 1,
@@ -49,6 +50,7 @@
         "4.90.30 Ausbildung": 1,
         "4.30.30 Berufsorientierung": 1,
         "4.100.20 Schulgelder": 1,
+        "6.10.10 Budget und Rechnung": 1,
         "8.10.70 Heil- und Betäubungsmittel": 1,
         "8.10.90 Rettungsdienst": 1,
         "8.10.130.30 Badeanstalten": 1,
@@ -85,14 +87,17 @@
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 5,
       "by_topic": {
+        "115 Politische Rechte": 1,
         "122.1 Staatsrat": 1,
+        "17 DATENSCHUTZ - INFORMATION DER ÖFFENTLICHKEIT - ARCHIVIERUNG": 1,
         "211.2 Zivilstand": 1,
         "52 BEVÖLKERUNGS- UND ZIVILSCHUTZ": 1
       },
       "by_global_category": {
-        "1.20.20.20.20 Renten": 1
+        "1.20.20.20.20 Renten": 1,
+        "1.20.50 Datenschutz": 1
       }
     },
     "Anderes": {
@@ -129,13 +134,13 @@
     {
       "identifier": "1",
       "title": "STAAT - VOLK - BEHÖRDEN",
-      "total": 16,
+      "total": 18,
       "own": 0,
       "by_type": {
         "Verordnung des Parlaments (Dekret)": 9,
         "Verordnung": 5,
-        "Verfassung": 1,
-        "Gesetz": 1
+        "Gesetz": 3,
+        "Verfassung": 1
       },
       "children": [
         {
@@ -150,10 +155,11 @@
         {
           "identifier": "11",
           "title": "VOLK UND GEBIET",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
             "Verordnung": 1,
+            "Gesetz": 1,
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
@@ -169,9 +175,10 @@
             {
               "identifier": "115",
               "title": "Politische Rechte",
-              "total": 1,
-              "own": 1,
+              "total": 2,
+              "own": 2,
               "by_type": {
+                "Gesetz": 1,
                 "Verordnung des Parlaments (Dekret)": 1
               }
             }
@@ -310,6 +317,15 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "17",
+          "title": "DATENSCHUTZ - INFORMATION DER ÖFFENTLICHKEIT - ARCHIVIERUNG",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
         }
       ]
     },
@@ -673,6 +689,37 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "FINANZEN",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "61",
+          "title": "FINANZHAUSHALT DES STAATES",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "612",
+              "title": "Staatsrechnung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "7",
       "title": "RAUMORDNUNG - ENERGIE - VERKEHR",
       "total": 2,
@@ -1006,14 +1053,14 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 17,
+      "total": 18,
       "own": 0,
       "by_type": {
         "Verordnung des Parlaments (Dekret)": 9,
         "Verordnung": 4,
+        "Gesetz": 2,
         "Anderes": 2,
-        "Verfassung": 1,
-        "Gesetz": 1
+        "Verfassung": 1
       },
       "children": [
         {
@@ -1071,11 +1118,11 @@
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Verordnung": 2,
-            "Gesetz": 1
+            "Gesetz": 2,
+            "Verordnung": 2
           },
           "children": [
             {
@@ -1129,6 +1176,15 @@
                   ]
                 }
               ]
+            },
+            {
+              "identifier": "1.20.50",
+              "title": "Datenschutz",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             },
             {
               "identifier": "1.20.70",
@@ -1421,21 +1477,30 @@
     {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 3
       },
       "children": [
         {
           "identifier": "6.10",
           "title": "Finanzen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Verordnung": 1
+            "Verordnung": 2
           },
           "children": [
+            {
+              "identifier": "6.10.10",
+              "title": "Budget und Rechnung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "6.10.30",
               "title": "Staatsbeiträge, Subventionen",
@@ -1666,8 +1731,8 @@
     }
   ],
   "languages_available": {
-    "de": 56,
-    "fr": 56
+    "de": 59,
+    "fr": 59
   },
   "available_years_for_entity": [
     "1000",
@@ -1711,6 +1776,7 @@
     "1934",
     "1935",
     "1936",
+    "1937",
     "1938",
     "1942",
     "1943",

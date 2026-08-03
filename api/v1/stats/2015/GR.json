@@ -2,17 +2,15 @@
   "year": "2015",
   "year_semantics": "enactment",
   "entity": "GR",
-  "total": 12,
-  "categorized": 12,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 9,
+      "total": 7,
       "by_topic": {
         "175 Regionen und Gemeinden": 1,
         "22 Vollstreckung": 1,
-        "425 Mittelschule": 1,
-        "430 Allgemeine Berufsbildung": 1,
         "47 Turnen und Sport": 1,
         "490 Staatsarchiv, Kantonsbibliothek": 1,
         "63 Bevölkerungsschutz": 1,
@@ -21,21 +19,21 @@
       },
       "by_global_category": {
         "1.30.10 Gemeindefinanzen": 1,
-        "4.100.20 Schulgelder": 1,
-        "4.30.20 Berufsmaturitätsschulen": 1,
         "4.180.30 Sport": 1,
         "4.170.20 Archive": 1
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 4,
       "by_topic": {
         "490 Staatsarchiv, Kantonsbibliothek": 1,
         "63 Bevölkerungsschutz": 1,
-        "64 Zivilschutz": 1
+        "64 Zivilschutz": 1,
+        "932 Wirtschaftsförderung": 1
       },
       "by_global_category": {
-        "4.170.20 Archive": 1
+        "4.170.20 Archive": 1,
+        "9.10 Wirtschaftsförderung": 1
       }
     }
   },
@@ -94,53 +92,13 @@
     {
       "identifier": "4",
       "title": "Kirche, Erziehung, Berufsbildung, Kultur, Naturschutz",
-      "total": 5,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 4,
+        "Verordnung": 2,
         "Gesetz": 1
       },
       "children": [
-        {
-          "identifier": "42",
-          "title": "Erziehung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "425",
-              "title": "Mittelschule",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "43",
-          "title": "Berufsbildung",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "430",
-              "title": "Allgemeine Berufsbildung",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "47",
           "title": "Turnen und Sport",
@@ -225,6 +183,37 @@
           }
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Volkswirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "93",
+          "title": "Wirtschaftsförderung, Handel, Industrie, Gewerbe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "932",
+              "title": "Wirtschaftsförderung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
@@ -262,53 +251,13 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 5,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 4,
+        "Verordnung": 2,
         "Gesetz": 1
       },
       "children": [
-        {
-          "identifier": "4.30",
-          "title": "Sekundarstufe II (Berufliche Grundausbildung)",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.30.20",
-              "title": "Berufsmaturitätsschulen",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
-        {
-          "identifier": "4.100",
-          "title": "Ausbildungsbeiträge",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Verordnung": 1
-          },
-          "children": [
-            {
-              "identifier": "4.100.20",
-              "title": "Schulgelder",
-              "total": 1,
-              "own": 1,
-              "by_type": {
-                "Verordnung": 1
-              }
-            }
-          ]
-        },
         {
           "identifier": "4.170",
           "title": "Dokumentation",
@@ -352,11 +301,31 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "9.10",
+          "title": "Wirtschaftsförderung",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Gesetz": 1
+          }
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 12,
-    "it": 12
+    "de": 11,
+    "it": 11
   },
   "available_years_for_entity": [
     "1870",
@@ -450,7 +419,8 @@
     "2022",
     "2023",
     "2024",
-    "2025"
+    "2025",
+    "2026"
   ],
   "available_entities_for_year": [
     "AG",
