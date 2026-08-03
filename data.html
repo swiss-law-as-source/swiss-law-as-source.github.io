@@ -188,7 +188,9 @@
             <p class="hint" style="margin-bottom:0.5rem">Agency <code>SLC</code>, version
                1.0. Structures (codelists <code>CL_CANTON</code>, <code>CL_DOMAIN</code>,
                <code>CL_INSTRUMENT_TYPE</code>, DSDs and dataflows) plus data in SDMX-CSV
-               and SDMX-ML 2.1 (generic).</p>
+               and SDMX-ML 2.1 (generic). Aggregates are included under the SDMX reserved
+               code <code>_T</code>: per-year canton totals, domain totals and grand
+               totals (totals across all years = sum over <code>TIME_PERIOD</code>).</p>
             <ul class="dl">
                 <li><a href="api/sdmx/structures.xml">structures.xml</a>
                     <span class="desc">— all structural artefacts: codelists, concept
