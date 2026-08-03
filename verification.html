@@ -155,6 +155,111 @@
             <li><a href="api/v1/quality/unclassified_types.json">Instrument-type review list</a> (every "Other" law with its rule-based classification)</li>
             <li><a href="api/v1/coverage.json">Coverage audit</a> (local files vs source catalogs, per canton × type)</li>
         </ul>
+
+        <h2>9. Pipeline — which APIs, which integrations, which flows</h2>
+        <p>Everything below is implemented in the open
+           <a href="https://github.com/benjamin-arfa/swiss-law">swiss-law repository</a>
+           (paths refer to <code>src/legalize_ch/</code>). Documenting it here makes the
+           statistic explainable end-to-end: if a number looks wrong, this section tells
+           you which stage to inspect.</p>
+
+        <h3>9.1 Data sources and their APIs</h3>
+        <div class="table-wrap"><table class="data-table">
+            <thead><tr><th style="text-align:left">Integration</th><th style="text-align:left">Endpoints (exact patterns)</th><th style="text-align:left">Provides</th><th style="text-align:left">Code</th></tr></thead>
+            <tbody>
+            <tr><td>LexFind catalog API</td>
+                <td style="text-align:left"><code>lexfind.ch/api/fe/{lang}/entities</code> ·
+                    <code>…/categories</code> ·
+                    <code>…/entities/{id}/systematics</code>
+                    (+ batched <code>?active_only=false&amp;tols_for_systematics[]=…</code>) ·
+                    PDF <code>lexfind.ch/tol/{id}/{lang}</code></td>
+                <td style="text-align:left">Per-canton catalogs: systematic number, title,
+                    <b>instrument type (id 2 = intercantonal agreement)</b>, legal domain,
+                    active flag; PDF text fallback</td>
+                <td style="text-align:left"><code>cantonal.py</code></td></tr>
+            <tr><td>LexFind frontend API</td>
+                <td style="text-align:left"><code>lexfind.ch/api/frontend/v1/{lang}/texts-of-law/{id}/with-version-groups</code></td>
+                <td style="text-align:left"><code>family_active_since</code> — the act
+                    family's original date; our highest-ranked date source</td>
+                <td style="text-align:left"><code>lexfind_frontend.py</code></td></tr>
+            <tr><td>LexWork portals (14 cantons)</td>
+                <td style="text-align:left"><code>https://{host}/api/{lang}/texts_of_law/{number}</code>
+                    (+<code>/versions/{id}</code>) — hosts like bgs.zg.ch, srl.lu.ch,
+                    belex.sites.be.ch, gr-lex.gr.ch…</td>
+                <td style="text-align:left">Structured XHTML text,
+                    <code>date_of_decision</code>, full version lists</td>
+                <td style="text-align:left"><code>cantonal.py</code> (<code>LEXWORK_CANTONS</code>)</td></tr>
+            <tr><td>Dedicated scrapers (ZH GE NE)</td>
+                <td style="text-align:left">zh.ch paginated JSON catalog + HTML ·
+                    silgeneve.ch/legis TOC + HTML · rsn.ne.ch TOC + HTML</td>
+                <td style="text-align:left">Catalog + text where no API exists</td>
+                <td style="text-align:left"><code>zurich_fetcher.py</code>, <code>cantonal_scrapers.py</code></td></tr>
+            </tbody>
+        </table></div>
+        <p class="note">Integration per canton: AG AR BE BL BS FR GL GR LU SG SO TG VS ZG
+           = LexWork + LexFind · AI JU NW OW SH SZ TI UR VD = LexFind only (PDF→text) ·
+           ZH GE NE = dedicated scraper + LexFind for the catalog/backfill. HTTP client:
+           4 retries, exponential backoff on 429/5xx, ~0.1 s between requests,
+           User-Agent <code>legalize-ch/0.1</code>.</p>
+
+        <h3>9.2 Enrichment flow (fetch → dated, classified law files)</h3>
+        <ol>
+            <li><b>bootstrap / backfill-lexfind</b> — import every canton's full LexFind
+                catalog (add-only; this is what brings in the concordats that LexWork
+                collections lack) — <code>lexfind_backfill.py</code>.</li>
+            <li><b>enrich-categories</b> — fill <code>category_type</code> /
+                <code>global_category</code> from the LexFind catalog; never overwrites —
+                <code>category_enricher.py</code>.</li>
+            <li><b>Four date passes</b>, provenance-ranked
+                (<code>lexfind_family</code> 4 &gt; <code>lexwork_api</code>/<code>fedlex</code> 3 &gt;
+                <code>sibling</code> 2 &gt; <code>git_history</code>/<code>text</code>/<code>title</code> 1;
+                higher rank overwrites lower, never vice versa) —
+                <code>date_enricher.py</code>: (a) local text/git parsing, (b) LexWork
+                <code>date_of_decision</code> + versions, (c) sibling propagation between
+                member cantons of the same concordat, (d) LexFind
+                <code>family_active_since</code> for all 26 cantons.</li>
+            <li><b>Rule inference</b> for gaps only, stored in separate
+                <code>*_inferred</code> fields with the rule recorded —
+                <code>domain_inference.py</code>.</li>
+        </ol>
+
+        <h3>9.3 The concordats statistic, step by step</h3>
+        <ol>
+            <li>Scan all law files' frontmatter; <b>deduplicate languages</b> by
+                (canton, systematic number) — <code>stats.py: _deduplicate</code>.</li>
+            <li>Keep laws with instrument type <b>id 2</b> ("Interkantonale
+                Vereinbarung" / "Accord intercantonal" / "Accordo intercantonale") —
+                <code>effective_category_type</code>.</li>
+            <li><b>Group sibling copies</b> of the same agreement across cantons by
+                normalized title — <code>_concordat_agreement_groups</code>.</li>
+            <li><b>Signatories per agreement</b> = cantons publishing the text in their
+                collections ∪ cantons named in any language version's title
+                (<code>cantons_named_in_title</code>, de/fr/it name variants). LexFind
+                publishes no official member lists — this is the best available
+                evidence.</li>
+            <li><b>Year</b> = earliest known evidence for the agreement
+                (provenance-ranked; implausible sentinel dates &lt; 1400 are treated as
+                unknown and listed on the <a href="undated.html">undated-laws page</a>) —
+                <code>earliest_known_year</code>.</li>
+            <li><b>Count 1 occurrence per signing canton</b> per agreement into the
+                canton × domain × year table — <code>generate_concordats_by_domain_signatories</code>.
+                No scaling, no external baseline.</li>
+        </ol>
+
+        <h3>9.4 Reproduce it yourself</h3>
+        <p>A ~150-line, standard-library-only script queries the same LexFind APIs for
+           the <b>Intlex</b> entity (LexFind's dedicated collection of intercantonal law,
+           entity id 28) and outputs every intercantonal agreement with its year and the
+           cantons named in its title:</p>
+        <p><a href="reproduce_concordats.py" download><b>reproduce_concordats.py</b></a> —
+           run <code>python3 reproduce_concordats.py</code> (full, ~2 min) or
+           <code>--limit 20</code> for a one-minute demo. It prints each step and writes
+           <code>intercantonal_agreements.csv</code>.</p>
+        <p class="note">Heavyweight variant with full auditability (every request logged
+           with URL/status/SHA-256, raw responses archived): see
+           <code>scripts/fetch_concordats_to_2003.py</code> and its shipped run under
+           <code>exports/concordats_2003/</code> in the
+           <a href="https://github.com/benjamin-arfa/swiss-law">law repository</a>.</p>
     </main>
     <footer>
         <a href="https://github.com/benjamin-arfa/swiss-law">GitHub</a> &middot;
