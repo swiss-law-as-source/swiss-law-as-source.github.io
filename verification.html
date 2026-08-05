@@ -352,18 +352,35 @@
         const active = Object.values(cmp.cantons).reduce((s, v) => s + v.ours_enacted_until_2003.active, 0);
         const repealed = Object.values(cmp.cantons).reduce((s, v) => s + v.ours_enacted_until_2003.repealed_listed, 0);
         let wf = '';
-        if (sig) wf +=
+        if (sig) {
+            const ev = sig.memberships_until_2003_by_evidence || {};
+            const autres = sig.memberships_until_2003_chstat_domains == null ? null
+                : sig.memberships_until_2003 - sig.memberships_until_2003_chstat_domains;
+            const signed = x => (x > 0 ? '+' : '') + n(x);
+            wf +=
 `our statistic (dashboard & data page) — computed, one occurrence per signing canton per agreement:
 ├─ total memberships (all years):               ${n(sig.total_memberships)}   across ${n(sig.total_agreements)} distinct agreements
 ├─ … thereof enacted ≤2003:                     ${n(sig.memberships_until_2003)}
 └─ title evidence beyond published copies:      +${n(sig.memberships_added_by_title_evidence)}   (cantons named in titles but not publishing the text)
 
-comparison with the chstat/BADAC 2003 reference:
-├─ chstat 2003 (Institute of Federalism DB):    ${n(cmp.chstat_total)}   memberships, cumulative 1848-2003
-├─ our computed ≤2003 (above):                  ${n(sig.memberships_until_2003)}
-└─ difference — historical attrition:           ${n(cmp.chstat_total - sig.memberships_until_2003)}   (agreements repealed decades ago, delisted from today's collections)
+the ≤2003 figure by the evidence each membership rests on:
+├─ canton's own collection publishes the text:  ${n(ev.published_in_own_collection)}   (strongest tier — a canton-side copy)
+├─ canton named in the agreement's title:       ${n(ev.named_in_title_only)}   (exact for bilateral treaties)
+└─ canton named as a party in the recitals:     ${n(ev.named_as_party_in_preamble_only)}   (weakest — intended parties, not evidenced accessions)
+
+comparison with the chstat/BADAC 2003 reference — ours BRACKETS it, it is not one number:
+├─ upper bound, our ≤2003 (all three tiers):    ${n(sig.memberships_until_2003)}   ${signed(sig.memberships_until_2003 - cmp.chstat_total)} vs chstat
+├─ … of which outside chstat's six domains:     ${autres == null ? '—' : n(autres)}   ('autres' has no chstat column)
+├─ chstat 2003 (Institute of Federalism DB):    ${n(cmp.chstat_total)}   memberships, 2003 stock snapshot
+└─ lower bound, canton-side evidence only:      ${n(cmp.explained_total)}   ${signed(cmp.explained_total - cmp.chstat_total)} vs chstat (see the reconciliation below)
+
+why the upper bound overshoots: preamble enumeration counts every canton the act
+addresses — including cantons that acceded long after 2003 or never ratified — and
+neither bound's ≤2003 slice is filtered for agreements already repealed by 2003,
+whereas chstat counted the stock in force with per-canton accession dates.
 
 `;
+        }
         wf +=
 `reconciliation, ≤2003 (published copies + delisted-agreement evidence):
 ├─ published, still active:                     ${n(active)}

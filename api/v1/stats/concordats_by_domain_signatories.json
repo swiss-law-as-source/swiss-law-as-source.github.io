@@ -6,6 +6,12 @@
   "total_memberships": 4165,
   "total_agreements": 1654,
   "memberships_until_2003": 3143,
+  "memberships_until_2003_by_evidence": {
+    "published_in_own_collection": 1556,
+    "named_in_title_only": 299,
+    "named_as_party_in_preamble_only": 1288
+  },
+  "memberships_until_2003_chstat_domains": 2820,
   "chstat_2003_reference": 2522,
   "memberships_added_by_title_evidence": 2012,
   "domains": [
@@ -6737,7 +6743,7 @@
   "notes": [
     "THE computed concordats statistic: each agreement counts once per signing canton (signed by 10 cantons → 10 occurrences), purely from the source data — no scaling, no external baseline",
     "Signatories per agreement = cantons publishing the text in their collections ∪ cantons named in any language version's title ∪ cantons enumerated as contracting parties in the recitals; LexFind/LexWork publish no official member lists",
-    "chstat.ch/BADAC's 2003 figure (2,522 memberships ≤2003, summed from the published table) is an external reference only — our computed ≤2003 value is lower because agreements repealed decades ago were delisted from today's collections (historical attrition); see the verification report",
+    "chstat.ch/BADAC's 2003 figure (2,522 memberships ≤2003, summed from the published table) is an external reference only. Our ≤2003 value (3,143) is an UPPER bound and exceeds it: 1,288 of those memberships rest on preamble enumeration alone (the act names a canton as a contracting party, but that canton's own collection never published the text), which counts intended parties rather than ratified accessions; a further 323 fall in 'autres', a domain chstat's six-column table has no counterpart for; and nothing here is filtered for repeal, whereas chstat is a 2003 stock snapshot. The matching LOWER bound — memberships with a canton's own published copy or accession instrument — is in the verification report",
     "Distinct agreements with their signatory sets: /api/v1/stats/concordats_signatories.json"
   ]
 }
