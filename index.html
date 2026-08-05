@@ -592,23 +592,26 @@
             const m = document.getElementById('concordats-methodology');
             m.hidden = !isConcordatType();
             if (inSigMode()) {
-                m.innerHTML = `<b>Methodology (computed signatory counting):</b> each `
-                    + `agreement counts <b>once per signing canton</b> — an agreement signed `
-                    + `by 10 cantons counts 10, not 1. Signatories per agreement = cantons `
-                    + `publishing the text in their collections ∪ cantons named in any `
-                    + `language version's title ∪ cantons enumerated as contracting `
-                    + `parties in the recitals (LexFind/LexWork publish no official member `
-                    + `lists). Computed purely from the source data — no scaling: `
-                    + `<b>${conc.total_memberships.toLocaleString()}</b> memberships across `
-                    + `<b>${conc.total_agreements.toLocaleString()}</b> distinct agreements `
-                    + `(+${conc.memberships_added_by_title_evidence.toLocaleString()} from `
-                    + `title evidence). Reference: chstat/BADAC counted `
-                    + `<b>${conc.chstat_2003_reference.toLocaleString()}</b> memberships up to `
-                    + `2003; our computed ≤2003 value is `
-                    + `<b>${conc.memberships_until_2003.toLocaleString()}</b> — the difference `
-                    + `is historical attrition (long-repealed agreements were delisted from `
-                    + `today's collections; see the <a href="verification.html">verification `
-                    + `report</a>). <a href="data.html">Data downloads &amp; SDMX →</a>`;
+                m.innerHTML = `<b>Methodology (computed party counting):</b> each `
+                    + `concordat counts <b>once per party canton</b> — a concordat with `
+                    + `10 parties counts 10, not 1. A <b>concordat</b> is a distinct `
+                    + `agreement with at least ${conc.min_parties} established parties; a `
+                    + `canton is a party if its own collection publishes a copy not `
+                    + `repealed by 2003, or the act names it in any language version's `
+                    + `title, or the recitals enumerate it as a contracting party `
+                    + `(LexFind/LexWork publish no official member lists). Computed purely `
+                    + `from the source data — no scaling, no bounds: up to 2003 we count `
+                    + `<b>${conc.concordats_until_2003.toLocaleString()}</b> concordats `
+                    + `carrying <b>${conc.memberships_until_2003.toLocaleString()}</b> `
+                    + `canton memberships. Reference: IDHEAP/BADAC graph G1 states `
+                    + `<b>${conc.badac_g1_concordats.toLocaleString()}</b> concordats and `
+                    + `<b>${conc.badac_g1_memberships.toLocaleString()}</b> memberships for `
+                    + `the same period. A further `
+                    + `${conc.unresolved_single_party_groups.toLocaleString()} title-groups `
+                    + `evidence only one canton and are excluded as unresolved memberships `
+                    + `rather than one-canton concordats (see the `
+                    + `<a href="verification.html">verification report</a>). `
+                    + `<a href="data.html">Data downloads &amp; SDMX →</a>`;
             }
         }
 

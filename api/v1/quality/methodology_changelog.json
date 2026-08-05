@@ -86,6 +86,15 @@
       "unexplained": null,
       "undated": 0,
       "change_reason": "All scaling removed on user decision: the concordats statistic is now computed purely from the source data — one occurrence per signing canton per agreement (signatories = publishing cantons ∪ cantons named in titles). chstat/BADAC 2003 (2,522) remains an external comparison reference only; the computed ≤2003 value is 1,855, the difference being historical attrition (delisted agreements). A correction round-trip was added: api/v1/csv/undated_laws.csv template + `legalize-ch import-dates` apply user-supplied dates as enactment_date_source: manual_import."
+    },
+    {
+      "version": 10,
+      "date": "2026-08-05",
+      "date_basis": "unchanged; concordat headline now applies the concordat DEFINITION (>=2 parties) and the 2003 stock filter",
+      "existed_by_2003": 2581,
+      "unexplained": null,
+      "undated": 0,
+      "change_reason": "One exact figure, no bounds. Two rules that the G1 size-distribution endpoint already applied were extended to the headline signatory table, which had been publishing a different number from the same corpus: (1) a concordat is a distinct agreement with at least TWO established parties — 798 title-groups evidence a single canton and are unresolved memberships (accession decrees, cantonal implementing acts), not one-canton concordats; (2) chstat/BADAC is a 2003 STOCK snapshot, so a canton's copy carrying a dated repeal on or before 2003 does not count (15 agreements, -17 memberships; immaterial, because acts repealed since 2003 were delisted from cantonal collections outright and are absent from the corpus rather than over-counted in it). Result: 644 concordats up to 2003 carrying 2,581 canton memberships, against IDHEAP/BADAC graph G1's 733 concordats / 2,564 memberships — memberships reproduced to 0.7%. The previous 1,855 (and the 3,143 upper bound) came from counting single-party groups as concordats. api/v1/stats/concordats_by_domain_signatories.json and concordats_size_distribution.json now agree by construction."
     }
   ]
 }

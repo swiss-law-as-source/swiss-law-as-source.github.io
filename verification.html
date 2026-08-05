@@ -358,26 +358,38 @@
                 : sig.memberships_until_2003 - sig.memberships_until_2003_chstat_domains;
             const signed = x => (x > 0 ? '+' : '') + n(x);
             wf +=
-`our statistic (dashboard & data page) — computed, one occurrence per signing canton per agreement:
-├─ total memberships (all years):               ${n(sig.total_memberships)}   across ${n(sig.total_agreements)} distinct agreements
-├─ … thereof enacted ≤2003:                     ${n(sig.memberships_until_2003)}
-└─ title evidence beyond published copies:      +${n(sig.memberships_added_by_title_evidence)}   (cantons named in titles but not publishing the text)
+`our statistic (dashboard & data page) — computed, one occurrence per party canton per concordat.
+a concordat = a distinct agreement with >= ${sig.min_parties} established parties, first enacted <=2003,
+not carrying a dated repeal on or before 2003 (chstat is a 2003 stock snapshot):
 
-the ≤2003 figure by the evidence each membership rests on:
-├─ canton's own collection publishes the text:  ${n(ev.published_in_own_collection)}   (strongest tier — a canton-side copy)
+├─ concordats up to 2003:                       ${n(sig.concordats_until_2003)}
+├─ canton memberships in them:                  ${n(sig.memberships_until_2003)}   <- THE figure
+├─ mean parties per concordat:                  ${(sig.memberships_until_2003 / (sig.concordats_until_2003 || 1)).toFixed(2)}
+└─ all years:                                   ${n(sig.total_memberships)}   across ${n(sig.total_agreements)} concordats
+
+the <=2003 figure by the evidence each membership rests on:
+├─ canton's own collection publishes the text:  ${n(ev.published_in_own_collection)}   (copy live in the 2003 stock)
 ├─ canton named in the agreement's title:       ${n(ev.named_in_title_only)}   (exact for bilateral treaties)
-└─ canton named as a party in the recitals:     ${n(ev.named_as_party_in_preamble_only)}   (weakest — intended parties, not evidenced accessions)
+└─ canton named as a party in the recitals:     ${n(ev.named_as_party_in_preamble_only)}   (the member list of a multi-party concordat)
 
-comparison with the chstat/BADAC 2003 reference — ours BRACKETS it, it is not one number:
-├─ upper bound, our ≤2003 (all three tiers):    ${n(sig.memberships_until_2003)}   ${signed(sig.memberships_until_2003 - cmp.chstat_total)} vs chstat
-├─ … of which outside chstat's six domains:     ${autres == null ? '—' : n(autres)}   ('autres' has no chstat column)
-├─ chstat 2003 (Institute of Federalism DB):    ${n(cmp.chstat_total)}   memberships, 2003 stock snapshot
-└─ lower bound, canton-side evidence only:      ${n(cmp.explained_total)}   ${signed(cmp.explained_total - cmp.chstat_total)} vs chstat (see the reconciliation below)
+against the external 2003 reference:
+├─ ours, <=2003:                                ${n(sig.memberships_until_2003)}   memberships / ${n(sig.concordats_until_2003)} concordats
+├─ IDHEAP/BADAC graph G1:                       ${n(sig.badac_g1_memberships)}   memberships / ${n(sig.badac_g1_concordats)} concordats
+├─ delta vs G1:                                 ${signed(sig.memberships_until_2003 - sig.badac_g1_memberships)}   (${((Math.abs(sig.memberships_until_2003 - sig.badac_g1_memberships) / sig.badac_g1_memberships) * 100).toFixed(1)}%)
+├─ chstat.ch published table (26 x 6):          ${n(cmp.chstat_total)}   memberships, six domains only
+└─ … ours outside chstat's six domains:         ${autres == null ? '—' : n(autres)}   ('autres' has no chstat column)
 
-why the upper bound overshoots: preamble enumeration counts every canton the act
-addresses — including cantons that acceded long after 2003 or never ratified — and
-neither bound's ≤2003 slice is filtered for agreements already repealed by 2003,
-whereas chstat counted the stock in force with per-canton accession dates.
+excluded, and why: ${n(sig.unresolved_single_party_groups)} title-groups evidence exactly ONE canton. a concordat is by
+definition an agreement between cantons, so these are memberships we failed to resolve
+(accession decrees, cantonal implementing acts) — not one-canton concordats. they are the
+reason our concordat count sits below G1's ${n(sig.badac_g1_concordats)}: open concordats worded "die unterzeichnenden
+Kantone" name their members nowhere in the text, so no second party is recoverable.
+
+repeal: only agreements with a DATED repeal on or before 2003 are excluded — an act already
+repealed when the snapshot was taken was never in it. agreements repealed AFTER 2003 stay in.
+this is immaterial to the total (15 agreements, -17 memberships): acts repealed since 2003 have
+mostly been delisted from cantonal collections outright, so they are missing from our corpus
+rather than over-counted in it.
 
 `;
         }
@@ -394,8 +406,9 @@ ours, undated:                                  ${n(cmp.undated_total)}
 ours, all published copies (any date):          ${n(Object.values(cmp.cantons).reduce((s,v)=>s+v.all_time_total,0))}`;
         document.getElementById('waterfall').textContent = wf;
         if (sig) document.getElementById('headline-formula').textContent =
-            `${n(sig.total_memberships)} memberships across ${n(sig.total_agreements)} agreements, `
-            + `${n(sig.memberships_until_2003)} ≤2003`;
+            `${n(sig.concordats_until_2003)} concordats up to 2003 carrying `
+            + `${n(sig.memberships_until_2003)} canton memberships `
+            + `(all years: ${n(sig.total_agreements)} / ${n(sig.total_memberships)})`;
         document.getElementById('waterfall-note').innerHTML =
             'Diagnosis split: ' + Object.entries(cmp.diagnosis_totals || {})
                 .map(([k, v]) => `${k}: ${v} cantons`).join(' · ') +
