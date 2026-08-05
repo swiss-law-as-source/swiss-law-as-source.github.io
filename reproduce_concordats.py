@@ -70,18 +70,22 @@ PUBLISHED_G1 = f"{SITE}/api/v1/stats/concordats_size_distribution.json"
 USER_AGENT = "concordats-reproduction/1.0 (open-data verification script)"
 
 # ── The 2003 baseline: IDHEAP/BADAC press release CP4 (2004), graph G1 ──────
-# Shares are shares of the 2564 memberships; the per-band concordat counts are
-# implied (memberships / the band's representative size) and reconstruct 726 of
-# the stated 733 — the rounding residue of the five published shares.
+# Four values are read off the publication and nothing else: the two caption
+# totals, the footnote count of all-canton conventions, and the five legend
+# shares (shares of the MEMBERSHIP total, not of the concordat count).  G1
+# publishes no per-band concordat counts; this script implies them by dividing
+# each band's memberships by the mean concordat size OBSERVED in that band by
+# the run itself, falling back to the band's midpoint only where the run
+# evidences nothing.  No representative size is hand-picked.
 BADAC_TOTAL_CONCORDATS = 733
 BADAC_TOTAL_MEMBERSHIPS = 2564
 BADAC_ALL_CANTON_CONVENTIONS = 12          # "guère plus d'une dizaine"
-BADAC_BANDS = {                            # band -> (share of memberships, size)
-    "2": (0.44, 2.0),
-    "3-4": (0.08, 3.5),
-    "5-10": (0.20, 7.5),
-    "11-19": (0.06, 15.0),
-    "20-26": (0.22, 23.0),
+BADAC_BANDS = {                            # band -> share of memberships
+    "2": 0.44,
+    "3-4": 0.08,
+    "5-10": 0.20,
+    "11-19": 0.06,
+    "20-26": 0.22,
 }
 BAND_RANGES = [("2", 2, 2), ("3-4", 3, 4), ("5-10", 5, 10),
                ("11-19", 11, 19), ("20-26", 20, 26)]
@@ -154,15 +158,22 @@ def bands_from_sizes(sizes: list[int]) -> list[dict]:
     for label, lo, hi in BAND_RANGES:
         sel = [n for n in known if lo <= n <= hi]
         memberships = sum(sel)
-        share, size = BADAC_BANDS[label]
+        share = BADAC_BANDS[label]
+        # Representative size: observed within-band mean, else band midpoint.
+        size = memberships / len(sel) if sel else (lo + hi) / 2
+        basis = "observed_mean" if sel else "band_midpoint"
+        badac_memberships = round(share * BADAC_TOTAL_MEMBERSHIPS)
         out.append({
             "band": label,
             "ours_concordats": len(sel),
             "ours_memberships": memberships,
             "ours_share_of_memberships": (memberships / total_m) if total_m else 0.0,
-            "badac_memberships": round(share * BADAC_TOTAL_MEMBERSHIPS),
+            "ours_mean_size": size if sel else None,
+            "badac_memberships": badac_memberships,
             "badac_share_of_memberships": share,
-            "badac_concordats_implied": round(share * BADAC_TOTAL_MEMBERSHIPS / size),
+            "badac_concordats_implied": round(badac_memberships / size),
+            "badac_representative_size": round(size, 3),
+            "badac_representative_size_basis": basis,
         })
     return out
 
@@ -196,6 +207,17 @@ def print_g1(bands: list[dict], ours: dict, label: str) -> None:
     if ours.get("unresolved_single_party"):
         print(f"  records with one evidenced canton    : {ours['unresolved_single_party']:>6}"
               f"   (unresolved memberships, not concordats)")
+    implied = tot("badac_concordats_implied")
+    midpoints = [b["band"] for b in bands
+                 if b.get("badac_representative_size_basis") == "band_midpoint"]
+    print(f"\n  The 'BADAC conc.' column is not published: G1 gives membership shares only. It is\n"
+          f"  reconstructed here by dividing each band's memberships by the mean concordat size\n"
+          f"  this run observes in that band — {implied} concordats against the "
+          f"{BADAC_TOTAL_CONCORDATS} stated "
+          f"({100 * implied / BADAC_TOTAL_CONCORDATS:.1f}%).")
+    if midpoints:
+        print(f"  Bands with no observation, falling back to the band midpoint: "
+              f"{', '.join(midpoints)}.")
 
 
 def ours_summary(sizes: list[int]) -> dict:

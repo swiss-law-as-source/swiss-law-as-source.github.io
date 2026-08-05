@@ -397,31 +397,45 @@ unit 2 — canton memberships (one per signing canton per concordat):
 ├─ BADAC G1 caption ("2564 = 100%"):            ${n(b.total_memberships)}
 └─ ours:                                        ${n(o.memberships)}   (${(100 * o.memberships / b.total_memberships).toFixed(1)}% of the baseline)
 
-mean cantons per concordat:                     ${o.mean_signatories}   (BADAC: ${(b.total_memberships / b.total_concordats).toFixed(2)})
+mean cantons per concordat:                     ${o.mean_signatories}   (BADAC: ${b.mean_signatories ?? (b.total_memberships / b.total_concordats).toFixed(2)})
 all-canton agreements (26 signatories):         ${n(o.all_canton_agreements)}   (BADAC: "guère plus d'une dizaine" — ${n(b.all_canton_conventions)} named in the release)`;
 
             const gh = '<tr><th>Cantons per concordat</th><th>ours: concordats</th>' +
-                '<th>ours: memberships</th><th>ours: share</th>' +
+                '<th>ours: memberships</th><th>ours: share</th><th>ours: mean size</th>' +
                 '<th>BADAC: memberships</th><th>BADAC: share</th>' +
                 '<th>BADAC: concordats (implied)</th></tr>';
+            const sz = x => x.ours_mean_size == null ? '—' : (+x.ours_mean_size).toFixed(2);
             const gb = (g1.bands || []).map(x =>
                 `<tr><td>${x.band}</td><td>${n(x.ours_concordats)}</td>` +
                 `<td>${n(x.ours_memberships)}</td><td>${pct(x.ours_share_of_memberships)}</td>` +
+                `<td>${sz(x)}</td>` +
                 `<td>${n(x.badac_memberships)}</td><td>${pct(x.badac_share_of_memberships)}</td>` +
-                `<td>${n(x.badac_concordats_implied)}</td></tr>`).join('');
+                `<td>${n(x.badac_concordats_implied)}` +
+                (x.badac_representative_size_basis === 'band_midpoint' ? ' *' : '') +
+                `</td></tr>`).join('');
             const gs = k => (g1.bands || []).reduce((s, x) => s + (x[k] || 0), 0);
             const gf = `<tr><td>Total</td><td>${n(gs('ours_concordats'))}</td>` +
                 `<td>${n(gs('ours_memberships'))}</td><td>100.0%</td>` +
+                `<td>${o.mean_signatories}</td>` +
                 `<td>${n(gs('badac_memberships'))}</td><td>100.0%</td>` +
                 `<td>${n(gs('badac_concordats_implied'))}</td></tr>`;
             document.getElementById('g1-table').innerHTML =
                 `<table class="data-table"><thead>${gh}</thead><tbody>${gb}</tbody><tfoot>${gf}</tfoot></table>`;
+            const rec = b.reconstruction || {};
+            const implied = rec.concordats_implied_total ?? gs('badac_concordats_implied');
+            const fellBack = Object.entries(rec.size_basis || {})
+                .filter(([, v]) => v === 'band_midpoint').map(([k]) => k);
             const ev = g1.membership_evidence || {};
             document.getElementById('g1-evidence').innerHTML =
-                'BADAC concordat counts are <i>implied</i> (memberships ÷ the band\'s representative size) and ' +
-                'reconstruct ' + n(gs('badac_concordats_implied')) + ' of the stated ' + n(b.total_concordats) +
-                ' — the rounding residue of the five published shares. Evidence behind our ' +
-                n(o.memberships) + ' memberships: ' + Object.entries(ev)
+                'G1 publishes membership <i>shares</i> only, never a per-band concordat count. The ' +
+                '"BADAC: concordats (implied)" column is therefore reconstructed — each band\'s ' +
+                'memberships ÷ the mean concordat size <b>we observe</b> in that band (the "ours: mean ' +
+                'size" column), never a hand-picked midpoint. It lands on ' + n(implied) +
+                ' concordats against the ' + n(b.total_concordats) + ' stated' +
+                (rec.accuracy ? ' (' + pct(rec.accuracy) + ' of the published total)' : '') + '.' +
+                (fellBack.length ? ' Bands with no observation of ours, falling back to the band ' +
+                    'midpoint (*): ' + fellBack.join(', ') + '.' : '') +
+                ' Evidence behind our ' + n(o.memberships) + ' memberships: ' + Object.entries(ev)
                     .map(([k, v]) => `<b>${n(v)}</b> ${k.replace(/_/g, ' ')}`).join(' · ') + '.';
         } else {
             document.getElementById('g1-summary').textContent =

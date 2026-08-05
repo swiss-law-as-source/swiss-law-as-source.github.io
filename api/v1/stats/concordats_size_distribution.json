@@ -6,8 +6,21 @@
     "period": "1848-2003",
     "total_concordats": 733,
     "total_memberships": 2564,
+    "mean_signatories": 3.5,
     "all_canton_conventions": 12,
-    "weighting": "G1 percentages are shares of the 2564 memberships ('résultats pondérés : 2564 = 100%'), not shares of the 733 concordats"
+    "weighting": "G1 percentages are shares of the 2564 memberships ('résultats pondérés : 2564 = 100%'), not shares of the 733 concordats",
+    "reconstruction": {
+      "concordats_implied_total": 737,
+      "stated_total": 733,
+      "accuracy": 1.0055,
+      "size_basis": {
+        "2": "observed_mean",
+        "3-4": "observed_mean",
+        "5-10": "observed_mean",
+        "11-19": "observed_mean",
+        "20-26": "observed_mean"
+      }
+    }
   },
   "ours": {
     "concordats": 645,
@@ -22,45 +35,60 @@
       "ours_concordats": 361,
       "ours_memberships": 722,
       "ours_share_of_memberships": 0.2795,
+      "ours_mean_size": 2.0,
       "badac_memberships": 1128,
       "badac_share_of_memberships": 0.44,
-      "badac_concordats_implied": 564
+      "badac_concordats_implied": 564,
+      "badac_representative_size": 2.0,
+      "badac_representative_size_basis": "observed_mean"
     },
     {
       "band": "3-4",
       "ours_concordats": 134,
       "ours_memberships": 451,
       "ours_share_of_memberships": 0.1746,
+      "ours_mean_size": 3.366,
       "badac_memberships": 205,
       "badac_share_of_memberships": 0.08,
-      "badac_concordats_implied": 59
+      "badac_concordats_implied": 61,
+      "badac_representative_size": 3.366,
+      "badac_representative_size_basis": "observed_mean"
     },
     {
       "band": "5-10",
       "ours_concordats": 108,
       "ours_memberships": 730,
       "ours_share_of_memberships": 0.2826,
+      "ours_mean_size": 6.759,
       "badac_memberships": 513,
       "badac_share_of_memberships": 0.2,
-      "badac_concordats_implied": 68
+      "badac_concordats_implied": 76,
+      "badac_representative_size": 6.759,
+      "badac_representative_size_basis": "observed_mean"
     },
     {
       "band": "11-19",
       "ours_concordats": 29,
       "ours_memberships": 374,
       "ours_share_of_memberships": 0.1448,
+      "ours_mean_size": 12.897,
       "badac_memberships": 154,
       "badac_share_of_memberships": 0.06,
-      "badac_concordats_implied": 10
+      "badac_concordats_implied": 12,
+      "badac_representative_size": 12.897,
+      "badac_representative_size_basis": "observed_mean"
     },
     {
       "band": "20-26",
       "ours_concordats": 13,
       "ours_memberships": 306,
       "ours_share_of_memberships": 0.1185,
+      "ours_mean_size": 23.538,
       "badac_memberships": 564,
       "badac_share_of_memberships": 0.22,
-      "badac_concordats_implied": 25
+      "badac_concordats_implied": 24,
+      "badac_representative_size": 23.538,
+      "badac_representative_size_basis": "observed_mean"
     }
   ],
   "membership_evidence": {
@@ -70,6 +98,7 @@
   },
   "notes": [
     "Signatories = cantons publishing the text in their own collection, UNION cantons named in a title, UNION cantons enumerated as contracting parties in the recitals",
-    "The residual gap is structural: open concordats that decline to name their members ('Die unterzeichnenden Kantone …') carry no membership evidence in the text at all. BADAC read membership from the Institute of Federalism's concordat database, which records accessions; LexFind publishes no such lists"
+    "The residual gap is structural: open concordats that decline to name their members ('Die unterzeichnenden Kantone …') carry no membership evidence in the text at all. BADAC read membership from the Institute of Federalism's concordat database, which records accessions; LexFind publishes no such lists",
+    "Everything in 'ours' is computed from the source data. The only values taken from the publication are the five G1 shares and the two caption totals under 'baseline'; the per-band concordat counts BADAC never published are reconstructed by dividing each band's memberships by the mean concordat size we observe in that band (see baseline.reconstruction)"
   ]
 }
