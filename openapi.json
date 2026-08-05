@@ -473,6 +473,27 @@
         }
       }
     },
+    "/api/v1/stats/concordats_size_distribution.json": {
+      "get": {
+        "tags": [
+          "stats"
+        ],
+        "summary": "Cantons per concordat, 1848-2003 (reproduction of BADAC graph G1)",
+        "description": "The two units of the 2003 reference, side by side with ours: concordats (agreements with at least two evidenced parties) and canton memberships (one per signing canton per concordat), broken down into the five G1 size bands (2 / 3-4 / 5-10 / 11-19 / 20-26). BADAC shares are shares of the 2564 memberships ('resultats ponderes : 2564 = 100%'), and its per-band concordat counts are implied (memberships / representative band size). Also reports the evidence tier behind every membership we count (published in own collection / named as party in the preamble / named in title) and the number of records for which only one canton could be evidenced.",
+        "responses": {
+          "200": {
+            "description": "title, baseline{}, ours{}, bands[], membership_evidence{}, notes[]",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/stats/harmonized_by_year.json": {
       "get": {
         "tags": [
@@ -758,6 +779,27 @@
         "responses": {
           "200": {
             "description": "total, by_entity, by_reason, laws[]",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/quality/concordat_membership_evidence.json": {
+      "get": {
+        "tags": [
+          "quality"
+        ],
+        "summary": "Membership-evidence audit trail for the chstat-2003 reconciliation",
+        "description": "Every accession instrument (Beitritt/adhésion/adesione decree or law referencing an intercantonal agreement the canton does not separately publish) and every Intlex-≤2003 title naming a canton without a published copy, each with a status (counted / published_separately / duplicate_instrument / after_2003 / undated). Only status='counted' rows feed the reconciliation's additional_evidence tiers.",
+        "responses": {
+          "200": {
+            "description": "note, accession_counted, intlex_named_counted, accession{}, intlex_named{}",
             "content": {
               "application/json": {
                 "schema": {

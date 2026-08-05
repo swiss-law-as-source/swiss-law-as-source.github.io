@@ -6,6 +6,26 @@ Standard library only. Run it anywhere:
     python3 reproduce_concordats.py                 # full run (~340 requests, ~2 min)
     python3 reproduce_concordats.py --limit 20      # quick demo (<1 min)
     python3 reproduce_concordats.py --lang fr
+    python3 reproduce_concordats.py --verify        # only check the published
+                                                    # numbers against BADAC G1
+    python3 reproduce_concordats.py --repo ../swiss-law   # recompute the published
+                                                          # statistic from the corpus
+
+Every mode prints the same G1 table — the 1848-2003 reference of IDHEAP/BADAC
+(communiqué CP4, 15.11.2004), which states BOTH units this data answers:
+
+    "Total 1848-2003 = 733 concordats; 2564 cantons membres"
+    "estimation BADAC (résultats pondérés : 2564 = 100%)"
+
+so its published shares (44% bilateral, 22% with >=20 cantons, …) are shares of
+the 2564 MEMBERSHIPS, not of the 733 concordats — read against 733 they are
+arithmetically impossible, the >=20-canton class alone exceeding 3200
+memberships. What the three modes differ in is the evidence they can see:
+
+    default   cantons NAMED IN THE TITLE only -> a strict lower bound
+    --repo    the full statistic: published copies U titles U preamble parties,
+              i.e. the exact numbers published on the site (same code path)
+    --verify  no computation, just the published JSON vs the G1 baseline
 
 What it does, in three API calls (the same endpoints the Swiss Law Collection
 pipeline uses — see https://swiss-law-as-source.github.io/verification.html):
@@ -38,12 +58,33 @@ import argparse
 import csv
 import json
 import re
+import sys
 import time
 import urllib.request
+from pathlib import Path
 
 FE_API = "https://www.lexfind.ch/api/fe"
 FRONTEND_API = "https://www.lexfind.ch/api/frontend/v1"
+SITE = "https://swiss-law-as-source.github.io"
+PUBLISHED_G1 = f"{SITE}/api/v1/stats/concordats_size_distribution.json"
 USER_AGENT = "concordats-reproduction/1.0 (open-data verification script)"
+
+# ── The 2003 baseline: IDHEAP/BADAC press release CP4 (2004), graph G1 ──────
+# Shares are shares of the 2564 memberships; the per-band concordat counts are
+# implied (memberships / the band's representative size) and reconstruct 726 of
+# the stated 733 — the rounding residue of the five published shares.
+BADAC_TOTAL_CONCORDATS = 733
+BADAC_TOTAL_MEMBERSHIPS = 2564
+BADAC_ALL_CANTON_CONVENTIONS = 12          # "guère plus d'une dizaine"
+BADAC_BANDS = {                            # band -> (share of memberships, size)
+    "2": (0.44, 2.0),
+    "3-4": (0.08, 3.5),
+    "5-10": (0.20, 7.5),
+    "11-19": (0.06, 15.0),
+    "20-26": (0.22, 23.0),
+}
+BAND_RANGES = [("2", 2, 2), ("3-4", 3, 4), ("5-10", 5, 10),
+               ("11-19", 11, 19), ("20-26", 20, 26)]
 
 # Canton names as they appear in treaty titles (German + French variants).
 CANTON_NAMES = {
@@ -99,6 +140,131 @@ def earliest_family_year(payload: dict) -> str:
     return min(years) if years else ""
 
 
+def bands_from_sizes(sizes: list[int]) -> list[dict]:
+    """Bucket signatory-set sizes into the five G1 bands.
+
+    Only agreements with at least TWO evidenced parties are counted: a
+    concordat is by definition an agreement between cantons, so a record
+    showing a single canton is a membership we failed to resolve, not a
+    one-canton concordat.
+    """
+    known = [n for n in sizes if n >= 2]
+    total_m = sum(known)
+    out = []
+    for label, lo, hi in BAND_RANGES:
+        sel = [n for n in known if lo <= n <= hi]
+        memberships = sum(sel)
+        share, size = BADAC_BANDS[label]
+        out.append({
+            "band": label,
+            "ours_concordats": len(sel),
+            "ours_memberships": memberships,
+            "ours_share_of_memberships": (memberships / total_m) if total_m else 0.0,
+            "badac_memberships": round(share * BADAC_TOTAL_MEMBERSHIPS),
+            "badac_share_of_memberships": share,
+            "badac_concordats_implied": round(share * BADAC_TOTAL_MEMBERSHIPS / size),
+        })
+    return out
+
+
+def print_g1(bands: list[dict], ours: dict, label: str) -> None:
+    """Print the G1 comparison — the same table the verification page renders."""
+    print(f"\n{'=' * 78}\nCantons per concordat, 1848-2003 — BADAC graph G1 vs {label}\n{'=' * 78}")
+    print(f"{'band':>7} | {'ours conc.':>10} {'ours memb.':>10} {'share':>7} "
+          f"| {'BADAC memb.':>11} {'share':>7} {'BADAC conc.':>11}")
+    print("-" * 78)
+    for b in bands:
+        print(f"{b['band']:>7} | {b['ours_concordats']:>10} {b['ours_memberships']:>10} "
+              f"{100 * b['ours_share_of_memberships']:>6.1f}% "
+              f"| {b['badac_memberships']:>11} {100 * b['badac_share_of_memberships']:>6.1f}% "
+              f"{b['badac_concordats_implied']:>11}")
+    print("-" * 78)
+    tot = lambda k: sum(b[k] for b in bands)  # noqa: E731
+    print(f"{'total':>7} | {tot('ours_concordats'):>10} {tot('ours_memberships'):>10} "
+          f"{100.0:>6.1f}% | {tot('badac_memberships'):>11} {100.0:>6.1f}% "
+          f"{tot('badac_concordats_implied'):>11}")
+    print(f"\n  concordats  (>=2 evidenced parties) : {ours['concordats']:>6}"
+          f"   BADAC caption: {BADAC_TOTAL_CONCORDATS}")
+    print(f"  canton memberships (total signatures): {ours['memberships']:>6}"
+          f"   BADAC caption: {BADAC_TOTAL_MEMBERSHIPS}"
+          f"   ({100 * ours['memberships'] / BADAC_TOTAL_MEMBERSHIPS:.1f}%)")
+    print(f"  mean cantons per concordat           : {ours['mean_signatories']:>6.2f}"
+          f"   BADAC: {BADAC_TOTAL_MEMBERSHIPS / BADAC_TOTAL_CONCORDATS:.2f}")
+    if "all_canton_agreements" in ours:
+        print(f"  agreements with all 26 cantons       : {ours['all_canton_agreements']:>6}"
+              f"   BADAC: {BADAC_ALL_CANTON_CONVENTIONS} named in the release")
+    if ours.get("unresolved_single_party"):
+        print(f"  records with one evidenced canton    : {ours['unresolved_single_party']:>6}"
+              f"   (unresolved memberships, not concordats)")
+
+
+def ours_summary(sizes: list[int]) -> dict:
+    known = [n for n in sizes if n >= 2]
+    return {
+        "concordats": len(known),
+        "memberships": sum(known),
+        "mean_signatories": (sum(known) / len(known)) if known else 0.0,
+        "unresolved_single_party": len(sizes) - len(known),
+        "all_canton_agreements": sum(1 for n in known if n == 26),
+    }
+
+
+def run_repo_mode(repo: Path) -> None:
+    """Recompute the PUBLISHED statistic from a clone of the law repository.
+
+    Runs the site's own code path (``legalize_ch.stats``) over the markdown
+    corpus, so the numbers are identical to the published JSON by construction
+    rather than by a second implementation that could drift.  Needs the repo's
+    only non-stdlib dependency: ``pip install pyyaml``.
+    """
+    sys.path.insert(0, str(repo / "src"))
+    try:
+        from legalize_ch.stats import (collect_all_frontmatter,
+                                       generate_concordat_size_distribution)
+    except ImportError as exc:
+        sys.exit(f"cannot import legalize_ch from {repo}/src ({exc}).\n"
+                 f"Clone https://github.com/benjamin-arfa/swiss-law and "
+                 f"'pip install pyyaml', then pass --repo <that clone>.")
+    print(f"scanning {repo}/ch for law files (this takes a minute)…")
+    entries = collect_all_frontmatter(repo)
+    print(f"  {len(entries)} law files parsed")
+    dist = generate_concordat_size_distribution(entries)
+    print_g1(dist["bands"], dist["ours"], "this repository (full evidence)")
+    print("\nmembership evidence:")
+    for k, v in dist["membership_evidence"].items():
+        print(f"  {v:>6}  {k.replace('_', ' ')}")
+    for note in dist["notes"]:
+        print(f"\nnote: {note}")
+    compare_to_published(dist)
+
+
+def compare_to_published(dist: dict | None) -> None:
+    """Fetch the published statistic and report it (and any drift)."""
+    try:
+        payload = get_json(PUBLISHED_G1, 0)
+    except Exception as exc:                                # noqa: BLE001
+        print(f"\n(could not fetch {PUBLISHED_G1}: {exc})")
+        return
+    if not isinstance(payload, dict):
+        print(f"\n(unexpected payload at {PUBLISHED_G1})")
+        return
+    pub: dict = payload
+    if dist is None:
+        print_g1(pub["bands"], pub["ours"], "the published statistic")
+        print("\nmembership evidence:")
+        for k, v in pub.get("membership_evidence", {}).items():
+            print(f"  {v:>6}  {k.replace('_', ' ')}")
+        for note in pub.get("notes", []):
+            print(f"\nnote: {note}")
+        return
+    same = (dist["ours"]["concordats"] == pub["ours"]["concordats"]
+            and dist["ours"]["memberships"] == pub["ours"]["memberships"])
+    print(f"\npublished on {SITE}: {pub['ours']['concordats']} concordats / "
+          f"{pub['ours']['memberships']} memberships — "
+          + ("identical to this run ✓" if same else
+             "DIFFERENT (the site is regenerated from a newer corpus snapshot)"))
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--lang", default="de", choices=["de", "fr", "it"])
@@ -106,7 +272,20 @@ def main() -> None:
                     help="seconds between requests (be polite)")
     ap.add_argument("--limit", type=int, default=0,
                     help="only process the first N texts (0 = all)")
+    ap.add_argument("--repo", type=Path, default=None,
+                    help="path to a clone of the swiss-law repository: "
+                         "recompute the published statistic from the corpus")
+    ap.add_argument("--verify", action="store_true",
+                    help="fetch the published statistic and show it against "
+                         "the BADAC G1 baseline; no fetching, no computation")
     args = ap.parse_args()
+
+    if args.repo:
+        run_repo_mode(args.repo)
+        return
+    if args.verify:
+        compare_to_published(None)
+        return
 
     # 1. Resolve the Intlex entity (the intercantonal-law collection)
     entities = get_json(f"{FE_API}/{args.lang}/entities", args.rate)
@@ -172,10 +351,20 @@ def main() -> None:
     for r in dated:
         by_decade[r["year"][:3] + "0s"] = by_decade.get(r["year"][:3] + "0s", 0) + 1
     print("per decade:", ", ".join(f"{k}: {v}" for k, v in sorted(by_decade.items())))
-    print("\nNote: titles name their parties mainly for bilateral treaties; open "
-          "multilateral concordats list no cantons in the title. The full "
-          "statistic on swiss-law-as-source.github.io additionally counts a "
-          "canton as signatory when its own collection publishes the text.")
+
+    # G1: cantons per concordat, and the total number of canton signatures.
+    # Restricted to agreements existing <=2003, the baseline's period.
+    sizes = [r["n_named"] for r in rows if r["year"] and r["year"] <= "2003"]
+    print_g1(bands_from_sizes(sizes), ours_summary(sizes),
+             "this run (title evidence only — a lower bound)")
+    print("\nWhy this run is a lower bound: titles name their parties mainly for "
+          "bilateral treaties; open multilateral concordats ('Die unterzeichnenden "
+          "Kantone …') name none, which is why the 2-canton band dominates here and "
+          "the 20-26 band is nearly empty. The published statistic adds two evidence "
+          "tiers this script cannot see from the Intlex catalog alone: cantons whose "
+          "OWN collection publishes the text, and cantons enumerated as contracting "
+          "parties in the recitals. Re-run with --repo <clone of swiss-law> to compute "
+          "those too, or --verify to fetch the published figures.")
 
 
 if __name__ == "__main__":

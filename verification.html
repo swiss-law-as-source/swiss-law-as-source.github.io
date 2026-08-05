@@ -38,6 +38,7 @@
         .pill.dating { background: var(--warn); }
         .pill.delisting_or_coverage { background: var(--bad); }
         .pill.reconciled { background: var(--ok); }
+        .pill.exceeds_reference { background: var(--warn); }
         .note { font-size: 0.8rem; color: #666; margin-top: 0.5rem; }
         .btn { background: var(--gray); border: 1px solid var(--border); border-radius: 4px;
                padding: 0.3rem 0.9rem; cursor: pointer; font-size: 0.82rem; margin-bottom: 0.6rem; }
@@ -69,7 +70,8 @@
            The published concordats table is <b>computed purely from the source data</b>:
            one occurrence per signing canton per agreement, signatories estimated as the
            cantons publishing the text ∪ the cantons named in any language version's
-           title. No scaling, no external baseline
+           title ∪ the cantons enumerated as contracting parties in the recitals.
+           No scaling, no external baseline
            (<span id="headline-formula">see below</span>). chstat/BADAC's 2003 figure is
            kept as an external comparison reference; the difference is historical
            attrition — agreements repealed decades ago were delisted from today's
@@ -80,15 +82,64 @@
         <h2>2. Reconciliation</h2>
         <div class="waterfall" id="waterfall">loading…</div>
         <p class="note" id="waterfall-note"></p>
+        <p class="note">Two evidence tiers recover memberships whose agreement text was
+           delisted from today's collections: <b>accession instruments</b> — a canton's own
+           Beitritt/adhésion decree or law referencing an intercantonal agreement the canton
+           does not separately publish (matched inflection-tolerantly against its concordat
+           titles) — and <b>Intlex title evidence</b> — cantons named in titles of the audited
+           Intlex ≤2003 inventory (<code>exports/concordats_2003/</code> in the law
+           repository, see <a href="reproduce_concordats.py">the reproduction script</a>)
+           with neither a published copy
+           nor an accession instrument (German-titled collections only, so titles are
+           comparable). Every counted and rejected instrument is listed in the
+           <a href="api/v1/quality/concordat_membership_evidence.json">membership-evidence audit
+           trail</a>.</p>
 
-        <h2>3. Methodology</h2>
+        <h2>3. Cantons per concordat — reproduction of BADAC graph G1</h2>
+        <p>The 2003 reference answers two questions at once, and G1 states both in its
+           caption: <b>how many cantons each concordat associates</b>, and <b>how many
+           canton signatures there are in total</b>
+           (<i>"Total 1848–2003 = 733 concordats; 2564 cantons membres"</i>). Its
+           percentages are shares of the <b>2 564 memberships</b>
+           (<i>"estimation BADAC (résultats pondérés : 2564 = 100 %)"</i>), not shares of
+           the 733 concordats — the prose reading ("44 % étaient des accords bilatéraux",
+           "22 % regroupaient au moins 20 cantons") is arithmetically impossible against
+           733 concordats, since the ≥20-canton class alone would then exceed 3 200
+           memberships. Both units are reproduced below.</p>
+        <div class="waterfall" id="g1-summary">loading…</div>
+        <div class="table-wrap" id="g1-table"></div>
+        <p class="note" id="g1-evidence"></p>
+        <p class="note"><b>Where our distribution differs, and why.</b> A concordat is by
+           definition an agreement between cantons, so records for which only a single
+           canton can be evidenced are counted as <i>unresolved memberships</i>, not as
+           one-canton concordats — they are reported separately rather than dropped.
+           The residual gap is structural and not improvable from LexFind: open concordats
+           addressed to "<i>Die unterzeichnenden Kantone</i>" name no members anywhere in
+           the text, so their composition is unrecoverable from the published record. BADAC
+           read membership from the Institute of Federalism's concordat database, which
+           records accessions; LexFind publishes no such lists. That is exactly why our
+           20–26 band stays thin while our 3–10 bands are heavy: an open concordat is
+           observed through the cantons that happen to still publish it. Closing it would
+           need an accession-register request to IDHEAP/BADAC or the Institute of
+           Federalism.</p>
+        <p class="note">Source: IDHEAP/BADAC, <i>"Les concordats intercantonaux: clé de
+           voûte du fédéralisme suisse"</i>, communiqué CP4 du 15.11.2004, graphique G1
+           (archived under <code>exports/concordats_2003/baseline/CP4fr.pdf</code> in the
+           law repository) — built on the concordats database of the Institut du
+           fédéralisme, Université de Fribourg. Our figures:
+           <a href="api/v1/stats/concordats_size_distribution.json">size-distribution JSON</a>.</p>
+
+        <h2>4. Methodology</h2>
         <ul>
             <li><b>Counting unit (headline table): signatory-canton memberships</b>, the
                 chstat/BADAC convention — each agreement counts once per signatory canton
-                (an agreement signed by 10 cantons counts 10, not 1). Signatory sets for
-                our post-2003 data are estimated per agreement: cantons publishing the
+                (an agreement signed by 10 cantons counts 10, not 1). Signatory sets are
+                estimated per agreement: cantons publishing the
                 text in their collections ∪ cantons named in any language version's
-                title. Computed purely from the source data — no scaling; chstat's
+                title ∪ cantons enumerated as contracting parties in the recitals (the
+                text before Art. 1 — canton names occurring later are cross-references,
+                not evidence of membership, so the scan stops there).
+                Computed purely from the source data — no scaling; chstat's
                 2003 table is an external comparison reference only.</li>
             <li><b>Laws are (law, version) pairs.</b> All year filtering uses the <i>enactment date</i>
                 (original act), never the current consolidated version's date. A 1970 concordat amended
@@ -114,7 +165,7 @@
                 accession-vs-membership date semantics.</li>
         </ul>
 
-        <h2>4. Per-canton reconciliation</h2>
+        <h2>5. Per-canton reconciliation</h2>
         <button class="btn" id="csv-btn">Export CSV</button>
         <div class="table-wrap" id="canton-table">loading…</div>
         <p class="note">Diagnosis: <span class="pill dating">dating</span> = we hold at least as many
@@ -122,14 +173,14 @@
            <span class="pill delisting_or_coverage">delisting</span> = we hold fewer than chstat counted
            (removed from the public record); <span class="pill reconciled">reconciled</span> = within ±5.</p>
 
-        <h2>5. Comparison by domain (chstat 2003 vs ours)</h2>
+        <h2>6. Comparison by domain (chstat 2003 vs ours)</h2>
         <div class="table-wrap" id="domain-table">loading…</div>
         <p class="note">chstat's six domains vs our concordats existing ≤2003 (same domain mapping:
            harmonized-taxonomy top levels {1,5}, {8}, {4}, {7}, {9}, {6}). "Other" holds civil/criminal-law
            concordats and those without a source domain — chstat's internal database classified everything,
            so our named-domain columns undercount by roughly the Other column's size.</p>
 
-        <h2>6. Data-quality provenance</h2>
+        <h2>7. Data-quality provenance</h2>
         <h3>Enactment-date sources (concordats enacted ≤ 2003)</h3>
         <div class="table-wrap" id="prov-table"></div>
         <h3>Instrument types</h3>
@@ -137,33 +188,34 @@
         <h3>Legal domains (harmonized taxonomy)</h3>
         <p id="domain-summary"></p>
 
-        <h2>7. Date methodology &amp; changelog</h2>
+        <h2>8. Date methodology &amp; changelog</h2>
         <p id="policy-statement"></p>
         <div class="table-wrap" id="changelog-table"></div>
         <p class="note">The date basis is <b>frozen</b>: headline numbers change only when the underlying
            data changes, and every change is recorded here
            (<a href="api/v1/quality/methodology_changelog.json">changelog JSON</a>).</p>
 
-        <h2>8. Source data</h2>
+        <h2>9. Source data</h2>
         <ul>
             <li><a href="api/v1/stats/concordats_chstat_comparison.json">Reconciliation JSON</a> (this page's data)</li>
             <li><a href="api/v1/stats/concordats_by_domain_signatories.json">The computed concordats table</a> (one occurrence per signing canton per agreement; CSV &amp; SDMX on the <a href="data.html">data page</a>)</li>
             <li><a href="undated.html">Undated laws review page</a> (<a href="api/v1/quality/undated_laws.json">JSON</a> — every law excluded from year statistics, with its raw upstream date values)</li>
             <li><a href="api/v1/stats/concordats_by_domain.json">Concordats by domain</a> (published-collections counting, with per-year breakdowns)</li>
-            <li><a href="api/v1/stats/concordats_signatories.json">Distinct agreements with signing cantons</a> (signatories = cantons whose collections publish the text)</li>
+            <li><a href="api/v1/stats/concordats_signatories.json">Distinct agreements with signing cantons</a> (signatories = published copies ∪ cantons named in a title ∪ cantons named as parties in the recitals, each tier reported per agreement)</li>
+            <li><a href="api/v1/stats/concordats_size_distribution.json">Cantons per concordat, 1848–2003</a> (reproduction of BADAC graph G1: size bands, memberships, evidence tiers)</li>
             <li><a href="api/v1/stats/types/index.json">Per-instrument-type domain tables</a> (same shape as concordats-by-domain, for every text category)</li>
             <li><a href="api/v1/quality/unclassified_types.json">Instrument-type review list</a> (every "Other" law with its rule-based classification)</li>
             <li><a href="api/v1/coverage.json">Coverage audit</a> (local files vs source catalogs, per canton × type)</li>
         </ul>
 
-        <h2>9. Pipeline — which APIs, which integrations, which flows</h2>
+        <h2>10. Pipeline — which APIs, which integrations, which flows</h2>
         <p>Everything below is implemented in the open
            <a href="https://github.com/benjamin-arfa/swiss-law">swiss-law repository</a>
            (paths refer to <code>src/legalize_ch/</code>). Documenting it here makes the
            statistic explainable end-to-end: if a number looks wrong, this section tells
            you which stage to inspect.</p>
 
-        <h3>9.1 Data sources and their APIs</h3>
+        <h3>10.1 Data sources and their APIs</h3>
         <div class="table-wrap"><table class="data-table">
             <thead><tr><th style="text-align:left">Integration</th><th style="text-align:left">Endpoints (exact patterns)</th><th style="text-align:left">Provides</th><th style="text-align:left">Code</th></tr></thead>
             <tbody>
@@ -202,7 +254,7 @@
            4 retries, exponential backoff on 429/5xx, ~0.1 s between requests,
            User-Agent <code>legalize-ch/0.1</code>.</p>
 
-        <h3>9.2 Enrichment flow (fetch → dated, classified law files)</h3>
+        <h3>10.2 Enrichment flow (fetch → dated, classified law files)</h3>
         <ol>
             <li><b>bootstrap / backfill-lexfind</b> — import every canton's full LexFind
                 catalog (add-only; this is what brings in the concordats that LexWork
@@ -223,7 +275,7 @@
                 <code>domain_inference.py</code>.</li>
         </ol>
 
-        <h3>9.3 The concordats statistic, step by step</h3>
+        <h3>10.3 The concordats statistic, step by step</h3>
         <ol>
             <li>Scan all law files' frontmatter; <b>deduplicate languages</b> by
                 (canton, systematic number) — <code>stats.py: _deduplicate</code>.</li>
@@ -246,15 +298,28 @@
                 No scaling, no external baseline.</li>
         </ol>
 
-        <h3>9.4 Reproduce it yourself</h3>
-        <p>A ~150-line, standard-library-only script queries the same LexFind APIs for
+        <h3>10.4 Reproduce it yourself</h3>
+        <p>A standard-library-only script queries the same LexFind APIs for
            the <b>Intlex</b> entity (LexFind's dedicated collection of intercantonal law,
            entity id 28) and outputs every intercantonal agreement with its year and the
-           cantons named in its title:</p>
-        <p><a href="reproduce_concordats.py" download><b>reproduce_concordats.py</b></a> —
-           run <code>python3 reproduce_concordats.py</code> (full, ~2 min) or
-           <code>--limit 20</code> for a one-minute demo. It prints each step and writes
-           <code>intercantonal_agreements.csv</code>.</p>
+           cantons named in its title. Every mode ends with the same G1 table as §3, so
+           the script and this page report one statistic, not two:</p>
+        <p><a href="reproduce_concordats.py" download><b>reproduce_concordats.py</b></a></p>
+        <ul>
+            <li><code>python3 reproduce_concordats.py</code> (full, ~2 min; <code>--limit 20</code>
+                for a one-minute demo) — fetches the catalog, writes
+                <code>intercantonal_agreements.csv</code>, and reports the G1 distribution from
+                <b>title evidence only</b>: a strict lower bound, since open concordats name no
+                parties in their titles.</li>
+            <li><code>python3 reproduce_concordats.py --verify</code> — no computation: fetches
+                <a href="api/v1/stats/concordats_size_distribution.json">the published statistic</a>
+                and prints it against the BADAC G1 baseline.</li>
+            <li><code>python3 reproduce_concordats.py --repo &lt;clone of swiss-law&gt;</code> —
+                recomputes the published numbers from the law corpus through the site's own
+                code path (<code>legalize_ch.stats</code>, needs <code>pyyaml</code>), then
+                checks them against the published JSON. This is the mode that reproduces §3
+                exactly.</li>
+        </ul>
         <p class="note">Heavyweight variant with full auditability (every request logged
            with URL/status/SHA-256, raw responses archived): see
            <code>scripts/fetch_concordats_to_2003.py</code> and its shipped run under
@@ -279,8 +344,9 @@
         try { unc = await (await fetch('api/v1/quality/unclassified_types.json', opt)).json(); } catch (e) {}
         try { conc = await (await fetch('api/v1/stats/concordats_by_domain.json', opt)).json(); } catch (e) {}
         try { sig = await (await fetch('api/v1/stats/concordats_by_domain_signatories.json', opt)).json(); } catch (e) {}
-        let clog = null;
+        let clog = null, g1 = null;
         try { clog = await (await fetch('api/v1/quality/methodology_changelog.json', opt)).json(); } catch (e) {}
+        try { g1 = await (await fetch('api/v1/stats/concordats_size_distribution.json', opt)).json(); } catch (e) {}
 
         const n = x => (x || 0).toLocaleString();
         const active = Object.values(cmp.cantons).reduce((s, v) => s + v.ours_enacted_until_2003.active, 0);
@@ -299,9 +365,12 @@ comparison with the chstat/BADAC 2003 reference:
 
 `;
         wf +=
-`published copies only (no signatory estimation), ≤2003:
-├─ still active:                                ${n(active)}
-├─ repealed but listed:                         ${n(repealed)}
+`reconciliation, ≤2003 (published copies + delisted-agreement evidence):
+├─ published, still active:                     ${n(active)}
+├─ published, repealed but listed:              ${n(repealed)}
+├─ accession instruments (agreement delisted):  ${n(cmp.accession_evidence_total || 0)}
+├─ named in Intlex ≤2003 inventory:             ${n(cmp.intlex_named_evidence_total || 0)}
+├─ explained total:                             ${n(cmp.explained_total || active + repealed)}
 └─ vs chstat ("unexplained"):                   ${n(cmp.unexplained_total)}
 
 ours, undated:                                  ${n(cmp.undated_total)}
@@ -315,24 +384,76 @@ ours, all published copies (any date):          ${n(Object.values(cmp.cantons).r
                 .map(([k, v]) => `${k}: ${v} cantons`).join(' · ') +
             ' — undated laws are listed one by one on the <a href="undated.html">undated-laws review page</a>.';
 
+        // G1 reproduction — cantons per concordat, and total canton signatures
+        if (g1) {
+            const b = g1.baseline, o = g1.ours;
+            const pct = x => (100 * (x || 0)).toFixed(1) + '%';
+            document.getElementById('g1-summary').textContent =
+`unit 1 — concordats (agreements with >=2 evidenced parties), 1848-2003:
+├─ BADAC G1 caption:                            ${n(b.total_concordats)}
+└─ ours:                                        ${n(o.concordats)}   (+${n(o.unresolved_single_party)} records with a single evidenced canton: unresolved memberships, not concordats)
+
+unit 2 — canton memberships (one per signing canton per concordat):
+├─ BADAC G1 caption ("2564 = 100%"):            ${n(b.total_memberships)}
+└─ ours:                                        ${n(o.memberships)}   (${(100 * o.memberships / b.total_memberships).toFixed(1)}% of the baseline)
+
+mean cantons per concordat:                     ${o.mean_signatories}   (BADAC: ${(b.total_memberships / b.total_concordats).toFixed(2)})
+all-canton agreements (26 signatories):         ${n(o.all_canton_agreements)}   (BADAC: "guère plus d'une dizaine" — ${n(b.all_canton_conventions)} named in the release)`;
+
+            const gh = '<tr><th>Cantons per concordat</th><th>ours: concordats</th>' +
+                '<th>ours: memberships</th><th>ours: share</th>' +
+                '<th>BADAC: memberships</th><th>BADAC: share</th>' +
+                '<th>BADAC: concordats (implied)</th></tr>';
+            const gb = (g1.bands || []).map(x =>
+                `<tr><td>${x.band}</td><td>${n(x.ours_concordats)}</td>` +
+                `<td>${n(x.ours_memberships)}</td><td>${pct(x.ours_share_of_memberships)}</td>` +
+                `<td>${n(x.badac_memberships)}</td><td>${pct(x.badac_share_of_memberships)}</td>` +
+                `<td>${n(x.badac_concordats_implied)}</td></tr>`).join('');
+            const gs = k => (g1.bands || []).reduce((s, x) => s + (x[k] || 0), 0);
+            const gf = `<tr><td>Total</td><td>${n(gs('ours_concordats'))}</td>` +
+                `<td>${n(gs('ours_memberships'))}</td><td>100.0%</td>` +
+                `<td>${n(gs('badac_memberships'))}</td><td>100.0%</td>` +
+                `<td>${n(gs('badac_concordats_implied'))}</td></tr>`;
+            document.getElementById('g1-table').innerHTML =
+                `<table class="data-table"><thead>${gh}</thead><tbody>${gb}</tbody><tfoot>${gf}</tfoot></table>`;
+            const ev = g1.membership_evidence || {};
+            document.getElementById('g1-evidence').innerHTML =
+                'BADAC concordat counts are <i>implied</i> (memberships ÷ the band\'s representative size) and ' +
+                'reconstruct ' + n(gs('badac_concordats_implied')) + ' of the stated ' + n(b.total_concordats) +
+                ' — the rounding residue of the five published shares. Evidence behind our ' +
+                n(o.memberships) + ' memberships: ' + Object.entries(ev)
+                    .map(([k, v]) => `<b>${n(v)}</b> ${k.replace(/_/g, ' ')}`).join(' · ') + '.';
+        } else {
+            document.getElementById('g1-summary').textContent =
+                'concordats_size_distribution.json not available in this build.';
+        }
+
         // per-canton table
         const rows = Object.entries(cmp.cantons);
         const head = '<tr><th>Canton</th><th>chstat 2003</th><th>active ≤2003</th>' +
-            '<th>repealed ≤2003</th><th>total ≤2003</th><th>unexplained</th>' +
+            '<th>repealed ≤2003</th><th>accession</th><th>Intlex named</th>' +
+            '<th>explained</th><th>unexplained</th>' +
             '<th>all-time</th><th>undated</th><th>diagnosis</th></tr>';
         const body = rows.map(([c, v]) => {
             const o = v.ours_enacted_until_2003;
+            const ae = v.additional_evidence || {accession: 0, intlex_named: 0};
+            const expl = v.explained_total !== undefined ? v.explained_total : o.total;
             return `<tr><td>${c}</td><td>${n(v.chstat_2003.total)}</td><td>${n(o.active)}</td>` +
-                `<td>${n(o.repealed_listed)}</td><td>${n(o.total)}</td><td>${n(v.unexplained)}</td>` +
+                `<td>${n(o.repealed_listed)}</td><td>${n(ae.accession)}</td><td>${n(ae.intlex_named)}</td>` +
+                `<td>${n(expl)}</td><td>${n(v.unexplained)}</td>` +
                 `<td>${n(v.all_time_total)}</td><td>${n(v.undated)}</td>` +
-                `<td style="text-align:center"><span class="pill ${v.diagnosis}">${v.diagnosis.replace('_or_coverage','')}</span></td></tr>`;
+                `<td style="text-align:center"><span class="pill ${v.diagnosis}">${v.diagnosis.replace('_or_coverage','').replace('_reference','')}</span></td></tr>`;
         }).join('');
         const tot = k => rows.reduce((s, [, v]) => s + (k === 'ch' ? v.chstat_2003.total
             : k === 'a' ? v.ours_enacted_until_2003.active : k === 'r' ? v.ours_enacted_until_2003.repealed_listed
-            : k === 't' ? v.ours_enacted_until_2003.total : k === 'u' ? v.unexplained
+            : k === 'acc' ? (v.additional_evidence || {}).accession || 0
+            : k === 'ilx' ? (v.additional_evidence || {}).intlex_named || 0
+            : k === 't' ? (v.explained_total !== undefined ? v.explained_total : v.ours_enacted_until_2003.total)
+            : k === 'u' ? v.unexplained
             : k === 'all' ? v.all_time_total : v.undated), 0);
         const foot = `<tr><td>Total</td><td>${n(tot('ch'))}</td><td>${n(tot('a'))}</td>` +
-            `<td>${n(tot('r'))}</td><td>${n(tot('t'))}</td><td>${n(tot('u'))}</td>` +
+            `<td>${n(tot('r'))}</td><td>${n(tot('acc'))}</td><td>${n(tot('ilx'))}</td>` +
+            `<td>${n(tot('t'))}</td><td>${n(tot('u'))}</td>` +
             `<td>${n(tot('all'))}</td><td>${n(tot('un'))}</td><td></td></tr>`;
         document.getElementById('canton-table').innerHTML =
             `<table class="data-table"><thead>${head}</thead><tbody>${body}</tbody><tfoot>${foot}</tfoot></table>`;
@@ -341,9 +462,12 @@ ours, all published copies (any date):          ${n(Object.values(cmp.cantons).r
             const lines = [
                 '# Swiss Law Collection — verification vs chstat.ch 2003',
                 `# ${cmp.note}`,
-                'canton,chstat_2003,active_le2003,repealed_le2003,total_le2003,unexplained,all_time,undated,diagnosis',
+                'canton,chstat_2003,active_le2003,repealed_le2003,accession_evidence,intlex_named_evidence,explained,unexplained,all_time,undated,diagnosis',
                 ...rows.map(([c, v]) => [c, v.chstat_2003.total, v.ours_enacted_until_2003.active,
-                    v.ours_enacted_until_2003.repealed_listed, v.ours_enacted_until_2003.total,
+                    v.ours_enacted_until_2003.repealed_listed,
+                    (v.additional_evidence || {}).accession || 0,
+                    (v.additional_evidence || {}).intlex_named || 0,
+                    v.explained_total !== undefined ? v.explained_total : v.ours_enacted_until_2003.total,
                     v.unexplained, v.all_time_total, v.undated, v.diagnosis].join(',')),
             ];
             const a = document.createElement('a');
