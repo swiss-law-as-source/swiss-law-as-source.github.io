@@ -26,6 +26,9 @@
         .data-table tbody tr:nth-child(even) { background: #fafafa; }
         .data-table td.zero { color: #bbb; }
         .data-table tfoot td { font-weight: 700; background: #f5f5f5; }
+        /* second grand total on the other counting unit (see charts.js) */
+        .data-table tfoot tr.companion-total td { font-weight: 600; background: #fafafa;
+            color: #52514e; font-size: 0.8rem; }
         footer {
             flex: none; font-size: 0.72rem; color: #888; padding: 0.3rem 0.8rem;
             border-top: 1px solid #eee; display: flex; gap: 0.5rem;
@@ -189,15 +192,21 @@
         async function renderConcTable() {
             const ttype = P.get('ttype');
             const view = P.get('view') || 'grid';   // grid | chart | map
-            let conc;
+            let conc, concCopies = null;
             if (ttype) {
                 conc = await fetchJSON(`api/v1/stats/types/${encodeURIComponent(ttype)}_by_domain.json`);
             } else {
-                // computed signatory-counting table (falls back pre-deploy)
+                // computed signatory-counting table (falls back pre-deploy).
+                // The published-copies table comes along so an embedded
+                // concordat table states both units, like the dashboard does.
+                concCopies = await fetchJSON('api/v1/stats/concordats_by_domain.json')
+                    .catch(() => null);
                 conc = await fetchJSON('api/v1/stats/concordats_by_domain_signatories.json')
-                    .catch(() => fetchJSON('api/v1/stats/concordats_by_domain.json'));
+                    .catch(() => concCopies);
+                if (conc === concCopies) concCopies = null;
             }
             const tbl = SLCharts.concTable(conc, y1, y2);
+            const companion = SLCharts.copiesCompanion(concCopies, y1, y2);
             if (view === 'chart') {
                 initChart(SLCharts.concChartOption(conc, tbl));
             } else {
@@ -206,7 +215,7 @@
                 wrap.style.display = 'block';
                 wrap.innerHTML = view === 'map'
                     ? SLCharts.tileMapHTML(conc, tbl)
-                    : SLCharts.concTableHTML(conc, tbl, null);
+                    : SLCharts.concTableHTML(conc, tbl, null, companion);
             }
             setTitle(`${conc.title}${rangeText()}`);
         }

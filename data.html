@@ -33,6 +33,9 @@
         .data-table tbody tr:nth-child(even) { background: #fafafa; }
         .data-table td.zero { color: #bbb; }
         .data-table tfoot td { font-weight: 700; background: var(--gray); }
+        /* second grand total on the other counting unit (see charts.js) */
+        .data-table tfoot tr.companion-total td { font-weight: 600; background: #f4f4f2;
+            color: #52514e; font-size: 0.8rem; }
         .table-note { font-size: 0.8rem; color: #666; margin-top: 0.75rem; }
         .tab-bar { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap; align-items: center; }
         .tab-bar .tab-label { font-size: 0.82rem; color: #666; }
@@ -227,12 +230,23 @@
         let chartInstance = null;
         const typeCache = {};
 
+        // The same concordats on the other counting unit — published copies,
+        // the unit the dashboard's year chart uses. Shown next to the
+        // memberships total so the two are never read as contradicting.
+        let concCopies = null;
+        try {
+            concCopies = await fetchJSON('api/v1/stats/concordats_by_domain.json');
+        } catch (e) { concCopies = null; }
         try {
             conc = await fetchJSON('api/v1/stats/concordats_by_domain_signatories.json');
         } catch (e) {
-            conc = await fetchJSON('api/v1/stats/concordats_by_domain.json');
+            conc = concCopies;
         }
         const concDefault = conc;
+        // only the signatory view has a second unit to report
+        const companionFor = () => (!currentSlug && conc === concDefault
+            && conc !== concCopies)
+            ? SLCharts.copiesCompanion(concCopies, y1, y2) : null;
 
         // Data year = latest year key in the default table
         const years = Object.keys(conc.by_year || {}).filter(y => /^\d{4}$/.test(y)).sort();
@@ -273,9 +287,10 @@
             document.getElementById('table').hidden = view !== 'grid';
             document.getElementById('chart-view').hidden = view !== 'chart';
             document.getElementById('map-view').hidden = view !== 'map';
+            const companion = companionFor();
             if (view === 'grid') {
                 document.getElementById('table').innerHTML =
-                    SLCharts.concTableHTML(conc, tbl, null);
+                    SLCharts.concTableHTML(conc, tbl, null, companion);
             } else if (view === 'chart') {
                 if (!chartInstance) {
                     chartInstance = echarts.init(document.getElementById('chart-view'));
@@ -288,7 +303,11 @@
                     SLCharts.tileMapHTML(conc, tbl);
             }
             document.getElementById('table-note').textContent =
-                `${conc.title}. ` + (conc.methodology || '');
+                `${conc.title}. ` + (conc.methodology || '')
+                + (companion ? ` On the published-copies unit used by the dashboard's `
+                   + `year chart, the same selection is ${companion.value.toLocaleString()} `
+                   + `— the difference is signatory cantons that never published their own copy.`
+                   : '');
             // embed snippet follows the selection (type, years, view)
             const params = new URLSearchParams({ chart: 'concordats' });
             if (currentSlug) params.set('ttype', currentSlug);
@@ -314,10 +333,19 @@
 
         function downloadCurrentView() {
             const { keys, filtered, cantons, totals } = SLCharts.concTable(conc, y1, y2);
+            const companion = companionFor();
             const labels = conc.domains.map(d => d.label_en || d.label_fr);
             const lines = [
                 `# Swiss Law Collection — ${conc.title}`,
-                `# Filter: ${filtered ? `enacted ${y1 || 'beginning'} - ${y2 || 'now'}` : 'none'}`,
+                `# Filter: ${filtered ? `existed ${y1 || 'beginning'} - ${y2 || 'now'}` : 'none'}`,
+                `# counting_basis: ${conc.counting_unit || (companion ? 'signatory_memberships' : 'published_copies')}`,
+                `# year_semantics: ${companion ? 'earliest known evidence per agreement'
+                                              : 'earliest known evidence per act (original enactment)'}`,
+                ...(companion ? [
+                    `# published_copies_total: ${companion.value}`,
+                    '# published_copies is the unit shown by the site\'s year chart;',
+                    '# the table below counts signatory memberships (a different unit).',
+                ] : []),
                 `# Source: ${conc.source}`,
                 ['Canton', ...labels, 'Total'].join(','),
                 ...Object.entries(cantons).map(([c, row]) =>

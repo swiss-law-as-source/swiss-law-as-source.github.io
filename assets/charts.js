@@ -188,7 +188,12 @@ window.SLCharts = (function () {
         return { keys, filtered, cantons, totals, undated };
     }
 
-    function concTableHTML(conc, { keys, cantons, totals }, highlightCanton) {
+    // `companion` (optional) is a second grand total on a DIFFERENT counting
+    // unit — {label, value} — rendered as an extra footer row. The concordat
+    // table counts signatory memberships while the year chart above it counts
+    // published copies; showing one number without the other is what made the
+    // two look contradictory.
+    function concTableHTML(conc, { keys, cantons, totals }, highlightCanton, companion) {
         const cell = v => `<td${v === 0 ? ' class="zero"' : ''}>${v.toLocaleString()}</td>`;
         const head = '<tr><th>Canton</th>' +
             conc.domains.map(d => `<th>${d.label_en || d.label_fr}</th>`).join('') + '<th>Total</th></tr>';
@@ -197,10 +202,28 @@ window.SLCharts = (function () {
                 ? ' style="background:#fdeceb;font-weight:600"' : '';
             return `<tr${hl}><td>${canton}</td>${keys.map(k => cell(row[k])).join('')}${cell(row.total)}</tr>`;
         }).join('');
-        const foot = '<tr><td>Total</td>' +
+        let foot = `<tr><td>${companion ? 'Total (memberships)' : 'Total'}</td>` +
             keys.map(k => `<td>${totals[k].toLocaleString()}</td>`).join('') +
             `<td>${totals.total.toLocaleString()}</td></tr>`;
+        if (companion) {
+            foot += `<tr class="companion-total"><td>${companion.label}</td>` +
+                `<td colspan="${keys.length}" style="text-align:left;font-weight:400">` +
+                `${companion.note || ''}</td>` +
+                `<td>${companion.value.toLocaleString()}</td></tr>`;
+        }
         return `<table class="data-table"><thead>${head}</thead><tbody>${body}</tbody><tfoot>${foot}</tfoot></table>`;
+    }
+
+    // The second unit for a concordat view: published copies, filtered on the
+    // same years, from concordats_by_domain.json. Returns null when that file
+    // isn't loaded or the view isn't a signatory view.
+    function copiesCompanion(concCopies, y1, y2) {
+        if (!concCopies) return null;
+        return {
+            label: 'Total (published copies)',
+            note: 'the unit counted by the year chart above — one per canton publishing the act',
+            value: concTable(concCopies, y1, y2).totals.total,
+        };
     }
 
     // ─── chstat-style views for the canton × domain tables ─────────────────
@@ -259,6 +282,6 @@ window.SLCharts = (function () {
         nodeName, harmTreeToNodes, domainTooltip,
         cantonTreemapOption, typesDonutOption, yearsStackOption,
         domainsTreemapOption, domainsSunburstOption,
-        concTable, concTableHTML, concChartOption, tileMapHTML,
+        concTable, concTableHTML, copiesCompanion, concChartOption, tileMapHTML,
     };
 })();

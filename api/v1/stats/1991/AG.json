@@ -2,8 +2,8 @@
   "year": "1991",
   "year_semantics": "enactment",
   "entity": "AG",
-  "total": 13,
-  "categorized": 13,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -40,13 +40,15 @@
       }
     },
     "Interkantonale Vereinbarung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "391 Tierseuchenbekämpfung – Spezielles": 1,
+        "535 Grenzwachkorps": 1,
         "995 Öffentlicher Verkehr": 1
       },
       "by_global_category": {
         "9.20.120 Tierseuchen": 1,
+        "5.40.10 Grenzwacht": 1,
         "7.50.10.10 Regionalverkehr": 1
       }
     }
@@ -202,12 +204,33 @@
     {
       "identifier": "5",
       "title": "Gesamtverteidigung – Polizei – Feuerwehr",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "53",
+          "title": "Polizei",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "535",
+              "title": "Grenzwachkorps",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "58",
           "title": "Feuerwehr – Brandschutz",
@@ -473,10 +496,11 @@
     {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
         {
@@ -516,6 +540,26 @@
                   }
                 }
               ]
+            }
+          ]
+        },
+        {
+          "identifier": "5.40",
+          "title": "Zölle",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "5.40.10",
+              "title": "Grenzwacht",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
             }
           ]
         }
@@ -617,9 +661,10 @@
     }
   ],
   "languages_available": {
-    "de": 13
+    "de": 14
   },
   "available_years_for_entity": [
+    "1632",
     "1803",
     "1828",
     "1832",

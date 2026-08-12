@@ -344,6 +344,7 @@
     "autres": 310,
     "total": 2837
   },
+  "counting_unit": "published_copies",
   "year_semantics": "enactment",
   "by_year": {
     "1564": {
@@ -5436,6 +5437,6 @@
   "notes": [
     "\"Other\" column includes civil law, criminal law and laws without a legal domain in LexFind's public database",
     "Coverage follows the imported collections — run backfill-lexfind to complete under-represented cantons",
-    "Counting unit: canton memberships, not distinct treaties — each agreement counts once per signatory canton whose collection publishes it, matching the chstat.ch methodology"
+    "Counting unit: published copies — one count per canton whose collection publishes the act, the same unit as the dashboard's year chart. For the chstat.ch-comparable count, which also credits signatory cantons that never published a copy, see api/v1/stats/concordats_by_domain_signatories.json"
   ]
 }

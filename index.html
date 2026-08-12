@@ -52,6 +52,10 @@
         .data-table tbody tr:nth-child(even) { background: #fafafa; }
         .data-table td.zero { color: #bbb; }
         .data-table tfoot td { font-weight: 700; background: var(--gray); }
+        /* second grand total on the other counting unit — set apart so it
+           reads as a different measure, not as a contradicting total */
+        .data-table tfoot tr.companion-total td { font-weight: 600; background: #f4f4f2;
+            color: var(--ink-2, #52514e); font-size: 0.8rem; }
         .table-note { font-size: 0.8rem; color: #666; margin-top: 0.75rem; }
         .tab-bar { display: flex; gap: 0.5rem; margin-bottom: 0.75rem; flex-wrap: wrap; align-items: center; }
         .tab-bar .tab-label { font-size: 0.82rem; color: #666; margin-right: 0.25rem; }
@@ -188,7 +192,10 @@
                agreements):</b> totals count <b>canton memberships</b>, not distinct treaties —
                each agreement counts once per signatory canton whose collection publishes it
                (a 26-canton concordat counts 26), matching the chstat.ch methodology.
-               Derived from LexFind. For distinct agreements with their signing cantons use
+               Derived from LexFind. <b>This is a different counting unit from the year chart
+               above</b>, which counts <b>published copies</b> — a canton that signed but never
+               published its own copy counts here and not there; both totals are shown in the
+               table footer. For distinct agreements with their signing cantons use
                “Agreements CSV (signing cantons)”.</p>
             <p class="table-note" id="concordats-notes"></p>
         </div>
@@ -582,6 +589,10 @@
         // Other instrument types load from api/v1/stats/types/ when selected.
         let currentTypeSlug = 'interkantonale_vereinbarung';
         let concSig = null;   // computed signatory table — the concordat statistic
+        let concCopies = null;  // same concordats counted as published copies —
+                                // the unit the year chart above uses, shown
+                                // alongside the memberships total so the two
+                                // figures never look contradictory
         const typeCache = {};
         const isConcordatType = () => currentTypeSlug === 'interkantonale_vereinbarung';
         const inSigMode = () => isConcordatType() && !!concSig && conc === concSig;
@@ -621,12 +632,18 @@
         }
 
         try {
+            // Published-copies table: the fallback when the signatory table is
+            // missing, and otherwise the second unit shown under the totals.
+            try {
+                concCopies = await (await fetch('api/v1/stats/concordats_by_domain.json', { cache: 'no-cache' })).json();
+            } catch (e) { concCopies = null; }
             try {
                 concSig = await (await fetch('api/v1/stats/concordats_by_domain_signatories.json', { cache: 'no-cache' })).json();
                 conc = concSig;
             } catch (e) {
                 // pre-regeneration deploy: fall back to the legacy table
-                conc = await (await fetch('api/v1/stats/concordats_by_domain.json', { cache: 'no-cache' })).json();
+                conc = concCopies;
+                if (!conc) throw e;
             }
             setConcNotes();
             renderConcordats();
@@ -660,32 +677,51 @@
             return SLCharts.concTable(conc, state.y1, state.y2);
         }
 
+        // In signatory mode the table is on a different counting unit from the
+        // year chart above it, so it always reports the published-copies total
+        // too — filtered on the same years. Null in every other mode, where
+        // table and chart already share a unit.
+        function copiesCompanion() {
+            return inSigMode()
+                ? SLCharts.copiesCompanion(concCopies, state.y1, state.y2) : null;
+        }
+
         function renderConcordats() {
             if (!conc) return;
             const tbl = computeConcTable();
             const { filtered, totals, undated } = tbl;
+            const companion = copiesCompanion();
             document.getElementById('concordats-table').innerHTML =
-                SLCharts.concTableHTML(conc, tbl, state.canton);
+                SLCharts.concTableHTML(conc, tbl, state.canton, companion);
 
             const unit = isConcordatType() ? 'concordats' : 'acts';
             const grandTotal = (conc.totals || {}).total || 0;
+            // Appended wherever a total is stated in signatory mode: the chart
+            // above shows the copies figure, and an unexplained second number
+            // reads as a bug rather than as a second unit.
+            const alsoCopies = companion
+                ? ` The year chart above counts <b>published copies</b> — on that unit the same `
+                  + `selection is <b>${companion.value.toLocaleString()}</b>; the difference is `
+                  + `signatory cantons that never published their own copy.`
+                : '';
             let msg;
             if ((state.y1 || state.y2) && !conc.by_year) {
                 msg = 'Date filtering needs the latest data — please hard-reload the page (Ctrl/Cmd+Shift+R).';
             } else if (filtered) {
                 const later = grandTotal - totals.total - undated;
                 msg = `Filtered: existed ${state.y1 || 'beginning'} – ${state.y2 || 'now'}: `
-                    + `${totals.total.toLocaleString()} ${unit} (year = earliest known evidence: own enactment `
+                    + `${totals.total.toLocaleString()} ${unit}`
+                    + `${inSigMode() ? ' (canton memberships)' : ''} (year = earliest known evidence: own enactment `
                     + `date, own version history${isConcordatType() ? ", or sibling-canton authoritative evidence when the canton's "
                     + 'own date is unverified' : ''}). ${later.toLocaleString()} dated outside `
-                    + `the range and ${undated} undated are not shown.`
+                    + `the range and ${undated} undated are not shown.` + alsoCopies
                     + (isConcordatType() ? ' Verification vs chstat 2003: '
                     + '<a href="verification.html">full verification report</a>.' : '');
             } else if (inSigMode()) {
                 msg = 'Computed concordat memberships: one occurrence per signing canton '
                     + 'per agreement. The From/To year filter applies (years = earliest '
                     + 'known evidence per agreement)'
-                    + (state.canton ? ` — ${state.canton} highlighted.` : '.');
+                    + (state.canton ? ` — ${state.canton} highlighted.` : '.') + alsoCopies;
             } else {
                 msg = `Showing all ${unit} (currently in force). The From/To year filter above also applies `
                     + 'here (years = original enactment date)'
@@ -697,10 +733,23 @@
         document.getElementById('concordats-csv').addEventListener('click', () => {
             if (!conc) return;
             const { keys, filtered, cantons, totals } = computeConcTable();
+            const companion = copiesCompanion();
             const labels = conc.domains.map(d => d.label_en || d.label_fr);
+            // The unit and the year rule travel with the file: a bare total
+            // here is what made the export look inconsistent with the chart.
+            const yearRule = inSigMode()
+                ? 'earliest known evidence per agreement'
+                : 'earliest known evidence per act (original enactment)';
             const lines = [
                 `# Swiss Law Collection — ${conc.title}`,
-                `# Filter: ${filtered ? `enacted ${state.y1 || 'beginning'} - ${state.y2 || 'now'} (year = original enactment date)` : 'none (all in force)'}`,
+                `# Filter: ${filtered ? `existed ${state.y1 || 'beginning'} - ${state.y2 || 'now'}` : 'none (all in force)'}`,
+                `# counting_basis: ${conc.counting_unit || (inSigMode() ? 'signatory_memberships' : 'published_copies')}`,
+                `# year_semantics: ${yearRule}`,
+                ...(companion ? [
+                    `# published_copies_total: ${companion.value}`,
+                    '# published_copies is the unit shown by the site\'s year chart;',
+                    '# the table below counts signatory memberships (a different unit).',
+                ] : []),
                 `# Source: ${conc.source}`,
                 ['Canton', ...labels, 'Total'].join(','),
                 ...Object.entries(cantons).map(([c, row]) =>

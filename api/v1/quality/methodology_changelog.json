@@ -95,6 +95,15 @@
       "unexplained": null,
       "undated": 0,
       "change_reason": "One exact figure, no bounds. Two rules that the G1 size-distribution endpoint already applied were extended to the headline signatory table, which had been publishing a different number from the same corpus: (1) a concordat is a distinct agreement with at least TWO established parties — 798 title-groups evidence a single canton and are unresolved memberships (accession decrees, cantonal implementing acts), not one-canton concordats; (2) chstat/BADAC is a 2003 STOCK snapshot, so a canton's copy carrying a dated repeal on or before 2003 does not count (15 agreements, -17 memberships; immaterial, because acts repealed since 2003 were delisted from cantonal collections outright and are absent from the corpus rather than over-counted in it). Result: 644 concordats up to 2003 carrying 2,581 canton memberships, against IDHEAP/BADAC graph G1's 733 concordats / 2,564 memberships — memberships reproduced to 0.7%. The previous 1,855 (and the 3,143 upper bound) came from counting single-party groups as concordats. api/v1/stats/concordats_by_domain_signatories.json and concordats_size_distribution.json now agree by construction."
+    },
+    {
+      "version": 11,
+      "date": "2026-08-12",
+      "date_basis": "unchanged; the frozen concordat year rule now also drives stats.json's year cube",
+      "existed_by_2003": 2581,
+      "unexplained": null,
+      "undated": 0,
+      "change_reason": "The dashboard reported two different totals for the same selected year. The year chart is drawn from stats.json's year x canton x type cube, which filed every law under plain enactment_year(); the concordat and per-type tables under it use the provenance-ranked earliest_known_year(), which also accepts a sibling canton's authoritative date for the same act. Both series covered the identical 2,837 published concordat copies but distributed them differently across 55 years (2001: 75 vs 76, 2002: 91 vs 90). One rule, canonical_year_fn(), is now built once over the deduplicated cantonal set and used by generate_stats(), generate_concordats_by_domain() and generate_types_by_domain(), so the cube and api/v1/stats/types/*_by_domain.json agree by construction — verified at 0 mismatching years for all nine instrument types. The canonical date basis itself is UNCHANGED: the cube moved onto the frozen rule, not the other way round, so every published concordat figure (644 concordats / 2,581 memberships up to 2003) is unaffected. Separately, the counting unit is now declared in the data (counting_unit) and surfaced in the UI: the concordat table counts signatory memberships while the chart counts published copies, and both totals are shown together instead of one of them appearing to contradict the other."
     }
   ]
 }

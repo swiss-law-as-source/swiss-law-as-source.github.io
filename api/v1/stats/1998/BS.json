@@ -2,10 +2,31 @@
   "year": "1998",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 24,
-  "categorized": 24,
+  "total": 25,
+  "categorized": 25,
   "uncategorized": 0,
   "by_type": {
+    "Interkantonale Vereinbarung": {
+      "total": 10,
+      "by_topic": {
+        "419 Schulgeld · Schulabkommen · Anerkennungsabkommen": 3,
+        "331 Öffentliche Spitäler": 1,
+        "427 Ausbildung in einzelnen Berufen": 1,
+        "442 Hochschulförderung · Finanzmittel · Gebühren": 1,
+        "494 Förderung von Wissenschaft, Kunst und Kultur": 1,
+        "786 Abfallbeseitigung": 1,
+        "910 Wirtschaft": 1,
+        "953 Öffentliche Verkehrsbetriebe": 1
+      },
+      "by_global_category": {
+        "4.90.30 Ausbildung": 2,
+        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
+        "4.140 Anerkennung von Diplomen": 1,
+        "1.10.40 Interkantonale Zusammenarbeit": 1,
+        "7.60.10 Abfälle": 1,
+        "9.60.50 Binnenmarkt, Handelshemmnisse": 1
+      }
+    },
     "Verordnung": {
       "total": 9,
       "by_topic": {
@@ -28,25 +49,6 @@
         "6.20.50 Stempelabgabe": 1,
         "7.70.10 Landschaftsschutz": 1,
         "1.20.20.60 Verwaltungsgebühren": 1
-      }
-    },
-    "Interkantonale Vereinbarung": {
-      "total": 9,
-      "by_topic": {
-        "419 Schulgeld · Schulabkommen · Anerkennungsabkommen": 3,
-        "331 Öffentliche Spitäler": 1,
-        "427 Ausbildung in einzelnen Berufen": 1,
-        "494 Förderung von Wissenschaft, Kunst und Kultur": 1,
-        "786 Abfallbeseitigung": 1,
-        "910 Wirtschaft": 1,
-        "953 Öffentliche Verkehrsbetriebe": 1
-      },
-      "by_global_category": {
-        "4.90.30 Ausbildung": 2,
-        "4.60 Tertiärstufe: Höhere Fachschulen": 1,
-        "4.140 Anerkennung von Diplomen": 1,
-        "7.60.10 Abfälle": 1,
-        "9.60.50 Binnenmarkt, Handelshemmnisse": 1
       }
     },
     "Anderes": {
@@ -183,10 +185,10 @@
     {
       "identifier": "4",
       "title": "Erziehung Wissenschafts- und Kulturpflege",
-      "total": 10,
+      "total": 11,
       "own": 0,
       "by_type": {
-        "Interkantonale Vereinbarung": 5,
+        "Interkantonale Vereinbarung": 6,
         "Anderes": 3,
         "Verordnung": 2
       },
@@ -253,10 +255,11 @@
         {
           "identifier": "44",
           "title": "Universität und Universitätsgut · Wissenschaftliche Institute",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 3
+            "Anderes": 3,
+            "Interkantonale Vereinbarung": 1
           },
           "children": [
             {
@@ -266,6 +269,15 @@
               "own": 1,
               "by_type": {
                 "Anderes": 1
+              }
+            },
+            {
+              "identifier": "442",
+              "title": "Hochschulförderung · Finanzmittel · Gebühren",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
               }
             },
             {
@@ -511,12 +523,33 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Interkantonale Vereinbarung": 1
       },
       "children": [
+        {
+          "identifier": "1.10",
+          "title": "Grundlagen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Interkantonale Vereinbarung": 1
+          },
+          "children": [
+            {
+              "identifier": "1.10.40",
+              "title": "Interkantonale Zusammenarbeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Interkantonale Vereinbarung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "1.20",
           "title": "Behörden",
@@ -888,7 +921,7 @@
     }
   ],
   "languages_available": {
-    "de": 24
+    "de": 25
   },
   "available_years_for_entity": [
     "1756",
