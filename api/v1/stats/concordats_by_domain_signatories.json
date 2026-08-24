@@ -2,17 +2,17 @@
   "title": "Intercantonal agreements (concordats) by domain — signatory-canton counting",
   "source": "LexFind (Institute of Federalism, University of Fribourg)",
   "methodology": "chstat/BADAC 2003: each concordat counts once per party canton (a concordat with 10 parties counts 10). A concordat is a distinct agreement with at least 2 established parties. Party set = cantons whose collections publish a copy not repealed by 2003 ∪ cantons named in any language version's title ∪ cantons enumerated as contracting parties in the recitals.",
-  "total_concordats": 3368,
-  "total_memberships": 3368,
-  "total_agreements": 857,
-  "concordats_until_2003": 646,
-  "memberships_until_2003": 2585,
+  "total_concordats": 3369,
+  "total_memberships": 3369,
+  "total_agreements": 858,
+  "concordats_until_2003": 647,
+  "memberships_until_2003": 2586,
   "memberships_until_2003_by_evidence": {
-    "published_in_own_collection": 989,
-    "named_in_title_only": 302,
-    "named_as_party_in_preamble_only": 1294
+    "published_in_own_collection": 990,
+    "named_in_title_only": 303,
+    "named_as_party_in_preamble_only": 1293
   },
-  "memberships_until_2003_chstat_domains": 2358,
+  "memberships_until_2003_chstat_domains": 2359,
   "unresolved_single_party_groups": 799,
   "min_parties": 2,
   "chstat_2003_reference": 2522,
@@ -257,9 +257,9 @@
       "educ": 38,
       "infra": 17,
       "eco": 5,
-      "fin": 20,
+      "fin": 21,
       "autres": 9,
-      "total": 137
+      "total": 138
     },
     "SZ": {
       "etat": 23,
@@ -348,9 +348,9 @@
     "educ": 804,
     "infra": 567,
     "eco": 224,
-    "fin": 397,
+    "fin": 398,
     "autres": 311,
-    "total": 3368
+    "total": 3369
   },
   "counting_unit": "signatory_memberships",
   "published_copies_reference": "api/v1/stats/concordats_by_domain.json",
@@ -2555,10 +2555,14 @@
         "fin": 1
       },
       "AG": {
-        "infra": 1
+        "infra": 1,
+        "fin": 1
       },
       "NE": {
         "fin": 2
+      },
+      "SO": {
+        "fin": 1
       }
     },
     "1974": {
@@ -2672,8 +2676,7 @@
     "1976": {
       "AG": {
         "educ": 1,
-        "infra": 2,
-        "fin": 1
+        "infra": 2
       },
       "SZ": {
         "educ": 2
@@ -2698,7 +2701,7 @@
       },
       "BL": {
         "infra": 2,
-        "fin": 2
+        "fin": 1
       },
       "BS": {
         "infra": 2,
@@ -2726,8 +2729,7 @@
         "etat": 1
       },
       "SO": {
-        "infra": 2,
-        "fin": 1
+        "infra": 2
       },
       "VS": {
         "infra": 1,
@@ -3185,7 +3187,8 @@
         "infra": 1
       },
       "BL": {
-        "etat": 2
+        "etat": 2,
+        "fin": 1
       },
       "BS": {
         "etat": 2
@@ -3202,6 +3205,9 @@
       },
       "UR": {
         "sante": 1
+      },
+      "SO": {
+        "fin": 1
       }
     },
     "1984": {
@@ -5934,10 +5940,10 @@
     }
   },
   "notes": [
-    "THE computed concordats statistic: 646 concordats up to 2003 carrying 2,585 canton memberships. Each concordat counts once per party canton (a concordat with 10 parties → 10 memberships), purely from the source data — no scaling, no external baseline",
+    "THE computed concordats statistic: 647 concordats up to 2003 carrying 2,586 canton memberships. Each concordat counts once per party canton (a concordat with 10 parties → 10 memberships), purely from the source data — no scaling, no external baseline",
     "A concordat is a distinct agreement with at least 2 established parties, first enacted ≤2003 and not carrying a dated repeal on or before 2003 (chstat is a 2003 stock snapshot). A canton is a party if its own collection publishes the text, or the act names it in any language version's title, or the recitals enumerate it as a contracting party; LexFind/LexWork publish no official member lists, so these three are the available evidence",
     "799 title-groups evidence only ONE canton and are excluded: a concordat is by definition an agreement between cantons, so a single-canton group is an unresolved membership (an accession decree, a cantonal implementing act) rather than a one-canton concordat. Same rule as the G1 size distribution",
-    "External reference: chstat.ch's 2003 table sums to 2,522 memberships and IDHEAP/BADAC graph G1 states 2,564 memberships across 733 concordats. Our 2,585 memberships reproduce G1's total to within 0.8%; our 646 concordats fall short of G1's 733 because agreements whose parties are unrecoverable from today's collections ('die unterzeichnenden Kantone', no member list anywhere) stay in the 799 single-party residue",
+    "External reference: chstat.ch's 2003 table sums to 2,522 memberships and IDHEAP/BADAC graph G1 states 2,564 memberships across 733 concordats. Our 2,586 memberships reproduce G1's total to within 0.9%; our 647 concordats fall short of G1's 733 because agreements whose parties are unrecoverable from today's collections ('die unterzeichnenden Kantone', no member list anywhere) stay in the 799 single-party residue",
     "227 of the memberships fall in 'autres', a domain chstat's six-column table has no counterpart for; the per-canton evidence split is in memberships_until_2003_by_evidence",
     "Distinct agreements with their signatory sets: /api/v1/stats/concordats_signatories.json"
   ]
