@@ -1,0 +1,53 @@
+/* Shared site chrome — header, primary navigation.
+ *
+ * Every page with a navbar links this file, so the header and the nav look and
+ * behave identically everywhere.  Page-local <style> blocks must NOT redefine
+ * `header`, `header h1/p` or `nav` rules — that is exactly how the navbar
+ * drifted apart between pages before.
+ *
+ * The <nav> markup itself is generated: run `scripts/sync_site_nav.py` in the
+ * swiss-law repo (`--check` in CI/health check) to rewrite it from the single
+ * canonical link list.
+ */
+
+header {
+    background: var(--red, #D52B1E);
+    color: #fff;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+header h1 { font-size: 1.8rem; margin: 0 0 0.3rem; line-height: 1.25; }
+header p  { opacity: 0.9; font-size: 1rem; margin: 0; }
+header a  { color: #fff; }
+
+nav {
+    background: var(--dark, #1a1a1a);
+    padding: 0.5rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.15rem 1.5rem;
+}
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0.15rem 0;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+}
+nav a:hover { color: #fff; }
+nav a[aria-current="page"] {
+    color: #fff;
+    font-weight: 600;
+    border-bottom-color: var(--red, #D52B1E);
+}
+
+@media (max-width: 640px) {
+    header { padding: 1.5rem 1rem; }
+    header h1 { font-size: 1.4rem; }
+    header p { font-size: 0.9rem; }
+    nav { gap: 0.15rem 1rem; padding: 0.5rem 0.75rem; }
+    nav a { font-size: 0.82rem; }
+}

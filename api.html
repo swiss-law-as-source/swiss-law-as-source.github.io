@@ -8,21 +8,23 @@
     <style>
         :root { --red: #D52B1E; --dark: #1a1a1a; }
         body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-        header { background: var(--red); color: white; padding: 1.2rem 2rem; text-align: center; }
-        header h1 { font-size: 1.4rem; margin: 0; }
-        nav { background: var(--dark); padding: 0.5rem 2rem; text-align: center; }
-        nav a { color: #ccc; text-decoration: none; margin: 0 1rem; font-size: 0.9rem; }
-        nav a:hover { color: white; }
         .swagger-ui .topbar { display: none; }
     </style>
     <script src="assets/banner.js" defer></script>
+    <link rel="stylesheet" href="assets/site-chrome.css">
 </head>
 <body>
     <header><h1>API</h1></header>
     <nav>
         <a href="index.html">Dashboard</a>
         <a href="laws.html">Laws</a>
-        <a href="api.html"><strong>API</strong></a>
+        <a href="data.html">Data</a>
+        <a href="crossrefs.html">Federal cross-refs</a>
+        <a href="cross_level_refs.html">Federal ↔ cantonal</a>
+        <a href="diff.html">Diff viewer</a>
+        <a href="verification.html">Verification</a>
+        <a href="undated.html">Undated laws</a>
+        <a href="api.html" aria-current="page">API</a>
     </nav>
     <div id="swagger-ui"></div>
     <script src="assets/swagger-ui-bundle.js"></script>

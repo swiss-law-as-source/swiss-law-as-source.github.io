@@ -18,12 +18,6 @@
             line-height: 1.6;
             background: #fff;
         }
-        header { background: var(--red); color: white; padding: 2rem; text-align: center; }
-        header h1 { font-size: 1.8rem; margin-bottom: 0.3rem; }
-        header p { opacity: 0.9; font-size: 1rem; }
-        nav { background: var(--dark); padding: 0.5rem 2rem; text-align: center; }
-        nav a { color: #ccc; text-decoration: none; margin: 0 1rem; font-size: 0.9rem; }
-        nav a:hover { color: white; }
         main { max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; }
         .kpi-grid {
             display: grid;
@@ -70,6 +64,7 @@
         footer a { color: var(--red); text-decoration: none; }
     </style>
     <script src="assets/banner.js" defer></script>
+    <link rel="stylesheet" href="assets/site-chrome.css">
 </head>
 <body>
     <header>
@@ -78,9 +73,13 @@
     </header>
     <nav>
         <a href="index.html">Dashboard</a>
-        <a href="laws.html"><strong>Laws</strong></a>
+        <a href="laws.html" aria-current="page">Laws</a>
         <a href="data.html">Data</a>
+        <a href="crossrefs.html">Federal cross-refs</a>
+        <a href="cross_level_refs.html">Federal ↔ cantonal</a>
+        <a href="diff.html">Diff viewer</a>
         <a href="verification.html">Verification</a>
+        <a href="undated.html">Undated laws</a>
         <a href="api.html">API</a>
     </nav>
     <main>

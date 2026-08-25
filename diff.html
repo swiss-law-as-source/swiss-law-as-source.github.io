@@ -22,15 +22,6 @@
             line-height: 1.6;
             background: #fff;
         }
-        header {
-            background: var(--red);
-            color: #fff;
-            padding: 1.5rem 1rem;
-            text-align: center;
-        }
-        header h1 { font-size: 1.5rem; margin-bottom: 0.2rem; }
-        header p { opacity: 0.9; font-size: 0.9rem; }
-        header a { color: #fff; }
         .container { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1rem; }
         .search-section {
             display: flex;
@@ -191,13 +182,24 @@
         .stats-summary strong { color: var(--red); }
     </style>
     <script src="assets/banner.js" defer></script>
+    <link rel="stylesheet" href="assets/site-chrome.css">
 </head>
 <body>
     <header>
         <h1>Law Diff Viewer</h1>
         <p>Compare versions of Swiss federal laws — see what changed between consolidation dates</p>
-        <p style="margin-top:0.3rem;font-size:0.8rem;"><a href="index.html">Back to Search</a></p>
     </header>
+    <nav>
+        <a href="index.html">Dashboard</a>
+        <a href="laws.html">Laws</a>
+        <a href="data.html">Data</a>
+        <a href="crossrefs.html">Federal cross-refs</a>
+        <a href="cross_level_refs.html">Federal ↔ cantonal</a>
+        <a href="diff.html" aria-current="page">Diff viewer</a>
+        <a href="verification.html">Verification</a>
+        <a href="undated.html">Undated laws</a>
+        <a href="api.html">API</a>
+    </nav>
     <div class="container">
         <div class="search-section">
             <input type="text" id="sr-input" placeholder="Enter SR number (e.g. 210, 220, 101)..." autocomplete="off">
