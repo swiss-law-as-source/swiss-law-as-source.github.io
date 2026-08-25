@@ -119,6 +119,19 @@
                 <span class="tab-label">to</span>
                 <select id="year-to"><option value="" selected>Now</option></select>
                 <button id="view-csv">Télécharger cette vue (CSV)</button>
+                <button id="granular-csv" title="Same selection, but one row per
+                    canton, year and topic at the full depth of LexFind's
+                    systematics instead of the 7 domain columns">Export per granular topics</button>
+                <select id="granular-format" title="CSV carries the label path; JSON carries the dotted codes plus the topic tree">
+                    <option value="csv">CSV</option>
+                    <option value="json">JSON</option>
+                </select>
+                <select id="granular-lang" title="Language of the CSV label path (the JSON ships all four)">
+                    <option value="fr">FR</option>
+                    <option value="de">DE</option>
+                    <option value="it">IT</option>
+                    <option value="en">EN</option>
+                </select>
             </div>
             <div class="tab-bar" id="view-bar">
                 <span class="tab-label">Vue :</span>
@@ -151,6 +164,11 @@
                 <li><a href="#" id="dl-current">Current view</a>
                     <span class="desc">— the table above with its filters, columns =
                     legal domains (same as the button in the table section)</span></li>
+                <li><a href="#" id="dl-granular">Current view, granular topics</a>
+                    <span class="desc">— the same selection with one row per canton,
+                    year and topic at the full depth of LexFind's systematics
+                    (same as “Export per granular topics” above); the format and
+                    language selects there apply</span></li>
                 <li id="dl-categories-li"><span class="desc">One category, all cantons ×
                     all years:</span><span id="dl-categories"></span></li>
                 <li><a href="api/v1/csv/laws_cube.csv" download>laws_cube.csv</a>
@@ -160,6 +178,11 @@
                     concordats_memberships.csv</a>
                     <span class="desc">— concordat memberships, computed signatory
                     counting (1 per signing canton per agreement)</span></li>
+                <li><a href="api/v1/csv/concordats_memberships_canton_year_topic.csv"
+                    download>concordats_memberships_canton_year_topic.csv</a>
+                    <span class="desc">— the same memberships as above, one row per
+                    canton × year × topic at the full depth of LexFind's systematics
+                    (<code>canton,year,topic,number</code>)</span></li>
                 <li><a href="api/v1/csv/undated_laws.csv" download>undated_laws.csv</a>
                     <span class="desc">— correction template: fill
                     <code>corrected_enactment_date</code> + <code>correction_note</code>
@@ -184,6 +207,8 @@
                 <a href="api/v1/stats/concordats_signatories.json">distinct agreements with signing cantons</a> ·
                 <a href="api/v1/stats/concordats_size_distribution.json">cantons per concordat (BADAC G1)</a> ·
                 <a href="api/v1/stats/types/index.json">per-type tables</a> ·
+                <a href="api/v1/stats/granular/index.json">granular topic cubes</a> ·
+                <a href="api/v1/categories/global_paths.json">topic codes &amp; label paths</a> ·
                 <a href="api.html">full API documentation</a></p>
         </section>
 
@@ -360,6 +385,138 @@
             URL.revokeObjectURL(a.href);
         }
         document.getElementById('view-csv').addEventListener('click', downloadCurrentView);
+
+        // ── Granular topic export ───────────────────────────────────────────
+        // Same counts as the table above, keyed on the full dotted
+        // global-systematics code instead of its first segment. The cubes live
+        // in their own files (api/v1/stats/granular/) and are fetched on click,
+        // never on page load.
+        let granularIndex = null, topicPaths = null;
+        const granularCache = {};
+        const UNCLASSIFIED = {
+            code: 'uncategorized', depth: 0, parent: null,
+            title: { de: 'Nicht klassiert', fr: 'Non classé',
+                     it: 'Non classificato', en: 'Unclassified' },
+        };
+        UNCLASSIFIED.path = UNCLASSIFIED.title;
+
+        async function granularCube() {
+            if (!granularIndex)
+                granularIndex = await fetchJSON('api/v1/stats/granular/index.json');
+            const file = (granularIndex.by_slug || {})[currentSlug];
+            if (!file) throw new Error('no granular cube published for this selection');
+            if (!granularCache[file])
+                granularCache[file] = await fetchJSON('api/v1/stats/granular/' + file);
+            if (!topicPaths)
+                topicPaths = await fetchJSON('api/v1/categories/global_paths.json');
+            return granularCache[file];
+        }
+
+        // The predicate SLCharts.concTable filters with, so the export's
+        // numbers sum to the table's total for any selection.
+        const inRange = y => y !== 'unknown' && !(y1 && y < y1) && !(y2 && y > y2);
+
+        function granularRows(cube) {
+            const rows = [];
+            for (const [y, perCanton] of Object.entries(cube.by_year || {})) {
+                if (!inRange(y)) continue;
+                for (const [c, codes] of Object.entries(perCanton))
+                    for (const [code, n] of Object.entries(codes))
+                        if (n) rows.push([c, y, code, n]);
+            }
+            rows.sort((a, b) => a[0].localeCompare(b[0]) || a[1].localeCompare(b[1])
+                                || a[2].localeCompare(b[2], undefined, { numeric: true }));
+            return rows;
+        }
+
+        const topicEntry = code => (topicPaths.codes || {})[code]
+            || (code === 'uncategorized' ? UNCLASSIFIED : null);
+        const topicLabel = (code, lang) => {
+            const e = topicEntry(code);
+            return e ? (e.path[lang] || e.path.de || code) : code;
+        };
+        const qcsv = v => /[",\n]/.test(String(v))
+            ? '"' + String(v).replace(/"/g, '""') + '"' : String(v);
+
+        function saveBlob(text, type, filename) {
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(new Blob([text], { type }));
+            a.download = filename;
+            a.click();
+            URL.revokeObjectURL(a.href);
+        }
+
+        async function downloadGranular() {
+            const btn = document.getElementById('granular-csv');
+            const was = btn.textContent;
+            btn.disabled = true;
+            btn.textContent = 'Preparing…';
+            try {
+                const cube = await granularCube();
+                const rows = granularRows(cube);
+                const fmt = document.getElementById('granular-format').value;
+                const lang = document.getElementById('granular-lang').value;
+                const filter = (y1 || y2)
+                    ? `existed ${y1 || 'beginning'} - ${y2 || 'now'}` : 'none';
+                const base = `${currentSlug || 'concordats'}_by_granular_topic_`
+                           + `${y1 || 'all'}_${y2 || 'now'}`;
+                if (fmt === 'csv') {
+                    const lines = [
+                        `# Swiss Law Collection — ${cube.title}`,
+                        `# Filter: ${filter}`,
+                        `# counting_basis: ${cube.counting_unit}`,
+                        `# year_semantics: ${cube.year_semantics}`,
+                        `# topic: ${cube.topic_semantics}`,
+                        `# topic labels: ${lang}; dotted codes and all four `
+                        + `languages in api/v1/categories/global_paths.json`,
+                        `# Source: ${cube.source}`,
+                        ['canton', 'year', 'topic', 'number'].join(','),
+                        ...rows.map(r => [r[0], r[1],
+                                          qcsv(topicLabel(r[2], lang)), r[3]].join(',')),
+                    ];
+                    saveBlob(lines.join('\n'), 'text/csv', `${base}_${lang}.csv`);
+                } else {
+                    const topics = {};
+                    for (const r of rows) {
+                        const e = topicEntry(r[2]);
+                        if (e) topics[r[2]] = e;
+                    }
+                    saveBlob(JSON.stringify({
+                        export: {
+                            generated_at: new Date().toISOString(),
+                            source: cube.source,
+                            title: cube.title,
+                            dataset: cube.dataset,
+                            counting_unit: cube.counting_unit,
+                            year_semantics: cube.year_semantics,
+                            topic_semantics: cube.topic_semantics,
+                            title_en_source: topicPaths.title_en_source,
+                            filter: {
+                                instrument_type: currentSlug
+                                    || 'concordats (chstat/BADAC signatory methodology)',
+                                year_from: y1, year_to: y2,
+                            },
+                            columns: ['canton', 'year', 'topic', 'number'],
+                            rows: rows.length,
+                            total: rows.reduce((a, r) => a + r[3], 0),
+                        },
+                        topics,
+                        data: rows,
+                    }, null, 1), 'application/json', `${base}.json`);
+                }
+            } catch (err) {
+                alert('Granular export unavailable: ' + err.message
+                      + '\nRegenerate the API with `legalize-ch stats`.');
+            } finally {
+                btn.disabled = false;
+                btn.textContent = was;
+            }
+        }
+        document.getElementById('granular-csv').addEventListener('click', downloadGranular);
+        document.getElementById('dl-granular').addEventListener('click', e => {
+            e.preventDefault();
+            downloadGranular();
+        });
         document.getElementById('dl-current').addEventListener('click', e => {
             e.preventDefault();
             downloadCurrentView();
@@ -368,7 +525,8 @@
         // per-category CSV links
         try {
             const idx = await fetchJSON('api/v1/csv/index.json');
-            const cats = idx.files.filter(f => f.file.endsWith('_canton_year.csv'));
+            const cats = idx.files.filter(
+                f => /_canton_year(_topic)?\.csv$/.test(f.file));
             document.getElementById('dl-categories').innerHTML = ' ' + cats.map(f =>
                 `<a href="api/v1/csv/${f.file}" download>${f.file}</a>`).join(' · ');
         } catch (e) {

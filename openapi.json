@@ -401,6 +401,27 @@
         }
       }
     },
+    "/api/v1/categories/global_paths.json": {
+      "get": {
+        "tags": [
+          "categories"
+        ],
+        "summary": "Flat index of the harmonized taxonomy: dotted code → label path (de/fr/it/en)",
+        "description": "One entry per node of the global systematics, keyed on its dotted code, with depth, parent and the ancestors' titles joined into a label path in four languages. Resolves the 'topic' codes used by /api/v1/stats/granular/*.json. English titles are authored in the law repo (LexFind publishes no English tree) and labelled as such in title_en_source.",
+        "responses": {
+          "200": {
+            "description": "note, title_en_source, total, codes{code: {code, depth, parent, title{de,fr,it,en}, path{de,fr,it,en}}}",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/v1/categories/{canton}.json": {
       "get": {
         "tags": [
@@ -587,6 +608,48 @@
         "responses": {
           "200": {
             "description": "domains, cantons{...}, totals, by_year, memberships_until_2003, notes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stats/granular/index.json": {
+      "get": {
+        "tags": [
+          "statistics"
+        ],
+        "summary": "Canton × year × topic cubes at full taxonomy depth — index",
+        "description": "Lists the granular cubes and resolves the data page's instrument-type selector to a file ('' = the signatory-counted concordats table). The cubes carry the SAME counts as the 7-domain tables in /api/v1/stats/, keyed on the full dotted code instead of its first segment, so any (canton, year) slice sums to the same number. They ship separately because the domain tables are fetched on every page load.",
+        "responses": {
+          "200": {
+            "description": "note, topics, by_slug{slug: file}, datasets[{dataset, slug, file, path, counting_unit, codes, total}]",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stats/granular/{dataset}_by_topic.json": {
+      "get": {
+        "tags": [
+          "statistics"
+        ],
+        "summary": "One canton × year × topic cube (full taxonomy depth)",
+        "description": "dataset is an instrument-type slug ('gesetz', 'verordnung', …), 'concordats' (published copies) or 'concordats_by_topic_signatories' (memberships). Topics are dotted LexFind global-systematics codes at the depth the source classifies the act; 'uncategorized' = no legal domain in the source. Resolve labels with /api/v1/categories/global_paths.json.",
+        "responses": {
+          "200": {
+            "description": "title, source, dataset, slug, counting_unit, year_semantics, topic_semantics, codes[], by_year{year: {canton: {code: n}}}, totals_by_code, total, notes",
             "content": {
               "application/json": {
                 "schema": {
