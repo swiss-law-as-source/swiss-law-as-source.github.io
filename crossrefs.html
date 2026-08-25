@@ -245,6 +245,7 @@
     <script>
     let data = null;
     let lawTitles = {};
+    let lawPaths = {};   // SR -> repo path, straight from laws.json (see init)
 
     async function init() {
         const [refsResp, lawsResp] = await Promise.all([
@@ -253,7 +254,13 @@
         ]);
         data = await refsResp.json();
         const laws = await lawsResp.json();
-        laws.forEach(l => { lawTitles[l.sr] = l.title; });
+        // Federal only: 1,654 cantonal laws reuse a federal SR number, so an
+        // unfiltered map would show a cantonal title next to a federal SR.
+        laws.forEach(l => {
+            if (l.scope !== 'federal') return;
+            lawTitles[l.sr] = l.title;
+            lawPaths[l.sr] = l.path;
+        });
 
         // KPIs
         document.getElementById('kpis').innerHTML = [
@@ -327,9 +334,16 @@
             return;
         }
 
-        const repoBase = 'https://github.com/benjamin-arfa/swiss-law/blob/main/ch/de/';
+        // The repo is laid out ch/<SR group>/<lang>/<sr>.md (with a handful of
+        // legacy ch/<lang>/<sr>.md files), so never build the path by hand —
+        // laws.json carries the real one.
+        const path = lawPaths[sr];
+        const repoBase = 'https://github.com/benjamin-arfa/swiss-law/blob/main/';
+        const heading = path
+            ? `<a href="${repoBase}${path}" target="_blank" rel="noopener">SR ${sr}</a>`
+            : `SR ${sr}`;
         let html = `<div class="law-card">
-            <h3><a href="${repoBase}${sr}.md" target="_blank">SR ${sr}</a> &mdash; ${title}</h3>`;
+            <h3>${heading} &mdash; ${title}</h3>`;
 
         if (outbound.length > 0) {
             html += `<div class="ref-section">

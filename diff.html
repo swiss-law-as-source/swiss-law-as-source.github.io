@@ -256,11 +256,39 @@
     let commits = [];
     let currentPath = "";
 
-    // Parse SR number to file path
-    function srToPath(sr, lang) {
-        // Normalize: "SR 210" -> "210", "sr210" -> "210"
-        sr = sr.replace(/^sr\s*/i, "").trim();
-        return `ch/${lang}/${sr.replace(/\./g, "/")}.md`;
+    // SR -> repo path, resolved from laws.json rather than constructed.
+    // The old `ch/<lang>/<sr with dots as slashes>.md` guess produced
+    // ch/de/311/0.md for SR 311.0 — a path that has never existed, so every
+    // dotted SR (i.e. almost all of them) failed with "File not found".
+    // The real layout is ch/<SR group>/<lang>/<sr>.md, plus ~65 legacy
+    // ch/<lang>/<sr>.md files that no rule describes; laws.json has both.
+    let lawIndex = null;   // sr -> { path, title, languages }
+
+    async function ensureLawIndex() {
+        if (lawIndex) return lawIndex;
+        const res = await fetch("laws.json");
+        if (!res.ok) throw new Error(`laws.json: HTTP ${res.status}`);
+        const laws = await res.json();
+        lawIndex = {};
+        for (const l of laws) {
+            // Federal only — 1,654 cantonal laws reuse a federal SR number.
+            if (l.scope !== "federal") continue;
+            lawIndex[l.sr] = { path: l.path, title: l.title, languages: l.languages || [] };
+        }
+        return lawIndex;
+    }
+
+    function normalizeSR(sr) {
+        return sr.replace(/^sr\s*/i, "").trim();
+    }
+
+    // Swap the language segment of a repo path: ch/311/de/311.0.md -> ch/311/fr/...
+    function pathForLang(path, lang) {
+        const parts = path.split("/");
+        const i = parts.indexOf("de");
+        if (i === -1) return path;
+        parts[i] = lang;
+        return parts.join("/");
     }
 
     // Extract date from commit message (format: YYYY-MM-DD in parentheses)
@@ -278,10 +306,26 @@
             return;
         }
 
-        currentPath = srToPath(sr, lang);
-
         document.getElementById("output").innerHTML = '<div class="info-box loading">Loading version history...</div>';
         document.getElementById("version-section").style.display = "none";
+
+        const srKey = normalizeSR(sr);
+        let entry;
+        try {
+            entry = (await ensureLawIndex())[srKey];
+        } catch (err) {
+            showError(`Could not load the law index (laws.json): ${err.message}`);
+            return;
+        }
+        if (!entry) {
+            showError(`Unknown SR number: ${srKey}. This viewer covers federal law (SR) only.`);
+            return;
+        }
+        if (entry.languages.length && !entry.languages.includes(lang)) {
+            showError(`SR ${srKey} is not available in "${lang}" — published languages: ${entry.languages.join(", ")}.`);
+            return;
+        }
+        currentPath = pathForLang(entry.path, lang);
 
         try {
             // Fetch commits for this file

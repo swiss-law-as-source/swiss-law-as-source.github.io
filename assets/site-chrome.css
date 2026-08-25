@@ -17,11 +17,14 @@ header {
     text-align: center;
 }
 header h1 { font-size: 1.8rem; margin: 0 0 0.3rem; line-height: 1.25; }
-header p  { opacity: 0.9; font-size: 1rem; margin: 0; }
+header p  { opacity: 0.9; font-size: 1rem; margin: 0; line-height: 1.6; }
+/* line-height is stated here rather than inherited from each page's own
+ * body rule — api.html has no such rule, which made its red band shorter. */
 header a  { color: #fff; }
 
 nav {
     background: var(--dark, #1a1a1a);
+    line-height: 1.6;
     padding: 0.5rem 1.5rem;
     display: flex;
     flex-wrap: wrap;
