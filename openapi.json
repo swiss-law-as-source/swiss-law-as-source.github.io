@@ -268,7 +268,7 @@
         "summary": "Law-index master: entities with counts and volumes",
         "responses": {
           "200": {
-            "description": "total_laws, link_base, entities{code: {name, laws, total_chars, total_articles, file}}",
+            "description": "total_laws, link_base, all{name, laws, total_chars, total_articles, file}, entities{code: {name, laws, total_chars, total_articles, file}}",
             "content": {
               "application/json": {
                 "schema": {
@@ -294,6 +294,7 @@
             "schema": {
               "type": "string",
               "enum": [
+                "ALL",
                 "CH",
                 "AG",
                 "AI",
@@ -323,12 +324,12 @@
                 "ZH"
               ]
             },
-            "example": "GR"
+            "example": "ALL"
           }
         ],
         "responses": {
           "200": {
-            "description": "items[] with {id, title, link, languages: {lang: {chars, articles, path}}, category fields}",
+            "description": "items[] with {id, title, link, languages: {lang: {chars, articles, path}}, category fields}. `ALL` is the cross-entity file: every law of the Confederation and the 26 cantons, ids entity-prefixed (`AG 110.000`), per-language chars/articles kept, `link`/`version_dates`/category fields omitted for size.",
             "content": {
               "application/json": {
                 "schema": {

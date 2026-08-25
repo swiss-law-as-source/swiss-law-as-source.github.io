@@ -85,6 +85,7 @@
     </nav>
     <main>
         <div class="kpi-grid" id="entity-kpis"></div>
+        <p class="note" id="scope-note"></p>
         <div class="controls">
             <select id="entity"></select>
             <input id="filter" type="search" placeholder="Filter by number or title…">
@@ -126,7 +127,7 @@
         const sel = document.getElementById('entity');
         const codes = Object.keys(idx.entities).sort((a, b) =>
             (a !== 'CH') - (b !== 'CH') || a.localeCompare(b));
-        sel.innerHTML = `<option value="ALL">ALL — search across all entities (${idx.total_laws.toLocaleString()})</option>` +
+        sel.innerHTML = `<option value="ALL">ALL — ${idx.all.name} (${idx.all.laws.toLocaleString()})</option>` +
             codes.map(c =>
             `<option value="${c}">${c} — ${idx.entities[c].name} (${idx.entities[c].laws.toLocaleString()})</option>`
         ).join('');
@@ -134,36 +135,21 @@
         const enc = p => p.split('/').map(encodeURIComponent).join('/');
         const LANG_NAMES = { de: 'Deutsch', fr: 'Français', it: 'Italiano' };
 
-        // Per-language file links. Entity files carry a per-language path; in
-        // ALL mode the path is derived by swapping the language segment
-        // (ch/<entity>/<lang>/<nr>.md).
+        // Per-language file links. Every language entry carries its own path,
+        // so use it verbatim: the canonical tree is ch/<entity>/<lang>/<nr>.md
+        // but 66 federal laws still live on the legacy ch/<lang>/<nr>.md tree,
+        // and rewriting a fixed path segment mangles the legacy ones.
         function langLinks(item) {
             const base = idx.link_base;
-            return Object.entries(item.languages).map(([lang, d]) => {
-                let path = d.path || '';
-                if (!path && item.link) return { lang, url: item.link };
-                const parts = path.split('/');
-                if (parts.length >= 3) parts[2] = lang;
-                return { lang, url: base + enc(parts.join('/')) };
-            });
+            return Object.entries(item.languages).map(([lang, d]) =>
+                ({ lang, url: d.path ? base + enc(d.path) : item.link }));
         }
 
-        async function loadAll() {
-            // Cross-entity search backed by the flat search index (laws.json).
-            const laws = await (await fetch('laws.json', { cache: 'no-cache' })).json();
-            const sums = Object.values(idx.entities).reduce(
-                (a, e) => ({ c: a.c + e.total_chars, n: a.n + e.total_articles }), { c: 0, n: 0 });
-            return {
-                laws: laws.length,
-                total_chars: sums.c, total_articles: sums.n,
-                link_base: idx.link_base,
-                items: laws.map(l => ({
-                    id: (l.canton ? l.canton.toUpperCase() + ' ' : 'CH ') + l.sr,
-                    title: l.title,
-                    link: idx.link_base + enc(l.path),
-                    languages: Object.fromEntries((l.languages || []).map(x => [x, { chars: 0, articles: 0, path: l.path }])),
-                })),
-            };
+        // ALL is served as a 28th file (api/v1/laws/ALL.json) with the same
+        // shape as an entity file, so it carries real per-law volumes instead
+        // of federal-only numbers.
+        function entityMeta(code) {
+            return code === 'ALL' ? idx.all : idx.entities[code];
         }
 
         function metric(item, key) {
@@ -186,6 +172,9 @@
                 return (typeof va === 'number' ? va - vb : String(va).localeCompare(String(vb), undefined, {numeric: true})) * sortDir;
             });
 
+            document.getElementById('scope-note').textContent =
+                `Figures below cover ${current.name} — ${current.laws.toLocaleString()} laws.` +
+                (current.entity === 'ALL' ? '' : ' Select ALL for Confederation + cantons combined.');
             document.getElementById('entity-kpis').innerHTML = [
                 { value: current.laws.toLocaleString(), label: 'Laws' },
                 { value: current.total_chars.toLocaleString(), label: 'Characters (all languages)' },
@@ -222,8 +211,18 @@
 
         async function load(code) {
             if (!cache[code]) {
+                const meta = entityMeta(code);
+                if (!meta) return;
                 document.getElementById('laws-body').innerHTML = '<tr><td colspan="6">Loading…</td></tr>';
-                cache[code] = await (await fetch(idx.entities[code].file)).json();
+                const payload = await (await fetch(meta.file)).json();
+                // ALL.json drops the per-item link to stay small; rebuild it
+                // from the preferred language file.
+                for (const i of payload.items) {
+                    if (i.link) continue;
+                    const first = Object.values(i.languages)[0];
+                    i.link = payload.link_base + enc(first ? first.path : '');
+                }
+                cache[code] = payload;
             }
             current = cache[code];
             shown = PAGE;
@@ -276,7 +275,8 @@
                 render();
             }));
 
-        load('CH');
+        sel.value = 'ALL';
+        load('ALL');
     })();
     </script>
 </body>
