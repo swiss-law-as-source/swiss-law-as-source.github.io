@@ -143,6 +143,29 @@
                Labels in de/fr/it: <a href="api/v1/categories/global.json">categories API</a>.</p>
         </div>
 
+
+        <!-- Section A2: the legal event stream — a second counting unit -->
+        <div class="chart-section">
+            <h2>Legislative activity — publications and revisions</h2>
+            <div class="tab-bar" id="events-scope">
+                <span class="tab-label">Scope:</span>
+                <button class="active" data-scope="all">All</button>
+                <button data-scope="federal">Federal</button>
+                <button data-scope="cantonal">Cantonal</button>
+            </div>
+            <div class="tab-bar" id="events-measure">
+                <span class="tab-label">Measure:</span>
+                <button class="active" data-measure="count">Events</button>
+                <button data-measure="lines">Text changed (federal only)</button>
+                <span class="tab-label" style="margin-left:0.75rem">Since</span>
+                <select id="events-from"></select>
+                <span class="hint" id="events-measure-hint"></span>
+            </div>
+            <div class="kpi-grid" id="events-kpis" style="margin-bottom:1.25rem"></div>
+            <div class="echart" id="events-chart" style="height:380px"></div>
+            <p class="table-note" id="events-methodology"></p>
+        </div>
+
         <!-- Section B: linked dashboard (cantonal) -->
         <div class="chart-section">
             <h2>Cantonal laws explorer — linked charts</h2>
@@ -760,6 +783,138 @@
             a.click();
             URL.revokeObjectURL(a.href);
         });
+
+
+        // ════════ Section A2: legal events (publications + revisions) ════════
+        // A different counting unit from every other chart on this page: here
+        // a law revised 47 times contributes 47 records, not one. Both units
+        // stay published — the note under the chart says which is which.
+        (async function initEvents() {
+            const [cube, indicators] = await Promise.all([
+                fetch('api/v1/stats/events_by_year.json', { cache: 'no-cache' })
+                    .then(r => r.ok ? r.json() : null).catch(() => null),
+                fetch('api/v1/stats/indicators.json', { cache: 'no-cache' })
+                    .then(r => r.ok ? r.json() : null).catch(() => null),
+            ]);
+            const section = document.getElementById('events-chart').closest('.chart-section');
+            if (!cube) { section.hidden = true; return; }
+
+            // Scheduled entries into force are real and are kept in the API,
+            // but a bar for a year still running (let alone 2066) reads as a
+            // collapse in activity, so the chart stops at the current year.
+            const thisYear = String(new Date().getFullYear());
+            const CUT = cube.years.filter(y => y <= thisYear).pop() || thisYear;
+            const future = cube.years.filter(y => y > CUT).reduce((a, y) => a +
+                Object.values(cube.by_year[y]).reduce((b, c) =>
+                    b + (c.publication || 0) + (c.revision || 0), 0), 0);
+            const latestComplete = String(Number(CUT) - 1);
+
+            const evState = { scope: 'all', measure: 'count', from: '1990' };
+            const evChart = makeChart('events-chart');
+
+            const fromSel = document.getElementById('events-from');
+            fromSel.innerHTML = [['1990', '1990'], ['1970', '1970'], ['1950', '1950'],
+                                 ['', 'the beginning']]
+                .map(([v, l]) => `<option value="${v}"${v === evState.from ? ' selected' : ''}>` +
+                                 `${l}</option>`).join('');
+            fromSel.addEventListener('change', () => {
+                evState.from = fromSel.value || null; renderEvents();
+            });
+
+            function setActive(bar, el) {
+                bar.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+                el.classList.add('active');
+            }
+            const scopeBar = document.getElementById('events-scope');
+            scopeBar.addEventListener('click', e => {
+                if (!e.target.dataset.scope) return;
+                setActive(scopeBar, e.target);
+                evState.scope = e.target.dataset.scope;
+                renderEvents();
+            });
+            const measureBar = document.getElementById('events-measure');
+            measureBar.addEventListener('click', e => {
+                if (!e.target.dataset.measure || e.target.disabled) return;
+                setActive(measureBar, e.target);
+                evState.measure = e.target.dataset.measure;
+                renderEvents();
+            });
+
+            const fmtPct = v => v == null ? '—' : (v * 100).toFixed(1) + '%';
+            const fmtNum = (v, d = 2) => v == null ? '—' : v.toFixed(d);
+
+            function renderKpis() {
+                const k = indicators &&
+                    SLCharts.eventIndicators(indicators, latestComplete, evState.scope);
+                const box = document.getElementById('events-kpis');
+                if (!k) { box.innerHTML = ''; return; }
+                const cards = [
+                    { value: k.events.toLocaleString(), label: `Events in ${k.year}` },
+                    { value: k.revisions.toLocaleString(), label: `Revisions in ${k.year}` },
+                    { value: fmtNum(k.churn), label: 'Revisions per law in force (churn)' },
+                    { value: fmtPct(k.instability), label: 'Laws revised at least once' },
+                    { value: k.medianGapMonths == null ? '—' : fmtNum(k.medianGapMonths, 1),
+                      label: 'Median months since previous change' },
+                ];
+                box.innerHTML = cards.map(c =>
+                    `<div class="kpi-card"><div class="value">${c.value}</div>` +
+                    `<div class="label">${c.label}</div></div>`).join('');
+            }
+
+            function renderEvents() {
+                // Magnitude comes from git numstat on federal consolidation
+                // commits; cantonal law has no versioned text history, so the
+                // measure is disabled there rather than charted as zero.
+                const linesBtn = measureBar.querySelector('[data-measure="lines"]');
+                const cantonalOnly = evState.scope === 'cantonal';
+                linesBtn.disabled = cantonalOnly;
+                linesBtn.style.opacity = cantonalOnly ? 0.45 : '';
+                if (cantonalOnly && evState.measure === 'lines') {
+                    evState.measure = 'count';
+                    setActive(measureBar, measureBar.querySelector('[data-measure="count"]'));
+                }
+                document.getElementById('events-measure-hint').textContent =
+                    evState.measure === 'lines'
+                        ? 'Lines added + removed per revision — federal law only, and ' +
+                          'excluding each law\u2019s first recorded version (that commit is ' +
+                          'the text entering the corpus, not the law changing).'
+                        : (cantonalOnly ? 'Text volume is unavailable for cantonal law.' : '');
+
+                const data = SLCharts.eventsSeries(cube, {
+                    scope: evState.scope, from: evState.from, to: CUT });
+                evChart.setOption(SLCharts.eventsStackOption(data, evState.measure), true);
+                renderKpis();
+            }
+
+            const t = cube.totals, prov = cube.provenance || {};
+            document.getElementById('events-methodology').innerHTML =
+                '<b>Methodology (legal events):</b> one record per <b>(law, date)</b> — the ' +
+                'earliest known date of a law is its <b>publication</b>, every later in-force ' +
+                'date is a <b>revision</b>. <b>This is a different counting unit from every ' +
+                'other chart on this page</b>, which count each law once under its enactment ' +
+                'year; a law revised 47 times counts 47 times here and once there. The three ' +
+                'language versions of one act are one law, so a trilingual consolidation is ' +
+                'one event, not three. Totals reconcile: ' +
+                `<b>${t.events.toLocaleString()}</b> events = ` +
+                `<b>${t.publications.toLocaleString()}</b> publications (one per law with a ` +
+                `known date) + <b>${t.revisions.toLocaleString()}</b> revisions. ` +
+                (prov.commits_bulk_metadata
+                    ? `Dates reconstructed from this repository's own commit log are kept only ` +
+                      `where they come from a backdated Fedlex consolidation ` +
+                      `(<b>${prov.commits_consolidation.toLocaleString()}</b> commits); the ` +
+                      `<b>${prov.commits_bulk_metadata.toLocaleString()}</b> bulk metadata ` +
+                      `commits that rewrote frontmatter for every law at once are not legal ` +
+                      `events and are dropped. ` : '') +
+                (future ? `<b>${future.toLocaleString()}</b> events dated after ${CUT} ` +
+                          `(entries into force already scheduled) are in the API but off the ` +
+                          `chart. ` : '') +
+                `${CUT} is still running and is therefore not comparable to the years before it. ` +
+                'Data: <a href="api/v1/stats/events_by_year.json">events by year</a>, ' +
+                '<a href="api/v1/stats/indicators.json">workload indicators</a>, ' +
+                '<a href="api/v1/events/index.json">per-year event stream</a>.';
+
+            renderEvents();
+        })();
 
         // ════════ Embed dialog ════════
         // Snippets must always point at the public site, never at whatever

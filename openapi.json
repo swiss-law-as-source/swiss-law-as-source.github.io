@@ -38,6 +38,10 @@
     {
       "name": "data-exports",
       "description": "Static CSV and SDMX exports (see /data.html)"
+    },
+    {
+      "name": "events",
+      "description": "The legal event stream: one record per (law, date)"
     }
   ],
   "paths": {
@@ -908,6 +912,97 @@
               "text/csv": {
                 "schema": {
                   "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stats/events_by_year.json": {
+      "get": {
+        "tags": [
+          "statistics"
+        ],
+        "summary": "Legal events per year and scope — publications and revisions",
+        "responses": {
+          "200": {
+            "description": "counting_unit, unit_definition, years[], totals{events, publications, revisions}, by_year{YYYY: {federal|cantonal: {publication, revision, lines, revisions_with_delta}}}, provenance{} reporting the commits classified as consolidations vs bulk metadata. One record per (law, date) — a DIFFERENT counting unit from stats.json by_year, which counts each law once under its enactment year.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/stats/indicators.json": {
+      "get": {
+        "tags": [
+          "statistics"
+        ],
+        "summary": "Judicial-workload indicators per year and scope",
+        "responses": {
+          "200": {
+            "description": "definitions{}, coverage{}, by_year{YYYY: {scope: {volume, publications, revisions, laws_in_force, laws_revised, churn, instability, median_gap_months, lines_changed, weighted_churn}}}. churn = revisions / laws in force; instability = share of laws in force revised at least once; lines_changed is federal-only (cantonal law has no versioned text history).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/events/index.json": {
+      "get": {
+        "tags": [
+          "events"
+        ],
+        "summary": "Index of the legal event stream",
+        "responses": {
+          "200": {
+            "description": "years[], total_events, earliest_year, latest_year",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/events/{year}.json": {
+      "get": {
+        "tags": [
+          "events"
+        ],
+        "summary": "Every legal event dated in a year",
+        "parameters": [
+          {
+            "name": "year",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            },
+            "example": 2025
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "date_prefix, count, counting_unit, events[] with date, law, scope, canton, event (publication|revision), seq, domain, type, source, confidence, delta{lines_added, lines_removed} where the text history exists, and size_current on each law's latest event.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
                 }
               }
             }

@@ -276,6 +276,124 @@ window.SLCharts = (function () {
         return `<div class="tile-map">${tiles}</div>`;
     }
 
+
+    // ─── Legal event stream (publications + revisions) ──────────────────
+    // A second counting unit for the same corpus: the trend charts above
+    // count each law once, under its enactment year; these count every
+    // (law, date) pair, so a law revised 47 times contributes 47 records.
+    // Publications keep the categorical blue used for the primary series;
+    // revisions take the muted red — the pair clears CVD separation and
+    // both sit on the site palette.
+    const EVENT_COLORS = { publication: PALETTE[0], revision: PALETTE[7] };
+
+    // events_by_year.json cube → flat per-year series for one scope.
+    // 'all' sums the scopes rather than reading a precomputed total, so the
+    // scope buttons cannot disagree with the stacked bars they filter.
+    function eventsSeries(cube, { scope = 'all', from = null, to = null } = {}) {
+        const years = cube.years.filter(y => (!from || y >= from) && (!to || y <= to));
+        const pick = y => {
+            const cell = cube.by_year[y] || {};
+            const scopes = scope === 'all' ? Object.keys(cell) : [scope];
+            return scopes.reduce((a, s) => {
+                const c = cell[s] || {};
+                a.publication += c.publication || 0;
+                a.revision += c.revision || 0;
+                a.lines += c.lines || 0;
+                a.withDelta += c.revisions_with_delta || 0;
+                return a;
+            }, { publication: 0, revision: 0, lines: 0, withDelta: 0 });
+        };
+        const rows = years.map(pick);
+        return {
+            years,
+            publications: rows.map(r => r.publication),
+            revisions: rows.map(r => r.revision),
+            lines: rows.map(r => r.lines),
+            withDelta: rows.map(r => r.withDelta),
+        };
+    }
+
+    // measure 'count' → stacked publications/revisions; 'lines' → text moved.
+    // The two never share an axis: switching swaps the y-scale outright,
+    // because lines-changed exists for federal law only and stacking it
+    // against a cantonal count would invent coverage we do not have.
+    function eventsStackOption(data, measure) {
+        const lines = measure === 'lines';
+        const stacked = [
+            { key: 'publications', name: 'Publications (first appearance)',
+              color: EVENT_COLORS.publication, data: data.publications },
+            { key: 'revisions', name: 'Revisions', color: EVENT_COLORS.revision,
+              data: data.revisions },
+        ];
+        const series = lines
+            ? [{ name: 'Lines changed (added + removed)', type: 'bar',
+                 itemStyle: { color: EVENT_COLORS.revision, borderRadius: [3, 3, 0, 0] },
+                 barMaxWidth: 26, emphasis: { focus: 'series' }, data: data.lines }]
+            : stacked.map((s, i) => ({
+                name: s.name, type: 'bar', stack: 'events',
+                itemStyle: {
+                    color: s.color,
+                    borderColor: '#fff', borderWidth: 2,
+                    borderRadius: i === stacked.length - 1 ? [3, 3, 0, 0] : 0,
+                },
+                barMaxWidth: 26, emphasis: { focus: 'series' }, data: s.data,
+            }));
+
+        return {
+            tooltip: {
+                trigger: 'axis', axisPointer: { type: 'shadow' },
+                formatter: params => {
+                    if (!params.length) return '';
+                    const y = params[0].axisValue;
+                    const i = data.years.indexOf(y);
+                    const rows = params.map(p =>
+                        `${p.marker}${p.seriesName}: <b>${(p.value || 0).toLocaleString()}</b>`);
+                    if (!lines) {
+                        const tot = (data.publications[i] || 0) + (data.revisions[i] || 0);
+                        rows.push(`<span style="color:${INK2}">Total events: ` +
+                                  `<b>${tot.toLocaleString()}</b></span>`);
+                    } else if (data.withDelta[i]) {
+                        rows.push(`<span style="color:${INK2}">over ` +
+                                  `${data.withDelta[i].toLocaleString()} measured revisions</span>`);
+                    }
+                    return `<b>${y}</b><br>${rows.join('<br>')}`;
+                },
+            },
+            legend: { top: 0, textStyle: { color: INK2, fontSize: 11 } },
+            grid: { left: 62, right: 20, top: 30, bottom: 40 },
+            xAxis: { type: 'category', data: data.years, axisLabel: { color: INK2 } },
+            yAxis: {
+                type: 'value',
+                name: lines ? 'lines changed' : 'events',
+                nameTextStyle: { color: INK2, fontSize: 11, align: 'left' },
+                nameGap: 12,
+                axisLabel: { color: INK2,
+                             formatter: v => v >= 1000 ? (v / 1000) + 'k' : v },
+                splitLine: { lineStyle: { color: '#eee' } },
+            },
+            series,
+        };
+    }
+
+    // indicators.json → the workload figures for one year and scope.
+    // 'all' is read from its own cell, never assembled here: a pooled median
+    // is not the average of the per-scope medians, and only the generator has
+    // the underlying gaps.
+    function eventIndicators(ind, year, scope) {
+        const cell = ((ind.by_year || {})[year] || {})[scope];
+        if (!cell) return null;
+        return {
+            year,
+            events: cell.volume || 0,
+            revisions: cell.revisions || 0,
+            lawsInForce: cell.laws_in_force || 0,
+            churn: cell.churn,
+            instability: cell.instability,
+            medianGapMonths: cell.median_gap_months,
+            linesChanged: cell.lines_changed || 0,
+        };
+    }
+
     return {
         PALETTE, GRAY, BLUE_RAMP, INK, INK2,
         enTypeFactory, typeColorFactory, aggregateCube,
@@ -283,5 +401,6 @@ window.SLCharts = (function () {
         cantonTreemapOption, typesDonutOption, yearsStackOption,
         domainsTreemapOption, domainsSunburstOption,
         concTable, concTableHTML, copiesCompanion, concChartOption, tileMapHTML,
+        EVENT_COLORS, eventsSeries, eventsStackOption, eventIndicators,
     };
 })();
