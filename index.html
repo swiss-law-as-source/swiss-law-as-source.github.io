@@ -328,6 +328,29 @@
     <script src="assets/echarts.min.js?v=8f667a68"></script>
     <script src="assets/charts.js?v=77538ac4"></script>
     <script>
+    // A shared #section link arrives before ECharts has sized its canvases:
+    // the browser scrolls to where the section is at parse time, then every
+    // chart above it grows and pushes it a screen or two further down, so the
+    // reader lands nowhere near what was linked. Re-apply the hash as the page
+    // settles — and stop the moment the reader takes over.
+    (function deepLink() {
+        if (!location.hash) return;
+        let cancelled = false;
+        const stop = () => { cancelled = true; };
+        ['wheel', 'touchstart', 'keydown', 'pointerdown'].forEach(t =>
+            window.addEventListener(t, stop, { once: true, passive: true }));
+        const jump = () => {
+            if (cancelled) return;
+            let el = null;
+            try { el = document.getElementById(decodeURIComponent(location.hash.slice(1))); }
+            catch (e) { return; }
+            if (el) el.scrollIntoView();
+        };
+        jump();
+        [200, 600, 1200, 2400, 4000].forEach(t => setTimeout(jump, t));
+    })();
+    </script>
+    <script>
     (async function() {
         const stats = await (await fetch('stats.json', { cache: 'no-cache' })).json();
 
