@@ -947,7 +947,7 @@
         "summary": "Judicial-workload indicators per year and scope",
         "responses": {
           "200": {
-            "description": "definitions{}, coverage{}, by_year{YYYY: {scope: {volume, publications, revisions, laws_in_force, laws_revised, churn, instability, median_gap_months, lines_changed, weighted_churn}}}. churn = revisions / laws in force; instability = share of laws in force revised at least once; lines_changed is federal-only (cantonal law has no versioned text history).",
+            "description": "definitions{}, coverage{}, by_year{YYYY: {scope: {volume, publications, revisions, laws_in_force, laws_revised, churn, instability, median_gap_months, lines_changed, articles_revised, weighted_churn, article_churn}}}. churn = revisions / laws in force; instability = share of laws in force revised at least once. Two magnitudes with two coverages: lines_changed diffs consecutive published versions and is federal in practice (the cantonal corpus holds one version per law); articles_revised is counted from the markdown body every law has and covers federal and cantonal law alike.",
             "content": {
               "application/json": {
                 "schema": {
