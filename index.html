@@ -156,29 +156,6 @@
         </div>
 
 
-        <!-- Section A2: the legal event stream — a second counting unit -->
-        <div class="chart-section">
-            <h2>Legislative activity — publications and revisions</h2>
-            <div class="tab-bar" id="events-scope">
-                <span class="tab-label">Scope:</span>
-                <button class="active" data-scope="all">All</button>
-                <button data-scope="federal">Federal</button>
-                <button data-scope="cantonal">Cantonal</button>
-            </div>
-            <div class="tab-bar" id="events-measure">
-                <span class="tab-label">Measure:</span>
-                <button class="active" data-measure="count">Events</button>
-                <button data-measure="articles">Text volume</button>
-                <button data-measure="lines">Text changed</button>
-                <span class="tab-label" style="margin-left:0.75rem">Since</span>
-                <select id="events-from"></select>
-                <span class="hint" id="events-measure-hint"></span>
-            </div>
-            <div class="kpi-grid" id="events-kpis" style="margin-bottom:1.25rem"></div>
-            <div class="echart" id="events-chart" style="height:380px"></div>
-            <p class="table-note" id="events-methodology"></p>
-        </div>
-
         <!-- Section B: linked dashboard (cantonal) -->
         <div class="chart-section">
             <h2>Cantonal laws explorer — linked charts</h2>
@@ -229,6 +206,30 @@
                table footer. For distinct agreements with their signing cantons use
                “Agreements CSV (signing cantons)”.</p>
             <p class="table-note" id="concordats-notes"></p>
+        </div>
+
+
+        <!-- Section D: the legal event stream — a second counting unit, last row -->
+        <div class="chart-section">
+            <h2>Legislative activity — publications and revisions</h2>
+            <div class="tab-bar" id="events-scope">
+                <span class="tab-label">Scope:</span>
+                <button class="active" data-scope="all">All</button>
+                <button data-scope="federal">Federal</button>
+                <button data-scope="cantonal">Cantonal</button>
+            </div>
+            <div class="tab-bar" id="events-measure">
+                <span class="tab-label">Measure:</span>
+                <button class="active" data-measure="count">Events</button>
+                <button data-measure="articles">Text volume</button>
+                <button data-measure="lines">Text changed</button>
+                <span class="tab-label" style="margin-left:0.75rem">Since</span>
+                <select id="events-from"></select>
+                <span class="hint" id="events-measure-hint"></span>
+            </div>
+            <div class="kpi-grid" id="events-kpis" style="margin-bottom:1.25rem"></div>
+            <div class="echart" id="events-chart" style="height:380px"></div>
+            <p class="table-note" id="events-methodology"></p>
         </div>
     </main>
 
@@ -798,7 +799,7 @@
         });
 
 
-        // ════════ Section A2: legal events (publications + revisions) ════════
+        // ════════ Section D: legal events (publications + revisions) ════════
         // A different counting unit from every other chart on this page: here
         // a law revised 47 times contributes 47 records, not one. Both units
         // stay published — the note under the chart says which is which.
@@ -889,8 +890,8 @@
                     { value: fmtPct(k.instability), label: 'Laws revised at least once' },
                     { value: k.medianGapMonths == null ? '—' : fmtNum(k.medianGapMonths, 1),
                       label: 'Median months since previous change' },
-                    { value: k.articlesRevised.toLocaleString(),
-                      label: `Articles of law revised in ${k.year}` },
+                    { value: k.articlesInRevisedLaws.toLocaleString(),
+                      label: `Articles in the laws revised in ${k.year}` },
                 ];
                 box.innerHTML = cards.map(c =>
                     `<div class="kpi-card"><div class="value">${c.value}</div>` +

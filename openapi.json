@@ -41,7 +41,7 @@
     },
     {
       "name": "events",
-      "description": "The legal event stream: one record per (law, date)"
+      "description": "The legal event stream: one record per (law, date), split into per-year event rows and a law table"
     }
   ],
   "paths": {
@@ -947,7 +947,7 @@
         "summary": "Judicial-workload indicators per year and scope",
         "responses": {
           "200": {
-            "description": "definitions{}, coverage{}, by_year{YYYY: {scope: {volume, publications, revisions, laws_in_force, laws_revised, churn, instability, median_gap_months, lines_changed, articles_revised, weighted_churn, article_churn}}}. churn = revisions / laws in force; instability = share of laws in force revised at least once. Two magnitudes with two coverages: lines_changed diffs consecutive published versions and is federal in practice (the cantonal corpus holds one version per law); articles_revised is counted from the markdown body every law has and covers federal and cantonal law alike.",
+            "description": "definitions{}, coverage{}, by_year{YYYY: {scope: {volume, publications, revisions, laws_in_force, laws_revised, churn, instability, median_gap_months, lines_changed, articles_in_revised_laws, weighted_churn, article_churn}}}. churn = revisions / laws in force; instability = share of laws in force revised at least once. Two magnitudes with two coverages: lines_changed diffs consecutive published versions and is federal in practice (the cantonal corpus holds one version per law); articles_in_revised_laws is counted from the markdown body every law has and covers federal and cantonal law alike \u2014 it credits each revision with the whole article count of the law revised, so it is the article-weight of revision activity, not a count of articles that changed.",
             "content": {
               "application/json": {
                 "schema": {
@@ -967,7 +967,27 @@
         "summary": "Index of the legal event stream",
         "responses": {
           "200": {
-            "description": "years[], total_events, earliest_year, latest_year",
+            "description": "years[], total_events, total_laws, earliest_year, latest_year, format (\"columnar\") and decoding, a prose note on how to read the year files.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/events/laws.json": {
+      "get": {
+        "tags": [
+          "events"
+        ],
+        "summary": "The law table the event stream joins to",
+        "responses": {
+          "200": {
+            "description": "count, counting_unit (\"law\"), columns [law, scope, canton, domain, type, chars, articles, latest], codebooks{scope, canton, domain, type} and rows[], one per law. These are attributes of the law rather than of an event, so they are written once instead of once per event. chars/articles are the law’s size TODAY — held per law so it cannot be summed twice — and latest is the date of the event that produced it. null in a codebooked column means the attribute is absent (canton on federal law).",
             "content": {
               "application/json": {
                 "schema": {
@@ -984,7 +1004,7 @@
         "tags": [
           "events"
         ],
-        "summary": "Every legal event dated in a year",
+        "summary": "Every legal event dated in a year (columnar)",
         "parameters": [
           {
             "name": "year",
@@ -998,7 +1018,7 @@
         ],
         "responses": {
           "200": {
-            "description": "date_prefix, count, counting_unit, events[] with date, law, scope, canton, event (publication|revision), seq, domain, type, source, confidence, delta{lines_added, lines_removed} where the text history exists, and size_current on each law's latest event.",
+            "description": "date_prefix, count, counting_unit, default_confidence, laws (\"laws.json\"), columns [date, law, event, seq, source, delta], codebooks{event, source} and rows[]. A row is positional against columns and may be shorter than it, in which case the remaining fields are absent (93% of events have no delta). Integer values in a column named in codebooks index that codebook; delta is [lines_added, lines_removed]. The law’s scope, canton, domain, type and current size are NOT repeated here — join law to laws.json.",
             "content": {
               "application/json": {
                 "schema": {

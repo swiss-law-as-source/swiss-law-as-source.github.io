@@ -319,6 +319,9 @@ window.SLCharts = (function () {
     // y-scale is swapped outright when the measure changes, never shared.
     //   count    events            both scopes
     //   articles articles touched  both scopes  (from the markdown bodies)
+    //            'touched' is literal: a revision is credited with the whole
+    //            article count of the law revised, because the corpus records
+    //            the text before and after, not which articles were rewritten.
     //   lines    lines changed     federal      (needs two versions to diff)
     const EVENT_MEASURES = {
         count: {
@@ -327,10 +330,11 @@ window.SLCharts = (function () {
                     ['revisions', 'Revisions', 'Revisions']],
         },
         articles: {
-            axis: 'articles', total: 'Total articles',
+            axis: 'articles touched', total: 'Total articles touched',
             parts: [['articlesPublished', 'Articles published (first appearance)',
                      'Articles published'],
-                    ['articlesRevised', 'Articles revised', 'Articles revised']],
+                    ['articlesRevised', 'Articles in laws revised that year',
+                     'In revised laws']],
         },
         lines: {
             axis: 'lines changed',
@@ -436,7 +440,7 @@ window.SLCharts = (function () {
             instability: cell.instability,
             medianGapMonths: cell.median_gap_months,
             linesChanged: cell.lines_changed || 0,
-            articlesRevised: cell.articles_revised || 0,
+            articlesInRevisedLaws: cell.articles_in_revised_laws || 0,
             articleChurn: cell.article_churn,
         };
     }

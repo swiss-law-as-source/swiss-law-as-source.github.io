@@ -229,6 +229,9 @@
     "2066"
   ],
   "total_events": 140593,
+  "total_laws": 34247,
   "earliest_year": "1562",
-  "latest_year": "2066"
+  "latest_year": "2066",
+  "format": "columnar",
+  "decoding": "Each year file has `columns`, `codebooks` and `rows`. A row is positional against `columns`; a row shorter than `columns` has its remaining fields absent. Integer values of a column named in `codebooks` index that codebook. Join `law` to rows in laws.json for the law's scope, canton, domain and type. `chars`/`articles` there are the law's size today, held once per law rather than per event so they cannot be summed twice; `latest` is the date of the event that produced that text."
 }

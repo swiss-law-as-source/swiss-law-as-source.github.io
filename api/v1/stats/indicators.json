@@ -6,16 +6,28 @@
     "median_gap_months": "median months since the same law's previous event, over the year's revisions",
     "scopes": "federal, cantonal, and all — 'all' is computed over the pooled events, not averaged from the other two",
     "lines_changed": "lines added + removed per revision, summed (federal in practice — see coverage)",
-    "articles_revised": "articles of the revised laws, summed over the year's revisions (federal and cantonal alike)",
+    "articles_in_revised_laws": "articles of the laws revised that year, summed over the year's revisions — the article-weight of revision activity, not a count of articles that changed (federal and cantonal alike)",
     "weighted_churn": "lines changed / laws in force",
-    "article_churn": "articles revised / laws in force",
+    "article_churn": "articles in revised laws / laws in force",
     "laws_in_force": "laws whose publication year is on or before this year and whose repeal, if recorded, is after it"
   },
   "coverage": {
     "lines_changed_scope": "federal",
-    "lines_changed_note": "delta comes from git numstat on the backdated consolidation commits, and diffing needs two recorded versions of a file. Federal law has a version history; the cantonal corpus was imported at one version per law, so only 368 of 19,575 cantonal files have anything to diff and cantonal cells report no lines rather than zero lines. Each law's earliest recorded version carries no delta either — that commit is the text entering the corpus, not the law changing.",
-    "articles_revised_scope": "federal and cantonal",
-    "articles_revised_note": "counted from the markdown body, which every law in the corpus has, so this magnitude has no scope gap. It credits each event with the law's current article count: exact for recent years, anachronistic for old ones."
+    "lines_changed_measured": {
+      "cantonal": {
+        "revisions": 73117,
+        "revisions_with_delta": 307,
+        "share": 0.0042
+      },
+      "federal": {
+        "revisions": 33229,
+        "revisions_with_delta": 10110,
+        "share": 0.3043
+      }
+    },
+    "lines_changed_note": "delta comes from git numstat on the backdated consolidation commits, and diffing needs two recorded versions of a file. Federal law has a version history; the cantonal corpus was imported at one version per law, so almost no cantonal revision has anything to diff against — see lines_changed_measured for the share actually measured in each scope. What cantonal lines do exist are concentrated in the years the corpus was being built, which would read as a surge in legislative activity, so the page reports no cantonal lines rather than zero lines. Each law's earliest recorded version carries no delta either — that commit is the text entering the corpus, not the law changing.",
+    "articles_in_revised_laws_scope": "federal and cantonal",
+    "articles_in_revised_laws_note": "counted from the markdown body, which every law in the corpus has, so this magnitude has no scope gap. It credits each revision with the whole article count of the law revised — the corpus records the text before and after, not which articles the revision rewrote, so this measures how much law was under revision, not how much of it changed. It uses the law's current article count: exact for recent years, anachronistic for old ones."
   },
   "by_year": {
     "1562": {
@@ -29,7 +41,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -43,7 +55,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -59,7 +71,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -73,7 +85,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -89,7 +101,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -103,7 +115,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -119,7 +131,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -133,7 +145,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -149,7 +161,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -163,7 +175,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -179,7 +191,7 @@
         "instability": 0.1667,
         "median_gap_months": 0.3,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -193,7 +205,7 @@
         "instability": 0.1667,
         "median_gap_months": 0.3,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -209,7 +221,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -223,7 +235,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -239,7 +251,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -253,7 +265,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -269,7 +281,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -283,7 +295,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -299,7 +311,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -313,7 +325,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -329,7 +341,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -343,7 +355,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -359,7 +371,7 @@
         "instability": 0.037,
         "median_gap_months": 0.3,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -373,7 +385,7 @@
         "instability": 0.0385,
         "median_gap_months": 0.3,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -389,7 +401,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -403,7 +415,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -419,7 +431,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -433,7 +445,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -449,7 +461,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -463,7 +475,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -479,7 +491,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -493,7 +505,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -507,7 +519,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -523,7 +535,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -537,7 +549,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -553,7 +565,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -567,7 +579,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -583,7 +595,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -597,7 +609,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -613,7 +625,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -627,7 +639,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -643,7 +655,7 @@
         "instability": 0.08,
         "median_gap_months": 5.0,
         "lines_changed": 0,
-        "articles_revised": 21,
+        "articles_in_revised_laws": 21,
         "weighted_churn": null,
         "article_churn": 0.4
       },
@@ -657,7 +669,7 @@
         "instability": 0.0833,
         "median_gap_months": 5.0,
         "lines_changed": 0,
-        "articles_revised": 21,
+        "articles_in_revised_laws": 21,
         "weighted_churn": null,
         "article_churn": 0.4
       }
@@ -673,7 +685,7 @@
         "instability": 0.0423,
         "median_gap_months": 0.2,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -687,7 +699,7 @@
         "instability": 0.0441,
         "median_gap_months": 0.2,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -701,7 +713,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -717,7 +729,7 @@
         "instability": 0.0411,
         "median_gap_months": 1.7,
         "lines_changed": 0,
-        "articles_revised": 21,
+        "articles_in_revised_laws": 21,
         "weighted_churn": null,
         "article_churn": 0.3
       },
@@ -731,7 +743,7 @@
         "instability": 0.0429,
         "median_gap_months": 1.7,
         "lines_changed": 0,
-        "articles_revised": 21,
+        "articles_in_revised_laws": 21,
         "weighted_churn": null,
         "article_churn": 0.3
       }
@@ -747,7 +759,7 @@
         "instability": 0.013,
         "median_gap_months": 21.8,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -761,7 +773,7 @@
         "instability": 0.0137,
         "median_gap_months": 21.8,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -775,7 +787,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -791,7 +803,7 @@
         "instability": 0.0125,
         "median_gap_months": 12.5,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -805,7 +817,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -819,7 +831,7 @@
         "instability": 0.25,
         "median_gap_months": 12.5,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -835,7 +847,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -849,7 +861,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -865,7 +877,7 @@
         "instability": 0.0323,
         "median_gap_months": 1.5,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -879,7 +891,7 @@
         "instability": 0.0337,
         "median_gap_months": 1.5,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -895,7 +907,7 @@
         "instability": 0.0106,
         "median_gap_months": 4.8,
         "lines_changed": 0,
-        "articles_revised": 7,
+        "articles_in_revised_laws": 7,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -909,7 +921,7 @@
         "instability": 0.0111,
         "median_gap_months": 4.8,
         "lines_changed": 0,
-        "articles_revised": 7,
+        "articles_in_revised_laws": 7,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -925,7 +937,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -939,7 +951,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -955,7 +967,7 @@
         "instability": 0.0101,
         "median_gap_months": 0.5,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -969,7 +981,7 @@
         "instability": 0.0105,
         "median_gap_months": 0.5,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -985,7 +997,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -999,7 +1011,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1015,7 +1027,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1029,7 +1041,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1045,7 +1057,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1059,7 +1071,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1075,7 +1087,7 @@
         "instability": 0.009,
         "median_gap_months": 3.9,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1089,7 +1101,7 @@
         "instability": 0.0093,
         "median_gap_months": 3.9,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1105,7 +1117,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1119,7 +1131,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1135,7 +1147,7 @@
         "instability": 0.0086,
         "median_gap_months": 1.7,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1149,7 +1161,7 @@
         "instability": 0.0089,
         "median_gap_months": 1.7,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1165,7 +1177,7 @@
         "instability": 0.0084,
         "median_gap_months": 16.1,
         "lines_changed": 0,
-        "articles_revised": 23,
+        "articles_in_revised_laws": 23,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -1179,7 +1191,7 @@
         "instability": 0.0087,
         "median_gap_months": 16.1,
         "lines_changed": 0,
-        "articles_revised": 23,
+        "articles_in_revised_laws": 23,
         "weighted_churn": null,
         "article_churn": 0.2
       }
@@ -1195,7 +1207,7 @@
         "instability": 0.0081,
         "median_gap_months": 1.1,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -1209,7 +1221,7 @@
         "instability": 0.0084,
         "median_gap_months": 1.1,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -1223,7 +1235,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1239,7 +1251,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1253,7 +1265,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1267,7 +1279,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1283,7 +1295,7 @@
         "instability": 0.0075,
         "median_gap_months": 0.7,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1297,7 +1309,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1311,7 +1323,7 @@
         "instability": 0.1111,
         "median_gap_months": 0.7,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1327,7 +1339,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1341,7 +1353,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1355,7 +1367,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1371,7 +1383,7 @@
         "instability": 0.0069,
         "median_gap_months": 0.5,
         "lines_changed": 0,
-        "articles_revised": 43,
+        "articles_in_revised_laws": 43,
         "weighted_churn": null,
         "article_churn": 0.3
       },
@@ -1385,7 +1397,7 @@
         "instability": 0.0076,
         "median_gap_months": 0.5,
         "lines_changed": 0,
-        "articles_revised": 43,
+        "articles_in_revised_laws": 43,
         "weighted_churn": null,
         "article_churn": 0.3
       },
@@ -1399,7 +1411,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1415,7 +1427,7 @@
         "instability": 0.0068,
         "median_gap_months": 2.1,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -1429,7 +1441,7 @@
         "instability": 0.0075,
         "median_gap_months": 2.1,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -1443,7 +1455,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1459,7 +1471,7 @@
         "instability": 0.0201,
         "median_gap_months": 30.8,
         "lines_changed": 0,
-        "articles_revised": 8,
+        "articles_in_revised_laws": 8,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -1473,7 +1485,7 @@
         "instability": 0.0075,
         "median_gap_months": 1.1,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -1487,7 +1499,7 @@
         "instability": 0.1333,
         "median_gap_months": 497.9,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -1503,7 +1515,7 @@
         "instability": 0.0196,
         "median_gap_months": 3.4,
         "lines_changed": 0,
-        "articles_revised": 69,
+        "articles_in_revised_laws": 69,
         "weighted_churn": null,
         "article_churn": 0.5
       },
@@ -1517,7 +1529,7 @@
         "instability": 0.0073,
         "median_gap_months": 1.2,
         "lines_changed": 0,
-        "articles_revised": 68,
+        "articles_in_revised_laws": 68,
         "weighted_churn": null,
         "article_churn": 0.5
       },
@@ -1531,7 +1543,7 @@
         "instability": 0.125,
         "median_gap_months": 4.7,
         "lines_changed": 0,
-        "articles_revised": 1,
+        "articles_in_revised_laws": 1,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -1547,7 +1559,7 @@
         "instability": 0.0063,
         "median_gap_months": 0.7,
         "lines_changed": 0,
-        "articles_revised": 10,
+        "articles_in_revised_laws": 10,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -1561,7 +1573,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1575,7 +1587,7 @@
         "instability": 0.0526,
         "median_gap_months": 0.7,
         "lines_changed": 0,
-        "articles_revised": 10,
+        "articles_in_revised_laws": 10,
         "weighted_churn": null,
         "article_churn": 0.5
       }
@@ -1591,7 +1603,7 @@
         "instability": 0.012,
         "median_gap_months": 11.8,
         "lines_changed": 0,
-        "articles_revised": 7,
+        "articles_in_revised_laws": 7,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -1605,7 +1617,7 @@
         "instability": 0.0069,
         "median_gap_months": 17.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1619,7 +1631,7 @@
         "instability": 0.0455,
         "median_gap_months": 6.7,
         "lines_changed": 0,
-        "articles_revised": 7,
+        "articles_in_revised_laws": 7,
         "weighted_churn": null,
         "article_churn": 0.3
       }
@@ -1635,7 +1647,7 @@
         "instability": 0.0058,
         "median_gap_months": 2.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1649,7 +1661,7 @@
         "instability": 0.0067,
         "median_gap_months": 2.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1663,7 +1675,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1679,7 +1691,7 @@
         "instability": 0.0114,
         "median_gap_months": 2.1,
         "lines_changed": 0,
-        "articles_revised": 11,
+        "articles_in_revised_laws": 11,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -1693,7 +1705,7 @@
         "instability": 0.0131,
         "median_gap_months": 2.1,
         "lines_changed": 0,
-        "articles_revised": 11,
+        "articles_in_revised_laws": 11,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -1709,7 +1721,7 @@
         "instability": 0.0055,
         "median_gap_months": 2.2,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1723,7 +1735,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1737,7 +1749,7 @@
         "instability": 0.0385,
         "median_gap_months": 2.2,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1753,7 +1765,7 @@
         "instability": 0.0161,
         "median_gap_months": 9.8,
         "lines_changed": 0,
-        "articles_revised": 15,
+        "articles_in_revised_laws": 15,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -1767,7 +1779,7 @@
         "instability": 0.0063,
         "median_gap_months": 1.5,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -1781,7 +1793,7 @@
         "instability": 0.0741,
         "median_gap_months": 11.1,
         "lines_changed": 0,
-        "articles_revised": 12,
+        "articles_in_revised_laws": 12,
         "weighted_churn": null,
         "article_churn": 0.4
       }
@@ -1797,7 +1809,7 @@
         "instability": 0.016,
         "median_gap_months": 2.4,
         "lines_changed": 0,
-        "articles_revised": 8,
+        "articles_in_revised_laws": 8,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -1811,7 +1823,7 @@
         "instability": 0.0063,
         "median_gap_months": 2.1,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1825,7 +1837,7 @@
         "instability": 0.0714,
         "median_gap_months": 2.4,
         "lines_changed": 0,
-        "articles_revised": 8,
+        "articles_in_revised_laws": 8,
         "weighted_churn": null,
         "article_churn": 0.3
       }
@@ -1841,7 +1853,7 @@
         "instability": 0.0051,
         "median_gap_months": 433.1,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -1855,7 +1867,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1869,7 +1881,7 @@
         "instability": 0.0333,
         "median_gap_months": 433.1,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -1885,7 +1897,7 @@
         "instability": 0.0051,
         "median_gap_months": 13.6,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -1899,7 +1911,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1913,7 +1925,7 @@
         "instability": 0.0333,
         "median_gap_months": 13.6,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -1929,7 +1941,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -1943,7 +1955,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -1959,7 +1971,7 @@
         "instability": 0.0049,
         "median_gap_months": 4.8,
         "lines_changed": 0,
-        "articles_revised": 14,
+        "articles_in_revised_laws": 14,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -1973,7 +1985,7 @@
         "instability": 0.0058,
         "median_gap_months": 4.8,
         "lines_changed": 0,
-        "articles_revised": 14,
+        "articles_in_revised_laws": 14,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -1987,7 +1999,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -2003,7 +2015,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2017,7 +2029,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2031,7 +2043,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -2047,7 +2059,7 @@
         "instability": 0.009,
         "median_gap_months": 3.2,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2061,7 +2073,7 @@
         "instability": 0.0056,
         "median_gap_months": 1.7,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2075,7 +2087,7 @@
         "instability": 0.0227,
         "median_gap_months": 4.7,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -2091,7 +2103,7 @@
         "instability": 0.0124,
         "median_gap_months": 8.0,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2105,7 +2117,7 @@
         "instability": 0.0053,
         "median_gap_months": 8.0,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2119,7 +2131,7 @@
         "instability": 0.0385,
         "median_gap_months": 5.6,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -2135,7 +2147,7 @@
         "instability": 0.0159,
         "median_gap_months": 3.7,
         "lines_changed": 0,
-        "articles_revised": 9,
+        "articles_in_revised_laws": 9,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2149,7 +2161,7 @@
         "instability": 0.0207,
         "median_gap_months": 3.7,
         "lines_changed": 0,
-        "articles_revised": 9,
+        "articles_in_revised_laws": 9,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2163,7 +2175,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -2179,7 +2191,7 @@
         "instability": 0.0117,
         "median_gap_months": 5.0,
         "lines_changed": 0,
-        "articles_revised": 11,
+        "articles_in_revised_laws": 11,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2193,7 +2205,7 @@
         "instability": 0.0101,
         "median_gap_months": 2.6,
         "lines_changed": 0,
-        "articles_revised": 11,
+        "articles_in_revised_laws": 11,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -2207,7 +2219,7 @@
         "instability": 0.0169,
         "median_gap_months": 15.3,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -2223,7 +2235,7 @@
         "instability": 0.0074,
         "median_gap_months": 157.4,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2237,7 +2249,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2251,7 +2263,7 @@
         "instability": 0.0308,
         "median_gap_months": 157.4,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -2267,7 +2279,7 @@
         "instability": 0.0248,
         "median_gap_months": 9.4,
         "lines_changed": 0,
-        "articles_revised": 52,
+        "articles_in_revised_laws": 52,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -2281,7 +2293,7 @@
         "instability": 0.0142,
         "median_gap_months": 9.4,
         "lines_changed": 0,
-        "articles_revised": 36,
+        "articles_in_revised_laws": 36,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -2295,7 +2307,7 @@
         "instability": 0.0563,
         "median_gap_months": 7.0,
         "lines_changed": 0,
-        "articles_revised": 16,
+        "articles_in_revised_laws": 16,
         "weighted_churn": null,
         "article_churn": 0.2
       }
@@ -2311,7 +2323,7 @@
         "instability": 0.0134,
         "median_gap_months": 0.5,
         "lines_changed": 0,
-        "articles_revised": 22,
+        "articles_in_revised_laws": 22,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -2325,7 +2337,7 @@
         "instability": 0.0092,
         "median_gap_months": 0.4,
         "lines_changed": 0,
-        "articles_revised": 13,
+        "articles_in_revised_laws": 13,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -2339,7 +2351,7 @@
         "instability": 0.0244,
         "median_gap_months": 3.5,
         "lines_changed": 0,
-        "articles_revised": 9,
+        "articles_in_revised_laws": 9,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -2355,7 +2367,7 @@
         "instability": 0.0065,
         "median_gap_months": 3.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2369,7 +2381,7 @@
         "instability": 0.0044,
         "median_gap_months": 3.7,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2383,7 +2395,7 @@
         "instability": 0.012,
         "median_gap_months": 2.2,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -2399,7 +2411,7 @@
         "instability": 0.0031,
         "median_gap_months": 1.2,
         "lines_changed": 0,
-        "articles_revised": 10,
+        "articles_in_revised_laws": 10,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2413,7 +2425,7 @@
         "instability": 0.0043,
         "median_gap_months": 1.2,
         "lines_changed": 0,
-        "articles_revised": 10,
+        "articles_in_revised_laws": 10,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2427,7 +2439,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -2443,7 +2455,7 @@
         "instability": 0.0061,
         "median_gap_months": 4.8,
         "lines_changed": 0,
-        "articles_revised": 10,
+        "articles_in_revised_laws": 10,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2457,7 +2469,7 @@
         "instability": 0.0042,
         "median_gap_months": 1.6,
         "lines_changed": 0,
-        "articles_revised": 4,
+        "articles_in_revised_laws": 4,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2471,7 +2483,7 @@
         "instability": 0.0106,
         "median_gap_months": 8.0,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -2487,7 +2499,7 @@
         "instability": 0.0118,
         "median_gap_months": 3.7,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2501,7 +2513,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2515,7 +2527,7 @@
         "instability": 0.0408,
         "median_gap_months": 3.7,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -2531,7 +2543,7 @@
         "instability": 0.011,
         "median_gap_months": 7.0,
         "lines_changed": 0,
-        "articles_revised": 16,
+        "articles_in_revised_laws": 16,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2545,7 +2557,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2559,7 +2571,7 @@
         "instability": 0.0333,
         "median_gap_months": 7.0,
         "lines_changed": 0,
-        "articles_revised": 16,
+        "articles_in_revised_laws": 16,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -2575,7 +2587,7 @@
         "instability": 0.0081,
         "median_gap_months": 0.9,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2589,7 +2601,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2603,7 +2615,7 @@
         "instability": 0.0242,
         "median_gap_months": 0.9,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -2619,7 +2631,7 @@
         "instability": 0.0157,
         "median_gap_months": 7.7,
         "lines_changed": 0,
-        "articles_revised": 47,
+        "articles_in_revised_laws": 47,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -2633,7 +2645,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2647,7 +2659,7 @@
         "instability": 0.0465,
         "median_gap_months": 7.7,
         "lines_changed": 0,
-        "articles_revised": 47,
+        "articles_in_revised_laws": 47,
         "weighted_churn": null,
         "article_churn": 0.4
       }
@@ -2663,7 +2675,7 @@
         "instability": 0.0026,
         "median_gap_months": 4.3,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2677,7 +2689,7 @@
         "instability": 0.0039,
         "median_gap_months": 4.3,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2691,7 +2703,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -2707,7 +2719,7 @@
         "instability": 0.0077,
         "median_gap_months": 32.3,
         "lines_changed": 0,
-        "articles_revised": 13,
+        "articles_in_revised_laws": 13,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2721,7 +2733,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -2735,7 +2747,7 @@
         "instability": 0.0222,
         "median_gap_months": 32.3,
         "lines_changed": 0,
-        "articles_revised": 13,
+        "articles_in_revised_laws": 13,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -2751,7 +2763,7 @@
         "instability": 0.0125,
         "median_gap_months": 9.2,
         "lines_changed": 0,
-        "articles_revised": 12,
+        "articles_in_revised_laws": 12,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2765,7 +2777,7 @@
         "instability": 0.0039,
         "median_gap_months": 395.4,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2779,7 +2791,7 @@
         "instability": 0.0282,
         "median_gap_months": 6.2,
         "lines_changed": 0,
-        "articles_revised": 9,
+        "articles_in_revised_laws": 9,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -2795,7 +2807,7 @@
         "instability": 0.017,
         "median_gap_months": 6.1,
         "lines_changed": 0,
-        "articles_revised": 20,
+        "articles_in_revised_laws": 20,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2809,7 +2821,7 @@
         "instability": 0.0038,
         "median_gap_months": 0.8,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2823,7 +2835,7 @@
         "instability": 0.0411,
         "median_gap_months": 9.1,
         "lines_changed": 0,
-        "articles_revised": 18,
+        "articles_in_revised_laws": 18,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -2839,7 +2851,7 @@
         "instability": 0.0095,
         "median_gap_months": 3.7,
         "lines_changed": 0,
-        "articles_revised": 20,
+        "articles_in_revised_laws": 20,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2853,7 +2865,7 @@
         "instability": 0.0112,
         "median_gap_months": 2.3,
         "lines_changed": 0,
-        "articles_revised": 5,
+        "articles_in_revised_laws": 5,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2867,7 +2879,7 @@
         "instability": 0.0066,
         "median_gap_months": 5.0,
         "lines_changed": 0,
-        "articles_revised": 15,
+        "articles_in_revised_laws": 15,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -2883,7 +2895,7 @@
         "instability": 0.0116,
         "median_gap_months": 6.0,
         "lines_changed": 0,
-        "articles_revised": 20,
+        "articles_in_revised_laws": 20,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2897,7 +2909,7 @@
         "instability": 0.0036,
         "median_gap_months": 0.7,
         "lines_changed": 0,
-        "articles_revised": 1,
+        "articles_in_revised_laws": 1,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2911,7 +2923,7 @@
         "instability": 0.0253,
         "median_gap_months": 6.6,
         "lines_changed": 0,
-        "articles_revised": 19,
+        "articles_in_revised_laws": 19,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -2927,7 +2939,7 @@
         "instability": 0.0109,
         "median_gap_months": 1.5,
         "lines_changed": 0,
-        "articles_revised": 42,
+        "articles_in_revised_laws": 42,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -2941,7 +2953,7 @@
         "instability": 0.0068,
         "median_gap_months": 0.5,
         "lines_changed": 0,
-        "articles_revised": 28,
+        "articles_in_revised_laws": 28,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -2955,7 +2967,7 @@
         "instability": 0.0183,
         "median_gap_months": 16.0,
         "lines_changed": 0,
-        "articles_revised": 14,
+        "articles_in_revised_laws": 14,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -2971,7 +2983,7 @@
         "instability": 0.0043,
         "median_gap_months": 0.6,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2985,7 +2997,7 @@
         "instability": 0.0034,
         "median_gap_months": 0.5,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -2999,7 +3011,7 @@
         "instability": 0.0059,
         "median_gap_months": 2.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -3015,7 +3027,7 @@
         "instability": 0.0084,
         "median_gap_months": 0.2,
         "lines_changed": 0,
-        "articles_revised": 42,
+        "articles_in_revised_laws": 42,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -3029,7 +3041,7 @@
         "instability": 0.0131,
         "median_gap_months": 0.2,
         "lines_changed": 0,
-        "articles_revised": 42,
+        "articles_in_revised_laws": 42,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -3043,7 +3055,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -3059,7 +3071,7 @@
         "instability": 0.0021,
         "median_gap_months": 0.0,
         "lines_changed": 0,
-        "articles_revised": 9,
+        "articles_in_revised_laws": 9,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3073,7 +3085,7 @@
         "instability": 0.0032,
         "median_gap_months": 0.0,
         "lines_changed": 0,
-        "articles_revised": 9,
+        "articles_in_revised_laws": 9,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3087,7 +3099,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -3103,7 +3115,7 @@
         "instability": 0.002,
         "median_gap_months": 6.7,
         "lines_changed": 0,
-        "articles_revised": 18,
+        "articles_in_revised_laws": 18,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3117,7 +3129,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -3131,7 +3143,7 @@
         "instability": 0.0056,
         "median_gap_months": 6.7,
         "lines_changed": 0,
-        "articles_revised": 18,
+        "articles_in_revised_laws": 18,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -3147,7 +3159,7 @@
         "instability": 0.0039,
         "median_gap_months": 47.4,
         "lines_changed": 0,
-        "articles_revised": 19,
+        "articles_in_revised_laws": 19,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3161,7 +3173,7 @@
         "instability": 0.0031,
         "median_gap_months": 66.7,
         "lines_changed": 0,
-        "articles_revised": 13,
+        "articles_in_revised_laws": 13,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3175,7 +3187,7 @@
         "instability": 0.0056,
         "median_gap_months": 28.1,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -3191,7 +3203,7 @@
         "instability": 0.0058,
         "median_gap_months": 7.8,
         "lines_changed": 0,
-        "articles_revised": 12,
+        "articles_in_revised_laws": 12,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3205,7 +3217,7 @@
         "instability": 0.009,
         "median_gap_months": 7.8,
         "lines_changed": 0,
-        "articles_revised": 12,
+        "articles_in_revised_laws": 12,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3219,7 +3231,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -3235,7 +3247,7 @@
         "instability": 0.0038,
         "median_gap_months": 57.4,
         "lines_changed": 0,
-        "articles_revised": 10,
+        "articles_in_revised_laws": 10,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3249,7 +3261,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -3263,7 +3275,7 @@
         "instability": 0.0106,
         "median_gap_months": 57.4,
         "lines_changed": 0,
-        "articles_revised": 10,
+        "articles_in_revised_laws": 10,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -3279,7 +3291,7 @@
         "instability": 0.0019,
         "median_gap_months": 240.3,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3293,7 +3305,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -3307,7 +3319,7 @@
         "instability": 0.0052,
         "median_gap_months": 240.3,
         "lines_changed": 0,
-        "articles_revised": 2,
+        "articles_in_revised_laws": 2,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -3323,7 +3335,7 @@
         "instability": 0.0037,
         "median_gap_months": 16.1,
         "lines_changed": 0,
-        "articles_revised": 38,
+        "articles_in_revised_laws": 38,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -3337,7 +3349,7 @@
         "instability": 0.0029,
         "median_gap_months": 0.2,
         "lines_changed": 0,
-        "articles_revised": 11,
+        "articles_in_revised_laws": 11,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3351,7 +3363,7 @@
         "instability": 0.0052,
         "median_gap_months": 32.1,
         "lines_changed": 0,
-        "articles_revised": 27,
+        "articles_in_revised_laws": 27,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -3367,7 +3379,7 @@
         "instability": 0.0018,
         "median_gap_months": 15.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -3381,7 +3393,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -3395,7 +3407,7 @@
         "instability": 0.005,
         "median_gap_months": 15.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -3411,7 +3423,7 @@
         "instability": 0.0052,
         "median_gap_months": 160.9,
         "lines_changed": 0,
-        "articles_revised": 14,
+        "articles_in_revised_laws": 14,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3425,7 +3437,7 @@
         "instability": 0.0053,
         "median_gap_months": 80.6,
         "lines_changed": 0,
-        "articles_revised": 14,
+        "articles_in_revised_laws": 14,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3439,7 +3451,7 @@
         "instability": 0.0049,
         "median_gap_months": 436.2,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -3455,7 +3467,7 @@
         "instability": 0.0051,
         "median_gap_months": 1.4,
         "lines_changed": 0,
-        "articles_revised": 9,
+        "articles_in_revised_laws": 9,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3469,7 +3481,7 @@
         "instability": 0.0051,
         "median_gap_months": 0.7,
         "lines_changed": 0,
-        "articles_revised": 8,
+        "articles_in_revised_laws": 8,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3483,7 +3495,7 @@
         "instability": 0.0049,
         "median_gap_months": 604.1,
         "lines_changed": 0,
-        "articles_revised": 1,
+        "articles_in_revised_laws": 1,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -3499,7 +3511,7 @@
         "instability": 0.0016,
         "median_gap_months": 137.4,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3513,7 +3525,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -3527,7 +3539,7 @@
         "instability": 0.0047,
         "median_gap_months": 137.4,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -3543,7 +3555,7 @@
         "instability": 0.0064,
         "median_gap_months": 6.3,
         "lines_changed": 0,
-        "articles_revised": 13,
+        "articles_in_revised_laws": 13,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3557,7 +3569,7 @@
         "instability": 0.0073,
         "median_gap_months": 9.2,
         "lines_changed": 0,
-        "articles_revised": 13,
+        "articles_in_revised_laws": 13,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3571,7 +3583,7 @@
         "instability": 0.0046,
         "median_gap_months": 6.3,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -3587,7 +3599,7 @@
         "instability": 0.0032,
         "median_gap_months": 114.7,
         "lines_changed": 0,
-        "articles_revised": 25,
+        "articles_in_revised_laws": 25,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3601,7 +3613,7 @@
         "instability": 0.0048,
         "median_gap_months": 114.7,
         "lines_changed": 0,
-        "articles_revised": 25,
+        "articles_in_revised_laws": 25,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -3615,7 +3627,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -3631,7 +3643,7 @@
         "instability": 0.0031,
         "median_gap_months": 21.6,
         "lines_changed": 0,
-        "articles_revised": 5,
+        "articles_in_revised_laws": 5,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3645,7 +3657,7 @@
         "instability": 0.0048,
         "median_gap_months": 21.6,
         "lines_changed": 0,
-        "articles_revised": 5,
+        "articles_in_revised_laws": 5,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3659,7 +3671,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -3675,7 +3687,7 @@
         "instability": 0.0151,
         "median_gap_months": 4.2,
         "lines_changed": 0,
-        "articles_revised": 137,
+        "articles_in_revised_laws": 137,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -3689,7 +3701,7 @@
         "instability": 0.0023,
         "median_gap_months": 6.7,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -3703,7 +3715,7 @@
         "instability": 0.0378,
         "median_gap_months": 4.2,
         "lines_changed": 0,
-        "articles_revised": 137,
+        "articles_in_revised_laws": 137,
         "weighted_churn": null,
         "article_churn": 0.6
       }
@@ -3719,7 +3731,7 @@
         "instability": 0.0098,
         "median_gap_months": 2.0,
         "lines_changed": 0,
-        "articles_revised": 29,
+        "articles_in_revised_laws": 29,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3733,7 +3745,7 @@
         "instability": 0.0088,
         "median_gap_months": 1.5,
         "lines_changed": 0,
-        "articles_revised": 5,
+        "articles_in_revised_laws": 5,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3747,7 +3759,7 @@
         "instability": 0.0116,
         "median_gap_months": 7.8,
         "lines_changed": 0,
-        "articles_revised": 24,
+        "articles_in_revised_laws": 24,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -3763,7 +3775,7 @@
         "instability": 0.0136,
         "median_gap_months": 5.9,
         "lines_changed": 0,
-        "articles_revised": 32,
+        "articles_in_revised_laws": 32,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3777,7 +3789,7 @@
         "instability": 0.0021,
         "median_gap_months": 0.2,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3791,7 +3803,7 @@
         "instability": 0.0333,
         "median_gap_months": 9.8,
         "lines_changed": 0,
-        "articles_revised": 29,
+        "articles_in_revised_laws": 29,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -3807,7 +3819,7 @@
         "instability": 0.0142,
         "median_gap_months": 1.7,
         "lines_changed": 0,
-        "articles_revised": 82,
+        "articles_in_revised_laws": 82,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -3821,7 +3833,7 @@
         "instability": 0.0142,
         "median_gap_months": 1.3,
         "lines_changed": 0,
-        "articles_revised": 34,
+        "articles_in_revised_laws": 34,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -3835,7 +3847,7 @@
         "instability": 0.0142,
         "median_gap_months": 8.6,
         "lines_changed": 0,
-        "articles_revised": 48,
+        "articles_in_revised_laws": 48,
         "weighted_churn": null,
         "article_churn": 0.2
       }
@@ -3851,7 +3863,7 @@
         "instability": 0.0099,
         "median_gap_months": 6.3,
         "lines_changed": 0,
-        "articles_revised": 59,
+        "articles_in_revised_laws": 59,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -3865,7 +3877,7 @@
         "instability": 0.0116,
         "median_gap_months": 6.3,
         "lines_changed": 0,
-        "articles_revised": 47,
+        "articles_in_revised_laws": 47,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -3879,7 +3891,7 @@
         "instability": 0.0068,
         "median_gap_months": 3.8,
         "lines_changed": 0,
-        "articles_revised": 12,
+        "articles_in_revised_laws": 12,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -3895,7 +3907,7 @@
         "instability": 0.0067,
         "median_gap_months": 8.5,
         "lines_changed": 0,
-        "articles_revised": 66,
+        "articles_in_revised_laws": 66,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -3909,7 +3921,7 @@
         "instability": 0.0051,
         "median_gap_months": 0.9,
         "lines_changed": 0,
-        "articles_revised": 24,
+        "articles_in_revised_laws": 24,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3923,7 +3935,7 @@
         "instability": 0.0099,
         "median_gap_months": 11.0,
         "lines_changed": 0,
-        "articles_revised": 42,
+        "articles_in_revised_laws": 42,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -3939,7 +3951,7 @@
         "instability": 0.0131,
         "median_gap_months": 1.2,
         "lines_changed": 0,
-        "articles_revised": 71,
+        "articles_in_revised_laws": 71,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -3953,7 +3965,7 @@
         "instability": 0.0132,
         "median_gap_months": 0.3,
         "lines_changed": 0,
-        "articles_revised": 71,
+        "articles_in_revised_laws": 71,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -3967,7 +3979,7 @@
         "instability": 0.0129,
         "median_gap_months": 4.8,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -3983,7 +3995,7 @@
         "instability": 0.0032,
         "median_gap_months": 1.1,
         "lines_changed": 0,
-        "articles_revised": 36,
+        "articles_in_revised_laws": 36,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -3997,7 +4009,7 @@
         "instability": 0.0032,
         "median_gap_months": 1.0,
         "lines_changed": 0,
-        "articles_revised": 23,
+        "articles_in_revised_laws": 23,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4011,7 +4023,7 @@
         "instability": 0.0032,
         "median_gap_months": 90.5,
         "lines_changed": 0,
-        "articles_revised": 13,
+        "articles_in_revised_laws": 13,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -4027,7 +4039,7 @@
         "instability": 0.0063,
         "median_gap_months": 2.0,
         "lines_changed": 0,
-        "articles_revised": 31,
+        "articles_in_revised_laws": 31,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4041,7 +4053,7 @@
         "instability": 0.0063,
         "median_gap_months": 2.0,
         "lines_changed": 0,
-        "articles_revised": 22,
+        "articles_in_revised_laws": 22,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4055,7 +4067,7 @@
         "instability": 0.0062,
         "median_gap_months": 1.8,
         "lines_changed": 0,
-        "articles_revised": 9,
+        "articles_in_revised_laws": 9,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -4071,7 +4083,7 @@
         "instability": 0.0041,
         "median_gap_months": 12.5,
         "lines_changed": 0,
-        "articles_revised": 35,
+        "articles_in_revised_laws": 35,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4085,7 +4097,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -4099,7 +4111,7 @@
         "instability": 0.0121,
         "median_gap_months": 12.5,
         "lines_changed": 0,
-        "articles_revised": 35,
+        "articles_in_revised_laws": 35,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -4115,7 +4127,7 @@
         "instability": 0.002,
         "median_gap_months": 0.4,
         "lines_changed": 0,
-        "articles_revised": 1,
+        "articles_in_revised_laws": 1,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4129,7 +4141,7 @@
         "instability": 0.0015,
         "median_gap_months": 0.2,
         "lines_changed": 0,
-        "articles_revised": 1,
+        "articles_in_revised_laws": 1,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4143,7 +4155,7 @@
         "instability": 0.003,
         "median_gap_months": 0.5,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -4159,7 +4171,7 @@
         "instability": 0.001,
         "median_gap_months": 12.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -4173,7 +4185,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -4187,7 +4199,7 @@
         "instability": 0.003,
         "median_gap_months": 12.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -4203,7 +4215,7 @@
         "instability": 0.002,
         "median_gap_months": 0.4,
         "lines_changed": 0,
-        "articles_revised": 5,
+        "articles_in_revised_laws": 5,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4217,7 +4229,7 @@
         "instability": 0.0029,
         "median_gap_months": 0.4,
         "lines_changed": 0,
-        "articles_revised": 5,
+        "articles_in_revised_laws": 5,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4231,7 +4243,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -4247,7 +4259,7 @@
         "instability": 0.0038,
         "median_gap_months": 10.7,
         "lines_changed": 0,
-        "articles_revised": 7,
+        "articles_in_revised_laws": 7,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4261,7 +4273,7 @@
         "instability": 0.0014,
         "median_gap_months": 8.9,
         "lines_changed": 0,
-        "articles_revised": 7,
+        "articles_in_revised_laws": 7,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4275,7 +4287,7 @@
         "instability": 0.0084,
         "median_gap_months": 12.4,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -4291,7 +4303,7 @@
         "instability": 0.0037,
         "median_gap_months": 2.7,
         "lines_changed": 0,
-        "articles_revised": 38,
+        "articles_in_revised_laws": 38,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4305,7 +4317,7 @@
         "instability": 0.0014,
         "median_gap_months": 0.3,
         "lines_changed": 0,
-        "articles_revised": 38,
+        "articles_in_revised_laws": 38,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -4319,7 +4331,7 @@
         "instability": 0.0083,
         "median_gap_months": 5.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -4335,7 +4347,7 @@
         "instability": 0.0018,
         "median_gap_months": 14.7,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4349,7 +4361,7 @@
         "instability": 0.0014,
         "median_gap_months": 1.4,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4363,7 +4375,7 @@
         "instability": 0.0026,
         "median_gap_months": 28.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -4379,7 +4391,7 @@
         "instability": 0.0035,
         "median_gap_months": 2.4,
         "lines_changed": 0,
-        "articles_revised": 43,
+        "articles_in_revised_laws": 43,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4393,7 +4405,7 @@
         "instability": 0.0027,
         "median_gap_months": 1.7,
         "lines_changed": 0,
-        "articles_revised": 22,
+        "articles_in_revised_laws": 22,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4407,7 +4419,7 @@
         "instability": 0.0052,
         "median_gap_months": 3.8,
         "lines_changed": 0,
-        "articles_revised": 21,
+        "articles_in_revised_laws": 21,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -4423,7 +4435,7 @@
         "instability": 0.0017,
         "median_gap_months": 4.3,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -4437,7 +4449,7 @@
         "instability": 0.0013,
         "median_gap_months": 1.5,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -4451,7 +4463,7 @@
         "instability": 0.0025,
         "median_gap_months": 7.1,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -4467,7 +4479,7 @@
         "instability": 0.0108,
         "median_gap_months": 9.8,
         "lines_changed": 0,
-        "articles_revised": 48,
+        "articles_in_revised_laws": 48,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4481,7 +4493,7 @@
         "instability": 0.0051,
         "median_gap_months": 7.8,
         "lines_changed": 0,
-        "articles_revised": 7,
+        "articles_in_revised_laws": 7,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4495,7 +4507,7 @@
         "instability": 0.0216,
         "median_gap_months": 9.8,
         "lines_changed": 0,
-        "articles_revised": 41,
+        "articles_in_revised_laws": 41,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -4511,7 +4523,7 @@
         "instability": 0.0151,
         "median_gap_months": 4.3,
         "lines_changed": 0,
-        "articles_revised": 200,
+        "articles_in_revised_laws": 200,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -4525,7 +4537,7 @@
         "instability": 0.0097,
         "median_gap_months": 1.7,
         "lines_changed": 0,
-        "articles_revised": 68,
+        "articles_in_revised_laws": 68,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -4539,7 +4551,7 @@
         "instability": 0.0252,
         "median_gap_months": 8.4,
         "lines_changed": 0,
-        "articles_revised": 132,
+        "articles_in_revised_laws": 132,
         "weighted_churn": null,
         "article_churn": 0.3
       }
@@ -4555,7 +4567,7 @@
         "instability": 0.0107,
         "median_gap_months": 1.2,
         "lines_changed": 0,
-        "articles_revised": 178,
+        "articles_in_revised_laws": 178,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -4569,7 +4581,7 @@
         "instability": 0.0094,
         "median_gap_months": 0.7,
         "lines_changed": 0,
-        "articles_revised": 119,
+        "articles_in_revised_laws": 119,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -4583,7 +4595,7 @@
         "instability": 0.0132,
         "median_gap_months": 7.2,
         "lines_changed": 0,
-        "articles_revised": 59,
+        "articles_in_revised_laws": 59,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -4599,7 +4611,7 @@
         "instability": 0.0134,
         "median_gap_months": 12.7,
         "lines_changed": 0,
-        "articles_revised": 273,
+        "articles_in_revised_laws": 273,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -4613,7 +4625,7 @@
         "instability": 0.0058,
         "median_gap_months": 2.8,
         "lines_changed": 0,
-        "articles_revised": 91,
+        "articles_in_revised_laws": 91,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -4627,7 +4639,7 @@
         "instability": 0.0273,
         "median_gap_months": 16.1,
         "lines_changed": 0,
-        "articles_revised": 182,
+        "articles_in_revised_laws": 182,
         "weighted_churn": null,
         "article_churn": 0.4
       }
@@ -4643,7 +4655,7 @@
         "instability": 0.0072,
         "median_gap_months": 3.2,
         "lines_changed": 0,
-        "articles_revised": 57,
+        "articles_in_revised_laws": 57,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4657,7 +4669,7 @@
         "instability": 0.0023,
         "median_gap_months": 2.0,
         "lines_changed": 0,
-        "articles_revised": 9,
+        "articles_in_revised_laws": 9,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4671,7 +4683,7 @@
         "instability": 0.016,
         "median_gap_months": 5.2,
         "lines_changed": 0,
-        "articles_revised": 48,
+        "articles_in_revised_laws": 48,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -4687,7 +4699,7 @@
         "instability": 0.0063,
         "median_gap_months": 21.6,
         "lines_changed": 0,
-        "articles_revised": 108,
+        "articles_in_revised_laws": 108,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -4701,7 +4713,7 @@
         "instability": 0.0033,
         "median_gap_months": 118.8,
         "lines_changed": 0,
-        "articles_revised": 27,
+        "articles_in_revised_laws": 27,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4715,7 +4727,7 @@
         "instability": 0.0115,
         "median_gap_months": 18.2,
         "lines_changed": 0,
-        "articles_revised": 81,
+        "articles_in_revised_laws": 81,
         "weighted_churn": null,
         "article_churn": 0.2
       }
@@ -4731,7 +4743,7 @@
         "instability": 0.0094,
         "median_gap_months": 8.7,
         "lines_changed": 0,
-        "articles_revised": 111,
+        "articles_in_revised_laws": 111,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -4745,7 +4757,7 @@
         "instability": 0.0021,
         "median_gap_months": 13.5,
         "lines_changed": 0,
-        "articles_revised": 11,
+        "articles_in_revised_laws": 11,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4759,7 +4771,7 @@
         "instability": 0.0222,
         "median_gap_months": 8.7,
         "lines_changed": 0,
-        "articles_revised": 100,
+        "articles_in_revised_laws": 100,
         "weighted_churn": null,
         "article_churn": 0.2
       }
@@ -4775,7 +4787,7 @@
         "instability": 0.0046,
         "median_gap_months": 3.8,
         "lines_changed": 0,
-        "articles_revised": 28,
+        "articles_in_revised_laws": 28,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4789,7 +4801,7 @@
         "instability": 0.0061,
         "median_gap_months": 2.1,
         "lines_changed": 0,
-        "articles_revised": 11,
+        "articles_in_revised_laws": 11,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4803,7 +4815,7 @@
         "instability": 0.0018,
         "median_gap_months": 65.9,
         "lines_changed": 0,
-        "articles_revised": 17,
+        "articles_in_revised_laws": 17,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -4819,7 +4831,7 @@
         "instability": 0.0058,
         "median_gap_months": 15.2,
         "lines_changed": 0,
-        "articles_revised": 111,
+        "articles_in_revised_laws": 111,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -4833,7 +4845,7 @@
         "instability": 0.003,
         "median_gap_months": 1.8,
         "lines_changed": 0,
-        "articles_revised": 62,
+        "articles_in_revised_laws": 62,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -4847,7 +4859,7 @@
         "instability": 0.0106,
         "median_gap_months": 16.5,
         "lines_changed": 0,
-        "articles_revised": 49,
+        "articles_in_revised_laws": 49,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -4863,7 +4875,7 @@
         "instability": 0.0038,
         "median_gap_months": 9.1,
         "lines_changed": 0,
-        "articles_revised": 9,
+        "articles_in_revised_laws": 9,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4877,7 +4889,7 @@
         "instability": 0.002,
         "median_gap_months": 0.2,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4891,7 +4903,7 @@
         "instability": 0.0069,
         "median_gap_months": 21.8,
         "lines_changed": 0,
-        "articles_revised": 3,
+        "articles_in_revised_laws": 3,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -4907,7 +4919,7 @@
         "instability": 0.0073,
         "median_gap_months": 7.0,
         "lines_changed": 0,
-        "articles_revised": 294,
+        "articles_in_revised_laws": 294,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -4921,7 +4933,7 @@
         "instability": 0.0019,
         "median_gap_months": 59.6,
         "lines_changed": 0,
-        "articles_revised": 52,
+        "articles_in_revised_laws": 52,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -4935,7 +4947,7 @@
         "instability": 0.0165,
         "median_gap_months": 4.8,
         "lines_changed": 0,
-        "articles_revised": 242,
+        "articles_in_revised_laws": 242,
         "weighted_churn": null,
         "article_churn": 0.4
       }
@@ -4951,7 +4963,7 @@
         "instability": 0.0095,
         "median_gap_months": 4.4,
         "lines_changed": 0,
-        "articles_revised": 106,
+        "articles_in_revised_laws": 106,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -4965,7 +4977,7 @@
         "instability": 0.0038,
         "median_gap_months": 1.2,
         "lines_changed": 0,
-        "articles_revised": 23,
+        "articles_in_revised_laws": 23,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -4979,7 +4991,7 @@
         "instability": 0.0192,
         "median_gap_months": 7.1,
         "lines_changed": 0,
-        "articles_revised": 83,
+        "articles_in_revised_laws": 83,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -4995,7 +5007,7 @@
         "instability": 0.0035,
         "median_gap_months": 11.0,
         "lines_changed": 0,
-        "articles_revised": 25,
+        "articles_in_revised_laws": 25,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5009,7 +5021,7 @@
         "instability": 0.0028,
         "median_gap_months": 31.7,
         "lines_changed": 0,
-        "articles_revised": 14,
+        "articles_in_revised_laws": 14,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5023,7 +5035,7 @@
         "instability": 0.0047,
         "median_gap_months": 8.7,
         "lines_changed": 0,
-        "articles_revised": 11,
+        "articles_in_revised_laws": 11,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5039,7 +5051,7 @@
         "instability": 0.0067,
         "median_gap_months": 5.3,
         "lines_changed": 0,
-        "articles_revised": 175,
+        "articles_in_revised_laws": 175,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5053,7 +5065,7 @@
         "instability": 0.0036,
         "median_gap_months": 3.7,
         "lines_changed": 0,
-        "articles_revised": 145,
+        "articles_in_revised_laws": 145,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5067,7 +5079,7 @@
         "instability": 0.012,
         "median_gap_months": 14.4,
         "lines_changed": 0,
-        "articles_revised": 30,
+        "articles_in_revised_laws": 30,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5083,7 +5095,7 @@
         "instability": 0.0054,
         "median_gap_months": 12.5,
         "lines_changed": 0,
-        "articles_revised": 41,
+        "articles_in_revised_laws": 41,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5097,7 +5109,7 @@
         "instability": 0.0026,
         "median_gap_months": 3.1,
         "lines_changed": 0,
-        "articles_revised": 17,
+        "articles_in_revised_laws": 17,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5111,7 +5123,7 @@
         "instability": 0.0102,
         "median_gap_months": 12.9,
         "lines_changed": 0,
-        "articles_revised": 24,
+        "articles_in_revised_laws": 24,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5127,7 +5139,7 @@
         "instability": 0.0043,
         "median_gap_months": 6.7,
         "lines_changed": 0,
-        "articles_revised": 34,
+        "articles_in_revised_laws": 34,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5141,7 +5153,7 @@
         "instability": 0.0017,
         "median_gap_months": 2.4,
         "lines_changed": 0,
-        "articles_revised": 16,
+        "articles_in_revised_laws": 16,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5155,7 +5167,7 @@
         "instability": 0.0087,
         "median_gap_months": 8.7,
         "lines_changed": 0,
-        "articles_revised": 18,
+        "articles_in_revised_laws": 18,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5171,7 +5183,7 @@
         "instability": 0.0032,
         "median_gap_months": 0.6,
         "lines_changed": 0,
-        "articles_revised": 161,
+        "articles_in_revised_laws": 161,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5185,7 +5197,7 @@
         "instability": 0.0041,
         "median_gap_months": 0.8,
         "lines_changed": 0,
-        "articles_revised": 161,
+        "articles_in_revised_laws": 161,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5199,7 +5211,7 @@
         "instability": 0.0014,
         "median_gap_months": 0.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -5215,7 +5227,7 @@
         "instability": 0.0041,
         "median_gap_months": 5.5,
         "lines_changed": 0,
-        "articles_revised": 61,
+        "articles_in_revised_laws": 61,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5229,7 +5241,7 @@
         "instability": 0.004,
         "median_gap_months": 6.2,
         "lines_changed": 0,
-        "articles_revised": 55,
+        "articles_in_revised_laws": 55,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5243,7 +5255,7 @@
         "instability": 0.0043,
         "median_gap_months": 4.7,
         "lines_changed": 0,
-        "articles_revised": 6,
+        "articles_in_revised_laws": 6,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5259,7 +5271,7 @@
         "instability": 0.0031,
         "median_gap_months": 14.0,
         "lines_changed": 0,
-        "articles_revised": 33,
+        "articles_in_revised_laws": 33,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5273,7 +5285,7 @@
         "instability": 0.0016,
         "median_gap_months": 0.8,
         "lines_changed": 0,
-        "articles_revised": 29,
+        "articles_in_revised_laws": 29,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5287,7 +5299,7 @@
         "instability": 0.0057,
         "median_gap_months": 41.7,
         "lines_changed": 0,
-        "articles_revised": 4,
+        "articles_in_revised_laws": 4,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5303,7 +5315,7 @@
         "instability": 0.0034,
         "median_gap_months": 1.3,
         "lines_changed": 0,
-        "articles_revised": 64,
+        "articles_in_revised_laws": 64,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5317,7 +5329,7 @@
         "instability": 0.0053,
         "median_gap_months": 1.3,
         "lines_changed": 0,
-        "articles_revised": 64,
+        "articles_in_revised_laws": 64,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5331,7 +5343,7 @@
         "instability": 0.0,
         "median_gap_months": null,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -5347,7 +5359,7 @@
         "instability": 0.012,
         "median_gap_months": 3.6,
         "lines_changed": 0,
-        "articles_revised": 275,
+        "articles_in_revised_laws": 275,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5361,7 +5373,7 @@
         "instability": 0.0168,
         "median_gap_months": 3.6,
         "lines_changed": 0,
-        "articles_revised": 275,
+        "articles_in_revised_laws": 275,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -5375,7 +5387,7 @@
         "instability": 0.0028,
         "median_gap_months": 8.5,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -5391,7 +5403,7 @@
         "instability": 0.0061,
         "median_gap_months": 2.5,
         "lines_changed": 0,
-        "articles_revised": 25,
+        "articles_in_revised_laws": 25,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5405,7 +5417,7 @@
         "instability": 0.005,
         "median_gap_months": 3.5,
         "lines_changed": 0,
-        "articles_revised": 24,
+        "articles_in_revised_laws": 24,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5419,7 +5431,7 @@
         "instability": 0.0081,
         "median_gap_months": 0.4,
         "lines_changed": 0,
-        "articles_revised": 1,
+        "articles_in_revised_laws": 1,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5435,7 +5447,7 @@
         "instability": 0.0063,
         "median_gap_months": 2.0,
         "lines_changed": 0,
-        "articles_revised": 83,
+        "articles_in_revised_laws": 83,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5449,7 +5461,7 @@
         "instability": 0.0035,
         "median_gap_months": 0.6,
         "lines_changed": 0,
-        "articles_revised": 17,
+        "articles_in_revised_laws": 17,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5463,7 +5475,7 @@
         "instability": 0.0116,
         "median_gap_months": 2.5,
         "lines_changed": 0,
-        "articles_revised": 66,
+        "articles_in_revised_laws": 66,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -5479,7 +5491,7 @@
         "instability": 0.0071,
         "median_gap_months": 2.1,
         "lines_changed": 0,
-        "articles_revised": 75,
+        "articles_in_revised_laws": 75,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5493,7 +5505,7 @@
         "instability": 0.0054,
         "median_gap_months": 0.5,
         "lines_changed": 0,
-        "articles_revised": 46,
+        "articles_in_revised_laws": 46,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5507,7 +5519,7 @@
         "instability": 0.01,
         "median_gap_months": 15.5,
         "lines_changed": 0,
-        "articles_revised": 29,
+        "articles_in_revised_laws": 29,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5523,7 +5535,7 @@
         "instability": 0.0093,
         "median_gap_months": 8.6,
         "lines_changed": 0,
-        "articles_revised": 171,
+        "articles_in_revised_laws": 171,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5537,7 +5549,7 @@
         "instability": 0.0052,
         "median_gap_months": 2.9,
         "lines_changed": 0,
-        "articles_revised": 86,
+        "articles_in_revised_laws": 86,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5551,7 +5563,7 @@
         "instability": 0.0167,
         "median_gap_months": 9.8,
         "lines_changed": 0,
-        "articles_revised": 85,
+        "articles_in_revised_laws": 85,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -5567,7 +5579,7 @@
         "instability": 0.0107,
         "median_gap_months": 9.9,
         "lines_changed": 0,
-        "articles_revised": 186,
+        "articles_in_revised_laws": 186,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5581,7 +5593,7 @@
         "instability": 0.0109,
         "median_gap_months": 9.9,
         "lines_changed": 0,
-        "articles_revised": 169,
+        "articles_in_revised_laws": 169,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5595,7 +5607,7 @@
         "instability": 0.0103,
         "median_gap_months": 16.8,
         "lines_changed": 0,
-        "articles_revised": 17,
+        "articles_in_revised_laws": 17,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5611,7 +5623,7 @@
         "instability": 0.004,
         "median_gap_months": 0.3,
         "lines_changed": 0,
-        "articles_revised": 95,
+        "articles_in_revised_laws": 95,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5625,7 +5637,7 @@
         "instability": 0.0038,
         "median_gap_months": 0.3,
         "lines_changed": 0,
-        "articles_revised": 74,
+        "articles_in_revised_laws": 74,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5639,7 +5651,7 @@
         "instability": 0.0044,
         "median_gap_months": 0.5,
         "lines_changed": 0,
-        "articles_revised": 21,
+        "articles_in_revised_laws": 21,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5655,7 +5667,7 @@
         "instability": 0.0068,
         "median_gap_months": 3.5,
         "lines_changed": 0,
-        "articles_revised": 176,
+        "articles_in_revised_laws": 176,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5669,7 +5681,7 @@
         "instability": 0.0071,
         "median_gap_months": 3.2,
         "lines_changed": 0,
-        "articles_revised": 171,
+        "articles_in_revised_laws": 171,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5683,7 +5695,7 @@
         "instability": 0.0062,
         "median_gap_months": 4.0,
         "lines_changed": 0,
-        "articles_revised": 5,
+        "articles_in_revised_laws": 5,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5699,7 +5711,7 @@
         "instability": 0.0091,
         "median_gap_months": 0.8,
         "lines_changed": 0,
-        "articles_revised": 88,
+        "articles_in_revised_laws": 88,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5713,7 +5725,7 @@
         "instability": 0.0041,
         "median_gap_months": 1.3,
         "lines_changed": 0,
-        "articles_revised": 71,
+        "articles_in_revised_laws": 71,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5727,7 +5739,7 @@
         "instability": 0.0176,
         "median_gap_months": 0.8,
         "lines_changed": 0,
-        "articles_revised": 17,
+        "articles_in_revised_laws": 17,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5743,7 +5755,7 @@
         "instability": 0.0113,
         "median_gap_months": 3.4,
         "lines_changed": 0,
-        "articles_revised": 187,
+        "articles_in_revised_laws": 187,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5757,7 +5769,7 @@
         "instability": 0.0056,
         "median_gap_months": 6.2,
         "lines_changed": 0,
-        "articles_revised": 74,
+        "articles_in_revised_laws": 74,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5771,7 +5783,7 @@
         "instability": 0.0207,
         "median_gap_months": 3.3,
         "lines_changed": 0,
-        "articles_revised": 113,
+        "articles_in_revised_laws": 113,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -5787,7 +5799,7 @@
         "instability": 0.0116,
         "median_gap_months": 7.5,
         "lines_changed": 0,
-        "articles_revised": 128,
+        "articles_in_revised_laws": 128,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5801,7 +5813,7 @@
         "instability": 0.0049,
         "median_gap_months": 14.1,
         "lines_changed": 0,
-        "articles_revised": 78,
+        "articles_in_revised_laws": 78,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5815,7 +5827,7 @@
         "instability": 0.0225,
         "median_gap_months": 5.1,
         "lines_changed": 0,
-        "articles_revised": 50,
+        "articles_in_revised_laws": 50,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5831,7 +5843,7 @@
         "instability": 0.0109,
         "median_gap_months": 2.5,
         "lines_changed": 0,
-        "articles_revised": 247,
+        "articles_in_revised_laws": 247,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5845,7 +5857,7 @@
         "instability": 0.0069,
         "median_gap_months": 2.1,
         "lines_changed": 0,
-        "articles_revised": 149,
+        "articles_in_revised_laws": 149,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5859,7 +5871,7 @@
         "instability": 0.0173,
         "median_gap_months": 3.8,
         "lines_changed": 0,
-        "articles_revised": 98,
+        "articles_in_revised_laws": 98,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -5875,7 +5887,7 @@
         "instability": 0.008,
         "median_gap_months": 5.3,
         "lines_changed": 0,
-        "articles_revised": 86,
+        "articles_in_revised_laws": 86,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5889,7 +5901,7 @@
         "instability": 0.0053,
         "median_gap_months": 7.0,
         "lines_changed": 0,
-        "articles_revised": 47,
+        "articles_in_revised_laws": 47,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5903,7 +5915,7 @@
         "instability": 0.0122,
         "median_gap_months": 3.8,
         "lines_changed": 0,
-        "articles_revised": 39,
+        "articles_in_revised_laws": 39,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -5919,7 +5931,7 @@
         "instability": 0.0165,
         "median_gap_months": 2.6,
         "lines_changed": 0,
-        "articles_revised": 186,
+        "articles_in_revised_laws": 186,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -5933,7 +5945,7 @@
         "instability": 0.0046,
         "median_gap_months": 1.9,
         "lines_changed": 0,
-        "articles_revised": 50,
+        "articles_in_revised_laws": 50,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5947,7 +5959,7 @@
         "instability": 0.0343,
         "median_gap_months": 3.0,
         "lines_changed": 0,
-        "articles_revised": 136,
+        "articles_in_revised_laws": 136,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -5963,7 +5975,7 @@
         "instability": 0.0088,
         "median_gap_months": 6.2,
         "lines_changed": 0,
-        "articles_revised": 139,
+        "articles_in_revised_laws": 139,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5977,7 +5989,7 @@
         "instability": 0.003,
         "median_gap_months": 5.0,
         "lines_changed": 0,
-        "articles_revised": 79,
+        "articles_in_revised_laws": 79,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -5991,7 +6003,7 @@
         "instability": 0.0172,
         "median_gap_months": 6.2,
         "lines_changed": 0,
-        "articles_revised": 60,
+        "articles_in_revised_laws": 60,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -6007,7 +6019,7 @@
         "instability": 0.0142,
         "median_gap_months": 5.9,
         "lines_changed": 0,
-        "articles_revised": 263,
+        "articles_in_revised_laws": 263,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6021,7 +6033,7 @@
         "instability": 0.0109,
         "median_gap_months": 129.7,
         "lines_changed": 0,
-        "articles_revised": 193,
+        "articles_in_revised_laws": 193,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6035,7 +6047,7 @@
         "instability": 0.0189,
         "median_gap_months": 2.7,
         "lines_changed": 0,
-        "articles_revised": 70,
+        "articles_in_revised_laws": 70,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -6051,7 +6063,7 @@
         "instability": 0.0158,
         "median_gap_months": 11.9,
         "lines_changed": 0,
-        "articles_revised": 391,
+        "articles_in_revised_laws": 391,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6065,7 +6077,7 @@
         "instability": 0.0074,
         "median_gap_months": 9.9,
         "lines_changed": 0,
-        "articles_revised": 331,
+        "articles_in_revised_laws": 331,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -6079,7 +6091,7 @@
         "instability": 0.0276,
         "median_gap_months": 11.9,
         "lines_changed": 0,
-        "articles_revised": 60,
+        "articles_in_revised_laws": 60,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -6095,7 +6107,7 @@
         "instability": 0.0115,
         "median_gap_months": 4.3,
         "lines_changed": 0,
-        "articles_revised": 201,
+        "articles_in_revised_laws": 201,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6109,7 +6121,7 @@
         "instability": 0.0049,
         "median_gap_months": 1.8,
         "lines_changed": 0,
-        "articles_revised": 93,
+        "articles_in_revised_laws": 93,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -6123,7 +6135,7 @@
         "instability": 0.0205,
         "median_gap_months": 8.8,
         "lines_changed": 0,
-        "articles_revised": 108,
+        "articles_in_revised_laws": 108,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -6139,7 +6151,7 @@
         "instability": 0.0158,
         "median_gap_months": 3.0,
         "lines_changed": 0,
-        "articles_revised": 215,
+        "articles_in_revised_laws": 215,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6153,7 +6165,7 @@
         "instability": 0.0052,
         "median_gap_months": 5.0,
         "lines_changed": 0,
-        "articles_revised": 110,
+        "articles_in_revised_laws": 110,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -6167,7 +6179,7 @@
         "instability": 0.0296,
         "median_gap_months": 1.4,
         "lines_changed": 0,
-        "articles_revised": 105,
+        "articles_in_revised_laws": 105,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -6183,7 +6195,7 @@
         "instability": 0.0149,
         "median_gap_months": 5.7,
         "lines_changed": 0,
-        "articles_revised": 346,
+        "articles_in_revised_laws": 346,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6197,7 +6209,7 @@
         "instability": 0.0084,
         "median_gap_months": 3.6,
         "lines_changed": 0,
-        "articles_revised": 237,
+        "articles_in_revised_laws": 237,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6211,7 +6223,7 @@
         "instability": 0.0235,
         "median_gap_months": 8.4,
         "lines_changed": 0,
-        "articles_revised": 109,
+        "articles_in_revised_laws": 109,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -6227,7 +6239,7 @@
         "instability": 0.0109,
         "median_gap_months": 2.8,
         "lines_changed": 0,
-        "articles_revised": 214,
+        "articles_in_revised_laws": 214,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -6241,7 +6253,7 @@
         "instability": 0.0068,
         "median_gap_months": 1.9,
         "lines_changed": 0,
-        "articles_revised": 117,
+        "articles_in_revised_laws": 117,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -6255,7 +6267,7 @@
         "instability": 0.0163,
         "median_gap_months": 11.2,
         "lines_changed": 0,
-        "articles_revised": 97,
+        "articles_in_revised_laws": 97,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -6271,7 +6283,7 @@
         "instability": 0.0124,
         "median_gap_months": 6.3,
         "lines_changed": 0,
-        "articles_revised": 206,
+        "articles_in_revised_laws": 206,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -6285,7 +6297,7 @@
         "instability": 0.0058,
         "median_gap_months": 3.6,
         "lines_changed": 0,
-        "articles_revised": 116,
+        "articles_in_revised_laws": 116,
         "weighted_churn": null,
         "article_churn": 0.0
       },
@@ -6299,7 +6311,7 @@
         "instability": 0.021,
         "median_gap_months": 9.2,
         "lines_changed": 0,
-        "articles_revised": 90,
+        "articles_in_revised_laws": 90,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -6315,7 +6327,7 @@
         "instability": 0.0161,
         "median_gap_months": 3.1,
         "lines_changed": 0,
-        "articles_revised": 691,
+        "articles_in_revised_laws": 691,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6329,7 +6341,7 @@
         "instability": 0.0096,
         "median_gap_months": 3.9,
         "lines_changed": 0,
-        "articles_revised": 400,
+        "articles_in_revised_laws": 400,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6343,7 +6355,7 @@
         "instability": 0.0246,
         "median_gap_months": 1.9,
         "lines_changed": 0,
-        "articles_revised": 291,
+        "articles_in_revised_laws": 291,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -6359,7 +6371,7 @@
         "instability": 0.0185,
         "median_gap_months": 15.0,
         "lines_changed": 0,
-        "articles_revised": 881,
+        "articles_in_revised_laws": 881,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -6373,7 +6385,7 @@
         "instability": 0.0131,
         "median_gap_months": 39.6,
         "lines_changed": 0,
-        "articles_revised": 581,
+        "articles_in_revised_laws": 581,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -6387,7 +6399,7 @@
         "instability": 0.0257,
         "median_gap_months": 11.4,
         "lines_changed": 0,
-        "articles_revised": 300,
+        "articles_in_revised_laws": 300,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -6403,7 +6415,7 @@
         "instability": 0.0178,
         "median_gap_months": 4.2,
         "lines_changed": 0,
-        "articles_revised": 423,
+        "articles_in_revised_laws": 423,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6417,7 +6429,7 @@
         "instability": 0.0085,
         "median_gap_months": 2.4,
         "lines_changed": 0,
-        "articles_revised": 265,
+        "articles_in_revised_laws": 265,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6431,7 +6443,7 @@
         "instability": 0.0297,
         "median_gap_months": 4.7,
         "lines_changed": 0,
-        "articles_revised": 158,
+        "articles_in_revised_laws": 158,
         "weighted_churn": null,
         "article_churn": 0.1
       }
@@ -6447,7 +6459,7 @@
         "instability": 0.0175,
         "median_gap_months": 10.5,
         "lines_changed": 0,
-        "articles_revised": 384,
+        "articles_in_revised_laws": 384,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6461,7 +6473,7 @@
         "instability": 0.0094,
         "median_gap_months": 2.8,
         "lines_changed": 0,
-        "articles_revised": 283,
+        "articles_in_revised_laws": 283,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6475,7 +6487,7 @@
         "instability": 0.028,
         "median_gap_months": 16.3,
         "lines_changed": 0,
-        "articles_revised": 101,
+        "articles_in_revised_laws": 101,
         "weighted_churn": null,
         "article_churn": 0.0
       }
@@ -6491,7 +6503,7 @@
         "instability": 0.0515,
         "median_gap_months": 29.8,
         "lines_changed": 10,
-        "articles_revised": 3382,
+        "articles_in_revised_laws": 3382,
         "weighted_churn": 0.0,
         "article_churn": 0.6
       },
@@ -6505,7 +6517,7 @@
         "instability": 0.0114,
         "median_gap_months": 6.6,
         "lines_changed": 0,
-        "articles_revised": 358,
+        "articles_in_revised_laws": 358,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6519,7 +6531,7 @@
         "instability": 0.1033,
         "median_gap_months": 31.8,
         "lines_changed": 10,
-        "articles_revised": 3024,
+        "articles_in_revised_laws": 3024,
         "weighted_churn": 0.0,
         "article_churn": 1.2
       }
@@ -6535,7 +6547,7 @@
         "instability": 0.0595,
         "median_gap_months": 19.2,
         "lines_changed": 1040,
-        "articles_revised": 5486,
+        "articles_in_revised_laws": 5486,
         "weighted_churn": 0.2,
         "article_churn": 0.9
       },
@@ -6549,7 +6561,7 @@
         "instability": 0.015,
         "median_gap_months": 4.7,
         "lines_changed": 0,
-        "articles_revised": 358,
+        "articles_in_revised_laws": 358,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6563,7 +6575,7 @@
         "instability": 0.1176,
         "median_gap_months": 25.7,
         "lines_changed": 1040,
-        "articles_revised": 5128,
+        "articles_in_revised_laws": 5128,
         "weighted_churn": 0.4,
         "article_churn": 1.9
       }
@@ -6579,7 +6591,7 @@
         "instability": 0.0609,
         "median_gap_months": 20.0,
         "lines_changed": 407,
-        "articles_revised": 8157,
+        "articles_in_revised_laws": 8157,
         "weighted_churn": 0.1,
         "article_churn": 1.3
       },
@@ -6593,7 +6605,7 @@
         "instability": 0.0116,
         "median_gap_months": 6.5,
         "lines_changed": 0,
-        "articles_revised": 422,
+        "articles_in_revised_laws": 422,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6607,7 +6619,7 @@
         "instability": 0.1241,
         "median_gap_months": 22.5,
         "lines_changed": 407,
-        "articles_revised": 7735,
+        "articles_in_revised_laws": 7735,
         "weighted_churn": 0.1,
         "article_churn": 2.7
       }
@@ -6623,7 +6635,7 @@
         "instability": 0.0676,
         "median_gap_months": 16.7,
         "lines_changed": 168,
-        "articles_revised": 7582,
+        "articles_in_revised_laws": 7582,
         "weighted_churn": 0.0,
         "article_churn": 1.1
       },
@@ -6637,7 +6649,7 @@
         "instability": 0.0149,
         "median_gap_months": 16.7,
         "lines_changed": 0,
-        "articles_revised": 715,
+        "articles_in_revised_laws": 715,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -6651,7 +6663,7 @@
         "instability": 0.1356,
         "median_gap_months": 16.4,
         "lines_changed": 168,
-        "articles_revised": 6867,
+        "articles_in_revised_laws": 6867,
         "weighted_churn": 0.1,
         "article_churn": 2.3
       }
@@ -6667,7 +6679,7 @@
         "instability": 0.0475,
         "median_gap_months": 16.8,
         "lines_changed": 500,
-        "articles_revised": 4028,
+        "articles_in_revised_laws": 4028,
         "weighted_churn": 0.1,
         "article_churn": 0.6
       },
@@ -6681,7 +6693,7 @@
         "instability": 0.0089,
         "median_gap_months": 3.0,
         "lines_changed": 0,
-        "articles_revised": 317,
+        "articles_in_revised_laws": 317,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6695,7 +6707,7 @@
         "instability": 0.0984,
         "median_gap_months": 17.3,
         "lines_changed": 500,
-        "articles_revised": 3711,
+        "articles_in_revised_laws": 3711,
         "weighted_churn": 0.2,
         "article_churn": 1.2
       }
@@ -6711,7 +6723,7 @@
         "instability": 0.0633,
         "median_gap_months": 23.0,
         "lines_changed": 620,
-        "articles_revised": 7308,
+        "articles_in_revised_laws": 7308,
         "weighted_churn": 0.1,
         "article_churn": 1.0
       },
@@ -6725,7 +6737,7 @@
         "instability": 0.0224,
         "median_gap_months": 22.3,
         "lines_changed": 0,
-        "articles_revised": 914,
+        "articles_in_revised_laws": 914,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -6739,7 +6751,7 @@
         "instability": 0.1179,
         "median_gap_months": 23.5,
         "lines_changed": 620,
-        "articles_revised": 6394,
+        "articles_in_revised_laws": 6394,
         "weighted_churn": 0.2,
         "article_churn": 2.0
       }
@@ -6755,7 +6767,7 @@
         "instability": 0.0484,
         "median_gap_months": 16.8,
         "lines_changed": 305,
-        "articles_revised": 6572,
+        "articles_in_revised_laws": 6572,
         "weighted_churn": 0.0,
         "article_churn": 0.8
       },
@@ -6769,7 +6781,7 @@
         "instability": 0.0122,
         "median_gap_months": 2.9,
         "lines_changed": 0,
-        "articles_revised": 594,
+        "articles_in_revised_laws": 594,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6783,7 +6795,7 @@
         "instability": 0.0973,
         "median_gap_months": 20.8,
         "lines_changed": 305,
-        "articles_revised": 5978,
+        "articles_in_revised_laws": 5978,
         "weighted_churn": 0.1,
         "article_churn": 1.8
       }
@@ -6799,7 +6811,7 @@
         "instability": 0.0426,
         "median_gap_months": 13.0,
         "lines_changed": 687,
-        "articles_revised": 7092,
+        "articles_in_revised_laws": 7092,
         "weighted_churn": 0.1,
         "article_churn": 0.9
       },
@@ -6813,7 +6825,7 @@
         "instability": 0.013,
         "median_gap_months": 4.7,
         "lines_changed": 0,
-        "articles_revised": 604,
+        "articles_in_revised_laws": 604,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6827,7 +6839,7 @@
         "instability": 0.0833,
         "median_gap_months": 15.0,
         "lines_changed": 687,
-        "articles_revised": 6488,
+        "articles_in_revised_laws": 6488,
         "weighted_churn": 0.2,
         "article_churn": 1.9
       }
@@ -6843,7 +6855,7 @@
         "instability": 0.0415,
         "median_gap_months": 16.7,
         "lines_changed": 917,
-        "articles_revised": 7272,
+        "articles_in_revised_laws": 7272,
         "weighted_churn": 0.1,
         "article_churn": 0.8
       },
@@ -6857,7 +6869,7 @@
         "instability": 0.0114,
         "median_gap_months": 9.5,
         "lines_changed": 0,
-        "articles_revised": 650,
+        "articles_in_revised_laws": 650,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6871,7 +6883,7 @@
         "instability": 0.0857,
         "median_gap_months": 18.0,
         "lines_changed": 917,
-        "articles_revised": 6622,
+        "articles_in_revised_laws": 6622,
         "weighted_churn": 0.3,
         "article_churn": 1.9
       }
@@ -6887,7 +6899,7 @@
         "instability": 0.0482,
         "median_gap_months": 12.6,
         "lines_changed": 1392,
-        "articles_revised": 6738,
+        "articles_in_revised_laws": 6738,
         "weighted_churn": 0.2,
         "article_churn": 0.7
       },
@@ -6901,7 +6913,7 @@
         "instability": 0.0224,
         "median_gap_months": 1.8,
         "lines_changed": 0,
-        "articles_revised": 2266,
+        "articles_in_revised_laws": 2266,
         "weighted_churn": null,
         "article_churn": 0.4
       },
@@ -6915,7 +6927,7 @@
         "instability": 0.0862,
         "median_gap_months": 19.0,
         "lines_changed": 1392,
-        "articles_revised": 4472,
+        "articles_in_revised_laws": 4472,
         "weighted_churn": 0.4,
         "article_churn": 1.2
       }
@@ -6931,7 +6943,7 @@
         "instability": 0.0392,
         "median_gap_months": 12.0,
         "lines_changed": 1604,
-        "articles_revised": 5287,
+        "articles_in_revised_laws": 5287,
         "weighted_churn": 0.2,
         "article_churn": 0.6
       },
@@ -6945,7 +6957,7 @@
         "instability": 0.0134,
         "median_gap_months": 2.3,
         "lines_changed": 0,
-        "articles_revised": 785,
+        "articles_in_revised_laws": 785,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -6959,7 +6971,7 @@
         "instability": 0.0779,
         "median_gap_months": 13.2,
         "lines_changed": 1604,
-        "articles_revised": 4502,
+        "articles_in_revised_laws": 4502,
         "weighted_churn": 0.4,
         "article_churn": 1.2
       }
@@ -6975,7 +6987,7 @@
         "instability": 0.0341,
         "median_gap_months": 12.0,
         "lines_changed": 1513,
-        "articles_revised": 5547,
+        "articles_in_revised_laws": 5547,
         "weighted_churn": 0.2,
         "article_churn": 0.6
       },
@@ -6989,7 +7001,7 @@
         "instability": 0.0113,
         "median_gap_months": 5.3,
         "lines_changed": 0,
-        "articles_revised": 858,
+        "articles_in_revised_laws": 858,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -7003,7 +7015,7 @@
         "instability": 0.069,
         "median_gap_months": 13.0,
         "lines_changed": 1513,
-        "articles_revised": 4689,
+        "articles_in_revised_laws": 4689,
         "weighted_churn": 0.4,
         "article_churn": 1.2
       }
@@ -7019,7 +7031,7 @@
         "instability": 0.0431,
         "median_gap_months": 27.0,
         "lines_changed": 4747,
-        "articles_revised": 7426,
+        "articles_in_revised_laws": 7426,
         "weighted_churn": 0.5,
         "article_churn": 0.7
       },
@@ -7033,7 +7045,7 @@
         "instability": 0.0114,
         "median_gap_months": 10.3,
         "lines_changed": 0,
-        "articles_revised": 800,
+        "articles_in_revised_laws": 800,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -7047,7 +7059,7 @@
         "instability": 0.0925,
         "median_gap_months": 30.0,
         "lines_changed": 4747,
-        "articles_revised": 6626,
+        "articles_in_revised_laws": 6626,
         "weighted_churn": 1.2,
         "article_churn": 1.7
       }
@@ -7063,7 +7075,7 @@
         "instability": 0.0382,
         "median_gap_months": 12.1,
         "lines_changed": 1452,
-        "articles_revised": 9617,
+        "articles_in_revised_laws": 9617,
         "weighted_churn": 0.1,
         "article_churn": 0.9
       },
@@ -7077,7 +7089,7 @@
         "instability": 0.0117,
         "median_gap_months": 10.5,
         "lines_changed": 0,
-        "articles_revised": 767,
+        "articles_in_revised_laws": 767,
         "weighted_churn": null,
         "article_churn": 0.1
       },
@@ -7091,7 +7103,7 @@
         "instability": 0.0806,
         "median_gap_months": 12.7,
         "lines_changed": 1452,
-        "articles_revised": 8850,
+        "articles_in_revised_laws": 8850,
         "weighted_churn": 0.4,
         "article_churn": 2.2
       }
@@ -7107,7 +7119,7 @@
         "instability": 0.0393,
         "median_gap_months": 19.6,
         "lines_changed": 1149,
-        "articles_revised": 9992,
+        "articles_in_revised_laws": 9992,
         "weighted_churn": 0.1,
         "article_churn": 0.9
       },
@@ -7121,7 +7133,7 @@
         "instability": 0.0154,
         "median_gap_months": 6.3,
         "lines_changed": 0,
-        "articles_revised": 1080,
+        "articles_in_revised_laws": 1080,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -7135,7 +7147,7 @@
         "instability": 0.0789,
         "median_gap_months": 20.5,
         "lines_changed": 1149,
-        "articles_revised": 8912,
+        "articles_in_revised_laws": 8912,
         "weighted_churn": 0.3,
         "article_churn": 2.2
       }
@@ -7151,7 +7163,7 @@
         "instability": 0.038,
         "median_gap_months": 16.1,
         "lines_changed": 1421,
-        "articles_revised": 13585,
+        "articles_in_revised_laws": 13585,
         "weighted_churn": 0.1,
         "article_churn": 1.2
       },
@@ -7165,7 +7177,7 @@
         "instability": 0.0125,
         "median_gap_months": 3.5,
         "lines_changed": 0,
-        "articles_revised": 1564,
+        "articles_in_revised_laws": 1564,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -7179,7 +7191,7 @@
         "instability": 0.0811,
         "median_gap_months": 21.9,
         "lines_changed": 1421,
-        "articles_revised": 12021,
+        "articles_in_revised_laws": 12021,
         "weighted_churn": 0.3,
         "article_churn": 2.9
       }
@@ -7195,7 +7207,7 @@
         "instability": 0.0376,
         "median_gap_months": 16.0,
         "lines_changed": 913,
-        "articles_revised": 7588,
+        "articles_in_revised_laws": 7588,
         "weighted_churn": 0.1,
         "article_churn": 0.7
       },
@@ -7209,7 +7221,7 @@
         "instability": 0.0123,
         "median_gap_months": 14.9,
         "lines_changed": 0,
-        "articles_revised": 1668,
+        "articles_in_revised_laws": 1668,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -7223,7 +7235,7 @@
         "instability": 0.0807,
         "median_gap_months": 16.0,
         "lines_changed": 913,
-        "articles_revised": 5920,
+        "articles_in_revised_laws": 5920,
         "weighted_churn": 0.2,
         "article_churn": 1.4
       }
@@ -7239,7 +7251,7 @@
         "instability": 0.0398,
         "median_gap_months": 18.0,
         "lines_changed": 1379,
-        "articles_revised": 7685,
+        "articles_in_revised_laws": 7685,
         "weighted_churn": 0.1,
         "article_churn": 0.6
       },
@@ -7253,7 +7265,7 @@
         "instability": 0.0146,
         "median_gap_months": 8.3,
         "lines_changed": 0,
-        "articles_revised": 1738,
+        "articles_in_revised_laws": 1738,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -7267,7 +7279,7 @@
         "instability": 0.0835,
         "median_gap_months": 19.0,
         "lines_changed": 1379,
-        "articles_revised": 5947,
+        "articles_in_revised_laws": 5947,
         "weighted_churn": 0.3,
         "article_churn": 1.4
       }
@@ -7283,7 +7295,7 @@
         "instability": 0.0376,
         "median_gap_months": 20.0,
         "lines_changed": 1310,
-        "articles_revised": 11378,
+        "articles_in_revised_laws": 11378,
         "weighted_churn": 0.1,
         "article_churn": 0.9
       },
@@ -7297,7 +7309,7 @@
         "instability": 0.0171,
         "median_gap_months": 8.2,
         "lines_changed": 0,
-        "articles_revised": 2196,
+        "articles_in_revised_laws": 2196,
         "weighted_churn": null,
         "article_churn": 0.3
       },
@@ -7311,7 +7323,7 @@
         "instability": 0.0739,
         "median_gap_months": 21.2,
         "lines_changed": 1310,
-        "articles_revised": 9182,
+        "articles_in_revised_laws": 9182,
         "weighted_churn": 0.3,
         "article_churn": 2.1
       }
@@ -7327,7 +7339,7 @@
         "instability": 0.036,
         "median_gap_months": 20.0,
         "lines_changed": 1468,
-        "articles_revised": 7896,
+        "articles_in_revised_laws": 7896,
         "weighted_churn": 0.1,
         "article_churn": 0.6
       },
@@ -7341,7 +7353,7 @@
         "instability": 0.0162,
         "median_gap_months": 11.4,
         "lines_changed": 0,
-        "articles_revised": 1777,
+        "articles_in_revised_laws": 1777,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -7355,7 +7367,7 @@
         "instability": 0.0718,
         "median_gap_months": 20.0,
         "lines_changed": 1468,
-        "articles_revised": 6119,
+        "articles_in_revised_laws": 6119,
         "weighted_churn": 0.3,
         "article_churn": 1.3
       }
@@ -7371,7 +7383,7 @@
         "instability": 0.038,
         "median_gap_months": 18.0,
         "lines_changed": 2199,
-        "articles_revised": 10854,
+        "articles_in_revised_laws": 10854,
         "weighted_churn": 0.2,
         "article_churn": 0.8
       },
@@ -7385,7 +7397,7 @@
         "instability": 0.0159,
         "median_gap_months": 8.3,
         "lines_changed": 0,
-        "articles_revised": 1651,
+        "articles_in_revised_laws": 1651,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -7399,7 +7411,7 @@
         "instability": 0.0787,
         "median_gap_months": 18.7,
         "lines_changed": 2199,
-        "articles_revised": 9203,
+        "articles_in_revised_laws": 9203,
         "weighted_churn": 0.5,
         "article_churn": 2.0
       }
@@ -7415,7 +7427,7 @@
         "instability": 0.0402,
         "median_gap_months": 15.0,
         "lines_changed": 1317,
-        "articles_revised": 13714,
+        "articles_in_revised_laws": 13714,
         "weighted_churn": 0.1,
         "article_churn": 1.0
       },
@@ -7429,7 +7441,7 @@
         "instability": 0.018,
         "median_gap_months": 12.0,
         "lines_changed": 0,
-        "articles_revised": 2255,
+        "articles_in_revised_laws": 2255,
         "weighted_churn": null,
         "article_churn": 0.3
       },
@@ -7443,7 +7455,7 @@
         "instability": 0.0821,
         "median_gap_months": 16.0,
         "lines_changed": 1317,
-        "articles_revised": 11459,
+        "articles_in_revised_laws": 11459,
         "weighted_churn": 0.3,
         "article_churn": 2.4
       }
@@ -7459,7 +7471,7 @@
         "instability": 0.0355,
         "median_gap_months": 15.0,
         "lines_changed": 749,
-        "articles_revised": 15519,
+        "articles_in_revised_laws": 15519,
         "weighted_churn": 0.1,
         "article_churn": 1.1
       },
@@ -7473,7 +7485,7 @@
         "instability": 0.016,
         "median_gap_months": 9.9,
         "lines_changed": 0,
-        "articles_revised": 2244,
+        "articles_in_revised_laws": 2244,
         "weighted_churn": null,
         "article_churn": 0.2
       },
@@ -7487,7 +7499,7 @@
         "instability": 0.0726,
         "median_gap_months": 15.5,
         "lines_changed": 749,
-        "articles_revised": 13275,
+        "articles_in_revised_laws": 13275,
         "weighted_churn": 0.2,
         "article_churn": 2.7
       }
@@ -7503,7 +7515,7 @@
         "instability": 0.0418,
         "median_gap_months": 13.3,
         "lines_changed": 1810,
-        "articles_revised": 14127,
+        "articles_in_revised_laws": 14127,
         "weighted_churn": 0.1,
         "article_churn": 0.9
       },
@@ -7517,7 +7529,7 @@
         "instability": 0.0233,
         "median_gap_months": 35.9,
         "lines_changed": 0,
-        "articles_revised": 3408,
+        "articles_in_revised_laws": 3408,
         "weighted_churn": null,
         "article_churn": 0.3
       },
@@ -7531,7 +7543,7 @@
         "instability": 0.0778,
         "median_gap_months": 12.0,
         "lines_changed": 1810,
-        "articles_revised": 10719,
+        "articles_in_revised_laws": 10719,
         "weighted_churn": 0.4,
         "article_churn": 2.1
       }
@@ -7547,7 +7559,7 @@
         "instability": 0.0426,
         "median_gap_months": 16.0,
         "lines_changed": 1904,
-        "articles_revised": 16124,
+        "articles_in_revised_laws": 16124,
         "weighted_churn": 0.1,
         "article_churn": 1.0
       },
@@ -7561,7 +7573,7 @@
         "instability": 0.0289,
         "median_gap_months": 54.1,
         "lines_changed": 0,
-        "articles_revised": 4019,
+        "articles_in_revised_laws": 4019,
         "weighted_churn": null,
         "article_churn": 0.4
       },
@@ -7575,7 +7587,7 @@
         "instability": 0.07,
         "median_gap_months": 14.0,
         "lines_changed": 1904,
-        "articles_revised": 12105,
+        "articles_in_revised_laws": 12105,
         "weighted_churn": 0.4,
         "article_churn": 2.3
       }
@@ -7591,7 +7603,7 @@
         "instability": 0.0453,
         "median_gap_months": 16.1,
         "lines_changed": 655,
-        "articles_revised": 18109,
+        "articles_in_revised_laws": 18109,
         "weighted_churn": 0.0,
         "article_churn": 1.1
       },
@@ -7605,7 +7617,7 @@
         "instability": 0.0305,
         "median_gap_months": 25.4,
         "lines_changed": 0,
-        "articles_revised": 6345,
+        "articles_in_revised_laws": 6345,
         "weighted_churn": null,
         "article_churn": 0.6
       },
@@ -7619,7 +7631,7 @@
         "instability": 0.0755,
         "median_gap_months": 12.0,
         "lines_changed": 655,
-        "articles_revised": 11764,
+        "articles_in_revised_laws": 11764,
         "weighted_churn": 0.1,
         "article_churn": 2.2
       }
@@ -7635,7 +7647,7 @@
         "instability": 0.0487,
         "median_gap_months": 12.4,
         "lines_changed": 1664,
-        "articles_revised": 22838,
+        "articles_in_revised_laws": 22838,
         "weighted_churn": 0.1,
         "article_churn": 1.3
       },
@@ -7649,7 +7661,7 @@
         "instability": 0.0332,
         "median_gap_months": 28.0,
         "lines_changed": 0,
-        "articles_revised": 7087,
+        "articles_in_revised_laws": 7087,
         "weighted_churn": null,
         "article_churn": 0.6
       },
@@ -7663,7 +7675,7 @@
         "instability": 0.0813,
         "median_gap_months": 12.0,
         "lines_changed": 1664,
-        "articles_revised": 15751,
+        "articles_in_revised_laws": 15751,
         "weighted_churn": 0.3,
         "article_churn": 2.8
       }
@@ -7679,7 +7691,7 @@
         "instability": 0.0459,
         "median_gap_months": 15.0,
         "lines_changed": 1748,
-        "articles_revised": 21091,
+        "articles_in_revised_laws": 21091,
         "weighted_churn": 0.1,
         "article_churn": 1.2
       },
@@ -7693,7 +7705,7 @@
         "instability": 0.0328,
         "median_gap_months": 14.6,
         "lines_changed": 0,
-        "articles_revised": 7248,
+        "articles_in_revised_laws": 7248,
         "weighted_churn": null,
         "article_churn": 0.6
       },
@@ -7707,7 +7719,7 @@
         "instability": 0.0744,
         "median_gap_months": 15.4,
         "lines_changed": 1748,
-        "articles_revised": 13843,
+        "articles_in_revised_laws": 13843,
         "weighted_churn": 0.3,
         "article_churn": 2.4
       }
@@ -7723,7 +7735,7 @@
         "instability": 0.047,
         "median_gap_months": 18.7,
         "lines_changed": 2444,
-        "articles_revised": 20073,
+        "articles_in_revised_laws": 20073,
         "weighted_churn": 0.1,
         "article_churn": 1.1
       },
@@ -7737,7 +7749,7 @@
         "instability": 0.0348,
         "median_gap_months": 30.2,
         "lines_changed": 0,
-        "articles_revised": 8138,
+        "articles_in_revised_laws": 8138,
         "weighted_churn": null,
         "article_churn": 0.6
       },
@@ -7751,7 +7763,7 @@
         "instability": 0.0743,
         "median_gap_months": 17.0,
         "lines_changed": 2444,
-        "articles_revised": 11935,
+        "articles_in_revised_laws": 11935,
         "weighted_churn": 0.4,
         "article_churn": 2.1
       }
@@ -7767,7 +7779,7 @@
         "instability": 0.0454,
         "median_gap_months": 13.6,
         "lines_changed": 1323,
-        "articles_revised": 21633,
+        "articles_in_revised_laws": 21633,
         "weighted_churn": 0.1,
         "article_churn": 1.1
       },
@@ -7781,7 +7793,7 @@
         "instability": 0.0368,
         "median_gap_months": 25.5,
         "lines_changed": 0,
-        "articles_revised": 9944,
+        "articles_in_revised_laws": 9944,
         "weighted_churn": null,
         "article_churn": 0.7
       },
@@ -7795,7 +7807,7 @@
         "instability": 0.0652,
         "median_gap_months": 12.0,
         "lines_changed": 1323,
-        "articles_revised": 11689,
+        "articles_in_revised_laws": 11689,
         "weighted_churn": 0.2,
         "article_churn": 2.0
       }
@@ -7811,7 +7823,7 @@
         "instability": 0.0448,
         "median_gap_months": 16.9,
         "lines_changed": 2016,
-        "articles_revised": 30393,
+        "articles_in_revised_laws": 30393,
         "weighted_churn": 0.1,
         "article_churn": 1.5
       },
@@ -7825,7 +7837,7 @@
         "instability": 0.037,
         "median_gap_months": 39.9,
         "lines_changed": 328,
-        "articles_revised": 11798,
+        "articles_in_revised_laws": 11798,
         "weighted_churn": 0.0,
         "article_churn": 0.8
       },
@@ -7839,7 +7851,7 @@
         "instability": 0.0631,
         "median_gap_months": 12.0,
         "lines_changed": 1688,
-        "articles_revised": 18595,
+        "articles_in_revised_laws": 18595,
         "weighted_churn": 0.3,
         "article_churn": 3.1
       }
@@ -7855,7 +7867,7 @@
         "instability": 0.052,
         "median_gap_months": 15.0,
         "lines_changed": 1715,
-        "articles_revised": 32994,
+        "articles_in_revised_laws": 32994,
         "weighted_churn": 0.1,
         "article_churn": 1.6
       },
@@ -7869,7 +7881,7 @@
         "instability": 0.0482,
         "median_gap_months": 19.4,
         "lines_changed": 0,
-        "articles_revised": 17887,
+        "articles_in_revised_laws": 17887,
         "weighted_churn": null,
         "article_churn": 1.2
       },
@@ -7883,7 +7895,7 @@
         "instability": 0.061,
         "median_gap_months": 12.0,
         "lines_changed": 1715,
-        "articles_revised": 15107,
+        "articles_in_revised_laws": 15107,
         "weighted_churn": 0.3,
         "article_churn": 2.4
       }
@@ -7899,7 +7911,7 @@
         "instability": 0.0552,
         "median_gap_months": 24.7,
         "lines_changed": 4402,
-        "articles_revised": 37516,
+        "articles_in_revised_laws": 37516,
         "weighted_churn": 0.2,
         "article_churn": 1.7
       },
@@ -7913,7 +7925,7 @@
         "instability": 0.0475,
         "median_gap_months": 47.6,
         "lines_changed": 0,
-        "articles_revised": 18446,
+        "articles_in_revised_laws": 18446,
         "weighted_churn": null,
         "article_churn": 1.2
       },
@@ -7927,7 +7939,7 @@
         "instability": 0.0742,
         "median_gap_months": 16.0,
         "lines_changed": 4402,
-        "articles_revised": 19070,
+        "articles_in_revised_laws": 19070,
         "weighted_churn": 0.7,
         "article_churn": 3.0
       }
@@ -7943,7 +7955,7 @@
         "instability": 0.0763,
         "median_gap_months": 39.8,
         "lines_changed": 4148,
-        "articles_revised": 52883,
+        "articles_in_revised_laws": 52883,
         "weighted_churn": 0.2,
         "article_churn": 2.3
       },
@@ -7957,7 +7969,7 @@
         "instability": 0.079,
         "median_gap_months": 60.7,
         "lines_changed": 0,
-        "articles_revised": 31180,
+        "articles_in_revised_laws": 31180,
         "weighted_churn": null,
         "article_churn": 1.9
       },
@@ -7971,7 +7983,7 @@
         "instability": 0.0694,
         "median_gap_months": 16.0,
         "lines_changed": 4148,
-        "articles_revised": 21703,
+        "articles_in_revised_laws": 21703,
         "weighted_churn": 0.6,
         "article_churn": 3.4
       }
@@ -7987,7 +7999,7 @@
         "instability": 0.0837,
         "median_gap_months": 40.0,
         "lines_changed": 4865,
-        "articles_revised": 68387,
+        "articles_in_revised_laws": 68387,
         "weighted_churn": 0.2,
         "article_churn": 2.9
       },
@@ -8001,7 +8013,7 @@
         "instability": 0.0796,
         "median_gap_months": 58.7,
         "lines_changed": 0,
-        "articles_revised": 37665,
+        "articles_in_revised_laws": 37665,
         "weighted_churn": null,
         "article_churn": 2.2
       },
@@ -8015,7 +8027,7 @@
         "instability": 0.0945,
         "median_gap_months": 22.0,
         "lines_changed": 4865,
-        "articles_revised": 30722,
+        "articles_in_revised_laws": 30722,
         "weighted_churn": 0.7,
         "article_churn": 4.7
       }
@@ -8031,7 +8043,7 @@
         "instability": 0.0979,
         "median_gap_months": 44.9,
         "lines_changed": 4085,
-        "articles_revised": 90370,
+        "articles_in_revised_laws": 90370,
         "weighted_churn": 0.2,
         "article_churn": 3.6
       },
@@ -8045,7 +8057,7 @@
         "instability": 0.1048,
         "median_gap_months": 72.3,
         "lines_changed": 0,
-        "articles_revised": 63480,
+        "articles_in_revised_laws": 63480,
         "weighted_churn": null,
         "article_churn": 3.5
       },
@@ -8059,7 +8071,7 @@
         "instability": 0.0793,
         "median_gap_months": 13.0,
         "lines_changed": 4085,
-        "articles_revised": 26890,
+        "articles_in_revised_laws": 26890,
         "weighted_churn": 0.6,
         "article_churn": 4.0
       }
@@ -8075,7 +8087,7 @@
         "instability": 0.135,
         "median_gap_months": 35.9,
         "lines_changed": 8076,
-        "articles_revised": 122437,
+        "articles_in_revised_laws": 122437,
         "weighted_churn": 0.3,
         "article_churn": 4.8
       },
@@ -8089,7 +8101,7 @@
         "instability": 0.1552,
         "median_gap_months": 43.6,
         "lines_changed": 0,
-        "articles_revised": 99835,
+        "articles_in_revised_laws": 99835,
         "weighted_churn": null,
         "article_churn": 5.3
       },
@@ -8103,7 +8115,7 @@
         "instability": 0.0799,
         "median_gap_months": 14.4,
         "lines_changed": 8076,
-        "articles_revised": 22602,
+        "articles_in_revised_laws": 22602,
         "weighted_churn": 1.2,
         "article_churn": 3.3
       }
@@ -8119,7 +8131,7 @@
         "instability": 0.1604,
         "median_gap_months": 21.5,
         "lines_changed": 5149,
-        "articles_revised": 197612,
+        "articles_in_revised_laws": 197612,
         "weighted_churn": 0.2,
         "article_churn": 7.5
       },
@@ -8133,7 +8145,7 @@
         "instability": 0.1749,
         "median_gap_months": 24.0,
         "lines_changed": 0,
-        "articles_revised": 156748,
+        "articles_in_revised_laws": 156748,
         "weighted_churn": null,
         "article_churn": 8.2
       },
@@ -8147,7 +8159,7 @@
         "instability": 0.1211,
         "median_gap_months": 15.5,
         "lines_changed": 5149,
-        "articles_revised": 40864,
+        "articles_in_revised_laws": 40864,
         "weighted_churn": 0.7,
         "article_churn": 5.8
       }
@@ -8163,7 +8175,7 @@
         "instability": 0.1514,
         "median_gap_months": 14.0,
         "lines_changed": 4053,
-        "articles_revised": 184243,
+        "articles_in_revised_laws": 184243,
         "weighted_churn": 0.2,
         "article_churn": 6.8
       },
@@ -8177,7 +8189,7 @@
         "instability": 0.1709,
         "median_gap_months": 16.0,
         "lines_changed": 0,
-        "articles_revised": 146060,
+        "articles_in_revised_laws": 146060,
         "weighted_churn": null,
         "article_churn": 7.4
       },
@@ -8191,7 +8203,7 @@
         "instability": 0.0984,
         "median_gap_months": 12.0,
         "lines_changed": 4053,
-        "articles_revised": 38183,
+        "articles_in_revised_laws": 38183,
         "weighted_churn": 0.6,
         "article_churn": 5.3
       }
@@ -8207,7 +8219,7 @@
         "instability": 0.1273,
         "median_gap_months": 16.0,
         "lines_changed": 3322,
-        "articles_revised": 142629,
+        "articles_in_revised_laws": 142629,
         "weighted_churn": 0.1,
         "article_churn": 5.2
       },
@@ -8221,7 +8233,7 @@
         "instability": 0.1459,
         "median_gap_months": 17.0,
         "lines_changed": 0,
-        "articles_revised": 117024,
+        "articles_in_revised_laws": 117024,
         "weighted_churn": null,
         "article_churn": 5.8
       },
@@ -8235,7 +8247,7 @@
         "instability": 0.0764,
         "median_gap_months": 12.0,
         "lines_changed": 3322,
-        "articles_revised": 25605,
+        "articles_in_revised_laws": 25605,
         "weighted_churn": 0.5,
         "article_churn": 3.5
       }
@@ -8251,7 +8263,7 @@
         "instability": 0.1137,
         "median_gap_months": 17.0,
         "lines_changed": 8406,
-        "articles_revised": 129545,
+        "articles_in_revised_laws": 129545,
         "weighted_churn": 0.3,
         "article_churn": 4.6
       },
@@ -8265,7 +8277,7 @@
         "instability": 0.1243,
         "median_gap_months": 17.9,
         "lines_changed": 0,
-        "articles_revised": 99787,
+        "articles_in_revised_laws": 99787,
         "weighted_churn": null,
         "article_churn": 4.9
       },
@@ -8279,7 +8291,7 @@
         "instability": 0.085,
         "median_gap_months": 14.0,
         "lines_changed": 8406,
-        "articles_revised": 29758,
+        "articles_in_revised_laws": 29758,
         "weighted_churn": 1.1,
         "article_churn": 3.9
       }
@@ -8295,7 +8307,7 @@
         "instability": 0.1517,
         "median_gap_months": 21.1,
         "lines_changed": 8892,
-        "articles_revised": 184952,
+        "articles_in_revised_laws": 184952,
         "weighted_churn": 0.3,
         "article_churn": 6.5
       },
@@ -8309,7 +8321,7 @@
         "instability": 0.176,
         "median_gap_months": 23.5,
         "lines_changed": 0,
-        "articles_revised": 153556,
+        "articles_in_revised_laws": 153556,
         "weighted_churn": null,
         "article_churn": 7.4
       },
@@ -8323,7 +8335,7 @@
         "instability": 0.086,
         "median_gap_months": 14.3,
         "lines_changed": 8892,
-        "articles_revised": 31396,
+        "articles_in_revised_laws": 31396,
         "weighted_churn": 1.2,
         "article_churn": 4.1
       }
@@ -8339,7 +8351,7 @@
         "instability": 0.1081,
         "median_gap_months": 16.3,
         "lines_changed": 12992,
-        "articles_revised": 134055,
+        "articles_in_revised_laws": 134055,
         "weighted_churn": 0.4,
         "article_churn": 4.6
       },
@@ -8353,7 +8365,7 @@
         "instability": 0.1185,
         "median_gap_months": 17.2,
         "lines_changed": 0,
-        "articles_revised": 100884,
+        "articles_in_revised_laws": 100884,
         "weighted_churn": null,
         "article_churn": 4.7
       },
@@ -8367,7 +8379,7 @@
         "instability": 0.0797,
         "median_gap_months": 12.4,
         "lines_changed": 12992,
-        "articles_revised": 33171,
+        "articles_in_revised_laws": 33171,
         "weighted_churn": 1.7,
         "article_churn": 4.2
       }
@@ -8383,7 +8395,7 @@
         "instability": 0.1466,
         "median_gap_months": 24.0,
         "lines_changed": 24400,
-        "articles_revised": 175786,
+        "articles_in_revised_laws": 175786,
         "weighted_churn": 0.8,
         "article_churn": 6.0
       },
@@ -8397,7 +8409,7 @@
         "instability": 0.1579,
         "median_gap_months": 24.0,
         "lines_changed": 0,
-        "articles_revised": 135257,
+        "articles_in_revised_laws": 135257,
         "weighted_churn": null,
         "article_churn": 6.3
       },
@@ -8411,7 +8423,7 @@
         "instability": 0.116,
         "median_gap_months": 19.5,
         "lines_changed": 24400,
-        "articles_revised": 40529,
+        "articles_in_revised_laws": 40529,
         "weighted_churn": 3.1,
         "article_churn": 5.1
       }
@@ -8427,7 +8439,7 @@
         "instability": 0.1156,
         "median_gap_months": 17.1,
         "lines_changed": 11049,
-        "articles_revised": 139799,
+        "articles_in_revised_laws": 139799,
         "weighted_churn": 0.4,
         "article_churn": 4.7
       },
@@ -8441,7 +8453,7 @@
         "instability": 0.1326,
         "median_gap_months": 19.0,
         "lines_changed": 0,
-        "articles_revised": 111947,
+        "articles_in_revised_laws": 111947,
         "weighted_churn": null,
         "article_churn": 5.2
       },
@@ -8455,7 +8467,7 @@
         "instability": 0.0696,
         "median_gap_months": 12.0,
         "lines_changed": 11049,
-        "articles_revised": 27852,
+        "articles_in_revised_laws": 27852,
         "weighted_churn": 1.4,
         "article_churn": 3.5
       }
@@ -8471,7 +8483,7 @@
         "instability": 0.09,
         "median_gap_months": 19.0,
         "lines_changed": 15423,
-        "articles_revised": 117469,
+        "articles_in_revised_laws": 117469,
         "weighted_churn": 0.5,
         "article_churn": 3.9
       },
@@ -8485,7 +8497,7 @@
         "instability": 0.0985,
         "median_gap_months": 19.0,
         "lines_changed": 0,
-        "articles_revised": 92203,
+        "articles_in_revised_laws": 92203,
         "weighted_churn": null,
         "article_churn": 4.2
       },
@@ -8499,7 +8511,7 @@
         "instability": 0.0669,
         "median_gap_months": 17.0,
         "lines_changed": 15423,
-        "articles_revised": 25266,
+        "articles_in_revised_laws": 25266,
         "weighted_churn": 1.9,
         "article_churn": 3.1
       }
@@ -8515,7 +8527,7 @@
         "instability": 0.0955,
         "median_gap_months": 20.9,
         "lines_changed": 30201,
-        "articles_revised": 135547,
+        "articles_in_revised_laws": 135547,
         "weighted_churn": 1.0,
         "article_churn": 4.5
       },
@@ -8529,7 +8541,7 @@
         "instability": 0.1037,
         "median_gap_months": 21.9,
         "lines_changed": 0,
-        "articles_revised": 102219,
+        "articles_in_revised_laws": 102219,
         "weighted_churn": null,
         "article_churn": 4.6
       },
@@ -8543,7 +8555,7 @@
         "instability": 0.0733,
         "median_gap_months": 17.6,
         "lines_changed": 30201,
-        "articles_revised": 33328,
+        "articles_in_revised_laws": 33328,
         "weighted_churn": 3.6,
         "article_churn": 4.0
       }
@@ -8559,7 +8571,7 @@
         "instability": 0.0835,
         "median_gap_months": 18.0,
         "lines_changed": 19310,
-        "articles_revised": 119656,
+        "articles_in_revised_laws": 119656,
         "weighted_churn": 0.6,
         "article_churn": 3.9
       },
@@ -8573,7 +8585,7 @@
         "instability": 0.0882,
         "median_gap_months": 19.7,
         "lines_changed": 0,
-        "articles_revised": 87322,
+        "articles_in_revised_laws": 87322,
         "weighted_churn": null,
         "article_churn": 3.9
       },
@@ -8587,7 +8599,7 @@
         "instability": 0.071,
         "median_gap_months": 13.0,
         "lines_changed": 19310,
-        "articles_revised": 32334,
+        "articles_in_revised_laws": 32334,
         "weighted_churn": 2.3,
         "article_churn": 3.9
       }
@@ -8603,7 +8615,7 @@
         "instability": 0.0998,
         "median_gap_months": 23.0,
         "lines_changed": 19493,
-        "articles_revised": 135486,
+        "articles_in_revised_laws": 135486,
         "weighted_churn": 0.6,
         "article_churn": 4.4
       },
@@ -8617,7 +8629,7 @@
         "instability": 0.1081,
         "median_gap_months": 24.0,
         "lines_changed": 0,
-        "articles_revised": 105523,
+        "articles_in_revised_laws": 105523,
         "weighted_churn": null,
         "article_churn": 4.7
       },
@@ -8631,7 +8643,7 @@
         "instability": 0.0775,
         "median_gap_months": 17.3,
         "lines_changed": 19493,
-        "articles_revised": 29963,
+        "articles_in_revised_laws": 29963,
         "weighted_churn": 2.3,
         "article_churn": 3.5
       }
@@ -8647,7 +8659,7 @@
         "instability": 0.082,
         "median_gap_months": 15.1,
         "lines_changed": 39508,
-        "articles_revised": 116045,
+        "articles_in_revised_laws": 116045,
         "weighted_churn": 1.3,
         "article_churn": 3.7
       },
@@ -8661,7 +8673,7 @@
         "instability": 0.0869,
         "median_gap_months": 15.0,
         "lines_changed": 0,
-        "articles_revised": 86712,
+        "articles_in_revised_laws": 86712,
         "weighted_churn": null,
         "article_churn": 3.8
       },
@@ -8675,7 +8687,7 @@
         "instability": 0.0688,
         "median_gap_months": 16.1,
         "lines_changed": 39508,
-        "articles_revised": 29333,
+        "articles_in_revised_laws": 29333,
         "weighted_churn": 4.6,
         "article_churn": 3.4
       }
@@ -8691,7 +8703,7 @@
         "instability": 0.0898,
         "median_gap_months": 16.0,
         "lines_changed": 79567,
-        "articles_revised": 129802,
+        "articles_in_revised_laws": 129802,
         "weighted_churn": 2.5,
         "article_churn": 4.1
       },
@@ -8705,7 +8717,7 @@
         "instability": 0.0943,
         "median_gap_months": 18.0,
         "lines_changed": 0,
-        "articles_revised": 92266,
+        "articles_in_revised_laws": 92266,
         "weighted_churn": null,
         "article_churn": 4.0
       },
@@ -8719,7 +8731,7 @@
         "instability": 0.0775,
         "median_gap_months": 12.0,
         "lines_changed": 79567,
-        "articles_revised": 37536,
+        "articles_in_revised_laws": 37536,
         "weighted_churn": 9.2,
         "article_churn": 4.3
       }
@@ -8735,7 +8747,7 @@
         "instability": 0.0932,
         "median_gap_months": 14.9,
         "lines_changed": 41982,
-        "articles_revised": 141745,
+        "articles_in_revised_laws": 141745,
         "weighted_churn": 1.3,
         "article_churn": 4.4
       },
@@ -8749,7 +8761,7 @@
         "instability": 0.1031,
         "median_gap_months": 18.0,
         "lines_changed": 28,
-        "articles_revised": 103826,
+        "articles_in_revised_laws": 103826,
         "weighted_churn": 0.0,
         "article_churn": 4.4
       },
@@ -8763,7 +8775,7 @@
         "instability": 0.0663,
         "median_gap_months": 11.1,
         "lines_changed": 41954,
-        "articles_revised": 37919,
+        "articles_in_revised_laws": 37919,
         "weighted_churn": 4.8,
         "article_churn": 4.3
       }
@@ -8779,7 +8791,7 @@
         "instability": 0.0841,
         "median_gap_months": 17.0,
         "lines_changed": 21244,
-        "articles_revised": 125252,
+        "articles_in_revised_laws": 125252,
         "weighted_churn": 0.7,
         "article_churn": 3.8
       },
@@ -8793,7 +8805,7 @@
         "instability": 0.0865,
         "median_gap_months": 21.0,
         "lines_changed": 0,
-        "articles_revised": 85957,
+        "articles_in_revised_laws": 85957,
         "weighted_churn": null,
         "article_churn": 3.6
       },
@@ -8807,7 +8819,7 @@
         "instability": 0.0779,
         "median_gap_months": 12.0,
         "lines_changed": 21244,
-        "articles_revised": 39295,
+        "articles_in_revised_laws": 39295,
         "weighted_churn": 2.4,
         "article_churn": 4.5
       }
@@ -8823,7 +8835,7 @@
         "instability": 0.0859,
         "median_gap_months": 19.2,
         "lines_changed": 35409,
-        "articles_revised": 139016,
+        "articles_in_revised_laws": 139016,
         "weighted_churn": 1.1,
         "article_churn": 4.2
       },
@@ -8837,7 +8849,7 @@
         "instability": 0.087,
         "median_gap_months": 22.2,
         "lines_changed": 0,
-        "articles_revised": 90234,
+        "articles_in_revised_laws": 90234,
         "weighted_churn": null,
         "article_churn": 3.8
       },
@@ -8851,7 +8863,7 @@
         "instability": 0.0827,
         "median_gap_months": 14.6,
         "lines_changed": 35409,
-        "articles_revised": 48782,
+        "articles_in_revised_laws": 48782,
         "weighted_churn": 4.0,
         "article_churn": 5.5
       }
@@ -8867,7 +8879,7 @@
         "instability": 0.0908,
         "median_gap_months": 24.0,
         "lines_changed": 38926,
-        "articles_revised": 132463,
+        "articles_in_revised_laws": 132463,
         "weighted_churn": 1.2,
         "article_churn": 4.0
       },
@@ -8881,7 +8893,7 @@
         "instability": 0.0947,
         "median_gap_months": 25.0,
         "lines_changed": 352,
-        "articles_revised": 94898,
+        "articles_in_revised_laws": 94898,
         "weighted_churn": 0.0,
         "article_churn": 3.9
       },
@@ -8895,7 +8907,7 @@
         "instability": 0.0802,
         "median_gap_months": 14.0,
         "lines_changed": 38574,
-        "articles_revised": 37565,
+        "articles_in_revised_laws": 37565,
         "weighted_churn": 4.3,
         "article_churn": 4.2
       }
@@ -8911,7 +8923,7 @@
         "instability": 0.0824,
         "median_gap_months": 17.0,
         "lines_changed": 56747,
-        "articles_revised": 123753,
+        "articles_in_revised_laws": 123753,
         "weighted_churn": 1.7,
         "article_churn": 3.7
       },
@@ -8925,7 +8937,7 @@
         "instability": 0.0892,
         "median_gap_months": 21.0,
         "lines_changed": 7726,
-        "articles_revised": 90303,
+        "articles_in_revised_laws": 90303,
         "weighted_churn": 0.3,
         "article_churn": 3.7
       },
@@ -8939,7 +8951,7 @@
         "instability": 0.064,
         "median_gap_months": 12.0,
         "lines_changed": 49021,
-        "articles_revised": 33450,
+        "articles_in_revised_laws": 33450,
         "weighted_churn": 5.4,
         "article_churn": 3.7
       }
@@ -8955,7 +8967,7 @@
         "instability": 0.0798,
         "median_gap_months": 23.9,
         "lines_changed": 129143,
-        "articles_revised": 112817,
+        "articles_in_revised_laws": 112817,
         "weighted_churn": 3.8,
         "article_churn": 3.4
       },
@@ -8969,7 +8981,7 @@
         "instability": 0.0864,
         "median_gap_months": 28.0,
         "lines_changed": 55546,
-        "articles_revised": 82052,
+        "articles_in_revised_laws": 82052,
         "weighted_churn": 2.3,
         "article_churn": 3.3
       },
@@ -8983,7 +8995,7 @@
         "instability": 0.062,
         "median_gap_months": 19.7,
         "lines_changed": 73597,
-        "articles_revised": 30765,
+        "articles_in_revised_laws": 30765,
         "weighted_churn": 8.1,
         "article_churn": 3.4
       }
@@ -8999,7 +9011,7 @@
         "instability": 0.0035,
         "median_gap_months": 18.8,
         "lines_changed": 34920,
-        "articles_revised": 6236,
+        "articles_in_revised_laws": 6236,
         "weighted_churn": 1.0,
         "article_churn": 0.2
       },
@@ -9013,7 +9025,7 @@
         "instability": 0.0129,
         "median_gap_months": 18.8,
         "lines_changed": 34920,
-        "articles_revised": 6236,
+        "articles_in_revised_laws": 6236,
         "weighted_churn": 3.9,
         "article_churn": 0.7
       }
@@ -9029,7 +9041,7 @@
         "instability": 0.0004,
         "median_gap_months": 21.5,
         "lines_changed": 8321,
-        "articles_revised": 224,
+        "articles_in_revised_laws": 224,
         "weighted_churn": 0.2,
         "article_churn": 0.0
       },
@@ -9043,7 +9055,7 @@
         "instability": 0.0017,
         "median_gap_months": 21.5,
         "lines_changed": 8321,
-        "articles_revised": 224,
+        "articles_in_revised_laws": 224,
         "weighted_churn": 0.9,
         "article_churn": 0.0
       }
@@ -9059,7 +9071,7 @@
         "instability": 0.0005,
         "median_gap_months": 53.5,
         "lines_changed": 1467,
-        "articles_revised": 726,
+        "articles_in_revised_laws": 726,
         "weighted_churn": 0.0,
         "article_churn": 0.0
       },
@@ -9073,7 +9085,7 @@
         "instability": 0.0018,
         "median_gap_months": 53.5,
         "lines_changed": 1467,
-        "articles_revised": 726,
+        "articles_in_revised_laws": 726,
         "weighted_churn": 0.2,
         "article_churn": 0.1
       }
@@ -9089,7 +9101,7 @@
         "instability": 0.0001,
         "median_gap_months": 31.0,
         "lines_changed": 1716,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.1,
         "article_churn": null
       },
@@ -9103,7 +9115,7 @@
         "instability": 0.0004,
         "median_gap_months": 31.0,
         "lines_changed": 1716,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.2,
         "article_churn": null
       }
@@ -9119,7 +9131,7 @@
         "instability": 0.0002,
         "median_gap_months": 36.0,
         "lines_changed": 40,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.0,
         "article_churn": null
       },
@@ -9133,7 +9145,7 @@
         "instability": 0.0007,
         "median_gap_months": 36.0,
         "lines_changed": 40,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.0,
         "article_churn": null
       }
@@ -9149,7 +9161,7 @@
         "instability": 0.0003,
         "median_gap_months": 57.0,
         "lines_changed": 182,
-        "articles_revised": 26,
+        "articles_in_revised_laws": 26,
         "weighted_churn": 0.0,
         "article_churn": 0.0
       },
@@ -9163,7 +9175,7 @@
         "instability": 0.001,
         "median_gap_months": 57.0,
         "lines_changed": 182,
-        "articles_revised": 26,
+        "articles_in_revised_laws": 26,
         "weighted_churn": 0.0,
         "article_churn": 0.0
       }
@@ -9179,7 +9191,7 @@
         "instability": 0.0001,
         "median_gap_months": 112.0,
         "lines_changed": 15,
-        "articles_revised": 166,
+        "articles_in_revised_laws": 166,
         "weighted_churn": 0.0,
         "article_churn": 0.0
       },
@@ -9193,7 +9205,7 @@
         "instability": 0.0006,
         "median_gap_months": 112.0,
         "lines_changed": 15,
-        "articles_revised": 166,
+        "articles_in_revised_laws": 166,
         "weighted_churn": 0.0,
         "article_churn": 0.0
       }
@@ -9209,7 +9221,7 @@
         "instability": 0.0001,
         "median_gap_months": 106.5,
         "lines_changed": 413,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.0,
         "article_churn": null
       },
@@ -9223,7 +9235,7 @@
         "instability": 0.0004,
         "median_gap_months": 106.5,
         "lines_changed": 413,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.0,
         "article_churn": null
       }
@@ -9239,7 +9251,7 @@
         "instability": 0.0,
         "median_gap_months": 24.0,
         "lines_changed": 14,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.0,
         "article_churn": null
       },
@@ -9253,7 +9265,7 @@
         "instability": 0.0001,
         "median_gap_months": 24.0,
         "lines_changed": 14,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.0,
         "article_churn": null
       }
@@ -9269,7 +9281,7 @@
         "instability": 0.0,
         "median_gap_months": 84.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       },
@@ -9283,7 +9295,7 @@
         "instability": 0.0001,
         "median_gap_months": 84.0,
         "lines_changed": 0,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": null,
         "article_churn": null
       }
@@ -9299,7 +9311,7 @@
         "instability": 0.0,
         "median_gap_months": 417.8,
         "lines_changed": 11,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.0,
         "article_churn": null
       },
@@ -9313,7 +9325,7 @@
         "instability": 0.0001,
         "median_gap_months": 417.8,
         "lines_changed": 11,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.0,
         "article_churn": null
       }
@@ -9329,7 +9341,7 @@
         "instability": 0.0,
         "median_gap_months": 384.0,
         "lines_changed": 13,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.0,
         "article_churn": null
       },
@@ -9343,7 +9355,7 @@
         "instability": 0.0001,
         "median_gap_months": 384.0,
         "lines_changed": 13,
-        "articles_revised": 0,
+        "articles_in_revised_laws": 0,
         "weighted_churn": 0.0,
         "article_churn": null
       }
