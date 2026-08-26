@@ -38,6 +38,18 @@
         }
         .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
         @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+        /* On a phone the five workload cards stacked 2-up pushed the chart
+           ~900px below the section heading — far enough that the section read
+           as having no chart at all. Same cards, less air. */
+        @media (max-width: 640px) {
+            main { padding: 0 1rem; margin: 1.25rem auto; }
+            .kpi-grid { grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
+                        gap: 0.6rem; margin-bottom: 1.5rem; }
+            .kpi-card { padding: 0.7rem 0.5rem; }
+            .kpi-card .value { font-size: 1.45rem; }
+            .kpi-card .label { font-size: 0.72rem; line-height: 1.35; }
+            .chart-section h2 { font-size: 1.1rem; }
+        }
         .table-wrap { overflow-x: auto; }
         .data-table { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
         .data-table th, .data-table td { border: 1px solid var(--border); padding: 0.35rem 0.6rem; text-align: right; }
@@ -156,7 +168,8 @@
             <div class="tab-bar" id="events-measure">
                 <span class="tab-label">Measure:</span>
                 <button class="active" data-measure="count">Events</button>
-                <button data-measure="lines">Text changed (federal only)</button>
+                <button data-measure="articles">Text volume</button>
+                <button data-measure="lines">Text changed</button>
                 <span class="tab-label" style="margin-left:0.75rem">Since</span>
                 <select id="events-from"></select>
                 <span class="hint" id="events-measure-hint"></span>
@@ -243,8 +256,8 @@
         </p>
     </footer>
 
-    <script src="assets/echarts.min.js"></script>
-    <script src="assets/charts.js"></script>
+    <script src="assets/echarts.min.js?v=8f667a68"></script>
+    <script src="assets/charts.js?v=179abfc1"></script>
     <script>
     (async function() {
         const stats = await (await fetch('stats.json', { cache: 'no-cache' })).json();
@@ -789,6 +802,23 @@
         // A different counting unit from every other chart on this page: here
         // a law revised 47 times contributes 47 records, not one. Both units
         // stay published — the note under the chart says which is which.
+        // A blank canvas is indistinguishable from "no data", from a stale
+        // cached asset and from a thrown error — on a phone, where there is no
+        // console to open, it is simply a hole in the page. Every way this
+        // section can fail therefore writes into the chart's own frame.
+        function eventsFailure(reason) {
+            const box = document.getElementById('events-chart');
+            box.style.height = 'auto';
+            box.innerHTML = '<p class="table-note" style="padding:1rem 0">' +
+                '<b>The legislative-activity chart could not be drawn.</b> ' +
+                'Reason: ' + reason + '. The underlying figures are still in ' +
+                'the <a href="api/v1/stats/events_by_year.json">events by year</a> ' +
+                'and <a href="api/v1/stats/indicators.json">workload indicators</a> ' +
+                'APIs. A hard reload (or a private window) rules out a stale ' +
+                'cached copy of the page.</p>';
+            document.getElementById('events-kpis').innerHTML = '';
+        }
+
         (async function initEvents() {
             const [cube, indicators] = await Promise.all([
                 fetch('api/v1/stats/events_by_year.json', { cache: 'no-cache' })
@@ -796,8 +826,7 @@
                 fetch('api/v1/stats/indicators.json', { cache: 'no-cache' })
                     .then(r => r.ok ? r.json() : null).catch(() => null),
             ]);
-            const section = document.getElementById('events-chart').closest('.chart-section');
-            if (!cube) { section.hidden = true; return; }
+            if (!cube) { eventsFailure('the events cube did not load'); return; }
 
             // Scheduled entries into force are real and are kept in the API,
             // but a bar for a year still running (let alone 2066) reads as a
@@ -809,12 +838,17 @@
                     b + (c.publication || 0) + (c.revision || 0), 0), 0);
             const latestComplete = String(Number(CUT) - 1);
 
-            const evState = { scope: 'all', measure: 'count', from: '1990' };
             const evChart = makeChart('events-chart');
+            // 37 year-bands do not fit a phone: at 342px each bar is ~5px and the
+            // chart reads as a comb of hairlines. A narrow viewport therefore
+            // opens on 2010 — every other window is one tap away in the select.
+            const evNarrow = () => evChart.getWidth() < 560;
+            const evState = { scope: 'all', measure: 'count',
+                              from: evNarrow() ? '2010' : '1990' };
 
             const fromSel = document.getElementById('events-from');
-            fromSel.innerHTML = [['1990', '1990'], ['1970', '1970'], ['1950', '1950'],
-                                 ['', 'the beginning']]
+            fromSel.innerHTML = [['2010', '2010'], ['1990', '1990'], ['1970', '1970'],
+                                 ['1950', '1950'], ['', 'the beginning']]
                 .map(([v, l]) => `<option value="${v}"${v === evState.from ? ' selected' : ''}>` +
                                  `${l}</option>`).join('');
             fromSel.addEventListener('change', () => {
@@ -855,6 +889,8 @@
                     { value: fmtPct(k.instability), label: 'Laws revised at least once' },
                     { value: k.medianGapMonths == null ? '—' : fmtNum(k.medianGapMonths, 1),
                       label: 'Median months since previous change' },
+                    { value: k.articlesRevised.toLocaleString(),
+                      label: `Articles of law revised in ${k.year}` },
                 ];
                 box.innerHTML = cards.map(c =>
                     `<div class="kpi-card"><div class="value">${c.value}</div>` +
@@ -862,29 +898,51 @@
             }
 
             function renderEvents() {
-                // Magnitude comes from git numstat on federal consolidation
-                // commits; cantonal law has no versioned text history, so the
-                // measure is disabled there rather than charted as zero.
+                // Two text measures, two coverages. "Text changed" diffs two
+                // recorded versions of a file, which the cantonal corpus does
+                // not have (368 of 19,575 cantonal files); charting its 369
+                // deltas against 105k cantonal revisions would read as "cantonal
+                // law never changes", so the measure is disabled there and the
+                // hint says why. "Text volume" is counted from the markdown
+                // body every law has, and covers both scopes.
                 const linesBtn = measureBar.querySelector('[data-measure="lines"]');
                 const cantonalOnly = evState.scope === 'cantonal';
                 linesBtn.disabled = cantonalOnly;
                 linesBtn.style.opacity = cantonalOnly ? 0.45 : '';
                 if (cantonalOnly && evState.measure === 'lines') {
-                    evState.measure = 'count';
-                    setActive(measureBar, measureBar.querySelector('[data-measure="count"]'));
+                    evState.measure = 'articles';
+                    setActive(measureBar, measureBar.querySelector('[data-measure="articles"]'));
                 }
+                const HINTS = {
+                    lines: 'Lines added + removed per revision, from the git diff between ' +
+                           'consecutive published versions \u2014 federal law in practice, and ' +
+                           'excluding each law\u2019s first recorded version (that commit is ' +
+                           'the text entering the corpus, not the law changing).',
+                    articles: 'Articles of the law each event applies to, counted from the ' +
+                              'text itself \u2014 federal and cantonal alike. Each event ' +
+                              'carries the law\u2019s current size, so recent years are exact ' +
+                              'and older ones understate laws that have since been trimmed.',
+                    count: cantonalOnly
+                        ? 'Text changed needs two published versions of a law to diff; the ' +
+                          'cantonal corpus holds one version per law, so use Text volume there.'
+                        : '',
+                };
                 document.getElementById('events-measure-hint').textContent =
-                    evState.measure === 'lines'
-                        ? 'Lines added + removed per revision — federal law only, and ' +
-                          'excluding each law\u2019s first recorded version (that commit is ' +
-                          'the text entering the corpus, not the law changing).'
-                        : (cantonalOnly ? 'Text volume is unavailable for cantonal law.' : '');
+                    HINTS[evState.measure] || '';
 
                 const data = SLCharts.eventsSeries(cube, {
                     scope: evState.scope, from: evState.from, to: CUT });
-                evChart.setOption(SLCharts.eventsStackOption(data, evState.measure), true);
+                evChart.setOption(
+                    SLCharts.eventsStackOption(data, evState.measure, evChart.getWidth()),
+                    true);
                 renderKpis();
             }
+
+            let evResizeTimer = null;
+            window.addEventListener('resize', () => {
+                clearTimeout(evResizeTimer);
+                evResizeTimer = setTimeout(renderEvents, 150);
+            });
 
             const t = cube.totals, prov = cube.provenance || {};
             document.getElementById('events-methodology').innerHTML =
@@ -900,11 +958,27 @@
                 `known date) + <b>${t.revisions.toLocaleString()}</b> revisions. ` +
                 (prov.commits_bulk_metadata
                     ? `Dates reconstructed from this repository's own commit log are kept only ` +
-                      `where they come from a backdated Fedlex consolidation ` +
-                      `(<b>${prov.commits_consolidation.toLocaleString()}</b> commits); the ` +
+                      `where they come from a backdated consolidation — a commit author-dated ` +
+                      `to the version's entry into force, naming that same date and the law's ` +
+                      `own register ` +
+                      `(<b>${prov.commits_consolidation.toLocaleString()}</b> commits: ` +
+                      `<b>${(prov.commits_consolidation_federal || 0).toLocaleString()}</b> ` +
+                      `federal, ` +
+                      `<b>${(prov.commits_consolidation_cantonal || 0).toLocaleString()}</b> ` +
+                      `cantonal). A consolidation dates law from its own register and nothing ` +
+                      `else, so a file that merely rode along in another register's batch is ` +
+                      `not dated by it. The remaining ` +
                       `<b>${prov.commits_bulk_metadata.toLocaleString()}</b> bulk metadata ` +
-                      `commits that rewrote frontmatter for every law at once are not legal ` +
+                      `commits, which rewrote frontmatter for every law at once, are not legal ` +
                       `events and are dropped. ` : '') +
+                `<b>Two text measures, two coverages.</b> <i>Text volume</i> counts the ` +
+                `articles of the law an event applies to, read from the markdown body that ` +
+                `every law in the corpus has — federal and cantonal alike — crediting each ` +
+                `event with the law's current size. <i>Text changed</i> counts lines added ` +
+                `and removed, which requires diffing two published versions of the same law: ` +
+                `federal law has that version history, while the cantonal corpus was imported ` +
+                `at one version per law, so it is charted for federal law only rather than ` +
+                `shown as a cantonal zero. ` +
                 (future ? `<b>${future.toLocaleString()}</b> events dated after ${CUT} ` +
                           `(entries into force already scheduled) are in the API but off the ` +
                           `chart. ` : '') +
@@ -914,7 +988,10 @@
                 '<a href="api/v1/events/index.json">per-year event stream</a>.';
 
             renderEvents();
-        })();
+        })().catch(err => {
+            eventsFailure(err && err.message ? err.message : String(err));
+            console.error('legislative activity section failed', err);
+        });
 
         // ════════ Embed dialog ════════
         // Snippets must always point at the public site, never at whatever

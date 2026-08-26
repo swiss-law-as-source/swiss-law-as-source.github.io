@@ -291,66 +291,104 @@ window.SLCharts = (function () {
     // scope buttons cannot disagree with the stacked bars they filter.
     function eventsSeries(cube, { scope = 'all', from = null, to = null } = {}) {
         const years = cube.years.filter(y => (!from || y >= from) && (!to || y <= to));
+        const KEYS = ['publication', 'revision', 'lines', 'revisions_with_delta',
+                      'articles_publication', 'articles_revision'];
         const pick = y => {
             const cell = cube.by_year[y] || {};
             const scopes = scope === 'all' ? Object.keys(cell) : [scope];
             return scopes.reduce((a, s) => {
                 const c = cell[s] || {};
-                a.publication += c.publication || 0;
-                a.revision += c.revision || 0;
-                a.lines += c.lines || 0;
-                a.withDelta += c.revisions_with_delta || 0;
+                KEYS.forEach(k => { a[k] += c[k] || 0; });
                 return a;
-            }, { publication: 0, revision: 0, lines: 0, withDelta: 0 });
+            }, Object.fromEntries(KEYS.map(k => [k, 0])));
         };
         const rows = years.map(pick);
+        const col = k => rows.map(r => r[k]);
         return {
             years,
-            publications: rows.map(r => r.publication),
-            revisions: rows.map(r => r.revision),
-            lines: rows.map(r => r.lines),
-            withDelta: rows.map(r => r.withDelta),
+            publications: col('publication'),
+            revisions: col('revision'),
+            lines: col('lines'),
+            withDelta: col('revisions_with_delta'),
+            articlesPublished: col('articles_publication'),
+            articlesRevised: col('articles_revision'),
         };
     }
 
-    // measure 'count' → stacked publications/revisions; 'lines' → text moved.
-    // The two never share an axis: switching swaps the y-scale outright,
-    // because lines-changed exists for federal law only and stacking it
-    // against a cantonal count would invent coverage we do not have.
-    function eventsStackOption(data, measure) {
-        const lines = measure === 'lines';
-        const stacked = [
-            { key: 'publications', name: 'Publications (first appearance)',
-              color: EVENT_COLORS.publication, data: data.publications },
-            { key: 'revisions', name: 'Revisions', color: EVENT_COLORS.revision,
-              data: data.revisions },
-        ];
-        const series = lines
-            ? [{ name: 'Lines changed (added + removed)', type: 'bar',
-                 itemStyle: { color: EVENT_COLORS.revision, borderRadius: [3, 3, 0, 0] },
-                 barMaxWidth: 26, emphasis: { focus: 'series' }, data: data.lines }]
-            : stacked.map((s, i) => ({
-                name: s.name, type: 'bar', stack: 'events',
+    // Three measures over the same bars, and each is its own quantity — the
+    // y-scale is swapped outright when the measure changes, never shared.
+    //   count    events            both scopes
+    //   articles articles touched  both scopes  (from the markdown bodies)
+    //   lines    lines changed     federal      (needs two versions to diff)
+    const EVENT_MEASURES = {
+        count: {
+            axis: 'events', total: 'Total events',
+            parts: [['publications', 'Publications (first appearance)', 'Publications'],
+                    ['revisions', 'Revisions', 'Revisions']],
+        },
+        articles: {
+            axis: 'articles', total: 'Total articles',
+            parts: [['articlesPublished', 'Articles published (first appearance)',
+                     'Articles published'],
+                    ['articlesRevised', 'Articles revised', 'Articles revised']],
+        },
+        lines: {
+            axis: 'lines changed',
+            parts: [['lines', 'Lines changed (added + removed)', 'Lines changed']],
+        },
+    };
+
+    // `width` is the container's pixel width, and the option is genuinely
+    // different at 342px than at 1052px: a phone cannot carry 37 year-bands, a
+    // legend row and an axis name in the same top-left corner.
+    function eventsStackOption(data, measure, width) {
+        const spec = EVENT_MEASURES[measure] || EVENT_MEASURES.count;
+        const stacked = spec.parts.length > 1;
+        const W = width || 900;
+        const narrow = W < 560;
+        const gridL = narrow ? 44 : 62;
+        const gridR = narrow ? 12 : 20;
+        const band = Math.max(1, (W - gridL - gridR) / Math.max(1, data.years.length));
+        // Bars are capped at 24px and never fill their band — the leftover is air.
+        const barW = Math.max(1, Math.min(24, band * 0.7));
+        // The 2px surface gap between stacked segments is drawn as a stroke, so
+        // it costs 4px of bar width as well as the 2px it buys vertically.
+        // Below ~12px that erases the mark it was meant to separate — the phone
+        // rendered a comb of hairlines — so a narrow band drops the stroke and
+        // leans on the blue/red pair, which is far enough apart to carry it.
+        const sep = stacked && barW >= 12 ? 2 : 0;
+        const colors = [EVENT_COLORS.publication, EVENT_COLORS.revision];
+
+        const series = spec.parts.map(([key, longName, shortName], i) => {
+            const last = i === spec.parts.length - 1;
+            return {
+                type: 'bar', barMaxWidth: 24, barCategoryGap: '30%',
+                emphasis: { focus: 'series' },
+                name: narrow ? shortName : longName,
+                stack: stacked ? 'events' : undefined,
                 itemStyle: {
-                    color: s.color,
-                    borderColor: '#fff', borderWidth: 2,
-                    borderRadius: i === stacked.length - 1 ? [3, 3, 0, 0] : 0,
+                    color: stacked ? colors[i] : EVENT_COLORS.revision,
+                    borderColor: '#fff', borderWidth: sep,
+                    borderRadius: last ? [3, 3, 0, 0] : 0,
                 },
-                barMaxWidth: 26, emphasis: { focus: 'series' }, data: s.data,
-            }));
+                data: data[key],
+            };
+        });
 
         return {
             tooltip: {
                 trigger: 'axis', axisPointer: { type: 'shadow' },
+                // a phone tooltip that escapes the canvas is unreadable
+                confine: true,
                 formatter: params => {
                     if (!params.length) return '';
                     const y = params[0].axisValue;
                     const i = data.years.indexOf(y);
                     const rows = params.map(p =>
                         `${p.marker}${p.seriesName}: <b>${(p.value || 0).toLocaleString()}</b>`);
-                    if (!lines) {
-                        const tot = (data.publications[i] || 0) + (data.revisions[i] || 0);
-                        rows.push(`<span style="color:${INK2}">Total events: ` +
+                    if (spec.total) {
+                        const tot = spec.parts.reduce((a, [k]) => a + (data[k][i] || 0), 0);
+                        rows.push(`<span style="color:${INK2}">${spec.total}: ` +
                                   `<b>${tot.toLocaleString()}</b></span>`);
                     } else if (data.withDelta[i]) {
                         rows.push(`<span style="color:${INK2}">over ` +
@@ -359,15 +397,22 @@ window.SLCharts = (function () {
                     return `<b>${y}</b><br>${rows.join('<br>')}`;
                 },
             },
-            legend: { top: 0, textStyle: { color: INK2, fontSize: 11 } },
-            grid: { left: 62, right: 20, top: 30, bottom: 40 },
-            xAxis: { type: 'category', data: data.years, axisLabel: { color: INK2 } },
+            // On a phone the legend sits below the plot: at the top it lands on
+            // the y-axis name, which is what produced the "ePubls" overprint.
+            legend: narrow
+                ? { bottom: 0, itemGap: 10, itemWidth: 12, itemHeight: 8,
+                    textStyle: { color: INK2, fontSize: 10 } }
+                : { top: 0, textStyle: { color: INK2, fontSize: 11 } },
+            grid: { left: gridL, right: gridR,
+                    top: narrow ? 24 : 30, bottom: narrow ? 56 : 40 },
+            xAxis: { type: 'category', data: data.years,
+                     axisLabel: { color: INK2, fontSize: narrow ? 10 : 12 } },
             yAxis: {
                 type: 'value',
-                name: lines ? 'lines changed' : 'events',
+                name: spec.axis,
                 nameTextStyle: { color: INK2, fontSize: 11, align: 'left' },
                 nameGap: 12,
-                axisLabel: { color: INK2,
+                axisLabel: { color: INK2, fontSize: narrow ? 10 : 12,
                              formatter: v => v >= 1000 ? (v / 1000) + 'k' : v },
                 splitLine: { lineStyle: { color: '#eee' } },
             },
@@ -391,6 +436,8 @@ window.SLCharts = (function () {
             instability: cell.instability,
             medianGapMonths: cell.median_gap_months,
             linesChanged: cell.lines_changed || 0,
+            articlesRevised: cell.articles_revised || 0,
+            articleChurn: cell.article_churn,
         };
     }
 
