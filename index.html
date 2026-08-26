@@ -86,6 +86,47 @@
             background: #fff; border: 1px solid var(--border); border-radius: 4px;
             padding: 0.3rem 0.5rem; font-size: 0.82rem;
         }
+        /* Section anchors. Every block of the dashboard carries a stable
+           #id so a link can point at one part of it. The marker shows on
+           hover with a mouse; touch has no hover, so it stays faintly visible
+           there rather than being unreachable. */
+        .chart-head {
+            font-size: 1.05rem; display: flex; align-items: baseline;
+            gap: 0.4rem; flex-wrap: wrap;
+        }
+        .chart-head .anchor { margin-left: 0; }
+        .chart-head button { margin-left: auto; }
+        .anchor {
+            color: #c9c8c4; text-decoration: none; font-weight: 400;
+            font-size: 0.85em; margin-left: 0.4rem; opacity: 0;
+            transition: opacity 0.12s;
+        }
+        h2:hover > .anchor, h3:hover > .anchor,
+        .anchor:focus, .anchor.copied { opacity: 1; }
+        .anchor:hover, .anchor.copied { color: var(--red); }
+        @media (hover: none) { .anchor { opacity: 0.5; } }
+        [id] { scroll-margin-top: 1rem; }
+        .section-index {
+            font-size: 0.82rem; color: #666; margin: -1.5rem 0 2.5rem;
+            display: flex; gap: 0.45rem; flex-wrap: wrap; align-items: baseline;
+        }
+        /* The KPI row's own bottom margin shrinks on a phone; without a
+           matching climb-back the index would sit flush against the cards. */
+        @media (max-width: 640px) { .section-index { margin: -0.75rem 0 1.5rem; } }
+        .section-index a { color: var(--red); text-decoration: none; }
+        .section-index a:hover { text-decoration: underline; }
+        .section-index .sep { color: var(--border); }
+        #embed-dialog .field-label {
+            font-size: 0.78rem; color: #666; font-weight: 600;
+            margin: 0.9rem 0 0.25rem;
+        }
+        #embed-dialog a { color: var(--red); text-decoration: none; }
+        #embed-dialog a:hover { text-decoration: underline; }
+        #embed-dialog input.url-field {
+            width: 100%; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+            font-size: 0.78rem; border: 1px solid var(--border); border-radius: 4px;
+            padding: 0.5rem; background: var(--gray);
+        }
         dialog#embed-dialog {
             border: 1px solid var(--border); border-radius: 8px; padding: 1.2rem;
             max-width: 560px; width: 90%;
@@ -116,10 +157,22 @@
     </nav>
     <main>
         <div class="kpi-grid" id="kpis"></div>
+        <!-- A div, not a <nav>: site-chrome.css styles bare <nav> as the black
+             site navbar, which this in-page index is not. -->
+        <div class="section-index" role="navigation" aria-label="Sections of this dashboard">
+            <span>On this page:</span>
+            <a href="#legal-domains">Legal domains</a><span class="sep">·</span>
+            <a href="#cantonal-explorer">Cantonal explorer</a><span class="sep">·</span>
+            <a href="#cantonal-acts">Cantonal acts by domain</a><span class="sep">·</span>
+            <a href="#legislative-activity">Legislative activity</a>
+            <span class="hint">Every heading below is linkable — click its <b>#</b> to copy
+                a link straight to that chart.</span>
+        </div>
 
         <!-- Section A: standalone harmonized domains -->
-        <div class="chart-section">
-            <h2>Legal domains — harmonized (federal + cantonal)</h2>
+        <div class="chart-section" id="legal-domains">
+            <h2>Legal domains — harmonized (federal + cantonal)<a class="anchor"
+                href="#legal-domains" aria-label="Link to this section">#</a></h2>
             <div class="tab-bar" id="domains-scope">
                 <span class="tab-label">Scope:</span>
                 <button class="active" data-scope="total">All</button>
@@ -157,8 +210,9 @@
 
 
         <!-- Section B: linked dashboard (cantonal) -->
-        <div class="chart-section">
-            <h2>Cantonal laws explorer — linked charts</h2>
+        <div class="chart-section" id="cantonal-explorer">
+            <h2>Cantonal laws explorer — linked charts<a class="anchor"
+                href="#cantonal-explorer" aria-label="Link to this section">#</a></h2>
             <div class="filter-bar" id="filters">
                 <label>From</label><select id="year-from"></select>
                 <label>to</label><select id="year-to"></select>
@@ -170,24 +224,28 @@
                     Federal law is in the domains chart above.</span>
             </div>
             <div class="grid-2">
-                <div>
-                    <h3 style="font-size:1.05rem;margin-bottom:0.5rem">Laws by canton
-                        <button data-embed="cantons" style="float:right">Embed</button></h3>
+                <div id="laws-by-canton">
+                    <h3 class="chart-head" style="margin-bottom:0.5rem">Laws by canton<a
+                        class="anchor" href="#laws-by-canton" aria-label="Link to this chart">#</a>
+                        <button data-embed="cantons">Embed</button></h3>
                     <div class="echart" id="canton-chart" style="height:440px"></div>
                 </div>
-                <div>
-                    <h3 style="font-size:1.05rem;margin-bottom:0.5rem">Instrument types
-                        <button data-embed="types" style="float:right">Embed</button></h3>
+                <div id="instrument-types">
+                    <h3 class="chart-head" style="margin-bottom:0.5rem">Instrument types<a
+                        class="anchor" href="#instrument-types" aria-label="Link to this chart">#</a>
+                        <button data-embed="types">Embed</button></h3>
                     <div class="echart" id="types-chart" style="height:440px"></div>
                 </div>
             </div>
-            <h3 style="font-size:1.05rem;margin:1.5rem 0 0.5rem">Laws by enactment year (stacked by type)
-                <button data-embed="years" style="float:right">Embed</button></h3>
+            <h3 id="laws-by-year" class="chart-head" style="margin:1.5rem 0 0.5rem">Laws by enactment year (stacked by type)<a
+                class="anchor" href="#laws-by-year" aria-label="Link to this chart">#</a>
+                <button data-embed="years">Embed</button></h3>
             <div class="echart" id="years-chart" style="height:340px"></div>
         </div>
 
-        <div class="chart-section">
-            <h2>Cantonal acts by canton and legal domain</h2>
+        <div class="chart-section" id="cantonal-acts">
+            <h2>Cantonal acts by canton and legal domain<a class="anchor"
+                href="#cantonal-acts" aria-label="Link to this section">#</a></h2>
             <div class="tab-bar">
                 <span class="tab-label" id="type-table-label" hidden>Instrument type:</span>
                 <select id="type-table-select" hidden></select>
@@ -210,13 +268,15 @@
 
 
         <!-- Section D: the legal event stream — a second counting unit, last row -->
-        <div class="chart-section">
-            <h2>Legislative activity — publications and revisions</h2>
+        <div class="chart-section" id="legislative-activity">
+            <h2>Legislative activity — publications and revisions<a class="anchor"
+                href="#legislative-activity" aria-label="Link to this section">#</a></h2>
             <div class="tab-bar" id="events-scope">
                 <span class="tab-label">Scope:</span>
                 <button class="active" data-scope="all">All</button>
                 <button data-scope="federal">Federal</button>
                 <button data-scope="cantonal">Cantonal</button>
+                <button data-embed="events" style="margin-left:auto">Embed</button>
             </div>
             <div class="tab-bar" id="events-measure">
                 <span class="tab-label">Measure:</span>
@@ -239,8 +299,15 @@
            The chart stays live — it loads current data from this site and reflects the
            filters you had active.</p>
         <textarea id="embed-code" readonly rows="4" spellcheck="false"></textarea>
-        <div class="tab-bar" style="margin-top:0.75rem;margin-bottom:0">
-            <button id="embed-copy">Copy</button>
+        <p class="field-label">Embed link — for anything that takes a bare URL
+           (Notion, Confluence, WordPress, a slide deck)</p>
+        <input id="embed-url" class="url-field" readonly spellcheck="false">
+        <p class="field-label">Link to this chart on the dashboard</p>
+        <input id="embed-anchor" class="url-field" readonly spellcheck="false">
+        <div class="tab-bar" style="margin-top:0.9rem;margin-bottom:0">
+            <button data-copy="embed-code">Copy snippet</button>
+            <button data-copy="embed-url">Copy embed link</button>
+            <button data-copy="embed-anchor">Copy page link</button>
             <a id="embed-preview" href="#" target="_blank" rel="noopener"
                style="font-size:0.82rem">Preview (this server) ↗</a>
             <button id="embed-close" style="margin-left:auto">Close</button>
@@ -253,12 +320,13 @@
             <a href="crossrefs.html">Federal cross-refs</a> &middot;
             <a href="cross_level_refs.html">Federal ↔ cantonal</a> &middot;
             <a href="diff.html">Diff viewer</a> &middot;
-            <a href="undated.html">Undated laws</a>
+            <a href="undated.html">Undated laws</a> &middot;
+            <a href="embed.html">Embeddable charts</a>
         </p>
     </footer>
 
     <script src="assets/echarts.min.js?v=8f667a68"></script>
-    <script src="assets/charts.js?v=179abfc1"></script>
+    <script src="assets/charts.js?v=77538ac4"></script>
     <script>
     (async function() {
         const stats = await (await fetch('stats.json', { cache: 'no-cache' })).json();
@@ -820,6 +888,10 @@
             document.getElementById('events-kpis').innerHTML = '';
         }
 
+        // Registered before the fetch so the Embed button answers even if the
+        // cube never loads; replaced below once the section has real state.
+        embedParamFns.events = () => ({});
+
         (async function initEvents() {
             const [cube, indicators] = await Promise.all([
                 fetch('api/v1/stats/events_by_year.json', { cache: 'no-cache' })
@@ -846,6 +918,13 @@
             const evNarrow = () => evChart.getWidth() < 560;
             const evState = { scope: 'all', measure: 'count',
                               from: evNarrow() ? '2010' : '1990' };
+            embedParamFns.events = () => ({
+                scope: evState.scope !== 'all' ? evState.scope : null,
+                measure: evState.measure !== 'count' ? evState.measure : null,
+                // '' means "since the beginning" — a falsy value would be
+                // dropped from the query string and silently re-defaulted.
+                from: evState.from || 'all',
+            });
 
             const fromSel = document.getElementById('events-from');
             fromSel.innerHTML = [['2010', '2010'], ['1990', '1990'], ['1970', '1970'],
@@ -999,26 +1078,60 @@
         // host the dashboard happens to be viewed from (localhost tunnels…).
         const SITE_BASE = 'https://swiss-law-as-source.github.io/';
         const embedDialog = document.getElementById('embed-dialog');
-        function showEmbedDialog(publicUrl, previewUrl) {
+        // Which part of this page each embeddable chart belongs to, so the
+        // dialog can hand out the section link next to the embed link and an
+        // embedded chart can link back to the section it came from.
+        const EMBED_ANCHORS = {
+            domains: 'legal-domains', cantons: 'laws-by-canton',
+            types: 'instrument-types', years: 'laws-by-year',
+            concordats: 'cantonal-acts', events: 'legislative-activity',
+        };
+        function copyText(text) {
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).catch(() => execCopy(text));
+            } else {
+                execCopy(text);
+            }
+        }
+        function execCopy(text) {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0';
+            document.body.appendChild(ta);
+            ta.select();
+            try { document.execCommand('copy'); } finally { ta.remove(); }
+        }
+        function showEmbedDialog(publicUrl, previewUrl, anchorUrl) {
             document.getElementById('embed-code').value =
                 `<iframe src="${publicUrl}" width="800" height="560" style="border:0" ` +
                 `loading="lazy" title="Swiss Law Collection chart"></iframe>`;
+            document.getElementById('embed-url').value = publicUrl;
+            document.getElementById('embed-anchor').value = anchorUrl;
             document.getElementById('embed-preview').href = previewUrl || publicUrl;
             embedDialog.showModal();
         }
-        document.getElementById('embed-copy').addEventListener('click', () => {
-            const ta = document.getElementById('embed-code');
-            ta.select();
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(ta.value).catch(() => document.execCommand('copy'));
-            } else {
-                document.execCommand('copy');
-            }
-            const btn = document.getElementById('embed-copy');
-            btn.textContent = 'Copied ✓';
-            setTimeout(() => { btn.textContent = 'Copy'; }, 1500);
+        embedDialog.addEventListener('click', e => {
+            const target = e.target.dataset && e.target.dataset.copy;
+            if (!target) return;
+            const field = document.getElementById(target);
+            field.select();
+            copyText(field.value);
+            const label = e.target.textContent;
+            e.target.textContent = 'Copied ✓';
+            setTimeout(() => { e.target.textContent = label; }, 1500);
         });
         document.getElementById('embed-close').addEventListener('click', () => embedDialog.close());
+
+        // Heading anchors: the click navigates (so the address bar carries the
+        // hash even where the clipboard is blocked) and, as a convenience,
+        // copies the absolute link.
+        document.addEventListener('click', e => {
+            const a = e.target.closest && e.target.closest('a.anchor');
+            if (!a) return;
+            copyText(new URL(a.getAttribute('href'), location.href).href);
+            a.classList.add('copied');
+            setTimeout(() => a.classList.remove('copied'), 1200);
+        });
 
         embedParamFns.cantons = embedParamFns.types = embedParamFns.years = () =>
             ({ canton: state.canton, type: state.type, y1: state.y1, y2: state.y2 });
@@ -1034,7 +1147,9 @@
             const publicUrl = new URL('embed.html', SITE_BASE);
             const previewUrl = new URL('embed.html', location.href);
             publicUrl.search = previewUrl.search = params.toString();
-            showEmbedDialog(publicUrl.href, previewUrl.href);
+            const anchorUrl = new URL('index.html', SITE_BASE);
+            anchorUrl.hash = EMBED_ANCHORS[kind] || '';
+            showEmbedDialog(publicUrl.href, previewUrl.href, anchorUrl.href);
         });
     })();
     </script>

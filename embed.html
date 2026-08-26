@@ -55,8 +55,16 @@
             <code>embed.html?chart=years</code> — laws by enactment year (same options)<br>
             <code>embed.html?chart=concordats</code> — canton × domain data widget
             (options: <code>ttype=&lt;type slug&gt;</code>, <code>y1</code>/<code>y2</code>,
-            <code>view=grid|chart|map</code>)
+            <code>view=grid|chart|map</code>)<br>
+            <code>embed.html?chart=events</code> — legislative activity, publications
+            and revisions per year
+            (options: <code>scope=all|federal|cantonal</code>,
+            <code>measure=count|articles|lines</code>,
+            <code>from=1950|1970|1990|2010|all</code>)
         </p>
+        <p style="margin-top:1rem">Every chart on the
+            <a href="index.html">dashboard</a> has an <b>Embed</b> button that
+            builds one of these links with the filters you have active.</p>
     </div>
     <footer>
         <span class="t" id="foot-title">Swiss Law Collection</span>
@@ -65,7 +73,7 @@
     </footer>
 
     <script src="assets/echarts.min.js?v=8f667a68"></script>
-    <script src="assets/charts.js?v=179abfc1"></script>
+    <script src="assets/charts.js?v=77538ac4"></script>
     <script>
     (async function () {
         const P = new URLSearchParams(location.search);
@@ -78,9 +86,10 @@
             el.style.display = 'none';
             document.getElementById('usage').style.display = 'block';
         }
-        function setTitle(t) {
+        function setTitle(t, anchor) {
             document.getElementById('foot-title').textContent = t;
             document.title = `${t} — Swiss Law Collection`;
+            if (anchor) document.getElementById('foot-link').href = `index.html#${anchor}`;
         }
         function initChart(option) {
             const c = echarts.init(el);
@@ -220,8 +229,59 @@
             setTitle(`${conc.title}${rangeText()}`);
         }
 
+        // Legislative activity — the event stream. A different counting unit
+        // from every other chart here: a law revised 47 times contributes 47
+        // records, not one.
+        async function renderEvents() {
+            const cube = await fetchJSON('api/v1/stats/events_by_year.json');
+            const scope = ['federal', 'cantonal'].includes(P.get('scope'))
+                ? P.get('scope') : 'all';
+            let measure = ['articles', 'lines'].includes(P.get('measure'))
+                ? P.get('measure') : 'count';
+            // "Text changed" diffs two recorded versions of a file, which the
+            // cantonal corpus does not have — charting its handful of deltas
+            // as cantonal law would read as "cantonal law never changes".
+            if (scope === 'cantonal' && measure === 'lines') measure = 'articles';
+            // Scheduled entries into force are real and stay in the API, but a
+            // bar for a year still running reads as a collapse in activity.
+            const thisYear = String(new Date().getFullYear());
+            const to = cube.years.filter(y => y <= thisYear).pop() || thisYear;
+            const narrow = () => el.clientWidth && el.clientWidth < 560;
+            const asked = P.get('from');
+            const from = asked === 'all' ? null
+                : asked ? asked : (narrow() ? '2010' : '1990');
+
+            const c = echarts.init(el);
+            const draw = () => c.setOption(
+                SLCharts.eventsStackOption(
+                    SLCharts.eventsSeries(cube, { scope, from, to }),
+                    measure, c.getWidth()),
+                true);
+            draw();
+            let timer = null;
+            window.addEventListener('resize', () => {
+                c.resize();
+                clearTimeout(timer);
+                timer = setTimeout(draw, 150);   // the option is width-dependent
+            });
+            const MEASURE = { count: 'events', articles: 'text volume',
+                              lines: 'text changed' };
+            setTitle(`Legislative activity — ${MEASURE[measure]}`
+                     + `${scope !== 'all' ? ` (${scope})` : ''}`
+                     + `${from ? ` since ${from}` : ''}`,
+                     'legislative-activity');
+        }
+
+        const ANCHORS = { domains: 'legal-domains', cantons: 'laws-by-canton',
+                          types: 'instrument-types', years: 'laws-by-year',
+                          concordats: 'cantonal-acts' };
+
         try {
-            if (kind === 'domains') await renderDomains();
+            if (ANCHORS[kind]) {
+                document.getElementById('foot-link').href = `index.html#${ANCHORS[kind]}`;
+            }
+            if (kind === 'events') await renderEvents();
+            else if (kind === 'domains') await renderDomains();
             else if (['cantons', 'types', 'years'].includes(kind)) await renderCube();
             else if (kind === 'concordats') await renderConcTable();
             else showUsage();
