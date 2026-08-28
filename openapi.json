@@ -3,6 +3,15 @@
   "info": {
     "title": "Swiss Law Collection API",
     "version": "1.0.0",
+    "contact": {
+      "name": "Arfa Digital Consulting",
+      "url": "https://arfa.digital",
+      "email": "benjamin@arfa.digital"
+    },
+    "license": {
+      "name": "MIT",
+      "identifier": "MIT"
+    },
     "description": "Static JSON API for 30,000+ unique Swiss federal and cantonal laws, served from GitHub Pages. All endpoints are read-only GET, no authentication, no rate limits.\n\n**Raw law files**: every law is a Markdown file with YAML frontmatter at `https://raw.githubusercontent.com/benjamin-arfa/swiss-law/main/{path}` using the `path` values returned by these endpoints (URL-encode the path).\n\n**Counts are deduplicated**: one law counts once regardless of its language versions; `total_files` carries the raw file count.\n\n**Categories are harmonized**: aggregation keys use canonical German labels / dotted tree codes; join `/api/v1/categories/*` to localize (de/fr/it, types also en). One taxonomy (LexFind 'domaine juridique') spans federal and cantonal law.\n\n**Article counts are heuristic**: distinct 'Art. N' / 'Article N' / 'Articolo N' / line-leading '§ N' markers per file; cross-references inflate slightly, metadata-only pages count 0.\n\nInteractive dashboard: https://swiss-law-as-source.github.io/"
   },
   "servers": [

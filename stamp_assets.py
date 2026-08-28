@@ -18,8 +18,23 @@ import pathlib
 import re
 import sys
 
-ASSETS = ("charts.js", "echarts.min.js")
-PAGES = ("index.html", "data.html", "embed.html")
+ASSETS = ("charts.js", "echarts.min.js", "site-chrome.css")
+# Every page that links one of the assets above.  site-chrome.css is linked by
+# the nine pages that carry the shared header/footer, so the list is wider than
+# the three chart-bearing pages; the substitution simply finds nothing on a page
+# that does not reference a given asset.
+PAGES = (
+    "index.html",
+    "laws.html",
+    "data.html",
+    "verification.html",
+    "api.html",
+    "crossrefs.html",
+    "cross_level_refs.html",
+    "diff.html",
+    "undated.html",
+    "embed.html",
+)
 
 
 def main() -> int:
