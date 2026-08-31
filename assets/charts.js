@@ -292,6 +292,7 @@ window.SLCharts = (function () {
     function eventsSeries(cube, { scope = 'all', from = null, to = null } = {}) {
         const years = cube.years.filter(y => (!from || y >= from) && (!to || y <= to));
         const KEYS = ['publication', 'revision', 'lines', 'revisions_with_delta',
+                      'words', 'revisions_with_words',
                       'articles_publication', 'articles_revision'];
         const pick = y => {
             const cell = cube.by_year[y] || {};
@@ -310,6 +311,8 @@ window.SLCharts = (function () {
             revisions: col('revision'),
             lines: col('lines'),
             withDelta: col('revisions_with_delta'),
+            words: col('words'),
+            withWords: col('revisions_with_words'),
             articlesPublished: col('articles_publication'),
             articlesRevised: col('articles_revision'),
         };
@@ -322,7 +325,12 @@ window.SLCharts = (function () {
     //            'touched' is literal: a revision is credited with the whole
     //            article count of the law revised, because the corpus records
     //            the text before and after, not which articles were rewritten.
-    //   lines    lines changed     federal      (needs two versions to diff)
+    //   words    words changed     both scopes  (federal versions from this
+    //            corpus, cantonal ones from LexFind's version series; words
+    //            rather than lines because the two sources lay text out
+    //            differently and a line is a unit of layout)
+    //   lines    lines changed     federal      (needs two versions in THIS
+    //            corpus to diff; kept for continuity with the published API)
     const EVENT_MEASURES = {
         count: {
             axis: 'events', total: 'Total events',
@@ -337,8 +345,12 @@ window.SLCharts = (function () {
                      'In revised laws']],
         },
         lines: {
-            axis: 'lines changed',
+            axis: 'lines changed', measured: 'withDelta',
             parts: [['lines', 'Lines changed (added + removed)', 'Lines changed']],
+        },
+        words: {
+            axis: 'words changed', measured: 'withWords',
+            parts: [['words', 'Words changed (added + removed)', 'Words changed']],
         },
     };
 
@@ -394,9 +406,10 @@ window.SLCharts = (function () {
                         const tot = spec.parts.reduce((a, [k]) => a + (data[k][i] || 0), 0);
                         rows.push(`<span style="color:${INK2}">${spec.total}: ` +
                                   `<b>${tot.toLocaleString()}</b></span>`);
-                    } else if (data.withDelta[i]) {
+                    } else if (data[spec.measured || 'withDelta'][i]) {
+                        const n = data[spec.measured || 'withDelta'][i];
                         rows.push(`<span style="color:${INK2}">over ` +
-                                  `${data.withDelta[i].toLocaleString()} measured revisions</span>`);
+                                  `${n.toLocaleString()} measured revisions</span>`);
                     }
                     return `<b>${y}</b><br>${rows.join('<br>')}`;
                 },
@@ -440,6 +453,8 @@ window.SLCharts = (function () {
             instability: cell.instability,
             medianGapMonths: cell.median_gap_months,
             linesChanged: cell.lines_changed || 0,
+            wordsChanged: cell.words_changed || 0,
+            wordChurn: cell.word_churn,
             articlesInRevisedLaws: cell.articles_in_revised_laws || 0,
             articleChurn: cell.article_churn,
         };

@@ -282,7 +282,7 @@
                 <span class="tab-label">Measure:</span>
                 <button class="active" data-measure="count">Events</button>
                 <button data-measure="articles">Text volume</button>
-                <button data-measure="lines">Text changed</button>
+                <button data-measure="words">Text changed</button>
                 <span class="tab-label" style="margin-left:0.75rem">Since</span>
                 <select id="events-from"></select>
                 <span class="hint" id="events-measure-hint"></span>
@@ -1007,40 +1007,71 @@
             }
 
             function renderEvents() {
-                // Two text measures, two coverages. "Text changed" diffs two
-                // recorded versions of a file, which the cantonal corpus does
-                // not have (368 of 19,575 cantonal files); charting its 369
-                // deltas against 105k cantonal revisions would read as "cantonal
-                // law never changes", so the measure is disabled there and the
-                // hint says why. "Text volume" is counted from the markdown
-                // body every law has, and covers both scopes.
-                const linesBtn = measureBar.querySelector('[data-measure="lines"]');
-                const cantonalOnly = evState.scope === 'cantonal';
-                linesBtn.disabled = cantonalOnly;
-                linesBtn.style.opacity = cantonalOnly ? 0.45 : '';
-                if (cantonalOnly && evState.measure === 'lines') {
+                // Two text measures, both covering both scopes now. "Text
+                // changed" counts the words a revision moved: federal versions
+                // come from this corpus, cantonal ones from the version series
+                // LexFind publishes for every cantonal act. Words rather than
+                // lines because the two sources lay text out differently and a
+                // line is a unit of layout. "Text volume" is counted from the
+                // markdown body every law has.
+                const data = SLCharts.eventsSeries(cube, {
+                    scope: evState.scope, from: evState.from, to: CUT });
+
+                // Whether the measure is offered is read off the data, not
+                // asserted here: a scope whose revisions have not been measured
+                // would otherwise chart as a flat zero, which reads as "this law
+                // never changes" rather than "this was not measured".
+                const wordsBtn = measureBar.querySelector('[data-measure="words"]');
+                const noWords = !data.words.some(v => v > 0);
+                wordsBtn.disabled = noWords;
+                wordsBtn.style.opacity = noWords ? 0.45 : '';
+                if (noWords && evState.measure === 'words') {
                     evState.measure = 'articles';
                     setActive(measureBar, measureBar.querySelector('[data-measure="articles"]'));
                 }
+                // The share of the shown revisions the measure actually
+                // reaches, read off the same series the bars are drawn from.
+                // Cantonal coverage grows as the version crawl advances, and a
+                // sentence that states the share cannot go stale the way a
+                // sentence that states a percentage would.
+                const sum = a => a.reduce((x, y) => x + y, 0);
+                const measured = sum(data.withWords), revs = sum(data.revisions);
+                const coverage = revs
+                    ? ` Measured on ${measured.toLocaleString()} of the ` +
+                      `${revs.toLocaleString()} revisions shown (` +
+                      `${(100 * measured / revs).toFixed(1)}%); the rest are ` +
+                      'not measured and count as nothing here.'
+                    : '';
+                // That share is not spread evenly: the cantonal crawl runs one
+                // canton at a time, so name the cantons it has reached rather
+                // than let a percentage imply the whole country.
+                const cc = ((indicators || {}).coverage || {}).words_changed_cantons || {};
+                const done = cc.measured || [], all = cc.in_corpus || [];
+                const cantons = (evState.scope !== 'federal' && done.length
+                                 && done.length < all.length)
+                    ? ` Cantonal coverage is ${done.length} of ${all.length} ` +
+                      `cantons \u2014 ${done.join(', ')} \u2014 and nothing ` +
+                      'outside them: the version crawl runs one canton at a ' +
+                      'time and the rest are not measured yet.'
+                    : '';
                 const HINTS = {
-                    lines: 'Lines added + removed per revision, from the git diff between ' +
-                           'consecutive published versions \u2014 federal law in practice, and ' +
-                           'excluding each law\u2019s first recorded version (that commit is ' +
-                           'the text entering the corpus, not the law changing).',
+                    words: 'Words added + removed per revision, from a diff of the two ' +
+                           'versions either side of it \u2014 federal and cantonal alike. ' +
+                           'Federal versions come from this corpus, cantonal ones from ' +
+                           'LexFind\u2019s version series. A law\u2019s first known version ' +
+                           'has nothing to compare against and carries no magnitude.' +
+                           coverage + cantons,
                     articles: 'Articles of the law each event applies to, counted from the ' +
                               'text itself \u2014 federal and cantonal alike. Each event ' +
                               'carries the law\u2019s current size, so recent years are exact ' +
                               'and older ones understate laws that have since been trimmed.',
-                    count: cantonalOnly
-                        ? 'Text changed needs two published versions of a law to diff; the ' +
-                          'cantonal corpus holds one version per law, so use Text volume there.'
+                    count: noWords
+                        ? 'Text changed is not available for this scope yet \u2014 no ' +
+                          'revision in it has two versions to compare.'
                         : '',
                 };
                 document.getElementById('events-measure-hint').textContent =
                     HINTS[evState.measure] || '';
-
-                const data = SLCharts.eventsSeries(cube, {
-                    scope: evState.scope, from: evState.from, to: CUT });
                 evChart.setOption(
                     SLCharts.eventsStackOption(data, evState.measure, evChart.getWidth()),
                     true);
@@ -1080,14 +1111,19 @@
                       `<b>${prov.commits_bulk_metadata.toLocaleString()}</b> bulk metadata ` +
                       `commits, which rewrote frontmatter for every law at once, are not legal ` +
                       `events and are dropped. ` : '') +
-                `<b>Two text measures, two coverages.</b> <i>Text volume</i> counts the ` +
+                `<b>Two text measures.</b> <i>Text volume</i> counts the ` +
                 `articles of the law an event applies to, read from the markdown body that ` +
                 `every law in the corpus has — federal and cantonal alike — crediting each ` +
-                `event with the law's current size. <i>Text changed</i> counts lines added ` +
-                `and removed, which requires diffing two published versions of the same law: ` +
-                `federal law has that version history, while the cantonal corpus was imported ` +
-                `at one version per law, so it is charted for federal law only rather than ` +
-                `shown as a cantonal zero. ` +
+                `event with the law's current size. <i>Text changed</i> counts the <b>words</b> ` +
+                `added and removed by the revision itself, which needs the two versions either ` +
+                `side of it: federal law has that version history in this corpus, and cantonal ` +
+                `law has it at <a href="https://www.lexfind.ch">LexFind</a>, which publishes ` +
+                `every version every cantonal act ever had — each one is fetched, extracted and ` +
+                `diffed against its predecessor. Words rather than lines because the two ` +
+                `sources lay text out differently and a line is a unit of layout, while a word ` +
+                `is a word in both; page furniture is stripped before the comparison, and a ` +
+                `law's first known version has nothing to compare against and carries no ` +
+                `magnitude. The line counts remain in the API for federal law. ` +
                 (future ? `<b>${future.toLocaleString()}</b> events dated after ${CUT} ` +
                           `(entries into force already scheduled) are in the API but off the ` +
                           `chart. ` : '') +

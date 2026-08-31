@@ -59,7 +59,7 @@
             <code>embed.html?chart=events</code> — legislative activity, publications
             and revisions per year
             (options: <code>scope=all|federal|cantonal</code>,
-            <code>measure=count|articles|lines</code>,
+            <code>measure=count|articles|words|lines</code>,
             <code>from=1950|1970|1990|2010|all</code>)
         </p>
         <p style="margin-top:1rem">Every chart on the
@@ -238,12 +238,15 @@
             const cube = await fetchJSON('api/v1/stats/events_by_year.json');
             const scope = ['federal', 'cantonal'].includes(P.get('scope'))
                 ? P.get('scope') : 'all';
-            let measure = ['articles', 'lines'].includes(P.get('measure'))
+            let measure = ['articles', 'words', 'lines'].includes(P.get('measure'))
                 ? P.get('measure') : 'count';
-            // "Text changed" diffs two recorded versions of a file, which the
-            // cantonal corpus does not have — charting its handful of deltas
-            // as cantonal law would read as "cantonal law never changes".
-            if (scope === 'cantonal' && measure === 'lines') measure = 'articles';
+            // A measure with nothing measured in this scope charts as a flat
+            // zero, which reads as "this law never changes" rather than "this
+            // was not measured" — so fall back rather than draw it. `lines`
+            // still has no cantonal coverage; `words` covers both scopes.
+            const series = SLCharts.eventsSeries(cube, { scope, from: null, to: null });
+            const empty = { lines: 'lines', words: 'words' }[measure];
+            if (empty && !series[empty].some(v => v > 0)) measure = 'articles';
             // Scheduled entries into force are real and stay in the API, but a
             // bar for a year still running reads as a collapse in activity.
             const thisYear = String(new Date().getFullYear());
@@ -267,7 +270,7 @@
                 timer = setTimeout(draw, 150);   // the option is width-dependent
             });
             const MEASURE = { count: 'events', articles: 'text volume',
-                              lines: 'text changed' };
+                              words: 'text changed', lines: 'lines changed' };
             setTitle(`Legislative activity — ${MEASURE[measure]}`
                      + `${scope !== 'all' ? ` (${scope})` : ''}`
                      + `${from ? ` since ${from}` : ''}`,
