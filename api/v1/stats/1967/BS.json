@@ -2,8 +2,8 @@
   "year": "1967",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 10,
-  "categorized": 10,
+  "total": 11,
+  "categorized": 11,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -35,6 +35,16 @@
       },
       "by_global_category": {}
     },
+    "Gemeindeerlass": {
+      "total": 2,
+      "by_topic": {
+        "RiE 72 Allmend": 1,
+        "RiE 731 Bebauungspläne und spezielle Bauvorschriften": 1
+      },
+      "by_global_category": {
+        "7.10.10 Pläne": 1
+      }
+    },
     "Interkantonale Vereinbarung": {
       "total": 1,
       "by_topic": {
@@ -61,13 +71,6 @@
       "by_global_category": {
         "6.10.30 Staatsbeiträge, Subventionen": 1
       }
-    },
-    "Gemeindeerlass": {
-      "total": 1,
-      "by_topic": {
-        "RiE 72 Allmend": 1
-      },
-      "by_global_category": {}
     }
   },
   "by_topic_tree": [
@@ -292,10 +295,10 @@
     {
       "identifier": "RiE",
       "title": "Einwohnergemeinde Riehen",
-      "total": 1,
-      "own": 1,
+      "total": 2,
+      "own": 2,
       "by_type": {
-        "Gemeindeerlass": 1
+        "Gemeindeerlass": 2
       }
     }
   ],
@@ -428,12 +431,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Gemeindeerlass": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.10",
+              "title": "Pläne",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gemeindeerlass": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.50",
           "title": "Verkehr",
@@ -500,7 +524,7 @@
     }
   ],
   "languages_available": {
-    "de": 10
+    "de": 11
   },
   "available_years_for_entity": [
     "1756",

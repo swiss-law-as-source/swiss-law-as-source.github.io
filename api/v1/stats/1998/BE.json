@@ -2,8 +2,8 @@
   "year": "1998",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 18,
-  "categorized": 18,
+  "total": 21,
+  "categorized": 21,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -32,14 +32,20 @@
       }
     },
     "Gesetz": {
-      "total": 3,
+      "total": 6,
       "by_topic": {
+        "107 Information der Bevölkerung": 1,
+        "108 Archivierung": 1,
         "152.0 Allgemeine Organisation, Zuständigkeit, Information": 1,
         "170.1 Gemeindegesetz": 1,
+        "410.1 Allgemeines": 1,
         "761.6 Steuern und Abgaben": 1
       },
       "by_global_category": {
+        "1.10.120 Information der Öffentlichkeit": 1,
+        "4.170.20 Archive": 1,
         "1.10.90.10 Gleichstellung von Mann und Frau": 1,
+        "1.40.10 Römisch-Katholische Kirche": 1,
         "7.50.20.10 Strassenverkehrssteuern und -abgaben": 1
       }
     },
@@ -62,13 +68,42 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 3,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
+        "Gesetz": 4,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "10",
+          "title": "Grundlagen",
+          "total": 2,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 2
+          },
+          "children": [
+            {
+              "identifier": "107",
+              "title": "Information der Bevölkerung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            },
+            {
+              "identifier": "108",
+              "title": "Archivierung",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "15",
           "title": "Behörden",
@@ -223,12 +258,44 @@
     {
       "identifier": "4",
       "title": "Kirche, Kultur, Ausbildung und Wissenschaft",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "41",
+          "title": "Kirche",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "410",
+              "title": "Organisation",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "410.1",
+                  "title": "Allgemeines",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "43",
           "title": "Ausbildung und Wissenschaft",
@@ -498,20 +565,20 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 2,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 1,
+        "Gesetz": 3,
         "Verordnung": 1
       },
       "children": [
         {
           "identifier": "1.10",
           "title": "Grundlagen",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Gesetz": 1
+            "Gesetz": 2
           },
           "children": [
             {
@@ -533,6 +600,15 @@
                   }
                 }
               ]
+            },
+            {
+              "identifier": "1.10.120",
+              "title": "Information der Öffentlichkeit",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
             }
           ]
         },
@@ -552,6 +628,26 @@
               "own": 1,
               "by_type": {
                 "Verordnung": 1
+              }
+            }
+          ]
+        },
+        {
+          "identifier": "1.40",
+          "title": "Kirche und Staat",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "1.40.10",
+              "title": "Römisch-Katholische Kirche",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
               }
             }
           ]
@@ -603,10 +699,11 @@
     {
       "identifier": "4",
       "title": "Schulwesen, Wissenschaft, Dokumentation und Kultur",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
-        "Verordnung": 1
+        "Verordnung": 1,
+        "Gesetz": 1
       },
       "children": [
         {
@@ -617,6 +714,26 @@
           "by_type": {
             "Verordnung": 1
           }
+        },
+        {
+          "identifier": "4.170",
+          "title": "Dokumentation",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "4.170.20",
+              "title": "Archive",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     },
@@ -789,8 +906,8 @@
     }
   ],
   "languages_available": {
-    "de": 18,
-    "fr": 15
+    "de": 21,
+    "fr": 18
   },
   "available_years_for_entity": [
     "1562",
@@ -852,6 +969,7 @@
     "1974",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1979",
     "1980",

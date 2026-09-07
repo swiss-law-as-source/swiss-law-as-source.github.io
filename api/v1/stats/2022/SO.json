@@ -2,8 +2,8 @@
   "year": "2022",
   "year_semantics": "enactment",
   "entity": "SO",
-  "total": 8,
-  "categorized": 8,
+  "total": 9,
+  "categorized": 9,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -20,9 +20,13 @@
       }
     },
     "Gesetz": {
-      "total": 2,
-      "by_topic": {},
-      "by_global_category": {}
+      "total": 3,
+      "by_topic": {
+        "811.1 Organisation des Sanitätswesens": 1
+      },
+      "by_global_category": {
+        "8.10.30.30 Krankenpflegepersonal": 1
+      }
     },
     "Interkantonale Vereinbarung": {
       "total": 1,
@@ -154,6 +158,48 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "8",
+      "title": "Gesundheit, Arbeit, Sozialrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Gesetz": 1
+      },
+      "children": [
+        {
+          "identifier": "81",
+          "title": "Gesundheit",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "811",
+              "title": "Sanitätswesen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "811.1",
+                  "title": "Organisation des Sanitätswesens",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "by_global_category_tree": [
@@ -191,21 +237,43 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Verordnung": 2
+        "Verordnung": 2,
+        "Gesetz": 1
       },
       "children": [
         {
           "identifier": "8.10",
           "title": "Gesundheitswesen",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 2
+            "Verordnung": 2,
+            "Gesetz": 1
           },
           "children": [
+            {
+              "identifier": "8.10.30",
+              "title": "Medizinische Berufe",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.30.30",
+                  "title": "Krankenpflegepersonal",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Gesetz": 1
+                  }
+                }
+              ]
+            },
             {
               "identifier": "8.10.100",
               "title": "Krankheitsbekämpfung",
@@ -232,7 +300,7 @@
     }
   ],
   "languages_available": {
-    "de": 8
+    "de": 9
   },
   "available_years_for_entity": [
     "1780",

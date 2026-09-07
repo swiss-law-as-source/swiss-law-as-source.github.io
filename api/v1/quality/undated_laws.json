@@ -1,15 +1,16 @@
 {
   "title": "Laws excluded from year-based statistics (no plausible date)",
   "note": "enactment_year() found no usable evidence: 'no_date' = no date fields at all; 'implausible_date' = only sentinel or typo values before year 1400 (e.g. LexFind's 1000-01-01 'unknown' placeholder). Raw upstream values are kept in raw_dates for review.",
-  "total": 189,
+  "total": 190,
   "by_entity": {
-    "FR": 132,
+    "FR": 133,
     "NW": 32,
     "BE": 23,
     "ZH": 2
   },
   "by_reason": {
-    "implausible_date": 189
+    "implausible_date": 189,
+    "no_date": 1
   },
   "laws": [
     {
@@ -1835,6 +1836,20 @@
       "enactment_date_source": "lexfind_family",
       "reason": "implausible_date",
       "link": "https://github.com/benjamin-arfa/swiss-law/blob/main/ch/fr/de/783.5.md"
+    },
+    {
+      "entity": "FR",
+      "id": "784.20",
+      "title": "Ausführungsbestimmungen zum Konkordat über die nicht",
+      "category_type": "Interkantonale Vereinbarung",
+      "languages": [
+        "de",
+        "fr"
+      ],
+      "raw_dates": {},
+      "enactment_date_source": "",
+      "reason": "no_date",
+      "link": "https://github.com/benjamin-arfa/swiss-law/blob/main/ch/fr/de/784.20.md"
     },
     {
       "entity": "FR",

@@ -2,27 +2,29 @@
   "year": "1989",
   "year_semantics": "enactment",
   "entity": "BE",
-  "total": 13,
-  "categorized": 13,
+  "total": 14,
+  "categorized": 14,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
-      "total": 7,
+      "total": 8,
       "by_topic": {
+        "152.32 Regierungsstatthalter": 1,
         "155.2 Verwaltungsrechtspflege": 1,
-        "213.3 Kindes- und Erwachsenenschutz": 1,
         "525 Finanzierung": 1,
         "751.1 Unterhalt und Korrektion der Gewässer": 1,
         "823 Reinhaltung der Luft": 1,
         "836.1 Krisenbekämpfung und Arbeitsbeschaffung": 1,
-        "841.3 Ergänzungsleistungen zur Alters-, Hinterlassenen- und Invalidenversicherung": 1
+        "841.3 Ergänzungsleistungen zur Alters-, Hinterlassenen- und Invalidenversicherung": 1,
+        "860 Allgemeines": 1
       },
       "by_global_category": {
+        "1.20.20.20.40 Regierungsstatthalter, Oberamtmann": 1,
         "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
-        "2.10.20.10 Vormundschaft": 1,
         "6.10.30 Staatsbeiträge, Subventionen": 1,
         "8.20.20.10 Arbeitsbeschaffung, steuerbegünstigte Arbeitsbeschaffungsreserven": 1,
-        "8.30.40 Ergänzungsleistungen": 1
+        "8.30.40 Ergänzungsleistungen": 1,
+        "8.70.10 Sozialhilfe": 1
       }
     },
     "Verordnung": {
@@ -54,24 +56,55 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Verordnung": 1,
-        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "15",
           "title": "Behörden",
-          "total": 2,
+          "total": 3,
           "own": 0,
           "by_type": {
-            "Verordnung": 1,
-            "Gesetz": 1
+            "Gesetz": 2,
+            "Verordnung": 1
           },
           "children": [
+            {
+              "identifier": "152",
+              "title": "Regierungsrat und Verwaltung",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Gesetz": 1
+              },
+              "children": [
+                {
+                  "identifier": "152.3",
+                  "title": "Dezentrale Verwaltung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "152.32",
+                      "title": "Regierungsstatthalter",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "identifier": "153",
               "title": "Dienstrecht",
@@ -139,48 +172,6 @@
                   "own": 1,
                   "by_type": {
                     "Verordnung des Parlaments (Dekret)": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "2",
-      "title": "Zivilrecht, Zivilrechtspflege, Vollstreckung",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "21",
-          "title": "Ergänzungs- und Ausführungserlasse zum ZGB",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "213",
-              "title": "Familienrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "213.3",
-                  "title": "Kindes- und Erwachsenenschutz",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
                   }
                 }
               ]
@@ -310,10 +301,10 @@
     {
       "identifier": "8",
       "title": "Gesundheit, Arbeit, soziale Sicherheit",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
-        "Gesetz": 3,
+        "Gesetz": 4,
         "Verordnung": 1
       },
       "children": [
@@ -401,6 +392,26 @@
               ]
             }
           ]
+        },
+        {
+          "identifier": "86",
+          "title": "Sozialhilfe",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "860",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     }
@@ -409,35 +420,55 @@
     {
       "identifier": "1",
       "title": "Staat",
-      "total": 4,
+      "total": 5,
       "own": 0,
       "by_type": {
+        "Gesetz": 2,
         "Verordnung": 2,
-        "Gesetz": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
         {
           "identifier": "1.20",
           "title": "Behörden",
-          "total": 4,
+          "total": 5,
           "own": 0,
           "by_type": {
+            "Gesetz": 2,
             "Verordnung": 2,
-            "Gesetz": 1,
             "Verordnung des Parlaments (Dekret)": 1
           },
           "children": [
             {
               "identifier": "1.20.20",
               "title": "Regierung und Verwaltung",
-              "total": 2,
+              "total": 3,
               "own": 0,
               "by_type": {
-                "Verordnung": 1,
-                "Gesetz": 1
+                "Gesetz": 2,
+                "Verordnung": 1
               },
               "children": [
+                {
+                  "identifier": "1.20.20.20",
+                  "title": "Regierung",
+                  "total": 1,
+                  "own": 0,
+                  "by_type": {
+                    "Gesetz": 1
+                  },
+                  "children": [
+                    {
+                      "identifier": "1.20.20.20.40",
+                      "title": "Regierungsstatthalter, Oberamtmann",
+                      "total": 1,
+                      "own": 1,
+                      "by_type": {
+                        "Gesetz": 1
+                      }
+                    }
+                  ]
+                },
                 {
                   "identifier": "1.20.20.40",
                   "title": "Personalrecht",
@@ -503,48 +534,6 @@
       ]
     },
     {
-      "identifier": "2",
-      "title": "Zivilrecht",
-      "total": 1,
-      "own": 0,
-      "by_type": {
-        "Gesetz": 1
-      },
-      "children": [
-        {
-          "identifier": "2.10",
-          "title": "Einführungsgesetzgebung zum ZGB",
-          "total": 1,
-          "own": 0,
-          "by_type": {
-            "Gesetz": 1
-          },
-          "children": [
-            {
-              "identifier": "2.10.20",
-              "title": "Familienrecht",
-              "total": 1,
-              "own": 0,
-              "by_type": {
-                "Gesetz": 1
-              },
-              "children": [
-                {
-                  "identifier": "2.10.20.10",
-                  "title": "Vormundschaft",
-                  "total": 1,
-                  "own": 1,
-                  "by_type": {
-                    "Gesetz": 1
-                  }
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "identifier": "6",
       "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
       "total": 1,
@@ -578,10 +567,10 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
-        "Gesetz": 2,
+        "Gesetz": 3,
         "Verordnung": 1
       },
       "children": [
@@ -637,13 +626,33 @@
               }
             }
           ]
+        },
+        {
+          "identifier": "8.70",
+          "title": "Fürsorge",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gesetz": 1
+          },
+          "children": [
+            {
+              "identifier": "8.70.10",
+              "title": "Sozialhilfe",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gesetz": 1
+              }
+            }
+          ]
         }
       ]
     }
   ],
   "languages_available": {
-    "de": 13,
-    "fr": 13
+    "de": 14,
+    "fr": 14
   },
   "available_years_for_entity": [
     "1562",
@@ -705,6 +714,7 @@
     "1974",
     "1975",
     "1976",
+    "1977",
     "1978",
     "1979",
     "1980",

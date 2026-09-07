@@ -2,37 +2,93 @@
   "year": "2026",
   "year_semantics": "enactment",
   "entity": "NW",
-  "total": 2,
-  "categorized": 2,
+  "total": 4,
+  "categorized": 4,
   "uncategorized": 0,
   "by_type": {
+    "Verordnung": {
+      "total": 3,
+      "by_topic": {
+        "261 Allgemeines": 1,
+        "614 Fuss- und Wanderwege": 1,
+        "931 Waffen, Munition und Sprengstoffe": 1
+      },
+      "by_global_category": {
+        "3.50 Ordnungsbussen": 1,
+        "7.30.30.20 Fuss- und Wanderwege": 1,
+        "5.30.40 Sprengstoffe": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 1,
       "by_topic": {
         "622 Kantons-, Gemeinde- und Privatstrassen": 1
       },
       "by_global_category": {}
-    },
-    "Verordnung": {
-      "total": 1,
-      "by_topic": {
-        "931 Waffen, Munition und Sprengstoffe": 1
-      },
-      "by_global_category": {
-        "5.30.40 Sprengstoffe": 1
-      }
     }
   },
   "by_topic_tree": [
     {
-      "identifier": "6",
-      "title": "Bau - Strassen - Wasser - Energie - Verkehr",
+      "identifier": "2",
+      "title": "Zivilrecht - Strafrecht - Rechtspflege - Vollzug",
       "total": 1,
       "own": 0,
       "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "26",
+          "title": "Rechtspflege",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "261",
+              "title": "Allgemeines",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "identifier": "6",
+      "title": "Bau - Strassen - Wasser - Energie - Verkehr",
+      "total": 2,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1,
         "Verordnung des Parlaments (Dekret)": 1
       },
       "children": [
+        {
+          "identifier": "61",
+          "title": "Planung und Bau",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "614",
+              "title": "Fuss- und Wanderwege",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "62",
           "title": "Strassen",
@@ -89,6 +145,26 @@
   ],
   "by_global_category_tree": [
     {
+      "identifier": "3",
+      "title": "Strafrecht",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "3.50",
+          "title": "Ordnungsbussen",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
       "identifier": "5",
       "title": "Verteidigung, Bevölkerungsschutz, Polizeiwesen",
       "total": 1,
@@ -118,10 +194,52 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "7.30",
+          "title": "Öffentliche Werke",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "7.30.30",
+              "title": "Strassen",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Verordnung": 1
+              },
+              "children": [
+                {
+                  "identifier": "7.30.30.20",
+                  "title": "Fuss- und Wanderwege",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Verordnung": 1
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "de": 2
+    "de": 4
   },
   "available_years_for_entity": [
     "1632",
