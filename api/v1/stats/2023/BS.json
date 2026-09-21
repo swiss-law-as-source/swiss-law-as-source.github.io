@@ -2,8 +2,8 @@
   "year": "2023",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 11,
-  "categorized": 11,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -21,6 +21,18 @@
         "7.30.40 Submission": 1
       }
     },
+    "Gemeindeerlass": {
+      "total": 3,
+      "by_topic": {
+        "RiE 41 Bildung · Sport": 1,
+        "RiE 731 Bebauungspläne und spezielle Bauvorschriften": 1,
+        "RiE 78 Lärmschutz · Umwelt · Natur": 1
+      },
+      "by_global_category": {
+        "4.80.30 Kunst- und Sportschulen": 1,
+        "7.10.10 Pläne": 1
+      }
+    },
     "Reglement": {
       "total": 2,
       "by_topic": {
@@ -30,16 +42,6 @@
       "by_global_category": {
         "8.10.130.40 Bestattungswesen, Friedhöfe": 1,
         "7.70.70 Denkmalschutz, Kulturgüterschutz": 1
-      }
-    },
-    "Gemeindeerlass": {
-      "total": 2,
-      "by_topic": {
-        "RiE 41 Bildung · Sport": 1,
-        "RiE 78 Lärmschutz · Umwelt · Natur": 1
-      },
-      "by_global_category": {
-        "4.80.30 Kunst- und Sportschulen": 1
       }
     },
     "Interkantonale Vereinbarung": {
@@ -220,10 +222,10 @@
     {
       "identifier": "RiE",
       "title": "Einwohnergemeinde Riehen",
-      "total": 3,
-      "own": 3,
+      "total": 4,
+      "own": 4,
       "by_type": {
-        "Gemeindeerlass": 2,
+        "Gemeindeerlass": 3,
         "Reglement": 1
       }
     }
@@ -357,13 +359,34 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 3,
+      "total": 4,
       "own": 0,
       "by_type": {
         "Verordnung": 2,
+        "Gemeindeerlass": 1,
         "Reglement": 1
       },
       "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Gemeindeerlass": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.10",
+              "title": "Pläne",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Gemeindeerlass": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.30",
           "title": "Öffentliche Werke",
@@ -470,7 +493,7 @@
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 12
   },
   "available_years_for_entity": [
     "1756",
