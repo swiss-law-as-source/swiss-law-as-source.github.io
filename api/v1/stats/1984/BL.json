@@ -2,20 +2,22 @@
   "year": "1984",
   "year_semantics": "enactment",
   "entity": "BL",
-  "total": 25,
-  "categorized": 25,
+  "total": 27,
+  "categorized": 27,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
-      "total": 19,
+      "total": 21,
       "by_topic": {
         "17 Gerichte, Verwaltungsverfahren und Anwaltsrecht": 2,
         "643 Weiterführende Schulen": 2,
         "81 Arbeitsmarkt": 2,
+        "140 Verwaltungsorganisation": 1,
         "143 Volkswirtschafts- und Gesundheitsdirektion": 1,
         "16 Ombudsperson, Datenschutz, Archivierung": 1,
         "35 Versicherungen": 1,
         "36 Staatsbeiträge": 1,
+        "48 Verkehr": 1,
         "54 Gewerbe und Industrie": 1,
         "640 Allgemeines": 1,
         "642 Sekundarschulen": 1,
@@ -31,6 +33,7 @@
         "9.60.40 Konsumentenschutz": 1,
         "1.20.20.50 Verwaltungsverfahren, Verwaltungsrechtspflege": 1,
         "8.10.100.10 Epidemien, Pandemien": 1,
+        "6.10.30 Staatsbeiträge, Subventionen": 1,
         "4.80.10 Sonderschulen": 1,
         "4.10.30 Volksschule, Primarschule, Sekundarschule I": 1,
         "4.30.20 Berufsmaturitätsschulen": 1,
@@ -86,23 +89,32 @@
     {
       "identifier": "1",
       "title": "Staat, Volk, Behörden",
-      "total": 6,
+      "total": 7,
       "own": 0,
       "by_type": {
-        "Verordnung": 4,
+        "Verordnung": 5,
         "Anderes": 2
       },
       "children": [
         {
           "identifier": "14",
           "title": "Regierungsrat und Verwaltung",
-          "total": 3,
+          "total": 4,
           "own": 0,
           "by_type": {
-            "Anderes": 2,
-            "Verordnung": 1
+            "Verordnung": 2,
+            "Anderes": 2
           },
           "children": [
+            {
+              "identifier": "140",
+              "title": "Verwaltungsorganisation",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            },
             {
               "identifier": "143",
               "title": "Volkswirtschafts- und Gesundheitsdirektion",
@@ -173,6 +185,26 @@
         {
           "identifier": "36",
           "title": "Staatsbeiträge",
+          "total": 1,
+          "own": 1,
+          "by_type": {
+            "Verordnung": 1
+          }
+        }
+      ]
+    },
+    {
+      "identifier": "4",
+      "title": "Bau, Werke, Verkehr, Energie",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "48",
+          "title": "Verkehr",
           "total": 1,
           "own": 1,
           "by_type": {
@@ -673,6 +705,37 @@
       ]
     },
     {
+      "identifier": "6",
+      "title": "Finanzen, Steuern, Monopole, Staatliche Unternehmen",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Verordnung": 1
+      },
+      "children": [
+        {
+          "identifier": "6.10",
+          "title": "Finanzen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Verordnung": 1
+          },
+          "children": [
+            {
+              "identifier": "6.10.30",
+              "title": "Staatsbeiträge, Subventionen",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Verordnung": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 6,
@@ -825,7 +888,7 @@
     }
   ],
   "languages_available": {
-    "de": 25
+    "de": 27
   },
   "available_years_for_entity": [
     "1815",

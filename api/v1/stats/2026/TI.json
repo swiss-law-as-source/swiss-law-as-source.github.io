@@ -2,8 +2,8 @@
   "year": "2026",
   "year_semantics": "enactment",
   "entity": "TI",
-  "total": 7,
-  "categorized": 7,
+  "total": 8,
+  "categorized": 8,
   "uncategorized": 0,
   "by_type": {
     "Reglement": {
@@ -24,12 +24,15 @@
       }
     },
     "Verordnung": {
-      "total": 2,
+      "total": 3,
       "by_topic": {
         "923 Pesca": 1,
-        "942 Esercizi pubblici": 1
+        "942 Esercizi pubblici": 1,
+        "945 Commercio": 1
       },
-      "by_global_category": {}
+      "by_global_category": {
+        "9.60.10 Ladenöffnungszeiten": 1
+      }
     }
   },
   "by_topic_tree": [
@@ -158,10 +161,10 @@
     {
       "identifier": "9",
       "title": "ECONOMIA",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
-        "Ordinanza": 2
+        "Ordinanza": 3
       },
       "children": [
         {
@@ -187,15 +190,24 @@
         {
           "identifier": "94",
           "title": "Turismo, commercio",
-          "total": 1,
+          "total": 2,
           "own": 0,
           "by_type": {
-            "Ordinanza": 1
+            "Ordinanza": 2
           },
           "children": [
             {
               "identifier": "942",
               "title": "Esercizi pubblici",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordinanza": 1
+              }
+            },
+            {
+              "identifier": "945",
+              "title": "Commercio",
               "total": 1,
               "own": 1,
               "by_type": {
@@ -406,10 +418,41 @@
           ]
         }
       ]
+    },
+    {
+      "identifier": "9",
+      "title": "Wirtschaft",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Ordinanza": 1
+      },
+      "children": [
+        {
+          "identifier": "9.60",
+          "title": "Handel",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Ordinanza": 1
+          },
+          "children": [
+            {
+              "identifier": "9.60.10",
+              "title": "Ladenöffnungszeiten",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Ordinanza": 1
+              }
+            }
+          ]
+        }
+      ]
     }
   ],
   "languages_available": {
-    "it": 7
+    "it": 8
   },
   "available_years_for_entity": [
     "1803",
