@@ -2,8 +2,8 @@
   "year": "2015",
   "year_semantics": "enactment",
   "entity": "TI",
-  "total": 11,
-  "categorized": 11,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Gesetz": {
@@ -33,6 +33,16 @@
         "6.10.30 Staatsbeiträge, Subventionen": 1
       }
     },
+    "Reglement": {
+      "total": 2,
+      "by_topic": {
+        "415 Scuole professionali": 1,
+        "823 Pompe funebri": 1
+      },
+      "by_global_category": {
+        "8.10.130.40 Bestattungswesen, Friedhöfe": 1
+      }
+    },
     "Verordnung": {
       "total": 2,
       "by_topic": {
@@ -43,13 +53,6 @@
         "4.100.10 Stipendien": 1,
         "8.30.60.20 Prämienverbilligungen": 1
       }
-    },
-    "Reglement": {
-      "total": 1,
-      "by_topic": {
-        "415 Scuole professionali": 1
-      },
-      "by_global_category": {}
     },
     "Anderes": {
       "total": 1,
@@ -197,12 +200,33 @@
     {
       "identifier": "8",
       "title": "SANITÀ - AMBIENTE - LAVORO - SICUREZZA SOCIALE",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Regolamento": 1,
         "Legge": 1
       },
       "children": [
+        {
+          "identifier": "82",
+          "title": "Misure sanitarie",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Regolamento": 1
+          },
+          "children": [
+            {
+              "identifier": "823",
+              "title": "Pompe funebri",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Regolamento": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "85",
           "title": "Assicurazioni sociali",
@@ -489,13 +513,45 @@
     {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
-      "total": 2,
+      "total": 3,
       "own": 0,
       "by_type": {
+        "Regolamento": 1,
         "Ordinanza": 1,
         "Legge": 1
       },
       "children": [
+        {
+          "identifier": "8.10",
+          "title": "Gesundheitswesen",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Regolamento": 1
+          },
+          "children": [
+            {
+              "identifier": "8.10.130",
+              "title": "Hygiene",
+              "total": 1,
+              "own": 0,
+              "by_type": {
+                "Regolamento": 1
+              },
+              "children": [
+                {
+                  "identifier": "8.10.130.40",
+                  "title": "Bestattungswesen, Friedhöfe",
+                  "total": 1,
+                  "own": 1,
+                  "by_type": {
+                    "Regolamento": 1
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "identifier": "8.30",
           "title": "Sozialversicherungsrecht",
@@ -603,7 +659,7 @@
     }
   ],
   "languages_available": {
-    "it": 11
+    "it": 12
   },
   "available_years_for_entity": [
     "1803",
