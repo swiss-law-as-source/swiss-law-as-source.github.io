@@ -2,8 +2,8 @@
   "year": "1971",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 15,
-  "categorized": 15,
+  "total": 16,
+  "categorized": 16,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -35,6 +35,16 @@
         "7.50.10.10 Regionalverkehr": 1
       }
     },
+    "Anderes": {
+      "total": 2,
+      "by_topic": {
+        "331 Öffentliche Spitäler": 1,
+        "731 Bebauungspläne und spezielle Bauvorschriften": 1
+      },
+      "by_global_category": {
+        "7.10.10 Pläne": 1
+      }
+    },
     "Verordnung des Parlaments (Dekret)": {
       "total": 2,
       "by_topic": {
@@ -56,13 +66,6 @@
         "8.10.70 Heil- und Betäubungsmittel": 1,
         "8.10.130.50 Tierkörperentsorgung": 1
       }
-    },
-    "Anderes": {
-      "total": 1,
-      "by_topic": {
-        "331 Öffentliche Spitäler": 1
-      },
-      "by_global_category": {}
     },
     "Reglement": {
       "total": 1,
@@ -324,6 +327,37 @@
       ]
     },
     {
+      "identifier": "7",
+      "title": "Raum- und Bauordnung · Energie · Umweltschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "73",
+          "title": "Hochbauten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "731",
+              "title": "Bebauungspläne und spezielle Bauvorschriften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "9",
       "title": "Wirtschaft und Verkehr",
       "total": 1,
@@ -560,12 +594,33 @@
     {
       "identifier": "7",
       "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Gesetz": 1
       },
       "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.10",
+              "title": "Pläne",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "7.50",
           "title": "Verkehr",
@@ -686,7 +741,7 @@
     }
   ],
   "languages_available": {
-    "de": 15
+    "de": 16
   },
   "available_years_for_entity": [
     "1756",
