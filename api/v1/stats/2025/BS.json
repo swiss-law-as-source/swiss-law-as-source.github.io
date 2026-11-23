@@ -2,8 +2,8 @@
   "year": "2025",
   "year_semantics": "enactment",
   "entity": "BS",
-  "total": 11,
-  "categorized": 11,
+  "total": 12,
+  "categorized": 12,
   "uncategorized": 0,
   "by_type": {
     "Verordnung": {
@@ -22,6 +22,18 @@
         "1.20.20.60 Verwaltungsgebühren": 1
       }
     },
+    "Anderes": {
+      "total": 3,
+      "by_topic": {
+        "510 Polizei": 1,
+        "731 Bebauungspläne und spezielle Bauvorschriften": 1,
+        "861 Sozialer Wohnungsbau · Erhaltung von Wohnraum": 1
+      },
+      "by_global_category": {
+        "3.20.70 Opferhilfe": 1,
+        "7.10.10 Pläne": 1
+      }
+    },
     "Reglement": {
       "total": 2,
       "by_topic": {
@@ -29,16 +41,6 @@
         "861 Sozialer Wohnungsbau · Erhaltung von Wohnraum": 1
       },
       "by_global_category": {}
-    },
-    "Anderes": {
-      "total": 2,
-      "by_topic": {
-        "510 Polizei": 1,
-        "861 Sozialer Wohnungsbau · Erhaltung von Wohnraum": 1
-      },
-      "by_global_category": {
-        "3.20.70 Opferhilfe": 1
-      }
     },
     "Gesetz": {
       "total": 1,
@@ -186,12 +188,33 @@
     {
       "identifier": "7",
       "title": "Raum- und Bauordnung · Energie · Umweltschutz",
-      "total": 1,
+      "total": 2,
       "own": 0,
       "by_type": {
+        "Anderes": 1,
         "Verordnung": 1
       },
       "children": [
+        {
+          "identifier": "73",
+          "title": "Hochbauten",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "731",
+              "title": "Bebauungspläne und spezielle Bauvorschriften",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        },
         {
           "identifier": "78",
           "title": "Umweltschutz",
@@ -367,6 +390,37 @@
       ]
     },
     {
+      "identifier": "7",
+      "title": "Raumplanungs- und Baurecht, Enteignung, Öffentliche Werke, Energie, Verkehr, Umweltschutz, Naturschutz",
+      "total": 1,
+      "own": 0,
+      "by_type": {
+        "Anderes": 1
+      },
+      "children": [
+        {
+          "identifier": "7.10",
+          "title": "Raumplanungs- und Baurecht",
+          "total": 1,
+          "own": 0,
+          "by_type": {
+            "Anderes": 1
+          },
+          "children": [
+            {
+              "identifier": "7.10.10",
+              "title": "Pläne",
+              "total": 1,
+              "own": 1,
+              "by_type": {
+                "Anderes": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "8",
       "title": "Gesundheitswesen, Arbeit, Sozialversicherungen, Wohnen, Sozialhilfe",
       "total": 1,
@@ -430,7 +484,7 @@
     }
   ],
   "languages_available": {
-    "de": 11
+    "de": 12
   },
   "available_years_for_entity": [
     "1756",
